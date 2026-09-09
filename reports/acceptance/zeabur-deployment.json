@@ -1,0 +1,61 @@
+{
+  "verifiedAt": "2026-09-09T12:03:42.286111+00:00",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "server": {
+    "id": "6a8eee0bb11fb81fb4aaca05",
+    "name": "Aliyun California 4C 8GB",
+    "city": "Los Angeles",
+    "country": "US",
+    "regionId": "server-6a8eee0bb11fb81fb4aaca05"
+  },
+  "projectId": "6aa142fb6c3d9581b71560ed",
+  "serviceId": "6aa143296c3d9581b71560fa",
+  "environmentId": "6aa142fbda9bc245fba1e845",
+  "deploymentId": "6aa1499748bcf3169994de0d",
+  "cliDeploymentStatus": "RUNNING",
+  "cliDomainStatus": "PROVISIONED",
+  "health": {
+    "status": "ok",
+    "application": "daguanyuan-rumeng",
+    "revision": "2"
+  },
+  "files": [
+    {
+      "path": "models/overview.glb",
+      "sha256": "bfa31cf84b06abd16b0d6a391c954df8f8553d617bce1a14169f78125edbb293",
+      "bytes": 4246072,
+      "matchesLocal": true
+    },
+    {
+      "path": "models/overview-low.glb",
+      "sha256": "0dd2c77d3ba1d1b47645fc71e473d07156fb8ee5615955ec5c92fc23aaf7a358",
+      "bytes": 616516,
+      "matchesLocal": true
+    },
+    {
+      "path": "scene-manifest.json",
+      "sha256": "f5a94ee4a50773789433abeeb4f7c6115cc886db844cf618cd75c24bca801d21",
+      "bytes": 21246,
+      "matchesLocal": true
+    },
+    {
+      "path": "models/places-low/xiaoxiangguan.glb",
+      "sha256": "e0f335be65337a8fe91c7c13b3934ea4ac699a8b22583c26139a2f94afad5b8f",
+      "bytes": 1114992,
+      "matchesLocal": true
+    }
+  ],
+  "responseHeaders": "HTTP/1.1 200 OK\r\nAlt-Svc: h3=\":443\"; ma=3600\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Encoding: gzip\r\nContent-Length: 878\r\nContent-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 09 Sep 2026 12:03:41 GMT\r\nEtag: \"36e-1a0860877a8\"\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Zeabur-Ip-Country: SG\r\nX-Zeabur-Request-Id: da41de1d-42b2-427b-8202-6685d1fc9a15\r\n\r\n",
+  "dns": {
+    "publicAddress": "47.89.212.251",
+    "source": "Google DNS over HTTPS; independently checked against Cloudflare",
+    "localProxyAddress": "198.18.1.167",
+    "browserOverrideRequired": true,
+    "osDnsChanged": false
+  },
+  "tlsVerificationEnabled": true,
+  "browserQuicDisabled": true,
+  "productionSmoke": "production-smoke.json",
+  "newServerPurchased": false,
+  "credentialsIncluded": false
+}

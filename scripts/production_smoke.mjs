@@ -1,0 +1,33 @@
+import {chromium} from 'playwright';
+import {writeFileSync,readFileSync,readdirSync} from 'node:fs';
+const url=process.env.APP_URL||'http://127.0.0.1:4273/';
+// Optional per-browser DNS override for a newly provisioned domain behind local
+// proxy DNS caches. TLS verification stays enabled and OS settings stay intact.
+const resolveIp=process.env.APP_RESOLVE_IP;
+const browser=await chromium.launch({channel:'msedge',headless:true,args:resolveIp?[`--host-resolver-rules=MAP ${new URL(url).hostname} ${resolveIp}`,'--disable-quic']:[]});
+const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[],failed=[];
+page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});
+await page.goto(url);await page.getByRole('button',{name:'定位潇湘馆',exact:true}).waitFor();
+await page.locator('.loading').waitFor({state:'hidden',timeout:90000});
+const hooksAbsent=await page.evaluate(()=>!window.__gardenTest&&!window.__gardenMetrics);
+await page.getByRole('textbox',{name:'搜索园中内容'}).focus();
+const focus=await page.getByRole('textbox',{name:'搜索园中内容'}).evaluate(e=>({width:getComputedStyle(e).outlineWidth,style:getComputedStyle(e).outlineStyle}));
+await page.locator('.place-row').filter({hasText:'潇湘馆'}).click();await page.locator('.detail-scroll h2').filter({hasText:'潇湘馆'}).waitFor();
+await page.reload();await page.getByRole('button',{name:'定位潇湘馆',exact:true}).waitFor();
+await page.locator('.loading').waitFor({state:'hidden',timeout:90000});await page.waitForTimeout(1200);
+const sourceHooksAbsent=readdirSync('dist/assets').filter(f=>f.endsWith('.js')).every(f=>!/__gardenTest|__gardenMetrics/.test(readFileSync('dist/assets/'+f,'utf8')));
+await page.screenshot({path:'reports/browser/13-production-desktop.png'});
+const desktopResult={at:new Date().toISOString(),url:page.url(),dnsOverride:resolveIp??null,quicDisabled:!!resolveIp,tlsVerification:true,hooksAbsent,sourceHooksAbsent,focus,sceneVisible:true,refresh:true,selection:true,errors,failed};
+const mobile=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:3,isMobile:true,hasTouch:true});
+const mobileModels=[];mobile.on('response',r=>{if(r.url().endsWith('.glb'))mobileModels.push(new URL(r.url()).pathname)});
+mobile.on('pageerror',e=>errors.push(e.message));mobile.on('response',r=>{if(r.status()>=400)failed.push(r.url())});
+await mobile.goto(url);await mobile.getByRole('button',{name:'定位潇湘馆',exact:true}).waitFor();
+await mobile.locator('.loading').waitFor({state:'hidden',timeout:90000});
+const mobilePartition=mobile.waitForResponse(r=>r.url().includes('/models/places-low/xiaoxiangguan.glb')&&r.ok());
+await mobile.getByRole('button',{name:'定位潇湘馆',exact:true}).click();await mobile.locator('.detail-scroll h2').filter({hasText:'潇湘馆'}).waitFor();
+await mobilePartition;
+await mobile.waitForTimeout(2500);await mobile.screenshot({path:'reports/browser/14-production-mobile.png'});
+const result={...desktopResult,mobile:{viewport:[390,844],touchEmulation:true,networkThrottle:false,models:mobileModels,selection:true}};
+writeFileSync('reports/acceptance/production-smoke.json',JSON.stringify(result,null,2));await browser.close();
+if(!hooksAbsent||!sourceHooksAbsent||focus.width!=='2px'||focus.style!=='solid'||errors.length||failed.length||!mobileModels.includes('/models/overview-low.glb')||mobileModels.includes('/models/overview.glb'))throw Error(JSON.stringify(result));
+console.log('Production smoke passed: load, selection, refresh, keyboard focus, no debug hooks, no errors.');

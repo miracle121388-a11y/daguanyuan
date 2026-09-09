@@ -1,0 +1,8 @@
+from pathlib import Path
+R=Path(__file__).resolve().parents[1]
+p=R/'src/styles/garden.css';s=p.read_text(encoding='utf8').replace('transition:width .35s ease,opacity .25s','transition:opacity .25s')
+s+='\n/* Caption paper keeps text readable over every camera angle. */\n.scene-heading{background:#f4f1e8ee;padding:9px 13px;left:24px;top:20px}.scene-heading h1{font-size:27px}.detail-prose{font-size:15px}.detail-subtitle,.note,.detail-footer,.source-body p{color:#606e56}.place-row small,.character-list small,.chapter-list small,.tour-description span,.tour-picker label,.reading-status span{color:#626e59}.source-body blockquote{font-size:13px}.source-body a{font-size:11px}.event-row strong{font-size:13px}.index{transition:opacity .25s}.source-list summary{font-size:11px}.has-detail .scene-heading{max-width:calc(100% - 365px)}\n@media(max-width:600px){.scene-heading{left:10px;top:10px;padding:7px 9px}.scene-heading h1,.has-detail .scene-heading h1{font-size:21px}.scene-heading p{font-size:9px}.has-detail .scene-heading{max-width:calc(100% - 58px)}.detail-prose{font-size:14px}}\n'
+p.write_text(s,encoding='utf8')
+p=R/'src/scene/GardenScene.tsx';s=p.read_text(encoding='utf8')
+s=s.replace("float wave=sin(vUv.x*175.+vUv.y*46.+time*.6)*sin(vUv.y*130.-time*.35);float glint=pow(max(0.,wave),8.)*.11;gl_FragColor=vec4(baseColor+glint+sin(vUv.y*16.+vUv.x*9.)*.018,1.);}","float wave=sin(vUv.y*220.+sin(vUv.x*30.)*1.5+time*.6);float glint=pow(max(0.,wave),24.)*.022;gl_FragColor=vec4(baseColor+glint+sin(vUv.y*16.+vUv.x*9.)*.012,1.);\\n#include <tonemapping_fragment>\\n#include <colorspace_fragment>\\n}")
+p.write_text(s,encoding='utf8')

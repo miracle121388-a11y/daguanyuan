@@ -1,0 +1,88 @@
+{
+  "conditions": {
+    "viewport": [
+      390,
+      844
+    ],
+    "deviceScaleFactor": 3,
+    "renderDpr": 1,
+    "latencyMs": 80,
+    "downloadMbps": 9,
+    "cpuSlowdown": 4,
+    "realMobileHardware": false
+  },
+  "initial": {
+    "loadedMs": 2765.800000011921,
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4174/assets/index-C5EEKWrq.js",
+        "bytes": 84771
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/index-CR9XYFmV.css",
+        "bytes": 6387
+      },
+      {
+        "url": "http://127.0.0.1:4174/data/places.json",
+        "bytes": 2512
+      },
+      {
+        "url": "http://127.0.0.1:4174/data/characters.json",
+        "bytes": 1381
+      },
+      {
+        "url": "http://127.0.0.1:4174/data/events.json",
+        "bytes": 3267
+      },
+      {
+        "url": "http://127.0.0.1:4174/data/sources.json",
+        "bytes": 10733
+      },
+      {
+        "url": "http://127.0.0.1:4174/data/routes.json",
+        "bytes": 1088
+      },
+      {
+        "url": "http://127.0.0.1:4174/data/relations.json",
+        "bytes": 476
+      },
+      {
+        "url": "http://127.0.0.1:4174/scene-manifest.json",
+        "bytes": 2927
+      },
+      {
+        "url": "http://127.0.0.1:4174/assets/GardenScene-DfKMTw6J.js",
+        "bytes": 276591
+      },
+      {
+        "url": "http://127.0.0.1:4174/models/overview-low.glb",
+        "bytes": 616816
+      },
+      {
+        "url": "http://127.0.0.1:4174/draco/draco_wasm_wrapper.js",
+        "bytes": 12048
+      },
+      {
+        "url": "http://127.0.0.1:4174/draco/draco_decoder.wasm",
+        "bytes": 192720
+      }
+    ],
+    "metrics": {
+      "frames": [
+        121.70000004768372,
+        145.5,
+        16.799999952316284,
+        846.9000000357628,
+        74.89999997615814
+      ],
+      "drawCalls": 25,
+      "triangles": 48298,
+      "geometries": 25,
+      "textures": 0,
+      "dpr": 1,
+      "renderer": "WebKit WebGL"
+    }
+  },
+  "touchOrbitChanged": true,
+  "mobilePartitionLoaded": true
+}

@@ -1,0 +1,263 @@
+[
+  {
+    "id": "daguanyuan_gate",
+    "name": "大观园入口",
+    "aliases": [],
+    "description": "白墙石阶，层层递进。由此入园，先收住视线，再向山水深处行去。",
+    "sourceRefs": [
+      "s17-3",
+      "architecture-gate-five-bays"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "入园",
+    "features": [
+      {
+        "text": "五间正门、桶瓦泥鳅脊与素木门窗，白石台基和虎皮石墙脚。",
+        "sourceRefs": [
+          "architecture-gate-five-bays"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qujingtongyou",
+    "name": "曲径通幽",
+    "aliases": [
+      "曲徑通幽處"
+    ],
+    "description": "山石遮掩，小径回转。入口处的题额，把游园变成一段逐步展开的阅读。",
+    "sourceRefs": [
+      "s17-4"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "山径",
+    "features": []
+  },
+  {
+    "id": "xiaoxiangguan",
+    "name": "潇湘馆",
+    "aliases": [
+      "瀟湘館",
+      "有鳳來儀"
+    ],
+    "description": "翠竹夹路，窗下笔砚。林黛玉居于此，竹影与书卷构成一处安静的园中书斋。",
+    "sourceRefs": [
+      "s23-1",
+      "s18-2",
+      "architecture-xiao-three-bays",
+      "architecture-xiao-rear-spring",
+      "architecture-xiao-bamboo-path"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "竹影",
+    "features": [
+      {
+        "text": "两三间小舍，一明两暗；前接曲廊与石子甬路。",
+        "sourceRefs": [
+          "architecture-xiao-three-bays"
+        ]
+      },
+      {
+        "text": "后院梨花、芭蕉与两间退步；细泉绕阶缘屋，在竹下流出。",
+        "sourceRefs": [
+          "architecture-xiao-rear-spring"
+        ]
+      },
+      {
+        "text": "翠竹夹路，苔地之间留一条曲折的石子路；窗下有笔砚与书架。",
+        "sourceRefs": [
+          "architecture-xiao-bamboo-path"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yihongyuan",
+    "name": "怡红院",
+    "aliases": [
+      "怡紅院",
+      "紅香綠玉",
+      "怡紅快綠"
+    ],
+    "description": "宝玉的园中居所。以花木、回廊与日常陈设，呈现院落里细密的生活。",
+    "sourceRefs": [
+      "s23-1",
+      "s18-2",
+      "architecture-yi-banana-crabapple"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "红香",
+    "features": [
+      {
+        "text": "两侧游廊相接，院中点石；芭蕉与西府海棠分植两边。",
+        "sourceRefs": [
+          "architecture-yi-banana-crabapple"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hengwuyuan",
+    "name": "蘅芜苑",
+    "aliases": [
+      "蘅蕪苑",
+      "蘅芷清芬"
+    ],
+    "description": "宝钗的园中居所。山石与异草相映，素净的室内陈设与繁盛草木相对。",
+    "sourceRefs": [
+      "s23-1",
+      "s18-2",
+      "architecture-heng-rock-screen",
+      "architecture-heng-five-hall",
+      "architecture-heng-spare-room"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "幽芳",
+    "features": [
+      {
+        "text": "入门山石遮住房屋，异草藤蔓穿隙垂檐，形成独特的幽芳院景。",
+        "sourceRefs": [
+          "architecture-heng-rock-screen"
+        ]
+      },
+      {
+        "text": "五间清厦连着卷棚，四面出廊；绿窗油壁。",
+        "sourceRefs": [
+          "architecture-heng-five-hall"
+        ]
+      },
+      {
+        "text": "室内素净，案上只见土定瓶、菊花、书与茶具，床上青纱帐幔。",
+        "sourceRefs": [
+          "architecture-heng-spare-room"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "qiushuangzhai",
+    "name": "秋爽斋",
+    "aliases": [
+      "秋爽齋"
+    ],
+    "description": "探春居所，也是海棠诗社发起之地。开敞的空间容纳书画、谈笑和诗意。",
+    "sourceRefs": [
+      "s23-1",
+      "architecture-qiu-open-hall",
+      "architecture-qiu-vase-scroll"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "疏朗",
+    "features": [
+      {
+        "text": "三间屋不隔断，以阔朗空间容纳花梨大理石大案与笔墨法帖。",
+        "sourceRefs": [
+          "architecture-qiu-open-hall"
+        ]
+      },
+      {
+        "text": "大花囊插白菊，西墙挂山水画与联语；本模型陈设为意象转译。",
+        "sourceRefs": [
+          "architecture-qiu-vase-scroll"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daoxiangcun",
+    "name": "稻香村",
+    "aliases": [
+      "稻香村",
+      "杏帘在望",
+      "浣葛山莊"
+    ],
+    "description": "李纨的园中居所。篱落、田畦与茅堂意象，将村野趣味引入园林。",
+    "sourceRefs": [
+      "s23-1",
+      "s18-2",
+      "architecture-farm-thatched"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "田趣",
+    "features": [
+      {
+        "text": "黄泥矮墙、茅屋、青篱与杏花；院外列菜畦，并有土井和汲水器具。",
+        "sourceRefs": [
+          "architecture-farm-thatched"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ouxiangxie",
+    "name": "藕香榭",
+    "aliases": [
+      "藕香榭"
+    ],
+    "description": "临池的亭榭，以曲廊与竹桥接岸。赏桂食蟹、菊花诗会在这里展开。",
+    "sourceRefs": [
+      "s38-6"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "水榭",
+    "features": []
+  },
+  {
+    "id": "dicuiting",
+    "name": "滴翠亭",
+    "aliases": [
+      "滴翠亭"
+    ],
+    "description": "水中的玲珑亭子，游廊曲桥四面相接。宝钗扑蝶的脚步在此停下。",
+    "sourceRefs": [
+      "s27-5"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "碧水",
+    "features": []
+  },
+  {
+    "id": "luxuean",
+    "name": "芦雪庵",
+    "aliases": [
+      "蘆雪庵"
+    ],
+    "description": "傍山临水，茅檐土壁，芦苇掩映。第49—50回的冬日诗会在这里展开。",
+    "sourceRefs": [
+      "s49-7"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "雪意",
+    "features": []
+  },
+  {
+    "id": "tubishanzhuang",
+    "name": "凸碧山庄",
+    "aliases": [
+      "凸碧山庄",
+      "凸碧山莊"
+    ],
+    "description": "高处赏月的园林节点，与低处近水的凹晶溪馆形成一高一低的对景。",
+    "sourceRefs": [
+      "s76-8"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "山月",
+    "features": []
+  },
+  {
+    "id": "aojingxiguan",
+    "name": "凹晶溪馆",
+    "aliases": [
+      "凹晶溪館",
+      "凹晶館"
+    ],
+    "description": "房宇不多，矮小近水。黛玉与湘云在卷棚下临水赏月，接续诗句。",
+    "sourceRefs": [
+      "s76-8"
+    ],
+    "spatialInterpretation": "interpretive",
+    "theme": "水月",
+    "features": []
+  }
+]

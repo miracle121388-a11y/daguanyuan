@@ -1,0 +1,12 @@
+{
+  "high": {
+    "dpr": 1.5,
+    "shadows": true,
+    "motion": true
+  },
+  "low": {
+    "dpr": 1,
+    "shadows": false,
+    "motion": false
+  }
+}

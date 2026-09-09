@@ -1,0 +1,203 @@
+{
+  "conditions": {
+    "os": "Windows 11",
+    "headless": true,
+    "actualMobileHardware": false,
+    "network": "local HTTP; no throttling",
+    "overviewSha256": "bfa31cf84b06abd16b0d6a391c954df8f8553d617bce1a14169f78125edbb293",
+    "metricLimit": "GPU allocations are estimates from scene resources; excludes driver overhead/framebuffers and cached hidden assets. These are not total VRAM readings."
+  },
+  "high": {
+    "mode": "high",
+    "timestamp": "2026-09-09T11:59:41.098Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "sampleCount": 300,
+    "meanFrameMs": 9.25,
+    "p95FrameMs": 12.600000023841858,
+    "drawCalls": 168,
+    "triangles": 317775,
+    "estimatedGeometryBytes": 27424656,
+    "estimatedTextureBytesWithMipmaps": 11184810.666666666,
+    "textureCount": 2,
+    "geometryCount": 168,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4175/assets/index-C5EEKWrq.js",
+        "transferSize": 84771,
+        "decodedBodySize": 272500
+      },
+      {
+        "name": "http://127.0.0.1:4175/assets/index-CR9XYFmV.css",
+        "transferSize": 6387,
+        "decodedBodySize": 25420
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/places.json",
+        "transferSize": 2512,
+        "decodedBodySize": 5194
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/characters.json",
+        "transferSize": 1381,
+        "decodedBodySize": 3170
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/events.json",
+        "transferSize": 3267,
+        "decodedBodySize": 9255
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/sources.json",
+        "transferSize": 10733,
+        "decodedBodySize": 48152
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/routes.json",
+        "transferSize": 1088,
+        "decodedBodySize": 2295
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/relations.json",
+        "transferSize": 476,
+        "decodedBodySize": 176
+      },
+      {
+        "name": "http://127.0.0.1:4175/scene-manifest.json",
+        "transferSize": 2927,
+        "decodedBodySize": 21246
+      },
+      {
+        "name": "http://127.0.0.1:4175/favicon.ico",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "name": "http://127.0.0.1:4175/assets/GardenScene-DfKMTw6J.js",
+        "transferSize": 276591,
+        "decodedBodySize": 1015987
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/overview.glb",
+        "transferSize": 4246372,
+        "decodedBodySize": 4246072
+      },
+      {
+        "name": "http://127.0.0.1:4175/draco/draco_wasm_wrapper.js",
+        "transferSize": 12048,
+        "decodedBodySize": 58456
+      },
+      {
+        "name": "http://127.0.0.1:4175/draco/draco_decoder.wasm",
+        "transferSize": 192720,
+        "decodedBodySize": 192420
+      }
+    ],
+    "method": "6-second settled static overview with water animation; last up to 300 frames; no network throttling"
+  },
+  "low": {
+    "mode": "low",
+    "timestamp": "2026-09-09T11:59:49.660Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "sampleCount": 300,
+    "meanFrameMs": 8.226000000039736,
+    "p95FrameMs": 12.699999988079071,
+    "drawCalls": 27,
+    "triangles": 49340,
+    "estimatedGeometryBytes": 5713484,
+    "estimatedTextureBytesWithMipmaps": 0,
+    "textureCount": 0,
+    "geometryCount": 27,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4175/assets/index-C5EEKWrq.js",
+        "transferSize": 84771,
+        "decodedBodySize": 272500
+      },
+      {
+        "name": "http://127.0.0.1:4175/assets/index-CR9XYFmV.css",
+        "transferSize": 6387,
+        "decodedBodySize": 25420
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/places.json",
+        "transferSize": 2512,
+        "decodedBodySize": 5194
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/characters.json",
+        "transferSize": 1381,
+        "decodedBodySize": 3170
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/events.json",
+        "transferSize": 3267,
+        "decodedBodySize": 9255
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/sources.json",
+        "transferSize": 10733,
+        "decodedBodySize": 48152
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/routes.json",
+        "transferSize": 1088,
+        "decodedBodySize": 2295
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/relations.json",
+        "transferSize": 476,
+        "decodedBodySize": 176
+      },
+      {
+        "name": "http://127.0.0.1:4175/scene-manifest.json",
+        "transferSize": 2927,
+        "decodedBodySize": 21246
+      },
+      {
+        "name": "http://127.0.0.1:4175/favicon.ico",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "name": "http://127.0.0.1:4175/assets/GardenScene-DfKMTw6J.js",
+        "transferSize": 276591,
+        "decodedBodySize": 1015987
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/overview.glb",
+        "transferSize": 4246372,
+        "decodedBodySize": 4246072
+      },
+      {
+        "name": "http://127.0.0.1:4175/draco/draco_wasm_wrapper.js",
+        "transferSize": 12048,
+        "decodedBodySize": 58456
+      },
+      {
+        "name": "http://127.0.0.1:4175/draco/draco_decoder.wasm",
+        "transferSize": 192720,
+        "decodedBodySize": 192420
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/overview-low.glb",
+        "transferSize": 616816,
+        "decodedBodySize": 616516
+      }
+    ],
+    "method": "Orbit interaction on low quality; demand rendering; idle frame rate is not a meaningful measure"
+  }
+}

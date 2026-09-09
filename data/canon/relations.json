@@ -1,0 +1,15 @@
+[
+  {
+    "fromId": "jiamu",
+    "toId": "daiyu",
+    "relationType": "maternal_grandmother",
+    "label": "外祖母与外孙女",
+    "validity": {
+      "fromChapter": 40,
+      "toChapter": null
+    },
+    "sourceRefs": [
+      "s40-32"
+    ]
+  }
+]

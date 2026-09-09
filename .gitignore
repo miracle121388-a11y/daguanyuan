@@ -1,0 +1,10 @@
+node_modules/
+.tools/
+dist/
+*.blend1
+*.tmp
+test-results/
+.test-dist/
+.env
+.checkpoints/
+.deploy/

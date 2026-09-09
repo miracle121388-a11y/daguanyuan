@@ -1,0 +1,887 @@
+{
+  "units": "meters",
+  "coordinateSystem": "Blender Z-up; Web (x,z,-y)",
+  "spatialInterpretation": "interpretive",
+  "seed": 1949,
+  "terrain": {
+    "radius": [
+      135,
+      122
+    ],
+    "lake": {
+      "center": [
+        0,
+        14
+      ],
+      "radius": [
+        34,
+        53
+      ]
+    }
+  },
+  "places": [
+    {
+      "id": "daguanyuan_gate",
+      "name": "大观园入口",
+      "position": [
+        0,
+        -88,
+        0
+      ],
+      "style": "gate",
+      "featured": false,
+      "bounds": [
+        26,
+        24,
+        14
+      ],
+      "cameraOffset": [
+        26,
+        29,
+        35
+      ],
+      "hotspots": []
+    },
+    {
+      "id": "qujingtongyou",
+      "name": "曲径通幽",
+      "position": [
+        -43,
+        -70,
+        0
+      ],
+      "style": "rockery",
+      "featured": false,
+      "bounds": [
+        26,
+        24,
+        14
+      ],
+      "cameraOffset": [
+        26,
+        29,
+        35
+      ],
+      "hotspots": []
+    },
+    {
+      "id": "xiaoxiangguan",
+      "name": "潇湘馆",
+      "position": [
+        -70,
+        -26,
+        0
+      ],
+      "style": "bamboo",
+      "featured": true,
+      "bounds": [
+        36,
+        39,
+        14
+      ],
+      "cameraOffset": [
+        29,
+        26,
+        40
+      ],
+      "hotspots": [
+        {
+          "id": "xiaoxiangguan-gate",
+          "name": "曲廊与竹径",
+          "position": [
+            0,
+            -11,
+            2
+          ]
+        },
+        {
+          "id": "xiaoxiangguan-garden",
+          "name": "竹下泉渠",
+          "position": [
+            7,
+            -6,
+            1.8
+          ]
+        },
+        {
+          "id": "xiaoxiangguan-study",
+          "name": "一明两暗的书斋",
+          "position": [
+            0,
+            6,
+            3.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yihongyuan",
+      "name": "怡红院",
+      "position": [
+        57,
+        -55,
+        0
+      ],
+      "style": "flower",
+      "featured": true,
+      "bounds": [
+        36,
+        39,
+        14
+      ],
+      "cameraOffset": [
+        29,
+        26,
+        40
+      ],
+      "hotspots": [
+        {
+          "id": "yihongyuan-gate",
+          "name": "游廊与院门",
+          "position": [
+            0,
+            -11,
+            2
+          ]
+        },
+        {
+          "id": "yihongyuan-garden",
+          "name": "蕉棠两植",
+          "position": [
+            -6,
+            -1,
+            3
+          ]
+        },
+        {
+          "id": "yihongyuan-study",
+          "name": "雕窗与抱厦",
+          "position": [
+            0,
+            6,
+            3.7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hengwuyuan",
+      "name": "蘅芜苑",
+      "position": [
+        -63,
+        43,
+        0
+      ],
+      "style": "herb",
+      "featured": true,
+      "bounds": [
+        36,
+        39,
+        14
+      ],
+      "cameraOffset": [
+        29,
+        26,
+        40
+      ],
+      "hotspots": [
+        {
+          "id": "hengwuyuan-gate",
+          "name": "入院曲廊",
+          "position": [
+            -8,
+            -9,
+            2
+          ]
+        },
+        {
+          "id": "hengwuyuan-garden",
+          "name": "玲珑山石与藤蔓",
+          "position": [
+            0,
+            -3,
+            4.2
+          ]
+        },
+        {
+          "id": "hengwuyuan-study",
+          "name": "五间清厦与卷棚",
+          "position": [
+            0,
+            9,
+            3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qiushuangzhai",
+      "name": "秋爽斋",
+      "position": [
+        70,
+        19,
+        0
+      ],
+      "style": "study",
+      "featured": true,
+      "bounds": [
+        36,
+        39,
+        14
+      ],
+      "cameraOffset": [
+        29,
+        26,
+        40
+      ],
+      "hotspots": [
+        {
+          "id": "qiushuangzhai-gate",
+          "name": "疏朗前庭",
+          "position": [
+            0,
+            -10,
+            2
+          ]
+        },
+        {
+          "id": "qiushuangzhai-garden",
+          "name": "白菊与大花囊",
+          "position": [
+            -8,
+            7,
+            2.4
+          ]
+        },
+        {
+          "id": "qiushuangzhai-study",
+          "name": "大理石书案与笔墨",
+          "position": [
+            0,
+            5.5,
+            2.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daoxiangcun",
+      "name": "稻香村",
+      "position": [
+        -35,
+        79,
+        0
+      ],
+      "style": "farm",
+      "featured": false,
+      "bounds": [
+        26,
+        24,
+        14
+      ],
+      "cameraOffset": [
+        26,
+        29,
+        35
+      ],
+      "hotspots": []
+    },
+    {
+      "id": "ouxiangxie",
+      "name": "藕香榭",
+      "position": [
+        29,
+        12,
+        0
+      ],
+      "style": "waterside",
+      "featured": false,
+      "bounds": [
+        26,
+        24,
+        14
+      ],
+      "cameraOffset": [
+        26,
+        29,
+        35
+      ],
+      "hotspots": []
+    },
+    {
+      "id": "dicuiting",
+      "name": "滴翠亭",
+      "position": [
+        -10,
+        -31,
+        0
+      ],
+      "style": "pavilion",
+      "featured": false,
+      "bounds": [
+        26,
+        24,
+        14
+      ],
+      "cameraOffset": [
+        26,
+        29,
+        35
+      ],
+      "hotspots": []
+    },
+    {
+      "id": "luxuean",
+      "name": "芦雪庵",
+      "position": [
+        28,
+        75,
+        0
+      ],
+      "style": "reeds",
+      "featured": false,
+      "bounds": [
+        26,
+        24,
+        14
+      ],
+      "cameraOffset": [
+        26,
+        29,
+        35
+      ],
+      "hotspots": []
+    },
+    {
+      "id": "tubishanzhuang",
+      "name": "凸碧山庄",
+      "position": [
+        80,
+        67,
+        5
+      ],
+      "style": "hill",
+      "featured": false,
+      "bounds": [
+        26,
+        24,
+        14
+      ],
+      "cameraOffset": [
+        26,
+        29,
+        35
+      ],
+      "hotspots": []
+    },
+    {
+      "id": "aojingxiguan",
+      "name": "凹晶溪馆",
+      "position": [
+        51,
+        49,
+        0
+      ],
+      "style": "moon",
+      "featured": false,
+      "bounds": [
+        26,
+        24,
+        14
+      ],
+      "cameraOffset": [
+        26,
+        29,
+        35
+      ],
+      "hotspots": []
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "south",
+      "position": [
+        0,
+        -105,
+        0.25
+      ]
+    },
+    {
+      "id": "sw",
+      "position": [
+        -43,
+        -91,
+        0.25
+      ]
+    },
+    {
+      "id": "westlow",
+      "position": [
+        -96,
+        -55,
+        0.25
+      ]
+    },
+    {
+      "id": "west",
+      "position": [
+        -96,
+        -6,
+        0.25
+      ]
+    },
+    {
+      "id": "westhigh",
+      "position": [
+        -94,
+        59,
+        0.25
+      ]
+    },
+    {
+      "id": "nw",
+      "position": [
+        -35,
+        101,
+        0.25
+      ]
+    },
+    {
+      "id": "north",
+      "position": [
+        28,
+        99,
+        0.25
+      ]
+    },
+    {
+      "id": "ne",
+      "position": [
+        98,
+        77,
+        0.25
+      ]
+    },
+    {
+      "id": "east",
+      "position": [
+        104,
+        19,
+        0.25
+      ]
+    },
+    {
+      "id": "se",
+      "position": [
+        90,
+        -70,
+        0.25
+      ]
+    },
+    {
+      "id": "southeast",
+      "position": [
+        57,
+        -79,
+        0.25
+      ]
+    },
+    {
+      "id": "waterwest",
+      "position": [
+        -40,
+        -45,
+        0.25
+      ]
+    },
+    {
+      "id": "watereast",
+      "position": [
+        45,
+        -45,
+        0.25
+      ]
+    },
+    {
+      "id": "lakeeast",
+      "position": [
+        44,
+        -3,
+        0.25
+      ]
+    },
+    {
+      "id": "moonway",
+      "position": [
+        45,
+        32,
+        0.25
+      ]
+    },
+    {
+      "id": "hillway",
+      "position": [
+        80,
+        48,
+        5.25
+      ]
+    },
+    {
+      "id": "daguanyuan_gate",
+      "position": [
+        0,
+        -104,
+        0.25
+      ]
+    },
+    {
+      "id": "qujingtongyou",
+      "position": [
+        -43,
+        -86,
+        0.25
+      ]
+    },
+    {
+      "id": "xiaoxiangguan",
+      "position": [
+        -70,
+        -42,
+        0.25
+      ]
+    },
+    {
+      "id": "approach-xiaoxiangguan-0",
+      "position": [
+        -96,
+        -42,
+        0.25
+      ]
+    },
+    {
+      "id": "yihongyuan",
+      "position": [
+        57,
+        -71,
+        0.25
+      ]
+    },
+    {
+      "id": "hengwuyuan",
+      "position": [
+        -63,
+        27,
+        0.25
+      ]
+    },
+    {
+      "id": "approach-hengwuyuan-0",
+      "position": [
+        -94,
+        27,
+        0.25
+      ]
+    },
+    {
+      "id": "qiushuangzhai",
+      "position": [
+        70,
+        3,
+        0.25
+      ]
+    },
+    {
+      "id": "approach-qiushuangzhai-0",
+      "position": [
+        104,
+        3,
+        0.25
+      ]
+    },
+    {
+      "id": "daoxiangcun",
+      "position": [
+        -35,
+        63,
+        0.25
+      ]
+    },
+    {
+      "id": "approach-daoxiangcun-0",
+      "position": [
+        -57,
+        101,
+        0.25
+      ]
+    },
+    {
+      "id": "approach-daoxiangcun-1",
+      "position": [
+        -57,
+        63,
+        0.25
+      ]
+    },
+    {
+      "id": "ouxiangxie",
+      "position": [
+        29,
+        -4,
+        0.25
+      ]
+    },
+    {
+      "id": "dicuiting",
+      "position": [
+        -10,
+        -47,
+        0.25
+      ]
+    },
+    {
+      "id": "luxuean",
+      "position": [
+        28,
+        59,
+        0.25
+      ]
+    },
+    {
+      "id": "approach-luxuean-0",
+      "position": [
+        48,
+        99,
+        0.25
+      ]
+    },
+    {
+      "id": "approach-luxuean-1",
+      "position": [
+        48,
+        64,
+        0.25
+      ]
+    },
+    {
+      "id": "approach-luxuean-2",
+      "position": [
+        28,
+        64,
+        0.25
+      ]
+    },
+    {
+      "id": "tubishanzhuang",
+      "position": [
+        80,
+        51,
+        5.25
+      ]
+    },
+    {
+      "id": "aojingxiguan",
+      "position": [
+        51,
+        33,
+        0.25
+      ]
+    }
+  ],
+  "pathEdges": [
+    {
+      "from": "south",
+      "to": "sw",
+      "kind": "path"
+    },
+    {
+      "from": "sw",
+      "to": "westlow",
+      "kind": "path"
+    },
+    {
+      "from": "westlow",
+      "to": "west",
+      "kind": "path"
+    },
+    {
+      "from": "west",
+      "to": "westhigh",
+      "kind": "path"
+    },
+    {
+      "from": "westhigh",
+      "to": "nw",
+      "kind": "path"
+    },
+    {
+      "from": "nw",
+      "to": "north",
+      "kind": "path"
+    },
+    {
+      "from": "north",
+      "to": "ne",
+      "kind": "path"
+    },
+    {
+      "from": "ne",
+      "to": "east",
+      "kind": "path"
+    },
+    {
+      "from": "east",
+      "to": "se",
+      "kind": "path"
+    },
+    {
+      "from": "se",
+      "to": "southeast",
+      "kind": "path"
+    },
+    {
+      "from": "southeast",
+      "to": "south",
+      "kind": "path"
+    },
+    {
+      "from": "sw",
+      "to": "waterwest",
+      "kind": "path"
+    },
+    {
+      "from": "waterwest",
+      "to": "watereast",
+      "kind": "path"
+    },
+    {
+      "from": "watereast",
+      "to": "southeast",
+      "kind": "path"
+    },
+    {
+      "from": "watereast",
+      "to": "lakeeast",
+      "kind": "path"
+    },
+    {
+      "from": "lakeeast",
+      "to": "east",
+      "kind": "path"
+    },
+    {
+      "from": "lakeeast",
+      "to": "moonway",
+      "kind": "path"
+    },
+    {
+      "from": "moonway",
+      "to": "hillway",
+      "kind": "path"
+    },
+    {
+      "from": "hillway",
+      "to": "ne",
+      "kind": "path"
+    },
+    {
+      "from": "south",
+      "to": "daguanyuan_gate",
+      "kind": "path"
+    },
+    {
+      "from": "sw",
+      "to": "qujingtongyou",
+      "kind": "path"
+    },
+    {
+      "from": "west",
+      "to": "approach-xiaoxiangguan-0",
+      "kind": "path"
+    },
+    {
+      "from": "approach-xiaoxiangguan-0",
+      "to": "xiaoxiangguan",
+      "kind": "path"
+    },
+    {
+      "from": "southeast",
+      "to": "yihongyuan",
+      "kind": "path"
+    },
+    {
+      "from": "westhigh",
+      "to": "approach-hengwuyuan-0",
+      "kind": "path"
+    },
+    {
+      "from": "approach-hengwuyuan-0",
+      "to": "hengwuyuan",
+      "kind": "path"
+    },
+    {
+      "from": "east",
+      "to": "approach-qiushuangzhai-0",
+      "kind": "path"
+    },
+    {
+      "from": "approach-qiushuangzhai-0",
+      "to": "qiushuangzhai",
+      "kind": "path"
+    },
+    {
+      "from": "nw",
+      "to": "approach-daoxiangcun-0",
+      "kind": "path"
+    },
+    {
+      "from": "approach-daoxiangcun-0",
+      "to": "approach-daoxiangcun-1",
+      "kind": "path"
+    },
+    {
+      "from": "approach-daoxiangcun-1",
+      "to": "daoxiangcun",
+      "kind": "path"
+    },
+    {
+      "from": "lakeeast",
+      "to": "ouxiangxie",
+      "kind": "bridge"
+    },
+    {
+      "from": "waterwest",
+      "to": "dicuiting",
+      "kind": "bridge"
+    },
+    {
+      "from": "north",
+      "to": "approach-luxuean-0",
+      "kind": "path"
+    },
+    {
+      "from": "approach-luxuean-0",
+      "to": "approach-luxuean-1",
+      "kind": "path"
+    },
+    {
+      "from": "approach-luxuean-1",
+      "to": "approach-luxuean-2",
+      "kind": "path"
+    },
+    {
+      "from": "approach-luxuean-2",
+      "to": "luxuean",
+      "kind": "path"
+    },
+    {
+      "from": "hillway",
+      "to": "tubishanzhuang",
+      "kind": "path"
+    },
+    {
+      "from": "moonway",
+      "to": "aojingxiguan",
+      "kind": "path"
+    }
+  ]
+}

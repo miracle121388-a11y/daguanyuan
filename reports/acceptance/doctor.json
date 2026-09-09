@@ -1,0 +1,23 @@
+{
+  "node": "v24.12.0",
+  "platform": "win32",
+  "blender": "D:\\Users\\Lenovo\\Desktop\\大观园\\.tools\\blender-4.5.9-windows-x64\\blender.exe",
+  "required": [
+    {
+      "file": "config/garden.layout.json",
+      "exists": true
+    },
+    {
+      "file": "data/canon/events.json",
+      "exists": true
+    },
+    {
+      "file": "public/models/overview.glb",
+      "exists": true
+    },
+    {
+      "file": "blender/daguanyuan_master.blend",
+      "exists": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-09T12:02:10.183Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "dnsOverride": "47.89.212.251",
+  "quicDisabled": true,
+  "tlsVerification": true,
+  "hooksAbsent": true,
+  "sourceHooksAbsent": true,
+  "focus": {
+    "width": "2px",
+    "style": "solid"
+  },
+  "sceneVisible": true,
+  "refresh": true,
+  "selection": true,
+  "errors": [],
+  "failed": [],
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "touchEmulation": true,
+    "networkThrottle": false,
+    "models": [
+      "/models/overview-low.glb",
+      "/models/places-low/xiaoxiangguan.glb"
+    ],
+    "selection": true
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-09T11:42:46.824277+00:00",
+  "title": "Design System: 大观园·入梦",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "温纸",
+        "tonalRamp": [
+          "oklch(15% 0.01237 91.52)",
+          "oklch(26.43% 0.01237 91.52)",
+          "oklch(37.86% 0.01237 91.52)",
+          "oklch(49.29% 0.01237 91.52)",
+          "oklch(60.71% 0.01237 91.52)",
+          "oklch(72.14% 0.01237 91.52)",
+          "oklch(83.57% 0.01237 91.52)",
+          "oklch(95% 0.01237 91.52)"
+        ]
+      },
+      "paper-light": {
+        "role": "neutral",
+        "displayName": "浅纸",
+        "tonalRamp": [
+          "oklch(15% 0.00949 93.57)",
+          "oklch(26.43% 0.00949 93.57)",
+          "oklch(37.86% 0.00949 93.57)",
+          "oklch(49.29% 0.00949 93.57)",
+          "oklch(60.71% 0.00949 93.57)",
+          "oklch(72.14% 0.00949 93.57)",
+          "oklch(83.57% 0.00949 93.57)",
+          "oklch(95% 0.00949 93.57)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "深墨",
+        "tonalRamp": [
+          "oklch(15% 0.01953 145.14)",
+          "oklch(26.43% 0.01953 145.14)",
+          "oklch(37.86% 0.01953 145.14)",
+          "oklch(49.29% 0.01953 145.14)",
+          "oklch(60.71% 0.01953 145.14)",
+          "oklch(72.14% 0.01953 145.14)",
+          "oklch(83.57% 0.01953 145.14)",
+          "oklch(95% 0.01953 145.14)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "淡墨",
+        "tonalRamp": [
+          "oklch(15% 0.02331 122.16)",
+          "oklch(26.43% 0.02331 122.16)",
+          "oklch(37.86% 0.02331 122.16)",
+          "oklch(49.29% 0.02331 122.16)",
+          "oklch(60.71% 0.02331 122.16)",
+          "oklch(72.14% 0.02331 122.16)",
+          "oklch(83.57% 0.02331 122.16)",
+          "oklch(95% 0.02331 122.16)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "纸缝",
+        "tonalRamp": [
+          "oklch(15% 0.01747 110.31)",
+          "oklch(26.43% 0.01747 110.31)",
+          "oklch(37.86% 0.01747 110.31)",
+          "oklch(49.29% 0.01747 110.31)",
+          "oklch(60.71% 0.01747 110.31)",
+          "oklch(72.14% 0.01747 110.31)",
+          "oklch(83.57% 0.01747 110.31)",
+          "oklch(95% 0.01747 110.31)"
+        ]
+      },
+      "jade": {
+        "role": "primary",
+        "displayName": "园林青绿",
+        "tonalRamp": [
+          "oklch(15% 0.04258 155.43)",
+          "oklch(26.43% 0.04258 155.43)",
+          "oklch(37.86% 0.04258 155.43)",
+          "oklch(49.29% 0.04258 155.43)",
+          "oklch(60.71% 0.04258 155.43)",
+          "oklch(72.14% 0.04258 155.43)",
+          "oklch(83.57% 0.04258 155.43)",
+          "oklch(95% 0.04258 155.43)"
+        ]
+      },
+      "cinnabar": {
+        "role": "secondary",
+        "displayName": "印章朱砂",
+        "tonalRamp": [
+          "oklch(15% 0.10498 38.00)",
+          "oklch(26.43% 0.10498 38.00)",
+          "oklch(37.86% 0.10498 38.00)",
+          "oklch(49.29% 0.10498 38.00)",
+          "oklch(60.71% 0.10498 38.00)",
+          "oklch(72.14% 0.10498 38.00)",
+          "oklch(83.57% 0.10498 38.00)",
+          "oklch(95% 0.10498 38.00)"
+        ]
+      },
+      "sage-selection": {
+        "role": "primary",
+        "displayName": "选中浅青",
+        "tonalRamp": [
+          "oklch(15% 0.01656 121.78)",
+          "oklch(26.43% 0.01656 121.78)",
+          "oklch(37.86% 0.01656 121.78)",
+          "oklch(49.29% 0.01656 121.78)",
+          "oklch(60.71% 0.01656 121.78)",
+          "oklch(72.14% 0.01656 121.78)",
+          "oklch(83.57% 0.01656 121.78)",
+          "oklch(95% 0.01656 121.78)"
+        ]
+      },
+      "caption-ink": {
+        "role": "neutral",
+        "displayName": "目录辅助墨",
+        "tonalRamp": [
+          "oklch(15% 0.03528 131.87)",
+          "oklch(26.43% 0.03528 131.87)",
+          "oklch(37.86% 0.03528 131.87)",
+          "oklch(49.29% 0.03528 131.87)",
+          "oklch(60.71% 0.03528 131.87)",
+          "oklch(72.14% 0.03528 131.87)",
+          "oklch(83.57% 0.03528 131.87)",
+          "oklch(95% 0.03528 131.87)"
+        ]
+      },
+      "annotation-ink": {
+        "role": "neutral",
+        "displayName": "释文辅助墨",
+        "tonalRamp": [
+          "oklch(15% 0.04043 132.39)",
+          "oklch(26.43% 0.04043 132.39)",
+          "oklch(37.86% 0.04043 132.39)",
+          "oklch(49.29% 0.04043 132.39)",
+          "oklch(60.71% 0.04043 132.39)",
+          "oklch(72.14% 0.04043 132.39)",
+          "oklch(83.57% 0.04043 132.39)",
+          "oklch(95% 0.04043 132.39)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "园景标题",
+        "purpose": "园景纸色标题底面；手机为 21px。"
+      },
+      "headline": {
+        "displayName": "释文标题",
+        "purpose": "选中内容的阅读身份；手机为 26px。"
+      },
+      "title": {
+        "displayName": "目录标题",
+        "purpose": "地点条目名称。"
+      },
+      "body": {
+        "displayName": "文学释文",
+        "purpose": "宋体摘要与文学说明；手机为15px / 1.9。"
+      },
+      "interface": {
+        "displayName": "界面文字",
+        "purpose": "主导航等操作信息。"
+      },
+      "label": {
+        "displayName": "界面标签",
+        "purpose": "搜索、动作与来源条目。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "paper-overlay",
+        "value": "0 12px 35px #283b2912",
+        "purpose": "设置与场景错误的软阴影。"
+      },
+      {
+        "name": "mobile-index",
+        "value": "12px 0 30px #27361e12",
+        "purpose": "手机目录覆盖园景。"
+      },
+      {
+        "name": "place-label",
+        "value": "0 3px 13px #344e2e10",
+        "purpose": "园景地点纸签。"
+      },
+      {
+        "name": "hotspot",
+        "value": "0 3px 9px #352d2320",
+        "purpose": "近景数字热点。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "detail-reveal",
+        "value": "350ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "释文从水平16px、0.8透明度进入。"
+      },
+      {
+        "name": "drawer",
+        "value": "300ms ease-out",
+        "purpose": "手机释文从垂直25px、0.8透明度进入。"
+      },
+      {
+        "name": "index-opacity",
+        "value": "250ms ease",
+        "purpose": "目录透明度变化；减少动态偏好下取消。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1150px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "850px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "开始游园",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "青绿实底导览动作，保留悬停、焦点与禁用状态。",
+      "html": "<button class=\"ds-tour\"><svg aria-hidden=\"true\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m8 5 12 7-12 7z\"/></svg>开始游园</button>",
+      "css": ".ds-tour{height:39px;padding:0 19px;display:inline-flex;align-items:center;gap:8px;background:var(--jade,#536e5c);color:#fff9eb;border:0;border-radius:2px;font:11px \"Microsoft YaHei\",\"PingFang SC\",sans-serif;white-space:nowrap;letter-spacing:1px;cursor:pointer}.ds-tour:hover{background:#3f5a48;color:#fff}.ds-tour:disabled{opacity:.5;cursor:not-allowed}.ds-tour:focus-visible{outline:2px solid var(--cinnabar,#9a5039);outline-offset:4px}@media(max-width:600px){.ds-tour{height:44px;padding:0 10px;font-size:12px}}"
+    },
+    {
+      "name": "图标操作",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "紧凑线性 SVG 操作；浅青底表达悬停或启用。",
+      "html": "<button class=\"ds-icon\" aria-label=\"回到全园\" title=\"回到全园\"><svg aria-hidden=\"true\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z\"/><path d=\"M9 21v-9h6v9\"/></svg></button>",
+      "css": ".ds-icon{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;background:none;color:var(--ink,#343d34);border:0;border-radius:3px;cursor:pointer}.ds-icon:hover,.ds-icon[aria-pressed=true]{background:#e4e8dc;color:var(--jade,#536e5c)}.ds-icon:disabled{opacity:.5;cursor:not-allowed}.ds-icon:focus-visible{outline:2px solid var(--cinnabar,#9a5039);outline-offset:4px}"
+    },
+    {
+      "name": "主导航",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "朱砂文字与底部细线标示当前页面。",
+      "html": "<nav class=\"ds-nav\" aria-label=\"主导航\"><button aria-current=\"page\"><svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z\"/></svg>园林漫游</button><button><svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z\"/></svg>回目拾遗</button></nav>",
+      "css": ".ds-nav{display:flex;gap:34px;height:85px;background:var(--paper,#f4f1e8);border-bottom:1px solid var(--line,#dedfd2)}.ds-nav button{display:flex;align-items:center;gap:8px;position:relative;white-space:nowrap;border:0;background:none;color:var(--ink,#343d34);font:13px \"Microsoft YaHei\",\"PingFang SC\",sans-serif;cursor:pointer}.ds-nav button:hover,.ds-nav button[aria-current=page]{color:var(--cinnabar,#9a5039)}.ds-nav button[aria-current=page]:after{content:\"\";position:absolute;height:2px;background:var(--cinnabar,#9a5039);bottom:0;left:0;right:0}.ds-nav button:focus-visible{outline:2px solid var(--cinnabar,#9a5039);outline-offset:4px}"
+    },
+    {
+      "name": "目录搜索",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "透明输入、底线与内联搜索图形。",
+      "html": "<label class=\"ds-search\"><svg aria-hidden=\"true\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input type=\"search\" aria-label=\"搜索地点\" placeholder=\"寻一处园景…\"/></label>",
+      "css": ".ds-search{display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--line,#dedfd2);padding-bottom:9px;color:#838979;max-width:260px}.ds-search input{border:0;background:none;width:100%;min-width:0;font:11px \"Microsoft YaHei\",\"PingFang SC\",sans-serif;color:var(--ink,#343d34);caret-color:var(--cinnabar,#9a5039)}.ds-search input::placeholder{color:#6e7769}.ds-search input:focus-visible{outline:2px solid var(--cinnabar,#9a5039);outline-offset:4px}@media(max-width:600px){.ds-search input{font-size:16px;min-height:32px}}"
+    },
+    {
+      "name": "人物签",
+      "kind": "chip",
+      "refersTo": "person-chip",
+      "description": "可换行排列的文学人物链接按钮。",
+      "html": "<button class=\"ds-person\">林黛玉</button>",
+      "css": ".ds-person{padding:6px 10px;font:12px var(--serif,\"STSong\",\"Songti SC\",\"SimSun\",serif);background:#edeedf;color:#586d51;border:0;border-radius:2px;cursor:pointer}.ds-person:hover{background:#dfe7d5}.ds-person:focus-visible{outline:2px solid var(--cinnabar,#9a5039);outline-offset:4px}"
+    },
+    {
+      "name": "目录地点条目",
+      "kind": "card",
+      "refersTo": "catalogue-row",
+      "description": "编号与文学名称构成连续目录；选中状态显示浅青底。",
+      "html": "<button class=\"ds-place ds-selected\"><span class=\"ds-number\">03</span><span><strong>潇湘馆</strong><small>竹影 · 院落细览</small></span><svg aria-hidden=\"true\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 18 6-6-6-6\"/></svg></button>",
+      "css": ".ds-place{width:100%;max-width:280px;display:flex;align-items:center;padding:11px 13px;gap:13px;text-align:left;border:0;border-radius:2px;background:none;color:var(--ink,#343d34);cursor:pointer}.ds-number{font:10px \"Microsoft YaHei\",\"PingFang SC\",sans-serif;color:#8b927f;font-variant-numeric:tabular-nums;width:14px}.ds-place strong{font:15px var(--serif,\"STSong\",\"Songti SC\",\"SimSun\",serif);letter-spacing:2px}.ds-place small{display:block;font:9px \"Microsoft YaHei\",\"PingFang SC\",sans-serif;color:#626e59;margin-top:5px;letter-spacing:1px}.ds-place>svg{margin-left:auto;color:#92977f;opacity:0}.ds-place:hover,.ds-place.ds-selected{background:#e4e8dc}.ds-place.ds-selected strong{color:#3e614b}.ds-place:hover>svg,.ds-place.ds-selected>svg{opacity:1}.ds-place:focus-visible{outline:2px solid var(--cinnabar,#9a5039);outline-offset:4px}"
+    },
+    {
+      "name": "原文依据展开条",
+      "kind": "custom",
+      "refersTo": "evidence-disclosure",
+      "description": "带段落定位与外链区域的原生 details；示例不伪造引文。",
+      "html": "<details class=\"ds-evidence\"><summary><svg aria-hidden=\"true\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 7v14M3 3h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5v17h-5a4 4 0 0 0-4 1 4 4 0 0 0-4-1H3z\"/></svg>原文依据<svg aria-hidden=\"true\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m9 18 6-6-6-6\"/></svg></summary><div class=\"ds-source-body\"><blockquote>此处展示已核查的原文摘录。</blockquote><p>此处展示记录中的段落定位。</p></div></details>",
+      "css": ".ds-evidence{max-width:310px;background:var(--paper-light,#faf8f1);border-bottom:1px solid var(--line,#dedfd2)}.ds-evidence summary{list-style:none;cursor:pointer;padding:11px 0;font:11px \"Microsoft YaHei\",\"PingFang SC\",sans-serif;display:flex;align-items:center;gap:7px;color:#617358}.ds-evidence summary::-webkit-details-marker{display:none}.ds-evidence summary>svg:last-child{margin-left:auto}.ds-evidence[open] summary>svg:last-child{transform:rotate(90deg)}.ds-source-body blockquote{margin:4px 0 8px;font:13px/1.9 var(--serif,\"STSong\",\"Songti SC\",\"SimSun\",serif);color:#66715c}.ds-source-body p{font:9px/1.9 \"Microsoft YaHei\",\"PingFang SC\",sans-serif;color:#606e56;margin:4px 0}.ds-evidence summary:focus-visible{outline:2px solid var(--cinnabar,#9a5039);outline-offset:4px}"
+    },
+    {
+      "name": "空间解释条",
+      "kind": "custom",
+      "refersTo": "interpretation-strip",
+      "description": "把空间设计解释与原著证据在文字层面分开。",
+      "html": "<div class=\"ds-interpretation\"><svg aria-hidden=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z\"/></svg><span>空间布局 · 设计解释</span></div>",
+      "css": ".ds-interpretation{display:flex;gap:7px;align-items:center;background:#eef0e5;padding:10px 9px;font:10px \"Microsoft YaHei\",\"PingFang SC\",sans-serif;color:#65715d;max-width:310px}"
+    },
+    {
+      "name": "屋内陈设观察",
+      "kind": "button",
+      "refersTo": "interior-inspection",
+      "description": "临时移开选中院落屋面观察陈设；再次点击返回全貌。手机和桌面最小高度44px。",
+      "html": "<button class=\"ds-interior\">查看屋内陈设</button>",
+      "css": ".ds-interior{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 13px;background:var(--jade,#536e5c);color:var(--paper-light,#faf8f1);border:0;font:13px \"Microsoft YaHei\",sans-serif;cursor:pointer}.ds-interior:hover{background:#425c4c}.ds-interior:focus-visible{outline:2px solid var(--cinnabar,#9a5039);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "园林游赏图录",
+    "overview": "一座可以转动、走近与阅读的文学园林，置于温暖纸面之中。园林是展品，地点索引是目录，人物、事件与原文是旁注。视觉语气安静、疏朗而有检索密度：青绿承接园景，深墨组织阅读，朱砂指示选择与操作状态。\n\n宋体承担文学标题和叙述，中文无衬线承担操作与辅助信息。纸面、细线和有限的浮层形成层次；园林模型保留青瓦、白墙、木构、竹影与花木的材质差别。来源于 PRODUCT.md 与艺术方向的约束，以实际组件和样式为准：例如当前桌面页眉是 85px，而 index.html 的早期方向注释仍写 72px。",
+    "keyCharacteristics": [
+      "三维园景占据主要空间，目录与释文围绕它组织。",
+      "米白纸面、深墨正文、低饱和青绿与朱砂状态色。",
+      "宋体文学内容与无衬线操作信息分工清楚。",
+      "原著依据、空间解释、策划路线各有可见文字说明。",
+      "桌面侧注在手机上转换为底部阅读抽屉。"
+    ],
+    "rules": [
+      {
+        "name": "The Paper Caption Rule",
+        "body": "场景标题使用半透明纸色底面，使文字在相机角度变化时仍有稳定的阅读背景。",
+        "section": "colors"
+      },
+      {
+        "name": "The Evidence Label Rule",
+        "body": "使用文字明确标注原著依据、空间解释与策划路线；颜色不能代替这些区别。",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading Voice Rule",
+        "body": "文学标题与叙述用宋体，操作信息用中文无衬线；新页面继续使用设备字体回退，不以远程字体建立运行依赖。",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "**Do** 让纸面目录与释文辅助园景，保持连续、可检索的阅读顺序。",
+      "**Do** 以明确文字区分文学依据、空间解释与策划路线。",
+      "**Do** 保留宋体文学内容、无衬线操作文字和本地设备字体回退。",
+      "**Do** 在变化的三维背景上给标题稳定的纸色阅读底面。",
+      "**Do** 为交互保留可见键盘焦点，并尊重减少动态设置。"
+    ],
+    "donts": [
+      "**Don't** 把全局园林布局、建筑尺寸或相机路线描述成唯一考据复原。",
+      "**Don't** 在内容标题上方增加重复的类别眉题。",
+      "**Don't** 把常驻目录条目扩展为重阴影的大卡片阵列。",
+      "**Don't** 把局部极小字号、低对比辅助文字或搜索焦点抑制当成可复用标准。",
+      "**Don't** 引入运行时远程字体、图标字体或无来源的外部图像依赖。"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "antipattern": "layout-transition",
+    "name": "Layout property animation",
+    "description": "Animating width, height, padding, or margin causes layout thrash and janky performance. Use transform and opacity instead, or grid-template-rows for height animations.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "D:\\Users\\Lenovo\\Desktop\\大观园\\src\\styles\\garden.css",
+    "line": 2,
+    "snippet": "transition: width"
+  }
+]
