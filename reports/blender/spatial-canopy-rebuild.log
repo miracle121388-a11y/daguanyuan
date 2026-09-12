@@ -1,0 +1,277 @@
+
+> daguanyuan-rumeng@1.0.0 textures:bake
+> node scripts/pipeline.mjs canopy
+
+island_tree_01_leaves_alpha_1k.png 57438
+island_tree_01_leaves_diff_1k.png 1638916
+12:44:13 | INFO: Data are loaded, start creating Blender stuff
+12:44:13 | INFO: Blender create Mesh node island_trees_01_blockout_cleaned
+12:44:14 | INFO: glTF import finished in 1.62s
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Fra:1 Mem:218.48M (Peak 218.48M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Soft morning sun
+Fra:1 Mem:218.48M (Peak 218.48M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | island_tree_01_LOD0
+Fra:1 Mem:422.03M (Peak 458.63M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:422.02M (Peak 458.63M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_nor_gl
+Fra:1 Mem:422.02M (Peak 458.63M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_diff
+Fra:1 Mem:422.02M (Peak 458.63M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_nor_gl
+Fra:1 Mem:426.02M (Peak 458.63M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_nor_gl
+Fra:1 Mem:430.02M (Peak 458.63M) | Time:00:00.29 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_rough
+Fra:1 Mem:457.61M (Peak 474.06M) | Time:00:00.31 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:457.61M (Peak 474.06M) | Time:00:00.31 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:457.61M (Peak 474.06M) | Time:00:00.31 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:457.61M (Peak 474.06M) | Time:00:00.31 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:457.70M (Peak 474.06M) | Time:00:00.32 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:457.70M (Peak 474.06M) | Time:00:00.32 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:457.70M (Peak 474.06M) | Time:00:00.32 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:457.70M (Peak 474.06M) | Time:00:00.32 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:457.70M (Peak 474.06M) | Time:00:00.32 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:457.70M (Peak 474.06M) | Time:00:00.32 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:457.70M (Peak 474.06M) | Time:00:00.32 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:457.70M (Peak 474.06M) | Time:00:00.32 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:457.70M (Peak 474.06M) | Time:00:00.32 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:01.35 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:01.35 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.41 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.41 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.41 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.41 | Mem:246.17M, Peak:246.17M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.48 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.48 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.51 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.51 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.51 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.51 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:760.82M (Peak 764.82M) | Time:00:01.51 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_alpha_1k.png
+Fra:1 Mem:760.82M (Peak 764.82M) | Time:00:01.51 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_diff_1k.png
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.61M, Peak:367.69M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.54 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Sample 0/24
+Fra:1 Mem:790.10M (Peak 790.10M) | Time:00:01.59 | Remaining:00:01.13 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 1/24
+Fra:1 Mem:798.10M (Peak 810.11M) | Time:00:02.99 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 24/24
+Fra:1 Mem:798.10M (Peak 810.11M) | Time:00:02.99 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Finished
+Saved: 'D:\Users\Lenovo\Desktop\大观园\public\textures\vegetation\canopy-render.next.png'
+Time: 00:03.16 (Saving: 00:00.13)
+
+CANOPY RENDERED canopy-render
+Fra:1 Mem:299.80M (Peak 299.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Soft morning sun
+Fra:1 Mem:299.80M (Peak 299.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | island_tree_01_LOD0
+Fra:1 Mem:422.03M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:422.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_nor_gl
+Fra:1 Mem:426.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_diff
+Fra:1 Mem:430.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_rough
+Fra:1 Mem:434.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_nor_gl
+Fra:1 Mem:438.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_rough
+Fra:1 Mem:457.61M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:457.61M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:457.61M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:457.61M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:457.70M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:457.70M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:457.70M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:457.70M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:457.70M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:457.70M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:457.70M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:457.70M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:457.70M (Peak 478.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:01.06 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:01.06 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.11 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.11 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.11 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.12 | Mem:246.17M, Peak:246.17M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.17 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.17 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.20 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.20 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.20 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.20 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:760.82M (Peak 764.82M) | Time:00:01.20 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_alpha_1k.png
+Fra:1 Mem:762.82M (Peak 764.82M) | Time:00:01.20 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_diff_1k.png
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.61M, Peak:367.69M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.23 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Sample 0/24
+Fra:1 Mem:790.10M (Peak 790.10M) | Time:00:01.27 | Remaining:00:01.00 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 1/24
+Fra:1 Mem:798.11M (Peak 810.11M) | Time:00:02.54 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 24/24
+Fra:1 Mem:798.11M (Peak 810.11M) | Time:00:02.54 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Finished
+Saved: 'D:\Users\Lenovo\Desktop\大观园\public\textures\vegetation\canopy-east.next.png'
+Time: 00:02.58 (Saving: 00:00.02)
+
+CANOPY RENDERED canopy-east
+Fra:1 Mem:299.80M (Peak 299.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | island_tree_01_LOD0
+Fra:1 Mem:299.80M (Peak 299.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Soft morning sun
+Fra:1 Mem:422.03M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:422.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_diff
+Fra:1 Mem:422.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_nor_gl
+Fra:1 Mem:430.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_rough
+Fra:1 Mem:430.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_rough
+Fra:1 Mem:438.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_nor_gl
+Fra:1 Mem:442.03M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_rough
+Fra:1 Mem:457.61M (Peak 478.08M) | Time:00:00.08 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:457.61M (Peak 478.08M) | Time:00:00.08 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:457.61M (Peak 478.08M) | Time:00:00.08 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:457.61M (Peak 478.08M) | Time:00:00.08 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:457.70M (Peak 478.08M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:457.70M (Peak 478.08M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:457.70M (Peak 478.08M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:457.70M (Peak 478.08M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:457.70M (Peak 478.08M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:457.70M (Peak 478.08M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:457.70M (Peak 478.08M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:457.70M (Peak 478.08M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:457.70M (Peak 478.08M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:00.96 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:00.96 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.01 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.01 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.01 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.01 | Mem:246.17M, Peak:246.17M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.08 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.08 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.10 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.10 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.10 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.10 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:760.82M (Peak 764.82M) | Time:00:01.10 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_alpha_1k.png
+Fra:1 Mem:762.82M (Peak 764.82M) | Time:00:01.10 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_diff_1k.png
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.61M, Peak:367.69M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.12 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Sample 0/24
+Fra:1 Mem:790.10M (Peak 790.10M) | Time:00:01.16 | Remaining:00:00.81 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 1/24
+Fra:1 Mem:798.11M (Peak 810.11M) | Time:00:02.35 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 24/24
+Fra:1 Mem:798.11M (Peak 810.11M) | Time:00:02.35 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Finished
+Saved: 'D:\Users\Lenovo\Desktop\大观园\public\textures\vegetation\canopy-back.next.png'
+Time: 00:02.40 (Saving: 00:00.02)
+
+CANOPY RENDERED canopy-back
+Fra:1 Mem:299.80M (Peak 299.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | island_tree_01_LOD0
+Fra:1 Mem:299.80M (Peak 299.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Soft morning sun
+Fra:1 Mem:422.03M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:422.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_nor_gl
+Fra:1 Mem:422.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_diff
+Fra:1 Mem:426.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_nor_gl
+Fra:1 Mem:430.02M (Peak 458.63M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_rough
+Fra:1 Mem:457.61M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:457.61M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:457.61M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:457.61M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:457.70M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:457.70M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:457.70M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:457.70M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:457.70M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:457.70M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:457.70M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:457.70M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:457.70M (Peak 470.07M) | Time:00:00.09 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:01.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:01.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.11 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.12 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.12 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.12 | Mem:246.17M, Peak:246.17M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.17 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.17 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.19 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.19 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.19 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.19 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:760.82M (Peak 764.82M) | Time:00:01.19 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_alpha_1k.png
+Fra:1 Mem:762.82M (Peak 764.82M) | Time:00:01.19 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_diff_1k.png
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.61M, Peak:367.69M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.21 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Sample 0/24
+Fra:1 Mem:790.10M (Peak 790.10M) | Time:00:01.25 | Remaining:00:00.88 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 1/24
+Fra:1 Mem:798.11M (Peak 810.11M) | Time:00:02.62 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 24/24
+Fra:1 Mem:798.11M (Peak 810.11M) | Time:00:02.62 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Finished
+Saved: 'D:\Users\Lenovo\Desktop\大观园\public\textures\vegetation\canopy-west.next.png'
+Time: 00:02.65 (Saving: 00:00.02)
+
+CANOPY RENDERED canopy-west
+Fra:1 Mem:299.80M (Peak 299.80M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | island_tree_01_LOD0
+Fra:1 Mem:302.52M (Peak 302.52M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Soft morning sun
+Fra:1 Mem:422.03M (Peak 458.64M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:422.02M (Peak 458.64M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_nor_gl
+Fra:1 Mem:426.02M (Peak 458.64M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_diff
+Fra:1 Mem:426.02M (Peak 458.64M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_nor_gl
+Fra:1 Mem:434.02M (Peak 458.64M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_diff-island_tree_01_leaves_alpha
+Fra:1 Mem:438.03M (Peak 458.64M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_diff
+Fra:1 Mem:457.61M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:457.61M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:457.61M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:457.61M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:457.70M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:457.70M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:457.70M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:457.70M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:457.70M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:457.70M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:457.70M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:457.70M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:457.70M (Peak 466.06M) | Time:00:00.07 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:00.97 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:549.22M (Peak 549.22M) | Time:00:00.97 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.02 | Mem:36.00M, Peak:36.00M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.03 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.03 | Mem:197.36M, Peak:197.36M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.03 | Mem:246.17M, Peak:246.17M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.09 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:710.57M (Peak 710.57M) | Time:00:01.09 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.11 | Mem:307.36M, Peak:356.17M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.11 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.11 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:764.82M (Peak 764.82M) | Time:00:01.11 | Mem:361.61M, Peak:361.61M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:760.82M (Peak 764.82M) | Time:00:01.11 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_alpha_1k.png
+Fra:1 Mem:762.82M (Peak 764.82M) | Time:00:01.11 | Mem:357.61M, Peak:361.61M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_diff_1k.png
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.61M, Peak:367.61M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.61M, Peak:367.69M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:770.82M (Peak 770.82M) | Time:00:01.14 | Mem:367.69M, Peak:367.69M | Scene, ViewLayer | Sample 0/24
+Fra:1 Mem:790.10M (Peak 790.10M) | Time:00:01.19 | Remaining:00:01.18 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 1/24
+Fra:1 Mem:798.11M (Peak 810.11M) | Time:00:02.71 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Sample 24/24
+Fra:1 Mem:798.11M (Peak 810.11M) | Time:00:02.71 | Mem:386.70M, Peak:386.70M | Scene, ViewLayer | Finished
+Saved: 'D:\Users\Lenovo\Desktop\大观园\public\textures\vegetation\canopy-top.next.png'
+Time: 00:02.75 (Saving: 00:00.02)
+
+CANOPY RENDERED canopy-top
+
+Blender quit

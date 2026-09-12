@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported darkwood_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "darkwood_diff",
+  "sourcePixelSha256": "382974787d79560b74ae44b3798ee43667988f480abd6fe29ee657923cb03b1c",
+  "sha256": "7635a6e32c13f53d1b16f8062f0cd6579ebc48a03f60c1f1beb275143a9c2a26",
+  "prompt": "Blender-exported darkwood_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

@@ -1,0 +1,112 @@
+{
+  "beforeMaster": "861892a5e7eaa1c260b5c2fa384df369a174c0819d4e3c4a4f98f27f65dbd8a6",
+  "afterMaster": "7edc4f04835f6ee82ee408f85fcf358130eceda5ed91aea34bff9a6e0c4713d3",
+  "preservedExistingPlantTransforms": 11196,
+  "retainedObjectIdentities": 14727,
+  "protectedManualObjects": 0,
+  "changed": [
+    {
+      "place": "xiaoxiangguan",
+      "removed": [
+        "xiaoxiangguan_focal_bamboo.001",
+        "xiaoxiangguan_focal_bark.001",
+        "xiaoxiangguan_focal_botanical_bamboo.001",
+        "xiaoxiangguan_focal_botanical_banana.001",
+        "xiaoxiangguan_focal_botanical_litter.001",
+        "xiaoxiangguan_focal_botanical_petal.001",
+        "xiaoxiangguan_focal_botanical_stem.001",
+        "xiaoxiangguan_focal_leaf.001",
+        "xiaoxiangguan_focal_leafdark.001"
+      ],
+      "newMeshes": [
+        "xiaoxiangguan_focal_bark",
+        "xiaoxiangguan_focal_botanical_petal",
+        "xiaoxiangguan_focal_botanical_bamboo",
+        "xiaoxiangguan_focal_botanical_stem",
+        "xiaoxiangguan_focal_botanical_banana",
+        "xiaoxiangguan_focal_bamboo",
+        "xiaoxiangguan_focal_leaf",
+        "xiaoxiangguan_focal_leafdark",
+        "xiaoxiangguan_focal_botanical_litter"
+      ]
+    },
+    {
+      "place": "yihongyuan",
+      "removed": [
+        "yihongyuan_focal_bamboo.001",
+        "yihongyuan_focal_bark.001",
+        "yihongyuan_focal_botanical_bamboo.001",
+        "yihongyuan_focal_botanical_banana.001",
+        "yihongyuan_focal_botanical_litter.001",
+        "yihongyuan_focal_botanical_petal.001",
+        "yihongyuan_focal_botanical_stem.001",
+        "yihongyuan_focal_leaf.001",
+        "yihongyuan_focal_leafdark.001",
+        "yihongyuan_focal_moss.001"
+      ],
+      "newMeshes": [
+        "yihongyuan_focal_bark",
+        "yihongyuan_focal_botanical_petal",
+        "yihongyuan_focal_botanical_bamboo",
+        "yihongyuan_focal_botanical_stem",
+        "yihongyuan_focal_botanical_banana",
+        "yihongyuan_focal_bamboo",
+        "yihongyuan_focal_moss",
+        "yihongyuan_focal_leafdark",
+        "yihongyuan_focal_leaf",
+        "yihongyuan_focal_botanical_litter"
+      ]
+    },
+    {
+      "place": "hengwuyuan",
+      "removed": [
+        "hengwuyuan_focal_bamboo.001",
+        "hengwuyuan_focal_bark.001",
+        "hengwuyuan_focal_botanical_bamboo.001",
+        "hengwuyuan_focal_botanical_litter.001",
+        "hengwuyuan_focal_botanical_stem",
+        "hengwuyuan_focal_creamflower.001",
+        "hengwuyuan_focal_leaf.001",
+        "hengwuyuan_focal_leafdark.001",
+        "hengwuyuan_focal_moss.001"
+      ],
+      "newMeshes": [
+        "hengwuyuan_focal_leaf",
+        "hengwuyuan_focal_bamboo",
+        "hengwuyuan_focal_leafdark",
+        "hengwuyuan_focal_creamflower",
+        "hengwuyuan_focal_bark",
+        "hengwuyuan_focal_moss",
+        "hengwuyuan_focal_botanical_stem.001",
+        "hengwuyuan_focal_botanical_bamboo",
+        "hengwuyuan_focal_botanical_litter"
+      ]
+    },
+    {
+      "place": "qiushuangzhai",
+      "removed": [
+        "qiushuangzhai_focal_bamboo.001",
+        "qiushuangzhai_focal_bark.001",
+        "qiushuangzhai_focal_botanical_bamboo.001",
+        "qiushuangzhai_focal_botanical_litter.001",
+        "qiushuangzhai_focal_botanical_stem",
+        "qiushuangzhai_focal_creamflower.001",
+        "qiushuangzhai_focal_leaf.001",
+        "qiushuangzhai_focal_leafdark.001",
+        "qiushuangzhai_focal_moss.001"
+      ],
+      "newMeshes": [
+        "qiushuangzhai_focal_bamboo",
+        "qiushuangzhai_focal_leafdark",
+        "qiushuangzhai_focal_creamflower",
+        "qiushuangzhai_focal_moss",
+        "qiushuangzhai_focal_bark",
+        "qiushuangzhai_focal_leaf",
+        "qiushuangzhai_focal_botanical_stem.001",
+        "qiushuangzhai_focal_botanical_bamboo",
+        "qiushuangzhai_focal_botanical_litter"
+      ]
+    }
+  ],
+  "scope": "Botanical meshes and connected planted beds only; existing architecture, anchor IDs, water and road coordinates preserved."
+}

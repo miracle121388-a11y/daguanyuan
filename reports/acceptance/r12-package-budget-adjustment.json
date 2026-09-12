@@ -1,0 +1,8 @@
+{
+  "failedPackage": ".deploy/reference-20260912-102257-542614",
+  "failedBytes": 53263457,
+  "limitBytes": 52428800,
+  "finalPackage": ".deploy/reference-20260912-102643-070479",
+  "finalBytes": 52217390,
+  "method": "Keep a single precompressed Brotli copy; serve gzip fallback on demand with an8MiB bounded cache. Image and geometry delivery quality is unchanged. Actual HTTP encoding tests pending."
+}

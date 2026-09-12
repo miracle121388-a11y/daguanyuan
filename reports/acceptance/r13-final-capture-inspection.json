@@ -1,0 +1,160 @@
+{
+  "at": "2026-09-12T15:13:27.297153+00:00",
+  "revision": "spatial-garden-20260912-r13",
+  "scope": "All17 final web images opened once to confirm named state, valid dimensions and intact loaded content. No additional parent defect hunt after final confirmation.",
+  "captures": [
+    {
+      "file": ".impeccable/review/desktop.png",
+      "archive": ".impeccable/review/r13-final/desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "0efde7d0b9c16ccff81db8f7719c3f2cdff41d72eee543a08cf4dc30e84a8d2c",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/plan.png",
+      "archive": ".impeccable/review/r13-final/plan.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e368935ed091f77c1bd18975fccef339e18f1962d877a0a955a23f17d14cca08",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/courtyard.png",
+      "archive": ".impeccable/review/r13-final/courtyard.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "6c4f851fb1c9c3a490d484cce619fd7f8725c7ee83d0c4d5243ec15473db57ff",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/interior.png",
+      "archive": ".impeccable/review/r13-final/interior.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "c779a31a392bde83fd9f51d9445822937bd474a814fd92fad07c2eb9b48984fb",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/cutaway.png",
+      "archive": ".impeccable/review/r13-final/cutaway.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ea60c012f07c4a3fa7a10b1aa792284f90854a647beaf1bd85aab61ed25d0d7e",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/night.png",
+      "archive": ".impeccable/review/r13-final/night.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "2c5d40d6b3086468198ba61b889fd88667de10f1a4dfe28ed839a64f5dbb3b69",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/central-ensemble.png",
+      "archive": ".impeccable/review/r13-final/central-ensemble.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "0324b65b5524a178478ac0803799d9182aa57f4f35cf698d2a86d73c8feb8256",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/yihongyuan.png",
+      "archive": ".impeccable/review/r13-final/yihongyuan.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "8143437594d9ebd1e11ad2af3bc7f4759590573f46e5b1a3f27f8c307b79d30e",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/hengwuyuan.png",
+      "archive": ".impeccable/review/r13-final/hengwuyuan.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "4107d9398b29303739ada18228023092c78d219442483ffc58227a5abdd98608",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/qiushuangzhai.png",
+      "archive": ".impeccable/review/r13-final/qiushuangzhai.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "8e869476c03e861877ebfbe77161ecb76894db609df79ad02925acae7b18b95d",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/character.png",
+      "archive": ".impeccable/review/r13-final/character.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "790b5ee93380025d0e3b01f14b340f314413e0f5925e8ee4b6aa717d5ed8fece",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/event.png",
+      "archive": ".impeccable/review/r13-final/event.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e6c010d6664458ba740c7598f4fab4345e63b35b460e889179080584f26083ac",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/user-1266.png",
+      "archive": ".impeccable/review/r13-final/user-1266.png",
+      "width": 1266,
+      "height": 712,
+      "sha256": "b6dafdedc0febd690bd2e60c43c499730a9b299dc276a5b19cfe959ad110aa9e",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/mobile.png",
+      "archive": ".impeccable/review/r13-final/mobile.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "6d4f154a2febcfdb3d5614619821deb0dbb884975c057938163c60f82834e4a7",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/mobile-courtyard.png",
+      "archive": ".impeccable/review/r13-final/mobile-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "c966d24fd4baed62780a968c42220888541a5ff0c67c9424b10b4a8aabf417a1",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/mobile-whole-courtyard.png",
+      "archive": ".impeccable/review/r13-final/mobile-whole-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "ad644685c893599deafe2379a03976cc42c5336499172f5aedf2df5b311bb6d7",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/narrow.png",
+      "archive": ".impeccable/review/r13-final/narrow.png",
+      "width": 320,
+      "height": 740,
+      "sha256": "9bbe58accf7ddaaf956a28a2dc5fd10f92b65c3fdee7b9ccb7b2563bf32a60b0",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    }
+  ]
+}

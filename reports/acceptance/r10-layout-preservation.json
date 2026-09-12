@@ -1,0 +1,12 @@
+{
+  "revision": "spatial-garden-20260912-r10",
+  "checkpoint": ".checkpoints/before-r10-20260912-032609",
+  "checks": {
+    "places": true,
+    "pathNodes": true,
+    "pathEdges": true,
+    "lake": true
+  },
+  "passed": true,
+  "scope": "Interpretive coordinates and entrance/hotspot/camera definitions unchanged. This does not establish a uniquely historical map."
+}

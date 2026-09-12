@@ -1,0 +1,23 @@
+{
+  "index.html": {
+    "file": "assets/index-CYJgpmF2.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/scene/GardenScene.tsx"
+    ],
+    "css": [
+      "assets/index-B-UJwfeC.css"
+    ]
+  },
+  "src/scene/GardenScene.tsx": {
+    "file": "assets/GardenScene-BlfVn5Mo.js",
+    "name": "GardenScene",
+    "src": "src/scene/GardenScene.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  }
+}

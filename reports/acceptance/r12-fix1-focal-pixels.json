@@ -1,0 +1,653 @@
+{
+  "at": "2026-09-12T12:44:49.260440+00:00",
+  "revision": "spatial-garden-20260912-r12-fix1",
+  "method": "Actual delivered focal leaf/petal/stem/litter maps retain source RGB variation and UVs in high and mobile partitions; no color-only substitute. Geometry and artistic quality require separate checks.",
+  "checks": 28,
+  "pass": true,
+  "rows": [
+    {
+      "tier": "places",
+      "place": "xiaoxiangguan",
+      "role": "botanical_bamboo",
+      "rgbMean": [
+        63.39654541015625,
+        79.37258911132812,
+        38.451202392578125
+      ],
+      "sourceMean": [
+        63.446441650390625,
+        79.38092041015625,
+        38.202972412109375
+      ],
+      "meanChannelError": 0.24822998046875,
+      "rgbStddev": [
+        7.28383405591384,
+        6.754189914923484,
+        4.452281898758198
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "xiaoxiangguan",
+      "role": "botanical_banana",
+      "rgbMean": [
+        68.56499481201172,
+        84.35425567626953,
+        36.71178436279297
+      ],
+      "sourceMean": [
+        68.50641632080078,
+        84.42866516113281,
+        36.76177978515625
+      ],
+      "meanChannelError": 0.07440948486328125,
+      "rgbStddev": [
+        7.699464650157239,
+        6.725161506491083,
+        5.926208088276295
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "xiaoxiangguan",
+      "role": "botanical_litter",
+      "rgbMean": [
+        96.01702880859375,
+        80.57952880859375,
+        50.89202880859375
+      ],
+      "sourceMean": [
+        96.5927734375,
+        80.5927734375,
+        51.02691650390625
+      ],
+      "meanChannelError": 0.57574462890625,
+      "rgbStddev": [
+        7.589361229203294,
+        7.001169919858299,
+        6.31538068051286
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "xiaoxiangguan",
+      "role": "botanical_petal",
+      "rgbMean": [
+        211.574951171875,
+        164.574951171875,
+        156.512451171875
+      ],
+      "sourceMean": [
+        211.5716552734375,
+        164.5716552734375,
+        156.0074462890625
+      ],
+      "meanChannelError": 0.5050048828125,
+      "rgbStddev": [
+        7.3677382480749865,
+        7.3677382480749865,
+        6.538495252245079
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "xiaoxiangguan",
+      "role": "botanical_stem",
+      "rgbMean": [
+        76.42730712890625,
+        84.85772705078125,
+        43.590911865234375
+      ],
+      "sourceMean": [
+        76.47561645507812,
+        84.48214721679688,
+        43.445648193359375
+      ],
+      "meanChannelError": 0.375579833984375,
+      "rgbStddev": [
+        6.1436231488373085,
+        6.532980303820615,
+        4.5587834470541155
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "yihongyuan",
+      "role": "botanical_bamboo",
+      "rgbMean": [
+        63.39654541015625,
+        79.37258911132812,
+        38.451202392578125
+      ],
+      "sourceMean": [
+        63.446441650390625,
+        79.38092041015625,
+        38.202972412109375
+      ],
+      "meanChannelError": 0.24822998046875,
+      "rgbStddev": [
+        7.28383405591384,
+        6.754189914923484,
+        4.452281898758198
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "yihongyuan",
+      "role": "botanical_banana",
+      "rgbMean": [
+        68.56499481201172,
+        84.35425567626953,
+        36.71178436279297
+      ],
+      "sourceMean": [
+        68.50641632080078,
+        84.42866516113281,
+        36.76177978515625
+      ],
+      "meanChannelError": 0.07440948486328125,
+      "rgbStddev": [
+        7.699464650157239,
+        6.725161506491083,
+        5.926208088276295
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "yihongyuan",
+      "role": "botanical_litter",
+      "rgbMean": [
+        96.01702880859375,
+        80.57952880859375,
+        50.89202880859375
+      ],
+      "sourceMean": [
+        96.5927734375,
+        80.5927734375,
+        51.02691650390625
+      ],
+      "meanChannelError": 0.57574462890625,
+      "rgbStddev": [
+        7.589361229203294,
+        7.001169919858299,
+        6.31538068051286
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "yihongyuan",
+      "role": "botanical_petal",
+      "rgbMean": [
+        211.574951171875,
+        164.574951171875,
+        156.512451171875
+      ],
+      "sourceMean": [
+        211.5716552734375,
+        164.5716552734375,
+        156.0074462890625
+      ],
+      "meanChannelError": 0.5050048828125,
+      "rgbStddev": [
+        7.3677382480749865,
+        7.3677382480749865,
+        6.538495252245079
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "yihongyuan",
+      "role": "botanical_stem",
+      "rgbMean": [
+        76.42730712890625,
+        84.85772705078125,
+        43.590911865234375
+      ],
+      "sourceMean": [
+        76.47561645507812,
+        84.48214721679688,
+        43.445648193359375
+      ],
+      "meanChannelError": 0.375579833984375,
+      "rgbStddev": [
+        6.1436231488373085,
+        6.532980303820615,
+        4.5587834470541155
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "hengwuyuan",
+      "role": "botanical_bamboo",
+      "rgbMean": [
+        63.39654541015625,
+        79.37258911132812,
+        38.451202392578125
+      ],
+      "sourceMean": [
+        63.446441650390625,
+        79.38092041015625,
+        38.202972412109375
+      ],
+      "meanChannelError": 0.24822998046875,
+      "rgbStddev": [
+        7.28383405591384,
+        6.754189914923484,
+        4.452281898758198
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "hengwuyuan",
+      "role": "botanical_litter",
+      "rgbMean": [
+        96.01702880859375,
+        80.57952880859375,
+        50.89202880859375
+      ],
+      "sourceMean": [
+        96.5927734375,
+        80.5927734375,
+        51.02691650390625
+      ],
+      "meanChannelError": 0.57574462890625,
+      "rgbStddev": [
+        7.589361229203294,
+        7.001169919858299,
+        6.31538068051286
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "qiushuangzhai",
+      "role": "botanical_bamboo",
+      "rgbMean": [
+        63.39654541015625,
+        79.37258911132812,
+        38.451202392578125
+      ],
+      "sourceMean": [
+        63.446441650390625,
+        79.38092041015625,
+        38.202972412109375
+      ],
+      "meanChannelError": 0.24822998046875,
+      "rgbStddev": [
+        7.28383405591384,
+        6.754189914923484,
+        4.452281898758198
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places",
+      "place": "qiushuangzhai",
+      "role": "botanical_litter",
+      "rgbMean": [
+        96.01702880859375,
+        80.57952880859375,
+        50.89202880859375
+      ],
+      "sourceMean": [
+        96.5927734375,
+        80.5927734375,
+        51.02691650390625
+      ],
+      "meanChannelError": 0.57574462890625,
+      "rgbStddev": [
+        7.589361229203294,
+        7.001169919858299,
+        6.31538068051286
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "xiaoxiangguan",
+      "role": "botanical_bamboo",
+      "rgbMean": [
+        63.39654541015625,
+        79.37258911132812,
+        38.451202392578125
+      ],
+      "sourceMean": [
+        63.446441650390625,
+        79.38092041015625,
+        38.202972412109375
+      ],
+      "meanChannelError": 0.24822998046875,
+      "rgbStddev": [
+        7.28383405591384,
+        6.754189914923484,
+        4.452281898758198
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "xiaoxiangguan",
+      "role": "botanical_banana",
+      "rgbMean": [
+        68.56499481201172,
+        84.35425567626953,
+        36.71178436279297
+      ],
+      "sourceMean": [
+        68.50641632080078,
+        84.42866516113281,
+        36.76177978515625
+      ],
+      "meanChannelError": 0.07440948486328125,
+      "rgbStddev": [
+        7.699464650157239,
+        6.725161506491083,
+        5.926208088276295
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "xiaoxiangguan",
+      "role": "botanical_litter",
+      "rgbMean": [
+        96.01702880859375,
+        80.57952880859375,
+        50.89202880859375
+      ],
+      "sourceMean": [
+        96.5927734375,
+        80.5927734375,
+        51.02691650390625
+      ],
+      "meanChannelError": 0.57574462890625,
+      "rgbStddev": [
+        7.589361229203294,
+        7.001169919858299,
+        6.31538068051286
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "xiaoxiangguan",
+      "role": "botanical_petal",
+      "rgbMean": [
+        211.574951171875,
+        164.574951171875,
+        156.512451171875
+      ],
+      "sourceMean": [
+        211.5716552734375,
+        164.5716552734375,
+        156.0074462890625
+      ],
+      "meanChannelError": 0.5050048828125,
+      "rgbStddev": [
+        7.3677382480749865,
+        7.3677382480749865,
+        6.538495252245079
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "xiaoxiangguan",
+      "role": "botanical_stem",
+      "rgbMean": [
+        76.42730712890625,
+        84.85772705078125,
+        43.590911865234375
+      ],
+      "sourceMean": [
+        76.47561645507812,
+        84.48214721679688,
+        43.445648193359375
+      ],
+      "meanChannelError": 0.375579833984375,
+      "rgbStddev": [
+        6.1436231488373085,
+        6.532980303820615,
+        4.5587834470541155
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "yihongyuan",
+      "role": "botanical_bamboo",
+      "rgbMean": [
+        63.39654541015625,
+        79.37258911132812,
+        38.451202392578125
+      ],
+      "sourceMean": [
+        63.446441650390625,
+        79.38092041015625,
+        38.202972412109375
+      ],
+      "meanChannelError": 0.24822998046875,
+      "rgbStddev": [
+        7.28383405591384,
+        6.754189914923484,
+        4.452281898758198
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "yihongyuan",
+      "role": "botanical_banana",
+      "rgbMean": [
+        68.56499481201172,
+        84.35425567626953,
+        36.71178436279297
+      ],
+      "sourceMean": [
+        68.50641632080078,
+        84.42866516113281,
+        36.76177978515625
+      ],
+      "meanChannelError": 0.07440948486328125,
+      "rgbStddev": [
+        7.699464650157239,
+        6.725161506491083,
+        5.926208088276295
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "yihongyuan",
+      "role": "botanical_litter",
+      "rgbMean": [
+        96.01702880859375,
+        80.57952880859375,
+        50.89202880859375
+      ],
+      "sourceMean": [
+        96.5927734375,
+        80.5927734375,
+        51.02691650390625
+      ],
+      "meanChannelError": 0.57574462890625,
+      "rgbStddev": [
+        7.589361229203294,
+        7.001169919858299,
+        6.31538068051286
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "yihongyuan",
+      "role": "botanical_petal",
+      "rgbMean": [
+        211.574951171875,
+        164.574951171875,
+        156.512451171875
+      ],
+      "sourceMean": [
+        211.5716552734375,
+        164.5716552734375,
+        156.0074462890625
+      ],
+      "meanChannelError": 0.5050048828125,
+      "rgbStddev": [
+        7.3677382480749865,
+        7.3677382480749865,
+        6.538495252245079
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "yihongyuan",
+      "role": "botanical_stem",
+      "rgbMean": [
+        76.42730712890625,
+        84.85772705078125,
+        43.590911865234375
+      ],
+      "sourceMean": [
+        76.47561645507812,
+        84.48214721679688,
+        43.445648193359375
+      ],
+      "meanChannelError": 0.375579833984375,
+      "rgbStddev": [
+        6.1436231488373085,
+        6.532980303820615,
+        4.5587834470541155
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "hengwuyuan",
+      "role": "botanical_bamboo",
+      "rgbMean": [
+        63.39654541015625,
+        79.37258911132812,
+        38.451202392578125
+      ],
+      "sourceMean": [
+        63.446441650390625,
+        79.38092041015625,
+        38.202972412109375
+      ],
+      "meanChannelError": 0.24822998046875,
+      "rgbStddev": [
+        7.28383405591384,
+        6.754189914923484,
+        4.452281898758198
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "hengwuyuan",
+      "role": "botanical_litter",
+      "rgbMean": [
+        96.01702880859375,
+        80.57952880859375,
+        50.89202880859375
+      ],
+      "sourceMean": [
+        96.5927734375,
+        80.5927734375,
+        51.02691650390625
+      ],
+      "meanChannelError": 0.57574462890625,
+      "rgbStddev": [
+        7.589361229203294,
+        7.001169919858299,
+        6.31538068051286
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "qiushuangzhai",
+      "role": "botanical_bamboo",
+      "rgbMean": [
+        63.39654541015625,
+        79.37258911132812,
+        38.451202392578125
+      ],
+      "sourceMean": [
+        63.446441650390625,
+        79.38092041015625,
+        38.202972412109375
+      ],
+      "meanChannelError": 0.24822998046875,
+      "rgbStddev": [
+        7.28383405591384,
+        6.754189914923484,
+        4.452281898758198
+      ],
+      "uvPreserved": true,
+      "pass": true
+    },
+    {
+      "tier": "places-low",
+      "place": "qiushuangzhai",
+      "role": "botanical_litter",
+      "rgbMean": [
+        96.01702880859375,
+        80.57952880859375,
+        50.89202880859375
+      ],
+      "sourceMean": [
+        96.5927734375,
+        80.5927734375,
+        51.02691650390625
+      ],
+      "meanChannelError": 0.57574462890625,
+      "rgbStddev": [
+        7.589361229203294,
+        7.001169919858299,
+        6.31538068051286
+      ],
+      "uvPreserved": true,
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+15:08:09 | INFO: Data are loaded, start creating Blender stuff
+15:08:09 | INFO: Blender create Mesh node daguanyuan_gate_screen
+15:08:09 | INFO: Blender create Mesh node Mobile_daguanyuan_gate
+15:08:09 | INFO: Blender create Mesh node Mobile_daguanyuan_gate_roof
+15:08:09 | INFO: Blender create Mesh node Mobile_qujingtongyou
+15:08:09 | INFO: Blender create Mesh node Mobile_xiaoxiangguan
+15:08:09 | INFO: Blender create Mesh node Mobile_xiaoxiangguan_roof
+15:08:09 | INFO: Blender create Mesh node xiaoxiangguan_lantern
+15:08:09 | INFO: Blender create Mesh node xiaoxiangguan_screen
+15:08:09 | INFO: Blender create Mesh node xiaoxiangguan_silk.001
+15:08:09 | INFO: Blender create Mesh node Mobile_yihongyuan
+15:08:09 | INFO: Blender create Mesh node Mobile_yihongyuan_roof
+15:08:09 | INFO: Blender create Mesh node yihongyuan_lantern
+15:08:09 | INFO: Blender create Mesh node yihongyuan_screen.001
+15:08:09 | INFO: Blender create Mesh node yihongyuan_silk.001
+15:08:09 | INFO: Blender create Mesh node hengwuyuan_lantern
+15:08:09 | INFO: Blender create Mesh node hengwuyuan_screen.001
+15:08:09 | INFO: Blender create Mesh node Mobile_hengwuyuan
+15:08:09 | INFO: Blender create Mesh node Mobile_hengwuyuan_roof
+15:08:09 | INFO: Blender create Mesh node Mobile_qiushuangzhai
+15:08:09 | INFO: Blender create Mesh node Mobile_qiushuangzhai_roof
+15:08:09 | INFO: Blender create Mesh node qiushuangzhai_lantern
+15:08:09 | INFO: Blender create Mesh node qiushuangzhai_screen
+15:08:09 | INFO: Blender create Mesh node qiushuangzhai_silk.001
+15:08:09 | INFO: Blender create Mesh node daoxiangcun_screen.001
+15:08:09 | INFO: Blender create Mesh node Mobile_daoxiangcun
+15:08:09 | INFO: Blender create Mesh node Mobile_ouxiangxie
+15:08:09 | INFO: Blender create Mesh node Mobile_ouxiangxie_roof
+15:08:09 | INFO: Blender create Mesh node ouxiangxie_screen
+15:08:09 | INFO: Blender create Mesh node dicuiting_lantern
+15:08:09 | INFO: Blender create Mesh node Mobile_dicuiting
+15:08:09 | INFO: Blender create Mesh node Mobile_dicuiting_roof
+15:08:09 | INFO: Blender create Mesh node Mobile_luxuean
+15:08:09 | INFO: Blender create Mesh node Mobile_tubishanzhuang
+15:08:09 | INFO: Blender create Mesh node Mobile_tubishanzhuang_roof
+15:08:09 | INFO: Blender create Mesh node tubishanzhuang_screen
+15:08:09 | INFO: Blender create Mesh node aojingxiguan_screen
+15:08:09 | INFO: Blender create Mesh node Mobile_aojingxiguan
+15:08:09 | INFO: Blender create Mesh node Mobile_aojingxiguan_roof
+15:08:09 | INFO: Blender create Mesh node daguanlou_lantern
+15:08:09 | INFO: Blender create Mesh node daguanlou_screen
+15:08:09 | INFO: Blender create Mesh node Mobile_daguanlou
+15:08:09 | INFO: Blender create Mesh node Mobile_daguanlou_roof
+15:08:09 | INFO: Blender create Mesh node longcuian_screen
+15:08:09 | INFO: Blender create Mesh node Mobile_longcuian
+15:08:09 | INFO: Blender create Mesh node Mobile_longcuian_roof
+15:08:09 | INFO: Blender create Mesh node Mobile_nuanxiangwu
+15:08:09 | INFO: Blender create Mesh node Mobile_nuanxiangwu_roof
+15:08:09 | INFO: Blender create Mesh node nuanxiangwu_screen
+15:08:09 | INFO: Blender create Mesh node nuanxiangwu_silk
+15:08:09 | INFO: Blender create Mesh node landscape_lantern
+15:08:09 | INFO: Blender create Mesh node Mobile_landscape
+15:08:10 | INFO: glTF import finished in 0.82s
+INFO Draco mesh compression is available, use library at D:\Users\Lenovo\Desktop\大观园\.tools\blender-4.5.9-windows-x64\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+15:08:10 | INFO: Starting glTF 2.0 export
+15:08:10 | INFO: Extracting primitive: daguanyuan_gate_screen
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: Mobile_daguanyuan_gate
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: Mobile_daguanyuan_gate_roof
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: Mobile_qujingtongyou
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: Mobile_xiaoxiangguan
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: Mobile_xiaoxiangguan_roof
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: xiaoxiangguan_lantern
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: xiaoxiangguan_screen
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: xiaoxiangguan_silk.001
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: Mobile_yihongyuan
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: Mobile_yihongyuan_roof
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: yihongyuan_lantern
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: yihongyuan_screen.001
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: yihongyuan_silk.001
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: hengwuyuan_lantern
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: hengwuyuan_screen.001
+15:08:10 | INFO: Primitives created: 1
+15:08:10 | INFO: Extracting primitive: Mobile_hengwuyuan
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_hengwuyuan_roof
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_qiushuangzhai
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_qiushuangzhai_roof
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: qiushuangzhai_lantern
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: qiushuangzhai_screen
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: qiushuangzhai_silk.001
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: daoxiangcun_screen.001
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_daoxiangcun
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_ouxiangxie
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_ouxiangxie_roof
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: ouxiangxie_screen
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: dicuiting_lantern
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_dicuiting
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_dicuiting_roof
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_luxuean
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_tubishanzhuang
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_tubishanzhuang_roof
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: tubishanzhuang_screen
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: aojingxiguan_screen
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_aojingxiguan
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_aojingxiguan_roof
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: daguanlou_lantern
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: daguanlou_screen
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_daguanlou
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_daguanlou_roof
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: longcuian_screen
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_longcuian
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_longcuian_roof
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_nuanxiangwu
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: Mobile_nuanxiangwu_roof
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: nuanxiangwu_screen
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: nuanxiangwu_silk
+15:08:11 | INFO: Primitives created: 1
+15:08:11 | INFO: Extracting primitive: landscape_lantern
+15:08:11 | INFO: Primitives created: 1
+15:08:12 | INFO: Extracting primitive: Mobile_landscape
+15:08:12 | INFO: Primitives created: 1
+15:08:12 | INFO: Finished glTF 2.0 export in 1.7223296165466309 s
+
+BAKED OVERVIEW BUDGET RECOVERY COMPLETE
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+
+Blender quit

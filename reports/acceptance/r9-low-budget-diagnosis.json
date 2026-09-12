@@ -1,0 +1,194 @@
+{
+  "r8": {
+    "totalTriangles": 252974,
+    "draws": 85,
+    "largest": [
+      {
+        "name": "Mobile_landscape_limestone",
+        "triangles": 51480,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_landscape",
+        "triangles": 48025,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_landscape_plants",
+        "triangles": 36633,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_daguanlou_roof",
+        "triangles": 26231,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_daguanlou",
+        "triangles": 15147,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_landscape_earth",
+        "triangles": 7309,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_xiaoxiangguan_plants",
+        "triangles": 4049,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_yihongyuan_roof",
+        "triangles": 3808,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_hengwuyuan_roof",
+        "triangles": 3454,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_longcuian_roof",
+        "triangles": 3033,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_xiaoxiangguan_roof",
+        "triangles": 2677,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_nuanxiangwu_roof",
+        "triangles": 2517,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_longcuian",
+        "triangles": 2454,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_xiaoxiangguan",
+        "triangles": 2267,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_yihongyuan",
+        "triangles": 2265,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_hengwuyuan",
+        "triangles": 2151,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_qiushuangzhai_roof",
+        "triangles": 2090,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_qiushuangzhai",
+        "triangles": 2015,
+        "draws": 1
+      }
+    ]
+  },
+  "r9": {
+    "totalTriangles": 340436,
+    "draws": 95,
+    "largest": [
+      {
+        "name": "Mobile_landscape_plants",
+        "triangles": 59463,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_landscape",
+        "triangles": 48230,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_daguanlou_floorwood",
+        "triangles": 43248,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_landscape_limestone",
+        "triangles": 26752,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_daguanlou_roof",
+        "triangles": 26231,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_daguanlou",
+        "triangles": 15412,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_landscape_earth",
+        "triangles": 7309,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_xiaoxiangguan_plants",
+        "triangles": 6018,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_longcuian_floorwood",
+        "triangles": 5580,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_qiushuangzhai_floorwood",
+        "triangles": 5352,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_hengwuyuan_floorwood",
+        "triangles": 4944,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_daguanyuan_gate_floorwood",
+        "triangles": 4524,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_tubishanzhuang_floorwood",
+        "triangles": 4464,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_yihongyuan_floorwood",
+        "triangles": 4320,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_aojingxiguan_floorwood",
+        "triangles": 3996,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_yihongyuan_roof",
+        "triangles": 3808,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_nuanxiangwu_floorwood",
+        "triangles": 3696,
+        "draws": 1
+      },
+      {
+        "name": "Mobile_xiaoxiangguan_floorwood",
+        "triangles": 3456,
+        "draws": 1
+      }
+    ]
+  }
+}

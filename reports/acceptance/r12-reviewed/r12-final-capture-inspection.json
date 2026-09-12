@@ -1,0 +1,220 @@
+{
+  "at": "2026-09-12T10:37:15.799393+00:00",
+  "revision": "spatial-garden-20260912-r12",
+  "all17ParentOpened": true,
+  "parentFinalConfirmationComplete": true,
+  "noFurtherParentVisualPolishing": true,
+  "captures": [
+    {
+      "file": ".impeccable/review/desktop.png",
+      "archive": ".impeccable/review/r12-final/desktop.png",
+      "sha256": "a861aeb83b66e6d18e028a83cf6179109cc51484280c91745c3f389a41b929d4",
+      "bytes": 1538616,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/plan.png",
+      "archive": ".impeccable/review/r12-final/plan.png",
+      "sha256": "4be0b0a936a76045800828ab2dbe2e40ae87aa7359b99c10d395d5a9b6f4c9f6",
+      "bytes": 1574121,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/courtyard.png",
+      "archive": ".impeccable/review/r12-final/courtyard.png",
+      "sha256": "9cfa9751254b1d27f0b64f06e27ecf96c55b63763ab555b8da13bdcc8d0c60ad",
+      "bytes": 1660923,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/interior.png",
+      "archive": ".impeccable/review/r12-final/interior.png",
+      "sha256": "42f29cbe4583bc7494e4529065f25280c2e44ce979768888b8f3da585e9d01c3",
+      "bytes": 1046001,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/cutaway.png",
+      "archive": ".impeccable/review/r12-final/cutaway.png",
+      "sha256": "e7f72c95a46dc99201a5675a93d2effb3794b6617a2356f585f67a63776763bc",
+      "bytes": 1444605,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/night.png",
+      "archive": ".impeccable/review/r12-final/night.png",
+      "sha256": "057840206f810740eeb413f40d41168af37067f2e6388cfcbc3ee3aa668df566",
+      "bytes": 1310291,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/central-ensemble.png",
+      "archive": ".impeccable/review/r12-final/central-ensemble.png",
+      "sha256": "fbae6573aa808b27be79f7404348b4456d6fa535b514bffa6c748e9b18172617",
+      "bytes": 1708106,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/yihongyuan.png",
+      "archive": ".impeccable/review/r12-final/yihongyuan.png",
+      "sha256": "ffbae7db387de7536a95dce101d04e143dcb96f55b0f616cfdad52d00ef5d30b",
+      "bytes": 1454473,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/hengwuyuan.png",
+      "archive": ".impeccable/review/r12-final/hengwuyuan.png",
+      "sha256": "e7a2868a4bfe58a5308cdbb35bdfc30587e386518f259ac173cee1d26e0af0f8",
+      "bytes": 1409501,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/qiushuangzhai.png",
+      "archive": ".impeccable/review/r12-final/qiushuangzhai.png",
+      "sha256": "bd69cb115c43630529a14a75e54cc1dbba707e00b0f59efa0e874488841da0bb",
+      "bytes": 1360649,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/character.png",
+      "archive": ".impeccable/review/r12-final/character.png",
+      "sha256": "49af2069536e42c512ce41fe9f638b2937c717ed8f51d2b63757b3f886653bd9",
+      "bytes": 1079563,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/event.png",
+      "archive": ".impeccable/review/r12-final/event.png",
+      "sha256": "f1295a0670834636fcdfc8247468ffc130a44328785fae7cc01e11f6952ceea1",
+      "bytes": 1244842,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/user-1266.png",
+      "archive": ".impeccable/review/r12-final/user-1266.png",
+      "sha256": "159f5092db12eb221613d06893f9b720479a4f9ffb466f65c558f09ae9b950a4",
+      "bytes": 1014546,
+      "dimensions": [
+        1266,
+        712
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/mobile.png",
+      "archive": ".impeccable/review/r12-final/mobile.png",
+      "sha256": "48cef647718093b37cdbabb1e045dd69b842badcab81c39447ab6ae751565262",
+      "bytes": 353305,
+      "dimensions": [
+        390,
+        844
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/mobile-courtyard.png",
+      "archive": ".impeccable/review/r12-final/mobile-courtyard.png",
+      "sha256": "ab6a5b88e09845b870dbaf4fe87d7d94f638c64eb98b1befaf5849aefb755ed9",
+      "bytes": 311814,
+      "dimensions": [
+        390,
+        844
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/mobile-whole-courtyard.png",
+      "archive": ".impeccable/review/r12-final/mobile-whole-courtyard.png",
+      "sha256": "cb503d5eb2de70f70a3e2dcb1d94cd86bc027a736e0a02c4d28eada4fcebaf77",
+      "bytes": 303530,
+      "dimensions": [
+        390,
+        844
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/narrow.png",
+      "archive": ".impeccable/review/r12-final/narrow.png",
+      "sha256": "504b4f54da715765fa43a59c8d7df681d8fa93b189a335ae94ba2f9078e0a8a6",
+      "bytes": 248816,
+      "dimensions": [
+        320,
+        740
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    }
+  ],
+  "findings": [
+    "All 17 views are nonblank and match the intended browser states; controls and source-reading content remain readable at the captured sizes.",
+    "Fine irregular water ripples and muted stone/wood roles are visible; Hengwu contains an irregular perforated rock instead of three rings.",
+    "Indoor drawer, lattice, book and reversible cutaway geometry are visible.",
+    "The landscape remains visibly model-like; broad grass courts, relatively bright bamboo, sparse mobile close landscape and flat dark night areas remain for independent full review.",
+    "Touch emulation screenshots do not establish real-phone performance or photographic reference fidelity."
+  ]
+}

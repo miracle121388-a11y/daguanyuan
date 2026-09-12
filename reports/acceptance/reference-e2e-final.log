@@ -1,0 +1,54 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:81024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:124716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:106020) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:104152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:81312) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\gallery.spec.ts:3:1 › a failed full-size reference image can be retried without leaving the viewer (5.8s)
+  ok  2 tests\e2e\gallery.spec.ts:16:1 › gallery retries a failed manifest and distinguishes spoiler-empty results (9.3s)
+  ok  3 tests\e2e\gallery.spec.ts:21:1 › 320px sources entry retains its accessible name (664ms)
+  ok  4 tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots (1.3m)
+  ok  5 tests\e2e\garden.spec.ts:19:1 › mobile bottom drawer and usable controls (7.6s)
+  ok  6 tests\e2e\garden.spec.ts:20:1 › model failure exposes retry and recovers (6.3s)
+  ok  7 tests\e2e\garden.spec.ts:21:1 › tour shows sourced stop content, travels, and arrives at the next stop (12.1s)
+  ok  8 tests\e2e\interior.spec.ts:2:1 › interior inspection lifts the roof and restores the complete courtyard (10.6s)
+  ok  9 tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard (19.9s)
+  x  10 tests\e2e\mobile.spec.ts:24:1 › 320px phone controls remain inside the viewport (2.4s)
+
+
+  1) tests\e2e\mobile.spec.ts:24:1 › 320px phone controls remain inside the viewport ───────────────
+
+    Error: UNKNOWN: unknown error, open 'D:\Users\Lenovo\Desktop\大观园\reports\browser\11-phone-320.png'
+
+      26 |  await page.getByRole('button',{name:'开始游园',exact:true}).tap();await page.getByRole('button',{name:'暂停',exact:true}).tap();
+      27 |  for(const name of ['上一站','下一站','退出导览']){const box=await page.getByRole('button',{name,exact:true}).boundingBox();expect(box!.x).toBeGreaterThanOrEqual(0);expect(box!.x+box!.width).toBeLessThanOrEqual(320);expect(box!.height).toBeGreaterThanOrEqual(44)}
+    > 28 |  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(320);await page.screenshot({path:'reports/browser/11-phone-320.png'});await context.close();
+         |                                                                                  ^
+      29 | });
+      30 |
+        at D:\Users\Lenovo\Desktop\大观园\tests\e2e\mobile.spec.ts:28:82
+
+    Error Context: test-results\mobile-320px-phone-controls-remain-inside-the-viewport\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\mobile-320px-phone-controls-remain-inside-the-viewport\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\mobile-320px-phone-controls-remain-inside-the-viewport\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\e2e\mobile.spec.ts:24:1 › 320px phone controls remain inside the viewport ────────────────
+  9 passed (2.8m)

@@ -1,0 +1,1603 @@
+{
+  "revision": "spatial-garden-20260910-r6",
+  "waterAreaM2": 9766.0,
+  "checks": [
+    {
+      "check": "Canal polygon and dry interior are valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump arrival-0 → arrival-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path arrival-0 → arrival-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings arrival-0 → arrival-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump arrival-1 → arrival-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path arrival-1 → arrival-2",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings arrival-1 → arrival-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump arrival-2 → arrival-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path arrival-2 → arrival-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings arrival-2 → arrival-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump arrival-3 → arrival-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path arrival-3 → arrival-4",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings arrival-3 → arrival-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump arrival-4 → arrival-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path arrival-4 → arrival-5",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings arrival-4 → arrival-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump arrival-5 → arrival-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path arrival-5 → arrival-6",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings arrival-5 → arrival-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump qujingtongyou → arrival-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path qujingtongyou → arrival-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings qujingtongyou → arrival-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump qinfang-0 → qinfang-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Bridge abutment qinfang-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Bridge abutment qinfang-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ceremonial-0 → ceremonial-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path ceremonial-0 → ceremonial-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings ceremonial-0 → ceremonial-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ceremonial-0 → ceremonial-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path ceremonial-0 → ceremonial-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings ceremonial-0 → ceremonial-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ceremonial-1 → daguanlou",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path ceremonial-1 → daguanlou",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings ceremonial-1 → daguanlou",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-0 → west-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-0 → west-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-0 → west-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-1 → west-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-1 → west-2",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-1 → west-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-2 → west-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-2 → west-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-2 → west-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-3 → west-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-3 → west-4",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-3 → west-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-4 → west-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-4 → west-5",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-4 → west-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-5 → west-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-5 → west-6",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-5 → west-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-6 → west-7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-6 → west-7",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-6 → west-7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-7 → west-8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-7 → west-8",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-7 → west-8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-8 → west-9",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-8 → west-9",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-8 → west-9",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-9 → west-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-9 → west-10",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-9 → west-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-10 → west-11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-10 → west-11",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-10 → west-11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-11 → west-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-11 → west-12",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-11 → west-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-12 → west-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-12 → west-13",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-12 → west-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-13 → west-14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-13 → west-14",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-13 → west-14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-14 → west-15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-14 → west-15",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-14 → west-15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-7 → daoxiangcun",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-7 → daoxiangcun",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-7 → daoxiangcun",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-9 → hengwuyuan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-9 → hengwuyuan",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-9 → hengwuyuan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-12 → longcuian",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Walkable stair slope west-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-0 → east-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-0 → east-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-0 → east-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-1 → east-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-1 → east-2",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-1 → east-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-2 → east-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-2 → east-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-2 → east-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-3 → east-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-3 → east-4",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-3 → east-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-4 → east-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-4 → east-5",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-4 → east-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-5 → east-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-5 → east-6",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-5 → east-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-6 → east-7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-6 → east-7",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-6 → east-7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-7 → east-8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-7 → east-8",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-7 → east-8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-8 → east-9",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-8 → east-9",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-8 → east-9",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-9 → east-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-9 → east-10",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-9 → east-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-10 → east-11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-10 → east-11",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-10 → east-11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-11 → east-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-11 → east-12",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-11 → east-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-12 → east-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-12 → east-13",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-12 → east-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-13 → east-14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-13 → east-14",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-13 → east-14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-14 → east-15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-14 → east-15",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-14 → east-15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-15 → east-16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-15 → east-16",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-15 → east-16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump arrival-5 → east-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path arrival-5 → east-0",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings arrival-5 → east-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-7 → qiushuangzhai",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-7 → qiushuangzhai",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-7 → qiushuangzhai",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-10 → nuanxiangwu",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-10 → nuanxiangwu",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-10 → nuanxiangwu",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump north-0 → north-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path north-0 → north-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings north-0 → north-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump north-1 → north-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path north-1 → north-2",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings north-1 → north-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump north-2 → north-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path north-2 → north-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings north-2 → north-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump north-3 → north-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path north-3 → north-4",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings north-3 → north-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump north-4 → north-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path north-4 → north-5",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings north-4 → north-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump westbridge-0 → westbridge-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Bridge abutment westbridge-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Bridge abutment westbridge-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump westapproach-0 → westapproach-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path westapproach-0 → westapproach-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings westapproach-0 → westapproach-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump westapproach-1 → westapproach-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path westapproach-1 → westapproach-2",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings westapproach-1 → westapproach-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump westapproach-2 → westapproach-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path westapproach-2 → westapproach-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings westapproach-2 → westapproach-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump inner-0 → inner-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path inner-0 → inner-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings inner-0 → inner-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump inner-1 → inner-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path inner-1 → inner-2",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings inner-1 → inner-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump inner-2 → inner-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path inner-2 → inner-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings inner-2 → inner-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump inner-3 → inner-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path inner-3 → inner-4",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings inner-3 → inner-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump dicui-0 → dicui-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path dicui-0 → dicui-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings dicui-0 → dicui-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump dicui-1 → dicui-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path dicui-1 → dicui-2",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings dicui-1 → dicui-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump dicui-2 → dicui-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Bridge abutment dicui-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-1 → dicui-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path west-1 → dicui-0",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings west-1 → dicui-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouleft-0 → ouleft-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouleft-1 → ouleft-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouleft-2 → ouleft-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouright-0 → ouright-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouright-1 → ouright-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouright-2 → ouright-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ourear-0 → ourear-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ourear-1 → ourear-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ourear-2 → ourear-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouxiangxie → ourear-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouleft-3 → ouxiangxie",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouxiangxie → ouright-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump eastshore-0 → eastshore-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path eastshore-0 → eastshore-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings eastshore-0 → eastshore-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump eastshore-1 → eastshore-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path eastshore-1 → eastshore-2",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings eastshore-1 → eastshore-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump eastshore-2 → eastshore-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path eastshore-2 → eastshore-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings eastshore-2 → eastshore-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump eastshore-3 → eastshore-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path eastshore-3 → eastshore-4",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings eastshore-3 → eastshore-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump eastshore-4 → eastshore-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path eastshore-4 → eastshore-5",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings eastshore-4 → eastshore-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump eastshore-5 → eastshore-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path eastshore-5 → eastshore-6",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings eastshore-5 → eastshore-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouright-3 → eastshore-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Walkable stair slope ouright-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ourear-3 → eastshore-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path ourear-3 → eastshore-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings ourear-3 → eastshore-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump eastshore-2 → east-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path eastshore-2 → east-13",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings eastshore-2 → east-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump moonsteps-0 → moonsteps-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Walkable stair slope moonsteps-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump moonsteps-1 → moonsteps-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Walkable stair slope moonsteps-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump moonsteps-2 → moonsteps-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Walkable stair slope moonsteps-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump moonsteps-3 → moonsteps-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Walkable stair slope moonsteps-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump moonsteps-4 → moonsteps-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Walkable stair slope moonsteps-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump moonsteps-5 → moonsteps-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Walkable stair slope moonsteps-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-16 → moonsteps-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path east-16 → moonsteps-4",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings east-16 → moonsteps-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump rearwalk-0 → rearwalk-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path rearwalk-0 → rearwalk-1",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings rearwalk-0 → rearwalk-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump rearwalk-1 → rearwalk-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path rearwalk-1 → rearwalk-2",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings rearwalk-1 → rearwalk-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump rearwalk-2 → rearwalk-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path rearwalk-2 → rearwalk-3",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings rearwalk-2 → rearwalk-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump rearwalk-3 → rearwalk-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path rearwalk-3 → rearwalk-4",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings rearwalk-3 → rearwalk-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump rearwalk-4 → rearwalk-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry path rearwalk-4 → rearwalk-5",
+      "passed": true,
+      "detail": "0.00 m crosses water"
+    },
+    {
+      "check": "Path clears buildings rearwalk-4 → rearwalk-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ouleft-0 → rearwalk-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Walkable stair slope ouleft-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump daguanyuan_gate → arrival-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump qujingtongyou → arrival-2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump xiaoxiangguan → west-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump yihongyuan → east-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump dicuiting → dicui-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump luxuean → west-15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump luxuean → north-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump tubishanzhuang → moonsteps-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump aojingxiguan → eastshore-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump aojingxiguan → moonsteps-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump daguanlou → qinfang-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump daguanlou → ceremonial-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump daguanlou → inner-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump arrival-6 → qinfang-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump arrival-6 → west-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump qinfang-0 → west-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump qinfang-1 → ceremonial-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump qinfang-1 → inner-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump ceremonial-0 → inner-4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-8 → westapproach-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump west-15 → north-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump east-15 → north-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump westbridge-0 → westapproach-3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump westbridge-1 → inner-0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump westbridge-1 → rearwalk-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump inner-0 → rearwalk-5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No vertical navigation jump eastshore-6 → moonsteps-6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint daguanyuan_gate",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned daguanyuan_gate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint xiaoxiangguan",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned xiaoxiangguan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint yihongyuan",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned yihongyuan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint hengwuyuan",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned hengwuyuan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint qiushuangzhai",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned qiushuangzhai",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint daoxiangcun",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned daoxiangcun",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint luxuean",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned luxuean",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint tubishanzhuang",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned tubishanzhuang",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint aojingxiguan",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned aojingxiguan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint daguanlou",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned daguanlou",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint longcuian",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned longcuian",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Dry building footprint nuanxiangwu",
+      "passed": true,
+      "detail": "0.00 m² over water"
+    },
+    {
+      "check": "Entrance aligned nuanxiangwu",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Entry screen stands in front of the garden interior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Ou pavilion stands within the pool",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Convex hill and concave shore are adjacent and differ in height",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Concave hall is beside water",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": true,
+  "limitations": "Geometric consistency of this spatial interpretation; it cannot verify a unique canonical plan."
+}

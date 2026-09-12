@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-12T12:58:49.501675+00:00",
+  "revision": "spatial-garden-20260912-r12-fix1",
+  "package": ".deploy/reference-20260912-124455-508731",
+  "scope": "Exact packaged web response captures; mobile is CSS390x844 at DPR3, not physical phone hardware. Parent checked capture validity only.",
+  "captures": [
+    {
+      "file": "reports/browser/r12-fix1-packaged-production-desktop.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "efa5456094b977c78669c8330570c2a46bb141bc12924d03b77b8efd42bc11c0",
+      "bytes": 1539260,
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": "reports/browser/r12-fix1-packaged-production-mobile.png",
+      "dimensions": [
+        1170,
+        2532
+      ],
+      "sha256": "75ac619d515330308247c0a74e0f9d9bfe301710728fc4a73cce0d52bde1e6b6",
+      "bytes": 1689838,
+      "parentOpened": true,
+      "captureValid": true
+    }
+  ]
+}

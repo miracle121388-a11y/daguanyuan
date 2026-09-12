@@ -1,0 +1,12 @@
+BUILT TERRAIN PATH CHECK 2217 failures 173 [{'edge': 'west-10 -> west-11', 'position': [-132.40740966796875, 87.11111450195312, 0.2199999988079071], 'groundZ': 0.4562530517578125, 'pathZ': 0.2199999988079071}, {'edge': 'west-10 -> west-11', 'position': [-132.59259033203125, 87.88888549804688, 0.2199999988079071], 'groundZ': 0.540557861328125, 'pathZ': 0.2199999988079071}, {'edge': 'west-10 -> west-11', 'position': [-132.77777099609375, 88.66667175292969, 0.2199999988079071], 'groundZ': 0.6743927001953125, 'pathZ': 0.2199999988079071}]
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+Traceback (most recent call last):
+  File "D:\Users\Lenovo\Desktop\大观园\blender\check_terrain_paths.py", line 22, in <module>
+    assert not failures,'Terrain covers a walkable path; see terrain-paths.json'
+           ^^^^^^^^^^^^
+AssertionError: Terrain covers a walkable path; see terrain-paths.json
+
+Error: script failed, file: 'blender/check_terrain_paths.py', exiting.
+
+Blender quit

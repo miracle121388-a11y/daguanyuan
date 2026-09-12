@@ -1,0 +1,129 @@
+{
+  "revision": "spatial-garden-20260912-r10",
+  "at": "2026-09-11T20:27:16.678121+00:00",
+  "round": 2,
+  "captures": [
+    {
+      "file": ".impeccable\\review\\desktop.png",
+      "pixels": [
+        1440,
+        900
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\plan.png",
+      "pixels": [
+        1440,
+        900
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\courtyard.png",
+      "pixels": [
+        1440,
+        900
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\interior.png",
+      "pixels": [
+        1440,
+        900
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\cutaway.png",
+      "pixels": [
+        1440,
+        900
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\night.png",
+      "pixels": [
+        1440,
+        900
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\central-ensemble.png",
+      "pixels": [
+        1440,
+        900
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\user-1266.png",
+      "pixels": [
+        1266,
+        712
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\mobile.png",
+      "pixels": [
+        390,
+        844
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\mobile-courtyard.png",
+      "pixels": [
+        390,
+        844
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\mobile-whole-courtyard.png",
+      "pixels": [
+        390,
+        844
+      ],
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": ".impeccable\\review\\narrow.png",
+      "pixels": [
+        320,
+        740
+      ],
+      "openedByParent": true,
+      "valid": true
+    }
+  ],
+  "parentPolishingEnded": true,
+  "findings": "Interior timber is warmer and readable; low planting now forms masses. Dark fern-like silhouettes remain below bamboo, and plan-view pavement still has bright/dark fragments despite continuous backing coverage. Technical checks do not certify visual quality. Send final matrix to a fresh independent reviewer.",
+  "productionCaptures": [
+    {
+      "file": "reports/browser/r10-packaged-production-desktop.png",
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": "reports/browser/r10-packaged-production-mobile.png",
+      "openedByParent": true,
+      "valid": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "origin": "Blender Cycles render of Poly Haven island_tree_01, CC0 1.0; original leaves alpha restored; 24 samples, 512 square, transparent background, camera (-24, 0, 12), exposure +0.55. Source https://polyhaven.com/a/island_tree_01",
+  "sourceAsset": "island_tree_01",
+  "license": "CC0-1.0",
+  "sha256": "acf2e99fcb3c95d01c56128be9bfdbd3df8c581771eec46f8243a72f95ff3fbf",
+  "center": [
+    0.033129096031188965,
+    0.17469823360443115,
+    2.4933953285217285
+  ],
+  "size": 5.781563758850098,
+  "prompt": "Blender Cycles render of Poly Haven island_tree_01, CC0 1.0; original leaves alpha restored; 24 samples, 512 square, transparent background, camera (-24, 0, 12), exposure +0.55. Source https://polyhaven.com/a/island_tree_01"
+}

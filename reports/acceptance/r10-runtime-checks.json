@@ -1,0 +1,65 @@
+{
+  "revision": "spatial-garden-20260912-r10",
+  "modelVerification": true,
+  "dataIntegrityChecks": 3085,
+  "unitTests": 6,
+  "e2e": {
+    "passed": 11,
+    "failed": 0,
+    "report": "r10-e2e-final.log"
+  },
+  "mobile": {
+    "bytes": 7035145,
+    "loadedMs": 9593.300000011921,
+    "touchOrbitChanged": true,
+    "mobilePartitionLoaded": true,
+    "actualMobileHardware": false
+  },
+  "performance": {
+    "high": {
+      "meanFrameMs": 24.658024691382554,
+      "p95FrameMs": 31.800000011920933,
+      "drawCalls": 67,
+      "triangles": 256848
+    },
+    "low": {
+      "meanFrameMs": 22.696000000039735,
+      "p95FrameMs": 63.89999997615814,
+      "drawCalls": 118,
+      "triangles": 331706
+    }
+  },
+  "productionPackageSmoke": {
+    "passed": true,
+    "report": "r10-packaged-production-smoke.json",
+    "publicDeployment": false
+  },
+  "visualDisposition": "rebuild",
+  "approx100LowDrawTargetMet": false,
+  "meshBudgetsMet": true,
+  "visualReview": {
+    "report": "r10-full-review.md",
+    "evidence": "r10-full-review-evidence.json",
+    "validCaptures": 14,
+    "independent": true,
+    "secondRebuildInCurrentUserAuthorizedCycle": true
+  },
+  "designDocumentation": {
+    "completed": true,
+    "reviewerVerifiedActualFiles": true,
+    "files": [
+      "DESIGN.md",
+      ".impeccable/design.json"
+    ]
+  },
+  "nextStep": {
+    "status": "awaiting-user-direction-after-second-rebuild",
+    "choices": [
+      "focal-main-building-waterfront-sample-then-garden",
+      "deploy-current-r10-to-existing-california-service"
+    ],
+    "deploymentAlreadyAuthorized": true,
+    "publicDeployment": false
+  },
+  "updatedAt": "2026-09-11T20:46:15.062187+00:00"
+}

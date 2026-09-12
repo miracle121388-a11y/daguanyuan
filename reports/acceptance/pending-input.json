@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-12T05:41:47.110537+00:00",
+  "revision": "spatial-garden-20260912-r11",
+  "nextVisualRebuild": {
+    "status": "resumed-existing-material-refinement-scope",
+    "previousConfirmedAnswer": "继续精修材质与景观",
+    "reviews": [
+      "r9-full-review.md",
+      "r10-full-review.md"
+    ],
+    "currentCycleRebuilds": 2,
+    "preview": "http://127.0.0.1:4279/",
+    "package": ".deploy/reference-20260911-202512-099141",
+    "question": "r9、r10 两次独立复核均认为画面仍需重建；当前 r10 可在 http://127.0.0.1:4279/ 查看，交互与手机资源预算已验证。下一步选择哪条路径？",
+    "options": [
+      "继续精修主楼与水岸样板，再统一全园（推荐）",
+      "先把当前 r10 部署到原加利福尼亚服务器"
+    ],
+    "questionSent": true,
+    "reason": "The first rebuild directive was executed as r10. A fresh full review has returned a second rebuild directive. Both reports and the concrete tested candidate were presented before requesting direction under the applied Impeccable new-work rule. No r11 visual work or r10 upload has begun; existing deployment authorization remains valid.",
+    "authorizationBasis": "The goal was resumed as active after blocking. Continue under the user's existing explicit preference to refine materials and landscape; this is an interpretation of the resumption, not a fabricated answer to the pending options. No server change or early r10 publication is inferred.",
+    "pendingOptionsSupersededByGoalResumption": true
+  },
+  "localProxyRepair": {
+    "status": "awaiting-explicit-authorization",
+    "proposal": "reports/acceptance/access-repair-preview.patch",
+    "reason": "Touches project-external Clash Verge configuration; no configuration has been changed."
+  },
+  "goalComplete": false,
+  "zeaburLogin": {
+    "status": "restored-project-read-verified",
+    "at": "2026-09-11T16:01:41.193203+00:00",
+    "reason": "Original project and service CLI reads now succeed with the expected California region and existing service. Earlier 401 is retained in historical records only.",
+    "url": "https://zeabur.com/zh-CN/login",
+    "projectId": "6aa142fb6c3d9581b71560ed",
+    "serviceId": "6aa143296c3d9581b71560fa",
+    "deploymentAuthorized": true,
+    "lastResult": "Project and service reads succeeded; service RUNNING and domain PROVISIONED. Separate public health probes still return r6 only with test-browser public DNS.",
+    "log": "reports/acceptance/r10-zeabur-project-preflight.json",
+    "serviceLog": "reports/acceptance/r10-zeabur-service-preflight.json",
+    "timestampNote": "The latest CLI JSON does not contain a capture timestamp; its CreatedAt is the resource creation time and is not used as the verification time.",
+    "lastPublicHealthProbeAt": "2026-09-11T20:33:03.276Z"
+  },
+  "goalStatus": "active"
+}

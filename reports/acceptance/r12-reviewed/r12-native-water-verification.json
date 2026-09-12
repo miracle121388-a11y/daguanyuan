@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-12T10:19:58.583401+00:00",
+  "revision": "spatial-garden-20260912-r12",
+  "checks": 10182,
+  "wetSamples": 1088,
+  "failed": 0,
+  "failures": [],
+  "passed": true,
+  "method": "3m grid vertical rays into evaluated native water mesh; expected inside/outside from reviewed rings; omit points within5cm of boundary; native water level must remain -0.12m."
+}

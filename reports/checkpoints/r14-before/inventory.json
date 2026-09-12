@@ -1,0 +1,81 @@
+{
+  "at": "2026-09-12T15:37:18.870156+00:00",
+  "revision": "r13",
+  "files": [
+    {
+      "file": "blender/daguanyuan_master.blend",
+      "bytes": 996298492,
+      "sha256": "861892a5e7eaa1c260b5c2fa384df369a174c0819d4e3c4a4f98f27f65dbd8a6"
+    },
+    {
+      "file": "blender/focal_botany.py",
+      "bytes": 7212,
+      "sha256": "ac1e5a288ceaf18f807fd86ff5553c859d6a77ebd8dbef27536b76e2932317c9"
+    },
+    {
+      "file": "blender/court_planting.py",
+      "bytes": 4389,
+      "sha256": "22cbf683734de7e04d8f1366da1be2e5f53789b69d8982113bad05ad57c44415"
+    },
+    {
+      "file": "blender/r9_understory.py",
+      "bytes": 6974,
+      "sha256": "2049df0bf879c50cea80e3a4cb11b093438927daf1745739b77dbbd76af71d3f"
+    },
+    {
+      "file": "blender/bake_surface_zones.py",
+      "bytes": 5334,
+      "sha256": "0799b0285a56ab3bc5ec52e94b6e7db012681017db5a902ba4a401ec574dfaaa"
+    },
+    {
+      "file": "blender/native_ground.py",
+      "bytes": 2946,
+      "sha256": "1284711eb92a9347c982cc61a9b4e287f45c7f84f5654f40f5f216a81e722da1"
+    },
+    {
+      "file": "blender/export_botanical_patch.py",
+      "bytes": 2280,
+      "sha256": "d0a837f9506e4ef234ea6f2dda733c14d6ffe7c407e07c6e5aff8e4f67d969c8"
+    },
+    {
+      "file": "blender/refresh_focal_landscape.py",
+      "bytes": 4465,
+      "sha256": "1a14ff0358b4f34f6e1eb3f9c5f938cdcf29027c735212128319b2997dc70025"
+    },
+    {
+      "file": "scripts/apply_botanical_patch.mjs",
+      "bytes": 4124,
+      "sha256": "7ee0518313f07279f6877ca607767f064f6f9cc50482c2bca4e20d2418d593b2"
+    },
+    {
+      "file": "scripts/record_derivatives.mjs",
+      "bytes": 9577,
+      "sha256": "4e9d17149c2022bd423b5a9be9ff378bde11731bc7cdd273c17f6525d4e154aa"
+    },
+    {
+      "file": "src/scene/materials.ts",
+      "bytes": 5008,
+      "sha256": "083e5b161bf5dc198853793f21c071271e37db512fe11a4540b5dd7834a1cc00"
+    },
+    {
+      "file": "config/garden.layout.json",
+      "bytes": 50094,
+      "sha256": "b17a36edd96c667076d8f376933984b7c809f08fe678864f1e58d3c96c998380"
+    },
+    {
+      "file": "config/garden.planting.json",
+      "bytes": 2556,
+      "sha256": "476f37ac7ebf93e4e321a7cac2221099142dc2dcddc62fb2745b9b8683a85a26"
+    },
+    {
+      "file": "public/textures/ground/surface-zones.png",
+      "bytes": 496067,
+      "sha256": "a61dcd74d9fe6dff567026f11e292985eedd4b93eba494a58f66495863aafc21"
+    },
+    {
+      "file": "public/textures/ground/surface-zones.png.json",
+      "bytes": 1351,
+      "sha256": "67d848e22e05cce4875f259d52ea6ca735c622bc316fd8962de5f3fd0543de80"
+    }
+  ]
+}

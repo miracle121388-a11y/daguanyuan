@@ -1,0 +1,313 @@
+{
+  "conditions": {
+    "os": "Windows 11",
+    "headless": true,
+    "actualMobileHardware": false,
+    "network": "local HTTP; no throttling",
+    "overviewSha256": "01509fe1e5263f96e01875537749928dfcd72ab05e4722b7b4172ce1e5b48edc",
+    "metricLimit": "GPU allocations are estimates from scene resources; excludes driver overhead/framebuffers and cached hidden assets. These are not total VRAM readings."
+  },
+  "high": {
+    "mode": "high",
+    "timestamp": "2026-09-09T20:03:40.213Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "sampleCount": 47,
+    "meanFrameMs": 101.53191489108066,
+    "p95FrameMs": 224.29999995231628,
+    "drawCalls": 521,
+    "triangles": 6710609,
+    "estimatedGeometryBytes": 126289510,
+    "estimatedTextureBytesWithMipmaps": 44848469.333333336,
+    "textureCount": 10,
+    "geometryCount": 261,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4185/assets/index-BMi6Y5dE.js",
+        "transferSize": 87087,
+        "decodedBodySize": 280033
+      },
+      {
+        "name": "http://127.0.0.1:4185/assets/index-DzMjJWdB.css",
+        "transferSize": 9496,
+        "decodedBodySize": 42713
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/places.json",
+        "transferSize": 2919,
+        "decodedBodySize": 6751
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/characters.json",
+        "transferSize": 1381,
+        "decodedBodySize": 3170
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/events.json",
+        "transferSize": 3267,
+        "decodedBodySize": 9255
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/routes.json",
+        "transferSize": 1567,
+        "decodedBodySize": 7972
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/sources.json",
+        "transferSize": 11857,
+        "decodedBodySize": 52471
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/relations.json",
+        "transferSize": 476,
+        "decodedBodySize": 176
+      },
+      {
+        "name": "http://127.0.0.1:4185/scene-manifest.json",
+        "transferSize": 65723,
+        "decodedBodySize": 376881
+      },
+      {
+        "name": "http://127.0.0.1:4185/favicon.ico",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "name": "http://127.0.0.1:4185/art/manifest.json",
+        "transferSize": 12055,
+        "decodedBodySize": 43487
+      },
+      {
+        "name": "http://127.0.0.1:4185/assets/GardenScene-UW-XnfQ6.js",
+        "transferSize": 300250,
+        "decodedBodySize": 1085283
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/forest_grove.hdr",
+        "transferSize": 1659099,
+        "decodedBodySize": 1922024
+      },
+      {
+        "name": "http://127.0.0.1:4185/models/overview.glb",
+        "transferSize": 12488184,
+        "decodedBodySize": 12487884
+      },
+      {
+        "name": "http://127.0.0.1:4185/models/vegetation/broadleaf-low.glb",
+        "transferSize": 24436,
+        "decodedBodySize": 24136
+      },
+      {
+        "name": "http://127.0.0.1:4185/draco/draco_wasm_wrapper.js",
+        "transferSize": 12048,
+        "decodedBodySize": 58456
+      },
+      {
+        "name": "http://127.0.0.1:4185/draco/draco_decoder.wasm",
+        "transferSize": 192720,
+        "decodedBodySize": 192420
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/a33c6fa04c93f97b543326d615d87500c4fc3310841ff75ba30a84ee86aedd25.jpg",
+        "transferSize": 178252,
+        "decodedBodySize": 177952
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/f95b8e7c292c832223a279eb18d2209d395e5c84d9af537aa8e66fe5f0155f03.jpg",
+        "transferSize": 149870,
+        "decodedBodySize": 149570
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/e8249c14ae57b6d855e80a53b43efb3f4d85b84113e69fea42bb52134139041b.jpg",
+        "transferSize": 312129,
+        "decodedBodySize": 311829
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/2a4666a1613a46e43bd967f2c06fbb83366ea0b1333235cd53ecd5eed4aefdf6.jpg",
+        "transferSize": 257720,
+        "decodedBodySize": 257420
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b.jpg",
+        "transferSize": 234384,
+        "decodedBodySize": 234084
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/c8ed4736aa28a0164390996f0a125b903961e5d2dded702c4ae73c5127aff91f.jpg",
+        "transferSize": 46615,
+        "decodedBodySize": 46315
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/6c30439ee0e4d0496794e59a356e45418431e2f1c35902533396279a77dee135.jpg",
+        "transferSize": 98262,
+        "decodedBodySize": 97962
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/3b33dc15406cf51ac55c784af3f9981c51e7166d98effaf755555c1bf155dbd5.jpg",
+        "transferSize": 284838,
+        "decodedBodySize": 284538
+      }
+    ],
+    "method": "6-second settled static overview with water animation; last up to 300 frames; no network throttling"
+  },
+  "low": {
+    "mode": "low",
+    "timestamp": "2026-09-09T20:04:00.212Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "sampleCount": 174,
+    "meanFrameMs": 92.62471264395221,
+    "p95FrameMs": 170.39999997615814,
+    "drawCalls": 84,
+    "triangles": 2577651,
+    "estimatedGeometryBytes": 40436914,
+    "estimatedTextureBytesWithMipmaps": 16886442.666666664,
+    "textureCount": 5,
+    "geometryCount": 44,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4185/assets/index-BMi6Y5dE.js",
+        "transferSize": 87087,
+        "decodedBodySize": 280033
+      },
+      {
+        "name": "http://127.0.0.1:4185/assets/index-DzMjJWdB.css",
+        "transferSize": 9496,
+        "decodedBodySize": 42713
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/places.json",
+        "transferSize": 2919,
+        "decodedBodySize": 6751
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/characters.json",
+        "transferSize": 1381,
+        "decodedBodySize": 3170
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/events.json",
+        "transferSize": 3267,
+        "decodedBodySize": 9255
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/routes.json",
+        "transferSize": 1567,
+        "decodedBodySize": 7972
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/sources.json",
+        "transferSize": 11857,
+        "decodedBodySize": 52471
+      },
+      {
+        "name": "http://127.0.0.1:4185/data/relations.json",
+        "transferSize": 476,
+        "decodedBodySize": 176
+      },
+      {
+        "name": "http://127.0.0.1:4185/scene-manifest.json",
+        "transferSize": 65723,
+        "decodedBodySize": 376881
+      },
+      {
+        "name": "http://127.0.0.1:4185/favicon.ico",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "name": "http://127.0.0.1:4185/art/manifest.json",
+        "transferSize": 12055,
+        "decodedBodySize": 43487
+      },
+      {
+        "name": "http://127.0.0.1:4185/assets/GardenScene-UW-XnfQ6.js",
+        "transferSize": 300250,
+        "decodedBodySize": 1085283
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/forest_grove.hdr",
+        "transferSize": 1659099,
+        "decodedBodySize": 1922024
+      },
+      {
+        "name": "http://127.0.0.1:4185/models/overview.glb",
+        "transferSize": 12488184,
+        "decodedBodySize": 12487884
+      },
+      {
+        "name": "http://127.0.0.1:4185/models/vegetation/broadleaf-low.glb",
+        "transferSize": 24436,
+        "decodedBodySize": 24136
+      },
+      {
+        "name": "http://127.0.0.1:4185/draco/draco_wasm_wrapper.js",
+        "transferSize": 12048,
+        "decodedBodySize": 58456
+      },
+      {
+        "name": "http://127.0.0.1:4185/draco/draco_decoder.wasm",
+        "transferSize": 192720,
+        "decodedBodySize": 192420
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/a33c6fa04c93f97b543326d615d87500c4fc3310841ff75ba30a84ee86aedd25.jpg",
+        "transferSize": 178252,
+        "decodedBodySize": 177952
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/f95b8e7c292c832223a279eb18d2209d395e5c84d9af537aa8e66fe5f0155f03.jpg",
+        "transferSize": 149870,
+        "decodedBodySize": 149570
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/e8249c14ae57b6d855e80a53b43efb3f4d85b84113e69fea42bb52134139041b.jpg",
+        "transferSize": 312129,
+        "decodedBodySize": 311829
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/2a4666a1613a46e43bd967f2c06fbb83366ea0b1333235cd53ecd5eed4aefdf6.jpg",
+        "transferSize": 257720,
+        "decodedBodySize": 257420
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b.jpg",
+        "transferSize": 234384,
+        "decodedBodySize": 234084
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/c8ed4736aa28a0164390996f0a125b903961e5d2dded702c4ae73c5127aff91f.jpg",
+        "transferSize": 46615,
+        "decodedBodySize": 46315
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/6c30439ee0e4d0496794e59a356e45418431e2f1c35902533396279a77dee135.jpg",
+        "transferSize": 98262,
+        "decodedBodySize": 97962
+      },
+      {
+        "name": "http://127.0.0.1:4185/textures/shared/3b33dc15406cf51ac55c784af3f9981c51e7166d98effaf755555c1bf155dbd5.jpg",
+        "transferSize": 284838,
+        "decodedBodySize": 284538
+      },
+      {
+        "name": "http://127.0.0.1:4185/models/overview-low.glb",
+        "transferSize": 3490936,
+        "decodedBodySize": 3490636
+      }
+    ],
+    "method": "Orbit interaction on low quality; demand rendering; idle frame rate is not a meaningful measure"
+  }
+}

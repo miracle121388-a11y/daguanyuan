@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported tilelight_diff material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "tilelight_diff",
+  "sourcePixelSha256": "cc4de835f51b4da36bd55e17c14352dd22dbcb73b65368afdccd0a0e43bd15fb",
+  "sha256": "4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202",
+  "prompt": "Blender-exported tilelight_diff material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

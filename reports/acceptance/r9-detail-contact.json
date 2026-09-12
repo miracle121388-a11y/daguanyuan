@@ -1,0 +1,198 @@
+[
+  {
+    "place": "daguanyuan_gate",
+    "mesh": "daguanyuan_gate_cutstone",
+    "corners": 6304,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanyuan_gate",
+    "mesh": "daguanyuan_gate_darkwood.001",
+    "corners": 7968,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanyuan_gate",
+    "mesh": "daguanyuan_gate_floorwood",
+    "corners": 9048,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanyuan_gate",
+    "mesh": "daguanyuan_gate_wood.001",
+    "corners": 70992,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanyuan_gate",
+    "mesh": "daguanyuan_gate_furniture",
+    "corners": 2688,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanyuan_gate",
+    "mesh": "daguanyuan_gate_latticewood.001",
+    "corners": 7440,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_plaster",
+    "corners": 5472,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_cutstone",
+    "corners": 9184,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_darkwood",
+    "corners": 13504,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_floorwood",
+    "corners": 6912,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_wood",
+    "corners": 71024,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_latticewood.001",
+    "corners": 2664,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_bookcloth.001",
+    "corners": 1380,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_furniture",
+    "corners": 2008,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_paper",
+    "corners": 1457,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_bookcover.001",
+    "corners": 768,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "xiaoxiangguan",
+    "mesh": "xiaoxiangguan_ceramic.001",
+    "corners": 640,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_cutstone",
+    "corners": 81824,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_darkwood",
+    "corners": 92992,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_floorwood",
+    "corners": 86496,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_wood",
+    "corners": 549632,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_furniture",
+    "corners": 14888,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_latticewood.001",
+    "corners": 44304,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_paper",
+    "corners": 185,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_bookcloth.001",
+    "corners": 48,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_bookcover.001",
+    "corners": 48,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_ceramic",
+    "corners": 960,
+    "minimum": 0.5,
+    "samples": 16
+  },
+  {
+    "place": "daguanlou",
+    "mesh": "daguanlou_plaster",
+    "corners": 5088,
+    "minimum": 0.5,
+    "samples": 16
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported litter_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "litter_rough",
+  "sourcePixelSha256": "24a0baf2335e72a9f729674f6760678080b723b56d33b7318b7892dbbec400d7",
+  "sha256": "9910e3f94943f5a30e574564face211b1af795d729fc28e69b064c7837f4f11d",
+  "prompt": "Blender-exported litter_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

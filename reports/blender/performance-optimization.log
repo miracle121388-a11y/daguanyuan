@@ -1,0 +1,8 @@
+
+> daguanyuan-rumeng@1.0.0 models:optimize
+> node scripts/optimize.mjs
+
+Validated public/models/overview.glb
+Validated public/models/overview-low.glb
+Validated public/models/vegetation/broadleaf-low.glb
+Optimized and re-read 34 GLBs; IDs, anchors, materials and bounds preserved.

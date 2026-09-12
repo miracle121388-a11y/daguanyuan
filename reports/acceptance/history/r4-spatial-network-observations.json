@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-09-10T05:40:13.794557+00:00",
+  "host": "daguanyuan-rumeng.zeabur.app",
+  "revision": "spatial-garden-20260910-r4",
+  "defaultBrowser": {
+    "passed": false,
+    "error": "net::ERR_CONNECTION_CLOSED",
+    "log": "spatial-production-default.log"
+  },
+  "resolvedBrowserStandard": {
+    "passed": false,
+    "observationTimeoutMs": 90000,
+    "reason": "loading layer remained visible",
+    "log": "spatial-production-resolved.log"
+  },
+  "systemDnsObserved": "198.18.0.124",
+  "publicDnsObserved": "47.89.212.251",
+  "publicDnsSource": "Google DNS over HTTPS queried during this release",
+  "directResolvedTlsHealth": {
+    "status": "ok",
+    "revision": "spatial-garden-20260910-r4"
+  },
+  "singleModelTransfer": {
+    "path": "/models/overview.glb",
+    "status": 200,
+    "expectedBytes": 7273316,
+    "receivedBytes": 2670592,
+    "elapsedSeconds": 40.003674,
+    "completed": false,
+    "curlExit": 28,
+    "tlsVerifyResult": 0
+  },
+  "diagnosticReport": "spatial-production-diagnostic.json",
+  "extendedObservation": {
+    "passed": true,
+    "observationTimeoutMs": 300000,
+    "desktopReadyMs": 211626,
+    "mobileReadyMs": 97718,
+    "report": "production-smoke.json",
+    "log": "spatial-production-extended.log",
+    "defaultConnectionFixed": false
+  },
+  "limitations": "These are observations on this Windows network; they do not establish the speed or reachability for all visitors.",
+  "osNetworkChanged": false,
+  "tlsVerificationEnabled": true
+}

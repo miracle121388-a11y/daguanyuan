@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-12T10:10:41.231823+00:00",
+  "revision": "spatial-garden-20260912-r12",
+  "treeCount": 11196,
+  "allTransformsPreserved": true,
+  "masterSha256": "eb78a58bb0ff5686214d0409426a02896e2ffeb524d1bee1efc38f25584d1bac",
+  "nativePrototypes": [
+    {
+      "name": "Master_Crown_broadleaf",
+      "polygons": 1599403,
+      "sourceAsset": "island_tree_01"
+    },
+    {
+      "name": "Master_Crown_broadleaf-2",
+      "polygons": 1072212,
+      "sourceAsset": "island_tree_02"
+    },
+    {
+      "name": "Master_Crown_pine",
+      "polygons": 142506,
+      "sourceAsset": "pine_sapling_small"
+    },
+    {
+      "name": "Master_Crown_shrub",
+      "polygons": 1599403,
+      "sourceAsset": "island_tree_01"
+    }
+  ],
+  "method": "Native master uses linked complete normalized source crowns. Web LODs simplify the complete leaf surface before a bounded reduction, retaining source UV/alpha; they no longer randomly omit nearly all source leaves. Architecture, plant placement, Manual_Adjustments and literature data are unchanged."
+}

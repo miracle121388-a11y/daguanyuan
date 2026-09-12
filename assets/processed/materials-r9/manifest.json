@@ -1,0 +1,887 @@
+{
+  "method": "Blender Cycles emission bake of source PBR swatches; 512px; physical UV periods in config/craft.materials.json; hue saturation and exposure-like value transform on albedo only. Roof crop samples the clay surface within one source tile, not its Western roof pattern.",
+  "files": [
+    {
+      "file": "assets/processed/materials-r9/wood_diff.png",
+      "material": "wood",
+      "channel": "diff",
+      "sourceAsset": "fine_grained_wood",
+      "sourceFile": "assets/source/fine_grained_wood.jpg",
+      "sourceSha256": "d171f45ef01bc6e239b00dfaa4961bcd27f7d8e93e3962da3bd3d0ce703d802c",
+      "sha256": "13c3f3255c3135075b28be1a11acb62cc011af5340ec988eae105b7adbda265f",
+      "settings": {
+        "source": "fine_grained_wood",
+        "saturation": 0.84,
+        "value": 1.65,
+        "roughness": 0.79,
+        "period": [
+          0.42,
+          2.8
+        ],
+        "grain": "v"
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/wood_nor_gl.png",
+      "material": "wood",
+      "channel": "nor_gl",
+      "sourceAsset": "fine_grained_wood",
+      "sourceFile": "assets/source/fine_grained_wood_nor_gl.jpg",
+      "sourceSha256": "ba95eadc009818e161d0f753191f1bacc3fc861e593be0bc6d82b437f9ec8044",
+      "sha256": "9f3e2bf472a7709cee93b13cb4314ef7c89828b20935e3d538cf1feb174470f2",
+      "settings": {
+        "source": "fine_grained_wood",
+        "saturation": 0.84,
+        "value": 1.65,
+        "roughness": 0.79,
+        "period": [
+          0.42,
+          2.8
+        ],
+        "grain": "v"
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/wood_rough.png",
+      "material": "wood",
+      "channel": "rough",
+      "sourceAsset": "fine_grained_wood",
+      "sourceFile": "assets/source/fine_grained_wood_rough.jpg",
+      "sourceSha256": "f281f682e62fe322303dfeaa13dac18b5cb9e113617fe0aca43605b49161d82b",
+      "sha256": "ef5a438efd0a330f1341acf0ac11cc74c3d699bb1ea5dff8fd6199fed63c003d",
+      "settings": {
+        "source": "fine_grained_wood",
+        "saturation": 0.84,
+        "value": 1.65,
+        "roughness": 0.79,
+        "period": [
+          0.42,
+          2.8
+        ],
+        "grain": "v"
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/darkwood_diff.png",
+      "material": "darkwood",
+      "channel": "diff",
+      "sourceAsset": "fine_grained_wood",
+      "sourceFile": "assets/source/fine_grained_wood.jpg",
+      "sourceSha256": "d171f45ef01bc6e239b00dfaa4961bcd27f7d8e93e3962da3bd3d0ce703d802c",
+      "sha256": "f8f0aa8fd6798d441c72019ea271878b2afc648f9be434a98d692e02ccfb04e3",
+      "settings": {
+        "source": "fine_grained_wood",
+        "saturation": 0.76,
+        "value": 1.02,
+        "roughness": 0.79,
+        "period": [
+          0.42,
+          2.8
+        ],
+        "grain": "v"
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/darkwood_nor_gl.png",
+      "material": "darkwood",
+      "channel": "nor_gl",
+      "sourceAsset": "fine_grained_wood",
+      "sourceFile": "assets/source/fine_grained_wood_nor_gl.jpg",
+      "sourceSha256": "ba95eadc009818e161d0f753191f1bacc3fc861e593be0bc6d82b437f9ec8044",
+      "sha256": "9f3e2bf472a7709cee93b13cb4314ef7c89828b20935e3d538cf1feb174470f2",
+      "settings": {
+        "source": "fine_grained_wood",
+        "saturation": 0.76,
+        "value": 1.02,
+        "roughness": 0.79,
+        "period": [
+          0.42,
+          2.8
+        ],
+        "grain": "v"
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/darkwood_rough.png",
+      "material": "darkwood",
+      "channel": "rough",
+      "sourceAsset": "fine_grained_wood",
+      "sourceFile": "assets/source/fine_grained_wood_rough.jpg",
+      "sourceSha256": "f281f682e62fe322303dfeaa13dac18b5cb9e113617fe0aca43605b49161d82b",
+      "sha256": "ef5a438efd0a330f1341acf0ac11cc74c3d699bb1ea5dff8fd6199fed63c003d",
+      "settings": {
+        "source": "fine_grained_wood",
+        "saturation": 0.76,
+        "value": 1.02,
+        "roughness": 0.79,
+        "period": [
+          0.42,
+          2.8
+        ],
+        "grain": "v"
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/latticewood_diff.png",
+      "material": "latticewood",
+      "channel": "diff",
+      "sourceAsset": "fine_grained_wood",
+      "sourceFile": "assets/source/fine_grained_wood.jpg",
+      "sourceSha256": "d171f45ef01bc6e239b00dfaa4961bcd27f7d8e93e3962da3bd3d0ce703d802c",
+      "sha256": "d3aab900d0ee496a0b1778d248f4ef90c1a364ac02bec253dfada8fccc841a9b",
+      "settings": {
+        "source": "fine_grained_wood",
+        "saturation": 0.82,
+        "value": 1.5,
+        "roughness": 0.79,
+        "period": [
+          0.42,
+          2.8
+        ],
+        "grain": "v"
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/latticewood_nor_gl.png",
+      "material": "latticewood",
+      "channel": "nor_gl",
+      "sourceAsset": "fine_grained_wood",
+      "sourceFile": "assets/source/fine_grained_wood_nor_gl.jpg",
+      "sourceSha256": "ba95eadc009818e161d0f753191f1bacc3fc861e593be0bc6d82b437f9ec8044",
+      "sha256": "9f3e2bf472a7709cee93b13cb4314ef7c89828b20935e3d538cf1feb174470f2",
+      "settings": {
+        "source": "fine_grained_wood",
+        "saturation": 0.82,
+        "value": 1.5,
+        "roughness": 0.79,
+        "period": [
+          0.42,
+          2.8
+        ],
+        "grain": "v"
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/latticewood_rough.png",
+      "material": "latticewood",
+      "channel": "rough",
+      "sourceAsset": "fine_grained_wood",
+      "sourceFile": "assets/source/fine_grained_wood_rough.jpg",
+      "sourceSha256": "f281f682e62fe322303dfeaa13dac18b5cb9e113617fe0aca43605b49161d82b",
+      "sha256": "ef5a438efd0a330f1341acf0ac11cc74c3d699bb1ea5dff8fd6199fed63c003d",
+      "settings": {
+        "source": "fine_grained_wood",
+        "saturation": 0.82,
+        "value": 1.5,
+        "roughness": 0.79,
+        "period": [
+          0.42,
+          2.8
+        ],
+        "grain": "v"
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/floorwood_diff.png",
+      "material": "floorwood",
+      "channel": "diff",
+      "sourceAsset": "rosewood_veneer_02",
+      "sourceFile": "assets/source/rosewood_veneer_02.jpg",
+      "sourceSha256": "f4085bf7554ff14ed8b8a39154dbeef12c12b66f7ceec763963d7be0c7fd6a40",
+      "sha256": "284e101d9f14ba0ac44512c52c1e7e8d06f1d14ae6e1992209b28d5d7aa5507d",
+      "settings": {
+        "source": "rosewood_veneer_02",
+        "saturation": 0.88,
+        "value": 0.56,
+        "roughness": 0.79,
+        "period": [
+          3.6,
+          0.44
+        ],
+        "grain": "u",
+        "roughSourceWeight": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/floorwood_nor_gl.png",
+      "material": "floorwood",
+      "channel": "nor_gl",
+      "sourceAsset": "rosewood_veneer_02",
+      "sourceFile": "assets/source/rosewood_veneer_02_nor_gl.jpg",
+      "sourceSha256": "3d186abe4523a805172fb8417f46aab34edcd3d8f3546400bc3e567dd099b21e",
+      "sha256": "cc38171aa1e2c0aca16e351b884bfba632b610033e43c848fc3eb5fbae0f6150",
+      "settings": {
+        "source": "rosewood_veneer_02",
+        "saturation": 0.88,
+        "value": 0.56,
+        "roughness": 0.79,
+        "period": [
+          3.6,
+          0.44
+        ],
+        "grain": "u",
+        "roughSourceWeight": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/floorwood_rough.png",
+      "material": "floorwood",
+      "channel": "rough",
+      "sourceAsset": "rosewood_veneer_02",
+      "sourceFile": "assets/source/rosewood_veneer_02_rough.jpg",
+      "sourceSha256": "558c1bd6676b6601e907e03e2173cfcb83d2885a201ea09a0377c81ca8f6abfc",
+      "sha256": "53d4b2dbd5309ae0cc53c9e436bde52a835f35e528d3c697c4385a204c9c39ee",
+      "settings": {
+        "source": "rosewood_veneer_02",
+        "saturation": 0.88,
+        "value": 0.56,
+        "roughness": 0.79,
+        "period": [
+          3.6,
+          0.44
+        ],
+        "grain": "u",
+        "roughSourceWeight": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/furniture_diff.png",
+      "material": "furniture",
+      "channel": "diff",
+      "sourceAsset": "rosewood_veneer_02",
+      "sourceFile": "assets/source/rosewood_veneer_02.jpg",
+      "sourceSha256": "f4085bf7554ff14ed8b8a39154dbeef12c12b66f7ceec763963d7be0c7fd6a40",
+      "sha256": "34967c20cd92ed915ae6d2031479b5286f3c4309738e3399abdba401cce44123",
+      "settings": {
+        "source": "rosewood_veneer_02",
+        "saturation": 0.95,
+        "value": 0.44,
+        "roughness": 0.68,
+        "period": [
+          3.6,
+          0.6
+        ],
+        "grain": "u",
+        "roughSourceWeight": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/furniture_nor_gl.png",
+      "material": "furniture",
+      "channel": "nor_gl",
+      "sourceAsset": "rosewood_veneer_02",
+      "sourceFile": "assets/source/rosewood_veneer_02_nor_gl.jpg",
+      "sourceSha256": "3d186abe4523a805172fb8417f46aab34edcd3d8f3546400bc3e567dd099b21e",
+      "sha256": "cc38171aa1e2c0aca16e351b884bfba632b610033e43c848fc3eb5fbae0f6150",
+      "settings": {
+        "source": "rosewood_veneer_02",
+        "saturation": 0.95,
+        "value": 0.44,
+        "roughness": 0.68,
+        "period": [
+          3.6,
+          0.6
+        ],
+        "grain": "u",
+        "roughSourceWeight": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/furniture_rough.png",
+      "material": "furniture",
+      "channel": "rough",
+      "sourceAsset": "rosewood_veneer_02",
+      "sourceFile": "assets/source/rosewood_veneer_02_rough.jpg",
+      "sourceSha256": "558c1bd6676b6601e907e03e2173cfcb83d2885a201ea09a0377c81ca8f6abfc",
+      "sha256": "bb5afb49bde62351aac6296934af634433c30d8618240e1ff50a3093b850aa4a",
+      "settings": {
+        "source": "rosewood_veneer_02",
+        "saturation": 0.95,
+        "value": 0.44,
+        "roughness": 0.68,
+        "period": [
+          3.6,
+          0.6
+        ],
+        "grain": "u",
+        "roughSourceWeight": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/roof_diff.png",
+      "material": "roof",
+      "channel": "diff",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles.jpg",
+      "sourceSha256": "f61107b70cf56074c9db09384a332620c94c678ed2baabfae78029a8242e49a3",
+      "sha256": "cc382e284b90d5ab14235008c23f57fe044b756d7a865752277f794a0034e23d",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.25,
+        "value": 0.65,
+        "roughness": 0.87,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/roof_nor_gl.png",
+      "material": "roof",
+      "channel": "nor_gl",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles_nor_gl.jpg",
+      "sourceSha256": "99546fdc2978d0950a2c61fe94dbd4230bb7825944bb4e4e7ad586839fdc721d",
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.25,
+        "value": 0.65,
+        "roughness": 0.87,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/roof_rough.png",
+      "material": "roof",
+      "channel": "rough",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles_rough.jpg",
+      "sourceSha256": "edc3185b560a71b2b5f5f568710b8674da41becb39ca374f5e8efeca15b5794f",
+      "sha256": "262dceeb2b0a0ecb96f821c6dedd6af4e59181ae561c457e596454e674474eb4",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.25,
+        "value": 0.65,
+        "roughness": 0.87,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/tile_diff.png",
+      "material": "tile",
+      "channel": "diff",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles.jpg",
+      "sourceSha256": "f61107b70cf56074c9db09384a332620c94c678ed2baabfae78029a8242e49a3",
+      "sha256": "e40425c7b9079fdb4df12e1d905115f5350cf1278280f8295485ff039d6d8e4a",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.28,
+        "value": 0.83,
+        "roughness": 0.82,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/tile_nor_gl.png",
+      "material": "tile",
+      "channel": "nor_gl",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles_nor_gl.jpg",
+      "sourceSha256": "99546fdc2978d0950a2c61fe94dbd4230bb7825944bb4e4e7ad586839fdc721d",
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.28,
+        "value": 0.83,
+        "roughness": 0.82,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/tile_rough.png",
+      "material": "tile",
+      "channel": "rough",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles_rough.jpg",
+      "sourceSha256": "edc3185b560a71b2b5f5f568710b8674da41becb39ca374f5e8efeca15b5794f",
+      "sha256": "dc7da1df7bd9a6a4132bf63b337dcdbc6de2432ea00b25cba3eaec27905aadfb",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.28,
+        "value": 0.83,
+        "roughness": 0.82,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/tilelight_diff.png",
+      "material": "tilelight",
+      "channel": "diff",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles.jpg",
+      "sourceSha256": "f61107b70cf56074c9db09384a332620c94c678ed2baabfae78029a8242e49a3",
+      "sha256": "cc4de835f51b4da36bd55e17c14352dd22dbcb73b65368afdccd0a0e43bd15fb",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.28,
+        "value": 0.91,
+        "roughness": 0.84,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/tilelight_nor_gl.png",
+      "material": "tilelight",
+      "channel": "nor_gl",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles_nor_gl.jpg",
+      "sourceSha256": "99546fdc2978d0950a2c61fe94dbd4230bb7825944bb4e4e7ad586839fdc721d",
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.28,
+        "value": 0.91,
+        "roughness": 0.84,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/tilelight_rough.png",
+      "material": "tilelight",
+      "channel": "rough",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles_rough.jpg",
+      "sourceSha256": "edc3185b560a71b2b5f5f568710b8674da41becb39ca374f5e8efeca15b5794f",
+      "sha256": "f3d35e07cd202d123ced6f1f70a6e85c86791c03cfcfe26dd2797cfd5675324a",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.28,
+        "value": 0.91,
+        "roughness": 0.84,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/tiledark_diff.png",
+      "material": "tiledark",
+      "channel": "diff",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles.jpg",
+      "sourceSha256": "f61107b70cf56074c9db09384a332620c94c678ed2baabfae78029a8242e49a3",
+      "sha256": "63c26f2edfde4e66c152786c48802eb57647d61b81924e9d5cd525b586f7427e",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.23,
+        "value": 0.66,
+        "roughness": 0.86,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/tiledark_nor_gl.png",
+      "material": "tiledark",
+      "channel": "nor_gl",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles_nor_gl.jpg",
+      "sourceSha256": "99546fdc2978d0950a2c61fe94dbd4230bb7825944bb4e4e7ad586839fdc721d",
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.23,
+        "value": 0.66,
+        "roughness": 0.86,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/tiledark_rough.png",
+      "material": "tiledark",
+      "channel": "rough",
+      "sourceAsset": "grey_roof_tiles",
+      "sourceFile": "assets/source/grey_roof_tiles_rough.jpg",
+      "sourceSha256": "edc3185b560a71b2b5f5f568710b8674da41becb39ca374f5e8efeca15b5794f",
+      "sha256": "6d7fb548f99f6de8d7f1af94efdbc2ce16cb67ed94086bc6b53cc722c3f53974",
+      "settings": {
+        "source": "grey_roof_tiles",
+        "saturation": 0.23,
+        "value": 0.66,
+        "roughness": 0.86,
+        "period": 0.34,
+        "crop": [
+          0.235,
+          0.13,
+          0.052,
+          0.075
+        ]
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/cutstone_diff.png",
+      "material": "cutstone",
+      "channel": "diff",
+      "sourceAsset": "white_sandstone_blocks_02",
+      "sourceFile": "assets/source/white_sandstone_blocks_02.jpg",
+      "sourceSha256": "0a43c8bc80581408f9c700ad98d2de64280e694148e37626d6648fdddf47a777",
+      "sha256": "c087f3c52a11dac3640930fc054b2cd640e324c85231b3466c972e32022f978c",
+      "settings": {
+        "source": "white_sandstone_blocks_02",
+        "saturation": 0.4,
+        "value": 0.95,
+        "roughness": 0.93,
+        "period": [
+          0.85,
+          0.42
+        ],
+        "crop": [
+          0.3,
+          0.936,
+          0.18,
+          0.04
+        ],
+        "normalStrength": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/cutstone_nor_gl.png",
+      "material": "cutstone",
+      "channel": "nor_gl",
+      "sourceAsset": "white_sandstone_blocks_02",
+      "sourceFile": "assets/source/white_sandstone_blocks_02_nor_gl.jpg",
+      "sourceSha256": "14eb23e29a347b97394c65a6f1fe2c7c107da55b18fb95b912c7280c5a43b72d",
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398",
+      "settings": {
+        "source": "white_sandstone_blocks_02",
+        "saturation": 0.4,
+        "value": 0.95,
+        "roughness": 0.93,
+        "period": [
+          0.85,
+          0.42
+        ],
+        "crop": [
+          0.3,
+          0.936,
+          0.18,
+          0.04
+        ],
+        "normalStrength": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/cutstone_rough.png",
+      "material": "cutstone",
+      "channel": "rough",
+      "sourceAsset": "white_sandstone_blocks_02",
+      "sourceFile": "assets/source/white_sandstone_blocks_02_rough.jpg",
+      "sourceSha256": "f30c3c460130ac867d398cacf8041d86eaa760f134f00c84cc1a30348751d3f5",
+      "sha256": "b66f3075e44d10dd69d24738f3a2cabb8dbd705a2605d3a9f9fe3e51a33d8be3",
+      "settings": {
+        "source": "white_sandstone_blocks_02",
+        "saturation": 0.4,
+        "value": 0.95,
+        "roughness": 0.93,
+        "period": [
+          0.85,
+          0.42
+        ],
+        "crop": [
+          0.3,
+          0.936,
+          0.18,
+          0.04
+        ],
+        "normalStrength": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/paving_diff.png",
+      "material": "paving",
+      "channel": "diff",
+      "sourceAsset": "white_sandstone_blocks_02",
+      "sourceFile": "assets/source/white_sandstone_blocks_02.jpg",
+      "sourceSha256": "0a43c8bc80581408f9c700ad98d2de64280e694148e37626d6648fdddf47a777",
+      "sha256": "aa21cfd2416e9d933e3cd55b7c38d7684885765c118b870e9aa3bbbd6499930a",
+      "settings": {
+        "source": "white_sandstone_blocks_02",
+        "saturation": 0.4,
+        "value": 0.73,
+        "roughness": 0.93,
+        "period": [
+          0.85,
+          0.42
+        ],
+        "crop": [
+          0.3,
+          0.936,
+          0.18,
+          0.04
+        ],
+        "normalStrength": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/paving_nor_gl.png",
+      "material": "paving",
+      "channel": "nor_gl",
+      "sourceAsset": "white_sandstone_blocks_02",
+      "sourceFile": "assets/source/white_sandstone_blocks_02_nor_gl.jpg",
+      "sourceSha256": "14eb23e29a347b97394c65a6f1fe2c7c107da55b18fb95b912c7280c5a43b72d",
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398",
+      "settings": {
+        "source": "white_sandstone_blocks_02",
+        "saturation": 0.4,
+        "value": 0.73,
+        "roughness": 0.93,
+        "period": [
+          0.85,
+          0.42
+        ],
+        "crop": [
+          0.3,
+          0.936,
+          0.18,
+          0.04
+        ],
+        "normalStrength": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/paving_rough.png",
+      "material": "paving",
+      "channel": "rough",
+      "sourceAsset": "white_sandstone_blocks_02",
+      "sourceFile": "assets/source/white_sandstone_blocks_02_rough.jpg",
+      "sourceSha256": "f30c3c460130ac867d398cacf8041d86eaa760f134f00c84cc1a30348751d3f5",
+      "sha256": "b66f3075e44d10dd69d24738f3a2cabb8dbd705a2605d3a9f9fe3e51a33d8be3",
+      "settings": {
+        "source": "white_sandstone_blocks_02",
+        "saturation": 0.4,
+        "value": 0.73,
+        "roughness": 0.93,
+        "period": [
+          0.85,
+          0.42
+        ],
+        "crop": [
+          0.3,
+          0.936,
+          0.18,
+          0.04
+        ],
+        "normalStrength": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/bankstone_diff.png",
+      "material": "bankstone",
+      "channel": "diff",
+      "sourceAsset": "mossy_sandstone",
+      "sourceFile": "assets/source/mossy_sandstone.jpg",
+      "sourceSha256": "61ccd3b5ec1f8d27ceee79bef9ced8064c7555570ea53d86ebac35fc337e2997",
+      "sha256": "506e605a4e6928d1ca0e00dfbbf733465c83a4fdd25e746a0f466bda0dfbf4eb",
+      "settings": {
+        "source": "mossy_sandstone",
+        "saturation": 0.53,
+        "value": 0.96,
+        "roughness": 0.92,
+        "period": [
+          1.4,
+          0.75
+        ],
+        "crop": [
+          0.32,
+          0.525,
+          0.21,
+          0.12
+        ],
+        "normalStrength": 0.28
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/bankstone_nor_gl.png",
+      "material": "bankstone",
+      "channel": "nor_gl",
+      "sourceAsset": "mossy_sandstone",
+      "sourceFile": "assets/source/mossy_sandstone_nor_gl.jpg",
+      "sourceSha256": "67911c1de7fb7f5e2a98ec72ce7f77eaa15941a724e3ceeb2080966f7ebfcb3e",
+      "sha256": "ee003b538830afb0c6d3de94358fea501da6f6f6267dbc6a216fe93d22a11a74",
+      "settings": {
+        "source": "mossy_sandstone",
+        "saturation": 0.53,
+        "value": 0.96,
+        "roughness": 0.92,
+        "period": [
+          1.4,
+          0.75
+        ],
+        "crop": [
+          0.32,
+          0.525,
+          0.21,
+          0.12
+        ],
+        "normalStrength": 0.28
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/bankstone_rough.png",
+      "material": "bankstone",
+      "channel": "rough",
+      "sourceAsset": "mossy_sandstone",
+      "sourceFile": "assets/source/mossy_sandstone_rough.jpg",
+      "sourceSha256": "f497744283f4d3e2351e5e55034dde78ef568e2add1a9dfbe9cc8089eeafac6e",
+      "sha256": "7a349e10d21ef678b80f7cda5561eae3567068777aa5cbe97487921a03efb332",
+      "settings": {
+        "source": "mossy_sandstone",
+        "saturation": 0.53,
+        "value": 0.96,
+        "roughness": 0.92,
+        "period": [
+          1.4,
+          0.75
+        ],
+        "crop": [
+          0.32,
+          0.525,
+          0.21,
+          0.12
+        ],
+        "normalStrength": 0.28
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/stone_diff.png",
+      "material": "stone",
+      "channel": "diff",
+      "sourceAsset": "white_sandstone_blocks_02",
+      "sourceFile": "assets/source/white_sandstone_blocks_02.jpg",
+      "sourceSha256": "0a43c8bc80581408f9c700ad98d2de64280e694148e37626d6648fdddf47a777",
+      "sha256": "fa5f0a0b431c0da4140907cc86da4ff288e8323e851d72ee8aa7d2898d26cd01",
+      "settings": {
+        "source": "white_sandstone_blocks_02",
+        "saturation": 0.4,
+        "value": 0.82,
+        "roughness": 0.93,
+        "period": [
+          0.85,
+          0.42
+        ],
+        "crop": [
+          0.3,
+          0.936,
+          0.18,
+          0.04
+        ],
+        "normalStrength": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/stone_nor_gl.png",
+      "material": "stone",
+      "channel": "nor_gl",
+      "sourceAsset": "white_sandstone_blocks_02",
+      "sourceFile": "assets/source/white_sandstone_blocks_02_nor_gl.jpg",
+      "sourceSha256": "14eb23e29a347b97394c65a6f1fe2c7c107da55b18fb95b912c7280c5a43b72d",
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398",
+      "settings": {
+        "source": "white_sandstone_blocks_02",
+        "saturation": 0.4,
+        "value": 0.82,
+        "roughness": 0.93,
+        "period": [
+          0.85,
+          0.42
+        ],
+        "crop": [
+          0.3,
+          0.936,
+          0.18,
+          0.04
+        ],
+        "normalStrength": 0.12
+      }
+    },
+    {
+      "file": "assets/processed/materials-r9/stone_rough.png",
+      "material": "stone",
+      "channel": "rough",
+      "sourceAsset": "white_sandstone_blocks_02",
+      "sourceFile": "assets/source/white_sandstone_blocks_02_rough.jpg",
+      "sourceSha256": "f30c3c460130ac867d398cacf8041d86eaa760f134f00c84cc1a30348751d3f5",
+      "sha256": "b66f3075e44d10dd69d24738f3a2cabb8dbd705a2605d3a9f9fe3e51a33d8be3",
+      "settings": {
+        "source": "white_sandstone_blocks_02",
+        "saturation": 0.4,
+        "value": 0.82,
+        "roughness": 0.93,
+        "period": [
+          0.85,
+          0.42
+        ],
+        "crop": [
+          0.3,
+          0.936,
+          0.18,
+          0.04
+        ],
+        "normalStrength": 0.12
+      }
+    }
+  ]
+}

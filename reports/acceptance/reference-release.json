@@ -1,0 +1,57 @@
+{
+  "revision": "reference-world-20260910-r3",
+  "deploymentId": "6aa1bfbc48bcf3169994e4f5",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "integrityChecks": 1296,
+  "runtimeModels": 34,
+  "places": 15,
+  "interiorCameras": 13,
+  "referenceImages": 15,
+  "unitTestsPassed": 6,
+  "browserCoverage": {
+    "fullRunPassed": 8,
+    "artifactWriteFailures": 2,
+    "targetedRetestPassed": 2,
+    "logs": [
+      "reference-e2e-release.log",
+      "reference-artifact-retest.log"
+    ]
+  },
+  "productionBrowserSmoke": {
+    "at": "2026-09-09T20:27:57.220Z",
+    "url": "https://daguanyuan-rumeng.zeabur.app/",
+    "dnsOverride": "47.89.212.251",
+    "quicDisabled": true,
+    "tlsVerification": true,
+    "hooksAbsent": true,
+    "sourceHooksAbsent": true,
+    "focus": {
+      "width": "2px",
+      "style": "solid"
+    },
+    "sceneVisible": true,
+    "refresh": true,
+    "selection": true,
+    "errors": [],
+    "failed": [],
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "touchEmulation": true,
+      "networkThrottle": false,
+      "models": [
+        "/models/vegetation/broadleaf-low.glb",
+        "/models/overview-low.glb",
+        "/models/places-low/xiaoxiangguan.glb"
+      ],
+      "selection": true
+    }
+  },
+  "visualDisposition": "REBUILD",
+  "referenceFidelityComplete": false,
+  "mobilePerformanceTargetsComplete": false,
+  "defaultLocalBrowserLoadSucceeded": false,
+  "publishedResourceHashesMatched": 9
+}

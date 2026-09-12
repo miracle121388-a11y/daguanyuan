@@ -1,0 +1,53 @@
+{
+  "at": "2026-09-11T16:25:08.573123+00:00",
+  "revision": "spatial-garden-20260911-r7",
+  "status": "r7 reviewed; continuing substantive r8 model rebuild; Zeabur login remains pending",
+  "goalComplete": false,
+  "sourceChanges": [
+    "Rebuilt r7 hall, timber bracket, open lattice, floor and principal tower meshes on unchanged reviewed coordinates",
+    "Ground material baked from actual CC0 grass, mixed locally with reviewed soil; continuous thick bank faces and irregular scanned rocks",
+    "Source grass instanced from the editable master; roots seated against actual land, seven offsets outside land omitted",
+    "Mobile close/full courtyard control, lower reading drawer and actual detail-ready marker",
+    "Source-linked upper-storey lantern lighting and quieter night canopy"
+  ],
+  "passedSoFar": {
+    "spatialChecks": 319,
+    "layoutPreserved": true,
+    "unitTests": 6,
+    "firstModelOptimization": 37,
+    "firstMasterGroundSamples": 2217,
+    "firstMobileGroundSamples": 2217,
+    "firstIntegrityChecks": 1851,
+    "currentModelOptimization": 37,
+    "currentMasterGroundSamples": 2217,
+    "currentMobileGroundSamples": 2217,
+    "currentIntegrityChecks": 1851,
+    "rasterProvenanceFiles": 92,
+    "rasterProvenanceMissing": 0,
+    "lint": true,
+    "formalBuild": true,
+    "formalPackageSmoke": true,
+    "e2eCoverage": "10 full-run passes +1 targeted pass; current application source unchanged",
+    "phoneInitialMiB": 7.790794372558594,
+    "phoneInitialSeconds": 9.8888
+  },
+  "notYetRun": [
+    "Design documentation sync after final correction",
+    "Public r7 deployment and verification"
+  ],
+  "resolvedBuildIssues": [
+    "First material bake completed; light pack stage failed after output directory changed. Actual r7 shadow stage re-run and packed successfully.",
+    "Seven generated grass offsets lacked land beneath; omitted and all remaining grass seated on the actual mesh.",
+    "First capture had earth shader compilation failure: patch is reserved in GLSL. Changed the identifier; those screenshots excluded from visual acceptance."
+  ],
+  "currentBuild": "reports/acceptance/r7-model-build-corrected.log",
+  "currentOptimization": "reports/acceptance/r7-model-optimize-corrected.log",
+  "rootVisualPasses": 2,
+  "localProxyConfigurationChanged": false,
+  "performanceLimit": "Same-source samples vary; isolated profile30.86ms mean/P9550.8 versus prior6-second sample88.26ms. Reports retained; stable60FPS not established.",
+  "visualReview": {
+    "disposition": "rebuild",
+    "report": "reports/acceptance/r7-full-review.md",
+    "completed": true
+  }
+}

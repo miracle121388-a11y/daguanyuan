@@ -1,0 +1,47 @@
+{
+  "at": "2026-09-11T17:52:29.265597+00:00",
+  "revision": "spatial-garden-20260912-r8",
+  "status": "local-package-verified-independent-review-running",
+  "goalComplete": false,
+  "package": ".deploy/reference-20260911-173828-843440",
+  "localPreview": "http://127.0.0.1:4277/",
+  "verification": "reports/acceptance/r8-verification-summary.json",
+  "visualReview": {
+    "disposition": "rebuild",
+    "report": "reports/acceptance/r8-full-review.md"
+  },
+  "documentation": {
+    "status": "r8-record-synchronized",
+    "files": [
+      "DESIGN.md",
+      ".impeccable/design.json"
+    ]
+  },
+  "deployment": {
+    "authorized": true,
+    "uploaded": false,
+    "blocker": "Original Zeabur account returns 401 Unauthorized",
+    "log": "r8-zeabur-auth-preflight.log",
+    "lastVerifiedPublicRevision": "spatial-garden-20260910-r6",
+    "lastVerifiedPublicAt": "2026-09-10T09:52:04.756297+00:00",
+    "targetProject": "6aa142fb6c3d9581b71560ed",
+    "targetService": "6aa143296c3d9581b71560fa",
+    "targetServer": "6a8eee0bb11fb81fb4aaca05",
+    "newServerPurchased": false,
+    "defaultLocalAccessRepaired": false,
+    "proxyDnsHostsChanged": false,
+    "currentHealthProbe": {
+      "at": "2026-09-11T17:47:26.100Z",
+      "report": "r8-public-transport-probe.json",
+      "defaultBrowser": "ERR_CONNECTION_CLOSED",
+      "dnsOverrideOnlyStatus": 200,
+      "healthRevision": "spatial-garden-20260910-r6",
+      "tlsVerification": true,
+      "quicUnchanged": true,
+      "fullSceneChecked": false
+    }
+  },
+  "userNextChoice": "Continue refining material and landscape",
+  "nextRevision": "r9",
+  "checkpoint": ".checkpoints/before-r9-20260912-020827"
+}

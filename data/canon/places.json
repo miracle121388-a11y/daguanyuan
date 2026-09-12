@@ -259,5 +259,62 @@
     "spatialInterpretation": "interpretive",
     "theme": "水月",
     "features": []
+  },
+  {
+    "id": "daguanlou",
+    "name": "大观楼",
+    "aliases": [],
+    "theme": "正楼",
+    "description": "正楼大观楼与东、西侧楼共同组成省亲建筑群。层楼、复道与玉栏取意第十七至十八回，具体层数与尺度为美术设定。",
+    "sourceRefs": [
+      "reference-world-daguanlou"
+    ],
+    "spatialInterpretation": "interpretive",
+    "features": [
+      {
+        "text": "正楼大观楼与东、西侧楼共同组成省亲建筑群。层楼、复道与玉栏取意第十七至十八回，具体层数与尺度为美术设定。",
+        "sourceRefs": [
+          "reference-world-daguanlou"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "longcuian",
+    "name": "栊翠庵",
+    "aliases": [],
+    "theme": "禅院",
+    "description": "花木繁盛的栊翠庵中，妙玉在东禅堂奉茶。此处以小型禅院、梅树与茶席构成空间，冬景参看雪梅参考图。",
+    "sourceRefs": [
+      "reference-world-longcuian"
+    ],
+    "spatialInterpretation": "interpretive",
+    "features": [
+      {
+        "text": "花木繁盛的栊翠庵中，妙玉在东禅堂奉茶。此处以小型禅院、梅树与茶席构成空间，冬景参看雪梅参考图。",
+        "sourceRefs": [
+          "reference-world-longcuian"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nuanxiangwu",
+    "name": "暖香坞",
+    "aliases": [],
+    "theme": "画室",
+    "description": "惜春的卧房题作暖香坞，回廊通向挂猩红毡帘的门口。天气寒冷，画胶凝涩，园景画暂被收起。",
+    "sourceRefs": [
+      "reference-world-nuanxiangwu"
+    ],
+    "spatialInterpretation": "interpretive",
+    "features": [
+      {
+        "text": "惜春的卧房题作暖香坞，回廊通向挂猩红毡帘的门口。天气寒冷，画胶凝涩，园景画暂被收起。",
+        "sourceRefs": [
+          "reference-world-nuanxiangwu"
+        ]
+      }
+    ]
   }
 ]

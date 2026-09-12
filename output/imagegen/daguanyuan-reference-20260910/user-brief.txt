@@ -1,0 +1,243 @@
+下面给出一套适合 **GPT-6 Astra / Midjourney / Stable Diffusion / DALL·E 类模型生成的大观园视觉资产提示词**。
+
+整体设计原则：
+
+- **遵循《红楼梦》原著空间逻辑**：不是普通古建筑园林，而是“贾府为元妃省亲建造的皇家级园林别苑”，兼具 **皇家气象、江南园林、文人雅趣、青春少女居所**。
+- **避免影视剧常见的红木家具+大红灯笼俗套**。
+- 核心美学：
+  - 明代园林美学（留白、借景、框景）
+  - 江南水乡气质
+  - 大观园“青春、美、梦境、繁华即将消逝”的文学氛围
+  - 富丽但不暴发户，精致但不压迫。
+
+建议统一风格参数：
+
+> **Chinese classical garden architecture, Ming dynasty Jiangnan aesthetics, Dream of Red Chamber Grand View Garden, poetic realism, ultra detailed, cinematic lighting, elegant composition, 8K architectural visualization, Unreal Engine 5 quality, no people, no modern objects**
+
+---
+
+# 0. 大观园整体鸟瞰图（总览）
+
+### Prompt
+
+> A magnificent aerial view of Grand View Garden from Dream of the Red Chamber, a royal-level Jiangnan classical garden built for imperial concubine inspection, vast landscape with winding lakes, elegant pavilions, bridges, bamboo forests, ancient trees, lotus ponds, hidden courtyards, delicate Ming dynasty architecture, white walls and black tiles, carved wooden details, water reflections, misty morning atmosphere, poetic Chinese painting feeling combined with realistic architectural visualization, luxurious yet graceful, a dreamlike paradise hidden inside Jia Mansion, no people, no text, cinematic 8K
+
+关键词：
+
+- 不是皇家宫殿
+- 是“贵族私园”
+- 有空间层次
+
+---
+
+# 1. 怡红院（贾宝玉住所）
+
+## 原著定位
+
+关键词：
+
+- 宝玉
+- 绛洞花王
+- 少年公子
+- 富贵闲适
+- 花木繁盛
+- 精致但不阳刚
+
+避免：
+❌ 大红色房间
+❌ 皇帝寝宫感
+
+## Prompt
+
+> The Crimson Carnation Courtyard (Yihong Yuan) from Dream of the Red Chamber, residence of Jia Baoyu, an elegant young nobleman's garden house surrounded by blooming flowers, rare plants and ancient trees, delicate red begonias and peach blossoms, a graceful courtyard with white walls, dark green bamboo, carved wooden windows, flowing curtains, small ponds and stones, luxurious but youthful atmosphere, refined scholar lifestyle, romantic and poetic, Ming dynasty Jiangnan garden architecture, warm sunlight filtering through flowers, mysterious beauty, cinematic architectural visualization, ultra realistic, 8K, no people
+
+### 室内补充：
+
+> Interior of Jia Baoyu's Yihong Yuan bedroom, elegant young aristocrat study and bedroom, antique wooden furniture, precious paintings, delicate porcelain, bookshelves, flower arrangements, silk curtains, subtle colors, refined literary atmosphere, not imperial palace, intimate and poetic, Dream of Red Chamber aesthetic
+
+---
+
+# 2. 潇湘馆（林黛玉住所）
+
+## 原著定位
+
+关键词：
+
+- 林黛玉
+- 竹
+- 清幽
+- 孤高
+- 诗意
+- 月色
+
+这是大观园最有文学性的建筑。
+
+## Prompt
+
+> Xiaoxiang Pavilion from Dream of the Red Chamber, residence of Lin Daiyu, a secluded elegant bamboo garden surrounded by endless green bamboo forests, a small refined pavilion beside a quiet stream, white walls and black tiles, delicate stone pathways, moss covered rocks, falling bamboo shadows, quiet lake reflection, misty moonlight atmosphere, melancholic but beautiful, poetic Chinese literati garden, representing purity and loneliness, Ming dynasty Jiangnan architecture, cinematic realism, ultra detailed, 8K, no people
+
+---
+
+## 潇湘馆夜景版
+
+> Xiaoxiang Pavilion under moonlight, Dream of Red Chamber Lin Daiyu residence, bamboo forest moving gently in the night wind, moonlight falling through bamboo leaves, quiet courtyard, ancient wooden pavilion, subtle lantern glow, poetic sadness, elegant and mysterious Chinese classical garden atmosphere, cinematic night scene, ultra realistic
+
+---
+
+# 3. 蘅芜苑（薛宝钗住所）
+
+## 原著定位
+
+关键词：
+
+- 宝钗
+- 冷香丸
+- 稳重
+- 富贵端庄
+- 香草植物
+
+不是艳丽，是“冷”。
+
+## Prompt
+
+> Hengwu Garden from Dream of the Red Chamber, residence of Xue Baochai, elegant noble lady courtyard surrounded by rare fragrant plants and medicinal flowers, calm and dignified atmosphere, graceful ancient architecture, white walls, dark wooden structures, carefully arranged garden landscape, lotus pond, orchids, magnolia, subtle fragrance atmosphere, restrained luxury, classical Chinese elegance, quiet intelligence and maturity, Ming dynasty garden style, cinematic architectural rendering, 8K
+
+---
+
+# 4. 秋爽斋（探春住所）
+
+## 原著定位
+
+关键词：
+
+- 贾探春
+- 大气
+- 开阔
+- 女中豪杰
+- 书卷气
+
+## Prompt
+
+> Qiushuang Studio from Dream of the Red Chamber, residence of Jia Tanchun, spacious elegant courtyard with open views, tall ancient trees, chrysanthemum flowers, wide veranda, bright sunlight, noble and confident atmosphere, refined study room, calligraphy, paintings, books, classical Chinese furniture, representing intelligence and ambition, graceful Ming dynasty architecture, elegant but powerful, cinematic realism, 8K
+
+---
+
+# 5. 稻香村（李纨住所）
+
+## 原著定位
+
+关键词：
+
+- 田园
+- 简朴
+- 离群
+- 乡村美
+
+## Prompt
+
+> Daoxiang Village from Dream of the Red Chamber, a peaceful rural-style courtyard inside Grand View Garden, surrounded by rice fields, bamboo fences, vegetable gardens, wooden houses, flowering trees, simple but elegant architecture, natural countryside beauty combined with aristocratic garden design, quiet morning mist, birds, traditional Chinese farming landscape, poetic realism, Ming dynasty Jiangnan countryside aesthetic, cinematic 8K
+
+---
+
+# 6. 栊翠庵（妙玉住所）
+
+## 原著定位
+
+关键词：
+
+- 佛寺
+- 清冷
+- 高洁
+- 禅意
+
+## Prompt
+
+> Longcui Nunnery from Dream of the Red Chamber, residence of Miaoyu, an elegant hidden Buddhist courtyard inside Grand View Garden, ancient temple architecture surrounded by pine trees, bamboo, stone paths, incense smoke, quiet meditation garden, elegant wooden halls, lotus pond, Zen atmosphere, mysterious and pure, minimal but luxurious, Chinese Buddhist garden aesthetics, misty morning light, cinematic architectural visualization, ultra realistic 8K
+
+---
+
+# 7. 大观楼（元妃省亲核心建筑）
+
+## 原著定位
+
+这是整个大观园最高规格建筑。
+
+关键词：
+
+- 皇家
+- 盛大
+- 元妃
+- 仪式感
+
+## Prompt
+
+> Grand View Tower (Daguan Pavilion) from Dream of the Red Chamber, magnificent palace-style pavilion built for imperial concubine inspection, largest architectural centerpiece of Grand View Garden, multi-level traditional Chinese wooden architecture, golden roof decorations, intricate carvings, elegant terraces overlooking lakes and gardens, imperial yet graceful, not a palace but a noble garden pavilion, Ming dynasty architectural style, majestic scale, sunset light, cinematic masterpiece, ultra realistic 8K
+
+---
+
+# 8. 藕香榭（宴饮场景）
+
+## Prompt
+
+> Lotus Fragrance Pavilion from Dream of the Red Chamber, elegant waterside pavilion surrounded by lotus flowers, clear lake, curved bridge, delicate wooden architecture reflected in water, place for poetry gatherings and banquets, graceful young aristocratic atmosphere, summer garden beauty, Jiangnan classical landscape, cinematic sunlight, ultra detailed 8K
+
+---
+
+# 9. 芦雪庵（冬景）
+
+## Prompt
+
+> Lushue Nunnery from Dream of the Red Chamber during winter, elegant pavilion covered with snow, bamboo and plum blossoms blooming in cold weather, white snow landscape, ancient wooden architecture, poetic winter garden, quiet and refined atmosphere, inspired by Chinese literati paintings, cinematic realistic rendering, 8K
+
+---
+
+# 10. 暖香坞（惜春住所）
+
+## Prompt
+
+> Nuanxiang Dock from Dream of the Red Chamber, residence of Jia Xichun, quiet artistic courtyard with painting studio, elegant furniture, plum blossoms, warm sunlight, delicate garden architecture, peaceful creative atmosphere, refined young lady's residence, Chinese classical aesthetic, cinematic architectural visualization, 8K
+
+---
+
+# 11. 大观园水系（连接所有建筑）
+
+## Prompt
+
+> The waterways of Grand View Garden from Dream of the Red Chamber, winding artificial lake, small bridges, lotus flowers, boats, pavilions hidden among trees, reflections of ancient buildings on water, Jiangnan classical garden masterpiece, poetic and dreamlike atmosphere, realistic architectural visualization, cinematic 8K
+
+---
+
+# 12. 元宵夜大观园（最震撼展示图）
+
+用于第一眼吸引观众。
+
+## Prompt
+
+> Grand View Garden at night during the Lantern Festival from Dream of the Red Chamber, magnificent Chinese classical garden illuminated by thousands of elegant lanterns, pavilions glowing beside lakes, reflections on water, beautiful bridges, flowers and ancient trees, luxurious Jia Mansion garden atmosphere, imperial elegance mixed with Jiangnan poetry, breathtaking fantasy realism, cinematic masterpiece, Unreal Engine 5 environment design, 8K, no people
+
+---
+
+# 统一负面提示词（非常重要）
+
+所有图片建议加入：
+
+> modern buildings, modern furniture, excessive red color, palace architecture, Forbidden City style, fantasy Chinese game style, cartoon, anime, exaggerated gold decoration, western architecture, people, characters, text, watermark, low quality, blurry
+
+---
+
+# 推荐生成顺序（用于后续3D建模）
+
+如果目标是最终做“大观园数字世界”，建议优先生成：
+
+1. 大观园鸟瞰总图
+2. 大观楼
+3. 怡红院
+4. 潇湘馆
+5. 蘅芜苑
+6. 秋爽斋
+7. 栊翠庵
+8. 藕香榭
+9. 水系桥梁
+10. 夜景全园
+
+这些图生成后，可以进一步作为 **Astra 3D建模参考图 → Blender/UE5场景搭建 → NPC剧情系统** 的视觉基准。

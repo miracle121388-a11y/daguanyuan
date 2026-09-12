@@ -2,11 +2,14 @@
   "reopened": true,
   "placeIds": [
     "aojingxiguan",
+    "daguanlou",
     "daguanyuan_gate",
     "daoxiangcun",
     "dicuiting",
     "hengwuyuan",
+    "longcuian",
     "luxuean",
+    "nuanxiangwu",
     "ouxiangxie",
     "qiushuangzhai",
     "qujingtongyou",
@@ -14,8 +17,11 @@
     "xiaoxiangguan",
     "yihongyuan"
   ],
-  "meshes": 156,
+  "meshes": 14732,
   "missingImages": [],
-  "packedImages": 7,
-  "manualLayerPresent": true
+  "packedImages": 185,
+  "manualLayerPresent": true,
+  "nativeFullCrowns": true,
+  "nativeTreeInstances": 11196,
+  "linkedCrownMeshes": 4
 }

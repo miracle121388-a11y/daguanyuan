@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "revision": "spatial-garden-20260912-r14",
+  "reviewType": "bounded-verdict-pass",
+  "authority": "reports/acceptance/r12-full-review.md",
+  "previousVerdict": "reports/acceptance/r13-verdict.md",
+  "inputPacket": ".impeccable/review/r14-review-packet.md",
+  "scope": "Original findings 1–5 and regressions introduced by this batch only.",
+  "captures": [
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/desktop.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "748dfd28cd295f8151fad9b47060273bda7ef1f82a9e2a8596e6fdc014dcdf96",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/desktop.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/plan.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "3384544caeeaf9a891e34e5578700298a6193410ea840f78d065422793394848",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/plan.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/courtyard.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "736fafc2c5ef9c8ad1b827bc2225ac6733ec4bf63c778ca7cec69cd3b6775cea",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/courtyard.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/interior.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "718db32d49c0f7d62194fcca8cf1d9711af5863000b1b1e030001f0231522fc5",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/interior.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/cutaway.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "3b8c30baa11b978d602f1b513041c38209e542ac914860c1b9b58ec95840f70d",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/cutaway.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/night.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "0a4ef924834b8e4a0dd896e22cfe8b0ad81cd51bf2033f09fb17432786fc0723",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/night.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/central-ensemble.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "f41305d9dac8b562222c541242aba44136a683880a936ae0a98f6e752e0aeb55",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/central-ensemble.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/yihongyuan.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "8331357738b26bd751edad7c4f083a43d322c88fa1145b417bc033222dc692ad",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/yihongyuan.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/hengwuyuan.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "407a92094e12f61580673bfccc7eaebb8982e495e28b3e2fde1b86d3bcec8c7a",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/hengwuyuan.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/qiushuangzhai.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "0b762424aa822b3366011a6d4185866d3adf3c9b5d5afb6da846c144f98c6df2",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/qiushuangzhai.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/character.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "a6aacf601e9d70712ea5fdb19daff142fa30993a1f6c6aa6a4e64c0a6835a35c",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/character.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/event.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "99f95954b1c241c8c7921251257d2b70dd5e68d7e05cbaeafb003b9570fe8756",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/event.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/user-1266.png",
+      "width": 1266,
+      "height": 712,
+      "dimensionsMatch": true,
+      "sha256": "a977efc04c582beb1926476ee8eccafa98fbe55a6274ccdfee57d9ff35fc25ac",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/user-1266.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/mobile.png",
+      "width": 390,
+      "height": 844,
+      "dimensionsMatch": true,
+      "sha256": "04259eff52953209afb95825c0024c8e7a98202aa5c7f2834841924cd909772d",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/mobile.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/mobile-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "dimensionsMatch": true,
+      "sha256": "1590a2613d8948edd79ab6c481ef859b944927d83678ff7574da41ad094ad4cb",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/mobile-courtyard.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/mobile-whole-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "dimensionsMatch": true,
+      "sha256": "a94a551fea1e3d178ed6e27b7751b5bba36e4f43f488cc348d62e2523d449283",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/mobile-whole-courtyard.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-final-capture-inspection.json",
+      "file": ".impeccable/review/narrow.png",
+      "width": 320,
+      "height": 740,
+      "dimensionsMatch": true,
+      "sha256": "7f3934e37be8f71761c15d41401bdba6ecc7426df707fe12c06e5e8a6b26edb5",
+      "sha256Matches": true,
+      "archive": ".impeccable/review/r14-final/narrow.png",
+      "archiveMatches": true,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-native-capture-inspection.json",
+      "file": "reports/blender/r14-master-full.png",
+      "width": 1280,
+      "height": 800,
+      "dimensionsMatch": true,
+      "sha256": "0373e6f305b13b38ab2a7e92563a9d21fc72dcf7fe11f356f64a2b2ce6483b99",
+      "sha256Matches": true,
+      "archive": null,
+      "archiveMatches": null,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-native-capture-inspection.json",
+      "file": "reports/blender/r14-master-xiaoxiang.png",
+      "width": 1280,
+      "height": 800,
+      "dimensionsMatch": true,
+      "sha256": "8cd79a20d751addab5bffae7f80a5ee2b2d012b77a579830303652efa994ca81",
+      "sha256Matches": true,
+      "archive": null,
+      "archiveMatches": null,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-package-capture-inspection.json",
+      "file": "reports/browser/r14-packaged-production-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "4a6a4dc7eb6676c52cb2d2806f71a43d455e06e5648ad28d37389dbb20a0ded0",
+      "sha256Matches": true,
+      "archive": null,
+      "archiveMatches": null,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    },
+    {
+      "inventory": "reports/acceptance/r14-package-capture-inspection.json",
+      "file": "reports/browser/r14-packaged-production-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "dimensionsMatch": true,
+      "sha256": "e6eea81282cefb8fb7bf002b822d24ec89f0fdfeec7e436072206cd2327c92f5",
+      "sha256Matches": true,
+      "archive": null,
+      "archiveMatches": null,
+      "independentlyOpened": true,
+      "visuallyValid": true
+    }
+  ],
+  "captureCount": 21,
+  "captureMismatches": [],
+  "package": {
+    "directory": ".deploy/reference-20260912-155712-092545",
+    "inventoriedFiles": 588,
+    "actualFiles": 588,
+    "bytes": 49536574,
+    "mismatches": []
+  },
+  "nativeMasterSha256": "d8e497880d0d0902b36a8d3c8fd8f7f8ca46563ca631e545861ec946ebe33f48",
+  "suppliedLogicalFileCount": 45,
+  "suppliedLogicalMismatches": [],
+  "logicalVerificationBoundary": "Read supplied decoded-resource SHA ledger; did not independently decode resources.",
+  "documents": {
+    "status": "Final records read after documenter completion.",
+    "completion": "reports/acceptance/r14-documenter-completion.json",
+    "completionAt": "2026-09-12T16:16:08.85Z",
+    "hashes": [
+      {
+        "file": "DESIGN.md",
+        "sha256": "31b8ce9f816b42490b5c1dabbef985834f3ef5000a4aeed8d9c893f9065fa8ec"
+      },
+      {
+        "file": ".impeccable/design.json",
+        "sha256": "b3dcbe7399ed5b92e82ba2746951ce7f4f04ac51dfe017eef297d0579c9ce8ad"
+      },
+      {
+        "file": "reports/acceptance/r14-documenter-completion.json",
+        "sha256": "d4deb50b198608e2ae8bf7931b74b77bc4df5749b5fdd958ab76abfd72971834"
+      }
+    ],
+    "hashesMatchCompletion": true,
+    "readScope": [
+      "DESIGN.md current overview, spatial materials/LOD and evidence boundaries",
+      "design.json narrative, rules, dos and donts",
+      "Entire r14-documenter-completion.json"
+    ],
+    "unchangedComponentPreviewsReaudited": false
+  },
+  "limitations": [
+    "Exact-package phone PNG is CSS 390 × 844 at DPR 3, not physical-phone evidence.",
+    "Native Cycles renders use saved-master geometry and dedicated unsaved evidence camera/light. They do not establish web/mobile quality.",
+    "No new browser, test, detector, deployment, source change or full audit was performed.",
+    "No authenticated original FORM seed output, approved webpage comp or QUALITY BAR card was supplied."
+  ],
+  "scores": [
+    {
+      "finding": 1,
+      "status": "unresolved"
+    },
+    {
+      "finding": 2,
+      "status": "partial"
+    },
+    {
+      "finding": 3,
+      "status": "partial"
+    },
+    {
+      "finding": 4,
+      "status": "resolved",
+      "retained": true
+    },
+    {
+      "finding": 5,
+      "status": "resolved",
+      "retained": true
+    }
+  ],
+  "carriedRegression": {
+    "id": "R1",
+    "status": "resolved",
+    "retained": true
+  },
+  "newBatchRegressions": [],
+  "disposition": "fix",
+  "publication": {
+    "status": "Parent-reported RUNNING; independently read Publication confirmed packet addendum.",
+    "deploymentId": "6aa5791dfbf9c810b64d524c",
+    "suppliedVerification": "reports/acceptance/r14-zeabur-deployment-verified.json",
+    "suppliedAt": "2026-09-12T16:14:29.912150+00:00",
+    "boundary": "Default Edge connection still closes; temporary public DNS and QUIC-off with TLS passed. Reviewer performed no live checks and did not inspect supplemental live screenshots. Publication does not alter visual disposition."
+  }
+}

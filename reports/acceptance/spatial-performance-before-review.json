@@ -1,0 +1,323 @@
+{
+  "conditions": {
+    "os": "Windows 11",
+    "headless": true,
+    "actualMobileHardware": false,
+    "network": "local HTTP; no throttling",
+    "overviewSha256": "bb6c9ffed321f41d974caf711164df6862186f340c29210c22dcff39f437ed2a",
+    "metricLimit": "GPU allocations are estimates from scene resources; excludes driver overhead/framebuffers and cached hidden assets. These are not total VRAM readings."
+  },
+  "high": {
+    "mode": "high",
+    "timestamp": "2026-09-10T04:33:46.770Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "sampleCount": 124,
+    "meanFrameMs": 46.69919354838109,
+    "p95FrameMs": 78.29999999701977,
+    "drawCalls": 99,
+    "triangles": 1157554,
+    "estimatedGeometryBytes": 53001122,
+    "estimatedTextureBytesWithMipmaps": 31129599.999999996,
+    "textureCount": 7,
+    "geometryCount": 50,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4186/assets/index-C-DtgbrP.js",
+        "transferSize": 191012,
+        "decodedBodySize": 657968
+      },
+      {
+        "name": "http://127.0.0.1:4186/assets/index-DTZ0A3L8.css",
+        "transferSize": 9527,
+        "decodedBodySize": 42961
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/places.json",
+        "transferSize": 2919,
+        "decodedBodySize": 6751
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/characters.json",
+        "transferSize": 1381,
+        "decodedBodySize": 3170
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/events.json",
+        "transferSize": 3267,
+        "decodedBodySize": 9255
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/sources.json",
+        "transferSize": 11857,
+        "decodedBodySize": 52471
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/relations.json",
+        "transferSize": 476,
+        "decodedBodySize": 176
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/routes.json",
+        "transferSize": 1283,
+        "decodedBodySize": 3638
+      },
+      {
+        "name": "http://127.0.0.1:4186/scene-manifest.json",
+        "transferSize": 96732,
+        "decodedBodySize": 559082
+      },
+      {
+        "name": "http://127.0.0.1:4186/favicon.ico",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "name": "http://127.0.0.1:4186/art/manifest.json",
+        "transferSize": 12055,
+        "decodedBodySize": 43487
+      },
+      {
+        "name": "http://127.0.0.1:4186/assets/GardenScene-C9e0ROi4.js",
+        "transferSize": 203002,
+        "decodedBodySize": 720573
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/forest_grove.hdr",
+        "transferSize": 1659099,
+        "decodedBodySize": 1922024
+      },
+      {
+        "name": "http://127.0.0.1:4186/models/overview.glb",
+        "transferSize": 6875752,
+        "decodedBodySize": 6875452
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/vegetation/canopy-render.png",
+        "transferSize": 799901,
+        "decodedBodySize": 799601
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/vegetation/canopy-top.png",
+        "transferSize": 828435,
+        "decodedBodySize": 828135
+      },
+      {
+        "name": "http://127.0.0.1:4186/draco/draco_decoder.wasm",
+        "transferSize": 192720,
+        "decodedBodySize": 192420
+      },
+      {
+        "name": "http://127.0.0.1:4186/draco/draco_wasm_wrapper.js",
+        "transferSize": 12048,
+        "decodedBodySize": 58456
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/2f039d06cf387c46183beaff459de609c6cb5d4acd1be8747691cecab4692e1b.jpg",
+        "transferSize": 257314,
+        "decodedBodySize": 257014
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/c7ed1ed5f1bbec54d2e68bf58c7a8451f0b380b26164825df9695f1bcc73852c.jpg",
+        "transferSize": 234202,
+        "decodedBodySize": 233902
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/5df4661aa06332b3ba60da16420315ff3fc72f79ec110295745b590a3e8e30fd.jpg",
+        "transferSize": 46612,
+        "decodedBodySize": 46312
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/9e110fa023c44fef339ad84953062c0cbd486ff5c984c18d88523c3e19f825ff.jpg",
+        "transferSize": 97944,
+        "decodedBodySize": 97644
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/b7d34dbdd611a684e59c98038382b7368aa3c5dbcb732291bc282e6509148cdf.jpg",
+        "transferSize": 282581,
+        "decodedBodySize": 282281
+      }
+    ],
+    "method": "6-second settled static overview with water animation; last up to 300 frames; no network throttling"
+  },
+  "low": {
+    "mode": "low",
+    "timestamp": "2026-09-10T04:33:57.516Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "sampleCount": 300,
+    "meanFrameMs": 24.629000000009935,
+    "p95FrameMs": 52,
+    "drawCalls": 41,
+    "triangles": 186592,
+    "estimatedGeometryBytes": 20539428,
+    "estimatedTextureBytesWithMipmaps": 3189418.666666667,
+    "textureCount": 3,
+    "geometryCount": 42,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4186/assets/index-C-DtgbrP.js",
+        "transferSize": 191012,
+        "decodedBodySize": 657968
+      },
+      {
+        "name": "http://127.0.0.1:4186/assets/index-DTZ0A3L8.css",
+        "transferSize": 9527,
+        "decodedBodySize": 42961
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/places.json",
+        "transferSize": 2919,
+        "decodedBodySize": 6751
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/characters.json",
+        "transferSize": 1381,
+        "decodedBodySize": 3170
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/events.json",
+        "transferSize": 3267,
+        "decodedBodySize": 9255
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/sources.json",
+        "transferSize": 11857,
+        "decodedBodySize": 52471
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/relations.json",
+        "transferSize": 476,
+        "decodedBodySize": 176
+      },
+      {
+        "name": "http://127.0.0.1:4186/data/routes.json",
+        "transferSize": 1283,
+        "decodedBodySize": 3638
+      },
+      {
+        "name": "http://127.0.0.1:4186/scene-manifest.json",
+        "transferSize": 96732,
+        "decodedBodySize": 559082
+      },
+      {
+        "name": "http://127.0.0.1:4186/favicon.ico",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "name": "http://127.0.0.1:4186/art/manifest.json",
+        "transferSize": 12055,
+        "decodedBodySize": 43487
+      },
+      {
+        "name": "http://127.0.0.1:4186/assets/GardenScene-C9e0ROi4.js",
+        "transferSize": 203002,
+        "decodedBodySize": 720573
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/forest_grove.hdr",
+        "transferSize": 1659099,
+        "decodedBodySize": 1922024
+      },
+      {
+        "name": "http://127.0.0.1:4186/models/overview.glb",
+        "transferSize": 6875752,
+        "decodedBodySize": 6875452
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/vegetation/canopy-render.png",
+        "transferSize": 799901,
+        "decodedBodySize": 799601
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/vegetation/canopy-top.png",
+        "transferSize": 828435,
+        "decodedBodySize": 828135
+      },
+      {
+        "name": "http://127.0.0.1:4186/draco/draco_decoder.wasm",
+        "transferSize": 192720,
+        "decodedBodySize": 192420
+      },
+      {
+        "name": "http://127.0.0.1:4186/draco/draco_wasm_wrapper.js",
+        "transferSize": 12048,
+        "decodedBodySize": 58456
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/2f039d06cf387c46183beaff459de609c6cb5d4acd1be8747691cecab4692e1b.jpg",
+        "transferSize": 257314,
+        "decodedBodySize": 257014
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/c7ed1ed5f1bbec54d2e68bf58c7a8451f0b380b26164825df9695f1bcc73852c.jpg",
+        "transferSize": 234202,
+        "decodedBodySize": 233902
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/5df4661aa06332b3ba60da16420315ff3fc72f79ec110295745b590a3e8e30fd.jpg",
+        "transferSize": 46612,
+        "decodedBodySize": 46312
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/9e110fa023c44fef339ad84953062c0cbd486ff5c984c18d88523c3e19f825ff.jpg",
+        "transferSize": 97944,
+        "decodedBodySize": 97644
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/b7d34dbdd611a684e59c98038382b7368aa3c5dbcb732291bc282e6509148cdf.jpg",
+        "transferSize": 282581,
+        "decodedBodySize": 282281
+      },
+      {
+        "name": "http://127.0.0.1:4186/models/overview-low.glb",
+        "transferSize": 1754128,
+        "decodedBodySize": 1753828
+      },
+      {
+        "name": "http://127.0.0.1:4186/art/daguanlou.webp",
+        "transferSize": 406986,
+        "decodedBodySize": 406686
+      },
+      {
+        "name": "http://127.0.0.1:4186/models/places-low/daguanlou.glb",
+        "transferSize": 2546532,
+        "decodedBodySize": 2546232
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/2a4666a1613a46e43bd967f2c06fbb83366ea0b1333235cd53ecd5eed4aefdf6.jpg",
+        "transferSize": 257720,
+        "decodedBodySize": 257420
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b.jpg",
+        "transferSize": 234384,
+        "decodedBodySize": 234084
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/c8ed4736aa28a0164390996f0a125b903961e5d2dded702c4ae73c5127aff91f.jpg",
+        "transferSize": 46615,
+        "decodedBodySize": 46315
+      },
+      {
+        "name": "http://127.0.0.1:4186/textures/shared/6c30439ee0e4d0496794e59a356e45418431e2f1c35902533396279a77dee135.jpg",
+        "transferSize": 98262,
+        "decodedBodySize": 97962
+      }
+    ],
+    "method": "Orbit interaction on low quality; demand rendering; idle frame rate is not a meaningful measure"
+  }
+}

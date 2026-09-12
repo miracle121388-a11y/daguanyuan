@@ -1,0 +1,98 @@
+{
+  "beforeMaster": "eb78a58bb0ff5686214d0409426a02896e2ffeb524d1bee1efc38f25584d1bac",
+  "afterMaster": "ca556490c3b746e36dd896326d1779f2d1997c4f0b09d5bd52e28dab49e86e44",
+  "preservedExistingPlantTransforms": 11196,
+  "protectedManualObjects": 0,
+  "changed": [
+    {
+      "place": "xiaoxiangguan",
+      "removed": [
+        "xiaoxiangguan_bamboo",
+        "xiaoxiangguan_bark",
+        "xiaoxiangguan_creamflower",
+        "xiaoxiangguan_leaf",
+        "xiaoxiangguan_leafdark",
+        "xiaoxiangguan_lightleaf"
+      ],
+      "newMeshes": [
+        "xiaoxiangguan_focal_bark",
+        "xiaoxiangguan_focal_botanical_petal",
+        "xiaoxiangguan_focal_botanical_bamboo",
+        "xiaoxiangguan_focal_botanical_stem",
+        "xiaoxiangguan_focal_botanical_banana",
+        "xiaoxiangguan_focal_bamboo",
+        "xiaoxiangguan_focal_leaf",
+        "xiaoxiangguan_focal_leafdark",
+        "xiaoxiangguan_focal_botanical_litter"
+      ]
+    },
+    {
+      "place": "yihongyuan",
+      "removed": [
+        "yihongyuan_bamboo.001",
+        "yihongyuan_bark",
+        "yihongyuan_flower.001",
+        "yihongyuan_leaf.001",
+        "yihongyuan_leafdark",
+        "yihongyuan_lightleaf.001",
+        "yihongyuan_moss.001"
+      ],
+      "newMeshes": [
+        "yihongyuan_focal_bark",
+        "yihongyuan_focal_botanical_petal",
+        "yihongyuan_focal_botanical_bamboo",
+        "yihongyuan_focal_botanical_stem",
+        "yihongyuan_focal_botanical_banana",
+        "yihongyuan_focal_bamboo",
+        "yihongyuan_focal_moss",
+        "yihongyuan_focal_leafdark",
+        "yihongyuan_focal_leaf",
+        "yihongyuan_focal_botanical_litter"
+      ]
+    },
+    {
+      "place": "hengwuyuan",
+      "removed": [
+        "hengwuyuan_bamboo.001",
+        "hengwuyuan_bark.001",
+        "hengwuyuan_creamflower.001",
+        "hengwuyuan_leaf.001",
+        "hengwuyuan_leafdark.001",
+        "hengwuyuan_lightleaf.001",
+        "hengwuyuan_moss.001"
+      ],
+      "newMeshes": [
+        "hengwuyuan_focal_leaf",
+        "hengwuyuan_focal_bamboo",
+        "hengwuyuan_focal_leafdark",
+        "hengwuyuan_focal_creamflower",
+        "hengwuyuan_focal_bark",
+        "hengwuyuan_focal_moss",
+        "hengwuyuan_focal_botanical_bamboo",
+        "hengwuyuan_focal_botanical_litter"
+      ]
+    },
+    {
+      "place": "qiushuangzhai",
+      "removed": [
+        "qiushuangzhai_bamboo.001",
+        "qiushuangzhai_bark.001",
+        "qiushuangzhai_creamflower.001",
+        "qiushuangzhai_leaf",
+        "qiushuangzhai_leafdark.001",
+        "qiushuangzhai_moss.001"
+      ],
+      "newMeshes": [
+        "qiushuangzhai_focal_bamboo",
+        "qiushuangzhai_focal_leafdark",
+        "qiushuangzhai_focal_creamflower",
+        "qiushuangzhai_focal_moss",
+        "qiushuangzhai_focal_bark",
+        "qiushuangzhai_focal_leaf",
+        "qiushuangzhai_focal_botanical_bamboo",
+        "qiushuangzhai_focal_botanical_litter"
+      ]
+    }
+  ],
+  "scope": "Botanical meshes and connected planted beds only; existing architecture, anchor IDs, water and road coordinates preserved."
+}

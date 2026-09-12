@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported furniture_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "furniture_diff",
+  "sourcePixelSha256": "47eb2fcb8ebe6d2540b9910808bea5b35c05ab3e15a2bedfd947983a27d2e80f",
+  "sha256": "9ace9ad5acccd3c24dd53b388ae67584f5ddcab8335bd9cc1e9a1630dc8fbaa5",
+  "prompt": "Blender-exported furniture_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

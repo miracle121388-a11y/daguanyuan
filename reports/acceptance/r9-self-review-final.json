@@ -1,0 +1,62 @@
+{
+  "revision": "spatial-garden-20260912-r9",
+  "at": "2026-09-11T19:14:20.524950+00:00",
+  "inspectionRound": 2,
+  "allOpened": true,
+  "captureValidity": "All twelve files show their named completed state. Interior uses the real UI motion checkbox before the unchanged room view. These stills do not verify camera transitions.",
+  "visibleLimits": [
+    "Whole garden still has broad exposed lawns and smooth bare hills.",
+    "Main building lower wood surfaces remain pinkish relative to source imagery.",
+    "Water boundary and landscape read as constructed geometry, short of reference realism."
+  ],
+  "files": [
+    {
+      "path": ".impeccable/review/desktop.png",
+      "sha256": "42706014800a5ebad12f64a56dca01b8367b0cee6f1f0a126cb91a11f8fc235d"
+    },
+    {
+      "path": ".impeccable/review/plan.png",
+      "sha256": "e75a7aabbe26c6613a52a3751f055716dec3ec6852cdada1f076c06c6c907a44"
+    },
+    {
+      "path": ".impeccable/review/courtyard.png",
+      "sha256": "2e605992deb9d5f9f2eed10a77c45c12d0e6c9af826547c45bdb6e12af3a3778"
+    },
+    {
+      "path": ".impeccable/review/interior.png",
+      "sha256": "535fca1a319069fa03f1cc3b3be6fd258684c825213b9e3f81dfdaa890f69233"
+    },
+    {
+      "path": ".impeccable/review/cutaway.png",
+      "sha256": "81838a0703859ac3407a5ace354ba45cb253cfe78ffb56ce9999f4adb8aa9956"
+    },
+    {
+      "path": ".impeccable/review/night.png",
+      "sha256": "c45bce678ac1122c3b8b7d9fc8c7832c7be69577a6e6760204dccb376c1ff695"
+    },
+    {
+      "path": ".impeccable/review/central-ensemble.png",
+      "sha256": "9ad94ed43d246c44fae448138c868a0f915913f220e60cc33e27660dfa0466e0"
+    },
+    {
+      "path": ".impeccable/review/user-1266.png",
+      "sha256": "e7697571004932594d755c93933739b60c1415b19e78d053352a309fa6dbd087"
+    },
+    {
+      "path": ".impeccable/review/mobile.png",
+      "sha256": "e139ddd394d715419cbc662ee6d9f25129c74c69fabec835ecaeb90782bacc81"
+    },
+    {
+      "path": ".impeccable/review/mobile-courtyard.png",
+      "sha256": "b3da1d4649dd7b0a5619b4e4ae619e5bc070d60d5a014eacd746fc05aa800004"
+    },
+    {
+      "path": ".impeccable/review/mobile-whole-courtyard.png",
+      "sha256": "de2cf2bd8d7df459f6b6959aadf8d11feb2b28207e2a1b3a37310f44bf7466c7"
+    },
+    {
+      "path": ".impeccable/review/narrow.png",
+      "sha256": "e2a5cb1ebb4d17e25e8ca86ee95e20919bdc5b47d503f89b897a5f0cc7ebe1e5"
+    }
+  ]
+}

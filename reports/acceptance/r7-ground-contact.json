@@ -1,0 +1,66 @@
+{
+  "count": 2251,
+  "maxAdjustmentM": 6.971716995239258,
+  "adjustedOver5cm": 1622,
+  "outsideLandRemoved": [
+    {
+      "name": "Ground_Cover_1686",
+      "position": [
+        -36.97724533081055,
+        99.13265228271484,
+        0.07999999821186066
+      ]
+    },
+    {
+      "name": "Ground_Cover_1699",
+      "position": [
+        -53.676082611083984,
+        -66.8925552368164,
+        0.07999999821186066
+      ]
+    },
+    {
+      "name": "Ground_Cover_1836",
+      "position": [
+        -44.666744232177734,
+        92.89779663085938,
+        0.07999999821186066
+      ]
+    },
+    {
+      "name": "Ground_Cover_1916",
+      "position": [
+        -57.04347229003906,
+        -51.19596862792969,
+        0.07999999821186066
+      ]
+    },
+    {
+      "name": "Ground_Cover_1986",
+      "position": [
+        -43.80480194091797,
+        92.53133392333984,
+        0.07999999821186066
+      ]
+    },
+    {
+      "name": "Ground_Cover_1987",
+      "position": [
+        -43.236549377441406,
+        93.64077758789062,
+        0.07999999821186066
+      ]
+    },
+    {
+      "name": "Ground_Cover_2049",
+      "position": [
+        1.5424376726150513,
+        95.74173736572266,
+        0.07999999821186066
+      ]
+    }
+  ],
+  "treesSeated": 1705,
+  "maxTreeAdjustmentM": 6.808521747589111,
+  "method": "Vertical ray against the actual saved earth mesh; grass root seated 5mm above the hit, tree pivots at the hit. Generated grass offsets without land below are omitted."
+}

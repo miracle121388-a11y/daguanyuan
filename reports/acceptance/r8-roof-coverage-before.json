@@ -1,0 +1,181 @@
+{
+  "scope": "Published overview structural roof cover versus editable master",
+  "spacingM": 2,
+  "interiorEdgeMarginM": 0.28,
+  "heightToleranceM": 0.75,
+  "checks": 1281,
+  "missingCover": 358,
+  "places": [
+    {
+      "place": "daguanyuan_gate",
+      "samples": 58,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "xiaoxiangguan",
+      "samples": 66,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "yihongyuan",
+      "samples": 88,
+      "missingCover": 47,
+      "examples": [
+        {
+          "point": [
+            89.417,
+            -109.369,
+            3.2069549560546875
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            89.417,
+            -105.369,
+            3.21612548828125
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            89.417,
+            -99.369,
+            3.2161102294921875
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            89.417,
+            -97.369,
+            3.2031021118164062
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            89.417,
+            -95.369,
+            3.2119369506835938
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            91.417,
+            -109.369,
+            3.6903457641601562
+          ],
+          "overviewRoofZ": null
+        }
+      ]
+    },
+    {
+      "place": "hengwuyuan",
+      "samples": 94,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "qiushuangzhai",
+      "samples": 64,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "ouxiangxie",
+      "samples": 54,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "dicuiting",
+      "samples": 25,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "tubishanzhuang",
+      "samples": 66,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "aojingxiguan",
+      "samples": 46,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "daguanlou",
+      "samples": 563,
+      "missingCover": 311,
+      "examples": [
+        {
+          "point": [
+            -33.583,
+            2.6310000000000002,
+            10.721244812011719
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            -33.583,
+            4.631,
+            10.733428955078125
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            -33.583,
+            6.631,
+            10.34490966796875
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            -31.583,
+            0.631,
+            10.736709594726562
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            -31.583,
+            4.631,
+            11.206809997558594
+          ],
+          "overviewRoofZ": null
+        },
+        {
+          "point": [
+            -31.583,
+            16.631,
+            3.9301376342773438
+          ],
+          "overviewRoofZ": null
+        }
+      ]
+    },
+    {
+      "place": "longcuian",
+      "samples": 87,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "nuanxiangwu",
+      "samples": 70,
+      "missingCover": 0,
+      "examples": []
+    }
+  ],
+  "passed": false
+}

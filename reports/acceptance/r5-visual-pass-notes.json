@@ -1,0 +1,36 @@
+{
+  "revision": "spatial-garden-20260910-r5",
+  "inspectionRound": 1,
+  "openedAllRequiredCaptures": true,
+  "captures": [
+    "desktop",
+    "mobile",
+    "user-1266",
+    "narrow",
+    "plan",
+    "central-ensemble",
+    "courtyard",
+    "interior",
+    "cutaway",
+    "night",
+    "mobile-courtyard"
+  ],
+  "findings": [
+    "Baked earth loses the original surface shader and becomes straw yellow.",
+    "Flat shoreline filler and sampled relief differ by only 5 mm, producing visible overlap bands.",
+    "Subpixel baked leaf and rock UV islands become black on phone close-ups.",
+    "Tile colors form continuous repeated vertical bands.",
+    "Xiaoxiang side room has a large repetitive wooden partition."
+  ],
+  "correctionBatch": [
+    "Preserve earth and scanned-rock source UVs/materials; independent thin-foliage vertex colors.",
+    "Lower flat shoreline filler while retaining the shared water polygon and reviewed road grade.",
+    "Retain roof cutaway meshes and architectural AO; do not bake the tiny foliage islands.",
+    "Use smaller tile modules with interspersed close shades.",
+    "Limewashed side-room partitions, timber divisions and an authored bamboo scroll."
+  ],
+  "confirmationRoundPending": false,
+  "confirmationRound": 2,
+  "confirmationAll11Opened": true,
+  "confirmation": "Valid completed captures sent for independent full review. No self-approval of photorealism."
+}

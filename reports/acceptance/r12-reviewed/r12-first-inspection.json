@@ -1,0 +1,101 @@
+{
+  "at": "2026-09-12T09:24:12.680696+00:00",
+  "revision": "spatial-garden-20260912-r12",
+  "actualParentOpenedAll": true,
+  "files": [
+    {
+      "file": ".impeccable/review/r12-first/desktop.png",
+      "sha256": "cd444d26e272b326d8d0497201d92f8be2d71045da9972479f5183934490e05e",
+      "bytes": 1532461
+    },
+    {
+      "file": ".impeccable/review/r12-first/plan.png",
+      "sha256": "f79f443e25c55f041ea0a954fbd8659be0ababb53e96f43e49391cfb5cfe3e3b",
+      "bytes": 1556600
+    },
+    {
+      "file": ".impeccable/review/r12-first/courtyard.png",
+      "sha256": "ba56ef297d8fc4a9bd7df9b209cadc9926950651cb48a301fe5cc85d4d807340",
+      "bytes": 1670178
+    },
+    {
+      "file": ".impeccable/review/r12-first/interior.png",
+      "sha256": "0e36563ed6bbf6f64cce97b18560a050499b9e1a3523fae43ef25019b6bd41bc",
+      "bytes": 1219662
+    },
+    {
+      "file": ".impeccable/review/r12-first/cutaway.png",
+      "sha256": "fd048bc86c6938e9ddc837022f04c5e8ea6b4631c5bb1e0b1e1abc7d6774ac68",
+      "bytes": 1524982
+    },
+    {
+      "file": ".impeccable/review/r12-first/night.png",
+      "sha256": "4580d88ceb7235cfffc656126b127089b3106afc3aa966b0de875d11537693b8",
+      "bytes": 1301404
+    },
+    {
+      "file": ".impeccable/review/r12-first/central-ensemble.png",
+      "sha256": "8fa03b11e0b63bd06e4f9712e473ecb1d7955f5aeebc565bd011698fa9468c23",
+      "bytes": 1684687
+    },
+    {
+      "file": ".impeccable/review/r12-first/yihongyuan.png",
+      "sha256": "c4c24a9f76e0dfa795036e8ca37efac2b4f1e7f1468f66e5478a2a6eee6914bf",
+      "bytes": 1439007
+    },
+    {
+      "file": ".impeccable/review/r12-first/hengwuyuan.png",
+      "sha256": "c0995a2186b05f0533c1d2fd1ff02a0b52fc608965cf6441a2c5098affedcf3f",
+      "bytes": 1410276
+    },
+    {
+      "file": ".impeccable/review/r12-first/qiushuangzhai.png",
+      "sha256": "d874eb7bc55d8eb9113b7d63ca2c197aedb9d98a4d67ac3c43a2c2f8068716ec",
+      "bytes": 1363091
+    },
+    {
+      "file": ".impeccable/review/r12-first/character.png",
+      "sha256": "34c9bf2325e179be3902167a1688a11c0e127fe36fe722815aab4b0da6e703a5",
+      "bytes": 1068481
+    },
+    {
+      "file": ".impeccable/review/r12-first/event.png",
+      "sha256": "1e5296a71e617000816edb3699758d1e98e809cf9f7474d20b88e06cb8c1bd9c",
+      "bytes": 1248032
+    },
+    {
+      "file": ".impeccable/review/r12-first/user-1266.png",
+      "sha256": "88094aa9e28fdf4c9d61b9062ebb4a249f82dcb7fbef60f2108e2fcf4ba3859d",
+      "bytes": 1010728
+    },
+    {
+      "file": ".impeccable/review/r12-first/mobile.png",
+      "sha256": "e7404948167f01a85fc2073ed8a5f231936ecf01064ac4656da7d59be5cf81b9",
+      "bytes": 349998
+    },
+    {
+      "file": ".impeccable/review/r12-first/mobile-courtyard.png",
+      "sha256": "9405fb3c7c38ae7e36c6f32d2a3694e1f6e00b76a34e205b31146cfa37bdb8bd",
+      "bytes": 311199
+    },
+    {
+      "file": ".impeccable/review/r12-first/mobile-whole-courtyard.png",
+      "sha256": "54039f0bf9fbdedfeb14720e388b43b9ce4b8a27b7f79552b27cb517b36d62c7",
+      "bytes": 303571
+    },
+    {
+      "file": ".impeccable/review/r12-first/narrow.png",
+      "sha256": "b9a7d02f1aa98e28cb9f668482b1b1de8289a609c5745aafb1d4d14129b89dcc",
+      "bytes": 246190
+    }
+  ],
+  "findings": [
+    "Valid 17-state capture, no page/resource errors, desktop and narrow controls available.",
+    "Water is too uniformly pale and smooth; reflected banks read as hard mirror edges.",
+    "Timber albedo grain remains overly strong across columns, floor and furniture.",
+    "Hengwu scholar rock reads as three coarse torus rings; banana leaves and flower crowns need natural geometry.",
+    "Generated bamboo foliage is too saturated against photographed source crowns; understory selection needs view-aware priority.",
+    "Courtyard/water/route coordinates and literary/interpretive distinctions must be preserved."
+  ],
+  "next": "One unified correction batch, followed by one final confirmation matrix and independent review."
+}

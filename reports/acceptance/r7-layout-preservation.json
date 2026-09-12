@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-11T15:08:13.126589+00:00",
+  "from": "spatial-garden-20260910-r6",
+  "to": "spatial-garden-20260911-r7",
+  "sameReviewedGeometry": {
+    "pathNodes": true,
+    "pathEdges": true,
+    "lake": true,
+    "courtyard_positions": true
+  },
+  "passed": true
+}

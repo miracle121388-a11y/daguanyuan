@@ -1,0 +1,52 @@
+{
+  "observedAt": "2026-09-12T08:16:56.365737+00:00",
+  "revision": "spatial-garden-20260912-r11",
+  "modelBuildExitCode": 0,
+  "modelOptimizeExitCode": 0,
+  "modelVerifyExitCode": 0,
+  "testBuildExitCode": 0,
+  "models": 40,
+  "integrityChecks": 3159,
+  "rasterScan": {
+    "files": 116,
+    "missingProvenance": 0
+  },
+  "routeSurfaces": {
+    "method": "Downward rays at the authored road/arched bridge height, centre and \u00b132% width, at most 1.1m apart. Requires actual paving and upward normals; no terrain or bounding-box substitute.",
+    "heightToleranceM": 0.15,
+    "rows": [
+      {
+        "scope": "master",
+        "checks": 4719,
+        "missing": 0,
+        "inverted": 0,
+        "examples": []
+      },
+      {
+        "scope": "overview",
+        "checks": 4719,
+        "missing": 0,
+        "inverted": 0,
+        "examples": []
+      },
+      {
+        "scope": "overview-low",
+        "checks": 4719,
+        "missing": 0,
+        "inverted": 0,
+        "examples": []
+      }
+    ],
+    "passed": true
+  },
+  "overviewSha256": "34dbe0d8970e71ed16ab8b780842d680432c0f55cd3807438b32a35f0bb30c2e",
+  "notYetCompleted": [
+    "final visual matrix inspection",
+    "final E2E",
+    "final performance",
+    "exact production package smoke",
+    "full independent finish review",
+    "documentation",
+    "deployment"
+  ]
+}

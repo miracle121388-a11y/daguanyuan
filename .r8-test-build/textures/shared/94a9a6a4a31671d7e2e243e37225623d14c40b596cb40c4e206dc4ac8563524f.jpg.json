@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported tilelight_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "tilelight_rough",
+  "sourcePixelSha256": "351eef7dbd8f1db7f9047878b7055beb7199c9629561eabd348bd23348aaf63e",
+  "sha256": "94a9a6a4a31671d7e2e243e37225623d14c40b596cb40c4e206dc4ac8563524f",
+  "prompt": "Blender-exported tilelight_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

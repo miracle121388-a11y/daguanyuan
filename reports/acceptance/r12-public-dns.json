@@ -1,0 +1,28 @@
+{
+  "queriedAt": "2026-09-12T10:43:52.7389010Z",
+  "response": {
+    "Status": 0,
+    "TC": false,
+    "RD": true,
+    "RA": true,
+    "AD": false,
+    "CD": false,
+    "Question": [
+      {
+        "name": "daguanyuan-rumeng.zeabur.app.",
+        "type": 1
+      }
+    ],
+    "Answer": [
+      {
+        "name": "daguanyuan-rumeng.zeabur.app.",
+        "type": 1,
+        "TTL": 60,
+        "data": "47.89.212.251"
+      }
+    ],
+    "Comment": "Response from 1.12.0.30."
+  },
+  "address": "47.89.212.251",
+  "source": "Google DNS over HTTPS"
+}

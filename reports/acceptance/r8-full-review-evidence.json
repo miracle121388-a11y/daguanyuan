@@ -1,0 +1,142 @@
+{
+  "review": "r8 full independent finish review",
+  "disposition": "rebuild",
+  "reviewedAt": "2026-09-11T17:54:42.9516479Z",
+  "captures": [
+    {
+      "path": ".impeccable/review/desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "dff92ce27d01e6ac884383ace24dddf4189dd74faa1353946030a86b232986f5",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/plan.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "8611d3b06342f3b5769655ae2ef9a75bea9bf9e6130d162d74c23cb489d248ea",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/courtyard.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "e984589953676488767f9b33cbff57e12a44e068537c11fb16c3dce5c80747b1",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/interior.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "c5f11e4f0c76fcec766fc2dea1cf078ed0de6fb55301f46261a84d0109085510",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/cutaway.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "803c30e5b8baa65ef6cd6f7a1c30cc95def8afec10bd47d2aa09cda7bbf4fa06",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/night.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "3b064db6649eb647477c451a74ff13935b4cc037359d2713c0151fec89f38e7b",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/central-ensemble.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "8b06783a51838b7cddb7a890df413e1819ca39a048501ebcd68cbf8d38414eb1",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/user-1266.png",
+      "width": 1266,
+      "height": 712,
+      "sha256": "55e66028cf727b616d34b34bd617af31762df3996ba325fa57c84c378f9892f7",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/mobile.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "74089ea5c1178b202c7b34e0dc9856fec03250adcdd32ff32a00bf025bfc3ad4",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/mobile-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "6256df107c3f4b35be6a6e19dd8f026867e9e686293c0974dd5691dc859d6c0c",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/mobile-whole-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "c79bd1086157f5899505505b29e832945c52c1fc2ccd2269330971af60aa27e0",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/narrow.png",
+      "width": 320,
+      "height": 740,
+      "sha256": "306b3de7ea740a9aee3cd6c58494924644d752123390826e1bece77bd10ed832",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": "reports/browser/r8-packaged-production-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "dc529b336cfcbce4c8f830ecc763d89aaa9cf22d912fad85a66fc72e80fb8a71",
+      "opened": true,
+      "valid": true
+    },
+    {
+      "path": "reports/browser/r8-packaged-production-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "138e51da3f79ae9d29d36f34f995908b33eba743fcce358eb62256015946ad86",
+      "opened": true,
+      "valid": true
+    }
+  ],
+  "sourceImagesOpened": [
+    "D:/Download/ChatGPT Image 2026年9月10日 01_02_26.png",
+    "public/art/daguanlou.webp",
+    "public/art/xiaoxiangguan-day.webp",
+    "public/art/garden-waterways.webp",
+    "public/art/garden-aerial-day.webp"
+  ],
+  "approvedWebpageComp": null,
+  "qualityBarCard": null,
+  "seed": "41ecba8d",
+  "seedCorroborated": false,
+  "packageSmokeRead": true,
+  "testsRunByReviewer": false,
+  "detectorRerun": false,
+  "browserRenderedByReviewer": false,
+  "implementationEdited": false,
+  "notes": [
+    "All required captures satisfy evidence check 0.",
+    "Interior and cutaway reference content was confirmed by individual original-detail reopening; an initial blank-panel suspicion was a reviewer reading error and is not a finding.",
+    "Interior static capture does not verify dynamic transition quality.",
+    "Physical-phone, Safari, sustained performance and public r8 deployment are outside this visual evidence.",
+    "Prior visual verdicts were not used as authority for the r8 disposition."
+  ]
+}

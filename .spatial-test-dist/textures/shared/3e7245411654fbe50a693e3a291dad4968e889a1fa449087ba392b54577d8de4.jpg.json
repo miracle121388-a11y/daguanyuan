@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported litter_nor_gl material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "litter_nor_gl",
+  "sourcePixelSha256": "5c342eacb97eaa352a2c828715d11130ee444f2ec52109e3afb55ed69df246d1",
+  "sha256": "3e7245411654fbe50a693e3a291dad4968e889a1fa449087ba392b54577d8de4",
+  "prompt": "Blender-exported litter_nor_gl material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

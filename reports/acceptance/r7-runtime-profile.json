@@ -1,0 +1,47 @@
+{
+  "at": "2026-09-11T16:14:04.460Z",
+  "conditions": "Single isolated local test page; 1440x900; high quality; 6-second settle; each temporary condition 1.5-second settle then4-second sample; no production asset or configuration mutations",
+  "rows": [
+    {
+      "name": "current",
+      "samples": 129,
+      "mean": 30.8596899222958,
+      "median": 27.400000005960464,
+      "p95": 50.80000001192093,
+      "stallsOver250ms": 0,
+      "triangles": 301017,
+      "drawCalls": 65
+    },
+    {
+      "name": "same grass map without ground noise, soil blend or baked shadow shader",
+      "samples": 141,
+      "mean": 28.365957446977603,
+      "median": 24.80000001192093,
+      "p95": 48.400000005960464,
+      "stallsOver250ms": 0,
+      "triangles": 301017,
+      "drawCalls": 65
+    },
+    {
+      "name": "current ground; water reflection disabled",
+      "samples": 131,
+      "mean": 30.30534351145038,
+      "median": 27.69999998807907,
+      "p95": 48.69999998807907,
+      "stallsOver250ms": 0,
+      "triangles": 300841,
+      "drawCalls": 64
+    },
+    {
+      "name": "current scene at diagnostic DPR 0.6",
+      "samples": 233,
+      "mean": 17.13519313304721,
+      "median": 15.599999994039536,
+      "p95": 29.5,
+      "stallsOver250ms": 0,
+      "triangles": 301017,
+      "drawCalls": 65
+    }
+  ],
+  "errors": []
+}

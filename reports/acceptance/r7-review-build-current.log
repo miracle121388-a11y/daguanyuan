@@ -1,0 +1,27 @@
+
+> daguanyuan-rumeng@1.0.0 build
+> node scripts/clean_build.mjs && npm run data:build && tsc --noEmit && vite build --mode test --outDir .r7-test-build-final
+
+
+> daguanyuan-rumeng@1.0.0 data:build
+> node scripts/validate.mjs --publish
+
+PASS 1851 integrity checks. {
+  places: 15,
+  characters: 13,
+  events: 22,
+  sources: 46,
+  relations: 1,
+  routes: 3
+}
+vite v7.3.6 building client environment for test...
+transforming...
+✓ 2232 modules transformed.
+rendering chunks...
+computing gzip size...
+.r7-test-build-final/.vite/manifest.json               0.47 kB │ gzip:   0.22 kB
+.r7-test-build-final/index.html                        1.22 kB │ gzip:   0.84 kB
+.r7-test-build-final/assets/index-CSYzgkNG.css        44.19 kB │ gzip:   9.44 kB
+.r7-test-build-final/assets/index-D-8giD1z.js        658.42 kB │ gzip: 190.79 kB
+.r7-test-build-final/assets/GardenScene-C_uzvhB0.js  726.18 kB │ gzip: 204.53 kB
+✓ built in 8.33s

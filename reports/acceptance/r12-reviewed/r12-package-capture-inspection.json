@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-12T10:38:56.461678+00:00",
+  "revision": "spatial-garden-20260912-r12",
+  "package": ".deploy/reference-20260912-102643-070479",
+  "captures": [
+    {
+      "file": "reports/browser/r12-packaged-production-desktop.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "b9faec41cc664160eee92004ee6f1e7e174434a9ec685d464063e1215aa45594",
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": "reports/browser/r12-packaged-production-mobile.png",
+      "dimensions": [
+        1170,
+        2532
+      ],
+      "sha256": "d80dc2e78072f94679bc099f183b58652585c4650be84ca6c220789ed849d342",
+      "parentOpened": true,
+      "captureValid": true
+    }
+  ],
+  "findings": [
+    "Both exact-package captures are valid; desktop whole-garden and phone Xiaoxiang states loaded with readable controls.",
+    "Phone image is CSS390x844 at DPR3, not real phone hardware.",
+    "Quality limitations from the final matrix remain; this smoke test establishes functionality and production build identity, not visual approval."
+  ]
+}

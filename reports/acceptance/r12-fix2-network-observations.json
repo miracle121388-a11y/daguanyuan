@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-12T14:20:24.894362+00:00",
+  "revision": "spatial-garden-20260912-r12-fix2",
+  "defaultBrowser": {
+    "passed": false,
+    "exitCode": 1,
+    "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/",
+    "report": "r12-fix2-production-default.log",
+    "dnsOverride": false
+  },
+  "resolvedBrowser": {
+    "passed": true,
+    "exitCode": 0,
+    "report": "r12-fix2-production-smoke.json",
+    "publicAddress": "47.89.212.251",
+    "freshDnsEvidence": "r12-fix2-public-dns-post-deploy.json",
+    "quicDisabled": true,
+    "desktopReadyMs": 23103,
+    "mobileReadyMs": 15060
+  },
+  "tlsVerificationEnabled": true,
+  "systemDnsOrProxyModified": false,
+  "scope": "Current same-machine full production UI checks after the new deployment reached RUNNING. Temporary test-browser DNS success does not prove default-network access or all-visitor performance."
+}

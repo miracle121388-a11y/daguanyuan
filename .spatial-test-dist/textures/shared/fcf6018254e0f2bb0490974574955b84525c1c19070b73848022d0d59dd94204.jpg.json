@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported paving_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "paving_diff",
+  "sourcePixelSha256": "aa21cfd2416e9d933e3cd55b7c38d7684885765c118b870e9aa3bbbd6499930a",
+  "sha256": "fcf6018254e0f2bb0490974574955b84525c1c19070b73848022d0d59dd94204",
+  "prompt": "Blender-exported paving_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

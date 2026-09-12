@@ -1,0 +1,37 @@
+{
+  "recordedAt": "2026-09-10T08:19:10.209393+00:00",
+  "host": "daguanyuan-rumeng.zeabur.app",
+  "revision": "spatial-garden-20260910-r5",
+  "defaultBrowser": {
+    "passed": false,
+    "error": "net::ERR_CONNECTION_CLOSED",
+    "log": "r5-production-default.log"
+  },
+  "resolvedBrowserStandard": {
+    "passed": true,
+    "observationTimeoutMs": 90000,
+    "desktopReadyMs": 31007,
+    "mobileReadyMs": 52311,
+    "log": "r5-production-resolved.log",
+    "report": "production-smoke.json"
+  },
+  "systemDnsObserved": "198.18.0.124",
+  "publicDnsObserved": "47.89.212.251",
+  "publicDnsSource": "Google DNS over HTTPS during r5 verification",
+  "virtualAdapterObserved": {
+    "name": "Mihomo",
+    "dnsServers": [
+      "198.18.0.2"
+    ]
+  },
+  "directResolvedTlsHealth": {
+    "status": "ok",
+    "revision": "spatial-garden-20260910-r5"
+  },
+  "extendedObservation": null,
+  "defaultConnectionFixed": false,
+  "osNetworkChanged": false,
+  "tlsVerificationEnabled": true,
+  "browserQuicDisabled": true,
+  "limitations": "Results describe this Windows network only. A virtual adapter and differing DNS answers identify a client networking difference; they do not alone prove the entire causal chain. Touch desktop emulation is not a physical phone test."
+}

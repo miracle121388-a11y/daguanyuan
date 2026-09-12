@@ -1,0 +1,1112 @@
+{
+  "conditions": {
+    "os": "Windows 11",
+    "headless": true,
+    "actualMobileHardware": false,
+    "network": "local HTTP; no throttling",
+    "overviewSha256": "9d805895d2c79a3dc37cb589f38049b10cd7ab15daf5fb0e6ec647d576ca4596",
+    "metricLimit": "GPU allocations are estimates from scene resources; excludes driver overhead/framebuffers and cached hidden assets. These are not total VRAM readings."
+  },
+  "high": {
+    "mode": "high",
+    "timestamp": "2026-09-12T09:24:32.422Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "sampleCount": 226,
+    "meanFrameMs": 26.508849557522122,
+    "medianFrameMs": 26.19999998807907,
+    "p95FrameMs": 35.79999998211861,
+    "intervalsOver250ms": 0,
+    "drawCalls": 67,
+    "triangles": 359837,
+    "estimatedGeometryBytes": 25252556,
+    "estimatedTextureBytesWithMipmaps": 226841941.33333334,
+    "textureCount": 66,
+    "geometryCount": 70,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4175/assets/index-B8mNX5Nr.js",
+        "transferSize": 191088,
+        "decodedBodySize": 658456
+      },
+      {
+        "name": "http://127.0.0.1:4175/assets/index-D68344Zx.css",
+        "transferSize": 9800,
+        "decodedBodySize": 44567
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/places.json",
+        "transferSize": 2919,
+        "decodedBodySize": 6751
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/characters.json",
+        "transferSize": 1381,
+        "decodedBodySize": 3170
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/events.json",
+        "transferSize": 3267,
+        "decodedBodySize": 9255
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/routes.json",
+        "transferSize": 1283,
+        "decodedBodySize": 3638
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/sources.json",
+        "transferSize": 11857,
+        "decodedBodySize": 52471
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/relations.json",
+        "transferSize": 476,
+        "decodedBodySize": 176
+      },
+      {
+        "name": "http://127.0.0.1:4175/scene-manifest.json",
+        "transferSize": 346097,
+        "decodedBodySize": 1378683
+      },
+      {
+        "name": "http://127.0.0.1:4175/favicon.ico",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "name": "http://127.0.0.1:4175/art/manifest.json",
+        "transferSize": 12055,
+        "decodedBodySize": 43487
+      },
+      {
+        "name": "http://127.0.0.1:4175/assets/GardenScene-DUVRnMWj.js",
+        "transferSize": 206569,
+        "decodedBodySize": 732264
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/forest_grove.hdr",
+        "transferSize": 103062,
+        "decodedBodySize": 118136
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/overview.glb",
+        "transferSize": 3018836,
+        "decodedBodySize": 3018536
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/vegetation/broadleaf-low.glb",
+        "transferSize": 123780,
+        "decodedBodySize": 123480
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/vegetation/ground-cover.glb",
+        "transferSize": 5396,
+        "decodedBodySize": 5096
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/vegetation/fern-0.glb",
+        "transferSize": 6812,
+        "decodedBodySize": 6512
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/vegetation/fern-1.glb",
+        "transferSize": 7000,
+        "decodedBodySize": 6700
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/vegetation/canopy-atlas.webp",
+        "transferSize": 781144,
+        "decodedBodySize": 780844
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/ground/pond-normal.png",
+        "transferSize": 151085,
+        "decodedBodySize": 150785
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/ground/surface-zones.png",
+        "transferSize": 506626,
+        "decodedBodySize": 506326
+      },
+      {
+        "name": "http://127.0.0.1:4175/draco/draco_decoder.wasm",
+        "transferSize": 192720,
+        "decodedBodySize": 192420
+      },
+      {
+        "name": "http://127.0.0.1:4175/draco/draco_wasm_wrapper.js",
+        "transferSize": 12048,
+        "decodedBodySize": 58456
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/a33c6fa04c93f97b543326d615d87500c4fc3310841ff75ba30a84ee86aedd25.jpg",
+        "transferSize": 178252,
+        "decodedBodySize": 177952
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/424c4ffa1140866277d45d7f8ad4332b117089e7ee53f081a0cab9563e604849.jpg",
+        "transferSize": 88329,
+        "decodedBodySize": 88029
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/10b1b3e80a57c8e15dc20e621f405c6c48a2ca4b23a9cea025c42267b5b29703.jpg",
+        "transferSize": 50974,
+        "decodedBodySize": 50674
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e.png",
+        "transferSize": 68025,
+        "decodedBodySize": 67725
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/156f0c65edf8f242da47e3895e6745d7561befa2ce93152253c1d40f6868f2a4.jpg",
+        "transferSize": 28299,
+        "decodedBodySize": 27999
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/3087b84eb1060d8b3487d832347a1ded656777169a68120701e0bcdfcd4d6572.jpg",
+        "transferSize": 39523,
+        "decodedBodySize": 39223
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/ee6da9bbbad4b8ec3063a7804fca5a01896a30f441a355a81982a1ed54378811.jpg",
+        "transferSize": 123462,
+        "decodedBodySize": 123162
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/5eac8dc05445c4ca26822b778eacba3d32d85a474f4b57746698e7a7f0f6847d.jpg",
+        "transferSize": 26325,
+        "decodedBodySize": 26025
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/9dc5c8a726ee5204da1710452436b32cd79a94161bda4748de67cc9872ede747.jpg",
+        "transferSize": 67481,
+        "decodedBodySize": 67181
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/395bae68d0169a3a840c7b20a32473360913745d7a25942d858b61737a0ab1cd.jpg",
+        "transferSize": 35750,
+        "decodedBodySize": 35450
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/d6071b74e6ffbfc1413291d9e5e7d3b626d0e4a8078f1f19c50e8466cbe9bc3a.jpg",
+        "transferSize": 44740,
+        "decodedBodySize": 44440
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/2990a224d3288e611e39c23edee30bbd436767bb0fee772b567a5f5297f9715a.jpg",
+        "transferSize": 61570,
+        "decodedBodySize": 61270
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+        "transferSize": 293977,
+        "decodedBodySize": 293677
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+        "transferSize": 300,
+        "decodedBodySize": 293677
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/0d4c00773f22fcca58877e937ec4eb1adac012e1815328635db79069bc8b22da.jpg",
+        "transferSize": 32341,
+        "decodedBodySize": 32041
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/11fe9e91c87ac268928313491a65ea85dca4d14bf8f329399753ecca134978c0.jpg",
+        "transferSize": 37416,
+        "decodedBodySize": 37116
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg",
+        "transferSize": 5222,
+        "decodedBodySize": 4922
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg",
+        "transferSize": 5013,
+        "decodedBodySize": 4713
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg",
+        "transferSize": 37312,
+        "decodedBodySize": 37012
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg",
+        "transferSize": 130713,
+        "decodedBodySize": 130413
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg",
+        "transferSize": 9988,
+        "decodedBodySize": 9688
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg",
+        "transferSize": 2438,
+        "decodedBodySize": 2138
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg",
+        "transferSize": 11540,
+        "decodedBodySize": 11240
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/23ade7ce438448d9a387e321cd1ddbe158090a8494de7a992474da0f7d805727.jpg",
+        "transferSize": 58163,
+        "decodedBodySize": 57863
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg",
+        "transferSize": 9521,
+        "decodedBodySize": 9221
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg",
+        "transferSize": 2272,
+        "decodedBodySize": 1972
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+        "transferSize": 10983,
+        "decodedBodySize": 10683
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/f8a0b9986eda08296a2c82421ca2d9c43d632b8438544b5a9670deb215036a10.jpg",
+        "transferSize": 26708,
+        "decodedBodySize": 26408
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/56c072362b3d88eb4d93f2792aab9368c79204fa297d3ba52ba413978896efbb.jpg",
+        "transferSize": 43039,
+        "decodedBodySize": 42739
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg",
+        "transferSize": 17425,
+        "decodedBodySize": 17125
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg",
+        "transferSize": 2133,
+        "decodedBodySize": 1833
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg",
+        "transferSize": 28254,
+        "decodedBodySize": 27954
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/91faf87c3684bfc6916c28391967a749360f4a2926f79b232e59d31e1603a906.jpg",
+        "transferSize": 59379,
+        "decodedBodySize": 59079
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/cc14c03ba231b8913fbba8748cb2f56dab0b57601bc07480db952bff64acc82e.jpg",
+        "transferSize": 39422,
+        "decodedBodySize": 39122
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/5c3cd0247f5f8b7eaaeb06d78783929b0b208250c0b68e6e6bab905b083ba2f8.jpg",
+        "transferSize": 60310,
+        "decodedBodySize": 60010
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/44694258771e975cce98a830b4b5f60cf6d3dfa18a5dd762ba5436a37042e651.jpg",
+        "transferSize": 39109,
+        "decodedBodySize": 38809
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/16719e9c3035fd8067766abe9a5ef3e4f26fa4fe0842cd218e91eea7ee8d5cff.jpg",
+        "transferSize": 62148,
+        "decodedBodySize": 61848
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/4d022e1943f030642610e1ba69f8ae715ff8710a387ab7c65c5e5531579b92c1.jpg",
+        "transferSize": 35399,
+        "decodedBodySize": 35099
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/8e113db9396725b57fd830819fe899b116ccb03970d63a1cb7694a2157be444a.jpg",
+        "transferSize": 58352,
+        "decodedBodySize": 58052
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/569866148484f1b73c242879c51d92d26240b872f1e65ad355bfc8c2920f6ca2.jpg",
+        "transferSize": 35325,
+        "decodedBodySize": 35025
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/bd7fba85c9cfe00f6f7c269f06afe1a017ded117768450bdf1296ff2b345e658.jpg",
+        "transferSize": 29107,
+        "decodedBodySize": 28807
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/a142660feac42b955e29c853b42facf3cd3cb67990d0aad6ead121fe6cfdcff0.jpg",
+        "transferSize": 58100,
+        "decodedBodySize": 57800
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg",
+        "transferSize": 55285,
+        "decodedBodySize": 54985
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/ff0a8f4c2ee75b6dcdbd1f08ebf906321d47dcc0b62fb38b1763321bea8e5188.jpg",
+        "transferSize": 21904,
+        "decodedBodySize": 21604
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/ee590b504cf47729ec0483f52a19ce9cd863c82d96abce30eac40ffcbfcce619.jpg",
+        "transferSize": 26545,
+        "decodedBodySize": 26245
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/558e97a1fe38fca92ce64af6e8367ff6eb01e87c8c9a78120b2cdb33b32da23a.jpg",
+        "transferSize": 28677,
+        "decodedBodySize": 28377
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/bd5b9e4a17263f27f84f65d4ebb8be596166bc186da57562b9a5b7b7afbc2aae.jpg",
+        "transferSize": 57294,
+        "decodedBodySize": 56994
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/b6a5cbecd3c98c05fc7c57d3fee829baf51e8ca00210daa90670bf96490f34e7.jpg",
+        "transferSize": 28665,
+        "decodedBodySize": 28365
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/c431455abf733f7c1749b0d6d1526aa83000e365a75c7eab6979df1157dc959f.jpg",
+        "transferSize": 59115,
+        "decodedBodySize": 58815
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/3d5521b309750b7e0f3854b1898b5874e5a94a65e62b890b853d2af08bd53809.jpg",
+        "transferSize": 55131,
+        "decodedBodySize": 54831
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92.jpg",
+        "transferSize": 53118,
+        "decodedBodySize": 52818
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/c7e4e1c1648451736b2975aae833356457ab15fce18cf741dfb42d92580348f0.jpg",
+        "transferSize": 38442,
+        "decodedBodySize": 38142
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/b5ef6b408837e0ca30fcd72024a939a79cd90e1d04ebb15e057aa786bd5af39a.jpg",
+        "transferSize": 60944,
+        "decodedBodySize": 60644
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/bc4af809c317d7882faa7fd08b5344cfb256cf34f4b6d9d8ad5c712cc59df868.jpg",
+        "transferSize": 31280,
+        "decodedBodySize": 30980
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/e88e19357770b8639f2f63834ed345c4e1c521c803ecbd53d2d09db10ecdf07c.jpg",
+        "transferSize": 194713,
+        "decodedBodySize": 194413
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/901054da31d9c6044f18f4824d66ffbe268043bd095b23a27a9ce0e9226ce8ba.jpg",
+        "transferSize": 59944,
+        "decodedBodySize": 59644
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/118ff2efaac1ccd50077244c3454af5484d2b1ccc6dfcb8d9feb8b087e237560.jpg",
+        "transferSize": 171585,
+        "decodedBodySize": 171285
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/landscape-light.webp",
+        "transferSize": 402146,
+        "decodedBodySize": 401846
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/ground/soil.jpg",
+        "transferSize": 40593,
+        "decodedBodySize": 40293
+      }
+    ],
+    "method": "After network idle and 6-second settle, clear startup history and record 6 seconds of static overview with water animation; last up to 300 positive intervals, retaining stalls above 250ms; first interval omitted at observation boundary"
+  },
+  "low": {
+    "mode": "low",
+    "timestamp": "2026-09-12T09:24:46.507Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36 Edg/152.0.0.0",
+    "viewport": [
+      1440,
+      900
+    ],
+    "dpr": 1,
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "sampleCount": 300,
+    "meanFrameMs": 25.38866666674614,
+    "medianFrameMs": 24.299999982118607,
+    "p95FrameMs": 52.79999998211861,
+    "intervalsOver250ms": 0,
+    "drawCalls": 64,
+    "triangles": 275275,
+    "estimatedGeometryBytes": 24705960,
+    "estimatedTextureBytesWithMipmaps": 205520896.00000003,
+    "textureCount": 56,
+    "geometryCount": 67,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4175/assets/index-B8mNX5Nr.js",
+        "transferSize": 191088,
+        "decodedBodySize": 658456
+      },
+      {
+        "name": "http://127.0.0.1:4175/assets/index-D68344Zx.css",
+        "transferSize": 9800,
+        "decodedBodySize": 44567
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/places.json",
+        "transferSize": 2919,
+        "decodedBodySize": 6751
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/characters.json",
+        "transferSize": 1381,
+        "decodedBodySize": 3170
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/events.json",
+        "transferSize": 3267,
+        "decodedBodySize": 9255
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/routes.json",
+        "transferSize": 1283,
+        "decodedBodySize": 3638
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/sources.json",
+        "transferSize": 11857,
+        "decodedBodySize": 52471
+      },
+      {
+        "name": "http://127.0.0.1:4175/data/relations.json",
+        "transferSize": 476,
+        "decodedBodySize": 176
+      },
+      {
+        "name": "http://127.0.0.1:4175/scene-manifest.json",
+        "transferSize": 346097,
+        "decodedBodySize": 1378683
+      },
+      {
+        "name": "http://127.0.0.1:4175/favicon.ico",
+        "transferSize": 300,
+        "decodedBodySize": 0
+      },
+      {
+        "name": "http://127.0.0.1:4175/art/manifest.json",
+        "transferSize": 12055,
+        "decodedBodySize": 43487
+      },
+      {
+        "name": "http://127.0.0.1:4175/assets/GardenScene-DUVRnMWj.js",
+        "transferSize": 206569,
+        "decodedBodySize": 732264
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/forest_grove.hdr",
+        "transferSize": 103062,
+        "decodedBodySize": 118136
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/overview.glb",
+        "transferSize": 3018836,
+        "decodedBodySize": 3018536
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/vegetation/broadleaf-low.glb",
+        "transferSize": 123780,
+        "decodedBodySize": 123480
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/vegetation/ground-cover.glb",
+        "transferSize": 5396,
+        "decodedBodySize": 5096
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/vegetation/fern-0.glb",
+        "transferSize": 6812,
+        "decodedBodySize": 6512
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/vegetation/fern-1.glb",
+        "transferSize": 7000,
+        "decodedBodySize": 6700
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/vegetation/canopy-atlas.webp",
+        "transferSize": 781144,
+        "decodedBodySize": 780844
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/ground/pond-normal.png",
+        "transferSize": 151085,
+        "decodedBodySize": 150785
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/ground/surface-zones.png",
+        "transferSize": 506626,
+        "decodedBodySize": 506326
+      },
+      {
+        "name": "http://127.0.0.1:4175/draco/draco_decoder.wasm",
+        "transferSize": 192720,
+        "decodedBodySize": 192420
+      },
+      {
+        "name": "http://127.0.0.1:4175/draco/draco_wasm_wrapper.js",
+        "transferSize": 12048,
+        "decodedBodySize": 58456
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/a33c6fa04c93f97b543326d615d87500c4fc3310841ff75ba30a84ee86aedd25.jpg",
+        "transferSize": 178252,
+        "decodedBodySize": 177952
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/424c4ffa1140866277d45d7f8ad4332b117089e7ee53f081a0cab9563e604849.jpg",
+        "transferSize": 88329,
+        "decodedBodySize": 88029
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/10b1b3e80a57c8e15dc20e621f405c6c48a2ca4b23a9cea025c42267b5b29703.jpg",
+        "transferSize": 50974,
+        "decodedBodySize": 50674
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e.png",
+        "transferSize": 68025,
+        "decodedBodySize": 67725
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/156f0c65edf8f242da47e3895e6745d7561befa2ce93152253c1d40f6868f2a4.jpg",
+        "transferSize": 28299,
+        "decodedBodySize": 27999
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/3087b84eb1060d8b3487d832347a1ded656777169a68120701e0bcdfcd4d6572.jpg",
+        "transferSize": 39523,
+        "decodedBodySize": 39223
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/ee6da9bbbad4b8ec3063a7804fca5a01896a30f441a355a81982a1ed54378811.jpg",
+        "transferSize": 123462,
+        "decodedBodySize": 123162
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/5eac8dc05445c4ca26822b778eacba3d32d85a474f4b57746698e7a7f0f6847d.jpg",
+        "transferSize": 26325,
+        "decodedBodySize": 26025
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/9dc5c8a726ee5204da1710452436b32cd79a94161bda4748de67cc9872ede747.jpg",
+        "transferSize": 67481,
+        "decodedBodySize": 67181
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/395bae68d0169a3a840c7b20a32473360913745d7a25942d858b61737a0ab1cd.jpg",
+        "transferSize": 35750,
+        "decodedBodySize": 35450
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/d6071b74e6ffbfc1413291d9e5e7d3b626d0e4a8078f1f19c50e8466cbe9bc3a.jpg",
+        "transferSize": 44740,
+        "decodedBodySize": 44440
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/2990a224d3288e611e39c23edee30bbd436767bb0fee772b567a5f5297f9715a.jpg",
+        "transferSize": 61570,
+        "decodedBodySize": 61270
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+        "transferSize": 293977,
+        "decodedBodySize": 293677
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+        "transferSize": 300,
+        "decodedBodySize": 293677
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/0d4c00773f22fcca58877e937ec4eb1adac012e1815328635db79069bc8b22da.jpg",
+        "transferSize": 32341,
+        "decodedBodySize": 32041
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/11fe9e91c87ac268928313491a65ea85dca4d14bf8f329399753ecca134978c0.jpg",
+        "transferSize": 37416,
+        "decodedBodySize": 37116
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg",
+        "transferSize": 5222,
+        "decodedBodySize": 4922
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg",
+        "transferSize": 5013,
+        "decodedBodySize": 4713
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg",
+        "transferSize": 37312,
+        "decodedBodySize": 37012
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg",
+        "transferSize": 130713,
+        "decodedBodySize": 130413
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg",
+        "transferSize": 9988,
+        "decodedBodySize": 9688
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg",
+        "transferSize": 2438,
+        "decodedBodySize": 2138
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg",
+        "transferSize": 11540,
+        "decodedBodySize": 11240
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/23ade7ce438448d9a387e321cd1ddbe158090a8494de7a992474da0f7d805727.jpg",
+        "transferSize": 58163,
+        "decodedBodySize": 57863
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg",
+        "transferSize": 9521,
+        "decodedBodySize": 9221
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg",
+        "transferSize": 2272,
+        "decodedBodySize": 1972
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+        "transferSize": 10983,
+        "decodedBodySize": 10683
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/f8a0b9986eda08296a2c82421ca2d9c43d632b8438544b5a9670deb215036a10.jpg",
+        "transferSize": 26708,
+        "decodedBodySize": 26408
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/56c072362b3d88eb4d93f2792aab9368c79204fa297d3ba52ba413978896efbb.jpg",
+        "transferSize": 43039,
+        "decodedBodySize": 42739
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg",
+        "transferSize": 17425,
+        "decodedBodySize": 17125
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg",
+        "transferSize": 2133,
+        "decodedBodySize": 1833
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg",
+        "transferSize": 28254,
+        "decodedBodySize": 27954
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/91faf87c3684bfc6916c28391967a749360f4a2926f79b232e59d31e1603a906.jpg",
+        "transferSize": 59379,
+        "decodedBodySize": 59079
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/cc14c03ba231b8913fbba8748cb2f56dab0b57601bc07480db952bff64acc82e.jpg",
+        "transferSize": 39422,
+        "decodedBodySize": 39122
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/5c3cd0247f5f8b7eaaeb06d78783929b0b208250c0b68e6e6bab905b083ba2f8.jpg",
+        "transferSize": 60310,
+        "decodedBodySize": 60010
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/44694258771e975cce98a830b4b5f60cf6d3dfa18a5dd762ba5436a37042e651.jpg",
+        "transferSize": 39109,
+        "decodedBodySize": 38809
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/16719e9c3035fd8067766abe9a5ef3e4f26fa4fe0842cd218e91eea7ee8d5cff.jpg",
+        "transferSize": 62148,
+        "decodedBodySize": 61848
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/4d022e1943f030642610e1ba69f8ae715ff8710a387ab7c65c5e5531579b92c1.jpg",
+        "transferSize": 35399,
+        "decodedBodySize": 35099
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/8e113db9396725b57fd830819fe899b116ccb03970d63a1cb7694a2157be444a.jpg",
+        "transferSize": 58352,
+        "decodedBodySize": 58052
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/569866148484f1b73c242879c51d92d26240b872f1e65ad355bfc8c2920f6ca2.jpg",
+        "transferSize": 35325,
+        "decodedBodySize": 35025
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/bd7fba85c9cfe00f6f7c269f06afe1a017ded117768450bdf1296ff2b345e658.jpg",
+        "transferSize": 29107,
+        "decodedBodySize": 28807
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/a142660feac42b955e29c853b42facf3cd3cb67990d0aad6ead121fe6cfdcff0.jpg",
+        "transferSize": 58100,
+        "decodedBodySize": 57800
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg",
+        "transferSize": 55285,
+        "decodedBodySize": 54985
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/ff0a8f4c2ee75b6dcdbd1f08ebf906321d47dcc0b62fb38b1763321bea8e5188.jpg",
+        "transferSize": 21904,
+        "decodedBodySize": 21604
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/ee590b504cf47729ec0483f52a19ce9cd863c82d96abce30eac40ffcbfcce619.jpg",
+        "transferSize": 26545,
+        "decodedBodySize": 26245
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/558e97a1fe38fca92ce64af6e8367ff6eb01e87c8c9a78120b2cdb33b32da23a.jpg",
+        "transferSize": 28677,
+        "decodedBodySize": 28377
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/bd5b9e4a17263f27f84f65d4ebb8be596166bc186da57562b9a5b7b7afbc2aae.jpg",
+        "transferSize": 57294,
+        "decodedBodySize": 56994
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/b6a5cbecd3c98c05fc7c57d3fee829baf51e8ca00210daa90670bf96490f34e7.jpg",
+        "transferSize": 28665,
+        "decodedBodySize": 28365
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/c431455abf733f7c1749b0d6d1526aa83000e365a75c7eab6979df1157dc959f.jpg",
+        "transferSize": 59115,
+        "decodedBodySize": 58815
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/3d5521b309750b7e0f3854b1898b5874e5a94a65e62b890b853d2af08bd53809.jpg",
+        "transferSize": 55131,
+        "decodedBodySize": 54831
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92.jpg",
+        "transferSize": 53118,
+        "decodedBodySize": 52818
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/c7e4e1c1648451736b2975aae833356457ab15fce18cf741dfb42d92580348f0.jpg",
+        "transferSize": 38442,
+        "decodedBodySize": 38142
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/b5ef6b408837e0ca30fcd72024a939a79cd90e1d04ebb15e057aa786bd5af39a.jpg",
+        "transferSize": 60944,
+        "decodedBodySize": 60644
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/bc4af809c317d7882faa7fd08b5344cfb256cf34f4b6d9d8ad5c712cc59df868.jpg",
+        "transferSize": 31280,
+        "decodedBodySize": 30980
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/e88e19357770b8639f2f63834ed345c4e1c521c803ecbd53d2d09db10ecdf07c.jpg",
+        "transferSize": 194713,
+        "decodedBodySize": 194413
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/901054da31d9c6044f18f4824d66ffbe268043bd095b23a27a9ce0e9226ce8ba.jpg",
+        "transferSize": 59944,
+        "decodedBodySize": 59644
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/118ff2efaac1ccd50077244c3454af5484d2b1ccc6dfcb8d9feb8b087e237560.jpg",
+        "transferSize": 171585,
+        "decodedBodySize": 171285
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/landscape-light.webp",
+        "transferSize": 402146,
+        "decodedBodySize": 401846
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/ground/soil.jpg",
+        "transferSize": 40593,
+        "decodedBodySize": 40293
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/overview-low.glb",
+        "transferSize": 3018836,
+        "decodedBodySize": 3018536
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/0d4c00773f22fcca58877e937ec4eb1adac012e1815328635db79069bc8b22da.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 32041
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/11fe9e91c87ac268928313491a65ea85dca4d14bf8f329399753ecca134978c0.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 37116
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 4922
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 4713
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 130413
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 37012
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 2138
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 11240
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 9688
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/23ade7ce438448d9a387e321cd1ddbe158090a8494de7a992474da0f7d805727.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 57863
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 9221
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 1972
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 10683
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/f8a0b9986eda08296a2c82421ca2d9c43d632b8438544b5a9670deb215036a10.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 26408
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/56c072362b3d88eb4d93f2792aab9368c79204fa297d3ba52ba413978896efbb.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 42739
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 17125
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 1833
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 27954
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/91faf87c3684bfc6916c28391967a749360f4a2926f79b232e59d31e1603a906.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 59079
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/cc14c03ba231b8913fbba8748cb2f56dab0b57601bc07480db952bff64acc82e.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 39122
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/5c3cd0247f5f8b7eaaeb06d78783929b0b208250c0b68e6e6bab905b083ba2f8.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 60010
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/44694258771e975cce98a830b4b5f60cf6d3dfa18a5dd762ba5436a37042e651.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 38809
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/16719e9c3035fd8067766abe9a5ef3e4f26fa4fe0842cd218e91eea7ee8d5cff.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 61848
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/4d022e1943f030642610e1ba69f8ae715ff8710a387ab7c65c5e5531579b92c1.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 35099
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/8e113db9396725b57fd830819fe899b116ccb03970d63a1cb7694a2157be444a.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 58052
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/569866148484f1b73c242879c51d92d26240b872f1e65ad355bfc8c2920f6ca2.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 35025
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/bd7fba85c9cfe00f6f7c269f06afe1a017ded117768450bdf1296ff2b345e658.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 28807
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/a142660feac42b955e29c853b42facf3cd3cb67990d0aad6ead121fe6cfdcff0.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 57800
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/ff0a8f4c2ee75b6dcdbd1f08ebf906321d47dcc0b62fb38b1763321bea8e5188.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 21604
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 54985
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/ee590b504cf47729ec0483f52a19ce9cd863c82d96abce30eac40ffcbfcce619.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 26245
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/558e97a1fe38fca92ce64af6e8367ff6eb01e87c8c9a78120b2cdb33b32da23a.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 28377
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/bd5b9e4a17263f27f84f65d4ebb8be596166bc186da57562b9a5b7b7afbc2aae.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 56994
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/b6a5cbecd3c98c05fc7c57d3fee829baf51e8ca00210daa90670bf96490f34e7.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 28365
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/c431455abf733f7c1749b0d6d1526aa83000e365a75c7eab6979df1157dc959f.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 58815
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/3d5521b309750b7e0f3854b1898b5874e5a94a65e62b890b853d2af08bd53809.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 54831
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 52818
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/c7e4e1c1648451736b2975aae833356457ab15fce18cf741dfb42d92580348f0.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 38142
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/b5ef6b408837e0ca30fcd72024a939a79cd90e1d04ebb15e057aa786bd5af39a.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 60644
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/bc4af809c317d7882faa7fd08b5344cfb256cf34f4b6d9d8ad5c712cc59df868.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 30980
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/901054da31d9c6044f18f4824d66ffbe268043bd095b23a27a9ce0e9226ce8ba.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 59644
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/e88e19357770b8639f2f63834ed345c4e1c521c803ecbd53d2d09db10ecdf07c.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 194413
+      },
+      {
+        "name": "http://127.0.0.1:4175/textures/shared/118ff2efaac1ccd50077244c3454af5484d2b1ccc6dfcb8d9feb8b087e237560.jpg",
+        "transferSize": 300,
+        "decodedBodySize": 171285
+      },
+      {
+        "name": "http://127.0.0.1:4175/art/daguanlou.webp",
+        "transferSize": 406986,
+        "decodedBodySize": 406686
+      },
+      {
+        "name": "http://127.0.0.1:4175/models/places-low/daguanlou.glb",
+        "transferSize": 2596976,
+        "decodedBodySize": 2596676
+      }
+    ],
+    "method": "150-step orbit interaction on low quality; last up to 300 positive intervals including stalls; first interval after idle omitted; demand rendering, so idle frame rate is not a meaningful measure"
+  }
+}

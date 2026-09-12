@@ -1,0 +1,25 @@
+{
+  "at": "2026-09-12T08:28:01.908003+00:00",
+  "revision": "spatial-garden-20260912-r11",
+  "technicalCompleted": [
+    "models:build",
+    "models:optimize",
+    "models:verify",
+    "spatial:check",
+    "data:build",
+    "typecheck",
+    "lint",
+    "6unit tests",
+    "production build",
+    "11E2E tests",
+    "final12capturematrix",
+    "performance",
+    "exactpackage2captures/smoke"
+  ],
+  "pending": [
+    "full independent visual review",
+    "documenter completion",
+    "deployment and current public verification"
+  ],
+  "candidateOnly": true
+}

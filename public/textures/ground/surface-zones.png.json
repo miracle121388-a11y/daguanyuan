@@ -1,0 +1,19 @@
+{
+  "origin": "Blender/Python geometry-derived scalar masks",
+  "sourceFile": "blender/daguanyuan_master.blend",
+  "sourceSha256": "d8e497880d0d0902b36a8d3c8fd8f7f8ca46563ca631e545861ec946ebe33f48",
+  "layoutSha256": "2733470dedb0830c027f0759a0fcd0958fbd09460a0d85f23002558728ec31a2",
+  "sha256": "16e0d5198687965a7c705b250cf6bad2676e786fb9284edbefdbf2d8605956ef",
+  "resolution": 768,
+  "quantizationLevels": 64,
+  "worldSpanMetres": 768.0,
+  "channels": {
+    "R": "Irregular soil beneath actual canopies: radius2.5 x scale / weight.76; low shrubs radius1.7 x scale / weight.36; bamboo feet1.64m falloff; continuous authored courtyard beds with .22 normalized edge falloff shared with the actual 3D planting",
+    "G": "Shore proximity exp(-distance/3.8m), exact reviewed polygon",
+    "B": "Reviewed path shoulder exp(-(max(0,d-1.2)/1.15)^2), irregular .8\u20131 edge factor"
+  },
+  "prompt": "Compute material zones from the actual planted master, reviewed route edges and shoreline with blender/bake_surface_zones.py. No photographed or generated building image.",
+  "plantingFile": "config/garden.planting.json",
+  "plantingSha256": "476f37ac7ebf93e4e321a7cac2221099142dc2dcddc62fb2745b9b8683a85a26",
+  "nativeCounterpart": "Packed into native earth surface; export preserves original grass map for equivalent browser blend."
+}

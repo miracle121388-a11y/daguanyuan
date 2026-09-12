@@ -1,0 +1,14 @@
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+Traceback (most recent call last):
+  File "D:\Users\Lenovo\Desktop\大观园\blender\seat_ground_cover.py", line 7, in <module>
+    report=seat_plants()
+           ^^^^^^^^^^^^^
+  File "D:\Users\Lenovo\Desktop\大观园\blender\r7_ground_cover.py", line 22, in seat_plants
+    if hit is None:raise ValueError('Ground-cover plant has no land below it: '+ob.name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Ground-cover plant has no land below it: Ground_Cover_1686
+
+Error: script failed, file: 'blender/seat_ground_cover.py', exiting.
+
+Blender quit

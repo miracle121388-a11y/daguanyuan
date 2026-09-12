@@ -1,0 +1,84 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:96568) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:101112) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:124372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:107936) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:125336) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\gallery.spec.ts:3:1 › a failed full-size reference image can be retried without leaving the viewer (5.0s)
+  ok  2 tests\e2e\gallery.spec.ts:16:1 › gallery retries a failed manifest and distinguishes spoiler-empty results (9.1s)
+  ok  3 tests\e2e\gallery.spec.ts:21:1 › 320px sources entry retains its accessible name (762ms)
+  x   4 tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots (45.8s)
+(node:105420) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 tests\e2e\garden.spec.ts:19:1 › mobile bottom drawer and usable controls (9.1s)
+  ok  6 tests\e2e\garden.spec.ts:20:1 › model failure exposes retry and recovers (6.3s)
+  ok  7 tests\e2e\garden.spec.ts:21:1 › tour shows sourced stop content, travels, and arrives at the next stop (12.6s)
+  ok  8 tests\e2e\interior.spec.ts:2:1 › interior inspection lifts the roof and restores the complete courtyard (10.9s)
+  x   9 tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard (16.3s)
+(node:125652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 10 tests\e2e\mobile.spec.ts:24:1 › 320px phone controls remain inside the viewport (4.3s)
+
+
+  1) tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots 
+
+    Error: UNKNOWN: unknown error, open 'D:\Users\Lenovo\Desktop\大观园\reports\browser\06-character.png'
+
+       9 |  for(const id of ['xiaoxiangguan','yihongyuan','qiushuangzhai']){await page.getByRole('button',{name:'回到全园',exact:true}).click();await page.waitForTimeout(2000);const point=await page.evaluate(id=>(window as any).__gardenTest.project(id),id);const box=(await page.locator('canvas').boundingBox())!;await page.mouse.click(box.x+point.x,box.y+point.y);await expect.poll(async()=>(await state(page)).place).toBe(id)}
+      10 |  for(const [i,name]of ['潇湘馆','怡红院','蘅芜苑','秋爽斋'].entries()){await place(page,name);await page.screenshot({path:`reports/browser/0${i+2}-${['xiaoxiangguan','yihongyuan','hengwuyuan','qiushuangzhai'][i]}.png`})}
+    > 11 |  await page.getByRole('button',{name:'人物群像',exact:true}).click();await page.locator('.character-list button').filter({hasText:'林黛玉'}).click();await expect.poll(async()=>(await state(page)).person).toBe('daiyu');await expect(page.locator('.related-places')).toContainText('潇湘馆');await page.screenshot({path:'reports/browser/06-character.png'});
+         |                                                                                                                                                                                                                                                                                       ^
+      12 |  await page.getByRole('button',{name:'回目拾遗',exact:true}).click();await page.locator('.chapter-list button').filter({hasText:'第三十七回'}).click();await page.locator('.event-row').filter({hasText:'海棠结社'}).click();await expect.poll(async()=>(await state(page)).place).toBe('qiushuangzhai');await expect(page.locator('.detail-panel')).toContainText('探春');await page.locator('.source-list summary').first().click();await expect(page.locator('.source-body blockquote')).toBeVisible();await page.waitForTimeout(1800);await page.screenshot({path:'reports/browser/07-event.png'});
+      13 |  for(const id of ['first-look','poetry','granny']){if(await page.getByRole('button',{name:'关闭详情',exact:true}).isVisible())await page.getByRole('button',{name:'关闭详情',exact:true}).click();await page.selectOption('#route-select',id);await page.getByRole('button',{name:'开始游园',exact:true}).click();await expect.poll(async()=>(await state(page)).tour.status).toBe('playing');await page.getByRole('button',{name:'暂停',exact:true}).click();await expect.poll(async()=>(await state(page)).tour.status).toBe('paused');await page.getByRole('button',{name:'下一站',exact:true}).click();await expect.poll(async()=>(await state(page)).tour.index).toBe(1);await page.getByRole('button',{name:'上一站',exact:true}).click();await expect.poll(async()=>(await state(page)).tour.index).toBe(0);await page.getByRole('button',{name:'继续',exact:true}).click();await page.getByRole('button',{name:'退出导览',exact:true}).click();await expect.poll(async()=>(await state(page)).tour.status).toBe('idle')}
+      14 |  await page.getByRole('button',{name:'游园设置',exact:true}).click();await page.getByRole('checkbox',{name:'避免剧透',exact:true}).check();await page.getByRole('slider',{name:'阅读进度'}).fill('37');await expect.poll(async()=>(await state(page)).spoiler).toBe(37);await page.getByRole('combobox',{name:'画面精度'}).selectOption('low');await page.getByRole('button',{name:'关闭设置',exact:true}).click();await page.getByRole('button',{name:'回目拾遗',exact:true}).click();await expect(page.locator('.chapter-list')).not.toContainText('第七十六回');await page.getByRole('button',{name:'人物群像',exact:true}).click();await page.locator('.character-list button').filter({hasText:'妙玉'}).click();await expect(page.locator('.detail-prose')).toContainText('第41回解锁');await expect(page.locator('.detail-panel')).not.toContainText('茶具与品茗');
+        at D:\Users\Lenovo\Desktop\大观园\tests\e2e\garden.spec.ts:11:279
+
+    Error Context: test-results\garden-published-scene-rea-0a456-rs-settings-and-screenshots\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\garden-published-scene-rea-0a456-rs-settings-and-screenshots\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\garden-published-scene-rea-0a456-rs-settings-and-screenshots\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard 
+
+    Error: UNKNOWN: unknown error, open 'D:\Users\Lenovo\Desktop\大观园\reports\acceptance\mobile-4g.json'
+
+      20 |  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(400);
+      21 |  const after=await page.evaluate(()=>(window as any).__gardenTest.project('xiaoxiangguan'));expect(Math.abs(before.x-after.x)+Math.abs(before.y-after.y)).toBeGreaterThan(3);
+    > 22 |  fs.writeFileSync('reports/acceptance/mobile-4g.json',JSON.stringify({conditions:{viewport:[390,844],deviceScaleFactor:3,renderDpr:1,latencyMs:80,downloadMbps:9,cpuSlowdown:4,realMobileHardware:false},initial,touchOrbitChanged:true,mobilePartitionLoaded:true},null,2));await context.close();
+         |     ^
+      23 | });
+      24 | test('320px phone controls remain inside the viewport',async({browser})=>{
+      25 |  const context=await browser.newContext({viewport:{width:320,height:740},isMobile:true,hasTouch:true});const page=await context.newPage();await page.goto('/');await page.waitForFunction(()=>(window as any).__gardenTest?.state().loaded);
+        at D:\Users\Lenovo\Desktop\大观园\tests\e2e\mobile.spec.ts:22:5
+
+    Error Context: test-results\mobile-touch-phone-on-thro-75dba-erview-and-mobile-courtyard\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\mobile-touch-phone-on-thro-75dba-erview-and-mobile-courtyard\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\mobile-touch-phone-on-thro-75dba-erview-and-mobile-courtyard\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots 
+    tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard 
+  8 passed (2.4m)
+Error: UNKNOWN: unknown error, open 'D:\Users\Lenovo\Desktop\大观园\reports\acceptance\playwright.json'

@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-10T09:24:21.838Z",
+  "url": "http://127.0.0.1:4274/",
+  "revision": "spatial-garden-20260910-r6",
+  "planView": true,
+  "dnsOverride": null,
+  "quicDisabled": false,
+  "tlsVerification": null,
+  "observationTimeoutMs": 90000,
+  "desktopReadyMs": 3053,
+  "hooksAbsent": true,
+  "sourceHooksAbsent": true,
+  "focus": {
+    "width": "2px",
+    "style": "solid"
+  },
+  "sceneVisible": true,
+  "refresh": true,
+  "selection": true,
+  "errors": [],
+  "failed": [],
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "touchEmulation": true,
+    "networkThrottle": false,
+    "readyMs": 501,
+    "models": [
+      "/models/overview-low.glb",
+      "/models/places-low/xiaoxiangguan.glb",
+      "/models/vegetation/broadleaf.glb",
+      "/models/vegetation/broadleaf-2.glb"
+    ],
+    "selection": true
+  }
+}

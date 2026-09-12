@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported cutstone_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "cutstone_diff",
+  "sourcePixelSha256": "37729346ec06807e5fe1582abf9ab5c1de92fab3757f18b1d60a6d7708be190d",
+  "sha256": "10bd9d3d32f800dd32ad821f980ebf78a8d355cc44bdb29133bd9da0dea0ebe0",
+  "prompt": "Blender-exported cutstone_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

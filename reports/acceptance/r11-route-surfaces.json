@@ -1,0 +1,28 @@
+{
+  "method": "Downward rays at the authored road/arched bridge height, centre and \u00b132% width, at most 1.1m apart. Requires actual paving and upward normals; no terrain or bounding-box substitute.",
+  "heightToleranceM": 0.15,
+  "rows": [
+    {
+      "scope": "master",
+      "checks": 4719,
+      "missing": 0,
+      "inverted": 0,
+      "examples": []
+    },
+    {
+      "scope": "overview",
+      "checks": 4719,
+      "missing": 0,
+      "inverted": 0,
+      "examples": []
+    },
+    {
+      "scope": "overview-low",
+      "checks": 4719,
+      "missing": 0,
+      "inverted": 0,
+      "examples": []
+    }
+  ],
+  "passed": true
+}

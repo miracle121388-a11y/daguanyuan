@@ -1,0 +1,194 @@
+[
+  {
+    "id": "rosewood_veneer_02",
+    "files": [
+      {
+        "file": "assets/source/rosewood_veneer_02.jpg",
+        "sha256": "f4085bf7554ff14ed8b8a39154dbeef12c12b66f7ceec763963d7be0c7fd6a40",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_diff_1k.jpg",
+        "bytes": 641315
+      },
+      {
+        "file": "assets/source/rosewood_veneer_02_nor_gl.jpg",
+        "sha256": "3d186abe4523a805172fb8417f46aab34edcd3d8f3546400bc3e567dd099b21e",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_1k.jpg",
+        "bytes": 368723
+      },
+      {
+        "file": "assets/source/rosewood_veneer_02_rough.jpg",
+        "sha256": "558c1bd6676b6601e907e03e2173cfcb83d2885a201ea09a0377c81ca8f6abfc",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_rough_1k.jpg",
+        "bytes": 511348
+      }
+    ],
+    "at": "2026-09-11T18:06:26.941914+00:00"
+  },
+  {
+    "id": "white_sandstone_blocks_02",
+    "files": [
+      {
+        "file": "assets/source/white_sandstone_blocks_02.jpg",
+        "sha256": "0a43c8bc80581408f9c700ad98d2de64280e694148e37626d6648fdddf47a777",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_sandstone_blocks_02/white_sandstone_blocks_02_diff_1k.jpg",
+        "bytes": 910262
+      },
+      {
+        "file": "assets/source/white_sandstone_blocks_02_nor_gl.jpg",
+        "sha256": "14eb23e29a347b97394c65a6f1fe2c7c107da55b18fb95b912c7280c5a43b72d",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_sandstone_blocks_02/white_sandstone_blocks_02_nor_gl_1k.jpg",
+        "bytes": 826220
+      },
+      {
+        "file": "assets/source/white_sandstone_blocks_02_rough.jpg",
+        "sha256": "f30c3c460130ac867d398cacf8041d86eaa760f134f00c84cc1a30348751d3f5",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_sandstone_blocks_02/white_sandstone_blocks_02_rough_1k.jpg",
+        "bytes": 635846
+      }
+    ],
+    "at": "2026-09-11T18:06:27.664819+00:00"
+  },
+  {
+    "id": "mossy_sandstone",
+    "files": [
+      {
+        "file": "assets/source/mossy_sandstone.jpg",
+        "sha256": "61ccd3b5ec1f8d27ceee79bef9ced8064c7555570ea53d86ebac35fc337e2997",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_sandstone/mossy_sandstone_diff_1k.jpg",
+        "bytes": 764526
+      },
+      {
+        "file": "assets/source/mossy_sandstone_nor_gl.jpg",
+        "sha256": "67911c1de7fb7f5e2a98ec72ce7f77eaa15941a724e3ceeb2080966f7ebfcb3e",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_sandstone/mossy_sandstone_nor_gl_1k.jpg",
+        "bytes": 1060228
+      },
+      {
+        "file": "assets/source/mossy_sandstone_rough.jpg",
+        "sha256": "f497744283f4d3e2351e5e55034dde78ef568e2add1a9dfbe9cc8089eeafac6e",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_sandstone/mossy_sandstone_rough_1k.jpg",
+        "bytes": 412423
+      }
+    ],
+    "at": "2026-09-11T18:06:28.440992+00:00"
+  },
+  {
+    "id": "forest_ground_06",
+    "files": [
+      {
+        "file": "assets/source/forest_ground_06.jpg",
+        "sha256": "2bcfe6e3de263e50c236b1e7db09b674a4385e79f8906c94dce4c9d10afa7e18",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_ground_06/forest_ground_06_diff_1k.jpg",
+        "bytes": 851532
+      },
+      {
+        "file": "assets/source/forest_ground_06_nor_gl.jpg",
+        "sha256": "73d28252b149b46c9274b3da84d2ffb6b7749ad9e2cf1c73906811dd90643822",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_ground_06/forest_ground_06_nor_gl_1k.jpg",
+        "bytes": 1392106
+      },
+      {
+        "file": "assets/source/forest_ground_06_rough.jpg",
+        "sha256": "7eae1a43d6aaf62d5cfa421588348da44deffcbe7bdfe61ed758aef7a57a036e",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_ground_06/forest_ground_06_rough_1k.jpg",
+        "bytes": 745145
+      }
+    ],
+    "at": "2026-09-11T18:06:29.251830+00:00"
+  },
+  {
+    "id": "fern_02",
+    "files": [
+      {
+        "file": "assets/source/fern_02/fern_02.gltf",
+        "sha256": "33974295ee19670af4877705fc7d91f33f42d6302f0d44a625e072271223031f",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/fern_02/fern_02_1k.gltf",
+        "bytes": 6899
+      },
+      {
+        "file": "assets/source/fern_02/textures/fern_02_arm_1k.jpg",
+        "sha256": "ebfb5d76ce9cbdaec20bcd22dce9b755f0b1b8650ef29ca13555e3e6961025d7",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fern_02/fern_02_arm_1k.jpg",
+        "bytes": 280359
+      },
+      {
+        "file": "assets/source/fern_02/textures/fern_02_diff_1k.jpg",
+        "sha256": "a828a6e7b4c01c826911e2eac4b3afc7457dab7b3b392a31c681ed88b7d50029",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fern_02/fern_02_diff_1k.jpg",
+        "bytes": 315705
+      },
+      {
+        "file": "assets/source/fern_02/textures/fern_02_nor_gl_1k.jpg",
+        "sha256": "45bce132c6e96a0864bc89ab5da51361ab3f4afa83a6669ae499ab5ca811f621",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fern_02/fern_02_nor_gl_1k.jpg",
+        "bytes": 367222
+      },
+      {
+        "file": "assets/source/fern_02/fern_02.bin",
+        "sha256": "fe1abb762bcbbc7ad9e86925c8080437a62add257d9280e9142fdc85c226e64c",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/fern_02/fern_02.bin",
+        "bytes": 176176
+      },
+      {
+        "file": "assets/source/fern_02/textures/fern_02_diff_1k.png",
+        "sha256": "f8f504bce117647f1df386cd7bc99a79c664bb49f82d1dd6412c83a700c48e94",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/fern_02/fern_02_diff_1k.png",
+        "bytes": 1986120
+      },
+      {
+        "file": "assets/source/fern_02/textures/fern_02_alpha_1k.png",
+        "sha256": "ea3c64284c7ebdeedf484d2d816eae92825ec526140c3bb83859ddc7a64001f9",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/fern_02/fern_02_alpha_1k.png",
+        "bytes": 114589
+      }
+    ],
+    "at": "2026-09-11T18:06:32.199692+00:00"
+  },
+  {
+    "id": "shrub_01",
+    "files": [
+      {
+        "file": "assets/source/shrub_01/shrub_01.gltf",
+        "sha256": "c3bb3340687d46c684b9dab82f5b2f92b7b0fe761842423d3c9e19f59a839393",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/shrub_01/shrub_01_1k.gltf",
+        "bytes": 2895
+      },
+      {
+        "file": "assets/source/shrub_01/textures/shrub_01_nor_gl_1k.jpg",
+        "sha256": "076870a39a4e21a364cf94566e6dd1852a29045fdf1f23393637235b19d1c2e8",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_01/shrub_01_nor_gl_1k.jpg",
+        "bytes": 746497
+      },
+      {
+        "file": "assets/source/shrub_01/shrub_01.bin",
+        "sha256": "a8646f51386c84b12a6be8324dd0c2357c393c9108aac911847a203cf490b426",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/shrub_01/shrub_01.bin",
+        "bytes": 5239664
+      },
+      {
+        "file": "assets/source/shrub_01/textures/shrub_01_arm_1k.jpg",
+        "sha256": "8faecdc28d8f03ba0ac139be16e617e8bfd0778780ec1d7850812230378b89be",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_01/shrub_01_arm_1k.jpg",
+        "bytes": 386309
+      },
+      {
+        "file": "assets/source/shrub_01/textures/shrub_01_diff_1k.jpg",
+        "sha256": "fe60e639d694e1807c0a3ae97dd1d5a7e7b3f84e5fc32d0610b868ce48f36331",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_01/shrub_01_diff_1k.jpg",
+        "bytes": 502162
+      },
+      {
+        "file": "assets/source/shrub_01/textures/shrub_01_diff_1k.png",
+        "sha256": "4f4a46a0f96f8071e91692f38dd292446fdcc9b896b955d92298e1f7529f5484",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/shrub_01/shrub_01_diff_1k.png",
+        "bytes": 926039
+      },
+      {
+        "file": "assets/source/shrub_01/textures/shrub_01_alpha_1k.png",
+        "sha256": "eb693835205913dfc705a08fb45f3e8d1c338332bd0097e9837773765b421603",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/shrub_01/shrub_01_alpha_1k.png",
+        "bytes": 132597
+      }
+    ],
+    "at": "2026-09-11T18:06:36.432464+00:00"
+  }
+]

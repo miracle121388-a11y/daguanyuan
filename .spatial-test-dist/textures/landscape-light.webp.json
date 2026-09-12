@@ -1,0 +1,20 @@
+{
+  "origin": "Cycles shadow render of the editable Daguanyuan master. The camera sees only white earth receivers; the actual local buildings, source trees, bamboo, stones and furniture cast shadows. No painted replacement scene.",
+  "method": "2048 square; orthographic 720m; camera [0,30,700]; Cycles 16 samples with denoising; world .14; sun2.8 at[-80,-42,62], angular size2.5deg; Standard color transform. Actual planted transforms use linked complete source crowns matching the distance atlas, instead of interactive sparse leaf subsets. Saved master unchanged.",
+  "nativeFullCrowns": true,
+  "worldBounds": {
+    "x": [
+      -360,
+      360
+    ],
+    "blenderY": [
+      -330,
+      390
+    ]
+  },
+  "sourceMaster": "blender/daguanyuan_master.blend",
+  "sourceMasterSha256": "ca556490c3b746e36dd896326d1779f2d1997c4f0b09d5bd52e28dab49e86e44",
+  "renderSha256": "d880e70a63bc38f624c2897c76f7a8bcb7366ee0373a5a7625350cdfa3e4ea10",
+  "prompt": "Render actual geometry shadows with blender/bake_landscape_light.py; 2048 square; orthographic 720m; camera [0,30,700]; Cycles 16 samples with denoising; world .14; sun2.8 at[-80,-42,62], angular size2.5deg; Standard color transform. Actual planted transforms use linked complete source crowns matching the distance atlas, instead of interactive sparse leaf subsets. Saved master unchanged.",
+  "sha256": "0190379a3e174fcf6bc35123c564cebca0025759baa89f948c1b90833709aa48"
+}

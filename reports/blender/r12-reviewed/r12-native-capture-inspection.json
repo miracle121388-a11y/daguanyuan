@@ -1,0 +1,50 @@
+{
+  "at": "2026-09-12T10:16:20.190219+00:00",
+  "revision": "spatial-garden-20260912-r12",
+  "masterSha256": "eb78a58bb0ff5686214d0409426a02896e2ffeb524d1bee1efc38f25584d1bac",
+  "captures": [
+    {
+      "file": "reports/blender/r12-master-full.png",
+      "width": 1280,
+      "height": 800,
+      "cameraWeb": [
+        92,
+        126,
+        226
+      ],
+      "targetWeb": [
+        0,
+        4,
+        8
+      ],
+      "verticalFovDegrees": 48,
+      "horizontalFovDegrees": 70.92955426629062,
+      "sha256": "71dcf1eba818cc1222819a769527b396da0c10725004e8c8da90ac7f80edfc82"
+    },
+    {
+      "file": "reports/blender/r12-master-xiaoxiang.png",
+      "width": 1280,
+      "height": 800,
+      "cameraWeb": [
+        -78,
+        16,
+        92
+      ],
+      "targetWeb": [
+        -101,
+        1.6,
+        62
+      ],
+      "verticalFovDegrees": 43,
+      "horizontalFovDegrees": 64.44291678134034,
+      "sha256": "946ec1bb02d992011e40e915f39cae82d90f08b2644adf79d87aaac13235c50d"
+    }
+  ],
+  "parentOpenedAll": true,
+  "captureValid": true,
+  "findings": [
+    "Full native tree crowns are now visible throughout the forest; the previous bare-branch defect is resolved in these two actual master renders.",
+    "Continuous garden and Xiaoxiang courtyard geometry are visible, with real tiled roofs, bamboo and eroded rock details.",
+    "These are native Cycles renders, not browser or real-phone proof; artistic and lighting limits remain subject to independent review."
+  ]
+}

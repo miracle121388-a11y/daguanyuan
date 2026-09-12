@@ -1,0 +1,44 @@
+{
+  "at": "2026-09-12T13:43:03.113829+00:00",
+  "revision": "spatial-garden-20260912-r12-fix2",
+  "masterSha256": "2293c626fc32c0bd32ad1c269d8c1c0a76b877cbc63e3fd9b43288b37f2696a2",
+  "method": "Actual saved master meshes and materials; Cycles24, denoised, native physical water; AgX Medium High Contrast exposure+.4; dedicated light/camera exist only in this unsaved render session. No browser UI, no real-phone or performance claim. Runtime water uses planar scene reflection, while native water uses Cycles transmission.",
+  "renders": [
+    {
+      "file": "reports/blender/fix2-master-full.png",
+      "width": 1280,
+      "height": 800,
+      "cameraWeb": [
+        92,
+        126,
+        226
+      ],
+      "targetWeb": [
+        0,
+        4,
+        8
+      ],
+      "verticalFovDegrees": 48,
+      "horizontalFovDegrees": 70.92955426629062,
+      "sha256": "71040773cb7b143bd6e403f461cc9a6fe7d93675253f08e46f62e592c50b0234"
+    },
+    {
+      "file": "reports/blender/fix2-master-xiaoxiang.png",
+      "width": 1280,
+      "height": 800,
+      "cameraWeb": [
+        -78,
+        16,
+        92
+      ],
+      "targetWeb": [
+        -101,
+        1.6,
+        62
+      ],
+      "verticalFovDegrees": 43,
+      "horizontalFovDegrees": 64.44291678134034,
+      "sha256": "e1998c4103f4c4c3d7fe699b35512f297a520a3d30655c6b8dc256c27aa7dd21"
+    }
+  ]
+}

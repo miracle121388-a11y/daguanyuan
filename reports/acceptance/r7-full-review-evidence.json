@@ -1,0 +1,162 @@
+{
+  "review": "r7-full-review",
+  "reviewedAt": "2026-09-11T16:23:57.3398185Z",
+  "revision": "spatial-garden-20260911-r7",
+  "reviewMode": "fresh full review",
+  "disposition": "rebuild",
+  "scope": "provided local formal-package and review captures; no public r7 deployment approval",
+  "captureValidation": "14 required captures exist, dimensions verified, content opened and visually valid",
+  "browserRunByReviewer": false,
+  "detectorRunByReviewer": false,
+  "seedRunByReviewer": false,
+  "independentQualityBarCardProvided": false,
+  "approvedWebpageCompProvided": false,
+  "historicalSeed": "41ecba8d",
+  "historicalSeedOriginalVerified": false,
+  "captures": [
+    {
+      "path": ".impeccable/review/desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "a6f4bafea151ccde7eb8c45e3e884fb88661e7c027474b9277ca2d990e64368e",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/plan.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "ebd58fb059c6cfcf7ede881998ff3eee0105fadd7c51b39e421a256acfd513e8",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/courtyard.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "457d2005df9fa405920a6468c2254054d01b8cbee86e8c113b33b4ec87582777",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/interior.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "52140f2d038da3883079a01f2f04a0a87c4c71e7be23ab66ca1eeb3379a6b283",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/cutaway.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "0f32d8b0ec4a4c7534af1f0738a68a77e337a339d3ed771a837e78881620ee1b",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/night.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "92ecf86a9cadeaf42db049045368fb1f80aac81d7e43bcfa0b29cbc754b9ed41",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/central-ensemble.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "556f78407535cb32a2f993bf2975c182f122ab53b5193f5a2efe92a6b9852957",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/user-1266.png",
+      "width": 1266,
+      "height": 712,
+      "sha256": "ef6b9eb6590e55de93263322d88bd267b3c62a000dd368021173a23f520621e2",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/mobile.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "f6e604cf2d8769923cede083aa411349206ca69668e2370f7c6cc952193ce2b6",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/mobile-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "3a808be0409d1fd3254f15f1d081af4d6ae3f82d4560998480ecebcce95d0d98",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/mobile-whole-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "af7c2f281626d398fa88455876bc46653402f56a2d74c0f4b9c08c56ae3f78f1",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": ".impeccable/review/narrow.png",
+      "width": 320,
+      "height": 740,
+      "sha256": "6fae2656694423eaa9eaee1f7f5292d872f9bc63fbf0e06f17dd850e2e1b13eb",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": "reports/browser/r7-packaged-production-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "791e46a3759264961bebb944d2b4883895b8688ceb75dd4359f3997845a1b4bb",
+      "openedByReviewer": true,
+      "valid": true
+    },
+    {
+      "path": "reports/browser/r7-packaged-production-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "53cbc09a9bd11900081ab3bf0193375b64d255c8bb90ea16e2c5bcc76cfde1e0",
+      "openedByReviewer": true,
+      "valid": true
+    }
+  ],
+  "references": [
+    {
+      "path": "D:/Download/ChatGPT Image 2026年9月10日 01_02_26.png",
+      "sha256": "dd9a810e742b7c3d39a7c4ccd7dde55ff079c9448f118d54926657fd7a43b533",
+      "openedByReviewer": true,
+      "role": "subject-and-quality reference; not approved webpage comp or novel evidence"
+    },
+    {
+      "path": "public/art/daguanlou.webp",
+      "sha256": "0ae2e3031fa7282a27798c0943081943b5be0fe5fc937eb17c893bb98f40b2df",
+      "openedByReviewer": true,
+      "role": "subject-and-quality reference; not approved webpage comp or novel evidence"
+    },
+    {
+      "path": "public/art/xiaoxiangguan-day.webp",
+      "sha256": "8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2",
+      "openedByReviewer": true,
+      "role": "subject-and-quality reference; not approved webpage comp or novel evidence"
+    },
+    {
+      "path": "public/art/garden-waterways.webp",
+      "sha256": "146067fb544ce15dce5a9a7a5e2a917ddadbfc63641cf7fdfdd65b3283c35e91",
+      "openedByReviewer": true,
+      "role": "subject-and-quality reference; not approved webpage comp or novel evidence"
+    },
+    {
+      "path": "public/art/garden-aerial-day.webp",
+      "sha256": "73603aa3751606adb060cc55b4f16c4fb7b9fdb6d8746c736ae809a92c6eb432",
+      "openedByReviewer": true,
+      "role": "subject-and-quality reference; not approved webpage comp or novel evidence"
+    }
+  ]
+}

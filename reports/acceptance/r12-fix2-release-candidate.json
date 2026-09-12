@@ -1,0 +1,110 @@
+{
+  "at": "2026-09-12T14:08:09.820615+00:00",
+  "revision": "spatial-garden-20260912-r12-fix2",
+  "state": "published and public bytes verified; second visual fix verdict remains fix",
+  "package": {
+    "directory": ".deploy/reference-20260912-135401-786847",
+    "contents": [
+      "dist/",
+      "server.mjs",
+      "Dockerfile"
+    ],
+    "rawBytes": 58192525,
+    "compressedBytes": 49432230,
+    "uploadDirectoryBytes": 51218986,
+    "precompressedExtensions": [
+      "html",
+      "js",
+      "css",
+      "json",
+      "wasm"
+    ],
+    "precompressedFormat": "br",
+    "packedOnlyExtensions": [
+      "glb",
+      "js",
+      "wasm"
+    ],
+    "packedBinaryIdentity": "server returns losslessly decoded original bytes; no raw duplicate in upload",
+    "gzipFallback": "bounded runtime cache",
+    "brotli": true,
+    "privateFilesIncluded": false,
+    "createdAt": "2026-09-12T13:54:09.109296+00:00"
+  },
+  "physicalHashLedger": "r12-fix2-package-inventory.json",
+  "packedLogicalHashLedger": "r12-fix2-packed-logical-file-hashes.json",
+  "nativeMasterSha256": "2293c626fc32c0bd32ad1c269d8c1c0a76b877cbc63e3fd9b43288b37f2696a2",
+  "preservedPlantTransforms": 11196,
+  "geometryPreservation": "302 retained architecture/terrain meshes and semantic anchors in 17 botanical replacement outputs; Draco bounds separately constrained to 12mm",
+  "checks": {
+    "r12-fix2-models-resume": {
+      "exitCode": 0,
+      "completedAt": "2026-09-12T13:40:21.6844787Z"
+    },
+    "r12-fix2-final-optimization": {
+      "exitCode": 0,
+      "completedAt": "2026-09-12T13:51:38.1522274Z"
+    },
+    "r12-fix2-release-model-verification": {
+      "exitCode": 0,
+      "completedAt": "2026-09-12T13:53:09.2289388Z"
+    },
+    "r12-fix2-native-views": {
+      "exitCode": 0,
+      "completedAt": "2026-09-12T13:43:11.4170217Z"
+    },
+    "r12-fix2-release-e2e": {
+      "exitCode": 0,
+      "completedAt": "2026-09-12T13:54:45.4088339Z"
+    }
+  },
+  "mobileSimulation": {
+    "loadedMs": 9960.800000000745,
+    "initialBytes": 8320906,
+    "conditions": {
+      "viewport": [
+        390,
+        844
+      ],
+      "deviceScaleFactor": 3,
+      "renderDpr": 1,
+      "latencyMs": 80,
+      "downloadMbps": 9,
+      "cpuSlowdown": 4,
+      "realMobileHardware": false
+    }
+  },
+  "capturesOpenedByParent": 21,
+  "visualVerdict": {
+    "disposition": "fix",
+    "report": "r12-fix2-verdict.md",
+    "scope": "Five original fixes only, not full-surface approval",
+    "findingStatus": {
+      "FORM provenance": "unresolved",
+      "planted ground": "partial",
+      "focal botany": "partial",
+      "mobile close view": "resolved, retained",
+      "moonlit depth": "resolved, retained"
+    },
+    "newFix2Regressions": 0
+  },
+  "historicalFormProof": "unavailable, not rerolled or fabricated",
+  "deploymentAuthorization": "existing California project/service only; user explicitly authorized publication after refinement",
+  "target": {
+    "projectId": "6aa142fb6c3d9581b71560ed",
+    "serviceId": "6aa143296c3d9581b71560fa",
+    "environmentId": "6aa142fbda9bc245fba1e845",
+    "regionId": "server-6a8eee0bb11fb81fb4aaca05",
+    "url": "https://daguanyuan-rumeng.zeabur.app/"
+  },
+  "accessPreflight": "r12-fix2-public-transport-preflight.json: default network connection closed, test-browser public DNS health succeeds with old r6; no system settings changed",
+  "deployment": {
+    "id": "6aa55d89fbf9c810b64d4df4",
+    "verifiedAt": "2026-09-12T14:21:17.366692+00:00",
+    "report": "r12-fix2-zeabur-deployment-verified.json",
+    "matchedPublicFiles": 17,
+    "defaultNetworkPassed": false,
+    "temporaryResolvedBrowserPassed": true
+  },
+  "finalizedAt": "2026-09-12T14:26:36.569699+00:00"
+}

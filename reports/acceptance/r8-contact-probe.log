@@ -1,0 +1,16 @@
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Fra:1 Mem:8.48M (Peak 8.48M) | Time:44:11:08.75 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Cube
+Fra:1 Mem:8.48M (Peak 8.48M) | Time:44:11:08.75 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Probe_Floor
+Fra:1 Mem:8.51M (Peak 8.51M) | Time:44:11:08.75 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+DETAIL CONTACT xiaoxiangguan floorwood 576 0.3
+Traceback (most recent call last):
+  File "D:\Users\Lenovo\Desktop\大观园\blender\r8_api_probe.py", line 9, in <module>
+    bake_contact([floor,cube],'xiaoxiangguan')
+  File "D:\Users\Lenovo\Desktop\大观园\blender\bake_detail_contact.py", line 21, in bake_contact
+    mat=ob.data.materials[0]
+        ~~~~~~~~~~~~~~~~~^^^
+IndexError: bpy_prop_collection[index]: index 0 out of range, size 0
+
+Error: script failed, file: 'blender/r8_api_probe.py', exiting.
+
+Blender quit

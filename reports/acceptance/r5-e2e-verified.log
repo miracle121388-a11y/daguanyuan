@@ -1,0 +1,30 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> node scripts/run_e2e.mjs
+
+[WebServer] (node:25272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:30076) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:42332) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:13244) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:30024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\gallery.spec.ts:3:1 › a failed full-size reference image can be retried without leaving the viewer (4.3s)
+  ok  2 tests\e2e\gallery.spec.ts:16:1 › gallery retries a failed manifest and distinguishes spoiler-empty results (8.0s)
+  ok  3 tests\e2e\gallery.spec.ts:21:1 › 320px sources entry retains its accessible name (439ms)
+  ok  4 tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots (55.1s)
+  ok  5 tests\e2e\garden.spec.ts:19:1 › mobile bottom drawer and usable controls (7.2s)
+  ok  6 tests\e2e\garden.spec.ts:20:1 › model failure exposes retry and recovers (4.8s)
+  ok  7 tests\e2e\garden.spec.ts:21:1 › tour shows sourced stop content, travels, and arrives at the next stop (10.1s)
+  ok  8 tests\e2e\garden.spec.ts:33:1 › the overhead garden view opens by keyboard and a map destination returns to its courtyard (2.1s)
+  ok  9 tests\e2e\interior.spec.ts:3:1 › interior inspection lifts the roof and restores the complete courtyard (6.7s)
+  ok 10 tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard (29.7s)
+  ok 11 tests\e2e\mobile.spec.ts:35:1 › 320px phone controls remain inside the viewport (1.9s)
+
+  11 passed (2.4m)

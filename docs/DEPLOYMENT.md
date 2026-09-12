@@ -1,39 +1,26 @@
-# Zeabur 加利福尼亚部署
+# 加利福尼亚部署 · 当前版本
 
-在线地址：[大观园 · 入梦](https://daguanyuan-rumeng.zeabur.app/)
+[在线游园](https://daguanyuan-rumeng.zeabur.app/)。验证时间 2026-09-12T16:14:29.912150+00:00，运行版本 `spatial-garden-20260912-r14`，部署ID `6aa5791dfbf9c810b64d524c`。
 
-| 项目 | 值 |
-|---|---|
-| 服务器 | Aliyun California 4C 8GB，Los Angeles，美国 |
-| 服务器ID | `6a8eee0bb11fb81fb4aaca05` |
-| 区域ID | `server-6a8eee0bb11fb81fb4aaca05` |
-| 项目 | `daguanyuan-rumeng` / `6aa142fb6c3d9581b71560ed` |
-| 服务 | `daguanyuan` / `6aa143296c3d9581b71560fa` |
-| 环境 | `6aa142fbda9bc245fba1e845` |
-| 最新部署ID | 见 `reports/acceptance/zeabur-deployment.json` 中实际查询记录 |
+既有服务器 Aliyun California 4C 8GB，Los Angeles，美国；服务器ID `6a8eee0bb11fb81fb4aaca05`，区域 `server-6a8eee0bb11fb81fb4aaca05`。项目 `6aa142fb6c3d9581b71560ed`，服务 `6aa143296c3d9581b71560fa`，环境 `6aa142fbda9bc245fba1e845`。未购买新服务器，未更改其他服务。
 
-使用用户既有服务器，没有购买资源或升级套餐。独立项目只部署本园的静态站点。Node24容器以非root用户运行，监听3000，健康检查为 `/healthz`。服务器启动与Zeabur运行状态已确认；线上具体检查结果记录在 `reports/acceptance/zeabur-deployment.json`。
+CLI状态为RUNNING，域名PROVISIONED，HTTPS健康检查、CSP、18个公开文件（包含当前JS/CSS）的SHA-256及线上桌面/手机模拟正式构建检查通过。本机默认网络的正式网页检查未通过：page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/。公共DNS临时解析下的成功不能替代默认访问成功。本轮成功的浏览器检查是否使用临时解析覆盖：True。TLS验证保持开启，没有修改系统网络设置。本机条件不能代表每个访客的网络。
 
-## 更新步骤
+## 更新命令
 
-在项目根目录执行，Zeabur CLI须使用已登录的用户账户。凭据不存入项目或发布包。
+在项目根目录执行：
 
 ```powershell
-npm ci
 npm run build
 npm run deploy:package
-Set-Location .deploy
+$gardenPackage = Get-Content -LiteralPath reports/acceptance/deployment-package.json | ConvertFrom-Json
+Push-Location -LiteralPath $gardenPackage.directory
 npx --yes zeabur@0.22.2 deploy --service-id 6aa143296c3d9581b71560fa --project-id 6aa142fb6c3d9581b71560ed --environment-id 6aa142fbda9bc245fba1e845 -i=false
+Pop-Location
 ```
 
-更新现有服务即可，勿重复 `--create`。模型或内容改变时，应先按README重建模型/数据并通过校验。`.deploy/`只含`dist/`、`server.mjs`和`Dockerfile`，不含源文缓存、Blender、下载资产与私有配置。
+发布包是 `.deploy/` 内按时间创建的独立目录，不能上传整个 `.deploy/`。本轮目录 `.deploy/reference-20260912-155712-092545`，合计 47.24 MiB。只复制当前Vite清单与验证过的公开资源，避免Windows旧构建快照残留；不包含Blender、原文缓存、源资源下载和登录凭据。
 
-生成文本及WASM的Brotli/gzip文件；GLB已经Draco压缩，保留一份。目录合计约35.32 MiB，打包脚本会拒绝超过50 MiB的上传目录；无需通过升级套餐解决。正式JS/CSS采用内容哈希，模型与JSON每次重新验证缓存，避免更新后混用数据。
+Node24容器以非root用户运行，端口3000；仅允许GET/HEAD，模型MIME与Draco/WASM均在本站。发布目录内GLB、JS和WASM仅存一份Brotli文件，服务器按请求提供Brotli或无损解码后的gzip/identity；公开URL不变。哈希JS/CSS长期缓存，模型/JSON重新验证缓存。重建模型或数据后先通过完整性检查，再更新同一个服务。
 
-```powershell
-# 回到项目根目录后做正式网页检查
-$env:APP_URL = 'https://daguanyuan-rumeng.zeabur.app/'
-node scripts/production_smoke.mjs
-```
-
-本机代理DNS将新域名映射到虚拟IP后出现连接关闭；公共DNS均解析为47.89.212.251。另发现本机代理下浏览器HTTP/3请求会停滞，HTTPS的TCP传输正常。此次线上验收设置 `$env:APP_RESOLVE_IP = '47.89.212.251'`，测试脚本仅对此浏览器指定解析并关闭QUIC，保持TLS证书校验，不修改系统设置。精细总览完整显示、刷新及手机分区均通过。普通访问若遇到同样情况，可刷新代理DNS缓存或换用正常网络；服务器公网地址后续可能变化，不应永久写入hosts。
+线上验证脚本：设置APP_URL后执行 `node scripts/production_smoke.mjs`，再执行 `python scripts/verify_deployment.py`。最新证据为 `reports/acceptance/zeabur-deployment.json` 和 `production-smoke.json`。可选APP_RESOLVE_IP只作用于测试浏览器，不应长期写入hosts。

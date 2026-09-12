@@ -1,0 +1,1567 @@
+{
+  "at": "2026-09-12T15:04:44.907376+00:00",
+  "revision": "spatial-garden-20260912-r13",
+  "scope": "173 shipping PNG/JPEG/WebP/GIF files; does not reuse the earlier skill scan count of178. One geometry-derived scalar control mask changed. All garden artwork and material raster assets remain byte-identical.",
+  "count": 173,
+  "changedCount": 1,
+  "passed": true,
+  "files": [
+    {
+      "file": "public/art/daguanlou-thumb.webp",
+      "sha256": "cd69417e8559ff1417037b0547d4ff804302881351f7af9abc01be9ac8f8c8e8",
+      "recordedSha256": "cd69417e8559ff1417037b0547d4ff804302881351f7af9abc01be9ac8f8c8e8",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/daguanlou.webp",
+      "sha256": "0ae2e3031fa7282a27798c0943081943b5be0fe5fc937eb17c893bb98f40b2df",
+      "recordedSha256": "0ae2e3031fa7282a27798c0943081943b5be0fe5fc937eb17c893bb98f40b2df",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/daoxiangcun-thumb.webp",
+      "sha256": "471ff9bb82044f311ebb6b69816907e043d9942797821868e6886d50f10c1e4e",
+      "recordedSha256": "471ff9bb82044f311ebb6b69816907e043d9942797821868e6886d50f10c1e4e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/daoxiangcun.webp",
+      "sha256": "f8b6d087666556a16f7ad6ada3fbe707f827b4944514bd77167e0e66aae7a45e",
+      "recordedSha256": "f8b6d087666556a16f7ad6ada3fbe707f827b4944514bd77167e0e66aae7a45e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/garden-aerial-day-thumb.webp",
+      "sha256": "86b6749e2b6d996fafc925bc682bbcc4cbaf82af7abc681b25796ae1f921cd6d",
+      "recordedSha256": "86b6749e2b6d996fafc925bc682bbcc4cbaf82af7abc681b25796ae1f921cd6d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/garden-aerial-day.webp",
+      "sha256": "73603aa3751606adb060cc55b4f16c4fb7b9fdb6d8746c736ae809a92c6eb432",
+      "recordedSha256": "73603aa3751606adb060cc55b4f16c4fb7b9fdb6d8746c736ae809a92c6eb432",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/garden-waterways-thumb.webp",
+      "sha256": "09dfcb17c5a91693631dfe867f8075f412f8d64b9eabba6f9a0df59a7b163511",
+      "recordedSha256": "09dfcb17c5a91693631dfe867f8075f412f8d64b9eabba6f9a0df59a7b163511",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/garden-waterways.webp",
+      "sha256": "146067fb544ce15dce5a9a7a5e2a917ddadbfc63641cf7fdfdd65b3283c35e91",
+      "recordedSha256": "146067fb544ce15dce5a9a7a5e2a917ddadbfc63641cf7fdfdd65b3283c35e91",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/garden-yuanxiao-night-thumb.webp",
+      "sha256": "e67a076c9fd99410d5c34fb832af76c98cc851dc7fab98ca46dd06c772ab22d8",
+      "recordedSha256": "e67a076c9fd99410d5c34fb832af76c98cc851dc7fab98ca46dd06c772ab22d8",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/garden-yuanxiao-night.webp",
+      "sha256": "144e3713bbdfcf9f767776b7164e08277ec8c035a652924612c8c4ca1a24fb30",
+      "recordedSha256": "144e3713bbdfcf9f767776b7164e08277ec8c035a652924612c8c4ca1a24fb30",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/hengwuyuan-thumb.webp",
+      "sha256": "17d27484736d82645da74f73911fa1ef2e92ac33eca23ecec9b2888c67e91891",
+      "recordedSha256": "17d27484736d82645da74f73911fa1ef2e92ac33eca23ecec9b2888c67e91891",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/hengwuyuan.webp",
+      "sha256": "bcc0817bcc58d88371cdc995607a049881a5c2fceda4afd58eb890dba8f4af98",
+      "recordedSha256": "bcc0817bcc58d88371cdc995607a049881a5c2fceda4afd58eb890dba8f4af98",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/longcuian-thumb.webp",
+      "sha256": "1df8554d04149bec88d6c2fc0449ae58a181d083b46385ad98dc1c6c2d35867a",
+      "recordedSha256": "1df8554d04149bec88d6c2fc0449ae58a181d083b46385ad98dc1c6c2d35867a",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/longcuian.webp",
+      "sha256": "8b07d1b21255dbd858574e1280eed3556f991bec5b7c9ecdb2c451ef25f58f96",
+      "recordedSha256": "8b07d1b21255dbd858574e1280eed3556f991bec5b7c9ecdb2c451ef25f58f96",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/luxuean-winter-thumb.webp",
+      "sha256": "e94d2e208ef91a307e78d8cca23ade04ad7c3e6148a644100c91e0ca7a05fd12",
+      "recordedSha256": "e94d2e208ef91a307e78d8cca23ade04ad7c3e6148a644100c91e0ca7a05fd12",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/luxuean-winter.webp",
+      "sha256": "56dd8346cdde0389b23bbbd1c831b7846f7f7bb5c901d527bee70757d36d3646",
+      "recordedSha256": "56dd8346cdde0389b23bbbd1c831b7846f7f7bb5c901d527bee70757d36d3646",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/nuanxiangwu-thumb.webp",
+      "sha256": "a28c55d7a1f0fe5e77439e7d3c80938c8f1b8abdca36ea3c1658d5d08a241488",
+      "recordedSha256": "a28c55d7a1f0fe5e77439e7d3c80938c8f1b8abdca36ea3c1658d5d08a241488",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/nuanxiangwu.webp",
+      "sha256": "da5a35a8eeaa5dc920aad2cf6303ec1371adcaa16091f026c378d68809bebb93",
+      "recordedSha256": "da5a35a8eeaa5dc920aad2cf6303ec1371adcaa16091f026c378d68809bebb93",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/ouxiangxie-thumb.webp",
+      "sha256": "cf2119430483e89ea22ce3ca13b3abaa963d413db671cccb7fee8ee93335744d",
+      "recordedSha256": "cf2119430483e89ea22ce3ca13b3abaa963d413db671cccb7fee8ee93335744d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/ouxiangxie.webp",
+      "sha256": "32ca28890adf5efaff06a5e9495a59ac608cef953aca2320ae83ce67a512744d",
+      "recordedSha256": "32ca28890adf5efaff06a5e9495a59ac608cef953aca2320ae83ce67a512744d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/qiushuangzhai-thumb.webp",
+      "sha256": "680285ea2b39b32baf9448f1b9383452fece7381712633786b7c44ac5fd0e2a3",
+      "recordedSha256": "680285ea2b39b32baf9448f1b9383452fece7381712633786b7c44ac5fd0e2a3",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/qiushuangzhai.webp",
+      "sha256": "eca5e4fd6f707e1cdd32a18c1df0c11495cfc5ee13abe9dfb8963c995e44df33",
+      "recordedSha256": "eca5e4fd6f707e1cdd32a18c1df0c11495cfc5ee13abe9dfb8963c995e44df33",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/xiaoxiangguan-day-thumb.webp",
+      "sha256": "2dda590f2b23ae88ab5148e8df8e0e5f6dc4eb1afd3586bd5c51154af72e8c1d",
+      "recordedSha256": "2dda590f2b23ae88ab5148e8df8e0e5f6dc4eb1afd3586bd5c51154af72e8c1d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/xiaoxiangguan-day.webp",
+      "sha256": "8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2",
+      "recordedSha256": "8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/xiaoxiangguan-moon-thumb.webp",
+      "sha256": "ead176b74eaea8c8a7f1d7b66cd595512237731a3aae723e6b1742ab6b642f1a",
+      "recordedSha256": "ead176b74eaea8c8a7f1d7b66cd595512237731a3aae723e6b1742ab6b642f1a",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/xiaoxiangguan-moon.webp",
+      "sha256": "436007597b2b6e9a6d20ce56b92b3c38d6f8e64ec0bf41172fc274c20e39244d",
+      "recordedSha256": "436007597b2b6e9a6d20ce56b92b3c38d6f8e64ec0bf41172fc274c20e39244d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/yihongyuan-courtyard-thumb.webp",
+      "sha256": "ad277e8086cd742f7980fd02b3518ee09d4d091871caf2526d711e2034f95713",
+      "recordedSha256": "ad277e8086cd742f7980fd02b3518ee09d4d091871caf2526d711e2034f95713",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/yihongyuan-courtyard.webp",
+      "sha256": "d500f09a8bd4033a3fb7a502aa1371a7a173194c631564a28d7a111a579956c2",
+      "recordedSha256": "d500f09a8bd4033a3fb7a502aa1371a7a173194c631564a28d7a111a579956c2",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/yihongyuan-interior-thumb.webp",
+      "sha256": "87142ea61e8146bee9d85a52a36f3a39c1b7428a76ac10acc344bc65ca60254e",
+      "recordedSha256": "87142ea61e8146bee9d85a52a36f3a39c1b7428a76ac10acc344bc65ca60254e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/art/yihongyuan-interior.webp",
+      "sha256": "86323b3a0b48b2b626c2a684c41a708f959109b1ef45a50a05bb9e15ee434a27",
+      "recordedSha256": "86323b3a0b48b2b626c2a684c41a708f959109b1ef45a50a05bb9e15ee434a27",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "frozen fix2 package ledger; original image-generation source SHA remains in own sidecar"
+    },
+    {
+      "file": "public/textures/ground/pond-normal.png",
+      "sha256": "e074f358936501eb66c7576b0896d2fdcde233927bbb5dabd4fa8eca90b879ec",
+      "recordedSha256": "e074f358936501eb66c7576b0896d2fdcde233927bbb5dabd4fa8eca90b879ec",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/ground/soil.jpg",
+      "sha256": "5df43f74d87bfd5fccda9f5bab5d213e49b6982bfa575668e52576ac586312db",
+      "recordedSha256": "5df43f74d87bfd5fccda9f5bab5d213e49b6982bfa575668e52576ac586312db",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/ground/surface-zones.png",
+      "sha256": "a61dcd74d9fe6dff567026f11e292985eedd4b93eba494a58f66495863aafc21",
+      "recordedSha256": "a61dcd74d9fe6dff567026f11e292985eedd4b93eba494a58f66495863aafc21",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": false,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/landscape-light.webp",
+      "sha256": "6eca6681f6de84ed62f8932fd3a9049f677c4ab3505989bdfc7051580f90712e",
+      "recordedSha256": "6eca6681f6de84ed62f8932fd3a9049f677c4ab3505989bdfc7051580f90712e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/020c8eaeddf96f464ca4c0bc2f9dfed511eb7a4e45b4e340af6ef4343f72c92a.jpg",
+      "sha256": "020c8eaeddf96f464ca4c0bc2f9dfed511eb7a4e45b4e340af6ef4343f72c92a",
+      "recordedSha256": "020c8eaeddf96f464ca4c0bc2f9dfed511eb7a4e45b4e340af6ef4343f72c92a",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/0318cdda7bbabbe1e3bbeaa92905d68a4a8af6579a88b368376de3c976cc8c32.jpg",
+      "sha256": "0318cdda7bbabbe1e3bbeaa92905d68a4a8af6579a88b368376de3c976cc8c32",
+      "recordedSha256": "0318cdda7bbabbe1e3bbeaa92905d68a4a8af6579a88b368376de3c976cc8c32",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg",
+      "sha256": "04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4",
+      "recordedSha256": "04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd.jpg",
+      "sha256": "06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd",
+      "recordedSha256": "06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c.jpg",
+      "sha256": "089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c",
+      "recordedSha256": "089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356.jpg",
+      "sha256": "09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356",
+      "recordedSha256": "09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1.jpg",
+      "sha256": "0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1",
+      "recordedSha256": "0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg",
+      "sha256": "0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75",
+      "recordedSha256": "0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg",
+      "sha256": "0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81",
+      "recordedSha256": "0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/1120557f4044624a28bb7eca0f488fa3ae7d445a09062d594092f4b0ea9ce825.jpg",
+      "sha256": "1120557f4044624a28bb7eca0f488fa3ae7d445a09062d594092f4b0ea9ce825",
+      "recordedSha256": "1120557f4044624a28bb7eca0f488fa3ae7d445a09062d594092f4b0ea9ce825",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/116cce4cea979792db9b5744e5952681e07b421df6addc7a91fc099bb43e0b01.jpg",
+      "sha256": "116cce4cea979792db9b5744e5952681e07b421df6addc7a91fc099bb43e0b01",
+      "recordedSha256": "116cce4cea979792db9b5744e5952681e07b421df6addc7a91fc099bb43e0b01",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg",
+      "sha256": "1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704",
+      "recordedSha256": "1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+      "sha256": "179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d",
+      "recordedSha256": "179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/204a42ce73263e01341496995d9e5ae71c2349124f977b7c4948c5eb33e809cb.jpg",
+      "sha256": "204a42ce73263e01341496995d9e5ae71c2349124f977b7c4948c5eb33e809cb",
+      "recordedSha256": "204a42ce73263e01341496995d9e5ae71c2349124f977b7c4948c5eb33e809cb",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+      "sha256": "22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872",
+      "recordedSha256": "22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/2305c6784db3bbcef6e5e6b6804ecb2a2f74ba3cab223aaf7c82a7cbc99c1639.jpg",
+      "sha256": "2305c6784db3bbcef6e5e6b6804ecb2a2f74ba3cab223aaf7c82a7cbc99c1639",
+      "recordedSha256": "2305c6784db3bbcef6e5e6b6804ecb2a2f74ba3cab223aaf7c82a7cbc99c1639",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/240993be97e1822d7673d6b7c229c818aaf849c33a59a4d3352194d8964c3689.jpg",
+      "sha256": "240993be97e1822d7673d6b7c229c818aaf849c33a59a4d3352194d8964c3689",
+      "recordedSha256": "240993be97e1822d7673d6b7c229c818aaf849c33a59a4d3352194d8964c3689",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/25e7c547ec5159a2e42f1f09a227c5b140fd98f713c429fc3e46b12160cbdee1.jpg",
+      "sha256": "25e7c547ec5159a2e42f1f09a227c5b140fd98f713c429fc3e46b12160cbdee1",
+      "recordedSha256": "25e7c547ec5159a2e42f1f09a227c5b140fd98f713c429fc3e46b12160cbdee1",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/2632553f773777974eb5bb763b64bfefca56e4a352b283f2a24c846510fca69d.jpg",
+      "sha256": "2632553f773777974eb5bb763b64bfefca56e4a352b283f2a24c846510fca69d",
+      "recordedSha256": "2632553f773777974eb5bb763b64bfefca56e4a352b283f2a24c846510fca69d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/2856246439c77303ab8e433052ff60844f9928da3c665399ca51fc2e0ccad9b4.jpg",
+      "sha256": "2856246439c77303ab8e433052ff60844f9928da3c665399ca51fc2e0ccad9b4",
+      "recordedSha256": "2856246439c77303ab8e433052ff60844f9928da3c665399ca51fc2e0ccad9b4",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/2a110b3c407484d1ad631c6a2b099259c77cb94bc5d5c67661bcdec488d90c4d.jpg",
+      "sha256": "2a110b3c407484d1ad631c6a2b099259c77cb94bc5d5c67661bcdec488d90c4d",
+      "recordedSha256": "2a110b3c407484d1ad631c6a2b099259c77cb94bc5d5c67661bcdec488d90c4d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/30a8a15f028c50aa27e3d94a0faa922616fe4de8f4baaff37f3d214c64360a45.jpg",
+      "sha256": "30a8a15f028c50aa27e3d94a0faa922616fe4de8f4baaff37f3d214c64360a45",
+      "recordedSha256": "30a8a15f028c50aa27e3d94a0faa922616fe4de8f4baaff37f3d214c64360a45",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124.jpg",
+      "sha256": "31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124",
+      "recordedSha256": "31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/3392743828e2029e6c935cb232b58d43806a2733d1c59f9626472ba8a1ce346b.jpg",
+      "sha256": "3392743828e2029e6c935cb232b58d43806a2733d1c59f9626472ba8a1ce346b",
+      "recordedSha256": "3392743828e2029e6c935cb232b58d43806a2733d1c59f9626472ba8a1ce346b",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/33e4fe1ace585070d140616e79e41b30647d06ad2722a108c9808ad82c49ff82.jpg",
+      "sha256": "33e4fe1ace585070d140616e79e41b30647d06ad2722a108c9808ad82c49ff82",
+      "recordedSha256": "33e4fe1ace585070d140616e79e41b30647d06ad2722a108c9808ad82c49ff82",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e.png",
+      "sha256": "369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e",
+      "recordedSha256": "369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/37c42d2ca1be73276453329445f3ddd6664b9579ab019ee5c830de5f5ffc8cd5.jpg",
+      "sha256": "37c42d2ca1be73276453329445f3ddd6664b9579ab019ee5c830de5f5ffc8cd5",
+      "recordedSha256": "37c42d2ca1be73276453329445f3ddd6664b9579ab019ee5c830de5f5ffc8cd5",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg",
+      "sha256": "38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be",
+      "recordedSha256": "38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/39718ca030c378471915fd55f92de75bda40e0a69fb70297c617a319ab4912df.jpg",
+      "sha256": "39718ca030c378471915fd55f92de75bda40e0a69fb70297c617a319ab4912df",
+      "recordedSha256": "39718ca030c378471915fd55f92de75bda40e0a69fb70297c617a319ab4912df",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/3e1114dccbb6939a1e15fe9fa6e2eefc12241323696aab82e60ca9fe04fd6c9a.jpg",
+      "sha256": "3e1114dccbb6939a1e15fe9fa6e2eefc12241323696aab82e60ca9fe04fd6c9a",
+      "recordedSha256": "3e1114dccbb6939a1e15fe9fa6e2eefc12241323696aab82e60ca9fe04fd6c9a",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/3f0225020c54de61440cf90de1ec7b18d3b4da451bc2a85f9e0297ae048de339.jpg",
+      "sha256": "3f0225020c54de61440cf90de1ec7b18d3b4da451bc2a85f9e0297ae048de339",
+      "recordedSha256": "3f0225020c54de61440cf90de1ec7b18d3b4da451bc2a85f9e0297ae048de339",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg",
+      "sha256": "410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e",
+      "recordedSha256": "410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg",
+      "sha256": "44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330",
+      "recordedSha256": "44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202.jpg",
+      "sha256": "4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202",
+      "recordedSha256": "4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/453ffd83bf3e4ef6bfd1ea9221fc5ffe7a9b09392f792b3adb1e65c5795eca60.jpg",
+      "sha256": "453ffd83bf3e4ef6bfd1ea9221fc5ffe7a9b09392f792b3adb1e65c5795eca60",
+      "recordedSha256": "453ffd83bf3e4ef6bfd1ea9221fc5ffe7a9b09392f792b3adb1e65c5795eca60",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/46ee55f4bd8cf704ee565dcc71427058220537d513957fdfe4c60ef8d79585a9.jpg",
+      "sha256": "46ee55f4bd8cf704ee565dcc71427058220537d513957fdfe4c60ef8d79585a9",
+      "recordedSha256": "46ee55f4bd8cf704ee565dcc71427058220537d513957fdfe4c60ef8d79585a9",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/487353d312485470d5b43f47994298bbe0dd1e336833d6656b56e1026c652b2f.jpg",
+      "sha256": "487353d312485470d5b43f47994298bbe0dd1e336833d6656b56e1026c652b2f",
+      "recordedSha256": "487353d312485470d5b43f47994298bbe0dd1e336833d6656b56e1026c652b2f",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/48f51d91c1f4436d92f16358c06cafb1028a325f09d769bf01dee749a65ef072.jpg",
+      "sha256": "48f51d91c1f4436d92f16358c06cafb1028a325f09d769bf01dee749a65ef072",
+      "recordedSha256": "48f51d91c1f4436d92f16358c06cafb1028a325f09d769bf01dee749a65ef072",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/4c7692894550ba8dfbb56b9c7dd71d780a2215d75543843479b0712bcde87c2c.jpg",
+      "sha256": "4c7692894550ba8dfbb56b9c7dd71d780a2215d75543843479b0712bcde87c2c",
+      "recordedSha256": "4c7692894550ba8dfbb56b9c7dd71d780a2215d75543843479b0712bcde87c2c",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/4d0d1611ec2f00d63063abd944a569f58683bd9d8ca6ca49f377f338310f13a2.jpg",
+      "sha256": "4d0d1611ec2f00d63063abd944a569f58683bd9d8ca6ca49f377f338310f13a2",
+      "recordedSha256": "4d0d1611ec2f00d63063abd944a569f58683bd9d8ca6ca49f377f338310f13a2",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/4d282c1767ab9ac542df0b4ff4f4393e4349e20ba1debdcfac1eedc1c994baa9.jpg",
+      "sha256": "4d282c1767ab9ac542df0b4ff4f4393e4349e20ba1debdcfac1eedc1c994baa9",
+      "recordedSha256": "4d282c1767ab9ac542df0b4ff4f4393e4349e20ba1debdcfac1eedc1c994baa9",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/4dc4e5ce2381512bde97bed2d634d1805f67726e9006efcb1ee14865095725d8.jpg",
+      "sha256": "4dc4e5ce2381512bde97bed2d634d1805f67726e9006efcb1ee14865095725d8",
+      "recordedSha256": "4dc4e5ce2381512bde97bed2d634d1805f67726e9006efcb1ee14865095725d8",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/4eca49b9c2d977465b84bd6a95c86bd20e17c6f1f34dd426eafe4dca569bd6a4.jpg",
+      "sha256": "4eca49b9c2d977465b84bd6a95c86bd20e17c6f1f34dd426eafe4dca569bd6a4",
+      "recordedSha256": "4eca49b9c2d977465b84bd6a95c86bd20e17c6f1f34dd426eafe4dca569bd6a4",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/5100557d8261b1ecafb1c776a26766218da148f42a5809ed043f1fbb79fc28d8.jpg",
+      "sha256": "5100557d8261b1ecafb1c776a26766218da148f42a5809ed043f1fbb79fc28d8",
+      "recordedSha256": "5100557d8261b1ecafb1c776a26766218da148f42a5809ed043f1fbb79fc28d8",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/5352a9bf9dc9c4b4da1c14d2765f2eeb3c6dcc46bbcde8502e7f8daa7970eea2.jpg",
+      "sha256": "5352a9bf9dc9c4b4da1c14d2765f2eeb3c6dcc46bbcde8502e7f8daa7970eea2",
+      "recordedSha256": "5352a9bf9dc9c4b4da1c14d2765f2eeb3c6dcc46bbcde8502e7f8daa7970eea2",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg",
+      "sha256": "554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52",
+      "recordedSha256": "554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/5590a5e20176c011c7fe0d26bcd4ae34eb99d3a7a6959a085f8b0f41fa2d25fd.jpg",
+      "sha256": "5590a5e20176c011c7fe0d26bcd4ae34eb99d3a7a6959a085f8b0f41fa2d25fd",
+      "recordedSha256": "5590a5e20176c011c7fe0d26bcd4ae34eb99d3a7a6959a085f8b0f41fa2d25fd",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/56c78b33ba212b9615e19db3ceecc34ccb4ec72efa9d767f39ca32329815efa2.jpg",
+      "sha256": "56c78b33ba212b9615e19db3ceecc34ccb4ec72efa9d767f39ca32329815efa2",
+      "recordedSha256": "56c78b33ba212b9615e19db3ceecc34ccb4ec72efa9d767f39ca32329815efa2",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33.jpg",
+      "sha256": "56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33",
+      "recordedSha256": "56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/57b6b8ee5fce62c7e4065d1eb7b2b6afb22d06093c579f6572130e964cb72bc1.jpg",
+      "sha256": "57b6b8ee5fce62c7e4065d1eb7b2b6afb22d06093c579f6572130e964cb72bc1",
+      "recordedSha256": "57b6b8ee5fce62c7e4065d1eb7b2b6afb22d06093c579f6572130e964cb72bc1",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/5df4ddf68d26531c5339886146d3091fada975fd7537716fc6e75bf097ec0268.jpg",
+      "sha256": "5df4ddf68d26531c5339886146d3091fada975fd7537716fc6e75bf097ec0268",
+      "recordedSha256": "5df4ddf68d26531c5339886146d3091fada975fd7537716fc6e75bf097ec0268",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289.jpg",
+      "sha256": "658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289",
+      "recordedSha256": "658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/686df3477d4029a7ac1cdfa659a25cfec1abf3ec1de9974720c4785d16d94399.jpg",
+      "sha256": "686df3477d4029a7ac1cdfa659a25cfec1abf3ec1de9974720c4785d16d94399",
+      "recordedSha256": "686df3477d4029a7ac1cdfa659a25cfec1abf3ec1de9974720c4785d16d94399",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg",
+      "sha256": "6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9",
+      "recordedSha256": "6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/6f81740d29a972b085a0eaec182c4ef2f964f21cbcfcc05fb85aa58eab4b1c18.jpg",
+      "sha256": "6f81740d29a972b085a0eaec182c4ef2f964f21cbcfcc05fb85aa58eab4b1c18",
+      "recordedSha256": "6f81740d29a972b085a0eaec182c4ef2f964f21cbcfcc05fb85aa58eab4b1c18",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/703ba98dd3da484eedd3d722c6e2dbf9e04430d41b3b6f05915b571038ff301d.jpg",
+      "sha256": "703ba98dd3da484eedd3d722c6e2dbf9e04430d41b3b6f05915b571038ff301d",
+      "recordedSha256": "703ba98dd3da484eedd3d722c6e2dbf9e04430d41b3b6f05915b571038ff301d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/72a412089acfadcc2643f27f023a17f2a3daf682f76872f9ee037e6c419d58ea.jpg",
+      "sha256": "72a412089acfadcc2643f27f023a17f2a3daf682f76872f9ee037e6c419d58ea",
+      "recordedSha256": "72a412089acfadcc2643f27f023a17f2a3daf682f76872f9ee037e6c419d58ea",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a.jpg",
+      "sha256": "732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a",
+      "recordedSha256": "732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/7373d514e3d2e694e385966ba3f356f1c7c712b41901df5b760fc2a91bf3dc21.jpg",
+      "sha256": "7373d514e3d2e694e385966ba3f356f1c7c712b41901df5b760fc2a91bf3dc21",
+      "recordedSha256": "7373d514e3d2e694e385966ba3f356f1c7c712b41901df5b760fc2a91bf3dc21",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730.jpg",
+      "sha256": "75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730",
+      "recordedSha256": "75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/7564faa010d4c292870c1bfbfa3126a2b88ddade063ac308cffe820b7da7da1f.jpg",
+      "sha256": "7564faa010d4c292870c1bfbfa3126a2b88ddade063ac308cffe820b7da7da1f",
+      "recordedSha256": "7564faa010d4c292870c1bfbfa3126a2b88ddade063ac308cffe820b7da7da1f",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg",
+      "sha256": "77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4",
+      "recordedSha256": "77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28.jpg",
+      "sha256": "7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28",
+      "recordedSha256": "7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/7e9db8ba92f79338d96519fd91d944e0cd070ee697f25d3f819e827e02895618.jpg",
+      "sha256": "7e9db8ba92f79338d96519fd91d944e0cd070ee697f25d3f819e827e02895618",
+      "recordedSha256": "7e9db8ba92f79338d96519fd91d944e0cd070ee697f25d3f819e827e02895618",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/7eee73163b86928f725c6599ca568868e178faad656b7ee6329fbfcc52e15f61.jpg",
+      "sha256": "7eee73163b86928f725c6599ca568868e178faad656b7ee6329fbfcc52e15f61",
+      "recordedSha256": "7eee73163b86928f725c6599ca568868e178faad656b7ee6329fbfcc52e15f61",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/7f934a3cf482aa219c2c9495c1bf5da4f99157cd5083365cd974aeb7ff070e5e.jpg",
+      "sha256": "7f934a3cf482aa219c2c9495c1bf5da4f99157cd5083365cd974aeb7ff070e5e",
+      "recordedSha256": "7f934a3cf482aa219c2c9495c1bf5da4f99157cd5083365cd974aeb7ff070e5e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/815ed76b8325090c49067e2548f167eb275e6bb26e61e0dd248cae5a72394e3d.jpg",
+      "sha256": "815ed76b8325090c49067e2548f167eb275e6bb26e61e0dd248cae5a72394e3d",
+      "recordedSha256": "815ed76b8325090c49067e2548f167eb275e6bb26e61e0dd248cae5a72394e3d",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2.jpg",
+      "sha256": "842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2",
+      "recordedSha256": "842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/8444e8be08f82a59b59959f4a29934a5042b477bcfaf107cd3b7c4cd84477564.jpg",
+      "sha256": "8444e8be08f82a59b59959f4a29934a5042b477bcfaf107cd3b7c4cd84477564",
+      "recordedSha256": "8444e8be08f82a59b59959f4a29934a5042b477bcfaf107cd3b7c4cd84477564",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg",
+      "sha256": "84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5",
+      "recordedSha256": "84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg",
+      "sha256": "868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453",
+      "recordedSha256": "868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/86c72a568eaa2e49f778856cbe06b8fe325fad33f409f813759ee7791926671e.jpg",
+      "sha256": "86c72a568eaa2e49f778856cbe06b8fe325fad33f409f813759ee7791926671e",
+      "recordedSha256": "86c72a568eaa2e49f778856cbe06b8fe325fad33f409f813759ee7791926671e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/87cc9c0c16a80478fae19b6ece5715fdb8e8a13ab7fd387ff1c6316b42f59669.jpg",
+      "sha256": "87cc9c0c16a80478fae19b6ece5715fdb8e8a13ab7fd387ff1c6316b42f59669",
+      "recordedSha256": "87cc9c0c16a80478fae19b6ece5715fdb8e8a13ab7fd387ff1c6316b42f59669",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b.jpg",
+      "sha256": "88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b",
+      "recordedSha256": "88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/8a2fcca0c80293950f0a5fdc151905bf1a9f5741382aea6ce143b1393804123c.jpg",
+      "sha256": "8a2fcca0c80293950f0a5fdc151905bf1a9f5741382aea6ce143b1393804123c",
+      "recordedSha256": "8a2fcca0c80293950f0a5fdc151905bf1a9f5741382aea6ce143b1393804123c",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572.jpg",
+      "sha256": "8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572",
+      "recordedSha256": "8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/8f9dd214e4fd0b1ca51a918a3691ac019dcb61c0e57622b07179c620e6724203.jpg",
+      "sha256": "8f9dd214e4fd0b1ca51a918a3691ac019dcb61c0e57622b07179c620e6724203",
+      "recordedSha256": "8f9dd214e4fd0b1ca51a918a3691ac019dcb61c0e57622b07179c620e6724203",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/904e226305d5df801f0cec156b838dbc0e6b957316dbe661917fddc954688cdd.jpg",
+      "sha256": "904e226305d5df801f0cec156b838dbc0e6b957316dbe661917fddc954688cdd",
+      "recordedSha256": "904e226305d5df801f0cec156b838dbc0e6b957316dbe661917fddc954688cdd",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/9315aa3f57a15ab13f8f336df6b543679696db08e9032dc962981641e813c230.jpg",
+      "sha256": "9315aa3f57a15ab13f8f336df6b543679696db08e9032dc962981641e813c230",
+      "recordedSha256": "9315aa3f57a15ab13f8f336df6b543679696db08e9032dc962981641e813c230",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265.jpg",
+      "sha256": "93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265",
+      "recordedSha256": "93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/9a0c04c0036b9935b9a7c7a49623bf31720f6b386b72ee3cfb57b0d248eac154.jpg",
+      "sha256": "9a0c04c0036b9935b9a7c7a49623bf31720f6b386b72ee3cfb57b0d248eac154",
+      "recordedSha256": "9a0c04c0036b9935b9a7c7a49623bf31720f6b386b72ee3cfb57b0d248eac154",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/9d4b6a8eaa9bb706003e37da29b8615a27357b12b4e6a5ab14515b7122efb1ee.jpg",
+      "sha256": "9d4b6a8eaa9bb706003e37da29b8615a27357b12b4e6a5ab14515b7122efb1ee",
+      "recordedSha256": "9d4b6a8eaa9bb706003e37da29b8615a27357b12b4e6a5ab14515b7122efb1ee",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/a31a1a6feec2d1e3dca6ba3b63d8f0cda3d77538b0787c2f30fee11455e627d7.jpg",
+      "sha256": "a31a1a6feec2d1e3dca6ba3b63d8f0cda3d77538b0787c2f30fee11455e627d7",
+      "recordedSha256": "a31a1a6feec2d1e3dca6ba3b63d8f0cda3d77538b0787c2f30fee11455e627d7",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/a4ad0bcda18bd374ed11f5372f38ac7a75df38c4b9ddf02caeeaf7d8f0681165.jpg",
+      "sha256": "a4ad0bcda18bd374ed11f5372f38ac7a75df38c4b9ddf02caeeaf7d8f0681165",
+      "recordedSha256": "a4ad0bcda18bd374ed11f5372f38ac7a75df38c4b9ddf02caeeaf7d8f0681165",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab.jpg",
+      "sha256": "a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab",
+      "recordedSha256": "a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/a73e4293c82b15b76ad84a1f82f129dc3b176065ffd8ea585ad99c65da4f3b43.jpg",
+      "sha256": "a73e4293c82b15b76ad84a1f82f129dc3b176065ffd8ea585ad99c65da4f3b43",
+      "recordedSha256": "a73e4293c82b15b76ad84a1f82f129dc3b176065ffd8ea585ad99c65da4f3b43",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee.jpg",
+      "sha256": "a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee",
+      "recordedSha256": "a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/a8bfd908efac57e75860de6df99e99ccde6153779617eba16da0ea31ef0251f2.jpg",
+      "sha256": "a8bfd908efac57e75860de6df99e99ccde6153779617eba16da0ea31ef0251f2",
+      "recordedSha256": "a8bfd908efac57e75860de6df99e99ccde6153779617eba16da0ea31ef0251f2",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/a91fdd146c31f961c02d883b8d8a475c7c273b3b4362f353d586c5233dacd35a.jpg",
+      "sha256": "a91fdd146c31f961c02d883b8d8a475c7c273b3b4362f353d586c5233dacd35a",
+      "recordedSha256": "a91fdd146c31f961c02d883b8d8a475c7c273b3b4362f353d586c5233dacd35a",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/aa1fa47dae431869a3bc81cafa7eb3c123bb8d7dc45f9a93e024dea4971030f5.jpg",
+      "sha256": "aa1fa47dae431869a3bc81cafa7eb3c123bb8d7dc45f9a93e024dea4971030f5",
+      "recordedSha256": "aa1fa47dae431869a3bc81cafa7eb3c123bb8d7dc45f9a93e024dea4971030f5",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/aa4d6cc8534184dca35ef2e6ae8f43dbd236ea558d0327b8a46d2661f50d4dbc.jpg",
+      "sha256": "aa4d6cc8534184dca35ef2e6ae8f43dbd236ea558d0327b8a46d2661f50d4dbc",
+      "recordedSha256": "aa4d6cc8534184dca35ef2e6ae8f43dbd236ea558d0327b8a46d2661f50d4dbc",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4.jpg",
+      "sha256": "aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4",
+      "recordedSha256": "aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/afa9c926c4a691128e0b2b951fc3cd74edd8cb84da615445dbeabaa15310d245.jpg",
+      "sha256": "afa9c926c4a691128e0b2b951fc3cd74edd8cb84da615445dbeabaa15310d245",
+      "recordedSha256": "afa9c926c4a691128e0b2b951fc3cd74edd8cb84da615445dbeabaa15310d245",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg",
+      "sha256": "b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7",
+      "recordedSha256": "b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/b17ad6ae115b5fbe0eed5574902da8f9a779d1a0d6ceba7b8e151f17e43c2159.jpg",
+      "sha256": "b17ad6ae115b5fbe0eed5574902da8f9a779d1a0d6ceba7b8e151f17e43c2159",
+      "recordedSha256": "b17ad6ae115b5fbe0eed5574902da8f9a779d1a0d6ceba7b8e151f17e43c2159",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/b2d7ba499f958f2447ce13990d29894a553b017e53ae488e35fb11bd97860300.jpg",
+      "sha256": "b2d7ba499f958f2447ce13990d29894a553b017e53ae488e35fb11bd97860300",
+      "recordedSha256": "b2d7ba499f958f2447ce13990d29894a553b017e53ae488e35fb11bd97860300",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/b3407e76e6e4c6cc025a249b24828686adc4f028d275677f06d77fd5e7a1b94a.jpg",
+      "sha256": "b3407e76e6e4c6cc025a249b24828686adc4f028d275677f06d77fd5e7a1b94a",
+      "recordedSha256": "b3407e76e6e4c6cc025a249b24828686adc4f028d275677f06d77fd5e7a1b94a",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/b661ae9c62638ec396c0143bce6defc690c1d900590d9b8102cd78fc772f322c.jpg",
+      "sha256": "b661ae9c62638ec396c0143bce6defc690c1d900590d9b8102cd78fc772f322c",
+      "recordedSha256": "b661ae9c62638ec396c0143bce6defc690c1d900590d9b8102cd78fc772f322c",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/b69af9b1246c70b6103bb64957ca25e2e37f6b1a2cf07dcc4c24a99cf9c94bda.jpg",
+      "sha256": "b69af9b1246c70b6103bb64957ca25e2e37f6b1a2cf07dcc4c24a99cf9c94bda",
+      "recordedSha256": "b69af9b1246c70b6103bb64957ca25e2e37f6b1a2cf07dcc4c24a99cf9c94bda",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580.jpg",
+      "sha256": "b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580",
+      "recordedSha256": "b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/b91c3f8dfaba4c9077d3395e90bc4388389adebb9fae9ccb17c81ae53fc3c8da.jpg",
+      "sha256": "b91c3f8dfaba4c9077d3395e90bc4388389adebb9fae9ccb17c81ae53fc3c8da",
+      "recordedSha256": "b91c3f8dfaba4c9077d3395e90bc4388389adebb9fae9ccb17c81ae53fc3c8da",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/b93b22caf65afd3fb20b96dee5bf9166e6b013ec7a03b098301b288d7fc02ed8.jpg",
+      "sha256": "b93b22caf65afd3fb20b96dee5bf9166e6b013ec7a03b098301b288d7fc02ed8",
+      "recordedSha256": "b93b22caf65afd3fb20b96dee5bf9166e6b013ec7a03b098301b288d7fc02ed8",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/bb762eda1e7e418274f38a1007e24b87f434739b16029b02da34bbd5adef7328.jpg",
+      "sha256": "bb762eda1e7e418274f38a1007e24b87f434739b16029b02da34bbd5adef7328",
+      "recordedSha256": "bb762eda1e7e418274f38a1007e24b87f434739b16029b02da34bbd5adef7328",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990.jpg",
+      "sha256": "bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990",
+      "recordedSha256": "bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/bc9ecbfc82e29ccf403cefea4506f8c2e91d5ad4872c4dd7dc63db8675181f27.jpg",
+      "sha256": "bc9ecbfc82e29ccf403cefea4506f8c2e91d5ad4872c4dd7dc63db8675181f27",
+      "recordedSha256": "bc9ecbfc82e29ccf403cefea4506f8c2e91d5ad4872c4dd7dc63db8675181f27",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee.jpg",
+      "sha256": "be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee",
+      "recordedSha256": "be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/be6bf4249bca23dfdb34425effa42545c33993dabc73d571b797b5dd65936f1e.jpg",
+      "sha256": "be6bf4249bca23dfdb34425effa42545c33993dabc73d571b797b5dd65936f1e",
+      "recordedSha256": "be6bf4249bca23dfdb34425effa42545c33993dabc73d571b797b5dd65936f1e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg",
+      "sha256": "bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71",
+      "recordedSha256": "bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/c019e88fc2ddec6d25c87e0cb8ebe3c88f20d66511393593609c1b905bfd1e7e.jpg",
+      "sha256": "c019e88fc2ddec6d25c87e0cb8ebe3c88f20d66511393593609c1b905bfd1e7e",
+      "recordedSha256": "c019e88fc2ddec6d25c87e0cb8ebe3c88f20d66511393593609c1b905bfd1e7e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/c034fb103cede6a7dc7895bb5fc73e251006fa59f799c15b939f29ad2fbdc00f.jpg",
+      "sha256": "c034fb103cede6a7dc7895bb5fc73e251006fa59f799c15b939f29ad2fbdc00f",
+      "recordedSha256": "c034fb103cede6a7dc7895bb5fc73e251006fa59f799c15b939f29ad2fbdc00f",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/c1c6917a425317ce362594ec5c61e12c97b3c29e36b5ab0f214811c9fcb5b56f.jpg",
+      "sha256": "c1c6917a425317ce362594ec5c61e12c97b3c29e36b5ab0f214811c9fcb5b56f",
+      "recordedSha256": "c1c6917a425317ce362594ec5c61e12c97b3c29e36b5ab0f214811c9fcb5b56f",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/c3079dc2e53a5f69ae8092ae6af4098ad834779c4cd3adf0308c8e2d2366f1ae.jpg",
+      "sha256": "c3079dc2e53a5f69ae8092ae6af4098ad834779c4cd3adf0308c8e2d2366f1ae",
+      "recordedSha256": "c3079dc2e53a5f69ae8092ae6af4098ad834779c4cd3adf0308c8e2d2366f1ae",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc.jpg",
+      "sha256": "c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc",
+      "recordedSha256": "c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6.jpg",
+      "sha256": "c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6",
+      "recordedSha256": "c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234.jpg",
+      "sha256": "c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234",
+      "recordedSha256": "c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/ca5594c02f38f3ffadb575edbc37484f18a1a490e0b33ce50bae809666855982.jpg",
+      "sha256": "ca5594c02f38f3ffadb575edbc37484f18a1a490e0b33ce50bae809666855982",
+      "recordedSha256": "ca5594c02f38f3ffadb575edbc37484f18a1a490e0b33ce50bae809666855982",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/ccaf606068c8a564d6907c2f43b6779dde6bd803f11bac8b8c642bed49da64ad.jpg",
+      "sha256": "ccaf606068c8a564d6907c2f43b6779dde6bd803f11bac8b8c642bed49da64ad",
+      "recordedSha256": "ccaf606068c8a564d6907c2f43b6779dde6bd803f11bac8b8c642bed49da64ad",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/cd1a9bb25ad4216080abde002ed4280414a365095ee388039262abcbca452895.jpg",
+      "sha256": "cd1a9bb25ad4216080abde002ed4280414a365095ee388039262abcbca452895",
+      "recordedSha256": "cd1a9bb25ad4216080abde002ed4280414a365095ee388039262abcbca452895",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/cf2072b82b5699a97ff8b016c754469abc372c85da70c774bc01dee956a27e15.jpg",
+      "sha256": "cf2072b82b5699a97ff8b016c754469abc372c85da70c774bc01dee956a27e15",
+      "recordedSha256": "cf2072b82b5699a97ff8b016c754469abc372c85da70c774bc01dee956a27e15",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/d3f84ebeb41109bcbf9e90028a6d90ee1917b5ec3ceae627ac4fb7cdd432630e.jpg",
+      "sha256": "d3f84ebeb41109bcbf9e90028a6d90ee1917b5ec3ceae627ac4fb7cdd432630e",
+      "recordedSha256": "d3f84ebeb41109bcbf9e90028a6d90ee1917b5ec3ceae627ac4fb7cdd432630e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe.jpg",
+      "sha256": "d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe",
+      "recordedSha256": "d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/daa8d98cb20d6a902e3113aaaac7fd244314ad822808b580e535c535e41cafec.jpg",
+      "sha256": "daa8d98cb20d6a902e3113aaaac7fd244314ad822808b580e535c535e41cafec",
+      "recordedSha256": "daa8d98cb20d6a902e3113aaaac7fd244314ad822808b580e535c535e41cafec",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/db137d2601dd484caca9a15126461ea5aff905f804c948f9667e31ec6403ef99.jpg",
+      "sha256": "db137d2601dd484caca9a15126461ea5aff905f804c948f9667e31ec6403ef99",
+      "recordedSha256": "db137d2601dd484caca9a15126461ea5aff905f804c948f9667e31ec6403ef99",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/dcbf47c6905474dca104fbbfc39377f455e078bbb32626001ab9321b1c799a1b.jpg",
+      "sha256": "dcbf47c6905474dca104fbbfc39377f455e078bbb32626001ab9321b1c799a1b",
+      "recordedSha256": "dcbf47c6905474dca104fbbfc39377f455e078bbb32626001ab9321b1c799a1b",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/ddf0a615a05461b88093fecb55eba72cd08c1b079c84f593f348fec786be7fb3.jpg",
+      "sha256": "ddf0a615a05461b88093fecb55eba72cd08c1b079c84f593f348fec786be7fb3",
+      "recordedSha256": "ddf0a615a05461b88093fecb55eba72cd08c1b079c84f593f348fec786be7fb3",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67.jpg",
+      "sha256": "e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67",
+      "recordedSha256": "e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6.jpg",
+      "sha256": "e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6",
+      "recordedSha256": "e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/e66de31e1f89ac413f7ca0c5d97883d4ccfef7f699168077a878a2eee7662ef2.jpg",
+      "sha256": "e66de31e1f89ac413f7ca0c5d97883d4ccfef7f699168077a878a2eee7662ef2",
+      "recordedSha256": "e66de31e1f89ac413f7ca0c5d97883d4ccfef7f699168077a878a2eee7662ef2",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0.jpg",
+      "sha256": "e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0",
+      "recordedSha256": "e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360.jpg",
+      "sha256": "eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360",
+      "recordedSha256": "eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/ecdfe4537af8cbe6bf4cf25705d336308f0a16e6864ec701f70df89f6c4c5bd2.jpg",
+      "sha256": "ecdfe4537af8cbe6bf4cf25705d336308f0a16e6864ec701f70df89f6c4c5bd2",
+      "recordedSha256": "ecdfe4537af8cbe6bf4cf25705d336308f0a16e6864ec701f70df89f6c4c5bd2",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/eeb17d0143a252de13ab59a94befdf75f19c92d4b27548264a9f3bebf9735a39.jpg",
+      "sha256": "eeb17d0143a252de13ab59a94befdf75f19c92d4b27548264a9f3bebf9735a39",
+      "recordedSha256": "eeb17d0143a252de13ab59a94befdf75f19c92d4b27548264a9f3bebf9735a39",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc.png",
+      "sha256": "f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc",
+      "recordedSha256": "f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/f17473d32ae5c613e1a04fcf8660391f72c10f7a2708c2b32d738fb08ebef830.jpg",
+      "sha256": "f17473d32ae5c613e1a04fcf8660391f72c10f7a2708c2b32d738fb08ebef830",
+      "recordedSha256": "f17473d32ae5c613e1a04fcf8660391f72c10f7a2708c2b32d738fb08ebef830",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7.jpg",
+      "sha256": "f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7",
+      "recordedSha256": "f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/f7304b708241549086f2dccfc1d10bac6d2c4272288fd7d72c664aaecd5229d0.jpg",
+      "sha256": "f7304b708241549086f2dccfc1d10bac6d2c4272288fd7d72c664aaecd5229d0",
+      "recordedSha256": "f7304b708241549086f2dccfc1d10bac6d2c4272288fd7d72c664aaecd5229d0",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/f737642d71e78f617337c6f4917a0560b82815ecabacf7d485c6b1b65817117e.jpg",
+      "sha256": "f737642d71e78f617337c6f4917a0560b82815ecabacf7d485c6b1b65817117e",
+      "recordedSha256": "f737642d71e78f617337c6f4917a0560b82815ecabacf7d485c6b1b65817117e",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/shared/fa6fee81e8294a79ed10af0e7e1edd7df8db620c7f38cba2268d6bae432ae6e7.jpg",
+      "sha256": "fa6fee81e8294a79ed10af0e7e1edd7df8db620c7f38cba2268d6bae432ae6e7",
+      "recordedSha256": "fa6fee81e8294a79ed10af0e7e1edd7df8db620c7f38cba2268d6bae432ae6e7",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    },
+    {
+      "file": "public/textures/vegetation/canopy-atlas.webp",
+      "sha256": "96dfeae3298d2e3a59026acb9cb64c0e4a3bcd692238ab49fe830d905be8de75",
+      "recordedSha256": "96dfeae3298d2e3a59026acb9cb64c0e4a3bcd692238ab49fe830d905be8de75",
+      "hasOrigin": true,
+      "sidecar": true,
+      "unchanged": true,
+      "hashSource": "own sidecar"
+    }
+  ]
+}

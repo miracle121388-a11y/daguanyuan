@@ -1,0 +1,16 @@
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Fra:1 Mem:8.48M (Peak 8.48M) | Time:44:12:36.84 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Probe_Floor
+Fra:1 Mem:8.49M (Peak 8.49M) | Time:44:12:36.84 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Cube
+Fra:1 Mem:8.51M (Peak 8.51M) | Time:44:12:36.84 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+DETAIL CONTACT xiaoxiangguan floorwood 576 0.3
+INFO Draco mesh compression is available, use library at D:\Users\Lenovo\Desktop\大观园\.tools\blender-4.5.9-windows-x64\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+00:50:18 | INFO: Starting glTF 2.0 export
+00:50:18 | INFO: Extracting primitive: Grid
+00:50:18 | INFO: Primitives created: 1
+00:50:18 | INFO: Extracting primitive: Cube.001
+00:50:18 | INFO: Primitives created: 1
+00:50:18 | INFO: Finished glTF 2.0 export in 0.010162115097045898 s
+
+CONTACT PROBE PASS 0.3005438446998596 1.0
+
+Blender quit

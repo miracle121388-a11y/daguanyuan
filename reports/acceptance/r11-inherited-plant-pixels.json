@@ -1,0 +1,182 @@
+[
+  {
+    "name": "broadleaf",
+    "material": "island_tree_01.021",
+    "mode": "OPAQUE",
+    "width": 1024,
+    "visibleRGB": [
+      88.53890419006348,
+      83.14528751373291,
+      71.935378074646
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "name": "broadleaf",
+    "material": "island_tree_01_leaves.011",
+    "mode": "BLEND",
+    "width": 256,
+    "visibleRGB": [
+      3.8705348936952393,
+      4.505790086391765,
+      0.158446173641321
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "name": "broadleaf",
+    "material": "island_tree_01_branches.011",
+    "mode": "OPAQUE",
+    "width": 1024,
+    "visibleRGB": [
+      111.46095561981201,
+      102.0765266418457,
+      91.01332569122314
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "name": "broadleaf-2",
+    "material": "island_tree_02.010",
+    "mode": "OPAQUE",
+    "width": 1024,
+    "visibleRGB": [
+      87.04988765716553,
+      80.49071884155273,
+      66.29079627990723
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "name": "broadleaf-2",
+    "material": "island_tree_02_leaves.010",
+    "mode": "BLEND",
+    "width": 256,
+    "visibleRGB": [
+      3.8705348936952393,
+      4.505790086391765,
+      0.158446173641321
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "name": "broadleaf-2",
+    "material": "island_tree_02_branches.010",
+    "mode": "OPAQUE",
+    "width": 1024,
+    "visibleRGB": [
+      111.46095561981201,
+      102.0765266418457,
+      91.01332569122314
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "name": "pine",
+    "material": "pine_sapling_small_bark.010",
+    "mode": "OPAQUE",
+    "width": 1024,
+    "visibleRGB": [
+      62.823323249816895,
+      56.154767990112305,
+      49.45146465301514
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "name": "pine",
+    "material": "pine_sapling_small_twig.010",
+    "mode": "BLEND",
+    "width": 256,
+    "visibleRGB": [
+      3.5360280140070035,
+      2.2549474737368684,
+      1.2936268134067033
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "name": "shrub",
+    "material": "island_tree_01.022",
+    "mode": "OPAQUE",
+    "width": 1024,
+    "visibleRGB": [
+      88.53890419006348,
+      83.14528751373291,
+      71.935378074646
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "name": "shrub",
+    "material": "island_tree_01_leaves.012",
+    "mode": "BLEND",
+    "width": 256,
+    "visibleRGB": [
+      3.8705348936952393,
+      4.505790086391765,
+      0.158446173641321
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "name": "shrub",
+    "material": "island_tree_01_branches.012",
+    "mode": "OPAQUE",
+    "width": 1024,
+    "visibleRGB": [
+      111.46095561981201,
+      102.0765266418457,
+      91.01332569122314
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  {
+    "name": "ground-cover",
+    "material": "grass_medium_01",
+    "mode": "OPAQUE",
+    "width": 512,
+    "visibleRGB": [
+      16.036548614501953,
+      16.270008087158203,
+      9.879932403564453
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  }
+]

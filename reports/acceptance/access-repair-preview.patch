@@ -1,0 +1,9 @@
+--- Clash Verge profiles/Merge.yaml (existing content preserved)
++++ Clash Verge profiles/Merge.yaml (proposed addition; not applied)
+@@ append domain-only DNS exception @@
++dns:
++  fake-ip-filter-mode: blacklist
++  fake-ip-filter:
++    - '*.lan'
++    - localhost.ptlogin2.qq.com
++    - daguanyuan-rumeng.zeabur.app

@@ -1,0 +1,2974 @@
+{
+  "directory": ".deploy/reference-20260912-124455-508731",
+  "contents": [
+    "dist/",
+    "server.mjs",
+    "Dockerfile"
+  ],
+  "rawBytes": 57870089,
+  "compressedBytes": 49127843,
+  "uploadDirectoryBytes": 50915889,
+  "precompressedExtensions": [
+    "html",
+    "js",
+    "css",
+    "json",
+    "wasm"
+  ],
+  "precompressedFormat": "br",
+  "packedOnlyExtensions": [
+    "glb",
+    "js",
+    "wasm"
+  ],
+  "packedBinaryIdentity": "server returns losslessly decoded original bytes; no raw duplicate in upload",
+  "gzipFallback": "bounded runtime cache",
+  "brotli": true,
+  "privateFilesIncluded": false,
+  "createdAt": "2026-09-12T12:45:03.354220+00:00",
+  "revision": "spatial-garden-20260912-r12-fix1",
+  "inventoriedAt": "2026-09-12T12:46:28.046125+00:00",
+  "fileCount": 588,
+  "files": [
+    {
+      "path": "dist/art/daguanlou-thumb.webp",
+      "bytes": 46414,
+      "sha256": "cd69417e8559ff1417037b0547d4ff804302881351f7af9abc01be9ac8f8c8e8"
+    },
+    {
+      "path": "dist/art/daguanlou-thumb.webp.json",
+      "bytes": 3045,
+      "sha256": "d102ddb79757b1eef4523f0b8857187ccdcdfff49997d17ce8364676c861b986"
+    },
+    {
+      "path": "dist/art/daguanlou-thumb.webp.json.br",
+      "bytes": 1573,
+      "sha256": "46b23aefd36082fbba41a30fb3b132053c39e9b757cb284503f1372d04629c45"
+    },
+    {
+      "path": "dist/art/daguanlou.webp",
+      "bytes": 406686,
+      "sha256": "0ae2e3031fa7282a27798c0943081943b5be0fe5fc937eb17c893bb98f40b2df"
+    },
+    {
+      "path": "dist/art/daguanlou.webp.json",
+      "bytes": 3045,
+      "sha256": "d102ddb79757b1eef4523f0b8857187ccdcdfff49997d17ce8364676c861b986"
+    },
+    {
+      "path": "dist/art/daguanlou.webp.json.br",
+      "bytes": 1573,
+      "sha256": "46b23aefd36082fbba41a30fb3b132053c39e9b757cb284503f1372d04629c45"
+    },
+    {
+      "path": "dist/art/daoxiangcun-thumb.webp",
+      "bytes": 53366,
+      "sha256": "471ff9bb82044f311ebb6b69816907e043d9942797821868e6886d50f10c1e4e"
+    },
+    {
+      "path": "dist/art/daoxiangcun-thumb.webp.json",
+      "bytes": 2841,
+      "sha256": "cb239edb733afc6056957357ac46181a23208f6aef9de0110766bb9faec552b6"
+    },
+    {
+      "path": "dist/art/daoxiangcun-thumb.webp.json.br",
+      "bytes": 1477,
+      "sha256": "9136ade5578153282f3404f0dfbbc2ebc5525dce12f598a2dd0c38f9bd441446"
+    },
+    {
+      "path": "dist/art/daoxiangcun.webp",
+      "bytes": 486544,
+      "sha256": "f8b6d087666556a16f7ad6ada3fbe707f827b4944514bd77167e0e66aae7a45e"
+    },
+    {
+      "path": "dist/art/daoxiangcun.webp.json",
+      "bytes": 2841,
+      "sha256": "cb239edb733afc6056957357ac46181a23208f6aef9de0110766bb9faec552b6"
+    },
+    {
+      "path": "dist/art/daoxiangcun.webp.json.br",
+      "bytes": 1477,
+      "sha256": "9136ade5578153282f3404f0dfbbc2ebc5525dce12f598a2dd0c38f9bd441446"
+    },
+    {
+      "path": "dist/art/garden-aerial-day-thumb.webp",
+      "bytes": 49666,
+      "sha256": "86b6749e2b6d996fafc925bc682bbcc4cbaf82af7abc681b25796ae1f921cd6d"
+    },
+    {
+      "path": "dist/art/garden-aerial-day-thumb.webp.json",
+      "bytes": 3001,
+      "sha256": "803b78059b5646371525c8283b744f018c2fd3b7785fc3d1c4a395060c513ea3"
+    },
+    {
+      "path": "dist/art/garden-aerial-day-thumb.webp.json.br",
+      "bytes": 1542,
+      "sha256": "27959b06f18a46b266d18071fa16a2e3d66231c9001d3b50d858c4c4de4af7ae"
+    },
+    {
+      "path": "dist/art/garden-aerial-day.webp",
+      "bytes": 487486,
+      "sha256": "73603aa3751606adb060cc55b4f16c4fb7b9fdb6d8746c736ae809a92c6eb432"
+    },
+    {
+      "path": "dist/art/garden-aerial-day.webp.json",
+      "bytes": 3001,
+      "sha256": "803b78059b5646371525c8283b744f018c2fd3b7785fc3d1c4a395060c513ea3"
+    },
+    {
+      "path": "dist/art/garden-aerial-day.webp.json.br",
+      "bytes": 1542,
+      "sha256": "27959b06f18a46b266d18071fa16a2e3d66231c9001d3b50d858c4c4de4af7ae"
+    },
+    {
+      "path": "dist/art/garden-waterways-thumb.webp",
+      "bytes": 53348,
+      "sha256": "09dfcb17c5a91693631dfe867f8075f412f8d64b9eabba6f9a0df59a7b163511"
+    },
+    {
+      "path": "dist/art/garden-waterways-thumb.webp.json",
+      "bytes": 3166,
+      "sha256": "72d52236c281487ba5dfbc164c6ea0340e4804a6aff40bdb5839f585bf9fb996"
+    },
+    {
+      "path": "dist/art/garden-waterways-thumb.webp.json.br",
+      "bytes": 1593,
+      "sha256": "a09e4bbb7369cb633bfb107ecef1f255aeff441022b84f5a199112f5e2797e8d"
+    },
+    {
+      "path": "dist/art/garden-waterways.webp",
+      "bytes": 495006,
+      "sha256": "146067fb544ce15dce5a9a7a5e2a917ddadbfc63641cf7fdfdd65b3283c35e91"
+    },
+    {
+      "path": "dist/art/garden-waterways.webp.json",
+      "bytes": 3166,
+      "sha256": "72d52236c281487ba5dfbc164c6ea0340e4804a6aff40bdb5839f585bf9fb996"
+    },
+    {
+      "path": "dist/art/garden-waterways.webp.json.br",
+      "bytes": 1593,
+      "sha256": "a09e4bbb7369cb633bfb107ecef1f255aeff441022b84f5a199112f5e2797e8d"
+    },
+    {
+      "path": "dist/art/garden-yuanxiao-night-thumb.webp",
+      "bytes": 56210,
+      "sha256": "e67a076c9fd99410d5c34fb832af76c98cc851dc7fab98ca46dd06c772ab22d8"
+    },
+    {
+      "path": "dist/art/garden-yuanxiao-night-thumb.webp.json",
+      "bytes": 2327,
+      "sha256": "9211ea8b7a63c9746ef2db103e894c9420e557abbfde0af21237b86d6e04cac8"
+    },
+    {
+      "path": "dist/art/garden-yuanxiao-night-thumb.webp.json.br",
+      "bytes": 1242,
+      "sha256": "56d923ca18f797090d9b1023ae28e7b7a2c631850f8fd75623e7d9bbaf14d69d"
+    },
+    {
+      "path": "dist/art/garden-yuanxiao-night.webp",
+      "bytes": 496350,
+      "sha256": "144e3713bbdfcf9f767776b7164e08277ec8c035a652924612c8c4ca1a24fb30"
+    },
+    {
+      "path": "dist/art/garden-yuanxiao-night.webp.json",
+      "bytes": 2327,
+      "sha256": "9211ea8b7a63c9746ef2db103e894c9420e557abbfde0af21237b86d6e04cac8"
+    },
+    {
+      "path": "dist/art/garden-yuanxiao-night.webp.json.br",
+      "bytes": 1242,
+      "sha256": "56d923ca18f797090d9b1023ae28e7b7a2c631850f8fd75623e7d9bbaf14d69d"
+    },
+    {
+      "path": "dist/art/hengwuyuan-thumb.webp",
+      "bytes": 46750,
+      "sha256": "17d27484736d82645da74f73911fa1ef2e92ac33eca23ecec9b2888c67e91891"
+    },
+    {
+      "path": "dist/art/hengwuyuan-thumb.webp.json",
+      "bytes": 2854,
+      "sha256": "0dbdd18fc53996342a007a49f32c12b7f4382b6ec1a196af67d8ed8fe3e0495b"
+    },
+    {
+      "path": "dist/art/hengwuyuan-thumb.webp.json.br",
+      "bytes": 1514,
+      "sha256": "bdfc397a408b4cf84280951ecadd35ec3b085c20cd61a042339b3feb49d05680"
+    },
+    {
+      "path": "dist/art/hengwuyuan.webp",
+      "bytes": 425410,
+      "sha256": "bcc0817bcc58d88371cdc995607a049881a5c2fceda4afd58eb890dba8f4af98"
+    },
+    {
+      "path": "dist/art/hengwuyuan.webp.json",
+      "bytes": 2854,
+      "sha256": "0dbdd18fc53996342a007a49f32c12b7f4382b6ec1a196af67d8ed8fe3e0495b"
+    },
+    {
+      "path": "dist/art/hengwuyuan.webp.json.br",
+      "bytes": 1514,
+      "sha256": "bdfc397a408b4cf84280951ecadd35ec3b085c20cd61a042339b3feb49d05680"
+    },
+    {
+      "path": "dist/art/longcuian-thumb.webp",
+      "bytes": 55190,
+      "sha256": "1df8554d04149bec88d6c2fc0449ae58a181d083b46385ad98dc1c6c2d35867a"
+    },
+    {
+      "path": "dist/art/longcuian-thumb.webp.json",
+      "bytes": 2765,
+      "sha256": "3224f3f15d41ff5c44beb91cc3ca251be0dfa7097365319e58ce07d4235034f2"
+    },
+    {
+      "path": "dist/art/longcuian-thumb.webp.json.br",
+      "bytes": 1449,
+      "sha256": "a735a225136ef66ad4428b4bdaf1d2c435e0cb9aa5962b4429f01dd0c3a8edb5"
+    },
+    {
+      "path": "dist/art/longcuian.webp",
+      "bytes": 448242,
+      "sha256": "8b07d1b21255dbd858574e1280eed3556f991bec5b7c9ecdb2c451ef25f58f96"
+    },
+    {
+      "path": "dist/art/longcuian.webp.json",
+      "bytes": 2765,
+      "sha256": "3224f3f15d41ff5c44beb91cc3ca251be0dfa7097365319e58ce07d4235034f2"
+    },
+    {
+      "path": "dist/art/longcuian.webp.json.br",
+      "bytes": 1449,
+      "sha256": "a735a225136ef66ad4428b4bdaf1d2c435e0cb9aa5962b4429f01dd0c3a8edb5"
+    },
+    {
+      "path": "dist/art/luxuean-winter-thumb.webp",
+      "bytes": 44248,
+      "sha256": "e94d2e208ef91a307e78d8cca23ade04ad7c3e6148a644100c91e0ca7a05fd12"
+    },
+    {
+      "path": "dist/art/luxuean-winter-thumb.webp.json",
+      "bytes": 2703,
+      "sha256": "b57021615d65875e0567ee148636437244cc9a8860f856ba98dbe5516054fb5f"
+    },
+    {
+      "path": "dist/art/luxuean-winter-thumb.webp.json.br",
+      "bytes": 1437,
+      "sha256": "2edded5cd2943fa16cb71f9725ed2a0053a15560a07726985132bbb73287fd8e"
+    },
+    {
+      "path": "dist/art/luxuean-winter.webp",
+      "bytes": 375676,
+      "sha256": "56dd8346cdde0389b23bbbd1c831b7846f7f7bb5c901d527bee70757d36d3646"
+    },
+    {
+      "path": "dist/art/luxuean-winter.webp.json",
+      "bytes": 2703,
+      "sha256": "b57021615d65875e0567ee148636437244cc9a8860f856ba98dbe5516054fb5f"
+    },
+    {
+      "path": "dist/art/luxuean-winter.webp.json.br",
+      "bytes": 1437,
+      "sha256": "2edded5cd2943fa16cb71f9725ed2a0053a15560a07726985132bbb73287fd8e"
+    },
+    {
+      "path": "dist/art/manifest.json",
+      "bytes": 43487,
+      "sha256": "164d62522d8cbff59253d1dc767952a007cd6a9f1d7e64efbd28ab3b61b378f3"
+    },
+    {
+      "path": "dist/art/manifest.json.br",
+      "bytes": 11036,
+      "sha256": "44b0da1f5542ec26aa9320934ee949b615655c79e5ddc751de114ca8e97ee582"
+    },
+    {
+      "path": "dist/art/nuanxiangwu-thumb.webp",
+      "bytes": 31538,
+      "sha256": "a28c55d7a1f0fe5e77439e7d3c80938c8f1b8abdca36ea3c1658d5d08a241488"
+    },
+    {
+      "path": "dist/art/nuanxiangwu-thumb.webp.json",
+      "bytes": 2846,
+      "sha256": "e531d5afea3f2f5423c9e6d8e987833b69a148db0144b6b1595a92e6d8a73855"
+    },
+    {
+      "path": "dist/art/nuanxiangwu-thumb.webp.json.br",
+      "bytes": 1501,
+      "sha256": "cdf8c5c0946f0d4b5e87072968d0777cc7adf7ffbd6fb398aedbed2e15616c85"
+    },
+    {
+      "path": "dist/art/nuanxiangwu.webp",
+      "bytes": 263144,
+      "sha256": "da5a35a8eeaa5dc920aad2cf6303ec1371adcaa16091f026c378d68809bebb93"
+    },
+    {
+      "path": "dist/art/nuanxiangwu.webp.json",
+      "bytes": 2846,
+      "sha256": "e531d5afea3f2f5423c9e6d8e987833b69a148db0144b6b1595a92e6d8a73855"
+    },
+    {
+      "path": "dist/art/nuanxiangwu.webp.json.br",
+      "bytes": 1501,
+      "sha256": "cdf8c5c0946f0d4b5e87072968d0777cc7adf7ffbd6fb398aedbed2e15616c85"
+    },
+    {
+      "path": "dist/art/ouxiangxie-thumb.webp",
+      "bytes": 52996,
+      "sha256": "cf2119430483e89ea22ce3ca13b3abaa963d413db671cccb7fee8ee93335744d"
+    },
+    {
+      "path": "dist/art/ouxiangxie-thumb.webp.json",
+      "bytes": 2789,
+      "sha256": "1752ef95e892ebe37b72cc3e1d1063a4f7594890e8ae5c9234ca9bcba806aec9"
+    },
+    {
+      "path": "dist/art/ouxiangxie-thumb.webp.json.br",
+      "bytes": 1478,
+      "sha256": "bba6151ab22c26e92607be6aca05fb0ba27f1241d7003ab2e36e26c1f7ba2ba1"
+    },
+    {
+      "path": "dist/art/ouxiangxie.webp",
+      "bytes": 449242,
+      "sha256": "32ca28890adf5efaff06a5e9495a59ac608cef953aca2320ae83ce67a512744d"
+    },
+    {
+      "path": "dist/art/ouxiangxie.webp.json",
+      "bytes": 2789,
+      "sha256": "1752ef95e892ebe37b72cc3e1d1063a4f7594890e8ae5c9234ca9bcba806aec9"
+    },
+    {
+      "path": "dist/art/ouxiangxie.webp.json.br",
+      "bytes": 1478,
+      "sha256": "bba6151ab22c26e92607be6aca05fb0ba27f1241d7003ab2e36e26c1f7ba2ba1"
+    },
+    {
+      "path": "dist/art/qiushuangzhai-thumb.webp",
+      "bytes": 37574,
+      "sha256": "680285ea2b39b32baf9448f1b9383452fece7381712633786b7c44ac5fd0e2a3"
+    },
+    {
+      "path": "dist/art/qiushuangzhai-thumb.webp.json",
+      "bytes": 1451,
+      "sha256": "c3183530667c3d4ffb28a0030c25cb7e9cd46a5a6c2f221eec88e0d2568eee06"
+    },
+    {
+      "path": "dist/art/qiushuangzhai-thumb.webp.json.br",
+      "bytes": 836,
+      "sha256": "6e342d67838d84239c14ecaf8d42508c47c74f343b407243dcaa0ef0862c952f"
+    },
+    {
+      "path": "dist/art/qiushuangzhai.webp",
+      "bytes": 289600,
+      "sha256": "eca5e4fd6f707e1cdd32a18c1df0c11495cfc5ee13abe9dfb8963c995e44df33"
+    },
+    {
+      "path": "dist/art/qiushuangzhai.webp.json",
+      "bytes": 1451,
+      "sha256": "c3183530667c3d4ffb28a0030c25cb7e9cd46a5a6c2f221eec88e0d2568eee06"
+    },
+    {
+      "path": "dist/art/qiushuangzhai.webp.json.br",
+      "bytes": 836,
+      "sha256": "6e342d67838d84239c14ecaf8d42508c47c74f343b407243dcaa0ef0862c952f"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-day-thumb.webp",
+      "bytes": 53538,
+      "sha256": "2dda590f2b23ae88ab5148e8df8e0e5f6dc4eb1afd3586bd5c51154af72e8c1d"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-day-thumb.webp.json",
+      "bytes": 1627,
+      "sha256": "019db25d99ec067c621e41192c65dfbb120fb378ba82975854f107dcc66e7f9d"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-day-thumb.webp.json.br",
+      "bytes": 903,
+      "sha256": "bfe5311c8fb46b298fcb1c0c863337b6d0941803b38d3ed2de1ac39b6b7bb5a2"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-day.webp",
+      "bytes": 428902,
+      "sha256": "8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-day.webp.json",
+      "bytes": 1627,
+      "sha256": "019db25d99ec067c621e41192c65dfbb120fb378ba82975854f107dcc66e7f9d"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-day.webp.json.br",
+      "bytes": 903,
+      "sha256": "bfe5311c8fb46b298fcb1c0c863337b6d0941803b38d3ed2de1ac39b6b7bb5a2"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-moon-thumb.webp",
+      "bytes": 35606,
+      "sha256": "ead176b74eaea8c8a7f1d7b66cd595512237731a3aae723e6b1742ab6b642f1a"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-moon-thumb.webp.json",
+      "bytes": 1361,
+      "sha256": "d7b58313025421fde520c28ca49144f79c328b65289a4ef58698c2e628098485"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-moon-thumb.webp.json.br",
+      "bytes": 780,
+      "sha256": "3e3ea4cdc1c361b86dde74857a8fc9be355c5c9c588c319597e856a430909730"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-moon.webp",
+      "bytes": 281974,
+      "sha256": "436007597b2b6e9a6d20ce56b92b3c38d6f8e64ec0bf41172fc274c20e39244d"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-moon.webp.json",
+      "bytes": 1361,
+      "sha256": "d7b58313025421fde520c28ca49144f79c328b65289a4ef58698c2e628098485"
+    },
+    {
+      "path": "dist/art/xiaoxiangguan-moon.webp.json.br",
+      "bytes": 780,
+      "sha256": "3e3ea4cdc1c361b86dde74857a8fc9be355c5c9c588c319597e856a430909730"
+    },
+    {
+      "path": "dist/art/yihongyuan-courtyard-thumb.webp",
+      "bytes": 47238,
+      "sha256": "ad277e8086cd742f7980fd02b3518ee09d4d091871caf2526d711e2034f95713"
+    },
+    {
+      "path": "dist/art/yihongyuan-courtyard-thumb.webp.json",
+      "bytes": 2723,
+      "sha256": "a68c71b3b4dd44fe1d92c55f0b7511ceca190fa755d2a074c8460dbaf911e9e4"
+    },
+    {
+      "path": "dist/art/yihongyuan-courtyard-thumb.webp.json.br",
+      "bytes": 1413,
+      "sha256": "5b78012844e8523a321dbbbed544fc14afeadcc7800d5a6c973c9b5e28886f75"
+    },
+    {
+      "path": "dist/art/yihongyuan-courtyard.webp",
+      "bytes": 404774,
+      "sha256": "d500f09a8bd4033a3fb7a502aa1371a7a173194c631564a28d7a111a579956c2"
+    },
+    {
+      "path": "dist/art/yihongyuan-courtyard.webp.json",
+      "bytes": 2723,
+      "sha256": "a68c71b3b4dd44fe1d92c55f0b7511ceca190fa755d2a074c8460dbaf911e9e4"
+    },
+    {
+      "path": "dist/art/yihongyuan-courtyard.webp.json.br",
+      "bytes": 1413,
+      "sha256": "5b78012844e8523a321dbbbed544fc14afeadcc7800d5a6c973c9b5e28886f75"
+    },
+    {
+      "path": "dist/art/yihongyuan-interior-thumb.webp",
+      "bytes": 39698,
+      "sha256": "87142ea61e8146bee9d85a52a36f3a39c1b7428a76ac10acc344bc65ca60254e"
+    },
+    {
+      "path": "dist/art/yihongyuan-interior-thumb.webp.json",
+      "bytes": 2719,
+      "sha256": "82bb8e6b18456d748b450580da29605fffb6f76374cac8b769da383b3e074e82"
+    },
+    {
+      "path": "dist/art/yihongyuan-interior-thumb.webp.json.br",
+      "bytes": 1443,
+      "sha256": "c0edf34ebcd70ab6b196b82b43d0d7d47d60d16eb61756ef0ff217c8d5739e0c"
+    },
+    {
+      "path": "dist/art/yihongyuan-interior.webp",
+      "bytes": 313092,
+      "sha256": "86323b3a0b48b2b626c2a684c41a708f959109b1ef45a50a05bb9e15ee434a27"
+    },
+    {
+      "path": "dist/art/yihongyuan-interior.webp.json",
+      "bytes": 2719,
+      "sha256": "82bb8e6b18456d748b450580da29605fffb6f76374cac8b769da383b3e074e82"
+    },
+    {
+      "path": "dist/art/yihongyuan-interior.webp.json.br",
+      "bytes": 1443,
+      "sha256": "c0edf34ebcd70ab6b196b82b43d0d7d47d60d16eb61756ef0ff217c8d5739e0c"
+    },
+    {
+      "path": "dist/assets/GardenScene-CeqkKroT.js.br",
+      "bytes": 189840,
+      "sha256": "a9bc1d74349fbe476560f8609eeb926a10728c211b9c52b423cb5431c6d421ad"
+    },
+    {
+      "path": "dist/assets/index-CgtRWvG1.js.br",
+      "bytes": 173099,
+      "sha256": "b2139a15bf63047692521588587c20fee06cd92b9b492c975a5b4d7a44120414"
+    },
+    {
+      "path": "dist/assets/index-D68344Zx.css",
+      "bytes": 44567,
+      "sha256": "2f7ccdb135055991c7023408c045b6f00e7b56ea426e3d3890e1ef953c24bdd2"
+    },
+    {
+      "path": "dist/assets/index-D68344Zx.css.br",
+      "bytes": 9077,
+      "sha256": "b1014ad41780bcbd866420bd1b53d5ede30fabbbd36e29a1b8a8f579d1085a0d"
+    },
+    {
+      "path": "dist/data/characters.json",
+      "bytes": 3170,
+      "sha256": "88f643c7363fa9b54e7ca64f41e7a46bc2b0ce8409c5634502e3312ff13e717c"
+    },
+    {
+      "path": "dist/data/characters.json.br",
+      "bytes": 948,
+      "sha256": "48133f52d7aa7b36767840a6b4174a9bd935d34fcdea8058209616f0051609ae"
+    },
+    {
+      "path": "dist/data/events.json",
+      "bytes": 9255,
+      "sha256": "51f6bc89555e28a4b61989e0de7c9dfef8320b7156963977f81408b4026302cc"
+    },
+    {
+      "path": "dist/data/events.json.br",
+      "bytes": 2842,
+      "sha256": "041f99af7673e0b6307373b10cf3052eb48d6f139782ff763b21f13380ed9ebd"
+    },
+    {
+      "path": "dist/data/places.json",
+      "bytes": 6751,
+      "sha256": "e04693a63dd766e56f65256a1b589dc45ca06e311059a82576769e69d2aacb88"
+    },
+    {
+      "path": "dist/data/places.json.br",
+      "bytes": 2321,
+      "sha256": "1f6ec6da8504d96c72aa7b69f03933bcce0e51d3a1cd5ee58bcd8e5239744031"
+    },
+    {
+      "path": "dist/data/relations.json",
+      "bytes": 176,
+      "sha256": "3cafe63927a9f73fffe494a0143eff475ed54e67f8538ec29e2b6bf29ab0be73"
+    },
+    {
+      "path": "dist/data/relations.json.br",
+      "bytes": 145,
+      "sha256": "13fc2f597bbff575e93dfcbb618b713174df6dff5014045cf3488a9b9f16fa46"
+    },
+    {
+      "path": "dist/data/routes.json",
+      "bytes": 3638,
+      "sha256": "700320122748b19f4fa5d8634b9cfbd5401f26453025e9061094fa4ff1f185fb"
+    },
+    {
+      "path": "dist/data/routes.json.br",
+      "bytes": 872,
+      "sha256": "5ecded37911866fe2e23d2451e3595236b0d17552108b28866b697dac08c9026"
+    },
+    {
+      "path": "dist/data/sources.json",
+      "bytes": 52471,
+      "sha256": "55d56b810e3cf82fb0999e2cc1b2cc41ea5369217e84e3ac057de0aa6766fa10"
+    },
+    {
+      "path": "dist/data/sources.json.br",
+      "bytes": 9984,
+      "sha256": "02bb77d5b421aa49ce4e6e492fea07a4c80b122c8660e87bc24c05e6be04fd4a"
+    },
+    {
+      "path": "dist/draco/AUTHORS",
+      "bytes": 317,
+      "sha256": "7399754545fa82fbf402e3e91d50de0b63772870fd807c48dd9af25c042efb10"
+    },
+    {
+      "path": "dist/draco/draco_decoder.js.br",
+      "bytes": 93585,
+      "sha256": "783a66c0e4e72d381c9c20bea464d0cee6ac3409a89f9d175236d924b178e7a5"
+    },
+    {
+      "path": "dist/draco/draco_decoder.wasm.br",
+      "bytes": 54961,
+      "sha256": "42b3d0581806d94f000c4a5619f710769296aa574524160e7affd3d7ce8ee2f2"
+    },
+    {
+      "path": "dist/draco/draco_wasm_wrapper.js.br",
+      "bytes": 10868,
+      "sha256": "da3ca7c7caab1c474664f584610d7f9bba19f03d68c22767d6644be3edb32517"
+    },
+    {
+      "path": "dist/draco/LICENSE",
+      "bytes": 13898,
+      "sha256": "d3709b0fb4b8a94bbb1d02b8a2e484f258b0d9c5c5a01f940391f3fe662cd1a4"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 1273,
+      "sha256": "111baa285bab8850c8013bb101e001ba965dcfe5a8100cabae159d5f1789aa94"
+    },
+    {
+      "path": "dist/index.html.br",
+      "bytes": 753,
+      "sha256": "360b48336856bbaa8f7c5003a67e315e1e4c4a9ad6c954b714c7708867bed4b2"
+    },
+    {
+      "path": "dist/models/overview-low.glb.br",
+      "bytes": 2956605,
+      "sha256": "4676cf99ea8517b5e844ca57e884418c9ed411ff52fbaa178d69595f4f9e9650"
+    },
+    {
+      "path": "dist/models/overview.glb.br",
+      "bytes": 2956605,
+      "sha256": "4676cf99ea8517b5e844ca57e884418c9ed411ff52fbaa178d69595f4f9e9650"
+    },
+    {
+      "path": "dist/models/places/aojingxiguan.glb.br",
+      "bytes": 321300,
+      "sha256": "f654bf03343a94e49d3d67e246a220d8c10c94793040cc8b9f6ce554c8e4ff94"
+    },
+    {
+      "path": "dist/models/places/daguanlou.glb.br",
+      "bytes": 5661722,
+      "sha256": "6b2d3cc8f84b8031fe4feb81d76ec8ad3624795233238c58cee3ef9a6eef63d4"
+    },
+    {
+      "path": "dist/models/places/daguanyuan_gate.glb.br",
+      "bytes": 483505,
+      "sha256": "1ae6fdb0492473b5fc1edc1a7671e8f821cfe9ea8e039935c70aac95aaccb6fd"
+    },
+    {
+      "path": "dist/models/places/daoxiangcun.glb.br",
+      "bytes": 1047282,
+      "sha256": "932c84460011553686f227051cddaf147251225da08b7e55adde13be5a341832"
+    },
+    {
+      "path": "dist/models/places/dicuiting.glb.br",
+      "bytes": 92461,
+      "sha256": "933a0bf1c2eebcf36a5aa79f39f4f3199b708b0e8b73eef2138fdcb1150834b3"
+    },
+    {
+      "path": "dist/models/places/hengwuyuan.glb.br",
+      "bytes": 1079632,
+      "sha256": "f88618d4b67b7feea22cf76332d858311be7d14264fa6dfea5d49b8682dd7b58"
+    },
+    {
+      "path": "dist/models/places/longcuian.glb.br",
+      "bytes": 934990,
+      "sha256": "85e3bc9937436e2efb81891316a8d4009c2f3534fab2a9069b109d058c2eb1ad"
+    },
+    {
+      "path": "dist/models/places/luxuean.glb.br",
+      "bytes": 63400,
+      "sha256": "65f224da33dac63ee6eac3193925a167c23f3c37171d283ade45bea2008cbfe2"
+    },
+    {
+      "path": "dist/models/places/nuanxiangwu.glb.br",
+      "bytes": 626472,
+      "sha256": "cbeb8d5470371f303ff3350acffa231aa27e14842aedb4e10cee2d4669662c2d"
+    },
+    {
+      "path": "dist/models/places/ouxiangxie.glb.br",
+      "bytes": 155402,
+      "sha256": "c226859cb0a841459e9a74287eabe0c161825086a3a0b5a52030213d01aa500b"
+    },
+    {
+      "path": "dist/models/places/qiushuangzhai.glb.br",
+      "bytes": 975202,
+      "sha256": "27267451b513e0a8abfc83e84a4a76d31246fcb020c3a461688ae2ee02124b4f"
+    },
+    {
+      "path": "dist/models/places/qujingtongyou.glb.br",
+      "bytes": 132381,
+      "sha256": "8dfaf45bb028a5cdb39f627f615617286c9c214925b9aa5889c9050277991d3a"
+    },
+    {
+      "path": "dist/models/places/tubishanzhuang.glb.br",
+      "bytes": 333931,
+      "sha256": "48a8c57d1063c97136ea372086721bf3475eb3042a8cf005044687fb31055e22"
+    },
+    {
+      "path": "dist/models/places/xiaoxiangguan.glb.br",
+      "bytes": 2322731,
+      "sha256": "37d1f009a13f5f40042e1bcfa167b9025f47a0aff7d2418799feffad3e3ed2a1"
+    },
+    {
+      "path": "dist/models/places/yihongyuan.glb.br",
+      "bytes": 1252799,
+      "sha256": "62d900901e0670f9472e2b088fb4880c1ac37d659347de13f64d7dde2a02218d"
+    },
+    {
+      "path": "dist/models/places-low/aojingxiguan.glb.br",
+      "bytes": 237408,
+      "sha256": "d3dee28ad6cccc7d6e067347666cf7c1ca5870f3aad048bb73e885030c0f0c93"
+    },
+    {
+      "path": "dist/models/places-low/daguanlou.glb.br",
+      "bytes": 3919748,
+      "sha256": "7c93ce54fa70fc13c7df3c9aed4af8ec1876a23a850dffe0e0efed334aea17a1"
+    },
+    {
+      "path": "dist/models/places-low/daguanyuan_gate.glb.br",
+      "bytes": 230920,
+      "sha256": "260e93be86bd4285e816b6fc33758318d62917f922d53871cd7e67af787019ee"
+    },
+    {
+      "path": "dist/models/places-low/daoxiangcun.glb.br",
+      "bytes": 431823,
+      "sha256": "be98cb0035dce9e0cef0481d4d58df79a61f8294b9e5ed29b708d599bb398fae"
+    },
+    {
+      "path": "dist/models/places-low/dicuiting.glb.br",
+      "bytes": 89113,
+      "sha256": "f04daf5aefc8f3c748a9f29071e3213c0c201e0b26f6e9b03059e6b3e6233fdd"
+    },
+    {
+      "path": "dist/models/places-low/hengwuyuan.glb.br",
+      "bytes": 832742,
+      "sha256": "19064b0286f78ec3ffc0678ac4b9b318049225f92dbf0d5d230d51538c5ada7c"
+    },
+    {
+      "path": "dist/models/places-low/longcuian.glb.br",
+      "bytes": 559559,
+      "sha256": "01991114bb04fe1c1168ec75d11f141a763052691903c1ff26f845d314efdbf6"
+    },
+    {
+      "path": "dist/models/places-low/luxuean.glb.br",
+      "bytes": 28794,
+      "sha256": "9c77e6cf9c15f26ee6bd239811a16bb8f61e98f6322b1d2dfe79f2c2ebc65ae9"
+    },
+    {
+      "path": "dist/models/places-low/nuanxiangwu.glb.br",
+      "bytes": 404421,
+      "sha256": "300c1676a90e215e4b9dca7582a75f922e67ca532ce6b5a2da8eb98c67e02676"
+    },
+    {
+      "path": "dist/models/places-low/ouxiangxie.glb.br",
+      "bytes": 156796,
+      "sha256": "bdffef71420b8c78ba63034f1bf4932d3e86effbe741582d1349f8f46370279b"
+    },
+    {
+      "path": "dist/models/places-low/qiushuangzhai.glb.br",
+      "bytes": 687289,
+      "sha256": "de3dbcf536cfe1f0c6c4ccfecc9fb83de72ef6fe22d8984d635669c0c19c48b4"
+    },
+    {
+      "path": "dist/models/places-low/qujingtongyou.glb.br",
+      "bytes": 73131,
+      "sha256": "2e30b095a8dac89489ae2fbd300494778bb28f8c974b1bb55d68fcb2bfe7cbe1"
+    },
+    {
+      "path": "dist/models/places-low/tubishanzhuang.glb.br",
+      "bytes": 247197,
+      "sha256": "94406d6c8569be85a2a16550f04eba65518e3287cb091839a802e4f8a4febe5c"
+    },
+    {
+      "path": "dist/models/places-low/xiaoxiangguan.glb.br",
+      "bytes": 1758885,
+      "sha256": "1135ef03d59d12a8af7e719a238931dc195b73aa3d06410ec6434a31cf46dc9d"
+    },
+    {
+      "path": "dist/models/places-low/yihongyuan.glb.br",
+      "bytes": 961302,
+      "sha256": "720797c1f1b52afe3fe2bbbb6201d3ddf391b64653fc7b4acc5c6a966b127889"
+    },
+    {
+      "path": "dist/models/vegetation/broadleaf-2.glb.br",
+      "bytes": 462536,
+      "sha256": "20199f03ccd2586b1bec5d0792233a09dacbd5e3a7b5be301cceccac977309f3"
+    },
+    {
+      "path": "dist/models/vegetation/broadleaf-low.glb.br",
+      "bytes": 232051,
+      "sha256": "73894efbee4f82ebde7dde0dd57baef6f9f43c02618803ccbbfd4adf157c9f96"
+    },
+    {
+      "path": "dist/models/vegetation/broadleaf.glb.br",
+      "bytes": 539559,
+      "sha256": "295242bf833dc384a4eb281f865e6d1b7cc23d7aa6b447df55e551879dea26b4"
+    },
+    {
+      "path": "dist/models/vegetation/fern-0.glb.br",
+      "bytes": 5620,
+      "sha256": "eda2e26c9b19ac6c857c49156fec3fa9ad02c07ab155f629ac68e77cb6107bf6"
+    },
+    {
+      "path": "dist/models/vegetation/fern-1.glb.br",
+      "bytes": 5775,
+      "sha256": "fe105eb7ac57e9fe4f9b87a0de71eea6e1702e8ad77befae3db4683620a282d9"
+    },
+    {
+      "path": "dist/models/vegetation/ground-cover.glb.br",
+      "bytes": 4000,
+      "sha256": "a032566cdc5c23b830b46f792f40a1498dc5fba09b81b1bf516f0a44cea19585"
+    },
+    {
+      "path": "dist/models/vegetation/pine.glb.br",
+      "bytes": 174878,
+      "sha256": "412447eadc7d821c1c2137ee319643963fd2d6c750956a8b49de556f0ca888fe"
+    },
+    {
+      "path": "dist/models/vegetation/shrub.glb.br",
+      "bytes": 375456,
+      "sha256": "88dddefb061afcd2b7a67f5b602bb8f42bbf55dc5e44034bd5b0753696119520"
+    },
+    {
+      "path": "dist/scene-manifest.json",
+      "bytes": 1378689,
+      "sha256": "107423ddd1d71130d226a6a59a5ebd7033d35dfa34e6a52bb081686361fc8547"
+    },
+    {
+      "path": "dist/scene-manifest.json.br",
+      "bytes": 339444,
+      "sha256": "249072f57a3748346e75923ab378b569ce67fce08ad005919177280720584e2c"
+    },
+    {
+      "path": "dist/textures/forest_grove.hdr",
+      "bytes": 118136,
+      "sha256": "a5fd9cc71e5d6717f8d65b5ca8dce74bc8d8e01048d34604894550e0c9123e95"
+    },
+    {
+      "path": "dist/textures/forest_grove.hdr.json",
+      "bytes": 558,
+      "sha256": "bdc6f0ff09e1630e1e25fe7eea419d9431d5eaf64c00c9bcf99c884918d7befb"
+    },
+    {
+      "path": "dist/textures/forest_grove.hdr.json.br",
+      "bytes": 272,
+      "sha256": "cbe6d10edb219ae93ec57626e0925132c9697e6bf3396fedf2f55afa9fe2dd67"
+    },
+    {
+      "path": "dist/textures/ground/pond-normal.png",
+      "bytes": 150785,
+      "sha256": "e074f358936501eb66c7576b0896d2fdcde233927bbb5dabd4fa8eca90b879ec"
+    },
+    {
+      "path": "dist/textures/ground/pond-normal.png.json",
+      "bytes": 5668,
+      "sha256": "2342f020bc7a3cbb8eccba8cf99dde4fc1b7298af29b30f4312daac38af4bdb9"
+    },
+    {
+      "path": "dist/textures/ground/pond-normal.png.json.br",
+      "bytes": 1487,
+      "sha256": "d732433c48dee7458c0b24e5fff53f72d59b9b5f5406db7aa593e353c40fc8bb"
+    },
+    {
+      "path": "dist/textures/ground/soil.jpg",
+      "bytes": 40293,
+      "sha256": "5df43f74d87bfd5fccda9f5bab5d213e49b6982bfa575668e52576ac586312db"
+    },
+    {
+      "path": "dist/textures/ground/soil.jpg.json",
+      "bytes": 410,
+      "sha256": "c9f865c8e30b99826583af0c8131a844370c8e2a4e87dc0194523acc41bd50d4"
+    },
+    {
+      "path": "dist/textures/ground/soil.jpg.json.br",
+      "bytes": 268,
+      "sha256": "7c354d1afb89168355ce35ad2fe686fce8bc33d535017ace8e233977044097a7"
+    },
+    {
+      "path": "dist/textures/ground/surface-zones.png",
+      "bytes": 507967,
+      "sha256": "d75e5c8a0388dc3dbb33be2eb5ae3f54ac457ddc83449bc43a4ffd38e3a3fecc"
+    },
+    {
+      "path": "dist/textures/ground/surface-zones.png.json",
+      "bytes": 1324,
+      "sha256": "2b6cc227a441dee579d38953a86ccf158562a30e1448f691be05a53d5f731613"
+    },
+    {
+      "path": "dist/textures/ground/surface-zones.png.json.br",
+      "bytes": 750,
+      "sha256": "027cf4cdf444d06d3457b475c6d3d47415521a4ac022900e4c72c8fc6a3c7010"
+    },
+    {
+      "path": "dist/textures/landscape-light.webp",
+      "bytes": 398856,
+      "sha256": "0190379a3e174fcf6bc35123c564cebca0025759baa89f948c1b90833709aa48"
+    },
+    {
+      "path": "dist/textures/landscape-light.webp.json",
+      "bytes": 1424,
+      "sha256": "c7dfcce2d04d92263caf5d3c8d2a084e194b221d7e5098ca295be3a0fb3b9414"
+    },
+    {
+      "path": "dist/textures/landscape-light.webp.json.br",
+      "bytes": 620,
+      "sha256": "3092f1c13125200d45877f489c12dca1012368de0e59d48217b9c1c6a34b5af7"
+    },
+    {
+      "path": "dist/textures/shared/02180e2ec024e1c8dacf1314f71603b276e36a659e62738b522ffff403d1287c.jpg",
+      "bytes": 57600,
+      "sha256": "02180e2ec024e1c8dacf1314f71603b276e36a659e62738b522ffff403d1287c"
+    },
+    {
+      "path": "dist/textures/shared/02180e2ec024e1c8dacf1314f71603b276e36a659e62738b522ffff403d1287c.jpg.json",
+      "bytes": 938,
+      "sha256": "2f9f408babaad5b1ea4ac8a3f723445e9e1b042de5011878199188b25dee8368"
+    },
+    {
+      "path": "dist/textures/shared/02180e2ec024e1c8dacf1314f71603b276e36a659e62738b522ffff403d1287c.jpg.json.br",
+      "bytes": 367,
+      "sha256": "e79e83e4046b8e27249d54d6e7152799d176e3ea5e6e42c36de27a274f07441b"
+    },
+    {
+      "path": "dist/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg",
+      "bytes": 130413,
+      "sha256": "04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4"
+    },
+    {
+      "path": "dist/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg.json",
+      "bytes": 1056,
+      "sha256": "a3e1a94613d3b9856e4bc1d91047016dbc6461f836327238d7b96f637d6d0725"
+    },
+    {
+      "path": "dist/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg.json.br",
+      "bytes": 383,
+      "sha256": "3f9e46b7c75fcf6cad55c74fdff7a5f816500a488c62b5110cccd405fb426227"
+    },
+    {
+      "path": "dist/textures/shared/057714b2f4b4ea5f1a63a779c7edc53b216f7305c0904bbfe306053ddd387b77.jpg",
+      "bytes": 22663,
+      "sha256": "057714b2f4b4ea5f1a63a779c7edc53b216f7305c0904bbfe306053ddd387b77"
+    },
+    {
+      "path": "dist/textures/shared/057714b2f4b4ea5f1a63a779c7edc53b216f7305c0904bbfe306053ddd387b77.jpg.json",
+      "bytes": 1176,
+      "sha256": "051743b8665cdb0558d40635d9b1ec7d25f5c83c211873d9a85a0a383cbf3779"
+    },
+    {
+      "path": "dist/textures/shared/057714b2f4b4ea5f1a63a779c7edc53b216f7305c0904bbfe306053ddd387b77.jpg.json.br",
+      "bytes": 364,
+      "sha256": "7dea3c2313b0ae3c0d672e3a115053b8445994c0db560d5afda7c052920f51fd"
+    },
+    {
+      "path": "dist/textures/shared/05d726a143b1dc7ee7750b266a3ed90031b367bade07f3112e7665f8c510f676.jpg",
+      "bytes": 63314,
+      "sha256": "05d726a143b1dc7ee7750b266a3ed90031b367bade07f3112e7665f8c510f676"
+    },
+    {
+      "path": "dist/textures/shared/05d726a143b1dc7ee7750b266a3ed90031b367bade07f3112e7665f8c510f676.jpg.json",
+      "bytes": 1176,
+      "sha256": "36a64f8863bde755c310efdb2dfe0337f1fa47c6577e96eae4ed5fcbf57e9746"
+    },
+    {
+      "path": "dist/textures/shared/05d726a143b1dc7ee7750b266a3ed90031b367bade07f3112e7665f8c510f676.jpg.json.br",
+      "bytes": 373,
+      "sha256": "4ebe575024dc1a9011b36ff7b6b7970e69a8d8e5ca758e085f35fc3bcf937c44"
+    },
+    {
+      "path": "dist/textures/shared/06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd.jpg",
+      "bytes": 14608,
+      "sha256": "06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd"
+    },
+    {
+      "path": "dist/textures/shared/06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd.jpg.json",
+      "bytes": 1176,
+      "sha256": "95cd3003e18838532cade997a34d12222194f3a2fa7b22cbf313501b6e19ed08"
+    },
+    {
+      "path": "dist/textures/shared/06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd.jpg.json.br",
+      "bytes": 369,
+      "sha256": "a3405bf355ca0d749589cf353430b0988c7944a1293c55ef28c2e7466e53c3fa"
+    },
+    {
+      "path": "dist/textures/shared/06dd22fc361a51fba10b7baeb37ba7c2f89dcb3c010c97b41b83b3f9e3ab6c76.jpg",
+      "bytes": 4271,
+      "sha256": "06dd22fc361a51fba10b7baeb37ba7c2f89dcb3c010c97b41b83b3f9e3ab6c76"
+    },
+    {
+      "path": "dist/textures/shared/06dd22fc361a51fba10b7baeb37ba7c2f89dcb3c010c97b41b83b3f9e3ab6c76.jpg.json",
+      "bytes": 1176,
+      "sha256": "a729fa88c2d1b07129cc05cb316e446226bc5305c161b50075eaa614dbe0acc9"
+    },
+    {
+      "path": "dist/textures/shared/06dd22fc361a51fba10b7baeb37ba7c2f89dcb3c010c97b41b83b3f9e3ab6c76.jpg.json.br",
+      "bytes": 371,
+      "sha256": "91d19b7878065fabb6744fada6c7eccc64ec9abbccf5dad4af391ba3a7f245dd"
+    },
+    {
+      "path": "dist/textures/shared/089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c.jpg",
+      "bytes": 2222,
+      "sha256": "089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c"
+    },
+    {
+      "path": "dist/textures/shared/089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c.jpg.json",
+      "bytes": 1014,
+      "sha256": "85a675f9ba1ff8fc9ca2ab3902091c7e7c42d44cfb786ea7dd1cf2624db519e2"
+    },
+    {
+      "path": "dist/textures/shared/089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c.jpg.json.br",
+      "bytes": 372,
+      "sha256": "9e54c6e0cd3c4afb53538f9ff4522f57c51742089e58a95f696df28307de66b8"
+    },
+    {
+      "path": "dist/textures/shared/09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356.jpg",
+      "bytes": 9759,
+      "sha256": "09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356"
+    },
+    {
+      "path": "dist/textures/shared/09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356.jpg.json",
+      "bytes": 1011,
+      "sha256": "5ff983278c57ea3fcdd8c13be572c766512ab20a30212abff7c0a15564aa3282"
+    },
+    {
+      "path": "dist/textures/shared/09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356.jpg.json.br",
+      "bytes": 371,
+      "sha256": "3db1c072531ac996f3aa1c746119fa50e0f2cd7a9826ddd7bcdb8a78b263a8df"
+    },
+    {
+      "path": "dist/textures/shared/0a7225d578ca5ea5960899a0a4e8017ae9da3c8598184f31b757f3420f7247f1.jpg",
+      "bytes": 38425,
+      "sha256": "0a7225d578ca5ea5960899a0a4e8017ae9da3c8598184f31b757f3420f7247f1"
+    },
+    {
+      "path": "dist/textures/shared/0a7225d578ca5ea5960899a0a4e8017ae9da3c8598184f31b757f3420f7247f1.jpg.json",
+      "bytes": 926,
+      "sha256": "418a0db0a919d7b5ad5043ff92b221323c9ca8fc2ce119f85ecc7b78a9e6a6b0"
+    },
+    {
+      "path": "dist/textures/shared/0a7225d578ca5ea5960899a0a4e8017ae9da3c8598184f31b757f3420f7247f1.jpg.json.br",
+      "bytes": 360,
+      "sha256": "8b3f36f9cbe92424518c878718de21c5f19ea8142bdc308c21aba486d6666122"
+    },
+    {
+      "path": "dist/textures/shared/0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1.jpg",
+      "bytes": 24391,
+      "sha256": "0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1"
+    },
+    {
+      "path": "dist/textures/shared/0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1.jpg.json",
+      "bytes": 1032,
+      "sha256": "62f761c38b009629410602914b85452c313e94a91470ed208b1c7e24109a57bb"
+    },
+    {
+      "path": "dist/textures/shared/0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1.jpg.json.br",
+      "bytes": 377,
+      "sha256": "a9ab6aea5419dbf9054969c5fd6e631d5a2ba57cd7c1b0c4bbb1f4fe563c3ef4"
+    },
+    {
+      "path": "dist/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg",
+      "bytes": 9221,
+      "sha256": "0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75"
+    },
+    {
+      "path": "dist/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg.json",
+      "bytes": 1011,
+      "sha256": "5adc793b9e56053d9ff6448a399a259b4e6b0c77c544fdd61767e5e756cfdad6"
+    },
+    {
+      "path": "dist/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg.json.br",
+      "bytes": 371,
+      "sha256": "ce7114e8677480c60a2591f504694d416cab790fd19af57899f9b1712b336a6d"
+    },
+    {
+      "path": "dist/textures/shared/0fc28c7527994725b8228c931967d575e9d62274d004aab24ce19d5239893641.jpg",
+      "bytes": 25980,
+      "sha256": "0fc28c7527994725b8228c931967d575e9d62274d004aab24ce19d5239893641"
+    },
+    {
+      "path": "dist/textures/shared/0fc28c7527994725b8228c931967d575e9d62274d004aab24ce19d5239893641.jpg.json",
+      "bytes": 914,
+      "sha256": "975583e2ff3efee4653e0751a3e9f76e9a301622a28738b74980fd7591527154"
+    },
+    {
+      "path": "dist/textures/shared/0fc28c7527994725b8228c931967d575e9d62274d004aab24ce19d5239893641.jpg.json.br",
+      "bytes": 356,
+      "sha256": "6b6421eb24d1fad0440b4bfb897da0ed0cf4382cac308de2b3f99ad7a3f0ddb3"
+    },
+    {
+      "path": "dist/textures/shared/11052aa1fe9127547817a9f000a17fe771c6b07f4420305824b729be2e105e98.jpg",
+      "bytes": 42699,
+      "sha256": "11052aa1fe9127547817a9f000a17fe771c6b07f4420305824b729be2e105e98"
+    },
+    {
+      "path": "dist/textures/shared/11052aa1fe9127547817a9f000a17fe771c6b07f4420305824b729be2e105e98.jpg.json",
+      "bytes": 1047,
+      "sha256": "34e56f72e83b32d50bb8971725a36cf28addb4f4cc03071f8c541d327fa5e182"
+    },
+    {
+      "path": "dist/textures/shared/11052aa1fe9127547817a9f000a17fe771c6b07f4420305824b729be2e105e98.jpg.json.br",
+      "bytes": 379,
+      "sha256": "ccbc2a13278fa1f3b0fb953f4b13294437bdbb99e68cdcc4b5aa11d6901e1559"
+    },
+    {
+      "path": "dist/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg",
+      "bytes": 1972,
+      "sha256": "1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704"
+    },
+    {
+      "path": "dist/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg.json",
+      "bytes": 1014,
+      "sha256": "d716497833b296fa1400bdf8af19df4d195b5299362b4bb29c70620012301956"
+    },
+    {
+      "path": "dist/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg.json.br",
+      "bytes": 374,
+      "sha256": "c576fe0efc93927a727b97360031a3fc49169f8a41ae2762527f678dd2e0368d"
+    },
+    {
+      "path": "dist/textures/shared/138428ea59d51e6cd2254057d0f89f732cc0516e3efaf538d5298c95f5383a60.jpg",
+      "bytes": 38253,
+      "sha256": "138428ea59d51e6cd2254057d0f89f732cc0516e3efaf538d5298c95f5383a60"
+    },
+    {
+      "path": "dist/textures/shared/138428ea59d51e6cd2254057d0f89f732cc0516e3efaf538d5298c95f5383a60.jpg.json",
+      "bytes": 1068,
+      "sha256": "9a40c86b39f36da06533c31148e69cbd48e55e02ebd51f2662ac043dc2ee7e26"
+    },
+    {
+      "path": "dist/textures/shared/138428ea59d51e6cd2254057d0f89f732cc0516e3efaf538d5298c95f5383a60.jpg.json.br",
+      "bytes": 383,
+      "sha256": "9d7a8c7d517d4b3265a39bbd975ef17533a72de44a216498d4253c9095828352"
+    },
+    {
+      "path": "dist/textures/shared/139116883e143ecfcdb4e887ec8b6379fe6cf842e016f9c93448c2201a1081a6.jpg",
+      "bytes": 57341,
+      "sha256": "139116883e143ecfcdb4e887ec8b6379fe6cf842e016f9c93448c2201a1081a6"
+    },
+    {
+      "path": "dist/textures/shared/139116883e143ecfcdb4e887ec8b6379fe6cf842e016f9c93448c2201a1081a6.jpg.json",
+      "bytes": 1176,
+      "sha256": "34778332ce64b171fbbe8362f6ded878398caa5506d661d99e507554a4e409ec"
+    },
+    {
+      "path": "dist/textures/shared/139116883e143ecfcdb4e887ec8b6379fe6cf842e016f9c93448c2201a1081a6.jpg.json.br",
+      "bytes": 365,
+      "sha256": "0afb066d232282969af266480cb48cd05b3e52452c1d5ac74b208375dea2d969"
+    },
+    {
+      "path": "dist/textures/shared/16c4b5d8bbb8a6b812f37120ef2fe5ce373f39c0d4e95ee1633b61455f95deab.jpg",
+      "bytes": 1901,
+      "sha256": "16c4b5d8bbb8a6b812f37120ef2fe5ce373f39c0d4e95ee1633b61455f95deab"
+    },
+    {
+      "path": "dist/textures/shared/16c4b5d8bbb8a6b812f37120ef2fe5ce373f39c0d4e95ee1633b61455f95deab.jpg.json",
+      "bytes": 1176,
+      "sha256": "9b27a1af676d72548de2fa8f0c4e508b05b59e32e3dd8abeea6b7311c80e5012"
+    },
+    {
+      "path": "dist/textures/shared/16c4b5d8bbb8a6b812f37120ef2fe5ce373f39c0d4e95ee1633b61455f95deab.jpg.json.br",
+      "bytes": 362,
+      "sha256": "f4f72d2ce523cef616ed880b19121071239eff227bb4b677f9e91bc5507b5998"
+    },
+    {
+      "path": "dist/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+      "bytes": 293677,
+      "sha256": "179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d"
+    },
+    {
+      "path": "dist/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png.json",
+      "bytes": 1016,
+      "sha256": "44e4ef5ea2a44aa22ddf6fd9cdf229d7aadfabef0df2c3b3e63dce5c4df395ea"
+    },
+    {
+      "path": "dist/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png.json.br",
+      "bytes": 327,
+      "sha256": "3fbea57e1543b6255a8640e8e04ef64db9f1715c258e1d4bddd81e26049a2db6"
+    },
+    {
+      "path": "dist/textures/shared/19f3d60a089d874fe988b75907677465f077bca95d0896ecf45dedf72f124e9a.jpg",
+      "bytes": 57887,
+      "sha256": "19f3d60a089d874fe988b75907677465f077bca95d0896ecf45dedf72f124e9a"
+    },
+    {
+      "path": "dist/textures/shared/19f3d60a089d874fe988b75907677465f077bca95d0896ecf45dedf72f124e9a.jpg.json",
+      "bytes": 953,
+      "sha256": "f2d8bf9430ec66f041b3d27789fdd5ba2f35fca0f079e10f55177407d77c6a1b"
+    },
+    {
+      "path": "dist/textures/shared/19f3d60a089d874fe988b75907677465f077bca95d0896ecf45dedf72f124e9a.jpg.json.br",
+      "bytes": 367,
+      "sha256": "02eed2a718a50b939ab4936ac1f448e9586a4a84e4be55b90585a942f2eaa6ea"
+    },
+    {
+      "path": "dist/textures/shared/1d2ccabc8ba9c70cb06e4f8a7b1a29390627552988daaf5f0c2cb12f167fa96a.jpg",
+      "bytes": 61112,
+      "sha256": "1d2ccabc8ba9c70cb06e4f8a7b1a29390627552988daaf5f0c2cb12f167fa96a"
+    },
+    {
+      "path": "dist/textures/shared/1d2ccabc8ba9c70cb06e4f8a7b1a29390627552988daaf5f0c2cb12f167fa96a.jpg.json",
+      "bytes": 1176,
+      "sha256": "c9270433b3cc759c468031c7d88fe32422d466355635582a1f93152480eabce7"
+    },
+    {
+      "path": "dist/textures/shared/1d2ccabc8ba9c70cb06e4f8a7b1a29390627552988daaf5f0c2cb12f167fa96a.jpg.json.br",
+      "bytes": 371,
+      "sha256": "d961f9f83c4cb38afb0bb6f70f4b252604d6ec5e234204f3dd3d0ba09435aec2"
+    },
+    {
+      "path": "dist/textures/shared/1da1bc7a9153fcdf5a17d699e787d7d5aa90954263ab6020c37363c0b833c641.jpg",
+      "bytes": 61516,
+      "sha256": "1da1bc7a9153fcdf5a17d699e787d7d5aa90954263ab6020c37363c0b833c641"
+    },
+    {
+      "path": "dist/textures/shared/1da1bc7a9153fcdf5a17d699e787d7d5aa90954263ab6020c37363c0b833c641.jpg.json",
+      "bytes": 1176,
+      "sha256": "a46c51e8c5bdf6a21d32acd10d77f698a4d2eb82a80de01530c883d972e6c249"
+    },
+    {
+      "path": "dist/textures/shared/1da1bc7a9153fcdf5a17d699e787d7d5aa90954263ab6020c37363c0b833c641.jpg.json.br",
+      "bytes": 366,
+      "sha256": "a1fd0408317f699d354de42186eecc8824b3f0ab826985bb223f4b6166b9206f"
+    },
+    {
+      "path": "dist/textures/shared/1ec32d47bfbf599486c6418c568e98cf4a8881d810362859747e6170c29faf90.jpg",
+      "bytes": 130314,
+      "sha256": "1ec32d47bfbf599486c6418c568e98cf4a8881d810362859747e6170c29faf90"
+    },
+    {
+      "path": "dist/textures/shared/1ec32d47bfbf599486c6418c568e98cf4a8881d810362859747e6170c29faf90.jpg.json",
+      "bytes": 1176,
+      "sha256": "c25665bf2ee13c0addeae7a8fa52897aad860e07d8eb10dbc04d35d42ad04cd4"
+    },
+    {
+      "path": "dist/textures/shared/1ec32d47bfbf599486c6418c568e98cf4a8881d810362859747e6170c29faf90.jpg.json.br",
+      "bytes": 363,
+      "sha256": "8ef054a63fc0fb92de7dd2af6bb5aecb7bd8412887563db83fc7a74509b8c408"
+    },
+    {
+      "path": "dist/textures/shared/1f73921877f855b1e7e264abb011d6b61f9a8835fbec7586c50e4ed2930cf1cf.jpg",
+      "bytes": 83477,
+      "sha256": "1f73921877f855b1e7e264abb011d6b61f9a8835fbec7586c50e4ed2930cf1cf"
+    },
+    {
+      "path": "dist/textures/shared/1f73921877f855b1e7e264abb011d6b61f9a8835fbec7586c50e4ed2930cf1cf.jpg.json",
+      "bytes": 1056,
+      "sha256": "e623d8bef3b6200b140c9463af5d047676dcf124cf4d54a355013c3d196eae5e"
+    },
+    {
+      "path": "dist/textures/shared/1f73921877f855b1e7e264abb011d6b61f9a8835fbec7586c50e4ed2930cf1cf.jpg.json.br",
+      "bytes": 381,
+      "sha256": "4dbd2084d4cfbd44f13c226071fba6c3ae052fa1c4f4474ffcca7ef6cd4132b4"
+    },
+    {
+      "path": "dist/textures/shared/215b2843049d85bb783252521d4addff206b8769be309120b596fb5a00eae91d.jpg",
+      "bytes": 60751,
+      "sha256": "215b2843049d85bb783252521d4addff206b8769be309120b596fb5a00eae91d"
+    },
+    {
+      "path": "dist/textures/shared/215b2843049d85bb783252521d4addff206b8769be309120b596fb5a00eae91d.jpg.json",
+      "bytes": 1176,
+      "sha256": "d5a616407942e2acc8cabcd831494823f027bb8e972d6544372c400e2b16b7e3"
+    },
+    {
+      "path": "dist/textures/shared/215b2843049d85bb783252521d4addff206b8769be309120b596fb5a00eae91d.jpg.json.br",
+      "bytes": 369,
+      "sha256": "09bb103cc2e7d841c8c4ea5786c6beaa1ecc07c31c0e549b6f2e25229b5bd5af"
+    },
+    {
+      "path": "dist/textures/shared/21ebb4882e6d1e9085737c38729143792752f12b355be05edf28e49c188949a3.jpg",
+      "bytes": 30674,
+      "sha256": "21ebb4882e6d1e9085737c38729143792752f12b355be05edf28e49c188949a3"
+    },
+    {
+      "path": "dist/textures/shared/21ebb4882e6d1e9085737c38729143792752f12b355be05edf28e49c188949a3.jpg.json",
+      "bytes": 926,
+      "sha256": "66105e9bcba303b0f294a492f86cbaedbdb3a054245903ebc64bb6925bc96fdf"
+    },
+    {
+      "path": "dist/textures/shared/21ebb4882e6d1e9085737c38729143792752f12b355be05edf28e49c188949a3.jpg.json.br",
+      "bytes": 358,
+      "sha256": "33b36f0ba574b65cf1809a669903538850352e3585f8856e971e85630ab83771"
+    },
+    {
+      "path": "dist/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+      "bytes": 10683,
+      "sha256": "22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872"
+    },
+    {
+      "path": "dist/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg.json",
+      "bytes": 1017,
+      "sha256": "2ad8a12b02005e214859c27a5bf0a2c2b80433f08773b8d22531defcfd21a354"
+    },
+    {
+      "path": "dist/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg.json.br",
+      "bytes": 373,
+      "sha256": "9c695095fd1db85519eb95bf56121309b0885ed8bbfa1964f6c389c4f73a943d"
+    },
+    {
+      "path": "dist/textures/shared/233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92.jpg",
+      "bytes": 52818,
+      "sha256": "233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92"
+    },
+    {
+      "path": "dist/textures/shared/233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92.jpg.json",
+      "bytes": 935,
+      "sha256": "11f207a96b42e1af2c077d65b3cf9b6f97e4991c2ac14fdebaf258fa901d9562"
+    },
+    {
+      "path": "dist/textures/shared/233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92.jpg.json.br",
+      "bytes": 360,
+      "sha256": "8c66468b345681e2bcb0b9cb39df9f9a2597eb61085d9347a05026c3397cffae"
+    },
+    {
+      "path": "dist/textures/shared/261c9258445d2e7d1503d1a5722d425fbd6b72d7344d8aa64f0bce7bc0f6e4f6.jpg",
+      "bytes": 58525,
+      "sha256": "261c9258445d2e7d1503d1a5722d425fbd6b72d7344d8aa64f0bce7bc0f6e4f6"
+    },
+    {
+      "path": "dist/textures/shared/261c9258445d2e7d1503d1a5722d425fbd6b72d7344d8aa64f0bce7bc0f6e4f6.jpg.json",
+      "bytes": 944,
+      "sha256": "d7ddd0cc729c07ac95a7fa3c3a3b5c99e579f78b24d7d8d7fe4293fdd3726eb4"
+    },
+    {
+      "path": "dist/textures/shared/261c9258445d2e7d1503d1a5722d425fbd6b72d7344d8aa64f0bce7bc0f6e4f6.jpg.json.br",
+      "bytes": 367,
+      "sha256": "c8931b00bd3c9f904f4caa02ab740243de8d26e4850daab0804f83e107a1d543"
+    },
+    {
+      "path": "dist/textures/shared/26359cc3d5c657f435e6105609eea2ffc33515267a4e39278729fb32b1b820a1.jpg",
+      "bytes": 136498,
+      "sha256": "26359cc3d5c657f435e6105609eea2ffc33515267a4e39278729fb32b1b820a1"
+    },
+    {
+      "path": "dist/textures/shared/26359cc3d5c657f435e6105609eea2ffc33515267a4e39278729fb32b1b820a1.jpg.json",
+      "bytes": 1077,
+      "sha256": "7079685e8826f417188feacea1b6c660eb15c3c763a4505ccb52b591f3090403"
+    },
+    {
+      "path": "dist/textures/shared/26359cc3d5c657f435e6105609eea2ffc33515267a4e39278729fb32b1b820a1.jpg.json.br",
+      "bytes": 388,
+      "sha256": "b82ffea17a008dcddf44c00b6064b5509b1bf36e8c8815c83d141c53399bdd3e"
+    },
+    {
+      "path": "dist/textures/shared/2c83b47d7bbbd4d25ab239f3a74370207a4ed8223b14820d5a30994ea6f3c4ac.jpg",
+      "bytes": 9650,
+      "sha256": "2c83b47d7bbbd4d25ab239f3a74370207a4ed8223b14820d5a30994ea6f3c4ac"
+    },
+    {
+      "path": "dist/textures/shared/2c83b47d7bbbd4d25ab239f3a74370207a4ed8223b14820d5a30994ea6f3c4ac.jpg.json",
+      "bytes": 1176,
+      "sha256": "2831a93f427197750af54adbbaaec18ef5a250a28608c2224a6d0c2574c714ab"
+    },
+    {
+      "path": "dist/textures/shared/2c83b47d7bbbd4d25ab239f3a74370207a4ed8223b14820d5a30994ea6f3c4ac.jpg.json.br",
+      "bytes": 369,
+      "sha256": "449a69c0c0633a350d6ab5dc5f3ff80b16321d11ae9101e23d4a9c05a656e845"
+    },
+    {
+      "path": "dist/textures/shared/2e6381f2cbcf844a799428c502a870c82926aa86345180c11fdaa99b15aa0b7a.jpg",
+      "bytes": 61557,
+      "sha256": "2e6381f2cbcf844a799428c502a870c82926aa86345180c11fdaa99b15aa0b7a"
+    },
+    {
+      "path": "dist/textures/shared/2e6381f2cbcf844a799428c502a870c82926aa86345180c11fdaa99b15aa0b7a.jpg.json",
+      "bytes": 935,
+      "sha256": "8c03e904409092b5f3b1650fc343bdbb548c85b081150f6447ed40efbb56081c"
+    },
+    {
+      "path": "dist/textures/shared/2e6381f2cbcf844a799428c502a870c82926aa86345180c11fdaa99b15aa0b7a.jpg.json.br",
+      "bytes": 360,
+      "sha256": "7c04f1260204d46ca715d4d35b09a7078ec1aaf7a46acab5a5eb89d18e375e22"
+    },
+    {
+      "path": "dist/textures/shared/2e741300f9de2f29d997f6425f600bfb94c9d68504e955f88d55bc51dd5f050e.jpg",
+      "bytes": 59112,
+      "sha256": "2e741300f9de2f29d997f6425f600bfb94c9d68504e955f88d55bc51dd5f050e"
+    },
+    {
+      "path": "dist/textures/shared/2e741300f9de2f29d997f6425f600bfb94c9d68504e955f88d55bc51dd5f050e.jpg.json",
+      "bytes": 1176,
+      "sha256": "0b69d203911f83525e36f061b4418581da9b845549d62e12a7258d1fa0e9e176"
+    },
+    {
+      "path": "dist/textures/shared/2e741300f9de2f29d997f6425f600bfb94c9d68504e955f88d55bc51dd5f050e.jpg.json.br",
+      "bytes": 369,
+      "sha256": "e99801ad326c565eefd5f3458c39ba6fdd7286a6834ed85f4081fc91bcbc809c"
+    },
+    {
+      "path": "dist/textures/shared/30fe75c5e7b1a18740d932ec31136f4ebbf93a22f5d1b7d51a51dca824813bf1.jpg",
+      "bytes": 44306,
+      "sha256": "30fe75c5e7b1a18740d932ec31136f4ebbf93a22f5d1b7d51a51dca824813bf1"
+    },
+    {
+      "path": "dist/textures/shared/30fe75c5e7b1a18740d932ec31136f4ebbf93a22f5d1b7d51a51dca824813bf1.jpg.json",
+      "bytes": 1083,
+      "sha256": "461a4a811097f1bc76b250f786bd9692d22aaf60f7385c77c5eb3cd23214ac49"
+    },
+    {
+      "path": "dist/textures/shared/30fe75c5e7b1a18740d932ec31136f4ebbf93a22f5d1b7d51a51dca824813bf1.jpg.json.br",
+      "bytes": 392,
+      "sha256": "c6537a0d8e05af47065a4021b7bed22d2879b01c68fc5f60b5e907c6adc68836"
+    },
+    {
+      "path": "dist/textures/shared/3113491a289c13ad151ab334812e1ba62301ec83fc167226cf08194c8eace300.jpg",
+      "bytes": 795,
+      "sha256": "3113491a289c13ad151ab334812e1ba62301ec83fc167226cf08194c8eace300"
+    },
+    {
+      "path": "dist/textures/shared/3113491a289c13ad151ab334812e1ba62301ec83fc167226cf08194c8eace300.jpg.json",
+      "bytes": 1203,
+      "sha256": "8853bdda86515723e9cbef2a15baf1c3922fc66cb4157441320c5c26b0df2d98"
+    },
+    {
+      "path": "dist/textures/shared/3113491a289c13ad151ab334812e1ba62301ec83fc167226cf08194c8eace300.jpg.json.br",
+      "bytes": 428,
+      "sha256": "b57ef9fc4fa3ef76e3f5f641e9a81a1a4aede4b1c367c64f1f27b3a89982bec8"
+    },
+    {
+      "path": "dist/textures/shared/315678b33a67c7b7ab0bdbcc57139cc9125c4e833161b4f80f99d425f246a040.jpg",
+      "bytes": 48956,
+      "sha256": "315678b33a67c7b7ab0bdbcc57139cc9125c4e833161b4f80f99d425f246a040"
+    },
+    {
+      "path": "dist/textures/shared/315678b33a67c7b7ab0bdbcc57139cc9125c4e833161b4f80f99d425f246a040.jpg.json",
+      "bytes": 1047,
+      "sha256": "ae423ac62a73eb72f8c387d5de06d0021b7e9759bf2496df68a5470099a5221e"
+    },
+    {
+      "path": "dist/textures/shared/315678b33a67c7b7ab0bdbcc57139cc9125c4e833161b4f80f99d425f246a040.jpg.json.br",
+      "bytes": 380,
+      "sha256": "e6c228968827e978844bf2aae2c8d60b9587ea689cdda9de901d76fc9b721caa"
+    },
+    {
+      "path": "dist/textures/shared/31ca5ef7871e91aa5961d43940488537d75811aff505a836444e86afd2fc4e12.jpg",
+      "bytes": 163691,
+      "sha256": "31ca5ef7871e91aa5961d43940488537d75811aff505a836444e86afd2fc4e12"
+    },
+    {
+      "path": "dist/textures/shared/31ca5ef7871e91aa5961d43940488537d75811aff505a836444e86afd2fc4e12.jpg.json",
+      "bytes": 1050,
+      "sha256": "3f8a0d3fc3033f39398b142e8951a9fb9b9d10be7acb8ef0b99b2d721b369c22"
+    },
+    {
+      "path": "dist/textures/shared/31ca5ef7871e91aa5961d43940488537d75811aff505a836444e86afd2fc4e12.jpg.json.br",
+      "bytes": 379,
+      "sha256": "00b5026daed95bff022fcff1c2d3f845f3cfbe9d94fe94a3ba04ff9180f4a8eb"
+    },
+    {
+      "path": "dist/textures/shared/33e4fe1ace585070d140616e79e41b30647d06ad2722a108c9808ad82c49ff82.jpg",
+      "bytes": 11716,
+      "sha256": "33e4fe1ace585070d140616e79e41b30647d06ad2722a108c9808ad82c49ff82"
+    },
+    {
+      "path": "dist/textures/shared/33e4fe1ace585070d140616e79e41b30647d06ad2722a108c9808ad82c49ff82.jpg.json",
+      "bytes": 1023,
+      "sha256": "3d7f19f1244f06f5c4e6697b8098df44faca345f68ef17faa4587cd24ef9b25f"
+    },
+    {
+      "path": "dist/textures/shared/33e4fe1ace585070d140616e79e41b30647d06ad2722a108c9808ad82c49ff82.jpg.json.br",
+      "bytes": 375,
+      "sha256": "62996db9d9cacb5bf352625f1617541ab15092df26b42de101c4369974f3e8e4"
+    },
+    {
+      "path": "dist/textures/shared/369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e.png",
+      "bytes": 67725,
+      "sha256": "369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e"
+    },
+    {
+      "path": "dist/textures/shared/369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e.png.json",
+      "bytes": 1058,
+      "sha256": "3ec8db7a166e83e4bea8e9514cf44c32627525100e75fa943c82d4326ec3f9bb"
+    },
+    {
+      "path": "dist/textures/shared/369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e.png.json.br",
+      "bytes": 331,
+      "sha256": "3d553e25d5fc9a78f9e477aea21bfb3448b992fd782864010f6c283d4eb58d4c"
+    },
+    {
+      "path": "dist/textures/shared/36c6ff5ca800342b4f44435292d8cf4ab548f124e1303d294c7d0c96859b7bca.jpg",
+      "bytes": 64490,
+      "sha256": "36c6ff5ca800342b4f44435292d8cf4ab548f124e1303d294c7d0c96859b7bca"
+    },
+    {
+      "path": "dist/textures/shared/36c6ff5ca800342b4f44435292d8cf4ab548f124e1303d294c7d0c96859b7bca.jpg.json",
+      "bytes": 1083,
+      "sha256": "3b38a18aafe2abbc722933016f7bcaebaae943f23745b7190d34468589c3d638"
+    },
+    {
+      "path": "dist/textures/shared/36c6ff5ca800342b4f44435292d8cf4ab548f124e1303d294c7d0c96859b7bca.jpg.json.br",
+      "bytes": 388,
+      "sha256": "54082569e6d2d256e2fd6d27f30cc9727bca63827bb65b15200c42a28f21b7f5"
+    },
+    {
+      "path": "dist/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg",
+      "bytes": 27954,
+      "sha256": "38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be"
+    },
+    {
+      "path": "dist/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg.json",
+      "bytes": 1038,
+      "sha256": "c29f4adf38d086df8844f5a3117b02ef1c400796a0a241d2103c21654ff99610"
+    },
+    {
+      "path": "dist/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg.json.br",
+      "bytes": 375,
+      "sha256": "b454b933a09bf656de8e9eb2c7838c07e1266c8a08c9bfed9236dd3ff9787cce"
+    },
+    {
+      "path": "dist/textures/shared/39380156fb4d71812ff32fa7183ea015cfc01a6ec06235f29f81499698edd0fb.jpg",
+      "bytes": 10683,
+      "sha256": "39380156fb4d71812ff32fa7183ea015cfc01a6ec06235f29f81499698edd0fb"
+    },
+    {
+      "path": "dist/textures/shared/39380156fb4d71812ff32fa7183ea015cfc01a6ec06235f29f81499698edd0fb.jpg.json",
+      "bytes": 1176,
+      "sha256": "9426d74746a4d41a189ee7c4762d5e67c207514e26dd2d799397364546064d47"
+    },
+    {
+      "path": "dist/textures/shared/39380156fb4d71812ff32fa7183ea015cfc01a6ec06235f29f81499698edd0fb.jpg.json.br",
+      "bytes": 372,
+      "sha256": "ee0c81ae970116aed9b961b3f0d2d5204fb581ad563b6944422a174aec45894f"
+    },
+    {
+      "path": "dist/textures/shared/39718ca030c378471915fd55f92de75bda40e0a69fb70297c617a319ab4912df.jpg",
+      "bytes": 12515,
+      "sha256": "39718ca030c378471915fd55f92de75bda40e0a69fb70297c617a319ab4912df"
+    },
+    {
+      "path": "dist/textures/shared/39718ca030c378471915fd55f92de75bda40e0a69fb70297c617a319ab4912df.jpg.json",
+      "bytes": 1176,
+      "sha256": "2e6129991d05fb02432ff401ebcb83c7fac70b6cb6f96f485a8bea885979b945"
+    },
+    {
+      "path": "dist/textures/shared/39718ca030c378471915fd55f92de75bda40e0a69fb70297c617a319ab4912df.jpg.json.br",
+      "bytes": 367,
+      "sha256": "d16b445d35653102bbd015a3317644f6f83f6d58db7e87e31c49e4d86917736f"
+    },
+    {
+      "path": "dist/textures/shared/3fd3cbafd30d4a6ad6029d06bfcb17524d528fbf5d8e16e092872f63b07411e8.jpg",
+      "bytes": 26669,
+      "sha256": "3fd3cbafd30d4a6ad6029d06bfcb17524d528fbf5d8e16e092872f63b07411e8"
+    },
+    {
+      "path": "dist/textures/shared/3fd3cbafd30d4a6ad6029d06bfcb17524d528fbf5d8e16e092872f63b07411e8.jpg.json",
+      "bytes": 935,
+      "sha256": "52440c57860470dd8d26fc2f2e6fb63293b3f58259b688f76a7a13fce289d74e"
+    },
+    {
+      "path": "dist/textures/shared/3fd3cbafd30d4a6ad6029d06bfcb17524d528fbf5d8e16e092872f63b07411e8.jpg.json.br",
+      "bytes": 362,
+      "sha256": "375d84ca5276f942930c6ad2e170c944128e314da597c7a1dcb6d8d1cc3647a8"
+    },
+    {
+      "path": "dist/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg",
+      "bytes": 1833,
+      "sha256": "410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e"
+    },
+    {
+      "path": "dist/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg.json",
+      "bytes": 1029,
+      "sha256": "c650a12624ce327c716837c699f58a32f097b2a6a2e1933029c4169dfd8746f4"
+    },
+    {
+      "path": "dist/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg.json.br",
+      "bytes": 375,
+      "sha256": "0bba771ab83248e2e8c4d2c5f14e9106642c11b17e18bf95ed97f7dc86f93267"
+    },
+    {
+      "path": "dist/textures/shared/410ea5fc08a6808c5d9bbc7ef1e7c1a55e8865e134e6bc896c90a231a6310ab9.jpg",
+      "bytes": 60401,
+      "sha256": "410ea5fc08a6808c5d9bbc7ef1e7c1a55e8865e134e6bc896c90a231a6310ab9"
+    },
+    {
+      "path": "dist/textures/shared/410ea5fc08a6808c5d9bbc7ef1e7c1a55e8865e134e6bc896c90a231a6310ab9.jpg.json",
+      "bytes": 1059,
+      "sha256": "6eea34ead6c323024437602df26e18e53c03fd5087041005403bf1b820f0b43a"
+    },
+    {
+      "path": "dist/textures/shared/410ea5fc08a6808c5d9bbc7ef1e7c1a55e8865e134e6bc896c90a231a6310ab9.jpg.json.br",
+      "bytes": 388,
+      "sha256": "66bab6683689b6d90e2d195d823fcf00992c38e59e29709a9faadc593f02e9ff"
+    },
+    {
+      "path": "dist/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg",
+      "bytes": 11240,
+      "sha256": "44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330"
+    },
+    {
+      "path": "dist/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg.json",
+      "bytes": 1032,
+      "sha256": "5a6ac47f9974031aff1c92afdd9435ef767d38ed614c6056bf3629d2f9b7968c"
+    },
+    {
+      "path": "dist/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg.json.br",
+      "bytes": 377,
+      "sha256": "39eafb602005bda3e1bad1dcf4f5360fd8e521fa09450c996edf029e96ebea85"
+    },
+    {
+      "path": "dist/textures/shared/4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202.jpg",
+      "bytes": 10008,
+      "sha256": "4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202"
+    },
+    {
+      "path": "dist/textures/shared/4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202.jpg.json",
+      "bytes": 1026,
+      "sha256": "176d2ac86f65edf3307a3bd124c08ae2cd3729ab6c147161e28282b41b1840f1"
+    },
+    {
+      "path": "dist/textures/shared/4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202.jpg.json.br",
+      "bytes": 376,
+      "sha256": "ec8c628325d26905f942cad5fb732dd1fdef932e96e2449ffaecf6c07a6d27ac"
+    },
+    {
+      "path": "dist/textures/shared/479699043aeaf998be7ace7afcaa579999d3bc4aa9a2f5da2c3ef79996c3dd54.jpg",
+      "bytes": 34326,
+      "sha256": "479699043aeaf998be7ace7afcaa579999d3bc4aa9a2f5da2c3ef79996c3dd54"
+    },
+    {
+      "path": "dist/textures/shared/479699043aeaf998be7ace7afcaa579999d3bc4aa9a2f5da2c3ef79996c3dd54.jpg.json",
+      "bytes": 932,
+      "sha256": "6ae96e4491f8843aa2ee901efa1a68a461805651fcb625c4994b87fe273ac07f"
+    },
+    {
+      "path": "dist/textures/shared/479699043aeaf998be7ace7afcaa579999d3bc4aa9a2f5da2c3ef79996c3dd54.jpg.json.br",
+      "bytes": 362,
+      "sha256": "488113dc215cf05114b28d148ae45208a3295d05372e1821f45ebb36bda0f540"
+    },
+    {
+      "path": "dist/textures/shared/524d7fc9a7d534c17c3886530aa6492b549fea6e3ba25c1bc0f9ebaeb651d3bf.jpg",
+      "bytes": 194151,
+      "sha256": "524d7fc9a7d534c17c3886530aa6492b549fea6e3ba25c1bc0f9ebaeb651d3bf"
+    },
+    {
+      "path": "dist/textures/shared/524d7fc9a7d534c17c3886530aa6492b549fea6e3ba25c1bc0f9ebaeb651d3bf.jpg.json",
+      "bytes": 1176,
+      "sha256": "502a014a2eb0f68da0225ae8c2c4335b1bb062eb8b133a62475d3d58ae33ff49"
+    },
+    {
+      "path": "dist/textures/shared/524d7fc9a7d534c17c3886530aa6492b549fea6e3ba25c1bc0f9ebaeb651d3bf.jpg.json.br",
+      "bytes": 363,
+      "sha256": "b631071037538709c8ba932b705950a299dd15172593935aa5a479a270c0e5a7"
+    },
+    {
+      "path": "dist/textures/shared/55176e3c2a0bbc2b156b85cae05017f7c931bf2c87298f48e3cda89539cdd59f.jpg",
+      "bytes": 34910,
+      "sha256": "55176e3c2a0bbc2b156b85cae05017f7c931bf2c87298f48e3cda89539cdd59f"
+    },
+    {
+      "path": "dist/textures/shared/55176e3c2a0bbc2b156b85cae05017f7c931bf2c87298f48e3cda89539cdd59f.jpg.json",
+      "bytes": 1176,
+      "sha256": "fe692778d122bf5bab7f07747332d32a791658da1c742f59429cc7d684b5ed02"
+    },
+    {
+      "path": "dist/textures/shared/55176e3c2a0bbc2b156b85cae05017f7c931bf2c87298f48e3cda89539cdd59f.jpg.json.br",
+      "bytes": 365,
+      "sha256": "d61f370fe8b28674935d74386b51aef497a39dfa67b40e9507e36a52efa90811"
+    },
+    {
+      "path": "dist/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg",
+      "bytes": 9688,
+      "sha256": "554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52"
+    },
+    {
+      "path": "dist/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg.json",
+      "bytes": 1026,
+      "sha256": "50b8cc5d6712327f6061df00a5657658bc972341269f78d3b01bc0453dba7422"
+    },
+    {
+      "path": "dist/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg.json.br",
+      "bytes": 377,
+      "sha256": "ee42ef8056f4d550c42a15cae63369523b9d40bcc4fa7bd59122f60922a43626"
+    },
+    {
+      "path": "dist/textures/shared/5568640c8980f093cdfa37283d1528ec859aac39ae8336c4eebf2c67c9f01b15.jpg",
+      "bytes": 37193,
+      "sha256": "5568640c8980f093cdfa37283d1528ec859aac39ae8336c4eebf2c67c9f01b15"
+    },
+    {
+      "path": "dist/textures/shared/5568640c8980f093cdfa37283d1528ec859aac39ae8336c4eebf2c67c9f01b15.jpg.json",
+      "bytes": 920,
+      "sha256": "4c71218af299df01cb7b0082b80408438e3d67d5999f06d96ef653afc92a3689"
+    },
+    {
+      "path": "dist/textures/shared/5568640c8980f093cdfa37283d1528ec859aac39ae8336c4eebf2c67c9f01b15.jpg.json.br",
+      "bytes": 358,
+      "sha256": "1cc83cf010bffdcb4e0a26bd4c257b46431889eb8923dd375bf19dd934793176"
+    },
+    {
+      "path": "dist/textures/shared/5575bd0de4cefa6caa6b9717e12e751b912fe20ecf01d1af02435968a594edc7.jpg",
+      "bytes": 63086,
+      "sha256": "5575bd0de4cefa6caa6b9717e12e751b912fe20ecf01d1af02435968a594edc7"
+    },
+    {
+      "path": "dist/textures/shared/5575bd0de4cefa6caa6b9717e12e751b912fe20ecf01d1af02435968a594edc7.jpg.json",
+      "bytes": 1176,
+      "sha256": "af4fa25e3bef888658f53ef245a5f38cced56e4fb8995606d9d2f2cf02b25d3f"
+    },
+    {
+      "path": "dist/textures/shared/5575bd0de4cefa6caa6b9717e12e751b912fe20ecf01d1af02435968a594edc7.jpg.json.br",
+      "bytes": 363,
+      "sha256": "f2b84512c2af56aa606082409454484a3d43fee389e2befafea3e7bd12e44d32"
+    },
+    {
+      "path": "dist/textures/shared/5d3092566848511d6fc120a86d6d17989aad8ad92e83f8d7c9b5cc0a3e33ac5d.jpg",
+      "bytes": 2128,
+      "sha256": "5d3092566848511d6fc120a86d6d17989aad8ad92e83f8d7c9b5cc0a3e33ac5d"
+    },
+    {
+      "path": "dist/textures/shared/5d3092566848511d6fc120a86d6d17989aad8ad92e83f8d7c9b5cc0a3e33ac5d.jpg.json",
+      "bytes": 1200,
+      "sha256": "22e8f94a6e926ca24520a1c3b8d8d7e590586bdcae1822071712d3f0adc84ab1"
+    },
+    {
+      "path": "dist/textures/shared/5d3092566848511d6fc120a86d6d17989aad8ad92e83f8d7c9b5cc0a3e33ac5d.jpg.json.br",
+      "bytes": 433,
+      "sha256": "c0b3b26f17377fc52e19ebb9d7e372717f60b7dfaff34fa3e65c93e776f71f07"
+    },
+    {
+      "path": "dist/textures/shared/5decf87664526192a9944dee4d619b4ae91e764d57dffe5ec4a098d170776a17.jpg",
+      "bytes": 56499,
+      "sha256": "5decf87664526192a9944dee4d619b4ae91e764d57dffe5ec4a098d170776a17"
+    },
+    {
+      "path": "dist/textures/shared/5decf87664526192a9944dee4d619b4ae91e764d57dffe5ec4a098d170776a17.jpg.json",
+      "bytes": 920,
+      "sha256": "65ea25552caaab7969c436b5f58926b219075e3242a83b5032a5e72fb8032348"
+    },
+    {
+      "path": "dist/textures/shared/5decf87664526192a9944dee4d619b4ae91e764d57dffe5ec4a098d170776a17.jpg.json.br",
+      "bytes": 357,
+      "sha256": "694393e5b028c2f2e5dd010df7711755d28ac1d49515e8142b1f74da0482fde7"
+    },
+    {
+      "path": "dist/textures/shared/614d532cdb4ab23310bd4749b0102ed028c84af95446d49d6888b24424d1a6f2.jpg",
+      "bytes": 39634,
+      "sha256": "614d532cdb4ab23310bd4749b0102ed028c84af95446d49d6888b24424d1a6f2"
+    },
+    {
+      "path": "dist/textures/shared/614d532cdb4ab23310bd4749b0102ed028c84af95446d49d6888b24424d1a6f2.jpg.json",
+      "bytes": 1176,
+      "sha256": "9f85f363d2ff583230bf820cfe00db1d87b6d96b799f65ba84a935181c7395aa"
+    },
+    {
+      "path": "dist/textures/shared/614d532cdb4ab23310bd4749b0102ed028c84af95446d49d6888b24424d1a6f2.jpg.json.br",
+      "bytes": 369,
+      "sha256": "b8a275b9708357ebe175e928ca74d8537f4d3e954e25d9c6318fc3c228c93f31"
+    },
+    {
+      "path": "dist/textures/shared/61ac06c667e159e38f70fced874774e6cb8ad0e007806d051a94e132ed7ec017.jpg",
+      "bytes": 2154,
+      "sha256": "61ac06c667e159e38f70fced874774e6cb8ad0e007806d051a94e132ed7ec017"
+    },
+    {
+      "path": "dist/textures/shared/61ac06c667e159e38f70fced874774e6cb8ad0e007806d051a94e132ed7ec017.jpg.json",
+      "bytes": 1206,
+      "sha256": "706200e820a880b77a74c9530ab50e1a84a727e8f6979810dda26ce280e6086e"
+    },
+    {
+      "path": "dist/textures/shared/61ac06c667e159e38f70fced874774e6cb8ad0e007806d051a94e132ed7ec017.jpg.json.br",
+      "bytes": 434,
+      "sha256": "2354c9eb257e1ac6729a0bc4a3aed0a3ad5bb8e1bfddfec73ae8e9884c84e778"
+    },
+    {
+      "path": "dist/textures/shared/624d5f787bc5168c095dbd315af394af25211625c2c0f4ee70fdaff35440bf44.jpg",
+      "bytes": 74199,
+      "sha256": "624d5f787bc5168c095dbd315af394af25211625c2c0f4ee70fdaff35440bf44"
+    },
+    {
+      "path": "dist/textures/shared/624d5f787bc5168c095dbd315af394af25211625c2c0f4ee70fdaff35440bf44.jpg.json",
+      "bytes": 1056,
+      "sha256": "60afccd0833f8de1d88b62cab31b9244d7ddd282da7e753032cbe08f9e055dc7"
+    },
+    {
+      "path": "dist/textures/shared/624d5f787bc5168c095dbd315af394af25211625c2c0f4ee70fdaff35440bf44.jpg.json.br",
+      "bytes": 383,
+      "sha256": "57fed45758eb40b76268faabc4fa1471251d074d57422e1fb61fd62b794f6955"
+    },
+    {
+      "path": "dist/textures/shared/658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289.jpg",
+      "bytes": 2446,
+      "sha256": "658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289"
+    },
+    {
+      "path": "dist/textures/shared/658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289.jpg.json",
+      "bytes": 1017,
+      "sha256": "374a585b8832e28b26c080f180bba3aa20018647adac480cb4850ea394944cb1"
+    },
+    {
+      "path": "dist/textures/shared/658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289.jpg.json.br",
+      "bytes": 374,
+      "sha256": "301d2b3c0cb04a23f0aaedf4fd097ad825e57b4c5b4521a08eb5db5150b84b85"
+    },
+    {
+      "path": "dist/textures/shared/6676d5a3f9ac959001853962cbafd47a9380958079a305768b593b8d5cd5e662.jpg",
+      "bytes": 11225,
+      "sha256": "6676d5a3f9ac959001853962cbafd47a9380958079a305768b593b8d5cd5e662"
+    },
+    {
+      "path": "dist/textures/shared/6676d5a3f9ac959001853962cbafd47a9380958079a305768b593b8d5cd5e662.jpg.json",
+      "bytes": 1176,
+      "sha256": "57fbbfad836329e306b9ed5566aca7c81d5a6ddcbd303c7169ec7309800df7b0"
+    },
+    {
+      "path": "dist/textures/shared/6676d5a3f9ac959001853962cbafd47a9380958079a305768b593b8d5cd5e662.jpg.json.br",
+      "bytes": 373,
+      "sha256": "3625b09236349d9cb314e2c8a14ccfde8b4d12f771ff7b89244591ce49693050"
+    },
+    {
+      "path": "dist/textures/shared/66e707e03274025c0a083dfd76992f9baf41c10f11ef165eb1be33daed517c74.jpg",
+      "bytes": 27250,
+      "sha256": "66e707e03274025c0a083dfd76992f9baf41c10f11ef165eb1be33daed517c74"
+    },
+    {
+      "path": "dist/textures/shared/66e707e03274025c0a083dfd76992f9baf41c10f11ef165eb1be33daed517c74.jpg.json",
+      "bytes": 1176,
+      "sha256": "4f6f9d18f508566a02886a0aa815c999c352ba99c7e63bf4afd2ae5549a6933b"
+    },
+    {
+      "path": "dist/textures/shared/66e707e03274025c0a083dfd76992f9baf41c10f11ef165eb1be33daed517c74.jpg.json.br",
+      "bytes": 364,
+      "sha256": "4da6ab76c69ad79373ed66422a2a457f62f18efb67e21444afb60010ad3211d4"
+    },
+    {
+      "path": "dist/textures/shared/686df3477d4029a7ac1cdfa659a25cfec1abf3ec1de9974720c4785d16d94399.jpg",
+      "bytes": 10824,
+      "sha256": "686df3477d4029a7ac1cdfa659a25cfec1abf3ec1de9974720c4785d16d94399"
+    },
+    {
+      "path": "dist/textures/shared/686df3477d4029a7ac1cdfa659a25cfec1abf3ec1de9974720c4785d16d94399.jpg.json",
+      "bytes": 1014,
+      "sha256": "2048b6053c458aaab9fec5dd90984fed3fa6fb85ce6b7560ba1f65b919480866"
+    },
+    {
+      "path": "dist/textures/shared/686df3477d4029a7ac1cdfa659a25cfec1abf3ec1de9974720c4785d16d94399.jpg.json.br",
+      "bytes": 373,
+      "sha256": "018a21445d8a8ba59ed9751e3d88da348b48d7717ba5ec94b9eb0d49f914123c"
+    },
+    {
+      "path": "dist/textures/shared/6a8c65cbfa1cf563b4ccaa74b7ac5dde04d87572ebd21ee911db02a0423a541c.jpg",
+      "bytes": 38907,
+      "sha256": "6a8c65cbfa1cf563b4ccaa74b7ac5dde04d87572ebd21ee911db02a0423a541c"
+    },
+    {
+      "path": "dist/textures/shared/6a8c65cbfa1cf563b4ccaa74b7ac5dde04d87572ebd21ee911db02a0423a541c.jpg.json",
+      "bytes": 923,
+      "sha256": "bde58670c34a5dc5463fc1de4fe93117879f9759ed1f529a1e1d44d9c0dcefb7"
+    },
+    {
+      "path": "dist/textures/shared/6a8c65cbfa1cf563b4ccaa74b7ac5dde04d87572ebd21ee911db02a0423a541c.jpg.json.br",
+      "bytes": 360,
+      "sha256": "920060cf1d0af1d30fc16c5e0f733da69beda8234f703cbb56251a0e2b457ad8"
+    },
+    {
+      "path": "dist/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg",
+      "bytes": 4713,
+      "sha256": "6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9"
+    },
+    {
+      "path": "dist/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg.json",
+      "bytes": 1032,
+      "sha256": "23e277916aeb0eca14682054453ac5925d389f4f55486feb8f6ac6b3d3110294"
+    },
+    {
+      "path": "dist/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg.json.br",
+      "bytes": 374,
+      "sha256": "dc1da77313fb300ab631207d1f3d6f698f136a0ace6fdeb081e7aa8d42987fa8"
+    },
+    {
+      "path": "dist/textures/shared/6dc8be209ae60c77b9d3f34c86172c03eb10d9827bcaff8babbc4fc40ceb6897.jpg",
+      "bytes": 42306,
+      "sha256": "6dc8be209ae60c77b9d3f34c86172c03eb10d9827bcaff8babbc4fc40ceb6897"
+    },
+    {
+      "path": "dist/textures/shared/6dc8be209ae60c77b9d3f34c86172c03eb10d9827bcaff8babbc4fc40ceb6897.jpg.json",
+      "bytes": 932,
+      "sha256": "e2d64c284650c58bd961f75c94b3002bd5523d5cb71dad7ec481ce650ad9f07f"
+    },
+    {
+      "path": "dist/textures/shared/6dc8be209ae60c77b9d3f34c86172c03eb10d9827bcaff8babbc4fc40ceb6897.jpg.json.br",
+      "bytes": 359,
+      "sha256": "58bd4368495b1964c9938ffdff844343b33a6a6f4350651cd7767c52c5e0d41d"
+    },
+    {
+      "path": "dist/textures/shared/732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a.jpg",
+      "bytes": 793,
+      "sha256": "732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a"
+    },
+    {
+      "path": "dist/textures/shared/732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a.jpg.json",
+      "bytes": 1148,
+      "sha256": "f69fc124d67ebe55f4237be4a51dc3e4117e88e8ea95f470eb59be5f678e807a"
+    },
+    {
+      "path": "dist/textures/shared/732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a.jpg.json.br",
+      "bytes": 393,
+      "sha256": "d3a42481c82d08c4413bd3efd84f2f04633b724c6f45543277dcf469aad76c79"
+    },
+    {
+      "path": "dist/textures/shared/75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730.jpg",
+      "bytes": 12485,
+      "sha256": "75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730"
+    },
+    {
+      "path": "dist/textures/shared/75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730.jpg.json",
+      "bytes": 1032,
+      "sha256": "3d22b10c2d9287fc18c2139f7e11042c6e6689e0f30977e28aca7ed3c59f0f14"
+    },
+    {
+      "path": "dist/textures/shared/75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730.jpg.json.br",
+      "bytes": 376,
+      "sha256": "86dc2b7bcd928ade5d7fda0a7b7df143df13c847ba03be3f579a7a47026a8b3c"
+    },
+    {
+      "path": "dist/textures/shared/7679fb1509f560beae25ea4e461c06f15e640b3a08656b7b560eeebba67718d0.jpg",
+      "bytes": 792,
+      "sha256": "7679fb1509f560beae25ea4e461c06f15e640b3a08656b7b560eeebba67718d0"
+    },
+    {
+      "path": "dist/textures/shared/7679fb1509f560beae25ea4e461c06f15e640b3a08656b7b560eeebba67718d0.jpg.json",
+      "bytes": 1206,
+      "sha256": "3a9950dda08bca3df07170a83471b3e3c6bd1f50d09af88d2e77f2ee438f735a"
+    },
+    {
+      "path": "dist/textures/shared/7679fb1509f560beae25ea4e461c06f15e640b3a08656b7b560eeebba67718d0.jpg.json.br",
+      "bytes": 432,
+      "sha256": "7fec0f471b191c1d4982203d97295cf5114bf06865ec1a9dfa9fb2b1aeaf07e1"
+    },
+    {
+      "path": "dist/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg",
+      "bytes": 2138,
+      "sha256": "77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4"
+    },
+    {
+      "path": "dist/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg.json",
+      "bytes": 1029,
+      "sha256": "77287ec9391432c0397df686d214f46d62b44f0b44b311c65329e62361afc798"
+    },
+    {
+      "path": "dist/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg.json.br",
+      "bytes": 376,
+      "sha256": "d22a8df1692f9380daca2fb0710d85b4bbf6a13bd21f2d8c7feeea0d6ff8cba2"
+    },
+    {
+      "path": "dist/textures/shared/78052b7bfc6e9ca7eea0d40e4585593b7e4f05717c01b5114b1340ed598b6864.jpg",
+      "bytes": 61849,
+      "sha256": "78052b7bfc6e9ca7eea0d40e4585593b7e4f05717c01b5114b1340ed598b6864"
+    },
+    {
+      "path": "dist/textures/shared/78052b7bfc6e9ca7eea0d40e4585593b7e4f05717c01b5114b1340ed598b6864.jpg.json",
+      "bytes": 938,
+      "sha256": "2a33237ca52d2b43e98e2a288646c1ec530e1f84de6622f091bf53783636f0ed"
+    },
+    {
+      "path": "dist/textures/shared/78052b7bfc6e9ca7eea0d40e4585593b7e4f05717c01b5114b1340ed598b6864.jpg.json.br",
+      "bytes": 368,
+      "sha256": "e5a46b9382608362d67467f610d5cf47991a41592de6bbc5b451f28aa7901e04"
+    },
+    {
+      "path": "dist/textures/shared/842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2.jpg",
+      "bytes": 1734,
+      "sha256": "842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2"
+    },
+    {
+      "path": "dist/textures/shared/842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2.jpg.json",
+      "bytes": 1035,
+      "sha256": "f420cef3458ee504b61919a147dd35672b1f85e8f201e83d908e00f148302372"
+    },
+    {
+      "path": "dist/textures/shared/842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2.jpg.json.br",
+      "bytes": 380,
+      "sha256": "8e1bc0dbd45b8b47e95f38b7996aa025f45d57116e3742a98cabcb1e6627ffb8"
+    },
+    {
+      "path": "dist/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg",
+      "bytes": 4922,
+      "sha256": "84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5"
+    },
+    {
+      "path": "dist/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg.json",
+      "bytes": 1029,
+      "sha256": "966d2f46666f41f7f03341f48ca68d54491444922b69b29b88fa33b1ed8d1284"
+    },
+    {
+      "path": "dist/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg.json.br",
+      "bytes": 376,
+      "sha256": "f6000f6d19b694b46b262ecffa71e96812b3d9af0a4687c7e84a14390590cf86"
+    },
+    {
+      "path": "dist/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg",
+      "bytes": 37012,
+      "sha256": "868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453"
+    },
+    {
+      "path": "dist/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg.json",
+      "bytes": 1062,
+      "sha256": "8fe7230de41f8d4efbb8c83b9f93003e45da4f9ec856265b91dcb1f7d1ed5d57"
+    },
+    {
+      "path": "dist/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg.json.br",
+      "bytes": 385,
+      "sha256": "e9d5ca91c1ecc7448be11af6b363690b18b7f140fa18652fcc507eecb795d1ac"
+    },
+    {
+      "path": "dist/textures/shared/86c72a568eaa2e49f778856cbe06b8fe325fad33f409f813759ee7791926671e.jpg",
+      "bytes": 1611,
+      "sha256": "86c72a568eaa2e49f778856cbe06b8fe325fad33f409f813759ee7791926671e"
+    },
+    {
+      "path": "dist/textures/shared/86c72a568eaa2e49f778856cbe06b8fe325fad33f409f813759ee7791926671e.jpg.json",
+      "bytes": 1176,
+      "sha256": "876de278c63eccb1823fefbbd702c394b34487ddb34a3b844a47298048013025"
+    },
+    {
+      "path": "dist/textures/shared/86c72a568eaa2e49f778856cbe06b8fe325fad33f409f813759ee7791926671e.jpg.json.br",
+      "bytes": 368,
+      "sha256": "43856183b446767ae007ee7e1f9d458ba9d061d12928a1ed8eb412befb8f83c6"
+    },
+    {
+      "path": "dist/textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg",
+      "bytes": 54985,
+      "sha256": "875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5"
+    },
+    {
+      "path": "dist/textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg.json",
+      "bytes": 935,
+      "sha256": "119af4e1149224705f277f3fc2587f9615343fdac23d5e70ad951ecc3cda1ef8"
+    },
+    {
+      "path": "dist/textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg.json.br",
+      "bytes": 363,
+      "sha256": "4853b05d25c1b3a0352ff2c1a65166d3bc6e547b32f6640587eda3cd3d4a04ac"
+    },
+    {
+      "path": "dist/textures/shared/88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b.jpg",
+      "bytes": 234084,
+      "sha256": "88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b"
+    },
+    {
+      "path": "dist/textures/shared/88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b.jpg.json",
+      "bytes": 1050,
+      "sha256": "92bbd40fcb7c390dc48f97b2f2c9b3cdd8fe592ab9b502d51c1f734c7a8606ed"
+    },
+    {
+      "path": "dist/textures/shared/88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b.jpg.json.br",
+      "bytes": 385,
+      "sha256": "c146d9238d2d9c222c4fa5e770a1be5c3bb13019c0ba6e5fbdea45a2af08f622"
+    },
+    {
+      "path": "dist/textures/shared/8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572.jpg",
+      "bytes": 24682,
+      "sha256": "8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572"
+    },
+    {
+      "path": "dist/textures/shared/8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572.jpg.json",
+      "bytes": 1011,
+      "sha256": "99e623e0d8088e187fde0862cd2813d081f189977f322952d191adef89a7f728"
+    },
+    {
+      "path": "dist/textures/shared/8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572.jpg.json.br",
+      "bytes": 372,
+      "sha256": "79d8babe51aa6550280d7d8564c57d3a53ff4f9c5792d9f38688641ddc7a4905"
+    },
+    {
+      "path": "dist/textures/shared/8f9dd214e4fd0b1ca51a918a3691ac019dcb61c0e57622b07179c620e6724203.jpg",
+      "bytes": 2769,
+      "sha256": "8f9dd214e4fd0b1ca51a918a3691ac019dcb61c0e57622b07179c620e6724203"
+    },
+    {
+      "path": "dist/textures/shared/8f9dd214e4fd0b1ca51a918a3691ac019dcb61c0e57622b07179c620e6724203.jpg.json",
+      "bytes": 1026,
+      "sha256": "be5d64e35db11d43a83d50fe3986d015bd819d3080e143645fda4cd9f4f760bf"
+    },
+    {
+      "path": "dist/textures/shared/8f9dd214e4fd0b1ca51a918a3691ac019dcb61c0e57622b07179c620e6724203.jpg.json.br",
+      "bytes": 372,
+      "sha256": "ff65f128322f4f72e0e69ca32eb41148cb8145d67923f45c2379cb81040b47f6"
+    },
+    {
+      "path": "dist/textures/shared/9180b12e8cfa3776c1ea5fe955362da744e5d8329bf9d4ba1e548fcb7fbfb133.jpg",
+      "bytes": 59557,
+      "sha256": "9180b12e8cfa3776c1ea5fe955362da744e5d8329bf9d4ba1e548fcb7fbfb133"
+    },
+    {
+      "path": "dist/textures/shared/9180b12e8cfa3776c1ea5fe955362da744e5d8329bf9d4ba1e548fcb7fbfb133.jpg.json",
+      "bytes": 941,
+      "sha256": "7d1e4544ef3e5ebbc9fadac6c36b835dd6681a13a928172a91a0ad80cf3d509e"
+    },
+    {
+      "path": "dist/textures/shared/9180b12e8cfa3776c1ea5fe955362da744e5d8329bf9d4ba1e548fcb7fbfb133.jpg.json.br",
+      "bytes": 363,
+      "sha256": "6e384a8a2a9eef2e4b5a748a0c5dcea3a12f1d168172da7b457e778905b94aa3"
+    },
+    {
+      "path": "dist/textures/shared/9545ac404f1d7db27dc203bca8d6dde50558a75e9f6898b376823fe04a68b979.jpg",
+      "bytes": 1977,
+      "sha256": "9545ac404f1d7db27dc203bca8d6dde50558a75e9f6898b376823fe04a68b979"
+    },
+    {
+      "path": "dist/textures/shared/9545ac404f1d7db27dc203bca8d6dde50558a75e9f6898b376823fe04a68b979.jpg.json",
+      "bytes": 1176,
+      "sha256": "2c339bfa0b5f05080b85b0e20c3cb31480d7c059b052dddbbdf53480dca86f69"
+    },
+    {
+      "path": "dist/textures/shared/9545ac404f1d7db27dc203bca8d6dde50558a75e9f6898b376823fe04a68b979.jpg.json.br",
+      "bytes": 369,
+      "sha256": "819bb3a00861de4990b0a97ddc8e87bd044ee3bf630318c1c6eaffab519b0c21"
+    },
+    {
+      "path": "dist/textures/shared/9722792fe74a71f2e7c9c94e6082a7856ff09d25db06251e53581d3a2342b61f.jpg",
+      "bytes": 26954,
+      "sha256": "9722792fe74a71f2e7c9c94e6082a7856ff09d25db06251e53581d3a2342b61f"
+    },
+    {
+      "path": "dist/textures/shared/9722792fe74a71f2e7c9c94e6082a7856ff09d25db06251e53581d3a2342b61f.jpg.json",
+      "bytes": 929,
+      "sha256": "bb0cf9b10238f2abf7827554260be7a856825b7eb48e126e1174fa24b5b99639"
+    },
+    {
+      "path": "dist/textures/shared/9722792fe74a71f2e7c9c94e6082a7856ff09d25db06251e53581d3a2342b61f.jpg.json.br",
+      "bytes": 360,
+      "sha256": "a0d35cdb48e1f931eed92c81071fb9965afaf72f79a2243deba494b23b9265eb"
+    },
+    {
+      "path": "dist/textures/shared/981d8ca5471498304862cf67928effa7b0958613dac35858f1a670035a5d0aab.jpg",
+      "bytes": 31296,
+      "sha256": "981d8ca5471498304862cf67928effa7b0958613dac35858f1a670035a5d0aab"
+    },
+    {
+      "path": "dist/textures/shared/981d8ca5471498304862cf67928effa7b0958613dac35858f1a670035a5d0aab.jpg.json",
+      "bytes": 1176,
+      "sha256": "de1e8ab1bfdd6486cec6c2a12f7b96582bce650d6a1a5b63217d5f21b3b0500e"
+    },
+    {
+      "path": "dist/textures/shared/981d8ca5471498304862cf67928effa7b0958613dac35858f1a670035a5d0aab.jpg.json.br",
+      "bytes": 365,
+      "sha256": "1ca31412770093d118859d45f41d070c192319215718d9b6f958988e17ae33b4"
+    },
+    {
+      "path": "dist/textures/shared/99e7261af4f216c962c13329d6e5c4329762a35649fa01d31b09c0cbfe5848d5.jpg",
+      "bytes": 7195,
+      "sha256": "99e7261af4f216c962c13329d6e5c4329762a35649fa01d31b09c0cbfe5848d5"
+    },
+    {
+      "path": "dist/textures/shared/99e7261af4f216c962c13329d6e5c4329762a35649fa01d31b09c0cbfe5848d5.jpg.json",
+      "bytes": 1148,
+      "sha256": "57d0490ce536f29e53cc302e8a68ba5213cb843011b3d77fd892fa3d703bc822"
+    },
+    {
+      "path": "dist/textures/shared/99e7261af4f216c962c13329d6e5c4329762a35649fa01d31b09c0cbfe5848d5.jpg.json.br",
+      "bytes": 392,
+      "sha256": "a5bbf2b9a972e9b405cd9953a8d427aef10591773b5d2f82c24675a545d007f6"
+    },
+    {
+      "path": "dist/textures/shared/9ea74b2019132078a7894864adc7209fccf97feb97a400ff74f599833f805fac.jpg",
+      "bytes": 22150,
+      "sha256": "9ea74b2019132078a7894864adc7209fccf97feb97a400ff74f599833f805fac"
+    },
+    {
+      "path": "dist/textures/shared/9ea74b2019132078a7894864adc7209fccf97feb97a400ff74f599833f805fac.jpg.json",
+      "bytes": 923,
+      "sha256": "b811a9f799b64709a7110e0a693ebc0aa812dbd43de042de6c6c0d567b87496e"
+    },
+    {
+      "path": "dist/textures/shared/9ea74b2019132078a7894864adc7209fccf97feb97a400ff74f599833f805fac.jpg.json.br",
+      "bytes": 359,
+      "sha256": "d004d32ab2303aded2de8d3f9b265b4fe9ef10d03c13382e1a9b9904287e8112"
+    },
+    {
+      "path": "dist/textures/shared/a00ce7407df2dbd988eeada98c6eec2c5171e74373b9b2ff282eac3681a11202.jpg",
+      "bytes": 173958,
+      "sha256": "a00ce7407df2dbd988eeada98c6eec2c5171e74373b9b2ff282eac3681a11202"
+    },
+    {
+      "path": "dist/textures/shared/a00ce7407df2dbd988eeada98c6eec2c5171e74373b9b2ff282eac3681a11202.jpg.json",
+      "bytes": 1176,
+      "sha256": "3884d8a55b05967e7e1742e8023e14f0932fef895f19268a537af8a366f2a203"
+    },
+    {
+      "path": "dist/textures/shared/a00ce7407df2dbd988eeada98c6eec2c5171e74373b9b2ff282eac3681a11202.jpg.json.br",
+      "bytes": 368,
+      "sha256": "cd1870721ec09e5ea1bc01e84939dac4b485d9ed5abdf3b9cee88d88d21ed147"
+    },
+    {
+      "path": "dist/textures/shared/a0f0ec5174d28c0b4a4f195e1141028966522cfee40d850166a0afe81f1c0b36.jpg",
+      "bytes": 60105,
+      "sha256": "a0f0ec5174d28c0b4a4f195e1141028966522cfee40d850166a0afe81f1c0b36"
+    },
+    {
+      "path": "dist/textures/shared/a0f0ec5174d28c0b4a4f195e1141028966522cfee40d850166a0afe81f1c0b36.jpg.json",
+      "bytes": 1176,
+      "sha256": "f3d44a1a866e94e00e750e72840c30e148b184617e1d6594ffe1359c4549ca97"
+    },
+    {
+      "path": "dist/textures/shared/a0f0ec5174d28c0b4a4f195e1141028966522cfee40d850166a0afe81f1c0b36.jpg.json.br",
+      "bytes": 365,
+      "sha256": "291f979a5484428b6485338ba947b09ec4a003d598e27eca0e9a549c01096403"
+    },
+    {
+      "path": "dist/textures/shared/a1edddfbe59d5c87d3230376d7db7674b0f47693e985127ede72c9fd69dc394d.jpg",
+      "bytes": 35899,
+      "sha256": "a1edddfbe59d5c87d3230376d7db7674b0f47693e985127ede72c9fd69dc394d"
+    },
+    {
+      "path": "dist/textures/shared/a1edddfbe59d5c87d3230376d7db7674b0f47693e985127ede72c9fd69dc394d.jpg.json",
+      "bytes": 1176,
+      "sha256": "e08b216d89386dc67e8bcea4e9e6313d44a460120cc37ecb890efc16aaa3f69c"
+    },
+    {
+      "path": "dist/textures/shared/a1edddfbe59d5c87d3230376d7db7674b0f47693e985127ede72c9fd69dc394d.jpg.json.br",
+      "bytes": 361,
+      "sha256": "d34201ad0e536a621d52ae3aa3dfa54f806913436c944a6cc8fdbed75fb4f086"
+    },
+    {
+      "path": "dist/textures/shared/a2586d8d4204ca6c065e45e210439353a82d9baffaeae2ccfb7b7b1792b71127.jpg",
+      "bytes": 37919,
+      "sha256": "a2586d8d4204ca6c065e45e210439353a82d9baffaeae2ccfb7b7b1792b71127"
+    },
+    {
+      "path": "dist/textures/shared/a2586d8d4204ca6c065e45e210439353a82d9baffaeae2ccfb7b7b1792b71127.jpg.json",
+      "bytes": 1176,
+      "sha256": "b6a905ce745d734a8d8b266f094ac2fc77d8eff8edd72a783ef31eb971e8930f"
+    },
+    {
+      "path": "dist/textures/shared/a2586d8d4204ca6c065e45e210439353a82d9baffaeae2ccfb7b7b1792b71127.jpg.json.br",
+      "bytes": 371,
+      "sha256": "a362f160d1feda06ab5433b755217ef1a460019550e5f6b5fd57081843fd70d0"
+    },
+    {
+      "path": "dist/textures/shared/a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab.jpg",
+      "bytes": 1933,
+      "sha256": "a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab"
+    },
+    {
+      "path": "dist/textures/shared/a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab.jpg.json",
+      "bytes": 1026,
+      "sha256": "3def69cf2b1c08d6aedc2d750a09e1a68dbb68691ee8b4b38db240e6ed5e4991"
+    },
+    {
+      "path": "dist/textures/shared/a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab.jpg.json.br",
+      "bytes": 375,
+      "sha256": "3b5af283fea441918008795f182dbec5a93fcb810d8fa7328844d31f72f40af2"
+    },
+    {
+      "path": "dist/textures/shared/a56acbb46a7184c304e2e9c5c4abea2c11f524931189f595425e261c1d0f0669.jpg",
+      "bytes": 20108,
+      "sha256": "a56acbb46a7184c304e2e9c5c4abea2c11f524931189f595425e261c1d0f0669"
+    },
+    {
+      "path": "dist/textures/shared/a56acbb46a7184c304e2e9c5c4abea2c11f524931189f595425e261c1d0f0669.jpg.json",
+      "bytes": 920,
+      "sha256": "4d89948235dc0d6789da301b8e5ae1447734d55067fe81e66bf4192b055fb0da"
+    },
+    {
+      "path": "dist/textures/shared/a56acbb46a7184c304e2e9c5c4abea2c11f524931189f595425e261c1d0f0669.jpg.json.br",
+      "bytes": 357,
+      "sha256": "d855000d60e7faef2c93bd7a3782e1f127f151cfcce6a42abc664fd054c7a851"
+    },
+    {
+      "path": "dist/textures/shared/a719f63063a4c742b3e1f01dd4563e633629d9fff77a1f5c509679c650cf0172.jpg",
+      "bytes": 35130,
+      "sha256": "a719f63063a4c742b3e1f01dd4563e633629d9fff77a1f5c509679c650cf0172"
+    },
+    {
+      "path": "dist/textures/shared/a719f63063a4c742b3e1f01dd4563e633629d9fff77a1f5c509679c650cf0172.jpg.json",
+      "bytes": 1053,
+      "sha256": "c308237b8ced5dbd3a01a83cb47b860401834e6c2f87eeb6bc9cae3b8fb11786"
+    },
+    {
+      "path": "dist/textures/shared/a719f63063a4c742b3e1f01dd4563e633629d9fff77a1f5c509679c650cf0172.jpg.json.br",
+      "bytes": 385,
+      "sha256": "d72dee865d8ae2544c799ef0d20d3efb0b465f7c330b918d01ff039da85bd30e"
+    },
+    {
+      "path": "dist/textures/shared/a76ba08fdfa388f823e39c5cb532f4bcf15da1494bf7bc3387350afeae72520c.jpg",
+      "bytes": 30037,
+      "sha256": "a76ba08fdfa388f823e39c5cb532f4bcf15da1494bf7bc3387350afeae72520c"
+    },
+    {
+      "path": "dist/textures/shared/a76ba08fdfa388f823e39c5cb532f4bcf15da1494bf7bc3387350afeae72520c.jpg.json",
+      "bytes": 938,
+      "sha256": "35f29edf09c315d0e708c21b31bd52fcda5555da0014c970d3a50e079416f7ae"
+    },
+    {
+      "path": "dist/textures/shared/a76ba08fdfa388f823e39c5cb532f4bcf15da1494bf7bc3387350afeae72520c.jpg.json.br",
+      "bytes": 360,
+      "sha256": "eae0ed2609b191230a82392ca4a6c46a4fd653b6bd752d0659c010f6ab2fc676"
+    },
+    {
+      "path": "dist/textures/shared/a8880d27fec45fa42198a63d22396faf04565ab49936cb53b534b4c7272a7494.jpg",
+      "bytes": 20570,
+      "sha256": "a8880d27fec45fa42198a63d22396faf04565ab49936cb53b534b4c7272a7494"
+    },
+    {
+      "path": "dist/textures/shared/a8880d27fec45fa42198a63d22396faf04565ab49936cb53b534b4c7272a7494.jpg.json",
+      "bytes": 1176,
+      "sha256": "c7eeb8be320abf339cde18f1659ebb84dd871a91391bb0f47fe6f72f8d5b5349"
+    },
+    {
+      "path": "dist/textures/shared/a8880d27fec45fa42198a63d22396faf04565ab49936cb53b534b4c7272a7494.jpg.json.br",
+      "bytes": 375,
+      "sha256": "659a52cd2723bbed03af6ae89a9546c2320fb245ea540cbaa69a29810bb72989"
+    },
+    {
+      "path": "dist/textures/shared/a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee.jpg",
+      "bytes": 14710,
+      "sha256": "a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee"
+    },
+    {
+      "path": "dist/textures/shared/a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee.jpg.json",
+      "bytes": 1026,
+      "sha256": "ec73b7aa804804329f2276921ee41d4547b010f5c26f623b1864e37a460884e3"
+    },
+    {
+      "path": "dist/textures/shared/a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee.jpg.json.br",
+      "bytes": 372,
+      "sha256": "24c3f6a43dc728fe9a5e78c1831bd34190c13332e33057837e1a1a002295ed53"
+    },
+    {
+      "path": "dist/textures/shared/a94c1d4158c2e581cb5effdb8c667af0a3f524449094d4b8e46ef8177fa43772.jpg",
+      "bytes": 59447,
+      "sha256": "a94c1d4158c2e581cb5effdb8c667af0a3f524449094d4b8e46ef8177fa43772"
+    },
+    {
+      "path": "dist/textures/shared/a94c1d4158c2e581cb5effdb8c667af0a3f524449094d4b8e46ef8177fa43772.jpg.json",
+      "bytes": 1176,
+      "sha256": "70a5ab655d52c28a3c0922b84f5e22d68ae6387a9ef027323c6823fb54074e78"
+    },
+    {
+      "path": "dist/textures/shared/a94c1d4158c2e581cb5effdb8c667af0a3f524449094d4b8e46ef8177fa43772.jpg.json.br",
+      "bytes": 370,
+      "sha256": "ac67f253883cc12d0bc16431d7cce2530f6e66ec4771ebfe43b07dcffb49b325"
+    },
+    {
+      "path": "dist/textures/shared/a9f57eafc82760c4badf93419fd780e03e91a48aca5364b87a4fb3c4f88da585.jpg",
+      "bytes": 36592,
+      "sha256": "a9f57eafc82760c4badf93419fd780e03e91a48aca5364b87a4fb3c4f88da585"
+    },
+    {
+      "path": "dist/textures/shared/a9f57eafc82760c4badf93419fd780e03e91a48aca5364b87a4fb3c4f88da585.jpg.json",
+      "bytes": 923,
+      "sha256": "a272ccfa1c864e8b276f87c419534e22bac98e826ba848828b9dd5aab5d6e8d0"
+    },
+    {
+      "path": "dist/textures/shared/a9f57eafc82760c4badf93419fd780e03e91a48aca5364b87a4fb3c4f88da585.jpg.json.br",
+      "bytes": 361,
+      "sha256": "1e0bfea3628aa6b0b1a6d23e8ea28e089d1c024cc5dda4ff4c8591807fb19e57"
+    },
+    {
+      "path": "dist/textures/shared/aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4.jpg",
+      "bytes": 5635,
+      "sha256": "aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4"
+    },
+    {
+      "path": "dist/textures/shared/aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4.jpg.json",
+      "bytes": 1035,
+      "sha256": "5a3d3af61db1e74328c14c968e1444a2a280aafb3564ee9347e6f33ce320daa0"
+    },
+    {
+      "path": "dist/textures/shared/aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4.jpg.json.br",
+      "bytes": 378,
+      "sha256": "8aa345555f729ef37f902a2cb2cdd6f55b97898a12d0a06fa13c32aabaed6916"
+    },
+    {
+      "path": "dist/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg",
+      "bytes": 17125,
+      "sha256": "b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7"
+    },
+    {
+      "path": "dist/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg.json",
+      "bytes": 1026,
+      "sha256": "9d2faa6dc295233622df68b76792c21bf63f849553730a4d9f3093748af032a4"
+    },
+    {
+      "path": "dist/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg.json.br",
+      "bytes": 372,
+      "sha256": "8cf19cd7fc083aad74feec9be77ee5beba2f3770694028be0a083196fc338d21"
+    },
+    {
+      "path": "dist/textures/shared/b30efd1c8f83632f111693a7a61e8084a1cd03cd9c3c69fc042bfca1ba84837e.jpg",
+      "bytes": 39164,
+      "sha256": "b30efd1c8f83632f111693a7a61e8084a1cd03cd9c3c69fc042bfca1ba84837e"
+    },
+    {
+      "path": "dist/textures/shared/b30efd1c8f83632f111693a7a61e8084a1cd03cd9c3c69fc042bfca1ba84837e.jpg.json",
+      "bytes": 1176,
+      "sha256": "58e2ef936d057bb04aa23fe19dfd09a0abd46c91099a8860e7fc23e986b48710"
+    },
+    {
+      "path": "dist/textures/shared/b30efd1c8f83632f111693a7a61e8084a1cd03cd9c3c69fc042bfca1ba84837e.jpg.json.br",
+      "bytes": 371,
+      "sha256": "f3d54e09c6ab0b263ce3c9d409fff40f08c14b98a6ec8278be803a7b3f8cd14e"
+    },
+    {
+      "path": "dist/textures/shared/b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580.jpg",
+      "bytes": 9187,
+      "sha256": "b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580"
+    },
+    {
+      "path": "dist/textures/shared/b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580.jpg.json",
+      "bytes": 1176,
+      "sha256": "f6b69f75023a80077c9af087afa7c4451fddd8985622462e0f2e85473556db46"
+    },
+    {
+      "path": "dist/textures/shared/b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580.jpg.json.br",
+      "bytes": 368,
+      "sha256": "1a470636846c199655aa8d7e4771208231431c8e874e18bf43ef916c539c8e36"
+    },
+    {
+      "path": "dist/textures/shared/bb38f93d0dc18bc6c478273f2ee014ed859f8a91d74f56acfe53e459a41cc0ba.jpg",
+      "bytes": 25865,
+      "sha256": "bb38f93d0dc18bc6c478273f2ee014ed859f8a91d74f56acfe53e459a41cc0ba"
+    },
+    {
+      "path": "dist/textures/shared/bb38f93d0dc18bc6c478273f2ee014ed859f8a91d74f56acfe53e459a41cc0ba.jpg.json",
+      "bytes": 1074,
+      "sha256": "a2793029594ee2fc2ac0913eb9784c32551a6c1f809b1b90df528f4ceb477b21"
+    },
+    {
+      "path": "dist/textures/shared/bb38f93d0dc18bc6c478273f2ee014ed859f8a91d74f56acfe53e459a41cc0ba.jpg.json.br",
+      "bytes": 384,
+      "sha256": "01b1d1e70a807d31f225848c82cdcf81994edfbacb0b2732d9f7c8bf5b0dd68a"
+    },
+    {
+      "path": "dist/textures/shared/bbee3c10b159f2d8dcf76be111458a85b1ef5bf08065239728c031596a87bb79.jpg",
+      "bytes": 27573,
+      "sha256": "bbee3c10b159f2d8dcf76be111458a85b1ef5bf08065239728c031596a87bb79"
+    },
+    {
+      "path": "dist/textures/shared/bbee3c10b159f2d8dcf76be111458a85b1ef5bf08065239728c031596a87bb79.jpg.json",
+      "bytes": 1176,
+      "sha256": "bbe8d001a2c9e1d273a2ac5d21b6b286b67a630bd57610fc238c3c2ae2a33424"
+    },
+    {
+      "path": "dist/textures/shared/bbee3c10b159f2d8dcf76be111458a85b1ef5bf08065239728c031596a87bb79.jpg.json.br",
+      "bytes": 371,
+      "sha256": "70656d5e6cce4e8080c270adc7f83c2dd3728c60a76b0f97f64ab09000686a84"
+    },
+    {
+      "path": "dist/textures/shared/bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990.jpg",
+      "bytes": 9214,
+      "sha256": "bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990"
+    },
+    {
+      "path": "dist/textures/shared/bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990.jpg.json",
+      "bytes": 1023,
+      "sha256": "fbe184a969b81a1e8a0e18e6b73c8741fff01e89d43026c0067e3c6ddfb8e8e9"
+    },
+    {
+      "path": "dist/textures/shared/bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990.jpg.json.br",
+      "bytes": 374,
+      "sha256": "8588cb0926cd4d7c14ba2c0bbc6c6cadac5a0f57cc1afd4d4089b37320540373"
+    },
+    {
+      "path": "dist/textures/shared/be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee.jpg",
+      "bytes": 2099,
+      "sha256": "be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee"
+    },
+    {
+      "path": "dist/textures/shared/be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee.jpg.json",
+      "bytes": 1029,
+      "sha256": "fdafae154df6da433740d2e43e0d235057551aceaf1724dcc10aca3c5f501050"
+    },
+    {
+      "path": "dist/textures/shared/be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee.jpg.json.br",
+      "bytes": 377,
+      "sha256": "e08d907cac4628f60be1296467c7b5d133abe4e3f5fc59ea250d28f7bd6e9d5f"
+    },
+    {
+      "path": "dist/textures/shared/c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc.jpg",
+      "bytes": 1873,
+      "sha256": "c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc"
+    },
+    {
+      "path": "dist/textures/shared/c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc.jpg.json",
+      "bytes": 1176,
+      "sha256": "9a870888064e67233b7a679dfca9b788d18f47a5519784c568c9a8e658458475"
+    },
+    {
+      "path": "dist/textures/shared/c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc.jpg.json.br",
+      "bytes": 366,
+      "sha256": "cafe72141731ffed631ecce44136e637441646f2c361d60c7258dad2762980d2"
+    },
+    {
+      "path": "dist/textures/shared/c63db15d387e573e4b56723258382adb00ead53dccc49b558eaf97852f4880ba.jpg",
+      "bytes": 24714,
+      "sha256": "c63db15d387e573e4b56723258382adb00ead53dccc49b558eaf97852f4880ba"
+    },
+    {
+      "path": "dist/textures/shared/c63db15d387e573e4b56723258382adb00ead53dccc49b558eaf97852f4880ba.jpg.json",
+      "bytes": 1074,
+      "sha256": "fe1f451390b86ba6d170cee81230b1e9f0ff586be943af75379d91146716361c"
+    },
+    {
+      "path": "dist/textures/shared/c63db15d387e573e4b56723258382adb00ead53dccc49b558eaf97852f4880ba.jpg.json.br",
+      "bytes": 388,
+      "sha256": "82ae65b91c65f3ed0e945a13e13c29e837e8e5c72234d759394d31349c01f24a"
+    },
+    {
+      "path": "dist/textures/shared/c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234.jpg",
+      "bytes": 13925,
+      "sha256": "c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234"
+    },
+    {
+      "path": "dist/textures/shared/c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234.jpg.json",
+      "bytes": 1026,
+      "sha256": "6b40ebb6d446cdfa2ac42a7f0529f3a9eb04398c7188ce72353b005b7036d231"
+    },
+    {
+      "path": "dist/textures/shared/c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234.jpg.json.br",
+      "bytes": 371,
+      "sha256": "5ac30482caeb311fed7507e3e9ec3d6c85c89075237f763fe8181ea68f188efa"
+    },
+    {
+      "path": "dist/textures/shared/c8ca3a5f52e5b071ea50666338434314144d73538078a1616d5b8654a2aee0ac.jpg",
+      "bytes": 37300,
+      "sha256": "c8ca3a5f52e5b071ea50666338434314144d73538078a1616d5b8654a2aee0ac"
+    },
+    {
+      "path": "dist/textures/shared/c8ca3a5f52e5b071ea50666338434314144d73538078a1616d5b8654a2aee0ac.jpg.json",
+      "bytes": 1176,
+      "sha256": "d3eeb078c9685ec1324b8b1723aeaf222882102a0fe66ac85edc4e1292d5277d"
+    },
+    {
+      "path": "dist/textures/shared/c8ca3a5f52e5b071ea50666338434314144d73538078a1616d5b8654a2aee0ac.jpg.json.br",
+      "bytes": 372,
+      "sha256": "7a5b0b24140abaa38a83e71db7942f3f2857db0278f533853d973f825bb5b49d"
+    },
+    {
+      "path": "dist/textures/shared/caca1c21ee9230817110c91258cfa513d8b13c6e5702386adf49ee9b12a566ae.jpg",
+      "bytes": 44100,
+      "sha256": "caca1c21ee9230817110c91258cfa513d8b13c6e5702386adf49ee9b12a566ae"
+    },
+    {
+      "path": "dist/textures/shared/caca1c21ee9230817110c91258cfa513d8b13c6e5702386adf49ee9b12a566ae.jpg.json",
+      "bytes": 1050,
+      "sha256": "838278d12cea7f3863a77e2c7aa4c4cc9b005d46eba2b24efbc988c9ae1a8270"
+    },
+    {
+      "path": "dist/textures/shared/caca1c21ee9230817110c91258cfa513d8b13c6e5702386adf49ee9b12a566ae.jpg.json.br",
+      "bytes": 382,
+      "sha256": "87406f054198a9d5712260ac85748dfa9884d9957f01004bd399aceff93db94f"
+    },
+    {
+      "path": "dist/textures/shared/caffd36ee7d3fd2d69efdc2dc8076be9dc0765b63446a5e2123afea227053c45.jpg",
+      "bytes": 4668,
+      "sha256": "caffd36ee7d3fd2d69efdc2dc8076be9dc0765b63446a5e2123afea227053c45"
+    },
+    {
+      "path": "dist/textures/shared/caffd36ee7d3fd2d69efdc2dc8076be9dc0765b63446a5e2123afea227053c45.jpg.json",
+      "bytes": 1176,
+      "sha256": "3b5db30e5d92f30c251e2535ebfcfdc51ff4f6f4c83a2c8308edeeaa1d48ab04"
+    },
+    {
+      "path": "dist/textures/shared/caffd36ee7d3fd2d69efdc2dc8076be9dc0765b63446a5e2123afea227053c45.jpg.json.br",
+      "bytes": 364,
+      "sha256": "be079d7c31b03dae463fac80cc2d12afb8cc91287aa4904cd306b74446df4ff5"
+    },
+    {
+      "path": "dist/textures/shared/cca62e287c154acbcb8f39fda31e5471f8650e2f9c5fdc29a24e13913ee6f604.jpg",
+      "bytes": 59189,
+      "sha256": "cca62e287c154acbcb8f39fda31e5471f8650e2f9c5fdc29a24e13913ee6f604"
+    },
+    {
+      "path": "dist/textures/shared/cca62e287c154acbcb8f39fda31e5471f8650e2f9c5fdc29a24e13913ee6f604.jpg.json",
+      "bytes": 947,
+      "sha256": "45160014b3bf9a703c2741a87af3f473892acd2e5ca9d3fddcd211f73597b2d4"
+    },
+    {
+      "path": "dist/textures/shared/cca62e287c154acbcb8f39fda31e5471f8650e2f9c5fdc29a24e13913ee6f604.jpg.json.br",
+      "bytes": 362,
+      "sha256": "662ad95e424c4de88b0ae7700120b6923256d51e22f181a3499bca4613a8852a"
+    },
+    {
+      "path": "dist/textures/shared/cf9cce99ca8d415a4cd7186043289b5dc562def3e985cce7adaddd2e68d4eb7a.jpg",
+      "bytes": 64683,
+      "sha256": "cf9cce99ca8d415a4cd7186043289b5dc562def3e985cce7adaddd2e68d4eb7a"
+    },
+    {
+      "path": "dist/textures/shared/cf9cce99ca8d415a4cd7186043289b5dc562def3e985cce7adaddd2e68d4eb7a.jpg.json",
+      "bytes": 1083,
+      "sha256": "53ff443e1b7aac09ab0b545ad655dd9a368f5f6ff1a90bc5ce3538f10f801956"
+    },
+    {
+      "path": "dist/textures/shared/cf9cce99ca8d415a4cd7186043289b5dc562def3e985cce7adaddd2e68d4eb7a.jpg.json.br",
+      "bytes": 386,
+      "sha256": "079bcd3cd8047f4c36c8890b4c9a14f9de2cbace7c91a86bd4f899ea6fd6f5f6"
+    },
+    {
+      "path": "dist/textures/shared/d1fc83f653520af9347350a58a58d5e21bf6b664fc7f90009f3a0d097edb48b7.jpg",
+      "bytes": 2177,
+      "sha256": "d1fc83f653520af9347350a58a58d5e21bf6b664fc7f90009f3a0d097edb48b7"
+    },
+    {
+      "path": "dist/textures/shared/d1fc83f653520af9347350a58a58d5e21bf6b664fc7f90009f3a0d097edb48b7.jpg.json",
+      "bytes": 1148,
+      "sha256": "8d6de6bbbc896c1f32d80a753d6cf8361105bed3cfc72487b0610b0dfb4742c7"
+    },
+    {
+      "path": "dist/textures/shared/d1fc83f653520af9347350a58a58d5e21bf6b664fc7f90009f3a0d097edb48b7.jpg.json.br",
+      "bytes": 393,
+      "sha256": "f7fd875042cc9e2b88209d30b28f7b5cab6bfff0bf220cf73096dff0d9561023"
+    },
+    {
+      "path": "dist/textures/shared/d2c7e13f8d2d04d26dcdf3c7be4e061ca4789f60268e01d33a10ffce4730d0ec.jpg",
+      "bytes": 43094,
+      "sha256": "d2c7e13f8d2d04d26dcdf3c7be4e061ca4789f60268e01d33a10ffce4730d0ec"
+    },
+    {
+      "path": "dist/textures/shared/d2c7e13f8d2d04d26dcdf3c7be4e061ca4789f60268e01d33a10ffce4730d0ec.jpg.json",
+      "bytes": 1176,
+      "sha256": "be51c8494e6fbb788cd40ab28f4a8548d78b9a3b014c7bd8d039ab612bc75290"
+    },
+    {
+      "path": "dist/textures/shared/d2c7e13f8d2d04d26dcdf3c7be4e061ca4789f60268e01d33a10ffce4730d0ec.jpg.json.br",
+      "bytes": 371,
+      "sha256": "731da89da7f8df3155eca4f70b20b8ce33d7ccb2014d6d0d6c2fd6b939a265ed"
+    },
+    {
+      "path": "dist/textures/shared/d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe.jpg",
+      "bytes": 123297,
+      "sha256": "d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe"
+    },
+    {
+      "path": "dist/textures/shared/d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe.jpg.json",
+      "bytes": 1077,
+      "sha256": "c35603f2f40930263de0bdfd052de63bd1aef5f768c711da2e099f06ab5f39fb"
+    },
+    {
+      "path": "dist/textures/shared/d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe.jpg.json.br",
+      "bytes": 382,
+      "sha256": "817cdd01b83afd76bde86f488878294d9e68d23d6e98a751001f8671d55b983a"
+    },
+    {
+      "path": "dist/textures/shared/dbfeb31017fd9adc35a712b98567ff9560c3197d4b8df9e1d90b1acf0c2b77fe.jpg",
+      "bytes": 30673,
+      "sha256": "dbfeb31017fd9adc35a712b98567ff9560c3197d4b8df9e1d90b1acf0c2b77fe"
+    },
+    {
+      "path": "dist/textures/shared/dbfeb31017fd9adc35a712b98567ff9560c3197d4b8df9e1d90b1acf0c2b77fe.jpg.json",
+      "bytes": 1176,
+      "sha256": "552e42d7c0b9c9efd9a351141d5ffee15b80dff6fb02e58cd8017bfbcfbb5a81"
+    },
+    {
+      "path": "dist/textures/shared/dbfeb31017fd9adc35a712b98567ff9560c3197d4b8df9e1d90b1acf0c2b77fe.jpg.json.br",
+      "bytes": 364,
+      "sha256": "2ea7f36dcc223f44aced19f5ee94dc6e95e77bedcf2178b9f311ee2e2e538ce1"
+    },
+    {
+      "path": "dist/textures/shared/dce1a0927f4bfe594879be291229d558788c0145e63bfd52fb3e2dd50d11d1f1.jpg",
+      "bytes": 56496,
+      "sha256": "dce1a0927f4bfe594879be291229d558788c0145e63bfd52fb3e2dd50d11d1f1"
+    },
+    {
+      "path": "dist/textures/shared/dce1a0927f4bfe594879be291229d558788c0145e63bfd52fb3e2dd50d11d1f1.jpg.json",
+      "bytes": 1176,
+      "sha256": "2107340d1cd2e99dcce87b2b5bc2a55c9ba2f5b5148a8d71bfe688dfc5e93a3b"
+    },
+    {
+      "path": "dist/textures/shared/dce1a0927f4bfe594879be291229d558788c0145e63bfd52fb3e2dd50d11d1f1.jpg.json.br",
+      "bytes": 365,
+      "sha256": "36b725d37ad01945bdb5451adff3ad43391e4a03d35deab38c7588141e15a557"
+    },
+    {
+      "path": "dist/textures/shared/e0bd53b7eeb2fcc66813830eadd72705be48ea05e0dd4a3682e4abad4622c630.jpg",
+      "bytes": 26529,
+      "sha256": "e0bd53b7eeb2fcc66813830eadd72705be48ea05e0dd4a3682e4abad4622c630"
+    },
+    {
+      "path": "dist/textures/shared/e0bd53b7eeb2fcc66813830eadd72705be48ea05e0dd4a3682e4abad4622c630.jpg.json",
+      "bytes": 1176,
+      "sha256": "172392552cd4050b3842980434fae671cc543e1b874a4e57a91c5e8382775067"
+    },
+    {
+      "path": "dist/textures/shared/e0bd53b7eeb2fcc66813830eadd72705be48ea05e0dd4a3682e4abad4622c630.jpg.json.br",
+      "bytes": 364,
+      "sha256": "a3a1d681b5884647d0fa96e8c2da9ac2431d8ca8e9a12b9d2998db49aa8a9d19"
+    },
+    {
+      "path": "dist/textures/shared/e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67.jpg",
+      "bytes": 21391,
+      "sha256": "e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67"
+    },
+    {
+      "path": "dist/textures/shared/e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67.jpg.json",
+      "bytes": 1023,
+      "sha256": "30292105744d7f72ea769ac06b7ff86cb0801f8f89e676273e971259311bd778"
+    },
+    {
+      "path": "dist/textures/shared/e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67.jpg.json.br",
+      "bytes": 373,
+      "sha256": "046801835736c4d0eb2507ae5890199a75210e72e1ef8b22cd76e4d5aa61ee8f"
+    },
+    {
+      "path": "dist/textures/shared/e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6.jpg",
+      "bytes": 5283,
+      "sha256": "e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6"
+    },
+    {
+      "path": "dist/textures/shared/e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6.jpg.json",
+      "bytes": 1014,
+      "sha256": "43ea1a6d2079950ef669b2f50a37e2f1d0327f6cd52ea4a1f4a445683e36a824"
+    },
+    {
+      "path": "dist/textures/shared/e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6.jpg.json.br",
+      "bytes": 373,
+      "sha256": "0f9f44522768155569a67164ac3ad2eb5d100c07f38264d5e8b09d0c8db179a3"
+    },
+    {
+      "path": "dist/textures/shared/e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0.jpg",
+      "bytes": 796,
+      "sha256": "e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0"
+    },
+    {
+      "path": "dist/textures/shared/e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0.jpg.json",
+      "bytes": 1144,
+      "sha256": "c391a7f3d5eb64f8f43be5bb2a66b9b7c471bacf8b29e2e7eb07e46801b3cb11"
+    },
+    {
+      "path": "dist/textures/shared/e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0.jpg.json.br",
+      "bytes": 391,
+      "sha256": "5420501982e6102ae83522d15b6a8fd7ca997f67a677bf8d856c579decb776f9"
+    },
+    {
+      "path": "dist/textures/shared/eaf7188c6e9d083c8bf9042fc52a92fce46f3483a7d191e044478ebaaf8137ba.jpg",
+      "bytes": 58795,
+      "sha256": "eaf7188c6e9d083c8bf9042fc52a92fce46f3483a7d191e044478ebaaf8137ba"
+    },
+    {
+      "path": "dist/textures/shared/eaf7188c6e9d083c8bf9042fc52a92fce46f3483a7d191e044478ebaaf8137ba.jpg.json",
+      "bytes": 1176,
+      "sha256": "0772503b923fbb7ca1f3b662d53825e62375578bcaafd6a9b8c220da862ee6b4"
+    },
+    {
+      "path": "dist/textures/shared/eaf7188c6e9d083c8bf9042fc52a92fce46f3483a7d191e044478ebaaf8137ba.jpg.json.br",
+      "bytes": 363,
+      "sha256": "4e0ea04ec29c90dbbe7cf62778cf17b45a3dd08b28a0619b8bf2f312713ff42a"
+    },
+    {
+      "path": "dist/textures/shared/eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360.jpg",
+      "bytes": 5297,
+      "sha256": "eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360"
+    },
+    {
+      "path": "dist/textures/shared/eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360.jpg.json",
+      "bytes": 1026,
+      "sha256": "6e3a3977664f6a2477a6d589e6dfc6e1cd5843f3a4d913895b14d86ea4a2c1c1"
+    },
+    {
+      "path": "dist/textures/shared/eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360.jpg.json.br",
+      "bytes": 377,
+      "sha256": "454a19ba538ab85954f9319c042b11c088ffe9109cb337403d1e63d69a84b199"
+    },
+    {
+      "path": "dist/textures/shared/ec2e617a10cd1d38d77d2b70cba224df7e6aa86ed355407a01bfcdbc431e81e8.jpg",
+      "bytes": 53868,
+      "sha256": "ec2e617a10cd1d38d77d2b70cba224df7e6aa86ed355407a01bfcdbc431e81e8"
+    },
+    {
+      "path": "dist/textures/shared/ec2e617a10cd1d38d77d2b70cba224df7e6aa86ed355407a01bfcdbc431e81e8.jpg.json",
+      "bytes": 1176,
+      "sha256": "d30f012991272cc5713fd1b16ada71b58a3e22875e092a7ff6118e3c8e315ef9"
+    },
+    {
+      "path": "dist/textures/shared/ec2e617a10cd1d38d77d2b70cba224df7e6aa86ed355407a01bfcdbc431e81e8.jpg.json.br",
+      "bytes": 367,
+      "sha256": "6d11a612e7325b37eb9567ad16ec2a17afda1fb3a2263ba347f4e45204ecb434"
+    },
+    {
+      "path": "dist/textures/shared/ee68de79327befe9b7dbebe28f637eb19f47478504aba898895019cafaa730e5.jpg",
+      "bytes": 58056,
+      "sha256": "ee68de79327befe9b7dbebe28f637eb19f47478504aba898895019cafaa730e5"
+    },
+    {
+      "path": "dist/textures/shared/ee68de79327befe9b7dbebe28f637eb19f47478504aba898895019cafaa730e5.jpg.json",
+      "bytes": 947,
+      "sha256": "874ccb6629ccd60ce08a166d4565b2a1457348e93aa48bb3ec83c54ff0928060"
+    },
+    {
+      "path": "dist/textures/shared/ee68de79327befe9b7dbebe28f637eb19f47478504aba898895019cafaa730e5.jpg.json.br",
+      "bytes": 367,
+      "sha256": "dccf26ffa68a068949a7ddb791f45c0ec3c3362f39231e3c0f8a647207ed9249"
+    },
+    {
+      "path": "dist/textures/shared/eff85f9a2273d6b68b9e06b851be7485c992e2742272a13509feea4f0a29c3be.jpg",
+      "bytes": 7208,
+      "sha256": "eff85f9a2273d6b68b9e06b851be7485c992e2742272a13509feea4f0a29c3be"
+    },
+    {
+      "path": "dist/textures/shared/eff85f9a2273d6b68b9e06b851be7485c992e2742272a13509feea4f0a29c3be.jpg.json",
+      "bytes": 1206,
+      "sha256": "f101bfe0123d1b52c539be85eda8e3413f65710c26a0c5ae4528512d6e79921d"
+    },
+    {
+      "path": "dist/textures/shared/eff85f9a2273d6b68b9e06b851be7485c992e2742272a13509feea4f0a29c3be.jpg.json.br",
+      "bytes": 431,
+      "sha256": "156f376e599447f356922ebb1e4aa6d1bd7966cd268072e0bb04eb6c0043385d"
+    },
+    {
+      "path": "dist/textures/shared/f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc.png",
+      "bytes": 125295,
+      "sha256": "f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc"
+    },
+    {
+      "path": "dist/textures/shared/f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc.png.json",
+      "bytes": 1064,
+      "sha256": "08d7ad9d2b349d56f5aa5730fe1346d04dacc4acd6d421a75f8ec73f5d80fa4c"
+    },
+    {
+      "path": "dist/textures/shared/f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc.png.json.br",
+      "bytes": 335,
+      "sha256": "8ba6cf0f126de84be687721ae622e83ddb3a8737bb22c47532d95a5053e47957"
+    },
+    {
+      "path": "dist/textures/shared/f28aa204ab24ad509a24a8c7ecd3025da35177cca336291848201d55dc63623f.jpg",
+      "bytes": 59664,
+      "sha256": "f28aa204ab24ad509a24a8c7ecd3025da35177cca336291848201d55dc63623f"
+    },
+    {
+      "path": "dist/textures/shared/f28aa204ab24ad509a24a8c7ecd3025da35177cca336291848201d55dc63623f.jpg.json",
+      "bytes": 1176,
+      "sha256": "f125205a6ca7a032dd9da8bf613f3b30fd8dd4b83d639755dcd1ec14874773b4"
+    },
+    {
+      "path": "dist/textures/shared/f28aa204ab24ad509a24a8c7ecd3025da35177cca336291848201d55dc63623f.jpg.json.br",
+      "bytes": 364,
+      "sha256": "811e3979ee40af524f307ec3c9769397fdc78143be23b6cd601d7d2f2bbabbde"
+    },
+    {
+      "path": "dist/textures/shared/f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7.jpg",
+      "bytes": 5119,
+      "sha256": "f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7"
+    },
+    {
+      "path": "dist/textures/shared/f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7.jpg.json",
+      "bytes": 1029,
+      "sha256": "91db776dfab6f88fb80465be9241fba9536e5e4887df08c48e48bdaecdce06cf"
+    },
+    {
+      "path": "dist/textures/shared/f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7.jpg.json.br",
+      "bytes": 373,
+      "sha256": "ed4cb70f3e08c803d0a6ecd2102990718f6a2ff4204d77bdd78e740fa2a817c8"
+    },
+    {
+      "path": "dist/textures/shared/f408a796e3e42bbdfa11c9c7c025130675e1187b1d71ef840d134db5926988e6.jpg",
+      "bytes": 177885,
+      "sha256": "f408a796e3e42bbdfa11c9c7c025130675e1187b1d71ef840d134db5926988e6"
+    },
+    {
+      "path": "dist/textures/shared/f408a796e3e42bbdfa11c9c7c025130675e1187b1d71ef840d134db5926988e6.jpg.json",
+      "bytes": 1050,
+      "sha256": "ff2b4bac488d3ac52d4b4b9b55bd2846dc0481bda27aa163d3f0743b818e383c"
+    },
+    {
+      "path": "dist/textures/shared/f408a796e3e42bbdfa11c9c7c025130675e1187b1d71ef840d134db5926988e6.jpg.json.br",
+      "bytes": 380,
+      "sha256": "a9bbbc5bb292ca765d3284b1d12ea8a306b517df41983860efcac2801902e21c"
+    },
+    {
+      "path": "dist/textures/shared/f45ac0b991278ceaf41b57b19cf1e1d328fbd3ae50875fe1d83bb2a728b9e860.jpg",
+      "bytes": 2135,
+      "sha256": "f45ac0b991278ceaf41b57b19cf1e1d328fbd3ae50875fe1d83bb2a728b9e860"
+    },
+    {
+      "path": "dist/textures/shared/f45ac0b991278ceaf41b57b19cf1e1d328fbd3ae50875fe1d83bb2a728b9e860.jpg.json",
+      "bytes": 1140,
+      "sha256": "c3ea2503f95e813d45dfe114e7ea57633c1582277461b3d07f76781c3977be28"
+    },
+    {
+      "path": "dist/textures/shared/f45ac0b991278ceaf41b57b19cf1e1d328fbd3ae50875fe1d83bb2a728b9e860.jpg.json.br",
+      "bytes": 394,
+      "sha256": "be6c3f73832bd4b9882cb2890b3983362631908ec6f0b8fccb14616f7d058787"
+    },
+    {
+      "path": "dist/textures/shared/f6e2eb8f849db17d4accbf5a7567a69a99af3d682f4525ccb9f0c7aa9e8104af.jpg",
+      "bytes": 27498,
+      "sha256": "f6e2eb8f849db17d4accbf5a7567a69a99af3d682f4525ccb9f0c7aa9e8104af"
+    },
+    {
+      "path": "dist/textures/shared/f6e2eb8f849db17d4accbf5a7567a69a99af3d682f4525ccb9f0c7aa9e8104af.jpg.json",
+      "bytes": 1077,
+      "sha256": "901ddb0e5aed543c0e074e1bb0a5768efc8b8cbc85422831ebe765df3c11fba0"
+    },
+    {
+      "path": "dist/textures/shared/f6e2eb8f849db17d4accbf5a7567a69a99af3d682f4525ccb9f0c7aa9e8104af.jpg.json.br",
+      "bytes": 386,
+      "sha256": "2c14023fc2bc0bde2c0afb7e72604be5ac54d9660336bf2edd6e89e646a781d6"
+    },
+    {
+      "path": "dist/textures/shared/f6ee3874cbeb172c525f82a764860b57e1689f5f9a7c2e04742c07221f8fefc4.jpg",
+      "bytes": 27924,
+      "sha256": "f6ee3874cbeb172c525f82a764860b57e1689f5f9a7c2e04742c07221f8fefc4"
+    },
+    {
+      "path": "dist/textures/shared/f6ee3874cbeb172c525f82a764860b57e1689f5f9a7c2e04742c07221f8fefc4.jpg.json",
+      "bytes": 1176,
+      "sha256": "8872497bd51388e9ef6256fdc0ec29a5734732d8f57eacd1d8e3a88de229c0de"
+    },
+    {
+      "path": "dist/textures/shared/f6ee3874cbeb172c525f82a764860b57e1689f5f9a7c2e04742c07221f8fefc4.jpg.json.br",
+      "bytes": 363,
+      "sha256": "c2d1e859025ac2827d646159940ba023a83743c89b97b001fa297ec9c8ba411c"
+    },
+    {
+      "path": "dist/textures/shared/fa6fee81e8294a79ed10af0e7e1edd7df8db620c7f38cba2268d6bae432ae6e7.jpg",
+      "bytes": 17146,
+      "sha256": "fa6fee81e8294a79ed10af0e7e1edd7df8db620c7f38cba2268d6bae432ae6e7"
+    },
+    {
+      "path": "dist/textures/shared/fa6fee81e8294a79ed10af0e7e1edd7df8db620c7f38cba2268d6bae432ae6e7.jpg.json",
+      "bytes": 1176,
+      "sha256": "76c3204f4309291440640871f980f762dd44303b2bd303caaf2f9237170dedc3"
+    },
+    {
+      "path": "dist/textures/shared/fa6fee81e8294a79ed10af0e7e1edd7df8db620c7f38cba2268d6bae432ae6e7.jpg.json.br",
+      "bytes": 366,
+      "sha256": "5b4ac1a06615d2b2e1d0ec6bc0b56261809939686c4402bbc40ded9b68c3a8dc"
+    },
+    {
+      "path": "dist/textures/shared/fb068cbae6a3b7b1645bd160707d79808be81919c51fba7cd9f8a46bfa32a4aa.jpg",
+      "bytes": 60059,
+      "sha256": "fb068cbae6a3b7b1645bd160707d79808be81919c51fba7cd9f8a46bfa32a4aa"
+    },
+    {
+      "path": "dist/textures/shared/fb068cbae6a3b7b1645bd160707d79808be81919c51fba7cd9f8a46bfa32a4aa.jpg.json",
+      "bytes": 938,
+      "sha256": "5cd855a9e9755017d2df40c2488aa0ca0973ca1dbc0d548d473517194c3fe990"
+    },
+    {
+      "path": "dist/textures/shared/fb068cbae6a3b7b1645bd160707d79808be81919c51fba7cd9f8a46bfa32a4aa.jpg.json.br",
+      "bytes": 362,
+      "sha256": "ff1fb3253aeb67a9713549bf167e98d5c5ef178b5ae34811f679d8713f302734"
+    },
+    {
+      "path": "dist/textures/shared/fcee1acdcff7295cc50ef160a436dce2e7db46ba54f3168b118bf07c267adb94.jpg",
+      "bytes": 57194,
+      "sha256": "fcee1acdcff7295cc50ef160a436dce2e7db46ba54f3168b118bf07c267adb94"
+    },
+    {
+      "path": "dist/textures/shared/fcee1acdcff7295cc50ef160a436dce2e7db46ba54f3168b118bf07c267adb94.jpg.json",
+      "bytes": 950,
+      "sha256": "b06b590629ac644ef61f7b0cc3b2b2622a99291a1c96eeb0a6c0c38d557d8e03"
+    },
+    {
+      "path": "dist/textures/shared/fcee1acdcff7295cc50ef160a436dce2e7db46ba54f3168b118bf07c267adb94.jpg.json.br",
+      "bytes": 368,
+      "sha256": "fd5885d2f6d6782846e7b729b8f06db348086d28c72c0fd8e100a1f9b2d8c45f"
+    },
+    {
+      "path": "dist/textures/shared/ffa693c5f88595e5fbc204264893b62476c3d69285f440d615a281ee064c3c87.jpg",
+      "bytes": 33140,
+      "sha256": "ffa693c5f88595e5fbc204264893b62476c3d69285f440d615a281ee064c3c87"
+    },
+    {
+      "path": "dist/textures/shared/ffa693c5f88595e5fbc204264893b62476c3d69285f440d615a281ee064c3c87.jpg.json",
+      "bytes": 1074,
+      "sha256": "c1f11a913dfd6fe50fd070ba7bd99d978b4c1bd71e247dbd600e98f5ba5a18f6"
+    },
+    {
+      "path": "dist/textures/shared/ffa693c5f88595e5fbc204264893b62476c3d69285f440d615a281ee064c3c87.jpg.json.br",
+      "bytes": 388,
+      "sha256": "9f4589ae18801617acdac81a79acd689fccff94671831975865646bb0833f8c7"
+    },
+    {
+      "path": "dist/textures/vegetation/canopy-atlas.webp",
+      "bytes": 780842,
+      "sha256": "96dfeae3298d2e3a59026acb9cb64c0e4a3bcd692238ab49fe830d905be8de75"
+    },
+    {
+      "path": "dist/textures/vegetation/canopy-atlas.webp.json",
+      "bytes": 7225,
+      "sha256": "d1769ec54e41a8cb574f8dbdc937d7177759619f447a75c1b031a621459fea23"
+    },
+    {
+      "path": "dist/textures/vegetation/canopy-atlas.webp.json.br",
+      "bytes": 1542,
+      "sha256": "131c22166144c649d6063864643c2b0f450bb123ce63c55f750f6725dce3b00d"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 175,
+      "sha256": "02b7125a3eb0d6dcb45af238cb98627c05097a5f423f5b7358b524e9c5c511ea"
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 4269,
+      "sha256": "69a83fa14fc8185d7ca894a20efe0090bbe69d2aa9d9d1ced0a087b88985f423"
+    }
+  ]
+}

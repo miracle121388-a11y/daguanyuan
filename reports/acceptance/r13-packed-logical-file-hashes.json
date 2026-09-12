@@ -1,0 +1,323 @@
+{
+  "at": "2026-09-12T15:04:44.907376+00:00",
+  "revision": "spatial-garden-20260912-r13",
+  "directory": ".deploy/reference-20260912-150313-914164",
+  "logicalFiles": [
+    {
+      "url": "assets/GardenScene-DlW3G9D0.js",
+      "stored": "dist/assets/GardenScene-DlW3G9D0.js.br",
+      "decodedBytes": 735294,
+      "sha256": "0f3738fd6ecc6d0ca2b90fd228fb628fa7a1398c18e311f31d6dd110b7689dd1",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "assets/index-Bgpun30i.js",
+      "stored": "dist/assets/index-Bgpun30i.js.br",
+      "decodedBytes": 658456,
+      "sha256": "5744c584153baea844ab9f7f1ac36b10aa2bd3ec2c0c9d54aa201c576831fbbb",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "draco/draco_decoder.js",
+      "stored": "dist/draco/draco_decoder.js.br",
+      "decodedBytes": 512465,
+      "sha256": "8625489da79a805f4f2a7d511c3e52d8b4085608a9d2a4d5f4f9de5db0aea04f",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "draco/draco_decoder.wasm",
+      "stored": "dist/draco/draco_decoder.wasm.br",
+      "decodedBytes": 192420,
+      "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "draco/draco_wasm_wrapper.js",
+      "stored": "dist/draco/draco_wasm_wrapper.js.br",
+      "decodedBytes": 58456,
+      "sha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/overview-low.glb",
+      "stored": "dist/models/overview-low.glb.br",
+      "decodedBytes": 3324604,
+      "sha256": "244dfb85fe326f5acb362737e5aebcb96aed5edbdca1910dbfc4eec14396411a",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/overview.glb",
+      "stored": "dist/models/overview.glb.br",
+      "decodedBytes": 3324604,
+      "sha256": "244dfb85fe326f5acb362737e5aebcb96aed5edbdca1910dbfc4eec14396411a",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/aojingxiguan.glb",
+      "stored": "dist/models/places/aojingxiguan.glb.br",
+      "decodedBytes": 433408,
+      "sha256": "0f0b00b98b5b6bd4337917a482bc7ba4238ae4fb0845a4071436185287c6657d",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/daguanlou.glb",
+      "stored": "dist/models/places/daguanlou.glb.br",
+      "decodedBytes": 7569368,
+      "sha256": "0695f9e34aa4ea4c656e5aa16a3309d5235070df197b9e2e2baf0fda08a6d161",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/daguanyuan_gate.glb",
+      "stored": "dist/models/places/daguanyuan_gate.glb.br",
+      "decodedBytes": 639872,
+      "sha256": "b3bc34dc85f880fb24e65254af607b6ce4a4ac652c342a2cbf81b8e86d82a20c",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/daoxiangcun.glb",
+      "stored": "dist/models/places/daoxiangcun.glb.br",
+      "decodedBytes": 1140236,
+      "sha256": "5c26ab22f58e4284938c2e888a0f7f6794dde2f1c9c5cff2630573b6316efac7",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/dicuiting.glb",
+      "stored": "dist/models/places/dicuiting.glb.br",
+      "decodedBytes": 119504,
+      "sha256": "4b7f34fac8c46db03c12987369ae07eec2260c198668a34e94598d0d206c274a",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/hengwuyuan.glb",
+      "stored": "dist/models/places/hengwuyuan.glb.br",
+      "decodedBytes": 1352976,
+      "sha256": "a7a66b79f79f06de98ba584e962a28c4568afbf60d3608854e9ab0e273f4627f",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/longcuian.glb",
+      "stored": "dist/models/places/longcuian.glb.br",
+      "decodedBytes": 1179448,
+      "sha256": "f099a425dd4c9dad4726330e6041f8b624d1541bf6ce3d4b9381c3fcb9da4f5b",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/luxuean.glb",
+      "stored": "dist/models/places/luxuean.glb.br",
+      "decodedBytes": 79044,
+      "sha256": "928fee85bddea4dec015e1acdc43a7f15373464b7e279dde3bdd11f56b4c6949",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/nuanxiangwu.glb",
+      "stored": "dist/models/places/nuanxiangwu.glb.br",
+      "decodedBytes": 794504,
+      "sha256": "2d241cbcaa6fb0475dc6d537a3ae96cb74443a273691346fcfe119b094954953",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/ouxiangxie.glb",
+      "stored": "dist/models/places/ouxiangxie.glb.br",
+      "decodedBytes": 209736,
+      "sha256": "478e5019cae68dc9e7bb1b14f089283919fb81366def6aae51ba86003182a420",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/qiushuangzhai.glb",
+      "stored": "dist/models/places/qiushuangzhai.glb.br",
+      "decodedBytes": 1201852,
+      "sha256": "d037aa3a3895b23c6ee38b35d0d415d0b1dd663c732a98c27a3a4c353d943efc",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/qujingtongyou.glb",
+      "stored": "dist/models/places/qujingtongyou.glb.br",
+      "decodedBytes": 140252,
+      "sha256": "75d09a4b67d225850884e5e5f56ec1fcd16c52cbb1a7fef41c341aade4e7da12",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/tubishanzhuang.glb",
+      "stored": "dist/models/places/tubishanzhuang.glb.br",
+      "decodedBytes": 453624,
+      "sha256": "1a291473c60deae9968a74085aac7bd9fa7cb346587afcf90ea3ae2e3ea2619c",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/xiaoxiangguan.glb",
+      "stored": "dist/models/places/xiaoxiangguan.glb.br",
+      "decodedBytes": 2717332,
+      "sha256": "04ed3dbfdff959e5c0e7d04a9bb9fe1c6568eea764acd5a4b771119ec38db447",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places/yihongyuan.glb",
+      "stored": "dist/models/places/yihongyuan.glb.br",
+      "decodedBytes": 1499584,
+      "sha256": "0f10861d81ed6ce0db59a585a69c5c71dcdf524bb1e0fc31ff30135a4364b0a5",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/aojingxiguan.glb",
+      "stored": "dist/models/places-low/aojingxiguan.glb.br",
+      "decodedBytes": 257268,
+      "sha256": "5451d583794925ab382b9ea99b4b085ebd9e24ee1890ecb6ffb9a1388e727f2a",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/daguanlou.glb",
+      "stored": "dist/models/places-low/daguanlou.glb.br",
+      "decodedBytes": 4340100,
+      "sha256": "e74762ceb31b3c6666fa732f5380d1e079e75ab496a12c285400f9cca4acce43",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/daguanyuan_gate.glb",
+      "stored": "dist/models/places-low/daguanyuan_gate.glb.br",
+      "decodedBytes": 253936,
+      "sha256": "f89c8e767b82ff8e0eff34d109a7b4ac47a345e9a81b15ca4c8399dd8de696db",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/daoxiangcun.glb",
+      "stored": "dist/models/places-low/daoxiangcun.glb.br",
+      "decodedBytes": 445996,
+      "sha256": "4333e3715b4b80d75a9dc996da110a8e8712b44e19b145bfadfd62531a153149",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/dicuiting.glb",
+      "stored": "dist/models/places-low/dicuiting.glb.br",
+      "decodedBytes": 97376,
+      "sha256": "6220497cff9330ae22213e8f659d8d2dfea8913011b1932ea7373ecc7360bf26",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/hengwuyuan.glb",
+      "stored": "dist/models/places-low/hengwuyuan.glb.br",
+      "decodedBytes": 921260,
+      "sha256": "0c6e0728e692a651db0acc689627244d4262aa60a8e3bd4b85fa32d18db716d9",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/longcuian.glb",
+      "stored": "dist/models/places-low/longcuian.glb.br",
+      "decodedBytes": 591792,
+      "sha256": "341128a88ec9d8ee69d8964f49d0e8449c6ec58eaa99c69b43e578748c425585",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/luxuean.glb",
+      "stored": "dist/models/places-low/luxuean.glb.br",
+      "decodedBytes": 33196,
+      "sha256": "43d108950b6b06baadcde08b18ced61339465f1e64664f5c7afb3506e1a25cb8",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/nuanxiangwu.glb",
+      "stored": "dist/models/places-low/nuanxiangwu.glb.br",
+      "decodedBytes": 430872,
+      "sha256": "f6099a7c8e17062d7f276432ca9acd4be512d5de1a04552d453ff71bb0c6351f",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/ouxiangxie.glb",
+      "stored": "dist/models/places-low/ouxiangxie.glb.br",
+      "decodedBytes": 168444,
+      "sha256": "07b98db3f6a55d01358046bffcfb2f3d8a0d9fba97869910140d337222981eb8",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/qiushuangzhai.glb",
+      "stored": "dist/models/places-low/qiushuangzhai.glb.br",
+      "decodedBytes": 763232,
+      "sha256": "2618339364e18918480a5190ed1168d13bbe5ff79276abf8e3cfe33438789e6a",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/qujingtongyou.glb",
+      "stored": "dist/models/places-low/qujingtongyou.glb.br",
+      "decodedBytes": 77336,
+      "sha256": "45f5d7e7dcb8211dcd54d559b5f658750b8d0673abd2b41f65ea90d9e25ae5cf",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/tubishanzhuang.glb",
+      "stored": "dist/models/places-low/tubishanzhuang.glb.br",
+      "decodedBytes": 268784,
+      "sha256": "601f96af3ce59b794328dcac725119409b109780697856f29846883d204a800a",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/xiaoxiangguan.glb",
+      "stored": "dist/models/places-low/xiaoxiangguan.glb.br",
+      "decodedBytes": 1925716,
+      "sha256": "a7a704907408c38a4846a31b932c587c44f7b1d66073fac35cf47437b0d55a8c",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/places-low/yihongyuan.glb",
+      "stored": "dist/models/places-low/yihongyuan.glb.br",
+      "decodedBytes": 1009432,
+      "sha256": "c4716da5ca6f66209aebec4e46f07871669f011edbf07aacd5873cf21a2a5b35",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/vegetation/broadleaf-2.glb",
+      "stored": "dist/models/vegetation/broadleaf-2.glb.br",
+      "decodedBytes": 538000,
+      "sha256": "bb3da6ed511b0f30744d3499ae5f78027c93a4de2935f545c91c15835428bd78",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/vegetation/broadleaf-low.glb",
+      "stored": "dist/models/vegetation/broadleaf-low.glb.br",
+      "decodedBytes": 258568,
+      "sha256": "c1d103443c5f48b7ee43c6938c751dacbb17751bed14b6cb8ee71c8f1ae6a088",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/vegetation/broadleaf.glb",
+      "stored": "dist/models/vegetation/broadleaf.glb.br",
+      "decodedBytes": 596392,
+      "sha256": "5a511091165388f1e583d6b354e7ff75a8a7a4b5e8f4221abd0db0b56b634f5b",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/vegetation/fern-0.glb",
+      "stored": "dist/models/vegetation/fern-0.glb.br",
+      "decodedBytes": 6436,
+      "sha256": "8aef67c2379cb7cb060898120d4910e8cba978d31e7dbf75d75d7329c37b0127",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/vegetation/fern-1.glb",
+      "stored": "dist/models/vegetation/fern-1.glb.br",
+      "decodedBytes": 6572,
+      "sha256": "4d533487cbc55d315bf511d9e85dec070eb9787e8fb21cf294737d7087283a6c",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/vegetation/ground-cover.glb",
+      "stored": "dist/models/vegetation/ground-cover.glb.br",
+      "decodedBytes": 5040,
+      "sha256": "07e385fdb8907d70dfa6da15fc5def6442456dd858c5d3854572a91c4935d270",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/vegetation/pine.glb",
+      "stored": "dist/models/vegetation/pine.glb.br",
+      "decodedBytes": 198340,
+      "sha256": "b7d9fdf006b4b9fbd307e9a516f1bbe6a48c1135c5238d618bc2a556cfff57cf",
+      "sourceSha256Matches": true
+    },
+    {
+      "url": "models/vegetation/shrub.glb",
+      "stored": "dist/models/vegetation/shrub.glb.br",
+      "decodedBytes": 383972,
+      "sha256": "5ffd2711d3780ff90744cfbdcbf8fb935336fa5da31b7d995730d302df88b103",
+      "sourceSha256Matches": true
+    }
+  ],
+  "allSourceHashesMatch": true
+}

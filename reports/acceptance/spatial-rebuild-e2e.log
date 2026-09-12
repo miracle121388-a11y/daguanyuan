@@ -1,0 +1,104 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> node scripts/run_e2e.mjs
+
+[WebServer] (node:52148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:25684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:27620) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:47984) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:18276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\gallery.spec.ts:3:1 › a failed full-size reference image can be retried without leaving the viewer (4.5s)
+  ok  2 tests\e2e\gallery.spec.ts:16:1 › gallery retries a failed manifest and distinguishes spoiler-empty results (7.7s)
+  ok  3 tests\e2e\gallery.spec.ts:21:1 › 320px sources entry retains its accessible name (481ms)
+  x   4 tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots (31.7s)
+(node:28484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 tests\e2e\garden.spec.ts:19:1 › mobile bottom drawer and usable controls (7.8s)
+  ok  6 tests\e2e\garden.spec.ts:20:1 › model failure exposes retry and recovers (5.4s)
+  ok  7 tests\e2e\garden.spec.ts:21:1 › tour shows sourced stop content, travels, and arrives at the next stop (11.0s)
+  x   8 tests\e2e\garden.spec.ts:33:1 › the overhead garden view opens by keyboard and a map destination returns to its courtyard (2.2s)
+(node:49168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 tests\e2e\interior.spec.ts:3:1 › interior inspection lifts the roof and restores the complete courtyard (12.3s)
+  ok 10 tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard (17.2s)
+  ok 11 tests\e2e\mobile.spec.ts:24:1 › 320px phone controls remain inside the viewport (1.9s)
+
+
+  1) tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "yihongyuan"
+    Received: null
+
+    Call Log:
+    - Timeout 20000ms exceeded while waiting on the predicate
+
+       7 |  const errors:string[]=[],failed:string[]=[],external:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});page.on('request',r=>{if(!r.url().startsWith('http://127.0.0.1')&&!r.url().startsWith('data:')&&!r.url().startsWith('blob:'))external.push(r.url())});await ready(page);await page.waitForTimeout(1800);
+       8 |  await shot(page,'reports/browser/01-overview.png');
+    >  9 |  for(const id of ['xiaoxiangguan','yihongyuan','qiushuangzhai']){await page.getByRole('button',{name:'回到全园',exact:true}).click();await page.waitForTimeout(2000);const point=await page.evaluate(id=>(window as any).__gardenTest.project(id),id);const box=(await page.locator('canvas').boundingBox())!;await page.mouse.click(box.x+point.x,box.y+point.y);await expect.poll(async()=>(await state(page)).place).toBe(id)}
+         |                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+      10 |  for(const [i,name]of ['潇湘馆','怡红院','蘅芜苑','秋爽斋'].entries()){await place(page,name);await shot(page,`reports/browser/0${i+2}-${['xiaoxiangguan','yihongyuan','hengwuyuan','qiushuangzhai'][i]}.png`)}
+      11 |  await page.getByRole('button',{name:'人物群像',exact:true}).click();await page.locator('.character-list button').filter({hasText:'林黛玉'}).click();await expect.poll(async()=>(await state(page)).person).toBe('daiyu');await expect(page.locator('.related-places')).toContainText('潇湘馆');await shot(page,'reports/browser/06-character.png');
+      12 |  await page.getByRole('button',{name:'回目拾遗',exact:true}).click();await page.locator('.chapter-list button').filter({hasText:'第三十七回'}).click();await page.locator('.event-row').filter({hasText:'海棠结社'}).click();await expect.poll(async()=>(await state(page)).place).toBe('qiushuangzhai');await expect(page.locator('.detail-panel')).toContainText('探春');await page.locator('.source-list summary').first().click();await expect(page.locator('.source-body blockquote')).toBeVisible();await page.waitForTimeout(1800);await shot(page,'reports/browser/07-event.png');
+        at D:\Users\Lenovo\Desktop\大观园\tests\e2e\garden.spec.ts:9:405
+
+    Error Context: test-results\garden-published-scene-rea-0a456-rs-settings-and-screenshots\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\garden-published-scene-rea-0a456-rs-settings-and-screenshots\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\garden-published-scene-rea-0a456-rs-settings-and-screenshots\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests\e2e\garden.spec.ts:33:1 › the overhead garden view opens by keyboard and a map destination returns to its courtyard 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator: locator('.minimap svg path')
+    Expected: "evenodd"
+    Error: strict mode violation: locator('.minimap svg path') resolved to 5 elements:
+        1) <path d="M8 3H5a2 2 0 0 0-2 2v3"></path> aka getByRole('button', { name: '俯瞰', exact: true })
+        2) <path d="M21 8V5a2 2 0 0 0-2-2h-3"></path> aka getByRole('button', { name: '俯瞰', exact: true })
+        3) <path d="M3 16v3a2 2 0 0 0 2 2h3"></path> aka getByRole('button', { name: '俯瞰', exact: true })
+        4) <path d="M16 21h3a2 2 0 0 0 2-2v-3"></path> aka getByRole('button', { name: '俯瞰', exact: true })
+        5) <path fill="#adc5b5" fill-rule="evenodd" d="M-56,44L-55.552,39.456L-55.056,34.608L-54.584,29.432L-54.208,23.904L-54,18L-53.976,11.496L-54.088,4.408L-54.312,-2.928L-54.624,-10.176L-55,-17L-55.6,-23.352L-56.44,-29.456L-57.28,-35.384L-57.88,-41.208L-58,-47L-57.624,-52.824L-56.912,-58.632L-55.888,-64.328L-54.576,-69.816L-53,-75L-51.24,-80.008L-49.28,-84.904L-47,-89.496L-44.28,-93.592L-41,-97L-37.048,-99.656L-32.504,-101.688L-27.536,-103.192L-22.312,-104.264L-17,-105L-11.472,-105.288L-5.616,-105.064L0.37…></path> aka locator('.minimap > svg > path')
+
+    Call log:
+      - Expect "toHaveAttribute" locator('.minimap svg path') with timeout 20000ms
+      - waiting for locator('.minimap svg path')
+
+
+      36 |  await expect.poll(()=>page.evaluate(()=>(window as any).__gardenTest.state().planView)).toBe(true);
+      37 |  await expect(control).toHaveAttribute('aria-pressed','true');
+    > 38 |  const water=page.locator('.minimap svg path');await expect(water).toHaveAttribute('fill-rule','evenodd');
+         |                                                                    ^
+      39 |  await page.getByRole('button',{name:'地图选择潇湘馆',exact:true}).focus();await page.keyboard.press('Enter');
+      40 |  await expect(page.locator('.detail-scroll h2')).toHaveText('潇湘馆');
+      41 |  await expect.poll(()=>page.evaluate(()=>(window as any).__gardenTest.state().planView)).toBe(false);
+        at D:\Users\Lenovo\Desktop\大观园\tests\e2e\garden.spec.ts:38:68
+
+    Error Context: test-results\garden-the-overhead-garden-d14da-on-returns-to-its-courtyard\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\garden-the-overhead-garden-d14da-on-returns-to-its-courtyard\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\garden-the-overhead-garden-d14da-on-returns-to-its-courtyard\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots 
+    tests\e2e\garden.spec.ts:33:1 › the overhead garden view opens by keyboard and a map destination returns to its courtyard 
+  9 passed (2.0m)

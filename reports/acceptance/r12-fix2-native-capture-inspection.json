@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-12T13:47:03.048510+00:00",
+  "revision": "spatial-garden-20260912-r12-fix2",
+  "masterSha256": "2293c626fc32c0bd32ad1c269d8c1c0a76b877cbc63e3fd9b43288b37f2696a2",
+  "scope": "Capture identity and validity only; visual fix judgment belongs to the same independent reviewer.",
+  "captures": [
+    {
+      "file": "reports/blender/fix2-master-full.png",
+      "width": 1280,
+      "height": 800,
+      "sha256": "71040773cb7b143bd6e403f461cc9a6fe7d93675253f08e46f62e592c50b0234",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": "reports/blender/fix2-master-xiaoxiang.png",
+      "width": 1280,
+      "height": 800,
+      "sha256": "e1998c4103f4c4c3d7fe699b35512f297a520a3d30655c6b8dc256c27aa7dd21",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    }
+  ]
+}

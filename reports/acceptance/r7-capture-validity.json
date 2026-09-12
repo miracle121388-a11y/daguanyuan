@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-11T15:58:37.878496+00:00",
+  "validVisualSelfRounds": 2,
+  "capturesOpened": [
+    "desktop",
+    "plan",
+    "courtyard",
+    "interior",
+    "cutaway",
+    "night",
+    "central-ensemble",
+    "user-1266",
+    "mobile",
+    "mobile-courtyard",
+    "mobile-whole-courtyard",
+    "narrow"
+  ],
+  "currentCaptureValid": true,
+  "errors": [],
+  "failed": [],
+  "invalidHistoricalCapture": "r7-invalid-shader-captures.json",
+  "findings": [
+    "Morning landscape and facade remain too dark; canopy and bank material separation need brighter sky fill",
+    "Mobile detail controls occupy the entire initial reading height; give the idle route area to selected-place reading",
+    "Initial capture metrics show large frame stalls; measure separately before selecting any performance changes"
+  ],
+  "secondRoundConfirmation": "All 12 images opened: actual scene/room/cutaway/night states, no blank/loading frames. Mobile close/full view and reference identity visible. Root self-polishing complete; independent review still owed."
+}

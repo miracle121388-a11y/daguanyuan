@@ -1,0 +1,164 @@
+{
+  "completedAt": "2026-09-12T13:09:45.736Z",
+  "revision": "spatial-garden-20260912-r12-fix1",
+  "status": "documentation-complete",
+  "role": "impeccable_documenter",
+  "scope": "Refresh the implemented design system after reviewer-directed fix round 1; no visual verdict.",
+  "filesWritten": [
+    "DESIGN.md",
+    ".impeccable/design.json",
+    "reports/acceptance/r12-fix1-documenter-completion.json"
+  ],
+  "documents": [
+    {
+      "path": "DESIGN.md",
+      "bytes": 45231,
+      "sha256": "f04e806156d1e307b192d6a5ea96332a7de1b166505de20054b72aec5469a91a"
+    },
+    {
+      "path": ".impeccable/design.json",
+      "bytes": 40322,
+      "sha256": "2f239479e14e3de70a01861b62fbee431488d5beaf0890ae77e3f3d96be80a63"
+    }
+  ],
+  "documentStructure": {
+    "canonicalSections": [
+      "Overview",
+      "Colors",
+      "Typography",
+      "Layout",
+      "Elevation & Depth",
+      "Shapes",
+      "Components",
+      "Do's and Don'ts"
+    ],
+    "sidecarSchema": 2,
+    "componentPreviews": 12,
+    "namedRules": 5
+  },
+  "package": {
+    "directory": ".deploy/reference-20260912-124455-508731",
+    "bytes": 50915889,
+    "physicalFiles": 588,
+    "inventory": "reports/acceptance/r12-fix1-package-inventory.json",
+    "packedOnlyExtensions": [
+      "glb",
+      "js",
+      "wasm"
+    ],
+    "logicalResponse": "Identity and gzip reconstruct exact original bytes from the Brotli physical files; not every raw file physically exists in the upload directory.",
+    "uploaded": false
+  },
+  "currentNativeMasterSha256": "9acbf64e074e5bedce2db90eb389c9e97b03ffe53c0111b705207ef95ea35d31",
+  "finalCaptureCompletionNoticeReceived": true,
+  "imagesOpened": {
+    "count": 21,
+    "webStates": [
+      ".impeccable/review/r12-fix1/desktop.png",
+      ".impeccable/review/r12-fix1/plan.png",
+      ".impeccable/review/r12-fix1/courtyard.png",
+      ".impeccable/review/r12-fix1/interior.png",
+      ".impeccable/review/r12-fix1/cutaway.png",
+      ".impeccable/review/r12-fix1/night.png",
+      ".impeccable/review/r12-fix1/central-ensemble.png",
+      ".impeccable/review/r12-fix1/yihongyuan.png",
+      ".impeccable/review/r12-fix1/hengwuyuan.png",
+      ".impeccable/review/r12-fix1/qiushuangzhai.png",
+      ".impeccable/review/r12-fix1/character.png",
+      ".impeccable/review/r12-fix1/event.png",
+      ".impeccable/review/r12-fix1/user-1266.png",
+      ".impeccable/review/r12-fix1/mobile.png",
+      ".impeccable/review/r12-fix1/mobile-courtyard.png",
+      ".impeccable/review/r12-fix1/mobile-whole-courtyard.png",
+      ".impeccable/review/r12-fix1/narrow.png"
+    ],
+    "exactPackage": [
+      "reports/browser/r12-fix1-packaged-production-desktop.png",
+      "reports/browser/r12-fix1-packaged-production-mobile.png"
+    ],
+    "native": [
+      "reports/blender/fix1-master-full.png",
+      "reports/blender/fix1-master-xiaoxiang.png"
+    ],
+    "inventoryReferences": [
+      "reports/acceptance/r12-fix1-final-capture-inspection.json",
+      "reports/acceptance/r12-fix1-package-capture-inspection.json",
+      "reports/acceptance/r12-fix1-native-capture-inspection.json"
+    ],
+    "method": "Each current image was opened individually. Dimensions and capture hashes are attributed to the supplied inventories; this documenter did not independently rerun capture generation or all image hashes."
+  },
+  "sourceSample": [
+    "src/styles/reference-world.css",
+    "src/scene/materials.ts",
+    "src/scene/GardenScene.tsx",
+    "src/scene/GardenWater.tsx",
+    "src/scene/LivingTrees.tsx",
+    "config/craft.materials.json",
+    "config/garden.planting.json",
+    "public/scene-manifest.json",
+    "blender/native_ground.py",
+    "blender/focal_botany.py",
+    "blender/refresh_focal_landscape.py",
+    "scripts/bake_focal_foliage.py"
+  ],
+  "currentReportBasis": [
+    "reports/acceptance/r12-fix1-release-model-verification.status.json",
+    "reports/acceptance/r12-fix1-focal-pixels.json",
+    "reports/acceptance/r12-fix1-release-e2e.status.json",
+    "reports/acceptance/r12-fix1-playwright-final.json",
+    "reports/acceptance/r12-fix1-mobile-4g-final.json",
+    "reports/acceptance/r12-fix1-reference-smoke.json",
+    "reports/acceptance/r12-fix1-performance-final.json",
+    "docs/PERFORMANCE.md",
+    "reports/acceptance/r12-fix1-packaged-production-smoke.json",
+    "reports/acceptance/r12-fix1-delivery-compression.json",
+    "reports/acceptance/r12-fix1-provenance-final.log"
+  ],
+  "factualReconciliations": [
+    "r12-fix1-final-e2e.log contains the earlier 10-pass/1-failure mobile budget run despite its name. The later release-e2e status has exit 0 and current Playwright JSON records 11 expected, 0 skipped/unexpected/flaky. The earlier failure is retained as history.",
+    "The scene revision is r12-fix1 while config/craft.materials.json intentionally remains the base r12 revision; five botanical roles are assembled separately.",
+    "Current native images start with fix1-, and their render record is reports/acceptance/fix1-master-render-evidence.json. The old r12 images and master hash are historical.",
+    "The new package stores GLB/JS/WASM as Brotli only; the documented invariant is exact decoded logical responses, not physical raw-file retention."
+  ],
+  "historyPreserved": [
+    "r11 candidate and prior scan",
+    "r12 exact candidate, full review FIX and five original findings",
+    "earlier package/mobile-budget/image-relocation failures",
+    "r12 source-crown repair"
+  ],
+  "notCanonized": [
+    "Very dark focal leaf silhouettes",
+    "Sparse or thin low plants and broad smooth soil transitions",
+    "Modeled furnishing appearance",
+    "Unconfirmed moonlit depth"
+  ],
+  "boundaries": {
+    "authenticatedHistoricalFormSeed": "missing; unmet; no reroll or reconstructed output",
+    "approvedWebComp": "none",
+    "qualityBarCard": "none",
+    "fixVerdict": "pending independent reviewer of the five original findings",
+    "visualApproval": false,
+    "realPhoneHardware": false,
+    "stableFpsCertification": false,
+    "publicConnectivityCertification": false,
+    "sourceAuditExhaustive": false
+  },
+  "actionsNotPerformed": [
+    "implementation or asset edits",
+    "application tests",
+    "builds",
+    "browser automation",
+    "detector",
+    "context or seed rerun",
+    "deployment",
+    "agent delegation",
+    "external communications"
+  ],
+  "summary": [
+    "Ivory, ink and jade controls remain; the night-water input is current.",
+    "Device Song type keeps its literary hierarchy, with Chinese sans-serif controls.",
+    "Evidence labels, reading voice and scene/paper separation remain named rules.",
+    "Shared geometry and shared planting retain one explicit spatial interpretation across render paths.",
+    "Native, near web partitions, distant botanical LOD, package storage and measured technical evidence are distinct claims."
+  ]
+}

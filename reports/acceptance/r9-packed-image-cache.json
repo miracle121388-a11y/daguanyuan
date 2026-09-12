@@ -1,0 +1,14 @@
+{
+  "observed": "Second build reused an earlier packed image from the reopened master. This was detected before the final web matrix.",
+  "exportedFloorRgbMean": [
+    182.4865,
+    139.4093,
+    117.4217
+  ],
+  "currentFloorSwatchRgbMean": [
+    137.2081,
+    98.7769,
+    77.7474
+  ],
+  "fix": "Source build always creates a fresh image datablock. Resume from the already-saved geometry by refreshing material images, then re-export detailed and baked tiers. Final verification is still pending."
+}

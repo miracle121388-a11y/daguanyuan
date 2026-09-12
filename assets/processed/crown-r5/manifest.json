@@ -1,0 +1,170 @@
+{
+  "method": "Cycles 24 samples; source alpha restored at256; 384 square; orthographic6.25m; AgX exposure.3; sources normalized to5.1m largest extent.",
+  "renders": [
+    {
+      "file": "assets/processed/crown-r5/0-0.png",
+      "sourceAsset": "island_tree_01",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -24,
+        10
+      ],
+      "sha256": "76381705780d4a606a2bb2b20250c38a57118f1b943807b209fdd33327b8658e"
+    },
+    {
+      "file": "assets/processed/crown-r5/0-1.png",
+      "sourceAsset": "island_tree_01",
+      "license": "CC0-1.0",
+      "camera": [
+        24,
+        0,
+        10
+      ],
+      "sha256": "2e96fdb01154520295e28ce7ad8d056a678bdb2080885c259ef7d85dc11945a8"
+    },
+    {
+      "file": "assets/processed/crown-r5/0-2.png",
+      "sourceAsset": "island_tree_01",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        24,
+        10
+      ],
+      "sha256": "3ee53ef8873eb83eb783cb040d6725adb77077baf9b1b2d77ef0dba310b9fc49"
+    },
+    {
+      "file": "assets/processed/crown-r5/0-3.png",
+      "sourceAsset": "island_tree_01",
+      "license": "CC0-1.0",
+      "camera": [
+        -24,
+        0,
+        10
+      ],
+      "sha256": "7eac7a9619273a2c5009d5e1592cd4d7f12726cd19a4e7f39841ae67e974e8a0"
+    },
+    {
+      "file": "assets/processed/crown-r5/0-4.png",
+      "sourceAsset": "island_tree_01",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -0.01,
+        26
+      ],
+      "sha256": "2618163c4731b926189047d7d414a4833a7c85073bba1632f75c52c7c9a58fa6"
+    },
+    {
+      "file": "assets/processed/crown-r5/1-0.png",
+      "sourceAsset": "island_tree_02",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -24,
+        10
+      ],
+      "sha256": "45032385fcc6818df6572702c06d78313bf983161d692bd3d15f601ac84ffff8"
+    },
+    {
+      "file": "assets/processed/crown-r5/1-1.png",
+      "sourceAsset": "island_tree_02",
+      "license": "CC0-1.0",
+      "camera": [
+        24,
+        0,
+        10
+      ],
+      "sha256": "d660c4765c758128c77e18a55a3a8672b0bd2e93e1f7197b2cb96d8ba7ed66f9"
+    },
+    {
+      "file": "assets/processed/crown-r5/1-2.png",
+      "sourceAsset": "island_tree_02",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        24,
+        10
+      ],
+      "sha256": "f76878184f3773de9011e9ac47a37e9babb1a6e78e3e68bf7e04e6d0e367e646"
+    },
+    {
+      "file": "assets/processed/crown-r5/1-3.png",
+      "sourceAsset": "island_tree_02",
+      "license": "CC0-1.0",
+      "camera": [
+        -24,
+        0,
+        10
+      ],
+      "sha256": "8c7c2270f1ecdf192aaf1eaf55d12c71704680c46977ddbcde12a0ab116bfc1d"
+    },
+    {
+      "file": "assets/processed/crown-r5/1-4.png",
+      "sourceAsset": "island_tree_02",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -0.01,
+        26
+      ],
+      "sha256": "3e7169b079d198e63e10f49197d941b7ce547db177934c666037a9f4400ece03"
+    },
+    {
+      "file": "assets/processed/crown-r5/2-0.png",
+      "sourceAsset": "pine_sapling_small",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -24,
+        10
+      ],
+      "sha256": "34f33b76115422d2d236ba7b658e981bda436ecf05d01024da1856f9e52642d2"
+    },
+    {
+      "file": "assets/processed/crown-r5/2-1.png",
+      "sourceAsset": "pine_sapling_small",
+      "license": "CC0-1.0",
+      "camera": [
+        24,
+        0,
+        10
+      ],
+      "sha256": "9dd43c3bdb66409b86a05cbbe3bd0014ca223d3684a30c7f35ef54f7fac621c3"
+    },
+    {
+      "file": "assets/processed/crown-r5/2-2.png",
+      "sourceAsset": "pine_sapling_small",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        24,
+        10
+      ],
+      "sha256": "2609290c52512a727c9168d8cb4608690c94ae00ae425b1d007ce3db63a4f374"
+    },
+    {
+      "file": "assets/processed/crown-r5/2-3.png",
+      "sourceAsset": "pine_sapling_small",
+      "license": "CC0-1.0",
+      "camera": [
+        -24,
+        0,
+        10
+      ],
+      "sha256": "6aa27fd4e4af68e3543d306167dcdbfe97dd519f8353b21863557f73bfc7ac8d"
+    },
+    {
+      "file": "assets/processed/crown-r5/2-4.png",
+      "sourceAsset": "pine_sapling_small",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -0.01,
+        26
+      ],
+      "sha256": "dd2b464736df1e0b8af65e49a51bdb283bb70e3d443351e308bfbe2b22b5cc97"
+    }
+  ]
+}

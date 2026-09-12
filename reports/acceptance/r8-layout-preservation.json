@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-11T16:55:33.009925+00:00",
+  "baseline": ".checkpoints\\before-r8-20260912-003430",
+  "checks": {
+    "pathNodes": true,
+    "pathEdges": true,
+    "lake": true,
+    "courtyards": true
+  },
+  "passed": true
+}

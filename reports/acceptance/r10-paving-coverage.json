@@ -1,0 +1,47 @@
+{
+  "scope": "Published overview paving surfaces versus editable master",
+  "spacingM": 1,
+  "interiorEdgeMarginM": 0.025,
+  "heightToleranceM": 0.05,
+  "checks": 1278,
+  "missingCover": 0,
+  "places": [
+    {
+      "place": "yihongyuan",
+      "samples": 168,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "hengwuyuan",
+      "samples": 68,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "qiushuangzhai",
+      "samples": 270,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "daguanlou",
+      "samples": 529,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "longcuian",
+      "samples": 135,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "nuanxiangwu",
+      "samples": 108,
+      "missingCover": 0,
+      "examples": []
+    }
+  ],
+  "passed": true
+}

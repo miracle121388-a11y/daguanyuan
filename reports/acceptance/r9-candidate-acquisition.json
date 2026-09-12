@@ -1,0 +1,56 @@
+[
+  {
+    "id": "wood_table_001",
+    "file": "assets/source/wood_table_001.jpg",
+    "sha256": "460dd08d240f4a1f02982415048c3c5c200f385db212da18dc7e2df68bf4d0be",
+    "bytes": 215573,
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table_001/wood_table_001_diff_1k.jpg",
+    "status": "candidate-albedo-only",
+    "at": "2026-09-11T18:02:17.372431+00:00"
+  },
+  {
+    "id": "rosewood_veneer_02",
+    "file": "assets/source/rosewood_veneer_02.jpg",
+    "sha256": "f4085bf7554ff14ed8b8a39154dbeef12c12b66f7ceec763963d7be0c7fd6a40",
+    "bytes": 641315,
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_diff_1k.jpg",
+    "status": "candidate-albedo-only",
+    "at": "2026-09-11T18:02:17.781428+00:00"
+  },
+  {
+    "id": "rock_06",
+    "file": "assets/source/rock_06.jpg",
+    "sha256": "0f9f0fc0438f99cdd9e33cfadc9ba01c527f74c1085fdac425e06e6a808a7736",
+    "bytes": 913680,
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_06/rock_06_diff_1k.jpg",
+    "status": "candidate-albedo-only",
+    "at": "2026-09-11T18:02:17.868318+00:00"
+  },
+  {
+    "id": "white_sandstone_blocks_02",
+    "file": "assets/source/white_sandstone_blocks_02.jpg",
+    "sha256": "0a43c8bc80581408f9c700ad98d2de64280e694148e37626d6648fdddf47a777",
+    "bytes": 910262,
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_sandstone_blocks_02/white_sandstone_blocks_02_diff_1k.jpg",
+    "status": "candidate-albedo-only",
+    "at": "2026-09-11T18:02:19.624854+00:00"
+  },
+  {
+    "id": "mossy_sandstone",
+    "file": "assets/source/mossy_sandstone.jpg",
+    "sha256": "61ccd3b5ec1f8d27ceee79bef9ced8064c7555570ea53d86ebac35fc337e2997",
+    "bytes": 764526,
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_sandstone/mossy_sandstone_diff_1k.jpg",
+    "status": "candidate-albedo-only",
+    "at": "2026-09-11T18:02:19.698123+00:00"
+  },
+  {
+    "id": "forest_ground_06",
+    "file": "assets/source/forest_ground_06.jpg",
+    "sha256": "2bcfe6e3de263e50c236b1e7db09b674a4385e79f8906c94dce4c9d10afa7e18",
+    "bytes": 851532,
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_ground_06/forest_ground_06_diff_1k.jpg",
+    "status": "candidate-albedo-only",
+    "at": "2026-09-11T18:02:19.999184+00:00"
+  }
+]

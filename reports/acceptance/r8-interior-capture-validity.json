@@ -1,0 +1,25 @@
+{
+  "at": "2026-09-11T17:36:32.266Z",
+  "reason": "Original final capture blocked by near geometry during a timed camera transition. Recapture uses the real UI to disable movement before entering the room; no product code or camera coordinates changed.",
+  "state": {
+    "hotspot": "xiaoxiangguan-study",
+    "cutaway": false,
+    "motion": false,
+    "selected": "xiaoxiangguan",
+    "interiorCamera": {
+      "position": [
+        -5.5,
+        2.8,
+        -4.65
+      ],
+      "target": [
+        -3.2,
+        1.45,
+        -8
+      ],
+      "fov": 64
+    }
+  },
+  "errors": [],
+  "failed": []
+}

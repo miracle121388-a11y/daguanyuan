@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-12T14:01:37.932433+00:00",
+  "revision": "spatial-garden-20260912-r12-fix2",
+  "directory": ".deploy/reference-20260912-135401-786847",
+  "scope": "Exact served production package, capture validity only. Mobile PNG is CSS390x844 at DPR3, not a physical phone.",
+  "captures": [
+    {
+      "file": "reports/browser/r12-fix2-packaged-production-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "5c596017fd2e140556118bd65734a46563e9b8b83b257da67883d2af58ae01db",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": "reports/browser/r12-fix2-packaged-production-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "e0dc47956e90fe6dd3bcae5ba76591388f88ebc101e60c63ee55c94c47f9558b",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    }
+  ]
+}

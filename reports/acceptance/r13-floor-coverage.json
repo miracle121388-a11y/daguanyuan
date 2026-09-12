@@ -1,0 +1,71 @@
+{
+  "scope": "Published overview floor surfaces versus editable master",
+  "spacingM": 1,
+  "interiorEdgeMarginM": 0.025,
+  "heightToleranceM": 0.05,
+  "checks": 2959,
+  "missingCover": 0,
+  "places": [
+    {
+      "place": "daguanyuan_gate",
+      "samples": 192,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "xiaoxiangguan",
+      "samples": 130,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "yihongyuan",
+      "samples": 160,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "hengwuyuan",
+      "samples": 192,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "qiushuangzhai",
+      "samples": 240,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "tubishanzhuang",
+      "samples": 170,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "aojingxiguan",
+      "samples": 180,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "daguanlou",
+      "samples": 1362,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "longcuian",
+      "samples": 189,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "nuanxiangwu",
+      "samples": 144,
+      "missingCover": 0,
+      "examples": []
+    }
+  ],
+  "passed": true
+}

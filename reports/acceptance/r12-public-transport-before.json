@@ -1,0 +1,44 @@
+{
+  "at": "2026-09-12T06:09:51.945Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/healthz",
+  "observedPublicAddress": "47.89.212.251",
+  "tlsVerificationEnabled": true,
+  "osSettingsChanged": false,
+  "scope": "Health request only. This does not test 3D loading or all visitors.",
+  "rows": [
+    {
+      "condition": "default",
+      "ok": false,
+      "error": "Error: page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/healthz Call log:",
+      "elapsedMs": 57
+    },
+    {
+      "condition": "quic_disabled",
+      "ok": false,
+      "error": "Error: page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/healthz Call log:",
+      "elapsedMs": 50
+    },
+    {
+      "condition": "public_dns",
+      "ok": true,
+      "status": 200,
+      "health": {
+        "status": "ok",
+        "application": "daguanyuan-rumeng",
+        "revision": "spatial-garden-20260910-r6"
+      },
+      "elapsedMs": 1001
+    },
+    {
+      "condition": "public_dns_and_quic_disabled",
+      "ok": true,
+      "status": 200,
+      "health": {
+        "status": "ok",
+        "application": "daguanyuan-rumeng",
+        "revision": "spatial-garden-20260910-r6"
+      },
+      "elapsedMs": 934
+    }
+  ]
+}

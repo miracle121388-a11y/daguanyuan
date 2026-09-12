@@ -1,0 +1,612 @@
+{
+  "completedAt": "2026-09-12T14:16:52.989Z",
+  "revision": "spatial-garden-20260912-r12-fix2",
+  "status": "documentation-complete",
+  "role": "C:/Users/Lenovo/.codex/skills/impeccable/agents/impeccable_documenter.toml",
+  "scope": "Update only DESIGN.md, its schema-2 sidecar and this completion record from current built sources and final evidence; no independent visual verdict.",
+  "filesWritten": [
+    "DESIGN.md",
+    ".impeccable/design.json",
+    "reports/acceptance/r12-fix2-documenter-completion.json"
+  ],
+  "documents": [
+    {
+      "path": "DESIGN.md",
+      "bytes": 47804,
+      "sha256": "45e1e82f00ba0a1b5946882ff1126248c877214da82838bd36622849adc16365"
+    },
+    {
+      "path": ".impeccable/design.json",
+      "bytes": 41302,
+      "sha256": "543e96f220c2fcf0d3797b9419caf0ac06e095ad75f9b96b53feb4b4d83bd7f7"
+    }
+  ],
+  "documentStructure": {
+    "canonicalSections": [
+      "Overview",
+      "Colors",
+      "Typography",
+      "Layout",
+      "Elevation & Depth",
+      "Shapes",
+      "Components",
+      "Do's and Don'ts"
+    ],
+    "sidecarSchema": 2,
+    "componentPreviews": 12,
+    "namedRules": 5,
+    "narrativeCopiedVerbatim": true,
+    "pinnedPrimitiveTokensPreserved": true
+  },
+  "package": {
+    "directory": ".deploy/reference-20260912-135401-786847",
+    "bytes": 51218986,
+    "physicalFiles": 591,
+    "inventory": "reports/acceptance/r12-fix2-package-inventory.json",
+    "physicalInventoryAttribution": "Read supplied final ledger; documenter did not recompute all physical package files.",
+    "brotliOnlyLogicalFiles": 45,
+    "logicalFileShaMatches": true,
+    "logicalResponse": "Server restores identity/gzip content for Brotli-only GLB/JS/WASM logical URLs.",
+    "publicationStatus": "Parent reported authorized deployment of this same frozen package started during documentation; upload/deployment result and live verification pending. No success claim.",
+    "publicationStatusSource": "Parent collaboration notice received in this pass; final deployment evidence to be appended separately by parent.",
+    "lastPreviouslyVerifiedOnlineRevision": "r6"
+  },
+  "nativeMaster": {
+    "path": "blender/daguanyuan_master.blend",
+    "bytes": 994859568,
+    "sha256": "2293c626fc32c0bd32ad1c269d8c1c0a76b877cbc63e3fd9b43288b37f2696a2"
+  },
+  "imagesOpened": {
+    "count": 21,
+    "webStates": 17,
+    "native": 2,
+    "exactPackage": 2,
+    "allDimensionsMatch": true,
+    "allHashesMatch": true,
+    "rootAndArchiveMatch": true,
+    "captures": [
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/desktop.png",
+        "originalPath": ".impeccable/review/desktop.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1539180,
+        "sha256": "4e19421ca1049bd96c7d733c60de3219295f5aee9febcaa7debdaf1c83733df4",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Full garden with surrounding crowns, shared lake and central ensemble; ivory edge controls remain visible.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/plan.png",
+        "originalPath": ".impeccable/review/plan.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1576219,
+        "sha256": "a15d9c9ef32b2145ab67424e7d62a6096facc2b506186dea3332800d98a7cfc7",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Overhead view of the same courts, water and paths, with the paper UI retained.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/courtyard.png",
+        "originalPath": ".impeccable/review/courtyard.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1651968,
+        "sha256": "92dbb150df2e814db9510e2850c19d90dca54936a96435de37ef4282d1191d26",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Xiaoxiangguan has visible bamboo stems and some differentiated leaf faces, broad low leaf clusters and brown soil zones; some low foliage remains dark and separate.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/interior.png",
+        "originalPath": ".impeccable/review/interior.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1052385,
+        "sha256": "cf7d9a12dec0ff3bb6a000e5f8d802a3adee8efd55b1aafd05668b1a4591c517",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Xiaoxiang study shows wood floor, desk, books, chair and hanging bamboo artwork; room mode and detail selector are visible.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/cutaway.png",
+        "originalPath": ".impeccable/review/cutaway.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1460048,
+        "sha256": "94c7b389842d7993a84b3ed2ff4274ea7541bc9fb7ea6055ce255f752b40ae78",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Roof is hidden over the same study partitions and furniture; selected detail remains identified.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/night.png",
+        "originalPath": ".impeccable/review/night.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1343765,
+        "sha256": "c0cf1d7030035cd3a07b01a7a812399be40dc7e8a63da6dca32888561747c663",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Route, bridgehead, pond and illuminated building levels remain distinguishable, with unchanged ivory controls.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/central-ensemble.png",
+        "originalPath": ".impeccable/review/central-ensemble.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1710710,
+        "sha256": "2f140cabc863203ccd0e716d4915be242e45e2046c5c0bc1300b2601fec4c566",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Main tower, side buildings and corridors form the central group; broad smooth grass and edge transitions remain visible.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/yihongyuan.png",
+        "originalPath": ".impeccable/review/yihongyuan.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1455966,
+        "sha256": "c5fb656c21c0dfc05384f429b3141ea82d9f2df47c48f869f02d4ea778cb1caf",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Banana leaves show distinct light and dark green faces and torn outlines; flowering branches are unequal; low plants remain sparse in parts.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/hengwuyuan.png",
+        "originalPath": ".impeccable/review/hengwuyuan.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1413498,
+        "sha256": "888da429d70355d1531bf5ce61d2a738bb67dd2c41a449d794edf23774b0b4c2",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Cavity rock is surrounded by discrete dark low plant clusters and soil zones, with paving preserved.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/qiushuangzhai.png",
+        "originalPath": ".impeccable/review/qiushuangzhai.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1369005,
+        "sha256": "dd8606b93c4be317d64610ce7a44a0f4fd02670ab9aa521d25823a0ecfe8c594",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Open room and court furniture remain readable; side planting consists of visibly separate dark clusters over broad ground.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/character.png",
+        "originalPath": ".impeccable/review/character.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1080156,
+        "sha256": "c967e5f6030f58c5cb721db4a9310780b8eb078f53a2a78238aae59fad7317a5",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Lin Daiyu selection exposes related places and the statement that event/residence associations do not imply presence now.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/event.png",
+        "originalPath": ".impeccable/review/event.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1253439,
+        "sha256": "95d79571f3e007d3c203efb3208e6d71c438aa6cac40722fdcf4273455c277fb",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Begonia poetry society event displays the expanded chapter 37 source passage and original-location label.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/user-1266.png",
+        "originalPath": ".impeccable/review/user-1266.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1266,
+        "height": 712,
+        "bytes": 1014968,
+        "sha256": "e8ee2d2ea93acce2288d09c3378782d4b1fef7c45f1921989c0745717f96a0fe",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "1266px overview retains the garden, edge paper panels, tour and minimap.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/mobile.png",
+        "originalPath": ".impeccable/review/mobile.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 390,
+        "height": 844,
+        "bytes": 352973,
+        "sha256": "2378b857feb38bf18cff2686e4467f70bc330febf5d23c59426c5b4980a7ca92",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Phone overview retains the three bottom navigation entries, tour controls, minimap and low-quality garden.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/mobile-courtyard.png",
+        "originalPath": ".impeccable/review/mobile-courtyard.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 390,
+        "height": 844,
+        "bytes": 312432,
+        "sha256": "0de73a912bb5ab498db069f4d079c9db0895fb7faf51a52184e461090ff3e296",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Lower near court framing shows the roof and paving above the drawer, three detail points, equivalent selector and art-reference label; fine leaves still compress into dark patches.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/mobile-whole-courtyard.png",
+        "originalPath": ".impeccable/review/mobile-whole-courtyard.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 390,
+        "height": 844,
+        "bytes": 307418,
+        "sha256": "f321e6a84f0fda80462cb45c48995818a625ef6699c5024c7c346f173e258844",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Whole-court alternative is higher and farther than near mode; the same drawer, selector and artwork identity remain.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+        "openedPath": ".impeccable/review/r12-fix2/narrow.png",
+        "originalPath": ".impeccable/review/narrow.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 320,
+        "height": 740,
+        "bytes": 248544,
+        "sha256": "1135532d58d605d6f3bde58e2c31793a66568ec2567f502c23c30e7bc8d9890d",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "320px overview contains the scene controls, tour and bottom navigation within the captured width.",
+        "rootAndArchiveSha256Match": true
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-native-capture-inspection.json",
+        "openedPath": "reports/blender/fix2-master-full.png",
+        "originalPath": "reports/blender/fix2-master-full.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1280,
+        "height": 800,
+        "bytes": 1559042,
+        "sha256": "71040773cb7b143bd6e403f461cc9a6fe7d93675253f08e46f62e592c50b0234",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Actual Cycles master view shows full native crowns and the common garden layout; it is separate evidence from web rendering."
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-native-capture-inspection.json",
+        "openedPath": "reports/blender/fix2-master-xiaoxiang.png",
+        "originalPath": "reports/blender/fix2-master-xiaoxiang.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1280,
+        "height": 800,
+        "bytes": 1890514,
+        "sha256": "e1998c4103f4c4c3d7fe699b35512f297a520a3d30655c6b8dc256c27aa7dd21",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Actual native court view shows full crowns, shaded bamboo, wider low leaves and soil/paving divisions; native illumination differs from the web."
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-package-capture-inspection.json",
+        "openedPath": "reports/browser/r12-fix2-packaged-production-desktop.png",
+        "originalPath": "reports/browser/r12-fix2-packaged-production-desktop.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1440,
+        "height": 900,
+        "bytes": 1539502,
+        "sha256": "5c596017fd2e140556118bd65734a46563e9b8b83b257da67883d2af58ae01db",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Exact locally served production package shows the completed overview state and ivory UI."
+      },
+      {
+        "inventory": "reports/acceptance/r12-fix2-package-capture-inspection.json",
+        "openedPath": "reports/browser/r12-fix2-packaged-production-mobile.png",
+        "originalPath": "reports/browser/r12-fix2-packaged-production-mobile.png",
+        "actuallyOpenedByDocumenter": true,
+        "inspectionMethod": "Individual view_image tool opening; original PNG header dimensions and SHA-256 computed separately from bytes.",
+        "width": 1170,
+        "height": 2532,
+        "bytes": 1703521,
+        "sha256": "e0dc47956e90fe6dd3bcae5ba76591388f88ebc101e60c63ee55c94c47f9558b",
+        "dimensionsMatchInventory": true,
+        "sha256MatchesInventory": true,
+        "observation": "Exact package phone emulation shows lower near framing, selected detail controls and art-reference text; small bamboo and low foliage retain dark compressed detail."
+      }
+    ]
+  },
+  "sourceSample": [
+    "PRODUCT.md",
+    "DESIGN.md",
+    ".impeccable/design.json",
+    "src/styles/reference-world.css",
+    "src/styles/garden.css",
+    "src/scene/materials.ts",
+    "src/scene/GardenScene.tsx",
+    "blender/court_planting.py",
+    "blender/focal_botany.py",
+    "scripts/bake_focal_foliage.py",
+    "config/garden.layout.json",
+    "config/garden.planting.json"
+  ],
+  "currentReportBasis": [
+    {
+      "path": "reports/acceptance/r12-fix2-layout-preservation.json",
+      "bytes": 257,
+      "sha256": "8913744a08fa281f3b31cafbf31a1221aee55b7328087fa3a70bcd8936dbdf9c"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-focal-rebuild.json",
+      "bytes": 3948,
+      "sha256": "228a3d6d423b0264c97d3733ddb98aa1782da45e954893d20f6cf6a712bedc47"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-botanical-export-preservation.json",
+      "bytes": 4120,
+      "sha256": "0981b6940512629cbee55e69588a107c96af2aabcea67342d42b0b4f0471d7ae"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-botanical-patch-validity.json",
+      "bytes": 1879,
+      "sha256": "f76e257885dc28959cb65bb0ede00af5f563666fdb9f6d7ff4b80355570b16f5"
+    },
+    {
+      "path": "reports/acceptance/fix2-master-render-evidence.json",
+      "bytes": 1402,
+      "sha256": "7170702324bc8e4ff46f85991d74ddea00196916578f6da0e2fcd7cb5de60c86"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-final-optimization.status.json",
+      "bytes": 217,
+      "sha256": "e3536811f8e9271a2404f92e7dc34d32ff15fee2d0e3d8b15040c8e5475ee7df"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-model-optimization-final.json",
+      "bytes": 27020,
+      "sha256": "799a84cd91b1a08a049664a89ed5895dcd546e79964ab861551e67ddcbfa168f"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-release-model-verification.status.json",
+      "bytes": 223,
+      "sha256": "244363689943c601dd2f748ee051cea3b33e75ea44aee94ce5d151eb5f82ab38"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-release-model-verification.log",
+      "bytes": 194144,
+      "sha256": "b434738462c0f4989d6724f9debfb8b265cfded7279dc22bf590c0b9745778cb"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-focal-pixels.json",
+      "bytes": 17818,
+      "sha256": "35b5a2cc01f132caa16f2cd7d110e901c4ed377df40744ae81bd1ea59ddeab23"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-release-e2e.status.json",
+      "bytes": 203,
+      "sha256": "fb8294560e17b35f6d72f4faa7a294a79c7cbd995d4991f396e136352a43ebdf"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-playwright-final.json",
+      "bytes": 14220,
+      "sha256": "6c9779b5eaf67898fb591d46efd89f2f32d118efed080614856bd872eabf93ab"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-mobile-4g-final.json",
+      "bytes": 19759,
+      "sha256": "2e3577495efe47aa06a4073ba35e9ed387bbcfb482eea67d02f24d00cc7602ce"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-reference-smoke.json",
+      "bytes": 9298,
+      "sha256": "647aeb0fd77c46eedfc2115cd54984abfc1debace4389f2edac5b8fbebddfd73"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-performance-final.json",
+      "bytes": 45782,
+      "sha256": "fb8ed0c9ab8b5dd3d0ac89ae1abd52988534a09dd50b670f9071b2b2f27c75bf"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-packaged-production-smoke.json",
+      "bytes": 1130,
+      "sha256": "e5a8a28338a162b57f911a60691a46ecd161f393892af158347e8b05d0456e36"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-delivery-compression.json",
+      "bytes": 7070,
+      "sha256": "bdbc249cbf7975d51b072b6f16efe57cd31b579c6f0abe49c322dd294f6ed749"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-provenance-final.log",
+      "bytes": 30,
+      "sha256": "c5365351911ec4792c21c8766962b3392eafb6b1ed73a81d0ff474a3133eeb03"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-production-build.log",
+      "bytes": 843,
+      "sha256": "5c722711441af05f63e977c948f2bb544e986f546a790e9c627a588fdaba4de0"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-release-lint.log",
+      "bytes": 82,
+      "sha256": "0188e858b1217e3a8674eb9dd341bc8be0ea7ed0645b4db459b0f4e1d872484e"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-typecheck.log",
+      "bytes": 57,
+      "sha256": "bbe290331cbf47034f57403711d8505c552c879eb96819683299e62c05ba527d"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-unit.log",
+      "bytes": 274,
+      "sha256": "9a85d86d83dabfd7431f858636cb87c90fa90ace0b9280273d2dfa6604501cd6"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-spatial.log",
+      "bytes": 148,
+      "sha256": "8a058fd7c88f5569a487e052ffe58f1774a5cff8eaa869b25d37ecc9888904dd"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-package-inventory.json",
+      "bytes": 127851,
+      "sha256": "21e474ab8c28ad6e800e0b29ab202b93436a91dc1fbd4df8dc8d0c5e406bb28b"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-packed-logical-file-hashes.json",
+      "bytes": 12478,
+      "sha256": "6d890c0e1e47d0b6cbde253288aa71cdca6602f9b0b81d62b75e691680eed5a8"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-final-capture-inspection.json",
+      "bytes": 5859,
+      "sha256": "c26e1b6b54e43765f8f397b6365d9f71642ac5cd17b5581a43b8a71819048183"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-native-capture-inspection.json",
+      "bytes": 858,
+      "sha256": "4037bf1536f7bdbe94410589c7e86fb6d18ecf3a8588d8aa3784948db76efffe"
+    },
+    {
+      "path": "reports/acceptance/r12-fix2-package-capture-inspection.json",
+      "bytes": 880,
+      "sha256": "47fd05f8f0f07d216eb34edc8a8a2d45dc78bc52f8e8d1114086b39de2c01464"
+    }
+  ],
+  "measuredReportFacts": {
+    "finalOptimizationExitCode": 0,
+    "optimizedModelHashes": 40,
+    "finalModelVerificationExitCode": 0,
+    "craftPixelChecks": 52,
+    "focalMapAndUvChecks": 32,
+    "e2eExpected": 11,
+    "e2eUnexpected": 0,
+    "mobileInitialReadyMs": 9960.800000000745,
+    "mobileRecordedResourceBytes": 8320906,
+    "high": {
+      "meanFrameMs": 22.30820895522249,
+      "p95FrameMs": 27.90000000037253,
+      "drawCalls": 71,
+      "triangles": 435428
+    },
+    "low": {
+      "meanFrameMs": 18.976999999998757,
+      "p95FrameMs": 38.10000000055879,
+      "drawCalls": 68,
+      "triangles": 288990
+    },
+    "publicRasterScan": 178,
+    "missingProvenance": 0,
+    "applicationChecksRunByDocumenter": false
+  },
+  "factualReconciliations": [
+    "Replaced fix1 candidate, image, source-map, native-master and current check references with fix2 final evidence; prior references remain clearly historical.",
+    "The focal-rebuild afterMaster hash is intermediate; independently hashed final saved master matches fix2-master-render-evidence, not the rebuild intermediate.",
+    "Original findings 4 and 5 were resolved within fix1 scope; documentation no longer describes those original bounded findings as unresolved, and does not grant whole-surface approval.",
+    "Final focal check count is 32, raster scan 178, package 591 physical files/51,218,986 bytes; current measured numbers replace fix1 only in current sections.",
+    "Deployment status changed after the packet final addendum: parent reported same-package deployment started. Documentation records pending result/live verification rather than retaining an unuploaded or success claim.",
+    "All 21 current capture dimensions and SHA-256 values match supplied inventories; all 17 root web files match the individually opened archive files."
+  ],
+  "historyPreserved": [
+    "r10 REBUILD, r11 snapshots, base r12 FIX and fix1 FIX remain historical.",
+    "Missing authenticated original FORM seed output remains explicitly unmet.",
+    "fix1 misleading final-named failed E2E and fix2 GLB merge, stale unused-material verification and LOD module-path failures remain failures."
+  ],
+  "notCanonized": [
+    "Dark, separate low foliage and reduced phone leaf readability.",
+    "Broad smooth ground transitions and model-like presentation.",
+    "Authored swatch seed/procedure as substitute for authenticated historical FORM output.",
+    "Technical pass, complete native crowns or prior limited near/night resolutions as whole visual approval."
+  ],
+  "boundaries": {
+    "authenticatedHistoricalFormSeed": "missing",
+    "approvedWebComp": "none",
+    "qualityBarCard": "none",
+    "fix2Verdict": "pending",
+    "visualApproval": false,
+    "realPhoneHardware": false,
+    "stableFpsCertification": false,
+    "publicConnectivityCertification": false,
+    "exhaustiveSourceAudit": false,
+    "sourceLiteratureSpatialInterpretationArtAndCuratedNavigationKeptDistinct": true,
+    "fullNativeNearAndFarWebLodKeptDistinct": true,
+    "locallyAuthoredLeafMapsKeptDistinctFromStockAndAi": true
+  },
+  "actionsNotPerformed": [
+    "implementation or asset changes",
+    "builds or application tests",
+    "browser automation",
+    "detector",
+    "seed/context reroll",
+    "deployment",
+    "delegation"
+  ],
+  "summary": [
+    "温纸、深墨与克制青绿保留，朱砂用于印章和焦点。",
+    "宋体用于文学标题和叙述，中文无衬线用于操作。",
+    "纸面浮层围绕真实三维场景；手机以近景和抽屉共存。",
+    "证据标签、阅读语气、场景与纸面五条命名规则继续与共享几何／种植一致。",
+    "完整原生、近景细节和远景预算各自具名；本地程序叶图保留独立出处。"
+  ]
+}

@@ -1,0 +1,886 @@
+{
+  "blend": {
+    "1k": {
+      "blend": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/1k/rosewood_veneer_02/rosewood_veneer_02_1k.blend",
+        "md5": "72f58dd372a52bea3599149e57b2f259",
+        "size": 216309,
+        "include": {
+          "textures/rosewood_veneer_02_ao_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_ao_1k.jpg",
+            "md5": "d6317d95390f09fcff5ab922ee0d5bc6",
+            "size": 469999
+          },
+          "textures/rosewood_veneer_02_diff_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_diff_1k.jpg",
+            "md5": "385b71d03b466f5dfb3a404011a5db31",
+            "size": 641315
+          },
+          "textures/rosewood_veneer_02_disp_1k.png": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rosewood_veneer_02/rosewood_veneer_02_disp_1k.png",
+            "md5": "e6486f01f029851838a4d95ec0389439",
+            "size": 1322367
+          },
+          "textures/rosewood_veneer_02_nor_gl_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_1k.exr",
+            "md5": "18d62dc832533e2838b5cab256543ec3",
+            "size": 716837
+          },
+          "textures/rosewood_veneer_02_rough_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_rough_1k.exr",
+            "md5": "fa4fb5930c0a88e6b2207b79c1201203",
+            "size": 880731
+          }
+        }
+      }
+    },
+    "2k": {
+      "blend": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/2k/rosewood_veneer_02/rosewood_veneer_02_2k.blend",
+        "md5": "376f118491af2d0cd9c478d3bc060a80",
+        "size": 216219,
+        "include": {
+          "textures/rosewood_veneer_02_ao_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_ao_2k.jpg",
+            "md5": "d310cf5808571742b093f2ed84caef7f",
+            "size": 1921998
+          },
+          "textures/rosewood_veneer_02_diff_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_diff_2k.jpg",
+            "md5": "5ef2d0ad249a111c1a0badfc5c77c046",
+            "size": 2670576
+          },
+          "textures/rosewood_veneer_02_disp_2k.png": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_disp_2k.png",
+            "md5": "7d8a52f6fa44f8419a477f957209788e",
+            "size": 4833333
+          },
+          "textures/rosewood_veneer_02_nor_gl_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_2k.exr",
+            "md5": "f86620421e77edf6b58c1b6b85835c86",
+            "size": 3621432
+          },
+          "textures/rosewood_veneer_02_rough_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_rough_2k.exr",
+            "md5": "0231c331983ebad8c3c0689438030bca",
+            "size": 3582616
+          }
+        }
+      }
+    },
+    "4k": {
+      "blend": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/4k/rosewood_veneer_02/rosewood_veneer_02_4k.blend",
+        "md5": "e16518970194405c116e0df5c4c4b13e",
+        "size": 216269,
+        "include": {
+          "textures/rosewood_veneer_02_ao_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_ao_4k.jpg",
+            "md5": "ad5e24e3f2f306e0450ac6e6ae34ac6e",
+            "size": 7250327
+          },
+          "textures/rosewood_veneer_02_diff_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_diff_4k.jpg",
+            "md5": "90d58f8fa6d53fb83d5606a185754c56",
+            "size": 10367617
+          },
+          "textures/rosewood_veneer_02_disp_4k.png": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rosewood_veneer_02/rosewood_veneer_02_disp_4k.png",
+            "md5": "68d576509b49dff46f7cffde69644389",
+            "size": 17638473
+          },
+          "textures/rosewood_veneer_02_nor_gl_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_4k.exr",
+            "md5": "f59e722acc52b877717529d74bb8a4a0",
+            "size": 16778740
+          },
+          "textures/rosewood_veneer_02_rough_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_rough_4k.exr",
+            "md5": "c42cb1066fa870924acdd3576d2b5b28",
+            "size": 14071080
+          }
+        }
+      }
+    },
+    "8k": {
+      "blend": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/8k/rosewood_veneer_02/rosewood_veneer_02_8k.blend",
+        "md5": "700e95c70963ff5d1d9db168cfa9ad7c",
+        "size": 216210,
+        "include": {
+          "textures/rosewood_veneer_02_ao_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_ao_8k.jpg",
+            "md5": "5af15ead28c063ed7fbd8ac56b885b96",
+            "size": 21982304
+          },
+          "textures/rosewood_veneer_02_diff_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_diff_8k.jpg",
+            "md5": "5396034ef3452becd106e9a2617c1889",
+            "size": 32015047
+          },
+          "textures/rosewood_veneer_02_disp_8k.png": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/8k/rosewood_veneer_02/rosewood_veneer_02_disp_8k.png",
+            "md5": "22e9be7255a7708e287f9bf09a51d869",
+            "size": 87569506
+          },
+          "textures/rosewood_veneer_02_nor_gl_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_8k.exr",
+            "md5": "7d9f2424b4d0981d08e82c84f38f07f8",
+            "size": 54956277
+          },
+          "textures/rosewood_veneer_02_rough_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_rough_8k.exr",
+            "md5": "e5f153f89ebaa1e5dc5e13bee019d52b",
+            "size": 51778547
+          }
+        }
+      }
+    }
+  },
+  "AO": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_ao_1k.exr",
+        "md5": "076f56988f3522f08f3c24bf3d410ead",
+        "size": 834213
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_ao_1k.jpg",
+        "md5": "d6317d95390f09fcff5ab922ee0d5bc6",
+        "size": 469999
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rosewood_veneer_02/rosewood_veneer_02_ao_1k.png",
+        "md5": "56cef8507dae2b4e45dce048db6602ca",
+        "size": 1732545
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_ao_2k.exr",
+        "md5": "56eaac2b0460a73facbddb24e416a01e",
+        "size": 3395330
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_ao_2k.jpg",
+        "md5": "d310cf5808571742b093f2ed84caef7f",
+        "size": 1921998
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_ao_2k.png",
+        "md5": "2e6b9b0abf7de2061aeafe23a356c34e",
+        "size": 6948527
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_ao_4k.exr",
+        "md5": "4abad0cdda39a9839021399722aa6266",
+        "size": 13348475
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_ao_4k.jpg",
+        "md5": "ad5e24e3f2f306e0450ac6e6ae34ac6e",
+        "size": 7250327
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rosewood_veneer_02/rosewood_veneer_02_ao_4k.png",
+        "md5": "355552ed6057d14394afe4c5762b105a",
+        "size": 27440050
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_ao_8k.exr",
+        "md5": "013934c641d5cb416d1d14744b3b345d",
+        "size": 48937555
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_ao_8k.jpg",
+        "md5": "5af15ead28c063ed7fbd8ac56b885b96",
+        "size": 21982304
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/8k/rosewood_veneer_02/rosewood_veneer_02_ao_8k.png",
+        "md5": "f2bfdc597d6f15e5f8fe5db07f84af90",
+        "size": 115661794
+      }
+    }
+  },
+  "arm": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_arm_1k.exr",
+        "md5": "6cca9f29381053c90b20e7a6ba320fa4",
+        "size": 1240288
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_arm_1k.jpg",
+        "md5": "276dc75c5fad89d212205940ad93c213",
+        "size": 476750
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rosewood_veneer_02/rosewood_veneer_02_arm_1k.png",
+        "md5": "ce7cc936d15c261b3093907d3e520703",
+        "size": 3811166
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_arm_2k.exr",
+        "md5": "09557937d66418852167d598cfa95da2",
+        "size": 5043621
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_arm_2k.jpg",
+        "md5": "ba43e803abf397dd232b99acc1fa885e",
+        "size": 1971534
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_arm_2k.png",
+        "md5": "df88c272e95663d5a41f559d672120c4",
+        "size": 15180459
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_arm_4k.exr",
+        "md5": "a730944119cffe236d78da46421b2df2",
+        "size": 18394776
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_arm_4k.jpg",
+        "md5": "2156f0682b725a5097407d616bd40706",
+        "size": 7626418
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rosewood_veneer_02/rosewood_veneer_02_arm_4k.png",
+        "md5": "50e8afa313e188a515d7b8f2391c057c",
+        "size": 57779311
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_arm_8k.exr",
+        "md5": "afb6d1ac707d700ef682eb1984c5881d",
+        "size": 52698015
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_arm_8k.jpg",
+        "md5": "765432ff40e2ecfd2cc1d5aae88ad8ab",
+        "size": 25545218
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/8k/rosewood_veneer_02/rosewood_veneer_02_arm_8k.png",
+        "md5": "b7b8f037fb256ee120de8b4ec197d4f0",
+        "size": 218652782
+      }
+    }
+  },
+  "Diffuse": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_diff_1k.exr",
+        "md5": "90c63b06edd8f1ef80cc76621ee604ef",
+        "size": 1078066
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_diff_1k.jpg",
+        "md5": "385b71d03b466f5dfb3a404011a5db31",
+        "size": 641315
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rosewood_veneer_02/rosewood_veneer_02_diff_1k.png",
+        "md5": "83552dc9c564e8c1a1990570a6f900a8",
+        "size": 5246693
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_diff_2k.exr",
+        "md5": "201caff5c9c214dd68fcc3b886767cc9",
+        "size": 4396586
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_diff_2k.jpg",
+        "md5": "5ef2d0ad249a111c1a0badfc5c77c046",
+        "size": 2670576
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_diff_2k.png",
+        "md5": "70d8948b9d316fb7590353fe46ec1978",
+        "size": 21137118
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_diff_4k.exr",
+        "md5": "f5c66a1fcdb832e1fda4665d883ce677",
+        "size": 15869038
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_diff_4k.jpg",
+        "md5": "90d58f8fa6d53fb83d5606a185754c56",
+        "size": 10367617
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rosewood_veneer_02/rosewood_veneer_02_diff_4k.png",
+        "md5": "0e5f81c97b9aa34b3e431b5fb86e1735",
+        "size": 84144481
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_diff_8k.exr",
+        "md5": "ef2c0a281a9354355c1b88f3845d4ac8",
+        "size": 45889042
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_diff_8k.jpg",
+        "md5": "5396034ef3452becd106e9a2617c1889",
+        "size": 32015047
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/8k/rosewood_veneer_02/rosewood_veneer_02_diff_8k.png",
+        "md5": "6f7395b3d9a4f6de94199bae0da74849",
+        "size": 321858502
+      }
+    }
+  },
+  "Displacement": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_disp_1k.exr",
+        "md5": "9849a5d8420d81e47a0a38f29a67b563",
+        "size": 394509
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_disp_1k.jpg",
+        "md5": "077710c5c1d0d14810b782a143c623c7",
+        "size": 147779
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rosewood_veneer_02/rosewood_veneer_02_disp_1k.png",
+        "md5": "e6486f01f029851838a4d95ec0389439",
+        "size": 1322367
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_disp_2k.exr",
+        "md5": "c9fa138a0dbcb9c11c1c2893e746deeb",
+        "size": 1310251
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_disp_2k.jpg",
+        "md5": "bb191289f51e0a1d448a202b2ec13ff9",
+        "size": 478681
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_disp_2k.png",
+        "md5": "7d8a52f6fa44f8419a477f957209788e",
+        "size": 4833333
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_disp_4k.exr",
+        "md5": "f559a52032ccb70118084ff7e9b886f7",
+        "size": 4306349
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_disp_4k.jpg",
+        "md5": "0f4e742762f82c8e7b244060d5c40aa8",
+        "size": 1450915
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rosewood_veneer_02/rosewood_veneer_02_disp_4k.png",
+        "md5": "68d576509b49dff46f7cffde69644389",
+        "size": 17638473
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_disp_8k.exr",
+        "md5": "f153e9866e764249a301461455ea409d",
+        "size": 13369518
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_disp_8k.jpg",
+        "md5": "0625a16cd66244a41714cf98239b1811",
+        "size": 4019896
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/8k/rosewood_veneer_02/rosewood_veneer_02_disp_8k.png",
+        "md5": "22e9be7255a7708e287f9bf09a51d869",
+        "size": 87569506
+      }
+    }
+  },
+  "nor_dx": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_1k.exr",
+        "md5": "b8ac75dfef1776a632dd930c0efd48c7",
+        "size": 714258
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_1k.jpg",
+        "md5": "fcde83607fd1899c65d5f985f156cd1f",
+        "size": 375598
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_1k.png",
+        "md5": "d3857635be34377b23aab1eaeae2b3ae",
+        "size": 4608684
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_2k.exr",
+        "md5": "c0e2d8133bdf19ad2f27b71b82549d8e",
+        "size": 3602128
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_2k.jpg",
+        "md5": "92a91daa1ddcb41128866c1201808282",
+        "size": 1726548
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_2k.png",
+        "md5": "f2458c041087f67e9ff0d0f7599a3c88",
+        "size": 18971002
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_4k.exr",
+        "md5": "87cbdfc09e688ff2467a653a79b6b9ad",
+        "size": 16701399
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_4k.jpg",
+        "md5": "80c2fd2c73d1b75fe4bb8ccffe1b837a",
+        "size": 7679448
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_4k.png",
+        "md5": "3be114c142c17ea40284ef10c7a841de",
+        "size": 77123203
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_8k.exr",
+        "md5": "d8e3820068fac7d687004468ad57ded7",
+        "size": 54737423
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_8k.jpg",
+        "md5": "8307f67de934d39c6768a8da8b454262",
+        "size": 27974537
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/8k/rosewood_veneer_02/rosewood_veneer_02_nor_dx_8k.png",
+        "md5": "901d761024f6dbdde515a6fc752f1d11",
+        "size": 286008629
+      }
+    }
+  },
+  "nor_gl": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_1k.exr",
+        "md5": "18d62dc832533e2838b5cab256543ec3",
+        "size": 716837
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_1k.jpg",
+        "md5": "2dba4cda26998300a4b602978847f6ff",
+        "size": 368723
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_1k.png",
+        "md5": "2b9fbb70c61d1a1da8cd963dc0a05e1a",
+        "size": 4609073
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_2k.exr",
+        "md5": "f86620421e77edf6b58c1b6b85835c86",
+        "size": 3621432
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_2k.jpg",
+        "md5": "ca597762e21907936afd28224d157cbf",
+        "size": 1705254
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_2k.png",
+        "md5": "d9cc1d07e166e59acbefbe0e49efa908",
+        "size": 18970849
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_4k.exr",
+        "md5": "f59e722acc52b877717529d74bb8a4a0",
+        "size": 16778740
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_4k.jpg",
+        "md5": "94008ba6788e2f9ab25a8f9dcbab9510",
+        "size": 7606578
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_4k.png",
+        "md5": "62acd07feb46b6990627dd8e18641a40",
+        "size": 77119666
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_8k.exr",
+        "md5": "7d9f2424b4d0981d08e82c84f38f07f8",
+        "size": 54956277
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_8k.jpg",
+        "md5": "2d2df3b1581649967567c2ad9607a153",
+        "size": 27784106
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/8k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_8k.png",
+        "md5": "703fdceffa179ab894b115ddfa21a960",
+        "size": 286015018
+      }
+    }
+  },
+  "Rough": {
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_rough_1k.exr",
+        "md5": "fa4fb5930c0a88e6b2207b79c1201203",
+        "size": 880731
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_rough_1k.jpg",
+        "md5": "ded24149546afa49fc4a2ca005b480e8",
+        "size": 511348
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rosewood_veneer_02/rosewood_veneer_02_rough_1k.png",
+        "md5": "0724acf66406df8ad97586c2c9586419",
+        "size": 1760212
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_rough_2k.exr",
+        "md5": "0231c331983ebad8c3c0689438030bca",
+        "size": 3582616
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_rough_2k.jpg",
+        "md5": "15a72061a565f1dbe8355d7563c9017b",
+        "size": 2091449
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_rough_2k.png",
+        "md5": "b14f35f79cdbecea865408af1c01be27",
+        "size": 7055266
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_rough_4k.exr",
+        "md5": "c42cb1066fa870924acdd3576d2b5b28",
+        "size": 14071080
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_rough_4k.jpg",
+        "md5": "b91ff9ecda0bda5f3c63c7d59f3a6f00",
+        "size": 7929456
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rosewood_veneer_02/rosewood_veneer_02_rough_4k.png",
+        "md5": "f697580b3e51a186a7c581ff4e2a04b7",
+        "size": 27905994
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_rough_8k.exr",
+        "md5": "e5f153f89ebaa1e5dc5e13bee019d52b",
+        "size": 51778547
+      },
+      "jpg": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_rough_8k.jpg",
+        "md5": "d99e105012d3dfc605e1bbb82356d7ec",
+        "size": 24140757
+      },
+      "png": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/8k/rosewood_veneer_02/rosewood_veneer_02_rough_8k.png",
+        "md5": "303e272aa8080ba4d506be358c87f594",
+        "size": 117949709
+      }
+    }
+  },
+  "gltf": {
+    "1k": {
+      "gltf": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/1k/rosewood_veneer_02/rosewood_veneer_02_1k.gltf",
+        "md5": "30b352dbc0cd710bd4ac9cde993fd833",
+        "size": 2830,
+        "include": {
+          "textures/rosewood_veneer_02_nor_gl_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_1k.jpg",
+            "md5": "2dba4cda26998300a4b602978847f6ff",
+            "size": 368723
+          },
+          "textures/rosewood_veneer_02_diff_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_diff_1k.jpg",
+            "md5": "385b71d03b466f5dfb3a404011a5db31",
+            "size": 641315
+          },
+          "textures/rosewood_veneer_02_arm_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_arm_1k.jpg",
+            "md5": "276dc75c5fad89d212205940ad93c213",
+            "size": 476750
+          },
+          "rosewood_veneer_02.bin": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/8k/rosewood_veneer_02/rosewood_veneer_02.bin",
+            "md5": "aa42f595d0af645bdafaef26d2b6d7f7",
+            "size": 2369172
+          }
+        }
+      }
+    },
+    "2k": {
+      "gltf": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/2k/rosewood_veneer_02/rosewood_veneer_02_2k.gltf",
+        "md5": "0c69d029114a9b62a118e7fa03f1990a",
+        "size": 2830,
+        "include": {
+          "textures/rosewood_veneer_02_nor_gl_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_2k.jpg",
+            "md5": "ca597762e21907936afd28224d157cbf",
+            "size": 1705254
+          },
+          "textures/rosewood_veneer_02_diff_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_diff_2k.jpg",
+            "md5": "5ef2d0ad249a111c1a0badfc5c77c046",
+            "size": 2670576
+          },
+          "textures/rosewood_veneer_02_arm_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_arm_2k.jpg",
+            "md5": "ba43e803abf397dd232b99acc1fa885e",
+            "size": 1971534
+          },
+          "rosewood_veneer_02.bin": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/8k/rosewood_veneer_02/rosewood_veneer_02.bin",
+            "md5": "aa42f595d0af645bdafaef26d2b6d7f7",
+            "size": 2369172
+          }
+        }
+      }
+    },
+    "4k": {
+      "gltf": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/4k/rosewood_veneer_02/rosewood_veneer_02_4k.gltf",
+        "md5": "3251cd69cdbbe5165e361859923abd4c",
+        "size": 2830,
+        "include": {
+          "textures/rosewood_veneer_02_nor_gl_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_4k.jpg",
+            "md5": "94008ba6788e2f9ab25a8f9dcbab9510",
+            "size": 7606578
+          },
+          "textures/rosewood_veneer_02_diff_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_diff_4k.jpg",
+            "md5": "90d58f8fa6d53fb83d5606a185754c56",
+            "size": 10367617
+          },
+          "textures/rosewood_veneer_02_arm_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_arm_4k.jpg",
+            "md5": "2156f0682b725a5097407d616bd40706",
+            "size": 7626418
+          },
+          "rosewood_veneer_02.bin": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/8k/rosewood_veneer_02/rosewood_veneer_02.bin",
+            "md5": "aa42f595d0af645bdafaef26d2b6d7f7",
+            "size": 2369172
+          }
+        }
+      }
+    },
+    "8k": {
+      "gltf": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/8k/rosewood_veneer_02/rosewood_veneer_02_8k.gltf",
+        "md5": "7b7109d57a064f5c51d53dae053d24f6",
+        "size": 2830,
+        "include": {
+          "textures/rosewood_veneer_02_nor_gl_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_8k.jpg",
+            "md5": "2d2df3b1581649967567c2ad9607a153",
+            "size": 27784106
+          },
+          "textures/rosewood_veneer_02_diff_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_diff_8k.jpg",
+            "md5": "5396034ef3452becd106e9a2617c1889",
+            "size": 32015047
+          },
+          "textures/rosewood_veneer_02_arm_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_arm_8k.jpg",
+            "md5": "765432ff40e2ecfd2cc1d5aae88ad8ab",
+            "size": 25545218
+          },
+          "rosewood_veneer_02.bin": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/8k/rosewood_veneer_02/rosewood_veneer_02.bin",
+            "md5": "aa42f595d0af645bdafaef26d2b6d7f7",
+            "size": 2369172
+          }
+        }
+      }
+    }
+  },
+  "mtlx": {
+    "1k": {
+      "mtlx": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/mtlx/1k/rosewood_veneer_02/rosewood_veneer_02_1k.mtlx",
+        "md5": "4c070396f3a2e0879d28c8e66ca9e5d1",
+        "size": 4781,
+        "include": {
+          "textures/rosewood_veneer_02_ao_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_ao_1k.jpg",
+            "md5": "d6317d95390f09fcff5ab922ee0d5bc6",
+            "size": 469999
+          },
+          "textures/rosewood_veneer_02_diff_1k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rosewood_veneer_02/rosewood_veneer_02_diff_1k.jpg",
+            "md5": "385b71d03b466f5dfb3a404011a5db31",
+            "size": 641315
+          },
+          "textures/rosewood_veneer_02_disp_1k.png": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rosewood_veneer_02/rosewood_veneer_02_disp_1k.png",
+            "md5": "e6486f01f029851838a4d95ec0389439",
+            "size": 1322367
+          },
+          "textures/rosewood_veneer_02_nor_gl_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_1k.exr",
+            "md5": "18d62dc832533e2838b5cab256543ec3",
+            "size": 716837
+          },
+          "textures/rosewood_veneer_02_rough_1k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/1k/rosewood_veneer_02/rosewood_veneer_02_rough_1k.exr",
+            "md5": "fa4fb5930c0a88e6b2207b79c1201203",
+            "size": 880731
+          }
+        }
+      }
+    },
+    "2k": {
+      "mtlx": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/mtlx/2k/rosewood_veneer_02/rosewood_veneer_02_2k.mtlx",
+        "md5": "8a28c18e54ffaf805c33dd4dfcceb273",
+        "size": 4781,
+        "include": {
+          "textures/rosewood_veneer_02_ao_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_ao_2k.jpg",
+            "md5": "d310cf5808571742b093f2ed84caef7f",
+            "size": 1921998
+          },
+          "textures/rosewood_veneer_02_diff_2k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_diff_2k.jpg",
+            "md5": "5ef2d0ad249a111c1a0badfc5c77c046",
+            "size": 2670576
+          },
+          "textures/rosewood_veneer_02_disp_2k.png": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_disp_2k.png",
+            "md5": "7d8a52f6fa44f8419a477f957209788e",
+            "size": 4833333
+          },
+          "textures/rosewood_veneer_02_nor_gl_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_2k.exr",
+            "md5": "f86620421e77edf6b58c1b6b85835c86",
+            "size": 3621432
+          },
+          "textures/rosewood_veneer_02_rough_2k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/rosewood_veneer_02/rosewood_veneer_02_rough_2k.exr",
+            "md5": "0231c331983ebad8c3c0689438030bca",
+            "size": 3582616
+          }
+        }
+      }
+    },
+    "4k": {
+      "mtlx": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/mtlx/4k/rosewood_veneer_02/rosewood_veneer_02_4k.mtlx",
+        "md5": "35e79d9c705509659bf9b52f0a789484",
+        "size": 4781,
+        "include": {
+          "textures/rosewood_veneer_02_ao_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_ao_4k.jpg",
+            "md5": "ad5e24e3f2f306e0450ac6e6ae34ac6e",
+            "size": 7250327
+          },
+          "textures/rosewood_veneer_02_diff_4k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rosewood_veneer_02/rosewood_veneer_02_diff_4k.jpg",
+            "md5": "90d58f8fa6d53fb83d5606a185754c56",
+            "size": 10367617
+          },
+          "textures/rosewood_veneer_02_disp_4k.png": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/rosewood_veneer_02/rosewood_veneer_02_disp_4k.png",
+            "md5": "68d576509b49dff46f7cffde69644389",
+            "size": 17638473
+          },
+          "textures/rosewood_veneer_02_nor_gl_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_4k.exr",
+            "md5": "f59e722acc52b877717529d74bb8a4a0",
+            "size": 16778740
+          },
+          "textures/rosewood_veneer_02_rough_4k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/4k/rosewood_veneer_02/rosewood_veneer_02_rough_4k.exr",
+            "md5": "c42cb1066fa870924acdd3576d2b5b28",
+            "size": 14071080
+          }
+        }
+      }
+    },
+    "8k": {
+      "mtlx": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/mtlx/8k/rosewood_veneer_02/rosewood_veneer_02_8k.mtlx",
+        "md5": "b1a42d7c09fe1f102e97a33f830da354",
+        "size": 4781,
+        "include": {
+          "textures/rosewood_veneer_02_ao_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_ao_8k.jpg",
+            "md5": "5af15ead28c063ed7fbd8ac56b885b96",
+            "size": 21982304
+          },
+          "textures/rosewood_veneer_02_diff_8k.jpg": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/8k/rosewood_veneer_02/rosewood_veneer_02_diff_8k.jpg",
+            "md5": "5396034ef3452becd106e9a2617c1889",
+            "size": 32015047
+          },
+          "textures/rosewood_veneer_02_disp_8k.png": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/8k/rosewood_veneer_02/rosewood_veneer_02_disp_8k.png",
+            "md5": "22e9be7255a7708e287f9bf09a51d869",
+            "size": 87569506
+          },
+          "textures/rosewood_veneer_02_nor_gl_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_8k.exr",
+            "md5": "7d9f2424b4d0981d08e82c84f38f07f8",
+            "size": 54956277
+          },
+          "textures/rosewood_veneer_02_rough_8k.exr": {
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/8k/rosewood_veneer_02/rosewood_veneer_02_rough_8k.exr",
+            "md5": "e5f153f89ebaa1e5dc5e13bee019d52b",
+            "size": 51778547
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-12T15:58:10.558157+00:00",
+  "masterSha256": "d8e497880d0d0902b36a8d3c8fd8f7f8ca46563ca631e545861ec946ebe33f48",
+  "images": [
+    {
+      "file": "reports/blender/r14-master-full.png",
+      "width": 1280,
+      "height": 800,
+      "sha256": "0373e6f305b13b38ab2a7e92563a9d21fc72dcf7fe11f356f64a2b2ce6483b99",
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": "reports/blender/r14-master-xiaoxiang.png",
+      "width": 1280,
+      "height": 800,
+      "sha256": "8cd79a20d751addab5bffae7f80a5ee2b2d012b77a579830303652efa994ca81",
+      "openedByParent": true,
+      "valid": true
+    }
+  ],
+  "note": "Both final native renders actually opened by parent; native lighting differs from runtime and does not certify mobile readability."
+}

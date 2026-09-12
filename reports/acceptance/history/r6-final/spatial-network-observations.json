@@ -1,0 +1,47 @@
+{
+  "recordedAt": "2026-09-10T09:51:26.999312+00:00",
+  "host": "daguanyuan-rumeng.zeabur.app",
+  "revision": "spatial-garden-20260910-r6",
+  "defaultBrowser": {
+    "passed": false,
+    "error": "net::ERR_CONNECTION_CLOSED",
+    "log": "r6-production-default.log"
+  },
+  "resolvedBrowserStandard": {
+    "passed": true,
+    "observationTimeoutMs": 90000,
+    "desktopReadyMs": 9645,
+    "mobileReadyMs": 11924,
+    "log": "r6-production-resolved.log",
+    "report": "production-smoke.json"
+  },
+  "systemDnsObserved": "198.18.0.132",
+  "publicDnsObserved": "47.89.212.251",
+  "publicDnsSource": "Google DNS over HTTPS queried before r6 public smoke",
+  "virtualAdapterObserved": {
+    "name": "Mihomo",
+    "dnsServers": [
+      "198.18.0.2"
+    ]
+  },
+  "directResolvedTlsHealth": {
+    "status": "ok",
+    "revision": "spatial-garden-20260910-r6"
+  },
+  "defaultConnectionFixed": false,
+  "osNetworkChanged": false,
+  "proxyConfigurationChanged": false,
+  "domainOnlyProxyRepair": "Prepared in access-repair-preview.patch; user authorization pending; not applied",
+  "transportIsolationProbe": {
+    "file": "public-transport-probe.json",
+    "servedRevision": "spatial-garden-20260910-r5",
+    "dnsOverrideOnlyPassed": true,
+    "disableQuicOnlyPassed": false,
+    "scope": "Health endpoint only, recorded before r6; not a current 3D test"
+  },
+  "tlsVerificationEnabled": true,
+  "browserQuicDisabled": true,
+  "sceneReadyMethod": "Production semantic data-scene-ready waits for overview and crown atlas readiness; absence of loading UI alone is not used.",
+  "limitations": "These results concern this Windows network and desktop touch emulation. They neither certify all visitors nor establish the precise internal cause in Mihomo. Historical failures remain archived.",
+  "earlierSystemDnsObserved": "198.18.0.124"
+}

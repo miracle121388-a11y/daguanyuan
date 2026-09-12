@@ -1,0 +1,12 @@
+{
+  "revision": "spatial-garden-20260912-r12-fix1",
+  "preserved": {
+    "places": true,
+    "pathNodes": true,
+    "pathEdges": true,
+    "terrain": true,
+    "overviewCamera": true
+  },
+  "newInterpretivePlanting": "config/garden.planting.json",
+  "claim": "Existing spatial configuration is preserved; this does not establish a unique coordinate map in the novel."
+}

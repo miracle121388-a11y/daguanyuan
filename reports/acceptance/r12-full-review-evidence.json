@@ -1,0 +1,440 @@
+{
+  "revision": "spatial-garden-20260912-r12",
+  "reviewType": "fresh full independent finish review",
+  "disposition": "fix",
+  "at": "2026-09-12T10:58:10.1431427Z",
+  "requiredFinalCaptures": 21,
+  "openedFinalCaptures": 21,
+  "openedReferences": 5,
+  "captures": [
+    {
+      "id": "W01",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/desktop.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "a861aeb83b66e6d18e028a83cf6179109cc51484280c91745c3f389a41b929d4",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W02",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/plan.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "4be0b0a936a76045800828ab2dbe2e40ae87aa7359b99c10d395d5a9b6f4c9f6",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W03",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/courtyard.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "9cfa9751254b1d27f0b64f06e27ecf96c55b63763ab555b8da13bdcc8d0c60ad",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W04",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/interior.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "42f29cbe4583bc7494e4529065f25280c2e44ce979768888b8f3da585e9d01c3",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W05",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/cutaway.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "e7f72c95a46dc99201a5675a93d2effb3794b6617a2356f585f67a63776763bc",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W06",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/night.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "057840206f810740eeb413f40d41168af37067f2e6388cfcbc3ee3aa668df566",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W07",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/central-ensemble.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "fbae6573aa808b27be79f7404348b4456d6fa535b514bffa6c748e9b18172617",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W08",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/yihongyuan.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "ffbae7db387de7536a95dce101d04e143dcb96f55b0f616cfdad52d00ef5d30b",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W09",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/hengwuyuan.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "e7a2868a4bfe58a5308cdbb35bdfc30587e386518f259ac173cee1d26e0af0f8",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W10",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/qiushuangzhai.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "bd69cb115c43630529a14a75e54cc1dbba707e00b0f59efa0e874488841da0bb",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W11",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/character.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "49af2069536e42c512ce41fe9f638b2937c717ed8f51d2b63757b3f886653bd9",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W12",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/event.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "f1295a0670834636fcdfc8247468ffc130a44328785fae7cc01e11f6952ceea1",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W13",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/user-1266.png",
+      "dimensions": [
+        1266,
+        712
+      ],
+      "sha256": "159f5092db12eb221613d06893f9b720479a4f9ffb466f65c558f09ae9b950a4",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W14",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/mobile.png",
+      "dimensions": [
+        390,
+        844
+      ],
+      "sha256": "48cef647718093b37cdbabb1e045dd69b842badcab81c39447ab6ae751565262",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W15",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/mobile-courtyard.png",
+      "dimensions": [
+        390,
+        844
+      ],
+      "sha256": "ab6a5b88e09845b870dbaf4fe87d7d94f638c64eb98b1befaf5849aefb755ed9",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W16",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/mobile-whole-courtyard.png",
+      "dimensions": [
+        390,
+        844
+      ],
+      "sha256": "cb503d5eb2de70f70a3e2dcb1d94cd86bc027a736e0a02c4d28eada4fcebaf77",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "W17",
+      "kind": "web-state",
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/review/narrow.png",
+      "dimensions": [
+        320,
+        740
+      ],
+      "sha256": "504b4f54da715765fa43a59c8d7df681d8fa93b189a335ae94ba2f9078e0a8a6",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-final-capture-inspection.json"
+    },
+    {
+      "id": "P01",
+      "kind": "exact-package-web",
+      "path": "D:/Users/Lenovo/Desktop/大观园/reports/browser/r12-packaged-production-desktop.png",
+      "dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "b9faec41cc664160eee92004ee6f1e7e174434a9ec685d464063e1215aa45594",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-package-capture-inspection.json"
+    },
+    {
+      "id": "P02",
+      "kind": "exact-package-web",
+      "path": "D:/Users/Lenovo/Desktop/大观园/reports/browser/r12-packaged-production-mobile.png",
+      "dimensions": [
+        1170,
+        2532
+      ],
+      "sha256": "d80dc2e78072f94679bc099f183b58652585c4650be84ca6c220789ed849d342",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-package-capture-inspection.json"
+    },
+    {
+      "id": "N01",
+      "kind": "native-master-cycles",
+      "path": "D:/Users/Lenovo/Desktop/大观园/reports/blender/r12-master-full.png",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "sha256": "71dcf1eba818cc1222819a769527b396da0c10725004e8c8da90ac7f80edfc82",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-native-capture-inspection.json"
+    },
+    {
+      "id": "N02",
+      "kind": "native-master-cycles",
+      "path": "D:/Users/Lenovo/Desktop/大观园/reports/blender/r12-master-xiaoxiang.png",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "sha256": "946ec1bb02d992011e40e915f39cae82d90f08b2644adf79d87aaac13235c50d",
+      "openedByIndependentReviewer": true,
+      "captureValid": true,
+      "independentDimensionsMatchedInventory": true,
+      "independentSha256MatchedInventory": true,
+      "inventory": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-native-capture-inspection.json"
+    }
+  ],
+  "references": [
+    {
+      "id": "R01",
+      "path": "D:/Download/ChatGPT Image 2026年9月10日 01_02_26.png",
+      "openedByIndependentReviewer": true,
+      "role": "subject and finish reference, not approved webpage comp",
+      "sha256": "dd9a810e742b7c3d39a7c4ccd7dde55ff079c9448f118d54926657fd7a43b533"
+    },
+    {
+      "id": "R02",
+      "path": "D:/Users/Lenovo/Desktop/大观园/public/art/daguanlou.webp",
+      "openedByIndependentReviewer": true,
+      "role": "subject and finish reference, not approved webpage comp",
+      "sha256": "0ae2e3031fa7282a27798c0943081943b5be0fe5fc937eb17c893bb98f40b2df"
+    },
+    {
+      "id": "R03",
+      "path": "D:/Users/Lenovo/Desktop/大观园/public/art/xiaoxiangguan-day.webp",
+      "openedByIndependentReviewer": true,
+      "role": "subject and finish reference, not approved webpage comp",
+      "sha256": "8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2"
+    },
+    {
+      "id": "R04",
+      "path": "D:/Users/Lenovo/Desktop/大观园/public/art/garden-waterways.webp",
+      "openedByIndependentReviewer": true,
+      "role": "subject and finish reference, not approved webpage comp",
+      "sha256": "146067fb544ce15dce5a9a7a5e2a917ddadbfc63641cf7fdfdd65b3283c35e91"
+    },
+    {
+      "id": "R05",
+      "path": "D:/Users/Lenovo/Desktop/大观园/public/art/garden-aerial-day.webp",
+      "openedByIndependentReviewer": true,
+      "role": "subject and finish reference, not approved webpage comp",
+      "sha256": "73603aa3751606adb060cc55b4f16c4fb7b9fdb6d8746c736ae809a92c6eb432"
+    }
+  ],
+  "finalDesignDocuments": [
+    {
+      "path": "D:/Users/Lenovo/Desktop/大观园/DESIGN.md",
+      "readAfterDocumenterCompletion": true,
+      "sha256": "b43e9b542b2f702d94a9ff5478bd50dc8d7d5c5681637f487bd789feabfcffd9"
+    },
+    {
+      "path": "D:/Users/Lenovo/Desktop/大观园/.impeccable/design.json",
+      "readAfterDocumenterCompletion": true,
+      "sha256": "42b1eb4a27d6445df4de207dc9bb8474376734812f7b7e2f4301b9e8b73a44b7"
+    }
+  ],
+  "package": {
+    "path": "D:/Users/Lenovo/Desktop/大观园/.deploy/reference-20260912-102643-070479",
+    "actualFiles": 437,
+    "inventoriedFiles": 437,
+    "bytes": 52217390,
+    "independentlyHashedFiles": 437,
+    "hashOrLengthMismatches": 0,
+    "uploadedByReviewer": false
+  },
+  "nativeMaster": {
+    "path": "D:/Users/Lenovo/Desktop/大观园/blender/daguanyuan_master.blend",
+    "independentSha256": "eb78a58bb0ff5686214d0409426a02896e2ffeb524d1bee1efc38f25584d1bac",
+    "matchesNativeManifest": true,
+    "doesNotCertifyWebOrMobile": true
+  },
+  "groundSamples": [
+    {
+      "capture": "W01",
+      "x": 500,
+      "rgb": [
+        243,
+        240,
+        230
+      ],
+      "y": 20
+    },
+    {
+      "capture": "W01",
+      "x": 100,
+      "rgb": [
+        241,
+        239,
+        229
+      ],
+      "y": 140
+    },
+    {
+      "capture": "W01",
+      "x": 900,
+      "rgb": [
+        243,
+        240,
+        230
+      ],
+      "y": 825
+    }
+  ],
+  "existingDetector": {
+    "advisories": 51,
+    "rerun": false,
+    "fontSize": 30,
+    "radius": 1,
+    "color": 20
+  },
+  "missingInputs": [
+    "approved webpage comp",
+    "decision comp",
+    "QUALITY BAR card",
+    "authenticated original FORM seed 41ecba8d output"
+  ],
+  "newTestsRun": [],
+  "browserUsed": false,
+  "implementationModified": false,
+  "assetsModified": false,
+  "reviewReport": "D:/Users/Lenovo/Desktop/大观园/reports/acceptance/r12-full-review.md"
+}

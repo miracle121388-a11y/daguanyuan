@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported stone_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "stone_rough",
+  "sourcePixelSha256": "60c3065d950d5105c9749a7e214158a60d09eb7cb17e0b089b7ee7bbc1f32429",
+  "sha256": "658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289",
+  "prompt": "Blender-exported stone_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

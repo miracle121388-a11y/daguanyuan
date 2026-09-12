@@ -1,0 +1,18 @@
+{
+  "revision": "r11",
+  "inspection": "First complete 12 capture matrix, every file opened.",
+  "findings": [
+    "Road and bridge top faces were wound downwards; preserving upward-only paving removed nearly all route decks. The new before-check confirms 4719 inverted master samples and 4711 missing samples per overview.",
+    "Fern and canopy source colour repaired; exported visible RGB and alpha match source.",
+    "Wood too cool and uniformly pale, lawn lacks planted shadow mass, distance cards root shifts with camera pitch.",
+    "Mobile whole-courtyard now visible; room, cutaway, artwork and literature interfaces intact."
+  ],
+  "correctionBatch": [
+    "Correct source road/bridge winding and verify actual three-wide walking surface samples in both exported overviews.",
+    "Warmer calibrated wood with softer normal strength, directional morning key and lower night ambient illumination.",
+    "Full source-crown linked geometry for native shadow render, matching far LOD canopy; root-anchored distance cards.",
+    "Water reduces flat additive grey, uses shorter ripples and lower Fresnel reflectance."
+  ],
+  "parentSelfReviewRound": 1,
+  "next": "Regenerate models; run contract; one final confirmation matrix, then fresh mandatory finish review."
+}

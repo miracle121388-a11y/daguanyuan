@@ -1,0 +1,37 @@
+from pathlib import Path
+R=Path(__file__).resolve().parents[1]
+def change(file,old,new):
+ p=R/file;s=p.read_text(encoding='utf8');assert old in s,(file,old[:60]);p.write_text(s.replace(old,new),encoding='utf8')
+change('src/state/store.ts',"timeOfDay:'day'|'night';galleryOpen", "cutaway:boolean;timeOfDay:'day'|'night';galleryOpen")
+change('src/state/store.ts',"({timeOfDay:'day',galleryOpen", "({cutaway:false,timeOfDay:'day',galleryOpen")
+change('src/state/store.ts',"choosePlace:id=>set({selectedPlaceId:id", "choosePlace:id=>set({cutaway:false,selectedPlaceId:id")
+change('src/App.tsx','<PlaceReference placeId={place.id}/><ViewControls/>','<ViewControls/><PlaceReference placeId={place.id}/>')
+change('src/App.tsx',"className={'source-nav '+(s.sourcesOpen?'active':'')}","aria-label=\"来源与说明\" className={'source-nav '+(s.sourcesOpen?'active':'')}")
+change('src/panels/ReferenceExperience.tsx',"function useArt(){const [images,setImages]=useState<Art[]>([]);useEffect(()=>{let live=true;catalogue??=fetch(import.meta.env.BASE_URL+'art/manifest.json').then(r=>{if(!r.ok)throw Error('图录载入失败');return r.json()}).catch(()=>{catalogue=undefined;return []});catalogue.then(items=>{if(live)setImages(items)});return()=>{live=false}},[]);return images}","function useArt(){const [images,setImages]=useState<Art[]>([]),[status,setStatus]=useState<'loading'|'ready'|'error'>('loading'),[attempt,setAttempt]=useState(0);useEffect(()=>{let live=true;setStatus('loading');catalogue??=fetch(import.meta.env.BASE_URL+'art/manifest.json').then(r=>{if(!r.ok)throw Error('图录载入失败');return r.json()});catalogue.then(items=>{if(live){setImages(items);setStatus('ready')}}).catch(()=>{catalogue=undefined;if(live)setStatus('error')});return()=>{live=false}},[attempt]);return {images,status,retry:()=>{catalogue=undefined;setAttempt(n=>n+1)}}}")
+change('src/panels/ReferenceExperience.tsx','const all=useArt(),s=useGarden();','const {images:all}=useArt(),s=useGarden();')
+change('src/panels/ReferenceExperience.tsx','const s=useGarden(),all=useArt(),dialog=','const s=useGarden(),{images:all,status,retry}=useArt(),dialog=')
+change('src/panels/ReferenceExperience.tsx',"{!images.length&&<p>图录正在展开，请稍候。</p>}","{!images.length&&<div className=\"gallery-status\" role=\"status\">{status==='loading'?<p>图录正在展开，请稍候。</p>:status==='error'?<><p>图录暂时未能载入。</p><button onClick={retry}>重新载入图录</button></>:<p>当前阅读进度内暂无园景图片。可在游园设置中调整阅读进度。</p>}</div>}")
+start='export function ViewControls()';p=R/'src/panels/ReferenceExperience.tsx';s=p.read_text(encoding='utf8');a=s.index(start);b=s.index('export function ReferenceGallery',a)
+s=s[:a]+'''export function ViewControls(){const s=useGarden(),p=s.data?.manifest.places.find(p=>p.id===s.selectedPlaceId);if(!p)return null;const inside=s.hotspotId===p.id+'-study';return <div className="view-controls"><button aria-pressed={!s.hotspotId} onClick={()=>useGarden.setState({hotspotId:null,cutaway:false})}><View size={14}/>院落全貌</button><button aria-pressed={inside&&!s.cutaway} onClick={()=>useGarden.setState({hotspotId:p.id+'-study',cutaway:false})}><BookOpen size={14}/>{p.id==='daguanlou'?'层楼细看':'屋内陈设'}</button><button aria-pressed={inside&&s.cutaway} onClick={()=>useGarden.setState({hotspotId:p.id+'-study',cutaway:true})}><Expand size={14}/>剖视结构</button></div>}
+'''+s[b:];p.write_text(s,encoding='utf8')
+change('src/scene/GardenScene.tsx',"const inside=useGarden(s=>s.hotspotId===place.id+'-study');","const inside=useGarden(s=>s.hotspotId===place.id+'-study'&&s.cutaway);")
+change('src/scene/GardenScene.tsx','function Lake(){','function Lake({manifest}:{manifest:Manifest}){')
+change('src/scene/GardenScene.tsx','const water=new Water(new THREE.PlaneGeometry(410,380),',"const lake=manifest.lake,shape=new THREE.Shape();for(let i=0;i<=192;i++){const a=i*Math.PI*2/192,f=1+.17*Math.sin(3*a+.4)+.085*Math.sin(5*a-1.1),x=lake.center[0]+lake.radius[0]*f*Math.cos(a),y=lake.center[1]+lake.radius[1]*f*Math.sin(a);if(i===0)shape.moveTo(x,y);else shape.lineTo(x,y)}const water=new Water(new THREE.ShapeGeometry(shape),")
+change('src/scene/GardenScene.tsx',"water.rotation.x=-Math.PI/2;water.position.y=-.16;return {water,normals};","water.material.fragmentShader=water.material.fragmentShader.replace('vec3 outgoingLight = albedo;', 'vec3 outgoingLight = mix(waterColor * 0.48, albedo, 0.62);');water.rotation.x=-Math.PI/2;water.position.y=-.12;return {water,normals};")
+change('src/scene/GardenScene.tsx','},[quality]);\n useEffect(()=>{surface.water','},[quality,manifest]);\n useEffect(()=>{surface.water')
+change('src/scene/GardenScene.tsx',"night?'#192a3a':'#cbd3ce'","night?'#142a33':'#c3d0c7'")
+change('src/scene/GardenScene.tsx','280,650','230,660')
+change('src/scene/GardenScene.tsx',"night?.82:1.15","night?.45:.68")
+change('src/scene/GardenScene.tsx',"night?.16:.1","night?.1:.025")
+change('src/scene/GardenScene.tsx',"night?.75:3.6","night?.6:2.7")
+change('src/scene/GardenScene.tsx','position={[-90,115,65]}','position={[-80,64,42]}')
+change('src/scene/GardenScene.tsx','shadow-normalBias={.3}','shadow-normalBias={.1}')
+change('src/scene/GardenScene.tsx',"night?.12:.42","night?.08:.34")
+change('src/scene/GardenScene.tsx','const hotspot=useGarden(s=>s.hotspotId);\n useEffect(()=>{if(tour.status', 'const hotspot=useGarden(s=>s.hotspotId),cutaway=useGarden(s=>s.cutaway);\n useEffect(()=>{if(tour.status')
+old="const target:Vec3=h&&p?h.position.map((v,i)=>v+p.position[i]) as Vec3:p?.cameraTarget??manifest.overviewCamera.target;const position:Vec3=h?[target[0]+(h.id.endsWith('-study')?5:8),target[1]+(h.id.endsWith('-study')?13:5),target[2]+(h.id.endsWith('-study')?8:13)]:p?.cameraPosition??manifest.overviewCamera.position;controls.current?.setLookAt(...position,...target,motion)},[selected,manifest,tour.status,motion,hotspot]);"
+new="const room=h?.id.endsWith('-study')&&p;const target:Vec3=room&&!cutaway?[p.position[0]+(p.id==='xiaoxiangguan'?-3:0),p.position[1]+1.8,p.position[2]-8]:h&&p?h.position.map((v,i)=>v+p.position[i]) as Vec3:p?.cameraTarget??manifest.overviewCamera.target;const position:Vec3=room&&!cutaway?[target[0]+.35,target[1]+.85,target[2]+6.4]:h?[target[0]+5,target[1]+13,target[2]+8]:p?.cameraPosition??manifest.overviewCamera.position;if(camera instanceof THREE.PerspectiveCamera){camera.fov=size.width<601&&!p?72:43;camera.updateProjectionMatrix()}controls.current?.setLookAt(...position,...target,motion)},[selected,manifest,tour.status,motion,hotspot,cutaway,camera,size.width]);"
+change('src/scene/GardenScene.tsx',old,new)
+change('src/scene/GardenScene.tsx','minDistance={8}','minDistance={hotspot?.endsWith(\'-study\')?2.5:8}')
+change('src/scene/GardenScene.tsx','<Lake/><Markers','<Lake manifest={manifest}/><GardenLights manifest={manifest}/><Markers')
+change('src/scene/GardenScene.tsx','<Atmosphere/>','<Atmosphere/>')
+p=R/'index.html';s=p.read_text(encoding='utf8');lines=[line for line in s.splitlines() if 'seed f5c37f35' not in line];p.write_text('\n'.join(lines)+'\n',encoding='utf8')

@@ -1,0 +1,56 @@
+{
+  "revision": "spatial-garden-20260910-r6",
+  "inspectionRounds": 2,
+  "validScreenshotsOpened": [
+    "desktop",
+    "mobile",
+    "central-ensemble",
+    "courtyard",
+    "interior",
+    "cutaway",
+    "mobile-courtyard",
+    "night",
+    "plan",
+    "user-1266",
+    "narrow"
+  ],
+  "findings": [
+    "Main roof hierarchy and mobile whole-court framing now visible, still below photoreal quality.",
+    "Repeated earth striping; overlapping courtyard soil and a whole-plane underlay are present in geometry.",
+    "Water has excessively pale diffuse reflection.",
+    "Phone 44px visual hotspot covers too much of the smaller fitted courtyard.",
+    "First viewport loses the front gate below the navigation bar."
+  ],
+  "oneCorrectionBatch": [
+    "Replace duplicate earth with clipped shoreline fill and shared court soil; improve camera depth precision; prevent ground from casting a second shadow.",
+    "Use water-normal Fresnel and lower diffuse water lighting.",
+    "Keep 44px hit targets with 24px visible discs.",
+    "Aim overview toward entry forecourt while retaining shared spatial coordinates."
+  ],
+  "confirmationRoundPending": false,
+  "visualAccepted": false,
+  "at": "2026-09-10T08:53:50.722523+00:00",
+  "confirmationCapturedAt": "2026-09-10T09:20:08.818719+00:00",
+  "confirmationAllElevenOpenedAndValid": true,
+  "confirmationObservations": [
+    "All named scenes are loaded and valid, including night, eye-level interior and roof cutaway.",
+    "The full courtyard and both smaller hotspot discs are visible above the phone drawer; the art-reference identity is visible.",
+    "Water no longer reads as a broad white patch; desktop entry framing has more ground at the gate.",
+    "Material realism and landscape composition still require an independent full review; no visual acceptance is claimed."
+  ],
+  "independentFullReview": "r6-full-review.md",
+  "independentFullDisposition": "rebuild",
+  "postReviewFunctionalCorrection": {
+    "scope": "Full-review material_fixes item 3 only",
+    "changes": [
+      "Non-occluded numbered UI hotspots",
+      "Equivalent native courtyard-detail select",
+      "Semantic initial-scene readiness for production smoke"
+    ],
+    "fullMatrixRecaptured": true,
+    "allThirteenOpenedAndValid": true,
+    "reviewerVerdict": "resolved",
+    "verdictFile": "r6-hotspot-verdict.md",
+    "overallVisualVerdictUnchanged": "rebuild"
+  }
+}

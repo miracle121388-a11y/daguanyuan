@@ -1,0 +1,7 @@
+{
+  meanFrameMs: 16.161666666666665,
+  p95FrameMs: 35.19999999925494,
+  triangles: 731713,
+  drawCalls: 48,
+  plants: [ { species: 0, visible: 125 }, { species: 1, visible: 124 } ]
+}

@@ -13,19 +13,33 @@ def materials():
   m=bpy.data.materials.get(key) or bpy.data.materials.new(key);m.use_nodes=True
   srgb=tuple(int(h[i:i+2],16)/255 for i in (0,2,4));rgb=tuple(((v+.055)/1.055)**2.4 if v>.04045 else v/12.92 for v in srgb);m.diffuse_color=(*rgb,1)
   bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(*rgb,1);bs.inputs['Roughness'].default_value=.85
-  texname={'stone':'stone_wall_02','wood':'wood_planks'}.get(key)
+  texname={'stone':'stone_wall_02','wood':'wood_cabinet_worn_long','darkwood':'wood_cabinet_worn_long','floorwood':'wood_cabinet_worn_long','latticewood':'wood_cabinet_worn_long','bankstone':'mossy_rock','paving':'mossy_cobblestone','plaster':'worn_mossy_plasterwall'}.get(key)
+  if key=='earth':
+   tex=m.node_tree.nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(R/'assets/processed/ground-r7/turf.png'),check_existing=True);tex.image.pack();m.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color'])
   if texname and (R/'assets/source'/f'{texname}.jpg').exists():
    tex=m.node_tree.nodes.new('ShaderNodeTexImage');texture_path=R/('assets/processed' if key=='stone' else 'assets/source')/f'{texname}.jpg';tex.image=bpy.data.images.load(str(texture_path),check_existing=True)
    tex.image.pack()
    m.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color'])
+   normal_path=R/'assets/source'/f'{texname}_nor_gl.jpg'
+   if key in ['wood','darkwood','floorwood','bankstone'] and normal_path.exists():
+    tex=m.node_tree.nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(normal_path),check_existing=True);tex.image.colorspace_settings.name='Non-Color';tex.image.pack()
+    normal=m.node_tree.nodes.new('ShaderNodeNormalMap');normal.inputs['Strength'].default_value=.20 if key!='bankstone' else .70;m.node_tree.links.new(tex.outputs['Color'],normal.inputs['Color']);m.node_tree.links.new(normal.outputs['Normal'],bs.inputs['Normal'])
+  if key=='limestone':
+   for suffix,socket in [('diff','Base Color'),('nor_gl','Normal')]:
+    tex=m.node_tree.nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(R/'assets/source/rock_moss_set_01/textures'/f'rock_moss_set_01_{suffix}_1k.jpg'),check_existing=True);tex.image.pack()
+    if suffix=='nor_gl':
+     tex.image.colorspace_settings.name='Non-Color';normal=m.node_tree.nodes.new('ShaderNodeNormalMap');normal.inputs['Strength'].default_value=.65;m.node_tree.links.new(tex.outputs['Color'],normal.inputs['Color']);m.node_tree.links.new(normal.outputs['Normal'],bs.inputs[socket])
+    else:m.node_tree.links.new(tex.outputs['Color'],bs.inputs[socket])
   if key in ['leaf','lightleaf']:m.surface_render_method='DITHERED';m.use_backface_culling=False
   out[key]=m
  return out
 M=None
 class Batch:
- def __init__(self,name,collection,parent=None):self.name=name;self.collection=collection;self.parent=parent;self.data=defaultdict(lambda:[[],[]])
- def mesh(self,mat,verts,faces):
-  v,f=self.data[mat];n=len(v);v.extend(verts);f.extend([tuple(n+i for i in face) for face in faces])
+ def __init__(self,name,collection,parent=None):self.name=name;self.collection=collection;self.parent=parent;self.data=defaultdict(lambda:[[],[]]);self.source_uv={}
+ def mesh(self,mat,verts,faces,uvs=None):
+  v,f=self.data[mat];n=len(v);start=len(f);v.extend(verts);f.extend([tuple(n+i for i in face) for face in faces])
+  if uvs is not None:
+   for i,coords in enumerate(uvs):self.source_uv[(mat,start+i)]=coords
  def box(self,mat,c,s):
   x,y,z=c;a,b,h=[i/2 for i in s];v=[(x+i*a,y+j*b,z+k*h) for i,j,k in [(-1,-1,-1),(1,-1,-1),(1,1,-1),(-1,1,-1),(-1,-1,1),(1,-1,1),(1,1,1),(-1,1,1)]]
   self.mesh(mat,v,[(0,3,2,1),(4,5,6,7),(0,1,5,4),(1,2,6,5),(2,3,7,6),(3,0,4,7)])
@@ -57,7 +71,11 @@ class Batch:
    for poly in mesh.polygons:
     axis=max(range(3),key=lambda i:abs(poly.normal[i]));axes=[i for i in range(3) if i!=axis]
     for li in poly.loop_indices:
-     co=mesh.vertices[mesh.loops[li].vertex_index].co;uv.data[li].uv=(co[axes[0]]/4,co[axes[1]]/4)
+     scale={'wood':1.5,'darkwood':1.5,'floorwood':1.5,'stone':2.4,'bankstone':2.5,'plaster':3.2,'earth':2.8,'paving':2.8}.get(mat,4)
+     co=mesh.vertices[mesh.loops[li].vertex_index].co;uv.data[li].uv=(co[axes[0]]/scale,co[axes[1]]/scale)
+    source=self.source_uv.get((mat,poly.index))
+    if source:
+     for li,coords in zip(poly.loop_indices,source):uv.data[li].uv=coords
    ob=bpy.data.objects.new(mesh.name,mesh);self.collection.objects.link(ob);ob.data.materials.append(M[mat]);ob.parent=self.parent;obs.append(ob)
   return obs
 def roof(b,x,y,z,w,d,h=3,mat='roof',detail=True):

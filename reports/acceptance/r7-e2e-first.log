@@ -1,0 +1,64 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> node scripts/run_e2e.mjs
+
+[WebServer] (node:58728) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:54528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:57132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:53252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:53548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\gallery.spec.ts:3:1 › a failed full-size reference image can be retried without leaving the viewer (3.3s)
+  ok  2 tests\e2e\gallery.spec.ts:16:1 › gallery retries a failed manifest and distinguishes spoiler-empty results (7.7s)
+  ok  3 tests\e2e\gallery.spec.ts:21:1 › 320px sources entry retains its accessible name (601ms)
+  x   4 tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots (31.6s)
+(node:34672) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 tests\e2e\garden.spec.ts:19:1 › mobile bottom drawer and usable controls (5.9s)
+  ok  6 tests\e2e\garden.spec.ts:20:1 › model failure exposes retry and recovers (6.2s)
+  ok  7 tests\e2e\garden.spec.ts:21:1 › tour shows sourced stop content, travels, and arrives at the next stop (12.6s)
+  ok  8 tests\e2e\garden.spec.ts:33:1 › the overhead garden view opens by keyboard and a map destination returns to its courtyard (2.0s)
+  ok  9 tests\e2e\interior.spec.ts:3:1 › interior inspection lifts the roof and restores the complete courtyard (8.2s)
+  ok 10 tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard (25.7s)
+  ok 11 tests\e2e\mobile.spec.ts:48:1 › 320px phone controls remain inside the viewport (3.0s)
+
+
+  1) tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "yihongyuan"
+    Received: null
+
+    Call Log:
+    - Timeout 20000ms exceeded while waiting on the predicate
+
+       7 |  const errors:string[]=[],failed:string[]=[],external:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});page.on('request',r=>{if(!r.url().startsWith('http://127.0.0.1')&&!r.url().startsWith('data:')&&!r.url().startsWith('blob:'))external.push(r.url())});await ready(page);await page.waitForTimeout(1800);
+       8 |  await shot(page,'reports/browser/01-overview.png');
+    >  9 |  for(const id of ['xiaoxiangguan','yihongyuan','qiushuangzhai']){await page.getByRole('button',{name:'回到全园',exact:true}).click();await page.waitForTimeout(2000);const point=await page.evaluate(id=>(window as any).__gardenTest.project(id),id);const box=(await page.locator('canvas').boundingBox())!;await page.mouse.click(box.x+point.x,box.y+point.y);await expect.poll(async()=>(await state(page)).place).toBe(id)}
+         |                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+      10 |  for(const [i,name]of ['潇湘馆','怡红院','蘅芜苑','秋爽斋'].entries()){await place(page,name);await shot(page,`reports/browser/0${i+2}-${['xiaoxiangguan','yihongyuan','hengwuyuan','qiushuangzhai'][i]}.png`)}
+      11 |  await page.getByRole('button',{name:'人物群像',exact:true}).click();await page.locator('.character-list button').filter({hasText:'林黛玉'}).click();await expect.poll(async()=>(await state(page)).person).toBe('daiyu');await expect(page.locator('.related-places')).toContainText('潇湘馆');await shot(page,'reports/browser/06-character.png');
+      12 |  await page.getByRole('button',{name:'回目拾遗',exact:true}).click();await page.locator('.chapter-list button').filter({hasText:'第三十七回'}).click();await page.locator('.event-row').filter({hasText:'海棠结社'}).click();await expect.poll(async()=>(await state(page)).place).toBe('qiushuangzhai');await expect(page.locator('.detail-panel')).toContainText('探春');await page.locator('.source-list summary').first().click();await expect(page.locator('.source-body blockquote')).toBeVisible();await page.waitForTimeout(1800);await shot(page,'reports/browser/07-event.png');
+        at D:\Users\Lenovo\Desktop\大观园\tests\e2e\garden.spec.ts:9:405
+
+    Error Context: test-results\garden-published-scene-rea-0a456-rs-settings-and-screenshots\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\garden-published-scene-rea-0a456-rs-settings-and-screenshots\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\garden-published-scene-rea-0a456-rs-settings-and-screenshots\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots 
+  10 passed (2.1m)

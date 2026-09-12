@@ -1,0 +1,23 @@
+{
+  "index.html": {
+    "file": "assets/index-DIalRZ16.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/scene/GardenScene.tsx"
+    ],
+    "css": [
+      "assets/index-DTZ0A3L8.css"
+    ]
+  },
+  "src/scene/GardenScene.tsx": {
+    "file": "assets/GardenScene-BqebMnT_.js",
+    "name": "GardenScene",
+    "src": "src/scene/GardenScene.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  }
+}

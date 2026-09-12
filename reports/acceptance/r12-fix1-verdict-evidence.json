@@ -1,0 +1,91 @@
+{
+  "reviewType": "verdict-pass",
+  "revision": "spatial-garden-20260912-r12-fix1",
+  "authority": "reports/acceptance/r12-full-review.md",
+  "disposition": "fix",
+  "scope": "Exactly the five original material fixes; no fresh full-surface audit.",
+  "capturesValid": true,
+  "capturesOpened": 21,
+  "dimensionMatches": 21,
+  "sha256Matches": 21,
+  "captureInventories": [
+    "reports/acceptance/r12-fix1-final-capture-inspection.json",
+    "reports/acceptance/r12-fix1-native-capture-inspection.json",
+    "reports/acceptance/r12-fix1-package-capture-inspection.json"
+  ],
+  "captures": [
+    {"id":"W01","path":".impeccable/review/desktop.png","width":1440,"height":900,"sha256":"9f8ccd3aa32ec4aed55eb55cd2d63d1ba0251b7b4026f84e3ab86930b38d29a5"},
+    {"id":"W02","path":".impeccable/review/plan.png","width":1440,"height":900,"sha256":"18eccfaec647e45b987e8655be15844f10cfd6d60a1b68646a4a14d0e7369ceb"},
+    {"id":"W03","path":".impeccable/review/courtyard.png","width":1440,"height":900,"sha256":"9c7679d2ef976881ac8786a15ddba0075fbcdb1841493190d79edcffaef3587f"},
+    {"id":"W04","path":".impeccable/review/interior.png","width":1440,"height":900,"sha256":"624c06ba3aade754c63d0461ae6e23029bec27ede1f3bbe88ebfbaf5c1f9fb52"},
+    {"id":"W05","path":".impeccable/review/cutaway.png","width":1440,"height":900,"sha256":"4dc12364a175b3914dca3003c98fc0e314b3673d450b476aa7be935ac815d9d6"},
+    {"id":"W06","path":".impeccable/review/night.png","width":1440,"height":900,"sha256":"ebdc0b7b3566bc033a6e9f769ff403518fa7277e9a2023c8dcda7de51bf748b5"},
+    {"id":"W07","path":".impeccable/review/central-ensemble.png","width":1440,"height":900,"sha256":"fc7fbfa29fd56ff2b227df505cb9120d035d5a0934d9d0c9a38501ae6b5330c8"},
+    {"id":"W08","path":".impeccable/review/yihongyuan.png","width":1440,"height":900,"sha256":"14f5ad8bce7b2892412cb433d8fa4ee736896b102131f98c70e15ac8528c01b7"},
+    {"id":"W09","path":".impeccable/review/hengwuyuan.png","width":1440,"height":900,"sha256":"0d6e38dd81eb88c0a9cf015763c8a7350d01fe989554753d6fe52f497bc44d37"},
+    {"id":"W10","path":".impeccable/review/qiushuangzhai.png","width":1440,"height":900,"sha256":"1f7c265c84b2278b1a8db25a771f18790b237c030c238d661d98ae307da50353"},
+    {"id":"W11","path":".impeccable/review/character.png","width":1440,"height":900,"sha256":"0aca9b0196628b72acbf2d4e91f0fc705c658c633eff64f492e268416c176913"},
+    {"id":"W12","path":".impeccable/review/event.png","width":1440,"height":900,"sha256":"8dfddf9db95cd1f06922b7d7b37be081428e76a19343b12ad5dd284b35d9954b"},
+    {"id":"W13","path":".impeccable/review/user-1266.png","width":1266,"height":712,"sha256":"e90141495acfab3abbc5984f71a3507769eaf8459db65797710949cc8062f557"},
+    {"id":"W14","path":".impeccable/review/mobile.png","width":390,"height":844,"sha256":"b34f369d172e7d3bb36d4f9dd889ae2ca8dc4fc2d4118e1d90a0b98da2fbe3bb"},
+    {"id":"W15","path":".impeccable/review/mobile-courtyard.png","width":390,"height":844,"sha256":"093713e95c0ad4c4802c4f423a0ba48dd2226a0a519df47d3997dff38a20836a"},
+    {"id":"W16","path":".impeccable/review/mobile-whole-courtyard.png","width":390,"height":844,"sha256":"a99ece681d1026a236d91486a7a985c634c011058e4c4f6de055d0efb0244b43"},
+    {"id":"W17","path":".impeccable/review/narrow.png","width":320,"height":740,"sha256":"7ac9a2c66f9715d5ae7d4762c37bd95237a8346328eba3fbd0854c50315fe109"},
+    {"id":"P01","path":"reports/browser/r12-fix1-packaged-production-desktop.png","width":1440,"height":900,"sha256":"efa5456094b977c78669c8330570c2a46bb141bc12924d03b77b8efd42bc11c0"},
+    {"id":"P02","path":"reports/browser/r12-fix1-packaged-production-mobile.png","width":1170,"height":2532,"cssWidth":390,"cssHeight":844,"dpr":3,"sha256":"75ac619d515330308247c0a74e0f9d9bfe301710728fc4a73cce0d52bde1e6b6"},
+    {"id":"N01","path":"reports/blender/fix1-master-full.png","width":1280,"height":800,"sha256":"1c2661054fe8f2affca8dc51541559bbce89ed3d47bb0ec2fdd1a2c3eb6c233f"},
+    {"id":"N02","path":"reports/blender/fix1-master-xiaoxiang.png","width":1280,"height":800,"sha256":"4b8f18f3a5c83b84fb6e525ed4dbfeaced958d6dc84e76d66b306483f979979d"}
+  ],
+  "originalComparisonsOpened": [
+    ".impeccable/review/r12-final/night.png",
+    ".impeccable/review/r12-final/courtyard.png",
+    ".impeccable/review/r12-final/yihongyuan.png",
+    ".impeccable/review/r12-final/hengwuyuan.png",
+    ".impeccable/review/r12-final/mobile-courtyard.png"
+  ],
+  "references": "The five artistic references were opened in the original full review. They remain subject and finish references, not approved UI comps; no new reference audit was performed.",
+  "package": {
+    "directory": ".deploy/reference-20260912-124455-508731",
+    "physicalFiles": 588,
+    "physicalBytes": 50915889,
+    "independentlyRecomputedPhysicalHashAndLengthMismatches": 0,
+    "actualDirectoryFileCountMatches": true,
+    "inventory": "reports/acceptance/r12-fix1-package-inventory.json",
+    "logicalIdentityLedger": "reports/acceptance/r12-fix1-packed-logical-file-hashes.json",
+    "logicalIdentityLedgerSuppliedMatches": 45,
+    "logicalDecodingRerunByReviewer": false,
+    "storageBoundary": "GLB/JS/WASM are physically stored as Brotli copies; decoded logical resources are a separate identity claim.",
+    "uploaded": false
+  },
+  "native": {
+    "masterSha256": "9acbf64e074e5bedce2db90eb389c9e97b03ffe53c0111b705207ef95ea35d31",
+    "independentlyHashVerified": true,
+    "renderEvidence": "reports/acceptance/fix1-master-render-evidence.json",
+    "boundary": "Actual native renders have distinct geometry, lighting and water; they do not certify web or mobile finish."
+  },
+  "finalDocuments": {
+    "readAfterCompletionNotice": true,
+    "completionRecord": "reports/acceptance/r12-fix1-documenter-completion.json",
+    "designMdSha256": "f04e806156d1e307b192d6a5ea96332a7de1b166505de20054b72aec5469a91a",
+    "designJsonSha256": "2f239479e14e3de70a01861b62fbee431488d5beaf0890ae77e3f3d96be80a63"
+  },
+  "originalFixes": [
+    {"number":1,"name":"FORM provenance","status":"unresolved","evidence":"Authenticated historical seed output remains missing; truthful unmet disclosure is preserved."},
+    {"number":2,"name":"Planted ground","status":"partial","captures":["W03","W07","W09","W10","N02"],"evidence":"New soil/litter zones are visible; low plants remain thin isolated repeated silhouettes and broad smooth ground transitions remain."},
+    {"number":3,"name":"Focal botany","status":"partial","captures":["W03","W08","P02","N02"],"evidence":"Improved irregular leaf and branch geometry is visible, but daylight web foliage loses surface variation in near-black silhouettes; native results remain separate."},
+    {"number":4,"name":"Mobile close view","status":"resolved","captures":["W15","W16","P02"],"evidence":"Near view is distinctly lower and closer, exposes more architectural material detail, preserves whole-court and readable controls, and separates the selected label from point 3."},
+    {"number":5,"name":"Moonlit depth","status":"resolved","captures":["W06"],"evidence":"Foreground canopy and pond separate; route, bridge and illuminated hall form a readable depth sequence, with quiet paper controls retained."}
+  ],
+  "regressions": [
+    {"id":"R1","originalFixNumbers":[2,3],"evidence":"Daylight focal foliage and new low planting are excessively dark silhouettes compared with original r12 court views.","captures":["W03","W08","W09","W10","P02"]}
+  ],
+  "boundaries": {
+    "newApplicationTestsRun": false,
+    "newDetectorRun": false,
+    "browserUsed": false,
+    "implementationChanged": false,
+    "deploymentPerformed": false,
+    "fullSurfaceApproval": false,
+    "testChronology": "The earlier 10-pass/1-fail budget run remains in r12-fix1-final-e2e.log. Later supplied release-e2e status exit 0 and current Playwright JSON 11 expected / 0 skipped, unexpected or flaky are separate results."
+  }
+}

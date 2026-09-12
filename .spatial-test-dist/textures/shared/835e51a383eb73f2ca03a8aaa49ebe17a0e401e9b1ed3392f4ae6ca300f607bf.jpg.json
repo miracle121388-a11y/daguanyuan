@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported wood_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "wood_diff",
+  "sourcePixelSha256": "bf1809c1854c90b26f973dff261c60eee51468a0741ed067516078e3bcdd8b16",
+  "sha256": "835e51a383eb73f2ca03a8aaa49ebe17a0e401e9b1ed3392f4ae6ca300f607bf",
+  "prompt": "Blender-exported wood_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

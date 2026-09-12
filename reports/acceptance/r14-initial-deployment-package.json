@@ -1,0 +1,29 @@
+{
+  "directory": ".deploy/reference-20260912-154946-308170",
+  "contents": [
+    "dist/",
+    "server.mjs",
+    "Dockerfile"
+  ],
+  "rawBytes": 56285131,
+  "compressedBytes": 47680083,
+  "uploadDirectoryBytes": 49531602,
+  "precompressedExtensions": [
+    "html",
+    "js",
+    "css",
+    "json",
+    "wasm"
+  ],
+  "precompressedFormat": "br",
+  "packedOnlyExtensions": [
+    "glb",
+    "js",
+    "wasm"
+  ],
+  "packedBinaryIdentity": "server returns losslessly decoded original bytes; no raw duplicate in upload",
+  "gzipFallback": "bounded runtime cache",
+  "brotli": true,
+  "privateFilesIncluded": false,
+  "createdAt": "2026-09-12T15:49:53.674793+00:00"
+}

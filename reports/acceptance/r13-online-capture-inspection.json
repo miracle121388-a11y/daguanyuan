@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-12T15:25:29.906596+00:00",
+  "revision": "spatial-garden-20260912-r13",
+  "scope": "Two additional actual online captures opened for production validity; separate from21-image local/native/exact-package visual review. TLS on; temporary per-browser public DNS,QUIC disabled.",
+  "captures": [
+    {
+      "file": "reports/browser/r13-online-resolved-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "cc6eb46d691a4f5ca2d155ff79d35140550d225f353ceedc3c879a66c67ff322",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": "reports/browser/r13-online-resolved-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "d155b3e29c6853cde4b120b931d8755eeb365e900a74be81ca99f4eacdac207b",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    }
+  ]
+}

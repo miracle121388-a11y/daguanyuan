@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported wood_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "wood_rough",
+  "sourcePixelSha256": "1399cd8473ffede30b1cbbff18e35bd8a7c6de1efe4d05d16d38dd702033a322",
+  "sha256": "21965e959d378922a7d6e53fb820f050109a4b7403da95587f506fac7a44ace1",
+  "prompt": "Blender-exported wood_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

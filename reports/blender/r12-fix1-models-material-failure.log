@@ -1,0 +1,47 @@
+
+> daguanyuan-rumeng@1.0.0 models:finish
+> node scripts/pipeline.mjs models-finish
+
+Authored focal foliage swatches 4
+19:17:37 | INFO: Data are loaded, start creating Blender stuff
+19:17:37 | INFO: Blender create Mesh node modelShape.005
+19:17:37 | INFO: Blender create Mesh node modelShape.002
+19:17:37 | INFO: Blender create Mesh node modelShape
+19:17:37 | INFO: Blender create Mesh node medium.001
+19:17:37 | INFO: Blender create Mesh node modelShape.003
+19:17:37 | INFO: Blender create Mesh node mesh1-geometry.003
+19:17:38 | INFO: glTF import finished in 0.86s
+SOURCE ROCK VARIANTS 6 uniform aspect-preserving scale
+CONNECTED COURT BEDS xiaoxiangguan 140
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+Traceback (most recent call last):
+  File "D:\Users\Lenovo\Desktop\大观园\blender\refresh_focal_landscape.py", line 35, in <module>
+    b=FocalBatch(p['id']+'_focal',col,root);world.courtyard(b,p['style']);new=b.finish()
+                                                                              ^^^^^^^^^^
+  File "D:\Users\Lenovo\Desktop\大观园\blender\r8_materials.py", line 33, in finish
+    objects=original_finish(batch)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Lenovo\Desktop\大观园\blender\r5_craft.py", line 66, in finish
+    objects=oldfinish(batch)
+            ^^^^^^^^^^^^^^^^
+  File "D:\Users\Lenovo\Desktop\大观园\blender\build_modules.py", line 79, in finish
+    ob=bpy.data.objects.new(mesh.name,mesh);self.collection.objects.link(ob);ob.data.materials.append(M[mat]);ob.parent=self.parent;obs.append(ob)
+                                                                                                      ~^^^^^
+KeyError: 'litter'
+
+Error: script failed, file: 'blender/refresh_focal_landscape.py', exiting.
+
+Blender quit
+file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/pipeline.mjs:10
+const run=(cmd,args)=>{const r=spawnSync(cmd,args,{stdio:'inherit',shell:false});if(r.status!==0)throw new Error(`${cmd} exited ${r.status}`)};
+                                                                                                       ^
+
+Error: D:\Users\Lenovo\Desktop\大观园\.tools\blender-4.5.9-windows-x64\blender.exe exited 1
+    at run (file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/pipeline.mjs:10:104)
+    at file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/pipeline.mjs:79:2
+    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.12.0

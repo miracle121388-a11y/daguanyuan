@@ -1,0 +1,75 @@
+{
+  "at": "2026-09-12T16:18:39.185237+00:00",
+  "revision": "spatial-garden-20260912-r14",
+  "scope": "User requested quick finish; current tested refinement published and further polish stopped. Remaining visual findings are disclosed, not declared resolved.",
+  "package": {
+    "directory": ".deploy/reference-20260912-155712-092545",
+    "bytes": 49536574,
+    "physicalFiles": 588,
+    "brotliLogicalFiles": 45
+  },
+  "nativeMasterSha256": "d8e497880d0d0902b36a8d3c8fd8f7f8ca46563ca631e545861ec946ebe33f48",
+  "deployment": {
+    "id": "6aa5791dfbf9c810b64d524c",
+    "state": "RUNNING",
+    "url": "https://daguanyuan-rumeng.zeabur.app/",
+    "existingCaliforniaServer": true,
+    "verifiedFileCount": 18,
+    "verifiedAt": "2026-09-12T16:14:29.912150+00:00",
+    "evidence": "r14-zeabur-deployment-verified.json"
+  },
+  "checks": {
+    "e2e": 11,
+    "unit": 6,
+    "spatial": 319,
+    "typecheck": true,
+    "lint": true,
+    "build": true,
+    "actualHardwarePhone": false,
+    "modelVerification": "r14-model-verification.status.json",
+    "finalTextureReferenceVerification": "r14-texture-roundtrip.json"
+  },
+  "visual": {
+    "disposition": "fix",
+    "scope": "same original5 findings only",
+    "FORM": "unresolved",
+    "plantedGround": "partial",
+    "focalBotany": "partial",
+    "mobileClose": "resolved",
+    "moonlitDepth": "resolved",
+    "newRegressionReported": false,
+    "wholeSurfaceApproval": false,
+    "report": "r14-verdict.md"
+  },
+  "network": {
+    "at": "2026-09-12T16:14:54.607495+00:00",
+    "revision": "spatial-garden-20260912-r14",
+    "defaultBrowser": {
+      "passed": false,
+      "exitCode": 1,
+      "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/",
+      "report": "r14-production-default.log",
+      "dnsOverride": false
+    },
+    "resolvedBrowser": {
+      "passed": true,
+      "exitCode": 0,
+      "report": "r14-production-smoke.json",
+      "publicAddress": "47.89.212.251",
+      "freshDnsEvidence": "r14-public-dns.json",
+      "quicDisabled": true,
+      "desktopReadyMs": 20683,
+      "mobileReadyMs": 15394
+    },
+    "tlsVerificationEnabled": true,
+    "systemDnsOrProxyModified": false,
+    "scope": "Final r14 production interactions after user asked for quick finish. Temporary browser DNS/QUIC settings do not demonstrate normal-browser access. Previously prepared site-only proxy repair remains unapplied; user did not approve external config change."
+  },
+  "documentationHashes": {
+    "DESIGN.md": "31b8ce9f816b42490b5c1dabbef985834f3ef5000a4aeed8d9c893f9065fa8ec",
+    ".impeccable/design.json": "b3dcbe7399ed5b92e82ba2746951ce7f4f04ac51dfe017eef297d0579c9ce8ad",
+    "reports/acceptance/r14-documenter-completion.json": "d4deb50b198608e2ae8bf7931b74b77bc4df5749b5fdd958ab76abfd72971834"
+  },
+  "localPreview": "http://127.0.0.1:4293/",
+  "proxyModification": "not authorized or performed; previous preview remains unapplied"
+}

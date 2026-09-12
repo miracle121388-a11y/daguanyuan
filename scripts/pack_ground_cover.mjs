@@ -1,0 +1,13 @@
+import sharp from 'sharp';
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const record=JSON.parse(readFileSync('assets/processed/ground-r7/manifest.json','utf8'));
+const image=readFileSync('assets/processed/ground-r7/turf.png');
+if(hash(image)!==record.renderSha256)throw Error('Ground render hash mismatch');
+mkdirSync('public/textures/ground',{recursive:true});
+const soil=readFileSync('assets/source/forest_ground_06.jpg');
+const pixels=await sharp(soil).resize(512).jpeg({quality:85,mozjpeg:true}).toBuffer();
+writeFileSync('public/textures/ground/soil.jpg',pixels);
+writeFileSync('public/textures/ground/soil.jpg.json',JSON.stringify({origin:'Poly Haven forest_ground_06, CC0 1.0. Local 512px delivery derivative; used for physical ground material blending.',prompt:'Resize the reviewed CC0 forest_ground_06 source for local PBR ground sampling; no scene imagery.',sourceSha256:hash(soil),sha256:hash(pixels)},null,2));
+console.log('Ground material checked; soil delivery',pixels.length,'bytes');

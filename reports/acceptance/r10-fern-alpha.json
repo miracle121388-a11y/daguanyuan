@@ -1,0 +1,25 @@
+{
+  "checks": 2,
+  "passed": true,
+  "materials": [
+    {
+      "variant": 0,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    },
+    {
+      "variant": 1,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    }
+  ],
+  "method": "Actual delivered fern base-color image must retain both transparent background and opaque leaf pixels from the separate CC0 source mask."
+}

@@ -1,0 +1,23 @@
+13:47:33 | INFO: Data are loaded, start creating Blender stuff
+13:47:33 | INFO: Blender create Mesh node Plane.024
+13:47:33 | INFO: Blender create Mesh node Plane.044
+13:47:33 | INFO: Blender create Mesh node Plane.006
+13:47:33 | INFO: Blender create Mesh node Plane.059
+13:47:33 | INFO: glTF import finished in 0.05s
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Error: Cannot read 'D:\Users\Lenovo\Desktop\大观园\assets\processed\foliage-r11\fern_02_rgba.png': No such file or directory
+Traceback (most recent call last):
+  File "D:\Users\Lenovo\Desktop\大观园\reports\acceptance\r11-fern-probe.py", line 5, in <module>
+    r9_understory.build_all()
+  File "D:\Users\Lenovo\Desktop\大观园\blender\r9_understory.py", line 38, in build_all
+    material=source_material()
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Users\Lenovo\Desktop\大观园\blender\r9_understory.py", line 16, in source_material
+    image=bpy.data.images.load(str(R/f'assets/processed/foliage-{revision}/fern_02_rgba.png'),check_existing=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error: Cannot read 'D:\Users\Lenovo\Desktop\大观园\assets\processed\foliage-r11\fern_02_rgba.png': No such file or directory
+
+
+Error: script failed, file: 'reports/acceptance/r11-fern-probe.py', exiting.
+
+Blender quit

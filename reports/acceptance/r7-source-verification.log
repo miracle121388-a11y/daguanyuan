@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Users\Lenovo\Desktop\���԰\scripts\fetch_spatial_materials.py", line 32, in <module>
+    assert save(entry,target)==asset['sourceSha256']
+           ~~~~^^^^^^^^^^^^^^
+  File "D:\Users\Lenovo\Desktop\���԰\scripts\fetch_spatial_materials.py", line 16, in save
+    assert len(data)==entry['size'] and hashlib.md5(data).hexdigest()==entry['md5']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

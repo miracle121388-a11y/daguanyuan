@@ -1,0 +1,1530 @@
+
+> daguanyuan-rumeng@1.0.0 models:build
+> node scripts/pipeline.mjs models
+
+11:49:51 | INFO: Data are loaded, start creating Blender stuff
+11:49:51 | INFO: Blender create Mesh node island_trees_01_blockout_cleaned
+11:49:52 | INFO: glTF import finished in 1.57s
+INFO Draco mesh compression is available, use library at D:\Users\Lenovo\Desktop\大观园\.tools\blender-4.5.9-windows-x64\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+11:49:53 | INFO: Starting glTF 2.0 export
+11:49:53 | INFO: Extracting primitive: Reference_Tree_Prototype_trunk.004
+11:49:53 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+11:49:53 | INFO: Primitives created: 2
+11:49:53 | INFO: Finished glTF 2.0 export in 0.06287837028503418 s
+
+11:49:54 | INFO: Starting glTF 2.0 export
+11:49:54 | INFO: Extracting primitive: Reference_Tree_Mobile_trunk
+11:49:54 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+11:49:54 | INFO: Primitives created: 2
+11:49:54 | INFO: Finished glTF 2.0 export in 0.011362791061401367 s
+
+CANOPY LOD 10173
+11:49:54 | INFO: Data are loaded, start creating Blender stuff
+11:49:54 | INFO: Blender create Mesh node Plane.001
+11:49:55 | INFO: glTF import finished in 1.18s
+Warning: No mesh data to join
+11:50:16 | INFO: Starting glTF 2.0 export
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_darkwood.001
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_paper
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_paving.001
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_plaster.001
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_roof.001
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_stone.001
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_tile.001
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_tiledark.001
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_tilelight.001
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Extracting primitive: daguanyuan_gate_wood.001
+11:50:16 | INFO: Primitives created: 1
+11:50:16 | INFO: Finished glTF 2.0 export in 0.11302995681762695 s
+
+11:50:17 | INFO: Starting glTF 2.0 export
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_darkwood.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_paper
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_paving.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_plaster.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_roof.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_stone.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_tile.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_tiledark.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_tilelight.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: daguanyuan_gate_wood.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Finished glTF 2.0 export in 0.10316228866577148 s
+
+REFERENCE PLACE daguanyuan_gate
+11:50:17 | INFO: Starting glTF 2.0 export
+11:50:17 | INFO: Extracting primitive: qujingtongyou_bark
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_canopy
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_canopy_light
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_canopy_shadow
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_moss
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_stone.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Finished glTF 2.0 export in 0.026121854782104492 s
+
+11:50:17 | INFO: Starting glTF 2.0 export
+11:50:17 | INFO: Extracting primitive: qujingtongyou_bark
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_canopy
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_canopy_light
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_canopy_shadow
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_moss
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Extracting primitive: qujingtongyou_stone.001
+11:50:17 | INFO: Primitives created: 1
+11:50:17 | INFO: Finished glTF 2.0 export in 0.03737235069274902 s
+
+REFERENCE PLACE qujingtongyou
+11:50:19 | INFO: Starting glTF 2.0 export
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_bamboo
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_bark
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_creamflower
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_darkwood
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_earth
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_gold
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_lantern
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_leaf
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_leafdark
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_lightleaf
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_moss.001
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_paper
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_paving.001
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_plaster
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_roof
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_silk.001
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_stone
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_tile
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_tiledark.001
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_tilelight.001
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_water.001
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_wood
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Finished glTF 2.0 export in 0.3201022148132324 s
+
+11:50:19 | INFO: Starting glTF 2.0 export
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_bamboo
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_bark
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_creamflower
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_darkwood
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_earth
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_gold
+11:50:19 | INFO: Primitives created: 1
+11:50:19 | INFO: Extracting primitive: xiaoxiangguan_lantern
+11:50:19 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_leaf
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_leafdark
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_lightleaf
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_moss.001
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_paper
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_paving.001
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_plaster
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_roof
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_silk.001
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_stone
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_tile
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_tiledark.001
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_tilelight.001
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_water.001
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Extracting primitive: xiaoxiangguan_wood
+11:50:20 | INFO: Primitives created: 1
+11:50:20 | INFO: Finished glTF 2.0 export in 0.5522675514221191 s
+
+REFERENCE PLACE xiaoxiangguan
+11:50:21 | INFO: Starting glTF 2.0 export
+11:50:21 | INFO: Extracting primitive: yihongyuan_bamboo.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_bark
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_darkwood.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_earth.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_flower.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_gold
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_lantern
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_leaf.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_leafdark
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_lightleaf.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_moss.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_paper.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_paving.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_plaster.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_roof.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_screen.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_silk.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_stone.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_tile.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_tiledark.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_tilelight.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_wood.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Finished glTF 2.0 export in 0.24650096893310547 s
+
+11:50:21 | INFO: Starting glTF 2.0 export
+11:50:21 | INFO: Extracting primitive: yihongyuan_bamboo.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_bark
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_darkwood.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_earth.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_flower.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_gold
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_lantern
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_leaf.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_leafdark
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_lightleaf.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_moss.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_paper.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_paving.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_plaster.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_roof.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_screen.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_silk.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_stone.001
+11:50:21 | INFO: Primitives created: 1
+11:50:21 | INFO: Extracting primitive: yihongyuan_tile.001
+11:50:21 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: yihongyuan_tiledark.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: yihongyuan_tilelight.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: yihongyuan_wood.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Finished glTF 2.0 export in 0.3763871192932129 s
+
+REFERENCE PLACE yihongyuan
+11:50:22 | INFO: Starting glTF 2.0 export
+11:50:22 | INFO: Extracting primitive: hengwuyuan_clay.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_creamflower.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_darkwood.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_earth.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_gold
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_lantern
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_leaf.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_leafdark.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_lightleaf.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_moss.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_paper.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_paving.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_plaster.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_roof.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_screen.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_stone.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_tile.001
+11:50:22 | INFO: Primitives created: 1
+11:50:22 | INFO: Extracting primitive: hengwuyuan_tiledark.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_tilelight.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_wood.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Finished glTF 2.0 export in 0.17091584205627441 s
+
+11:50:23 | INFO: Starting glTF 2.0 export
+11:50:23 | INFO: Extracting primitive: hengwuyuan_clay.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_creamflower.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_darkwood.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_earth.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_gold
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_lantern
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_leaf.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_leafdark.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_lightleaf.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_moss.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_paper.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_paving.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_plaster.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_roof.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_screen.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_stone.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_tile.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_tiledark.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_tilelight.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: hengwuyuan_wood.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Finished glTF 2.0 export in 0.2517366409301758 s
+
+REFERENCE PLACE hengwuyuan
+11:50:23 | INFO: Starting glTF 2.0 export
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_ceramic.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_creamflower.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_darkwood.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_earth.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_gold
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_lantern
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_leaf
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_leafdark.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_marble.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_moss.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_paper.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_paving.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_plaster.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_roof.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_silk.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_stone.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_tile.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_tiledark.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_tilelight.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Extracting primitive: qiushuangzhai_wood.001
+11:50:23 | INFO: Primitives created: 1
+11:50:23 | INFO: Finished glTF 2.0 export in 0.11237025260925293 s
+
+11:50:24 | INFO: Starting glTF 2.0 export
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_ceramic.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_creamflower.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_darkwood.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_earth.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_gold
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_lantern
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_leaf
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_leafdark.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_marble.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_moss.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_paper.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_paving.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_plaster.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_roof.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_silk.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_stone.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_tile.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_tiledark.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_tilelight.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: qiushuangzhai_wood.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Finished glTF 2.0 export in 0.17966771125793457 s
+
+REFERENCE PLACE qiushuangzhai
+11:50:24 | INFO: Starting glTF 2.0 export
+11:50:24 | INFO: Extracting primitive: daoxiangcun_bark
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_clay.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_creamflower.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_darkwood.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_flower.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_lightleaf.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_paving.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_screen.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_stone.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_thatch.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_wood.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Finished glTF 2.0 export in 0.06824207305908203 s
+
+11:50:24 | INFO: Starting glTF 2.0 export
+11:50:24 | INFO: Extracting primitive: daoxiangcun_bark
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_clay.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_creamflower.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_darkwood.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_flower.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_lightleaf.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_paving.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_screen.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_stone.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_thatch.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Extracting primitive: daoxiangcun_wood.001
+11:50:24 | INFO: Primitives created: 1
+11:50:24 | INFO: Finished glTF 2.0 export in 0.1004941463470459 s
+
+REFERENCE PLACE daoxiangcun
+11:50:25 | INFO: Starting glTF 2.0 export
+11:50:25 | INFO: Extracting primitive: ouxiangxie_darkwood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_paper
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_roof.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_screen
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_stone.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_tile.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_tiledark.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_tilelight.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_wood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Finished glTF 2.0 export in 0.0615236759185791 s
+
+11:50:25 | INFO: Starting glTF 2.0 export
+11:50:25 | INFO: Extracting primitive: ouxiangxie_darkwood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_paper
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_roof.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_screen
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_stone.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_tile.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_tiledark.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_tilelight.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: ouxiangxie_wood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Finished glTF 2.0 export in 0.07879018783569336 s
+
+REFERENCE PLACE ouxiangxie
+11:50:25 | INFO: Starting glTF 2.0 export
+11:50:25 | INFO: Extracting primitive: dicuiting_darkwood
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_gold
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_lantern
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_roof.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_stone.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_tile.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_tiledark
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_tilelight
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_wood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Finished glTF 2.0 export in 0.0363764762878418 s
+
+11:50:25 | INFO: Starting glTF 2.0 export
+11:50:25 | INFO: Extracting primitive: dicuiting_darkwood
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_gold
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_lantern
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_roof.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_stone.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_tile.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_tiledark
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_tilelight
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: dicuiting_wood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Finished glTF 2.0 export in 0.04727745056152344 s
+
+REFERENCE PLACE dicuiting
+11:50:25 | INFO: Starting glTF 2.0 export
+11:50:25 | INFO: Extracting primitive: luxuean_bamboo.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_clay.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_lightleaf.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_paving.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_stone.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_thatch.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_wood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Finished glTF 2.0 export in 0.02826213836669922 s
+
+11:50:25 | INFO: Starting glTF 2.0 export
+11:50:25 | INFO: Extracting primitive: luxuean_bamboo.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_clay.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_lightleaf.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_paving.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_stone.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_thatch.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: luxuean_wood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Finished glTF 2.0 export in 0.02851414680480957 s
+
+REFERENCE PLACE luxuean
+11:50:25 | INFO: Starting glTF 2.0 export
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_bark
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_canopy
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_canopy_light
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_canopy_shadow
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_darkwood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_paper
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_paving.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_plaster.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_roof.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_stone.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_tile.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_tiledark.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_tilelight.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Extracting primitive: tubishanzhuang_wood.001
+11:50:25 | INFO: Primitives created: 1
+11:50:25 | INFO: Finished glTF 2.0 export in 0.08251738548278809 s
+
+11:50:26 | INFO: Starting glTF 2.0 export
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_bark
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_canopy
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_canopy_light
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_canopy_shadow
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_darkwood.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_paper
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_paving.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_plaster.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_roof.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_stone.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_tile.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_tiledark.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_tilelight.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: tubishanzhuang_wood.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Finished glTF 2.0 export in 0.14102458953857422 s
+
+REFERENCE PLACE tubishanzhuang
+11:50:26 | INFO: Starting glTF 2.0 export
+11:50:26 | INFO: Extracting primitive: aojingxiguan_bark
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_canopy
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_canopy_light
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_canopy_shadow
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_darkwood.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_paper
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_paving.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_plaster.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_roof.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_stone.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_tile.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_tiledark.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_tilelight.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_wood.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Finished glTF 2.0 export in 0.08753395080566406 s
+
+11:50:26 | INFO: Starting glTF 2.0 export
+11:50:26 | INFO: Extracting primitive: aojingxiguan_bark
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_canopy
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_canopy_light
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_canopy_shadow
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_darkwood.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_paper
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_paving.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_plaster.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_roof.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_stone.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_tile.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_tiledark.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_tilelight.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Extracting primitive: aojingxiguan_wood.001
+11:50:26 | INFO: Primitives created: 1
+11:50:26 | INFO: Finished glTF 2.0 export in 0.1204383373260498 s
+
+REFERENCE PLACE aojingxiguan
+11:50:31 | INFO: Starting glTF 2.0 export
+11:50:31 | INFO: Extracting primitive: daguanlou_bark
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_canopy
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_canopy_light
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_canopy_shadow
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_ceramic
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_darkwood
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_gold
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_lantern
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_paper
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_paving
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_plaster
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_roof
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_screen
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_stone
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_tile
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_tiledark
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_tilelight
+11:50:31 | INFO: Primitives created: 1
+11:50:31 | INFO: Extracting primitive: daguanlou_wood
+11:50:31 | INFO: Primitives created: 1
+11:50:32 | INFO: Finished glTF 2.0 export in 0.8451573848724365 s
+
+11:50:33 | INFO: Starting glTF 2.0 export
+11:50:33 | INFO: Extracting primitive: daguanlou_bark
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_canopy
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_canopy_light
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_canopy_shadow
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_ceramic
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_darkwood
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_gold
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_lantern
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_paper
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_paving
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_plaster
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_roof
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_screen
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_stone
+11:50:33 | INFO: Primitives created: 1
+11:50:33 | INFO: Extracting primitive: daguanlou_tile
+11:50:34 | INFO: Primitives created: 1
+11:50:34 | INFO: Extracting primitive: daguanlou_tiledark
+11:50:34 | INFO: Primitives created: 1
+11:50:34 | INFO: Extracting primitive: daguanlou_tilelight
+11:50:34 | INFO: Primitives created: 1
+11:50:34 | INFO: Extracting primitive: daguanlou_wood
+11:50:34 | INFO: Primitives created: 1
+11:50:34 | INFO: Finished glTF 2.0 export in 1.8701000213623047 s
+
+REFERENCE PLACE daguanlou
+11:50:35 | INFO: Starting glTF 2.0 export
+11:50:35 | INFO: Extracting primitive: longcuian_bark
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_canopy
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_canopy_light
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_canopy_shadow
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_ceramic
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_darkwood
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_flower
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_paper
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_paving
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_plaster
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_roof
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_screen
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_stone
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_tile
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_tiledark
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_tilelight
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_wood
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Finished glTF 2.0 export in 0.17269396781921387 s
+
+11:50:35 | INFO: Starting glTF 2.0 export
+11:50:35 | INFO: Extracting primitive: longcuian_bark
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_canopy
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_canopy_light
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_canopy_shadow
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_ceramic
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_darkwood
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_flower
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_paper
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_paving
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_plaster
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_roof
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_screen
+11:50:35 | INFO: Primitives created: 1
+11:50:35 | INFO: Extracting primitive: longcuian_stone
+11:50:35 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: longcuian_tile
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: longcuian_tiledark
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: longcuian_tilelight
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: longcuian_wood
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Finished glTF 2.0 export in 0.2402479648590088 s
+
+REFERENCE PLACE longcuian
+11:50:36 | INFO: Starting glTF 2.0 export
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_bark
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_ceramic
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_creamflower
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_darkwood
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_paper
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_paving
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_plaster
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_roof
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_screen
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_silk
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_stone
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_tile
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_tiledark
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_tilelight
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_wood
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Finished glTF 2.0 export in 0.1132669448852539 s
+
+11:50:36 | INFO: Starting glTF 2.0 export
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_bark
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_ceramic
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_creamflower
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_darkwood
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_paper
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_paving
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_plaster
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_roof
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_screen
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_silk
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_stone
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_tile
+11:50:36 | INFO: Primitives created: 1
+11:50:36 | INFO: Extracting primitive: nuanxiangwu_tiledark
+11:50:36 | INFO: Primitives created: 1
+11:50:37 | INFO: Extracting primitive: nuanxiangwu_tilelight
+11:50:37 | INFO: Primitives created: 1
+11:50:37 | INFO: Extracting primitive: nuanxiangwu_wood
+11:50:37 | INFO: Primitives created: 1
+11:50:37 | INFO: Finished glTF 2.0 export in 0.17287611961364746 s
+
+REFERENCE PLACE nuanxiangwu
+Info: Saved as "daguanyuan_master.blend"
+11:50:44 | INFO: Starting glTF 2.0 export
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_darkwood.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_paper
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_paving.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_plaster.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_roof.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_stone.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_tile.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_tiledark.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_tilelight.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: daguanyuan_gate_wood.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: qujingtongyou_bark
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: qujingtongyou_canopy
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: qujingtongyou_canopy_light
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: qujingtongyou_canopy_shadow
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: qujingtongyou_moss
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: qujingtongyou_stone.001
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: xiaoxiangguan_bamboo
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: xiaoxiangguan_bark
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: xiaoxiangguan_creamflower
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: xiaoxiangguan_darkwood
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: xiaoxiangguan_earth
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: xiaoxiangguan_gold
+11:50:44 | INFO: Primitives created: 1
+11:50:44 | INFO: Extracting primitive: xiaoxiangguan_lantern
+11:50:44 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_leaf
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_leafdark
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_lightleaf
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_moss.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_paper
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_paving.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_plaster
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_roof
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_silk.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_stone
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_tile
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_tiledark.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_tilelight.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_water.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: xiaoxiangguan_wood
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_bamboo.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_bark
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_darkwood.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_earth.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_flower.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_gold
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_lantern
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_leaf.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_leafdark
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_lightleaf.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_moss.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_paper.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_paving.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_plaster.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_roof.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_screen.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_silk.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_stone.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_tile.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_tiledark.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_tilelight.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: yihongyuan_wood.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_clay.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_creamflower.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_darkwood.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_earth.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_gold
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_lantern
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_leaf.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_leafdark.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_lightleaf.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_moss.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_paper.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_paving.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_plaster.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_roof.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_screen.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_stone.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_tile.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_tiledark.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_tilelight.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: hengwuyuan_wood.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_ceramic.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_creamflower.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_darkwood.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_earth.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_gold
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_lantern
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_leaf
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_leafdark.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_marble.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_moss.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_paper.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_paving.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_plaster.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_roof.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_silk.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_stone.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_tile.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_tiledark.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_tilelight.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: qiushuangzhai_wood.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_bark
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_clay.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_creamflower.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_darkwood.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_flower.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_lightleaf.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_paving.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_screen.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_stone.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_thatch.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: daoxiangcun_wood.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: ouxiangxie_darkwood.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: ouxiangxie_paper
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: ouxiangxie_roof.001
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: ouxiangxie_screen
+11:50:45 | INFO: Primitives created: 1
+11:50:45 | INFO: Extracting primitive: ouxiangxie_stone.001
+11:50:45 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: ouxiangxie_tile.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: ouxiangxie_tiledark.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: ouxiangxie_tilelight.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: ouxiangxie_wood.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: dicuiting_darkwood
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: dicuiting_gold
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: dicuiting_lantern
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: dicuiting_roof.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: dicuiting_stone.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: dicuiting_tile.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: dicuiting_tiledark
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: dicuiting_tilelight
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: dicuiting_wood.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: luxuean_bamboo.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: luxuean_clay.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: luxuean_lightleaf.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: luxuean_paving.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: luxuean_stone.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: luxuean_thatch.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: luxuean_wood.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_bark
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_canopy
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_canopy_light
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_canopy_shadow
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_darkwood.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_paper
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_paving.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_plaster.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_roof.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_stone.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_tile.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_tiledark.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_tilelight.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: tubishanzhuang_wood.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_bark
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_canopy
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_canopy_light
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_canopy_shadow
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_darkwood.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_paper
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_paving.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_plaster.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_roof.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_stone.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_tile.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_tiledark.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_tilelight.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: aojingxiguan_wood.001
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_bark
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_canopy
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_canopy_light
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_canopy_shadow
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_ceramic
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_darkwood
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_gold
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_lantern
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_paper
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_paving
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_plaster
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_roof
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_screen
+11:50:46 | INFO: Primitives created: 1
+11:50:46 | INFO: Extracting primitive: daguanlou_stone
+11:50:46 | INFO: Primitives created: 1
+11:50:47 | INFO: Extracting primitive: daguanlou_tile
+11:50:47 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: daguanlou_tiledark
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: daguanlou_tilelight
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: daguanlou_wood
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_bark
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_canopy
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_canopy_light
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_canopy_shadow
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_ceramic
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_darkwood
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_flower
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_paper
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_paving
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_plaster
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_roof
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_screen
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_stone
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_tile
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_tiledark
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_tilelight
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: longcuian_wood
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_bark
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_ceramic
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_creamflower
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_darkwood
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_paper
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_paving
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_plaster
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_roof
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_screen
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_silk
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_stone
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_tile
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_tiledark
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_tilelight
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: nuanxiangwu_wood
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: landscape_earth.001
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: landscape_stone.001
+11:50:48 | INFO: Primitives created: 1
+11:50:48 | INFO: Extracting primitive: landscape_leafdark
+11:50:48 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_leaf
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_moss
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_bark
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_bamboo.001
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_canopy_light
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_creamflower.001
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_flower.001
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_plaster
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_roof
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_tile
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_paving
+11:50:49 | INFO: Primitives created: 1
+11:50:49 | INFO: Extracting primitive: landscape_wood.001
+11:50:49 | INFO: Primitives created: 1
+11:50:50 | INFO: Extracting primitive: landscape_tiledark
+11:50:50 | INFO: Primitives created: 1
+11:50:50 | INFO: Extracting primitive: landscape_tilelight
+11:50:50 | INFO: Primitives created: 1
+11:50:50 | INFO: Extracting primitive: landscape_darkwood
+11:50:50 | INFO: Primitives created: 1
+11:50:50 | INFO: Extracting primitive: landscape_lantern
+11:50:50 | INFO: Primitives created: 1
+11:50:50 | INFO: Extracting primitive: landscape_gold
+11:50:50 | INFO: Primitives created: 1
+11:50:50 | INFO: Extracting primitive: landscape_lightleaf.001
+11:50:50 | INFO: Primitives created: 1
+11:50:50 | INFO: Finished glTF 2.0 export in 5.6480796337127686 s
+WARN (bke.modifier): C:\Users\blender\git\blender-v450\blender.git\source\blender\blenkernel\intern\modifier.cc:425 BKE_modifier_set_error: Object: "xiaoxiangguan_water.001", Modifier: "Mobile_Overview", Modifier requires more than 3 input faces
+
+11:51:04 | INFO: Starting glTF 2.0 export
+11:51:05 | WARNING: Mesh Mobile_daguanyuan_gate is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_daguanyuan_gate
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | INFO: Extracting primitive: Mobile_qujingtongyou
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_xiaoxiangguan is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_xiaoxiangguan
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | INFO: Extracting primitive: xiaoxiangguan_lantern
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_yihongyuan is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_yihongyuan
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | INFO: Extracting primitive: yihongyuan_lantern
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | INFO: Extracting primitive: hengwuyuan_lantern
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_hengwuyuan is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_hengwuyuan
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_qiushuangzhai is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_qiushuangzhai
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | INFO: Extracting primitive: qiushuangzhai_lantern
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_daoxiangcun is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_daoxiangcun
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_ouxiangxie is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_ouxiangxie
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | INFO: Extracting primitive: dicuiting_lantern
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_dicuiting is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_dicuiting
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_luxuean is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_luxuean
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_tubishanzhuang is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_tubishanzhuang
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_aojingxiguan is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_aojingxiguan
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | INFO: Extracting primitive: daguanlou_lantern
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_daguanlou is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_daguanlou
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_longcuian is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_longcuian
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_nuanxiangwu is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_nuanxiangwu
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | INFO: Extracting primitive: landscape_lantern
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | WARNING: Mesh Mobile_landscape is not valid, and may be exported wrongly
+11:51:05 | INFO: Extracting primitive: Mobile_landscape
+11:51:05 | INFO: Primitives created: 1
+11:51:05 | INFO: Finished glTF 2.0 export in 0.30617451667785645 s
+
+REFERENCE WORLD COMPLETE 271
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+
+Blender quit

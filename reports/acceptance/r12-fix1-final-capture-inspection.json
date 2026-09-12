@@ -1,0 +1,212 @@
+{
+  "at": "2026-09-12T12:52:50.184497+00:00",
+  "revision": "spatial-garden-20260912-r12-fix1",
+  "all17ParentOpened": true,
+  "scope": "Capture validity only after reviewer-directed fix batch 1; populated named states and readable boundaries, not a fresh visual defect hunt or quality verdict.",
+  "captures": [
+    {
+      "file": ".impeccable/review/desktop.png",
+      "archive": ".impeccable/review/r12-fix1/desktop.png",
+      "sha256": "9f8ccd3aa32ec4aed55eb55cd2d63d1ba0251b7b4026f84e3ab86930b38d29a5",
+      "bytes": 1539465,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/plan.png",
+      "archive": ".impeccable/review/r12-fix1/plan.png",
+      "sha256": "18eccfaec647e45b987e8655be15844f10cfd6d60a1b68646a4a14d0e7369ceb",
+      "bytes": 1575123,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/courtyard.png",
+      "archive": ".impeccable/review/r12-fix1/courtyard.png",
+      "sha256": "9c7679d2ef976881ac8786a15ddba0075fbcdb1841493190d79edcffaef3587f",
+      "bytes": 1646510,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/interior.png",
+      "archive": ".impeccable/review/r12-fix1/interior.png",
+      "sha256": "624c06ba3aade754c63d0461ae6e23029bec27ede1f3bbe88ebfbaf5c1f9fb52",
+      "bytes": 1053523,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/cutaway.png",
+      "archive": ".impeccable/review/r12-fix1/cutaway.png",
+      "sha256": "4dc12364a175b3914dca3003c98fc0e314b3673d450b476aa7be935ac815d9d6",
+      "bytes": 1456431,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/night.png",
+      "archive": ".impeccable/review/r12-fix1/night.png",
+      "sha256": "ebdc0b7b3566bc033a6e9f769ff403518fa7277e9a2023c8dcda7de51bf748b5",
+      "bytes": 1339685,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/central-ensemble.png",
+      "archive": ".impeccable/review/r12-fix1/central-ensemble.png",
+      "sha256": "fc7fbfa29fd56ff2b227df505cb9120d035d5a0934d9d0c9a38501ae6b5330c8",
+      "bytes": 1709676,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/yihongyuan.png",
+      "archive": ".impeccable/review/r12-fix1/yihongyuan.png",
+      "sha256": "14f5ad8bce7b2892412cb433d8fa4ee736896b102131f98c70e15ac8528c01b7",
+      "bytes": 1456182,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/hengwuyuan.png",
+      "archive": ".impeccable/review/r12-fix1/hengwuyuan.png",
+      "sha256": "0d6e38dd81eb88c0a9cf015763c8a7350d01fe989554753d6fe52f497bc44d37",
+      "bytes": 1411864,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/qiushuangzhai.png",
+      "archive": ".impeccable/review/r12-fix1/qiushuangzhai.png",
+      "sha256": "1f7c265c84b2278b1a8db25a771f18790b237c030c238d661d98ae307da50353",
+      "bytes": 1366627,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/character.png",
+      "archive": ".impeccable/review/r12-fix1/character.png",
+      "sha256": "0aca9b0196628b72acbf2d4e91f0fc705c658c633eff64f492e268416c176913",
+      "bytes": 1081045,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/event.png",
+      "archive": ".impeccable/review/r12-fix1/event.png",
+      "sha256": "8dfddf9db95cd1f06922b7d7b37be081428e76a19343b12ad5dd284b35d9954b",
+      "bytes": 1251002,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/user-1266.png",
+      "archive": ".impeccable/review/r12-fix1/user-1266.png",
+      "sha256": "e90141495acfab3abbc5984f71a3507769eaf8459db65797710949cc8062f557",
+      "bytes": 1015467,
+      "dimensions": [
+        1266,
+        712
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/mobile.png",
+      "archive": ".impeccable/review/r12-fix1/mobile.png",
+      "sha256": "b34f369d172e7d3bb36d4f9dd889ae2ca8dc4fc2d4118e1d90a0b98da2fbe3bb",
+      "bytes": 352847,
+      "dimensions": [
+        390,
+        844
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/mobile-courtyard.png",
+      "archive": ".impeccable/review/r12-fix1/mobile-courtyard.png",
+      "sha256": "093713e95c0ad4c4802c4f423a0ba48dd2226a0a519df47d3997dff38a20836a",
+      "bytes": 311386,
+      "dimensions": [
+        390,
+        844
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/mobile-whole-courtyard.png",
+      "archive": ".impeccable/review/r12-fix1/mobile-whole-courtyard.png",
+      "sha256": "a99ece681d1026a236d91486a7a985c634c011058e4c4f6de055d0efb0244b43",
+      "bytes": 307111,
+      "dimensions": [
+        390,
+        844
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    },
+    {
+      "file": ".impeccable/review/narrow.png",
+      "archive": ".impeccable/review/r12-fix1/narrow.png",
+      "sha256": "7ac9a2c66f9715d5ae7d4762c37bd95237a8346328eba3fbd0854c50315fe109",
+      "bytes": 248743,
+      "dimensions": [
+        320,
+        740
+      ],
+      "parentOpened": true,
+      "captureValid": true
+    }
+  ]
+}

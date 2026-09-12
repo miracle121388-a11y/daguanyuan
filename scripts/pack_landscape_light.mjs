@@ -1,0 +1,14 @@
+import sharp from 'sharp';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {replaceFile} from './atomic_replace.mjs';
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const {revision}=JSON.parse(readFileSync('config/craft.materials.json','utf8'));
+const source=JSON.parse(readFileSync(`assets/processed/landscape-${revision}/manifest.json`,'utf8'));
+const input=readFileSync(`assets/processed/landscape-${revision}/light.png`);
+if(hash(input)!==source.renderSha256)throw Error('Landscape render changed');
+const pixels=await sharp(input).flatten({background:'#ffffff'}).webp({quality:86,effort:6}).toBuffer();
+const target='public/textures/landscape-light.webp';
+writeFileSync(target+'.next',pixels);replaceFile(target+'.next',target);
+writeFileSync(target+'.json.next',JSON.stringify({...source,prompt:'Render actual geometry shadows with blender/bake_landscape_light.py; '+source.method,sha256:hash(pixels)},null,2));replaceFile(target+'.json.next',target+'.json');
+console.log('Landscape shadow atlas:',pixels.length,'bytes');

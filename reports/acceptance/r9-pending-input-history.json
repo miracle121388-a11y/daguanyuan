@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-11T19:16:58.675841+00:00",
+  "revision": "spatial-garden-20260912-r9",
+  "nextVisualRebuild": {
+    "status": "user-authorized-r9-refinement",
+    "confirmedAnswer": "继续精修材质与景观",
+    "reviews": [
+      "r7-full-review.md",
+      "r8-full-review.md"
+    ],
+    "reason": "User explicitly authorized continued material and landscape refinement. Original Zeabur project read now succeeds. Project-external proxy repair remains separately pending."
+  },
+  "localProxyRepair": {
+    "status": "awaiting-explicit-authorization",
+    "proposal": "reports/acceptance/access-repair-preview.patch",
+    "reason": "Touches project-external Clash Verge configuration; no configuration has been changed."
+  },
+  "goalComplete": false,
+  "zeaburLogin": {
+    "status": "restored-project-read-verified",
+    "at": "2026-09-11T16:01:41.193203+00:00",
+    "reason": "CLI project query returned 401 Unauthorized; browser session redirected to Zeabur login; GitHub SSO also requires sign-in. User asked to sign in through UI, no password requested.",
+    "url": "https://zeabur.com/zh-CN/login",
+    "projectId": "6aa142fb6c3d9581b71560ed",
+    "serviceId": "6aa143296c3d9581b71560fa",
+    "deploymentAuthorized": true,
+    "lastCheckedAt": "2026-09-11T19:16:58.675841+00:00",
+    "lastResult": "Original project get succeeded and returned the expected project ID and name.",
+    "log": "reports/acceptance/r9-zeabur-auth-preflight.log"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-10T04:13:53.339731+00:00",
+  "userAtlas": {
+    "file": "图文索引.html",
+    "sha256": "ba1c77fd729bf9110be9724a67ae996b685394652c06c2b05e17c28d4dea6536"
+  },
+  "sourcePage": "https://www.sohu.com/a/206191725_410481",
+  "observedFigures": [
+    "P01 贾府建大观园后总平面图",
+    "P02 贾府建大观园后总体鸟瞰图",
+    "S01 怡红院剖开空间图",
+    "S04 潇湘馆室内俯视图",
+    "S06 蘅芜院室内图"
+  ],
+  "method": "Viewed the source article in the browser. Figures are not copied into public assets. P01/P02 are one published spatial interpretation, not canonical measured coordinates.",
+  "missingLocalCompanions": [
+    "资料索引.md",
+    "交给建模模型的说明.md",
+    "资料元数据.json"
+  ],
+  "canonRechecked": [
+    {
+      "chapter": 17,
+      "file": "data/raw/chapter-017.txt",
+      "sha256": "4086c988539fcf49bc258873f328ff74681c2532ec0ded9a04b1f833ad3bf5a8"
+    },
+    {
+      "chapter": 18,
+      "file": "data/raw/chapter-018.txt",
+      "sha256": "aa64246f2c2064a4bc47c33df2bbdfce9563cb60181a8bc18466449c56136298"
+    },
+    {
+      "chapter": 38,
+      "file": "data/raw/chapter-038.txt",
+      "sha256": "c6a0e868da6ad5de01815e3303f1a6ec89825e31420acc393a52bff0abce8f08"
+    },
+    {
+      "chapter": 76,
+      "file": "data/raw/chapter-076.txt",
+      "sha256": "f8972ecf865e7f58f11121acf66f24aa85a9650156b360b5c8f30363cdb50276"
+    }
+  ]
+}

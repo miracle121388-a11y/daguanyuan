@@ -1,0 +1,4 @@
+{
+  "at": "2026-09-12T14:51:00.445198+00:00",
+  "note": "The completed r13 models:verify run wrote current results to the old hard-coded r12-fix2-focal-pixels.json path before that script was changed to revision-specific output. Its current revision is r13, so it is not historical fix2 evidence. Current bytes copied to r13-focal-pixels.json. Prior fix2 status, log, frozen package and visual ledgers remain preserved; no old timestamp or result was reconstructed."
+}

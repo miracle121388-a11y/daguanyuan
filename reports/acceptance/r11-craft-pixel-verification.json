@@ -1,0 +1,616 @@
+{
+  "at": "2026-09-12T08:15:20.645414+00:00",
+  "method": "Compare current baked albedo swatches with the real GLB baseColorTexture pixels; 2/255 mean-channel tolerance permits JPEG delivery encoding, not stale packed images.",
+  "checks": 38,
+  "passed": true,
+  "materials": [
+    {
+      "place": "daguanyuan_gate",
+      "role": "cutstone",
+      "sourceRgbMean": [
+        150.88386917114258,
+        146.44249725341797,
+        140.69950485229492
+      ],
+      "deliveredRgbMean": [
+        151.16115951538086,
+        146.57387161254883,
+        140.64018630981445
+      ],
+      "maximumMeanChannelError": 0.27729034423828125,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "darkwood",
+      "sourceRgbMean": [
+        100.49126434326172,
+        70.18840408325195,
+        62.8125
+      ],
+      "deliveredRgbMean": [
+        100.38920211791992,
+        70.1853256225586,
+        62.815406799316406
+      ],
+      "maximumMeanChannelError": 0.10206222534179688,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "floorwood",
+      "sourceRgbMean": [
+        108.89163208007812,
+        80.00293731689453,
+        73.27018356323242
+      ],
+      "deliveredRgbMean": [
+        108.8508186340332,
+        80.00552749633789,
+        73.41433715820312
+      ],
+      "maximumMeanChannelError": 0.14415359497070312,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "furniture",
+      "sourceRgbMean": [
+        113.56802749633789,
+        79.1524887084961,
+        70.71095275878906
+      ],
+      "deliveredRgbMean": [
+        113.54964828491211,
+        79.20462799072266,
+        70.76856231689453
+      ],
+      "maximumMeanChannelError": 0.05760955810546875,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "latticewood",
+      "sourceRgbMean": [
+        115.07392501831055,
+        79.58931732177734,
+        70.812744140625
+      ],
+      "deliveredRgbMean": [
+        115.0947151184082,
+        79.68168640136719,
+        70.90473175048828
+      ],
+      "maximumMeanChannelError": 0.09236907958984375,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "paving",
+      "sourceRgbMean": [
+        138.62459564208984,
+        134.51253128051758,
+        129.19593811035156
+      ],
+      "deliveredRgbMean": [
+        138.80152893066406,
+        135.0272216796875,
+        129.83285522460938
+      ],
+      "maximumMeanChannelError": 0.6369171142578125,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "roof",
+      "sourceRgbMean": [
+        69.42789077758789,
+        68.81814956665039,
+        67.27312469482422
+      ],
+      "deliveredRgbMean": [
+        69.4638557434082,
+        68.8241958618164,
+        66.6098747253418
+      ],
+      "maximumMeanChannelError": 0.6632499694824219,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "stone",
+      "sourceRgbMean": [
+        137.43936920166016,
+        133.36023330688477,
+        128.08501815795898
+      ],
+      "deliveredRgbMean": [
+        137.5902099609375,
+        133.8911247253418,
+        128.75686264038086
+      ],
+      "maximumMeanChannelError": 0.671844482421875,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "tile",
+      "sourceRgbMean": [
+        78.37214279174805,
+        77.61383438110352,
+        75.69138717651367
+      ],
+      "deliveredRgbMean": [
+        78.31937789916992,
+        77.61711502075195,
+        75.13847732543945
+      ],
+      "maximumMeanChannelError": 0.5529098510742188,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "tiledark",
+      "sourceRgbMean": [
+        69.9631576538086,
+        69.3970947265625,
+        67.97210311889648
+      ],
+      "deliveredRgbMean": [
+        70.01219940185547,
+        69.40259552001953,
+        67.27015686035156
+      ],
+      "maximumMeanChannelError": 0.7019462585449219,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "tilelight",
+      "sourceRgbMean": [
+        81.98346710205078,
+        81.19557189941406,
+        79.19724655151367
+      ],
+      "deliveredRgbMean": [
+        81.91796875,
+        81.19440078735352,
+        78.6492691040039
+      ],
+      "maximumMeanChannelError": 0.5479774475097656,
+      "passed": true
+    },
+    {
+      "place": "daguanyuan_gate",
+      "role": "wood",
+      "sourceRgbMean": [
+        118.01490020751953,
+        80.33963775634766,
+        70.86473846435547
+      ],
+      "deliveredRgbMean": [
+        117.96466064453125,
+        80.40185546875,
+        71.02183151245117
+      ],
+      "maximumMeanChannelError": 0.15709304809570312,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "bankstone",
+      "sourceRgbMean": [
+        111.4510726928711,
+        103.83478164672852,
+        91.62321853637695
+      ],
+      "deliveredRgbMean": [
+        111.46484375,
+        103.91724395751953,
+        91.70396423339844
+      ],
+      "maximumMeanChannelError": 0.08246231079101562,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "cutstone",
+      "sourceRgbMean": [
+        150.88386917114258,
+        146.44249725341797,
+        140.69950485229492
+      ],
+      "deliveredRgbMean": [
+        151.16115951538086,
+        146.57387161254883,
+        140.64018630981445
+      ],
+      "maximumMeanChannelError": 0.27729034423828125,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "darkwood",
+      "sourceRgbMean": [
+        100.49126434326172,
+        70.18840408325195,
+        62.8125
+      ],
+      "deliveredRgbMean": [
+        100.38920211791992,
+        70.1853256225586,
+        62.815406799316406
+      ],
+      "maximumMeanChannelError": 0.10206222534179688,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "floorwood",
+      "sourceRgbMean": [
+        108.89163208007812,
+        80.00293731689453,
+        73.27018356323242
+      ],
+      "deliveredRgbMean": [
+        108.8508186340332,
+        80.00552749633789,
+        73.41433715820312
+      ],
+      "maximumMeanChannelError": 0.14415359497070312,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "furniture",
+      "sourceRgbMean": [
+        113.56802749633789,
+        79.1524887084961,
+        70.71095275878906
+      ],
+      "deliveredRgbMean": [
+        113.54964828491211,
+        79.20462799072266,
+        70.76856231689453
+      ],
+      "maximumMeanChannelError": 0.05760955810546875,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "latticewood",
+      "sourceRgbMean": [
+        115.07392501831055,
+        79.58931732177734,
+        70.812744140625
+      ],
+      "deliveredRgbMean": [
+        115.0947151184082,
+        79.68168640136719,
+        70.90473175048828
+      ],
+      "maximumMeanChannelError": 0.09236907958984375,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "paving",
+      "sourceRgbMean": [
+        138.62459564208984,
+        134.51253128051758,
+        129.19593811035156
+      ],
+      "deliveredRgbMean": [
+        138.80152893066406,
+        135.0272216796875,
+        129.83285522460938
+      ],
+      "maximumMeanChannelError": 0.6369171142578125,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "roof",
+      "sourceRgbMean": [
+        69.42789077758789,
+        68.81814956665039,
+        67.27312469482422
+      ],
+      "deliveredRgbMean": [
+        69.4638557434082,
+        68.8241958618164,
+        66.6098747253418
+      ],
+      "maximumMeanChannelError": 0.6632499694824219,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "stone",
+      "sourceRgbMean": [
+        137.43936920166016,
+        133.36023330688477,
+        128.08501815795898
+      ],
+      "deliveredRgbMean": [
+        137.5902099609375,
+        133.8911247253418,
+        128.75686264038086
+      ],
+      "maximumMeanChannelError": 0.671844482421875,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "tile",
+      "sourceRgbMean": [
+        78.37214279174805,
+        77.61383438110352,
+        75.69138717651367
+      ],
+      "deliveredRgbMean": [
+        78.31937789916992,
+        77.61711502075195,
+        75.13847732543945
+      ],
+      "maximumMeanChannelError": 0.5529098510742188,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "tiledark",
+      "sourceRgbMean": [
+        69.9631576538086,
+        69.3970947265625,
+        67.97210311889648
+      ],
+      "deliveredRgbMean": [
+        70.01219940185547,
+        69.40259552001953,
+        67.27015686035156
+      ],
+      "maximumMeanChannelError": 0.7019462585449219,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "tilelight",
+      "sourceRgbMean": [
+        81.98346710205078,
+        81.19557189941406,
+        79.19724655151367
+      ],
+      "deliveredRgbMean": [
+        81.91796875,
+        81.19440078735352,
+        78.6492691040039
+      ],
+      "maximumMeanChannelError": 0.5479774475097656,
+      "passed": true
+    },
+    {
+      "place": "xiaoxiangguan",
+      "role": "wood",
+      "sourceRgbMean": [
+        118.01490020751953,
+        80.33963775634766,
+        70.86473846435547
+      ],
+      "deliveredRgbMean": [
+        117.96466064453125,
+        80.40185546875,
+        71.02183151245117
+      ],
+      "maximumMeanChannelError": 0.15709304809570312,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "courtbase",
+      "sourceRgbMean": [
+        138.62459564208984,
+        134.51253128051758,
+        129.19593811035156
+      ],
+      "deliveredRgbMean": [
+        138.80152893066406,
+        135.0272216796875,
+        129.83285522460938
+      ],
+      "maximumMeanChannelError": 0.6369171142578125,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "cutstone",
+      "sourceRgbMean": [
+        150.88386917114258,
+        146.44249725341797,
+        140.69950485229492
+      ],
+      "deliveredRgbMean": [
+        151.16115951538086,
+        146.57387161254883,
+        140.64018630981445
+      ],
+      "maximumMeanChannelError": 0.27729034423828125,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "darkwood",
+      "sourceRgbMean": [
+        100.49126434326172,
+        70.18840408325195,
+        62.8125
+      ],
+      "deliveredRgbMean": [
+        100.38920211791992,
+        70.1853256225586,
+        62.815406799316406
+      ],
+      "maximumMeanChannelError": 0.10206222534179688,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "floorwood",
+      "sourceRgbMean": [
+        108.89163208007812,
+        80.00293731689453,
+        73.27018356323242
+      ],
+      "deliveredRgbMean": [
+        108.8508186340332,
+        80.00552749633789,
+        73.41433715820312
+      ],
+      "maximumMeanChannelError": 0.14415359497070312,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "furniture",
+      "sourceRgbMean": [
+        113.56802749633789,
+        79.1524887084961,
+        70.71095275878906
+      ],
+      "deliveredRgbMean": [
+        113.54964828491211,
+        79.20462799072266,
+        70.76856231689453
+      ],
+      "maximumMeanChannelError": 0.05760955810546875,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "latticewood",
+      "sourceRgbMean": [
+        115.07392501831055,
+        79.58931732177734,
+        70.812744140625
+      ],
+      "deliveredRgbMean": [
+        115.0947151184082,
+        79.68168640136719,
+        70.90473175048828
+      ],
+      "maximumMeanChannelError": 0.09236907958984375,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "paving",
+      "sourceRgbMean": [
+        138.62459564208984,
+        134.51253128051758,
+        129.19593811035156
+      ],
+      "deliveredRgbMean": [
+        138.80152893066406,
+        135.0272216796875,
+        129.83285522460938
+      ],
+      "maximumMeanChannelError": 0.6369171142578125,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "roof",
+      "sourceRgbMean": [
+        69.42789077758789,
+        68.81814956665039,
+        67.27312469482422
+      ],
+      "deliveredRgbMean": [
+        69.4638557434082,
+        68.8241958618164,
+        66.6098747253418
+      ],
+      "maximumMeanChannelError": 0.6632499694824219,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "stone",
+      "sourceRgbMean": [
+        137.43936920166016,
+        133.36023330688477,
+        128.08501815795898
+      ],
+      "deliveredRgbMean": [
+        137.5902099609375,
+        133.8911247253418,
+        128.75686264038086
+      ],
+      "maximumMeanChannelError": 0.671844482421875,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "tile",
+      "sourceRgbMean": [
+        78.37214279174805,
+        77.61383438110352,
+        75.69138717651367
+      ],
+      "deliveredRgbMean": [
+        78.31937789916992,
+        77.61711502075195,
+        75.13847732543945
+      ],
+      "maximumMeanChannelError": 0.5529098510742188,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "tiledark",
+      "sourceRgbMean": [
+        69.9631576538086,
+        69.3970947265625,
+        67.97210311889648
+      ],
+      "deliveredRgbMean": [
+        70.01219940185547,
+        69.40259552001953,
+        67.27015686035156
+      ],
+      "maximumMeanChannelError": 0.7019462585449219,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "tilelight",
+      "sourceRgbMean": [
+        81.98346710205078,
+        81.19557189941406,
+        79.19724655151367
+      ],
+      "deliveredRgbMean": [
+        81.91796875,
+        81.19440078735352,
+        78.6492691040039
+      ],
+      "maximumMeanChannelError": 0.5479774475097656,
+      "passed": true
+    },
+    {
+      "place": "daguanlou",
+      "role": "wood",
+      "sourceRgbMean": [
+        118.01490020751953,
+        80.33963775634766,
+        70.86473846435547
+      ],
+      "deliveredRgbMean": [
+        117.96466064453125,
+        80.40185546875,
+        71.02183151245117
+      ],
+      "maximumMeanChannelError": 0.15709304809570312,
+      "passed": true
+    }
+  ]
+}

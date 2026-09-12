@@ -1,0 +1,147 @@
+{
+  "checks": 7,
+  "passed": true,
+  "materials": [
+    {
+      "model": "fern-0",
+      "material": "understory_fern.007",
+      "sourceVisibleRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "deliveredVisibleRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "maximumMeanChannelError": 0.0,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    },
+    {
+      "model": "fern-1",
+      "material": "understory_fern.007",
+      "sourceVisibleRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "deliveredVisibleRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "maximumMeanChannelError": 0.0,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    },
+    {
+      "model": "broadleaf",
+      "material": "island_tree_01_leaves.021",
+      "sourceVisibleRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "deliveredVisibleRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "maximumMeanChannelError": 0.0,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    },
+    {
+      "model": "broadleaf-low",
+      "material": "island_tree_01_leaves.021",
+      "sourceVisibleRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "deliveredVisibleRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "maximumMeanChannelError": 0.0,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    },
+    {
+      "model": "broadleaf-2",
+      "material": "island_tree_02_leaves.015",
+      "sourceVisibleRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "deliveredVisibleRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "maximumMeanChannelError": 0.0,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    },
+    {
+      "model": "pine",
+      "material": "pine_sapling_small_twig.015",
+      "sourceVisibleRgbMean": [
+        84.92270037548901,
+        75.82428686574794,
+        63.18292802799457
+      ],
+      "deliveredVisibleRgbMean": [
+        84.92270037548901,
+        75.82428686574794,
+        63.18292802799457
+      ],
+      "maximumMeanChannelError": 0.0,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    },
+    {
+      "model": "shrub",
+      "material": "island_tree_01_leaves.022",
+      "sourceVisibleRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "deliveredVisibleRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "maximumMeanChannelError": 0.0,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    }
+  ],
+  "method": "Compare opaque leaf-area RGB in every delivered alpha-bearing fern/tree/shrub LOD against the current packed source PNG, with2/255 mean-channel tolerance; require actual transparent and opaque alpha pixels."
+}

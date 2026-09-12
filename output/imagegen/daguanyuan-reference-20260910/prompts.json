@@ -1,0 +1,158 @@
+{
+  "mode": "built-in image_gen",
+  "styleReference": "00-user-style-reference.png",
+  "sharedPrompt": "Use case: historical-scene. Create ONE photorealistic architectural environment image for a coherent Dream of the Red Chamber / Grand View Garden reference collection, intended as a later 3D modeling reference, not a modeled asset or a technical blueprint. Landscape 3:2 frame, highest available native detail, no collage. The user's provided garden image is a STYLE reference: borrow its credible stone, timber and tiles, sophisticated layered gardens, convincing reflections and exceptional natural light, not its exact buildings. This is a literary aristocratic private garden in a premodern Chinese setting, with Jiangnan craftsmanship; do not falsely date the novel to one precise dynasty. Give the image a captivating, specific spatial idea rather than generic television-period scenery. Deep focus and restrained architectural perspective, clear load-bearing columns, plausible eaves, contiguous paths and roof junctions, real material scale, visible bases and thresholds, keep key structures legible through planting. Finely textured lime plaster, grey clay tiles, naturally finished hardwood and worked limestone, restrained jade, warm parchment and botanical color. No people, modern objects, electric lights, impossible floating buildings, plastic CGI, anime, oversaturated red, endless identical red lanterns, Forbidden City composition, gratuitous golden roofs, captions, logos, watermark or readable signage.",
+  "assets": [
+    {
+      "n": 1,
+      "id": "garden-aerial-day",
+      "title": "大观园·春日鸟瞰",
+      "chapters": [
+        17,
+        18
+      ],
+      "prompt": "A complete, breathtaking oblique aerial view of the aristocratic Grand View Garden, from just outside a five-bay plain-timber entrance with pale stone base. Winding connected watercourses and varied enclosed garden rooms, balanced hills and water, rock-screen immediately inside the entrance deliberately hides the next view. Daguan Tower with its east and west secondary galleries forms one ceremonial focal group in the upper background, surrounded by the garden rather than filling it. Intimate bamboo Xiaoxiang courtyard, crabapple-and-banana Yihong courtyard, pale rock and vine Hengwu courtyard, a quiet thatched farm enclosure can each be distinguished at believable relative scale. Serpentine covered walks really connect to doors, modest stone arches and bamboo footbridges actually land on banks. Rich mature trees framing courtyards, spring crabapple and pear accents concentrated in appropriate gardens; no carpet of cherry blossoms, no summer lotus blossoms. Warm early sun, cool water reflections, only a thin distant veil of mist, near and middle architecture extremely readable. 45-degree high oblique camera, generous layered depth like the reference, not a miniature round display disk, not an axially symmetric palace. A coherent proposed spatial interpretation, not a claim to an exact historical map."
+    },
+    {
+      "n": 2,
+      "id": "yihongyuan-courtyard",
+      "title": "怡红院·红香绿玉",
+      "chapters": [
+        17
+      ],
+      "prompt": "Yihongyuan, Jia Baoyu's exquisite yet youthful residential courtyard. Chapter 17 anchor: interconnected covered corridors on both sides, several ornamental rocks in the courtyard, a group of broad-leaf banana plants on one side and ONE umbrella-shaped Xifu crabapple tree in delicate pale pink/red bloom on the other. A refined low residential main hall with slender timber framing, fine openwork carved windows, modest grey curved tile roof, pale plaster, finely cut stone thresholds. Interlocking carved screens glimpsed in the open central room, softly colored silk and a tiny hint of reflective mirror. No central pond invented in this courtyard. Slightly elevated three-quarter perspective from the entrance corner at roughly 4m height, show main facade and one side corridor, roof meeting points, paving and circulation continuously; avoid blocking the facade with flowers. Side sunlight through crabapple petals, a small area of luminous pink against deep banana green, tactile restrained wealth, memorable intimate spatial composition."
+    },
+    {
+      "n": 3,
+      "id": "yihongyuan-interior",
+      "title": "怡红院·雕格与绮窗",
+      "chapters": [
+        17,
+        18
+      ],
+      "prompt": "Interior of Jia Baoyu's Yihongyuan, looking diagonally across an intimate but richly crafted chamber toward the courtyard glimpsed in the exterior reference. Preserve its timber color, slender frame rhythm and crabapple/banana garden relationship. Chapter 17 anchor: elaborate openwork carved wooden partitions with multiple connected openings, exquisite shelves integrated into the partitions, a standing mirror creating a subtle real reflection, windows and bedchamber cleverly connected. Precious but sparse porcelain, books, brush pot, and soft curtains in muted rosy-beige and celadon, one quiet sleeping alcove rather than a throne-like monumental bed. Show ceiling beams, floor, column bases, screen connections and a real circulation route for later modeling; a 30–35mm architectural view with upright verticals. A most beautiful focal opening framed by translucent silk with dappled flower light. No red palace interior, no imperial throne, no wall of generic props, no impossible hall of mirrors, no fabricated legible text."
+    },
+    {
+      "n": 4,
+      "id": "xiaoxiangguan-day",
+      "title": "潇湘馆·竹径清泉",
+      "chapters": [
+        17,
+        40
+      ],
+      "prompt": "Xiaoxiangguan, Lin Daiyu's secluded small residence, faithfully following Chapters 17 and 40. Exactly three modest front bays in a small house: one bright central room and two more private side rooms, NOT a freestanding lakeside pagoda. A small bent covered corridor connects to the house. Slender articulated bamboo flanks a winding narrow pebble path through moss; leave a clear view of the three-bay facade and its pale plaster, fine timber lattices, grey clay tiles. A genuinely narrow hand-width-to-foot-width spring channel enters below the back wall, runs along steps and around the house, and exits beneath bamboo; it is not a moat or ornamental swimming pool. From a gently elevated three-quarter view reveal a glimpse of the rear court with pear tree, banana leaves and two small rear rooms. Books and a brush/inkstone desk glimpsed through a window. Fresh rain has just stopped: moist stone, silver-green bamboo, a pale shaft of morning light, deep but readable shadows, delicate intimacy and intellectual solitude. Building occupies about half the frame; foreground bamboo only frames the edges."
+    },
+    {
+      "n": 5,
+      "id": "xiaoxiangguan-moon",
+      "title": "潇湘馆·竹影月白",
+      "chapters": [
+        17,
+        40
+      ],
+      "derivedFrom": 4,
+      "prompt": "Create the MOONLIGHT VERSION of the attached Xiaoxiangguan day image. The generated day image is the exact scene/geometry/camera reference; preserve its three front bays, all roof slopes and corners, bent corridor, doors and windows, rear rooms, bamboo placements, pebble path and narrow spring channel. Change only time, light and subtle atmosphere. A plausible moon outside the frame casts soft silver-blue light through bamboo, a very small warm candle glow from one paper-screened interior, restrained mist far behind. Moon-reflected silver line in the tiny spring, fine wet paving and plaster still legible. Exposure high enough to study roof framing and thresholds; no underexposed black silhouette, no giant full moon composited behind the roof, no floating petals, no fantasy glowing plants. Poetic, hushed and achingly beautiful, a real physical night location."
+    },
+    {
+      "n": 6,
+      "id": "hengwuyuan",
+      "title": "蘅芜苑·石骨幽芳",
+      "chapters": [
+        17,
+        40
+      ],
+      "prompt": "Hengwuyuan, Xue Baochai's exceptionally restrained courtyard. Chapter 17 anchors: tall exquisite perforated limestone scholar-rock mass screens the entrance and partly conceals the residence; a five-bay clean main house with a rolled ridge / barrel-curved roof canopy and covered verandas on four sides; green-tinted wooden windows and smoothly finished walls. The court contains NO flowering trees: no magnolia, cherry, peach or flowering shrub beds. Its beauty comes from strange fragrant low herbs, narrow-leaved grasses and fine creeping vines threading the rock holes, falling over ledges and lightly winding near steps. A three-quarter slightly elevated oblique view from beside the rock screen so the five-bay hall and circulation remain intelligible; limestone is weathered porous karst, not a pile of random boulders. Through one open window a nearly bare pale room, a plain earthenware vase with a few chrysanthemums, two books and tea utensils, muted blue gauze. After-rain overcast light with a soft cool shaft, silver limestone, desaturated pale olive and subtle amber timber; quietly arresting through sculptural negative space, no generic lush floral fantasy."
+    },
+    {
+      "n": 7,
+      "id": "qiushuangzhai",
+      "title": "秋爽斋·三间阔朗",
+      "chapters": [
+        40
+      ],
+      "prompt": "Qiushuangzhai, Jia Tanchun's residence: a spacious, confident, sunlit interior-and-veranda architectural view. Chapter 40 primary anchor: THREE bays form ONE uninterrupted room with no dividing partition. Make the timber posts and continuous ceiling/floor clearly countable. A large huanghuali wood table with marble inset top dominates the center, with a credible group of numerous varied inkstones, copybooks and full brush pots. To one side a huge elegant Ru-type celadon flower vessel densely filled with round white chrysanthemums. West wall holds a broad misty ink-landscape scroll and two narrow companion hanging scrolls, seen obliquely with ink marks too small to read, not fabricated quotations. A side glimpse of a modest east sleeping alcove with pale green gauze, without obstructing the open room. Looking across the table toward an open veranda and rear-court young Chinese parasol trees, daylight illuminates marble and wood grain. 32mm architectural camera at standing height, strong horizontal space, well-built joinery, deep focus, serene grandeur without palace scale. Human-free, distinguished and vividly inviting."
+    },
+    {
+      "n": 8,
+      "id": "daoxiangcun",
+      "title": "稻香村·杏坞茅舍",
+      "chapters": [
+        17
+      ],
+      "prompt": "Daoxiangcun inside the Grand View Garden, an intentionally composed rustic retreat, grounded in Chapter 17. Behind a gently curved low yellow-earth wall capped with bundles of rice straw stand several beautifully proportioned thatched cottages; plain mud walls, timber doors and simple paper/wood windows, not grey-tiled mansions. A grove of flowering apricot trees makes a luminous cloud behind the cottages. Outside, living green hedges woven from young mulberry, elm and hibiscus branches; on the slope a real earthen well and credible wooden counterweighted well sweep or windlass, below it clearly separated vegetable plots with a few yellow vegetable blossoms. The river and affluent garden are only distant borrowed views, no sprawling rural village outside the estate. Three-quarter slightly elevated camera across the well and vegetable beds, thatch thickness, eaves, earthen wall texture and water-lifting mechanics clear. Cool dawn lifting into honey-colored sunlight, humble material richness, small signs of tending, quiet spatial poetry. No rice paddies replacing the text's vegetable plots, no tiled pagodas, no decorative farm animals or people."
+    },
+    {
+      "n": 9,
+      "id": "longcuian",
+      "title": "栊翠庵·雪梅禅院",
+      "chapters": [
+        41,
+        49,
+        50
+      ],
+      "prompt": "Longcuian, Miaoyu's secluded small Buddhist retreat within the aristocratic Grand View Garden. Use Chapter 41's carefully tended flourishing courtyard and eastern meditation/tea hall, and Chapter 49–50's more than a dozen intensely crimson plum trees by the nunnery entrance in snow. A modest, very refined sequence of two compact grey-tiled timber halls, white lime walls, a stone threshold and covered passage; no towering pagoda, no huge monastic compound, no Japanese torii or raked Zen gravel. Main subject is a deep vermilion-red plum branch against clean fresh snow and dark green pine, framing a clear view into the small courtyard and east tea room. A restrained fine tea setting glimpsed within, a faint wisp from a small incense burner, no worshippers. Blue-white winter daylight and warm naturally finished wood, delicate plum buds actually attached to coherent branching wood. 40mm three-quarter architectural angle just above the entry path, roof details and floor levels visible. Refined, solitary, spiritually intense, restrained luxury rather than austere emptiness."
+    },
+    {
+      "n": 10,
+      "id": "daguanlou",
+      "title": "大观楼·层楼临水",
+      "chapters": [
+        17,
+        18
+      ],
+      "prompt": "Daguanlou, the ceremonial main tower for Yuanchun's imperial home visit, distinguished from the smaller residential courts. Chapters 17–18 anchor: a tall main building with layered upper rooms, embracing associated halls and winding elevated connecting galleries, green pine brushing eaves, pale carved stone balustrades around terraces, subtle gilded animal-mask and chi-dragon details; eastern Zhuijin pavilion and western Hanfang pavilion are visible as subordinate wings. Realistic principal tower of two inhabitable levels plus a clearly built layered roof, large for a private aristocratic garden but not a vast imperial palace or fantasy skyscraper. Deep grey glazed tiles with restrained gilt ridge/beam ornaments, fine warm timber and carved stone; NOT solid gold roofs or giant vermilion walls. Low lakeside three-quarter camera sees the landing, complete stone stair, side facade, upper gallery and roof joining; timber columns align vertically with real load paths. Late-afternoon oblique sun picks out carving and eaves against dark pines, a lucid reflection below. Grand, thrilling yet elegant and unmistakably part of this same garden. No people, no readable plaques."
+    },
+    {
+      "n": 11,
+      "id": "ouxiangxie",
+      "title": "藕香榭·曲廊竹桥",
+      "chapters": [
+        38,
+        40,
+        49
+      ],
+      "prompt": "Ouxiangxie, Lotus Fragrance Waterside Hall, following Chapter 38: the hall is actually built IN the pond, with windows on ALL FOUR sides, winding covered corridors on left and right crossing the water to shore, and a bent BAMBOO footbridge discreetly connecting at the back. A low elegant rectangular timber water hall, fine latticed windows partly opened, restrained grey tile roof, timber floor on believable stone piers. Preserve the legibility of the two separate shore connections and rear bamboo bridge; no impossible floating walkway, no pavilion perched on a giant island. Early autumn, two osmanthus trees on the slope, clear jade water, a few mature lotus leaves with sparse seedpods rather than a dense wall of pink flowers. A quiet banquet/poetry table faintly visible through windows, no people. Slightly elevated three-quarter view across the water at 40mm, near foreground a few crisp lotus leaves, deep focus on rail joints, pier positions, floor edge and open windows. Luminous reflected light and subtle amber osmanthus, calm luxury made unforgettable by the water-under-the-room experience."
+    },
+    {
+      "n": 12,
+      "id": "luxuean-winter",
+      "title": "芦雪庵·茅檐夜雪",
+      "chapters": [
+        49,
+        50
+      ],
+      "prompt": "Luxuean in winter, FAITHFULLY a riverside thatched retreat rather than a Buddhist temple. Chapter 49 anchors: several rooms in one low row, built on a riverbank beside a small hill; thick thatched eaves and warm earth-plastered walls, woven hibiscus fence and bamboo-lattice windows; an open window directly over the water where one could fish. Dense snow-bent dry reeds surround the bank, and a narrow winding path through reeds connects in the distance to the bamboo bridge of Ouxiangxie. A subtle warm glow of a charcoal brazier and low heated platform through a window, a simple table for poetry; no people. Gentle thick fresh snow reveals every thatch layer and reed stem, small areas of dark unfrozen water mirror the hut, pine and bamboo far behind. Early blue hour with readable natural snow light, 40mm three-quarter view from the opposite low bank, frame the complete thatched building and one side. No upturned glazed palace roof, no pagoda, no full pond of summer lotus, no invented plum grove at this location."
+    },
+    {
+      "n": 13,
+      "id": "nuanxiangwu",
+      "title": "暖香坞·冬窗待画",
+      "chapters": [
+        50
+      ],
+      "prompt": "Nuanxiangwu, Jia Xichun's intimate WINTER bedroom and painting workspace. Chapter 50 anchors: a south-facing entry approached from an inner covered corridor, scarlet wool/felt door curtain raised at the doorway, warm fragrant interior where her garden painting has been put away because cold thickens its painting glue. Frame the room from the sheltered corridor, with a folded corner of the red felt curtain as a restrained accent, NOT an all-red room. A low wide painter's worktable with a mostly rolled-up unlabelled landscape silk scroll, inkstone, orderly brushes, small covered glue/pigment cups near a modest brazier, a quiet sleeping area beyond a simple screen. A paper window admits pale winter light and shows a sliver of snow outside; architecture and furniture in pale warm wood, cream plaster and muted honey textiles. 35mm deep-focus architectural view with floor plan and ceiling beams legible, indoor warmth contrasted with cool exterior. Refined young artist's inward world, a captivating threshold composition. Do not present this as a dock, public art academy or enormous standalone palace; exact room dimensions and furnishings are interpretive."
+    },
+    {
+      "n": 14,
+      "id": "garden-waterways",
+      "title": "沁芳水系·曲水相连",
+      "chapters": [
+        17,
+        18,
+        38,
+        49
+      ],
+      "prompt": "The coherent waterways and bridges of Grand View Garden, a near-ground architectural landscape study showing how the water connects places. One clear stream emerges between garden rocks, passes beneath a modest stone arch bridge, widens into a planted pond, and continues toward a low waterside hall with its own bamboo footbridge. Show real hydraulic continuity, plausible water levels and bank stabilization, separate structural logic for the single-span dressed-stone arch, timber covered walkway on stone piers, and small bent bamboo footbridge. Slender willows, water-edge grasses, lotus leaves in the wider pool, finely cut weathered stone paving, glimpses of distinct residential courts beyond vegetation. No large waterfall, no hundreds of identical bridges, no disconnected ponds or bridges terminating into water. 35–40mm lens from a low garden rise, three-quarter view lets a modeler understand spans, supports, abutments and path landings. Crisp early-summer daylight after rain with beautiful water-caustic bounce under stone, quietly spectacular layered composition and convincing reflections. Use the collection's aerial image to keep the principal water/tower relationship."
+    },
+    {
+      "n": 15,
+      "id": "garden-yuanxiao-night",
+      "title": "元宵省亲·玻璃世界",
+      "chapters": [
+        18
+      ],
+      "derivedFrom": 1,
+      "prompt": "Transform the generated full-garden daylight image into the Yuanxiao / imperial-homecoming WINTER EVENING from Chapter 18. The generated aerial is the geometry and camera reference: retain all building masses, roof profiles, water banks, rock hills, bridges and layout. Change the time and season coherently. Dark deciduous willows and apricots are naturally without living leaves or flowers; they are decorated with visibly crafted fine paper/silk flowers and small lamps. Along stone rails hang elegant varied crystal/glass wind-lanterns in restrained pearly white, amber and soft colored glass, not rows of identical red globes. Some lotus and waterbird decorations near the quay are clearly crafted shell-and-feather festival ornaments, NOT living summer lotus in winter. A ceremonial boat with bead curtains and embroidered canopy on a credible water route. The main tower and galleries glow with layered candle lantern light; hundreds of small points of light form flowing reflections, dark water and cool blue twilight preserve spatial readability. Astonishing richness described in the text, physically plausible illumination and architecture, no fireworks, flying lantern swarm, neon strips, fantasy aurora, people or readable text. Refined luminous spectacle rather than a theme-park light show."
+    }
+  ]
+}

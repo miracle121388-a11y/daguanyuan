@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported latticewood_diff material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "latticewood_diff",
+  "sourcePixelSha256": "6abae0dda6b71e49a8c51522c951bf0118083ccfcfdbd712832c4baf8ff395ee",
+  "sha256": "061fe6c43c9c2ef4cc87cf6312ad321a23e7619305cae97f9bca45cf6916b02f",
+  "prompt": "Blender-exported latticewood_diff material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

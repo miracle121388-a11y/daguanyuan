@@ -1,0 +1,323 @@
+{
+  "at": "2026-09-12T13:08:12.293174+00:00",
+  "revision": "spatial-garden-20260912-r12-fix1",
+  "directory": ".deploy/reference-20260912-124455-508731",
+  "passed": true,
+  "files": [
+    {
+      "logicalPath": "assets/GardenScene-CeqkKroT.js",
+      "storedPath": "dist/assets/GardenScene-CeqkKroT.js.br",
+      "decodedBytes": 733305,
+      "decodedSha256": "2bf96637dc493d21e261f9e68913e7e0395645c22dd4f34ba03139f2edda4b5b",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "assets/index-CgtRWvG1.js",
+      "storedPath": "dist/assets/index-CgtRWvG1.js.br",
+      "decodedBytes": 658456,
+      "decodedSha256": "c3977e93851838118c1cbca30303ac59bec99d7f5bb207d2c608b9c9e5f47d52",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "draco/draco_decoder.js",
+      "storedPath": "dist/draco/draco_decoder.js.br",
+      "decodedBytes": 512465,
+      "decodedSha256": "8625489da79a805f4f2a7d511c3e52d8b4085608a9d2a4d5f4f9de5db0aea04f",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "draco/draco_decoder.wasm",
+      "storedPath": "dist/draco/draco_decoder.wasm.br",
+      "decodedBytes": 192420,
+      "decodedSha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "draco/draco_wasm_wrapper.js",
+      "storedPath": "dist/draco/draco_wasm_wrapper.js.br",
+      "decodedBytes": 58456,
+      "decodedSha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/overview-low.glb",
+      "storedPath": "dist/models/overview-low.glb.br",
+      "decodedBytes": 3347608,
+      "decodedSha256": "69d4d23d9f2add690e0eca32689a64794f03a5e4b954c932712a3a70b08afbce",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/overview.glb",
+      "storedPath": "dist/models/overview.glb.br",
+      "decodedBytes": 3347608,
+      "decodedSha256": "69d4d23d9f2add690e0eca32689a64794f03a5e4b954c932712a3a70b08afbce",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/aojingxiguan.glb",
+      "storedPath": "dist/models/places/aojingxiguan.glb.br",
+      "decodedBytes": 433408,
+      "decodedSha256": "0f0b00b98b5b6bd4337917a482bc7ba4238ae4fb0845a4071436185287c6657d",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/daguanlou.glb",
+      "storedPath": "dist/models/places/daguanlou.glb.br",
+      "decodedBytes": 7597352,
+      "decodedSha256": "42144d70333476eab059907b119cff426945b4cb94fa3c899f051b8ef56f4867",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/daguanyuan_gate.glb",
+      "storedPath": "dist/models/places/daguanyuan_gate.glb.br",
+      "decodedBytes": 639872,
+      "decodedSha256": "b3bc34dc85f880fb24e65254af607b6ce4a4ac652c342a2cbf81b8e86d82a20c",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/daoxiangcun.glb",
+      "storedPath": "dist/models/places/daoxiangcun.glb.br",
+      "decodedBytes": 1140236,
+      "decodedSha256": "5c26ab22f58e4284938c2e888a0f7f6794dde2f1c9c5cff2630573b6316efac7",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/dicuiting.glb",
+      "storedPath": "dist/models/places/dicuiting.glb.br",
+      "decodedBytes": 119504,
+      "decodedSha256": "4b7f34fac8c46db03c12987369ae07eec2260c198668a34e94598d0d206c274a",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/hengwuyuan.glb",
+      "storedPath": "dist/models/places/hengwuyuan.glb.br",
+      "decodedBytes": 1353276,
+      "decodedSha256": "c539fcb9e5ceb543b60c7fb7ff0b9b35177449ba3b5e27a5ce74ff742a7d5302",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/longcuian.glb",
+      "storedPath": "dist/models/places/longcuian.glb.br",
+      "decodedBytes": 1179448,
+      "decodedSha256": "f099a425dd4c9dad4726330e6041f8b624d1541bf6ce3d4b9381c3fcb9da4f5b",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/luxuean.glb",
+      "storedPath": "dist/models/places/luxuean.glb.br",
+      "decodedBytes": 79044,
+      "decodedSha256": "928fee85bddea4dec015e1acdc43a7f15373464b7e279dde3bdd11f56b4c6949",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/nuanxiangwu.glb",
+      "storedPath": "dist/models/places/nuanxiangwu.glb.br",
+      "decodedBytes": 794504,
+      "decodedSha256": "2d241cbcaa6fb0475dc6d537a3ae96cb74443a273691346fcfe119b094954953",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/ouxiangxie.glb",
+      "storedPath": "dist/models/places/ouxiangxie.glb.br",
+      "decodedBytes": 209736,
+      "decodedSha256": "478e5019cae68dc9e7bb1b14f089283919fb81366def6aae51ba86003182a420",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/qiushuangzhai.glb",
+      "storedPath": "dist/models/places/qiushuangzhai.glb.br",
+      "decodedBytes": 1207056,
+      "decodedSha256": "b3c487b5dbcd00fd9eca66497aa1cc6cd66f64f1182348332a96c34785f539e3",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/qujingtongyou.glb",
+      "storedPath": "dist/models/places/qujingtongyou.glb.br",
+      "decodedBytes": 140252,
+      "decodedSha256": "75d09a4b67d225850884e5e5f56ec1fcd16c52cbb1a7fef41c341aade4e7da12",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/tubishanzhuang.glb",
+      "storedPath": "dist/models/places/tubishanzhuang.glb.br",
+      "decodedBytes": 453624,
+      "decodedSha256": "1a291473c60deae9968a74085aac7bd9fa7cb346587afcf90ea3ae2e3ea2619c",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/xiaoxiangguan.glb",
+      "storedPath": "dist/models/places/xiaoxiangguan.glb.br",
+      "decodedBytes": 2704588,
+      "decodedSha256": "c2d52c7fad61f3188c8945bda62f0f20976460270c439f4f66334e551fc029d1",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places/yihongyuan.glb",
+      "storedPath": "dist/models/places/yihongyuan.glb.br",
+      "decodedBytes": 1547728,
+      "decodedSha256": "f3165a786d331b9e85d998618830c014660d917fc6aa6d3d4c2cc27332b7f456",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/aojingxiguan.glb",
+      "storedPath": "dist/models/places-low/aojingxiguan.glb.br",
+      "decodedBytes": 258020,
+      "decodedSha256": "d017f7e37773e08287ff825ea75090d0330091fd2691595574d0ca5f57b4524e",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/daguanlou.glb",
+      "storedPath": "dist/models/places-low/daguanlou.glb.br",
+      "decodedBytes": 4203768,
+      "decodedSha256": "18bc76638b07b73edda9ea83bc06c1c2bd054995e218afaffd1a3ae5131e2274",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/daguanyuan_gate.glb",
+      "storedPath": "dist/models/places-low/daguanyuan_gate.glb.br",
+      "decodedBytes": 254120,
+      "decodedSha256": "22c2b7fbf429881998bf5020fd1add74f73144af0ae54697204a98dd8aff7833",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/daoxiangcun.glb",
+      "storedPath": "dist/models/places-low/daoxiangcun.glb.br",
+      "decodedBytes": 445796,
+      "decodedSha256": "6635286de3da6ccabcb7ff4a540a7cd0393f78a6522b8301c617da9b0f6aad2b",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/dicuiting.glb",
+      "storedPath": "dist/models/places-low/dicuiting.glb.br",
+      "decodedBytes": 97708,
+      "decodedSha256": "dfa64da2e24e52430716bc51941a4f91994889d2925264d2411a2e2f03aba12e",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/hengwuyuan.glb",
+      "storedPath": "dist/models/places-low/hengwuyuan.glb.br",
+      "decodedBytes": 885624,
+      "decodedSha256": "173b36bd00b458524e310129735663e2b39e489035f45bd6f1e6b6358a4d37cb",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/longcuian.glb",
+      "storedPath": "dist/models/places-low/longcuian.glb.br",
+      "decodedBytes": 592496,
+      "decodedSha256": "9e610fb5ec2dc10bd5becaa54f2794cfcb47faca327db426ac80f80c2f024bcf",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/luxuean.glb",
+      "storedPath": "dist/models/places-low/luxuean.glb.br",
+      "decodedBytes": 33452,
+      "decodedSha256": "a4b00a762cd87dfb4ea6ca2ba6536145285b0a0d869fb58956d3b67c7090a34e",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/nuanxiangwu.glb",
+      "storedPath": "dist/models/places-low/nuanxiangwu.glb.br",
+      "decodedBytes": 430024,
+      "decodedSha256": "0d3428df1a45819d55a16566ea6e8d43df530e6549fa8a72e0ea084a947a05ef",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/ouxiangxie.glb",
+      "storedPath": "dist/models/places-low/ouxiangxie.glb.br",
+      "decodedBytes": 168904,
+      "decodedSha256": "33a88d9acae7a81de050dffe2df8129b427f6677be915ce0adc1e09612d0bf9a",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/qiushuangzhai.glb",
+      "storedPath": "dist/models/places-low/qiushuangzhai.glb.br",
+      "decodedBytes": 732320,
+      "decodedSha256": "3a46a0c7e70ab01bfa93c1e68f905a27266ee60f0298bb6528875a4a1943728e",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/qujingtongyou.glb",
+      "storedPath": "dist/models/places-low/qujingtongyou.glb.br",
+      "decodedBytes": 77304,
+      "decodedSha256": "48e34a6ec1e3a4846c228ea69f4c92afaa9a0289b7d2440ae2dff03bea7c711d",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/tubishanzhuang.glb",
+      "storedPath": "dist/models/places-low/tubishanzhuang.glb.br",
+      "decodedBytes": 269408,
+      "decodedSha256": "1c863511feac33d29e48934f20c3666c88375e744bef2237b42930bcac7132f3",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/xiaoxiangguan.glb",
+      "storedPath": "dist/models/places-low/xiaoxiangguan.glb.br",
+      "decodedBytes": 1848580,
+      "decodedSha256": "7f353292166300ee11fc2ddd58027cd80286f26acdce95e743c3013bb3312f76",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/places-low/yihongyuan.glb",
+      "storedPath": "dist/models/places-low/yihongyuan.glb.br",
+      "decodedBytes": 1030652,
+      "decodedSha256": "3d8161b98f0afebe249ad03bf50fa18fc13c19f252f81caab0b2a7e6b20b7275",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/vegetation/broadleaf-2.glb",
+      "storedPath": "dist/models/vegetation/broadleaf-2.glb.br",
+      "decodedBytes": 537672,
+      "decodedSha256": "d8407a70be9fb52e48185835838727807e2e7b752a545fbeb149f20d9c311bbc",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/vegetation/broadleaf-low.glb",
+      "storedPath": "dist/models/vegetation/broadleaf-low.glb.br",
+      "decodedBytes": 258448,
+      "decodedSha256": "7e1dd397c292080b74f59c122632d56f190474e0e7e54a78818e6791983215a2",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/vegetation/broadleaf.glb",
+      "storedPath": "dist/models/vegetation/broadleaf.glb.br",
+      "decodedBytes": 596484,
+      "decodedSha256": "e4f9b49e4cbb43c10d5325f9132a1246b7dae9ef26887a9d23273623328429bd",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/vegetation/fern-0.glb",
+      "storedPath": "dist/models/vegetation/fern-0.glb.br",
+      "decodedBytes": 6404,
+      "decodedSha256": "3ebcd63312a9a804265ff95f0e112f75579565c9040b16c70b4f1ba500a0c7d3",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/vegetation/fern-1.glb",
+      "storedPath": "dist/models/vegetation/fern-1.glb.br",
+      "decodedBytes": 6588,
+      "decodedSha256": "0b601f7d1b59c7e7dc8e62eeb2b8cd6c7434bb28fbb3a25fc79d532f521b1743",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/vegetation/ground-cover.glb",
+      "storedPath": "dist/models/vegetation/ground-cover.glb.br",
+      "decodedBytes": 5028,
+      "decodedSha256": "c20697f10dcf28249177415d22004118d7749d5c2b8344493dca1670c6482665",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/vegetation/pine.glb",
+      "storedPath": "dist/models/vegetation/pine.glb.br",
+      "decodedBytes": 197592,
+      "decodedSha256": "25d2e2e4568bc3409860b01b5feb27834c60f66aab728472bf25253e91af2089",
+      "matchesReviewedSource": true
+    },
+    {
+      "logicalPath": "models/vegetation/shrub.glb",
+      "storedPath": "dist/models/vegetation/shrub.glb.br",
+      "decodedBytes": 383916,
+      "decodedSha256": "1f2529a9e001a1960181f29090f92b12563b249f0a9dbee0c9be1f6bd962625c",
+      "matchesReviewedSource": true
+    }
+  ]
+}

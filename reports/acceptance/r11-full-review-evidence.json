@@ -1,0 +1,144 @@
+{
+  "revision": "spatial-garden-20260912-r11",
+  "candidate": ".deploy/reference-20260912-081731-311690",
+  "disposition": "rebuild",
+  "independentFullReview": true,
+  "captureValidity": "all 14 valid; hashes match final inventories",
+  "captures": [
+    {
+      "path": ".impeccable\\review\\desktop.png",
+      "sha256": "F2E90878BF4ED57197401E6E0876B10EB37A4F145AFD7B031A08E1D218F376CE",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\plan.png",
+      "sha256": "86E3D0788CE73E355C7C2AEE4BF874E306B1D5C69BD4A68202C8B5C79A824D5A",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\courtyard.png",
+      "sha256": "146BA890DE8641475D24BC1C437E7BD4E49501B46F91B2D9083B711520A26D8A",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\interior.png",
+      "sha256": "972FF4DCAF20CF5082F700AA2C96F6CAB4F1E93EC69833EF862CC3A0830D401C",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\cutaway.png",
+      "sha256": "BA226FD30DC79A42EFD49CD7DF90FDCDDA00DA3C1193BFECE31CAABCDD0BC386",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\night.png",
+      "sha256": "9CDA51346B37B9837B8A90BC54DA6928B0EC100B3B57A952206711F3FF9A6498",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\central-ensemble.png",
+      "sha256": "535ACDAD30FA5DC6E297665182C95456FD41FFFAE5113BB8B09E2F151DE03B5C",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\user-1266.png",
+      "sha256": "A311430F423DD2663F27BFD51BA8D434FACA1E880138F36D686A2D48CB2B1BFC",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\mobile.png",
+      "sha256": "A638E48283160747BB1AF96299A872A9AA52444F926BC335A6972F18369940B0",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\mobile-courtyard.png",
+      "sha256": "52B9DB370D9A011C9F93297CDEDD2ADDF0FB67F80180B5203EE625171F285443",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\mobile-whole-courtyard.png",
+      "sha256": "A560060821CD195CED9728F67FC529534903A0229752898DBB3629D826BFE01C",
+      "matches": true
+    },
+    {
+      "path": ".impeccable\\review\\narrow.png",
+      "sha256": "F590B2939EF5307065F72CF55A69EC0EB73760CBD2073010790D5BC69A32BAE1",
+      "matches": true
+    },
+    {
+      "path": "reports/browser/r11-packaged-production-desktop.png",
+      "sha256": "3B169B070AC146FA386C46F0E8F0182D878F7BBF2A6AFDAC175CE90AF26C64EA",
+      "matches": true
+    },
+    {
+      "path": "reports/browser/r11-packaged-production-mobile.png",
+      "sha256": "BC1FE1A0F110DA031139F51FA2BFD34C56932EE0DFEE3C45050BDC8AFB508FD7",
+      "matches": true
+    }
+  ],
+  "referencesOpened": [
+    "D:/Download/ChatGPT Image 2026年9月10日 01_02_26.png",
+    "public/art/daguanlou.webp",
+    "public/art/xiaoxiangguan-day.webp",
+    "public/art/garden-waterways.webp",
+    "public/art/garden-aerial-day.webp"
+  ],
+  "interiorRecheck": {
+    "path": ".impeccable/review/interior.png",
+    "sha256": "972ff4dcaf20cf5082f700aa2c96f6cab4f1e93ec69833ef862cc3a0830d401c",
+    "referenceArtPresent": true,
+    "descriptionPresent": true,
+    "artRegion": [
+      1032,
+      373,
+      1334,
+      575
+    ],
+    "pixelSamples": [
+      {
+        "x": 1050,
+        "y": 400,
+        "rgb": [
+          93,
+          98,
+          68
+        ]
+      },
+      {
+        "x": 1200,
+        "y": 450,
+        "rgb": [
+          169,
+          141,
+          103
+        ]
+      },
+      {
+        "x": 1300,
+        "y": 550,
+        "rgb": [
+          52,
+          61,
+          52
+        ]
+      }
+    ],
+    "blankPanelFinding": false
+  },
+  "documentation": {
+    "currentDesignMdRead": true,
+    "currentDesignJsonRead": true,
+    "parentConfirmedComplete": true
+  },
+  "boundaries": {
+    "browserRun": false,
+    "testsRun": false,
+    "detectorRun": false,
+    "contextOrSeedRun": false,
+    "implementationEdited": false,
+    "assetsEdited": false,
+    "deployed": false,
+    "publicConnectivityCertified": false
+  },
+  "reviewScope": "Visual finish and contract review from supplied captures, references, current documentation and sampled primary source / final evidence; not deployment approval."
+}

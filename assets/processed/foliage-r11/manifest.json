@@ -1,0 +1,82 @@
+{
+  "method": "Native texture channel packing: source sRGB diffuse decoded to an 8-bit PNG with its separately supplied alpha at matching resolution. No recolouring, synthetic foliage or screenshot texture.",
+  "revision": "r11",
+  "files": [
+    {
+      "assetId": "fern_02",
+      "file": "assets/processed/foliage-r11/fern_02_rgba.png",
+      "sha256": "7176545ed59b1438ebd7919acc9194954d20b44889b69e0c185f1672579bedf8",
+      "diffuse": "assets/source/fern_02/textures/fern_02_diff_1k.png",
+      "sourceSha256": "f8f504bce117647f1df386cd7bc99a79c664bb49f82d1dd6412c83a700c48e94",
+      "mask": "assets/source/fern_02/textures/fern_02_alpha_1k.png",
+      "maskSha256": "ea3c64284c7ebdeedf484d2d816eae92825ec526140c3bb83859ddc7a64001f9",
+      "size": 512,
+      "visibleLeafRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "assetId": "island_tree_01",
+      "file": "assets/processed/foliage-r11/island_tree_01_leaves_rgba.png",
+      "sha256": "bbd91c947312d7dfd6c999f6983305fd708a630a11d352d92c6e5fa56ebf382d",
+      "diffuse": "assets/source/island_tree_01/textures/island_tree_01_leaves_diff_1k.png",
+      "sourceSha256": "63d3563a22a62151f338ceb4e992de7c31b62e8e3582e2762d5071f02d286349",
+      "mask": "assets/source/island_tree_01/textures/island_tree_01_leaves_alpha_1k.png",
+      "maskSha256": "f4341f147988dbe6b58d9ca841a8f0e4bcff25bc40d05f9877da82006d489c39",
+      "size": 256,
+      "visibleLeafRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "assetId": "island_tree_02",
+      "file": "assets/processed/foliage-r11/island_tree_02_leaves_rgba.png",
+      "sha256": "bbd91c947312d7dfd6c999f6983305fd708a630a11d352d92c6e5fa56ebf382d",
+      "diffuse": "assets/source/island_tree_02/textures/island_tree_02_leaves_diff_1k.png",
+      "sourceSha256": "63d3563a22a62151f338ceb4e992de7c31b62e8e3582e2762d5071f02d286349",
+      "mask": "assets/source/island_tree_02/textures/island_tree_02_leaves_alpha_1k.png",
+      "maskSha256": "f4341f147988dbe6b58d9ca841a8f0e4bcff25bc40d05f9877da82006d489c39",
+      "size": 256,
+      "visibleLeafRgbMean": [
+        93.80992743459967,
+        102.2828221233002,
+        33.06360143911214
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "assetId": "pine_sapling_small",
+      "file": "assets/processed/foliage-r11/pine_sapling_small_twig_rgba.png",
+      "sha256": "f29597d8a54fd2151a9687c6444d2e685f4159fe2ddfca9bc2504fae1ed433b0",
+      "diffuse": "assets/source/pine_sapling_small/textures/pine_sapling_small_twig_diff_1k.png",
+      "sourceSha256": "2c5f9e8b72f072526f42d23a30628fba81ab71d010dd2293068d9845a0d9e26d",
+      "mask": "assets/source/pine_sapling_small/textures/pine_sapling_small_twig_alpha_1k.png",
+      "maskSha256": "b875969b9df9f9cbf56dca4e2809d8ed1916f5172f173b0389f050c834c5cbed",
+      "size": 256,
+      "visibleLeafRgbMean": [
+        84.92270037548901,
+        75.82428686574794,
+        63.18292802799457
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ]
+}

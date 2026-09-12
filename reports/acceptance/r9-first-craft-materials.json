@@ -1,0 +1,191 @@
+{
+  "revision": "r9",
+  "note": "Interpretive construction materials, not evidence of historical species. UV periods in metres (u,v); grain direction follows the long axis of each face. Stone swatches sample only a quiet interior of one scanned block, excluding its joints. Roughness uses 85% calibrated role plus 15% source unless specified.",
+  "materials": {
+    "wood": {
+      "source": "fine_grained_wood",
+      "saturation": 0.84,
+      "value": 1.65,
+      "roughness": 0.79,
+      "period": [
+        0.42,
+        2.8
+      ],
+      "grain": "v"
+    },
+    "darkwood": {
+      "source": "fine_grained_wood",
+      "saturation": 0.76,
+      "value": 1.02,
+      "roughness": 0.79,
+      "period": [
+        0.42,
+        2.8
+      ],
+      "grain": "v"
+    },
+    "latticewood": {
+      "source": "fine_grained_wood",
+      "saturation": 0.82,
+      "value": 1.5,
+      "roughness": 0.79,
+      "period": [
+        0.42,
+        2.8
+      ],
+      "grain": "v"
+    },
+    "floorwood": {
+      "source": "rosewood_veneer_02",
+      "saturation": 0.78,
+      "value": 1.05,
+      "roughness": 0.79,
+      "period": [
+        3.6,
+        0.44
+      ],
+      "grain": "u",
+      "roughSourceWeight": 0.12
+    },
+    "furniture": {
+      "source": "rosewood_veneer_02",
+      "saturation": 0.78,
+      "value": 0.92,
+      "roughness": 0.68,
+      "period": [
+        3.6,
+        0.6
+      ],
+      "grain": "u",
+      "roughSourceWeight": 0.12
+    },
+    "roof": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.25,
+      "value": 0.65,
+      "roughness": 0.87,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ]
+    },
+    "tile": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.28,
+      "value": 0.83,
+      "roughness": 0.82,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ]
+    },
+    "tilelight": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.28,
+      "value": 0.91,
+      "roughness": 0.84,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ]
+    },
+    "tiledark": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.23,
+      "value": 0.66,
+      "roughness": 0.86,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ]
+    },
+    "cutstone": {
+      "source": "white_sandstone_blocks_02",
+      "saturation": 0.4,
+      "value": 0.95,
+      "roughness": 0.93,
+      "period": [
+        0.85,
+        0.42
+      ],
+      "crop": [
+        0.3,
+        0.936,
+        0.18,
+        0.04
+      ],
+      "normalStrength": 0.12
+    },
+    "paving": {
+      "source": "white_sandstone_blocks_02",
+      "saturation": 0.4,
+      "value": 0.73,
+      "roughness": 0.93,
+      "period": [
+        0.85,
+        0.42
+      ],
+      "crop": [
+        0.3,
+        0.936,
+        0.18,
+        0.04
+      ],
+      "normalStrength": 0.12
+    },
+    "bankstone": {
+      "source": "mossy_sandstone",
+      "saturation": 0.53,
+      "value": 0.96,
+      "roughness": 0.92,
+      "period": [
+        1.4,
+        0.75
+      ],
+      "crop": [
+        0.32,
+        0.525,
+        0.21,
+        0.12
+      ],
+      "normalStrength": 0.28
+    },
+    "stone": {
+      "source": "white_sandstone_blocks_02",
+      "saturation": 0.4,
+      "value": 0.82,
+      "roughness": 0.93,
+      "period": [
+        0.85,
+        0.42
+      ],
+      "crop": [
+        0.3,
+        0.936,
+        0.18,
+        0.04
+      ],
+      "normalStrength": 0.12
+    },
+    "litter": {
+      "source": "forest_ground_06",
+      "saturation": 0.65,
+      "value": 0.92,
+      "roughness": 0.98,
+      "period": 2.0,
+      "normalStrength": 0.18
+    }
+  }
+}

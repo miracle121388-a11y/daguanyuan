@@ -1,0 +1,19 @@
+
+> daguanyuan-rumeng@1.0.0 models:optimize
+> node scripts/optimize.mjs
+
+node:fs:1019
+  binding.rename(
+          ^
+
+Error: EPERM: operation not permitted, rename 'D:\Users\Lenovo\Desktop\大观园\public\models\overview.glb.optimizing.glb' -> 'D:\Users\Lenovo\Desktop\大观园\public\models\overview.glb'
+    at renameSync (node:fs:1019:11)
+    at file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/optimize.mjs:20:45 {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'rename',
+  path: 'D:\\Users\\Lenovo\\Desktop\\大观园\\public\\models\\overview.glb.optimizing.glb',
+  dest: 'D:\\Users\\Lenovo\\Desktop\\大观园\\public\\models\\overview.glb'
+}
+
+Node.js v24.12.0

@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-10T07:43:10.151Z",
+  "url": "http://127.0.0.1:4273/",
+  "revision": "spatial-garden-20260910-r5",
+  "planView": true,
+  "dnsOverride": null,
+  "quicDisabled": false,
+  "tlsVerification": null,
+  "observationTimeoutMs": 90000,
+  "desktopReadyMs": 3741,
+  "hooksAbsent": true,
+  "sourceHooksAbsent": true,
+  "focus": {
+    "width": "2px",
+    "style": "solid"
+  },
+  "sceneVisible": true,
+  "refresh": true,
+  "selection": true,
+  "errors": [],
+  "failed": [],
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "touchEmulation": true,
+    "networkThrottle": false,
+    "readyMs": 4823,
+    "models": [
+      "/models/overview-low.glb",
+      "/models/places-low/xiaoxiangguan.glb",
+      "/models/vegetation/broadleaf-2.glb",
+      "/models/vegetation/broadleaf.glb"
+    ],
+    "selection": true
+  },
+  "reportCorrection": "HTTP local smoke: TLS is not applicable; test measurements unchanged."
+}

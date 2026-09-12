@@ -1,0 +1,188 @@
+{
+  "at": "2026-09-11T17:52:29.265597+00:00",
+  "revision": "spatial-garden-20260912-r8",
+  "goalComplete": false,
+  "visualReview": {
+    "disposition": "rebuild",
+    "report": "reports/acceptance/r8-full-review.md"
+  },
+  "documentation": {
+    "status": "r8-record-synchronized",
+    "files": [
+      "DESIGN.md",
+      ".impeccable/design.json"
+    ]
+  },
+  "spatial": {
+    "checksPassed": 319,
+    "preservationReport": "reports/acceptance/r8-layout-preservation.json",
+    "interpretationNotUniqueLiteraryPlan": true,
+    "terrainSamplesPerVariant": 2217,
+    "terrainVariants": [
+      "editable-master",
+      "published-mobile-overview"
+    ]
+  },
+  "models": {
+    "optimizedAndReread": 37,
+    "master": {
+      "reopened": true,
+      "placeIds": [
+        "aojingxiguan",
+        "daguanlou",
+        "daguanyuan_gate",
+        "daoxiangcun",
+        "dicuiting",
+        "hengwuyuan",
+        "longcuian",
+        "luxuean",
+        "nuanxiangwu",
+        "ouxiangxie",
+        "qiushuangzhai",
+        "qujingtongyou",
+        "tubishanzhuang",
+        "xiaoxiangguan",
+        "yihongyuan"
+      ],
+      "meshes": 4158,
+      "missingImages": [],
+      "packedImages": 112,
+      "manualLayerPresent": true
+    },
+    "roofCoverage": {
+      "checks": 1281,
+      "missing": 0,
+      "preFixMissing": 358
+    }
+  },
+  "tests": {
+    "unitTestsPassed": 6,
+    "unitScope": "r8 implementation before final roof export; no subsequent unit logic change",
+    "typecheckPassed": true,
+    "lintPassed": true,
+    "finalE2EPassed": 11,
+    "finalE2ELog": "r8-e2e-final.log",
+    "productionBuildPassed": true,
+    "integrityChecks": 3141,
+    "rasterProvenance": {
+      "files": 118,
+      "missing": 0
+    }
+  },
+  "captures": {
+    "validRequired": 14,
+    "interiorStaticRecapture": "r8-interior-capture-validity.json",
+    "dynamicTransitionQualityVerified": false
+  },
+  "performance": {
+    "report": "performance.json",
+    "mobileReport": "mobile-4g.json",
+    "highMeanCallbackMs": 23.341406250023283,
+    "highP95CallbackMs": 30.30000001192093,
+    "lowOrbitMeanCallbackMs": 18.241666666666667,
+    "lowOrbitP95CallbackMs": 46.900000005960464,
+    "mobileSimulatedReadyMs": 9310.5,
+    "mobileInitialBytes": 7673143,
+    "physicalPhoneVerified": false,
+    "stable60FpsCertified": false
+  },
+  "package": {
+    "directory": ".deploy/reference-20260911-173828-843440",
+    "contents": [
+      "dist/",
+      "server.mjs",
+      "Dockerfile"
+    ],
+    "rawBytes": 42775795,
+    "compressedBytes": 40525072,
+    "uploadDirectoryBytes": 44501505,
+    "precompressedExtensions": [
+      "html",
+      "js",
+      "css",
+      "json",
+      "wasm"
+    ],
+    "brotli": true,
+    "privateFilesIncluded": false,
+    "createdAt": "2026-09-11T17:38:34.769995+00:00"
+  },
+  "packagedSmoke": {
+    "at": "2026-09-11T17:40:18.879Z",
+    "url": "http://127.0.0.1:4277/",
+    "revision": "spatial-garden-20260912-r8",
+    "planView": true,
+    "dnsOverride": null,
+    "quicDisabled": false,
+    "tlsVerification": null,
+    "observationTimeoutMs": 90000,
+    "desktopReadyMs": 5924,
+    "hooksAbsent": true,
+    "sourceHooksAbsent": true,
+    "focus": {
+      "width": "2px",
+      "style": "solid"
+    },
+    "sceneVisible": true,
+    "refresh": true,
+    "selection": true,
+    "errors": [],
+    "failed": [],
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "touchEmulation": true,
+      "networkThrottle": false,
+      "concurrentDesktopPage": false,
+      "readyMs": 5036,
+      "models": [
+        "/models/overview-low.glb",
+        "/models/vegetation/ground-cover.glb",
+        "/models/places-low/xiaoxiangguan.glb",
+        "/models/vegetation/broadleaf-2.glb",
+        "/models/vegetation/broadleaf.glb"
+      ],
+      "selection": true,
+      "hotspotTap": true,
+      "equivalentDetailPicker": true,
+      "closeAndFullCourtyard": true
+    }
+  },
+  "deployment": {
+    "authorized": true,
+    "uploaded": false,
+    "blocker": "Original Zeabur account returns 401 Unauthorized",
+    "log": "r8-zeabur-auth-preflight.log",
+    "lastVerifiedPublicRevision": "spatial-garden-20260910-r6",
+    "lastVerifiedPublicAt": "2026-09-10T09:52:04.756297+00:00",
+    "targetProject": "6aa142fb6c3d9581b71560ed",
+    "targetService": "6aa143296c3d9581b71560fa",
+    "targetServer": "6a8eee0bb11fb81fb4aaca05",
+    "newServerPurchased": false,
+    "defaultLocalAccessRepaired": false,
+    "proxyDnsHostsChanged": false,
+    "currentHealthProbe": {
+      "at": "2026-09-11T17:47:26.100Z",
+      "report": "r8-public-transport-probe.json",
+      "defaultBrowser": "ERR_CONNECTION_CLOSED",
+      "dnsOverrideOnlyStatus": 200,
+      "healthRevision": "spatial-garden-20260910-r6",
+      "tlsVerification": true,
+      "quicUnchanged": true,
+      "fullSceneChecked": false
+    }
+  },
+  "frozenHashes": {
+    "config/garden.layout.json": "76db3f3ac46eaa8b0d1f6e00a72f0e563b407a2666076ad2083dc1902c7a9dae",
+    "public/scene-manifest.json": "7f970f5c09f7c90ae550bede607b1c6a03c0d5be5e23d3781f5fb32198558a31",
+    "public/models/overview.glb": "f548e6f5e54b3002fd941e607f5a99d32e9148a536e0d69830fbbb8d71db2494",
+    "public/models/overview-low.glb": "f548e6f5e54b3002fd941e607f5a99d32e9148a536e0d69830fbbb8d71db2494",
+    "blender/daguanyuan_master.blend": "dbc38463e1efdcaf2ef045d14ca0cee2a99a70a41ee37f89889f30cc959cebd2",
+    "dist/index.html": "6a550100a3425328b90044492472e2a6f9ce6d1effdb6134b7f05953f8fb21dc"
+  },
+  "userNextChoice": "Continue refining material and landscape",
+  "nextRevision": "r9",
+  "checkpoint": ".checkpoints/before-r9-20260912-020827"
+}

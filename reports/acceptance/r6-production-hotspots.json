@@ -1,0 +1,236 @@
+{
+  "at": "2026-09-10T09:29:54.315Z",
+  "method": "390px touch emulation, selected court, networkidle plus 6s, DOM ancestors inspected without debug hooks",
+  "results": [
+    {
+      "mode": "production",
+      "url": "http://127.0.0.1:4274/",
+      "dpr": 3,
+      "hotspots": [
+        {
+          "label": "曲廊与竹径",
+          "text": "1",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        },
+        {
+          "label": "竹下泉渠",
+          "text": "2",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        },
+        {
+          "label": "一明两暗的书斋",
+          "text": "3",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "test",
+      "url": "http://127.0.0.1:4175/",
+      "dpr": 1,
+      "hotspots": [
+        {
+          "label": "曲廊与竹径",
+          "text": "1",
+          "rect": {
+            "x": 98.86489868164062,
+            "y": 254.00845336914062,
+            "width": 44,
+            "height": 44
+          },
+          "hiddenAncestors": []
+        },
+        {
+          "label": "竹下泉渠",
+          "text": "2",
+          "rect": {
+            "x": 153.6063690185547,
+            "y": 255.92324829101562,
+            "width": 44,
+            "height": 44
+          },
+          "hiddenAncestors": []
+        },
+        {
+          "label": "一明两暗的书斋",
+          "text": "3",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "production",
+      "url": "http://127.0.0.1:4274/",
+      "dpr": 1,
+      "hotspots": [
+        {
+          "label": "曲廊与竹径",
+          "text": "1",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        },
+        {
+          "label": "竹下泉渠",
+          "text": "2",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        },
+        {
+          "label": "一明两暗的书斋",
+          "text": "3",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "test",
+      "url": "http://127.0.0.1:4175/",
+      "dpr": 3,
+      "hotspots": [
+        {
+          "label": "曲廊与竹径",
+          "text": "1",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        },
+        {
+          "label": "竹下泉渠",
+          "text": "2",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        },
+        {
+          "label": "一明两暗的书斋",
+          "text": "3",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "hiddenAncestors": [
+            {
+              "tag": "DIV",
+              "display": "none",
+              "visibility": "visible",
+              "opacity": "1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

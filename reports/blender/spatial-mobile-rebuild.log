@@ -1,0 +1,75 @@
+
+> daguanyuan-rumeng@1.0.0 models:mobile
+> node scripts/pipeline.mjs models-mobile
+
+WARN (bke.modifier): C:\Users\blender\git\blender-v450\blender.git\source\blender\blenkernel\intern\modifier.cc:425 BKE_modifier_set_error: Object: "xiaoxiangguan_water.001", Modifier: "Mobile_Overview", Modifier requires more than 3 input faces
+INFO Draco mesh compression is available, use library at D:\Users\Lenovo\Desktop\大观园\.tools\blender-4.5.9-windows-x64\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+12:55:58 | INFO: Starting glTF 2.0 export
+12:55:58 | WARNING: Mesh Mobile_daguanyuan_gate is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_daguanyuan_gate
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | INFO: Extracting primitive: Mobile_qujingtongyou
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_xiaoxiangguan is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_xiaoxiangguan
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | INFO: Extracting primitive: xiaoxiangguan_lantern
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_yihongyuan is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_yihongyuan
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | INFO: Extracting primitive: yihongyuan_lantern
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | INFO: Extracting primitive: hengwuyuan_lantern
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_hengwuyuan is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_hengwuyuan
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_qiushuangzhai is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_qiushuangzhai
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | INFO: Extracting primitive: qiushuangzhai_lantern
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_daoxiangcun is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_daoxiangcun
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_ouxiangxie is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_ouxiangxie
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | INFO: Extracting primitive: dicuiting_lantern
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_dicuiting is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_dicuiting
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_luxuean is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_luxuean
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_tubishanzhuang is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_tubishanzhuang
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_aojingxiguan is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_aojingxiguan
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | INFO: Extracting primitive: daguanlou_lantern
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_daguanlou is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_daguanlou
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_longcuian is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_longcuian
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_nuanxiangwu is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_nuanxiangwu
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | INFO: Extracting primitive: landscape_lantern
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | WARNING: Mesh Mobile_landscape is not valid, and may be exported wrongly
+12:55:58 | INFO: Extracting primitive: Mobile_landscape
+12:55:58 | INFO: Primitives created: 1
+12:55:58 | INFO: Finished glTF 2.0 export in 0.3798372745513916 s
+
+MOBILE OVERVIEW REBUILT 23
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+
+Blender quit

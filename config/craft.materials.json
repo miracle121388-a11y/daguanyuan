@@ -1,0 +1,261 @@
+{
+  "revision": "r12",
+  "note": "Interpretive construction materials, not evidence of historical species. UV periods in metres (u,v); grain direction follows the long axis of each face. Stone swatches sample only a quiet interior of one scanned block, excluding its joints. Roughness uses 85% calibrated role plus 15% source unless specified. Albedo contrast is mixed around the actual crop linear-light mean before the colour transform. Gardenstone uses source sandstone surface colour on authored eroded geometry; no claim of historical geological identity.",
+  "materials": {
+    "wood": {
+      "source": "wood_table_001",
+      "saturation": 0.68,
+      "value": 3.55,
+      "roughness": 0.64,
+      "roughSourceWeight": 0.15,
+      "period": [
+        0.55,
+        2.8
+      ],
+      "grain": "v",
+      "crop": [
+        0.61,
+        0.1,
+        0.27,
+        0.78
+      ],
+      "normalStrength": 0.08,
+      "contrast": 0.48
+    },
+    "darkwood": {
+      "source": "wood_table_001",
+      "saturation": 0.6,
+      "value": 2.7,
+      "roughness": 0.74,
+      "roughSourceWeight": 0.15,
+      "period": [
+        0.55,
+        2.8
+      ],
+      "grain": "v",
+      "crop": [
+        0.61,
+        0.1,
+        0.27,
+        0.78
+      ],
+      "normalStrength": 0.07,
+      "contrast": 0.44
+    },
+    "latticewood": {
+      "source": "wood_table_001",
+      "saturation": 0.67,
+      "value": 3.45,
+      "roughness": 0.63,
+      "roughSourceWeight": 0.15,
+      "period": [
+        0.55,
+        2.8
+      ],
+      "grain": "v",
+      "crop": [
+        0.61,
+        0.1,
+        0.27,
+        0.78
+      ],
+      "normalStrength": 0.07,
+      "contrast": 0.48
+    },
+    "floorwood": {
+      "source": "wood_table_001",
+      "saturation": 0.59,
+      "value": 2.5,
+      "roughness": 0.81,
+      "roughSourceWeight": 0.15,
+      "period": [
+        0.38,
+        3.2
+      ],
+      "grain": "v",
+      "crop": [
+        0.61,
+        0.1,
+        0.27,
+        0.78
+      ],
+      "normalStrength": 0.055,
+      "contrast": 0.28
+    },
+    "furniture": {
+      "source": "wood_table_001",
+      "saturation": 0.73,
+      "value": 3.0,
+      "roughness": 0.43,
+      "roughSourceWeight": 0.15,
+      "period": [
+        0.72,
+        4.6
+      ],
+      "grain": "v",
+      "crop": [
+        0.61,
+        0.1,
+        0.27,
+        0.78
+      ],
+      "normalStrength": 0.045,
+      "contrast": 0.24
+    },
+    "roof": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.25,
+      "value": 0.65,
+      "roughness": 0.87,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ]
+    },
+    "tile": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.28,
+      "value": 0.83,
+      "roughness": 0.82,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ]
+    },
+    "tilelight": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.28,
+      "value": 0.91,
+      "roughness": 0.84,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ]
+    },
+    "tiledark": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.23,
+      "value": 0.66,
+      "roughness": 0.86,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ]
+    },
+    "cutstone": {
+      "source": "white_sandstone_blocks_02",
+      "saturation": 0.18,
+      "value": 0.43,
+      "roughness": 0.79,
+      "period": [
+        1.65,
+        0.82
+      ],
+      "crop": [
+        0.3,
+        0.936,
+        0.18,
+        0.04
+      ],
+      "normalStrength": 0.25
+    },
+    "paving": {
+      "source": "white_sandstone_blocks_02",
+      "saturation": 0.12,
+      "value": 0.205,
+      "roughness": 0.82,
+      "period": [
+        2.25,
+        1.2
+      ],
+      "crop": [
+        0.3,
+        0.936,
+        0.18,
+        0.04
+      ],
+      "normalStrength": 0.2
+    },
+    "bankstone": {
+      "source": "mossy_sandstone",
+      "saturation": 0.4,
+      "value": 0.8,
+      "roughness": 0.8,
+      "period": [
+        2.4,
+        1.6
+      ],
+      "crop": [
+        0.32,
+        0.525,
+        0.21,
+        0.12
+      ],
+      "normalStrength": 0.48
+    },
+    "stone": {
+      "source": "white_sandstone_blocks_02",
+      "saturation": 0.2,
+      "value": 0.32,
+      "roughness": 0.86,
+      "period": [
+        1.65,
+        0.82
+      ],
+      "crop": [
+        0.3,
+        0.936,
+        0.18,
+        0.04
+      ],
+      "normalStrength": 0.25
+    },
+    "courtbase": {
+      "source": "white_sandstone_blocks_02",
+      "saturation": 0.12,
+      "value": 0.205,
+      "roughness": 0.82,
+      "period": [
+        2.25,
+        1.2
+      ],
+      "crop": [
+        0.3,
+        0.936,
+        0.18,
+        0.04
+      ],
+      "normalStrength": 0.2
+    },
+    "gardenstone": {
+      "source": "mossy_sandstone",
+      "saturation": 0.3,
+      "value": 0.74,
+      "contrast": 0.64,
+      "roughness": 0.88,
+      "normalStrength": 0.4,
+      "period": [
+        1.65,
+        1.3
+      ],
+      "crop": [
+        0.32,
+        0.525,
+        0.21,
+        0.12
+      ]
+    }
+  }
+}

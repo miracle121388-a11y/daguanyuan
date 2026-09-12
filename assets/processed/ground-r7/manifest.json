@@ -1,0 +1,7 @@
+{
+  "origin": "Local colour-only orthographic material bake from Poly Haven grass_medium_01 geometry and its source diffuse map; not a garden image.",
+  "source": "assets/source/grass_medium_01/grass_medium_01.gltf",
+  "sourceSha256": "3e5e2a314c94e16de54fd7c28e41709731fbd2b1613ab539f1544f622ddb6a85",
+  "method": "760 seeded tufts, wrapped 2.8m patch, Cycles8 emission pass, 1024 square, Standard color transform; seed7112026.",
+  "renderSha256": "237fb700ebb807145fafc83bc3c1c5d85fe4e9f849d0de97aa7c9c3f704b42b4"
+}

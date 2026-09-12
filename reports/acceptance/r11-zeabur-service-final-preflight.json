@@ -1,0 +1,34 @@
+{
+  "ID": "6aa143296c3d9581b71560fa",
+  "Name": "daguanyuan",
+  "Project": {
+    "ID": "6aa142fb6c3d9581b71560ed"
+  },
+  "CreatedAt": "2026-09-09T11:29:45.58Z",
+  "MarketItemCode": null,
+  "CustomBuildCommand": null,
+  "CustomStartCommand": null,
+  "OutputDir": null,
+  "RootDirectory": "",
+  "Template": "PREBUILT_V2",
+  "WatchPaths": [
+    "*"
+  ],
+  "GitTrigger": null,
+  "ConsoleURL": "",
+  "Status": "RUNNING",
+  "Domains": [
+    {
+      "id": "6aa1448ce980f145e9059993",
+      "domain": "daguanyuan-rumeng.zeabur.app",
+      "serviceID": "6aa143296c3d9581b71560fa",
+      "environmentID": "6aa142fbda9bc245fba1e845",
+      "projectID": "6aa142fb6c3d9581b71560ed",
+      "portName": "web",
+      "redirectTo": "",
+      "status": "PROVISIONED",
+      "isGenerated": true,
+      "createdAt": "2026-09-09T11:35:40.003Z"
+    }
+  ]
+}

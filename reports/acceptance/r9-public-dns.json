@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-11T19:24:30.986171+00:00",
+  "host": "daguanyuan-rumeng.zeabur.app",
+  "publicIp": "47.89.212.251",
+  "systemAddresses": [
+    "198.18.0.183"
+  ],
+  "rawAnswer": {
+    "Status": 0,
+    "TC": false,
+    "RD": true,
+    "RA": true,
+    "AD": false,
+    "CD": false,
+    "Question": [
+      {
+        "name": "daguanyuan-rumeng.zeabur.app.",
+        "type": 1
+      }
+    ],
+    "Answer": [
+      {
+        "name": "daguanyuan-rumeng.zeabur.app.",
+        "type": 1,
+        "TTL": 60,
+        "data": "47.89.212.251"
+      }
+    ],
+    "Comment": "Response from 163.177.5.55."
+  },
+  "networkSettingsChanged": false
+}

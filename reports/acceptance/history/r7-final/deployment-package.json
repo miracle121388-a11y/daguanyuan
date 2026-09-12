@@ -1,0 +1,21 @@
+{
+  "directory": ".deploy/reference-20260911-160026-373970",
+  "contents": [
+    "dist/",
+    "server.mjs",
+    "Dockerfile"
+  ],
+  "rawBytes": 43329138,
+  "compressedBytes": 41089046,
+  "uploadDirectoryBytes": 45039833,
+  "precompressedExtensions": [
+    "html",
+    "js",
+    "css",
+    "json",
+    "wasm"
+  ],
+  "brotli": true,
+  "privateFilesIncluded": false,
+  "createdAt": "2026-09-11T16:00:32.030997+00:00"
+}

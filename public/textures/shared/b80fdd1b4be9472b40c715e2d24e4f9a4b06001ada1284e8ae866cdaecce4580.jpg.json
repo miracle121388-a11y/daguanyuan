@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported roof_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "roof_diff",
+  "sourcePixelSha256": "b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580",
+  "sha256": "b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580",
+  "prompt": "Blender-exported roof_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

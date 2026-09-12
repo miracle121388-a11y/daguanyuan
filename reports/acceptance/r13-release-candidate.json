@@ -1,0 +1,68 @@
+{
+  "at": "2026-09-12T15:35:51.099766+00:00",
+  "revision": "spatial-garden-20260912-r13",
+  "nativeMasterSha256": "861892a5e7eaa1c260b5c2fa384df369a174c0819d4e3c4a4f98f27f65dbd8a6",
+  "package": {
+    "directory": ".deploy/reference-20260912-150313-914164",
+    "bytes": 51284686,
+    "physicalFiles": 591,
+    "brotliLogicalFiles": 45
+  },
+  "deployment": {
+    "id": "6aa56ca8fbf9c810b64d503f",
+    "state": "RUNNING",
+    "url": "https://daguanyuan-rumeng.zeabur.app/",
+    "existingCaliforniaServer": true,
+    "verifiedFileCount": 18,
+    "evidence": "r13-zeabur-deployment-verified.json"
+  },
+  "visual": {
+    "disposition": "fix",
+    "findings": {
+      "FORM": "unresolved",
+      "plantedGround": "partial",
+      "focalBotany": "partial",
+      "mobileClose": "resolved",
+      "moonlitDepth": "resolved"
+    },
+    "regressionR1": "resolved",
+    "fullSurfaceApproval": false,
+    "evidence": "r13-verdict.md"
+  },
+  "checks": {
+    "e2e": 11,
+    "unit": 6,
+    "spatial": 319,
+    "integrity": 3393,
+    "build": true,
+    "typecheck": true,
+    "lint": true,
+    "modelVerification": "r13-final-model-verification.status.json"
+  },
+  "network": {
+    "at": "2026-09-12T15:25:29.906596+00:00",
+    "revision": "spatial-garden-20260912-r13",
+    "defaultBrowser": {
+      "passed": false,
+      "exitCode": 1,
+      "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/",
+      "report": "r13-production-default.log",
+      "dnsOverride": false
+    },
+    "resolvedBrowser": {
+      "passed": true,
+      "exitCode": 0,
+      "report": "r13-production-smoke.json",
+      "publicAddress": "47.89.212.251",
+      "freshDnsEvidence": "r13-public-dns-post-deploy.json",
+      "quicDisabled": true,
+      "desktopReadyMs": 7838,
+      "mobileReadyMs": 9119
+    },
+    "tlsVerificationEnabled": true,
+    "systemDnsOrProxyModified": false,
+    "scope": "Current full production checks after r13 reached RUNNING. Temporary per-browser DNS/QUIC settings do not demonstrate normal-browser access. A current single-domain Clash repair preview has been prepared and explicit user input requested; no proxy file changed."
+  },
+  "reference": "r13-documenter-completion.json",
+  "followup": "Only remaining reviewer findings 2 and 3; historical FORM evidence cannot be fabricated. External proxy repair pending user answer."
+}

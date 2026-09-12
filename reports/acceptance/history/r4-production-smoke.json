@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-10T05:43:43.017Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "revision": "spatial-garden-20260910-r4",
+  "planView": true,
+  "dnsOverride": "47.89.212.251",
+  "quicDisabled": true,
+  "tlsVerification": true,
+  "observationTimeoutMs": 300000,
+  "desktopReadyMs": 211626,
+  "hooksAbsent": true,
+  "sourceHooksAbsent": true,
+  "focus": {
+    "width": "2px",
+    "style": "solid"
+  },
+  "sceneVisible": true,
+  "refresh": true,
+  "selection": true,
+  "errors": [],
+  "failed": [],
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "touchEmulation": true,
+    "networkThrottle": false,
+    "readyMs": 97718,
+    "models": [
+      "/models/overview-low.glb",
+      "/models/places-low/xiaoxiangguan.glb"
+    ],
+    "selection": true
+  }
+}

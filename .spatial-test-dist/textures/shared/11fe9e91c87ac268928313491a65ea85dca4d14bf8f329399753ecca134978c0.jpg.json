@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported floorwood_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "floorwood_diff",
+  "sourcePixelSha256": "eae8bf5253600d3fe1e2cb77664b1ff07c6106867682325aac6fd708e05e7379",
+  "sha256": "11fe9e91c87ac268928313491a65ea85dca4d14bf8f329399753ecca134978c0",
+  "prompt": "Blender-exported floorwood_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

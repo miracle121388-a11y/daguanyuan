@@ -1,0 +1,12 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 30000ms exceeded.
+    at setup (D:\Users\Lenovo\Desktop\大观园\scripts\reference_smoke.mjs:7:345)
+    at async file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/reference_smoke.mjs:18:15 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v24.12.0

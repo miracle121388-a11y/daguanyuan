@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-12T14:21:20.565140+00:00",
+  "revision": "spatial-garden-20260912-r12-fix2",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "scope": "Post-deployment loading validity only, same exact candidate, temporary per-browser public DNS with TLS verification; not a new visual audit or default-network success.",
+  "captures": [
+    {
+      "file": "reports/browser/r12-fix2-online-resolved-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "0632bcf5f987dddea71f1f16dba3061d5fd42cf715af86e8b2ccde2e5c235b2f",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": "reports/browser/r12-fix2-online-resolved-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "4e9dee1837dbc8b6906b9de98f3e24a3390f31a00e072b306c437672c07645aa",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    }
+  ]
+}

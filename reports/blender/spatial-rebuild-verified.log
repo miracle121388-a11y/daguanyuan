@@ -1,0 +1,32 @@
+
+> daguanyuan-rumeng@1.0.0 models:verify
+> node scripts/pipeline.mjs verify-models
+
+MASTER REOPEN VALIDATED {'reopened': True, 'placeIds': ['aojingxiguan', 'daguanlou', 'daguanyuan_gate', 'daoxiangcun', 'dicuiting', 'hengwuyuan', 'longcuian', 'luxuean', 'nuanxiangwu', 'ouxiangxie', 'qiushuangzhai', 'qujingtongyou', 'tubishanzhuang', 'xiaoxiangguan', 'yihongyuan'], 'meshes': 1821, 'missingImages': [], 'packedImages': 18, 'manualLayerPresent': True}
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+
+Blender quit
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+Traceback (most recent call last):
+  File "D:\Users\Lenovo\Desktop\大观园\blender\check_terrain_paths.py", line 9, in <module>
+    ob=next(o for o in bpy.data.objects if o.name=='landscape_earth')
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+Error: script failed, file: 'blender/check_terrain_paths.py', exiting.
+
+Blender quit
+file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/pipeline.mjs:10
+const run=(cmd,args)=>{const r=spawnSync(cmd,args,{stdio:'inherit',shell:false});if(r.status!==0)throw new Error(`${cmd} exited ${r.status}`)};
+                                                                                                       ^
+
+Error: D:\Users\Lenovo\Desktop\大观园\.tools\blender-4.5.9-windows-x64\blender.exe exited 1
+    at run (file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/pipeline.mjs:10:104)
+    at file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/pipeline.mjs:21:85
+    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.12.0

@@ -1,0 +1,142 @@
+{
+  "at": "2026-09-12T13:51:03.050Z",
+  "revision": "spatial-garden-20260912-r12-fix2",
+  "rows": [
+    {
+      "file": "public/models/places-low/daguanyuan_gate.glb",
+      "retainedMeshes": 7,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1,
+      "addedBotanicalMeshes": 0,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/qujingtongyou.glb",
+      "retainedMeshes": 2,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1,
+      "addedBotanicalMeshes": 1,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/xiaoxiangguan.glb",
+      "retainedMeshes": 8,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4,
+      "addedBotanicalMeshes": 6,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/yihongyuan.glb",
+      "retainedMeshes": 11,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4,
+      "addedBotanicalMeshes": 6,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/hengwuyuan.glb",
+      "retainedMeshes": 10,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4,
+      "addedBotanicalMeshes": 4,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/qiushuangzhai.glb",
+      "retainedMeshes": 9,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4,
+      "addedBotanicalMeshes": 4,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/daoxiangcun.glb",
+      "retainedMeshes": 3,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1,
+      "addedBotanicalMeshes": 1,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/ouxiangxie.glb",
+      "retainedMeshes": 4,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1,
+      "addedBotanicalMeshes": 1,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/dicuiting.glb",
+      "retainedMeshes": 4,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1,
+      "addedBotanicalMeshes": 0,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/luxuean.glb",
+      "retainedMeshes": 2,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1,
+      "addedBotanicalMeshes": 1,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/tubishanzhuang.glb",
+      "retainedMeshes": 6,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1,
+      "addedBotanicalMeshes": 1,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/aojingxiguan.glb",
+      "retainedMeshes": 6,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1,
+      "addedBotanicalMeshes": 1,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/daguanlou.glb",
+      "retainedMeshes": 9,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4,
+      "addedBotanicalMeshes": 4,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/longcuian.glb",
+      "retainedMeshes": 7,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4,
+      "addedBotanicalMeshes": 1,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/places-low/nuanxiangwu.glb",
+      "retainedMeshes": 8,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4,
+      "addedBotanicalMeshes": 1,
+      "omittedSubpixelStemMeshes": 0
+    },
+    {
+      "file": "public/models/overview.glb",
+      "retainedMeshes": 103,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 36,
+      "addedBotanicalMeshes": 29,
+      "omittedSubpixelStemMeshes": 6
+    },
+    {
+      "file": "public/models/overview-low.glb",
+      "retainedMeshes": 103,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 36,
+      "addedBotanicalMeshes": 29,
+      "omittedSubpixelStemMeshes": 6
+    }
+  ]
+}

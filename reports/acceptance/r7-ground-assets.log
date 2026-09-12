@@ -1,0 +1,90 @@
+22:46:06 | INFO: Data are loaded, start creating Blender stuff
+22:46:06 | INFO: Blender create Mesh node Plane.037
+22:46:06 | INFO: Blender create Mesh node Plane.038
+22:46:06 | INFO: Blender create Mesh node Plane.039
+22:46:06 | INFO: Blender create Mesh node Plane.042
+22:46:06 | INFO: Blender create Mesh node Plane.043
+22:46:06 | INFO: Blender create Mesh node Plane.045
+22:46:06 | INFO: Blender create Mesh node Plane.047
+22:46:06 | INFO: Blender create Mesh node Plane.048
+22:46:06 | INFO: Blender create Mesh node Plane.050
+22:46:06 | INFO: Blender create Mesh node Plane.051
+22:46:06 | INFO: Blender create Mesh node Plane.053
+22:46:06 | INFO: Blender create Mesh node Plane.054
+22:46:06 | INFO: Blender create Mesh node Plane.055
+22:46:06 | INFO: Blender create Mesh node Plane.056
+22:46:06 | INFO: Blender create Mesh node Plane.057
+22:46:06 | INFO: Blender create Mesh node Plane.058
+22:46:06 | INFO: Blender create Mesh node Plane.059
+22:46:06 | INFO: glTF import finished in 0.05s
+INFO Draco mesh compression is available, use library at D:\Users\Lenovo\Desktop\大观园\.tools\blender-4.5.9-windows-x64\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+22:46:07 | INFO: Starting glTF 2.0 export
+22:46:07 | INFO: Extracting primitive: Plane.043
+22:46:07 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+22:46:07 | INFO: Primitives created: 1
+22:46:07 | INFO: Finished glTF 2.0 export in 0.0914609432220459 s
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Fra:1 Mem:66.54M (Peak 66.54M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Plane
+Fra:1 Mem:66.54M (Peak 66.54M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Turf_Bake_3
+Fra:1 Mem:66.54M (Peak 66.54M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Turf_Bake_5
+Fra:1 Mem:68.56M (Peak 68.56M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Turf_Bake_6
+Fra:1 Mem:68.76M (Peak 68.76M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Turf_Bake_7
+Fra:1 Mem:69.22M (Peak 69.22M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Turf_Bake_8
+Fra:1 Mem:69.58M (Peak 69.58M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Turf_Bake_9
+Fra:1 Mem:69.54M (Peak 69.58M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Turf_Bake_10
+Fra:1 Mem:71.39M (Peak 71.97M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:66.17M (Peak 71.97M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading grass_medium_01_nor_gl
+Fra:1 Mem:66.17M (Peak 71.97M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading grass_medium_01_diff-grass_medium_01_alpha
+Fra:1 Mem:66.17M (Peak 71.97M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading grass_medium_01_rough
+Fra:1 Mem:50.10M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:50.10M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:50.10M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:50.10M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:50.18M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:50.18M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:50.18M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:50.18M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:50.18M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:50.18M (Peak 71.97M) | Time:00:00.09 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:50.48M (Peak 71.97M) | Time:00:00.09 | Mem:3.29M, Peak:3.29M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:50.48M (Peak 71.97M) | Time:00:00.09 | Mem:3.29M, Peak:3.29M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:50.48M (Peak 71.97M) | Time:00:00.09 | Mem:3.29M, Peak:3.29M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:50.48M (Peak 71.97M) | Time:00:00.09 | Mem:3.29M, Peak:3.29M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:50.48M (Peak 71.97M) | Time:00:00.09 | Mem:3.29M, Peak:3.29M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:51.11M (Peak 71.97M) | Time:00:00.10 | Mem:3.29M, Peak:3.29M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:51.04M (Peak 71.97M) | Time:00:00.10 | Mem:3.85M, Peak:3.85M | Scene, ViewLayer | Updating Geometry BVH Plane.043 2/11 | Building BVH
+Fra:1 Mem:51.04M (Peak 71.97M) | Time:00:00.10 | Mem:3.85M, Peak:3.85M | Scene, ViewLayer | Updating Geometry BVH Plane.047 5/11 | Building BVH
+Fra:1 Mem:51.04M (Peak 71.97M) | Time:00:00.10 | Mem:3.85M, Peak:3.85M | Scene, ViewLayer | Updating Geometry BVH Plane.037 6/11 | Building BVH
+Fra:1 Mem:51.04M (Peak 71.97M) | Time:00:00.10 | Mem:4.20M, Peak:4.20M | Scene, ViewLayer | Updating Geometry BVH Plane.037 6/11 | Building BVH 0%
+Fra:1 Mem:51.04M (Peak 71.97M) | Time:00:00.10 | Mem:4.54M, Peak:4.54M | Scene, ViewLayer | Updating Geometry BVH Plane.050 9/11 | Building BVH
+Fra:1 Mem:51.04M (Peak 71.97M) | Time:00:00.10 | Mem:4.53M, Peak:4.54M | Scene, ViewLayer | Updating Geometry BVH Plane.053 11/11 | Building BVH
+Fra:1 Mem:51.04M (Peak 71.97M) | Time:00:00.10 | Mem:4.53M, Peak:4.54M | Scene, ViewLayer | Updating Geometry BVH Plane.038 10/11 | Building BVH
+Fra:1 Mem:51.04M (Peak 71.97M) | Time:00:00.10 | Mem:5.60M, Peak:5.89M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:51.05M (Peak 71.97M) | Time:00:00.10 | Mem:5.60M, Peak:5.89M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:51.05M (Peak 71.97M) | Time:00:00.10 | Mem:6.00M, Peak:6.04M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:51.05M (Peak 71.97M) | Time:00:00.10 | Mem:6.00M, Peak:6.04M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:52.04M (Peak 71.97M) | Time:00:00.10 | Mem:6.00M, Peak:6.04M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:52.04M (Peak 71.97M) | Time:00:00.10 | Mem:6.99M, Peak:6.99M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:52.04M (Peak 71.97M) | Time:00:00.10 | Mem:7.00M, Peak:7.00M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:52.04M (Peak 71.97M) | Time:00:00.10 | Mem:7.01M, Peak:7.01M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:50.04M (Peak 71.97M) | Time:00:00.10 | Mem:5.01M, Peak:7.01M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:50.04M (Peak 71.97M) | Time:00:00.10 | Mem:5.01M, Peak:7.01M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:50.04M (Peak 71.97M) | Time:00:00.10 | Mem:5.09M, Peak:7.01M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:50.04M (Peak 71.97M) | Time:00:00.10 | Mem:5.09M, Peak:7.01M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:54.95M (Peak 71.97M) | Time:00:00.15 | Mem:9.99M, Peak:9.99M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:54.95M (Peak 71.97M) | Time:00:00.15 | Mem:9.99M, Peak:9.99M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:54.95M (Peak 71.97M) | Time:00:00.15 | Mem:9.91M, Peak:9.99M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:54.95M (Peak 71.97M) | Time:00:00.15 | Mem:9.99M, Peak:9.99M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:54.95M (Peak 71.97M) | Time:00:00.15 | Mem:9.99M, Peak:9.99M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:54.97M (Peak 71.97M) | Time:00:00.15 | Mem:9.99M, Peak:9.99M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:54.97M (Peak 71.97M) | Time:00:00.15 | Mem:9.99M, Peak:9.99M | Scene, ViewLayer | Sample 0/8
+Fra:1 Mem:131.06M (Peak 131.06M) | Time:00:00.34 | Remaining:00:01.33 | Mem:86.01M, Peak:86.01M | Scene, ViewLayer | Sample 1/8
+Fra:1 Mem:163.07M (Peak 211.07M) | Time:00:04.48 | Mem:86.01M, Peak:86.01M | Scene, ViewLayer | Sample 8/8
+Fra:1 Mem:163.07M (Peak 211.07M) | Time:00:04.48 | Mem:86.01M, Peak:86.01M | Scene, ViewLayer | Finished
+Saved: 'D:\Users\Lenovo\Desktop\大观园\assets\processed\ground-r7\turf.png'
+Time: 00:04.59 (Saving: 00:00.08)
+
+
+R7 GROUND COVER COMPLETE
+
+Blender quit

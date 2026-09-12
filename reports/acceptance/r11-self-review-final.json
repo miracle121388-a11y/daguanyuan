@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-12T08:19:44.081875+00:00",
+  "revision": "spatial-garden-20260912-r11",
+  "round": 2,
+  "allTwelveOpened": true,
+  "captureInventory": "r11-final-capture-inventory.json",
+  "validStates": true,
+  "source": "reference_smoke.mjs final capture and individual view_image inspection",
+  "observed": [
+    "Road/bridge decks now visible and continuous.",
+    "Warm timber and source leaf color are visible in room/courtyard.",
+    "Overview still visibly reads as a model, with very bright road ribbons, broad grass slopes and periodic water reflection pattern.",
+    "Night establishes warm building lights with a dark grove; no claim of photographic fidelity.",
+    "Mobile close and whole courtyard states are distinguishable and controls remain visible."
+  ],
+  "parentPolish": "ended after second bounded inspection; full independent finish review is next",
+  "notAVisualPass": true
+}

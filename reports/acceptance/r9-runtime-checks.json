@@ -1,0 +1,31 @@
+{
+  "revision": "spatial-garden-20260912-r9",
+  "e2e": {
+    "passed": 10,
+    "failed": 1,
+    "failure": "mobile initial bytes 8428280 exceeds 8388608"
+  },
+  "performance": {
+    "high": {
+      "sampleCount": 230,
+      "meanFrameMs": 25.94652173920818,
+      "p95FrameMs": 35.30000001192093,
+      "drawCalls": 70,
+      "triangles": 431618
+    },
+    "low": {
+      "sampleCount": 300,
+      "meanFrameMs": 21.94566666672627,
+      "p95FrameMs": 58.5,
+      "drawCalls": 230,
+      "triangles": 690204
+    }
+  },
+  "budgets": {
+    "highTriangles": 1200000,
+    "lowTriangles": 350000,
+    "lowPassed": false
+  },
+  "productionSmoke": "r9-packaged-production-smoke.json",
+  "status": "Requires remediation; not approved for release."
+}

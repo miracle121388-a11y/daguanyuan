@@ -1,0 +1,565 @@
+{
+  "config": {
+    "argv": [
+      "D:\\Node.js\\node.exe",
+      "D:\\Users\\Lenovo\\Desktop\\大观园\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "D:\\Users\\Lenovo\\Desktop\\大观园\\playwright.config.ts",
+    "rootDir": "D:/Users/Lenovo/Desktop/大观园/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Users/Lenovo/Desktop/大观园/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/Users/Lenovo/Desktop/大观园/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/acceptance/playwright-1789016698727.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/acceptance/playwright-1789016698727-html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npx vite build --mode test --outDir .test-dist && npx vite preview --outDir .test-dist --host 127.0.0.1 --port 4174",
+      "url": "http://127.0.0.1:4174",
+      "reuseExistingServer": false,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "gallery.spec.ts",
+      "file": "gallery.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "a failed full-size reference image can be retried without leaving the viewer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4521,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:05:11.916Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0087bd98ece4956907e4-4709fea0ffc3dd352a3c",
+          "file": "gallery.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "gallery retries a failed manifest and distinguishes spoiler-empty results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7722,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:05:16.847Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0087bd98ece4956907e4-7fb1fb4571a3e4dcaf60",
+          "file": "gallery.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "320px sources entry retains its accessible name",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 481,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:05:24.576Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0087bd98ece4956907e4-5dc02fdbabe7cd33d8b1",
+          "file": "gallery.spec.ts",
+          "line": 21,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "garden.spec.ts",
+      "file": "garden.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "published scene, real canvas picking, literary links, all tours, settings and screenshots",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 31749,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"yihongyuan\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 20000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"yihongyuan\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 20000ms exceeded while waiting on the predicate\n    at D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts:9:405",
+                    "location": {
+                      "file": "D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts",
+                      "column": 405,
+                      "line": 9
+                    },
+                    "snippet": "   7 |  const errors:string[]=[],failed:string[]=[],external:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});page.on('request',r=>{if(!r.url().startsWith('http://127.0.0.1')&&!r.url().startsWith('data:')&&!r.url().startsWith('blob:'))external.push(r.url())});await ready(page);await page.waitForTimeout(1800);\n   8 |  await shot(page,'reports/browser/01-overview.png');\n>  9 |  for(const id of ['xiaoxiangguan','yihongyuan','qiushuangzhai']){await page.getByRole('button',{name:'回到全园',exact:true}).click();await page.waitForTimeout(2000);const point=await page.evaluate(id=>(window as any).__gardenTest.project(id),id);const box=(await page.locator('canvas').boundingBox())!;await page.mouse.click(box.x+point.x,box.y+point.y);await expect.poll(async()=>(await state(page)).place).toBe(id)}\n     |                                                                                                                                                                                                                                                                                                                                                                                                                     ^\n  10 |  for(const [i,name]of ['潇湘馆','怡红院','蘅芜苑','秋爽斋'].entries()){await place(page,name);await shot(page,`reports/browser/0${i+2}-${['xiaoxiangguan','yihongyuan','hengwuyuan','qiushuangzhai'][i]}.png`)}\n  11 |  await page.getByRole('button',{name:'人物群像',exact:true}).click();await page.locator('.character-list button').filter({hasText:'林黛玉'}).click();await expect.poll(async()=>(await state(page)).person).toBe('daiyu');await expect(page.locator('.related-places')).toContainText('潇湘馆');await shot(page,'reports/browser/06-character.png');\n  12 |  await page.getByRole('button',{name:'回目拾遗',exact:true}).click();await page.locator('.chapter-list button').filter({hasText:'第三十七回'}).click();await page.locator('.event-row').filter({hasText:'海棠结社'}).click();await expect.poll(async()=>(await state(page)).place).toBe('qiushuangzhai');await expect(page.locator('.detail-panel')).toContainText('探春');await page.locator('.source-list summary').first().click();await expect(page.locator('.source-body blockquote')).toBeVisible();await page.waitForTimeout(1800);await shot(page,'reports/browser/07-event.png');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts",
+                        "column": 405,
+                        "line": 9
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"yihongyuan\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\nCall Log:\n- Timeout 20000ms exceeded while waiting on the predicate\n\n   7 |  const errors:string[]=[],failed:string[]=[],external:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});page.on('request',r=>{if(!r.url().startsWith('http://127.0.0.1')&&!r.url().startsWith('data:')&&!r.url().startsWith('blob:'))external.push(r.url())});await ready(page);await page.waitForTimeout(1800);\n   8 |  await shot(page,'reports/browser/01-overview.png');\n>  9 |  for(const id of ['xiaoxiangguan','yihongyuan','qiushuangzhai']){await page.getByRole('button',{name:'回到全园',exact:true}).click();await page.waitForTimeout(2000);const point=await page.evaluate(id=>(window as any).__gardenTest.project(id),id);const box=(await page.locator('canvas').boundingBox())!;await page.mouse.click(box.x+point.x,box.y+point.y);await expect.poll(async()=>(await state(page)).place).toBe(id)}\n     |                                                                                                                                                                                                                                                                                                                                                                                                                     ^\n  10 |  for(const [i,name]of ['潇湘馆','怡红院','蘅芜苑','秋爽斋'].entries()){await place(page,name);await shot(page,`reports/browser/0${i+2}-${['xiaoxiangguan','yihongyuan','hengwuyuan','qiushuangzhai'][i]}.png`)}\n  11 |  await page.getByRole('button',{name:'人物群像',exact:true}).click();await page.locator('.character-list button').filter({hasText:'林黛玉'}).click();await expect.poll(async()=>(await state(page)).person).toBe('daiyu');await expect(page.locator('.related-places')).toContainText('潇湘馆');await shot(page,'reports/browser/06-character.png');\n  12 |  await page.getByRole('button',{name:'回目拾遗',exact:true}).click();await page.locator('.chapter-list button').filter({hasText:'第三十七回'}).click();await page.locator('.event-row').filter({hasText:'海棠结社'}).click();await expect.poll(async()=>(await state(page)).place).toBe('qiushuangzhai');await expect(page.locator('.detail-panel')).toContainText('探春');await page.locator('.source-list summary').first().click();await expect(page.locator('.source-body blockquote')).toBeVisible();await page.waitForTimeout(1800);await shot(page,'reports/browser/07-event.png');\n    at D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts:9:405"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:05:25.083Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Users\\Lenovo\\Desktop\\大观园\\test-results\\garden-published-scene-rea-0a456-rs-settings-and-screenshots\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Users\\Lenovo\\Desktop\\大观园\\test-results\\garden-published-scene-rea-0a456-rs-settings-and-screenshots\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts",
+                    "column": 405,
+                    "line": 9
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8d392b78b326e6f8de96-be97911cb7a3bd2e9949",
+          "file": "garden.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "mobile bottom drawer and usable controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7763,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:05:59.491Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8d392b78b326e6f8de96-9cefd1efe8fbce55d298",
+          "file": "garden.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "model failure exposes retry and recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5395,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:06:07.687Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8d392b78b326e6f8de96-f79eea0a363a96b141d4",
+          "file": "garden.spec.ts",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "tour shows sourced stop content, travels, and arrives at the next stop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10952,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:06:13.091Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8d392b78b326e6f8de96-415cc5731fbf0ca6954a",
+          "file": "garden.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "the overhead garden view opens by keyboard and a map destination returns to its courtyard",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2155,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.minimap svg path')\nExpected: \u001b[32m\"evenodd\"\u001b[39m\nError: strict mode violation: locator('.minimap svg path') resolved to 5 elements:\n    1) <path d=\"M8 3H5a2 2 0 0 0-2 2v3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    2) <path d=\"M21 8V5a2 2 0 0 0-2-2h-3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    3) <path d=\"M3 16v3a2 2 0 0 0 2 2h3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    4) <path d=\"M16 21h3a2 2 0 0 0 2-2v-3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    5) <path fill=\"#adc5b5\" fill-rule=\"evenodd\" d=\"M-56,44L-55.552,39.456L-55.056,34.608L-54.584,29.432L-54.208,23.904L-54,18L-53.976,11.496L-54.088,4.408L-54.312,-2.928L-54.624,-10.176L-55,-17L-55.6,-23.352L-56.44,-29.456L-57.28,-35.384L-57.88,-41.208L-58,-47L-57.624,-52.824L-56.912,-58.632L-55.888,-64.328L-54.576,-69.816L-53,-75L-51.24,-80.008L-49.28,-84.904L-47,-89.496L-44.28,-93.592L-41,-97L-37.048,-99.656L-32.504,-101.688L-27.536,-103.192L-22.312,-104.264L-17,-105L-11.472,-105.288L-5.616,-105.064L0.37…></path> aka locator('.minimap > svg > path')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.minimap svg path') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.minimap svg path')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.minimap svg path')\nExpected: \u001b[32m\"evenodd\"\u001b[39m\nError: strict mode violation: locator('.minimap svg path') resolved to 5 elements:\n    1) <path d=\"M8 3H5a2 2 0 0 0-2 2v3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    2) <path d=\"M21 8V5a2 2 0 0 0-2-2h-3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    3) <path d=\"M3 16v3a2 2 0 0 0 2 2h3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    4) <path d=\"M16 21h3a2 2 0 0 0 2-2v-3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    5) <path fill=\"#adc5b5\" fill-rule=\"evenodd\" d=\"M-56,44L-55.552,39.456L-55.056,34.608L-54.584,29.432L-54.208,23.904L-54,18L-53.976,11.496L-54.088,4.408L-54.312,-2.928L-54.624,-10.176L-55,-17L-55.6,-23.352L-56.44,-29.456L-57.28,-35.384L-57.88,-41.208L-58,-47L-57.624,-52.824L-56.912,-58.632L-55.888,-64.328L-54.576,-69.816L-53,-75L-51.24,-80.008L-49.28,-84.904L-47,-89.496L-44.28,-93.592L-41,-97L-37.048,-99.656L-32.504,-101.688L-27.536,-103.192L-22.312,-104.264L-17,-105L-11.472,-105.288L-5.616,-105.064L0.37…></path> aka locator('.minimap > svg > path')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.minimap svg path') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.minimap svg path')\u001b[22m\n\n    at D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts:38:68",
+                    "location": {
+                      "file": "D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts",
+                      "column": 68,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect.poll(()=>page.evaluate(()=>(window as any).__gardenTest.state().planView)).toBe(true);\n  37 |  await expect(control).toHaveAttribute('aria-pressed','true');\n> 38 |  const water=page.locator('.minimap svg path');await expect(water).toHaveAttribute('fill-rule','evenodd');\n     |                                                                    ^\n  39 |  await page.getByRole('button',{name:'地图选择潇湘馆',exact:true}).focus();await page.keyboard.press('Enter');\n  40 |  await expect(page.locator('.detail-scroll h2')).toHaveText('潇湘馆');\n  41 |  await expect.poll(()=>page.evaluate(()=>(window as any).__gardenTest.state().planView)).toBe(false);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts",
+                        "column": 68,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.minimap svg path')\nExpected: \u001b[32m\"evenodd\"\u001b[39m\nError: strict mode violation: locator('.minimap svg path') resolved to 5 elements:\n    1) <path d=\"M8 3H5a2 2 0 0 0-2 2v3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    2) <path d=\"M21 8V5a2 2 0 0 0-2-2h-3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    3) <path d=\"M3 16v3a2 2 0 0 0 2 2h3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    4) <path d=\"M16 21h3a2 2 0 0 0 2-2v-3\"></path> aka getByRole('button', { name: '俯瞰', exact: true })\n    5) <path fill=\"#adc5b5\" fill-rule=\"evenodd\" d=\"M-56,44L-55.552,39.456L-55.056,34.608L-54.584,29.432L-54.208,23.904L-54,18L-53.976,11.496L-54.088,4.408L-54.312,-2.928L-54.624,-10.176L-55,-17L-55.6,-23.352L-56.44,-29.456L-57.28,-35.384L-57.88,-41.208L-58,-47L-57.624,-52.824L-56.912,-58.632L-55.888,-64.328L-54.576,-69.816L-53,-75L-51.24,-80.008L-49.28,-84.904L-47,-89.496L-44.28,-93.592L-41,-97L-37.048,-99.656L-32.504,-101.688L-27.536,-103.192L-22.312,-104.264L-17,-105L-11.472,-105.288L-5.616,-105.064L0.37…></path> aka locator('.minimap > svg > path')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.minimap svg path') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.minimap svg path')\u001b[22m\n\n\n  36 |  await expect.poll(()=>page.evaluate(()=>(window as any).__gardenTest.state().planView)).toBe(true);\n  37 |  await expect(control).toHaveAttribute('aria-pressed','true');\n> 38 |  const water=page.locator('.minimap svg path');await expect(water).toHaveAttribute('fill-rule','evenodd');\n     |                                                                    ^\n  39 |  await page.getByRole('button',{name:'地图选择潇湘馆',exact:true}).focus();await page.keyboard.press('Enter');\n  40 |  await expect(page.locator('.detail-scroll h2')).toHaveText('潇湘馆');\n  41 |  await expect.poll(()=>page.evaluate(()=>(window as any).__gardenTest.state().planView)).toBe(false);\n    at D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts:38:68"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:06:24.053Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Users\\Lenovo\\Desktop\\大观园\\test-results\\garden-the-overhead-garden-d14da-on-returns-to-its-courtyard\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Users\\Lenovo\\Desktop\\大观园\\test-results\\garden-the-overhead-garden-d14da-on-returns-to-its-courtyard\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Users\\Lenovo\\Desktop\\大观园\\tests\\e2e\\garden.spec.ts",
+                    "column": 68,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8d392b78b326e6f8de96-446d6db6b06eef1de050",
+          "file": "garden.spec.ts",
+          "line": 33,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "interior.spec.ts",
+      "file": "interior.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "interior inspection lifts the roof and restores the complete courtyard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12332,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:06:27.669Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f8011ab8b9fdfc3c016f-11a619240d9ed35e449d",
+          "file": "interior.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "mobile.spec.ts",
+      "file": "mobile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "touch phone on throttled 4G loads the small overview and mobile courtyard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17151,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:06:40.419Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-33684a1c20f449864188",
+          "file": "mobile.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "320px phone controls remain inside the viewport",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1872,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-10T05:06:57.583Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e79c838550b25e92508e-cfe7e8e29f2edfe39743",
+          "file": "mobile.spec.ts",
+          "line": 24,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-10T05:04:59.324Z",
+    "duration": 121240.994,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

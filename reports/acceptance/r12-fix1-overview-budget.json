@@ -1,0 +1,91 @@
+{
+  "sourceSha256": "6abf099785d41c064403f21b0905e942bcedd9924d8c7d8ad749961503ca4689",
+  "method": "Further decimate only distant focal botanical meshes from ratio .11 to .010; native and both near partitions unchanged. Future fresh exports use .010 directly.",
+  "rows": [
+    {
+      "name": "Mobile_xiaoxiangguan_botanical_bamboo",
+      "beforeFaces": 13519,
+      "afterFaces": 1229
+    },
+    {
+      "name": "Mobile_xiaoxiangguan_botanical_banana",
+      "beforeFaces": 292,
+      "afterFaces": 26
+    },
+    {
+      "name": "Mobile_xiaoxiangguan_botanical_litter",
+      "beforeFaces": 411,
+      "afterFaces": 37
+    },
+    {
+      "name": "Mobile_xiaoxiangguan_botanical_petal",
+      "beforeFaces": 687,
+      "afterFaces": 62
+    },
+    {
+      "name": "Mobile_xiaoxiangguan_botanical_stem",
+      "beforeFaces": 5474,
+      "afterFaces": 497
+    },
+    {
+      "name": "Mobile_yihongyuan_botanical_bamboo",
+      "beforeFaces": 3129,
+      "afterFaces": 284
+    },
+    {
+      "name": "Mobile_yihongyuan_botanical_banana",
+      "beforeFaces": 876,
+      "afterFaces": 79
+    },
+    {
+      "name": "Mobile_yihongyuan_botanical_litter",
+      "beforeFaces": 233,
+      "afterFaces": 21
+    },
+    {
+      "name": "Mobile_yihongyuan_botanical_petal",
+      "beforeFaces": 687,
+      "afterFaces": 62
+    },
+    {
+      "name": "Mobile_yihongyuan_botanical_stem",
+      "beforeFaces": 1446,
+      "afterFaces": 131
+    },
+    {
+      "name": "Mobile_hengwuyuan_botanical_bamboo",
+      "beforeFaces": 4124,
+      "afterFaces": 374
+    },
+    {
+      "name": "Mobile_hengwuyuan_botanical_litter",
+      "beforeFaces": 305,
+      "afterFaces": 27
+    },
+    {
+      "name": "Mobile_qiushuangzhai_botanical_bamboo",
+      "beforeFaces": 3921,
+      "afterFaces": 356
+    },
+    {
+      "name": "Mobile_qiushuangzhai_botanical_litter",
+      "beforeFaces": 314,
+      "afterFaces": 28
+    },
+    {
+      "name": "Mobile_daguanlou_botanical_bamboo",
+      "beforeFaces": 21356,
+      "afterFaces": 1941
+    },
+    {
+      "name": "Mobile_daguanlou_botanical_litter",
+      "beforeFaces": 1574,
+      "afterFaces": 143
+    },
+    {
+      "name": "Mobile_landscape_botanical_bamboo",
+      "beforeFaces": 61956,
+      "afterFaces": 5632
+    }
+  ]
+}

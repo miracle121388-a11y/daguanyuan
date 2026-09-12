@@ -1,0 +1,8 @@
+
+> daguanyuan-rumeng@1.0.0 content:prepare
+> python scripts/prepare_content.py && python scripts/prepare_architecture.py && python scripts/prepare_reference_world.py && python scripts/refine_reference_layout.py && python scripts/interior_presets.py && python scripts/prepare_spatial_layout.py
+
+Prepared 12 places, 13 characters, 22 checked events, 13 chapters, 3 routes
+Prepared 11 reviewed architectural features
+Prepared 15 connected destinations and 15 optimized, attributed reference images.
+Spatial layout: 112 nodes 126 edges; all curated tours connected

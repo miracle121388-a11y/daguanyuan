@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-12T16:04:28.067893+00:00",
+  "images": [
+    {
+      "file": "reports/browser/r14-packaged-production-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "4a6a4dc7eb6676c52cb2d2806f71a43d455e06e5648ad28d37389dbb20a0ded0",
+      "openedByParent": true,
+      "valid": true
+    },
+    {
+      "file": "reports/browser/r14-packaged-production-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "e6eea81282cefb8fb7bf002b822d24ec89f0fdfeec7e436072206cd2327c92f5",
+      "openedByParent": true,
+      "valid": true
+    }
+  ],
+  "note": "Phone image displayed resized by viewer, but actual file1170x2532 verified. CSS390x844,DPR3/render1 emulation, not hardware."
+}

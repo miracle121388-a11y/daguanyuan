@@ -1,0 +1,217 @@
+{
+  "at": "2026-09-12T15:12:11.305Z",
+  "url": "http://127.0.0.1:4291/",
+  "passed": true,
+  "results": [
+    {
+      "file": "scene-manifest.json",
+      "sourceBytes": 1444601,
+      "variants": [
+        {
+          "accept": "br",
+          "encoding": "br",
+          "bytes": 350651,
+          "decodedSha256": "1a2fae83a2ab2f3fdaa55bf7fa770191f804eb05814de7ad3820f0e8a78b3af4",
+          "etag": "\"559bb-1a09624e0e2-br\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip",
+          "encoding": "gzip",
+          "bytes": 357196,
+          "decodedSha256": "1a2fae83a2ab2f3fdaa55bf7fa770191f804eb05814de7ad3820f0e8a78b3af4",
+          "etag": "\"160af9-1a096151e96-gzip\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "identity",
+          "encoding": "identity",
+          "bytes": 1444601,
+          "decodedSha256": "1a2fae83a2ab2f3fdaa55bf7fa770191f804eb05814de7ad3820f0e8a78b3af4",
+          "etag": "\"160af9-1a096151e96-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip;q=0, br;q=0",
+          "encoding": "identity",
+          "bytes": 1444601,
+          "decodedSha256": "1a2fae83a2ab2f3fdaa55bf7fa770191f804eb05814de7ad3820f0e8a78b3af4",
+          "etag": "\"160af9-1a096151e96-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        }
+      ]
+    },
+    {
+      "file": "models/overview-low.glb",
+      "sourceBytes": 3324604,
+      "variants": [
+        {
+          "accept": "br",
+          "encoding": "br",
+          "bytes": 2931885,
+          "decodedSha256": "244dfb85fe326f5acb362737e5aebcb96aed5edbdca1910dbfc4eec14396411a",
+          "etag": "\"2cbcad-1a09624ea64-br\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip",
+          "encoding": "gzip",
+          "bytes": 2942513,
+          "decodedSha256": "244dfb85fe326f5acb362737e5aebcb96aed5edbdca1910dbfc4eec14396411a",
+          "etag": "\"2cbcad-1a09624ea64-gzip\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "identity",
+          "encoding": "identity",
+          "bytes": 3324604,
+          "decodedSha256": "244dfb85fe326f5acb362737e5aebcb96aed5edbdca1910dbfc4eec14396411a",
+          "etag": "\"2cbcad-1a09624ea64-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip;q=0, br;q=0",
+          "encoding": "identity",
+          "bytes": 3324604,
+          "decodedSha256": "244dfb85fe326f5acb362737e5aebcb96aed5edbdca1910dbfc4eec14396411a",
+          "etag": "\"2cbcad-1a09624ea64-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        }
+      ]
+    },
+    {
+      "file": "models/places/daguanlou.glb",
+      "sourceBytes": 7569368,
+      "variants": [
+        {
+          "accept": "br",
+          "encoding": "br",
+          "bytes": 5645740,
+          "decodedSha256": "0695f9e34aa4ea4c656e5aa16a3309d5235070df197b9e2e2baf0fda08a6d161",
+          "etag": "\"5625ac-1a09624f678-br\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip",
+          "encoding": "gzip",
+          "bytes": 5763587,
+          "decodedSha256": "0695f9e34aa4ea4c656e5aa16a3309d5235070df197b9e2e2baf0fda08a6d161",
+          "etag": "\"5625ac-1a09624f678-gzip\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "identity",
+          "encoding": "identity",
+          "bytes": 7569368,
+          "decodedSha256": "0695f9e34aa4ea4c656e5aa16a3309d5235070df197b9e2e2baf0fda08a6d161",
+          "etag": "\"5625ac-1a09624f678-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip;q=0, br;q=0",
+          "encoding": "identity",
+          "bytes": 7569368,
+          "decodedSha256": "0695f9e34aa4ea4c656e5aa16a3309d5235070df197b9e2e2baf0fda08a6d161",
+          "etag": "\"5625ac-1a09624f678-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        }
+      ]
+    },
+    {
+      "file": "assets/index-Bgpun30i.js",
+      "sourceBytes": 658456,
+      "variants": [
+        {
+          "accept": "br",
+          "encoding": "br",
+          "bytes": 173099,
+          "decodedSha256": "5744c584153baea844ab9f7f1ac36b10aa2bd3ec2c0c9d54aa201c576831fbbb",
+          "etag": "\"2a42b-1a09624e5ca-br\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip",
+          "encoding": "gzip",
+          "bytes": 190788,
+          "decodedSha256": "5744c584153baea844ab9f7f1ac36b10aa2bd3ec2c0c9d54aa201c576831fbbb",
+          "etag": "\"2a42b-1a09624e5ca-gzip\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "identity",
+          "encoding": "identity",
+          "bytes": 658456,
+          "decodedSha256": "5744c584153baea844ab9f7f1ac36b10aa2bd3ec2c0c9d54aa201c576831fbbb",
+          "etag": "\"2a42b-1a09624e5ca-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip;q=0, br;q=0",
+          "encoding": "identity",
+          "bytes": 658456,
+          "decodedSha256": "5744c584153baea844ab9f7f1ac36b10aa2bd3ec2c0c9d54aa201c576831fbbb",
+          "etag": "\"2a42b-1a09624e5ca-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        }
+      ]
+    },
+    {
+      "file": "draco/draco_decoder.wasm",
+      "sourceBytes": 192420,
+      "variants": [
+        {
+          "accept": "br",
+          "encoding": "br",
+          "bytes": 54961,
+          "decodedSha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+          "etag": "\"d6b1-1a09624e94e-br\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip",
+          "encoding": "gzip",
+          "bytes": 63458,
+          "decodedSha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+          "etag": "\"d6b1-1a09624e94e-gzip\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "identity",
+          "encoding": "identity",
+          "bytes": 192420,
+          "decodedSha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+          "etag": "\"d6b1-1a09624e94e-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        },
+        {
+          "accept": "gzip;q=0, br;q=0",
+          "encoding": "identity",
+          "bytes": 192420,
+          "decodedSha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+          "etag": "\"d6b1-1a09624e94e-identity\"",
+          "headMatches": true,
+          "conditional304": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+
+> daguanyuan-rumeng@1.0.0 models:crowns
+> node scripts/pipeline.mjs models-crowns
+
+18:06:51 | INFO: Data are loaded, start creating Blender stuff
+18:06:51 | INFO: Blender create Mesh node island_trees_01_blockout_cleaned
+18:06:54 | INFO: glTF import finished in 2.22s
+CROWN COVERAGE LOD Crown_broadleaf all-source faces 1060032 planar triangles 679206 final polygons 22000 leaf surface area ratio 0.37
+INFO Draco mesh compression is available, use library at D:\Users\Lenovo\Desktop\大观园\.tools\blender-4.5.9-windows-x64\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+18:07:49 | INFO: Starting glTF 2.0 export
+18:07:49 | INFO: Extracting primitive: Crown_broadleaf_bark.015
+18:07:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:07:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:07:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:07:50 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:07:50 | INFO: Primitives created: 3
+18:07:50 | INFO: Finished glTF 2.0 export in 0.45196986198425293 s
+
+CROWN COVERAGE LOD Crown_mobile all-source faces 1060032 planar triangles 679206 final polygons 6500 leaf surface area ratio 0.144
+18:08:37 | INFO: Starting glTF 2.0 export
+18:08:37 | INFO: Extracting primitive: Crown_mobile_bark
+18:08:37 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:08:37 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:08:37 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:08:37 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:08:37 | INFO: Primitives created: 3
+18:08:37 | INFO: Finished glTF 2.0 export in 0.3383760452270508 s
+
+NATIVE CROWN LOD broadleaf 27397
+18:08:38 | INFO: Data are loaded, start creating Blender stuff
+18:08:38 | INFO: Blender create Mesh node mesh.001
+18:08:39 | INFO: glTF import finished in 1.61s
+CROWN COVERAGE LOD Crown_broadleaf-2 all-source faces 714744 planar triangles 466095 final polygons 22000 leaf surface area ratio 0.438
+18:09:16 | INFO: Starting glTF 2.0 export
+18:09:16 | INFO: Extracting primitive: Crown_broadleaf-2_bark.015
+18:09:16 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:09:16 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:09:16 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:09:17 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:09:17 | INFO: Primitives created: 3
+18:09:17 | INFO: Finished glTF 2.0 export in 0.41417622566223145 s
+
+NATIVE CROWN LOD broadleaf-2 25396
+18:09:17 | INFO: Data are loaded, start creating Blender stuff
+18:09:17 | INFO: Blender create Mesh node pine_sapling_small_b
+18:09:17 | INFO: Blender create Mesh node pine_sapling_small_a
+18:09:17 | INFO: Blender create Mesh node pine_sapling_small_c
+18:09:18 | INFO: glTF import finished in 0.90s
+CROWN COVERAGE LOD Crown_pine all-source faces 141966 planar triangles 66929 final polygons 10000 leaf surface area ratio 0.664
+18:09:28 | INFO: Starting glTF 2.0 export
+18:09:28 | INFO: Extracting primitive: Crown_pine_bark.015
+18:09:28 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:09:28 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:09:28 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:09:28 | INFO: Primitives created: 2
+18:09:28 | INFO: Finished glTF 2.0 export in 0.38977742195129395 s
+
+NATIVE CROWN LOD pine 10540
+18:09:28 | INFO: Data are loaded, start creating Blender stuff
+18:09:28 | INFO: Blender create Mesh node island_trees_01_blockout_cleaned
+18:09:31 | INFO: glTF import finished in 2.27s
+CROWN COVERAGE LOD Crown_shrub all-source faces 1060032 planar triangles 591323 final polygons 8998 leaf surface area ratio 0.216
+18:10:38 | INFO: Starting glTF 2.0 export
+18:10:38 | INFO: Extracting primitive: Crown_shrub_bark.005
+18:10:38 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:10:38 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:10:38 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:10:38 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:10:38 | INFO: Primitives created: 3
+18:10:38 | INFO: Finished glTF 2.0 export in 0.5563976764678955 s
+
+Info: Saved as "daguanyuan_master.blend"
+MANIFEST PUBLISHED spatial-garden-20260912-r12 11196 actual master tree transforms
+CROWN COVERAGE REPAIRED 11196 fixed plant transforms
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+
+Blender quit
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+Fra:1 Mem:1512.42M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanyuan_gate_stone.001
+Fra:1 Mem:1512.43M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanyuan_gate_latticewood.001
+Fra:1 Mem:1515.03M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanyuan_gate_screen
+Fra:1 Mem:1515.41M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanyuan_gate_roof.001
+Fra:1 Mem:1516.03M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanyuan_gate_tilelight.001
+Fra:1 Mem:1516.36M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanyuan_gate_tile.001
+Fra:1 Mem:1516.77M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanyuan_gate_tiledark.001
+Fra:1 Mem:1516.86M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanyuan_gate_limestone.001
+Fra:1 Mem:1518.98M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanyuan_gate_paving.001
+Fra:1 Mem:1519.54M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qujingtongyou_gardenstone
+Fra:1 Mem:1519.64M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qujingtongyou_limestone.001
+Fra:1 Mem:1520.67M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qujingtongyou_bark
+Fra:1 Mem:1520.67M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qujingtongyou_canopy_shadow
+Fra:1 Mem:1521.32M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qujingtongyou_canopy
+Fra:1 Mem:1522.01M (Peak 1728.82M) | Time:00:01.64 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qujingtongyou_canopy_light
+Fra:1 Mem:1522.41M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_plaster
+Fra:1 Mem:1522.85M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_roof
+Fra:1 Mem:1522.76M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_stone
+Fra:1 Mem:1523.12M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_tile
+Fra:1 Mem:1523.00M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_cutstone
+Fra:1 Mem:1524.09M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_darkwood
+Fra:1 Mem:1526.93M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_floorwood
+Fra:1 Mem:1526.97M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_wood
+Fra:1 Mem:1531.53M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_latticewood.001
+Fra:1 Mem:1531.87M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_tilelight.001
+Fra:1 Mem:1531.13M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_tiledark.001
+Fra:1 Mem:1531.41M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_paving.001
+Fra:1 Mem:1531.67M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_bark
+Fra:1 Mem:1533.71M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_creamflower
+Fra:1 Mem:1534.53M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_leafdark
+Fra:1 Mem:1536.94M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_bamboo
+Fra:1 Mem:1540.00M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_lightleaf
+Fra:1 Mem:1543.33M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_leaf
+Fra:1 Mem:1545.93M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_bookcloth.001
+Fra:1 Mem:1552.21M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_water.001
+Fra:1 Mem:1553.90M (Peak 1728.82M) | Time:00:01.65 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_bankstone
+Fra:1 Mem:1559.34M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_furniture
+Fra:1 Mem:1558.62M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_paper
+Fra:1 Mem:1562.22M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_ivory.001
+Fra:1 Mem:1562.31M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_ink.001
+Fra:1 Mem:1564.24M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_bookcover.001
+Fra:1 Mem:1564.28M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_ceramic.001
+Fra:1 Mem:1563.82M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_gold
+Fra:1 Mem:1564.40M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_silk
+Fra:1 Mem:1565.85M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | xiaoxiangguan_lantern
+Fra:1 Mem:1566.36M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_plaster.001
+Fra:1 Mem:1566.51M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_roof.001
+Fra:1 Mem:1567.66M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_stone.001
+Fra:1 Mem:1568.02M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_tile.001
+Fra:1 Mem:1568.02M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_cutstone
+Fra:1 Mem:1568.02M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_darkwood.001
+Fra:1 Mem:1569.72M (Peak 1728.82M) | Time:00:01.66 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_floorwood
+Fra:1 Mem:1569.57M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_wood.001
+Fra:1 Mem:1571.33M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_latticewood.001
+Fra:1 Mem:1573.53M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_tilelight.001
+Fra:1 Mem:1574.40M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_tiledark.001
+Fra:1 Mem:1580.41M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_paving.001
+Fra:1 Mem:1580.75M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_courtbase
+Fra:1 Mem:1581.25M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_bark
+Fra:1 Mem:1581.76M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_flower.001
+Fra:1 Mem:1582.56M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_leafdark
+Fra:1 Mem:1589.06M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_bamboo.001
+Fra:1 Mem:1587.10M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_lightleaf.001
+Fra:1 Mem:1587.28M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_leaf.001
+Fra:1 Mem:1589.74M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_gardenstone
+Fra:1 Mem:1589.85M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_limestone.001
+Fra:1 Mem:1592.66M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_furniture
+Fra:1 Mem:1592.66M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_paper.001
+Fra:1 Mem:1591.93M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_bookcloth.001
+Fra:1 Mem:1591.93M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_ivory.001
+Fra:1 Mem:1592.13M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_ink.001
+Fra:1 Mem:1592.13M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_bookcover.001
+Fra:1 Mem:1592.20M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_ceramic.001
+Fra:1 Mem:1592.20M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_gold
+Fra:1 Mem:1592.22M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_silk.001
+Fra:1 Mem:1592.23M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_moss.001
+Fra:1 Mem:1592.30M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_lantern
+Fra:1 Mem:1592.61M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | yihongyuan_screen.001
+Fra:1 Mem:1592.83M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_plaster.001
+Fra:1 Mem:1593.14M (Peak 1728.82M) | Time:00:01.67 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_roof.001
+Fra:1 Mem:1593.72M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_stone.001
+Fra:1 Mem:1593.57M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_tile.001
+Fra:1 Mem:1593.66M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_cutstone
+Fra:1 Mem:1596.26M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_darkwood.001
+Fra:1 Mem:1596.25M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_floorwood
+Fra:1 Mem:1596.98M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_wood.001
+Fra:1 Mem:1602.24M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_latticewood.001
+Fra:1 Mem:1603.57M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_tilelight.001
+Fra:1 Mem:1603.62M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_tiledark.001
+Fra:1 Mem:1604.12M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_paving.001
+Fra:1 Mem:1604.37M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_gardenstone
+Fra:1 Mem:1604.49M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_limestone.001
+Fra:1 Mem:1606.62M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_courtbase
+Fra:1 Mem:1606.74M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_bamboo.001
+Fra:1 Mem:1607.05M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_lightleaf.001
+Fra:1 Mem:1608.68M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_leafdark.001
+Fra:1 Mem:1609.28M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_leaf.001
+Fra:1 Mem:1612.93M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_furniture
+Fra:1 Mem:1613.05M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_paper.001
+Fra:1 Mem:1613.17M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_bookcloth.001
+Fra:1 Mem:1613.17M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_ivory.001
+Fra:1 Mem:1613.17M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_ink.001
+Fra:1 Mem:1613.20M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_bookcover.001
+Fra:1 Mem:1613.20M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_ceramic.001
+Fra:1 Mem:1613.22M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_gold
+Fra:1 Mem:1613.25M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_screen.001
+Fra:1 Mem:1613.51M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_bark.001
+Fra:1 Mem:1613.62M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | hengwuyuan_lantern
+Fra:1 Mem:1613.72M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_plaster.001
+Fra:1 Mem:1613.93M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_roof.001
+Fra:1 Mem:1614.25M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_stone.001
+Fra:1 Mem:1615.54M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_tile.001
+Fra:1 Mem:1616.24M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_cutstone
+Fra:1 Mem:1616.81M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_darkwood.001
+Fra:1 Mem:1618.43M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_floorwood
+Fra:1 Mem:1618.79M (Peak 1728.82M) | Time:00:01.68 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_wood.001
+Fra:1 Mem:1624.64M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_furniture
+Fra:1 Mem:1624.55M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_latticewood.001
+Fra:1 Mem:1624.91M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_screen
+Fra:1 Mem:1625.15M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_tilelight.001
+Fra:1 Mem:1625.62M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_tiledark.001
+Fra:1 Mem:1625.95M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_courtbase
+Fra:1 Mem:1626.17M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_paving.001
+Fra:1 Mem:1627.26M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_marble.001
+Fra:1 Mem:1627.26M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_paper.001
+Fra:1 Mem:1627.38M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_bookcloth.001
+Fra:1 Mem:1627.41M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_ivory.001
+Fra:1 Mem:1628.57M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_ink.001
+Fra:1 Mem:1628.51M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_ceramic.001
+Fra:1 Mem:1628.62M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_bamboo.001
+Fra:1 Mem:1628.84M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_gold
+Fra:1 Mem:1629.64M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_leafdark.001
+Fra:1 Mem:1630.02M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_creamflower.001
+Fra:1 Mem:1630.05M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_silk.001
+Fra:1 Mem:1630.23M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_moss.001
+Fra:1 Mem:1629.33M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_bark.001
+Fra:1 Mem:1629.33M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_leaf
+Fra:1 Mem:1633.00M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | qiushuangzhai_lantern
+Fra:1 Mem:1633.01M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_stone.001
+Fra:1 Mem:1632.90M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_paving.001
+Fra:1 Mem:1632.96M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_screen.001
+Fra:1 Mem:1633.07M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_latticewood.001
+Fra:1 Mem:1632.73M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_thatch.001
+Fra:1 Mem:1632.96M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_lightleaf.001
+Fra:1 Mem:1633.11M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_bark
+Fra:1 Mem:1634.21M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_flower.001
+Fra:1 Mem:1634.94M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_leafdark
+Fra:1 Mem:1635.88M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daoxiangcun_creamflower.001
+Fra:1 Mem:1636.72M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_wood.001
+Fra:1 Mem:1640.39M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_stone.001
+Fra:1 Mem:1645.40M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_screen
+Fra:1 Mem:1646.13M (Peak 1728.82M) | Time:00:01.69 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_latticewood.001
+Fra:1 Mem:1647.27M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_roof.001
+Fra:1 Mem:1646.38M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_tilelight.001
+Fra:1 Mem:1646.52M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_tile.001
+Fra:1 Mem:1646.88M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_tiledark.001
+Fra:1 Mem:1647.35M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_darkwood.001
+Fra:1 Mem:1650.60M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_furniture
+Fra:1 Mem:1650.97M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_paper
+Fra:1 Mem:1651.48M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_bookcloth.001
+Fra:1 Mem:1651.50M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_ivory.001
+Fra:1 Mem:1651.52M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_ink.001
+Fra:1 Mem:1652.01M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_bookcover.001
+Fra:1 Mem:1652.01M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_ceramic.001
+Fra:1 Mem:1652.04M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ouxiangxie_bamboo.001
+Fra:1 Mem:1652.08M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dicuiting_stone.001
+Fra:1 Mem:1651.71M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dicuiting_wood.001
+Fra:1 Mem:1652.38M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dicuiting_darkwood
+Fra:1 Mem:1652.38M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dicuiting_gold
+Fra:1 Mem:1652.39M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dicuiting_roof.001
+Fra:1 Mem:1652.52M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dicuiting_tilelight
+Fra:1 Mem:1652.54M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dicuiting_tile.001
+Fra:1 Mem:1653.51M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dicuiting_tiledark
+Fra:1 Mem:1653.64M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | luxuean_stone.001
+Fra:1 Mem:1653.87M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | luxuean_paving.001
+Fra:1 Mem:1654.97M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | luxuean_clay.001
+Fra:1 Mem:1655.11M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | luxuean_wood.001
+Fra:1 Mem:1655.83M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | luxuean_thatch.001
+Fra:1 Mem:1655.83M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | luxuean_bamboo.001
+Fra:1 Mem:1657.01M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | luxuean_lightleaf.001
+Fra:1 Mem:1656.57M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_stone.001
+Fra:1 Mem:1656.53M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_cutstone
+Fra:1 Mem:1656.72M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_darkwood.001
+Fra:1 Mem:1656.74M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_floorwood
+Fra:1 Mem:1658.06M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_wood.001
+Fra:1 Mem:1658.55M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_furniture
+Fra:1 Mem:1659.21M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_latticewood.001
+Fra:1 Mem:1659.24M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_screen
+Fra:1 Mem:1659.61M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_roof.001
+Fra:1 Mem:1659.65M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_tilelight.001
+Fra:1 Mem:1659.97M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_tile.001
+Fra:1 Mem:1660.27M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_tiledark.001
+Fra:1 Mem:1662.50M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_bark
+Fra:1 Mem:1663.12M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_canopy_shadow
+Fra:1 Mem:1663.43M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_canopy
+Fra:1 Mem:1666.42M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_canopy_light
+Fra:1 Mem:1665.63M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | tubishanzhuang_paving.001
+Fra:1 Mem:1666.09M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_stone.001
+Fra:1 Mem:1666.37M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_cutstone
+Fra:1 Mem:1666.44M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_darkwood.001
+Fra:1 Mem:1666.74M (Peak 1728.82M) | Time:00:01.70 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_floorwood
+Fra:1 Mem:1666.73M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_wood.001
+Fra:1 Mem:1668.29M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_furniture
+Fra:1 Mem:1669.04M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_latticewood.001
+Fra:1 Mem:1670.36M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_screen
+Fra:1 Mem:1670.29M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_roof.001
+Fra:1 Mem:1670.39M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_tilelight.001
+Fra:1 Mem:1670.46M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_tile.001
+Fra:1 Mem:1669.88M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_tiledark.001
+Fra:1 Mem:1670.77M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_bark
+Fra:1 Mem:1671.42M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_canopy_shadow
+Fra:1 Mem:1672.74M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_canopy
+Fra:1 Mem:1673.60M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_canopy_light
+Fra:1 Mem:1673.82M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | aojingxiguan_paving.001
+Fra:1 Mem:1675.41M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_stone
+Fra:1 Mem:1675.92M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_cutstone
+Fra:1 Mem:1676.68M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_darkwood
+Fra:1 Mem:1677.01M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_floorwood
+Fra:1 Mem:1678.58M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_wood
+Fra:1 Mem:1688.23M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_furniture
+Fra:1 Mem:1689.14M (Peak 1728.82M) | Time:00:01.71 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_latticewood.001
+Fra:1 Mem:1691.68M (Peak 1728.82M) | Time:00:01.72 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_screen
+Fra:1 Mem:1692.92M (Peak 1728.82M) | Time:00:01.72 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_roof
+Fra:1 Mem:1700.98M (Peak 1728.82M) | Time:00:01.72 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_tilelight
+Fra:1 Mem:1705.36M (Peak 1728.82M) | Time:00:01.72 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_tile
+Fra:1 Mem:1704.79M (Peak 1728.82M) | Time:00:01.72 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_tiledark
+Fra:1 Mem:1722.76M (Peak 1728.82M) | Time:00:01.72 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_lantern
+Fra:1 Mem:1724.59M (Peak 1728.82M) | Time:00:01.72 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_gold
+Fra:1 Mem:1744.45M (Peak 1744.45M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_paving
+Fra:1 Mem:1744.61M (Peak 1744.61M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_courtbase
+Fra:1 Mem:1744.61M (Peak 1744.61M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_paper
+Fra:1 Mem:1744.61M (Peak 1744.61M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_bookcloth.001
+Fra:1 Mem:1744.67M (Peak 1744.67M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_ivory.001
+Fra:1 Mem:1744.68M (Peak 1744.68M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_ink.001
+Fra:1 Mem:1744.74M (Peak 1744.74M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_bookcover.001
+Fra:1 Mem:1745.34M (Peak 1745.34M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_ceramic
+Fra:1 Mem:1745.32M (Peak 1745.34M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_plaster
+Fra:1 Mem:1745.87M (Peak 1745.87M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_bark
+Fra:1 Mem:1745.70M (Peak 1745.87M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_canopy_shadow
+Fra:1 Mem:1746.48M (Peak 1746.48M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_canopy
+Fra:1 Mem:1746.58M (Peak 1746.58M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_canopy_light
+Fra:1 Mem:1759.41M (Peak 1759.41M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | daguanlou_limestone.001
+Fra:1 Mem:1761.03M (Peak 1761.03M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_stone
+Fra:1 Mem:1761.91M (Peak 1761.91M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_cutstone
+Fra:1 Mem:1762.18M (Peak 1762.18M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_darkwood
+Fra:1 Mem:1762.54M (Peak 1762.54M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_floorwood
+Fra:1 Mem:1763.98M (Peak 1763.98M) | Time:00:01.73 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_wood
+Fra:1 Mem:1775.09M (Peak 1775.11M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_plaster
+Fra:1 Mem:1775.36M (Peak 1775.36M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_latticewood.001
+Fra:1 Mem:1778.85M (Peak 1779.39M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_roof
+Fra:1 Mem:1778.89M (Peak 1779.39M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_tilelight
+Fra:1 Mem:1779.65M (Peak 1779.65M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_tile
+Fra:1 Mem:1780.30M (Peak 1780.30M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_tiledark
+Fra:1 Mem:1780.30M (Peak 1780.30M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_paving
+Fra:1 Mem:1782.49M (Peak 1782.49M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_furniture
+Fra:1 Mem:1782.51M (Peak 1782.51M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_screen
+Fra:1 Mem:1784.91M (Peak 1784.91M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_paper
+Fra:1 Mem:1787.48M (Peak 1787.48M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_bookcloth.001
+Fra:1 Mem:1787.50M (Peak 1787.50M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_ivory.001
+Fra:1 Mem:1787.55M (Peak 1787.55M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_ink.001
+Fra:1 Mem:1788.68M (Peak 1788.68M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_bookcover.001
+Fra:1 Mem:1788.72M (Peak 1788.72M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_ceramic
+Fra:1 Mem:1788.74M (Peak 1788.74M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_bamboo.001
+Fra:1 Mem:1788.77M (Peak 1788.77M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_gold.001
+Fra:1 Mem:1789.62M (Peak 1789.62M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_courtbase
+Fra:1 Mem:1789.63M (Peak 1789.63M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_bark
+Fra:1 Mem:1789.59M (Peak 1789.63M) | Time:00:01.74 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_flower
+Fra:1 Mem:1795.14M (Peak 1795.14M) | Time:00:01.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_leafdark
+Fra:1 Mem:1796.83M (Peak 1796.83M) | Time:00:01.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_canopy_shadow
+Fra:1 Mem:1796.68M (Peak 1796.83M) | Time:00:01.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_canopy
+Fra:1 Mem:1802.02M (Peak 1802.02M) | Time:00:01.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | longcuian_canopy_light
+Fra:1 Mem:1804.28M (Peak 1804.28M) | Time:00:01.75 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_stone
+Fra:1 Mem:1815.00M (Peak 1815.00M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_cutstone
+Fra:1 Mem:1815.00M (Peak 1815.00M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_darkwood
+Fra:1 Mem:1815.08M (Peak 1815.08M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_floorwood
+Fra:1 Mem:1815.35M (Peak 1815.35M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_wood
+Fra:1 Mem:1817.16M (Peak 1817.16M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_furniture
+Fra:1 Mem:1816.35M (Peak 1817.16M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_latticewood.001
+Fra:1 Mem:1816.54M (Peak 1817.16M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_screen
+Fra:1 Mem:1816.57M (Peak 1817.16M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_roof
+Fra:1 Mem:1822.17M (Peak 1822.17M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_tilelight
+Fra:1 Mem:1816.39M (Peak 1822.17M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_tile
+Fra:1 Mem:1816.39M (Peak 1822.17M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_tiledark
+Fra:1 Mem:1816.39M (Peak 1822.17M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_paving
+Fra:1 Mem:1817.08M (Peak 1822.17M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_bookcloth.001
+Fra:1 Mem:1817.17M (Peak 1822.17M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_ivory.001
+Fra:1 Mem:1817.17M (Peak 1822.17M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_ink.001
+Fra:1 Mem:1817.21M (Peak 1822.17M) | Time:00:01.76 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_bookcover.001
+Fra:1 Mem:1817.28M (Peak 1822.17M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_ceramic
+Fra:1 Mem:1817.23M (Peak 1822.17M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_bamboo.001
+Fra:1 Mem:1817.38M (Peak 1822.17M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_gold.001
+Fra:1 Mem:1819.03M (Peak 1822.17M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_silk
+Fra:1 Mem:1819.16M (Peak 1822.17M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_bark
+Fra:1 Mem:1819.32M (Peak 1822.17M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_creamflower
+Fra:1 Mem:1819.38M (Peak 1822.17M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_leafdark
+Fra:1 Mem:1821.00M (Peak 1822.17M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | nuanxiangwu_courtbase
+Fra:1 Mem:1821.17M (Peak 1822.17M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_earth.001
+Fra:1 Mem:1827.84M (Peak 1827.84M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_bankstone
+Fra:1 Mem:1837.52M (Peak 1837.52M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_limestone.001
+Fra:1 Mem:1845.84M (Peak 1845.84M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_bark
+Fra:1 Mem:1846.77M (Peak 1846.77M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_leaf
+Fra:1 Mem:1846.85M (Peak 1846.85M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_bamboo.001
+Fra:1 Mem:1868.37M (Peak 1868.54M) | Time:00:01.77 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_canopy_light
+Fra:1 Mem:1873.23M (Peak 1873.23M) | Time:00:01.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_creamflower.001
+Fra:1 Mem:1877.31M (Peak 1877.31M) | Time:00:01.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_leafdark
+Fra:1 Mem:1904.63M (Peak 1904.63M) | Time:00:01.78 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_flower.001
+Fra:1 Mem:1927.55M (Peak 1928.50M) | Time:00:01.79 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_plaster
+Fra:1 Mem:1928.61M (Peak 1928.61M) | Time:00:01.79 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_roof
+Fra:1 Mem:1938.48M (Peak 1938.48M) | Time:00:01.80 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_stone.001
+Fra:1 Mem:1941.05M (Peak 1941.05M) | Time:00:01.80 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_tile
+Fra:1 Mem:1943.58M (Peak 1944.07M) | Time:00:01.80 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_paving
+Fra:1 Mem:1971.51M (Peak 1973.72M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_wood.001
+Fra:1 Mem:1973.64M (Peak 1973.72M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_tilelight
+Fra:1 Mem:1973.71M (Peak 1973.72M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_tiledark
+Fra:1 Mem:1977.88M (Peak 1977.88M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_darkwood
+Fra:1 Mem:1982.14M (Peak 1982.14M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Reviewed_Lake_Surface
+Fra:1 Mem:1983.72M (Peak 1983.72M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Garden_Sun_Shadow
+Fra:1 Mem:1983.72M (Peak 1983.72M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Understory_0001
+Fra:1 Mem:1983.75M (Peak 1985.73M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_lantern
+Fra:1 Mem:1984.81M (Peak 1985.73M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_gold
+Fra:1 Mem:1987.61M (Peak 1987.61M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Understory_0000
+Fra:1 Mem:1988.05M (Peak 1988.05M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Ground_Cover_0000
+Fra:1 Mem:1988.08M (Peak 1988.08M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | LivingTree_975
+Fra:1 Mem:1988.60M (Peak 1988.60M) | Time:00:01.82 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | landscape_lightleaf.001
+Fra:1 Mem:1986.88M (Peak 1988.60M) | Time:00:01.83 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | LivingTree_000
+Fra:1 Mem:1988.70M (Peak 1988.70M) | Time:00:01.83 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | LivingTree_005
+Fra:1 Mem:2004.06M (Peak 2004.06M) | Time:00:01.83 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | LivingTree_102
+Fra:1 Mem:2672.56M (Peak 2745.77M) | Time:00:02.49 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:2571.08M (Peak 2745.77M) | Time:00:02.54 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading r12_stone_nor_gl.001
+Fra:1 Mem:2571.08M (Peak 2745.77M) | Time:00:02.54 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading r12_stone_rough.001
+Fra:1 Mem:2589.13M (Peak 2745.77M) | Time:00:02.68 | Mem:1.00M, Peak:1.00M | Scene, ViewLayer | Updating Images | Loading r12_darkwood_diff.001
+Fra:1 Mem:2587.12M (Peak 2745.77M) | Time:00:02.68 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Images | Loading r12_darkwood_nor_gl.001
+Fra:1 Mem:2588.11M (Peak 2745.77M) | Time:00:02.68 | Mem:3.00M, Peak:3.00M | Scene, ViewLayer | Updating Images | Loading r12_darkwood_rough.001
+Fra:1 Mem:2587.10M (Peak 2745.77M) | Time:00:02.68 | Mem:4.00M, Peak:4.00M | Scene, ViewLayer | Updating Images | Loading grass_medium_01_nor_gl
+Fra:1 Mem:2594.11M (Peak 2745.77M) | Time:00:02.69 | Mem:6.00M, Peak:6.00M | Scene, ViewLayer | Updating Images | Loading r12_floorwood_diff.001
+Fra:1 Mem:2594.11M (Peak 2745.77M) | Time:00:02.69 | Mem:6.00M, Peak:6.00M | Scene, ViewLayer | Updating Images | Loading r12_floorwood_nor_gl.001
+Fra:1 Mem:2595.10M (Peak 2745.77M) | Time:00:02.69 | Mem:7.00M, Peak:7.00M | Scene, ViewLayer | Updating Images | Loading r12_floorwood_rough.001
+Fra:1 Mem:2597.11M (Peak 2745.77M) | Time:00:02.69 | Mem:8.00M, Peak:8.00M | Scene, ViewLayer | Updating Images | Loading r12_wood_diff.001
+Fra:1 Mem:2607.10M (Peak 2745.77M) | Time:00:02.69 | Mem:9.00M, Peak:9.00M | Scene, ViewLayer | Updating Images | Loading r12_wood_nor_gl.001
+Fra:1 Mem:2609.11M (Peak 2745.77M) | Time:00:02.70 | Mem:10.00M, Peak:10.00M | Scene, ViewLayer | Updating Images | Loading r12_wood_rough.001
+Fra:1 Mem:2609.10M (Peak 2745.77M) | Time:00:02.70 | Mem:11.00M, Peak:11.00M | Scene, ViewLayer | Updating Images | Loading r12_furniture_diff.001
+Fra:1 Mem:2610.10M (Peak 2745.77M) | Time:00:02.70 | Mem:13.00M, Peak:13.00M | Scene, ViewLayer | Updating Images | Loading r12_furniture_nor_gl.001
+Fra:1 Mem:2612.12M (Peak 2745.77M) | Time:00:02.70 | Mem:13.00M, Peak:13.00M | Scene, ViewLayer | Updating Images | Loading r12_furniture_rough.001
+Fra:1 Mem:2613.11M (Peak 2745.77M) | Time:00:02.70 | Mem:14.00M, Peak:14.00M | Scene, ViewLayer | Updating Images | Loading r12_latticewood_diff.001
+Fra:1 Mem:2614.11M (Peak 2745.77M) | Time:00:02.70 | Mem:15.00M, Peak:15.00M | Scene, ViewLayer | Updating Images | Loading r12_latticewood_nor_gl.001
+Fra:1 Mem:2613.10M (Peak 2745.77M) | Time:00:02.70 | Mem:16.00M, Peak:16.00M | Scene, ViewLayer | Updating Images | Loading r12_latticewood_rough.001
+Fra:1 Mem:2607.10M (Peak 2745.77M) | Time:00:02.71 | Mem:17.00M, Peak:17.00M | Scene, ViewLayer | Updating Images | Loading r12_roof_diff.001
+Fra:1 Mem:2609.11M (Peak 2745.77M) | Time:00:02.71 | Mem:18.00M, Peak:18.00M | Scene, ViewLayer | Updating Images | Loading r12_roof_nor_gl.001
+Fra:1 Mem:2610.11M (Peak 2745.77M) | Time:00:02.71 | Mem:19.00M, Peak:19.00M | Scene, ViewLayer | Updating Images | Loading r12_roof_rough.001
+Fra:1 Mem:2610.11M (Peak 2745.77M) | Time:00:02.71 | Mem:20.00M, Peak:20.00M | Scene, ViewLayer | Updating Images | Loading r12_tilelight_diff.001
+Fra:1 Mem:2610.10M (Peak 2745.77M) | Time:00:02.71 | Mem:21.00M, Peak:21.00M | Scene, ViewLayer | Updating Images | Loading r12_tilelight_nor_gl.001
+Fra:1 Mem:2612.10M (Peak 2745.77M) | Time:00:02.71 | Mem:22.00M, Peak:22.00M | Scene, ViewLayer | Updating Images | Loading r12_tilelight_rough.001
+Fra:1 Mem:2619.11M (Peak 2745.77M) | Time:00:02.72 | Mem:23.00M, Peak:23.00M | Scene, ViewLayer | Updating Images | Loading r12_tile_diff.001
+Fra:1 Mem:2621.13M (Peak 2745.77M) | Time:00:02.72 | Mem:24.00M, Peak:24.00M | Scene, ViewLayer | Updating Images | Loading r12_tile_nor_gl.001
+Fra:1 Mem:2621.11M (Peak 2745.77M) | Time:00:02.72 | Mem:25.00M, Peak:25.00M | Scene, ViewLayer | Updating Images | Loading r12_tile_rough.001
+Fra:1 Mem:2621.11M (Peak 2745.77M) | Time:00:02.72 | Mem:26.00M, Peak:26.00M | Scene, ViewLayer | Updating Images | Loading r12_tiledark_diff.001
+Fra:1 Mem:2620.12M (Peak 2745.77M) | Time:00:02.72 | Mem:27.00M, Peak:27.00M | Scene, ViewLayer | Updating Images | Loading r12_tiledark_nor_gl.001
+Fra:1 Mem:2616.11M (Peak 2745.77M) | Time:00:02.72 | Mem:31.00M, Peak:31.00M | Scene, ViewLayer | Updating Images | Loading grass_medium_01_rough
+Fra:1 Mem:2620.11M (Peak 2745.77M) | Time:00:02.72 | Mem:39.00M, Peak:39.00M | Scene, ViewLayer | Updating Images | Loading r12_tiledark_rough.001
+Fra:1 Mem:2619.10M (Peak 2745.77M) | Time:00:02.72 | Mem:40.00M, Peak:40.00M | Scene, ViewLayer | Updating Images | Loading rock_moss_set_01_diff
+Fra:1 Mem:2625.10M (Peak 2745.77M) | Time:00:02.73 | Mem:41.00M, Peak:41.00M | Scene, ViewLayer | Updating Images | Loading rock_moss_set_01_nor_gl
+Fra:1 Mem:2625.10M (Peak 2745.77M) | Time:00:02.73 | Mem:42.00M, Peak:42.00M | Scene, ViewLayer | Updating Images | Loading r12_paving_diff.001
+Fra:1 Mem:2632.12M (Peak 2745.77M) | Time:00:02.73 | Mem:43.00M, Peak:43.00M | Scene, ViewLayer | Updating Images | Loading r12_paving_nor_gl.001
+Fra:1 Mem:2631.11M (Peak 2745.77M) | Time:00:02.73 | Mem:44.00M, Peak:44.00M | Scene, ViewLayer | Updating Images | Loading r12_paving_rough.001
+Fra:1 Mem:2632.10M (Peak 2745.77M) | Time:00:02.73 | Mem:45.00M, Peak:45.00M | Scene, ViewLayer | Updating Images | Loading r12_gardenstone_diff
+Fra:1 Mem:2633.10M (Peak 2745.77M) | Time:00:02.73 | Mem:46.00M, Peak:46.00M | Scene, ViewLayer | Updating Images | Loading r12_gardenstone_nor_gl
+Fra:1 Mem:2636.12M (Peak 2745.77M) | Time:00:02.73 | Mem:47.00M, Peak:47.00M | Scene, ViewLayer | Updating Images | Loading r12_gardenstone_rough
+Fra:1 Mem:2636.11M (Peak 2745.77M) | Time:00:02.73 | Mem:48.00M, Peak:48.00M | Scene, ViewLayer | Updating Images | Loading worn_mossy_plasterwall.jpg
+Fra:1 Mem:2639.10M (Peak 2745.77M) | Time:00:02.73 | Mem:49.00M, Peak:49.00M | Scene, ViewLayer | Updating Images | Loading r12_bankstone_diff.001
+Fra:1 Mem:2640.11M (Peak 2745.77M) | Time:00:02.74 | Mem:50.00M, Peak:50.00M | Scene, ViewLayer | Updating Images | Loading r12_bankstone_nor_gl.001
+Fra:1 Mem:2641.10M (Peak 2745.77M) | Time:00:02.74 | Mem:51.00M, Peak:51.00M | Scene, ViewLayer | Updating Images | Loading r12_bankstone_rough.001
+Fra:1 Mem:2642.10M (Peak 2745.77M) | Time:00:02.74 | Mem:55.00M, Peak:55.00M | Scene, ViewLayer | Updating Images | Loading r12_courtbase_diff.001
+Fra:1 Mem:2643.10M (Peak 2745.77M) | Time:00:02.74 | Mem:56.00M, Peak:56.00M | Scene, ViewLayer | Updating Images | Loading r12_courtbase_nor_gl.001
+Fra:1 Mem:2648.11M (Peak 2745.77M) | Time:00:02.74 | Mem:57.00M, Peak:57.00M | Scene, ViewLayer | Updating Images | Loading r12_courtbase_rough.001
+Fra:1 Mem:2650.12M (Peak 2745.77M) | Time:00:02.74 | Mem:61.00M, Peak:61.00M | Scene, ViewLayer | Updating Images | Loading grass_medium_01_diff-grass_medium_01_alpha
+Fra:1 Mem:2649.10M (Peak 2745.77M) | Time:00:02.75 | Mem:66.00M, Peak:66.00M | Scene, ViewLayer | Updating Images | Loading island_tree_02_diff
+Fra:1 Mem:2649.10M (Peak 2745.77M) | Time:00:02.75 | Mem:66.00M, Peak:66.00M | Scene, ViewLayer | Updating Images | Loading island_tree_02_rough
+Fra:1 Mem:2657.10M (Peak 2745.77M) | Time:00:02.75 | Mem:68.00M, Peak:68.00M | Scene, ViewLayer | Updating Images | Loading island_tree_02_nor_gl
+Fra:1 Mem:2662.11M (Peak 2745.77M) | Time:00:02.75 | Mem:68.00M, Peak:68.00M | Scene, ViewLayer | Updating Images | Loading island_tree_02_leaves_diff-island_tree_02_leaves_alpha
+Fra:1 Mem:2666.11M (Peak 2745.77M) | Time:00:02.75 | Mem:69.00M, Peak:69.00M | Scene, ViewLayer | Updating Images | Loading island_tree_02_leaves_rough
+Fra:1 Mem:2669.10M (Peak 2745.77M) | Time:00:02.75 | Mem:70.00M, Peak:70.00M | Scene, ViewLayer | Updating Images | Loading island_tree_02_leaves_nor_gl
+Fra:1 Mem:2677.11M (Peak 2745.77M) | Time:00:02.76 | Mem:74.00M, Peak:74.00M | Scene, ViewLayer | Updating Images | Loading pine_sapling_small_twig_rgba.png.004
+Fra:1 Mem:2673.61M (Peak 2745.77M) | Time:00:02.76 | Mem:78.00M, Peak:78.00M | Scene, ViewLayer | Updating Images | Loading island_tree_02_leaves_rgba.png.004
+Fra:1 Mem:2673.35M (Peak 2745.77M) | Time:00:02.76 | Mem:78.25M, Peak:78.25M | Scene, ViewLayer | Updating Images | Loading pine_sapling_small_twig_nor_gl
+Fra:1 Mem:2677.60M (Peak 2745.77M) | Time:00:02.77 | Mem:82.25M, Peak:82.25M | Scene, ViewLayer | Updating Images | Loading island_tree_02_branches_diff
+Fra:1 Mem:2685.61M (Peak 2745.77M) | Time:00:02.77 | Mem:82.50M, Peak:82.50M | Scene, ViewLayer | Updating Images | Loading island_tree_02_branches_rough
+Fra:1 Mem:2685.60M (Peak 2745.77M) | Time:00:02.77 | Mem:86.50M, Peak:86.50M | Scene, ViewLayer | Updating Images | Loading island_tree_02_branches_nor_gl
+Fra:1 Mem:2693.61M (Peak 2745.77M) | Time:00:02.77 | Mem:90.50M, Peak:90.50M | Scene, ViewLayer | Updating Images | Loading island_tree_01_diff
+Fra:1 Mem:2693.60M (Peak 2745.77M) | Time:00:02.77 | Mem:94.50M, Peak:94.50M | Scene, ViewLayer | Updating Images | Loading island_tree_01_rough
+Fra:1 Mem:2697.60M (Peak 2745.77M) | Time:00:02.77 | Mem:98.50M, Peak:98.50M | Scene, ViewLayer | Updating Images | Loading island_tree_01_nor_gl
+Fra:1 Mem:2701.60M (Peak 2745.77M) | Time:00:02.78 | Mem:102.50M, Peak:102.50M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_diff-island_tree_01_leaves_alpha
+Fra:1 Mem:2705.60M (Peak 2745.77M) | Time:00:02.78 | Mem:106.50M, Peak:106.50M | Scene, ViewLayer | Updating Images | Loading pine_sapling_small_twig_rough
+Fra:1 Mem:2709.60M (Peak 2745.77M) | Time:00:02.79 | Mem:110.50M, Peak:110.50M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_rough
+Fra:1 Mem:2717.61M (Peak 2745.77M) | Time:00:02.79 | Mem:114.50M, Peak:114.50M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_nor_gl
+Fra:1 Mem:2721.61M (Peak 2745.77M) | Time:00:02.79 | Mem:118.50M, Peak:118.50M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_rgba.png.009
+Fra:1 Mem:2721.86M (Peak 2745.77M) | Time:00:02.79 | Mem:122.50M, Peak:122.50M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_diff
+Fra:1 Mem:2721.85M (Peak 2745.77M) | Time:00:02.79 | Mem:126.50M, Peak:126.50M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_rough
+Fra:1 Mem:2729.86M (Peak 2745.77M) | Time:00:02.79 | Mem:126.75M, Peak:126.75M | Scene, ViewLayer | Updating Images | Loading island_tree_01_branches_nor_gl
+Fra:1 Mem:2729.85M (Peak 2745.77M) | Time:00:02.80 | Mem:130.75M, Peak:130.75M | Scene, ViewLayer | Updating Images | Loading island_tree_01_leaves_rgba.png.008
+Fra:1 Mem:2730.10M (Peak 2745.77M) | Time:00:02.80 | Mem:131.00M, Peak:131.00M | Scene, ViewLayer | Updating Images | Loading pine_sapling_small_bark_diff
+Fra:1 Mem:2734.10M (Peak 2745.77M) | Time:00:02.80 | Mem:135.00M, Peak:135.00M | Scene, ViewLayer | Updating Images | Loading pine_sapling_small_bark_rough
+Fra:1 Mem:2742.11M (Peak 2746.12M) | Time:00:02.81 | Mem:139.00M, Peak:139.00M | Scene, ViewLayer | Updating Images | Loading pine_sapling_small_twig_diff
+Fra:1 Mem:2746.11M (Peak 2750.12M) | Time:00:02.81 | Mem:143.00M, Peak:143.00M | Scene, ViewLayer | Updating Images | Loading pine_sapling_small_bark_nor_gl
+Fra:1 Mem:2523.19M (Peak 2754.12M) | Time:00:02.90 | Mem:175.00M, Peak:175.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:2523.19M (Peak 2754.12M) | Time:00:02.90 | Mem:175.00M, Peak:175.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:2523.19M (Peak 2754.12M) | Time:00:02.90 | Mem:175.00M, Peak:175.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:2523.19M (Peak 2754.12M) | Time:00:02.91 | Mem:175.00M, Peak:175.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:2523.31M (Peak 2754.12M) | Time:00:02.91 | Mem:175.04M, Peak:175.04M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:2523.31M (Peak 2754.12M) | Time:00:02.91 | Mem:175.04M, Peak:175.04M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:2523.31M (Peak 2754.12M) | Time:00:02.91 | Mem:175.04M, Peak:175.04M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:2523.31M (Peak 2754.12M) | Time:00:02.91 | Mem:175.04M, Peak:175.04M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:2523.31M (Peak 2754.12M) | Time:00:02.91 | Mem:175.04M, Peak:175.04M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:2523.31M (Peak 2754.12M) | Time:00:02.91 | Mem:175.04M, Peak:175.04M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:2526.62M (Peak 2754.12M) | Time:00:02.91 | Mem:178.25M, Peak:178.25M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:2526.62M (Peak 2754.12M) | Time:00:02.91 | Mem:178.25M, Peak:178.25M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:2526.62M (Peak 2754.12M) | Time:00:02.91 | Mem:178.25M, Peak:178.25M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:2959.83M (Peak 2959.83M) | Time:00:10.46 | Mem:178.25M, Peak:178.25M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:2959.83M (Peak 2959.83M) | Time:00:10.48 | Mem:178.25M, Peak:178.25M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:3659.88M (Peak 3659.88M) | Time:00:11.00 | Mem:178.29M, Peak:178.29M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.00 | Mem:877.41M, Peak:877.41M | Scene, ViewLayer | Updating Geometry BVH Plane.016 8/7 | Building BVH
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.01 | Mem:877.41M, Peak:877.41M | Scene, ViewLayer | Updating Geometry BVH Plane.043 6/7 | Building BVH
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.01 | Mem:877.41M, Peak:877.41M | Scene, ViewLayer | Updating Geometry BVH pine_sapling_small_a 5/7 | Building BVH
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.01 | Mem:877.41M, Peak:877.41M | Scene, ViewLayer | Updating Geometry BVH Plane.015 7/7 | Building BVH
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.01 | Mem:881.82M, Peak:881.82M | Scene, ViewLayer | Updating Geometry BVH Plane.015 7/7 | Building BVH 0%
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.01 | Mem:881.90M, Peak:881.95M | Scene, ViewLayer | Updating Geometry BVH island_trees_01_blockout_cleaned.002 3/7 | Building BVH
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.01 | Mem:930.71M, Peak:930.71M | Scene, ViewLayer | Updating Geometry BVH mesh.001 2/7 | Building BVH
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.02 | Mem:963.43M, Peak:963.43M | Scene, ViewLayer | Updating Geometry BVH island_trees_01_blockout_cleaned.001 4/7 | Building BVH
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.26 | Mem:1171.43M, Peak:1171.43M | Scene, ViewLayer | Updating Geometry BVH island_trees_01_blockout_cleaned.001 4/7 | Building BVH 89%
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.26 | Mem:1171.43M, Peak:1171.43M | Scene, ViewLayer | Updating Geometry BVH island_trees_01_blockout_cleaned.001 4/7 | Building BVH 35%
+Fra:1 Mem:3658.99M (Peak 3659.88M) | Time:00:11.41 | Mem:1177.09M, Peak:1274.71M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:3659.10M (Peak 3659.88M) | Time:00:11.41 | Mem:1177.09M, Peak:1274.71M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:3659.10M (Peak 3659.88M) | Time:00:11.52 | Mem:1317.40M, Peak:1317.40M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:3659.10M (Peak 3659.88M) | Time:00:11.78 | Mem:1493.40M, Peak:1493.40M | Scene, ViewLayer | Updating Scene BVH | Building BVH 64%
+Fra:1 Mem:3659.10M (Peak 3659.88M) | Time:00:11.93 | Mem:1459.27M, Peak:1591.40M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:3659.10M (Peak 3659.88M) | Time:00:11.93 | Mem:1459.27M, Peak:1591.40M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:3955.00M (Peak 3955.00M) | Time:00:12.28 | Mem:1459.27M, Peak:1591.40M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:3955.00M (Peak 3955.00M) | Time:00:12.28 | Mem:1755.17M, Peak:1755.17M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:3955.00M (Peak 3955.00M) | Time:00:12.29 | Mem:1755.28M, Peak:1755.28M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:3955.06M (Peak 3955.06M) | Time:00:12.29 | Mem:1755.33M, Peak:1755.33M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:3943.06M (Peak 3955.06M) | Time:00:12.29 | Mem:1743.33M, Peak:1755.33M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:3943.06M (Peak 3955.06M) | Time:00:12.29 | Mem:1743.33M, Peak:1755.33M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:3943.06M (Peak 3955.06M) | Time:00:12.29 | Mem:1743.41M, Peak:1755.33M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:3943.06M (Peak 3955.06M) | Time:00:12.29 | Mem:1743.41M, Peak:1755.33M | Scene, ViewLayer | Updating Lights | Importance map
+Fra:1 Mem:4007.09M (Peak 4295.06M) | Time:00:13.44 | Mem:1807.46M, Peak:1967.43M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:4007.20M (Peak 4295.06M) | Time:00:13.44 | Mem:1807.56M, Peak:1967.43M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:4007.20M (Peak 4295.06M) | Time:00:13.44 | Mem:1807.56M, Peak:1967.43M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:4007.20M (Peak 4295.06M) | Time:00:13.44 | Mem:1807.48M, Peak:1967.43M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:4007.20M (Peak 4295.06M) | Time:00:13.44 | Mem:1807.57M, Peak:1967.43M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:4007.20M (Peak 4295.06M) | Time:00:13.44 | Mem:1807.57M, Peak:1967.43M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:4007.42M (Peak 4295.06M) | Time:00:13.45 | Mem:1807.57M, Peak:1967.43M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:4007.42M (Peak 4295.06M) | Time:00:13.45 | Mem:1807.57M, Peak:1967.43M | Scene, ViewLayer | Sample 0/16
+Fra:1 Mem:4311.51M (Peak 4311.51M) | Time:00:22.65 | Remaining:02:17.98 | Mem:2111.57M, Peak:2111.57M | Scene, ViewLayer | Sample 1/16
+Fra:1 Mem:4311.51M (Peak 4311.51M) | Time:01:00.59 | Remaining:01:43.72 | Mem:2111.57M, Peak:2111.57M | Scene, ViewLayer | Sample 5/16
+Fra:1 Mem:4311.51M (Peak 4311.51M) | Time:01:46.16 | Remaining:01:12.10 | Mem:2111.57M, Peak:2111.57M | Scene, ViewLayer | Sample 9/16
+Fra:1 Mem:4311.51M (Peak 4311.51M) | Time:02:31.31 | Remaining:00:31.81 | Mem:2111.57M, Peak:2111.57M | Scene, ViewLayer | Sample 13/16
+Fra:1 Mem:4439.51M (Peak 4631.51M) | Time:03:34.19 | Mem:2111.57M, Peak:2111.57M | Scene, ViewLayer | Sample 16/16
+Fra:1 Mem:4439.51M (Peak 4631.51M) | Time:03:34.19 | Mem:2111.57M, Peak:2111.57M | Scene, ViewLayer | Finished
+Saved: 'D:\Users\Lenovo\Desktop\大观园\assets\processed\landscape-r12\light.next.png'
+Time: 03:35.91 (Saving: 00:00.95)
+
+LANDSCAPE SHADOW RENDER COMPLETE
+
+Blender quit
+Landscape shadow atlas: 399132 bytes
+GEOMETRY SURFACE MASK 506326
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+
+Blender quit

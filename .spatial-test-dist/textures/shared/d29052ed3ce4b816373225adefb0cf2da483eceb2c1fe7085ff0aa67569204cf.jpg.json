@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported stone_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "stone_diff",
+  "sourcePixelSha256": "fa5f0a0b431c0da4140907cc86da4ff288e8323e851d72ee8aa7d2898d26cd01",
+  "sha256": "d29052ed3ce4b816373225adefb0cf2da483eceb2c1fe7085ff0aa67569204cf",
+  "prompt": "Blender-exported stone_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

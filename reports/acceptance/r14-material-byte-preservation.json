@@ -1,0 +1,148 @@
+{
+  "at": "2026-09-12T15:54:47.689648+00:00",
+  "revision": "spatial-garden-20260912-r14",
+  "basis": "Exact prior delivered image bytes or exact original-input hash and map name, independently SHA-checked. No approximate pixel match, no geometry mutation.",
+  "referencePackage": ".deploy/reference-20260912-150313-914164",
+  "mappedImages": 137,
+  "rewrittenModels": [
+    {
+      "file": "public/models/overview-low.glb",
+      "textureReferencesRestored": 34,
+      "geometryBinaryUnchanged": true,
+      "sha256": "de3cea05e2dc7391adb2ed0fee8d80b44ed9512c715f090df2c7210ea66be0ce"
+    },
+    {
+      "file": "public/models/overview.glb",
+      "textureReferencesRestored": 34,
+      "geometryBinaryUnchanged": true,
+      "sha256": "de3cea05e2dc7391adb2ed0fee8d80b44ed9512c715f090df2c7210ea66be0ce"
+    },
+    {
+      "file": "public/models/places-low/aojingxiguan.glb",
+      "textureReferencesRestored": 5,
+      "geometryBinaryUnchanged": true,
+      "sha256": "7e52d1c73e2e8e0d5c1e6d136ad4a7d7f433e73822f6dd1102d509ab78152a51"
+    },
+    {
+      "file": "public/models/places-low/daguanlou.glb",
+      "textureReferencesRestored": 7,
+      "geometryBinaryUnchanged": true,
+      "sha256": "1af155f84b577dec671fc6b3c3f1a02baec2bbecca4d4866e413ba398d2a048d"
+    },
+    {
+      "file": "public/models/places-low/daguanyuan_gate.glb",
+      "textureReferencesRestored": 7,
+      "geometryBinaryUnchanged": true,
+      "sha256": "f4a077b0a32e642711c5bc5ca0813a9ecdbcae3f2aa3a445ced87c37a6341fea"
+    },
+    {
+      "file": "public/models/places-low/daoxiangcun.glb",
+      "textureReferencesRestored": 2,
+      "geometryBinaryUnchanged": true,
+      "sha256": "e0aab308a87c5e2240a8010638bd8be290074ad36ee565e88e9551178c6ddd2d"
+    },
+    {
+      "file": "public/models/places-low/dicuiting.glb",
+      "textureReferencesRestored": 3,
+      "geometryBinaryUnchanged": true,
+      "sha256": "af3c05cde386b2440b708617770aac6fb6a1a2912fb96d8b35d41871beef3321"
+    },
+    {
+      "file": "public/models/places-low/hengwuyuan.glb",
+      "textureReferencesRestored": 8,
+      "geometryBinaryUnchanged": true,
+      "sha256": "99ba906709fba062eedc521b0c86731171b4c4db81bd28e1b4134b95047d862d"
+    },
+    {
+      "file": "public/models/places-low/longcuian.glb",
+      "textureReferencesRestored": 5,
+      "geometryBinaryUnchanged": true,
+      "sha256": "7e499aeb2149c6904234b2e5b7d5f89d8186d9f86096bfdb2e54f86bd2b5372b"
+    },
+    {
+      "file": "public/models/places-low/luxuean.glb",
+      "textureReferencesRestored": 2,
+      "geometryBinaryUnchanged": true,
+      "sha256": "ead2272eb7610f1e1a930b9080ac53dfef63ec8a00bec24d166276b8e2fcaba0"
+    },
+    {
+      "file": "public/models/places-low/nuanxiangwu.glb",
+      "textureReferencesRestored": 5,
+      "geometryBinaryUnchanged": true,
+      "sha256": "d50822dcb78a7ba015c91ecb54449aedb55aded9fe322425bf647ea6b83980e5"
+    },
+    {
+      "file": "public/models/places-low/ouxiangxie.glb",
+      "textureReferencesRestored": 3,
+      "geometryBinaryUnchanged": true,
+      "sha256": "9e57039416ee609a1378a2053fc4cf2224fd98a1744e4df32129d1063bb48204"
+    },
+    {
+      "file": "public/models/places-low/qiushuangzhai.glb",
+      "textureReferencesRestored": 5,
+      "geometryBinaryUnchanged": true,
+      "sha256": "2d914ec89001886b07be12986ac159284360e1fa30b105f40330ae26f60a92a7"
+    },
+    {
+      "file": "public/models/places-low/qujingtongyou.glb",
+      "textureReferencesRestored": 3,
+      "geometryBinaryUnchanged": true,
+      "sha256": "7de54979c5981a0ba281e0c5565899673f694696422faa27bcf30f2d43b17c13"
+    },
+    {
+      "file": "public/models/places-low/tubishanzhuang.glb",
+      "textureReferencesRestored": 5,
+      "geometryBinaryUnchanged": true,
+      "sha256": "cfd1921750ae3269c9f701e99789f49c47ae20d8479333246a762edddf0e0234"
+    },
+    {
+      "file": "public/models/places-low/xiaoxiangguan.glb",
+      "textureReferencesRestored": 6,
+      "geometryBinaryUnchanged": true,
+      "sha256": "a19d39a61be8db26f6f9c7ace9d9a1b4b0734536748a60323768ac913596d3f2"
+    },
+    {
+      "file": "public/models/places-low/yihongyuan.glb",
+      "textureReferencesRestored": 8,
+      "geometryBinaryUnchanged": true,
+      "sha256": "f97cf631e4cd25e65f91675f14e13d52db3e4c68258ca7af9adb7e1b8bb51911"
+    },
+    {
+      "file": "public/models/vegetation/broadleaf-2.glb",
+      "textureReferencesRestored": 7,
+      "geometryBinaryUnchanged": true,
+      "sha256": "7a5186cfcc1fd06f8ec696cc29248a7e3f26ec7eaf227bf13990291edb381092"
+    },
+    {
+      "file": "public/models/vegetation/broadleaf-low.glb",
+      "textureReferencesRestored": 7,
+      "geometryBinaryUnchanged": true,
+      "sha256": "b3e0f5ade4e35f3494d98a1cb965a0f8f3b8ddad3979805c1494ed975679573e"
+    },
+    {
+      "file": "public/models/vegetation/broadleaf.glb",
+      "textureReferencesRestored": 7,
+      "geometryBinaryUnchanged": true,
+      "sha256": "0afa67e95d337101f8f97157ed8d63af541fe0c34077e0d13eb18b69f77c5677"
+    },
+    {
+      "file": "public/models/vegetation/ground-cover.glb",
+      "textureReferencesRestored": 3,
+      "geometryBinaryUnchanged": true,
+      "sha256": "4f9ebca5dc5c42d2fc447aeaeafb54bc8cd02105ebae543378998643f7fab46b"
+    },
+    {
+      "file": "public/models/vegetation/pine.glb",
+      "textureReferencesRestored": 4,
+      "geometryBinaryUnchanged": true,
+      "sha256": "382be5bf52693db7cbb73a0c4aa0d4b36ec8688819abb3bd1f534452971b4571"
+    },
+    {
+      "file": "public/models/vegetation/shrub.glb",
+      "textureReferencesRestored": 7,
+      "geometryBinaryUnchanged": true,
+      "sha256": "b66e673ae51e89a6446ad310d7b05ed550a9728a92e5cb1df3abe00a5c028759"
+    }
+  ],
+  "obsoleteGeneratedFilesRemoved": 154
+}

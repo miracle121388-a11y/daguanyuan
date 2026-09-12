@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-12T10:55:43.411651+00:00",
+  "agent": "impeccable_documenter_r12",
+  "revision": "spatial-garden-20260912-r12",
+  "completed": true,
+  "files": [
+    {
+      "file": "DESIGN.md",
+      "sha256": "b43e9b542b2f702d94a9ff5478bd50dc8d7d5c5681637f487bd789feabfcffd9",
+      "bytes": 40346
+    },
+    {
+      "file": ".impeccable/design.json",
+      "sha256": "42b1eb4a27d6445df4de207dc9bb8474376734812f7b7e2f4301b9e8b73a44b7",
+      "bytes": 40173
+    }
+  ],
+  "independentReviewerNotified": true,
+  "doesNotConstituteVisualApproval": true
+}

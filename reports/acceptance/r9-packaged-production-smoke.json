@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-11T19:14:51.259Z",
+  "url": "http://127.0.0.1:4278/",
+  "revision": "spatial-garden-20260912-r9",
+  "planView": true,
+  "dnsOverride": null,
+  "quicDisabled": false,
+  "tlsVerification": null,
+  "observationTimeoutMs": 90000,
+  "desktopReadyMs": 3703,
+  "hooksAbsent": true,
+  "sourceHooksAbsent": true,
+  "focus": {
+    "width": "2px",
+    "style": "solid"
+  },
+  "sceneVisible": true,
+  "refresh": true,
+  "selection": true,
+  "errors": [],
+  "failed": [],
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "touchEmulation": true,
+    "networkThrottle": false,
+    "concurrentDesktopPage": false,
+    "readyMs": 2760,
+    "models": [
+      "/models/overview-low.glb",
+      "/models/vegetation/ground-cover.glb",
+      "/models/vegetation/fern-0.glb",
+      "/models/vegetation/fern-1.glb",
+      "/models/places-low/xiaoxiangguan.glb",
+      "/models/vegetation/broadleaf-2.glb",
+      "/models/vegetation/broadleaf.glb"
+    ],
+    "selection": true,
+    "hotspotTap": true,
+    "equivalentDetailPicker": true,
+    "closeAndFullCourtyard": true
+  }
+}

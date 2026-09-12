@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "review": "r10-full-review",
+  "reviewType": "fresh-full-finish-review",
+  "disposition": "rebuild",
+  "artifactRoot": "D:/Users/Lenovo/Desktop/大观园",
+  "package": ".deploy/reference-20260911-202512-099141",
+  "packageEntry": ".deploy/reference-20260911-202512-099141/dist/index.html",
+  "evidenceCheck": {
+    "required": 14,
+    "opened": 14,
+    "valid": 14,
+    "method": "Each capture was opened with view_image. Original PNG dimensions and SHA-256 were read from local files. No browser, renderer or test was run."
+  },
+  "captures": [
+    {
+      "path": ".impeccable/review/desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "8026297AF52E4FCE5170286333247CF773D7AA7C112ABA83222622C575DBF70C",
+      "opened": true,
+      "valid": true,
+      "observation": "有效日间首屏。主楼、环水、院落和道路连续可读；地表与圆簇式低灌木重复感明显。"
+    },
+    {
+      "path": ".impeccable/review/plan.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "C75D052158FD751E300D54222186B6077DB628ACDE0A602805EA594D67B5E290",
+      "opened": true,
+      "valid": true,
+      "observation": "有效全园俯览。空间骨架可核查；主楼中部空地铺装读作亮色碎片阵列，地表分区和低灌木尺度过于一致。"
+    },
+    {
+      "path": ".impeccable/review/courtyard.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "8A6322C61E14EF5485C336BF2A5A6318985FDD69C9E3AA33D8106C9618AE2764",
+      "opened": true,
+      "valid": true,
+      "observation": "有效潇湘馆近院。主屋、院门、踏石、竹与数字点可见；竹下有硬黑叶状暗片，近竹与地被衔接不自然。"
+    },
+    {
+      "path": ".impeccable/review/interior.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "5BCBAD44DD583838C37C969D796601C54E122300360FBABD8936CEAB39A84C36",
+      "opened": true,
+      "valid": true,
+      "observation": "有效真实房间静帧。书案、书架、窗与挂轴可见；家具、地板和梁柱的木纹角色与近看光照仍需重做。该图不证明过渡动画。"
+    },
+    {
+      "path": ".impeccable/review/cutaway.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "2D84934C4590F636CB140A45B35A459A161EEDD2F5BDB589B31207668A0FACE2",
+      "opened": true,
+      "valid": true,
+      "observation": "有效剖视。去屋顶后房间及屋架可见；底左仍有黑叶状内容，床面和部分房间的生活层次不足。"
+    },
+    {
+      "path": ".impeccable/review/night.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "531FFFCAB8D6F57BFA6D5F63D26E192664E5CF3E79B6D597983E57B70DC03D1F",
+      "opened": true,
+      "valid": true,
+      "observation": "有效月夜捕获，无加载黑屏。主楼亮窗可定位；林地、水面、岸线缺少明暗区分，阅读过度依赖名签。"
+    },
+    {
+      "path": ".impeccable/review/central-ensemble.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "D7FDB79B9B40819F46771185A40A3A874C9077165DC64D7D9761F4EEB66A0C88",
+      "opened": true,
+      "valid": true,
+      "observation": "有效大观楼组群。楼阁回廊和牌坊完整可读；台地偏白、规则铺装和重复窗扇未形成同一可信材料世界。"
+    },
+    {
+      "path": ".impeccable/review/user-1266.png",
+      "width": 1266,
+      "height": 712,
+      "sha256": "CD13653537827642C063D4039F075624951F177EA82BF78D47ECBF70B8756853",
+      "opened": true,
+      "valid": true,
+      "observation": "有效用户视口。边缘操作和游园入口保留；首屏材质问题与1440视口一致。"
+    },
+    {
+      "path": ".impeccable/review/mobile.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "27B3CA71B04A6DB3D48BF1D0836F2844E5B5D2DEBDFB89A74D6B2B565F73C317",
+      "opened": true,
+      "valid": true,
+      "observation": "有效390首页。导航到底部，操作可见；全園建筑和环水为主体。"
+    },
+    {
+      "path": ".impeccable/review/mobile-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "20192CEA875FBEDA5C00C0ECFCBAEB8A38E8A4100768FE1995421DA81E19490B",
+      "opened": true,
+      "valid": true,
+      "observation": "有效390近院与阅读抽屉。院门、竹径、数字点及等价选择器可辨，艺术参考身份可见。"
+    },
+    {
+      "path": ".impeccable/review/mobile-whole-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "062488B61DC936B9E95E1EE6479347C00A4C0868F78F80311D3D6383EF933EF9",
+      "opened": true,
+      "valid": true,
+      "observation": "有效390全院模式。状态真实，但院落缩小为背景且被近树包围遮掩；全院空间阅读收益不足。"
+    },
+    {
+      "path": ".impeccable/review/narrow.png",
+      "width": 320,
+      "height": 740,
+      "sha256": "92275E0547C2BAB5246C1D4DAAE19E19F694B5FDE34808E76572FE68EFDD48F5",
+      "opened": true,
+      "valid": true,
+      "observation": "有效320窄屏。主要控制与底部导航均可见，无关键控件出界。"
+    },
+    {
+      "path": "reports/browser/r10-packaged-production-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "AFA2337A2233527AB6189B45F525349737AE3E07B88169BA471E333C4AF730DE",
+      "opened": true,
+      "valid": true,
+      "observation": "有效确切生产包桌面首屏。主要场景、材质与UI结果与当前矩阵一致。"
+    },
+    {
+      "path": "reports/browser/r10-packaged-production-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "04D686125481C0F2140BD73E4DC63A9EBBAC77F4709D0AA3633A96476850FCAD",
+      "opened": true,
+      "valid": true,
+      "observation": "有效确切生产包手机近院；CSS390×844／DPR3。逐张打开时显示工具缩至946×2048，PNG头部核对原始1170×2532；物理像素放大不作为手机画质缺陷。"
+    }
+  ],
+  "referencesOpened": [
+    "D:/Download/ChatGPT Image 2026年9月10日 01_02_26.png",
+    "public/art/daguanlou.webp",
+    "public/art/xiaoxiangguan-day.webp",
+    "public/art/garden-waterways.webp",
+    "public/art/garden-aerial-day.webp"
+  ],
+  "referenceAuthority": "Subject and finish references; no approved webpage composition, measurement plan, decision comp or QUALITY BAR card.",
+  "contract": {
+    "THESIS": "continuous spatial experience present",
+    "OWN_WORLD": "real 3D medium present; focal material and landscape finish contradicted",
+    "STORY": "visible literature/interpretation/art separation present; full runtime claims remain parent technical evidence",
+    "FIRST_VIEWPORT": "composition present; visual finish and mobile whole-courtyard reading insufficient",
+    "FORM": "user fixed immersive direction present; original seed evidence unavailable"
+  },
+  "seed": {
+    "key": "41ecba8d",
+    "authenticatedOriginalOutput": false,
+    "notRegenerated": true
+  },
+  "persistence": {
+    "productExists": true,
+    "sourceContractRead": true,
+    "packageContractRead": true,
+    "designSnapshot": "Actual independent r10 documentation update read and verified; r8 retained as explicitly marked history, visual defects not normalized, no visual approval or deployment claim.",
+    "designSha256": "9BF262055051C34C171283FAA6B6911861B3DD5C3C0B5DBF35E021D5087C8A60",
+    "sidecarSha256": "A4D26602AE0961EE7D54BDFD214B188E4763BCCB4E685D9751D04E111CDDEA0C",
+    "sidecarGeneratedAt": "2026-09-11T20:38:12.617484Z"
+  },
+  "detector": {
+    "path": "reports/acceptance/spatial-impeccable-detector.json",
+    "readExistingOnly": true,
+    "secondRun": false,
+    "advisoryCounts": {
+      "color": 20,
+      "fontSize": 30,
+      "radius": 1
+    }
+  },
+  "reviewerActions": {
+    "browser": false,
+    "tests": false,
+    "modelEdits": false,
+    "implementationEdits": false,
+    "detector": false,
+    "deploy": false,
+    "delegation": false
+  },
+  "limitations": [
+    "No approved webpage comp or QUALITY BAR card exists.",
+    "Historical seed output is missing and was not fabricated.",
+    "PROGRESS history before r7 and the full artifact/source tree were not exhaustively read.",
+    "Technical pass/performance/public deployment statements are from the supplied review packet, not tests run by this reviewer.",
+    "Still captures do not certify animation, real mobile hardware performance, or public accessibility.",
+    "The room still was captured with the real motion setting disabled; it is valid room evidence."
+  ],
+  "materialFixIds": [
+    "rebuild_focal_material_landscape",
+    "unverified_seed_record",
+    "plant_ground_transitions",
+    "architectural_interior_material_scale",
+    "water_and_night_depth",
+    "mobile_whole_courtyard_framing"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "checks": 2,
+  "passed": true,
+  "materials": [
+    {
+      "variant": 0,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleLeafRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "colourPresent": true,
+      "passed": true
+    },
+    {
+      "variant": 1,
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleLeafRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "colourPresent": true,
+      "passed": true
+    }
+  ],
+  "method": "Actual delivered fern base-color image must retain transparent background, opaque leaf pixels, and nonblack colour in the visible leaf area. Alpha alone cannot detect a broken RGB/alpha image merge."
+}

@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported turf material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "turf",
+  "sourcePixelSha256": "0da9ff175213c3bb94c5f252557c14f967cdf71a1693ec71364887ca865e8666",
+  "sha256": "e88e19357770b8639f2f63834ed345c4e1c521c803ecbd53d2d09db10ecdf07c",
+  "prompt": "Blender-exported turf material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

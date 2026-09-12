@@ -1,0 +1,18 @@
+[
+  {
+    "path": "reports/browser/r11-packaged-production-desktop.png",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "sha256": "3b169b070ac146fa386c46f0e8f0182d878f7bbf2a6afdac175ce90af26c64ea"
+  },
+  {
+    "path": "reports/browser/r11-packaged-production-mobile.png",
+    "dimensions": [
+      1170,
+      2532
+    ],
+    "sha256": "bc1fe1a0f110da031139f51fa2bfd34c56932ee0dfee3c45050bdc8afb508fd7"
+  }
+]

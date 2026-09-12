@@ -1,0 +1,98 @@
+[
+  {
+    "name": "desktop",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "01276bca9f3aeae17838c7fadf1b500fcfc142227ffd325689123b6d60ae4cdb"
+  },
+  {
+    "name": "plan",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "19c904b34ba3539943f26af9016d24b0586ebb43405caf880b4c805f2f59a4a0"
+  },
+  {
+    "name": "courtyard",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "1c2ca58c519c45c3073eeaeaa870876c8d06530b7462866d04414774bbb0d601"
+  },
+  {
+    "name": "interior",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "54e905d8743f125f44cc84e625e68607f09025d85260def152b20b08ecf145f4"
+  },
+  {
+    "name": "cutaway",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "74c6bdfdfe0fdf9ebd9d09f1ecbccb61f5d8b2abb41cd9e6021ced310ef017d7"
+  },
+  {
+    "name": "night",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "b2887ddfeda4000e344582a240bac4f90b110e27f0fce9da6f008b846fe1f1cd"
+  },
+  {
+    "name": "central-ensemble",
+    "size": [
+      1440,
+      900
+    ],
+    "sha256": "9c9d2a1c74b08a815ba83a3da3977389e05e6bcde7761369d6e2edb743aa3e7d"
+  },
+  {
+    "name": "user-1266",
+    "size": [
+      1266,
+      712
+    ],
+    "sha256": "5be5d52a09786f79e7592d773bbc6ca72a02a90e9188a119187255ab6e926e63"
+  },
+  {
+    "name": "mobile",
+    "size": [
+      390,
+      844
+    ],
+    "sha256": "c03c0b94d8bd5ea12a39c4c3f020e86b90bf880183b091b2984a9061c87e3452"
+  },
+  {
+    "name": "mobile-courtyard",
+    "size": [
+      390,
+      844
+    ],
+    "sha256": "e6c60e229fa0f443345b54c77420d3b84fcfd3ee78a64fbc48f916ce2fcb5e21"
+  },
+  {
+    "name": "mobile-whole-courtyard",
+    "size": [
+      390,
+      844
+    ],
+    "sha256": "4a12ba174613bfc255718c5f2dbb56cf4e76a96ab309cfe16af5e51516dcfe99"
+  },
+  {
+    "name": "narrow",
+    "size": [
+      320,
+      740
+    ],
+    "sha256": "4077e7414d87ca0420d8e18584993cde0b57aa56f42df51ab4b5b885ea4a9696"
+  }
+]

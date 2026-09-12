@@ -1,0 +1,245 @@
+{
+  "method": "Cycles 24 samples; source alpha restored at256; r8 slender lower-trunk deformation; r10 fourth row uses the exact low shrub deformation from source_crowns.shrub_source (source_crowns.py); 384 square; orthographic6.25m; AgX exposure0; sources normalized to5.1m largest extent.",
+  "renders": [
+    {
+      "file": "assets/processed/crown-r10/0-0.png",
+      "sourceAsset": "island_tree_01",
+      "form": "broadleaf",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -24,
+        10
+      ],
+      "sha256": "431f71b7d9510681c7574dafaa71d6fa340de4540e08dbb071e365b4ddd752da"
+    },
+    {
+      "file": "assets/processed/crown-r10/0-1.png",
+      "sourceAsset": "island_tree_01",
+      "form": "broadleaf",
+      "license": "CC0-1.0",
+      "camera": [
+        24,
+        0,
+        10
+      ],
+      "sha256": "314f2913650357155f25f562a1692d4d7219ef3d0afd10e09d4cac063ba2cf38"
+    },
+    {
+      "file": "assets/processed/crown-r10/0-2.png",
+      "sourceAsset": "island_tree_01",
+      "form": "broadleaf",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        24,
+        10
+      ],
+      "sha256": "f8aec043c944197229253bd6a6a30f09f30a7ad5e4967182007c0296bbe75c43"
+    },
+    {
+      "file": "assets/processed/crown-r10/0-3.png",
+      "sourceAsset": "island_tree_01",
+      "form": "broadleaf",
+      "license": "CC0-1.0",
+      "camera": [
+        -24,
+        0,
+        10
+      ],
+      "sha256": "5d0f625d5587167cfdcfc0749baa5044f02171dc54d51a7a1b1f4fdc80113e0b"
+    },
+    {
+      "file": "assets/processed/crown-r10/0-4.png",
+      "sourceAsset": "island_tree_01",
+      "form": "broadleaf",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -0.01,
+        26
+      ],
+      "sha256": "99720c22169c02fa12c587e6b24ad2f70a9deac53cc64e5c6c120aad5729e53d"
+    },
+    {
+      "file": "assets/processed/crown-r10/1-0.png",
+      "sourceAsset": "island_tree_02",
+      "form": "broadleaf-2",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -24,
+        10
+      ],
+      "sha256": "1447ab33aea366142f2c036a467f94b455147c464d877a6fab3319d95b374224"
+    },
+    {
+      "file": "assets/processed/crown-r10/1-1.png",
+      "sourceAsset": "island_tree_02",
+      "form": "broadleaf-2",
+      "license": "CC0-1.0",
+      "camera": [
+        24,
+        0,
+        10
+      ],
+      "sha256": "470b424f032ff8d8d416f0e21063d332a450a006306e7c696b007fd32478d6d7"
+    },
+    {
+      "file": "assets/processed/crown-r10/1-2.png",
+      "sourceAsset": "island_tree_02",
+      "form": "broadleaf-2",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        24,
+        10
+      ],
+      "sha256": "f5b11593708d34b193acb3a41b0d65c4c0e76c02d51471b6e15e53bbc780d7ed"
+    },
+    {
+      "file": "assets/processed/crown-r10/1-3.png",
+      "sourceAsset": "island_tree_02",
+      "form": "broadleaf-2",
+      "license": "CC0-1.0",
+      "camera": [
+        -24,
+        0,
+        10
+      ],
+      "sha256": "14863c84fdc9c32ec5a23c90eadef309e85e5325052bf15fabe42b99e6043942"
+    },
+    {
+      "file": "assets/processed/crown-r10/1-4.png",
+      "sourceAsset": "island_tree_02",
+      "form": "broadleaf-2",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -0.01,
+        26
+      ],
+      "sha256": "5324e4e34c965d6b2f0aab8bb9e5cccf69d336d1f4873d387d921d8a4ed213d0"
+    },
+    {
+      "file": "assets/processed/crown-r10/2-0.png",
+      "sourceAsset": "pine_sapling_small",
+      "form": "pine",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -24,
+        10
+      ],
+      "sha256": "5050cb3767294ad129f4966a5d0e049cd90de0fe5f31823005e25a7e230ea9b0"
+    },
+    {
+      "file": "assets/processed/crown-r10/2-1.png",
+      "sourceAsset": "pine_sapling_small",
+      "form": "pine",
+      "license": "CC0-1.0",
+      "camera": [
+        24,
+        0,
+        10
+      ],
+      "sha256": "72e1b2bbf459f8d741b1144cff529ad17185d9da94e16e03be5c9af120d7be48"
+    },
+    {
+      "file": "assets/processed/crown-r10/2-2.png",
+      "sourceAsset": "pine_sapling_small",
+      "form": "pine",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        24,
+        10
+      ],
+      "sha256": "4651d6cf87d21ac8959b6d7c31135ba9d0c1dda538f9aea08492f6a3721cc923"
+    },
+    {
+      "file": "assets/processed/crown-r10/2-3.png",
+      "sourceAsset": "pine_sapling_small",
+      "form": "pine",
+      "license": "CC0-1.0",
+      "camera": [
+        -24,
+        0,
+        10
+      ],
+      "sha256": "a095c2dbd1c9b61643ecaa6c12a0249da276ec71b748df88853d43b342ea1da1"
+    },
+    {
+      "file": "assets/processed/crown-r10/2-4.png",
+      "sourceAsset": "pine_sapling_small",
+      "form": "pine",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -0.01,
+        26
+      ],
+      "sha256": "43956c4dac45b9821115f49e1611cd2c6e3324ebac7c94fe5cb3d8b453210ff3"
+    },
+    {
+      "file": "assets/processed/crown-r10/3-0.png",
+      "sourceAsset": "island_tree_01",
+      "form": "shrub",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -24,
+        10
+      ],
+      "sha256": "2ac9be1a94af1eca70a609338468a77ab4caaa0fb4f6e439570815ec6e90245a"
+    },
+    {
+      "file": "assets/processed/crown-r10/3-1.png",
+      "sourceAsset": "island_tree_01",
+      "form": "shrub",
+      "license": "CC0-1.0",
+      "camera": [
+        24,
+        0,
+        10
+      ],
+      "sha256": "dee8c792f14f4b2244f911d37347617aa044e6e713425e9f411fbea8b27357be"
+    },
+    {
+      "file": "assets/processed/crown-r10/3-2.png",
+      "sourceAsset": "island_tree_01",
+      "form": "shrub",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        24,
+        10
+      ],
+      "sha256": "aa6dc22f62bca69c4a1685d9248b89409a664d7dc047f0c5172ba6113772ff8c"
+    },
+    {
+      "file": "assets/processed/crown-r10/3-3.png",
+      "sourceAsset": "island_tree_01",
+      "form": "shrub",
+      "license": "CC0-1.0",
+      "camera": [
+        -24,
+        0,
+        10
+      ],
+      "sha256": "bbab86b63619765f6e4a10e74a9f2564c9e6ba2fd81d5d560532e079e894fc20"
+    },
+    {
+      "file": "assets/processed/crown-r10/3-4.png",
+      "sourceAsset": "island_tree_01",
+      "form": "shrub",
+      "license": "CC0-1.0",
+      "camera": [
+        0,
+        -0.01,
+        26
+      ],
+      "sha256": "4d814eae202aa04060037e6cacf55fe3c087fd84e3ed589b285513f27f586c45"
+    }
+  ]
+}

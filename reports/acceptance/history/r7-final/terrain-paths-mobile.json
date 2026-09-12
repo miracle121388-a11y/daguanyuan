@@ -1,0 +1,9 @@
+{
+  "scope": "published mobile overview",
+  "checks": 2217,
+  "passed": true,
+  "sampleSpacingMaxM": 0.8,
+  "groundClearanceToleranceM": 0.22,
+  "failures": [],
+  "duplicateGroundSurfaceFailures": []
+}

@@ -1,0 +1,70 @@
+{
+  "method": "Weld coincident generated roof-shell vertices; exclude structural shell from both mobile and overview decimation; keep independent roof flags and source PBR. Place/route/water positions and Manual_Adjustments unchanged.",
+  "meshes": [
+    {
+      "mesh": "longcuian_roof",
+      "verticesBefore": 616,
+      "verticesAfter": 190
+    },
+    {
+      "mesh": "aojingxiguan_roof.001",
+      "verticesBefore": 288,
+      "verticesAfter": 74
+    },
+    {
+      "mesh": "xiaoxiangguan_roof",
+      "verticesBefore": 664,
+      "verticesAfter": 204
+    },
+    {
+      "mesh": "ouxiangxie_roof.001",
+      "verticesBefore": 288,
+      "verticesAfter": 74
+    },
+    {
+      "mesh": "dicuiting_roof.001",
+      "verticesBefore": 248,
+      "verticesAfter": 122
+    },
+    {
+      "mesh": "nuanxiangwu_roof",
+      "verticesBefore": 512,
+      "verticesAfter": 134
+    },
+    {
+      "mesh": "tubishanzhuang_roof.001",
+      "verticesBefore": 288,
+      "verticesAfter": 74
+    },
+    {
+      "mesh": "hengwuyuan_roof.001",
+      "verticesBefore": 552,
+      "verticesAfter": 174
+    },
+    {
+      "mesh": "daguanyuan_gate_roof.001",
+      "verticesBefore": 240,
+      "verticesAfter": 62
+    },
+    {
+      "mesh": "yihongyuan_roof.001",
+      "verticesBefore": 808,
+      "verticesAfter": 242
+    },
+    {
+      "mesh": "landscape_roof",
+      "verticesBefore": 1272,
+      "verticesAfter": 366
+    },
+    {
+      "mesh": "qiushuangzhai_roof.001",
+      "verticesBefore": 328,
+      "verticesAfter": 114
+    },
+    {
+      "mesh": "daguanlou_roof",
+      "verticesBefore": 3536,
+      "verticesAfter": 970
+    }
+  ]
+}

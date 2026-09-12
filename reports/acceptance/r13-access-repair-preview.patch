@@ -1,0 +1,13 @@
+--- Clash Verge profiles/Merge.yaml current
++++ Clash Verge profiles/Merge.yaml proposed
+@@ -2,3 +2,10 @@
+ 
+ profile:
+   store-selected: true
++
++dns:
++  fake-ip-filter-mode: blacklist
++  fake-ip-filter:
++  - '*.lan'
++  - localhost.ptlogin2.qq.com
++  - daguanyuan-rumeng.zeabur.app

@@ -1,0 +1,224 @@
+
+> daguanyuan-rumeng@1.0.0 models:planting:lod
+> node scripts/pipeline.mjs models-planting-lod
+
+INFO Draco mesh compression is available, use library at D:\Users\Lenovo\Desktop\大观园\.tools\blender-4.5.9-windows-x64\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+21:47:18 | INFO: Starting glTF 2.0 export
+21:47:18 | INFO: Finished glTF 2.0 export in 0.25693392753601074 s
+
+21:47:18 | INFO: Starting glTF 2.0 export
+21:47:19 | INFO: Extracting primitive: Mobile_qujingtongyou_plants
+21:47:19 | INFO: Primitives created: 1
+21:47:19 | INFO: Finished glTF 2.0 export in 0.26290225982666016 s
+
+21:47:19 | INFO: Starting glTF 2.0 export
+21:47:19 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_bamboo
+21:47:19 | INFO: Primitives created: 1
+21:47:19 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_banana
+21:47:19 | INFO: Primitives created: 1
+21:47:19 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_litter
+21:47:19 | INFO: Primitives created: 1
+21:47:19 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_petal
+21:47:19 | INFO: Primitives created: 1
+21:47:19 | WARNING: Mesh Mobile_xiaoxiangguan_botanical_stem is not valid, and may be exported wrongly
+21:47:19 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_stem
+21:47:19 | INFO: Primitives created: 1
+21:47:19 | WARNING: Mesh Mobile_xiaoxiangguan_plants is not valid, and may be exported wrongly
+21:47:19 | INFO: Extracting primitive: Mobile_xiaoxiangguan_plants
+21:47:19 | INFO: Primitives created: 1
+21:47:19 | INFO: Finished glTF 2.0 export in 0.4829258918762207 s
+
+21:47:19 | INFO: Starting glTF 2.0 export
+21:47:20 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_bamboo
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_banana
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_litter
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_petal
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | WARNING: Mesh Mobile_yihongyuan_botanical_stem is not valid, and may be exported wrongly
+21:47:20 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_stem
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | WARNING: Mesh Mobile_yihongyuan_plants is not valid, and may be exported wrongly
+21:47:20 | INFO: Extracting primitive: Mobile_yihongyuan_plants
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | INFO: Finished glTF 2.0 export in 0.3310384750366211 s
+
+21:47:20 | INFO: Starting glTF 2.0 export
+21:47:20 | INFO: Extracting primitive: Mobile_hengwuyuan_botanical_bamboo
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | INFO: Extracting primitive: Mobile_hengwuyuan_botanical_litter
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | WARNING: Mesh Mobile_hengwuyuan_botanical_stem is not valid, and may be exported wrongly
+21:47:20 | INFO: Extracting primitive: Mobile_hengwuyuan_botanical_stem
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | WARNING: Mesh Mobile_hengwuyuan_plants is not valid, and may be exported wrongly
+21:47:20 | INFO: Extracting primitive: Mobile_hengwuyuan_plants
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | INFO: Finished glTF 2.0 export in 0.31401491165161133 s
+
+21:47:20 | INFO: Starting glTF 2.0 export
+21:47:20 | INFO: Extracting primitive: Mobile_qiushuangzhai_botanical_bamboo
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | INFO: Extracting primitive: Mobile_qiushuangzhai_botanical_litter
+21:47:20 | INFO: Primitives created: 1
+21:47:20 | WARNING: Mesh Mobile_qiushuangzhai_botanical_stem is not valid, and may be exported wrongly
+21:47:20 | INFO: Extracting primitive: Mobile_qiushuangzhai_botanical_stem
+21:47:20 | INFO: Primitives created: 1
+21:47:21 | WARNING: Mesh Mobile_qiushuangzhai_plants is not valid, and may be exported wrongly
+21:47:21 | INFO: Extracting primitive: Mobile_qiushuangzhai_plants
+21:47:21 | INFO: Primitives created: 1
+21:47:21 | INFO: Finished glTF 2.0 export in 0.3108179569244385 s
+
+21:47:21 | INFO: Starting glTF 2.0 export
+21:47:21 | WARNING: Mesh Mobile_daoxiangcun_plants is not valid, and may be exported wrongly
+21:47:21 | INFO: Extracting primitive: Mobile_daoxiangcun_plants
+21:47:21 | INFO: Primitives created: 1
+21:47:21 | INFO: Finished glTF 2.0 export in 0.2952709197998047 s
+
+21:47:21 | INFO: Starting glTF 2.0 export
+21:47:21 | INFO: Extracting primitive: Mobile_ouxiangxie_plants
+21:47:21 | INFO: Primitives created: 1
+21:47:21 | INFO: Finished glTF 2.0 export in 0.2669243812561035 s
+
+21:47:21 | INFO: Starting glTF 2.0 export
+21:47:22 | INFO: Finished glTF 2.0 export in 0.2538309097290039 s
+
+21:47:22 | INFO: Starting glTF 2.0 export
+21:47:22 | WARNING: Mesh Mobile_luxuean_plants is not valid, and may be exported wrongly
+21:47:22 | INFO: Extracting primitive: Mobile_luxuean_plants
+21:47:22 | INFO: Primitives created: 1
+21:47:22 | INFO: Finished glTF 2.0 export in 0.25877833366394043 s
+
+21:47:22 | INFO: Starting glTF 2.0 export
+21:47:23 | INFO: Extracting primitive: Mobile_tubishanzhuang_plants
+21:47:23 | INFO: Primitives created: 1
+21:47:23 | INFO: Finished glTF 2.0 export in 0.2633974552154541 s
+
+21:47:23 | INFO: Starting glTF 2.0 export
+21:47:23 | INFO: Extracting primitive: Mobile_aojingxiguan_plants
+21:47:23 | INFO: Primitives created: 1
+21:47:23 | INFO: Finished glTF 2.0 export in 0.2645297050476074 s
+
+21:47:23 | INFO: Starting glTF 2.0 export
+21:47:23 | INFO: Extracting primitive: Mobile_daguanlou_botanical_bamboo
+21:47:23 | INFO: Primitives created: 1
+21:47:23 | INFO: Extracting primitive: Mobile_daguanlou_botanical_litter
+21:47:23 | INFO: Primitives created: 1
+21:47:23 | WARNING: Mesh Mobile_daguanlou_botanical_stem is not valid, and may be exported wrongly
+21:47:23 | INFO: Extracting primitive: Mobile_daguanlou_botanical_stem
+21:47:24 | INFO: Primitives created: 1
+21:47:24 | WARNING: Mesh Mobile_daguanlou_plants is not valid, and may be exported wrongly
+21:47:24 | INFO: Extracting primitive: Mobile_daguanlou_plants
+21:47:24 | INFO: Primitives created: 1
+21:47:24 | INFO: Finished glTF 2.0 export in 0.5451693534851074 s
+
+21:47:24 | INFO: Starting glTF 2.0 export
+21:47:24 | WARNING: Mesh Mobile_longcuian_plants is not valid, and may be exported wrongly
+21:47:24 | INFO: Extracting primitive: Mobile_longcuian_plants
+21:47:24 | INFO: Primitives created: 1
+21:47:24 | INFO: Finished glTF 2.0 export in 0.2828390598297119 s
+
+21:47:24 | INFO: Starting glTF 2.0 export
+21:47:24 | WARNING: Mesh Mobile_nuanxiangwu_plants is not valid, and may be exported wrongly
+21:47:24 | INFO: Extracting primitive: Mobile_nuanxiangwu_plants
+21:47:24 | INFO: Primitives created: 1
+21:47:24 | INFO: Finished glTF 2.0 export in 0.2720761299133301 s
+
+21:47:28 | INFO: Starting glTF 2.0 export
+21:47:28 | INFO: Extracting primitive: Mobile_qujingtongyou_plants
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_bamboo
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_banana
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_litter
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_petal
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_xiaoxiangguan_botanical_stem
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_xiaoxiangguan_plants
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_bamboo
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_banana
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_litter
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_petal
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_yihongyuan_botanical_stem
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_yihongyuan_plants
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_hengwuyuan_botanical_bamboo
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_hengwuyuan_botanical_litter
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_hengwuyuan_botanical_stem
+21:47:28 | INFO: Primitives created: 1
+21:47:28 | INFO: Extracting primitive: Mobile_hengwuyuan_plants
+21:47:28 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_qiushuangzhai_botanical_bamboo
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_qiushuangzhai_botanical_litter
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_qiushuangzhai_botanical_stem
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_qiushuangzhai_plants
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_daoxiangcun_plants
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_ouxiangxie_plants
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_luxuean_plants
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_tubishanzhuang_plants
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_aojingxiguan_plants
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_daguanlou_botanical_bamboo
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_daguanlou_botanical_litter
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_daguanlou_botanical_stem
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_daguanlou_plants
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_longcuian_plants
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | INFO: Extracting primitive: Mobile_nuanxiangwu_plants
+21:47:29 | INFO: Primitives created: 1
+21:47:29 | WARNING: Mesh Mobile_landscape_plants is not valid, and may be exported wrongly
+21:47:30 | INFO: Extracting primitive: Mobile_landscape_plants
+21:47:30 | INFO: Primitives created: 1
+21:47:30 | WARNING: Mesh Mobile_landscape_botanical_stem is not valid, and may be exported wrongly
+21:47:30 | INFO: Extracting primitive: Mobile_landscape_botanical_stem
+21:47:30 | INFO: Primitives created: 1
+21:47:32 | INFO: Extracting primitive: Mobile_landscape_botanical_bamboo
+21:47:32 | INFO: Primitives created: 1
+21:47:32 | INFO: Finished glTF 2.0 export in 4.647806644439697 s
+
+BOTANICAL PATCHES EXPORTED 86
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+
+Blender quit
+prune: Removed types... Mesh (1), Primitive (1), TextureInfo (5), Material (1), Accessor (5)
+prune: Removed types... Mesh (6), Primitive (6), TextureInfo (55), Material (11), Texture (10), Accessor (25)
+prune: Removed types... Mesh (6), Primitive (6), TextureInfo (55), Material (11), Texture (10), Accessor (25)
+prune: Removed types... Mesh (4), Primitive (4), TextureInfo (30), Material (6), Texture (5), Accessor (17)
+prune: Removed types... Mesh (4), Primitive (4), TextureInfo (30), Material (6), Texture (5), Accessor (17)
+prune: Removed types... Mesh (1), Primitive (1), TextureInfo (5), Material (1), Accessor (5)
+prune: Removed types... Mesh (1), Primitive (1), TextureInfo (5), Material (1), Accessor (5)
+prune: Removed types... Mesh (1), Primitive (1), TextureInfo (5), Material (1), Accessor (5)
+prune: Removed types... Mesh (1), Primitive (1), TextureInfo (5), Material (1), Accessor (5)
+prune: Removed types... Mesh (1), Primitive (1), TextureInfo (5), Material (1), Accessor (5)
+prune: Removed types... Mesh (4), Primitive (4), TextureInfo (30), Material (6), Texture (5), Accessor (17)
+prune: Removed types... Mesh (1), Primitive (1), TextureInfo (5), Material (1), Accessor (5)
+prune: Removed types... Mesh (1), Primitive (1), TextureInfo (5), Material (1), Accessor (5)
+prune: Removed types... Mesh (35), Primitive (35), TextureInfo (55), Material (11), Texture (10), Accessor (154)
+prune: Removed types... Mesh (35), Primitive (35), TextureInfo (55), Material (11), Texture (10), Accessor (154)
+Replaced botanical LOD only; cached architecture, terrain and anchor semantics preserved in 17 models.

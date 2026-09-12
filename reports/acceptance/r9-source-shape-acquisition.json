@@ -1,0 +1,110 @@
+[
+  {
+    "id": "rock_moss_set_01",
+    "files": [
+      {
+        "file": "assets/source/rock_moss_set_01/rock_moss_set_01.gltf",
+        "sha256": "c36675aca9c6b2be7785c2534cf413b03ec82a5a2a5407a2b1c0cdb0346c9727",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/rock_moss_set_01/rock_moss_set_01_1k.gltf",
+        "bytes": 9987
+      },
+      {
+        "file": "assets/source/rock_moss_set_01/textures/rock_moss_set_01_nor_gl_1k.jpg",
+        "sha256": "eb4aad3f207f1dc5b624d74ae240372171626a66912bd71adf7bd3e518181d6e",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_moss_set_01/rock_moss_set_01_nor_gl_1k.jpg",
+        "bytes": 209975
+      },
+      {
+        "file": "assets/source/rock_moss_set_01/rock_moss_set_01.bin",
+        "sha256": "de8360e6175879aaf02c171911069cf5f1852547f9ca7f10e440085dbcc3315e",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/rock_moss_set_01/rock_moss_set_01.bin",
+        "bytes": 1466380
+      },
+      {
+        "file": "assets/source/rock_moss_set_01/textures/rock_moss_set_01_rough_1k.jpg",
+        "sha256": "4d6ec46623abd8e2cdb855f59c7ce31873ad61b36b60e4de579e9e776a497c6b",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_moss_set_01/rock_moss_set_01_rough_1k.jpg",
+        "bytes": 82624
+      },
+      {
+        "file": "assets/source/rock_moss_set_01/textures/rock_moss_set_01_diff_1k.jpg",
+        "sha256": "40cea65d8aa4ee73a93b04af19963834d061eee9779c3fc2c1cba76eef812ccc",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_moss_set_01/rock_moss_set_01_diff_1k.jpg",
+        "bytes": 168099
+      }
+    ],
+    "at": "2026-09-11T18:19:54.503783+00:00"
+  },
+  {
+    "id": "rock_07",
+    "files": [
+      {
+        "file": "assets/source/rock_07/rock_07.gltf",
+        "sha256": "efcc2dcaa133ff8ad5c865dc2135772e8f5dbc83fa38db2ee2cf25382436b6e6",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/rock_07/rock_07_1k.gltf",
+        "bytes": 2979
+      },
+      {
+        "file": "assets/source/rock_07/rock_07.bin",
+        "sha256": "e4a532a6d6cf4a08c288f501b790f32cba0528136a29959ce774c3cd39369e7e",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/rock_07/rock_07.bin",
+        "bytes": 468936
+      },
+      {
+        "file": "assets/source/rock_07/textures/rock_07_arm_1k.jpg",
+        "sha256": "1ed76e9a8542c76bdc6b7b018720ae1f52cd75d9f5ae719f613de3f5032cf4da",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_07/rock_07_arm_1k.jpg",
+        "bytes": 309735
+      },
+      {
+        "file": "assets/source/rock_07/textures/rock_07_diff_1k.jpg",
+        "sha256": "8ff1965aa1664cc4abcc0131c44ee2b97ab14d6e131d7a51429ff261eeb101c8",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_07/rock_07_diff_1k.jpg",
+        "bytes": 635452
+      },
+      {
+        "file": "assets/source/rock_07/textures/rock_07_nor_gl_1k.jpg",
+        "sha256": "57cb2210951aeb376164fce5f7c65f03e5599def04873b56cad0f173c275d78d",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_07/rock_07_nor_gl_1k.jpg",
+        "bytes": 766986
+      }
+    ],
+    "at": "2026-09-11T18:19:57.500133+00:00"
+  },
+  {
+    "id": "shrub_03",
+    "files": [
+      {
+        "file": "assets/source/shrub_03/shrub_03.gltf",
+        "sha256": "b76d7c14bc027e834e82d3f984c32b5d060e62908aa90ff9420a637ca253a8ea",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/shrub_03/shrub_03_1k.gltf",
+        "bytes": 7296
+      },
+      {
+        "file": "assets/source/shrub_03/shrub_03.bin",
+        "sha256": "bf4df21e6d2a2bc5f00b4c9142f776171fe7da00cf960001825748067af542b6",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/shrub_03/shrub_03.bin",
+        "bytes": 238684
+      },
+      {
+        "file": "assets/source/shrub_03/textures/shrub_03_arm_1k.jpg",
+        "sha256": "3e2b16812a623037138eedace958210c5f3443a827bbe69663045bba5612f815",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_03/shrub_03_arm_1k.jpg",
+        "bytes": 396238
+      },
+      {
+        "file": "assets/source/shrub_03/textures/shrub_03_diff_1k.jpg",
+        "sha256": "3cadc7aba46d3aabbd7d6d2b1d04aa32e2a7da0bc87c2d38ef3cb1ee42cb03ec",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_03/shrub_03_diff_1k.jpg",
+        "bytes": 481841
+      },
+      {
+        "file": "assets/source/shrub_03/textures/shrub_03_nor_gl_1k.jpg",
+        "sha256": "ff856bacfce859b8a7555dd9a3b92fbd36b2e775d486be71df485afb4235d6c9",
+        "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_03/shrub_03_nor_gl_1k.jpg",
+        "bytes": 504734
+      }
+    ],
+    "at": "2026-09-11T18:19:59.107363+00:00"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-11T18:33:08.447193+00:00",
+  "checkpoint": ".checkpoints/before-r9-20260912-020827",
+  "checks": {
+    "places": true,
+    "lake": true,
+    "pathNodes": true,
+    "pathEdges": true
+  },
+  "note": "Preserves the reviewed interpretive layout, not proof of a unique map in the novel."
+}

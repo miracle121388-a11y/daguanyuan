@@ -1,0 +1,60 @@
+{
+  "recordedAt": "2026-09-10T05:52:26.648563+00:00",
+  "revision": "spatial-garden-20260910-r4",
+  "priorities": [
+    "courtyard locations",
+    "water and land boundary",
+    "connected roads"
+  ],
+  "geometry": {
+    "spatialChecks": 319,
+    "terrainRoadChecks": 2217,
+    "integrityChecks": 1359,
+    "publishedModels": 34,
+    "blenderMeshes": 1822,
+    "packedImages": 18,
+    "manualAdjustmentsPreserved": true
+  },
+  "functionalTests": {
+    "e2e": {
+      "startTime": "2026-09-10T05:10:29.781Z",
+      "duration": 124817.178,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "unitPassed": 6,
+    "productionExtendedObservationPassed": true,
+    "productionReport": "production-smoke.json"
+  },
+  "visual": {
+    "disposition": "rebuild",
+    "fullReviews": [
+      "reports/acceptance/spatial-finish-review.md",
+      "reports/acceptance/spatial-rebuild-review.md"
+    ],
+    "fullyMeetsUserQualityBar": false,
+    "nextRoundUserDecision": "pending"
+  },
+  "deployment": {
+    "deploymentId": "6aa23eea378400c37128baa3",
+    "serverId": "6a8eee0bb11fb81fb4aaca05",
+    "revision": "spatial-garden-20260910-r4",
+    "matchingPublicFiles": 14,
+    "url": "https://daguanyuan-rumeng.zeabur.app/"
+  },
+  "network": {
+    "defaultConnectionPassed": false,
+    "standard90SecondObservationPassed": false,
+    "extendedObservationTimeoutMs": 300000,
+    "desktopReadyMs": 211626,
+    "mobileReadyMs": 97718,
+    "report": "spatial-network-observations.json"
+  },
+  "designDocumentation": [
+    "DESIGN.md",
+    ".impeccable/design.json"
+  ],
+  "completeUserObjective": false
+}

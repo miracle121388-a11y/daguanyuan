@@ -1,0 +1,416 @@
+{
+  "reviewType": "verdict-pass",
+  "round": 2,
+  "revision": "spatial-garden-20260912-r12-fix2",
+  "authority": "reports/acceptance/r12-full-review.md",
+  "previousVerdict": "reports/acceptance/r12-fix1-verdict.md",
+  "disposition": "fix",
+  "scope": "Same five original material fixes and batch regressions only; no fresh full-surface audit.",
+  "capturesValid": true,
+  "capturesOpened": 21,
+  "captureInventories": [
+    "reports/acceptance/r12-fix2-final-capture-inspection.json",
+    "reports/acceptance/r12-fix2-native-capture-inspection.json",
+    "reports/acceptance/r12-fix2-package-capture-inspection.json"
+  ],
+  "captures": [
+    {
+      "id": "W01",
+      "file": ".impeccable/review/desktop.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "4e19421ca1049bd96c7d733c60de3219295f5aee9febcaa7debdaf1c83733df4",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W02",
+      "file": ".impeccable/review/plan.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "a15d9c9ef32b2145ab67424e7d62a6096facc2b506186dea3332800d98a7cfc7",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W03",
+      "file": ".impeccable/review/courtyard.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "92dbb150df2e814db9510e2850c19d90dca54936a96435de37ef4282d1191d26",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W04",
+      "file": ".impeccable/review/interior.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "cf7d9a12dec0ff3bb6a000e5f8d802a3adee8efd55b1aafd05668b1a4591c517",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W05",
+      "file": ".impeccable/review/cutaway.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "94c7b389842d7993a84b3ed2ff4274ea7541bc9fb7ea6055ce255f752b40ae78",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W06",
+      "file": ".impeccable/review/night.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "c0cf1d7030035cd3a07b01a7a812399be40dc7e8a63da6dca32888561747c663",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W07",
+      "file": ".impeccable/review/central-ensemble.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "2f140cabc863203ccd0e716d4915be242e45e2046c5c0bc1300b2601fec4c566",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W08",
+      "file": ".impeccable/review/yihongyuan.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "c5fb656c21c0dfc05384f429b3141ea82d9f2df47c48f869f02d4ea778cb1caf",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W09",
+      "file": ".impeccable/review/hengwuyuan.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "888da429d70355d1531bf5ce61d2a738bb67dd2c41a449d794edf23774b0b4c2",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W10",
+      "file": ".impeccable/review/qiushuangzhai.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "dd8606b93c4be317d64610ce7a44a0f4fd02670ab9aa521d25823a0ecfe8c594",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W11",
+      "file": ".impeccable/review/character.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "c967e5f6030f58c5cb721db4a9310780b8eb078f53a2a78238aae59fad7317a5",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W12",
+      "file": ".impeccable/review/event.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "95d79571f3e007d3c203efb3208e6d71c438aa6cac40722fdcf4273455c277fb",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W13",
+      "file": ".impeccable/review/user-1266.png",
+      "width": 1266,
+      "height": 712,
+      "dimensionsMatch": true,
+      "sha256": "e8ee2d2ea93acce2288d09c3378782d4b1fef7c45f1921989c0745717f96a0fe",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W14",
+      "file": ".impeccable/review/mobile.png",
+      "width": 390,
+      "height": 844,
+      "dimensionsMatch": true,
+      "sha256": "2378b857feb38bf18cff2686e4467f70bc330febf5d23c59426c5b4980a7ca92",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W15",
+      "file": ".impeccable/review/mobile-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "dimensionsMatch": true,
+      "sha256": "0de73a912bb5ab498db069f4d079c9db0895fb7faf51a52184e461090ff3e296",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W16",
+      "file": ".impeccable/review/mobile-whole-courtyard.png",
+      "width": 390,
+      "height": 844,
+      "dimensionsMatch": true,
+      "sha256": "f321e6a84f0fda80462cb45c48995818a625ef6699c5024c7c346f173e258844",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "W17",
+      "file": ".impeccable/review/narrow.png",
+      "width": 320,
+      "height": 740,
+      "dimensionsMatch": true,
+      "sha256": "1135532d58d605d6f3bde58e2c31793a66568ec2567f502c23c30e7bc8d9890d",
+      "sha256Matches": true,
+      "archiveMatches": true,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "N01",
+      "file": "reports/blender/fix2-master-full.png",
+      "width": 1280,
+      "height": 800,
+      "dimensionsMatch": true,
+      "sha256": "71040773cb7b143bd6e403f461cc9a6fe7d93675253f08e46f62e592c50b0234",
+      "sha256Matches": true,
+      "archiveMatches": null,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "N02",
+      "file": "reports/blender/fix2-master-xiaoxiang.png",
+      "width": 1280,
+      "height": 800,
+      "dimensionsMatch": true,
+      "sha256": "e1998c4103f4c4c3d7fe699b35512f297a520a3d30655c6b8dc256c27aa7dd21",
+      "sha256Matches": true,
+      "archiveMatches": null,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "P01",
+      "file": "reports/browser/r12-fix2-packaged-production-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "dimensionsMatch": true,
+      "sha256": "5c596017fd2e140556118bd65734a46563e9b8b83b257da67883d2af58ae01db",
+      "sha256Matches": true,
+      "archiveMatches": null,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true
+    },
+    {
+      "id": "P02",
+      "file": "reports/browser/r12-fix2-packaged-production-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "dimensionsMatch": true,
+      "sha256": "e0dc47956e90fe6dd3bcae5ba76591388f88ebc101e60c63ee55c94c47f9558b",
+      "sha256Matches": true,
+      "archiveMatches": null,
+      "actuallyOpenedByReviewer": true,
+      "captureValid": true,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "dpr": 3,
+      "physicalPhone": false
+    }
+  ],
+  "dimensionMismatches": 0,
+  "captureHashMismatches": 0,
+  "originalComparisonsOpened": [
+    ".impeccable/review/r12-fix1/courtyard.png",
+    ".impeccable/review/r12-fix1/yihongyuan.png",
+    ".impeccable/review/r12-fix1/hengwuyuan.png"
+  ],
+  "references": "The five supplied artistic references remain the original full review's subject/finish references. No new reference audit or comp specification was introduced.",
+  "package": {
+    "directory": ".deploy/reference-20260912-135401-786847",
+    "inventoriedFiles": 591,
+    "actualFiles": 591,
+    "bytes": 51218986,
+    "mismatches": [],
+    "physicalHashAndLengthChecksIndependentlyRecomputed": true,
+    "inventory": "reports/acceptance/r12-fix2-package-inventory.json",
+    "logicalIdentityLedger": "reports/acceptance/r12-fix2-packed-logical-file-hashes.json",
+    "suppliedLogicalFileCount": 45,
+    "suppliedLogicalMismatches": 0,
+    "logicalDecodingRerunByReviewer": false,
+    "boundary": "GLB/JS/WASM are physically stored as Brotli copies. Decoded logical resource identity is a separate supplied-ledger claim."
+  },
+  "native": {
+    "master": "blender/daguanyuan_master.blend",
+    "masterSha256": "2293c626fc32c0bd32ad1c269d8c1c0a76b877cbc63e3fd9b43288b37f2696a2",
+    "independentlyHashVerified": true,
+    "renderEvidence": "reports/acceptance/fix2-master-render-evidence.json",
+    "boundary": "Actual native master renders use separate Cycles lighting and water and do not certify web/mobile finish."
+  },
+  "finalDocuments": {
+    "readAfterDocumenterCompletion": true,
+    "completion": "reports/acceptance/r12-fix2-documenter-completion.json",
+    "completedAt": "2026-09-12T14:16:52.989Z",
+    "DESIGN": {
+      "path": "DESIGN.md",
+      "sha256": "45e1e82f00ba0a1b5946882ff1126248c877214da82838bd36622849adc16365",
+      "completionHashMatches": true
+    },
+    "sidecar": {
+      "path": ".impeccable/design.json",
+      "sha256": "543e96f220c2fcf0d3797b9419caf0ac06e095ad75f9b96b53feb4b4d83bd7f7",
+      "completionHashMatches": true,
+      "readScope": "Schema, current narrative, rules, do/don't records and extension metadata; component previews were not re-audited."
+    }
+  },
+  "originalFixes": [
+    {
+      "number": 1,
+      "name": "FORM provenance",
+      "status": "unresolved",
+      "evidence": "Authenticated original output remains absent; explicit unmet disclosure remains truthful."
+    },
+    {
+      "number": 2,
+      "name": "Planted ground",
+      "status": "partial",
+      "captures": [
+        "W03",
+        "W07",
+        "W09",
+        "W10",
+        "N02"
+      ],
+      "evidence": "Wider overlapping local leaf skirts improve coverage, but separate repeated low clumps and broad regular ground/edge transitions remain."
+    },
+    {
+      "number": 3,
+      "name": "Focal botany",
+      "status": "partial",
+      "captures": [
+        "W03",
+        "W08",
+        "W15",
+        "P02",
+        "N02"
+      ],
+      "evidence": "Banana faces, folds and tears are clearer and bamboo stems separate better. Dense leaf masses and phone-scale foliage still lose surface variation in dark clusters; native results remain separate."
+    },
+    {
+      "number": 4,
+      "name": "Mobile close view",
+      "status": "resolved",
+      "retainedFromFix1": true,
+      "captures": [
+        "W15",
+        "W16",
+        "P02"
+      ],
+      "evidence": "Distinct near/whole compositions, readable drawer, equivalent selector, artwork identity and selected-label separation remain."
+    },
+    {
+      "number": 5,
+      "name": "Moonlit depth",
+      "status": "resolved",
+      "retainedFromFix1": true,
+      "captures": [
+        "W06"
+      ],
+      "evidence": "Readable foreground route, bridgehead, pond and illuminated main hall retain the original bounded depth resolution."
+    }
+  ],
+  "carriedRegressions": [
+    {
+      "id": "R1",
+      "introducedIn": "r12-fix1",
+      "status": "partial",
+      "originalFixNumbers": [
+        2,
+        3
+      ],
+      "captures": [
+        "W03",
+        "W08",
+        "W09",
+        "W10",
+        "W15",
+        "P02"
+      ],
+      "evidence": "Severe banana and bamboo-stem darkness is reduced. Dark low-plant clusters and phone leaf-detail loss remain."
+    }
+  ],
+  "newBatchRegressions": [],
+  "publication": {
+    "statusAtParentNotice": "Authorized publication of the same frozen package started; completion and live verification pending.",
+    "reviewerPerformedDeployment": false,
+    "affectsVisualDisposition": false,
+    "liveVerificationPerformedByReviewer": false
+  },
+  "boundaries": {
+    "newFullSurfaceAudit": false,
+    "newApplicationTestsRun": false,
+    "newDetectorRun": false,
+    "browserUsed": false,
+    "implementationOrAssetsChanged": false,
+    "delegationPerformed": false,
+    "fullSurfaceApproval": false,
+    "historicalSeedAuthenticated": false,
+    "approvedWebComp": false,
+    "qualityBarCard": false,
+    "literatureInterpretationArtworkAndCuratedNavigationRemainDistinct": true,
+    "technicalReports": "Supplied final results and retained earlier failures remain separate; no technical pass establishes visual approval."
+  }
+}

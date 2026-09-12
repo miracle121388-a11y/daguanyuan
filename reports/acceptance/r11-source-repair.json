@@ -1,0 +1,14 @@
+{
+  "issue": "Exported near-camera foliage retained alpha while almost all RGB was lost during separate Blender image copy/channel merge.",
+  "inheritedEvidence": "r11-inherited-plant-pixels.json",
+  "correctedFern": "r11-fern-probe-corrected-pixels.json",
+  "correctedBroadleaf": "r11-broadleaf-export-canary.json",
+  "packingManifest": "assets/processed/foliage-r11/manifest.json",
+  "failedPreparations": [
+    "First generated Blender RGBA image still stored scene-linear RGB too dark.",
+    "Initial single Sharp pipeline removed the newly joined alpha; native pack and dependent fern probe exited1."
+  ],
+  "resolution": "Materialize 8-bit sRGB channels first, then join source alpha in a separate native packing stage. Import the resulting one PNG with fresh image data and link its Colour and Alpha directly.",
+  "fullSceneStatus": "Build running; no r11 visual or final model acceptance yet.",
+  "scope": "Existing approved source assets only; no changes to the literary place/route/water coordinates."
+}

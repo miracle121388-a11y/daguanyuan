@@ -1,0 +1,362 @@
+[
+  {
+    "url": "",
+    "bytes": 861,
+    "status": 200
+  },
+  {
+    "url": "assets/index-D68344Zx.css",
+    "bytes": 9518,
+    "status": 200
+  },
+  {
+    "url": "assets/index-DRoGvq0W.js",
+    "bytes": 190970,
+    "status": 200
+  },
+  {
+    "url": "data/routes.json",
+    "bytes": 1000,
+    "status": 200
+  },
+  {
+    "url": "data/places.json",
+    "bytes": 2636,
+    "status": 200
+  },
+  {
+    "url": "data/characters.json",
+    "bytes": 1098,
+    "status": 200
+  },
+  {
+    "url": "data/events.json",
+    "bytes": 2984,
+    "status": 200
+  },
+  {
+    "url": "data/relations.json",
+    "bytes": 176,
+    "status": 200
+  },
+  {
+    "url": "data/sources.json",
+    "bytes": 11575,
+    "status": 200
+  },
+  {
+    "url": "scene-manifest.json",
+    "bytes": 211738,
+    "status": 200
+  },
+  {
+    "url": "art/manifest.json",
+    "bytes": 11773,
+    "status": 200
+  },
+  {
+    "url": "assets/GardenScene-psWbcHy9.js",
+    "bytes": 205823,
+    "status": 200
+  },
+  {
+    "url": "models/vegetation/ground-cover.glb",
+    "bytes": 5096,
+    "status": 200
+  },
+  {
+    "url": "models/vegetation/fern-0.glb",
+    "bytes": 6936,
+    "status": 200
+  },
+  {
+    "url": "models/vegetation/fern-1.glb",
+    "bytes": 7124,
+    "status": 200
+  },
+  {
+    "url": "draco/draco_wasm_wrapper.js",
+    "bytes": 11766,
+    "status": 200
+  },
+  {
+    "url": "textures/forest_grove.hdr",
+    "bytes": 102837,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/395bae68d0169a3a840c7b20a32473360913745d7a25942d858b61737a0ab1cd.jpg",
+    "bytes": 35450,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/d6071b74e6ffbfc1413291d9e5e7d3b626d0e4a8078f1f19c50e8466cbe9bc3a.jpg",
+    "bytes": 44440,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/5aab3a4c8ec8bf63934783ed5115376bfc2fd4dc1e092cc8062d70a2dd73b4d2.jpg",
+    "bytes": 2953,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/2990a224d3288e611e39c23edee30bbd436767bb0fee772b567a5f5297f9715a.jpg",
+    "bytes": 61270,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/39722bc4b4c06da98e3894d6cade8976fb296046aaab379a1ae09b824af2caf8.jpg",
+    "bytes": 1430,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/c0a762ba2d8bd8f28315cb4efd4b591751a5996230445a4d5c37ea542a7e5cbb.jpg",
+    "bytes": 1092,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/99c68936efe8b4725ddd02dcb394ac56872457ddf263deb7ba3888ed0ba25832.jpg",
+    "bytes": 21934,
+    "status": 200
+  },
+  {
+    "url": "draco/draco_decoder.wasm",
+    "bytes": 192420,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/39722bc4b4c06da98e3894d6cade8976fb296046aaab379a1ae09b824af2caf8.jpg",
+    "bytes": 0,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/99c68936efe8b4725ddd02dcb394ac56872457ddf263deb7ba3888ed0ba25832.jpg",
+    "bytes": 0,
+    "status": 200
+  },
+  {
+    "url": "textures/ground/surface-zones.png",
+    "bytes": 358869,
+    "status": 200
+  },
+  {
+    "url": "textures/vegetation/canopy-atlas.webp",
+    "bytes": 580678,
+    "status": 200
+  },
+  {
+    "url": "models/overview-low.glb",
+    "bytes": 4267768,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg",
+    "bytes": 37012,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/311f7c7921cb6bdb7dea1e876049704cb82869017026f9c19e1091871eec374e.jpg",
+    "bytes": 1411,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/9f1cbfe1a93cbe1161deaa0d00d3f2b9d32124d1787f062dd33973ceca8c3f5e.jpg",
+    "bytes": 29808,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/c729dd7c146792865ce7174f765c078ef0dc3737f0e0ab5237c447db86cfe7d0.jpg",
+    "bytes": 20247,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/453edae3b7b1c9e8d1be3c74fd80325ca33301a44e25e9c149dde064f47ff27b.jpg",
+    "bytes": 4810,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg",
+    "bytes": 9221,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg",
+    "bytes": 1972,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/164b86cb2e1b02b0870950fadfc8c8be6765f05200876757dc7934798b53bda7.jpg",
+    "bytes": 57897,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+    "bytes": 10683,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/5212ca62b1b99fc15430232bfbe0750c2b6f19fdddac7e533457dc30442408e0.jpg",
+    "bytes": 18347,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/7f82a45aee77bf175e9dbc2603dff57f6776a649fe8fbde3fd3fcfb0c4f57ce3.jpg",
+    "bytes": 1794,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/354e2775b979f592d6e7a9fef18a67c4a44476d31103d5479720da5d82eaa635.jpg",
+    "bytes": 34038,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/479a6e743e740ba04ca4890544e92d5deaa425abbd4f54e5600cb6c934ce226c.jpg",
+    "bytes": 42599,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg",
+    "bytes": 130413,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg",
+    "bytes": 27954,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/a72fefe5cf543cee18a3153d0943b242763ec1b2c9f20e58081b8a6257b58165.jpg",
+    "bytes": 43268,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/90fcdf5e7eae6d152ae03816c95d6348a8e23dae7a33b945cfef446d419bccaf.jpg",
+    "bytes": 59091,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/c5bebe9a6f1ccb6e2d8ed1a995511139fc863a5d2e9ca9265ea0ab24237ca840.jpg",
+    "bytes": 40633,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/f12ad428f4219e4ca0503db11dd08e9dac8fe82d0151c6180e7be5bc9046143c.jpg",
+    "bytes": 60065,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/b7885d26e84de1860d7c9a2bc65b884e578e942c0e94460bdaf98e68e641909f.jpg",
+    "bytes": 40624,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/3824e4ff51b88322e931333bc1ca291f4416fc5ba118173af10e6c88ea069c69.jpg",
+    "bytes": 61795,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/46133d7b39566c59d73516332ce64012584c47e64a404ab89205b2c707f54f63.jpg",
+    "bytes": 37076,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/1ef0cce5f5ebd278dd619582610cb20c62866d300151f529649d6ce35cdbf1bf.jpg",
+    "bytes": 57946,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/7f353979f2a87b798acd714b278dc06bba047e18a12820486c268260028b3b5f.jpg",
+    "bytes": 22429,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/7ca5624e3b37deeeb73bf22f84ff29ca61b10661913ef7d795dcee0a4e476154.jpg",
+    "bytes": 24272,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/f66a7ecd5d7f5d0dd31465134ea08cf214e18ba0d21277ff39d5ff61a21b15cd.jpg",
+    "bytes": 26072,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/02180e2ec024e1c8dacf1314f71603b276e36a659e62738b522ffff403d1287c.jpg",
+    "bytes": 57600,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg",
+    "bytes": 54985,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/f9803592b7e8f3513512866f2bf17806470bd36097eb9361be5854ebeda5f4a9.jpg",
+    "bytes": 28085,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/483aba6351dd5d478db06bcf84d8cdca2331905b38de3723e342a1ef5da02c73.jpg",
+    "bytes": 29031,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/bd5b9e4a17263f27f84f65d4ebb8be596166bc186da57562b9a5b7b7afbc2aae.jpg",
+    "bytes": 56994,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/af99e7848b386b05ebcc3445c7fe7e0200d126a71fb52d41a58209a71e74af19.jpg",
+    "bytes": 58488,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/34a1ce268bfc4e215ccdbb40085ed07d8733d3462281dbce1d4404e60660eb12.jpg",
+    "bytes": 56429,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/19a51888e348ae3564541280414bc220c458063cbab4de926098e2112704f091.jpg",
+    "bytes": 41487,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/f20607560feb6e1d86a96dd8655262ac55b1e129f077b3790dcf074dd23d9540.jpg",
+    "bytes": 53685,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/396d636514a477fdce5e2a13b2ae27b7245fbcd2df88d59c6e640f2ec49e8fbe.jpg",
+    "bytes": 34074,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/048829dd8af1f0ecd7c55ac8ac7751d5874c15d29f3c7902e1284567c24dd77d.jpg",
+    "bytes": 61451,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/1acce416dcc998bb747d5d6091d88f044c9ffac4cd93954137f340eb29115961.jpg",
+    "bytes": 59895,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/976f730a6f00a1d2bc7bf36f35c60490fcd75fa22c94b2818412a5b3fada40f8.jpg",
+    "bytes": 193152,
+    "status": 200
+  },
+  {
+    "url": "textures/shared/e88e19357770b8639f2f63834ed345c4e1c521c803ecbd53d2d09db10ecdf07c.jpg",
+    "bytes": 194413,
+    "status": 200
+  },
+  {
+    "url": "textures/ground/soil.jpg",
+    "bytes": 40293,
+    "status": 200
+  },
+  {
+    "url": "textures/landscape-light.webp",
+    "bytes": 134804,
+    "status": 200
+  }
+]

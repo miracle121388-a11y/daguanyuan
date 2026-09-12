@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-12T15:55:43.331Z",
+  "passed": true,
+  "roundtripFile": "public/models/places-low/xiaoxiangguan.glb",
+  "unchangedImageHashes": [
+    "0318cdda7bbabbe1e3bbeaa92905d68a4a8af6579a88b368376de3c976cc8c32",
+    "06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd",
+    "3e1114dccbb6939a1e15fe9fa6e2eefc12241323696aab82e60ca9fe04fd6c9a",
+    "4eca49b9c2d977465b84bd6a95c86bd20e17c6f1f34dd426eafe4dca569bd6a4",
+    "703ba98dd3da484eedd3d722c6e2dbf9e04430d41b3b6f05915b571038ff301d",
+    "732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a",
+    "7e9db8ba92f79338d96519fd91d944e0cd070ee697f25d3f819e827e02895618",
+    "afa9c926c4a691128e0b2b951fc3cd74edd8cb84da615445dbeabaa15310d245",
+    "b3407e76e6e4c6cc025a249b24828686adc4f028d275677f06d77fd5e7a1b94a",
+    "b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580",
+    "b91c3f8dfaba4c9077d3395e90bc4388389adebb9fae9ccb17c81ae53fc3c8da",
+    "c1c6917a425317ce362594ec5c61e12c97b3c29e36b5ab0f214811c9fcb5b56f",
+    "c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc",
+    "ccaf606068c8a564d6907c2f43b6779dde6bd803f11bac8b8c642bed49da64ad",
+    "daa8d98cb20d6a902e3113aaaac7fd244314ad822808b580e535c535e41cafec",
+    "db137d2601dd484caca9a15126461ea5aff905f804c948f9667e31ec6403ef99",
+    "e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0",
+    "f737642d71e78f617337c6f4917a0560b82815ecabacf7d485c6b1b65817117e",
+    "fa6fee81e8294a79ed10af0e7e1edd7df8db620c7f38cba2268d6bae432ae6e7"
+  ],
+  "deliveredModelsRead": 40,
+  "method": "Embed a current optimized model through NodeIO, share textures again, then compare every actual image hash. Independently load all40 final GLBs with Draco and referenced local images."
+}

@@ -1,0 +1,61 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> node scripts/run_e2e.mjs
+
+[WebServer] (node:4224) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:32788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:44272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:5924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:17752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\gallery.spec.ts:3:1 › a failed full-size reference image can be retried without leaving the viewer (4.4s)
+  ok  2 tests\e2e\gallery.spec.ts:16:1 › gallery retries a failed manifest and distinguishes spoiler-empty results (7.6s)
+  ok  3 tests\e2e\gallery.spec.ts:21:1 › 320px sources entry retains its accessible name (487ms)
+  ok  4 tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots (55.6s)
+  ok  5 tests\e2e\garden.spec.ts:19:1 › mobile bottom drawer and usable controls (7.2s)
+  ok  6 tests\e2e\garden.spec.ts:20:1 › model failure exposes retry and recovers (4.9s)
+  ok  7 tests\e2e\garden.spec.ts:21:1 › tour shows sourced stop content, travels, and arrives at the next stop (9.8s)
+  ok  8 tests\e2e\garden.spec.ts:33:1 › the overhead garden view opens by keyboard and a map destination returns to its courtyard (2.1s)
+  ok  9 tests\e2e\interior.spec.ts:3:1 › interior inspection lifts the roof and restores the complete courtyard (7.6s)
+  x  10 tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard (9.8s)
+(node:37628) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 tests\e2e\mobile.spec.ts:29:1 › 320px phone controls remain inside the viewport (4.3s)
+
+
+  1) tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard 
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 8388608
+    Received:   8697797
+
+       9 |  expect(requests.some(r=>r.includes('overview-low.glb'))).toBe(true);expect(requests.some(r=>r.endsWith('/overview.glb'))).toBe(false);
+      10 |  // Reference-world budget includes a larger mobile landscape and local crown LOD.
+    > 11 |  expect(initial.resources.reduce((sum,r)=>sum+r.bytes,0)).toBeLessThan(8*1024*1024);
+         |                                                           ^
+      12 |  await page.getByRole('button',{name:'展开索引',exact:true}).tap();await page.locator('.place-row').filter({hasText:'潇湘馆'}).tap();await expect(page.locator('.index')).toHaveClass(/closed/);
+      13 |  await expect(page.locator('.detail-scroll h2')).toHaveText('潇湘馆');await expect.poll(()=>requests.some(r=>r.includes('places-low/xiaoxiangguan.glb'))).toBe(true);
+      14 |  await page.waitForTimeout(1800);await shot(page,'reports/browser/10-phone-4g.png');
+        at D:\Users\Lenovo\Desktop\大观园\tests\e2e\mobile.spec.ts:11:59
+
+    Error Context: test-results\mobile-touch-phone-on-thro-75dba-erview-and-mobile-courtyard\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\mobile-touch-phone-on-thro-75dba-erview-and-mobile-courtyard\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\mobile-touch-phone-on-thro-75dba-erview-and-mobile-courtyard\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard 
+  10 passed (2.2m)

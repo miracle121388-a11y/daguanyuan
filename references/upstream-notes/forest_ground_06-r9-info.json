@@ -1,0 +1,57 @@
+{
+  "type": 1,
+  "name": "Forest Ground 06",
+  "categories": [
+    "outdoor",
+    "natural",
+    "terrain",
+    "floor"
+  ],
+  "tags": [
+    "dirt",
+    "dirty",
+    "soil",
+    "compact soil",
+    "loose earth",
+    "scattered leaves",
+    "forest soil",
+    "forest",
+    "scattered rocks",
+    "forest debris",
+    "pathway",
+    "dry soil",
+    "pebbly",
+    "twigs",
+    "leaves",
+    "fallen leaves"
+  ],
+  "description": "Free 8K forest ground texture with compacted dark soil, scattered pebbles, twigs and leaf flecks, subtle damp sheen and varied roughness.",
+  "authors": {
+    "Charlotte Baglioni": "All"
+  },
+  "max_resolution": [
+    8192,
+    8192
+  ],
+  "dimensions": [
+    2109.999895095825,
+    2109.999895095825
+  ],
+  "files_hash": "2cf0a14d1dc8ade0de0014bfe858942982f490f9",
+  "staging": null,
+  "date_published": 1783641600,
+  "category_id": "2b016db1-a760-53aa-89ac-54c30f13214a",
+  "category": "Ground & Terrain/Forest Floor/Forest Soil",
+  "attributes": {
+    "surface_use": "ground",
+    "origin": "natural",
+    "setting": "outdoor",
+    "condition": [
+      "dirty"
+    ]
+  },
+  "info": "This forest ground was scanned near the entrance of the Ichikawa Zoo, in Japan. The zoo became really famous when a [video](https://x.com/Euphorbia10182/status/2018888215525269643) about a baby monkey (Punch!) holding a monkey plushie as a substitute mother went viral.",
+  "img_version": "629ed7e4",
+  "download_count": 13317,
+  "thumbnail_url": "https://cdn.polyhaven.com/asset_img/thumbs/forest_ground_06.png?width=256&height=256&v=629ed7e4"
+}

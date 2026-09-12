@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-11T20:51:05.187923+00:00",
+  "revision": "spatial-garden-20260912-r10",
+  "previousGoalTurnClassification": "no-progress",
+  "previousGoalTurnEvidence": "Fresh r10 full review completed; actual design persistence verified; final test, delivery and deployment records reconciled; concrete candidate and both rebuild reports presented.",
+  "currentGoalTurnClassification": "no-progress",
+  "blockingCondition": "Awaiting user direction after second visual rebuild verdict: further focal reconstruction or publish current r10.",
+  "consecutiveGoalTurnsWithCondition": 3,
+  "revalidation": {
+    "pendingDirectionFileRead": true,
+    "newDirectionReplyInConversation": false,
+    "projectRulesRead": true,
+    "runtimeFinalReviewStatus": "rebuild",
+    "reviewerAndDocumenterAuthoritativeStatus": "completed (collaboration.list_agents)",
+    "localPreviewProcess": {
+      "sessionId": 4333,
+      "confirmedRunning": true,
+      "verification": "write_stdin returned the same live session ID; no completion or missing handle"
+    },
+    "workerWait": false,
+    "note": "The preview is a serving process, not unfinished build or review work; its liveness does not classify the user-decision wait as a progress-producing job wait."
+  },
+  "independentRequiredWorkAlreadyCompleted": [
+    "Exact production package prepared and locally smoke-tested",
+    "Final E2E, model, spatial and runtime-budget measurements recorded",
+    "Independent review and actual design documentation finished",
+    "California target/account preflight and bounded public health diagnosis recorded"
+  ],
+  "otherPendingInput": {
+    "localProxyRepair": "Project-external configuration proposal is prepared; explicit authorization still absent."
+  },
+  "deploymentAlreadyAuthorized": true,
+  "r10Uploaded": false,
+  "goalStatus": "blocked",
+  "blockedThresholdMet": true,
+  "goalStatusToolConfirmed": true,
+  "currentRevalidation": {
+    "pendingDirectionFileRead": true,
+    "newDirectionReplyInConversation": false,
+    "runtimeFinalReviewStatus": "rebuild",
+    "r10PackageEntryExists": true,
+    "bothReviewReportsAndDeliveryRecordExist": true,
+    "publicDeployment": false
+  },
+  "resumeCondition": "A user choice to continue focal refinement and unify the garden, or publish the tested r10 candidate to the already-authorized existing California service."
+}

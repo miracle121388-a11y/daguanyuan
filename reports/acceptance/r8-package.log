@@ -1,0 +1,5 @@
+
+> daguanyuan-rumeng@1.0.0 deploy:package
+> python scripts/package_deploy.py
+
+Deployment package: 40.58 MiB raw; 42.23 MiB upload directory; 38.44 MiB transfer

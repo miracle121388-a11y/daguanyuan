@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported tiledark_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "tiledark_rough",
+  "sourcePixelSha256": "edbbb6e12ad76304eb398df5add034e59724782f9f0f3cabe30ee7d41dcc9102",
+  "sha256": "ee697c43dcdfd5f222758bd7df5885aca74cf7bd63ba513e5a549de0834eff3d",
+  "prompt": "Blender-exported tiledark_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

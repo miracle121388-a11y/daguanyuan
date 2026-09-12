@@ -1,0 +1,256 @@
+[
+  {
+    "n": 1,
+    "id": "garden-aerial-day",
+    "title": "大观园·春日鸟瞰",
+    "file": "01-garden-aerial-day.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-55c3a7f7-83d6-40bd-baee-83ee332bc6da.png",
+    "qa": "Accepted: coherent garden layers, path and water connections, restrained materials. Layout is an artistic interpretation.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 4015524,
+    "sha256": "9e6a03569541d7e99a601aed4b202387c662b67b9b23aa60bd86540bb3f1f427",
+    "chapters": [
+      17,
+      18
+    ]
+  },
+  {
+    "n": 2,
+    "id": "yihongyuan-courtyard",
+    "title": "怡红院·红香绿玉",
+    "file": "02-yihongyuan-courtyard.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-394982d8-3803-4c34-9cd6-e6b3c3ff95b6.png",
+    "qa": "Accepted: recognizable literary anchors, clear construction and material references; exact dimensions are interpretive.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3632125,
+    "sha256": "6cd1a146f5ec1eded1060b1c74435ec6ca921bb1fb31681b9b158a217cfe5766",
+    "chapters": [
+      17
+    ]
+  },
+  {
+    "n": 3,
+    "id": "yihongyuan-interior",
+    "title": "怡红院·雕格与绮窗",
+    "file": "03-yihongyuan-interior.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-9eb83709-62db-4bf8-9729-06965f23f0a6.png",
+    "qa": "Accepted: carved screens, restrained silk and mirror, plausible interior circulation.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3036353,
+    "sha256": "7fe4ab5fbc4aab3aee81c6f1cfae5bff1db241a79b8cc34a9a6aa7df2f35e317",
+    "chapters": [
+      17,
+      18
+    ]
+  },
+  {
+    "n": 4,
+    "id": "xiaoxiangguan-day",
+    "title": "潇湘馆·竹径清泉",
+    "file": "04-xiaoxiangguan-day.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-591da39b-c176-4e32-87f3-72320872be84.png",
+    "qa": "Accepted corrected day image: moss and pebble ground restored, narrow spring.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3709157,
+    "sha256": "d8ee5f279fd41e00d5bf8d9dca8158132024e6729e0ea4fd24e385582df63673",
+    "chapters": [
+      17,
+      40
+    ]
+  },
+  {
+    "n": 5,
+    "id": "xiaoxiangguan-moon",
+    "title": "潇湘馆·竹影月白",
+    "file": "05-xiaoxiangguan-moon.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-0ab1b054-4cce-4d30-ad22-737bd3fe9749.png",
+    "qa": "Accepted: moonlight edit retains the corrected daytime architecture, solid moss-and-pebble ground, and narrow spring.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3054099,
+    "sha256": "4f4e21fa9934ae34b80906cc9da3586fbe5f12126e226369116ce1aa284e3852",
+    "chapters": [
+      17,
+      40
+    ]
+  },
+  {
+    "n": 6,
+    "id": "hengwuyuan",
+    "title": "蘅芜苑·石骨幽芳",
+    "file": "06-hengwuyuan.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-81010d40-f432-4b4c-9079-b04fb98d506a.png",
+    "qa": "Accepted: sculptural rock screen, vine/herb planting without flowering courtyard trees, green windows, restrained room.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3913857,
+    "sha256": "cffa4cc7784b98ee4a535ec5d0e6192599ed3ad84fef8b19faecb5006a40bfa5",
+    "chapters": [
+      17,
+      40
+    ]
+  },
+  {
+    "n": 7,
+    "id": "qiushuangzhai",
+    "title": "秋爽斋·三间阔朗",
+    "file": "07-qiushuangzhai.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-34d8bb9a-3715-4dec-9008-6d6ce930090e.png",
+    "qa": "Accepted after editing: white pompon chrysanthemums and the authentic five-character couplet lines; large open room and marble desk retained.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 2969862,
+    "sha256": "dec57a99a3705e858b20e4bdddf8c4f82676882aecbb434ab01806f04b91175b",
+    "chapters": [
+      40
+    ]
+  },
+  {
+    "n": 8,
+    "id": "daoxiangcun",
+    "title": "稻香村·杏坞茅舍",
+    "file": "08-daoxiangcun.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-6c245f5e-e4d3-43cb-a3e6-2ef043b52bc1.png",
+    "qa": "Accepted: thatched cottages, earthen walls, apricot grove, woven fences, vegetable plots and a plausible well mechanism.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3902473,
+    "sha256": "e9eae08cd0e9ed9a83de4376bc40c57f6e44631438ee8123f818460e93cd5723",
+    "chapters": [
+      17
+    ]
+  },
+  {
+    "n": 9,
+    "id": "longcuian",
+    "title": "栊翠庵·雪梅禅院",
+    "file": "09-longcuian.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-38915211-3c3c-4095-9867-b730a01d77d7.png",
+    "qa": "Accepted: modest snow-covered nunnery, red plum trees, restrained timber architecture and an east-side tea room.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3825607,
+    "sha256": "c1f505b1a6f1a7a1f41e33684188f009664d7cc846cf4a54070a36efee157877",
+    "chapters": [
+      41,
+      49,
+      50
+    ]
+  },
+  {
+    "n": 10,
+    "id": "daguanlou",
+    "title": "大观楼·层楼临水",
+    "file": "10-daguanlou.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-99880cf5-1e6f-414e-8911-3aafed0b15b2.png",
+    "qa": "Accepted: recognizable literary anchors, clear construction and material references; exact dimensions are interpretive.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3520798,
+    "sha256": "31c971314645a32e5ed49309023939f6f614763d502dff1b3ea47d9e4d69d972",
+    "chapters": [
+      17,
+      18
+    ]
+  },
+  {
+    "n": 11,
+    "id": "ouxiangxie",
+    "title": "藕香榭·曲廊竹桥",
+    "file": "11-ouxiangxie.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-c7f6232c-3d56-48e3-b33e-163854ef4bf3.png",
+    "qa": "Accepted: water hall on visible stone piers, windows on all sides, left/right covered passages with shore landings, and a rear bamboo bridge.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3700783,
+    "sha256": "91ddeb3e22756f5a23e9d3f3139f7868b972f99788b612659676996d24266c2f",
+    "chapters": [
+      38,
+      40,
+      49
+    ]
+  },
+  {
+    "n": 12,
+    "id": "luxuean-winter",
+    "title": "芦雪庵·茅檐夜雪",
+    "file": "12-luxuean-winter.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-da89e4cc-521a-4cd2-8cfe-74fbe8ee2342.png",
+    "qa": "Accepted: low thatched riverside rooms, earthen walls, bamboo-lattice windows, reeds, snow and a clear relationship between bank and cottage.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3552688,
+    "sha256": "e2469739c36f1b64d6c17a9dbd68dd12beee6e6cb0752b226e3d95baf31adf7f",
+    "chapters": [
+      49,
+      50
+    ]
+  },
+  {
+    "n": 13,
+    "id": "nuanxiangwu",
+    "title": "暖香坞·冬窗待画",
+    "file": "13-nuanxiangwu.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-a5d985e8-4bd1-4b67-a753-80cd46d5d737.png",
+    "qa": "Accepted: covered corridor, restrained scarlet felt door curtain, winter painting materials and an intimate room with a sleeping area.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3000488,
+    "sha256": "682e150d91cfd170f92499a81c0f4dd51278f185e3a46ff0a7c1490bcb49edc9",
+    "chapters": [
+      50
+    ]
+  },
+  {
+    "n": 14,
+    "id": "garden-waterways",
+    "title": "沁芳水系·曲水相连",
+    "file": "14-garden-waterways.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-44f8d004-5ef2-4161-b865-b78030b666bc.png",
+    "qa": "Accepted: clear stone-arch abutments, covered timber passages on piers, bamboo bridge, continuous water and recognizable main tower.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 4015542,
+    "sha256": "ba58b2014033c7b0715f5883413380cdbd024e707224fddb43c8f048c096b99c",
+    "chapters": [
+      17,
+      18,
+      38,
+      49
+    ]
+  },
+  {
+    "n": 15,
+    "id": "garden-yuanxiao-night",
+    "title": "元宵省亲·玻璃世界",
+    "file": "15-garden-yuanxiao-night.png",
+    "source": "C:\\Users\\Lenovo\\.codex\\generated_images\\01a08537-df63-7f61-b9cc-861a08f3da90\\exec-f5fb3668-4c3f-4f59-b1a9-6fc348c4ce36.png",
+    "qa": "Accepted: winter lantern spectacle with readable garden massing, varied glass lanterns, craft lotus/waterbird ornaments and a ceremonial boat. Derived from the daylight overview; fine geometry requires unification during modeling.",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "bytes": 3975381,
+    "sha256": "c8337c50132674ea8ebd31700b7bc4dd95054b015378a6466c53d69504500f7a",
+    "chapters": [
+      18
+    ]
+  }
+]

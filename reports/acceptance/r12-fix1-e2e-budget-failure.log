@@ -1,0 +1,66 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> node scripts/run_e2e.mjs
+
+[WebServer] (node:16992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:32700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:13276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:11592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:13844) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\e2e\gallery.spec.ts:3:1 鈥?a failed full-size reference image can be retried without leaving the viewer (4.0s)
+  ok  2 tests\e2e\gallery.spec.ts:16:1 鈥?gallery retries a failed manifest and distinguishes spoiler-empty results (7.4s)
+  ok  3 tests\e2e\gallery.spec.ts:21:1 鈥?320px sources entry retains its accessible name (442ms)
+  ok  4 tests\e2e\garden.spec.ts:18:1 鈥?published scene, real canvas picking, literary links, all tours, settings and screenshots (49.2s)
+  ok  5 tests\e2e\garden.spec.ts:33:1 鈥?mobile bottom drawer and usable controls (5.7s)
+  ok  6 tests\e2e\garden.spec.ts:34:1 鈥?model failure exposes retry and recovers (5.8s)
+  ok  7 tests\e2e\garden.spec.ts:35:1 鈥?tour shows sourced stop content, travels, and arrives at the next stop (10.2s)
+  ok  8 tests\e2e\garden.spec.ts:47:1 鈥?the overhead garden view opens by keyboard and a map destination returns to its courtyard (2.9s)
+  ok  9 tests\e2e\interior.spec.ts:3:1 鈥?interior inspection lifts the roof and restores the complete courtyard (6.1s)
+  x  10 tests\e2e\mobile.spec.ts:3:1 鈥?touch phone on throttled 4G loads the small overview and mobile courtyard (10.7s)
+(node:2448) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 tests\e2e\mobile.spec.ts:53:1 鈥?320px phone controls remain inside the viewport (7.2s)
+
+
+  1) tests\e2e\mobile.spec.ts:3:1 鈥?touch phone on throttled 4G loads the small overview and mobile courtyard 
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 8388608
+    Received:   8394880
+
+       9 |  expect(requests.some(r=>r.includes('overview-low.glb'))).toBe(true);expect(requests.some(r=>r.endsWith('/overview.glb'))).toBe(false);
+      10 |  // Reference-world budget includes a larger mobile landscape and local crown LOD.
+    > 11 |  expect(initial.resources.reduce((sum,r)=>sum+r.bytes,0)).toBeLessThan(8*1024*1024);
+         |                                                           ^
+      12 |  await page.getByRole('button',{name:'灞曞紑绱㈠紩',exact:true}).tap();await page.locator('.place-row').filter({hasText:'娼囨箻棣?}).tap();await expect(page.locator('.index')).toHaveClass(/closed/);
+      13 |  await expect(page.locator('.detail-scroll h2')).toHaveText('娼囨箻棣?);await expect.poll(()=>requests.some(r=>r.includes('places-low/xiaoxiangguan.glb'))).toBe(true);
+      14 |  await expect(page.locator('.place-reference button span')).toHaveText('鑹烘湳鍙傝€?);
+        at D:\Users\Lenovo\Desktop\澶ц鍥璡tests\e2e\mobile.spec.ts:11:59
+
+    Error Context: test-results\mobile-touch-phone-on-thro-75dba-erview-and-mobile-courtyard\error-context.md
+
+    attachment #2: trace (application/zip) 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+    test-results\mobile-touch-phone-on-thro-75dba-erview-and-mobile-courtyard\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\mobile-touch-phone-on-thro-75dba-erview-and-mobile-courtyard\trace.zip
+
+    鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
+
+  1 failed
+    tests\e2e\mobile.spec.ts:3:1 鈥?touch phone on throttled 4G loads the small overview and mobile courtyard 
+  10 passed (2.3m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report reports\acceptance\playwright-1789216781646-html[39m
+[36m[39m

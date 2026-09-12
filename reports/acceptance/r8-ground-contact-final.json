@@ -1,0 +1,19 @@
+{
+  "count": 2107,
+  "maxAdjustmentM": 1.1444091807533141e-07,
+  "adjustedOver5cm": 0,
+  "outsideLandRemoved": [],
+  "outsideTreesRemoved": [
+    {
+      "name": "LivingTree_002",
+      "position": [
+        -37.0,
+        -55.0,
+        0.0
+      ]
+    }
+  ],
+  "treesSeated": 1697,
+  "maxTreeAdjustmentM": 0.0,
+  "method": "Vertical ray against the actual saved earth mesh; grass root seated 5mm above the hit, tree pivots at the hit. Generated grass offsets without land below are omitted."
+}

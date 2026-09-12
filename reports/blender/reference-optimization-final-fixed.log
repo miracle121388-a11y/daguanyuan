@@ -1,0 +1,61 @@
+
+> daguanyuan-rumeng@1.0.0 models:optimize
+> node scripts/optimize.mjs
+
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: python -c import os,sys; os.replace(sys.argv[1],sys.argv[2]) public/models/overview.glb.optimizing.glb public/models/overview.glb
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+    import os,sys; os.replace(sys.argv[1],sys.argv[2])
+
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+
+PermissionError: [WinError 5] �ܾ����ʡ�: 'public/models/overview.glb.optimizing.glb' -> 'public/models/overview.glb'
+
+
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execFileSync (node:child_process:961:15)
+    at replaceFile (file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/atomic_replace.mjs:8:3)
+    at file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/optimize.mjs:21:45 {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    Buffer(0) [Uint8Array] [],
+    Buffer(307) [Uint8Array] [
+       84, 114,  97,  99, 101,  98,  97,  99, 107,  32,  40, 109,
+      111, 115, 116,  32, 114, 101,  99, 101, 110, 116,  32,  99,
+       97, 108, 108,  32, 108,  97, 115, 116,  41,  58,  13,  10,
+       32,  32,  70, 105, 108, 101,  32,  34,  60, 115, 116, 114,
+      105, 110, 103,  62,  34,  44,  32, 108, 105, 110, 101,  32,
+       49,  44,  32, 105, 110,  32,  60, 109, 111, 100, 117, 108,
+      101,  62,  13,  10,  32,  32,  32,  32, 105, 109, 112, 111,
+      114, 116,  32, 111, 115,  44, 115, 121, 115,  59,  32, 111,
+      115,  46, 114, 101,
+      ... 207 more items
+    ]
+  ],
+  pid: 125728,
+  stdout: Buffer(0) [Uint8Array] [],
+  stderr: Buffer(307) [Uint8Array] [
+     84, 114,  97,  99, 101,  98,  97,  99, 107,  32,  40, 109,
+    111, 115, 116,  32, 114, 101,  99, 101, 110, 116,  32,  99,
+     97, 108, 108,  32, 108,  97, 115, 116,  41,  58,  13,  10,
+     32,  32,  70, 105, 108, 101,  32,  34,  60, 115, 116, 114,
+    105, 110, 103,  62,  34,  44,  32, 108, 105, 110, 101,  32,
+     49,  44,  32, 105, 110,  32,  60, 109, 111, 100, 117, 108,
+    101,  62,  13,  10,  32,  32,  32,  32, 105, 109, 112, 111,
+    114, 116,  32, 111, 115,  44, 115, 121, 115,  59,  32, 111,
+    115,  46, 114, 101,
+    ... 207 more items
+  ]
+}
+
+Node.js v24.12.0

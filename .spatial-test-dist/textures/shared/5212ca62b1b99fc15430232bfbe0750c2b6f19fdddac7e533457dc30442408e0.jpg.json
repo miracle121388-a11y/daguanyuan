@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported bankstone_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "bankstone_diff",
+  "sourcePixelSha256": "506e605a4e6928d1ca0e00dfbbf733465c83a4fdd25e746a0f466bda0dfbf4eb",
+  "sha256": "5212ca62b1b99fc15430232bfbe0750c2b6f19fdddac7e533457dc30442408e0",
+  "prompt": "Blender-exported bankstone_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

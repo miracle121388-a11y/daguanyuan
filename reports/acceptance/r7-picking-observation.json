@@ -1,0 +1,48 @@
+[
+  {
+    "action": "initial",
+    "x": 1081.4618070021293,
+    "y": 829.9517169215768,
+    "topTag": "STRONG",
+    "topClass": "",
+    "topLabel": null,
+    "topText": "从曲径到四处院落，读一遍园林的性情。",
+    "state": null
+  },
+  {
+    "action": "wheel 280",
+    "x": 896.6348503929577,
+    "y": 653.0535016367319,
+    "topTag": "BUTTON",
+    "topClass": "place-label ",
+    "topLabel": "定位怡红院",
+    "topText": "04\n怡红院",
+    "state": null
+  },
+  {
+    "action": "wheel 280",
+    "x": 851.3198543771133,
+    "y": 609.6834716789378,
+    "topTag": "BUTTON",
+    "topClass": "place-label ",
+    "topLabel": "定位怡红院",
+    "topText": "04\n怡红院",
+    "state": null
+  },
+  {
+    "action": "wheel 600",
+    "x": 851.3198543771133,
+    "y": 609.6834716789378,
+    "topTag": "BUTTON",
+    "topClass": "place-label ",
+    "topLabel": "定位怡红院",
+    "topText": "04\n怡红院",
+    "state": null
+  },
+  {
+    "action": "wheel -1160",
+    "x": -862.1060790803883,
+    "y": -1030.200465164622,
+    "state": null
+  }
+]

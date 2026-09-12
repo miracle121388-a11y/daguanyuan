@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported furniture_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "furniture_rough",
+  "sourcePixelSha256": "c574989705fef5ceb78fc9e7b8646c1ca4723891058857b81d99d9615261a4ec",
+  "sha256": "f8ae9109583433225cb91e565e5c5452924683d7bb1610a9195cca19cb00949f",
+  "prompt": "Blender-exported furniture_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

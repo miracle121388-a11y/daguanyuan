@@ -1,0 +1,83 @@
+{
+  "scope": "Published overview roof surfaces versus editable master",
+  "spacingM": 2,
+  "interiorEdgeMarginM": 0.28,
+  "heightToleranceM": 0.75,
+  "checks": 1281,
+  "missingCover": 0,
+  "places": [
+    {
+      "place": "daguanyuan_gate",
+      "samples": 58,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "xiaoxiangguan",
+      "samples": 66,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "yihongyuan",
+      "samples": 88,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "hengwuyuan",
+      "samples": 94,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "qiushuangzhai",
+      "samples": 64,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "ouxiangxie",
+      "samples": 54,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "dicuiting",
+      "samples": 25,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "tubishanzhuang",
+      "samples": 66,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "aojingxiguan",
+      "samples": 46,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "daguanlou",
+      "samples": 563,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "longcuian",
+      "samples": 87,
+      "missingCover": 0,
+      "examples": []
+    },
+    {
+      "place": "nuanxiangwu",
+      "samples": 70,
+      "missingCover": 0,
+      "examples": []
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,96 @@
+{
+  "at": "2026-09-11T18:35:49.250113+00:00",
+  "method": "Actual baked non-colour roughness PNG pixel inspection; no visual-approval claim",
+  "materials": [
+    {
+      "role": "wood",
+      "roughnessMean": 0.8052,
+      "roughnessRange": [
+        0.7686274509803922,
+        0.8156862745098039
+      ],
+      "file": "assets/processed/materials-r9/wood_rough.png",
+      "sha256": "ef5a438efd0a330f1341acf0ac11cc74c3d699bb1ea5dff8fd6199fed63c003d"
+    },
+    {
+      "role": "darkwood",
+      "roughnessMean": 0.8052,
+      "roughnessRange": [
+        0.7686274509803922,
+        0.8156862745098039
+      ],
+      "file": "assets/processed/materials-r9/darkwood_rough.png",
+      "sha256": "ef5a438efd0a330f1341acf0ac11cc74c3d699bb1ea5dff8fd6199fed63c003d"
+    },
+    {
+      "role": "latticewood",
+      "roughnessMean": 0.8052,
+      "roughnessRange": [
+        0.7686274509803922,
+        0.8156862745098039
+      ],
+      "file": "assets/processed/materials-r9/latticewood_rough.png",
+      "sha256": "ef5a438efd0a330f1341acf0ac11cc74c3d699bb1ea5dff8fd6199fed63c003d"
+    },
+    {
+      "role": "floorwood",
+      "roughnessMean": 0.76,
+      "roughnessRange": [
+        0.7568627450980392,
+        0.788235294117647
+      ],
+      "file": "assets/processed/materials-r9/floorwood_rough.png",
+      "sha256": "53d4b2dbd5309ae0cc53c9e436bde52a835f35e528d3c697c4385a204c9c39ee"
+    },
+    {
+      "role": "furniture",
+      "roughnessMean": 0.6633,
+      "roughnessRange": [
+        0.6588235294117647,
+        0.6901960784313725
+      ],
+      "file": "assets/processed/materials-r9/furniture_rough.png",
+      "sha256": "bb5afb49bde62351aac6296934af634433c30d8618240e1ff50a3093b850aa4a"
+    },
+    {
+      "role": "cutstone",
+      "roughnessMean": 0.8891,
+      "roughnessRange": [
+        0.8745098039215686,
+        0.9215686274509803
+      ],
+      "file": "assets/processed/materials-r9/cutstone_rough.png",
+      "sha256": "b66f3075e44d10dd69d24738f3a2cabb8dbd705a2605d3a9f9fe3e51a33d8be3"
+    },
+    {
+      "role": "stone",
+      "roughnessMean": 0.8891,
+      "roughnessRange": [
+        0.8745098039215686,
+        0.9215686274509803
+      ],
+      "file": "assets/processed/materials-r9/stone_rough.png",
+      "sha256": "b66f3075e44d10dd69d24738f3a2cabb8dbd705a2605d3a9f9fe3e51a33d8be3"
+    },
+    {
+      "role": "paving",
+      "roughnessMean": 0.8891,
+      "roughnessRange": [
+        0.8745098039215686,
+        0.9215686274509803
+      ],
+      "file": "assets/processed/materials-r9/paving_rough.png",
+      "sha256": "b66f3075e44d10dd69d24738f3a2cabb8dbd705a2605d3a9f9fe3e51a33d8be3"
+    },
+    {
+      "role": "bankstone",
+      "roughnessMean": 0.9035,
+      "roughnessRange": [
+        0.8862745098039215,
+        0.9098039215686274
+      ],
+      "file": "assets/processed/materials-r9/bankstone_rough.png",
+      "sha256": "7a349e10d21ef678b80f7cda5561eae3567068777aa5cbe97487921a03efb332"
+    }
+  ]
+}

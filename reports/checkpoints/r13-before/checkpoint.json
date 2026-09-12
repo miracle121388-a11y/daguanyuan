@@ -1,0 +1,50 @@
+{
+  "at": "2026-09-12T14:43:16.197583+00:00",
+  "files": [
+    {
+      "file": "blender/daguanyuan_master.blend",
+      "sha256": "2293c626fc32c0bd32ad1c269d8c1c0a76b877cbc63e3fd9b43288b37f2696a2",
+      "bytes": 994859568
+    },
+    {
+      "file": "public/scene-manifest.json",
+      "sha256": "bb23b0c65f6d13f0f186187ea5c16f055d66d5eab297bc06a6e2f2963319fdc0",
+      "bytes": 1378689
+    },
+    {
+      "file": "config/garden.layout.json",
+      "sha256": "6c23e212b09a8681954737dd7c73ce14386a1349ac0f888e39dc75130460ef15",
+      "bytes": 50099
+    },
+    {
+      "file": "config/garden.planting.json",
+      "sha256": "476f37ac7ebf93e4e321a7cac2221099142dc2dcddc62fb2745b9b8683a85a26",
+      "bytes": 2556
+    },
+    {
+      "file": "src/scene/Understory.tsx",
+      "sha256": "54e3b7e74b7d68801987fb6cd14be6b761a8a386e15b39a3716db5d5be276bb2",
+      "bytes": 3323
+    },
+    {
+      "file": "src/scene/materials.ts",
+      "sha256": "5713c28f3396eb6a8e47a0cdc803e2171d4aba9820fb31e7273b59e276abc91c",
+      "bytes": 4793
+    },
+    {
+      "file": "blender/r9_understory.py",
+      "sha256": "4f462140bf19f6a074c26cb266c2fb27ae67968b59a74553e325bc14df89b2cd",
+      "bytes": 4404
+    },
+    {
+      "file": "package.json",
+      "sha256": "3500070db6d25701bc427a770627bdafade0d3399a88a2fc0a9a2c0e8a13d3bc",
+      "bytes": 3164
+    },
+    {
+      "file": "scripts/pipeline.mjs",
+      "sha256": "f6425d6548db58c97237650e2d7228fb149e67d8601f5d3aa299b45dbb486c3e",
+      "bytes": 9639
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-12T15:25:29.906596+00:00",
+  "revision": "spatial-garden-20260912-r13",
+  "defaultBrowser": {
+    "passed": false,
+    "exitCode": 1,
+    "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/",
+    "report": "r13-production-default.log",
+    "dnsOverride": false
+  },
+  "resolvedBrowser": {
+    "passed": true,
+    "exitCode": 0,
+    "report": "r13-production-smoke.json",
+    "publicAddress": "47.89.212.251",
+    "freshDnsEvidence": "r13-public-dns-post-deploy.json",
+    "quicDisabled": true,
+    "desktopReadyMs": 7838,
+    "mobileReadyMs": 9119
+  },
+  "tlsVerificationEnabled": true,
+  "systemDnsOrProxyModified": false,
+  "scope": "Current full production checks after r13 reached RUNNING. Temporary per-browser DNS/QUIC settings do not demonstrate normal-browser access. A current single-domain Clash repair preview has been prepared and explicit user input requested; no proxy file changed."
+}

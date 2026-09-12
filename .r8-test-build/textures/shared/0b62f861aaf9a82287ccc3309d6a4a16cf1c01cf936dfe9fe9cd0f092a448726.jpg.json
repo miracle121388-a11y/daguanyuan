@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported cutstone_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "cutstone_rough",
+  "sourcePixelSha256": "cb10331e1fdcdf262ea8e3b1e086a72a24baea456dc92cb7138bd675fb43fadc",
+  "sha256": "0b62f861aaf9a82287ccc3309d6a4a16cf1c01cf936dfe9fe9cd0f092a448726",
+  "prompt": "Blender-exported cutstone_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

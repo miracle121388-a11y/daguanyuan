@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-12T15:13:27.297153+00:00",
+  "revision": "spatial-garden-20260912-r13",
+  "directory": ".deploy/reference-20260912-150313-914164",
+  "scope": "Both exact-package images opened;1170x2532 image is CSS390x844/DPR3,renderDPR1,Windows Edge touch emulation,not physical phone.",
+  "captures": [
+    {
+      "file": "reports/browser/r13-packaged-production-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "1df2c6286b238e6c3515b0b6b48100501e2af9008f3185d18410f39eba36e48b",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    },
+    {
+      "file": "reports/browser/r13-packaged-production-mobile.png",
+      "width": 1170,
+      "height": 2532,
+      "sha256": "c168b8e7c456d16654f75c5a4b0e1f28117d2e211fa35153a0643b7ade521417",
+      "actuallyOpenedByParent": true,
+      "captureValid": true
+    }
+  ]
+}

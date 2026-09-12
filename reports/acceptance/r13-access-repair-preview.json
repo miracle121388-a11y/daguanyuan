@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-12",
+  "state": "prepared-only; not applied",
+  "target": "C:\\Users\\Lenovo\\AppData\\Roaming\\io.github.clash-verge-rev.clash-verge-rev\\profiles\\Merge.yaml",
+  "beforeSha256": "f0120e3a041e0ebdbf29a68584ba73c82b2bdf9b327e81402956a812a05145fe",
+  "runtimePath": "C:\\Users\\Lenovo\\AppData\\Roaming\\io.github.clash-verge-rev.clash-verge-rev\\clash-verge.yaml",
+  "runtimeBeforeSha256": "4f78bfec990b237cd731cc4de9ff00c6a9e079e65dab2dce142bcd08fc4416e5",
+  "currentMode": "blacklist",
+  "existingFilterCount": 2,
+  "proposedFilterCount": 3,
+  "singleAddedDomain": "daguanyuan-rumeng.zeabur.app",
+  "originalMergeFieldsPreserved": true,
+  "requiresExternalConfigurationChange": true,
+  "proposedAction": "Back up current merge/runtime files; add only this domain to existing blacklist-mode fake-IP exceptions; reload the local proxy through its own controller and test the normal browser with TLS. Preserve all other config, retain rollback if no improvement. No proxy change has been made.",
+  "preview": "reports/acceptance/r13-access-repair-preview.patch"
+}

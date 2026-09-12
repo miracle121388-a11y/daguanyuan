@@ -1,0 +1,30 @@
+[
+  {
+    condition: 'default',
+    ok: false,
+    elapsedMs: 25,
+    error: 'Error: page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/healthz Call log:',
+    revision: undefined
+  },
+  {
+    condition: 'quic_disabled',
+    ok: false,
+    elapsedMs: 20,
+    error: 'Error: page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/healthz Call log:',
+    revision: undefined
+  },
+  {
+    condition: 'public_dns',
+    ok: true,
+    elapsedMs: 882,
+    error: undefined,
+    revision: 'spatial-garden-20260910-r6'
+  },
+  {
+    condition: 'public_dns_and_quic_disabled',
+    ok: true,
+    elapsedMs: 861,
+    error: undefined,
+    revision: 'spatial-garden-20260910-r6'
+  }
+]

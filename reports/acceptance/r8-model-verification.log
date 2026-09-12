@@ -1,0 +1,236 @@
+
+> daguanyuan-rumeng@1.0.0 models:verify
+> node scripts/pipeline.mjs verify-models
+
+MASTER REOPEN VALIDATED {'reopened': True, 'placeIds': ['aojingxiguan', 'daguanlou', 'daguanyuan_gate', 'daoxiangcun', 'dicuiting', 'hengwuyuan', 'longcuian', 'luxuean', 'nuanxiangwu', 'ouxiangxie', 'qiushuangzhai', 'qujingtongyou', 'tubishanzhuang', 'xiaoxiangguan', 'yihongyuan'], 'meshes': 4158, 'missingImages': [], 'packedImages': 112, 'manualLayerPresent': True}
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+
+Blender quit
+BUILT TERRAIN PATH CHECK 2217 height failures 0 duplicate ground surfaces 0 [] []
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\blender\daguanyuan_master.blend"
+
+Blender quit
+01:06:50 | INFO: Data are loaded, start creating Blender stuff
+01:06:50 | INFO: Blender create Mesh node daguanyuan_gate_screen
+01:06:50 | INFO: Draco Decoder: Decode primitive daguanyuan_gate_screen
+01:06:50 | INFO: Blender create Mesh node Mobile_daguanyuan_gate
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_daguanyuan_gate
+01:06:50 | INFO: Blender create Mesh node Mobile_daguanyuan_gate_limestone
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_daguanyuan_gate_limestone
+01:06:50 | INFO: Blender create Mesh node Mobile_daguanyuan_gate_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_daguanyuan_gate_roof
+01:06:50 | INFO: Blender create Mesh node Mobile_qujingtongyou
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_qujingtongyou
+01:06:50 | INFO: Blender create Mesh node Mobile_qujingtongyou_limestone
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_qujingtongyou_limestone
+01:06:50 | INFO: Blender create Mesh node Mobile_qujingtongyou_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_qujingtongyou_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_xiaoxiangguan
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_xiaoxiangguan
+01:06:50 | INFO: Blender create Mesh node Mobile_xiaoxiangguan_bankstone
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_xiaoxiangguan_bankstone
+01:06:50 | INFO: Blender create Mesh node Mobile_xiaoxiangguan_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_xiaoxiangguan_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_xiaoxiangguan_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_xiaoxiangguan_roof
+01:06:50 | INFO: Blender create Mesh node xiaoxiangguan_lantern
+01:06:50 | INFO: Draco Decoder: Decode primitive xiaoxiangguan_lantern
+01:06:50 | INFO: Blender create Mesh node xiaoxiangguan_silk
+01:06:50 | INFO: Draco Decoder: Decode primitive xiaoxiangguan_silk
+01:06:50 | INFO: Blender create Mesh node Mobile_yihongyuan
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_yihongyuan
+01:06:50 | INFO: Blender create Mesh node Mobile_yihongyuan_limestone
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_yihongyuan_limestone
+01:06:50 | INFO: Blender create Mesh node Mobile_yihongyuan_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_yihongyuan_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_yihongyuan_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_yihongyuan_roof
+01:06:50 | INFO: Blender create Mesh node yihongyuan_lantern
+01:06:50 | INFO: Draco Decoder: Decode primitive yihongyuan_lantern
+01:06:50 | INFO: Blender create Mesh node yihongyuan_screen.001
+01:06:50 | INFO: Draco Decoder: Decode primitive yihongyuan_screen.001
+01:06:50 | INFO: Blender create Mesh node yihongyuan_silk.001
+01:06:50 | INFO: Draco Decoder: Decode primitive yihongyuan_silk.001
+01:06:50 | INFO: Blender create Mesh node hengwuyuan_lantern
+01:06:50 | INFO: Draco Decoder: Decode primitive hengwuyuan_lantern
+01:06:50 | INFO: Blender create Mesh node hengwuyuan_screen.001
+01:06:50 | INFO: Draco Decoder: Decode primitive hengwuyuan_screen.001
+01:06:50 | INFO: Blender create Mesh node Mobile_hengwuyuan
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_hengwuyuan
+01:06:50 | INFO: Blender create Mesh node Mobile_hengwuyuan_limestone
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_hengwuyuan_limestone
+01:06:50 | INFO: Blender create Mesh node Mobile_hengwuyuan_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_hengwuyuan_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_hengwuyuan_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_hengwuyuan_roof
+01:06:50 | INFO: Blender create Mesh node Mobile_qiushuangzhai
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_qiushuangzhai
+01:06:50 | INFO: Blender create Mesh node Mobile_qiushuangzhai_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_qiushuangzhai_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_qiushuangzhai_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_qiushuangzhai_roof
+01:06:50 | INFO: Blender create Mesh node qiushuangzhai_lantern
+01:06:50 | INFO: Draco Decoder: Decode primitive qiushuangzhai_lantern
+01:06:50 | INFO: Blender create Mesh node qiushuangzhai_screen
+01:06:50 | INFO: Draco Decoder: Decode primitive qiushuangzhai_screen
+01:06:50 | INFO: Blender create Mesh node qiushuangzhai_silk.001
+01:06:50 | INFO: Draco Decoder: Decode primitive qiushuangzhai_silk.001
+01:06:50 | INFO: Blender create Mesh node daoxiangcun_screen.001
+01:06:50 | INFO: Draco Decoder: Decode primitive daoxiangcun_screen.001
+01:06:50 | INFO: Blender create Mesh node Mobile_daoxiangcun
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_daoxiangcun
+01:06:50 | INFO: Blender create Mesh node Mobile_daoxiangcun_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_daoxiangcun_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_ouxiangxie
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_ouxiangxie
+01:06:50 | INFO: Blender create Mesh node Mobile_ouxiangxie_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_ouxiangxie_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_ouxiangxie_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_ouxiangxie_roof
+01:06:50 | INFO: Blender create Mesh node ouxiangxie_screen
+01:06:50 | INFO: Draco Decoder: Decode primitive ouxiangxie_screen
+01:06:50 | INFO: Blender create Mesh node dicuiting_lantern
+01:06:50 | INFO: Draco Decoder: Decode primitive dicuiting_lantern
+01:06:50 | INFO: Blender create Mesh node Mobile_dicuiting
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_dicuiting
+01:06:50 | INFO: Blender create Mesh node Mobile_dicuiting_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_dicuiting_roof
+01:06:50 | INFO: Blender create Mesh node Mobile_luxuean
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_luxuean
+01:06:50 | INFO: Blender create Mesh node Mobile_luxuean_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_luxuean_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_tubishanzhuang
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_tubishanzhuang
+01:06:50 | INFO: Blender create Mesh node Mobile_tubishanzhuang_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_tubishanzhuang_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_tubishanzhuang_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_tubishanzhuang_roof
+01:06:50 | INFO: Blender create Mesh node tubishanzhuang_screen
+01:06:50 | INFO: Draco Decoder: Decode primitive tubishanzhuang_screen
+01:06:50 | INFO: Blender create Mesh node aojingxiguan_screen
+01:06:50 | INFO: Draco Decoder: Decode primitive aojingxiguan_screen
+01:06:50 | INFO: Blender create Mesh node Mobile_aojingxiguan
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_aojingxiguan
+01:06:50 | INFO: Blender create Mesh node Mobile_aojingxiguan_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_aojingxiguan_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_aojingxiguan_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_aojingxiguan_roof
+01:06:50 | INFO: Blender create Mesh node daguanlou_lantern
+01:06:50 | INFO: Draco Decoder: Decode primitive daguanlou_lantern
+01:06:50 | INFO: Blender create Mesh node daguanlou_screen
+01:06:50 | INFO: Draco Decoder: Decode primitive daguanlou_screen
+01:06:50 | INFO: Blender create Mesh node Mobile_daguanlou
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_daguanlou
+01:06:50 | INFO: Blender create Mesh node Mobile_daguanlou_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_daguanlou_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_daguanlou_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_daguanlou_roof
+01:06:50 | INFO: Blender create Mesh node longcuian_screen
+01:06:50 | INFO: Draco Decoder: Decode primitive longcuian_screen
+01:06:50 | INFO: Blender create Mesh node Mobile_longcuian
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_longcuian
+01:06:50 | INFO: Blender create Mesh node Mobile_longcuian_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_longcuian_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_longcuian_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_longcuian_roof
+01:06:50 | INFO: Blender create Mesh node Mobile_nuanxiangwu
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_nuanxiangwu
+01:06:50 | INFO: Blender create Mesh node Mobile_nuanxiangwu_plants
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_nuanxiangwu_plants
+01:06:50 | INFO: Blender create Mesh node Mobile_nuanxiangwu_roof
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_nuanxiangwu_roof
+01:06:50 | INFO: Blender create Mesh node nuanxiangwu_screen
+01:06:50 | INFO: Draco Decoder: Decode primitive nuanxiangwu_screen
+01:06:50 | INFO: Blender create Mesh node nuanxiangwu_silk
+01:06:50 | INFO: Draco Decoder: Decode primitive nuanxiangwu_silk
+01:06:50 | INFO: Blender create Mesh node landscape_lantern
+01:06:50 | INFO: Draco Decoder: Decode primitive landscape_lantern
+01:06:50 | INFO: Blender create Mesh node Mobile_landscape_earth
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_landscape_earth
+01:06:50 | INFO: Blender create Mesh node Mobile_landscape_bankstone
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_landscape_bankstone
+01:06:50 | INFO: Blender create Mesh node Mobile_landscape_limestone
+01:06:50 | INFO: Draco Decoder: Decode primitive Mobile_landscape_limestone
+01:06:51 | INFO: Blender create Mesh node Mobile_landscape_plants
+01:06:51 | INFO: Draco Decoder: Decode primitive Mobile_landscape_plants
+01:06:51 | INFO: Blender create Mesh node Mobile_landscape
+01:06:51 | INFO: Draco Decoder: Decode primitive Mobile_landscape
+01:06:51 | INFO: glTF import finished in 0.90s
+BUILT TERRAIN PATH CHECK 2217 height failures 0 duplicate ground surfaces 0 [] []
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+DracoDecoder | Decoded 384 vertices, 576 indices
+DracoDecoder | Decoded 5350 vertices, 5532 indices
+DracoDecoder | Decoded 1440 vertices, 1440 indices
+DracoDecoder | Decoded 5039 vertices, 5157 indices
+DracoDecoder | Decoded 1240 vertices, 1590 indices
+DracoDecoder | Decoded 366 vertices, 366 indices
+DracoDecoder | Decoded 863 vertices, 867 indices
+DracoDecoder | Decoded 6469 vertices, 6801 indices
+DracoDecoder | Decoded 426 vertices, 534 indices
+DracoDecoder | Decoded 11927 vertices, 12147 indices
+DracoDecoder | Decoded 7872 vertices, 8220 indices
+DracoDecoder | Decoded 320 vertices, 480 indices
+DracoDecoder | Decoded 24 vertices, 36 indices
+DracoDecoder | Decoded 6517 vertices, 6795 indices
+DracoDecoder | Decoded 489 vertices, 489 indices
+DracoDecoder | Decoded 1797 vertices, 2073 indices
+DracoDecoder | Decoded 11350 vertices, 11478 indices
+DracoDecoder | Decoded 320 vertices, 480 indices
+DracoDecoder | Decoded 120 vertices, 180 indices
+DracoDecoder | Decoded 72 vertices, 108 indices
+DracoDecoder | Decoded 320 vertices, 480 indices
+DracoDecoder | Decoded 24 vertices, 36 indices
+DracoDecoder | Decoded 6157 vertices, 6453 indices
+DracoDecoder | Decoded 366 vertices, 366 indices
+DracoDecoder | Decoded 1278 vertices, 1386 indices
+DracoDecoder | Decoded 10256 vertices, 10524 indices
+DracoDecoder | Decoded 5871 vertices, 6045 indices
+DracoDecoder | Decoded 1251 vertices, 1383 indices
+DracoDecoder | Decoded 6228 vertices, 6372 indices
+DracoDecoder | Decoded 320 vertices, 480 indices
+DracoDecoder | Decoded 192 vertices, 288 indices
+DracoDecoder | Decoded 24 vertices, 36 indices
+DracoDecoder | Decoded 192 vertices, 288 indices
+DracoDecoder | Decoded 1381 vertices, 1485 indices
+DracoDecoder | Decoded 4231 vertices, 4233 indices
+DracoDecoder | Decoded 1456 vertices, 1578 indices
+DracoDecoder | Decoded 144 vertices, 240 indices
+DracoDecoder | Decoded 4495 vertices, 4635 indices
+DracoDecoder | Decoded 216 vertices, 324 indices
+DracoDecoder | Decoded 1280 vertices, 1920 indices
+DracoDecoder | Decoded 624 vertices, 696 indices
+DracoDecoder | Decoded 2385 vertices, 2505 indices
+DracoDecoder | Decoded 1443 vertices, 1557 indices
+DracoDecoder | Decoded 687 vertices, 735 indices
+DracoDecoder | Decoded 4317 vertices, 4371 indices
+DracoDecoder | Decoded 828 vertices, 828 indices
+DracoDecoder | Decoded 5005 vertices, 5145 indices
+DracoDecoder | Decoded 192 vertices, 288 indices
+DracoDecoder | Decoded 192 vertices, 288 indices
+DracoDecoder | Decoded 4110 vertices, 4170 indices
+DracoDecoder | Decoded 828 vertices, 828 indices
+DracoDecoder | Decoded 4555 vertices, 4695 indices
+DracoDecoder | Decoded 4710 vertices, 4974 indices
+DracoDecoder | Decoded 1920 vertices, 2880 indices
+DracoDecoder | Decoded 44789 vertices, 45441 indices
+DracoDecoder | Decoded 3318 vertices, 3318 indices
+DracoDecoder | Decoded 78404 vertices, 78912 indices
+DracoDecoder | Decoded 192 vertices, 288 indices
+DracoDecoder | Decoded 7034 vertices, 7362 indices
+DracoDecoder | Decoded 2577 vertices, 2577 indices
+DracoDecoder | Decoded 8988 vertices, 9276 indices
+DracoDecoder | Decoded 4900 vertices, 5106 indices
+DracoDecoder | Decoded 1225 vertices, 1227 indices
+DracoDecoder | Decoded 7420 vertices, 7680 indices
+DracoDecoder | Decoded 216 vertices, 324 indices
+DracoDecoder | Decoded 48 vertices, 72 indices
+DracoDecoder | Decoded 2872 vertices, 3096 indices
+DracoDecoder | Decoded 4313 vertices, 21927 indices
+DracoDecoder | Decoded 1765 vertices, 2319 indices
+DracoDecoder | Decoded 154440 vertices, 154440 indices
+DracoDecoder | Decoded 99759 vertices, 109899 indices
+DracoDecoder | Decoded 121678 vertices, 144336 indices
+
+Blender quit

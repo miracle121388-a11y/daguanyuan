@@ -1,0 +1,126 @@
+{
+  "verifiedAt": "2026-09-10T08:19:18.336657+00:00",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "server": {
+    "id": "6a8eee0bb11fb81fb4aaca05",
+    "name": "Aliyun California 4C 8GB",
+    "city": "Los Angeles",
+    "country": "US",
+    "regionId": "server-6a8eee0bb11fb81fb4aaca05"
+  },
+  "projectId": "6aa142fb6c3d9581b71560ed",
+  "serviceId": "6aa143296c3d9581b71560fa",
+  "environmentId": "6aa142fbda9bc245fba1e845",
+  "deploymentId": "6aa26124c412702139fcc1c1",
+  "cliDeploymentStatus": "RUNNING",
+  "cliDomainStatus": "PROVISIONED",
+  "health": {
+    "status": "ok",
+    "application": "daguanyuan-rumeng",
+    "revision": "spatial-garden-20260910-r5"
+  },
+  "files": [
+    {
+      "path": "models/overview.glb",
+      "sha256": "d7f3cdf448c4c52943a4094c043b68e74e746c0b69d71dbb4cc403b1279b0ea0",
+      "bytes": 3790740,
+      "matchesLocal": true
+    },
+    {
+      "path": "models/overview-low.glb",
+      "sha256": "d7f3cdf448c4c52943a4094c043b68e74e746c0b69d71dbb4cc403b1279b0ea0",
+      "bytes": 3790740,
+      "matchesLocal": true
+    },
+    {
+      "path": "scene-manifest.json",
+      "sha256": "8cd3509bc6f492b423d07c4276991104a7687d5ef07d491d41ed35f79d683f25",
+      "bytes": 282138,
+      "matchesLocal": true
+    },
+    {
+      "path": "models/places-low/xiaoxiangguan.glb",
+      "sha256": "4c8e3f8cac6e939e0273232a55dff955a777d6f9a9abc35ab5472db28e4f7f34",
+      "bytes": 1736132,
+      "matchesLocal": true
+    },
+    {
+      "path": "textures/vegetation/canopy-atlas.webp",
+      "sha256": "4cc6a0f9c0adbd88a1fb69f5e71ad9caa13839127e4567680f95cb8a833595fc",
+      "bytes": 604062,
+      "matchesLocal": true
+    },
+    {
+      "path": "textures/forest_grove.hdr",
+      "sha256": "a5fd9cc71e5d6717f8d65b5ca8dce74bc8d8e01048d34604894550e0c9123e95",
+      "bytes": 118136,
+      "matchesLocal": true
+    },
+    {
+      "path": "art/manifest.json",
+      "sha256": "164d62522d8cbff59253d1dc767952a007cd6a9f1d7e64efbd28ab3b61b378f3",
+      "bytes": 43487,
+      "matchesLocal": true
+    },
+    {
+      "path": "art/garden-aerial-day.webp",
+      "sha256": "73603aa3751606adb060cc55b4f16c4fb7b9fdb6d8746c736ae809a92c6eb432",
+      "bytes": 487486,
+      "matchesLocal": true
+    },
+    {
+      "path": "textures/shared/007e4d39e147be302f7797b406ab41922be4f39d866ad61ca7269645096a2f33.jpg",
+      "sha256": "007e4d39e147be302f7797b406ab41922be4f39d866ad61ca7269645096a2f33",
+      "bytes": 105524,
+      "matchesLocal": true
+    },
+    {
+      "path": "data/sources.json",
+      "sha256": "55d56b810e3cf82fb0999e2cc1b2cc41ea5369217e84e3ac057de0aa6766fa10",
+      "bytes": 52471,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/GardenScene-BWqHZ73S.js",
+      "sha256": "af30ee9a6e81de695ef43a377ff597ef4460b0d350fd42b8f3bee2896a150d16",
+      "bytes": 720537,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/index-D560HuoI.js",
+      "sha256": "c7dbdb392375f7ce01b32e4f75ff625df07985454fcba1a8a03198d9ec620190",
+      "bytes": 657982,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/index-DTZ0A3L8.css",
+      "sha256": "7ff6306234ad58bfaf7d24eb7b5017630950eeab9899c3734794fabe9cc7943f",
+      "bytes": 42961,
+      "matchesLocal": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "f62e0086c6e31101c98b225419e028a06b000568aff8f9c3df31db3adb9917f9",
+      "bytes": 1222,
+      "matchesLocal": true
+    }
+  ],
+  "responseHeaders": "HTTP/1.1 200 OK\r\nAlt-Svc: h3=\":443\"; ma=3600\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Encoding: gzip\r\nContent-Length: 840\r\nContent-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Thu, 10 Sep 2026 08:19:18 GMT\r\nEtag: \"348-1a08a4c5348\"\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Zeabur-Ip-Country: SG\r\nX-Zeabur-Request-Id: 6620d7b0-a1f8-44b7-a847-8d4754655e36\r\n\r\n",
+  "dns": {
+    "publicAddress": "47.89.212.251",
+    "source": "Google DNS over HTTPS queried during this verification",
+    "browserOverrideUsed": true,
+    "osDnsChanged": false
+  },
+  "tlsVerificationEnabled": true,
+  "browserQuicDisabled": true,
+  "productionSmoke": "production-smoke.json",
+  "requestTimeoutSeconds": 180,
+  "browserObservationTimeoutMs": 90000,
+  "desktopReadyMs": 31007,
+  "mobileReadyMs": 52311,
+  "defaultNetworkSmokeLog": "r5-production-default.log",
+  "standardResolvedSmokeLog": "r5-production-resolved.log",
+  "newServerPurchased": false,
+  "credentialsIncluded": false
+}

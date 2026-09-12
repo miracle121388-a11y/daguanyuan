@@ -1,0 +1,239 @@
+{
+  "method": "Fresh image datablocks loaded from the current swatch files, packed into the saved master and used for both detailed and baked exports. Geometry and Manual_Adjustments preserved.",
+  "files": [
+    {
+      "role": "wood",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/wood_diff.png",
+      "sha256": "13c3f3255c3135075b28be1a11acb62cc011af5340ec988eae105b7adbda265f"
+    },
+    {
+      "role": "wood",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/wood_nor_gl.png",
+      "sha256": "9f3e2bf472a7709cee93b13cb4314ef7c89828b20935e3d538cf1feb174470f2"
+    },
+    {
+      "role": "wood",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/wood_rough.png",
+      "sha256": "ef5a438efd0a330f1341acf0ac11cc74c3d699bb1ea5dff8fd6199fed63c003d"
+    },
+    {
+      "role": "darkwood",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/darkwood_diff.png",
+      "sha256": "f8f0aa8fd6798d441c72019ea271878b2afc648f9be434a98d692e02ccfb04e3"
+    },
+    {
+      "role": "darkwood",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/darkwood_nor_gl.png",
+      "sha256": "9f3e2bf472a7709cee93b13cb4314ef7c89828b20935e3d538cf1feb174470f2"
+    },
+    {
+      "role": "darkwood",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/darkwood_rough.png",
+      "sha256": "ef5a438efd0a330f1341acf0ac11cc74c3d699bb1ea5dff8fd6199fed63c003d"
+    },
+    {
+      "role": "latticewood",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/latticewood_diff.png",
+      "sha256": "d3aab900d0ee496a0b1778d248f4ef90c1a364ac02bec253dfada8fccc841a9b"
+    },
+    {
+      "role": "latticewood",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/latticewood_nor_gl.png",
+      "sha256": "9f3e2bf472a7709cee93b13cb4314ef7c89828b20935e3d538cf1feb174470f2"
+    },
+    {
+      "role": "latticewood",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/latticewood_rough.png",
+      "sha256": "ef5a438efd0a330f1341acf0ac11cc74c3d699bb1ea5dff8fd6199fed63c003d"
+    },
+    {
+      "role": "floorwood",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/floorwood_diff.png",
+      "sha256": "284e101d9f14ba0ac44512c52c1e7e8d06f1d14ae6e1992209b28d5d7aa5507d"
+    },
+    {
+      "role": "floorwood",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/floorwood_nor_gl.png",
+      "sha256": "cc38171aa1e2c0aca16e351b884bfba632b610033e43c848fc3eb5fbae0f6150"
+    },
+    {
+      "role": "floorwood",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/floorwood_rough.png",
+      "sha256": "53d4b2dbd5309ae0cc53c9e436bde52a835f35e528d3c697c4385a204c9c39ee"
+    },
+    {
+      "role": "furniture",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/furniture_diff.png",
+      "sha256": "34967c20cd92ed915ae6d2031479b5286f3c4309738e3399abdba401cce44123"
+    },
+    {
+      "role": "furniture",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/furniture_nor_gl.png",
+      "sha256": "cc38171aa1e2c0aca16e351b884bfba632b610033e43c848fc3eb5fbae0f6150"
+    },
+    {
+      "role": "furniture",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/furniture_rough.png",
+      "sha256": "bb5afb49bde62351aac6296934af634433c30d8618240e1ff50a3093b850aa4a"
+    },
+    {
+      "role": "roof",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/roof_diff.png",
+      "sha256": "cc382e284b90d5ab14235008c23f57fe044b756d7a865752277f794a0034e23d"
+    },
+    {
+      "role": "roof",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/roof_nor_gl.png",
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "role": "roof",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/roof_rough.png",
+      "sha256": "262dceeb2b0a0ecb96f821c6dedd6af4e59181ae561c457e596454e674474eb4"
+    },
+    {
+      "role": "tile",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/tile_diff.png",
+      "sha256": "e40425c7b9079fdb4df12e1d905115f5350cf1278280f8295485ff039d6d8e4a"
+    },
+    {
+      "role": "tile",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/tile_nor_gl.png",
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "role": "tile",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/tile_rough.png",
+      "sha256": "dc7da1df7bd9a6a4132bf63b337dcdbc6de2432ea00b25cba3eaec27905aadfb"
+    },
+    {
+      "role": "tilelight",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/tilelight_diff.png",
+      "sha256": "cc4de835f51b4da36bd55e17c14352dd22dbcb73b65368afdccd0a0e43bd15fb"
+    },
+    {
+      "role": "tilelight",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/tilelight_nor_gl.png",
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "role": "tilelight",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/tilelight_rough.png",
+      "sha256": "f3d35e07cd202d123ced6f1f70a6e85c86791c03cfcfe26dd2797cfd5675324a"
+    },
+    {
+      "role": "tiledark",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/tiledark_diff.png",
+      "sha256": "63c26f2edfde4e66c152786c48802eb57647d61b81924e9d5cd525b586f7427e"
+    },
+    {
+      "role": "tiledark",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/tiledark_nor_gl.png",
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "role": "tiledark",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/tiledark_rough.png",
+      "sha256": "6d7fb548f99f6de8d7f1af94efdbc2ce16cb67ed94086bc6b53cc722c3f53974"
+    },
+    {
+      "role": "cutstone",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/cutstone_diff.png",
+      "sha256": "c087f3c52a11dac3640930fc054b2cd640e324c85231b3466c972e32022f978c"
+    },
+    {
+      "role": "cutstone",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/cutstone_nor_gl.png",
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398"
+    },
+    {
+      "role": "cutstone",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/cutstone_rough.png",
+      "sha256": "b66f3075e44d10dd69d24738f3a2cabb8dbd705a2605d3a9f9fe3e51a33d8be3"
+    },
+    {
+      "role": "paving",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/paving_diff.png",
+      "sha256": "aa21cfd2416e9d933e3cd55b7c38d7684885765c118b870e9aa3bbbd6499930a"
+    },
+    {
+      "role": "paving",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/paving_nor_gl.png",
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398"
+    },
+    {
+      "role": "paving",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/paving_rough.png",
+      "sha256": "b66f3075e44d10dd69d24738f3a2cabb8dbd705a2605d3a9f9fe3e51a33d8be3"
+    },
+    {
+      "role": "bankstone",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/bankstone_diff.png",
+      "sha256": "506e605a4e6928d1ca0e00dfbbf733465c83a4fdd25e746a0f466bda0dfbf4eb"
+    },
+    {
+      "role": "bankstone",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/bankstone_nor_gl.png",
+      "sha256": "ee003b538830afb0c6d3de94358fea501da6f6f6267dbc6a216fe93d22a11a74"
+    },
+    {
+      "role": "bankstone",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/bankstone_rough.png",
+      "sha256": "7a349e10d21ef678b80f7cda5561eae3567068777aa5cbe97487921a03efb332"
+    },
+    {
+      "role": "stone",
+      "channel": "diff",
+      "file": "assets/processed/materials-r9/stone_diff.png",
+      "sha256": "fa5f0a0b431c0da4140907cc86da4ff288e8323e851d72ee8aa7d2898d26cd01"
+    },
+    {
+      "role": "stone",
+      "channel": "nor_gl",
+      "file": "assets/processed/materials-r9/stone_nor_gl.png",
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398"
+    },
+    {
+      "role": "stone",
+      "channel": "rough",
+      "file": "assets/processed/materials-r9/stone_rough.png",
+      "sha256": "b66f3075e44d10dd69d24738f3a2cabb8dbd705a2605d3a9f9fe3e51a33d8be3"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "recordedAt": "2026-09-10T09:54:26.048230+00:00",
+  "revision": "spatial-garden-20260910-r6",
+  "priorities": [
+    "courtyard locations",
+    "water and land boundary",
+    "connected roads"
+  ],
+  "geometry": {
+    "spatialChecks": 319,
+    "terrainRoadChecks": 2217,
+    "mobileTerrainRoadChecks": 2217,
+    "integrityChecks": 1739,
+    "publishedModels": 36,
+    "blenderMeshes": 1871,
+    "packedImages": 57,
+    "manualAdjustmentsPreserved": true
+  },
+  "functionalTests": {
+    "e2e": {
+      "startTime": "2026-09-10T09:36:48.624Z",
+      "duration": 142210.133,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "e2eLog": "r6-hotspot-e2e.log",
+    "unitPassed": 6,
+    "productionReport": "production-smoke.json",
+    "hotspotTap": true,
+    "equivalentDetailPicker": true
+  },
+  "visual": {
+    "disposition": "rebuild",
+    "fullReview": "reports/acceptance/r6-full-review.md",
+    "limitedHotspotVerdict": "reports/acceptance/r6-hotspot-verdict.md",
+    "fullyMeetsUserQualityBar": false,
+    "seedRawEvidenceVerified": false
+  },
+  "deployment": {
+    "deploymentId": "6aa27c5ae720e7453f3aeafa",
+    "serverId": "6a8eee0bb11fb81fb4aaca05",
+    "matchingPublicFiles": 15,
+    "url": "https://daguanyuan-rumeng.zeabur.app/"
+  },
+  "network": {
+    "recordedAt": "2026-09-10T09:51:26.999312+00:00",
+    "host": "daguanyuan-rumeng.zeabur.app",
+    "revision": "spatial-garden-20260910-r6",
+    "defaultBrowser": {
+      "passed": false,
+      "error": "net::ERR_CONNECTION_CLOSED",
+      "log": "r6-production-default.log"
+    },
+    "resolvedBrowserStandard": {
+      "passed": true,
+      "observationTimeoutMs": 90000,
+      "desktopReadyMs": 9645,
+      "mobileReadyMs": 11924,
+      "log": "r6-production-resolved.log",
+      "report": "production-smoke.json"
+    },
+    "systemDnsObserved": "198.18.0.132",
+    "publicDnsObserved": "47.89.212.251",
+    "publicDnsSource": "Google DNS over HTTPS queried before r6 public smoke",
+    "virtualAdapterObserved": {
+      "name": "Mihomo",
+      "dnsServers": [
+        "198.18.0.2"
+      ]
+    },
+    "directResolvedTlsHealth": {
+      "status": "ok",
+      "revision": "spatial-garden-20260910-r6"
+    },
+    "defaultConnectionFixed": false,
+    "osNetworkChanged": false,
+    "proxyConfigurationChanged": false,
+    "domainOnlyProxyRepair": "Prepared in access-repair-preview.patch; user authorization pending; not applied",
+    "transportIsolationProbe": {
+      "file": "public-transport-probe.json",
+      "servedRevision": "spatial-garden-20260910-r5",
+      "dnsOverrideOnlyPassed": true,
+      "disableQuicOnlyPassed": false,
+      "scope": "Health endpoint only, recorded before r6; not a current 3D test"
+    },
+    "tlsVerificationEnabled": true,
+    "browserQuicDisabled": true,
+    "sceneReadyMethod": "Production semantic data-scene-ready waits for overview and crown atlas readiness; absence of loading UI alone is not used.",
+    "limitations": "These results concern this Windows network and desktop touch emulation. They neither certify all visitors nor establish the precise internal cause in Mihomo. Historical failures remain archived.",
+    "earlierSystemDnsObserved": "198.18.0.124"
+  },
+  "designDocumentation": [
+    "DESIGN.md",
+    ".impeccable/design.json"
+  ],
+  "completeUserObjective": false
+}

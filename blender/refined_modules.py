@@ -76,8 +76,13 @@ def desk(b,x,y,z=1.5,w=4,d=1.3,marble=False):
  b.box('darkwood',(x+.7,y-.15,z+.18),(.45,.32,.07));vase(b,x+w*.3,y,z+.14,.28,'wood')
  for i in range(7):b.rod('wood',(x+w*.3+.04*math.sin(i),y+.05*math.cos(i),z+.3),(x+w*.3+math.sin(i)*.12,y+math.cos(i)*.12,z+.9+i%3*.08),.016,4)
 
+def bound_book(b,x,y,z,w=.48,d=.34,h=.055,seed=0):
+ from interior_craft import bound_book as build
+ build(b,x,y,z,w,d,h,seed)
+
 def lattice(b,x,y,z,w=2,h=2.6,pattern='grid',paper=True):
- b.box('darkwood',(x,y,z),(w+.14,.12,h+.14))
+ for dx in [-w/2-.035,w/2+.035]:b.box('darkwood',(x+dx,y,z),(.07,.16,h+.14))
+ for dz in [-h/2-.035,h/2+.035]:b.box('darkwood',(x,y,z+dz),(w,.16,.07))
  # Front frame is not filled with an opaque timber block.
  if paper:b.box('silk' if pattern=='bamboo' else 'screen',(x,y-.071,z),(w-.1,.014,h-.1))
  else:b.box('paper',(x,y+.035,z),(w-.1,.014,h-.1))
@@ -101,7 +106,7 @@ def roof(b,x,y,z,w,d,h=2.25,detail=True,rolled=False,thatch=False):
    for i in range(int(w*6)):
     xx=x-w/2+i/6;b.rod('clay' if i%4 else 'thatch',(xx,y,z+h+.05),(xx+.1*math.sin(i),y+sy*(d/2+1),z-.15),.035,3)
   return
- ridge=max(.4,w/2-d*.32);steps=10;cols=max(8,int(w/.38))
+ ridge=max(.4,w/2-d*.32);steps=max(10,int((d/2+1)/.32));cols=max(8,int(w/.20))
  def point(u,t,sy,lift=0):
   half=ridge+(w/2+1-ridge)*t;zz=z+h*(1-t)**1.7+.34*t**8
   if rolled:zz=z+h*math.cos(t*math.pi/2)**1.1+.18*t**8
@@ -126,7 +131,8 @@ def roof(b,x,y,z,w,d,h=2.25,detail=True,rolled=False,thatch=False):
      t=j/steps;t2=(j+1)/steps
      vs=[point(u,t,sy,.04),point(u+du/2,t,sy,.105),point(u+du,t,sy,.04),point(u,t2,sy,.04),point(u+du/2,t2,sy,.105),point(u+du,t2,sy,.04)]
      faces=[(0,1,4,3),(1,2,5,4)];faces=faces if sy==1 else [tuple(reversed(f)) for f in faces]
-     b.mesh(['tile','tilelight','tiledark'][(i+j*3)%3],vs,faces)
+     choice=(i*71+j*137+i*j*17)%23
+     b.mesh('tilelight' if choice==0 else 'tiledark' if choice<4 else 'tile',vs,faces)
    for i in range(cols+1):
     p=point(-1+2*i/cols,1,sy,.04);b.rod('tiledark',(p[0],p[1]-.1*sy,p[2]),(p[0],p[1]+.15*sy,p[2]),.078,7)
   rafter_count=max(6,int(w/.65))
@@ -212,17 +218,30 @@ def paving(b,x,y,w,d,pebbles=False):
    yy=y-d/2+i*.48;xx=x+math.sin(i*.45)*.65
    for j in range(4):b.ellipsoid('paving' if j%3 else 'stone',(xx+(j-1.5)*.28,yy,.13),(.13,.21,.045),i*7+j,rings=2,n=5)
  else:
-  for row in range(max(1,int(d/.9))):
-   for col in range(max(1,int(w/1.5))):b.box('paving' if rng.random()>.2 else 'stone',(x-w/2+.76+col*1.5+(row%2)*.13,y-d/2+.46+row*.9,.105),(1.43,.84,.07))
+  # A continuous bedding course survives LOD reduction of the individual stones.
+  # Its footprint equals the existing pavement; routes and court levels are fixed.
+  b.box('courtbase',(x,y,.080),(w,d,.022))
+  rows=max(1,round(d/1.1));height=d/rows
+  for row in range(rows):
+   start=x-w/2;offset=.65 if row%2 else 0
+   while start<x+w/2-.02:
+    width=min(1.8-offset,x+w/2-start);offset=0
+    b.box('paving',(start+width/2,y-d/2+(row+.5)*height,.114),(width-.018,height-.018,.046))
+    start+=width
 
 def courtyard(b,style,detail=True):
- b.box('earth',(0,1,-.04),(34,37,.23))
+ # The unified landscape supplies the courtyard soil. A second coplanar slab
+ # here caused depth interference and checker patterns in both device tiers.
  for a,c in [((-16,-13),(-16,19)),((16,-13),(16,19)),((-16,19),(16,19))]:gardenwall(b,a,c)
  core.moon_gate(b)
  if style=='bamboo':
   hall(b,0,7,13.2,6.4,3.6,bays=3,style='bamboo')
   # One bright central bay, two private side bays; rear retreat and spring channel.
-  for x in [-2.2,2.2]:b.box('wood',(x,7,2.1),(.10,6,3.1))
+  for x in [-2.2,2.2]:
+   b.box('plaster',(x,7,2.1),(.10,6,3.1))
+   b.box('darkwood',(x,7,.95),(.13,6,.80))
+   for y in [4,6,8,10]:b.box('wood',(x,y,2.1),(.14,.08,3.1))
+   for z in [1.4,3.62]:b.box('wood',(x,7,z),(.14,6,.08))
   corridor(b,[(-12,-10),(-12,2),(-7,2)],1.8,2.8)
   hall(b,7.5,16,8,3.2,2.55,bays=2,style='bamboo')
   tree(b,-7,15,.8,True,3);banana(b,12.5,14,.85)
@@ -234,9 +253,14 @@ def courtyard(b,style,detail=True):
    b.mesh('water',[tuple(a-side),tuple(c-side),tuple(c+side),tuple(a+side)],[(0,1,2,3)])
    for sign in [-1,1]:b.rod('moss',a+side*sign,c+side*sign,.07,5)
   desk(b,-3,7,1.45,3.2);b.box('wood',(4,8,1.0),(3.1,1.8,.25))
+  # A small hanging bamboo study belongs to the interpreted side-room furnishings.
+  from interior_craft import ink_scroll
+  from reference_world import transform
+  transform(b,lambda:ink_scroll(b,0,0,2.55,.72,1.3,31),(-2.28,8,0),-math.pi/2)
   for k in range(4):
    b.box('wood',(-5.8,8,1+k*.65),(1.1,2,.10))
-   for j in range(7):b.box('paper',(-5.8,7.2+j*.23,1.18+k*.65),(.8,.13,.28))
+   for j in range(3):
+    for layer in range(2+(j+k)%3):bound_book(b,-5.8,7.35+j*.6,1.06+k*.65+layer*.065,.78,.48,.055,j+k)
  elif style=='flower':
   hall(b,0,9,20,8,4.3,bays=5,style='flower')
   corridor(b,[(-13,-11),(-13,4),(-10,4)],2.1,3.0);corridor(b,[(13,-11),(13,4),(10,4)],2.1,3.0)
@@ -253,7 +277,8 @@ def courtyard(b,style,detail=True):
   paving(b,-8,-2,2.5,17);paving(b,8,-2,2.5,17)
   for i in range(75):
    a=i*2.399;r=3+i%5*1.4;p=(math.cos(a)*r,math.sin(a)*r-1,.2)
-   for j in range(4):leaf(b,p,(math.cos(a+j),math.sin(a+j),.6),.65,.09,'lightleaf')
+   from r12_botany import herb_patch
+   herb_patch(b,*p,i)
   for x in [-11,11]:
    for j in range(16):leaf(b,(x,2+j*.3,1.2+math.sin(j)*.4),(0,1,-.4),.8,.2,'leaf')
   desk(b,0,10,1.5,3);vase(b,1,10,1.67,.36,'clay',True)

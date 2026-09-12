@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-11T16:23:30.439744+00:00",
+  "revision": "spatial-garden-20260911-r7",
+  "spatial": 319,
+  "integrity": 1851,
+  "unit": 6,
+  "optimizedGLBs": 37,
+  "master": {
+    "meshes": 4298,
+    "packedImages": 75,
+    "missingImages": 0,
+    "Manual_Adjustments": true
+  },
+  "groundSamples": {
+    "master": 2217,
+    "mobile": 2217,
+    "heightFailures": 0,
+    "duplicateGroundFailures": 0
+  },
+  "rasterProvenance": {
+    "files": 92,
+    "missing": 0
+  },
+  "formalBuild": true,
+  "formalLocalSmoke": "r7-packaged-production-smoke.json",
+  "e2e": {
+    "otherTen": "r7-e2e-ten-passed.json",
+    "targetedRemainingPass": "r7-picking-e2e.log",
+    "scope": "All11 distinct tests covered by10 passes in full run plus1 targeted pass after updating real-user picking setup. Not a single fresh11-pass suite."
+  },
+  "mobile": {
+    "loadedMs": 9888.800000011921,
+    "initialMiB": 7.790794372558594,
+    "conditions": "390x844;9Mbps;80ms;CPU4;DPR3/render1;emulated"
+  },
+  "visualReview": {
+    "disposition": "rebuild",
+    "report": "reports/acceptance/r7-full-review.md",
+    "completed": true
+  },
+  "publicDeployment": "notUploaded;originalZeaburAuth401",
+  "goalComplete": false
+}

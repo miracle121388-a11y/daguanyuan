@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported paving_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "paving_rough",
+  "sourcePixelSha256": "e2089691d8fd93f27c31febd9063d11c47c7b4cb60edc3c66d3323807e4f7672",
+  "sha256": "aaaf65eed949a9d41d06bead93154c786558f4d341075ab969742d03a0874dbc",
+  "prompt": "Blender-exported paving_rough material map. Derived from CC0 Poly Haven sources; r8_ maps are Blender material swatches with their physical scale and processing in config/craft.materials.json and assets/processed/materials-r8/manifest.json. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

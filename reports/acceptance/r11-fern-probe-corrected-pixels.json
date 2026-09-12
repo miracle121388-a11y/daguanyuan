@@ -1,0 +1,32 @@
+{
+  "method": "Final corrected native RGBA packing, actual exported GLB decoded with Pillow; first failed alpha pack and the previous dark generated-image attempt are retained separately.",
+  "rows": [
+    {
+      "variant": 0,
+      "visibleLeafRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    },
+    {
+      "variant": 1,
+      "visibleLeafRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

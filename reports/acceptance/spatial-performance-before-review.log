@@ -1,0 +1,15 @@
+{
+  high: {
+    meanMs: 46.69919354838109,
+    p95Ms: 78.29999999701977,
+    drawCalls: 99,
+    triangles: 1157554,
+    renderer: 'ANGLE (Intel, Intel(R) UHD Graphics (0x0000A78B) Direct3D11 vs_5_0 ps_5_0, D3D11)'
+  },
+  low: {
+    meanMs: 24.629000000009935,
+    p95Ms: 52,
+    drawCalls: 41,
+    triangles: 186592
+  }
+}

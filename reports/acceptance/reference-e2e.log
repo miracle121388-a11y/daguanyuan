@@ -1,0 +1,68 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:120160) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:101144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:96836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:91156) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:106004) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\e2e\gallery.spec.ts:2:1 › gallery retries a failed manifest and distinguishes spoiler-empty results (11.6s)
+  ok 2 tests\e2e\gallery.spec.ts:7:1 › 320px sources entry retains its accessible name (616ms)
+  ok 3 tests\e2e\garden.spec.ts:6:1 › published scene, real canvas picking, literary links, all tours, settings and screenshots (1.2m)
+  ok 4 tests\e2e\garden.spec.ts:19:1 › mobile bottom drawer and usable controls (7.7s)
+  ok 5 tests\e2e\garden.spec.ts:20:1 › model failure exposes retry and recovers (6.7s)
+  x  6 tests\e2e\garden.spec.ts:21:1 › tour shows sourced stop content, travels, and arrives at the next stop (15.7s)
+(node:124988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 7 tests\e2e\interior.spec.ts:2:1 › interior inspection lifts the roof and restores the complete courtyard (14.3s)
+  ok 8 tests\e2e\mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard (20.7s)
+  ok 9 tests\e2e\mobile.spec.ts:24:1 › 320px phone controls remain inside the viewport (2.7s)
+
+
+  1) tests\e2e\garden.spec.ts:21:1 › tour shows sourced stop content, travels, and arrives at the next stop 
+
+    Error: expect(locator).not.toBeVisible() failed
+
+    Locator:  locator('.detail-panel')
+    Expected: not visible
+    Received: visible
+    Timeout:  12000ms
+
+    Call log:
+      - Expect "not toBeVisible" locator('.detail-panel') with timeout 12000ms
+      - waiting for locator('.detail-panel')
+        27 × locator resolved to <aside aria-label="选中内容详情" class="detail-panel" data-testid="detail-panel">…</aside>
+           - unexpected value "visible"
+
+
+      23 |  await expect(page.locator('.detail-scroll h2')).toHaveText('大观园入口');
+      24 |  await expect(page.locator('.detail-panel')).toContainText('地点来源');
+    > 25 |  await expect(page.locator('.detail-panel')).not.toBeVisible({timeout:12000});
+         |                                                  ^
+      26 |  await expect.poll(async()=>(await state(page)).tour.index,{timeout:30000}).toBe(1);
+      27 |  await expect(page.locator('.detail-scroll h2')).toHaveText('曲径通幽');
+      28 |  await page.getByRole('button',{name:'暂停',exact:true}).click();
+        at D:\Users\Lenovo\Desktop\大观园\tests\e2e\garden.spec.ts:25:50
+
+    Error Context: test-results\garden-tour-shows-sourced--6cd9a-nd-arrives-at-the-next-stop\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\garden-tour-shows-sourced--6cd9a-nd-arrives-at-the-next-stop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\garden-tour-shows-sourced--6cd9a-nd-arrives-at-the-next-stop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\e2e\garden.spec.ts:21:1 › tour shows sourced stop content, travels, and arrives at the next stop 
+  8 passed (2.8m)

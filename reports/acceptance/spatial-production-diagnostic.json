@@ -1,0 +1,201 @@
+{
+  "at": "2026-09-10T05:35:37.577Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "dnsOverride": "47.89.212.251",
+  "tlsVerification": true,
+  "body": "跳转到园林内容\n大观\n大观园·入梦\n一园山水，满纸红楼\n园林漫游\n人物群像\n回目拾遗\n园景图录\n来源与说明\n01\n大观园入口\n03\n潇湘馆\n04\n怡红院\n05\n蘅芜苑\n06\n秋爽斋\n08\n藕香榭\n13\n大观楼\n14\n栊翠庵\n15\n暖香坞\n园\n山水渐入眼前\n\n正在展开园林 · 0%\n\n一园山水\n\n沿一湾曲水，走入红楼深处。\n\n晨光\n月夜\n俯瞰\n园图\n俯瞰\n精细园景\n\n拖动旋转 · 滚轮缩放 · 右键平移\n\n依据原著整理的文学空间再现\n红楼拾遗\n22 段有出处的故事\n选一条路，慢慢走\n园林初览\n诗社与雅集\n刘姥姥游园\n从曲径到四处院落，读一遍园林的性情。\n7 处停留 · 策划路线，非原著完整行迹\n开始游园",
+  "pending": [
+    {
+      "path": "/textures/forest_grove.hdr",
+      "at": 6184
+    },
+    {
+      "path": "/models/overview.glb",
+      "at": 6184
+    },
+    {
+      "path": "/textures/vegetation/canopy-render.png",
+      "at": 6184
+    },
+    {
+      "path": "/textures/vegetation/canopy-east.png",
+      "at": 6184
+    },
+    {
+      "path": "/textures/vegetation/canopy-back.png",
+      "at": 6184
+    },
+    {
+      "path": "/textures/vegetation/canopy-west.png",
+      "at": 6184
+    },
+    {
+      "path": "/textures/vegetation/canopy-top.png",
+      "at": 6184
+    }
+  ],
+  "events": [
+    {
+      "path": "/",
+      "at": 809,
+      "status": 200
+    },
+    {
+      "path": "/",
+      "at": 819,
+      "status": "finished"
+    },
+    {
+      "path": "/assets/index-DTZ0A3L8.css",
+      "at": 1076,
+      "status": 200
+    },
+    {
+      "path": "/assets/index-DTZ0A3L8.css",
+      "at": 1076,
+      "status": "finished"
+    },
+    {
+      "path": "/assets/index-Dt3Pf8Vx.js",
+      "at": 2132,
+      "status": 200
+    },
+    {
+      "path": "/assets/index-Dt3Pf8Vx.js",
+      "at": 2132,
+      "status": "finished"
+    },
+    {
+      "path": "/data/sources.json",
+      "at": 2784,
+      "status": 200
+    },
+    {
+      "at": 2785,
+      "console": "Failed to load resource: the server responded with a status of 404 ()"
+    },
+    {
+      "path": "/data/places.json",
+      "at": 2785,
+      "status": 200
+    },
+    {
+      "path": "/data/routes.json",
+      "at": 2785,
+      "status": 200
+    },
+    {
+      "path": "/data/characters.json",
+      "at": 2785,
+      "status": 200
+    },
+    {
+      "path": "/data/relations.json",
+      "at": 2785,
+      "status": 200
+    },
+    {
+      "path": "/data/sources.json",
+      "at": 2786,
+      "status": "finished"
+    },
+    {
+      "path": "/data/events.json",
+      "at": 2786,
+      "status": 200
+    },
+    {
+      "path": "/scene-manifest.json",
+      "at": 2786,
+      "status": 200
+    },
+    {
+      "path": "/data/places.json",
+      "at": 2786,
+      "status": "finished"
+    },
+    {
+      "path": "/data/routes.json",
+      "at": 2786,
+      "status": "finished"
+    },
+    {
+      "path": "/data/characters.json",
+      "at": 2786,
+      "status": "finished"
+    },
+    {
+      "path": "/data/relations.json",
+      "at": 2786,
+      "status": "finished"
+    },
+    {
+      "path": "/data/events.json",
+      "at": 2786,
+      "status": "finished"
+    },
+    {
+      "path": "/scene-manifest.json",
+      "at": 3315,
+      "status": "finished"
+    },
+    {
+      "path": "/art/manifest.json",
+      "at": 3593,
+      "status": 200
+    },
+    {
+      "path": "/art/manifest.json",
+      "at": 3593,
+      "status": "finished"
+    },
+    {
+      "path": "/assets/GardenScene-ee33HI67.js",
+      "at": 6051,
+      "status": 200
+    },
+    {
+      "path": "/assets/GardenScene-ee33HI67.js",
+      "at": 6051,
+      "status": "finished"
+    },
+    {
+      "path": "/textures/forest_grove.hdr",
+      "at": 6437,
+      "status": 200
+    },
+    {
+      "path": "/models/overview.glb",
+      "at": 6774,
+      "status": 200
+    },
+    {
+      "path": "/textures/vegetation/canopy-render.png",
+      "at": 15094,
+      "status": 200
+    },
+    {
+      "path": "/textures/vegetation/canopy-east.png",
+      "at": 15094,
+      "status": 200
+    },
+    {
+      "path": "/textures/vegetation/canopy-back.png",
+      "at": 24574,
+      "status": 200
+    },
+    {
+      "path": "/textures/vegetation/canopy-west.png",
+      "at": 24574,
+      "status": 200
+    },
+    {
+      "path": "/textures/vegetation/canopy-top.png",
+      "at": 24574,
+      "status": 200
+    },
+    {
+      "error": "locator.waitFor: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.loading') to be hidden\u001b[22m\n\u001b[2m    120 × locator resolved to visible <div role=\"status\" class=\"loading\">…</div>\u001b[22m\n"
+    }
+  ]
+}

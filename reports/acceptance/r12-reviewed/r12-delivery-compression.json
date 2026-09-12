@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-12T10:29:17.582Z",
+  "url": "http://127.0.0.1:4283/",
+  "resource": "scene-manifest.json",
+  "sourceBytes": 1378683,
+  "passed": true,
+  "results": [
+    {
+      "accept": "br",
+      "encoding": "br",
+      "bytes": 339434,
+      "decodedSha256": "c94bfab8f8a00a655b1d38897fa589802ea33c3f2aeb68af4468cea49a97b033",
+      "etag": "\"52dea-1a09527ba54-br\"",
+      "headMatches": true,
+      "conditional304": true
+    },
+    {
+      "accept": "gzip",
+      "encoding": "gzip",
+      "bytes": 345790,
+      "decodedSha256": "c94bfab8f8a00a655b1d38897fa589802ea33c3f2aeb68af4468cea49a97b033",
+      "etag": "\"15097b-1a0951909cd-gzip\"",
+      "headMatches": true,
+      "conditional304": true
+    },
+    {
+      "accept": "identity",
+      "encoding": "identity",
+      "bytes": 1378683,
+      "decodedSha256": "c94bfab8f8a00a655b1d38897fa589802ea33c3f2aeb68af4468cea49a97b033",
+      "etag": "\"15097b-1a0951909cd-identity\"",
+      "headMatches": true,
+      "conditional304": true
+    },
+    {
+      "accept": "gzip;q=0, br;q=0",
+      "encoding": "identity",
+      "bytes": 1378683,
+      "decodedSha256": "c94bfab8f8a00a655b1d38897fa589802ea33c3f2aeb68af4468cea49a97b033",
+      "etag": "\"15097b-1a0951909cd-identity\"",
+      "headMatches": true,
+      "conditional304": true
+    }
+  ]
+}
