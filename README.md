@@ -16,6 +16,8 @@
 
 ## 启动与构建
 
+大型 Blender 场景、源资产及历史文件通过 Git LFS 保存。首次克隆仓库后，先运行 `git lfs install` 和 `git lfs pull`，取得完整文件。
+
 ```powershell
 npm ci
 npm run dev
