@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported courtbase_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "courtbase_rough",
+  "sourcePixelSha256": "4743c87f36278d8a2c43bbf1c4c3dc5b01a25eacd6efb067273d04df28ebbdca",
+  "sha256": "77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4",
+  "prompt": "Blender-exported courtbase_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

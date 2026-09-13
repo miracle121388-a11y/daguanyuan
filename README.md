@@ -18,6 +18,8 @@
 
 大型 Blender 场景、源资产及历史文件通过 Git LFS 保存。首次克隆仓库后，先运行 `git lfs install` 和 `git lfs pull`，取得完整文件。
 
+**macOS / Windows 换机与多人协作请从 [迁移与协作说明](docs/MIGRATION.md) 开始。** 全部现用建模素材随仓库提供；工具安装包、可选历史素材的下载入口及校验信息也在仓库内。
+
 ```powershell
 npm ci
 npm run dev
@@ -25,9 +27,17 @@ npm run dev
 
 浏览器打开终端地址。已附带模型，普通启动无需 Blender。正式构建使用 `npm run build`，`npm start` 从 `dist/` 提供 HTTP 服务；不能用 file 协议双击 HTML。
 
+需要运行素材处理、建模或打包脚本时，先安装完整 Python 依赖：
+
 ```powershell
-npm run assets:fetch
-python -m pip install -r requirements-spatial.txt
+python -m pip install -r requirements-dev.txt
+npm run materials:check
+npm run models:portability
+```
+
+以下是主动重建流程，会重新生成对应文件；接续已有模型时，从已提交的母场景开始编辑即可。原有 `assets:fetch` 会重新整理来源清单，首次克隆不需要运行它。
+
+```powershell
 npm run content:prepare
 npm run textures:bake
 npm run models:build
@@ -57,7 +67,9 @@ npm run build
 | `blender/reference_scene.py` | 母场景生成入口 |
 | `blender/reference_world.py` / `reference_craft.py` | 地形、园林、屋面和陈设构件 |
 | `blender/spatial_world.py` / `interior_craft.py` | 本轮连续地形、接岸桥廊、省亲组群与室内细节 |
-| `public/models/` | 2 总览、30 地点分区、2 植被原型，共 34 个压缩 GLB |
+| `public/models/` | 当前总览、地点分区、植被原型与全部配套 GLB；数量由迁移检查实际统计 |
+| `assets/source/` / `assets/processed/` | 原始模型、PBR 贴图、HDRI、植被与处理后的建模素材 |
+| `assets/textures/shared/` | 归档 GLB 使用的共享贴图，来源记录在 archive-provenance.json |
 | `public/textures/shared/` | 按内容哈希共享的本地材质贴图 |
 | `public/art/` | 15 幅大图与 15 幅缩略图，WebP 及生成提示词记录 |
 | `output/imagegen/daguanyuan-reference-20260910/` | 原始 PNG、图录、提示词和来源说明 |
@@ -65,6 +77,6 @@ npm run build
 | `assets/manifest.json` | 外部资源许可、来源、原文件和衍生哈希 |
 | `reports/acceptance/` | 数据、模型、浏览器、性能及部署检查记录 |
 
-重建仅替换生成集合，手动改动应保存在 `Manual_Adjustments`。本轮开始前的母场景与布局保存在 `.checkpoints/before-spatial-rebuild-20260910-113256/`，更早版本另存 `.checkpoints/before-reference-world-20260910/`。历史潇湘馆样板保留，非当前全园入口。
+重建仅替换生成集合，手动改动应保存在 `Manual_Adjustments`。当前母场景和 `reports/checkpoints/r13-before/`、`reports/checkpoints/r14-before/` 已在 GitHub / LFS。旧机器 `.checkpoints/` 中更早的临时备份不属于当前开发依赖；迁移检查和现用素材无需读取它。历史潇湘馆样板也已保留。
 
 运行 `npm run typecheck`、`npm run lint`、`npm test`、`npm run verify`、`npm run test:e2e` 检查代码与交互；`npm run models:verify` 还会重开母场景并沿道路对实际地形做三维射线采样。性能方法和局限见 [PERFORMANCE](docs/PERFORMANCE.md)，部署见 [DEPLOYMENT](docs/DEPLOYMENT.md)，视觉边界见 [KNOWN_ISSUES](docs/KNOWN_ISSUES.md)。

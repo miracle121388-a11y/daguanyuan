@@ -2,9 +2,11 @@ import { existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 export function blenderBin(){
- const candidates=[process.env.BLENDER_BIN,'blender',...['.tools','C:/Program Files/Blender Foundation'].flatMap(p=>existsSync(p)?readdirSync(p).filter(n=>n.toLowerCase().includes('blender')).map(n=>path.join(p,n,'blender.exe')):[])].filter(Boolean);
- for(const c of candidates){const r=spawnSync(c,['--version'],{encoding:'utf8'});if(r.status===0)return path.resolve(c==='blender'?spawnSync('where',['blender'],{encoding:'utf8'}).stdout.trim().split('\n')[0]:c)}
- throw new Error('Blender not found. Set BLENDER_BIN or run python scripts/bootstrap.py on Windows.');
+ const executable=process.platform==='win32'?'blender.exe':'blender';
+ const locations=['.tools',...(process.platform==='win32'?['C:/Program Files/Blender Foundation']:[])];
+ const candidates=[process.env.BLENDER_BIN,'blender',...(process.platform==='darwin'?['/Applications/Blender.app/Contents/MacOS/Blender']:[]),...locations.flatMap(p=>existsSync(p)?readdirSync(p).filter(n=>n.toLowerCase().includes('blender')).map(n=>path.join(p,n,executable)):[])].filter(Boolean);
+ for(const c of candidates){const r=spawnSync(c,['--version'],{encoding:'utf8',timeout:10000});if(r.status===0)return c==='blender'?c:path.resolve(c)}
+ throw new Error('Blender not found. Set BLENDER_BIN to the Blender executable; installation links and commands are in docs/MIGRATION.md.');
 }
 const action=process.argv[2];
 const run=(cmd,args)=>{const r=spawnSync(cmd,args,{stdio:'inherit',shell:false});if(r.status!==0)throw new Error(`${cmd} exited ${r.status}`)};
@@ -68,6 +70,7 @@ if(action==='verify-models'){
  if(existsSync('assets/processed/focal-r12-fix2/manifest.json'))run(process.platform==='win32'?'python':'python3',['scripts/check_focal_foliage.py']);
 }
 if(action==='model-views')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/render_model_evidence.py']);
+if(action==='model-portability')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/check_portability.py']);
 if(action==='models-understory')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/refresh_court_understory.py']);
 if(action==='models-overview-budget')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/refine_overview_budget.py']);
 if(action==='models-crowns'){

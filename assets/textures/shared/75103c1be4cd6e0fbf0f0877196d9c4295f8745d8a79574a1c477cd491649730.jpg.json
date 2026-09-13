@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported gardenstone_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "gardenstone_diff",
+  "sourcePixelSha256": "6c78f4659c35f315dac5340686ff9ca5d12f91c941e92d565a7d290abb1ce2df",
+  "sha256": "75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730",
+  "prompt": "Blender-exported gardenstone_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

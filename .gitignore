@@ -8,3 +8,7 @@ test-results/
 .env
 .checkpoints/
 .deploy/
+.venv/
+.DS_Store
+__pycache__/
+*.pyc

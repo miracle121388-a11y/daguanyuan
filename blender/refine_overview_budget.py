@@ -12,10 +12,10 @@ for item in doc.get('images',[]):
  target=(R/'public/models'/item['uri']).resolve()
  assert target.is_relative_to(R/'public/textures/shared')
  if not target.exists():
-  matches=list((R/'.deploy').glob('*/dist/textures/shared/'+target.name))
-  assert matches,'Missing original source map: '+target.name
-  shutil.copy2(matches[0],target)
-  if Path(str(matches[0])+'.json').exists():shutil.copy2(Path(str(matches[0])+'.json'),Path(str(target)+'.json'))
+  archived=R/'assets/textures/shared'/target.name
+  assert archived.is_file(),'Missing archived source map; run npm run materials:check: '+target.name
+  shutil.copy2(archived,target)
+  if Path(str(archived)+'.json').exists():shutil.copy2(Path(str(archived)+'.json'),Path(str(target)+'.json'))
  assert hashlib.sha256(target.read_bytes()).hexdigest()==target.stem
 temp=R/'public/models/overview-budget-source.glb';shutil.copy2(source,temp)
 try:bpy.ops.import_scene.gltf(filepath=str(temp))

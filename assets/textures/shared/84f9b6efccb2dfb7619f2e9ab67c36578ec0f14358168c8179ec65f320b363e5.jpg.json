@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported floorwood_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "floorwood_rough",
+  "sourcePixelSha256": "ac41108316863c2b3a3076ebf621953140faf4e2166ee7edf710012a170e22d9",
+  "sha256": "84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5",
+  "prompt": "Blender-exported floorwood_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

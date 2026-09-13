@@ -1,0 +1,813 @@
+{
+  "createdAt": "2026-09-13T02:54:28.951964+00:00",
+  "purpose": "Resolve relative image URIs in committed reusable source/archive GLBs without local deployment snapshots. Existing source metadata retained.",
+  "files": [
+    {
+      "file": "assets/textures/shared/a76ba08fdfa388f823e39c5cb532f4bcf15da1494bf7bc3387350afeae72520c.jpg",
+      "sha256": "a76ba08fdfa388f823e39c5cb532f4bcf15da1494bf7bc3387350afeae72520c",
+      "bytes": 30037,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/a76ba08fdfa388f823e39c5cb532f4bcf15da1494bf7bc3387350afeae72520c.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/a76ba08fdfa388f823e39c5cb532f4bcf15da1494bf7bc3387350afeae72520c.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg",
+      "sha256": "6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9",
+      "bytes": 4713,
+      "copiedFrom": "public/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee.jpg",
+      "sha256": "a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee",
+      "bytes": 14710,
+      "copiedFrom": "public/textures/shared/a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg",
+      "sha256": "84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5",
+      "bytes": 4922,
+      "copiedFrom": "public/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/84f9b6efccb2dfb7619f2e9ab67c36578ec0f14358168c8179ec65f320b363e5.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg",
+      "sha256": "868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453",
+      "bytes": 37012,
+      "copiedFrom": "public/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/868d02b27dd87cad475c045c8b0561d232fcb1e374b3682d3de06cad58771453.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg",
+      "sha256": "04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4",
+      "bytes": 130413,
+      "copiedFrom": "public/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg",
+      "sha256": "44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330",
+      "bytes": 11240,
+      "copiedFrom": "public/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg",
+      "sha256": "554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52",
+      "bytes": 9688,
+      "copiedFrom": "public/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg",
+      "sha256": "77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4",
+      "bytes": 2138,
+      "copiedFrom": "public/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/19f3d60a089d874fe988b75907677465f077bca95d0896ecf45dedf72f124e9a.jpg",
+      "sha256": "19f3d60a089d874fe988b75907677465f077bca95d0896ecf45dedf72f124e9a",
+      "bytes": 57887,
+      "copiedFrom": ".deploy/reference-20260911-173828-843440/dist/textures/shared/19f3d60a089d874fe988b75907677465f077bca95d0896ecf45dedf72f124e9a.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/19f3d60a089d874fe988b75907677465f077bca95d0896ecf45dedf72f124e9a.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+      "sha256": "22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872",
+      "bytes": 10683,
+      "copiedFrom": "public/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg",
+      "sha256": "0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75",
+      "bytes": 9221,
+      "copiedFrom": "public/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg",
+      "sha256": "1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704",
+      "bytes": 1972,
+      "copiedFrom": "public/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg",
+      "sha256": "38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be",
+      "bytes": 27954,
+      "copiedFrom": "public/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/38f583024302e27658c5a4f6d9f1c89b4cc8c6a7e66c0605c7665df9cc1313be.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730.jpg",
+      "sha256": "75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730",
+      "bytes": 12485,
+      "copiedFrom": "public/textures/shared/75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/75103c1be4cd6e0fbf0f0877196d9c4295f8745d8a79574a1c477cd491649730.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2.jpg",
+      "sha256": "842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2",
+      "bytes": 1734,
+      "copiedFrom": "public/textures/shared/842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/6dc8be209ae60c77b9d3f34c86172c03eb10d9827bcaff8babbc4fc40ceb6897.jpg",
+      "sha256": "6dc8be209ae60c77b9d3f34c86172c03eb10d9827bcaff8babbc4fc40ceb6897",
+      "bytes": 42306,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/6dc8be209ae60c77b9d3f34c86172c03eb10d9827bcaff8babbc4fc40ceb6897.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/6dc8be209ae60c77b9d3f34c86172c03eb10d9827bcaff8babbc4fc40ceb6897.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg",
+      "sha256": "b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7",
+      "bytes": 17125,
+      "copiedFrom": "public/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/b0efbee10f6fb5a0f95be3f390376d07bc74f2ed9a2df98e835572a2061a88e7.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg",
+      "sha256": "410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e",
+      "bytes": 1833,
+      "copiedFrom": "public/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/d1fc83f653520af9347350a58a58d5e21bf6b664fc7f90009f3a0d097edb48b7.jpg",
+      "sha256": "d1fc83f653520af9347350a58a58d5e21bf6b664fc7f90009f3a0d097edb48b7",
+      "bytes": 2177,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/d1fc83f653520af9347350a58a58d5e21bf6b664fc7f90009f3a0d097edb48b7.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/d1fc83f653520af9347350a58a58d5e21bf6b664fc7f90009f3a0d097edb48b7.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/99e7261af4f216c962c13329d6e5c4329762a35649fa01d31b09c0cbfe5848d5.jpg",
+      "sha256": "99e7261af4f216c962c13329d6e5c4329762a35649fa01d31b09c0cbfe5848d5",
+      "bytes": 7195,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/99e7261af4f216c962c13329d6e5c4329762a35649fa01d31b09c0cbfe5848d5.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/99e7261af4f216c962c13329d6e5c4329762a35649fa01d31b09c0cbfe5848d5.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a.jpg",
+      "sha256": "732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a",
+      "bytes": 793,
+      "copiedFrom": "public/textures/shared/732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0.jpg",
+      "sha256": "e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0",
+      "bytes": 796,
+      "copiedFrom": "public/textures/shared/e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/e7231a162181b7e4d4daf08220f5b8e0f296052d178a2736ded7ea64eda79dd0.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/f45ac0b991278ceaf41b57b19cf1e1d328fbd3ae50875fe1d83bb2a728b9e860.jpg",
+      "sha256": "f45ac0b991278ceaf41b57b19cf1e1d328fbd3ae50875fe1d83bb2a728b9e860",
+      "bytes": 2135,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/f45ac0b991278ceaf41b57b19cf1e1d328fbd3ae50875fe1d83bb2a728b9e860.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/f45ac0b991278ceaf41b57b19cf1e1d328fbd3ae50875fe1d83bb2a728b9e860.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/cca62e287c154acbcb8f39fda31e5471f8650e2f9c5fdc29a24e13913ee6f604.jpg",
+      "sha256": "cca62e287c154acbcb8f39fda31e5471f8650e2f9c5fdc29a24e13913ee6f604",
+      "bytes": 59189,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/cca62e287c154acbcb8f39fda31e5471f8650e2f9c5fdc29a24e13913ee6f604.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/cca62e287c154acbcb8f39fda31e5471f8650e2f9c5fdc29a24e13913ee6f604.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/6a8c65cbfa1cf563b4ccaa74b7ac5dde04d87572ebd21ee911db02a0423a541c.jpg",
+      "sha256": "6a8c65cbfa1cf563b4ccaa74b7ac5dde04d87572ebd21ee911db02a0423a541c",
+      "bytes": 38907,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/6a8c65cbfa1cf563b4ccaa74b7ac5dde04d87572ebd21ee911db02a0423a541c.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/6a8c65cbfa1cf563b4ccaa74b7ac5dde04d87572ebd21ee911db02a0423a541c.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/fb068cbae6a3b7b1645bd160707d79808be81919c51fba7cd9f8a46bfa32a4aa.jpg",
+      "sha256": "fb068cbae6a3b7b1645bd160707d79808be81919c51fba7cd9f8a46bfa32a4aa",
+      "bytes": 60059,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/fb068cbae6a3b7b1645bd160707d79808be81919c51fba7cd9f8a46bfa32a4aa.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/fb068cbae6a3b7b1645bd160707d79808be81919c51fba7cd9f8a46bfa32a4aa.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/a9f57eafc82760c4badf93419fd780e03e91a48aca5364b87a4fb3c4f88da585.jpg",
+      "sha256": "a9f57eafc82760c4badf93419fd780e03e91a48aca5364b87a4fb3c4f88da585",
+      "bytes": 36592,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/a9f57eafc82760c4badf93419fd780e03e91a48aca5364b87a4fb3c4f88da585.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/a9f57eafc82760c4badf93419fd780e03e91a48aca5364b87a4fb3c4f88da585.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/78052b7bfc6e9ca7eea0d40e4585593b7e4f05717c01b5114b1340ed598b6864.jpg",
+      "sha256": "78052b7bfc6e9ca7eea0d40e4585593b7e4f05717c01b5114b1340ed598b6864",
+      "bytes": 61849,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/78052b7bfc6e9ca7eea0d40e4585593b7e4f05717c01b5114b1340ed598b6864.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/78052b7bfc6e9ca7eea0d40e4585593b7e4f05717c01b5114b1340ed598b6864.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/479699043aeaf998be7ace7afcaa579999d3bc4aa9a2f5da2c3ef79996c3dd54.jpg",
+      "sha256": "479699043aeaf998be7ace7afcaa579999d3bc4aa9a2f5da2c3ef79996c3dd54",
+      "bytes": 34326,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/479699043aeaf998be7ace7afcaa579999d3bc4aa9a2f5da2c3ef79996c3dd54.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/479699043aeaf998be7ace7afcaa579999d3bc4aa9a2f5da2c3ef79996c3dd54.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/ee68de79327befe9b7dbebe28f637eb19f47478504aba898895019cafaa730e5.jpg",
+      "sha256": "ee68de79327befe9b7dbebe28f637eb19f47478504aba898895019cafaa730e5",
+      "bytes": 58056,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/ee68de79327befe9b7dbebe28f637eb19f47478504aba898895019cafaa730e5.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/ee68de79327befe9b7dbebe28f637eb19f47478504aba898895019cafaa730e5.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/0a7225d578ca5ea5960899a0a4e8017ae9da3c8598184f31b757f3420f7247f1.jpg",
+      "sha256": "0a7225d578ca5ea5960899a0a4e8017ae9da3c8598184f31b757f3420f7247f1",
+      "bytes": 38425,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/0a7225d578ca5ea5960899a0a4e8017ae9da3c8598184f31b757f3420f7247f1.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/0a7225d578ca5ea5960899a0a4e8017ae9da3c8598184f31b757f3420f7247f1.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/9ea74b2019132078a7894864adc7209fccf97feb97a400ff74f599833f805fac.jpg",
+      "sha256": "9ea74b2019132078a7894864adc7209fccf97feb97a400ff74f599833f805fac",
+      "bytes": 22150,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/9ea74b2019132078a7894864adc7209fccf97feb97a400ff74f599833f805fac.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/9ea74b2019132078a7894864adc7209fccf97feb97a400ff74f599833f805fac.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/02180e2ec024e1c8dacf1314f71603b276e36a659e62738b522ffff403d1287c.jpg",
+      "sha256": "02180e2ec024e1c8dacf1314f71603b276e36a659e62738b522ffff403d1287c",
+      "bytes": 57600,
+      "copiedFrom": ".deploy/reference-20260911-173828-843440/dist/textures/shared/02180e2ec024e1c8dacf1314f71603b276e36a659e62738b522ffff403d1287c.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/02180e2ec024e1c8dacf1314f71603b276e36a659e62738b522ffff403d1287c.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/a56acbb46a7184c304e2e9c5c4abea2c11f524931189f595425e261c1d0f0669.jpg",
+      "sha256": "a56acbb46a7184c304e2e9c5c4abea2c11f524931189f595425e261c1d0f0669",
+      "bytes": 20108,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/a56acbb46a7184c304e2e9c5c4abea2c11f524931189f595425e261c1d0f0669.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/a56acbb46a7184c304e2e9c5c4abea2c11f524931189f595425e261c1d0f0669.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg",
+      "sha256": "875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5",
+      "bytes": 54985,
+      "copiedFrom": ".deploy/reference-20260911-173828-843440/dist/textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/875b0bc2afcd15af631d453719534e2ed24ca273e2ced3cc160c9d8f056dbed5.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/0fc28c7527994725b8228c931967d575e9d62274d004aab24ce19d5239893641.jpg",
+      "sha256": "0fc28c7527994725b8228c931967d575e9d62274d004aab24ce19d5239893641",
+      "bytes": 25980,
+      "copiedFrom": ".deploy/reference-20260912-102257-542614/dist/textures/shared/0fc28c7527994725b8228c931967d575e9d62274d004aab24ce19d5239893641.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/0fc28c7527994725b8228c931967d575e9d62274d004aab24ce19d5239893641.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/3fd3cbafd30d4a6ad6029d06bfcb17524d528fbf5d8e16e092872f63b07411e8.jpg",
+      "sha256": "3fd3cbafd30d4a6ad6029d06bfcb17524d528fbf5d8e16e092872f63b07411e8",
+      "bytes": 26669,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/3fd3cbafd30d4a6ad6029d06bfcb17524d528fbf5d8e16e092872f63b07411e8.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/3fd3cbafd30d4a6ad6029d06bfcb17524d528fbf5d8e16e092872f63b07411e8.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/fcee1acdcff7295cc50ef160a436dce2e7db46ba54f3168b118bf07c267adb94.jpg",
+      "sha256": "fcee1acdcff7295cc50ef160a436dce2e7db46ba54f3168b118bf07c267adb94",
+      "bytes": 57194,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/fcee1acdcff7295cc50ef160a436dce2e7db46ba54f3168b118bf07c267adb94.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/fcee1acdcff7295cc50ef160a436dce2e7db46ba54f3168b118bf07c267adb94.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/9722792fe74a71f2e7c9c94e6082a7856ff09d25db06251e53581d3a2342b61f.jpg",
+      "sha256": "9722792fe74a71f2e7c9c94e6082a7856ff09d25db06251e53581d3a2342b61f",
+      "bytes": 26954,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/9722792fe74a71f2e7c9c94e6082a7856ff09d25db06251e53581d3a2342b61f.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/9722792fe74a71f2e7c9c94e6082a7856ff09d25db06251e53581d3a2342b61f.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/261c9258445d2e7d1503d1a5722d425fbd6b72d7344d8aa64f0bce7bc0f6e4f6.jpg",
+      "sha256": "261c9258445d2e7d1503d1a5722d425fbd6b72d7344d8aa64f0bce7bc0f6e4f6",
+      "bytes": 58525,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/261c9258445d2e7d1503d1a5722d425fbd6b72d7344d8aa64f0bce7bc0f6e4f6.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/261c9258445d2e7d1503d1a5722d425fbd6b72d7344d8aa64f0bce7bc0f6e4f6.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/5decf87664526192a9944dee4d619b4ae91e764d57dffe5ec4a098d170776a17.jpg",
+      "sha256": "5decf87664526192a9944dee4d619b4ae91e764d57dffe5ec4a098d170776a17",
+      "bytes": 56499,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/5decf87664526192a9944dee4d619b4ae91e764d57dffe5ec4a098d170776a17.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/5decf87664526192a9944dee4d619b4ae91e764d57dffe5ec4a098d170776a17.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92.jpg",
+      "sha256": "233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92",
+      "bytes": 52818,
+      "copiedFrom": ".deploy/reference-20260912-102257-542614/dist/textures/shared/233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/233a3d2f78679fe681f5ed52dbd07e64d728ffd67618162e12172daf3a215b92.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/5568640c8980f093cdfa37283d1528ec859aac39ae8336c4eebf2c67c9f01b15.jpg",
+      "sha256": "5568640c8980f093cdfa37283d1528ec859aac39ae8336c4eebf2c67c9f01b15",
+      "bytes": 37193,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/5568640c8980f093cdfa37283d1528ec859aac39ae8336c4eebf2c67c9f01b15.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/5568640c8980f093cdfa37283d1528ec859aac39ae8336c4eebf2c67c9f01b15.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/2e6381f2cbcf844a799428c502a870c82926aa86345180c11fdaa99b15aa0b7a.jpg",
+      "sha256": "2e6381f2cbcf844a799428c502a870c82926aa86345180c11fdaa99b15aa0b7a",
+      "bytes": 61557,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/2e6381f2cbcf844a799428c502a870c82926aa86345180c11fdaa99b15aa0b7a.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/2e6381f2cbcf844a799428c502a870c82926aa86345180c11fdaa99b15aa0b7a.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/21ebb4882e6d1e9085737c38729143792752f12b355be05edf28e49c188949a3.jpg",
+      "sha256": "21ebb4882e6d1e9085737c38729143792752f12b355be05edf28e49c188949a3",
+      "bytes": 30674,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/21ebb4882e6d1e9085737c38729143792752f12b355be05edf28e49c188949a3.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/21ebb4882e6d1e9085737c38729143792752f12b355be05edf28e49c188949a3.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/9180b12e8cfa3776c1ea5fe955362da744e5d8329bf9d4ba1e548fcb7fbfb133.jpg",
+      "sha256": "9180b12e8cfa3776c1ea5fe955362da744e5d8329bf9d4ba1e548fcb7fbfb133",
+      "bytes": 59557,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/9180b12e8cfa3776c1ea5fe955362da744e5d8329bf9d4ba1e548fcb7fbfb133.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/9180b12e8cfa3776c1ea5fe955362da744e5d8329bf9d4ba1e548fcb7fbfb133.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/51c4f7c015235c8117138a393ddb79d40da602af84c457c2acd8b4ce20e6a99c.jpg",
+      "sha256": "51c4f7c015235c8117138a393ddb79d40da602af84c457c2acd8b4ce20e6a99c",
+      "bytes": 170293,
+      "copiedFrom": ".deploy/reference-20260912-123005-027559/dist/textures/shared/51c4f7c015235c8117138a393ddb79d40da602af84c457c2acd8b4ce20e6a99c.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/51c4f7c015235c8117138a393ddb79d40da602af84c457c2acd8b4ce20e6a99c.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/e88e19357770b8639f2f63834ed345c4e1c521c803ecbd53d2d09db10ecdf07c.jpg",
+      "sha256": "e88e19357770b8639f2f63834ed345c4e1c521c803ecbd53d2d09db10ecdf07c",
+      "bytes": 194413,
+      "copiedFrom": ".deploy/reference-20260911-160026-373970/dist/textures/shared/e88e19357770b8639f2f63834ed345c4e1c521c803ecbd53d2d09db10ecdf07c.jpg",
+      "models": [
+        "assets/processed/r12-fix1-pre-budget-overview.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/e88e19357770b8639f2f63834ed345c4e1c521c803ecbd53d2d09db10ecdf07c.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/b17ad6ae115b5fbe0eed5574902da8f9a779d1a0d6ceba7b8e151f17e43c2159.jpg",
+      "sha256": "b17ad6ae115b5fbe0eed5574902da8f9a779d1a0d6ceba7b8e151f17e43c2159",
+      "bytes": 72740,
+      "copiedFrom": "public/textures/shared/b17ad6ae115b5fbe0eed5574902da8f9a779d1a0d6ceba7b8e151f17e43c2159.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/b17ad6ae115b5fbe0eed5574902da8f9a779d1a0d6ceba7b8e151f17e43c2159.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28.jpg",
+      "sha256": "7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28",
+      "bytes": 163694,
+      "copiedFrom": "public/textures/shared/7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/f17473d32ae5c613e1a04fcf8660391f72c10f7a2708c2b32d738fb08ebef830.jpg",
+      "sha256": "f17473d32ae5c613e1a04fcf8660391f72c10f7a2708c2b32d738fb08ebef830",
+      "bytes": 42053,
+      "copiedFrom": "public/textures/shared/f17473d32ae5c613e1a04fcf8660391f72c10f7a2708c2b32d738fb08ebef830.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/f17473d32ae5c613e1a04fcf8660391f72c10f7a2708c2b32d738fb08ebef830.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/37c42d2ca1be73276453329445f3ddd6664b9579ab019ee5c830de5f5ffc8cd5.jpg",
+      "sha256": "37c42d2ca1be73276453329445f3ddd6664b9579ab019ee5c830de5f5ffc8cd5",
+      "bytes": 27301,
+      "copiedFrom": "public/textures/shared/37c42d2ca1be73276453329445f3ddd6664b9579ab019ee5c830de5f5ffc8cd5.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-low.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_shrub.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/37c42d2ca1be73276453329445f3ddd6664b9579ab019ee5c830de5f5ffc8cd5.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e.png",
+      "sha256": "369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e",
+      "bytes": 67725,
+      "copiedFrom": "public/textures/shared/369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e.png",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-low.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_shrub.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/369dadd79dd086745967fcf5d98676f05fa595e9b27f34990bc2c5efae94e84e.png.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/1120557f4044624a28bb7eca0f488fa3ae7d445a09062d594092f4b0ea9ce825.jpg",
+      "sha256": "1120557f4044624a28bb7eca0f488fa3ae7d445a09062d594092f4b0ea9ce825",
+      "bytes": 37826,
+      "copiedFrom": "public/textures/shared/1120557f4044624a28bb7eca0f488fa3ae7d445a09062d594092f4b0ea9ce825.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-low.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_shrub.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/1120557f4044624a28bb7eca0f488fa3ae7d445a09062d594092f4b0ea9ce825.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/4d282c1767ab9ac542df0b4ff4f4393e4349e20ba1debdcfac1eedc1c994baa9.jpg",
+      "sha256": "4d282c1767ab9ac542df0b4ff4f4393e4349e20ba1debdcfac1eedc1c994baa9",
+      "bytes": 63791,
+      "copiedFrom": "public/textures/shared/4d282c1767ab9ac542df0b4ff4f4393e4349e20ba1debdcfac1eedc1c994baa9.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-low.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_shrub.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/4d282c1767ab9ac542df0b4ff4f4393e4349e20ba1debdcfac1eedc1c994baa9.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe.jpg",
+      "sha256": "d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe",
+      "bytes": 123297,
+      "copiedFrom": "public/textures/shared/d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-low.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_shrub.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/c034fb103cede6a7dc7895bb5fc73e251006fa59f799c15b939f29ad2fbdc00f.jpg",
+      "sha256": "c034fb103cede6a7dc7895bb5fc73e251006fa59f799c15b939f29ad2fbdc00f",
+      "bytes": 25793,
+      "copiedFrom": "public/textures/shared/c034fb103cede6a7dc7895bb5fc73e251006fa59f799c15b939f29ad2fbdc00f.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-low.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_shrub.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/c034fb103cede6a7dc7895bb5fc73e251006fa59f799c15b939f29ad2fbdc00f.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/cd1a9bb25ad4216080abde002ed4280414a365095ee388039262abcbca452895.jpg",
+      "sha256": "cd1a9bb25ad4216080abde002ed4280414a365095ee388039262abcbca452895",
+      "bytes": 81546,
+      "copiedFrom": "public/textures/shared/cd1a9bb25ad4216080abde002ed4280414a365095ee388039262abcbca452895.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-low.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_shrub.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/cd1a9bb25ad4216080abde002ed4280414a365095ee388039262abcbca452895.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg",
+      "sha256": "0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81",
+      "bytes": 177881,
+      "copiedFrom": "public/textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-low.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_shrub.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/a31a1a6feec2d1e3dca6ba3b63d8f0cda3d77538b0787c2f30fee11455e627d7.jpg",
+      "sha256": "a31a1a6feec2d1e3dca6ba3b63d8f0cda3d77538b0787c2f30fee11455e627d7",
+      "bytes": 48130,
+      "copiedFrom": "public/textures/shared/a31a1a6feec2d1e3dca6ba3b63d8f0cda3d77538b0787c2f30fee11455e627d7.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf-low.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_broadleaf.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_shrub.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/a31a1a6feec2d1e3dca6ba3b63d8f0cda3d77538b0787c2f30fee11455e627d7.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+      "sha256": "179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d",
+      "bytes": 293677,
+      "copiedFrom": "public/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_fern-0.glb",
+        "assets/processed/baseline/reference-public_models_vegetation_fern-1.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg",
+      "sha256": "bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71",
+      "bytes": 59683,
+      "copiedFrom": "public/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_ground-cover.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33.jpg",
+      "sha256": "56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33",
+      "bytes": 35056,
+      "copiedFrom": "public/textures/shared/56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_ground-cover.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6.jpg",
+      "sha256": "c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6",
+      "bytes": 43892,
+      "copiedFrom": "public/textures/shared/c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_ground-cover.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/b661ae9c62638ec396c0143bce6defc690c1d900590d9b8102cd78fc772f322c.jpg",
+      "sha256": "b661ae9c62638ec396c0143bce6defc690c1d900590d9b8102cd78fc772f322c",
+      "bytes": 63675,
+      "copiedFrom": "public/textures/shared/b661ae9c62638ec396c0143bce6defc690c1d900590d9b8102cd78fc772f322c.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_pine.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/b661ae9c62638ec396c0143bce6defc690c1d900590d9b8102cd78fc772f322c.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265.jpg",
+      "sha256": "93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265",
+      "bytes": 136511,
+      "copiedFrom": "public/textures/shared/93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_pine.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/116cce4cea979792db9b5744e5952681e07b421df6addc7a91fc099bb43e0b01.jpg",
+      "sha256": "116cce4cea979792db9b5744e5952681e07b421df6addc7a91fc099bb43e0b01",
+      "bytes": 32907,
+      "copiedFrom": "public/textures/shared/116cce4cea979792db9b5744e5952681e07b421df6addc7a91fc099bb43e0b01.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_pine.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/116cce4cea979792db9b5744e5952681e07b421df6addc7a91fc099bb43e0b01.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124.jpg",
+      "sha256": "31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124",
+      "bytes": 43735,
+      "copiedFrom": "public/textures/shared/31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_pine.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc.png",
+      "sha256": "f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc",
+      "bytes": 125295,
+      "copiedFrom": "public/textures/shared/f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc.png",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_pine.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc.png.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    },
+    {
+      "file": "assets/textures/shared/e66de31e1f89ac413f7ca0c5d97883d4ccfef7f699168077a878a2eee7662ef2.jpg",
+      "sha256": "e66de31e1f89ac413f7ca0c5d97883d4ccfef7f699168077a878a2eee7662ef2",
+      "bytes": 24622,
+      "copiedFrom": "public/textures/shared/e66de31e1f89ac413f7ca0c5d97883d4ccfef7f699168077a878a2eee7662ef2.jpg",
+      "models": [
+        "assets/processed/baseline/reference-public_models_vegetation_pine.glb"
+      ],
+      "sourceMetadata": "assets/textures/shared/e66de31e1f89ac413f7ca0c5d97883d4ccfef7f699168077a878a2eee7662ef2.jpg.json",
+      "modifications": "Byte-identical relocation; original GLB payload and image content unchanged."
+    }
+  ],
+  "missing": []
+}
