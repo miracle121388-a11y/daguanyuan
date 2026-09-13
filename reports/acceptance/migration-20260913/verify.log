@@ -1,0 +1,12 @@
+
+> daguanyuan-rumeng@1.0.0 verify
+> node scripts/validate.mjs
+
+PASS 3393 integrity checks. {
+  places: 15,
+  characters: 13,
+  events: 22,
+  sources: 46,
+  relations: 1,
+  routes: 3
+}

@@ -6,6 +6,7 @@ data/** -text
 config/** -text
 references/** -text
 output/** -text
+/reports/acceptance/migration-20260913/** -text
 *.blend filter=lfs diff=lfs merge=lfs -text
 /assets/processed/baseline/overview-low.glb filter=lfs diff=lfs merge=lfs -text
 /assets/processed/baseline/public_models_overview.glb filter=lfs diff=lfs merge=lfs -text

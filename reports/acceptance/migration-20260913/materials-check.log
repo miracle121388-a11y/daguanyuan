@@ -1,0 +1,16 @@
+
+> daguanyuan-rumeng@1.0.0 materials:check
+> python scripts/check_handoff.py
+
+{
+  "passed": true,
+  "materialFilesChecked": 1302,
+  "materialBytes": 2348451338,
+  "gltfModelsRead": 169,
+  "linkedResourcesChecked": 853,
+  "approvedProvenanceReferencesChecked": 601,
+  "lineEndingsRestored": [],
+  "optionalUnusedPineDependenciesNotDownloaded": 13,
+  "optionalDownloadCommand": "python scripts/fetch_optional_asset.py pine_tree_01",
+  "failures": []
+}

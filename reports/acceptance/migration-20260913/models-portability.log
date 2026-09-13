@@ -1,0 +1,9 @@
+
+> daguanyuan-rumeng@1.0.0 models:portability
+> node scripts/pipeline.mjs model-portability
+
+MODEL_PORTABILITY {"passed": true, "master": "blender/daguanyuan_master.blend", "images": 185, "packedImages": 185, "linkedLibraries": 0, "manualObjects": 0, "failures": []}
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Read blend: "D:\Users\Lenovo\Desktop\大观园\.checkpoints\github-handoff-20260913-024430\blender\daguanyuan_master.blend"
+
+Blender quit

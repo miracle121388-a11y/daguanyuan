@@ -1,0 +1,17 @@
+{
+  "assetId": "pine_tree_01",
+  "sourceUrl": "https://polyhaven.com/a/pine_tree_01",
+  "licenseName": "CC0-1.0",
+  "licenseEvidence": "references/licenses/polyhaven.html",
+  "scope": "Optional historical candidate; not used by the published garden.",
+  "metadataSha256": "0847defc996487e8e54e90e6435e531868190a5d21ea8f86f8796ecd1dae12c6",
+  "filesVerifiedThisRun": [
+    {
+      "file": "assets/source/pine_tree_01/textures/pine_tree_01_bark_diff_1k.jpg",
+      "sha256": "5c76836b01c3536fa0e24207b67bf4f3315b53ebe2b4ecc6f08dfcf3f8d74929",
+      "upstreamMd5": "7d3a558ed614c7e75594c7be3bf80311",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pine_tree_01/pine_tree_01_bark_diff_1k.jpg",
+      "bytes": 725265
+    }
+  ]
+}

@@ -409,3 +409,9 @@ r13 已发布并完成上述实测。独立复核为 FIX：地被和焦点植物
 ### r14 发布确认
 
 版本 spatial-garden-20260912-r14 已部署到原California服务；部署ID 6aa5791dfbf9c810b64d524c。线上HTTPS、CSP和18个当前公开文件哈希一致，桌面和触摸模拟正式包检查通过。本机默认网络的正式网页检查未通过：page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/。公共DNS临时解析下的成功不能替代默认访问成功。未修改外部代理或系统网络设置。当前视觉结论见 r14-verdict.md；技术与发布检查不替代视觉审查。性能条件与限制见PERFORMANCE.md。
+
+### 2026-09-13 GitHub 迁移与团队协作交付
+
+按用户要求补齐复现和继续开发所需材料及获取方式。保留现用母场景与模型；补入 9 份归档模型缺少的 71 张共享贴图，添加素材哈希清单、只读母场景检查、可选候选素材下载器、完整 Python 依赖及 macOS／Windows 安装与协作说明。素材保持原始字节；已有克隆可安全修复仅由换行造成的差异。
+
+独立 GitHub 克隆取得完整 LFS 素材，迁移代码 bc8ea824441ee86bb5f2093d3accf5c852727e15 经 Git 拉取后，在全新依赖环境和独立下载的 Blender 中验证通过：1,302 份素材、169 份模型、853 个资源引用、601 条来源、185 张已打包图像、6 项单元测试、319 项空间检查及完整构建和打包。实际运行平台为 Windows x64；macOS 提供步骤但未实机验证。可选松树 13 个下载地址已核对并实测一张纹理，未获取完整 958 MB 候选源。本次未做新视觉验收或重新部署。详见 MIGRATION.md、MIGRATION_VALIDATION.md 与 reports/acceptance/github-handoff.json。

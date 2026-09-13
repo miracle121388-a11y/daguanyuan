@@ -1,0 +1,21 @@
+{
+  "asset": "pine_tree_01",
+  "dependencies": 13,
+  "bytes": 958087934,
+  "files": [
+    "textures/pine_tree_01_bark_nor_gl_1k.jpg",
+    "textures/pine_tree_01_bark_diff_1k.jpg",
+    "textures/pine_tree_01_bark_arm_1k.jpg",
+    "textures/pine_tree_01_trunk_a_nor_gl_1k.jpg",
+    "textures/pine_tree_01_trunk_a_diff_1k.jpg",
+    "textures/pine_tree_01_trunk_a_arm_1k.jpg",
+    "textures/pine_tree_01_twig_nor_gl_1k.jpg",
+    "textures/pine_tree_01_twig_diff_1k.jpg",
+    "textures/pine_tree_01_twig_arm_1k.jpg",
+    "textures/pine_tree_01_trunk_b_nor_gl_1k.jpg",
+    "textures/pine_tree_01_trunk_b_diff_1k.jpg",
+    "textures/pine_tree_01_trunk_b_arm_1k.jpg",
+    "pine_tree_01.bin"
+  ],
+  "metadata": "references/upstream-notes/pine_tree_01.json"
+}

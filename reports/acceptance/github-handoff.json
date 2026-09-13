@@ -1,0 +1,225 @@
+{
+  "verifiedAt": "2026-09-13T03:37:28.659707+00:00",
+  "codeCommitTested": "bc8ea824441ee86bb5f2093d3accf5c852727e15",
+  "baseAcquisition": {
+    "remote": "https://github.com/miracle121388-a11y/daguanyuan.git",
+    "baseCommit": "8142c430f548e909d512ae05a3183949b382fff3",
+    "fullLfsDownloaded": true,
+    "finishedAt": "2026-09-13T03:01:35.565270+00:00",
+    "method": "Independent clone from GitHub; candidate migration commits fetched via Git locally before publication."
+  },
+  "environment": {
+    "platformTested": "Windows x64",
+    "node": "24.12.0",
+    "python": "3.13.9",
+    "pythonDependencies": "requirements-dev.txt installed into a new virtual environment",
+    "npm": "npm ci in the independent clone",
+    "blender": "4.5.9 downloaded from official archive and verified by bootstrap.py in the independent clone",
+    "macOSNativeRun": false
+  },
+  "materials": {
+    "passed": true,
+    "materialFilesChecked": 1302,
+    "materialBytes": 2348451338,
+    "gltfModelsRead": 169,
+    "linkedResourcesChecked": 853,
+    "approvedProvenanceReferencesChecked": 601,
+    "lineEndingsRestored": [],
+    "optionalUnusedPineDependenciesNotDownloaded": 13,
+    "optionalDownloadCommand": "python scripts/fetch_optional_asset.py pine_tree_01",
+    "failures": []
+  },
+  "nativeModel": {
+    "passed": true,
+    "master": "blender/daguanyuan_master.blend",
+    "images": 185,
+    "packedImages": 185,
+    "linkedLibraries": 0,
+    "manualObjects": 0,
+    "failures": []
+  },
+  "unitTestsPassed": 6,
+  "spatial": {
+    "checks": 319,
+    "passed": true,
+    "failures": []
+  },
+  "package": {
+    "uploadDirectoryBytes": 49536600,
+    "brotli": true,
+    "recreatedLocally": true,
+    "deployedDuringThisMigration": false
+  },
+  "lineEndingCheck": {
+    "sourceCommit": "de58e566dd95230aecd465a04ef56a5fd2ced5cf",
+    "checks": [
+      {
+        "autocrlf": "true",
+        "path": "assets/source/pine_sapling_small/pine_sapling_small.gltf",
+        "passed": true
+      },
+      {
+        "autocrlf": "true",
+        "path": "assets/manifest.json",
+        "passed": true
+      },
+      {
+        "autocrlf": "true",
+        "path": "public/scene-manifest.json",
+        "passed": true
+      },
+      {
+        "autocrlf": "true",
+        "path": "data/canon/places.json",
+        "passed": true
+      },
+      {
+        "autocrlf": "false",
+        "path": "assets/source/pine_sapling_small/pine_sapling_small.gltf",
+        "passed": true
+      },
+      {
+        "autocrlf": "false",
+        "path": "assets/manifest.json",
+        "passed": true
+      },
+      {
+        "autocrlf": "false",
+        "path": "public/scene-manifest.json",
+        "passed": true
+      },
+      {
+        "autocrlf": "false",
+        "path": "data/canon/places.json",
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "recoveredArchiveTextures": {
+    "count": 71,
+    "bytes": 3632571,
+    "models": 9,
+    "provenance": "assets/textures/archive-provenance.json"
+  },
+  "optionalCandidate": {
+    "asset": "pine_tree_01",
+    "inCurrentScene": false,
+    "officialDependencyUrlsVerified": 13,
+    "oneTextureActuallyDownloadedAndHashChecked": true,
+    "full958MBOptionalSourceDownloaded": false,
+    "downloadCommand": "npm run materials:pine",
+    "evidence": "reports/acceptance/migration-20260913/optional-fetch.json"
+  },
+  "stages": [
+    {
+      "name": "lfs-fsck",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:34:17.513212+00:00",
+      "finishedAt": "2026-09-13T03:34:25.035361+00:00",
+      "log": "reports/acceptance/migration-20260913/lfs-fsck.log",
+      "sha256": "81f6819612dfaf9af7854c05c501e2a69e3852e47f0bfb0a82dfce8f3f6c5db9"
+    },
+    {
+      "name": "models-portability",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:34:51.251301+00:00",
+      "finishedAt": "2026-09-13T03:35:00.543493+00:00",
+      "log": "reports/acceptance/migration-20260913/models-portability.log",
+      "sha256": "503518c882202aba99fa6fea210b70110d91cf7180743f9f541a2bc1db0f47bc"
+    },
+    {
+      "name": "typecheck",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:35:00.544486+00:00",
+      "finishedAt": "2026-09-13T03:35:21.824538+00:00",
+      "log": "reports/acceptance/migration-20260913/typecheck.log",
+      "sha256": "3366a7b1329ba2072e9c00dbb03066014007f189f2107f36c4a431944d0e1da0"
+    },
+    {
+      "name": "lint",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:35:21.825509+00:00",
+      "finishedAt": "2026-09-13T03:35:55.324012+00:00",
+      "log": "reports/acceptance/migration-20260913/lint.log",
+      "sha256": "adebd9da4bdda4c9ab6b7587d73228ffe20aaf3444e89d5831815724c329a929"
+    },
+    {
+      "name": "test",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:35:55.324759+00:00",
+      "finishedAt": "2026-09-13T03:36:01.960448+00:00",
+      "log": "reports/acceptance/migration-20260913/test.log",
+      "sha256": "aa58a599ac3c80eaa85f4c697ba398ab3aee7017afdc50e49674446405906cfd"
+    },
+    {
+      "name": "verify",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:36:01.961354+00:00",
+      "finishedAt": "2026-09-13T03:36:03.552050+00:00",
+      "log": "reports/acceptance/migration-20260913/verify.log",
+      "sha256": "f20d436588f72280f0163f7d9452af5359a6810f2831429849494924680e6e5d"
+    },
+    {
+      "name": "spatial-check",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:36:03.552756+00:00",
+      "finishedAt": "2026-09-13T03:36:05.468041+00:00",
+      "log": "reports/acceptance/migration-20260913/spatial-check.log",
+      "sha256": "5a9e3eb21e7dffa307f7428e05f7cd9ff3dca461e427354624454c807b1ba678"
+    },
+    {
+      "name": "build",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:36:05.469006+00:00",
+      "finishedAt": "2026-09-13T03:36:30.873413+00:00",
+      "log": "reports/acceptance/migration-20260913/build.log",
+      "sha256": "41776e1ba1737c5d8b298107804d25f6cb7c441d254aea9f0f1e76b8e084ba7b"
+    },
+    {
+      "name": "models-verify",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:36:30.874518+00:00",
+      "finishedAt": "2026-09-13T03:37:14.193868+00:00",
+      "log": "reports/acceptance/migration-20260913/models-verify.log",
+      "sha256": "d30dc37c01a0cdec9409e4da3d4ca914a00abce297bc738c18281a8d83633543"
+    },
+    {
+      "name": "deploy-package",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:37:14.194604+00:00",
+      "finishedAt": "2026-09-13T03:37:22.909299+00:00",
+      "log": "reports/acceptance/migration-20260913/deploy-package.log",
+      "sha256": "3fe8d6cdf8892e92d4baed31e0a60a56aa397450a6fff10b2e4842fc0d53a8b2"
+    },
+    {
+      "name": "materials-check",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:37:22.909972+00:00",
+      "finishedAt": "2026-09-13T03:37:26.838181+00:00",
+      "log": "reports/acceptance/migration-20260913/materials-check.log",
+      "sha256": "41f1524542ff88f0f684fd4f556e3e16c65f7c7a0e7cf5ca8294769dc085efe1"
+    },
+    {
+      "name": "optional-fetch-plan",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:37:26.839049+00:00",
+      "finishedAt": "2026-09-13T03:37:27.013154+00:00",
+      "log": "reports/acceptance/migration-20260913/optional-fetch-plan.log",
+      "sha256": "faa5ab13a1892295706e1638f70a2258ef1d59c9518505bb28a415c79c8855e4"
+    },
+    {
+      "name": "optional-fetch-one",
+      "exitCode": 0,
+      "startedAt": "2026-09-13T03:37:27.013872+00:00",
+      "finishedAt": "2026-09-13T03:37:28.658844+00:00",
+      "log": "reports/acceptance/migration-20260913/optional-fetch-one.log",
+      "sha256": "106d3758ee89376e8f5d37ed087e2bdbe59a4a0d434145e6dae2185411e53959"
+    }
+  ],
+  "limitations": [
+    "macOS commands and acquisition links supplied; no physical macOS run was performed.",
+    "Existing-clone CRLF/LF differences were found in the first pass and restored only where content matched the committed material.",
+    "No new screenshot or browser E2E run was performed for this file/environment migration."
+  ]
+}

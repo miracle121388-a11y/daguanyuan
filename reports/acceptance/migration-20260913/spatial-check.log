@@ -1,0 +1,9 @@
+
+> daguanyuan-rumeng@1.0.0 spatial:check
+> python scripts/check_spatial_layout.py
+
+{
+  "checks": 319,
+  "passed": true,
+  "failures": []
+}
