@@ -79,7 +79,7 @@ def main():
     for entry in manifest['files']:
         path = (ROOT / entry['path']).resolve()
         if (args.repair_line_endings and path.is_relative_to(ROOT) and path.is_file()
-                and path.suffix in {'.json', '.gltf', '.txt', '.md', '.html', '.csv', '.tsv', '.xml', '.svg', '.mtlx', '.sha256'}
+                and path.suffix in {'', '.json', '.gltf', '.txt', '.md', '.html', '.csv', '.tsv', '.xml', '.svg', '.mtlx', '.sha256', '.py', '.js', '.mjs', '.css', '.yml', '.yaml'}
                 and path.stat().st_size < 8 * 1024 * 1024 and sha256(path) != entry['sha256']):
             result = subprocess.run(['git', 'show', 'HEAD:' + entry['path']], cwd=ROOT, capture_output=True)
             current = path.read_bytes()
