@@ -44,6 +44,7 @@ def gltf_document(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true', help='Record an intentionally updated material inventory')
+    parser.add_argument('--repair-line-endings', action='store_true', help='Restore Git bytes only when an unchanged text material differs by CRLF/LF')
     args = parser.parse_args()
     if args.write:
         tracked = set(subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0'))
@@ -74,8 +75,20 @@ def main():
     manifest = json.loads(INVENTORY.read_text(encoding='utf-8'))
     failures = []
     checked = 0
+    restored = []
     for entry in manifest['files']:
         path = (ROOT / entry['path']).resolve()
+        if (args.repair_line_endings and path.is_relative_to(ROOT) and path.is_file()
+                and path.suffix in {'.json', '.gltf', '.txt', '.md', '.html', '.csv', '.tsv', '.xml', '.svg', '.mtlx', '.sha256'}
+                and path.stat().st_size < 8 * 1024 * 1024 and sha256(path) != entry['sha256']):
+            result = subprocess.run(['git', 'show', 'HEAD:' + entry['path']], cwd=ROOT, capture_output=True)
+            current = path.read_bytes()
+            committed = result.stdout
+            if (result.returncode == 0 and b'\x00' not in current
+                    and hashlib.sha256(committed).hexdigest() == entry['sha256']
+                    and current.replace(b'\r\n', b'\n') == committed.replace(b'\r\n', b'\n')):
+                path.write_bytes(committed)
+                restored.append(entry['path'])
         if not path.is_relative_to(ROOT):
             failures.append({'path': entry['path'], 'error': 'Path leaves repository'})
         elif not path.is_file():
@@ -133,6 +146,7 @@ def main():
         'materialBytes': sum(item['bytes'] for item in manifest['files']),
         'gltfModelsRead': model_count, 'linkedResourcesChecked': external_count,
         'approvedProvenanceReferencesChecked': provenance_count,
+        'lineEndingsRestored': restored,
         'optionalUnusedPineDependenciesNotDownloaded': len(optional_missing),
         'optionalDownloadCommand': manifest['optionalAcquisition']['command'] if optional_missing else None,
         'failures': failures,

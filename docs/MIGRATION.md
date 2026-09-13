@@ -20,6 +20,8 @@ git lfs fsck
 
 已经克隆的成员先 `git pull --ff-only`，再执行 LFS 拉取。当前整库的大文件去重后约 4.43 GB；应使用 Git 克隆并拉取 LFS，不能仅凭 GitHub 的 ZIP 下载判断模型是否齐全。
 
+从旧版仓库更新后，如果素材检查报告 glTF/JSON 的哈希不符，可运行 `npm run materials:check -- --repair-line-endings`。它仅恢复与当前 Git 提交内容一致的 CRLF/LF 差异，保留其他实质编辑；新克隆会直接使用仓库规定的素材字节格式。
+
 ## 2. Windows
 
 在项目目录使用 PowerShell。虚拟环境把项目依赖与系统 Python 隔离：
