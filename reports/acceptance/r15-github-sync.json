@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-13T05:20:35.667244+00:00",
+  "codeCommit": "9eea52143cbfe78edae009bb2d65a6cb5ab4292a",
+  "remoteMainAtVerification": "9eea52143cbfe78edae009bb2d65a6cb5ab4292a",
+  "repository": "https://github.com/miracle121388-a11y/daguanyuan",
+  "revision": "spatial-garden-20260913-r15",
+  "inventorySha256": "4997a95eb31b12b8a05fd4903b8f0e73396d310194cb9c27e1ad5c465b2d278d",
+  "requiredMaterialFiles": 1284,
+  "materialCheck": "r15-material-handoff.json",
+  "lfsFsck": "r15-lfs-fsck.log",
+  "lfsPush": {
+    "objects": 35,
+    "completed": true
+  },
+  "scope": "Source code, editable master, required source/processed/runtime material files, local painting references and acquisition instructions. Regenerable dependency folders and timestamped test-report duplicates are not required source assets."
+}

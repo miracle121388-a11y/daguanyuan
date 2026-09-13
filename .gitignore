@@ -12,3 +12,6 @@ test-results/
 .DS_Store
 __pycache__/
 *.pyc
+# Per-run duplicate reports; canonical playwright.json and release evidence stay tracked.
+/reports/acceptance/playwright-*.json
+/reports/acceptance/playwright-*-html/
