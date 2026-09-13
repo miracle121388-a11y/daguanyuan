@@ -7,7 +7,8 @@ const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const assets=read('assets/manifest.json'),places=read('public/scene-manifest.json').places;
 const craftConfig=read('config/craft.materials.json'),craft=craftConfig.materials,revision=craftConfig.revision;
 const swatches=read(`assets/processed/materials-${revision}/manifest.json`).files;
-const foliage=read(`assets/processed/foliage-${revision}/manifest.json`).files;
+const foliageRevision=craftConfig.foliageRevision??revision;
+const foliage=read(`assets/processed/foliage-${foliageRevision}/manifest.json`).files;
 const crowns={island_tree_01:['broadleaf','broadleaf-low','shrub'],island_tree_02:['broadleaf-2'],pine_sapling_small:['pine']};
 const buildings=['public/models/overview.glb','public/models/overview-low.glb',...places.flatMap(p=>['public/models/places/'+p.id+'.glb','public/models/places-low/'+p.id+'.glb'])];
 for(const a of assets.filter(a=>a.status==='approved')){
@@ -51,7 +52,8 @@ for(const a of assets.filter(a=>a.status==='approved')){
  }
  if(a.assetId==='rock_moss_set_01')a.modifications+=' r9 replaces the deformed coastal terrain patch with independent boulder silhouettes.';
  const packedLeaves=foliage.filter(item=>item.assetId===a.assetId);
- if(packedLeaves.length){a.derivativeFiles.push(...packedLeaves.map(item=>item.file));a.modifications+=' r11 decodes the 16-bit sRGB diffuse once to8-bit and joins the separately supplied alpha before Blender import; one packed RGBA node supplies both Colour and Alpha, avoiding the previous near-black exported RGB. The packed source, mask and output hashes are in assets/processed/foliage-'+revision+'/manifest.json. Visible leaf RGB as well as alpha are verified in delivered GLBs.';}
+ if(packedLeaves.length){a.derivativeFiles.push(...packedLeaves.map(item=>item.file));a.modifications+=' r11 decodes the 16-bit sRGB diffuse once to8-bit and joins the separately supplied alpha before Blender import; one packed RGBA node supplies both Colour and Alpha, avoiding the previous near-black exported RGB. The packed source, mask and output hashes are in assets/processed/foliage-'+foliageRevision+'/manifest.json. Visible leaf RGB as well as alpha are verified in delivered GLBs.';}
+ if(existsSync('config/qing.palette.json')&&roles.length){a.modifications+=' r15 supersedes the architecture-atlas description above: occupied-room envelopes and polychrome material roles retain source UVs and shared PBR swatches in both low and high models. 36cm walls and opaque window backing bypass geometric simplification. Lacquer/mineral pigment is authored in a Blender material shader over unchanged source grain; settings and original hashes are recorded per swatch. The landscape and foliage keep their existing pipelines.';}
  a.derivativeFiles=a.derivativeFiles.filter(existsSync);
  const textures=new Set();
  for(const file of a.derivativeFiles){

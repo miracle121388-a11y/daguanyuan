@@ -10,8 +10,88 @@
   "files": [
     {
       "path": "assets/manifest.json",
-      "bytes": 141549,
-      "sha256": "e856808baa3b042c2b5dd875213529ddfd032c8ffd6ec9d2e19990ef4b3ac128"
+      "bytes": 119014,
+      "sha256": "e2617b37c4dcfd4badc80991b45981a3ddecfdfec69eff93144c5d639f64cad7"
+    },
+    {
+      "path": "assets/processed/architecture-r15/aojingxiguan.glb",
+      "bytes": 6191808,
+      "sha256": "c85c009b47ede75afab65c3703da90d20698725d2884abf5ffa518d53ee63433"
+    },
+    {
+      "path": "assets/processed/architecture-r15/daguanlou.glb",
+      "bytes": 35126680,
+      "sha256": "13e5ac6b042d6cfeadf588bef21ae856229c1d0093e9312822337a56c971d359"
+    },
+    {
+      "path": "assets/processed/architecture-r15/daguanyuan_gate.glb",
+      "bytes": 6738852,
+      "sha256": "abd27f9337365ca285caa04a2e1a03ab1d2a83984cb484e53d8507d97d64469d"
+    },
+    {
+      "path": "assets/processed/architecture-r15/daoxiangcun.glb",
+      "bytes": 1711976,
+      "sha256": "7b889d011385a0ec9722624afd32c584a8669fb3c96a2d4c7382a7e04b115a56"
+    },
+    {
+      "path": "assets/processed/architecture-r15/dicuiting.glb",
+      "bytes": 3246948,
+      "sha256": "f450af3dea72febc32e05dd0675cc455b392c5346de77d1fb5bbdc4f313558b2"
+    },
+    {
+      "path": "assets/processed/architecture-r15/hengwuyuan.glb",
+      "bytes": 8482460,
+      "sha256": "fd611ee557d817d4020667a141b9c3ad8fb7fe1b597223173a82cbaa86b8163a"
+    },
+    {
+      "path": "assets/processed/architecture-r15/longcuian.glb",
+      "bytes": 8581200,
+      "sha256": "9da6520a945d80e3753b82e713a09be05f09faddeda88505e34a6debf07321a0"
+    },
+    {
+      "path": "assets/processed/architecture-r15/luxuean.glb",
+      "bytes": 1480868,
+      "sha256": "e3a7582f677e0ea0a8c3895f07b2333d918459de44ea912835aaa9cb1bd5983a"
+    },
+    {
+      "path": "assets/processed/architecture-r15/nuanxiangwu.glb",
+      "bytes": 7353544,
+      "sha256": "93492405e91040bc608a4b5dbc5ebcc109be5475efc684f1fa4f9dc9a1b2b50c"
+    },
+    {
+      "path": "assets/processed/architecture-r15/ouxiangxie.glb",
+      "bytes": 5333232,
+      "sha256": "76114725a71683d9e683adce6dbe5b515ee1737202088ef88837aeb2f7fa0146"
+    },
+    {
+      "path": "assets/processed/architecture-r15/overview.glb",
+      "bytes": 21577984,
+      "sha256": "4c66112d149a95430e227f7d0ece76b7e76480aafe2505f2b4ff265efc160d19"
+    },
+    {
+      "path": "assets/processed/architecture-r15/qiushuangzhai.glb",
+      "bytes": 7627732,
+      "sha256": "180eeb20d1c48e4e83d83cfebf4d58298b89ef0a3bc0c7bbeca2462a5b556089"
+    },
+    {
+      "path": "assets/processed/architecture-r15/qujingtongyou.glb",
+      "bytes": 304,
+      "sha256": "03877d5036203fcd9ac07bb8a40bd2f29672a6d268f73039eb2b94424716c816"
+    },
+    {
+      "path": "assets/processed/architecture-r15/tubishanzhuang.glb",
+      "bytes": 6330736,
+      "sha256": "de896648903c3c3d5da923e643c61cc489964d366d3f2a24ccbb971214cfc900"
+    },
+    {
+      "path": "assets/processed/architecture-r15/xiaoxiangguan.glb",
+      "bytes": 7958856,
+      "sha256": "38c4c77bf6feb2b0eec246c0d5bd5ebc0c4944af976eaaf6ca4115f2da0f0de1"
+    },
+    {
+      "path": "assets/processed/architecture-r15/yihongyuan.glb",
+      "bytes": 8863588,
+      "sha256": "246b98161dd3d4722725a7d787213e7e9f428f46dc55510e6548ea6dc348e27a"
     },
     {
       "path": "assets/processed/baseline/aojingxiguan.glb",
@@ -210,163 +290,163 @@
     },
     {
       "path": "assets/processed/baseline/reference-public_models_overview-low.glb",
-      "bytes": 27794820,
-      "sha256": "c2e661335dcd025f6dc937198b60650a92a4bda57d558888c3862627a18d8d0e"
+      "bytes": 36743292,
+      "sha256": "b3975022e3510ed084a0770c77f2b25b32354c8ff7d91e327944f8e6ed65bd67"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_overview.glb",
-      "bytes": 27794820,
-      "sha256": "c2e661335dcd025f6dc937198b60650a92a4bda57d558888c3862627a18d8d0e"
+      "bytes": 36743292,
+      "sha256": "b3975022e3510ed084a0770c77f2b25b32354c8ff7d91e327944f8e6ed65bd67"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_aojingxiguan.glb",
-      "bytes": 1776820,
-      "sha256": "3b8d7a2efc84e126fa9d3631b4bcf4217ce0df53ca30496c4adda2df5e50cf27"
+      "bytes": 5338940,
+      "sha256": "5735055da0de9790d286c88de0526622a650d1e2d2fe28342001c9d79e1a53d5"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_daguanlou.glb",
-      "bytes": 30567876,
-      "sha256": "964e62125830611170f22b1f6845336951e62c5118c6d2803b2b6dbfc25e7108"
+      "bytes": 42627740,
+      "sha256": "2539469557f6185a4df992c3e2ddb5fbddaed69cf3926375aecc944997cc95eb"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_daguanyuan_gate.glb",
-      "bytes": 2114840,
-      "sha256": "33367572c3a5c9031777ad9cedaf78425352426b87a24d9c24d06de6ed4864fe"
+      "bytes": 5879652,
+      "sha256": "d6b77f7a3046dbd9e9dcf28defc1b6e46fc4fa993f1e06abad1183e7180bd039"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_daoxiangcun.glb",
-      "bytes": 3344212,
-      "sha256": "8e20819cc03bfc2a74fb8c324b5440955b5dab803333d1cac1d443aa86cb026c"
+      "bytes": 5072304,
+      "sha256": "51dd05b61b3ff82087dd07935cc3294437bd11ad8a6e626aed1fb37e0164c8c6"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_dicuiting.glb",
-      "bytes": 715820,
-      "sha256": "4cd7d01d8a22a1d448a27f92e0a65aaf63267576bcb88834115f74dc9e01cfaf"
+      "bytes": 2528108,
+      "sha256": "b89a5a322ac4d31d652788e34ae1a24cbf8c1e21ee4564e3a346ebcfd6f1ffc4"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_hengwuyuan.glb",
-      "bytes": 5042720,
-      "sha256": "9ec1df191b9660aa3c628d03f158565e0e6926c713c196d50a873917a29a6567"
+      "bytes": 9359784,
+      "sha256": "c4562b66bcdc9b5dcbcf021e7e401f881f1025f243aff8527c2c2fa57bd81847"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_longcuian.glb",
-      "bytes": 4329164,
-      "sha256": "ff36918d5437e3852db7c1d8c4341ea712e2288cf0d214e98afa8cbd013ae2b0"
+      "bytes": 8907896,
+      "sha256": "81d17096b2a2d328f34221ec60f95f38e720dad4da5d8748e9da1f5becf2b72d"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_luxuean.glb",
-      "bytes": 239700,
-      "sha256": "81627b3e18d9d860d92daf866d37b0777e04be66daeae215fbe61477451e9b7b"
+      "bytes": 1538168,
+      "sha256": "02ba9635c2b52c3fd5f931c428fceb9f31dc42f6c1fefb4c0c9c928530ad7d99"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_nuanxiangwu.glb",
-      "bytes": 3080896,
-      "sha256": "ca2c06131f2caa28b0486cad5a1b5cc90f911309d1d20726c7b1c6ab177e25af"
+      "bytes": 7016072,
+      "sha256": "665961150aee0e6173547cd37b49b74b9049b176a1d25a2382a791b14f6363f3"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_ouxiangxie.glb",
-      "bytes": 1188388,
-      "sha256": "36b2339eee51f3db5e1f005295afee9d8e9f3c0b92a546b8caac4bdd1e2ee403"
+      "bytes": 4312248,
+      "sha256": "367eac5d40ea4145611b748cbc7d8f1018dafc06f5e8929469b83cebe9b37a96"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_qiushuangzhai.glb",
-      "bytes": 4123388,
-      "sha256": "22dcb9c4c4b304b3839de9e7712039b1a6001ede7eee389157d5498990579af0"
+      "bytes": 8142572,
+      "sha256": "ffffe94181a1eedef486f81fe42b50d2921bb4699955c0d289d5d4ca8aab0635"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_qujingtongyou.glb",
       "bytes": 645868,
-      "sha256": "24aeaf2ca0ee69cf6e832704e44f35458c0a63eb4c7b0d95159c25d02fca7e0b"
+      "sha256": "bec73fefbb7a859ce2167e26202afc338362fb88f2b17882fbe9581f8c3bc764"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_tubishanzhuang.glb",
-      "bytes": 1898312,
-      "sha256": "a6b75e40f5b2e54924d66a2f2dc3fcd6334f56e5d5b98b59e472cfde3f0c20bc"
+      "bytes": 5483188,
+      "sha256": "5d4e70efdbe928da3f266cc1bf8c48a16de73390ab8bd5423c5d57169961ee03"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_xiaoxiangguan.glb",
-      "bytes": 17291336,
-      "sha256": "da7e27cc9f5d30fcc5964b5f503509b73e37dd2fc4595bc4a224eb2392d53719"
+      "bytes": 21372648,
+      "sha256": "206b5978501e6ae4ef6afd380b99ecb5ba9491b2c7bc941d2b942e43aa174295"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places-low_yihongyuan.glb",
-      "bytes": 6370052,
-      "sha256": "0c46950516e3c8c0fdc5b47c2b98e6caa8eb4b431ce661a4218b00abdda7db73"
+      "bytes": 10667336,
+      "sha256": "8570a92bed342fcb17edde56803f61b32387c72e188e5c4cc57ffcb408bcb703"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_aojingxiguan.glb",
-      "bytes": 10714136,
-      "sha256": "6bece92d3ed1613dbd7f5624c4475a6ca9e8eae1071ae8920b5454dda0ccedea"
+      "bytes": 11086324,
+      "sha256": "98dbe219119b9ba4c228fa9b22f3eaad10cffaabb280257292e2ab4dc4751cec"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_daguanlou.glb",
-      "bytes": 103825128,
-      "sha256": "d1806a17ddbf4379557ed6620f33e1ff157242e49c56c0d7a144b6656c9e502a"
+      "bytes": 110767840,
+      "sha256": "ef7ba0c8c3b925aab492e07b3cb419a35aa44bdbf8b24250e8a295f41a1bd6eb"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_daguanyuan_gate.glb",
-      "bytes": 13165876,
-      "sha256": "86649aeeec3ec0bf3321a3d7ccc3906a7e27903600ea3d28a8012e75e70db3fa"
+      "bytes": 13807204,
+      "sha256": "ca0919502c6d3ae3359fad94f168f30473d00ac065e446ba52baf61cd6775808"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_daoxiangcun.glb",
-      "bytes": 10723480,
-      "sha256": "0935a1dd1ff7611f1cd2fc9e40a267f9592a4a62691aec04d149a159d43a4db7"
+      "bytes": 10559336,
+      "sha256": "99e665fd8ac8e7a7f2b834e5b47b0e85df1088257cb18236b5a50fd1f62d85ef"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_dicuiting.glb",
-      "bytes": 4519804,
-      "sha256": "38b4187fd5949b225a08c7305e23a800c8a5e1edee948bf2da45f4fc38629100"
+      "bytes": 4011376,
+      "sha256": "4962091c6132ca89a69a41b3d6efc083fc20b5d762295ba56a1c1fcb9e537f22"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_hengwuyuan.glb",
-      "bytes": 21142784,
-      "sha256": "9449252589b428c2f92fcaf9f748fda1ad42f02a24243eef33c62946ad1ecd81"
+      "bytes": 20931728,
+      "sha256": "88830568f9ed421e783a3e9d27d474e2da9a6f45dcba586d0a2f19b5847bfdc7"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_longcuian.glb",
-      "bytes": 20037720,
-      "sha256": "b0965d7359cddd29d57e5f49eb153fb6263d8932c369cb159893aedd5c9d826a"
+      "bytes": 20090356,
+      "sha256": "bac224edd34e11fa155542a54c1cb438e22474d8737061749fec74952767b061"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_luxuean.glb",
-      "bytes": 2091332,
-      "sha256": "8a465a96db55cc8f6368e81f29d7bbd15fb5d61cfa6f3b339bb16801609faa78"
+      "bytes": 2361224,
+      "sha256": "81cb57324c923d36efe2dd2b0b65acec5ffd1e85fd77d3dc170794617d2661ee"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_nuanxiangwu.glb",
-      "bytes": 14830560,
-      "sha256": "92d3dec03dc0a3a209902bf85d783805865f73021d8e7529b82e3aab2b711ca5"
+      "bytes": 15202412,
+      "sha256": "cd659318b7e6d373c3702c4b0a14aa8dcd2f406631d22c6f5dac4795d7645c4b"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_ouxiangxie.glb",
-      "bytes": 6905032,
-      "sha256": "758f9487ec58e4d85500ae1601513f367f1b425c99190794432dd6bbcfd907c4"
+      "bytes": 7276628,
+      "sha256": "2510fdde2d155b27e62b05379f6408428223c984aa4f6dec2fc87de67ebf2e16"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_qiushuangzhai.glb",
-      "bytes": 18484100,
-      "sha256": "c7ef828baaf622c26e883412c91c6e13064170fd823142d127a21e9b29761867"
+      "bytes": 17891696,
+      "sha256": "92e87ace8b703645616c41b85dc9f253327af2d005f32045deeeb0542709f507"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_qujingtongyou.glb",
-      "bytes": 1718216,
-      "sha256": "4832e167063a6496992092513699bf85bf03a77a5106240159c19432e8e8b0f3"
+      "bytes": 1718236,
+      "sha256": "b98daeeaa5b268fc3da2a624c1cfacf08d51c1918bde21c210aea1799abf8e96"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_tubishanzhuang.glb",
-      "bytes": 11099848,
-      "sha256": "22101d4d6ef0b8ba2055cffdc033a317cd23470ce0fe0826f29cb93dce58fc8f"
+      "bytes": 11472032,
+      "sha256": "81588045c3c78aa950d03a4190f416a0864247c518c2812cbae0004bad6c0306"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_xiaoxiangguan.glb",
-      "bytes": 39529868,
-      "sha256": "d3cbdd239a02a154a5b8e2e7c9ad480e0666b0f10ecf338bd22d07702bc561c2"
+      "bytes": 39391984,
+      "sha256": "3cbdbbd7307869fc7aec262ba6e0d1501a9395b7dfc83c1d6f5203c254ce3021"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_places_yihongyuan.glb",
-      "bytes": 23639544,
-      "sha256": "482baef79c4365214afb5704c4e26ba034fbd4fee8f62f752381dfd1c1c3a61d"
+      "bytes": 23428564,
+      "sha256": "2a122be9d4a4b8c3c7190bd1fff6137cb3c86e1093230b182a5d5b596a6ae01c"
     },
     {
       "path": "assets/processed/baseline/reference-public_models_vegetation_broadleaf-2.glb",
@@ -1259,6 +1339,16 @@
       "sha256": "558fe7628178c8fb4b7635fa122e19827d8f64d0468de35ae23b29627dddf1e7"
     },
     {
+      "path": "assets/processed/landscape-r15/light.png",
+      "bytes": 6324498,
+      "sha256": "b29bb74d080b5a43ea2d5fe03c496206bc5dcbd3c5d7ee9ddfcc64e14c32a8e6"
+    },
+    {
+      "path": "assets/processed/landscape-r15/manifest.json",
+      "bytes": 955,
+      "sha256": "d547e58b5d7a73bed9bb06b0357b3d9ab99208863d6a3bbfa1fb77ce95e1f561"
+    },
+    {
       "path": "assets/processed/landscape-r6/light.png",
       "bytes": 4849518,
       "sha256": "407ad4638b13fb1af8155511f48c727fe2e3cf772a2da5eefe307ce3b6040acf"
@@ -2012,6 +2102,316 @@
       "path": "assets/processed/materials-r12/wood_rough.png",
       "bytes": 133411,
       "sha256": "0efe5692e169a8fa1c86dca5c190378902322665b958d17c78c47ad5767894af"
+    },
+    {
+      "path": "assets/processed/materials-r15/bankstone_diff.png",
+      "bytes": 259401,
+      "sha256": "b156dd7148cc18ca0f75e8ec3e75d67e6d417e0f9027abdfb1659244aa7667c8"
+    },
+    {
+      "path": "assets/processed/materials-r15/bankstone_nor_gl.png",
+      "bytes": 328007,
+      "sha256": "ee003b538830afb0c6d3de94358fea501da6f6f6267dbc6a216fe93d22a11a74"
+    },
+    {
+      "path": "assets/processed/materials-r15/bankstone_rough.png",
+      "bytes": 45086,
+      "sha256": "2a988e58937a9bac4c6ff8e7f6509392c859a19ac998ab15d5e73da6cface5b3"
+    },
+    {
+      "path": "assets/processed/materials-r15/courtbase_diff.png",
+      "bytes": 172496,
+      "sha256": "1f5bdd8bc539d8708d8c237ee2c641a0b46328bc821d5ef8a33a1540da28757b"
+    },
+    {
+      "path": "assets/processed/materials-r15/courtbase_nor_gl.png",
+      "bytes": 160024,
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398"
+    },
+    {
+      "path": "assets/processed/materials-r15/courtbase_rough.png",
+      "bytes": 36407,
+      "sha256": "a13f95e07b9e75aa9ac72b15b7193abc6cf6b901fb2fdf4cb4203eb25d5f003b"
+    },
+    {
+      "path": "assets/processed/materials-r15/cutstone_diff.png",
+      "bytes": 204307,
+      "sha256": "d8ffbd374eff60012919b92dfcf073413ae23687022af78acf28da738f7aecf7"
+    },
+    {
+      "path": "assets/processed/materials-r15/cutstone_nor_gl.png",
+      "bytes": 160024,
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398"
+    },
+    {
+      "path": "assets/processed/materials-r15/cutstone_rough.png",
+      "bytes": 37946,
+      "sha256": "aeca328dbc09ddc69d0df0f4e4c826d97c0c2e548277ba38433d64935b7fb6d4"
+    },
+    {
+      "path": "assets/processed/materials-r15/darkwood_diff.png",
+      "bytes": 195145,
+      "sha256": "f9843750e5267d2fe17135fc0a26058461a70bcbcd98ff7b6f06637275acfb2e"
+    },
+    {
+      "path": "assets/processed/materials-r15/darkwood_nor_gl.png",
+      "bytes": 90019,
+      "sha256": "ef18eaa9a6c1c9167893901e18d173a77c2cdd307adff7f1c865113c10988fb0"
+    },
+    {
+      "path": "assets/processed/materials-r15/darkwood_rough.png",
+      "bytes": 133640,
+      "sha256": "1e5a8fd77268dea3a51299f7b8f6ce8d43c06d8b323bb4ab230d5f6c70c0f864"
+    },
+    {
+      "path": "assets/processed/materials-r15/floorwood_diff.png",
+      "bytes": 268089,
+      "sha256": "ae196a547fee0775463ca005ccc76733a9a526a5c0f2d271bbf5a5ff3676ca44"
+    },
+    {
+      "path": "assets/processed/materials-r15/floorwood_nor_gl.png",
+      "bytes": 90019,
+      "sha256": "ef18eaa9a6c1c9167893901e18d173a77c2cdd307adff7f1c865113c10988fb0"
+    },
+    {
+      "path": "assets/processed/materials-r15/floorwood_rough.png",
+      "bytes": 133314,
+      "sha256": "cf0bebecd59f9721856f5912ec0cf7814c71c83d9b86e6d7a788f139d7e1b637"
+    },
+    {
+      "path": "assets/processed/materials-r15/furniture_diff.png",
+      "bytes": 246357,
+      "sha256": "2ef4e4bf65eecfd7759df2236b978ef08a28c68c7ffe874358300e334bb373af"
+    },
+    {
+      "path": "assets/processed/materials-r15/furniture_nor_gl.png",
+      "bytes": 90019,
+      "sha256": "ef18eaa9a6c1c9167893901e18d173a77c2cdd307adff7f1c865113c10988fb0"
+    },
+    {
+      "path": "assets/processed/materials-r15/furniture_rough.png",
+      "bytes": 133142,
+      "sha256": "6c8aada9b0d9a3c5176d8aeb765a9539721b2a6ec3fc2338830417fcfd391fa3"
+    },
+    {
+      "path": "assets/processed/materials-r15/gardenstone_diff.png",
+      "bytes": 229186,
+      "sha256": "6c78f4659c35f315dac5340686ff9ca5d12f91c941e92d565a7d290abb1ce2df"
+    },
+    {
+      "path": "assets/processed/materials-r15/gardenstone_nor_gl.png",
+      "bytes": 328007,
+      "sha256": "ee003b538830afb0c6d3de94358fea501da6f6f6267dbc6a216fe93d22a11a74"
+    },
+    {
+      "path": "assets/processed/materials-r15/gardenstone_rough.png",
+      "bytes": 41546,
+      "sha256": "ddd4bfbd5523c9aaf89cf92d5209141fabcab693653f7ce3e11001db88927e02"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldroof_diff.png",
+      "bytes": 126783,
+      "sha256": "1c52cf652c6b4c18e270d7a299dc3918de08ff4093bd33a5d63208677ce4de7c"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldroof_nor_gl.png",
+      "bytes": 180514,
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldroof_rough.png",
+      "bytes": 28481,
+      "sha256": "29ab97049e42ec9df68d7577b824d18fd9af8d5c02c3cb9782b1ecf6a6e6f7b4"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldtile_diff.png",
+      "bytes": 137066,
+      "sha256": "67cc76755a4c9a438b94e7086d3ab305d3d8e1efff94f9fb2db474c272302780"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldtile_nor_gl.png",
+      "bytes": 180514,
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldtile_rough.png",
+      "bytes": 28481,
+      "sha256": "29ab97049e42ec9df68d7577b824d18fd9af8d5c02c3cb9782b1ecf6a6e6f7b4"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldtiledark_diff.png",
+      "bytes": 119237,
+      "sha256": "943285b0582784f5b5f8708b0809f4cfd5170fbc75e5eb85164a5a6c4999ad14"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldtiledark_nor_gl.png",
+      "bytes": 180514,
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldtiledark_rough.png",
+      "bytes": 28481,
+      "sha256": "29ab97049e42ec9df68d7577b824d18fd9af8d5c02c3cb9782b1ecf6a6e6f7b4"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldtilelight_diff.png",
+      "bytes": 143459,
+      "sha256": "8be8499bb73da5db348a5185e777529e58e9d4dde040ca44c69ee4893a7be273"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldtilelight_nor_gl.png",
+      "bytes": 180514,
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "path": "assets/processed/materials-r15/goldtilelight_rough.png",
+      "bytes": 28481,
+      "sha256": "29ab97049e42ec9df68d7577b824d18fd9af8d5c02c3cb9782b1ecf6a6e6f7b4"
+    },
+    {
+      "path": "assets/processed/materials-r15/latticewood_diff.png",
+      "bytes": 232397,
+      "sha256": "830247d7ee90583237a6bbaeca5da79832b89449b71580363c2dca2ca521690a"
+    },
+    {
+      "path": "assets/processed/materials-r15/latticewood_nor_gl.png",
+      "bytes": 90019,
+      "sha256": "ef18eaa9a6c1c9167893901e18d173a77c2cdd307adff7f1c865113c10988fb0"
+    },
+    {
+      "path": "assets/processed/materials-r15/latticewood_rough.png",
+      "bytes": 133399,
+      "sha256": "aaa0ea39dba41cf6588da64efdf0f6212c0fca6d5485880e39c761e2f6e58ee1"
+    },
+    {
+      "path": "assets/processed/materials-r15/manifest.json",
+      "bytes": 49575,
+      "sha256": "c3b6d5f52c34099b5b57c92ba7f583f7a0905bf1f70b01cf3e567af071b85344"
+    },
+    {
+      "path": "assets/processed/materials-r15/paving_diff.png",
+      "bytes": 172496,
+      "sha256": "1f5bdd8bc539d8708d8c237ee2c641a0b46328bc821d5ef8a33a1540da28757b"
+    },
+    {
+      "path": "assets/processed/materials-r15/paving_nor_gl.png",
+      "bytes": 160024,
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398"
+    },
+    {
+      "path": "assets/processed/materials-r15/paving_rough.png",
+      "bytes": 36407,
+      "sha256": "a13f95e07b9e75aa9ac72b15b7193abc6cf6b901fb2fdf4cb4203eb25d5f003b"
+    },
+    {
+      "path": "assets/processed/materials-r15/plaster_diff.png",
+      "bytes": 251095,
+      "sha256": "aa7086e0b6af67efe08ba1cfb2bcf0637ac4953eb2f0b38bb7d68632aa9b2d7c"
+    },
+    {
+      "path": "assets/processed/materials-r15/roof_diff.png",
+      "bytes": 106802,
+      "sha256": "95a953933ab54ae72988f3748e24896b1ffc9bf89b11e3482c7b1c355e2b81e2"
+    },
+    {
+      "path": "assets/processed/materials-r15/roof_nor_gl.png",
+      "bytes": 180514,
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "path": "assets/processed/materials-r15/roof_rough.png",
+      "bytes": 28481,
+      "sha256": "29ab97049e42ec9df68d7577b824d18fd9af8d5c02c3cb9782b1ecf6a6e6f7b4"
+    },
+    {
+      "path": "assets/processed/materials-r15/rusticwood_diff.png",
+      "bytes": 248002,
+      "sha256": "8ed5e04bd53175e5100348ec6d8ac0f25f2895dc6212c8c2d7709df31fb07efb"
+    },
+    {
+      "path": "assets/processed/materials-r15/rusticwood_nor_gl.png",
+      "bytes": 90019,
+      "sha256": "ef18eaa9a6c1c9167893901e18d173a77c2cdd307adff7f1c865113c10988fb0"
+    },
+    {
+      "path": "assets/processed/materials-r15/rusticwood_rough.png",
+      "bytes": 133399,
+      "sha256": "aaa0ea39dba41cf6588da64efdf0f6212c0fca6d5485880e39c761e2f6e58ee1"
+    },
+    {
+      "path": "assets/processed/materials-r15/stone_diff.png",
+      "bytes": 197010,
+      "sha256": "bdcee7579ca4ca7894242e76f717900b5695dcb8280ec9d0d029016086dbe7a8"
+    },
+    {
+      "path": "assets/processed/materials-r15/stone_nor_gl.png",
+      "bytes": 160024,
+      "sha256": "7c3a7921e3be40a0d92e3f8cfa58df2a65315ef0a0b1937f8ace358712d34398"
+    },
+    {
+      "path": "assets/processed/materials-r15/stone_rough.png",
+      "bytes": 37792,
+      "sha256": "8bba4a4ba30ec93292c3a13076edb766a861c20a72d6e071d80e81aa011a7917"
+    },
+    {
+      "path": "assets/processed/materials-r15/tile_diff.png",
+      "bytes": 105933,
+      "sha256": "0228148a26676a50576db343b0167a2e27221c06bfa5f8351b6850cdf0757977"
+    },
+    {
+      "path": "assets/processed/materials-r15/tile_nor_gl.png",
+      "bytes": 180514,
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "path": "assets/processed/materials-r15/tile_rough.png",
+      "bytes": 28481,
+      "sha256": "29ab97049e42ec9df68d7577b824d18fd9af8d5c02c3cb9782b1ecf6a6e6f7b4"
+    },
+    {
+      "path": "assets/processed/materials-r15/tiledark_diff.png",
+      "bytes": 92731,
+      "sha256": "93d0a3428b22ecbfaea001a61c521b05cd8634aef70e1f1ef220b8afb29da331"
+    },
+    {
+      "path": "assets/processed/materials-r15/tiledark_nor_gl.png",
+      "bytes": 180514,
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "path": "assets/processed/materials-r15/tiledark_rough.png",
+      "bytes": 28481,
+      "sha256": "29ab97049e42ec9df68d7577b824d18fd9af8d5c02c3cb9782b1ecf6a6e6f7b4"
+    },
+    {
+      "path": "assets/processed/materials-r15/tilelight_diff.png",
+      "bytes": 124512,
+      "sha256": "8b559586be8aa350bc6a7fe1d4e47eb38a33fb161e50d14c2d76b3a2082da574"
+    },
+    {
+      "path": "assets/processed/materials-r15/tilelight_nor_gl.png",
+      "bytes": 180514,
+      "sha256": "ec87367607ae9cc44001fc321eb17f5a5343c4c42e900abd60a5a3f2f063083e"
+    },
+    {
+      "path": "assets/processed/materials-r15/tilelight_rough.png",
+      "bytes": 28481,
+      "sha256": "29ab97049e42ec9df68d7577b824d18fd9af8d5c02c3cb9782b1ecf6a6e6f7b4"
+    },
+    {
+      "path": "assets/processed/materials-r15/wood_diff.png",
+      "bytes": 245745,
+      "sha256": "44dffcd97d01a62e4a1c679d03f19beb22274d172ee4f658af0a54a00c43d14d"
+    },
+    {
+      "path": "assets/processed/materials-r15/wood_nor_gl.png",
+      "bytes": 90019,
+      "sha256": "ef18eaa9a6c1c9167893901e18d173a77c2cdd307adff7f1c865113c10988fb0"
+    },
+    {
+      "path": "assets/processed/materials-r15/wood_rough.png",
+      "bytes": 133399,
+      "sha256": "aaa0ea39dba41cf6588da64efdf0f6212c0fca6d5485880e39c761e2f6e58ee1"
     },
     {
       "path": "assets/processed/materials-r8/bankstone_diff.png",
@@ -3790,8 +4190,8 @@
     },
     {
       "path": "blender/daguanyuan_master.blend",
-      "bytes": 983241146,
-      "sha256": "d8e497880d0d0902b36a8d3c8fd8f7f8ca46563ca631e545861ec946ebe33f48"
+      "bytes": 991790201,
+      "sha256": "486f2e96a05694aa833a8ff82f92a72f6dcde78c838c3ce547770f786b5b713e"
     },
     {
       "path": "blender/xiaoxiangguan_sample.blend",
@@ -3805,8 +4205,8 @@
     },
     {
       "path": "config/craft.materials.json",
-      "bytes": 5452,
-      "sha256": "7f9e6e0d7cfb8b60608fff30aa3722b16da1b0144bf5f9dfade1f680d8605c77"
+      "bytes": 7492,
+      "sha256": "07c489a3e5626cf2e3a948cffb8755dd84b297efa61ebe3807befec33e65e27c"
     },
     {
       "path": "config/development-tools.json",
@@ -3816,12 +4216,17 @@
     {
       "path": "config/garden.layout.json",
       "bytes": 50094,
-      "sha256": "2733470dedb0830c027f0759a0fcd0958fbd09460a0d85f23002558728ec31a2"
+      "sha256": "28c13af2c9eb01f703f22f09b0b78454eea04a578f7357abbaf2e163672d79ea"
     },
     {
       "path": "config/garden.planting.json",
       "bytes": 2556,
       "sha256": "476f37ac7ebf93e4e321a7cac2221099142dc2dcddc62fb2745b9b8683a85a26"
+    },
+    {
+      "path": "config/qing.palette.json",
+      "bytes": 784,
+      "sha256": "ed12a552decef44a29f203c13c534b8f33a6dded414294cf24279847dc68c2fe"
     },
     {
       "path": "config/quality.json",
@@ -4575,13 +4980,13 @@
     },
     {
       "path": "public/models/overview-low.glb",
-      "bytes": 3279844,
-      "sha256": "de3cea05e2dc7391adb2ed0fee8d80b44ed9512c715f090df2c7210ea66be0ce"
+      "bytes": 4258720,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f"
     },
     {
       "path": "public/models/overview.glb",
-      "bytes": 3279844,
-      "sha256": "de3cea05e2dc7391adb2ed0fee8d80b44ed9512c715f090df2c7210ea66be0ce"
+      "bytes": 4258720,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f"
     },
     {
       "path": "public/models/pipeline-probe.glb",
@@ -4590,153 +4995,153 @@
     },
     {
       "path": "public/models/places/aojingxiguan.glb",
-      "bytes": 433408,
-      "sha256": "0f0b00b98b5b6bd4337917a482bc7ba4238ae4fb0845a4071436185287c6657d"
+      "bytes": 484824,
+      "sha256": "c09bd93f42df6b551dd258be2ff4d7692641259d0ec52d1c6083888aaf541f7e"
     },
     {
       "path": "public/models/places/daguanlou.glb",
-      "bytes": 6524824,
-      "sha256": "eec59b49ccfdfc9958602414352062937b7163354234b46430abe2342a49550b"
+      "bytes": 6931792,
+      "sha256": "6bc86363de053ecb78679ccd13f01196731910450f411f268d9f5f2ed42380ff"
     },
     {
       "path": "public/models/places/daguanyuan_gate.glb",
-      "bytes": 639872,
-      "sha256": "b3bc34dc85f880fb24e65254af607b6ce4a4ac652c342a2cbf81b8e86d82a20c"
+      "bytes": 705856,
+      "sha256": "d5c5e8a9c1a76d98a116fe1da0429f6552f98c25dffd6d1f2b708d5273f2fe1c"
     },
     {
       "path": "public/models/places/daoxiangcun.glb",
-      "bytes": 1140236,
-      "sha256": "5c26ab22f58e4284938c2e888a0f7f6794dde2f1c9c5cff2630573b6316efac7"
+      "bytes": 1161780,
+      "sha256": "98c8501ea3a21d31f6d9f940878c14c9c9a764eeb1186a2af1397d05ebbdc6aa"
     },
     {
       "path": "public/models/places/dicuiting.glb",
-      "bytes": 119504,
-      "sha256": "4b7f34fac8c46db03c12987369ae07eec2260c198668a34e94598d0d206c274a"
+      "bytes": 119196,
+      "sha256": "36be878b66292f69865601fca1cf2cb5157986d79218b2e3dd70c6cf7b2588d1"
     },
     {
       "path": "public/models/places/hengwuyuan.glb",
-      "bytes": 1162832,
-      "sha256": "ca0819da3749cc79b5b3c8c71cc9130f663ea4645d3819b4ec4e853f7e13c073"
+      "bytes": 1234384,
+      "sha256": "9357665d8131486901e456da8c20394f46278b626513cafbe248bc3fc306185e"
     },
     {
       "path": "public/models/places/longcuian.glb",
-      "bytes": 1179448,
-      "sha256": "f099a425dd4c9dad4726330e6041f8b624d1541bf6ce3d4b9381c3fcb9da4f5b"
+      "bytes": 1270140,
+      "sha256": "d8ac2e9336af82bad53d68b36e35d7176b05fa066546817948ffe92904ac0d05"
     },
     {
       "path": "public/models/places/luxuean.glb",
-      "bytes": 79044,
-      "sha256": "928fee85bddea4dec015e1acdc43a7f15373464b7e279dde3bdd11f56b4c6949"
+      "bytes": 92444,
+      "sha256": "4a9b4e214a46077cbae966911b65a9e0c903114c4d2d7eb3b89de9496328ce0f"
     },
     {
       "path": "public/models/places/nuanxiangwu.glb",
-      "bytes": 794504,
-      "sha256": "2d241cbcaa6fb0475dc6d537a3ae96cb74443a273691346fcfe119b094954953"
+      "bytes": 846096,
+      "sha256": "961f7f57fbb075b5512c73d15582d4e06d13ce1219bea0c29122268e08ed4482"
     },
     {
       "path": "public/models/places/ouxiangxie.glb",
-      "bytes": 209736,
-      "sha256": "478e5019cae68dc9e7bb1b14f089283919fb81366def6aae51ba86003182a420"
+      "bytes": 261216,
+      "sha256": "ce0e74f7c5b791a67e144bdbbf62ba45ac46cc2d820242a5dca8c7e49a1889a5"
     },
     {
       "path": "public/models/places/qiushuangzhai.glb",
-      "bytes": 1052396,
-      "sha256": "7de95e65857bb22370deed1889f45c8466a8fe0eba29f68427dbee5d3464c662"
+      "bytes": 1103148,
+      "sha256": "da92ba1af99c5e93db84734b052b489c517e22885ad32a6ff04ea84c8a2c3fb1"
     },
     {
       "path": "public/models/places/qujingtongyou.glb",
-      "bytes": 140252,
-      "sha256": "75d09a4b67d225850884e5e5f56ec1fcd16c52cbb1a7fef41c341aade4e7da12"
+      "bytes": 140272,
+      "sha256": "2561962d15b1bfee4fce9c3db4514bda26f8ef1c4d94b348051799d6fe1dd9aa"
     },
     {
       "path": "public/models/places/tubishanzhuang.glb",
-      "bytes": 453624,
-      "sha256": "1a291473c60deae9968a74085aac7bd9fa7cb346587afcf90ea3ae2e3ea2619c"
+      "bytes": 505172,
+      "sha256": "6853c1518612a20385761d229444f6b4310feebe7045a893b84bb40795c388c9"
     },
     {
       "path": "public/models/places/xiaoxiangguan.glb",
-      "bytes": 3445148,
-      "sha256": "3c952c518a57d0b99d2b89c2b9ff5a60b3990a0c4f1a03ce0ab8fbd2e6acf977"
+      "bytes": 3522848,
+      "sha256": "232ea5cf588100a1f4a699b02796689535bacbfab15d020418d27d1f3f621ce6"
     },
     {
       "path": "public/models/places/yihongyuan.glb",
-      "bytes": 1415848,
-      "sha256": "a3df4ca798f209edbea5dd2c55219e3fae9bbf7fcaaac134cc95305985d66e68"
+      "bytes": 1487184,
+      "sha256": "b66eb61562b5b54cf3262d3341d4f9c4e4fe6f591f0c26fd0c7de18118608a7a"
     },
     {
       "path": "public/models/places-low/aojingxiguan.glb",
-      "bytes": 255548,
-      "sha256": "7e52d1c73e2e8e0d5c1e6d136ad4a7d7f433e73822f6dd1102d509ab78152a51"
+      "bytes": 324168,
+      "sha256": "74f37da2fcaf9bf68b5503e270860a59e5f54e0438a9d684d558c75ec784eec3"
     },
     {
       "path": "public/models/places-low/daguanlou.glb",
-      "bytes": 3138676,
-      "sha256": "1af155f84b577dec671fc6b3c3f1a02baec2bbecca4d4866e413ba398d2a048d"
+      "bytes": 3697828,
+      "sha256": "3582ec4a7b45b5bfa6ac90234190f5cd6cbd4ccf0a953ef42d44dbfc4d608cb2"
     },
     {
       "path": "public/models/places-low/daguanyuan_gate.glb",
-      "bytes": 251368,
-      "sha256": "f4a077b0a32e642711c5bc5ca0813a9ecdbcae3f2aa3a445ced87c37a6341fea"
+      "bytes": 335336,
+      "sha256": "ca8846b481ba682650c774229cbfd36e29d13d0a5794692e5056053cc338d226"
     },
     {
       "path": "public/models/places-low/daoxiangcun.glb",
-      "bytes": 445356,
-      "sha256": "e0aab308a87c5e2240a8010638bd8be290074ad36ee565e88e9551178c6ddd2d"
+      "bytes": 482940,
+      "sha256": "03f3b4daaa04859d9ff14dccf4f0148d6b64b73a92621522233fb0551b8ee5d7"
     },
     {
       "path": "public/models/places-low/dicuiting.glb",
-      "bytes": 96844,
-      "sha256": "af3c05cde386b2440b708617770aac6fb6a1a2912fb96d8b35d41871beef3321"
+      "bytes": 107284,
+      "sha256": "170a172576b491226171e77d5b6e3de4cb4476fbe1fee4385f33926afeda3f81"
     },
     {
       "path": "public/models/places-low/hengwuyuan.glb",
-      "bytes": 713812,
-      "sha256": "99ba906709fba062eedc521b0c86731171b4c4db81bd28e1b4134b95047d862d"
+      "bytes": 828164,
+      "sha256": "5954359b14557f5ce1d0c2e9be10eb7ffb1c832b74df6b718fca36a700f10baf"
     },
     {
       "path": "public/models/places-low/longcuian.glb",
-      "bytes": 588840,
-      "sha256": "7e499aeb2149c6904234b2e5b7d5f89d8186d9f86096bfdb2e54f86bd2b5372b"
+      "bytes": 721908,
+      "sha256": "9e53fe56da890dc4c8667ce7c6c28ffa82db94690a7a10d779aa6d5d2c9f15a1"
     },
     {
       "path": "public/models/places-low/luxuean.glb",
-      "bytes": 33136,
-      "sha256": "ead2272eb7610f1e1a930b9080ac53dfef63ec8a00bec24d166276b8e2fcaba0"
+      "bytes": 58876,
+      "sha256": "bcd2d46643a754c381b1a404fc02bec27ed7f980f251df50f170a1a9a4b49ec6"
     },
     {
       "path": "public/models/places-low/nuanxiangwu.glb",
-      "bytes": 428012,
-      "sha256": "d50822dcb78a7ba015c91ecb54449aedb55aded9fe322425bf647ea6b83980e5"
+      "bytes": 511032,
+      "sha256": "d6e6bb230bdd972b0050462bc84f8b86a3f0fe04abb5a95fb169fe7b68e92c33"
     },
     {
       "path": "public/models/places-low/ouxiangxie.glb",
-      "bytes": 167436,
-      "sha256": "9e57039416ee609a1378a2053fc4cf2224fd98a1744e4df32129d1063bb48204"
+      "bytes": 230024,
+      "sha256": "2381345aa9d3698fa37ec8c6d76a454a41d42fa721ce505f82b084e4c030be02"
     },
     {
       "path": "public/models/places-low/qiushuangzhai.glb",
-      "bytes": 594044,
-      "sha256": "2d914ec89001886b07be12986ac159284360e1fa30b105f40330ae26f60a92a7"
+      "bytes": 703232,
+      "sha256": "72ac3f65a4a68408d6d6feba867c5643e972bb0b62e9ac4e72c4e0db7d074206"
     },
     {
       "path": "public/models/places-low/qujingtongyou.glb",
-      "bytes": 77280,
-      "sha256": "7de54979c5981a0ba281e0c5565899673f694696422faa27bcf30f2d43b17c13"
+      "bytes": 77272,
+      "sha256": "bddda8a0088d88f61b23e015e4192098f6be7408118ac2649b2a4e91b0d6b526"
     },
     {
       "path": "public/models/places-low/tubishanzhuang.glb",
-      "bytes": 266728,
-      "sha256": "cfd1921750ae3269c9f701e99789f49c47ae20d8479333246a762edddf0e0234"
+      "bytes": 342436,
+      "sha256": "853fec5dce478bd2f77540711b905a23da82b95e8d62fd0ca2ce90b56244e646"
     },
     {
       "path": "public/models/places-low/xiaoxiangguan.glb",
-      "bytes": 2507224,
-      "sha256": "a19d39a61be8db26f6f9c7ace9d9a1b4b0734536748a60323768ac913596d3f2"
+      "bytes": 2640284,
+      "sha256": "0869b6c33162857567fca043c98ffa77330d158a33cd2e904076490b2b0d3a1c"
     },
     {
       "path": "public/models/places-low/yihongyuan.glb",
-      "bytes": 905824,
-      "sha256": "f97cf631e4cd25e65f91675f14e13d52db3e4c68258ca7af9adb7e1b8bb51911"
+      "bytes": 1028984,
+      "sha256": "28cc2b32ab5f16fa13897d112063de27a5453b245cc2eb68b7947b7c66aeb92a"
     },
     {
       "path": "public/models/sample.glb",
@@ -4786,7 +5191,7 @@
     {
       "path": "public/scene-manifest.json",
       "bytes": 1444601,
-      "sha256": "f367b8c9c23429163342815f5a8deec3c9e847609c75f8a72746ed7f2fbae0b6"
+      "sha256": "ea791091b00addc170f6db943ac27c28086c016808fb72d89ed98600470ad8b3"
     },
     {
       "path": "public/textures/forest_grove.hdr",
@@ -4830,23 +5235,13 @@
     },
     {
       "path": "public/textures/landscape-light.webp",
-      "bytes": 398956,
-      "sha256": "996e109476ffc349fb47843e0266adf5c7dce3b60d970de05bd5d7ae80ba0a2b"
+      "bytes": 397978,
+      "sha256": "949ae9f77100d737e399b4be6ca5aecaa0514be7ad9cbe910cbcb4ba3375f069"
     },
     {
       "path": "public/textures/landscape-light.webp.json",
       "bytes": 1424,
-      "sha256": "defb9076b92a9285291576441d8157bfd89a9180e62c6d604f47934284eb25e6"
-    },
-    {
-      "path": "public/textures/shared/020c8eaeddf96f464ca4c0bc2f9dfed511eb7a4e45b4e340af6ef4343f72c92a.jpg",
-      "bytes": 56973,
-      "sha256": "020c8eaeddf96f464ca4c0bc2f9dfed511eb7a4e45b4e340af6ef4343f72c92a"
-    },
-    {
-      "path": "public/textures/shared/020c8eaeddf96f464ca4c0bc2f9dfed511eb7a4e45b4e340af6ef4343f72c92a.jpg.json",
-      "bytes": 950,
-      "sha256": "543820bd6e1aeccd92395f56e094012a11f8dc6d9ff2768f9d5b13db0867c4a8"
+      "sha256": "6de0c1be3aee8c802804cce3e99010525d7fb55abb7da327c546b5a7772250f6"
     },
     {
       "path": "public/textures/shared/0318cdda7bbabbe1e3bbeaa92905d68a4a8af6579a88b368376de3c976cc8c32.jpg",
@@ -4857,6 +5252,16 @@
       "path": "public/textures/shared/0318cdda7bbabbe1e3bbeaa92905d68a4a8af6579a88b368376de3c976cc8c32.jpg.json",
       "bytes": 1029,
       "sha256": "59069058ac0f91d35329b2c198185bce54e666f2c70a01076c66d79bb3585ce0"
+    },
+    {
+      "path": "public/textures/shared/03bb0e6d6223d897171abf6199687f738abe0d66d6a10e8364865e3944ece9f3.jpg",
+      "bytes": 2132,
+      "sha256": "03bb0e6d6223d897171abf6199687f738abe0d66d6a10e8364865e3944ece9f3"
+    },
+    {
+      "path": "public/textures/shared/03bb0e6d6223d897171abf6199687f738abe0d66d6a10e8364865e3944ece9f3.jpg.json",
+      "bytes": 1014,
+      "sha256": "336e540111315c91071d5889c57df3433c3a1d5151e1e1fcc3568a2cf4764ca9"
     },
     {
       "path": "public/textures/shared/04d0506469a0edcba43a38a66fe49ec5fe286dbf808777d77ba95d8cb235bbc4.jpg",
@@ -4879,46 +5284,6 @@
       "sha256": "9f731f9e83e02ff18225f2840ee0c9ccb7c0320d26981fc29eaef31069095943"
     },
     {
-      "path": "public/textures/shared/089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c.jpg",
-      "bytes": 2222,
-      "sha256": "089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c"
-    },
-    {
-      "path": "public/textures/shared/089120b73e0bed10645d140a57307f622ef819dd8c8d4d89d163e4f32b3c334c.jpg.json",
-      "bytes": 1014,
-      "sha256": "85a675f9ba1ff8fc9ca2ab3902091c7e7c42d44cfb786ea7dd1cf2624db519e2"
-    },
-    {
-      "path": "public/textures/shared/09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356.jpg",
-      "bytes": 9759,
-      "sha256": "09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356"
-    },
-    {
-      "path": "public/textures/shared/09511c9224bc464ff888a7766f276374c9c8509f9f307097e68d1f1c5a19f356.jpg.json",
-      "bytes": 1011,
-      "sha256": "5ff983278c57ea3fcdd8c13be572c766512ab20a30212abff7c0a15564aa3282"
-    },
-    {
-      "path": "public/textures/shared/0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1.jpg",
-      "bytes": 24391,
-      "sha256": "0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1"
-    },
-    {
-      "path": "public/textures/shared/0affbc372f61323e02478d4be32ef892eee8cf27035a3739c5784678883abbc1.jpg.json",
-      "bytes": 1032,
-      "sha256": "62f761c38b009629410602914b85452c313e94a91470ed208b1c7e24109a57bb"
-    },
-    {
-      "path": "public/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg",
-      "bytes": 9221,
-      "sha256": "0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75"
-    },
-    {
-      "path": "public/textures/shared/0c5c0fb5eba23a82a75608db269ec295af7a542998008a0fe162e25f6364ab75.jpg.json",
-      "bytes": 1011,
-      "sha256": "5adc793b9e56053d9ff6448a399a259b4e6b0c77c544fdd61767e5e756cfdad6"
-    },
-    {
       "path": "public/textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg",
       "bytes": 177881,
       "sha256": "0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81"
@@ -4927,6 +5292,16 @@
       "path": "public/textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg.json",
       "bytes": 1050,
       "sha256": "7a9582d4fd8126aad6207191a255bbadfc583dc41539200699edbccf382b8529"
+    },
+    {
+      "path": "public/textures/shared/0df331c692dce23f7f5618f67bd9a6d215c6656863266d37eeb70cf181d9d72e.jpg",
+      "bytes": 6948,
+      "sha256": "0df331c692dce23f7f5618f67bd9a6d215c6656863266d37eeb70cf181d9d72e"
+    },
+    {
+      "path": "public/textures/shared/0df331c692dce23f7f5618f67bd9a6d215c6656863266d37eeb70cf181d9d72e.jpg.json",
+      "bytes": 1023,
+      "sha256": "da3725d5f78951c004463225a4e85ca847cc2818f84eed23f7af44e6cf5d4de9"
     },
     {
       "path": "public/textures/shared/1120557f4044624a28bb7eca0f488fa3ae7d445a09062d594092f4b0ea9ce825.jpg",
@@ -4949,16 +5324,6 @@
       "sha256": "82263dde8ae331baf33fd9e0059f161270122f0fc49241c70eff34af030e7ccf"
     },
     {
-      "path": "public/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg",
-      "bytes": 1972,
-      "sha256": "1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704"
-    },
-    {
-      "path": "public/textures/shared/1345ffd49583df7378def2fdf954a9a0f8d8414e1d0db6a3ea68abc9eea6f704.jpg.json",
-      "bytes": 1014,
-      "sha256": "d716497833b296fa1400bdf8af19df4d195b5299362b4bb29c70620012301956"
-    },
-    {
       "path": "public/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
       "bytes": 293677,
       "sha256": "179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d"
@@ -4969,14 +5334,14 @@
       "sha256": "44e4ef5ea2a44aa22ddf6fd9cdf229d7aadfabef0df2c3b3e63dce5c4df395ea"
     },
     {
-      "path": "public/textures/shared/204a42ce73263e01341496995d9e5ae71c2349124f977b7c4948c5eb33e809cb.jpg",
-      "bytes": 59235,
-      "sha256": "204a42ce73263e01341496995d9e5ae71c2349124f977b7c4948c5eb33e809cb"
+      "path": "public/textures/shared/1f6eecea8654adda1e669644d2c6250c02806d2a1fbacf4e4e1d2e9ca54fb93a.jpg",
+      "bytes": 5959,
+      "sha256": "1f6eecea8654adda1e669644d2c6250c02806d2a1fbacf4e4e1d2e9ca54fb93a"
     },
     {
-      "path": "public/textures/shared/204a42ce73263e01341496995d9e5ae71c2349124f977b7c4948c5eb33e809cb.jpg.json",
-      "bytes": 941,
-      "sha256": "a7ef6e4dff99bf977f54dce418d7e129599f6e60b8ab8b697112bd4543d21ad9"
+      "path": "public/textures/shared/1f6eecea8654adda1e669644d2c6250c02806d2a1fbacf4e4e1d2e9ca54fb93a.jpg.json",
+      "bytes": 1020,
+      "sha256": "d64058c04e11ba0fb79828453535a3136f7d65f61b18cfec90abfb5d25d6afe0"
     },
     {
       "path": "public/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
@@ -4989,16 +5354,6 @@
       "sha256": "2ad8a12b02005e214859c27a5bf0a2c2b80433f08773b8d22531defcfd21a354"
     },
     {
-      "path": "public/textures/shared/2305c6784db3bbcef6e5e6b6804ecb2a2f74ba3cab223aaf7c82a7cbc99c1639.jpg",
-      "bytes": 30391,
-      "sha256": "2305c6784db3bbcef6e5e6b6804ecb2a2f74ba3cab223aaf7c82a7cbc99c1639"
-    },
-    {
-      "path": "public/textures/shared/2305c6784db3bbcef6e5e6b6804ecb2a2f74ba3cab223aaf7c82a7cbc99c1639.jpg.json",
-      "bytes": 926,
-      "sha256": "962449e8feeb85f1ce7aa9d7d7f4288d78f94907744be77658e8567cde17b42a"
-    },
-    {
       "path": "public/textures/shared/240993be97e1822d7673d6b7c229c818aaf849c33a59a4d3352194d8964c3689.jpg",
       "bytes": 35348,
       "sha256": "240993be97e1822d7673d6b7c229c818aaf849c33a59a4d3352194d8964c3689"
@@ -5009,56 +5364,6 @@
       "sha256": "ce881ca6cc6f285d1827f12504a08fcc3fa8e73a660b899b618aa5900dc7fff3"
     },
     {
-      "path": "public/textures/shared/25e7c547ec5159a2e42f1f09a227c5b140fd98f713c429fc3e46b12160cbdee1.jpg",
-      "bytes": 27353,
-      "sha256": "25e7c547ec5159a2e42f1f09a227c5b140fd98f713c429fc3e46b12160cbdee1"
-    },
-    {
-      "path": "public/textures/shared/25e7c547ec5159a2e42f1f09a227c5b140fd98f713c429fc3e46b12160cbdee1.jpg.json",
-      "bytes": 1176,
-      "sha256": "26133febb03d1626d3843b56d19b4b5d65792cf42baec34f226da784871815b6"
-    },
-    {
-      "path": "public/textures/shared/2632553f773777974eb5bb763b64bfefca56e4a352b283f2a24c846510fca69d.jpg",
-      "bytes": 54805,
-      "sha256": "2632553f773777974eb5bb763b64bfefca56e4a352b283f2a24c846510fca69d"
-    },
-    {
-      "path": "public/textures/shared/2632553f773777974eb5bb763b64bfefca56e4a352b283f2a24c846510fca69d.jpg.json",
-      "bytes": 920,
-      "sha256": "06545b01186d1f8a0cf7255a2921f90c0dd2cdd6b09c8e8b748cb256d1f66c42"
-    },
-    {
-      "path": "public/textures/shared/2856246439c77303ab8e433052ff60844f9928da3c665399ca51fc2e0ccad9b4.jpg",
-      "bytes": 36976,
-      "sha256": "2856246439c77303ab8e433052ff60844f9928da3c665399ca51fc2e0ccad9b4"
-    },
-    {
-      "path": "public/textures/shared/2856246439c77303ab8e433052ff60844f9928da3c665399ca51fc2e0ccad9b4.jpg.json",
-      "bytes": 1176,
-      "sha256": "7ea5ae7b0a8cacc1a84a7171684f58e1cf524501f5e3b9d2089b24b89aad3140"
-    },
-    {
-      "path": "public/textures/shared/2a110b3c407484d1ad631c6a2b099259c77cb94bc5d5c67661bcdec488d90c4d.jpg",
-      "bytes": 27076,
-      "sha256": "2a110b3c407484d1ad631c6a2b099259c77cb94bc5d5c67661bcdec488d90c4d"
-    },
-    {
-      "path": "public/textures/shared/2a110b3c407484d1ad631c6a2b099259c77cb94bc5d5c67661bcdec488d90c4d.jpg.json",
-      "bytes": 1176,
-      "sha256": "dbc7008289769a02e25465d52d33f3658781be12d2152498263d94ab27b7b925"
-    },
-    {
-      "path": "public/textures/shared/30a8a15f028c50aa27e3d94a0faa922616fe4de8f4baaff37f3d214c64360a45.jpg",
-      "bytes": 59056,
-      "sha256": "30a8a15f028c50aa27e3d94a0faa922616fe4de8f4baaff37f3d214c64360a45"
-    },
-    {
-      "path": "public/textures/shared/30a8a15f028c50aa27e3d94a0faa922616fe4de8f4baaff37f3d214c64360a45.jpg.json",
-      "bytes": 1176,
-      "sha256": "c84dc7d39133600c2f56c1f0d942d321d0e83ceaa1387e8b10c6894962f9970d"
-    },
-    {
       "path": "public/textures/shared/31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124.jpg",
       "bytes": 43735,
       "sha256": "31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124"
@@ -5067,16 +5372,6 @@
       "path": "public/textures/shared/31b1a862a1fa9b0895c74ac10f1a8094d77dec33232cbdf6e286c96c5c448124.jpg.json",
       "bytes": 1083,
       "sha256": "4b57faf1f229a8db5d6a58160c4d4619c0242cca43a33571f1d256f211e89537"
-    },
-    {
-      "path": "public/textures/shared/3392743828e2029e6c935cb232b58d43806a2733d1c59f9626472ba8a1ce346b.jpg",
-      "bytes": 56457,
-      "sha256": "3392743828e2029e6c935cb232b58d43806a2733d1c59f9626472ba8a1ce346b"
-    },
-    {
-      "path": "public/textures/shared/3392743828e2029e6c935cb232b58d43806a2733d1c59f9626472ba8a1ce346b.jpg.json",
-      "bytes": 1176,
-      "sha256": "a2d877fa402676025da96c8dec5e475d70ac5c35773705b737d1cfef288e1794"
     },
     {
       "path": "public/textures/shared/33e4fe1ace585070d140616e79e41b30647d06ad2722a108c9808ad82c49ff82.jpg",
@@ -5139,16 +5434,6 @@
       "sha256": "341c08041210bfde24356c14ee8eb152623fcea3327945e563b81fad136ac194"
     },
     {
-      "path": "public/textures/shared/3f0225020c54de61440cf90de1ec7b18d3b4da451bc2a85f9e0297ae048de339.jpg",
-      "bytes": 29813,
-      "sha256": "3f0225020c54de61440cf90de1ec7b18d3b4da451bc2a85f9e0297ae048de339"
-    },
-    {
-      "path": "public/textures/shared/3f0225020c54de61440cf90de1ec7b18d3b4da451bc2a85f9e0297ae048de339.jpg.json",
-      "bytes": 938,
-      "sha256": "a049a03933b2eed5001d7c8f941e6ccda76f7af30c7aa912ebf8d99ff1075668"
-    },
-    {
       "path": "public/textures/shared/410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e.jpg",
       "bytes": 1833,
       "sha256": "410529bda64457023d2115b0de264f449f9a1a8d3c8de9d7a80dc0d45246ce8e"
@@ -5169,56 +5454,6 @@
       "sha256": "5a6ac47f9974031aff1c92afdd9435ef767d38ed614c6056bf3629d2f9b7968c"
     },
     {
-      "path": "public/textures/shared/4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202.jpg",
-      "bytes": 10008,
-      "sha256": "4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202"
-    },
-    {
-      "path": "public/textures/shared/4539f77736bd7d9c640d4729e5033be3bc553427ac5bfb3b1768fdaea7a3f202.jpg.json",
-      "bytes": 1026,
-      "sha256": "176d2ac86f65edf3307a3bd124c08ae2cd3729ab6c147161e28282b41b1840f1"
-    },
-    {
-      "path": "public/textures/shared/453ffd83bf3e4ef6bfd1ea9221fc5ffe7a9b09392f792b3adb1e65c5795eca60.jpg",
-      "bytes": 54721,
-      "sha256": "453ffd83bf3e4ef6bfd1ea9221fc5ffe7a9b09392f792b3adb1e65c5795eca60"
-    },
-    {
-      "path": "public/textures/shared/453ffd83bf3e4ef6bfd1ea9221fc5ffe7a9b09392f792b3adb1e65c5795eca60.jpg.json",
-      "bytes": 935,
-      "sha256": "01f1e71318184e224580117877f91149a992c165987f24c6b0f21228291b39c2"
-    },
-    {
-      "path": "public/textures/shared/46ee55f4bd8cf704ee565dcc71427058220537d513957fdfe4c60ef8d79585a9.jpg",
-      "bytes": 31149,
-      "sha256": "46ee55f4bd8cf704ee565dcc71427058220537d513957fdfe4c60ef8d79585a9"
-    },
-    {
-      "path": "public/textures/shared/46ee55f4bd8cf704ee565dcc71427058220537d513957fdfe4c60ef8d79585a9.jpg.json",
-      "bytes": 1176,
-      "sha256": "8ba788be8f8aad16dd76df2f3afbcf6bed74bcd0254a72638096dcc655b56305"
-    },
-    {
-      "path": "public/textures/shared/487353d312485470d5b43f47994298bbe0dd1e336833d6656b56e1026c652b2f.jpg",
-      "bytes": 38364,
-      "sha256": "487353d312485470d5b43f47994298bbe0dd1e336833d6656b56e1026c652b2f"
-    },
-    {
-      "path": "public/textures/shared/487353d312485470d5b43f47994298bbe0dd1e336833d6656b56e1026c652b2f.jpg.json",
-      "bytes": 923,
-      "sha256": "8965f5ddac4c19799932c611ba8e7b098ae05e0378362ca85499ebc4202e6a08"
-    },
-    {
-      "path": "public/textures/shared/48f51d91c1f4436d92f16358c06cafb1028a325f09d769bf01dee749a65ef072.jpg",
-      "bytes": 58742,
-      "sha256": "48f51d91c1f4436d92f16358c06cafb1028a325f09d769bf01dee749a65ef072"
-    },
-    {
-      "path": "public/textures/shared/48f51d91c1f4436d92f16358c06cafb1028a325f09d769bf01dee749a65ef072.jpg.json",
-      "bytes": 1176,
-      "sha256": "f41bb2c73fd2056d0956a7b83b69b1c38e2c56dc6ffc0a7fab22d49a2ca860ce"
-    },
-    {
       "path": "public/textures/shared/4c7692894550ba8dfbb56b9c7dd71d780a2215d75543843479b0712bcde87c2c.jpg",
       "bytes": 10675,
       "sha256": "4c7692894550ba8dfbb56b9c7dd71d780a2215d75543843479b0712bcde87c2c"
@@ -5227,16 +5462,6 @@
       "path": "public/textures/shared/4c7692894550ba8dfbb56b9c7dd71d780a2215d75543843479b0712bcde87c2c.jpg.json",
       "bytes": 1176,
       "sha256": "80ddc0fb306e3404ba8ec2199ac494ba29fe691057535d9c0c7a564abd456937"
-    },
-    {
-      "path": "public/textures/shared/4d0d1611ec2f00d63063abd944a569f58683bd9d8ca6ca49f377f338310f13a2.jpg",
-      "bytes": 61133,
-      "sha256": "4d0d1611ec2f00d63063abd944a569f58683bd9d8ca6ca49f377f338310f13a2"
-    },
-    {
-      "path": "public/textures/shared/4d0d1611ec2f00d63063abd944a569f58683bd9d8ca6ca49f377f338310f13a2.jpg.json",
-      "bytes": 935,
-      "sha256": "7037eadeaa80959b2b22d1123d328e3e1581339c06132144720d75ffc553b4b8"
     },
     {
       "path": "public/textures/shared/4d282c1767ab9ac542df0b4ff4f4393e4349e20ba1debdcfac1eedc1c994baa9.jpg",
@@ -5249,36 +5474,6 @@
       "sha256": "aad3890f627520ac2069f270f54dd59f94161bcfedbb420b656e96427f03c205"
     },
     {
-      "path": "public/textures/shared/4eca49b9c2d977465b84bd6a95c86bd20e17c6f1f34dd426eafe4dca569bd6a4.jpg",
-      "bytes": 10675,
-      "sha256": "4eca49b9c2d977465b84bd6a95c86bd20e17c6f1f34dd426eafe4dca569bd6a4"
-    },
-    {
-      "path": "public/textures/shared/4eca49b9c2d977465b84bd6a95c86bd20e17c6f1f34dd426eafe4dca569bd6a4.jpg.json",
-      "bytes": 1017,
-      "sha256": "b235daa892bff2b09cec5ae026d0619451ff96a0f7b3b10493259a08cd9b294c"
-    },
-    {
-      "path": "public/textures/shared/5100557d8261b1ecafb1c776a26766218da148f42a5809ed043f1fbb79fc28d8.jpg",
-      "bytes": 53742,
-      "sha256": "5100557d8261b1ecafb1c776a26766218da148f42a5809ed043f1fbb79fc28d8"
-    },
-    {
-      "path": "public/textures/shared/5100557d8261b1ecafb1c776a26766218da148f42a5809ed043f1fbb79fc28d8.jpg.json",
-      "bytes": 1176,
-      "sha256": "7b854b3b0388a7bd5ef238f2ce2a41ddd36bd477ab818bc1f99d0d55bfb15435"
-    },
-    {
-      "path": "public/textures/shared/5352a9bf9dc9c4b4da1c14d2765f2eeb3c6dcc46bbcde8502e7f8daa7970eea2.jpg",
-      "bytes": 60722,
-      "sha256": "5352a9bf9dc9c4b4da1c14d2765f2eeb3c6dcc46bbcde8502e7f8daa7970eea2"
-    },
-    {
-      "path": "public/textures/shared/5352a9bf9dc9c4b4da1c14d2765f2eeb3c6dcc46bbcde8502e7f8daa7970eea2.jpg.json",
-      "bytes": 1176,
-      "sha256": "a36716f5732531be36005bafa3966f789fd3518b84c94d22694e66526a37d2cd"
-    },
-    {
       "path": "public/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg",
       "bytes": 9688,
       "sha256": "554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52"
@@ -5287,16 +5482,6 @@
       "path": "public/textures/shared/554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52.jpg.json",
       "bytes": 1026,
       "sha256": "50b8cc5d6712327f6061df00a5657658bc972341269f78d3b01bc0453dba7422"
-    },
-    {
-      "path": "public/textures/shared/5590a5e20176c011c7fe0d26bcd4ae34eb99d3a7a6959a085f8b0f41fa2d25fd.jpg",
-      "bytes": 36810,
-      "sha256": "5590a5e20176c011c7fe0d26bcd4ae34eb99d3a7a6959a085f8b0f41fa2d25fd"
-    },
-    {
-      "path": "public/textures/shared/5590a5e20176c011c7fe0d26bcd4ae34eb99d3a7a6959a085f8b0f41fa2d25fd.jpg.json",
-      "bytes": 920,
-      "sha256": "cff3fd56a2ba310eb6aa565d0e5f43c06173badf023719dde66ed816833efb63"
     },
     {
       "path": "public/textures/shared/56c78b33ba212b9615e19db3ceecc34ccb4ec72efa9d767f39ca32329815efa2.jpg",
@@ -5319,24 +5504,14 @@
       "sha256": "7557097a1147d55f611264ce1604d5453e30a0886234303ce4ae026a23b6edae"
     },
     {
-      "path": "public/textures/shared/57b6b8ee5fce62c7e4065d1eb7b2b6afb22d06093c579f6572130e964cb72bc1.jpg",
-      "bytes": 52141,
-      "sha256": "57b6b8ee5fce62c7e4065d1eb7b2b6afb22d06093c579f6572130e964cb72bc1"
+      "path": "public/textures/shared/600719a5bfca4600492aa39d6a26408e617f179a348b6bed26fc0cddf556e544.jpg",
+      "bytes": 3942,
+      "sha256": "600719a5bfca4600492aa39d6a26408e617f179a348b6bed26fc0cddf556e544"
     },
     {
-      "path": "public/textures/shared/57b6b8ee5fce62c7e4065d1eb7b2b6afb22d06093c579f6572130e964cb72bc1.jpg.json",
-      "bytes": 935,
-      "sha256": "973075ce518d78326c321a7bfadbca2d1c1739514ec3af8e0ab38ba7c9a36d96"
-    },
-    {
-      "path": "public/textures/shared/5df4ddf68d26531c5339886146d3091fada975fd7537716fc6e75bf097ec0268.jpg",
-      "bytes": 56440,
-      "sha256": "5df4ddf68d26531c5339886146d3091fada975fd7537716fc6e75bf097ec0268"
-    },
-    {
-      "path": "public/textures/shared/5df4ddf68d26531c5339886146d3091fada975fd7537716fc6e75bf097ec0268.jpg.json",
-      "bytes": 1176,
-      "sha256": "5d7037bbf3912108979f5f2a1b28c33350c0cb830ae28ec87a0d31b1b3b6b445"
+      "path": "public/textures/shared/600719a5bfca4600492aa39d6a26408e617f179a348b6bed26fc0cddf556e544.jpg.json",
+      "bytes": 1011,
+      "sha256": "ff37ed60f7fdbe2d3811f2c41023a0c553947643b4cf916d9c0183beb74244b2"
     },
     {
       "path": "public/textures/shared/658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289.jpg",
@@ -5347,6 +5522,16 @@
       "path": "public/textures/shared/658bd210c1ee8b82f21f33099c5d6fe5f10808941c86a41d74244aa9db4b8289.jpg.json",
       "bytes": 1017,
       "sha256": "374a585b8832e28b26c080f180bba3aa20018647adac480cb4850ea394944cb1"
+    },
+    {
+      "path": "public/textures/shared/67a3f60c0f096014f5a207e48bf039e0d9f9ac69ff5d2caf60e3f0089e662a11.jpg",
+      "bytes": 6096,
+      "sha256": "67a3f60c0f096014f5a207e48bf039e0d9f9ac69ff5d2caf60e3f0089e662a11"
+    },
+    {
+      "path": "public/textures/shared/67a3f60c0f096014f5a207e48bf039e0d9f9ac69ff5d2caf60e3f0089e662a11.jpg.json",
+      "bytes": 1038,
+      "sha256": "f869569c897fd80533a19d6fe9c29f8ba42a0a83bdd242b1d39a3f99cb7ac296"
     },
     {
       "path": "public/textures/shared/686df3477d4029a7ac1cdfa659a25cfec1abf3ec1de9974720c4785d16d94399.jpg",
@@ -5369,14 +5554,14 @@
       "sha256": "f8b068cd52f2476559add17e6f8450761b153909f3c44f230486d14480b6bcf9"
     },
     {
-      "path": "public/textures/shared/6f81740d29a972b085a0eaec182c4ef2f964f21cbcfcc05fb85aa58eab4b1c18.jpg",
-      "bytes": 33953,
-      "sha256": "6f81740d29a972b085a0eaec182c4ef2f964f21cbcfcc05fb85aa58eab4b1c18"
+      "path": "public/textures/shared/6fb73f20390bfac6edd1fdd5ef83d363d1922934e9fa94e77b4688b5d5fefdcc.jpg",
+      "bytes": 5880,
+      "sha256": "6fb73f20390bfac6edd1fdd5ef83d363d1922934e9fa94e77b4688b5d5fefdcc"
     },
     {
-      "path": "public/textures/shared/6f81740d29a972b085a0eaec182c4ef2f964f21cbcfcc05fb85aa58eab4b1c18.jpg.json",
-      "bytes": 932,
-      "sha256": "0a33e2ed3886207e21054a2a6c84e092897fad5bbca0f3df4a5783d76a8d8951"
+      "path": "public/textures/shared/6fb73f20390bfac6edd1fdd5ef83d363d1922934e9fa94e77b4688b5d5fefdcc.jpg.json",
+      "bytes": 1023,
+      "sha256": "cda48b38e36ba0b917787fe5d61fd7d49aa411e8318996a0610bca9dcbbb9988"
     },
     {
       "path": "public/textures/shared/703ba98dd3da484eedd3d722c6e2dbf9e04430d41b3b6f05915b571038ff301d.jpg",
@@ -5387,16 +5572,6 @@
       "path": "public/textures/shared/703ba98dd3da484eedd3d722c6e2dbf9e04430d41b3b6f05915b571038ff301d.jpg.json",
       "bytes": 1140,
       "sha256": "ad844b04168706c03cc90423cb273fdba8d96726d8dfd3e32fc7361691179c94"
-    },
-    {
-      "path": "public/textures/shared/72a412089acfadcc2643f27f023a17f2a3daf682f76872f9ee037e6c419d58ea.jpg",
-      "bytes": 26356,
-      "sha256": "72a412089acfadcc2643f27f023a17f2a3daf682f76872f9ee037e6c419d58ea"
-    },
-    {
-      "path": "public/textures/shared/72a412089acfadcc2643f27f023a17f2a3daf682f76872f9ee037e6c419d58ea.jpg.json",
-      "bytes": 1176,
-      "sha256": "4430e81f10616b74bf4c1b36023befa855625330dd1ad6e55cfadbd6e7bda8f1"
     },
     {
       "path": "public/textures/shared/732dffcaa00b594b3cc02e08872e789ae5225a7ddeb0add4c8149a797a658c6a.jpg",
@@ -5429,16 +5604,6 @@
       "sha256": "3d22b10c2d9287fc18c2139f7e11042c6e6689e0f30977e28aca7ed3c59f0f14"
     },
     {
-      "path": "public/textures/shared/7564faa010d4c292870c1bfbfa3126a2b88ddade063ac308cffe820b7da7da1f.jpg",
-      "bytes": 37668,
-      "sha256": "7564faa010d4c292870c1bfbfa3126a2b88ddade063ac308cffe820b7da7da1f"
-    },
-    {
-      "path": "public/textures/shared/7564faa010d4c292870c1bfbfa3126a2b88ddade063ac308cffe820b7da7da1f.jpg.json",
-      "bytes": 1176,
-      "sha256": "c56deb3802b4916f504c2befe1d3f122b6be2b88fd68191f4ba10d1562a06d8e"
-    },
-    {
       "path": "public/textures/shared/77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4.jpg",
       "bytes": 2138,
       "sha256": "77bc0a8d5505ad1498eb01074a5a455beeb3f700134ce4eb9dbf136514327cc4"
@@ -5459,16 +5624,6 @@
       "sha256": "48290bab8266e78ba213c75f6f4d620049e450522af7253441cf21bf0d0d6b1d"
     },
     {
-      "path": "public/textures/shared/7e9db8ba92f79338d96519fd91d944e0cd070ee697f25d3f819e827e02895618.jpg",
-      "bytes": 58879,
-      "sha256": "7e9db8ba92f79338d96519fd91d944e0cd070ee697f25d3f819e827e02895618"
-    },
-    {
-      "path": "public/textures/shared/7e9db8ba92f79338d96519fd91d944e0cd070ee697f25d3f819e827e02895618.jpg.json",
-      "bytes": 947,
-      "sha256": "c278eabcf77c2ae6fbf0bfabbff9b7bef958948dafc96929a30e684f301ed019"
-    },
-    {
       "path": "public/textures/shared/7eee73163b86928f725c6599ca568868e178faad656b7ee6329fbfcc52e15f61.jpg",
       "bytes": 4214,
       "sha256": "7eee73163b86928f725c6599ca568868e178faad656b7ee6329fbfcc52e15f61"
@@ -5477,26 +5632,6 @@
       "path": "public/textures/shared/7eee73163b86928f725c6599ca568868e178faad656b7ee6329fbfcc52e15f61.jpg.json",
       "bytes": 1176,
       "sha256": "36bccd056efd5f4cd5a3bbb993684a80bc6770d0041dd3d94cd0572f2b5f8295"
-    },
-    {
-      "path": "public/textures/shared/7f934a3cf482aa219c2c9495c1bf5da4f99157cd5083365cd974aeb7ff070e5e.jpg",
-      "bytes": 19901,
-      "sha256": "7f934a3cf482aa219c2c9495c1bf5da4f99157cd5083365cd974aeb7ff070e5e"
-    },
-    {
-      "path": "public/textures/shared/7f934a3cf482aa219c2c9495c1bf5da4f99157cd5083365cd974aeb7ff070e5e.jpg.json",
-      "bytes": 920,
-      "sha256": "c0898ab65755ba625787bbaa4d5ea4fa7bd9baeb02ac1ffb5e260e19d8032613"
-    },
-    {
-      "path": "public/textures/shared/815ed76b8325090c49067e2548f167eb275e6bb26e61e0dd248cae5a72394e3d.jpg",
-      "bytes": 20486,
-      "sha256": "815ed76b8325090c49067e2548f167eb275e6bb26e61e0dd248cae5a72394e3d"
-    },
-    {
-      "path": "public/textures/shared/815ed76b8325090c49067e2548f167eb275e6bb26e61e0dd248cae5a72394e3d.jpg.json",
-      "bytes": 1176,
-      "sha256": "0daa512fd4e363daa0ef364e99b2fb03a15bff7951515462271129fea8e3ca76"
     },
     {
       "path": "public/textures/shared/842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2.jpg",
@@ -5549,44 +5684,14 @@
       "sha256": "431138790805604bb3a27f462c213d40e4dc38efdb3569179f3c1fc9c02ff162"
     },
     {
-      "path": "public/textures/shared/87cc9c0c16a80478fae19b6ece5715fdb8e8a13ab7fd387ff1c6316b42f59669.jpg",
-      "bytes": 57704,
-      "sha256": "87cc9c0c16a80478fae19b6ece5715fdb8e8a13ab7fd387ff1c6316b42f59669"
+      "path": "public/textures/shared/8bde4e9657abe3115c65f3f0669680a23ba06fad82cb871b145ab61fbaa24ce9.jpg",
+      "bytes": 10034,
+      "sha256": "8bde4e9657abe3115c65f3f0669680a23ba06fad82cb871b145ab61fbaa24ce9"
     },
     {
-      "path": "public/textures/shared/87cc9c0c16a80478fae19b6ece5715fdb8e8a13ab7fd387ff1c6316b42f59669.jpg.json",
-      "bytes": 953,
-      "sha256": "a6856ca75d9f0a56ab6614e5968110632680e7c7f3a90140cac9204397c443d9"
-    },
-    {
-      "path": "public/textures/shared/88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b.jpg",
-      "bytes": 234084,
-      "sha256": "88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b"
-    },
-    {
-      "path": "public/textures/shared/88c5bf19493826d35139347b1aab699ebcbae2b1cb9a0e8db01f149de30b041b.jpg.json",
-      "bytes": 1050,
-      "sha256": "92bbd40fcb7c390dc48f97b2f2c9b3cdd8fe592ab9b502d51c1f734c7a8606ed"
-    },
-    {
-      "path": "public/textures/shared/8a2fcca0c80293950f0a5fdc151905bf1a9f5741382aea6ce143b1393804123c.jpg",
-      "bytes": 38841,
-      "sha256": "8a2fcca0c80293950f0a5fdc151905bf1a9f5741382aea6ce143b1393804123c"
-    },
-    {
-      "path": "public/textures/shared/8a2fcca0c80293950f0a5fdc151905bf1a9f5741382aea6ce143b1393804123c.jpg.json",
-      "bytes": 1176,
-      "sha256": "985af581fcd44683dff58f44e7101190f01885d8651bdab2deef5befdd0d9be7"
-    },
-    {
-      "path": "public/textures/shared/8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572.jpg",
-      "bytes": 24682,
-      "sha256": "8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572"
-    },
-    {
-      "path": "public/textures/shared/8c24c8b4de8f23b69a236672c5d2a5156cd6cf44343610c2f0c16dd7c988f572.jpg.json",
+      "path": "public/textures/shared/8bde4e9657abe3115c65f3f0669680a23ba06fad82cb871b145ab61fbaa24ce9.jpg.json",
       "bytes": 1011,
-      "sha256": "99e623e0d8088e187fde0862cd2813d081f189977f322952d191adef89a7f728"
+      "sha256": "25f3a018532bbe037dcf41fc74a67b3c02fa99b4a0c647ec56aa28838a60224b"
     },
     {
       "path": "public/textures/shared/8f9dd214e4fd0b1ca51a918a3691ac019dcb61c0e57622b07179c620e6724203.jpg",
@@ -5599,26 +5704,6 @@
       "sha256": "be5d64e35db11d43a83d50fe3986d015bd819d3080e143645fda4cd9f4f760bf"
     },
     {
-      "path": "public/textures/shared/904e226305d5df801f0cec156b838dbc0e6b957316dbe661917fddc954688cdd.jpg",
-      "bytes": 60996,
-      "sha256": "904e226305d5df801f0cec156b838dbc0e6b957316dbe661917fddc954688cdd"
-    },
-    {
-      "path": "public/textures/shared/904e226305d5df801f0cec156b838dbc0e6b957316dbe661917fddc954688cdd.jpg.json",
-      "bytes": 1176,
-      "sha256": "96aa6cdd9c094d55c5a4aa6357f660225ebeb6ecdcf7e9938694136ec7d680dd"
-    },
-    {
-      "path": "public/textures/shared/9315aa3f57a15ab13f8f336df6b543679696db08e9032dc962981641e813c230.jpg",
-      "bytes": 57781,
-      "sha256": "9315aa3f57a15ab13f8f336df6b543679696db08e9032dc962981641e813c230"
-    },
-    {
-      "path": "public/textures/shared/9315aa3f57a15ab13f8f336df6b543679696db08e9032dc962981641e813c230.jpg.json",
-      "bytes": 947,
-      "sha256": "6ea2e7abcfeba0ea515798cdd4f507068275d911a5488ea4d30d6783d49f09df"
-    },
-    {
       "path": "public/textures/shared/93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265.jpg",
       "bytes": 136511,
       "sha256": "93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265"
@@ -5627,6 +5712,26 @@
       "path": "public/textures/shared/93d8c39f480faca48e7aecd29724697b8d4b84f34359d4882ba569d3bf815265.jpg.json",
       "bytes": 1077,
       "sha256": "206161e58e25a192b744a276fe16b25f5de086cd732a0660179cba29c3993a9e"
+    },
+    {
+      "path": "public/textures/shared/94dd0f0541dcf7e93df6f378860f134581037341c594ef4bf89f522fadeee233.jpg",
+      "bytes": 4717,
+      "sha256": "94dd0f0541dcf7e93df6f378860f134581037341c594ef4bf89f522fadeee233"
+    },
+    {
+      "path": "public/textures/shared/94dd0f0541dcf7e93df6f378860f134581037341c594ef4bf89f522fadeee233.jpg.json",
+      "bytes": 1035,
+      "sha256": "c85f900f70926f144ba71bb3db52c7c048d3d9039b01219e1c5b3131acf2fb97"
+    },
+    {
+      "path": "public/textures/shared/99509b772fd605882713cdbed1413e99cb278b03548aad3cc801c676ba38f4ca.jpg",
+      "bytes": 10689,
+      "sha256": "99509b772fd605882713cdbed1413e99cb278b03548aad3cc801c676ba38f4ca"
+    },
+    {
+      "path": "public/textures/shared/99509b772fd605882713cdbed1413e99cb278b03548aad3cc801c676ba38f4ca.jpg.json",
+      "bytes": 1026,
+      "sha256": "88b852716ba13bc13c0dc72536f0c903c0009e6f8899fe1981f2e35b68cd50d4"
     },
     {
       "path": "public/textures/shared/9a0c04c0036b9935b9a7c7a49623bf31720f6b386b72ee3cfb57b0d248eac154.jpg",
@@ -5639,14 +5744,14 @@
       "sha256": "c25cbaaee45fc2d65377a04b8c2b9173565f0370fadfc4fd4988eccd9be7a1e7"
     },
     {
-      "path": "public/textures/shared/9d4b6a8eaa9bb706003e37da29b8615a27357b12b4e6a5ab14515b7122efb1ee.jpg",
-      "bytes": 26445,
-      "sha256": "9d4b6a8eaa9bb706003e37da29b8615a27357b12b4e6a5ab14515b7122efb1ee"
+      "path": "public/textures/shared/9a85a2734582652f9b3f34131f652ca1755355d2b3ce5fdb56a60d6c774cb062.jpg",
+      "bytes": 5624,
+      "sha256": "9a85a2734582652f9b3f34131f652ca1755355d2b3ce5fdb56a60d6c774cb062"
     },
     {
-      "path": "public/textures/shared/9d4b6a8eaa9bb706003e37da29b8615a27357b12b4e6a5ab14515b7122efb1ee.jpg.json",
-      "bytes": 935,
-      "sha256": "6fbd86869abab6065d6bd5de520c02863d1572ca4a8f538df5170c80ea984b08"
+      "path": "public/textures/shared/9a85a2734582652f9b3f34131f652ca1755355d2b3ce5fdb56a60d6c774cb062.jpg.json",
+      "bytes": 1035,
+      "sha256": "cdd995338afc46c8f92a637e52a3ba56e1114706e79e73124e762ebfc7d75f35"
     },
     {
       "path": "public/textures/shared/a31a1a6feec2d1e3dca6ba3b63d8f0cda3d77538b0787c2f30fee11455e627d7.jpg",
@@ -5659,36 +5764,6 @@
       "sha256": "ec5d5111e590a9245c5b1ac715b162c161edbcf9a03ef5a39dc9b65c9487ef5d"
     },
     {
-      "path": "public/textures/shared/a4ad0bcda18bd374ed11f5372f38ac7a75df38c4b9ddf02caeeaf7d8f0681165.jpg",
-      "bytes": 63188,
-      "sha256": "a4ad0bcda18bd374ed11f5372f38ac7a75df38c4b9ddf02caeeaf7d8f0681165"
-    },
-    {
-      "path": "public/textures/shared/a4ad0bcda18bd374ed11f5372f38ac7a75df38c4b9ddf02caeeaf7d8f0681165.jpg.json",
-      "bytes": 1176,
-      "sha256": "e76faeb3b8628e91a6e44b823c25de570dcbf10245b1bceb50fc56919e283a89"
-    },
-    {
-      "path": "public/textures/shared/a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab.jpg",
-      "bytes": 1933,
-      "sha256": "a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab"
-    },
-    {
-      "path": "public/textures/shared/a51058068c74f8ca6a4cca8f2f2a999058209ec22b24c640bb721f20d16fd0ab.jpg.json",
-      "bytes": 1026,
-      "sha256": "3def69cf2b1c08d6aedc2d750a09e1a68dbb68691ee8b4b38db240e6ed5e4991"
-    },
-    {
-      "path": "public/textures/shared/a73e4293c82b15b76ad84a1f82f129dc3b176065ffd8ea585ad99c65da4f3b43.jpg",
-      "bytes": 26743,
-      "sha256": "a73e4293c82b15b76ad84a1f82f129dc3b176065ffd8ea585ad99c65da4f3b43"
-    },
-    {
-      "path": "public/textures/shared/a73e4293c82b15b76ad84a1f82f129dc3b176065ffd8ea585ad99c65da4f3b43.jpg.json",
-      "bytes": 929,
-      "sha256": "37308561c2e264e9951f553f625bc7b583036985c72287024aba5b021ba05885"
-    },
-    {
       "path": "public/textures/shared/a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee.jpg",
       "bytes": 14710,
       "sha256": "a89aae30a46dd0ba11ec4a0e1d656c2a99a29f30b9ca8ab73ad2a3ddeb857dee"
@@ -5699,54 +5774,14 @@
       "sha256": "ec73b7aa804804329f2276921ee41d4547b010f5c26f623b1864e37a460884e3"
     },
     {
-      "path": "public/textures/shared/a8bfd908efac57e75860de6df99e99ccde6153779617eba16da0ea31ef0251f2.jpg",
-      "bytes": 34676,
-      "sha256": "a8bfd908efac57e75860de6df99e99ccde6153779617eba16da0ea31ef0251f2"
+      "path": "public/textures/shared/acd013cc5816bd1c5cb2198857d07e63910869ff89a8d7efe5d76a4b4386cfed.jpg",
+      "bytes": 5321,
+      "sha256": "acd013cc5816bd1c5cb2198857d07e63910869ff89a8d7efe5d76a4b4386cfed"
     },
     {
-      "path": "public/textures/shared/a8bfd908efac57e75860de6df99e99ccde6153779617eba16da0ea31ef0251f2.jpg.json",
-      "bytes": 1176,
-      "sha256": "91a5d5ce70a47a18e36f542ede8f122cc695111910fad7a1cf26f3df2a52daa1"
-    },
-    {
-      "path": "public/textures/shared/a91fdd146c31f961c02d883b8d8a475c7c273b3b4362f353d586c5233dacd35a.jpg",
-      "bytes": 37855,
-      "sha256": "a91fdd146c31f961c02d883b8d8a475c7c273b3b4362f353d586c5233dacd35a"
-    },
-    {
-      "path": "public/textures/shared/a91fdd146c31f961c02d883b8d8a475c7c273b3b4362f353d586c5233dacd35a.jpg.json",
-      "bytes": 926,
-      "sha256": "683ef55ea210744fcf6c13f4911aeeadec1d6baa153e865c23ed650384c102d5"
-    },
-    {
-      "path": "public/textures/shared/aa1fa47dae431869a3bc81cafa7eb3c123bb8d7dc45f9a93e024dea4971030f5.jpg",
-      "bytes": 58275,
-      "sha256": "aa1fa47dae431869a3bc81cafa7eb3c123bb8d7dc45f9a93e024dea4971030f5"
-    },
-    {
-      "path": "public/textures/shared/aa1fa47dae431869a3bc81cafa7eb3c123bb8d7dc45f9a93e024dea4971030f5.jpg.json",
-      "bytes": 944,
-      "sha256": "1f79351473d23e71f5ac78f1654b17b9a65d2aa3f8ae3652c5ce041c5c0a0943"
-    },
-    {
-      "path": "public/textures/shared/aa4d6cc8534184dca35ef2e6ae8f43dbd236ea558d0327b8a46d2661f50d4dbc.jpg",
-      "bytes": 39327,
-      "sha256": "aa4d6cc8534184dca35ef2e6ae8f43dbd236ea558d0327b8a46d2661f50d4dbc"
-    },
-    {
-      "path": "public/textures/shared/aa4d6cc8534184dca35ef2e6ae8f43dbd236ea558d0327b8a46d2661f50d4dbc.jpg.json",
-      "bytes": 1176,
-      "sha256": "da1a0ca7b31a33e0f3eee932920bf94740e020f0191053c3327a8f6618c35ade"
-    },
-    {
-      "path": "public/textures/shared/aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4.jpg",
-      "bytes": 5635,
-      "sha256": "aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4"
-    },
-    {
-      "path": "public/textures/shared/aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4.jpg.json",
-      "bytes": 1035,
-      "sha256": "5a3d3af61db1e74328c14c968e1444a2a280aafb3564ee9347e6f33ce320daa0"
+      "path": "public/textures/shared/acd013cc5816bd1c5cb2198857d07e63910869ff89a8d7efe5d76a4b4386cfed.jpg.json",
+      "bytes": 1023,
+      "sha256": "80c6f782a0927aab50cf12523271bffed675e4075fff00a3331f8eba3a70f4da"
     },
     {
       "path": "public/textures/shared/afa9c926c4a691128e0b2b951fc3cd74edd8cb84da615445dbeabaa15310d245.jpg",
@@ -5809,16 +5844,6 @@
       "sha256": "110eadd29a3a739519df19150972bd76856caad1b697e1f94053eac5a1b1c06a"
     },
     {
-      "path": "public/textures/shared/b69af9b1246c70b6103bb64957ca25e2e37f6b1a2cf07dcc4c24a99cf9c94bda.jpg",
-      "bytes": 57330,
-      "sha256": "b69af9b1246c70b6103bb64957ca25e2e37f6b1a2cf07dcc4c24a99cf9c94bda"
-    },
-    {
-      "path": "public/textures/shared/b69af9b1246c70b6103bb64957ca25e2e37f6b1a2cf07dcc4c24a99cf9c94bda.jpg.json",
-      "bytes": 938,
-      "sha256": "2489b552943aa5f0266071066871c4b855dae12110267e73f6ebb0da16a1f3a1"
-    },
-    {
       "path": "public/textures/shared/b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580.jpg",
       "bytes": 9187,
       "sha256": "b80fdd1b4be9472b40c715e2d24e4f9a4b06001ada1284e8ae866cdaecce4580"
@@ -5829,76 +5854,6 @@
       "sha256": "5904ed093241fb61a677a5d39435b0bf12e3f837c477ffd3bea3a25565dcc0ab"
     },
     {
-      "path": "public/textures/shared/b91c3f8dfaba4c9077d3395e90bc4388389adebb9fae9ccb17c81ae53fc3c8da.jpg",
-      "bytes": 41824,
-      "sha256": "b91c3f8dfaba4c9077d3395e90bc4388389adebb9fae9ccb17c81ae53fc3c8da"
-    },
-    {
-      "path": "public/textures/shared/b91c3f8dfaba4c9077d3395e90bc4388389adebb9fae9ccb17c81ae53fc3c8da.jpg.json",
-      "bytes": 932,
-      "sha256": "b07641f8de67b859f647807b967f950938c45207b7b1df51bf3112df20aa098b"
-    },
-    {
-      "path": "public/textures/shared/b93b22caf65afd3fb20b96dee5bf9166e6b013ec7a03b098301b288d7fc02ed8.jpg",
-      "bytes": 30530,
-      "sha256": "b93b22caf65afd3fb20b96dee5bf9166e6b013ec7a03b098301b288d7fc02ed8"
-    },
-    {
-      "path": "public/textures/shared/b93b22caf65afd3fb20b96dee5bf9166e6b013ec7a03b098301b288d7fc02ed8.jpg.json",
-      "bytes": 1176,
-      "sha256": "eb7a612fd79a3c9a807c24893e1030d2657b57dd16736ab3e1558b1b307c899b"
-    },
-    {
-      "path": "public/textures/shared/bb762eda1e7e418274f38a1007e24b87f434739b16029b02da34bbd5adef7328.jpg",
-      "bytes": 61406,
-      "sha256": "bb762eda1e7e418274f38a1007e24b87f434739b16029b02da34bbd5adef7328"
-    },
-    {
-      "path": "public/textures/shared/bb762eda1e7e418274f38a1007e24b87f434739b16029b02da34bbd5adef7328.jpg.json",
-      "bytes": 1176,
-      "sha256": "97d361151e065bd9aa5851af75d3422bb7cf83da08796c5acb7dc508953bd7d9"
-    },
-    {
-      "path": "public/textures/shared/bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990.jpg",
-      "bytes": 9214,
-      "sha256": "bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990"
-    },
-    {
-      "path": "public/textures/shared/bc9a321e772d17f616ad6cedb8115fef9f372f77652e344857a41d3ef7111990.jpg.json",
-      "bytes": 1023,
-      "sha256": "fbe184a969b81a1e8a0e18e6b73c8741fff01e89d43026c0067e3c6ddfb8e8e9"
-    },
-    {
-      "path": "public/textures/shared/bc9ecbfc82e29ccf403cefea4506f8c2e91d5ad4872c4dd7dc63db8675181f27.jpg",
-      "bytes": 59997,
-      "sha256": "bc9ecbfc82e29ccf403cefea4506f8c2e91d5ad4872c4dd7dc63db8675181f27"
-    },
-    {
-      "path": "public/textures/shared/bc9ecbfc82e29ccf403cefea4506f8c2e91d5ad4872c4dd7dc63db8675181f27.jpg.json",
-      "bytes": 1176,
-      "sha256": "6ffbbda9a4f75f291a09f1c9233406e15c0bf9a32a51fc248cb94f73e2d8f395"
-    },
-    {
-      "path": "public/textures/shared/be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee.jpg",
-      "bytes": 2099,
-      "sha256": "be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee"
-    },
-    {
-      "path": "public/textures/shared/be221c0787f8c98ecc9d8d1000a0d759f1a1e57be8188c1eae14bf557e57c4ee.jpg.json",
-      "bytes": 1029,
-      "sha256": "fdafae154df6da433740d2e43e0d235057551aceaf1724dcc10aca3c5f501050"
-    },
-    {
-      "path": "public/textures/shared/be6bf4249bca23dfdb34425effa42545c33993dabc73d571b797b5dd65936f1e.jpg",
-      "bytes": 36100,
-      "sha256": "be6bf4249bca23dfdb34425effa42545c33993dabc73d571b797b5dd65936f1e"
-    },
-    {
-      "path": "public/textures/shared/be6bf4249bca23dfdb34425effa42545c33993dabc73d571b797b5dd65936f1e.jpg.json",
-      "bytes": 923,
-      "sha256": "7498f0fb4bc52ce33d17894cc8557d52fb3969ab77074e191ba0cb806083b5f3"
-    },
-    {
       "path": "public/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg",
       "bytes": 59683,
       "sha256": "bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71"
@@ -5907,16 +5862,6 @@
       "path": "public/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg.json",
       "bytes": 1059,
       "sha256": "c216035200e81f92e2f7c282b4853963bfb64d115b0f8708e4442e491d27f4bb"
-    },
-    {
-      "path": "public/textures/shared/c019e88fc2ddec6d25c87e0cb8ebe3c88f20d66511393593609c1b905bfd1e7e.jpg",
-      "bytes": 62873,
-      "sha256": "c019e88fc2ddec6d25c87e0cb8ebe3c88f20d66511393593609c1b905bfd1e7e"
-    },
-    {
-      "path": "public/textures/shared/c019e88fc2ddec6d25c87e0cb8ebe3c88f20d66511393593609c1b905bfd1e7e.jpg.json",
-      "bytes": 1176,
-      "sha256": "ad54246a028b361478e7739c386dd727d4578b3bdbe42ba9604f0f6627f9c494"
     },
     {
       "path": "public/textures/shared/c034fb103cede6a7dc7895bb5fc73e251006fa59f799c15b939f29ad2fbdc00f.jpg",
@@ -5939,16 +5884,6 @@
       "sha256": "43cefee3fcac330caae5c6f2da1c1c16b53243eab4607011c16188eeea32122c"
     },
     {
-      "path": "public/textures/shared/c3079dc2e53a5f69ae8092ae6af4098ad834779c4cd3adf0308c8e2d2366f1ae.jpg",
-      "bytes": 59355,
-      "sha256": "c3079dc2e53a5f69ae8092ae6af4098ad834779c4cd3adf0308c8e2d2366f1ae"
-    },
-    {
-      "path": "public/textures/shared/c3079dc2e53a5f69ae8092ae6af4098ad834779c4cd3adf0308c8e2d2366f1ae.jpg.json",
-      "bytes": 1176,
-      "sha256": "26fa9de084a1b9579d7a774c4299a725bdef326da135530c21222adf14a898bb"
-    },
-    {
       "path": "public/textures/shared/c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc.jpg",
       "bytes": 1873,
       "sha256": "c5d17e1098acf08237fdf79baff99650cb95fc0581b2e89cf28ac2b05ce6fafc"
@@ -5967,26 +5902,6 @@
       "path": "public/textures/shared/c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6.jpg.json",
       "bytes": 1050,
       "sha256": "ece1aa0f6e83fd65041e4d108d5661dff29a819619a62113a386565cf7992be0"
-    },
-    {
-      "path": "public/textures/shared/c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234.jpg",
-      "bytes": 13925,
-      "sha256": "c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234"
-    },
-    {
-      "path": "public/textures/shared/c6e1834b49608be9b1fe199c558f70cfcf77883dca4f3407aa32e45527f30234.jpg.json",
-      "bytes": 1026,
-      "sha256": "6b40ebb6d446cdfa2ac42a7f0529f3a9eb04398c7188ce72353b005b7036d231"
-    },
-    {
-      "path": "public/textures/shared/ca5594c02f38f3ffadb575edbc37484f18a1a490e0b33ce50bae809666855982.jpg",
-      "bytes": 61343,
-      "sha256": "ca5594c02f38f3ffadb575edbc37484f18a1a490e0b33ce50bae809666855982"
-    },
-    {
-      "path": "public/textures/shared/ca5594c02f38f3ffadb575edbc37484f18a1a490e0b33ce50bae809666855982.jpg.json",
-      "bytes": 938,
-      "sha256": "f68c29911603ea67ab0e3542843326c5300571c7e759f16da6ca43d9e789dbd3"
     },
     {
       "path": "public/textures/shared/ccaf606068c8a564d6907c2f43b6779dde6bd803f11bac8b8c642bed49da64ad.jpg",
@@ -6009,24 +5924,24 @@
       "sha256": "0e7dcaea72186ee023e2ca7ac77a798086fcc4004a789034d292125f8834a064"
     },
     {
-      "path": "public/textures/shared/cf2072b82b5699a97ff8b016c754469abc372c85da70c774bc01dee956a27e15.jpg",
-      "bytes": 21945,
-      "sha256": "cf2072b82b5699a97ff8b016c754469abc372c85da70c774bc01dee956a27e15"
+      "path": "public/textures/shared/cd31bdbbbdf787a8bd0cc3d1dcac916b7ce4fa16c6d3c01f5b6790e83262fce8.jpg",
+      "bytes": 5477,
+      "sha256": "cd31bdbbbdf787a8bd0cc3d1dcac916b7ce4fa16c6d3c01f5b6790e83262fce8"
     },
     {
-      "path": "public/textures/shared/cf2072b82b5699a97ff8b016c754469abc372c85da70c774bc01dee956a27e15.jpg.json",
-      "bytes": 923,
-      "sha256": "3ed642d18e66a17fe052da55d70bb15522bc66b26b32d414f6edd6955242d592"
+      "path": "public/textures/shared/cd31bdbbbdf787a8bd0cc3d1dcac916b7ce4fa16c6d3c01f5b6790e83262fce8.jpg.json",
+      "bytes": 1026,
+      "sha256": "eaad61389d8a2650a9ee1e16ad903b3e462e77f22b1f351852bcfab39418015a"
     },
     {
-      "path": "public/textures/shared/d3f84ebeb41109bcbf9e90028a6d90ee1917b5ec3ceae627ac4fb7cdd432630e.jpg",
-      "bytes": 42794,
-      "sha256": "d3f84ebeb41109bcbf9e90028a6d90ee1917b5ec3ceae627ac4fb7cdd432630e"
+      "path": "public/textures/shared/cf0ec24f6c9d686e3cec96ddc1b0e6331e37a2336103282d2128c3397d492f13.jpg",
+      "bytes": 3372,
+      "sha256": "cf0ec24f6c9d686e3cec96ddc1b0e6331e37a2336103282d2128c3397d492f13"
     },
     {
-      "path": "public/textures/shared/d3f84ebeb41109bcbf9e90028a6d90ee1917b5ec3ceae627ac4fb7cdd432630e.jpg.json",
-      "bytes": 1176,
-      "sha256": "2f6ed698a00684d10abb302dd0c47769b7efea3a2af39334c15935db23002d5e"
+      "path": "public/textures/shared/cf0ec24f6c9d686e3cec96ddc1b0e6331e37a2336103282d2128c3397d492f13.jpg.json",
+      "bytes": 1023,
+      "sha256": "06b710ae2d5fcd4a9648833fe948d18786e762005a2557cd14ab5e1a4d8bd2f9"
     },
     {
       "path": "public/textures/shared/d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe.jpg",
@@ -6037,6 +5952,16 @@
       "path": "public/textures/shared/d50a896228ca467545dfd493914ec64d0a237d1aa6617bc20852e0e9a7099bbe.jpg.json",
       "bytes": 1077,
       "sha256": "35389a209b30678584e93800585e9c2cc9f725fb8355a2bb062953d23025f148"
+    },
+    {
+      "path": "public/textures/shared/d842713a6b3fada97bb70350b1e085dcd30cce45835a84887404332a2bf94104.jpg",
+      "bytes": 5488,
+      "sha256": "d842713a6b3fada97bb70350b1e085dcd30cce45835a84887404332a2bf94104"
+    },
+    {
+      "path": "public/textures/shared/d842713a6b3fada97bb70350b1e085dcd30cce45835a84887404332a2bf94104.jpg.json",
+      "bytes": 1029,
+      "sha256": "5f15f67bda85a5b1d29ec908da033c178291e1c3ab8d26cf1ad9f3d25db3bed6"
     },
     {
       "path": "public/textures/shared/daa8d98cb20d6a902e3113aaaac7fd244314ad822808b580e535c535e41cafec.jpg",
@@ -6069,34 +5994,24 @@
       "sha256": "ab9a338607e6b4ae42007ccd30c1025b20438aaaf5e1d2bff6574064261ff18a"
     },
     {
-      "path": "public/textures/shared/ddf0a615a05461b88093fecb55eba72cd08c1b079c84f593f348fec786be7fb3.jpg",
-      "bytes": 22581,
-      "sha256": "ddf0a615a05461b88093fecb55eba72cd08c1b079c84f593f348fec786be7fb3"
+      "path": "public/textures/shared/df083d6c70e6f0001e0f5926e5d601feeef89d5340818564fca2544efa093000.jpg",
+      "bytes": 11018,
+      "sha256": "df083d6c70e6f0001e0f5926e5d601feeef89d5340818564fca2544efa093000"
     },
     {
-      "path": "public/textures/shared/ddf0a615a05461b88093fecb55eba72cd08c1b079c84f593f348fec786be7fb3.jpg.json",
-      "bytes": 1176,
-      "sha256": "01eea713ca3c6c314a4a99506f1c3e412d3c74103a6dceb6d8b107b90eb8c032"
+      "path": "public/textures/shared/df083d6c70e6f0001e0f5926e5d601feeef89d5340818564fca2544efa093000.jpg.json",
+      "bytes": 1029,
+      "sha256": "2ae0d665482bc1b84f35dea2739224a3f3049ef8ef7f44b368acf48b58bf9c6a"
     },
     {
-      "path": "public/textures/shared/e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67.jpg",
-      "bytes": 21391,
-      "sha256": "e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67"
+      "path": "public/textures/shared/e248a26df318a9e74401783d5347b3ce5da44c4db019f5e6af86b7030d69cf1b.jpg",
+      "bytes": 4197,
+      "sha256": "e248a26df318a9e74401783d5347b3ce5da44c4db019f5e6af86b7030d69cf1b"
     },
     {
-      "path": "public/textures/shared/e309507eeae11baee0106f0f2e2bcae36e5c820a37820b8ed111f3db2b018d67.jpg.json",
-      "bytes": 1023,
-      "sha256": "30292105744d7f72ea769ac06b7ff86cb0801f8f89e676273e971259311bd778"
-    },
-    {
-      "path": "public/textures/shared/e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6.jpg",
-      "bytes": 5283,
-      "sha256": "e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6"
-    },
-    {
-      "path": "public/textures/shared/e39ea34a52dc676a9c5d6c0a0a53170506ed8b4ccb900a55c31e19d107b3afe6.jpg.json",
-      "bytes": 1014,
-      "sha256": "43ea1a6d2079950ef669b2f50a37e2f1d0327f6cd52ea4a1f4a445683e36a824"
+      "path": "public/textures/shared/e248a26df318a9e74401783d5347b3ce5da44c4db019f5e6af86b7030d69cf1b.jpg.json",
+      "bytes": 1011,
+      "sha256": "4115f04c7696f70df8c7d486ee96d3cf1609cd4440c8a4febf4c6737927c6ac1"
     },
     {
       "path": "public/textures/shared/e66de31e1f89ac413f7ca0c5d97883d4ccfef7f699168077a878a2eee7662ef2.jpg",
@@ -6119,34 +6034,14 @@
       "sha256": "1838606cb3adae031371e2e5edfa75981eb755df1accc477cbf772022678b0fa"
     },
     {
-      "path": "public/textures/shared/eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360.jpg",
-      "bytes": 5297,
-      "sha256": "eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360"
+      "path": "public/textures/shared/f01c7ce9492306532cbeeee47a6b23cfd4db09207437d62f65a271c00c7b4e9c.jpg",
+      "bytes": 9583,
+      "sha256": "f01c7ce9492306532cbeeee47a6b23cfd4db09207437d62f65a271c00c7b4e9c"
     },
     {
-      "path": "public/textures/shared/eb77ae261dd4f1336c1267a98447c2e585224d789266b9d628638b4ffd977360.jpg.json",
-      "bytes": 1026,
-      "sha256": "6e3a3977664f6a2477a6d589e6dfc6e1cd5843f3a4d913895b14d86ea4a2c1c1"
-    },
-    {
-      "path": "public/textures/shared/ecdfe4537af8cbe6bf4cf25705d336308f0a16e6864ec701f70df89f6c4c5bd2.jpg",
-      "bytes": 25688,
-      "sha256": "ecdfe4537af8cbe6bf4cf25705d336308f0a16e6864ec701f70df89f6c4c5bd2"
-    },
-    {
-      "path": "public/textures/shared/ecdfe4537af8cbe6bf4cf25705d336308f0a16e6864ec701f70df89f6c4c5bd2.jpg.json",
-      "bytes": 914,
-      "sha256": "dca5bf1f8af41a82b8b23933aba907625f59f41f55c1ebac8ce4c5894ba829a5"
-    },
-    {
-      "path": "public/textures/shared/eeb17d0143a252de13ab59a94befdf75f19c92d4b27548264a9f3bebf9735a39.jpg",
-      "bytes": 59598,
-      "sha256": "eeb17d0143a252de13ab59a94befdf75f19c92d4b27548264a9f3bebf9735a39"
-    },
-    {
-      "path": "public/textures/shared/eeb17d0143a252de13ab59a94befdf75f19c92d4b27548264a9f3bebf9735a39.jpg.json",
-      "bytes": 1176,
-      "sha256": "9e1651e06527ce5ec42fd8b495bfc3544ccd5e34a289859cc3beb85c5d8bbfce"
+      "path": "public/textures/shared/f01c7ce9492306532cbeeee47a6b23cfd4db09207437d62f65a271c00c7b4e9c.jpg.json",
+      "bytes": 1032,
+      "sha256": "fb6375ee82c6ec0ed563a65a5afd9c22fcba253d8aa03e610cac57746d5f1866"
     },
     {
       "path": "public/textures/shared/f0adaad6d70b6d4f8c6362175b040878e881217675c8fe0f5694d0bfd51061bc.png",
@@ -6169,26 +6064,6 @@
       "sha256": "32ac563470e9df401499d9c1c6efdffe0085d4c54bebed591523251d0540eb29"
     },
     {
-      "path": "public/textures/shared/f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7.jpg",
-      "bytes": 5119,
-      "sha256": "f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7"
-    },
-    {
-      "path": "public/textures/shared/f3c34df7b76b8ae8f0479ff081030f6afc6dc70a3a733b976c27b52e149315d7.jpg.json",
-      "bytes": 1029,
-      "sha256": "91db776dfab6f88fb80465be9241fba9536e5e4887df08c48e48bdaecdce06cf"
-    },
-    {
-      "path": "public/textures/shared/f7304b708241549086f2dccfc1d10bac6d2c4272288fd7d72c664aaecd5229d0.jpg",
-      "bytes": 59772,
-      "sha256": "f7304b708241549086f2dccfc1d10bac6d2c4272288fd7d72c664aaecd5229d0"
-    },
-    {
-      "path": "public/textures/shared/f7304b708241549086f2dccfc1d10bac6d2c4272288fd7d72c664aaecd5229d0.jpg.json",
-      "bytes": 938,
-      "sha256": "54590c1049906bf13631beb25d551c8999433fdd4108849247cad907828ae6b6"
-    },
-    {
       "path": "public/textures/shared/f737642d71e78f617337c6f4917a0560b82815ecabacf7d485c6b1b65817117e.jpg",
       "bytes": 4668,
       "sha256": "f737642d71e78f617337c6f4917a0560b82815ecabacf7d485c6b1b65817117e"
@@ -6207,6 +6082,16 @@
       "path": "public/textures/shared/fa6fee81e8294a79ed10af0e7e1edd7df8db620c7f38cba2268d6bae432ae6e7.jpg.json",
       "bytes": 1026,
       "sha256": "f6a0f427015554205bdd8064b9b67a3ccc235ebe9d4341b02ea80983e0d3f90f"
+    },
+    {
+      "path": "public/textures/shared/ff6ac86eaedaf8c9b92b24d2f11297d6fb95a012dacb16d3c9efb77697702424.jpg",
+      "bytes": 4624,
+      "sha256": "ff6ac86eaedaf8c9b92b24d2f11297d6fb95a012dacb16d3c9efb77697702424"
+    },
+    {
+      "path": "public/textures/shared/ff6ac86eaedaf8c9b92b24d2f11297d6fb95a012dacb16d3c9efb77697702424.jpg.json",
+      "bytes": 1026,
+      "sha256": "1ff7bd2271996d9e5e5d2e9f68ad7394567661756c52d3b33cb70534d4c63f3f"
     },
     {
       "path": "public/textures/vegetation/canopy-atlas.webp",
@@ -6232,6 +6117,31 @@
       "path": "references/licenses/polyhaven.html",
       "bytes": 71993,
       "sha256": "1c521a5f846a23d0906ca721336aea72c34f990d982063333780c634ea0dbe7a"
+    },
+    {
+      "path": "references/paintings/M02.jpg",
+      "bytes": 10127236,
+      "sha256": "1ed2f698b218dac26da2b587e0f081e15a9727ee0430367458b8b74c52a9b33b"
+    },
+    {
+      "path": "references/paintings/M03.jpg",
+      "bytes": 8888624,
+      "sha256": "c083a80b19b8fe68cd698c27d6484b93941b52c5519289688c66cdab281d6dd0"
+    },
+    {
+      "path": "references/paintings/M04.jpg",
+      "bytes": 7337076,
+      "sha256": "abb83fcd7a8241313003ae33abde0a6ccea17c20bf8b250c89a18462ae818d9b"
+    },
+    {
+      "path": "references/paintings/M15.jpg",
+      "bytes": 8623645,
+      "sha256": "14992d2889e25b79b41a19b0e71ea82ee54e6ba50293104955346939308f3532"
+    },
+    {
+      "path": "references/paintings/provenance.json",
+      "bytes": 4466,
+      "sha256": "b570a997a09d99eff049de2715faf94398ecc3e3167e8d4b7ca917e60c666d1f"
     },
     {
       "path": "references/sources.json",

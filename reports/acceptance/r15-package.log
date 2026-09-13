@@ -1,0 +1,9 @@
+
+> daguanyuan-rumeng@1.0.0 deploy:package
+> python scripts/package_deploy.py
+
+Traceback (most recent call last):
+  File "D:\Users\Lenovo\Desktop\���԰\scripts\package_deploy.py", line 36, in <module>
+    assert upload_bytes<50*1048576, f'Deployment package exceeds 50 MiB: {upload_bytes}'
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Deployment package exceeds 50 MiB: 55114291

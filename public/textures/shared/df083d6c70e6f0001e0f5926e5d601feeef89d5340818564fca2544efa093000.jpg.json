@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported rusticwood_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "rusticwood_diff",
+  "sourcePixelSha256": "8ed5e04bd53175e5100348ec6d8ac0f25f2895dc6212c8c2d7709df31fb07efb",
+  "sha256": "df083d6c70e6f0001e0f5926e5d601feeef89d5340818564fca2544efa093000",
+  "prompt": "Blender-exported rusticwood_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

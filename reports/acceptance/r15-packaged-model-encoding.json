@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-13T05:05:08.267154+00:00",
+  "checks": 6,
+  "passed": true,
+  "rows": [
+    {
+      "url": "overview.glb",
+      "encoding": "identity",
+      "transferredBytes": 4258720,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
+      "headMatches": true,
+      "passed": true
+    },
+    {
+      "url": "overview.glb",
+      "encoding": "gzip",
+      "transferredBytes": 3714203,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
+      "headMatches": true,
+      "passed": true
+    },
+    {
+      "url": "overview.glb",
+      "encoding": "br",
+      "transferredBytes": 3702878,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
+      "headMatches": true,
+      "passed": true
+    },
+    {
+      "url": "overview-low.glb",
+      "encoding": "identity",
+      "transferredBytes": 4258720,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
+      "headMatches": true,
+      "passed": true
+    },
+    {
+      "url": "overview-low.glb",
+      "encoding": "gzip",
+      "transferredBytes": 3714203,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
+      "headMatches": true,
+      "passed": true
+    },
+    {
+      "url": "overview-low.glb",
+      "encoding": "br",
+      "transferredBytes": 3702878,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
+      "headMatches": true,
+      "passed": true
+    }
+  ]
+}

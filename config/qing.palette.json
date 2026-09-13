@@ -1,0 +1,16 @@
+{
+  "revision": "r15",
+  "visualReferences": ["references/paintings/M02.jpg", "references/paintings/M03.jpg", "references/paintings/M04.jpg", "references/paintings/M15.jpg"],
+  "interpretation": "Qing album color relationships translated into editable physical materials; no claim of measured reconstruction or exact historic paint specification.",
+  "colors": {
+    "lacquer": "#b9382b", "oxblood": "#662b2b", "jade": "#267665",
+    "azurite": "#246181", "gold": "#e6bb58", "ivory": "#eadcb6",
+    "paper": "#f0e3bc", "ochre": "#a47849", "clay": "#cfb17c"
+  },
+  "formalRoofPlaces": ["daguanlou"],
+  "rusticPlaces": ["daoxiangcun", "luxuean"],
+  "quietPlaces": ["xiaoxiangguan", "hengwuyuan", "longcuian"],
+  "wallThickness": 0.36,
+  "windowSill": 1.30,
+  "foliageRevision": "r12"
+}

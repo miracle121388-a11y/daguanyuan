@@ -1,24 +1,9 @@
 {
-  "at": "2026-09-12T16:14:54.607495+00:00",
-  "revision": "spatial-garden-20260912-r14",
+  "revision": "spatial-garden-20260913-r15",
   "defaultBrowser": {
-    "passed": false,
-    "exitCode": 1,
-    "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/",
-    "report": "r14-production-default.log",
-    "dnsOverride": false
-  },
-  "resolvedBrowser": {
     "passed": true,
-    "exitCode": 0,
-    "report": "r14-production-smoke.json",
-    "publicAddress": "47.89.212.251",
-    "freshDnsEvidence": "r14-public-dns.json",
-    "quicDisabled": true,
-    "desktopReadyMs": 20683,
-    "mobileReadyMs": 15394
+    "log": "r15-production-default.log"
   },
-  "tlsVerificationEnabled": true,
-  "systemDnsOrProxyModified": false,
-  "scope": "Final r14 production interactions after user asked for quick finish. Temporary browser DNS/QUIC settings do not demonstrate normal-browser access. Previously prepared site-only proxy repair remains unapplied; user did not approve external config change."
+  "dnsOverrideUsed": false,
+  "osDnsChanged": false
 }

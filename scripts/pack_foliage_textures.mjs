@@ -3,7 +3,8 @@
 import sharp from 'sharp';
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-const {revision}=JSON.parse(readFileSync('config/craft.materials.json','utf8'));
+const config=JSON.parse(readFileSync('config/craft.materials.json','utf8'));
+const revision=config.foliageRevision??config.revision;
 const output=`assets/processed/foliage-${revision}`;mkdirSync(output,{recursive:true});
 const specs=[['fern_02','',512],['island_tree_01','leaves',256],['island_tree_02','leaves',256],['pine_sapling_small','twig',256]];
 const hash=buffer=>createHash('sha256').update(buffer).digest('hex'),records=[];

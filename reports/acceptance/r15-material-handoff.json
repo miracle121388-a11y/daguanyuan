@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "materialFilesChecked": 1284,
+  "materialBytes": 2626962175,
+  "gltfModelsRead": 185,
+  "linkedResourcesChecked": 1009,
+  "approvedProvenanceReferencesChecked": 459,
+  "lineEndingsRestored": [],
+  "optionalUnusedPineDependenciesNotDownloaded": 13,
+  "optionalDownloadCommand": "python scripts/fetch_optional_asset.py pine_tree_01",
+  "failures": []
+}

@@ -55,7 +55,8 @@ def source_material():
  source pixels once and validate the visible leaf colour before GLB export.
  """
  folder=R/'assets/source/fern_02/textures'
- revision=json.loads((R/'config/craft.materials.json').read_text(encoding='utf-8'))['revision']
+ config=json.loads((R/'config/craft.materials.json').read_text(encoding='utf-8'))
+ revision=config.get('foliageRevision',config['revision'])
  image=bpy.data.images.load(str(R/f'assets/processed/foliage-{revision}/fern_02_rgba.png'),check_existing=False)
  image.colorspace_settings.name='sRGB';image.pack()
  m=bpy.data.materials.new('understory_fern');m.use_nodes=True

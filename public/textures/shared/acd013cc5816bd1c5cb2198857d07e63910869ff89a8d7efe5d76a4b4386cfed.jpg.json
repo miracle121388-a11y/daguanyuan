@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported goldroof_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "goldroof_diff",
+  "sourcePixelSha256": "1c52cf652c6b4c18e270d7a299dc3918de08ff4093bd33a5d63208677ce4de7c",
+  "sha256": "acd013cc5816bd1c5cb2198857d07e63910869ff89a8d7efe5d76a4b4386cfed",
+  "prompt": "Blender-exported goldroof_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

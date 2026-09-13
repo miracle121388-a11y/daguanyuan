@@ -1,12 +1,12 @@
 {
-  "revision": "r12",
-  "note": "Interpretive construction materials, not evidence of historical species. UV periods in metres (u,v); grain direction follows the long axis of each face. Stone swatches sample only a quiet interior of one scanned block, excluding its joints. Roughness uses 85% calibrated role plus 15% source unless specified. Albedo contrast is mixed around the actual crop linear-light mean before the colour transform. Gardenstone uses source sandstone surface colour on authored eroded geometry; no claim of historical geological identity.",
+  "revision": "r15",
+  "note": "Qing album inspired pigment materials; source grain, normals and roughness remain traceable. Pigment colors are visual interpretation, not historical paint measurements.",
   "materials": {
     "wood": {
       "source": "wood_table_001",
       "saturation": 0.68,
       "value": 3.55,
-      "roughness": 0.64,
+      "roughness": 0.44,
       "roughSourceWeight": 0.15,
       "period": [
         0.55,
@@ -20,13 +20,15 @@
         0.78
       ],
       "normalStrength": 0.08,
-      "contrast": 0.48
+      "contrast": 0.48,
+      "pigment": "#b9382b",
+      "pigmentGrain": 0.12
     },
     "darkwood": {
       "source": "wood_table_001",
       "saturation": 0.6,
       "value": 2.7,
-      "roughness": 0.74,
+      "roughness": 0.55,
       "roughSourceWeight": 0.15,
       "period": [
         0.55,
@@ -40,13 +42,15 @@
         0.78
       ],
       "normalStrength": 0.07,
-      "contrast": 0.44
+      "contrast": 0.44,
+      "pigment": "#662b2b",
+      "pigmentGrain": 0.12
     },
     "latticewood": {
       "source": "wood_table_001",
       "saturation": 0.67,
       "value": 3.45,
-      "roughness": 0.63,
+      "roughness": 0.44,
       "roughSourceWeight": 0.15,
       "period": [
         0.55,
@@ -60,7 +64,9 @@
         0.78
       ],
       "normalStrength": 0.07,
-      "contrast": 0.48
+      "contrast": 0.48,
+      "pigment": "#267665",
+      "pigmentGrain": 0.12
     },
     "floorwood": {
       "source": "wood_table_001",
@@ -86,7 +92,7 @@
       "source": "wood_table_001",
       "saturation": 0.73,
       "value": 3.0,
-      "roughness": 0.43,
+      "roughness": 0.66,
       "roughSourceWeight": 0.15,
       "period": [
         0.72,
@@ -100,59 +106,69 @@
         0.78
       ],
       "normalStrength": 0.045,
-      "contrast": 0.24
+      "contrast": 0.24,
+      "pigment": "#71302c",
+      "pigmentGrain": 0.18
     },
     "roof": {
       "source": "grey_roof_tiles",
       "saturation": 0.25,
       "value": 0.65,
-      "roughness": 0.87,
+      "roughness": 0.66,
       "period": 0.34,
       "crop": [
         0.235,
         0.13,
         0.052,
         0.075
-      ]
+      ],
+      "pigment": "#456f72",
+      "pigmentGrain": 0.18
     },
     "tile": {
       "source": "grey_roof_tiles",
       "saturation": 0.28,
       "value": 0.83,
-      "roughness": 0.82,
+      "roughness": 0.66,
       "period": 0.34,
       "crop": [
         0.235,
         0.13,
         0.052,
         0.075
-      ]
+      ],
+      "pigment": "#527e7d",
+      "pigmentGrain": 0.18
     },
     "tilelight": {
       "source": "grey_roof_tiles",
       "saturation": 0.28,
       "value": 0.91,
-      "roughness": 0.84,
+      "roughness": 0.66,
       "period": 0.34,
       "crop": [
         0.235,
         0.13,
         0.052,
         0.075
-      ]
+      ],
+      "pigment": "#65938a",
+      "pigmentGrain": 0.18
     },
     "tiledark": {
       "source": "grey_roof_tiles",
       "saturation": 0.23,
       "value": 0.66,
-      "roughness": 0.86,
+      "roughness": 0.66,
       "period": 0.34,
       "crop": [
         0.235,
         0.13,
         0.052,
         0.075
-      ]
+      ],
+      "pigment": "#294f54",
+      "pigmentGrain": 0.18
     },
     "cutstone": {
       "source": "white_sandstone_blocks_02",
@@ -256,6 +272,98 @@
         0.21,
         0.12
       ]
+    },
+    "goldroof": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.25,
+      "value": 0.65,
+      "roughness": 0.66,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ],
+      "pigment": "#b58737",
+      "pigmentGrain": 0.18
+    },
+    "goldtile": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.28,
+      "value": 0.83,
+      "roughness": 0.66,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ],
+      "pigment": "#d4a34a",
+      "pigmentGrain": 0.18
+    },
+    "goldtilelight": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.28,
+      "value": 0.91,
+      "roughness": 0.66,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ],
+      "pigment": "#e6bb62",
+      "pigmentGrain": 0.18
+    },
+    "goldtiledark": {
+      "source": "grey_roof_tiles",
+      "saturation": 0.23,
+      "value": 0.66,
+      "roughness": 0.66,
+      "period": 0.34,
+      "crop": [
+        0.235,
+        0.13,
+        0.052,
+        0.075
+      ],
+      "pigment": "#987033",
+      "pigmentGrain": 0.18
+    },
+    "rusticwood": {
+      "source": "wood_table_001",
+      "saturation": 0.68,
+      "value": 3.55,
+      "roughness": 0.44,
+      "roughSourceWeight": 0.15,
+      "period": [
+        0.55,
+        2.8
+      ],
+      "grain": "v",
+      "crop": [
+        0.61,
+        0.1,
+        0.27,
+        0.78
+      ],
+      "normalStrength": 0.08,
+      "contrast": 0.48,
+      "pigment": "#946b3f",
+      "pigmentGrain": 0.12
+    },
+    "plaster": {
+      "source": "worn_mossy_plasterwall",
+      "pigment": "#eadcb6",
+      "pigmentGrain": 0.055,
+      "roughness": 0.84,
+      "saturation": 1,
+      "value": 1,
+      "period": 3.2
     }
-  }
+  },
+  "foliageRevision": "r12"
 }

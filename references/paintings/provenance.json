@@ -1,0 +1,67 @@
+{
+  "retrievedAt": "2026-09-13T03:52:44.920018+00:00",
+  "attributionNote": "The album includes works by Sun Wen and Sun Yunmo. Preserve source titles; the overview attribution is discussed separately in the provincial museum exhibition notice.",
+  "museumContext": "https://whly.ln.gov.cn/whly/mtjj/2025072913500332504/index.shtml",
+  "files": [
+    {
+      "id": "M02",
+      "title": "001 第1回 石頭記大觀園全景.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/master/docs/assets/sunwen/001%20%E7%AC%AC1%E5%9B%9E%20%E7%9F%B3%E9%A0%AD%E8%A8%98%E5%A4%A7%E8%A7%80%E5%9C%92%E5%85%A8%E6%99%AF.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/master/docs/assets/sunwen/001%20%E7%AC%AC1%E5%9B%9E%20%E7%9F%B3%E9%A0%AD%E8%A8%98%E5%A4%A7%E8%A7%80%E5%9C%92%E5%85%A8%E6%99%AF.jpg",
+      "file": "references/paintings/M02.jpg",
+      "bytes": 10127236,
+      "sha256": "1ed2f698b218dac26da2b587e0f081e15a9727ee0430367458b8b74c52a9b33b",
+      "dimensions": [
+        3348,
+        1901
+      ],
+      "use": "User-selected visual reference for color and enclosure; not a measured plan or model texture.",
+      "rights": "Historical painting reference from the user-supplied public repository; no separate license for its digital edition asserted."
+    },
+    {
+      "id": "M03",
+      "title": "044第16-17回 賈政遊大觀園景一.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/master/docs/assets/sunwen/044%E7%AC%AC16-17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B8%80.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/master/docs/assets/sunwen/044%E7%AC%AC16-17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B8%80.jpg",
+      "file": "references/paintings/M03.jpg",
+      "bytes": 8888624,
+      "sha256": "c083a80b19b8fe68cd698c27d6484b93941b52c5519289688c66cdab281d6dd0",
+      "dimensions": [
+        3348,
+        1899
+      ],
+      "use": "User-selected visual reference for color and enclosure; not a measured plan or model texture.",
+      "rights": "Historical painting reference from the user-supplied public repository; no separate license for its digital edition asserted."
+    },
+    {
+      "id": "M04",
+      "title": "060第17-18回 賈政奉旨貴妃省親.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/master/docs/assets/sunwen/060%E7%AC%AC17-18%E5%9B%9E%20%E8%B3%88%E6%94%BF%E5%A5%89%E6%97%A8%E8%B2%B4%E5%A6%83%E7%9C%81%E8%A6%AA.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/master/docs/assets/sunwen/060%E7%AC%AC17-18%E5%9B%9E%20%E8%B3%88%E6%94%BF%E5%A5%89%E6%97%A8%E8%B2%B4%E5%A6%83%E7%9C%81%E8%A6%AA.jpg",
+      "file": "references/paintings/M04.jpg",
+      "bytes": 7337076,
+      "sha256": "abb83fcd7a8241313003ae33abde0a6ccea17c20bf8b250c89a18462ae818d9b",
+      "dimensions": [
+        3348,
+        1876
+      ],
+      "use": "User-selected visual reference for color and enclosure; not a measured plan or model texture.",
+      "rights": "Historical painting reference from the user-supplied public repository; no separate license for its digital edition asserted."
+    },
+    {
+      "id": "M15",
+      "title": "100第41-42回 劉姥姥醉臥怡紅院 蘅蕪君蘭言解疑癖.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/master/docs/assets/sunwen/100%E7%AC%AC41-42%E5%9B%9E%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E9%86%89%E8%87%A5%E6%80%A1%E7%B4%85%E9%99%A2%20%E8%98%85%E8%95%AA%E5%90%9B%E8%98%AD%E8%A8%80%E8%A7%A3%E7%96%91%E7%99%96.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/master/docs/assets/sunwen/100%E7%AC%AC41-42%E5%9B%9E%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E9%86%89%E8%87%A5%E6%80%A1%E7%B4%85%E9%99%A2%20%E8%98%85%E8%95%AA%E5%90%9B%E8%98%AD%E8%A8%80%E8%A7%A3%E7%96%91%E7%99%96.jpg",
+      "file": "references/paintings/M15.jpg",
+      "bytes": 8623645,
+      "sha256": "14992d2889e25b79b41a19b0e71ea82ee54e6ba50293104955346939308f3532",
+      "dimensions": [
+        3348,
+        1929
+      ],
+      "use": "User-selected visual reference for color and enclosure; not a measured plan or model texture.",
+      "rights": "Historical painting reference from the user-supplied public repository; no separate license for its digital edition asserted."
+    }
+  ]
+}

@@ -3,6 +3,8 @@ import {createReadStream,statSync,existsSync,readFileSync} from 'node:fs';
 import {resolve,extname,sep} from 'node:path';
 import {gzipSync,brotliDecompressSync} from 'node:zlib';
 const root=resolve(process.env.STATIC_ROOT||'dist');
+const aliasFile=resolve(root,'asset-aliases.json');
+const assetAliases=existsSync(aliasFile)?JSON.parse(readFileSync(aliasFile,'utf8')):{};
 const compressible=new Set(['.html','.js','.css','.json','.wasm','.glb']);
 const gzipCache=new Map();let gzipCacheBytes=0;
 function gzipPayload(file,stat,decoded){
@@ -21,6 +23,8 @@ createServer((req,res)=>{
  if(pathname==='/healthz'){res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});return res.end(JSON.stringify({status:'ok',application:'daguanyuan-rumeng',revision:revision()}))}
  let file=resolve(root,'.'+pathname);if(file!==root&&!file.startsWith(root+sep)){res.writeHead(403);return res.end()}
  if(pathname==='/'||pathname.endsWith('/'))file=resolve(file,'index.html');
+ const alias=Object.hasOwn(assetAliases,pathname.slice(1))?assetAliases[pathname.slice(1)]:null;
+ if(alias){file=resolve(root,alias);if(!file.startsWith(root+sep)){res.writeHead(500);return res.end()}}
  const packedOnly=!existsSync(file)&&['.glb','.js','.wasm'].includes(extname(file))&&existsSync(file+'.br');
  if((!existsSync(file)&&!packedOnly)||!statSync(packedOnly?file+'.br':file).isFile()){res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8'});return res.end('未找到此资源')}
  const ext=extname(file),accept=req.headers['accept-encoding']??'';let encoding,dynamicGzip=false;

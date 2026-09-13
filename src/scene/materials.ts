@@ -24,7 +24,7 @@ float groundNoise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);return mi
    };
    m.customProgramCacheKey=()=> 'garden-ground-r14-'+Boolean(landscapeLight)+Boolean(soil)+Boolean(zones);
   }
-  if(m.name==='plaster'){m.color.set('#e8e5d8');m.roughness=.91;m.onBeforeCompile=shader=>{shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>','#include <map_fragment>\n#ifdef USE_MAP\ndiffuseColor.rgb = diffuse * mix(vec3(1.0), sampledDiffuseColor.rgb, 0.16);\n#endif')};m.customProgramCacheKey=()=> 'garden-plaster-r7'}
+  if(m.name==='plaster'){m.color.set('#ffffff');m.roughness=.84}
   if(['wood','darkwood','floorwood','latticewood','furniture','roof','tile','tilelight','tiledark','paving','courtbase','cutstone','bankstone','gardenstone','stone','litter'].includes(m.name)){m.color.set('#ffffff');if(m.map)m.map.anisotropy=4}
 
   

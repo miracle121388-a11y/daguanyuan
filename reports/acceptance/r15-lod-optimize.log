@@ -1,0 +1,22 @@
+
+> daguanyuan-rumeng@1.0.0 models:optimize
+> node scripts/optimize.mjs
+
+Validated public/models/overview.glb
+Validated public/models/overview-low.glb
+Validated public/models/places-low/aojingxiguan.glb
+Validated public/models/places-low/daguanlou.glb
+Validated public/models/places-low/daguanyuan_gate.glb
+Validated public/models/places-low/daoxiangcun.glb
+Validated public/models/places-low/dicuiting.glb
+Validated public/models/places-low/hengwuyuan.glb
+Validated public/models/places-low/longcuian.glb
+Validated public/models/places-low/luxuean.glb
+Validated public/models/places-low/nuanxiangwu.glb
+Validated public/models/places-low/ouxiangxie.glb
+Validated public/models/places-low/qiushuangzhai.glb
+Validated public/models/places-low/qujingtongyou.glb
+Validated public/models/places-low/tubishanzhuang.glb
+Validated public/models/places-low/xiaoxiangguan.glb
+Validated public/models/places-low/yihongyuan.glb
+Optimized and re-read 40 GLBs; IDs, anchors, materials and bounds preserved.

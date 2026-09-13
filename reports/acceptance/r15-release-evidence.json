@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-13T05:12:35.633857+00:00",
+  "revision": "spatial-garden-20260913-r15",
+  "wallChecks": 3780,
+  "wallChecksPassed": true,
+  "mobileFirstResourceBytes": 8242974,
+  "packageBytes": 46706067,
+  "visualEvidence": [
+    {
+      "path": "reports/blender/r15-master-full.png",
+      "sha256": "6b68db8a8b6d5f34cb6444a2e5079ce60c61dcb5319d32e55f86f4d3a9cc6e88"
+    },
+    {
+      "path": "reports/blender/r15-master-xiaoxiang.png",
+      "sha256": "3083d4759bf1597681f9f0ec3610035ea123cf62dae1618f6b1b222feeca3ecc"
+    },
+    {
+      "path": "reports/browser/r15-packaged-desktop.png",
+      "sha256": "f47e72e366f00f6bb11009d04fe4aaa2258718def4449da7f3e5a215efe42c4c"
+    },
+    {
+      "path": "reports/browser/r15-packaged-mobile.png",
+      "sha256": "fabaddabb549e782e1e0b1e7622af7d82d38e953289d4773eadad1eb0301747f"
+    }
+  ],
+  "reviewScope": "Native saved master plus exact packaged desktop and touch-emulated browser outputs; no claim of real-phone hardware testing or measured historical reconstruction.",
+  "endToEnd": {
+    "passed": 11,
+    "log": "reports/acceptance/r15-e2e-release.log"
+  }
+}

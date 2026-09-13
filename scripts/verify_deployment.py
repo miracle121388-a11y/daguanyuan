@@ -6,7 +6,7 @@ host='daguanyuan-rumeng.zeabur.app'
 fetch_timeout=int(os.environ.get('GARDEN_VERIFY_TIMEOUT_SECONDS','60'))
 if not 1<=fetch_timeout<=600:raise ValueError('Invalid verification request timeout')
 def cli(*args):
- result=subprocess.run(['npx.cmd','--yes','zeabur@0.22.2',*args,'-i=false','--json'],check=True,capture_output=True,encoding='utf8')
+ result=subprocess.run(['npx.cmd' if os.name=='nt' else 'npx','--yes','zeabur@0.22.2',*args,'-i=false','--json'],check=True,capture_output=True,encoding='utf8')
  return json.loads(result.stdout)
 deployment=cli('deployment','get','--env-id','6aa142fbda9bc245fba1e845','--service-id','6aa143296c3d9581b71560fa')
 project=cli('project','get','--id','6aa142fb6c3d9581b71560ed')
@@ -15,7 +15,7 @@ domain=next(d for d in domains if d['domain']==host)
 assert deployment['status']=='RUNNING' and domain['status']=='PROVISIONED'
 assert project['Region']['ID']=='server-6a8eee0bb11fb81fb4aaca05'
 def curl(*args):
- return subprocess.run(['curl.exe','--silent','--show-error','--fail','--max-time',str(fetch_timeout),*args],check=True,capture_output=True).stdout
+ return subprocess.run(['curl.exe' if os.name=='nt' else 'curl','--silent','--show-error','--fail','--max-time',str(fetch_timeout),*args],check=True,capture_output=True).stdout
 dns=json.loads(curl(f'https://dns.google/resolve?name={host}&type=A'))
 ip=next(x['data'] for x in dns['Answer'] if x['type']==1)
 def get(path,head=False):

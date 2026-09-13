@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported goldtilelight_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "goldtilelight_diff",
+  "sourcePixelSha256": "8be8499bb73da5db348a5185e777529e58e9d4dde040ca44c69ee4893a7be273",
+  "sha256": "67a3f60c0f096014f5a207e48bf039e0d9f9ac69ff5d2caf60e3f0089e662a11",
+  "prompt": "Blender-exported goldtilelight_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

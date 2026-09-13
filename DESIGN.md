@@ -1,6 +1,6 @@
 ---
 name: 大观园·入梦
-description: r14 实际三维园林与纸面阅读系统；记录竹叶层级、共享地被、纹理字节保留和证据边界。
+description: r15 有实体围护的清代重彩三维园林；保留纸面阅读系统和文学证据边界。
 colors:
   paper: "#f3f0e6"
   paper-light: "#fcfaf3"
@@ -18,11 +18,11 @@ colors:
   tour-green-hover: "#344f36"
   action-paper: "#fff9eb"
   world-earth: "#e4e8d4"
-  world-plaster: "#e8e5d8"
+  world-plaster: "#eadcb6"
   world-limestone: "#d4d8d0"
-  world-day: "#dce2d9"
+  world-day: "#c9dfda"
   world-night: "#253d4b"
-  water-day: "#344d3d"
+  water-day: "#337e77"
   water-night: "#2e4651"
   lamp-warm: "#ffc785"
 typography:
@@ -162,6 +162,14 @@ components:
 ---
 
 # Design System: 大观园·入梦
+
+## r15 当前修正方向（2026-09-13）
+
+用户明确要求三维建筑具备真实墙体，并采用清代绘本的浓墨重彩、富丽堂皇。这取代下文历史版本的三维低饱和方向及“快速结束”限制；纸面界面、阅读内容和导航位置继续保留。体验主体由朱红漆木、石青石绿彩画、暖白围护、金色线脚及大观楼金色屋面构成。青绿水色与较中性的日光承接园景；潇湘馆、蘅芜苑采用青绿梁枋，稻香村与芦雪庵保留土色、茅屋和自然木作。
+
+已实际查看 `references/paintings/M02.jpg` 全景、M03 山石、M04 省亲与 M15 室内图版。参考的是墙面与开口的实虚关系、朱红／青绿／金色的层次，以及彩画集中于梁枋和格扇的方式。具体墙厚、窗扇、梁枋纹样和材料参数是建模解释，不作为原著引文或清代实测数据。来源与哈希见同目录 `provenance.json`。
+
+房屋增加实体墙、窗下墙、门窗侧壁和窗纸，中央门洞保持畅通；亭、游廊及桥亭依功能敞开。新增围护在高模、手机与全园远景中保持同一厚度；剖视同时隐藏对应的顶棚。配色通过 Blender 材质烘焙保留来源微观纹理，原始照片不改写。现阶段为 r15 候选，实际验收与发布状态以 `docs/PROGRESS.md` 为准；以下 r14 及更早图像和结论均为历史快照。
 
 ## Overview
 

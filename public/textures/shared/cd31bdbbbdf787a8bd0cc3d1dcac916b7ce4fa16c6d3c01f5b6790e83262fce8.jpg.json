@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported darkwood_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "darkwood_rough",
+  "sourcePixelSha256": "e70fbc4cec1ff5daebadd5cb5ba3c2e154956d44a077016f2865a8473ecfcbf9",
+  "sha256": "cd31bdbbbdf787a8bd0cc3d1dcac916b7ce4fa16c6d3c01f5b6790e83262fce8",
+  "prompt": "Blender-exported darkwood_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-09-12T16:14:29.912150+00:00",
+  "verifiedAt": "2026-09-13T05:16:22.339160+00:00",
   "url": "https://daguanyuan-rumeng.zeabur.app/",
   "server": {
     "id": "6a8eee0bb11fb81fb4aaca05",
@@ -11,25 +11,25 @@
   "projectId": "6aa142fb6c3d9581b71560ed",
   "serviceId": "6aa143296c3d9581b71560fa",
   "environmentId": "6aa142fbda9bc245fba1e845",
-  "deploymentId": "6aa5791dfbf9c810b64d524c",
+  "deploymentId": "6aa6308d738cb98df77440da",
   "cliDeploymentStatus": "RUNNING",
   "cliDomainStatus": "PROVISIONED",
   "health": {
     "status": "ok",
     "application": "daguanyuan-rumeng",
-    "revision": "spatial-garden-20260912-r14"
+    "revision": "spatial-garden-20260913-r15"
   },
   "files": [
     {
       "path": "models/overview.glb",
-      "sha256": "de3cea05e2dc7391adb2ed0fee8d80b44ed9512c715f090df2c7210ea66be0ce",
-      "bytes": 3279844,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
+      "bytes": 4258720,
       "matchesLocal": true
     },
     {
       "path": "models/overview-low.glb",
-      "sha256": "de3cea05e2dc7391adb2ed0fee8d80b44ed9512c715f090df2c7210ea66be0ce",
-      "bytes": 3279844,
+      "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
+      "bytes": 4258720,
       "matchesLocal": true
     },
     {
@@ -52,14 +52,14 @@
     },
     {
       "path": "scene-manifest.json",
-      "sha256": "f367b8c9c23429163342815f5a8deec3c9e847609c75f8a72746ed7f2fbae0b6",
+      "sha256": "ea791091b00addc170f6db943ac27c28086c016808fb72d89ed98600470ad8b3",
       "bytes": 1444601,
       "matchesLocal": true
     },
     {
       "path": "models/places-low/xiaoxiangguan.glb",
-      "sha256": "a19d39a61be8db26f6f9c7ace9d9a1b4b0734536748a60323768ac913596d3f2",
-      "bytes": 2507224,
+      "sha256": "0869b6c33162857567fca043c98ffa77330d158a33cd2e904076490b2b0d3a1c",
+      "bytes": 2640284,
       "matchesLocal": true
     },
     {
@@ -70,8 +70,8 @@
     },
     {
       "path": "textures/landscape-light.webp",
-      "sha256": "996e109476ffc349fb47843e0266adf5c7dce3b60d970de05bd5d7ae80ba0a2b",
-      "bytes": 398956,
+      "sha256": "949ae9f77100d737e399b4be6ca5aecaa0514be7ad9cbe910cbcb4ba3375f069",
+      "bytes": 397978,
       "matchesLocal": true
     },
     {
@@ -93,9 +93,9 @@
       "matchesLocal": true
     },
     {
-      "path": "textures/shared/020c8eaeddf96f464ca4c0bc2f9dfed511eb7a4e45b4e340af6ef4343f72c92a.jpg",
-      "sha256": "020c8eaeddf96f464ca4c0bc2f9dfed511eb7a4e45b4e340af6ef4343f72c92a",
-      "bytes": 56973,
+      "path": "textures/shared/0318cdda7bbabbe1e3bbeaa92905d68a4a8af6579a88b368376de3c976cc8c32.jpg",
+      "sha256": "0318cdda7bbabbe1e3bbeaa92905d68a4a8af6579a88b368376de3c976cc8c32",
+      "bytes": 4215,
       "matchesLocal": true
     },
     {
@@ -105,15 +105,9 @@
       "matchesLocal": true
     },
     {
-      "path": "assets/GardenScene-DwjkTdba.js",
-      "sha256": "13948af06ad3d655993595217a40048f428a785cb51374bc6e3ce29543387b90",
-      "bytes": 735294,
-      "matchesLocal": true
-    },
-    {
-      "path": "assets/index-B6F6El80.js",
-      "sha256": "21126a491f6d9151947e60908a1e30b941ecb71f6f01877f1d8ab498d969308f",
-      "bytes": 658456,
+      "path": "assets/GardenScene-uR-ZTxlO.js",
+      "sha256": "7c8d7c8757e7b326308985b051eb2d31956508ca74775180c7a536a77eb67b75",
+      "bytes": 735148,
       "matchesLocal": true
     },
     {
@@ -123,28 +117,34 @@
       "matchesLocal": true
     },
     {
+      "path": "assets/index-Dw94OLZh.js",
+      "sha256": "c5f6875c1b1808b94af78f65bfd803116b8e5cd274234f8c24b9b25ab0b76399",
+      "bytes": 658470,
+      "matchesLocal": true
+    },
+    {
       "path": "index.html",
-      "sha256": "9b39ce95fb42dc17750f4446789c596cafd0bc49f779b40b2b73ba5b1ae94801",
+      "sha256": "ae75dcd9af6e5b21f1bba5f2cf9d57012e8f28ebc0189a502dbca74ed4097aaa",
       "bytes": 1273,
       "matchesLocal": true
     }
   ],
-  "responseHeaders": "HTTP/1.1 200 OK\r\nAlt-Svc: h3=\":443\"; ma=3600\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Encoding: gzip\r\nContent-Length: 874\r\nContent-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sat, 12 Sep 2026 16:14:28 GMT\r\nEtag: \"4f9-1a09661fbd8-gzip\"\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Zeabur-Ip-Country: SG\r\nX-Zeabur-Request-Id: 3f746bb8-986b-4e12-99aa-3a631668f68b\r\n\r\n",
+  "responseHeaders": "HTTP/1.1 200 OK\r\nAlt-Svc: h3=\":443\"; ma=3600\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Encoding: gzip\r\nContent-Length: 873\r\nContent-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 13 Sep 2026 05:16:21 GMT\r\nEtag: \"4f9-1a0992e5e60-gzip\"\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Zeabur-Ip-Country: JP\r\nX-Zeabur-Request-Id: 2b8dfb3d-bc47-4625-a533-502eaf03b128\r\n\r\n",
   "dns": {
     "publicAddress": "47.89.212.251",
     "source": "Google DNS over HTTPS queried during this verification",
-    "browserOverrideUsed": true,
+    "browserOverrideUsed": false,
     "osDnsChanged": false
   },
   "tlsVerificationEnabled": true,
-  "browserQuicDisabled": true,
+  "browserQuicDisabled": false,
   "productionSmoke": "production-smoke.json",
   "requestTimeoutSeconds": 60,
   "browserObservationTimeoutMs": 90000,
-  "desktopReadyMs": 20683,
-  "mobileReadyMs": 15394,
-  "defaultNetworkSmokeLog": "r14-production-default.log",
-  "standardResolvedSmokeLog": "r14-production-resolved.log",
+  "desktopReadyMs": 19966,
+  "mobileReadyMs": 5259,
+  "defaultNetworkSmokeLog": "r15-production-default.log",
+  "standardResolvedSmokeLog": "r15-production-resolved.log",
   "newServerPurchased": false,
   "credentialsIncluded": false
 }

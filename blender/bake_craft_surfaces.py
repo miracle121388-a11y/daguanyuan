@@ -38,11 +38,25 @@ for name,settings in spec['materials'].items():
   x,y,w,h=settings.get('crop',[0,0,1,1]);mapping.inputs['Location'].default_value=(x,y,0);mapping.inputs['Scale'].default_value=(w,h,1)
   result=tex.outputs['Color']
   if channel=='diff':
+   if settings.get('pigment'):
+    # Pigmented lacquer/mineral finish over the source microtexture. The source
+    # photograph is unchanged; Cycles bakes the authored material into its map.
+    mean=crop_mean(tex.image,settings.get('crop',[0,0,1,1]))
+    grey=nodes.new('ShaderNodeRGBToBW');links.new(result,grey.inputs[0])
+    scale=nodes.new('ShaderNodeMath');scale.operation='MULTIPLY_ADD'
+    contrast=settings.get('pigmentGrain',.18)
+    scale.inputs[1].default_value=contrast/max(.005,sum(a*b for a,b in zip(mean,[.2126,.7152,.0722])))
+    scale.inputs[2].default_value=1-contrast;links.new(grey.outputs[0],scale.inputs[0])
+    pigment=nodes.new('ShaderNodeVectorMath');pigment.operation='SCALE'
+    srgb=[int(settings['pigment'].lstrip('#')[i:i+2],16)/255 for i in [0,2,4]]
+    pigment.inputs[0].default_value=[v/12.92 if v<=.04045 else ((v+.055)/1.055)**2.4 for v in srgb]
+    links.new(scale.outputs[0],pigment.inputs['Scale']);result=pigment.outputs['Vector']
    # Reduce grain contrast around the crop's actual linear-light mean, before
    # applying the same calibrated colour transform to the entire swatch.
-   if settings.get('contrast',1)<1:
+   elif settings.get('contrast',1)<1:
     mix=nodes.new('ShaderNodeMixRGB');mix.inputs[0].default_value=settings['contrast'];mix.inputs[1].default_value=crop_mean(tex.image,settings.get('crop',[0,0,1,1]));links.new(result,mix.inputs[2]);result=mix.outputs[0]
-   hue=nodes.new('ShaderNodeHueSaturation');hue.inputs['Saturation'].default_value=settings['saturation'];hue.inputs['Value'].default_value=settings['value'];links.new(result,hue.inputs['Color']);result=hue.outputs['Color']
+   if not settings.get('pigment'):
+    hue=nodes.new('ShaderNodeHueSaturation');hue.inputs['Saturation'].default_value=settings['saturation'];hue.inputs['Value'].default_value=settings['value'];links.new(result,hue.inputs['Color']);result=hue.outputs['Color']
   elif channel=='rough':
    mix=nodes.new('ShaderNodeMixRGB');mix.inputs[0].default_value=settings.get('roughSourceWeight',.15);mix.inputs[1].default_value=(settings['roughness'],)*3+(1,);links.new(result,mix.inputs[2]);result=mix.outputs[0]
   emission=nodes.new('ShaderNodeEmission');links.new(result,emission.inputs['Color']);output=nodes.new('ShaderNodeOutputMaterial');links.new(emission.outputs[0],output.inputs['Surface'])

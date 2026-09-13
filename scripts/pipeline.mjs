@@ -10,6 +10,21 @@ export function blenderBin(){
 }
 const action=process.argv[2];
 const run=(cmd,args)=>{const r=spawnSync(cmd,args,{stdio:'inherit',shell:false});if(r.status!==0)throw new Error(`${cmd} exited ${r.status}`)};
+const qingArchitecture=()=>{
+ run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/refresh_qing_architecture.py']);
+ run(process.execPath,['scripts/apply_architecture_patch.mjs']);
+};
+const qingArchitectureLod=()=>{
+ run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/refresh_qing_architecture.py','--','--lod-only']);
+ run(process.execPath,['scripts/apply_architecture_patch.mjs']);
+};
+if(action==='models-architecture-lod')qingArchitectureLod();
+if(action==='models-architecture'){
+ run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_craft_surfaces.py']);
+ qingArchitecture();
+ run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_landscape_light.py']);
+ run(process.execPath,['scripts/pack_landscape_light.mjs']);
+}
 if(action==='canopy'){
  run(process.platform==='win32'?'python':'python3',['scripts/fetch_tree_alpha.py']);
  run(process.platform==='win32'?'python':'python3',['scripts/fetch_canopy_variants.py']);
@@ -33,6 +48,7 @@ if(action==='models'){
  }
  const blend=process.argv.includes('--sample')?'blender/xiaoxiangguan_sample.blend':'blender/daguanyuan_master.blend';
  run(blenderBin(),['--background',...(existsSync(blend)?[blend]:[]),'--disable-autoexec','--python-exit-code','1','--python',process.argv.includes('--sample')?'blender/build_scene.py':'blender/reference_scene.py','--',...process.argv.slice(3)]);
+ if(!process.argv.includes('--sample')&&existsSync('config/qing.palette.json'))qingArchitecture();
  if(!process.argv.includes('--sample')){
   run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_landscape_light.py']);
   run(process.execPath,['scripts/pack_landscape_light.mjs']);
@@ -43,6 +59,7 @@ if(action==='models-materials'){
  run(process.execPath,['scripts/pack_foliage_textures.mjs']);
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_craft_surfaces.py']);
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/refresh_craft_materials.py']);
+ if(existsSync('config/qing.palette.json'))qingArchitecture();
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_landscape_light.py']);
  run(process.execPath,['scripts/pack_landscape_light.mjs']);
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_surface_zones.py']);
@@ -59,6 +76,7 @@ if(action==='models-seat'){
  run(process.execPath,['scripts/record_derivatives.mjs']);
 }
 if(action==='verify-models'){
+ if(existsSync('config/qing.palette.json'))run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/check_enclosures.py']);
  for(const script of ['blender/validate_scene.py','blender/check_terrain_paths.py','blender/check_roof_coverage.py'])run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python',script]);
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/check_terrain_paths.py','--','--mobile']);
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/check_roof_coverage.py','--','--floors']);
@@ -79,7 +97,10 @@ if(action==='models-crowns'){
  run(process.execPath,['scripts/pack_landscape_light.mjs']);
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_surface_zones.py']);
 }
-if(action==='models-mobile')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/export_mobile_overview.py']);
+if(action==='models-mobile'){
+ run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/export_mobile_overview.py']);
+ if(existsSync('config/qing.palette.json'))qingArchitectureLod();
+}
 if(action==='models-ground')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_surface_zones.py']);
 if(action==='models-finish'){
  run(process.platform==='win32'?'python':'python3',['scripts/bake_focal_foliage.py']);

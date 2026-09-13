@@ -21,7 +21,16 @@ for(const file of files){
  if(worker&&worker!==file)continue;
  if(!worker&&filter&&!filter.includes(file.replace('public/models/',''))){reports.push(previous.find(row=>row.file===file));continue}
  if(!worker){
-  const baseline='assets/processed/baseline/reference-'+file.replaceAll('/','_');copyFileSync(file,baseline+'.next');renameSync(baseline+'.next',baseline);
+  const baseline='assets/processed/baseline/reference-'+file.replaceAll('/','_');
+  const original=readFileSync(file),header=JSON.parse(original.subarray(20,20+original.readUInt32LE(12)));
+  if(header.images?.some(image=>image.uri)){
+   // Re-optimizing a delivery must not archive links relative to public/models
+   // inside another folder. Keep a self-contained editable baseline instead.
+   const source=await io.read(file);
+   for(const extension of source.getRoot().listExtensionsUsed())if(extension.extensionName==='KHR_draco_mesh_compression')extension.dispose();
+   writeFileSync(baseline+'.next',await io.writeBinary(source));
+  }else copyFileSync(file,baseline+'.next');
+  renameSync(baseline+'.next',baseline);
   // A worker exits before replacement, releasing Windows mapped input buffers.
   const resultPath=file+'.result.json';if(existsSync(resultPath))unlinkSync(resultPath);
   try{execFileSync(process.execPath,[import.meta.filename],{env:{...process.env,GARDEN_MODEL_WORKER:file},stdio:'inherit',timeout:60000})}
@@ -38,12 +47,13 @@ for(const file of files){
  }
  const doc=await io.read(file),before=semantics(doc),bounds=getBounds(doc.getRoot().listScenes()[0]),materials=doc.getRoot().listMaterials().map(m=>m.getName()).sort(),bytes=statSync(file).size;
  if(bounds.max[1]>85)throw Error('Unexpected geometry above the planted hill envelope: '+file+' '+bounds.max[1]);
- await doc.transform(dedup({propertyTypes:[PropertyType.ACCESSOR,PropertyType.TEXTURE]}),weld(),draco({method:'edgebreaker',encodeSpeed:5,decodeSpeed:5,quantizePosition:16,quantizeNormal:10,quantizeTexcoord:12}));
+ const far=/\/overview(?:-low)?\.glb$/.test(file);
+ await doc.transform(dedup({propertyTypes:[PropertyType.ACCESSOR,PropertyType.TEXTURE]}),weld(),draco({method:'edgebreaker',encodeSpeed:far?0:5,decodeSpeed:far?0:5,quantizePosition:16,quantizeNormal:10,quantizeTexcoord:far?11:12}));
  await io.write(file+'.optimizing.glb',doc);await shareTextures(file+'.optimizing.glb',file+'.final.glb');const after=await io.read(file+'.final.glb');
  if(JSON.stringify(before)!==JSON.stringify(semantics(after)))throw Error('Metadata changed: '+file);
  if(JSON.stringify(materials)!==JSON.stringify(after.getRoot().listMaterials().map(m=>m.getName()).sort()))throw Error('Materials changed');
  const nextBounds=getBounds(after.getRoot().listScenes()[0]);if([...bounds.min,...bounds.max].some((v,i)=>Math.abs(v-[...nextBounds.min,...nextBounds.max][i])>.012))throw Error('Bounds changed beyond 12mm quantization tolerance');
- const result={file,beforeBytes:bytes,afterBytes:statSync(file+'.final.glb').size,sha256:createHash('sha256').update(readFileSync(file+'.final.glb')).digest('hex'),semanticNodes:before.length,bounds:nextBounds,materials:materials.length,steps:['dedup accessors/textures','weld','Draco with local decoder'],compression:'Draco; 16-bit positions; measured bounds tolerance 12mm',passed:true};
+ const result={file,beforeBytes:bytes,afterBytes:statSync(file+'.final.glb').size,sha256:createHash('sha256').update(readFileSync(file+'.final.glb')).digest('hex'),semanticNodes:before.length,bounds:nextBounds,materials:materials.length,steps:['dedup accessors/textures','weld','Draco with local decoder'],compression:`Draco; 16-bit positions; ${far?11:12}-bit UV; measured bounds tolerance 12mm`,passed:true};
  writeFileSync(file+'.result.json',JSON.stringify(result));console.log('Validated',file);
 }
 if(worker)process.exit(0);

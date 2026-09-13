@@ -1,7 +1,0 @@
-{
-  "origin": "Blender-exported latticewood_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
-  "sourceMap": "latticewood_rough",
-  "sourcePixelSha256": "1a312e98319191477b9cd97957d2763f3b87ba1ed73f35f1b67ed1cededa33ef",
-  "sha256": "aa74d82cfa6915313998013467c13e5f1cd1fd8ef54da35b1051871ce62af3f4",
-  "prompt": "Blender-exported latticewood_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
-}

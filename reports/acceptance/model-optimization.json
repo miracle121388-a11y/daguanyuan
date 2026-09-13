@@ -1,9 +1,9 @@
 [
   {
     "file": "public/models/overview.glb",
-    "beforeBytes": 27794820,
-    "afterBytes": 3279844,
-    "sha256": "de3cea05e2dc7391adb2ed0fee8d80b44ed9512c715f090df2c7210ea66be0ce",
+    "beforeBytes": 4539184,
+    "afterBytes": 4258720,
+    "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
     "semanticNodes": 36,
     "bounds": {
       "min": [
@@ -17,21 +17,20 @@
         308.0137634277344
       ]
     },
-    "materials": 43,
+    "materials": 46,
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
     ],
-    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
+    "compression": "Draco; 16-bit positions; 11-bit UV; measured bounds tolerance 12mm",
     "passed": true
   },
   {
     "file": "public/models/overview-low.glb",
-    "beforeBytes": 27794820,
-    "afterBytes": 3279844,
-    "sha256": "de3cea05e2dc7391adb2ed0fee8d80b44ed9512c715f090df2c7210ea66be0ce",
+    "beforeBytes": 4539184,
+    "afterBytes": 4258720,
+    "sha256": "7a9fa924b2939e2803725371de4026d72599c89e3a4e502ba817137c8ccf528f",
     "semanticNodes": 36,
     "bounds": {
       "min": [
@@ -45,21 +44,20 @@
         308.0137634277344
       ]
     },
-    "materials": 43,
+    "materials": 46,
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
     ],
-    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
+    "compression": "Draco; 16-bit positions; 11-bit UV; measured bounds tolerance 12mm",
     "passed": true
   },
   {
     "file": "public/models/places/aojingxiguan.glb",
-    "beforeBytes": 10714136,
-    "afterBytes": 433408,
-    "sha256": "0f0b00b98b5b6bd4337917a482bc7ba4238ae4fb0845a4071436185287c6657d",
+    "beforeBytes": 11086324,
+    "afterBytes": 484824,
+    "sha256": "c09bd93f42df6b551dd258be2ff4d7692641259d0ec52d1c6083888aaf541f7e",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -73,7 +71,7 @@
         6.101465225219727
       ]
     },
-    "materials": 17,
+    "materials": 20,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -84,9 +82,9 @@
   },
   {
     "file": "public/models/places/daguanlou.glb",
-    "beforeBytes": 103825128,
-    "afterBytes": 6524824,
-    "sha256": "eec59b49ccfdfc9958602414352062937b7163354234b46430abe2342a49550b",
+    "beforeBytes": 110767840,
+    "afterBytes": 6931792,
+    "sha256": "6bc86363de053ecb78679ccd13f01196731910450f411f268d9f5f2ed42380ff",
     "semanticNodes": 4,
     "bounds": {
       "min": [
@@ -100,7 +98,7 @@
         34.009002685546875
       ]
     },
-    "materials": 32,
+    "materials": 33,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -111,9 +109,9 @@
   },
   {
     "file": "public/models/places/daguanyuan_gate.glb",
-    "beforeBytes": 13165876,
-    "afterBytes": 639872,
-    "sha256": "b3bc34dc85f880fb24e65254af607b6ce4a4ac652c342a2cbf81b8e86d82a20c",
+    "beforeBytes": 13807204,
+    "afterBytes": 705856,
+    "sha256": "d5c5e8a9c1a76d98a116fe1da0429f6552f98c25dffd6d1f2b708d5273f2fe1c",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -127,7 +125,7 @@
         5.90001916885376
       ]
     },
-    "materials": 14,
+    "materials": 17,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -138,9 +136,9 @@
   },
   {
     "file": "public/models/places/daoxiangcun.glb",
-    "beforeBytes": 10723480,
-    "afterBytes": 1140236,
-    "sha256": "5c26ab22f58e4284938c2e888a0f7f6794dde2f1c9c5cff2630573b6316efac7",
+    "beforeBytes": 10559336,
+    "afterBytes": 1161780,
+    "sha256": "98c8501ea3a21d31f6d9f940878c14c9c9a764eeb1186a2af1397d05ebbdc6aa",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -154,7 +152,7 @@
         16.009000778198242
       ]
     },
-    "materials": 12,
+    "materials": 13,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -165,9 +163,9 @@
   },
   {
     "file": "public/models/places/dicuiting.glb",
-    "beforeBytes": 4519804,
-    "afterBytes": 119504,
-    "sha256": "4b7f34fac8c46db03c12987369ae07eec2260c198668a34e94598d0d206c274a",
+    "beforeBytes": 4011376,
+    "afterBytes": 119196,
+    "sha256": "36be878b66292f69865601fca1cf2cb5157986d79218b2e3dd70c6cf7b2588d1",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -192,9 +190,9 @@
   },
   {
     "file": "public/models/places/hengwuyuan.glb",
-    "beforeBytes": 21142784,
-    "afterBytes": 1162832,
-    "sha256": "ca0819da3749cc79b5b3c8c71cc9130f663ea4645d3819b4ec4e853f7e13c073",
+    "beforeBytes": 20931728,
+    "afterBytes": 1234384,
+    "sha256": "9357665d8131486901e456da8c20394f46278b626513cafbe248bc3fc306185e",
     "semanticNodes": 4,
     "bounds": {
       "min": [
@@ -208,7 +206,7 @@
         16.009000778198242
       ]
     },
-    "materials": 35,
+    "materials": 36,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -219,9 +217,9 @@
   },
   {
     "file": "public/models/places/longcuian.glb",
-    "beforeBytes": 20037720,
-    "afterBytes": 1179448,
-    "sha256": "f099a425dd4c9dad4726330e6041f8b624d1541bf6ce3d4b9381c3fcb9da4f5b",
+    "beforeBytes": 20090356,
+    "afterBytes": 1270140,
+    "sha256": "d8ac2e9336af82bad53d68b36e35d7176b05fa066546817948ffe92904ac0d05",
     "semanticNodes": 4,
     "bounds": {
       "min": [
@@ -235,7 +233,7 @@
         16.009000778198242
       ]
     },
-    "materials": 29,
+    "materials": 30,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -246,9 +244,9 @@
   },
   {
     "file": "public/models/places/luxuean.glb",
-    "beforeBytes": 2091332,
-    "afterBytes": 79044,
-    "sha256": "928fee85bddea4dec015e1acdc43a7f15373464b7e279dde3bdd11f56b4c6949",
+    "beforeBytes": 2361224,
+    "afterBytes": 92444,
+    "sha256": "4a9b4e214a46077cbae966911b65a9e0c903114c4d2d7eb3b89de9496328ce0f",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -262,7 +260,7 @@
         16.009000778198242
       ]
     },
-    "materials": 7,
+    "materials": 10,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -273,9 +271,9 @@
   },
   {
     "file": "public/models/places/nuanxiangwu.glb",
-    "beforeBytes": 14830560,
-    "afterBytes": 794504,
-    "sha256": "2d241cbcaa6fb0475dc6d537a3ae96cb74443a273691346fcfe119b094954953",
+    "beforeBytes": 15202412,
+    "afterBytes": 846096,
+    "sha256": "961f7f57fbb075b5512c73d15582d4e06d13ce1219bea0c29122268e08ed4482",
     "semanticNodes": 4,
     "bounds": {
       "min": [
@@ -289,7 +287,7 @@
         16.009000778198242
       ]
     },
-    "materials": 26,
+    "materials": 28,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -300,9 +298,9 @@
   },
   {
     "file": "public/models/places/ouxiangxie.glb",
-    "beforeBytes": 6905032,
-    "afterBytes": 209736,
-    "sha256": "478e5019cae68dc9e7bb1b14f089283919fb81366def6aae51ba86003182a420",
+    "beforeBytes": 7276628,
+    "afterBytes": 261216,
+    "sha256": "ce0e74f7c5b791a67e144bdbbf62ba45ac46cc2d820242a5dca8c7e49a1889a5",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -316,7 +314,7 @@
         6.28823709487915
       ]
     },
-    "materials": 18,
+    "materials": 20,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -327,9 +325,9 @@
   },
   {
     "file": "public/models/places/qiushuangzhai.glb",
-    "beforeBytes": 18484100,
-    "afterBytes": 1052396,
-    "sha256": "7de95e65857bb22370deed1889f45c8466a8fe0eba29f68427dbee5d3464c662",
+    "beforeBytes": 17891696,
+    "afterBytes": 1103148,
+    "sha256": "da92ba1af99c5e93db84734b052b489c517e22885ad32a6ff04ea84c8a2c3fb1",
     "semanticNodes": 4,
     "bounds": {
       "min": [
@@ -343,7 +341,7 @@
         16.009000778198242
       ]
     },
-    "materials": 34,
+    "materials": 35,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -354,9 +352,9 @@
   },
   {
     "file": "public/models/places/qujingtongyou.glb",
-    "beforeBytes": 1718216,
-    "afterBytes": 140252,
-    "sha256": "75d09a4b67d225850884e5e5f56ec1fcd16c52cbb1a7fef41c341aade4e7da12",
+    "beforeBytes": 1718236,
+    "afterBytes": 140272,
+    "sha256": "2561962d15b1bfee4fce9c3db4514bda26f8ef1c4d94b348051799d6fe1dd9aa",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -381,9 +379,9 @@
   },
   {
     "file": "public/models/places/tubishanzhuang.glb",
-    "beforeBytes": 11099848,
-    "afterBytes": 453624,
-    "sha256": "1a291473c60deae9968a74085aac7bd9fa7cb346587afcf90ea3ae2e3ea2619c",
+    "beforeBytes": 11472032,
+    "afterBytes": 505172,
+    "sha256": "6853c1518612a20385761d229444f6b4310feebe7045a893b84bb40795c388c9",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -397,7 +395,7 @@
         7.009037017822266
       ]
     },
-    "materials": 17,
+    "materials": 20,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -408,9 +406,9 @@
   },
   {
     "file": "public/models/places/xiaoxiangguan.glb",
-    "beforeBytes": 39529868,
-    "afterBytes": 3445148,
-    "sha256": "3c952c518a57d0b99d2b89c2b9ff5a60b3990a0c4f1a03ce0ab8fbd2e6acf977",
+    "beforeBytes": 39391984,
+    "afterBytes": 3522848,
+    "sha256": "232ea5cf588100a1f4a699b02796689535bacbfab15d020418d27d1f3f621ce6",
     "semanticNodes": 4,
     "bounds": {
       "min": [
@@ -424,7 +422,7 @@
         16.009000778198242
       ]
     },
-    "materials": 33,
+    "materials": 35,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -435,9 +433,9 @@
   },
   {
     "file": "public/models/places/yihongyuan.glb",
-    "beforeBytes": 23639544,
-    "afterBytes": 1415848,
-    "sha256": "a3df4ca798f209edbea5dd2c55219e3fae9bbf7fcaaac134cc95305985d66e68",
+    "beforeBytes": 23428564,
+    "afterBytes": 1487184,
+    "sha256": "b66eb61562b5b54cf3262d3341d4f9c4e4fe6f591f0c26fd0c7de18118608a7a",
     "semanticNodes": 4,
     "bounds": {
       "min": [
@@ -451,7 +449,7 @@
         16.009000778198242
       ]
     },
-    "materials": 36,
+    "materials": 37,
     "steps": [
       "dedup accessors/textures",
       "weld",
@@ -462,9 +460,9 @@
   },
   {
     "file": "public/models/places-low/aojingxiguan.glb",
-    "beforeBytes": 1776820,
-    "afterBytes": 255548,
-    "sha256": "7e52d1c73e2e8e0d5c1e6d136ad4a7d7f433e73822f6dd1102d509ab78152a51",
+    "beforeBytes": 5338940,
+    "afterBytes": 324168,
+    "sha256": "74f37da2fcaf9bf68b5503e270860a59e5f54e0438a9d684d558c75ec784eec3",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -478,77 +476,74 @@
         6.099433898925781
       ]
     },
-    "materials": 7,
+    "materials": 17,
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
     ],
     "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
     "passed": true
   },
   {
     "file": "public/models/places-low/daguanlou.glb",
-    "beforeBytes": 30567876,
-    "afterBytes": 3138676,
-    "sha256": "1af155f84b577dec671fc6b3c3f1a02baec2bbecca4d4866e413ba398d2a048d",
+    "beforeBytes": 42627740,
+    "afterBytes": 3697828,
+    "sha256": "3582ec4a7b45b5bfa6ac90234190f5cd6cbd4ccf0a953ef42d44dbfc4d608cb2",
     "semanticNodes": 4,
     "bounds": {
       "min": [
         -37.47595977783203,
-        -0.9978211522102356,
+        -1,
         -76.37999725341797
       ],
       "max": [
-        37.477081298828125,
-        19.84064483642578,
+        37.477394104003906,
+        19.83967399597168,
         34.00653076171875
       ]
     },
-    "materials": 13,
+    "materials": 29,
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
     ],
     "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
     "passed": true
   },
   {
     "file": "public/models/places-low/daguanyuan_gate.glb",
-    "beforeBytes": 2114840,
-    "afterBytes": 251368,
-    "sha256": "f4a077b0a32e642711c5bc5ca0813a9ecdbcae3f2aa3a445ced87c37a6341fea",
+    "beforeBytes": 5879652,
+    "afterBytes": 335336,
+    "sha256": "ca8846b481ba682650c774229cbfd36e29d13d0a5794692e5056053cc338d226",
     "semanticNodes": 1,
     "bounds": {
       "min": [
         -13.899999618530273,
         0,
-        -5.114959716796875
+        -5.114964962005615
       ],
       "max": [
         13.908058166503906,
-        9.976526260375977,
-        5.9001665115356445
+        9.97634506225586,
+        5.90001916885376
       ]
     },
-    "materials": 7,
+    "materials": 17,
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
     ],
     "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
     "passed": true
   },
   {
     "file": "public/models/places-low/daoxiangcun.glb",
-    "beforeBytes": 3344212,
-    "afterBytes": 445356,
-    "sha256": "e0aab308a87c5e2240a8010638bd8be290074ad36ee565e88e9551178c6ddd2d",
+    "beforeBytes": 5072304,
+    "afterBytes": 482940,
+    "sha256": "03f3b4daaa04859d9ff14dccf4f0148d6b64b73a92621522233fb0551b8ee5d7",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -558,212 +553,204 @@
       ],
       "max": [
         15.03118896484375,
-        6.066568851470947,
-        16.00417709350586
-      ]
-    },
-    "materials": 4,
-    "steps": [
-      "dedup accessors/textures",
-      "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
-    ],
-    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
-    "passed": true
-  },
-  {
-    "file": "public/models/places-low/dicuiting.glb",
-    "beforeBytes": 715820,
-    "afterBytes": 96844,
-    "sha256": "af3c05cde386b2440b708617770aac6fb6a1a2912fb96d8b35d41871beef3321",
-    "semanticNodes": 1,
-    "bounds": {
-      "min": [
-        -5.5743865966796875,
-        -0.699999988079071,
-        -5.536029815673828
-      ],
-      "max": [
-        5.5743865966796875,
-        8.975290298461914,
-        5.536019325256348
-      ]
-    },
-    "materials": 4,
-    "steps": [
-      "dedup accessors/textures",
-      "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
-    ],
-    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
-    "passed": true
-  },
-  {
-    "file": "public/models/places-low/hengwuyuan.glb",
-    "beforeBytes": 5042720,
-    "afterBytes": 713812,
-    "sha256": "99ba906709fba062eedc521b0c86731171b4c4db81bd28e1b4134b95047d862d",
-    "semanticNodes": 4,
-    "bounds": {
-      "min": [
-        -16.3800048828125,
-        -0.23000000417232513,
-        -19.3800048828125
-      ],
-      "max": [
-        16.3800048828125,
-        7.655887603759766,
-        16.00341796875
-      ]
-    },
-    "materials": 14,
-    "steps": [
-      "dedup accessors/textures",
-      "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
-    ],
-    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
-    "passed": true
-  },
-  {
-    "file": "public/models/places-low/longcuian.glb",
-    "beforeBytes": 4329164,
-    "afterBytes": 588840,
-    "sha256": "7e499aeb2149c6904234b2e5b7d5f89d8186d9f86096bfdb2e54f86bd2b5372b",
-    "semanticNodes": 4,
-    "bounds": {
-      "min": [
-        -21.3255615234375,
-        -0.23000001907348633,
-        -20.3800048828125
-      ],
-      "max": [
-        16.38016128540039,
-        11.207435607910156,
-        16.004180908203125
-      ]
-    },
-    "materials": 8,
-    "steps": [
-      "dedup accessors/textures",
-      "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
-    ],
-    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
-    "passed": true
-  },
-  {
-    "file": "public/models/places-low/luxuean.glb",
-    "beforeBytes": 239700,
-    "afterBytes": 33136,
-    "sha256": "ead2272eb7610f1e1a930b9080ac53dfef63ec8a00bec24d166276b8e2fcaba0",
-    "semanticNodes": 1,
-    "bounds": {
-      "min": [
-        -12.994232177734375,
-        -0.003781172912567854,
-        -9.839080810546875
-      ],
-      "max": [
-        13.206382751464844,
-        6.067219257354736,
-        16.00322723388672
-      ]
-    },
-    "materials": 3,
-    "steps": [
-      "dedup accessors/textures",
-      "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
-    ],
-    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
-    "passed": true
-  },
-  {
-    "file": "public/models/places-low/nuanxiangwu.glb",
-    "beforeBytes": 3080896,
-    "afterBytes": 428012,
-    "sha256": "d50822dcb78a7ba015c91ecb54449aedb55aded9fe322425bf647ea6b83980e5",
-    "semanticNodes": 4,
-    "bounds": {
-      "min": [
-        -14.437599182128906,
-        -0.0029991946648806334,
-        -12.614978790283203
-      ],
-      "max": [
-        12.229583740234375,
-        9.176642417907715,
-        16.009000778198242
+        6.06628942489624,
+        16.006534576416016
       ]
     },
     "materials": 9,
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
+    ],
+    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
+    "passed": true
+  },
+  {
+    "file": "public/models/places-low/dicuiting.glb",
+    "beforeBytes": 2528108,
+    "afterBytes": 107284,
+    "sha256": "170a172576b491226171e77d5b6e3de4cb4476fbe1fee4385f33926afeda3f81",
+    "semanticNodes": 1,
+    "bounds": {
+      "min": [
+        -5.574387550354004,
+        -0.699999988079071,
+        -5.536031246185303
+      ],
+      "max": [
+        5.574387550354004,
+        8.975272178649902,
+        5.536019802093506
+      ]
+    },
+    "materials": 9,
+    "steps": [
+      "dedup accessors/textures",
+      "weld",
+      "Draco with local decoder"
+    ],
+    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
+    "passed": true
+  },
+  {
+    "file": "public/models/places-low/hengwuyuan.glb",
+    "beforeBytes": 9359784,
+    "afterBytes": 828164,
+    "sha256": "5954359b14557f5ce1d0c2e9be10eb7ffb1c832b74df6b718fca36a700f10baf",
+    "semanticNodes": 4,
+    "bounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        16.380001068115234,
+        7.655869483947754,
+        16.004175186157227
+      ]
+    },
+    "materials": 31,
+    "steps": [
+      "dedup accessors/textures",
+      "weld",
+      "Draco with local decoder"
+    ],
+    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
+    "passed": true
+  },
+  {
+    "file": "public/models/places-low/longcuian.glb",
+    "beforeBytes": 8907896,
+    "afterBytes": 721908,
+    "sha256": "9e53fe56da890dc4c8667ce7c6c28ffa82db94690a7a10d779aa6d5d2c9f15a1",
+    "semanticNodes": 4,
+    "bounds": {
+      "min": [
+        -21.3255615234375,
+        -0.23000000417232513,
+        -20.380001068115234
+      ],
+      "max": [
+        16.380165100097656,
+        11.207435607910156,
+        16.00417709350586
+      ]
+    },
+    "materials": 24,
+    "steps": [
+      "dedup accessors/textures",
+      "weld",
+      "Draco with local decoder"
+    ],
+    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
+    "passed": true
+  },
+  {
+    "file": "public/models/places-low/luxuean.glb",
+    "beforeBytes": 1538168,
+    "afterBytes": 58876,
+    "sha256": "bcd2d46643a754c381b1a404fc02bec27ed7f980f251df50f170a1a9a4b49ec6",
+    "semanticNodes": 1,
+    "bounds": {
+      "min": [
+        -12.994232177734375,
+        -0.003781172912567854,
+        -9.839079856872559
+      ],
+      "max": [
+        13.20853042602539,
+        6.067129611968994,
+        16.006534576416016
+      ]
+    },
+    "materials": 9,
+    "steps": [
+      "dedup accessors/textures",
+      "weld",
+      "Draco with local decoder"
+    ],
+    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
+    "passed": true
+  },
+  {
+    "file": "public/models/places-low/nuanxiangwu.glb",
+    "beforeBytes": 7016072,
+    "afterBytes": 511032,
+    "sha256": "d6e6bb230bdd972b0050462bc84f8b86a3f0fe04abb5a95fb169fe7b68e92c33",
+    "semanticNodes": 4,
+    "bounds": {
+      "min": [
+        -14.437601089477539,
+        -0.0029991946648806334,
+        -12.61497974395752
+      ],
+      "max": [
+        12.229583740234375,
+        9.176506042480469,
+        16.009000778198242
+      ]
+    },
+    "materials": 25,
+    "steps": [
+      "dedup accessors/textures",
+      "weld",
+      "Draco with local decoder"
     ],
     "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
     "passed": true
   },
   {
     "file": "public/models/places-low/ouxiangxie.glb",
-    "beforeBytes": 1188388,
-    "afterBytes": 167436,
-    "sha256": "9e57039416ee609a1378a2053fc4cf2224fd98a1744e4df32129d1063bb48204",
+    "beforeBytes": 4312248,
+    "afterBytes": 230024,
+    "sha256": "2381345aa9d3698fa37ec8c6d76a454a41d42fa721ce505f82b084e4c030be02",
     "semanticNodes": 1,
     "bounds": {
       "min": [
-        -9.819435119628906,
+        -9.819437980651855,
         -1,
-        -6.28997802734375
+        -6.289980411529541
       ],
       "max": [
-        9.819435119628906,
-        9.876630783081055,
-        6.2898664474487305
+        9.819437980651855,
+        9.876443862915039,
+        6.289867877960205
       ]
     },
-    "materials": 5,
+    "materials": 20,
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
     ],
     "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
     "passed": true
   },
   {
     "file": "public/models/places-low/qiushuangzhai.glb",
-    "beforeBytes": 4123388,
-    "afterBytes": 594044,
-    "sha256": "2d914ec89001886b07be12986ac159284360e1fa30b105f40330ae26f60a92a7",
+    "beforeBytes": 8142572,
+    "afterBytes": 703232,
+    "sha256": "72ac3f65a4a68408d6d6feba867c5643e972bb0b62e9ac4e72c4e0db7d074206",
     "semanticNodes": 4,
     "bounds": {
       "min": [
-        -16.3800048828125,
+        -16.380001068115234,
         -0.23000000417232513,
         -19.380001068115234
       ],
       "max": [
-        16.3800048828125,
-        10.272289276123047,
-        16.00341796875
+        16.380001068115234,
+        10.284710884094238,
+        16.004175186157227
       ]
     },
-    "materials": 13,
+    "materials": 30,
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
     ],
     "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
     "passed": true
@@ -771,8 +758,8 @@
   {
     "file": "public/models/places-low/qujingtongyou.glb",
     "beforeBytes": 645868,
-    "afterBytes": 77280,
-    "sha256": "7de54979c5981a0ba281e0c5565899673f694696422faa27bcf30f2d43b17c13",
+    "afterBytes": 77272,
+    "sha256": "bddda8a0088d88f61b23e015e4192098f6be7408118ac2649b2a4e91b0d6b526",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -790,17 +777,16 @@
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
     ],
     "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
     "passed": true
   },
   {
     "file": "public/models/places-low/tubishanzhuang.glb",
-    "beforeBytes": 1898312,
-    "afterBytes": 266728,
-    "sha256": "cfd1921750ae3269c9f701e99789f49c47ae20d8479333246a762edddf0e0234",
+    "beforeBytes": 5483188,
+    "afterBytes": 342436,
+    "sha256": "853fec5dce478bd2f77540711b905a23da82b95e8d62fd0ca2ce90b56244e646",
     "semanticNodes": 1,
     "bounds": {
       "min": [
@@ -810,72 +796,69 @@
       ],
       "max": [
         11.117408752441406,
-        10.186792373657227,
-        7.006340026855469
-      ]
-    },
-    "materials": 7,
-    "steps": [
-      "dedup accessors/textures",
-      "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
-    ],
-    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
-    "passed": true
-  },
-  {
-    "file": "public/models/places-low/xiaoxiangguan.glb",
-    "beforeBytes": 17291336,
-    "afterBytes": 2507224,
-    "sha256": "a19d39a61be8db26f6f9c7ace9d9a1b4b0734536748a60323768ac913596d3f2",
-    "semanticNodes": 4,
-    "bounds": {
-      "min": [
-        -16.3800048828125,
-        -0.23000000417232513,
-        -19.380001068115234
-      ],
-      "max": [
-        17.436195373535156,
-        8.043298721313477,
-        16.004180908203125
-      ]
-    },
-    "materials": 14,
-    "steps": [
-      "dedup accessors/textures",
-      "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
-    ],
-    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
-    "passed": true
-  },
-  {
-    "file": "public/models/places-low/yihongyuan.glb",
-    "beforeBytes": 6370052,
-    "afterBytes": 905824,
-    "sha256": "f97cf631e4cd25e65f91675f14e13d52db3e4c68258ca7af9adb7e1b8bb51911",
-    "semanticNodes": 4,
-    "bounds": {
-      "min": [
-        -16.3800048828125,
-        -0.23000000417232513,
-        -19.3800048828125
-      ],
-      "max": [
-        16.3800048828125,
-        9.386991500854492,
-        16.00341796875
+        10.186834335327148,
+        7.006535530090332
       ]
     },
     "materials": 17,
     "steps": [
       "dedup accessors/textures",
       "weld",
-      "Draco with local decoder",
-      "Restore unchanged source raster delivery; GLB geometry BIN verified byte-identical"
+      "Draco with local decoder"
+    ],
+    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
+    "passed": true
+  },
+  {
+    "file": "public/models/places-low/xiaoxiangguan.glb",
+    "beforeBytes": 21372648,
+    "afterBytes": 2640284,
+    "sha256": "0869b6c33162857567fca043c98ffa77330d158a33cd2e904076490b2b0d3a1c",
+    "semanticNodes": 4,
+    "bounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        17.436195373535156,
+        8.0430908203125,
+        16.004175186157227
+      ]
+    },
+    "materials": 31,
+    "steps": [
+      "dedup accessors/textures",
+      "weld",
+      "Draco with local decoder"
+    ],
+    "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
+    "passed": true
+  },
+  {
+    "file": "public/models/places-low/yihongyuan.glb",
+    "beforeBytes": 10667336,
+    "afterBytes": 1028984,
+    "sha256": "28cc2b32ab5f16fa13897d112063de27a5453b245cc2eb68b7947b7c66aeb92a",
+    "semanticNodes": 4,
+    "bounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        16.380001068115234,
+        9.384835243225098,
+        16.004175186157227
+      ]
+    },
+    "materials": 33,
+    "steps": [
+      "dedup accessors/textures",
+      "weld",
+      "Draco with local decoder"
     ],
     "compression": "Draco; 16-bit positions; measured bounds tolerance 12mm",
     "passed": true

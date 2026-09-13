@@ -46,7 +46,8 @@ def source(aid):
   bs.inputs['Roughness'].default_value=.87
   kind='twig' if 'twig' in material.name else 'leaves' if 'leaves' in material.name else None
   if kind:
-   revision=json.loads((R/'config/craft.materials.json').read_text(encoding='utf-8'))['revision']
+   config=json.loads((R/'config/craft.materials.json').read_text(encoding='utf-8'))
+   revision=config.get('foliageRevision',config['revision'])
    path=R/f'assets/processed/foliage-{revision}'/f'{aid}_{kind}_rgba.png'
    image=bpy.data.images.load(str(path),check_existing=False);image.colorspace_settings.name='sRGB';image.pack()
    node=material.node_tree.nodes.new('ShaderNodeTexImage');node.image=image

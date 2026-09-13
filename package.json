@@ -40,7 +40,9 @@
     "models:planting": "node scripts/pipeline.mjs models-planting",
     "models:planting:resume": "node scripts/pipeline.mjs models-planting-resume",
     "models:planting:lod": "node scripts/pipeline.mjs models-planting-lod",
-    "models:understory": "node scripts/pipeline.mjs models-understory"
+    "models:understory": "node scripts/pipeline.mjs models-understory",
+    "models:architecture": "node scripts/pipeline.mjs models-architecture",
+    "models:architecture:lod": "node scripts/pipeline.mjs models-architecture-lod"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

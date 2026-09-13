@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported roof_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "roof_rough",
+  "sourcePixelSha256": "3fa7e8dcdbfefced171c0971c8e5c7ba06aea85c4bcecc948dcef7694a1d67d0",
+  "sha256": "03bb0e6d6223d897171abf6199687f738abe0d66d6a10e8364865e3944ece9f3",
+  "prompt": "Blender-exported roof_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

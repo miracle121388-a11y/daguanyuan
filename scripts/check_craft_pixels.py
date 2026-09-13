@@ -46,7 +46,7 @@ if not alpha_report['passed']:raise RuntimeError('Fern source transparency was l
 leaf_rows=[]
 for model,stem in [('fern-0','fern_02'),('fern-1','fern_02'),('broadleaf','island_tree_01_leaves'),('broadleaf-low','island_tree_01_leaves'),('broadleaf-2','island_tree_02_leaves'),('pine','pine_sapling_small_twig'),('shrub','island_tree_01_leaves')]:
  path=R/f'public/models/vegetation/{model}.glb';data=path.read_bytes();length=struct.unpack_from('<I',data,12)[0];doc=json.loads(data[20:20+length]);start=28+length
- expected=Image.open(R/f'assets/processed/foliage-{config["revision"]}/{stem}_rgba.png')
+ expected=Image.open(R/f'assets/processed/foliage-{config.get("foliageRevision",config["revision"])}/{stem}_rgba.png')
  expected_mean=ImageStat.Stat(expected.convert('RGB'),expected.getchannel('A').point(lambda x:255 if x>128 else 0)).mean
  for material in doc['materials']:
   if material.get('alphaMode') not in ['BLEND','MASK']:continue

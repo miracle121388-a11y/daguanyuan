@@ -8,6 +8,8 @@ SPEC=CONFIG['materials'];REVISION=CONFIG['revision']
 
 def install():
  original=core.materials
+ for key,setting in SPEC.items():
+  if key not in core.PALETTE:core.PALETTE[key]=setting.get('pigment','#ffffff').lstrip('#')
  core.PALETTE.update({'furniture':'69513b','paper':'e2d8bc','bookcover':'526677','bookcloth':'a08d6e','ivory':'bfb492','cutstone':'a9aaa0','courtbase':'aaa998'})
  def materials():
   out=original()

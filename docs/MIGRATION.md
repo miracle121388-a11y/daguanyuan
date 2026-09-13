@@ -101,6 +101,8 @@ git lfs unlock blender/daguanyuan_master.blend
 
 日常继续开发应从当前母场景和现有配置出发。`content:prepare`、`pipeline` 和历史一次性迁移命令会重新生成或覆盖对应内容，按需使用；`models:overview-budget` 是旧版迁移入口，当前模型不需要再次执行。
 
+墙体与清代重彩材质由 `config/qing.palette.json`、`config/craft.materials.json` 和 `blender/qing_enclosures.py` 管理。`npm run models:architecture` 会在当前母场景上更新厅堂围护与建筑材质，生成各档建筑补丁，保留现有植物、水路及 `Manual_Adjustments`；随后运行 `npm run models:optimize` 和 `npm run models:verify`。已有材质只改源码还不会自动改变已导出的 GLB。新增围护面在各档模型中保持厚度，`models:verify` 同时检查实际墙体、窗纸和门洞。清代绘本原图及来源哈希位于 `references/paintings/`，通过 LFS 获取；丢失时可运行 `python scripts/fetch_painting_references.py` 重新取得索引中指定的文件。
+
 ## 6. 测试、打包与验证范围
 
 `npm run typecheck`、`npm run lint`、`npm test`、`npm run spatial:check` 验证代码和空间数据。`npm run test:e2e` 使用 Microsoft Edge；两种系统均可从 [Edge 官方下载页](https://www.microsoft.com/edge/download) 安装。模型检查使用 `npm run models:verify`。
@@ -113,3 +115,6 @@ npm run deploy:package
 这两个命令重新生成 `dist/` 和独立 `.deploy/` 发布包。部署目标仍是已有 Zeabur California 服务，步骤见 [DEPLOYMENT.md](DEPLOYMENT.md)；账号登录需要团队成员自行取得授权并登录。
 
 旧的自动备份、部署快照、依赖安装目录与本机登录凭据不是现用素材依赖。迁移验证结果见 [MIGRATION_VALIDATION.md](MIGRATION_VALIDATION.md)，仅记录实际执行过的检查；提供 macOS 命令不等于已经在 macOS 上实测。
+
+
+仅调整远景／手机建筑预算时，可运行 `npm run models:architecture:lod`，再执行 `npm run models:optimize` 与 `npm run models:verify`。它从当前母场景生成建筑 LOD，不重烘焙光照或重建植物。部署打包对字节完全相同的模型保存一个副本，并通过 `asset-aliases.json` 保留两个访问地址；Git 中仍保存完整模型文件。
