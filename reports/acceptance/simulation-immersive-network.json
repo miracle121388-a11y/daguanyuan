@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-15T10:29:31.542Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "phase": "published-v2",
+  "systemNetworkChanged": false,
+  "tlsVerification": true,
+  "defaultBrowserAttempt": {
+    "status": "failed",
+    "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/"
+  },
+  "defaultBrowserRetry": {
+    "status": "failed",
+    "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/"
+  },
+  "finalCheckedAt": "2026-09-15T10:43:12.128Z",
+  "resolvedVerification": {
+    "status": "passed",
+    "address": "47.89.212.251",
+    "tlsVerification": true,
+    "filesReport": "reports/acceptance/zeabur-deployment.json",
+    "gardenReport": "reports/acceptance/production-smoke.json",
+    "simulationReport": "output/playwright/simulation-immersive-online/report.json",
+    "modelReport": "output/playwright/simulation-deepseek-online/report.json",
+    "defaultConnectionFixed": false
+  }
+}

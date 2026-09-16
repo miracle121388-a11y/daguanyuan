@@ -1,0 +1,16 @@
+{
+  "revision": "simulation-participation-20260916-v3",
+  "at": "2026-09-15T18:29:57.986Z",
+  "url": "http://127.0.0.1:4291/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "liveModel": false,
+  "checks": [],
+  "requests": [],
+  "screenshots": [
+    "output/playwright/simulation-participation-local/failure.png"
+  ],
+  "errors": [],
+  "passed": false,
+  "failure": "locator.selectOption: Timeout 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('语气', { exact: true })\u001b[22m\n"
+}

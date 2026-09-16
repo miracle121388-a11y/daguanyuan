@@ -1,0 +1,75 @@
+{
+  "revision": "simulation-participation-20260916-v3",
+  "at": "2026-09-15T18:52:55.582Z",
+  "url": "http://127.0.0.1:4291/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "liveModel": true,
+  "checks": [
+    "conversation 1 commits a complete response",
+    "conversation changes the bounded state without advancing time",
+    "conversation 2 commits a complete response",
+    "repeated conversation cannot farm mood in the same tick",
+    "reply source is accurately persisted",
+    "switching people keeps their conversation histories separate",
+    "two real DeepSeek conversation calls complete through the UI",
+    "390px has no document or handbook horizontal overflow",
+    "390px keeps readable inputs and a visible modeled garden",
+    "320px has no document or handbook horizontal overflow",
+    "320px keeps readable inputs and a visible modeled garden",
+    "conversation 3 commits a complete response",
+    "conversation 4 commits a complete response",
+    "conversation 5 commits a complete response",
+    "conversation 6 commits a complete response",
+    "expanded history preserves mixed provider attribution",
+    "expanded history preserves every outcome and memory disclosures",
+    "a rejected conversation preserves the draft",
+    "one visible error announcement and recovery action sit beside the mobile composer",
+    "authorization failure writes no conversation",
+    "cancelling does not resubmit the conversation form",
+    "cancellation is reachable beside the composer and retains the unsent draft",
+    "unsent conversation survives switching participation modes",
+    "no browser runtime errors"
+  ],
+  "requests": [
+    {
+      "operation": "conversation",
+      "status": 502
+    },
+    {
+      "operation": "conversation",
+      "status": 200
+    },
+    {
+      "operation": "conversation",
+      "status": 200
+    },
+    {
+      "operation": "conversation",
+      "status": 401
+    }
+  ],
+  "screenshots": [
+    ".impeccable/review/simulation-participation-model/desktop-compose.png",
+    ".impeccable/review/simulation-participation-model/desktop-chat.png",
+    ".impeccable/review/simulation-participation-model/mobile-reply.png",
+    ".impeccable/review/simulation-participation-model/mobile-chat.png",
+    ".impeccable/review/simulation-participation-model/phone-320-chat.png",
+    ".impeccable/review/simulation-participation-model/mobile-earlier-evidence.png",
+    ".impeccable/review/simulation-participation-model/mobile-conversation-error.png",
+    ".impeccable/review/simulation-participation-model/mobile-conversation-busy.png",
+    ".impeccable/review/simulation-participation-model/mobile-conversation-cancelled.png"
+  ],
+  "errors": [],
+  "recoveredResponses": [
+    {
+      "conversation": 1,
+      "error": "模型返回了不符合规则的内容。本步未保存，请重试。"
+    }
+  ],
+  "failureFixture": {
+    "authorization": "real server rejection with deliberately invalid access token",
+    "cancellation": "browser-delayed request, never sent to model"
+  },
+  "passed": true
+}

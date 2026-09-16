@@ -15,10 +15,10 @@ const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[],f
 page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});
 page.on('console',m=>{if(m.type()==='error'&&/THREE.WebGLProgram|shader error|GL_INVALID/.test(m.text()))errors.push(m.text())});
 const desktopStarted=Date.now();
-await page.goto(url);await page.getByRole('button',{name:'定位潇湘馆',exact:true}).waitFor();
+await page.goto(url);await page.getByRole('button',{name:'定位潇湘馆',exact:true}).waitFor({timeout:loadTimeout});
 await page.locator('.canvas-wrap[data-scene-ready="true"]').waitFor({timeout:loadTimeout});
 const desktopReadyMs=Date.now()-desktopStarted;
-const hooksAbsent=await page.evaluate(()=>!window.__gardenTest&&!window.__gardenMetrics);
+const hooksAbsent=await page.evaluate(()=>!window.__gardenTest&&!window.__gardenMetrics&&!window.__simulationTest);
 const health=await page.evaluate(()=>fetch('/healthz').then(r=>r.json()));
 const expectedRevision=JSON.parse(readFileSync('public/scene-manifest.json','utf8')).assetRevision;
 if(health.status!=='ok'||health.revision!==expectedRevision)throw Error('Production is serving a different scene revision');
@@ -29,10 +29,10 @@ await page.getByRole('button',{name:'展开索引',exact:true}).click();
 await page.getByRole('textbox',{name:'搜索园中内容'}).focus();
 const focus=await page.getByRole('textbox',{name:'搜索园中内容'}).evaluate(e=>({width:getComputedStyle(e).outlineWidth,style:getComputedStyle(e).outlineStyle}));
 await page.locator('.place-row').filter({hasText:'潇湘馆'}).click();await page.locator('.detail-scroll h2').filter({hasText:'潇湘馆'}).waitFor();
-await page.reload();await page.getByRole('button',{name:'定位潇湘馆',exact:true}).waitFor();
+await page.reload();await page.getByRole('button',{name:'定位潇湘馆',exact:true}).waitFor({timeout:loadTimeout});
 await page.locator('.canvas-wrap[data-scene-ready="true"]').waitFor({timeout:loadTimeout});await page.waitForLoadState('networkidle');await page.waitForTimeout(1200);
 const build=JSON.parse(readFileSync('dist/.vite/manifest.json','utf8'));
-const sourceHooksAbsent=Object.values(build).filter(entry=>entry.file.endsWith('.js')).every(entry=>!/__gardenTest|__gardenMetrics/.test(readFileSync('dist/'+entry.file,'utf8')));
+const sourceHooksAbsent=Object.values(build).filter(entry=>entry.file.endsWith('.js')).every(entry=>!/__gardenTest|__gardenMetrics|__simulationTest/.test(readFileSync('dist/'+entry.file,'utf8')));
 save(shotPrefix?shotPrefix+'-desktop.png':'reports/browser/13-production-desktop.png',await page.screenshot());
 const desktopResult={at:new Date().toISOString(),url:page.url(),revision:health.revision,planView:true,dnsOverride:resolveIp??null,quicDisabled:!!resolveIp,tlsVerification:new URL(url).protocol==='https:'?true:null,observationTimeoutMs:loadTimeout,desktopReadyMs,hooksAbsent,sourceHooksAbsent,focus,sceneVisible:true,refresh:true,selection:true,errors,failed};
 await page.close(); // Each device sample has one active WebGL page.

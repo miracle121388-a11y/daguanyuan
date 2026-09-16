@@ -1,0 +1,7 @@
+{
+  "recordedAt": "2026-09-15T10:37:48.593765+00:00",
+  "passed": false,
+  "stage": "Public Google DNS query",
+  "curlExitCode": 56,
+  "note": "The first full file verification stopped on a DNS-over-HTTPS connection failure. Subsequent validation uses two bounded retries while retaining TLS verification."
+}

@@ -1,13 +1,14 @@
 {
-  "directory": ".deploy/reference-20260913-050752-139260",
+  "directory": ".deploy/reference-20260915-185344-804562",
   "contents": [
     "dist/",
     "server.mjs",
+    "server/simulation-api.mjs",
     "Dockerfile"
   ],
-  "rawBytes": 53998787,
-  "compressedBytes": 44908971,
-  "uploadDirectoryBytes": 46706067,
+  "rawBytes": 54128013,
+  "compressedBytes": 44943971,
+  "uploadDirectoryBytes": 46784060,
   "precompressedExtensions": [
     "html",
     "js",
@@ -28,5 +29,5 @@
     "models/overview.glb": "models/overview-low.glb"
   },
   "privateFilesIncluded": false,
-  "createdAt": "2026-09-13T05:07:57.884757+00:00"
+  "createdAt": "2026-09-15T18:53:50.214573+00:00"
 }

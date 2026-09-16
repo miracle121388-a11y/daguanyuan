@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-09-15T10:35:01.963269+00:00",
+  "passed": false,
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "dnsOverride": "47.89.212.251",
+  "tlsVerification": true,
+  "failure": "The first scene-label wait used Playwright default 30000ms and timed out before the scene-ready wait.",
+  "diagnostic": "A separate subsequent browser load rendered the garden without request failures or runtime errors; current HTML/JS/CSS hashes matched. See simulation-online-diagnostic.json.",
+  "harnessCorrection": "Both label waits now use the existing GARDEN_LOAD_TIMEOUT_MS observation budget (default 90000ms). No application source or pass criteria changed."
+}

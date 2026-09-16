@@ -1,0 +1,76 @@
+{
+  "at": "2026-09-15T10:20:51.451Z",
+  "url": "http://127.0.0.1:4281/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "checks": [
+    "server advertises the configured DeepSeek model without credentials",
+    "real model parses the IF condition without advancing time",
+    "private IF knowledge remains confined to its recipient",
+    "live model completes and saves Tick 1",
+    "saved snapshot identifies the actual model decision source",
+    "live model completes and saves Tick 2"
+  ],
+  "requests": [
+    {
+      "operation": "intervention",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "output/playwright/simulation-deepseek-verified/desktop-model-settings.png",
+    "output/playwright/simulation-deepseek-verified/failure.png"
+  ],
+  "modelLabel": "DeepSeek-V4.1-Flash",
+  "passed": false,
+  "failure": "model follows the personal request through the existing courtyard route"
+}

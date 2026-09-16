@@ -6,8 +6,10 @@ dist/
 test-results/
 .test-dist/
 .env
+.local/
 .checkpoints/
 .deploy/
+.research/
 .venv/
 .DS_Store
 __pycache__/

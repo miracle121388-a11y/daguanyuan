@@ -1,3 +1,5 @@
+import SimulationActors from './SimulationActors';
+import {useSimulation} from '../simulation/store';
 import {Suspense,useEffect,useMemo,useRef,Component,type ReactNode} from 'react';
 import {Canvas,useFrame,useThree,type ThreeEvent} from '@react-three/fiber';
 import {CameraControls,Html,Line,useGLTF,useProgress,useTexture} from '@react-three/drei';
@@ -36,8 +38,8 @@ function Overview({manifest,detailId,onReady}:{manifest:Manifest;detailId:string
  },[scene]);
  const time=useGarden(s=>s.timeOfDay);
  useEffect(()=>{scene.traverse(o=>{if(o instanceof THREE.BatchedMesh){for(const [i,id] of (o.userData.batchPlaceIds as (string|null)[]).entries())o.setVisibleAt(i,!id||id!==detailId)}if(o.userData.entityType==='place')o.visible=o.userData.placeId!==detailId;if(o instanceof THREE.Mesh){o.castShadow=!(Array.isArray(o.material)?o.material:[o.material]).some(m=>m.name==='earth');o.receiveShadow=!(Array.isArray(o.material)?o.material:[o.material]).some(m=>m.name==='earth');for(const m of Array.isArray(o.material)?o.material:[o.material])if(m instanceof THREE.MeshStandardMaterial&&['lantern','screen','silk','paper'].includes(m.name)){m.emissive.set('#ffc785');m.emissiveIntensity=time==='night'?(m.name==='lantern'?2.7:.32):0}}});onReady(true)},[scene,detailId,time,onReady]);
- const click=(e:ThreeEvent<MouseEvent>)=>{const id=eventPlaceId(e);if(id){e.stopPropagation();useGarden.getState().choosePlace(id)}};
- return <primitive object={scene} onClick={click} onPointerOver={(e:ThreeEvent<PointerEvent>)=>{if(eventPlaceId(e)){e.stopPropagation();document.body.style.cursor='pointer'}}} onPointerOut={()=>{document.body.style.cursor='auto'}}/>;
+ const click=(e:ThreeEvent<MouseEvent>)=>{if(useSimulation.getState().open)return;const id=eventPlaceId(e);if(id){e.stopPropagation();useGarden.getState().choosePlace(id)}};
+ return <primitive object={scene} onClick={click} onPointerOver={(e:ThreeEvent<PointerEvent>)=>{if(!useSimulation.getState().open&&eventPlaceId(e)){e.stopPropagation();document.body.style.cursor='pointer'}}} onPointerOut={()=>{document.body.style.cursor='auto'}}/>;
 }
 function Detail({place,onReady,low}:{place:ScenePlace;onReady:(id:string|null)=>void;low:boolean}){
  const inside=useGarden(s=>s.hotspotId===place.id+'-study'&&s.cutaway);
@@ -45,7 +47,7 @@ function Detail({place,onReady,low}:{place:ScenePlace;onReady:(id:string|null)=>
  const url=base+(low&&place.mobileModel?place.mobileModel:place.model);const g=useGLTF(url),light=useTexture(base+'textures/landscape-light.webp');const scene=useMemo(()=>{const clone=g.scene.clone(true);finishMaterials(clone,light);return clone},[g,light]);
  useEffect(()=>{rememberDetail(url,g.scene,low?2:4);scene.traverse(o=>{if(o instanceof THREE.Mesh){o.castShadow=!low;o.receiveShadow=!low}});onReady(place.id);return()=>onReady(null)},[scene,g,url,low,place.id,onReady]);
  useEffect(()=>{scene.traverse(o=>{if(o instanceof THREE.Mesh){const materials=Array.isArray(o.material)?o.material:[o.material];if(o.userData.roof||materials.every(m=>['roof','tile','tilelight','tiledark'].includes(m.name)))o.visible=!inside;for(const m of materials)if(m instanceof THREE.MeshStandardMaterial&&['lantern','screen','silk','paper'].includes(m.name)){m.emissive.set('#ffc785');m.emissiveIntensity=time==='night'?(m.name==='lantern'?2.7:.32):0}}})},[scene,inside,time]);
- return <group position={place.position}><primitive object={scene} onClick={(e:ThreeEvent<MouseEvent>)=>{e.stopPropagation();const state=useGarden.getState();if(state.selectedPlaceId!==place.id)state.choosePlace(place.id)}}/></group>;
+ return <group position={place.position}><primitive object={scene} onClick={(e:ThreeEvent<MouseEvent>)=>{e.stopPropagation();if(useSimulation.getState().open)return;const state=useGarden.getState();if(state.selectedPlaceId!==place.id)state.choosePlace(place.id)}}/></group>;
 }
 function Atmosphere(){
  const night=useGarden(s=>s.timeOfDay==='night'),{scene,invalidate,gl}=useThree(),selected=useGarden(s=>s.selectedPlaceId),loaded=useGarden(s=>s.loaded);
@@ -78,13 +80,14 @@ function visibleSceneRegion(canvas:HTMLCanvasElement,panelOpen:boolean){
  return {left:14,right:Math.max(150,rect.width-64),top:64,bottom:Math.max(190,Math.min(rect.height-145,panel?panel.top-rect.top-12:rect.height-145))};
 }
 function CameraManager({manifest}:{manifest:Manifest}){
+ const simulationOpen=useSimulation(s=>s.open),simulationFocus=useSimulation(s=>s.focused),simulationClose=useSimulation(s=>s.cameraMode==='close');
  const {camera,size,gl}=useThree();const panelOpen=useGarden(s=>s.panelOpen),indoor=useGarden(s=>!!s.hotspotId?.endsWith('-study')&&!s.cutaway);
  useEffect(()=>{if(!(camera instanceof THREE.PerspectiveCamera))return;if(panelOpen){const mobile=size.width<601,region=visibleSceneRegion(gl.domElement,panelOpen);camera.setViewOffset(size.width,size.height,mobile?size.width/2-(region.left+region.right)/2:Math.min(360,size.width<1150?304:332)/2,mobile?size.height/2-(region.top+region.bottom)/2:0,size.width,size.height)}else if(size.width<601)camera.setViewOffset(size.width,size.height,0,size.height*.04,size.width,size.height);else camera.clearViewOffset();camera.updateProjectionMatrix()},[camera,size.width,size.height,panelOpen,indoor,gl]);
  const controls=useRef<CameraControls>(null);const selected=useGarden(s=>s.selectedPlaceId);const tour=useGarden(s=>s.tourState);const motion=useGarden(s=>s.motion);const controller=useRef<GuidedTourController|null>(null);const dwell=useRef(0);const started=useRef(false);
  const planView=useGarden(s=>s.planView),closeView=useGarden(s=>s.closeView);
  const hotspot=useGarden(s=>s.hotspotId),cutaway=useGarden(s=>s.cutaway);
  useEffect(()=>{
-  if(tour.status!=='idle')return;
+  if(tour.status!=='idle'||(simulationOpen&&simulationFocus))return;
   const p=manifest.places.find(p=>p.id===selected),h=p?.hotspots.find(h=>h.id===hotspot);
   const room=h?.id.endsWith('-study')&&!cutaway?p?.interiorCamera:undefined;
   const toWorld=(local:Vec3)=>local.map((v,i)=>v+(p?.position[i]??0)) as Vec3;
@@ -114,7 +117,7 @@ function CameraManager({manifest}:{manifest:Manifest}){
    }
   }
   controls.current?.setLookAt(...position,...target,motion);
- },[selected,manifest,tour.status,motion,hotspot,cutaway,camera,size.width,size.height,planView,panelOpen,closeView,gl]);
+ },[selected,manifest,tour.status,motion,hotspot,cutaway,camera,size.width,size.height,planView,panelOpen,closeView,gl,simulationOpen,simulationFocus]);
  useEffect(()=>{const state=useGarden.getState();const route=state.data?.routes.find(r=>r.id===tour.routeId);if(!route||tour.status==='idle'){controller.current=null;started.current=false;return}
   const place=manifest.places.find(p=>p.id===route.orderedStops[tour.index])!;
   controls.current?.setLookAt(...place.cameraPosition,...place.cameraTarget,false);dwell.current=0;controller.current=null;started.current=false;useGarden.setState({panelOpen:true,hotspotId:null});
@@ -123,15 +126,16 @@ function CameraManager({manifest}:{manifest:Manifest}){
   if(!started.current){dwell.current+=Math.min(dt,1);if(dwell.current<5)return;if(tour.index>=route.orderedStops.length-1){useGarden.setState({tourState:{...tour,status:'paused'}});return}controller.current=new GuidedTourController(manifest,route.orderedStops[tour.index],route.orderedStops[tour.index+1]);started.current=true;useGarden.setState({panelOpen:false})}
   const state=controller.current?.tick(Math.min(dt,.5));if(state){const {position,lookAhead,done}=state;const target:Vec3=[lookAhead[0],lookAhead[1]+2.4,lookAhead[2]];if(!done)controls.current.setLookAt(position[0],position[1]+8,position[2]+.15,...target,false);else useGarden.getState().tourStep(tour.index+1)}
  });
- return <CameraControls ref={controls} makeDefault minDistance={hotspot?.endsWith('-study')?2.5:8} maxDistance={540} minPolarAngle={.12} maxPolarAngle={Math.PI/2.15} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
+ return <CameraControls ref={controls} makeDefault minDistance={hotspot?.endsWith('-study')||simulationOpen&&simulationClose?2.5:8} maxDistance={540} minPolarAngle={.12} maxPolarAngle={Math.PI/2.15} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
 }
 function Markers({manifest}:{manifest:Manifest}){
+ const simulationOpen=useSimulation(s=>s.open);
  const state=useGarden();const {camera}=useThree();const marks=useMemo(()=>state.data?relatedPlaces(state.data,state.selectedCharacterId,state.selectedChapter,state.spoilerLimit):[],[state.data,state.selectedCharacterId,state.selectedChapter,state.spoilerLimit]);const focused=!!(state.selectedCharacterId||state.selectedChapter);const lineRoute=state.data?.routes.find(r=>r.id===state.tourState.routeId);
  const routePoints=useMemo(()=>lineRoute?lineRoute.pathNodeIds.map(id=>{const n=manifest.pathNodes.find(n=>n.id===id)!;return [n.position[0],n.position[1]+.16,n.position[2]] as Vec3}):[],[lineRoute,manifest]);
  const bead=useRef<THREE.Mesh>(null);useFrame(({clock})=>{if(bead.current&&routePoints.length>1&&state.motion){const i=Math.floor(clock.elapsedTime*1.5)%(routePoints.length-1),t=(clock.elapsedTime*1.5)%1;bead.current.position.fromArray(routePoints[i]).lerp(new THREE.Vector3(...routePoints[i+1]),t);bead.current.position.y+=.4}});
  return <>
- {routePoints.length>1&&<><Line points={routePoints} color="#b67745" lineWidth={2}/><mesh ref={bead}><sphereGeometry args={[.65,10,8]}/><meshBasicMaterial color="#9c563e"/></mesh></>}
- {manifest.places.map((p,i)=>{const chosen=state.selectedPlaceId===p.id,related=focused&&marks.includes(p.id);return <group key={p.id} position={p.position}>
+ {!simulationOpen&&routePoints.length>1&&<><Line points={routePoints} color="#b67745" lineWidth={2}/><mesh ref={bead}><sphereGeometry args={[.65,10,8]}/><meshBasicMaterial color="#9c563e"/></mesh></>}
+ {!simulationOpen&&manifest.places.map((p,i)=>{const chosen=state.selectedPlaceId===p.id,related=focused&&marks.includes(p.id);return <group key={p.id} position={p.position}>
  {!chosen&&<mesh position={[0,3.6,0]} userData={{placeId:p.id}} onClick={e=>{e.stopPropagation();state.choosePlace(p.id)}}><boxGeometry args={[p.featured?32:22,7.2,p.featured?28:20]}/><meshBasicMaterial transparent opacity={0} depthWrite={false} colorWrite={false}/></mesh>}
  {(chosen||related)&&<mesh rotation={[-Math.PI/2,0,0]} position={[0,.23,0]}><ringGeometry args={[17,17.35,64]}/><meshBasicMaterial color={chosen?'#9e573e':'#537e6d'} transparent opacity={.85} side={THREE.DoubleSide}/></mesh>}
  {state.labels&&(!state.selectedPlaceId||chosen)&&(related||chosen||(!focused&&(p.featured||['daguanyuan_gate','ouxiangxie'].includes(p.id))))&&<GardenLabel place={p} index={i} chosen={chosen} related={related}/>}
@@ -152,12 +156,17 @@ function World({manifest}:{manifest:Manifest}){
  return <><Atmosphere/>
  <ModelBoundary key={modelManifest.overview} onRetry={()=>{useGLTF.clear(base+modelManifest.overview);useTexture.clear(base+'textures/landscape-light.webp');useTexture.clear(base+'textures/ground/soil.jpg');useTexture.clear(base+'textures/ground/surface-zones.png')}}><Suspense fallback={null}><Overview manifest={modelManifest} detailId={detailId} onReady={setOverviewReady}/></Suspense></ModelBoundary>
  {place&&<ModelBoundary key={place.id+quality} label={place.name} onRetry={()=>useGLTF.clear(base+(quality==='low'&&place.mobileModel?place.mobileModel:place.model))}><Suspense fallback={null}><Detail place={place} low={quality==='low'} onReady={setDetailId}/></Suspense></ModelBoundary>}
- <ModelBoundary label="树影" onRetry={()=>{useTexture.clear(base+'textures/vegetation/canopy-atlas.webp');for(const name of ['broadleaf','broadleaf-low','broadleaf-2','pine','shrub'])useGLTF.clear(base+'models/vegetation/'+name+'.glb')}}><Suspense fallback={null}><LivingTrees manifest={manifest} onReady={setTreesReady}/></Suspense></ModelBoundary><ModelBoundary label="岸边草木" onRetry={()=>useGLTF.clear(base+'models/vegetation/ground-cover.glb')}><Suspense fallback={null}><GroundCover manifest={manifest} onReady={setGroundReady}/></Suspense></ModelBoundary><ModelBoundary label="竹下草木" onRetry={()=>{for(const i of [0,1])useGLTF.clear(base+`models/vegetation/fern-${i}.glb`)}}><Suspense fallback={null}>{(quality==='high'||selected)&&<Understory manifest={manifest}/>}</Suspense></ModelBoundary><GardenWater manifest={manifest}/><GardenLights manifest={manifest}/><Markers manifest={manifest}/><CameraManager manifest={manifest}/><Metrics/>
+ <ModelBoundary label="树影" onRetry={()=>{useTexture.clear(base+'textures/vegetation/canopy-atlas.webp');for(const name of ['broadleaf','broadleaf-low','broadleaf-2','pine','shrub'])useGLTF.clear(base+'models/vegetation/'+name+'.glb')}}><Suspense fallback={null}><LivingTrees manifest={manifest} onReady={setTreesReady}/></Suspense></ModelBoundary><ModelBoundary label="岸边草木" onRetry={()=>useGLTF.clear(base+'models/vegetation/ground-cover.glb')}><Suspense fallback={null}><GroundCover manifest={manifest} onReady={setGroundReady}/></Suspense></ModelBoundary><ModelBoundary label="竹下草木" onRetry={()=>{for(const i of [0,1])useGLTF.clear(base+`models/vegetation/fern-${i}.glb`)}}><Suspense fallback={null}>{(quality==='high'||selected)&&<Understory manifest={manifest}/>}</Suspense></ModelBoundary><GardenWater manifest={manifest}/><GardenLights manifest={manifest}/><Markers manifest={manifest}/><CameraManager manifest={manifest}/><SimulationActors/><Metrics/>
  <mesh rotation={[-Math.PI/2,0,0]} position={[0,-.35,0]} receiveShadow><planeGeometry args={[1600,1600]}/><meshStandardMaterial color="#4f6343" roughness={1}/></mesh>
  </>;
 }
 import {useState as useStableState} from 'react';
 function Loading(){const {progress,active}=useProgress();const loaded=useGarden(s=>s.loaded);return active&&!loaded?<div className="loading" role="status"><div className="loading-seal">园</div><h2>山水渐入眼前</h2><p>正在展开园林 · {Math.round(progress)}%</p><progress max={100} value={progress}/></div>:null}
-export default function GardenScene({manifest}:{manifest:Manifest}){const loaded=useGarden(s=>s.loaded);const quality=useGarden(s=>s.qualityLevel);const motion=useGarden(s=>s.motion);const selected=useGarden(s=>s.selectedPlaceId),closeView=useGarden(s=>s.closeView),hotspot=useGarden(s=>s.hotspotId);const playing=useGarden(s=>s.tourState.status==='playing');const webgl=useMemo(()=>{try{return !!document.createElement('canvas').getContext('webgl2')}catch{return false}},[]);if(!webgl)return <div className="fallback"><h2>当前设备无法显示三维园景</h2><p>仍可通过地点、人物与回目索引阅读全部资料。</p></div>;
- return <div className="canvas-wrap" data-testid="garden-canvas" data-scene-ready={loaded} aria-busy={!loaded}><Canvas frameloop={playing||(motion&&quality==='high')?'always':'demand'} camera={{position:manifest.overviewCamera.position,fov:43,near:.65,far:1600}} dpr={quality==='high'?[1,1.5]:1} shadows={quality==='high'} gl={{antialias:true,alpha:false,powerPreference:'high-performance',toneMapping:THREE.ACESFilmicToneMapping,toneMappingExposure:1.0}}><World manifest={manifest}/></Canvas>{selected&&!hotspot&&<button className="court-framing" onClick={()=>useGarden.setState({closeView:!closeView})}>{closeView?'看全院':'拉近院景'}</button>}<Loading/></div>;
+function ContextHealth({onLost}:{onLost:()=>void}){
+ const {gl}=useThree();
+ useEffect(()=>{const canvas=gl.domElement;const lost=(event:Event)=>{event.preventDefault();useSimulation.getState().cancel();useSimulation.setState({sceneReady:false});useGarden.setState({loaded:false});onLost()};canvas.addEventListener('webglcontextlost',lost);return()=>canvas.removeEventListener('webglcontextlost',lost)},[gl,onLost]);
+ return null;
+}
+export default function GardenScene({manifest}:{manifest:Manifest}){const [contextLost,setContextLost]=useStableState(false);const [contextVersion,setContextVersion]=useStableState(0);const loaded=useGarden(s=>s.loaded);const quality=useGarden(s=>s.qualityLevel);const motion=useGarden(s=>s.motion);const selected=useGarden(s=>s.selectedPlaceId),closeView=useGarden(s=>s.closeView),hotspot=useGarden(s=>s.hotspotId);const playing=useGarden(s=>s.tourState.status==='playing');const webgl=useMemo(()=>{try{return !!document.createElement('canvas').getContext('webgl2')}catch{return false}},[]);if(!webgl)return <div className="fallback"><h2>当前设备无法显示三维园景</h2><p>仍可通过地点、人物与回目索引阅读全部资料。</p></div>;
+ return <div className="canvas-wrap" data-testid="garden-canvas" data-scene-ready={loaded} aria-busy={!loaded}><Canvas key={contextVersion} frameloop={playing||(motion&&quality==='high')?'always':'demand'} camera={{position:manifest.overviewCamera.position,fov:43,near:.65,far:1600}} dpr={quality==='high'?[1,1.5]:1} shadows={quality==='high'} gl={{antialias:true,alpha:false,powerPreference:'high-performance',toneMapping:THREE.ACESFilmicToneMapping,toneMappingExposure:1.0}}><World manifest={manifest}/><ContextHealth onLost={()=>setContextLost(true)}/></Canvas>{selected&&!hotspot&&<button className="court-framing" onClick={()=>useGarden.setState({closeView:!closeView})}>{closeView?'看全院':'拉近院景'}</button>}<Loading/>{contextLost&&<div className="fallback context-error" role="alert"><h2>三维场景已中断</h2><p>图形上下文已失效，当前推演已取消。可用轻量画质重新载入。</p><button onClick={()=>{useGarden.setState({qualityLevel:'low',loaded:false});setContextLost(false);setContextVersion(contextVersion+1)}}>重新加载三维场景</button></div>}</div>;
 }

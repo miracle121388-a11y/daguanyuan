@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-09-13T05:16:22.339160+00:00",
+  "verifiedAt": "2026-09-15T19:07:32.622806+00:00",
   "url": "https://daguanyuan-rumeng.zeabur.app/",
   "server": {
     "id": "6a8eee0bb11fb81fb4aaca05",
@@ -11,7 +11,7 @@
   "projectId": "6aa142fb6c3d9581b71560ed",
   "serviceId": "6aa143296c3d9581b71560fa",
   "environmentId": "6aa142fbda9bc245fba1e845",
-  "deploymentId": "6aa6308d738cb98df77440da",
+  "deploymentId": "6aa99631d3687c7a2564cfe3",
   "cliDeploymentStatus": "RUNNING",
   "cliDomainStatus": "PROVISIONED",
   "health": {
@@ -105,46 +105,45 @@
       "matchesLocal": true
     },
     {
-      "path": "assets/GardenScene-uR-ZTxlO.js",
-      "sha256": "7c8d7c8757e7b326308985b051eb2d31956508ca74775180c7a536a77eb67b75",
-      "bytes": 735148,
+      "path": "assets/GardenScene-B_0rzVtJ.js",
+      "sha256": "77468737b82b75bc8620a02a209e7517142da3dca5757e6a5455d60f948d2c02",
+      "bytes": 741315,
       "matchesLocal": true
     },
     {
-      "path": "assets/index-D68344Zx.css",
-      "sha256": "2f7ccdb135055991c7023408c045b6f00e7b56ea426e3d3890e1ef953c24bdd2",
-      "bytes": 44567,
+      "path": "assets/index-BJf2KuHF.js",
+      "sha256": "ec6ddc9e9cfc638d31eab986faea719ead74bc721d7ff7aa563ed62006cf1554",
+      "bytes": 752362,
       "matchesLocal": true
     },
     {
-      "path": "assets/index-Dw94OLZh.js",
-      "sha256": "c5f6875c1b1808b94af78f65bfd803116b8e5cd274234f8c24b9b25ab0b76399",
-      "bytes": 658470,
+      "path": "assets/index-CQyej6nZ.css",
+      "sha256": "1ef8335b5a0687917423a5f92a1baad24a8d812555363eb61de26da7a417f3d9",
+      "bytes": 73734,
       "matchesLocal": true
     },
     {
       "path": "index.html",
-      "sha256": "ae75dcd9af6e5b21f1bba5f2cf9d57012e8f28ebc0189a502dbca74ed4097aaa",
+      "sha256": "fb60b6e79f1a102a2630b467afcc310d040d075715dd46c0ae44485428d25b09",
       "bytes": 1273,
       "matchesLocal": true
     }
   ],
-  "responseHeaders": "HTTP/1.1 200 OK\r\nAlt-Svc: h3=\":443\"; ma=3600\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Encoding: gzip\r\nContent-Length: 873\r\nContent-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 13 Sep 2026 05:16:21 GMT\r\nEtag: \"4f9-1a0992e5e60-gzip\"\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Zeabur-Ip-Country: JP\r\nX-Zeabur-Request-Id: 2b8dfb3d-bc47-4625-a533-502eaf03b128\r\n\r\n",
+  "responseHeaders": "HTTP/1.1 200 OK\r\nAlt-Svc: h3=\":443\"; ma=3600\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Encoding: gzip\r\nContent-Length: 874\r\nContent-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 15 Sep 2026 19:07:31 GMT\r\nEtag: \"4f9-1a0a6735b48-gzip\"\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Zeabur-Ip-Country: JP\r\nX-Zeabur-Request-Id: d0150cad-eac8-43fd-8156-2e10c12bb733\r\n\r\n",
   "dns": {
     "publicAddress": "47.89.212.251",
     "source": "Google DNS over HTTPS queried during this verification",
-    "browserOverrideUsed": false,
+    "browserOverrideUsed": true,
     "osDnsChanged": false
   },
   "tlsVerificationEnabled": true,
-  "browserQuicDisabled": false,
+  "browserQuicDisabled": true,
   "productionSmoke": "production-smoke.json",
   "requestTimeoutSeconds": 60,
   "browserObservationTimeoutMs": 90000,
-  "desktopReadyMs": 19966,
-  "mobileReadyMs": 5259,
-  "defaultNetworkSmokeLog": "r15-production-default.log",
-  "standardResolvedSmokeLog": "r15-production-resolved.log",
+  "desktopReadyMs": 6943,
+  "mobileReadyMs": 5376,
+  "networkObservationReport": "reports/acceptance/simulation-participation-network.json",
   "newServerPurchased": false,
   "credentialsIncluded": false
 }

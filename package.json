@@ -21,10 +21,13 @@
     "models:mobile": "node scripts/pipeline.mjs models-mobile",
     "data:build": "node scripts/validate.mjs --publish",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src tests scripts --no-warn-ignored",
+    "lint": "eslint src tests scripts server server.mjs --no-warn-ignored",
     "test": "vitest run",
     "verify": "node scripts/validate.mjs",
     "build": "node scripts/clean_build.mjs && npm run data:build && tsc --noEmit && vite build",
+    "test:simulation": "node scripts/simulation_smoke.mjs",
+    "test:simulation:model": "node scripts/simulation_model_smoke.mjs",
+    "simulation:space": "node scripts/check_simulation_routes.mjs",
     "test:e2e": "node scripts/run_e2e.mjs",
     "pipeline": "node scripts/pipeline.mjs all",
     "spatial:check": "python scripts/check_spatial_layout.py",
@@ -42,7 +45,8 @@
     "models:planting:lod": "node scripts/pipeline.mjs models-planting-lod",
     "models:understory": "node scripts/pipeline.mjs models-understory",
     "models:architecture": "node scripts/pipeline.mjs models-architecture",
-    "models:architecture:lod": "node scripts/pipeline.mjs models-architecture-lod"
+    "models:architecture:lod": "node scripts/pipeline.mjs models-architecture-lod",
+    "test:simulation:participation": "node scripts/simulation_participation_smoke.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

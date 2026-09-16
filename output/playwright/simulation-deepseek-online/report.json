@@ -1,0 +1,143 @@
+{
+  "at": "2026-09-15T10:40:50.789Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "dnsOverride": "47.89.212.251",
+  "tlsVerification": true,
+  "checks": [
+    "server advertises the configured DeepSeek model without credentials",
+    "real model parses the IF condition without advancing time",
+    "private IF knowledge remains confined to its recipient",
+    "live model completes and saves Tick 1",
+    "saved snapshot identifies the actual model decision source",
+    "live model completes and saves Tick 2",
+    "model follows the personal request through the existing courtyard route",
+    "completed request is consumed only after the saved action",
+    "one intervention, eight personal decisions and two summaries succeed over real HTTP",
+    "all four people receive separate model decisions",
+    "no browser runtime errors"
+  ],
+  "requests": [
+    {
+      "operation": "intervention",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    }
+  ],
+  "decisions": [
+    {
+      "agent": "baoyu",
+      "action": "visit",
+      "target": "daiyu",
+      "reason": "刚得知府里要让我娶宝钗，心里又惊又闷，坐不住。黛玉最懂我的心事，也最信得过，得先去潇湘馆找她商量，看这事究竟如何是好。"
+    },
+    {
+      "agent": "daiyu",
+      "action": "talk",
+      "target": "baoyu",
+      "reason": "午后在潇湘馆见宝玉来至门前，虽本欲静养，然相遇不可失礼，依计划先问安，再看他来意。",
+      "content": "今日可还安好？"
+    },
+    {
+      "agent": "baochai",
+      "action": "move",
+      "target": "hengwuyuan",
+      "spot": "court",
+      "reason": "午后在蘅芜苑中，正宜依着计划到蘅芷步道一带静坐读书，既应了读书自持的性子，也不负这幽芳清境。"
+    },
+    {
+      "agent": "wangxifeng",
+      "action": "write",
+      "reason": "午后在府门附近，正好核理日常事务，将各项往来账目理清，也不负当家之责。",
+      "spot": "gate"
+    },
+    {
+      "agent": "baoyu",
+      "action": "move",
+      "target": "qiushuangzhai",
+      "spot": "court",
+      "reason": "玩家托付我去秋爽斋，虽心里还惦记着黛玉，但答应的事不能耽搁，先沿路过去。"
+    },
+    {
+      "agent": "daiyu",
+      "action": "move",
+      "target": "xiaoxiangguan",
+      "spot": "court",
+      "reason": "午后在潇湘馆，正欲按计划到竹径静处理清诗思；宝玉既已离去，且无人在旁，不如独自移步院中竹影下，寻个清静处安坐构思。"
+    },
+    {
+      "agent": "baochai",
+      "action": "read",
+      "reason": "依着计划在蘅芷步道停留读书，正合读书自持的性子，也可享这幽芳清境。",
+      "spot": "court"
+    },
+    {
+      "agent": "wangxifeng",
+      "action": "write",
+      "reason": "晌午过后仍在府门附近，正该把手头账目理清；此地适宜写录，且计划既定为核理日常事务，先完成这步，不负当家之责。",
+      "knowledgeId": ""
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "output/playwright/simulation-deepseek-online/desktop-model-settings.png",
+    "output/playwright/simulation-deepseek-online/desktop-model-court.png",
+    "output/playwright/simulation-deepseek-online/mobile-model-settings.png"
+  ],
+  "modelLabel": "DeepSeek-V4.1-Flash",
+  "final": {
+    "tick": 2,
+    "baoyu": {
+      "location": "qiushuangzhai",
+      "spot": "court"
+    },
+    "provider": "DeepSeek-V4.1-Flash"
+  },
+  "passed": true
+}

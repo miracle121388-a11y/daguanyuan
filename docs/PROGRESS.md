@@ -430,3 +430,89 @@ r13 已发布并完成上述实测。独立复核为 FIX：地被和焦点植物
 ### r15 发布确认
 
 版本 spatial-garden-20260913-r15 已部署到原California服务；部署ID 6aa6308d738cb98df77440da。线上HTTPS、CSP和18个当前公开文件哈希一致，桌面和触摸模拟正式包检查通过。本机默认网络的正式网页检查通过。未修改外部代理或系统网络设置。当前视觉结论见 r15-verdict.md；技术与发布检查不替代视觉审查。性能条件与限制见PERFORMANCE.md。
+
+
+## 2026-09-15 · IF 世界推演系统
+
+在既有 React/R3F 园林中实现四人物共享世界、个人感知与相关记忆、严格语义动作、路网执行、对话与关系、自然语言条件解析、主世界与一个IF分支、自动推演、暂停/撤销、快照恢复和本地存档。人物身份沿用 canon IDs；王熙凤的贾府借用园门作为明确标注的舞台锚点；新增几何小像，未重建园林模型。原文、布局、Blender母场景与Manual_Adjustments均保留。
+
+30项单元/接口测试、11项原有E2E、3719项完整性检查、类型检查、lint及构建已通过。本地浏览器测量到实际人物沿路移动、暂停不动、抵达后更新逻辑位置，并核对双方记忆和三维快照恢复；正式包桌面与390/320触摸模拟的IF全链路、自动运行、刷新持久化与取消回退通过。早期移动网格测量使用软件渲染，最终发布包与线上验收使用Edge默认渲染器；均为浏览器模拟，未据此宣称真实手机帧率；开发模式观察到上下文失效，新增可见错误、整步取消和轻量重载恢复。原有正式构建E2E未要求该恢复。
+
+服务器模型接口通过本地HTTP替身验证，未配置真实模型密钥、未进行付费模型调用。最终包434文件、46,742,626字节（44.58MiB），身份见simulation-release.json。独立复核指出的手机人物显示问题已通过近距跟随和姓名牌避让修正，同一reviewer评分RESOLVED／SHIP，仅限本次推演功能。使用与扩展说明见docs/simulation-engine.md。
+
+
+### IF 推演系统发布确认
+
+功能版本 `simulation-20260915-v1` 已部署到原California服务，部署ID `6aa8c531d3a5861738040362`，状态RUNNING。园林模型仍为 `spatial-garden-20260913-r15`，用新部署ID、JS/CSS及发布包SHA区分本次功能版本。HTTPS、CSP和18份在线文件哈希一致；线上原有游园桌面/触摸检查及18项推演链路检查通过，包括指定IF、人物行走、双方记忆、主世界隔离、自动运行、快照、刷新和撤销。
+
+本机默认网络两次出现 `ERR_CONNECTION_CLOSED`；上述公网检查使用公共DNS查询所得地址，仅对测试浏览器和curl临时指定解析，TLS保持开启。没有修改系统DNS、代理或其他服务；未将临时解析成功表述为默认连接已修复。当前默认网络问题是交付限制，详见simulation-network.json。两张线上对话/手机记忆截图已实际打开核对；不是实体手机性能验收。设计补充见.impeccable/simulation-surface.md。
+
+## 2026-09-15 · 场景融合与推演能力升级（候选）
+
+根据用户提供的两个参考项目，核对 OpenStory 与 MiroFish 官方仓库固定提交中的14份文件并保存来源、许可证、字节数和SHA-256；没有把上游服务或源码加入运行时。具体实现研究和取舍见 `docs/simulation-reference-study.md`。实现持续计划、需求与消息打断、个人传播账本、消息来源、自省、托付和三类有记忆依据的追问；新增真实转述图、同Tick比较、带事件ID的纪要、最多三条历史IF保存及交换恢复。
+
+四个人物可以沿既有园路与实际门洞进入四院舞台站位，载入原有精细／手机模型，继续读书、写字、休息和交谈；临场／跟随／全园、沉浸手记、播放速度和既有昼夜灯光已接入。三维人物仍是共享几何小像；不作原著造像或真实预测声明。原文证据、空间解释和舞台导航分列，未修改Blender母场景、Manual_Adjustments或既有GLB。
+
+本轮已实际通过：42项单元／接口测试（其中新增12项）、648次院内结构射线、3719项数据完整性检查、类型检查、lint、正式构建、11项原有游园E2E。最终候选浏览器报告 `output/playwright/simulation-immersive-final/report.json` 为35项通过、无运行错误或失败请求；Edge默认渲染器，1440×900、390×844和320×740。13张最终截图均已打开核对。首轮捕获脚本最后一步点击了折叠状态隐藏的镜头按钮而超时；操作顺序已修正，首轮失败报告保留，不将其标为通过。自检修复了下载图标被图表CSS放大、旧游园标记挤占手机画面的问题。检测器运行一次，43项均为辅助字号／色彩的advisory，交由独立reviewer按本次扩展范围判断。
+
+这是本地候选验证记录；独立复核和原California服务更新尚在收尾，以后续发布确认记录为准。真实LLM未配置，未进行付费模型调用；当前追问是基于此人状态与记忆的本地整理。浏览器模拟不证明实体手机帧率。
+
+
+### 场景升级 · 交互修复与 DeepSeek 接入验证
+
+独立复核要求修正两项交互：推演中普通园景点击串入地点详情，以及重复“托付与追问”没有回到表单。现已修复；真实场景点击、退出推演后的普通选景，以及320px重复表单定位均通过，连同原有完整游园点击用例，新增回归2项通过。最终单元／接口测试增至44项；lint和正式构建通过（3719项完整性检查）。
+
+用户提供模型服务后，仅在服务端本地 `.env` 配置官方 DeepSeek 端点；GET /models鉴权成功并确认 deepseek-flash 可用，对应 DeepSeek-V4.1-Flash。首次真实流程在黛玉问安时触发严格拒绝：一类返回将可选 knowledgeId 写成null，另一类把选项序号写成消息ID；完整Tick没有被部分保存。现已增加可选null归一与明确的JSON示例，保留对伪造消息ID的拒绝，针对性真实请求已200通过。早期失败报告保留在 simulation-deepseek-local、simulation-deepseek-diagnostic 和 simulation-deepseek-final 目录；以随后完整验收报告为准。
+
+
+真实 DeepSeek 完整验收 `output/playwright/simulation-deepseek-accepted/report.json`：11项检查通过，11次实际HTTP调用全部200，覆盖一次IF解析、四个人物各两次决策与两次小结；两个完整Tick保存，宝玉完成秋爽斋院内托付后才消费待办，存档标注实际模型来源。验证范围为短程功能，不承诺长期文学一致性；本地问答仍明确标为记忆整理。此前 simulation-deepseek-verified 的11次HTTP虽然成功，但托付被闲谈推迟，未计为流程通过；已明确玩家计划和身体需要的优先级，失败证据保留。
+
+
+最后一次正式构建画面复捕 `output/playwright/simulation-immersive-final/report.json`（2026-09-15T10:24:30.816Z）：35项通过，13张桌面／390／320截图重新生成，零运行错误与失败请求。最新44项单元／接口测试、lint均通过。发布包 `.deploy/reference-20260915-102400-163159` 为434文件、46,765,180字节；逐文件（含Brotli解码后）检查未包含API密钥、推演口令、.env、.local或.research。仅将四项模型变量更新到既有Zeabur服务，回读验证一致，其他变量保留；当前正式发布状态以后续记录为准。
+
+
+独立 reviewer 的复判 `reports/acceptance/simulation-immersive-ui-verdict.md` 将两项交互修复均评为resolved，disposition ship仅限这两项。新部署 `6aa91e4dd3687c7a2564b341` 已在原California服务变为RUNNING（2026-09-15T10:30:37.269Z创建）；线上配置端点已返回 DeepSeek-V4.1-Flash 可用且要求访问口令。发布后的文件哈希和完整公网流程正在核验，以下最终确认记录才代表交付验收完成。
+
+
+### 场景融合 v2 · 最终发布确认
+
+`simulation-immersive-20260915-v2` 已完成并发布，部署ID `6aa91e4dd3687c7a2564b341`，原California服务RUNNING。HTTPS、域名状态、18份当前公开文件哈希与正式游园桌面／触摸检查通过；线上35项推演链路检查通过。线上DeepSeek-V4.1-Flash真实11次调用全部200，两个完整Tick保存，宝玉按托付到达秋爽斋court，待办在完成后消费。证据分别为 `output/playwright/simulation-immersive-online/report.json` 与 `output/playwright/simulation-deepseek-online/report.json`，不能互相替代；两套线上关键截图已实际打开核对。
+
+首轮正式游园等待用了30秒默认超时而未进入90秒场景观察预算，改为统一预算后重跑通过；完整文件验收首轮因Google DNS连接返回curl56而退出，有限重试后实际通过。失败报告均保留。本机默认浏览器在发布后重试仍为ERR_CONNECTION_CLOSED；公网验收临时指定公共DNS解析且TLS保持开启，没有修改系统网络，不能声称默认连接问题已修复。本机4281预览与线上使用同一构建和模型配置。
+
+独立文档收尾仅追加 `.impeccable/simulation-immersive-surface.md`，实际打开本地13张推演和3张模型截图，DESIGN.md和sidecar哈希保持不变。两项交互修复复判resolved／ship仅限原修复项。原园林模型、Blender母场景、Manual_Adjustments与canon来源继续保留；追问是本地记忆整理，短程模型验证不代替长期文学一致性评估，也不证明实体手机性能。
+
+完整434文件发布包SHA、源码身份、模型配置边界及全部验收入口见 `reports/acceptance/simulation-immersive-release.json`，当前部署与使用方法见 `docs/DEPLOYMENT.md`。本机推演访问说明保存于不发布的 `.local/推演模型访问说明.txt`。最终核验记录时间 `2026-09-15T10:45:23.039189+00:00`。
+
+
+## 2026-09-16 · 推演互动继续拓展（进行中）
+
+已实现连续交谈、依据可查的个人回应、当下选择与快照、从当前时刻分岔、2–4人庭院小聚。沿用已有模型、行走执行器、个人记忆边界及服务器DeepSeek配置。新增UI继承纸面/玉绿手记，提供桌面与手机入口。
+
+验证进展：57项单元/API测试通过；lint通过；build含3719项数据完整性检查通过。首轮新增测试有一项仅因导出文本断言写错预期词失败，已改为验证真实选择内容并全套通过。浏览器和真实模型验收尚在执行，未将其提前记为通过。
+
+
+V3 本地验收补记：新增浏览器21项通过；真实DeepSeek交谈12项检查（2次HTTP请求均200）通过；旧推演35项回归检查通过，包括IF→行走→对话、院内托付、存档/归档、消息图、320px沉浸与原园林漫游。新交谈的个人上下文、取消和证据边界另由单元/API测试覆盖。自动化首轮由于getByLabel无法精确匹配包裹select的语气标签而超时，改用combobox可访问名称后完成；失败报告保留在output/playwright/simulation-participation-local和simulation-participation-model-local。
+
+最终自检截图与新流程报告：.impeccable/review/simulation-participation/；真实模型：.impeccable/review/simulation-participation-model/。detector仅运行一次，50条均为advisory（47字号、3颜色），未改全站设计体系。独立界面复核进行中，尚未发布V3。准备包434文件、46,781,478 bytes（44.61MiB）；使用当前Vite清单，私密环境文件未包含。
+
+### v3 最终交互修复与本地验证
+
+独立界面复核的三项要求已完成：早期对话保留逐条来源、记忆依据与影响；手机输入旁提供唯一错误提示、重试及取消，逐人物未发草稿跨参与模式保留；新增主要操作达到44px。实际取消检查发现切换按钮类型可能再次提交表单，已用独立按钮身份和阻止默认提交修正。浏览器确认取消只发起一次请求、迟到结果不入档、草稿保留。取消验证采用三秒浏览器延迟替身，不发送上游模型；不将此替身计为真实模型调用。
+
+最终构建后的新增本地浏览器21项通过（2026-09-15T18:53:41.655Z）；模型/恢复浏览器24项通过（2026-09-15T18:52:55.582Z），其中两次真实交谈成功200，一次严格校验502经界面重试恢复，一次故意错误口令401验证不入档。历史列表同时保留真实模型与本地规则来源。取消首轮失败和模型严格拒绝记录保存在output/playwright/simulation-participation-cancel-first-attempt与simulation-participation-model-strict-rejection，不计为通过。最终19张桌面／390／320截图均实际打开核对，已送同一reviewer仅复判原三项要求。
+
+最终候选包 .deploy/reference-20260915-185344-804562 为434文件、46,784,060字节（44.62MiB）；逐文件及Brotli解码后的凭据扫描通过，未包含.env、.local或.research。源码与发布包SHA见simulation-participation-release.json；DESIGN.md及design.json哈希保持原值。lint与正式构建通过，57项单元/API、旧推演35项回归与一项原有交互E2E均为本轮实际运行结果。尚未以本条记录宣称V3公网发布完成。
+
+
+### 推演互动 v3 · 最终发布确认
+
+功能版本 simulation-participation-20260916-v3 已部署到原 California 服务，部署ID 6aa99631d3687c7a2564cfe3，RUNNING；创建时间 2026-09-15T19:02:09.238Z。园林模型仍为 spatial-garden-20260913-r15。18份公开文件（含当前HTML、JS和CSS）的SHA-256一致，HTTPS、CSP、域名及既有服务器身份验证通过。未修改其他服务或本轮模型环境配置。
+
+线上新增交互21项通过；线上模型/恢复24项通过，两次真实DeepSeek交谈200，一次故意错误口令401验证未入档，取消为浏览器延迟替身、未发送模型。另有四次本地规则交谈验证混合来源的历史列表。正式游园桌面与390px触摸模拟检查通过，无运行错误或失败资源。线上小聚、手机结果、真实模型回复、取消状态和原游园共6张关键截图已实际打开核对。
+
+本机默认浏览器发布后仍为ERR_CONNECTION_CLOSED；成功的公网测试使用实时公共DNS结果47.89.212.251，测试浏览器及curl临时解析，TLS校验开启。没有更改系统网络，也不宣称默认连接问题已修复。网络记录为reports/acceptance/simulation-participation-network.json；同构建本地预览为http://127.0.0.1:4291/。
+
+同一reviewer将F1/F2/F3全部评为resolved，ship仅限三项修复。独立documenter核对19张最终本地图并记录实际行为于.impeccable/simulation-participation-surface.md；DESIGN.md与design.json哈希未变。完整434文件包与源码身份、检查范围、失败记录及上线证据见reports/acceptance/simulation-participation-release.json。V2原始公开文件和游园报告另存output/playwright/simulation-v2-published-evidence/。
+
+本条最终记录时间 2026-09-15T19:09:08.797Z。57项单元/API、35项旧推演回归、一项原交互E2E、lint、类型与3719项完整性检查为本轮验证；未据此宣称本轮重跑旧11项完整E2E、648条空间射线、实体手机帧率或长期文学一致性。

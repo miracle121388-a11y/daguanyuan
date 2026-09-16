@@ -1,0 +1,143 @@
+{
+  "at": "2026-09-15T10:23:22.138Z",
+  "url": "http://127.0.0.1:4281/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "checks": [
+    "server advertises the configured DeepSeek model without credentials",
+    "real model parses the IF condition without advancing time",
+    "private IF knowledge remains confined to its recipient",
+    "live model completes and saves Tick 1",
+    "saved snapshot identifies the actual model decision source",
+    "live model completes and saves Tick 2",
+    "model follows the personal request through the existing courtyard route",
+    "completed request is consumed only after the saved action",
+    "one intervention, eight personal decisions and two summaries succeed over real HTTP",
+    "all four people receive separate model decisions",
+    "no browser runtime errors"
+  ],
+  "requests": [
+    {
+      "operation": "intervention",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    }
+  ],
+  "decisions": [
+    {
+      "agent": "baoyu",
+      "action": "visit",
+      "target": "daiyu",
+      "reason": "新得知贾府要让我娶宝钗，心中不安，此事只愿与黛玉一人商议。她素来懂我，我去潇湘馆找她，把这消息说与她，听她怎么说。",
+      "knowledgeId": "if:1:0:baoyu"
+    },
+    {
+      "agent": "daiyu",
+      "action": "talk",
+      "target": "baoyu",
+      "reason": "宝玉就在潇湘馆门口，正合我相遇问安的打算；先依礼相问，再各安其静。",
+      "content": "今日可还安好？"
+    },
+    {
+      "agent": "baochai",
+      "action": "move",
+      "target": "hengwuyuan",
+      "reason": "按既定计划，午后在蘅芜苑的蘅芷步道停留读书，先移步到苑中庭院。",
+      "spot": "court"
+    },
+    {
+      "agent": "wangxifeng",
+      "action": "write",
+      "reason": "晌午过后，府门往来人杂，正该在此核理日常事务，以免疏漏。入园人多，先记下几笔要紧账目。"
+    },
+    {
+      "agent": "baoyu",
+      "action": "move",
+      "target": "qiushuangzhai",
+      "spot": "court",
+      "reason": "玩家托付我前往秋爽斋，我虽心中仍记挂着与黛玉的情谊，但既定之事不可违，先依令前往。"
+    },
+    {
+      "agent": "daiyu",
+      "action": "move",
+      "target": "xiaoxiangguan",
+      "spot": "court",
+      "reason": "竹影清幽，正合静处理清诗思。依着计划，且往馆中庭边去，先寻个清静处。"
+    },
+    {
+      "agent": "baochai",
+      "action": "read",
+      "reason": "按既定计划，在蘅芷步道停留读书，此时午后幽静，正宜展卷自持，不必另生枝节。",
+      "spot": "court"
+    },
+    {
+      "agent": "wangxifeng",
+      "action": "write",
+      "reason": "晌午过后，府门往来人杂，正该在此核理日常事务，以免疏漏。入园人多，先记下几笔要紧账目。",
+      "spot": "gate"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "output/playwright/simulation-deepseek-accepted/desktop-model-settings.png",
+    "output/playwright/simulation-deepseek-accepted/desktop-model-court.png",
+    "output/playwright/simulation-deepseek-accepted/mobile-model-settings.png"
+  ],
+  "modelLabel": "DeepSeek-V4.1-Flash",
+  "final": {
+    "tick": 2,
+    "baoyu": {
+      "location": "qiushuangzhai",
+      "spot": "court"
+    },
+    "provider": "DeepSeek-V4.1-Flash"
+  },
+  "passed": true
+}

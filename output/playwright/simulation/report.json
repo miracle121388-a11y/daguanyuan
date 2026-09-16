@@ -1,0 +1,48 @@
+{
+  "renderer": "Edge / ANGLE SwiftShader (software)",
+  "at": "2026-09-15T03:45:34.264Z",
+  "url": "http://127.0.0.1:5173/",
+  "checks": [
+    "WebGL context loss surfaced with a recovery action",
+    "scene recovered using the light preset",
+    "required IF example is available",
+    "IF changes knowledge without advancing time or moving a character",
+    "Daiyu does not know the private IF condition",
+    "scene traverses the road before logical arrival",
+    "pause freezes the actual 3D character",
+    "Baoyu arrives in Xiaoxiangguan",
+    "baoyu stores the conversation in personal memory",
+    "daiyu stores the conversation in personal memory",
+    "the original main world stays isolated",
+    "snapshot restoration restores tick zero",
+    "restoration also resets the rendered character position",
+    "main-world behavior differs from IF behavior",
+    "completed snapshots survive page reload",
+    "cancel rolls back to the complete IF snapshot",
+    "original garden touring remains available",
+    "WebGL context loss surfaced with a recovery action",
+    "scene recovered using the light preset",
+    "390px mobile keeps the scene visible without horizontal overflow",
+    "mobile scene executes the full IF → walk → dialogue chain",
+    "320px screen has no horizontal overflow",
+    "no browser runtime errors",
+    "no failed resource or API requests"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "screenshots": [
+    "output/playwright/simulation/desktop-initial.png",
+    "output/playwright/simulation/desktop-moving-paused.png",
+    "output/playwright/simulation/desktop-dialogue.png",
+    "output/playwright/simulation/desktop-memory.png",
+    "output/playwright/simulation/mobile-initial.png",
+    "output/playwright/simulation/mobile-memory.png",
+    "output/playwright/simulation/mobile-320.png"
+  ],
+  "movingPosition": [
+    95.61310850496348,
+    0.22,
+    116.05720481552824
+  ],
+  "status": "passed"
+}

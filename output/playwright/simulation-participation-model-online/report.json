@@ -1,0 +1,65 @@
+{
+  "revision": "simulation-participation-20260916-v3",
+  "at": "2026-09-15T19:05:23.512Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "dnsOverride": "47.89.212.251",
+  "tlsVerification": true,
+  "liveModel": true,
+  "checks": [
+    "conversation 1 commits a complete response",
+    "conversation changes the bounded state without advancing time",
+    "conversation 2 commits a complete response",
+    "repeated conversation cannot farm mood in the same tick",
+    "reply source is accurately persisted",
+    "switching people keeps their conversation histories separate",
+    "two real DeepSeek conversation calls complete through the UI",
+    "390px has no document or handbook horizontal overflow",
+    "390px keeps readable inputs and a visible modeled garden",
+    "320px has no document or handbook horizontal overflow",
+    "320px keeps readable inputs and a visible modeled garden",
+    "conversation 3 commits a complete response",
+    "conversation 4 commits a complete response",
+    "conversation 5 commits a complete response",
+    "conversation 6 commits a complete response",
+    "expanded history preserves mixed provider attribution",
+    "expanded history preserves every outcome and memory disclosures",
+    "a rejected conversation preserves the draft",
+    "one visible error announcement and recovery action sit beside the mobile composer",
+    "authorization failure writes no conversation",
+    "cancelling does not resubmit the conversation form",
+    "cancellation is reachable beside the composer and retains the unsent draft",
+    "unsent conversation survives switching participation modes",
+    "no browser runtime errors"
+  ],
+  "requests": [
+    {
+      "operation": "conversation",
+      "status": 200
+    },
+    {
+      "operation": "conversation",
+      "status": 200
+    },
+    {
+      "operation": "conversation",
+      "status": 401
+    }
+  ],
+  "screenshots": [
+    "output/playwright/simulation-participation-model-online/desktop-compose.png",
+    "output/playwright/simulation-participation-model-online/desktop-chat.png",
+    "output/playwright/simulation-participation-model-online/mobile-reply.png",
+    "output/playwright/simulation-participation-model-online/mobile-chat.png",
+    "output/playwright/simulation-participation-model-online/phone-320-chat.png",
+    "output/playwright/simulation-participation-model-online/mobile-earlier-evidence.png",
+    "output/playwright/simulation-participation-model-online/mobile-conversation-error.png",
+    "output/playwright/simulation-participation-model-online/mobile-conversation-busy.png",
+    "output/playwright/simulation-participation-model-online/mobile-conversation-cancelled.png"
+  ],
+  "errors": [],
+  "failureFixture": {
+    "authorization": "real server rejection with deliberately invalid access token",
+    "cancellation": "browser-delayed request, never sent to model"
+  },
+  "passed": true
+}

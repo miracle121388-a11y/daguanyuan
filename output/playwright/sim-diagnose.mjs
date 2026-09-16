@@ -1,0 +1,17 @@
+import {chromium} from 'playwright';
+const browser=await chromium.launch({channel:'msedge',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1440,height:900}});
+page.on('console',m=>{if(m.type()==='error'||m.type()==='warning')console.log(m.type(),m.text().slice(0,1000))});
+page.on('pageerror',e=>console.log('error',e.message));
+await page.goto('http://127.0.0.1:5173/');
+await page.locator('.canvas-wrap[data-scene-ready="true"]').waitFor({timeout:90000});
+await page.waitForTimeout(1000);
+console.log('before',await page.evaluate(()=>({hidden:document.hidden,render:window.__simulationTest?.renderState(),metrics:window.__gardenMetrics,rect:document.querySelector('canvas').getBoundingClientRect().toJSON()})));
+if(await page.getByRole('button',{name:'重新加载三维场景',exact:true}).isVisible()){await page.getByRole('button',{name:'重新加载三维场景',exact:true}).click();await page.locator('.canvas-wrap[data-scene-ready="true"]').waitFor({timeout:90000});await page.waitForTimeout(2000);console.log('recovered',await page.evaluate(()=>window.__simulationTest.renderState()));}await page.getByRole('button',{name:'世界推演',exact:true}).click();
+await page.waitForTimeout(1000);
+console.log('opened',await page.evaluate(()=>({hidden:document.hidden,render:window.__simulationTest?.renderState(),metrics:window.__gardenMetrics,focus:window.__simulationTest.state().focused,positions:window.__simulationTest.positions()})));
+await page.getByRole('button',{name:'创建 IF 世界',exact:true}).click();
+await page.getByRole('button',{name:'运行下一 Tick',exact:true}).click();
+await page.waitForTimeout(3000);
+console.log('moving',await page.evaluate(()=>({hidden:document.hidden,render:window.__simulationTest?.renderState(),metrics:window.__gardenMetrics,phase:window.__simulationTest.state().phase,paused:window.__simulationTest.state().paused,positions:window.__simulationTest.positions(),playback:JSON.stringify(window.__simulationTest.state().playback)})));
+await browser.close();

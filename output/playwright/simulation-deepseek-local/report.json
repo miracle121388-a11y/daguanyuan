@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-15T10:15:14.388Z",
+  "url": "http://127.0.0.1:4281/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "checks": [
+    "server advertises the configured DeepSeek model without credentials",
+    "real model parses the IF condition without advancing time",
+    "private IF knowledge remains confined to its recipient"
+  ],
+  "requests": [
+    {
+      "operation": "intervention",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 502
+    }
+  ],
+  "errors": [
+    "模型返回了不符合规则的内容。本步未保存，请重试。"
+  ],
+  "screenshots": [
+    "output/playwright/simulation-deepseek-local/desktop-model-settings.png",
+    "output/playwright/simulation-deepseek-local/failure.png"
+  ],
+  "modelLabel": "DeepSeek-V4.1-Flash",
+  "passed": false,
+  "failure": "live model completes and saves Tick 1"
+}

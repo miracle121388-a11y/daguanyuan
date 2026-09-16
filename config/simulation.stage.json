@@ -1,0 +1,75 @@
+{
+  "contentType": "staged_navigation",
+  "basis": [
+    "blender/r8_courtyard.py",
+    "blender/refined_modules.py",
+    "blender/court_planting.py"
+  ],
+  "courts": {
+    "xiaoxiangguan": {
+      "name": "竹径",
+      "points": [
+        [
+          0,
+          0.25,
+          13
+        ],
+        [
+          0,
+          0.25,
+          5
+        ]
+      ]
+    },
+    "yihongyuan": {
+      "name": "红香院庭",
+      "points": [
+        [
+          0,
+          0.25,
+          13
+        ],
+        [
+          0,
+          0.25,
+          5
+        ]
+      ]
+    },
+    "hengwuyuan": {
+      "name": "蘅芷步道",
+      "points": [
+        [
+          0,
+          0.25,
+          13
+        ],
+        [
+          0,
+          0.25,
+          8.4
+        ],
+        [
+          8,
+          0.25,
+          8.4
+        ]
+      ]
+    },
+    "qiushuangzhai": {
+      "name": "诗席前庭",
+      "points": [
+        [
+          0,
+          0.25,
+          13
+        ],
+        [
+          0,
+          0.25,
+          3
+        ]
+      ]
+    }
+  }
+}

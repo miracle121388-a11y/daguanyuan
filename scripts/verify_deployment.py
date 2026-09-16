@@ -15,7 +15,7 @@ domain=next(d for d in domains if d['domain']==host)
 assert deployment['status']=='RUNNING' and domain['status']=='PROVISIONED'
 assert project['Region']['ID']=='server-6a8eee0bb11fb81fb4aaca05'
 def curl(*args):
- return subprocess.run(['curl.exe' if os.name=='nt' else 'curl','--silent','--show-error','--fail','--max-time',str(fetch_timeout),*args],check=True,capture_output=True).stdout
+ return subprocess.run(['curl.exe' if os.name=='nt' else 'curl','--silent','--show-error','--fail','--retry','2','--retry-delay','1','--retry-all-errors','--max-time',str(fetch_timeout),*args],check=True,capture_output=True).stdout
 dns=json.loads(curl(f'https://dns.google/resolve?name={host}&type=A'))
 ip=next(x['data'] for x in dns['Answer'] if x['type']==1)
 def get(path,head=False):
@@ -50,7 +50,7 @@ report={'verifiedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'u
  'tlsVerificationEnabled':True,'browserQuicDisabled':smoke['quicDisabled'],'productionSmoke':'production-smoke.json',
  'requestTimeoutSeconds':fetch_timeout,'browserObservationTimeoutMs':smoke.get('observationTimeoutMs',90000),
  'desktopReadyMs':smoke.get('desktopReadyMs'),'mobileReadyMs':smoke['mobile'].get('readyMs'),
- 'defaultNetworkSmokeLog':('r'+health['revision'].split('-r')[-1])+'-production-default.log','standardResolvedSmokeLog':('r'+health['revision'].split('-r')[-1])+'-production-resolved.log',
+ 'networkObservationReport':os.environ.get('GARDEN_NETWORK_REPORT'),
  'newServerPurchased':False,'credentialsIncluded':False}
 target=R/'reports/acceptance/zeabur-deployment.json';temporary=target.with_suffix('.json.next');temporary.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8');temporary.replace(target)
 print(f'Live HTTPS verification passed: current asset revision, health, CSP, {len(files)} matching published files including current JS/CSS, desktop selection and touch browser smoke.')

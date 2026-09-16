@@ -1,0 +1,24 @@
+{
+  "revision": "simulation-participation-20260916-v3",
+  "at": "2026-09-15T18:47:21.647Z",
+  "url": "http://127.0.0.1:4291/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "liveModel": true,
+  "checks": [],
+  "requests": [
+    {
+      "operation": "conversation",
+      "status": 502
+    }
+  ],
+  "screenshots": [
+    ".impeccable/review/simulation-participation-model/desktop-compose.png",
+    ".impeccable/review/simulation-participation-model/failure.png"
+  ],
+  "errors": [
+    "模型返回了不符合规则的内容。本步未保存，请重试。重试这句话"
+  ],
+  "passed": false,
+  "failure": "Cannot read properties of null (reading 'active')"
+}

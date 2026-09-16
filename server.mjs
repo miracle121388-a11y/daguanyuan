@@ -2,6 +2,9 @@ import {createServer} from 'node:http';
 import {createReadStream,statSync,existsSync,readFileSync} from 'node:fs';
 import {resolve,extname,sep} from 'node:path';
 import {gzipSync,brotliDecompressSync} from 'node:zlib';
+import {createSimulationApi} from './server/simulation-api.mjs';
+if(existsSync('.env')&&process.loadEnvFile)process.loadEnvFile('.env');
+const simulationApi=createSimulationApi();
 const root=resolve(process.env.STATIC_ROOT||'dist');
 const aliasFile=resolve(root,'asset-aliases.json');
 const assetAliases=existsSync(aliasFile)?JSON.parse(readFileSync(aliasFile,'utf8')):{};
@@ -17,7 +20,8 @@ function gzipPayload(file,stat,decoded){
 }
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.glb':'model/gltf-binary','.wasm':'application/wasm','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.hdr':'application/octet-stream','.svg':'image/svg+xml'};
 const revision=()=>{try{return JSON.parse(readFileSync(resolve(root,'scene-manifest.json'),'utf8')).assetRevision??'2'}catch{return '2'}};
-createServer((req,res)=>{
+createServer(async(req,res)=>{
+ if(await simulationApi(req,res))return;
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{'Allow':'GET, HEAD'});return res.end()}
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400);return res.end()}
  if(pathname==='/healthz'){res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});return res.end(JSON.stringify({status:'ok',application:'daguanyuan-rumeng',revision:revision()}))}

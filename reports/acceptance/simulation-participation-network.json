@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-15T19:04:08.500Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "phase": "published-v3",
+  "deploymentId": "6aa99631d3687c7a2564cfe3",
+  "systemNetworkChanged": false,
+  "tlsVerification": true,
+  "defaultBrowserAttempt": {
+    "status": "failed",
+    "error": "page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/"
+  },
+  "publicDns": {
+    "at": "2026-09-15T19:04:16.212Z",
+    "source": "Google DNS over HTTPS queried after v3 became RUNNING",
+    "address": "47.89.212.251"
+  },
+  "finalCheckedAt": "2026-09-15T19:09:08.797Z",
+  "resolvedVerification": {
+    "status": "passed",
+    "address": "47.89.212.251",
+    "tlsVerification": true,
+    "filesReport": "reports/acceptance/zeabur-deployment.json",
+    "gardenReport": "reports/acceptance/production-smoke.json",
+    "simulationReport": "output/playwright/simulation-participation-online/report.json",
+    "modelReport": "output/playwright/simulation-participation-model-online/report.json",
+    "defaultConnectionFixed": false
+  }
+}

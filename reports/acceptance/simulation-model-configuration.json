@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-15T10:25:44.249150+00:00",
+  "serviceId": "6aa143296c3d9581b71560fa",
+  "environmentId": "6aa142fbda9bc245fba1e845",
+  "configuredKeys": [
+    "LLM_BASE_URL",
+    "LLM_MODEL",
+    "LLM_API_KEY",
+    "LLM_ACCESS_TOKEN"
+  ],
+  "model": "deepseek-flash",
+  "displayName": "DeepSeek-V4.1-Flash",
+  "unrelatedVariablesPreserved": true,
+  "credentialsPublished": false,
+  "packageCredentialScan": "passed",
+  "packageFiles": 434
+}

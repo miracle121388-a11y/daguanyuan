@@ -1,0 +1,37 @@
+{
+  "renderer": "Edge / default renderer",
+  "at": "2026-09-15T04:07:06.112Z",
+  "url": "http://127.0.0.1:4277/",
+  "checks": [
+    "required IF example is available",
+    "IF changes knowledge without advancing time or moving a character",
+    "Daiyu does not know the private IF condition",
+    "Baoyu arrives in Xiaoxiangguan",
+    "baoyu stores the conversation in personal memory",
+    "daiyu stores the conversation in personal memory",
+    "the original main world stays isolated",
+    "snapshot restoration restores tick zero",
+    "main-world behavior differs from IF behavior",
+    "automatic mode completes a tick and can be stopped between ticks",
+    "completed snapshots survive page reload",
+    "cancel rolls back to the complete IF snapshot",
+    "original garden touring remains available",
+    "390px mobile keeps the scene visible without horizontal overflow",
+    "mobile scene executes the full IF → walk → dialogue chain",
+    "320px screen has no horizontal overflow",
+    "no browser runtime errors",
+    "no failed resource or API requests"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "screenshots": [
+    "output/playwright/simulation-final/desktop-initial.png",
+    "output/playwright/simulation-final/desktop-moving-paused.png",
+    "output/playwright/simulation-final/desktop-dialogue.png",
+    "output/playwright/simulation-final/desktop-memory.png",
+    "output/playwright/simulation-final/mobile-initial.png",
+    "output/playwright/simulation-final/mobile-memory.png",
+    "output/playwright/simulation-final/mobile-320.png"
+  ],
+  "status": "passed"
+}

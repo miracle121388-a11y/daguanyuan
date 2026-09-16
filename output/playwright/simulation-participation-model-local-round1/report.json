@@ -1,0 +1,39 @@
+{
+  "revision": "simulation-participation-20260916-v3",
+  "at": "2026-09-15T18:32:39.430Z",
+  "url": "http://127.0.0.1:4291/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "liveModel": true,
+  "checks": [
+    "conversation 1 commits a complete response",
+    "conversation changes the bounded state without advancing time",
+    "conversation 2 commits a complete response",
+    "repeated conversation cannot farm mood in the same tick",
+    "reply source is accurately persisted",
+    "switching people keeps their conversation histories separate",
+    "two real DeepSeek conversation calls complete through the UI",
+    "390px has no document or handbook horizontal overflow",
+    "390px keeps readable inputs and a visible modeled garden",
+    "320px has no document or handbook horizontal overflow",
+    "320px keeps readable inputs and a visible modeled garden",
+    "no browser runtime errors"
+  ],
+  "requests": [
+    {
+      "operation": "conversation",
+      "status": 200
+    },
+    {
+      "operation": "conversation",
+      "status": 200
+    }
+  ],
+  "screenshots": [
+    "output/playwright/simulation-participation-model-local-round1/desktop-chat.png",
+    "output/playwright/simulation-participation-model-local-round1/mobile-chat.png",
+    "output/playwright/simulation-participation-model-local-round1/phone-320-chat.png"
+  ],
+  "errors": [],
+  "passed": true
+}

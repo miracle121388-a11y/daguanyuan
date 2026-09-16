@@ -1,0 +1,235 @@
+{
+  "at": "2026-09-15T09:42:54.465Z",
+  "passed": true,
+  "method": "Four character lanes, three body heights and three lateral rays per segment; actual high/mobile structural triangles. Soft foliage is excluded. Staged navigation, not literary evidence.",
+  "stageSha256": "7a0ddd00a8823eaa8d44b1f064f54ee2ebe7c4a5a9c5471102aacadcddb9b446",
+  "files": [
+    {
+      "file": "public/models/places/xiaoxiangguan.glb",
+      "sha256": "232ea5cf588100a1f4a699b02796689535bacbfab15d020418d27d1f3f621ce6"
+    },
+    {
+      "file": "public/models/places/yihongyuan.glb",
+      "sha256": "b66eb61562b5b54cf3262d3341d4f9c4e4fe6f591f0c26fd0c7de18118608a7a"
+    },
+    {
+      "file": "public/models/places/hengwuyuan.glb",
+      "sha256": "9357665d8131486901e456da8c20394f46278b626513cafbe248bc3fc306185e"
+    },
+    {
+      "file": "public/models/places/qiushuangzhai.glb",
+      "sha256": "da92ba1af99c5e93db84734b052b489c517e22885ad32a6ff04ea84c8a2c3fb1"
+    },
+    {
+      "file": "public/models/places-low/xiaoxiangguan.glb",
+      "sha256": "0869b6c33162857567fca043c98ffa77330d158a33cd2e904076490b2b0d3a1c"
+    },
+    {
+      "file": "public/models/places-low/yihongyuan.glb",
+      "sha256": "28cc2b32ab5f16fa13897d112063de27a5453b245cc2eb68b7947b7c66aeb92a"
+    },
+    {
+      "file": "public/models/places-low/hengwuyuan.glb",
+      "sha256": "5954359b14557f5ce1d0c2e9be10eb7ffb1c832b74df6b718fca36a700f10baf"
+    },
+    {
+      "file": "public/models/places-low/qiushuangzhai.glb",
+      "sha256": "72ac3f65a4a68408d6d6feba867c5643e972bb0b62e9ac4e72c4e0db7d074206"
+    }
+  ],
+  "rows": [
+    {
+      "tier": "places",
+      "id": "xiaoxiangguan",
+      "slot": 0,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "xiaoxiangguan",
+      "slot": 1,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "xiaoxiangguan",
+      "slot": 2,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "xiaoxiangguan",
+      "slot": 3,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "yihongyuan",
+      "slot": 0,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "yihongyuan",
+      "slot": 1,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "yihongyuan",
+      "slot": 2,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "yihongyuan",
+      "slot": 3,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "hengwuyuan",
+      "slot": 0,
+      "tests": 27
+    },
+    {
+      "tier": "places",
+      "id": "hengwuyuan",
+      "slot": 1,
+      "tests": 27
+    },
+    {
+      "tier": "places",
+      "id": "hengwuyuan",
+      "slot": 2,
+      "tests": 27
+    },
+    {
+      "tier": "places",
+      "id": "hengwuyuan",
+      "slot": 3,
+      "tests": 27
+    },
+    {
+      "tier": "places",
+      "id": "qiushuangzhai",
+      "slot": 0,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "qiushuangzhai",
+      "slot": 1,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "qiushuangzhai",
+      "slot": 2,
+      "tests": 18
+    },
+    {
+      "tier": "places",
+      "id": "qiushuangzhai",
+      "slot": 3,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "xiaoxiangguan",
+      "slot": 0,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "xiaoxiangguan",
+      "slot": 1,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "xiaoxiangguan",
+      "slot": 2,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "xiaoxiangguan",
+      "slot": 3,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "yihongyuan",
+      "slot": 0,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "yihongyuan",
+      "slot": 1,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "yihongyuan",
+      "slot": 2,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "yihongyuan",
+      "slot": 3,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "hengwuyuan",
+      "slot": 0,
+      "tests": 27
+    },
+    {
+      "tier": "places-low",
+      "id": "hengwuyuan",
+      "slot": 1,
+      "tests": 27
+    },
+    {
+      "tier": "places-low",
+      "id": "hengwuyuan",
+      "slot": 2,
+      "tests": 27
+    },
+    {
+      "tier": "places-low",
+      "id": "hengwuyuan",
+      "slot": 3,
+      "tests": 27
+    },
+    {
+      "tier": "places-low",
+      "id": "qiushuangzhai",
+      "slot": 0,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "qiushuangzhai",
+      "slot": 1,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "qiushuangzhai",
+      "slot": 2,
+      "tests": 18
+    },
+    {
+      "tier": "places-low",
+      "id": "qiushuangzhai",
+      "slot": 3,
+      "tests": 18
+    }
+  ],
+  "failures": []
+}
