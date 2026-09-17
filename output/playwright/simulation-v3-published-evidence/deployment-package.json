@@ -1,0 +1,33 @@
+{
+  "directory": ".deploy/reference-20260915-185344-804562",
+  "contents": [
+    "dist/",
+    "server.mjs",
+    "server/simulation-api.mjs",
+    "Dockerfile"
+  ],
+  "rawBytes": 54128013,
+  "compressedBytes": 44943971,
+  "uploadDirectoryBytes": 46784060,
+  "precompressedExtensions": [
+    "html",
+    "js",
+    "css",
+    "json",
+    "wasm"
+  ],
+  "precompressedFormat": "br",
+  "packedOnlyExtensions": [
+    "glb",
+    "js",
+    "wasm"
+  ],
+  "packedBinaryIdentity": "server returns losslessly decoded original bytes; no raw duplicate in upload",
+  "gzipFallback": "bounded runtime cache",
+  "brotli": true,
+  "contentAliases": {
+    "models/overview.glb": "models/overview-low.glb"
+  },
+  "privateFilesIncluded": false,
+  "createdAt": "2026-09-15T18:53:50.214573+00:00"
+}

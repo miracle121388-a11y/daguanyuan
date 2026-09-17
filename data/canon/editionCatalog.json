@@ -1,0 +1,573 @@
+{
+  "editions": [
+    {
+      "id": "original80",
+      "title": "前八十回",
+      "shortTitle": "八十回本",
+      "chapters": 80,
+      "description": "以曹雪芹前八十回为依据，未完处留白。",
+      "boundary": "第八十回之后保持开放，不预设任何续本结局。",
+      "coverage": "沿用项目已核对的前八十回数字文本，非单一脂本的逐字校勘。"
+    },
+    {
+      "id": "cheng120",
+      "title": "程高本 · 一百二十回",
+      "shortTitle": "程高本",
+      "chapters": 120,
+      "description": "含程伟元、高鹗整理刊行的后四十回，常称高鹗续本。",
+      "boundary": "后四十回独立标注；其作者归属存在讨论，不与前八十回混称。",
+      "coverage": "前八十回共同节点，加第97、105回已核对片段；不是全120回的逐回剧情库。"
+    },
+    {
+      "id": "guiyou108",
+      "title": "癸酉本 · 一百零八回",
+      "shortTitle": "癸酉本",
+      "chapters": 108,
+      "description": "又称《吴氏石头记》，后续走向独立。",
+      "boundary": "来源与真伪有争议，不作为曹雪芹原稿的定论。",
+      "coverage": "前八十回借用共同节点，未作异文校勘；后续依据2014年版公开回目设定起点，未收录全文。"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://zh.wikisource.org/wiki/紅樓夢/第027回",
+      "retrievedAt": "2026-09-09T08:56:10.533136+00:00",
+      "rawPath": "data/raw/chapter-027.html",
+      "textPath": "data/raw/chapter-027.txt",
+      "rawSha256": "29fe5b574cfd18c926253ebf8b41e4d126775b71fe0ee54db86264d7892eaa2d",
+      "normalizedTextSha256": "3b89341e0d8b37c824686cdcc854a7af8dfef90a646a757eaa528d2ea2245d77",
+      "id": "common-27",
+      "title": "《红楼梦》第27回",
+      "excerpt": "手把花鋤出繡閨",
+      "locator": "葬花吟段落",
+      "reviewStatus": "source_checked",
+      "licenseNote": "公版古籍；维基文库数字整理按 CC BY-SA 4.0 / GFDL 署名。"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/紅樓夢/第037回",
+      "retrievedAt": "2026-09-09T08:56:10.551360+00:00",
+      "rawPath": "data/raw/chapter-037.html",
+      "textPath": "data/raw/chapter-037.txt",
+      "rawSha256": "ef0edc5ca5e0098ec30a919b0261972d445b7b9ecf69fd1ce406fe8a95f8ee0f",
+      "normalizedTextSha256": "9aaf2ea85559faa0ad146c434ae090aa78708978c43c56ecaf06396ebae710f5",
+      "id": "common-37",
+      "title": "《红楼梦》第37回",
+      "excerpt": "海棠",
+      "locator": "海棠诗社段落",
+      "reviewStatus": "source_checked",
+      "licenseNote": "公版古籍；维基文库数字整理按 CC BY-SA 4.0 / GFDL 署名。"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/紅樓夢/第074回",
+      "retrievedAt": "2026-09-09T08:56:10.717838+00:00",
+      "rawPath": "data/raw/chapter-074.html",
+      "textPath": "data/raw/chapter-074.txt",
+      "rawSha256": "9349e7bd2232f4403547a5a085284f8b154c20b7294e82f3104f4b46f4e289f6",
+      "normalizedTextSha256": "1c386feeee3c59eda301468fa42603cf490f71087b8b867abb82b5091b706e80",
+      "id": "common-74",
+      "title": "《红楼梦》第74回",
+      "excerpt": "豁一聲將箱子掀開",
+      "locator": "晴雯倒箱段落",
+      "reviewStatus": "source_checked",
+      "licenseNote": "公版古籍；维基文库数字整理按 CC BY-SA 4.0 / GFDL 署名。"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/紅樓夢/第097回",
+      "retrievedAt": "2026-09-16T16:05:39.090723+00:00",
+      "rawPath": "data/raw/editions/cheng-097.html",
+      "textPath": "data/raw/editions/cheng-097.txt",
+      "rawSha256": "4775a13df5845bb825a6f7e94c1973a4813b7d4aaf4054c21f9e51c5dede5e0f",
+      "normalizedTextSha256": "8a02451c7214dabd949371ece9600952c6a77f991b2ac903d3f95558bdcfaf6d",
+      "id": "cheng-097",
+      "title": "程高续本 · 第97回",
+      "excerpt": "回手又把那詩稿拿起來",
+      "locator": "黛玉焚稿段落",
+      "reviewStatus": "source_checked",
+      "licenseNote": "公版古籍；维基文库数字整理按 CC BY-SA 4.0 / GFDL 署名。"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/紅樓夢/第105回",
+      "retrievedAt": "2026-09-16T16:05:39.090679+00:00",
+      "rawPath": "data/raw/editions/cheng-105.html",
+      "textPath": "data/raw/editions/cheng-105.txt",
+      "rawSha256": "e78d2f86cd0377fec06fc95fddd8d9d1fb15801632fa694308556e7ca117cb83",
+      "normalizedTextSha256": "93fb35d56402d1ce4b30b250e22dd0fdb4a1a220382cce923b4b4fbecf4db9ec",
+      "id": "cheng-105",
+      "title": "程高续本 · 第105回",
+      "excerpt": "不能不盡行查抄",
+      "locator": "西平王与赵堂官查抄段落",
+      "reviewStatus": "source_checked",
+      "licenseNote": "公版古籍；维基文库数字整理按 CC BY-SA 4.0 / GFDL 署名。"
+    },
+    {
+      "url": "https://zh.wikisource.org/wiki/紅樓夢/第098回",
+      "retrievedAt": "2026-09-16T16:05:40.103702+00:00",
+      "rawPath": "data/raw/editions/cheng-098.html",
+      "textPath": "data/raw/editions/cheng-098.txt",
+      "rawSha256": "26b864137aa3c6f767e8cefb75bfbec01325abbbc0fbd141c864965e2c34b8e8",
+      "normalizedTextSha256": "9a2084c3b819b41b8928717d30c9a71ba3cd81a32af82eebe4ad5d7d3a562603",
+      "id": "cheng-098",
+      "title": "程高续本 · 第98回",
+      "excerpt": "當時黛玉氣絕",
+      "locator": "黛玉之死段落；用于第105回起点的人物退场限制",
+      "reviewStatus": "source_checked",
+      "licenseNote": "公版古籍；维基文库数字整理按 CC BY-SA 4.0 / GFDL 署名。"
+    },
+    {
+      "url": "https://www.sanmin.com.tw/product/index/004615400",
+      "retrievedAt": "2026-09-16T16:05:39.072026+00:00",
+      "rawPath": "data/raw/editions/guiyou-catalog.html",
+      "textPath": "data/raw/editions/guiyou-catalog.txt",
+      "rawSha256": "ad56603566ef892fede4273d69c3b0ee5133255cc6892e1a6aa75978dcddf52a",
+      "normalizedTextSha256": "ff8bedf3e15a5f35a879eb99e7c8f7099e2dd58c0128aacb19c772a67b2f7184",
+      "id": "guiyou-catalog",
+      "title": "癸酉本后28回 · 2014九州版书目",
+      "excerpt": "林黛玉悶作十獨吟",
+      "locator": "三民书店：ISBN 9787510827310，第82、90、91回目录",
+      "reviewStatus": "source_checked",
+      "licenseNote": "公开书目，仅引用短回目以说明版本；未复制或分发当代整理全文。"
+    },
+    {
+      "url": "https://www.sanmin.com.tw/product/index/004615400",
+      "retrievedAt": "2026-09-16T16:05:39.072026+00:00",
+      "rawPath": "data/raw/editions/guiyou-catalog.html",
+      "textPath": "data/raw/editions/guiyou-catalog.txt",
+      "rawSha256": "ad56603566ef892fede4273d69c3b0ee5133255cc6892e1a6aa75978dcddf52a",
+      "normalizedTextSha256": "ff8bedf3e15a5f35a879eb99e7c8f7099e2dd58c0128aacb19c772a67b2f7184",
+      "id": "hope-90-source",
+      "title": "癸酉本后28回 · 2014九州版书目",
+      "excerpt": "林黛玉嬉春待好姻",
+      "locator": "三民书店公开目录，ISBN 9787510827310",
+      "reviewStatus": "source_checked",
+      "licenseNote": "公开书目，仅引用短回目以说明版本；未复制或分发当代整理全文。"
+    },
+    {
+      "url": "https://www.sanmin.com.tw/product/index/004615400",
+      "retrievedAt": "2026-09-16T16:05:39.072026+00:00",
+      "rawPath": "data/raw/editions/guiyou-catalog.html",
+      "textPath": "data/raw/editions/guiyou-catalog.txt",
+      "rawSha256": "ad56603566ef892fede4273d69c3b0ee5133255cc6892e1a6aa75978dcddf52a",
+      "normalizedTextSha256": "ff8bedf3e15a5f35a879eb99e7c8f7099e2dd58c0128aacb19c772a67b2f7184",
+      "id": "siege-91-source",
+      "title": "癸酉本后28回 · 2014九州版书目",
+      "excerpt": "御林軍戒嚴大觀園",
+      "locator": "三民书店公开目录，ISBN 9787510827310",
+      "reviewStatus": "source_checked",
+      "licenseNote": "公开书目，仅引用短回目以说明版本；未复制或分发当代整理全文。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "flowers-27",
+      "editions": [
+        "original80",
+        "cheng120",
+        "guiyou108"
+      ],
+      "chapter": 27,
+      "title": "落花成冢",
+      "summary": "黛玉借葬花吟寄托伤春之情，宝玉听见吟咏。",
+      "sourceRefs": [
+        "common-27"
+      ],
+      "evidenceKind": "chapter_excerpt",
+      "art": "petals",
+      "place": "xiaoxiangguan",
+      "focus": "daiyu",
+      "atmosphere": "petals",
+      "staging": "三维人物位置、同场关系、天气与数值为本幕舞台设定；不是原文测绘或完整事件重演。",
+      "frames": [
+        {
+          "title": "花落",
+          "text": "春光仍在，花却已经落了。",
+          "position": "50% 50%",
+          "scale": 1
+        },
+        {
+          "title": "惜春",
+          "text": "她俯身收起落花，心事藏在花影里。",
+          "position": "60% 40%",
+          "scale": 1.14
+        },
+        {
+          "title": "留白",
+          "text": "如果此刻有人听懂她，故事会怎样继续？",
+          "position": "50% 50%",
+          "scale": 1.04
+        }
+      ],
+      "seed": {
+        "stability": 80,
+        "finance": 70,
+        "agents": [
+          {
+            "id": "daiyu",
+            "memory": "【本幕改编起点】我正在惜花伤春，希望自己的心事被真诚理解。",
+            "goal": "静静整理心绪，再决定是否向宝玉倾诉",
+            "calm": 58
+          }
+        ]
+      }
+    },
+    {
+      "id": "poetry-37",
+      "editions": [
+        "original80",
+        "cheng120",
+        "guiyou108"
+      ],
+      "chapter": 37,
+      "title": "海棠初社",
+      "summary": "探春发起海棠诗社，众人以诗相聚。",
+      "sourceRefs": [
+        "common-37"
+      ],
+      "evidenceKind": "chapter_excerpt",
+      "art": "poetry",
+      "place": "qiushuangzhai",
+      "focus": "baoyu",
+      "atmosphere": "light",
+      "staging": "三维人物位置、同场关系、天气与数值为本幕舞台设定；不是原文测绘或完整事件重演。",
+      "frames": [
+        {
+          "title": "入社",
+          "text": "一纸相邀，园中的故人围案而坐。",
+          "position": "50% 50%",
+          "scale": 1
+        },
+        {
+          "title": "落笔",
+          "text": "白海棠照着素笺，诗意在目光间流转。",
+          "position": "60% 40%",
+          "scale": 1.14
+        },
+        {
+          "title": "相知",
+          "text": "诗句之外，还有未说出口的心事。",
+          "position": "50% 50%",
+          "scale": 1.04
+        }
+      ],
+      "seed": {
+        "stability": 80,
+        "finance": 70,
+        "agents": [
+          {
+            "id": "baoyu",
+            "memory": "【本幕改编起点】我来到诗社，想与姊妹们谈诗。",
+            "goal": "与眼前的人商议诗意",
+            "calm": 72
+          }
+        ]
+      },
+      "eventId": "poetry-club"
+    },
+    {
+      "id": "search-74",
+      "editions": [
+        "original80",
+        "cheng120",
+        "guiyou108"
+      ],
+      "chapter": 74,
+      "title": "抄检之夜",
+      "summary": "搜检来到怡红院，晴雯倒出箱中物件。图中园门与凤姐是对紧张气氛的借景。",
+      "sourceRefs": [
+        "common-74"
+      ],
+      "evidenceKind": "chapter_excerpt",
+      "art": "storm",
+      "place": "yihongyuan",
+      "focus": "wangxifeng",
+      "atmosphere": "rain",
+      "staging": "三维人物位置、同场关系、天气与数值为本幕舞台设定；不是原文测绘或完整事件重演。",
+      "frames": [
+        {
+          "title": "夜来",
+          "text": "灯影摇动，平日熟悉的院门忽然陌生。",
+          "position": "50% 50%",
+          "scale": 1
+        },
+        {
+          "title": "裂隙",
+          "text": "一场搜检，让积存的不平浮出水面。",
+          "position": "44% 36%",
+          "scale": 1.14
+        },
+        {
+          "title": "抉择",
+          "text": "此刻，先听谁说话，又该护住什么？",
+          "position": "50% 50%",
+          "scale": 1.04
+        }
+      ],
+      "seed": {
+        "stability": 54,
+        "finance": 55,
+        "agents": [
+          {
+            "id": "wangxifeng",
+            "memory": "【本幕改编起点】搜检引起不满，我需要处理眼前的家务纷争。",
+            "goal": "先听院中人的解释，谨慎安排家务",
+            "calm": 42
+          }
+        ]
+      },
+      "eventId": "search-chest"
+    },
+    {
+      "id": "manuscript-97",
+      "editions": [
+        "cheng120"
+      ],
+      "chapter": 97,
+      "title": "焚稿断痴情",
+      "summary": "程高续本第97回，黛玉焚毁诗稿；宝钗成婚的叙事与之交错。本幕从焚稿前的可改变时刻入局。",
+      "sourceRefs": [
+        "cheng-097"
+      ],
+      "evidenceKind": "chapter_excerpt",
+      "art": "manuscript",
+      "place": "xiaoxiangguan",
+      "focus": "daiyu",
+      "atmosphere": "embers",
+      "staging": "三维人物位置、同场关系、天气与数值为本幕舞台设定；不是原文测绘或完整事件重演。",
+      "frames": [
+        {
+          "title": "灯下",
+          "text": "诗笺还在手中，窗外竹影已沉。",
+          "position": "50% 50%",
+          "scale": 1
+        },
+        {
+          "title": "将焚",
+          "text": "那些写给知己的字，正走向一盆火。",
+          "position": "60% 40%",
+          "scale": 1.14
+        },
+        {
+          "title": "一念",
+          "text": "把时间停在纸落下之前。你愿意对她说什么？",
+          "position": "50% 50%",
+          "scale": 1.04
+        }
+      ],
+      "seed": {
+        "stability": 45,
+        "finance": 45,
+        "agents": [
+          {
+            "id": "daiyu",
+            "memory": "【程高本第97回改编起点】我心灰意冷，正在犹豫是否毁去自己的诗稿。",
+            "goal": "守住自己的心事，决定如何处置诗稿",
+            "calm": 24
+          }
+        ]
+      }
+    },
+    {
+      "id": "raid-105",
+      "editions": [
+        "cheng120"
+      ],
+      "chapter": 105,
+      "title": "锦衣查抄",
+      "summary": "程高续本第105回写查抄贾府。本幕以园门借景，把家族危机作为推演条件。",
+      "sourceRefs": [
+        "cheng-105",
+        "cheng-098"
+      ],
+      "evidenceKind": "chapter_excerpt",
+      "art": "storm",
+      "place": "daguanyuan_gate",
+      "focus": "wangxifeng",
+      "atmosphere": "rain",
+      "staging": "三维人物位置、同场关系、天气与数值为本幕舞台设定；不是原文测绘或完整事件重演。",
+      "frames": [
+        {
+          "title": "门前",
+          "text": "脚步声停在门外，旧日繁华沉入雨色。",
+          "position": "50% 50%",
+          "scale": 1
+        },
+        {
+          "title": "危局",
+          "text": "家产与生计都成了眼前的问题。",
+          "position": "44% 36%",
+          "scale": 1.14
+        },
+        {
+          "title": "余地",
+          "text": "若还能改变一件事，是守住财物，还是先顾身边的人？",
+          "position": "50% 50%",
+          "scale": 1.04
+        }
+      ],
+      "seed": {
+        "stability": 20,
+        "finance": 18,
+        "agents": [
+          {
+            "id": "wangxifeng",
+            "memory": "【程高本第105回改编起点】查抄的危机已临到家中，我要先顾眼前人的安顿。",
+            "goal": "在危机中安排眼前的事务",
+            "calm": 26
+          }
+        ],
+        "inactiveAgents": [
+          "daiyu"
+        ]
+      }
+    },
+    {
+      "id": "poems-82",
+      "editions": [
+        "guiyou108"
+      ],
+      "chapter": 82,
+      "title": "竹窗独吟",
+      "summary": "2014年版公开目录第82回列“林黛玉闷作十独吟”。本幕仅据回目设定写诗情境，未核对该回全文。",
+      "sourceRefs": [
+        "guiyou-catalog"
+      ],
+      "evidenceKind": "chapter_heading",
+      "art": "bamboo",
+      "place": "xiaoxiangguan",
+      "focus": "daiyu",
+      "atmosphere": "light",
+      "staging": "三维人物位置、同场关系、天气与数值为本幕舞台设定；不是原文测绘或完整事件重演。",
+      "frames": [
+        {
+          "title": "竹窗",
+          "text": "风经过竹梢，案上的纸仍等着落笔。",
+          "position": "50% 50%",
+          "scale": 1
+        },
+        {
+          "title": "独吟",
+          "text": "心事可以写成诗，也可以暂且不说。",
+          "position": "60% 40%",
+          "scale": 1.14
+        },
+        {
+          "title": "相问",
+          "text": "若有人走到窗前，这份独处会如何改变？",
+          "position": "50% 50%",
+          "scale": 1.04
+        }
+      ],
+      "seed": {
+        "stability": 63,
+        "finance": 58,
+        "agents": [
+          {
+            "id": "daiyu",
+            "memory": "【癸酉本第82回回目改编】我正独自写诗，整理自己的烦闷。",
+            "goal": "借写诗理清心绪",
+            "calm": 44
+          }
+        ]
+      }
+    },
+    {
+      "id": "hope-90",
+      "editions": [
+        "guiyou108"
+      ],
+      "chapter": 90,
+      "title": "春日待好姻",
+      "summary": "2014年版公开目录第90回列“林黛玉嬉春待好姻”，与程高本后续的叙事顺序不同。这里只据回目设定期待。",
+      "sourceRefs": [
+        "hope-90-source"
+      ],
+      "evidenceKind": "chapter_heading",
+      "art": "bamboo",
+      "place": "xiaoxiangguan",
+      "focus": "daiyu",
+      "atmosphere": "petals",
+      "staging": "三维人物位置、同场关系、天气与数值为本幕舞台设定；不是原文测绘或完整事件重演。",
+      "frames": [
+        {
+          "title": "春信",
+          "text": "窗外有了新绿，一天也似乎长了些。",
+          "position": "50% 50%",
+          "scale": 1
+        },
+        {
+          "title": "待音",
+          "text": "怀着期待等候，连风声也像远来的消息。",
+          "position": "60% 40%",
+          "scale": 1.14
+        },
+        {
+          "title": "未定",
+          "text": "未来尚未抵达。先把此刻交给相见的人。",
+          "position": "50% 50%",
+          "scale": 1.04
+        }
+      ],
+      "seed": {
+        "stability": 55,
+        "finance": 48,
+        "agents": [
+          {
+            "id": "daiyu",
+            "memory": "【癸酉本第90回回目改编】我正怀着期待等候有关姻缘的好消息，尚不知道此后的结果。",
+            "goal": "与可信任的人谈谈期待",
+            "calm": 76
+          }
+        ]
+      }
+    },
+    {
+      "id": "siege-91",
+      "editions": [
+        "guiyou108"
+      ],
+      "chapter": 91,
+      "title": "园门戒严",
+      "summary": "2014年版公开目录第91回写查抄荣宁府、戒严大观园。图中凤姐仅作为家务危机的舞台人物，不据此断言她在本回现场。",
+      "sourceRefs": [
+        "siege-91-source"
+      ],
+      "evidenceKind": "chapter_heading",
+      "art": "storm",
+      "place": "daguanyuan_gate",
+      "focus": "wangxifeng",
+      "atmosphere": "rain",
+      "staging": "三维人物位置、同场关系、天气与数值为本幕舞台设定；不是原文测绘或完整事件重演。",
+      "frames": [
+        {
+          "title": "风起",
+          "text": "重门之外，雨声压过了园中的笑语。",
+          "position": "50% 50%",
+          "scale": 1
+        },
+        {
+          "title": "封园",
+          "text": "家府被查，大观园也处于戒严之中。",
+          "position": "44% 36%",
+          "scale": 1.14
+        },
+        {
+          "title": "岔路",
+          "text": "在这一版的危局里，重新选择先要守护的人。",
+          "position": "50% 50%",
+          "scale": 1.04
+        }
+      ],
+      "seed": {
+        "stability": 16,
+        "finance": 22,
+        "agents": [
+          {
+            "id": "wangxifeng",
+            "memory": "【癸酉本第91回回目改编】查抄与封园构成眼前的危机；我的在场身份为舞台设定。",
+            "goal": "在受限的园中照顾身边的人",
+            "calm": 22
+          }
+        ]
+      }
+    }
+  ]
+}

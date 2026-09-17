@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-16T17:55:27.422Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "checks": [
+    "fresh visitor sees an honest empty album",
+    "personal conversation capture contains the actual user line",
+    "expanded conversation is complete in one scrolling dialog",
+    "reauthentication resumes the original job ID without a new-generation POST (fixture)",
+    "late-chapter arrival and pending prompts respect spoiler setting",
+    "spoiler setting hides later collected and unfinished artwork",
+    "edge flows have no browser runtime errors"
+  ],
+  "screenshots": [
+    "reports/acceptance/dream-online/mobile-empty-album.png",
+    "reports/acceptance/dream-online/mobile-conversation-workshop.png",
+    "reports/acceptance/dream-online/mobile-conversation-expanded.png"
+  ],
+  "errors": [],
+  "liveGenerationCalls": 0,
+  "passed": true
+}

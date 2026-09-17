@@ -1,3 +1,4 @@
+import {editionFor} from '../data/editions';
 import type {CanonData} from '../data/types';
 import {agentIds, type AgentId, type Branch, type Journal, type SimulationEvent, type WorldState} from './types';
 import {currentBranch, currentWorld} from './world';
@@ -17,7 +18,7 @@ export function knowledgeTrail(journal: Journal) {
 export function compareBranches(journal: Journal) {
   if (!journal.if) return null;
   const alternate = journal.if.snapshots[journal.if.cursor].worldState;
-  const main = journal.main.snapshots.slice(0, journal.main.cursor + 1).reverse().find(s => s.worldState.tick === alternate.tick)?.worldState;
+  const main = journal.main.snapshots.slice(0, journal.main.cursor + 1).reverse().find(s => s.worldState.tick === alternate.tick && (s.worldState.editionId ?? 'original80') === (alternate.editionId ?? 'original80') && (s.worldState.storyChapter ?? 23) === (alternate.storyChapter ?? 23) && s.worldState.storyNodeId === alternate.storyNodeId)?.worldState;
   return {alternate, main: main ?? null, changes: main ? agentIds.map(id => ({id, before: main.agents[id], after: alternate.agents[id],
     learned: alternate.agents[id].memories.filter(m => m.type === 'knowledge' && !main.agents[id].memories.some(old => old.knowledgeId === m.knowledgeId)),
     calmDelta: alternate.agents[id].mood.calm - main.agents[id].mood.calm})) : []};
@@ -37,7 +38,7 @@ export function interviewAgent(world: WorldState, id: AgentId, topic: InterviewT
 export function evidenceReport(journal: Journal, data: CanonData): string {
   const branch = currentBranch(journal), world = currentWorld(journal), events = branchEvents(branch);
   const comparison = compareBranches(journal);
-  const lines = ['# 大观园推演纪要', '', '本报告依据已完成的虚构推演快照，不是原著事实或现实预测。', '', `世界：${branch.prompt || '主世界'}；当前 Tick ${world.tick}；决策来源：${branch.snapshots[branch.cursor].provider}。`, '', '## 人物当前状态', ''];
+  const lines = ['# 大观园推演纪要', '', `文学依据：${editionFor(journal.editionId ?? 'original80', data.editionCatalog).title}；起点第${world.storyChapter ?? 23}回。`, '', '本报告依据已完成的虚构推演快照，不是原著事实或现实预测。', '', `世界：${branch.prompt || '主世界'}；当前 Tick ${world.tick}；决策来源：${branch.snapshots[branch.cursor].provider}。`, '', '## 人物当前状态', ''];
   for (const id of agentIds) lines.push(`- ${world.agents[id].name}：${spotName(data, world.agents[id].location, world.agents[id].spot)}；平静 ${world.agents[id].mood.calm}，精力 ${world.agents[id].mood.energy}。`);
   lines.push('', '## 实际发生的消息传播', '');
   const transmissions = knowledgeTrail(journal);

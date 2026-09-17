@@ -1,4 +1,5 @@
 import type {CanonData, Manifest, Vec3} from '../data/types';
+import {editionFor, type EditionId} from '../data/editions';
 import {agentIds, directiveSchema, journalSchema, type Agent, type AgentId, type Branch, type Intervention, type Journal, type Memory, type PlayerDirective, type WorldState} from './types';
 import {courtPath, courtRoutes, slotOffset} from './space';
 
@@ -43,7 +44,7 @@ export function addMemory(agent: Agent, memory: Omit<Memory, 'id'>) {
   }
   for (const key of Object.keys(agent.knowledgeLedger ?? {})) if (!agent.memories.some(m => m.type === 'knowledge' && m.knowledgeId === key)) delete agent.knowledgeLedger![key];
 }
-export function createWorld(data: CanonData): WorldState {
+export function createWorld(data: CanonData, editionId: EditionId = 'original80'): WorldState {
   const agents = Object.fromEntries(agentIds.map(id => {
     const person = data.characters.find(c => c.id === id);
     if (!person) throw new Error(`已核对人物资料中缺少 ${id}`);
@@ -56,14 +57,14 @@ export function createWorld(data: CanonData): WorldState {
     addMemory(agent, {tick: 0, type: 'activity', content: `午后在${data.places.find(p => p.id === homes[id])!.name}歇息。`, participants: [id], origin: 'initial'});
     return [id, agent];
   })) as WorldState['agents'];
-  return {tick: 0, minutes: 14 * 60, branchId: 'main', worldId: 'main', directives: [], world: {jia_family_stability: 80, jia_family_finance: 70}, agents, events: [], contentType: 'generated'};
+  return {editionId, storyChapter: 23, tick: 0, minutes: 14 * 60, branchId: 'main', worldId: 'main', directives: [], world: {jia_family_stability: 80, jia_family_finance: 70}, agents, events: [], contentType: 'generated'};
 }
 export function layoutRevision(data: CanonData) {
   return JSON.stringify({nodes: data.manifest.pathNodes, edges: data.manifest.pathEdges});
 }
-export function createJournal(data: CanonData): Journal {
-  const world = createWorld(data);
-  return {version: 1, layoutRevision: layoutRevision(data), active: 'main', interventionSerial: 0, directiveSerial: 0, archives: [], if: null, main: {id: 'main', uid: 'main', forkTick: 0, intervention: null, prompt: '', cursor: 0, snapshots: [{worldState: world, actions: [], summary: '午后，四人在各自的起始地点。', provider: '初始设定'}]}};
+export function createJournal(data: CanonData, editionId: EditionId = 'original80'): Journal {
+  const world = createWorld(data, editionId);
+  return {editionId, version: 1, layoutRevision: layoutRevision(data), active: 'main', interventionSerial: 0, directiveSerial: 0, archives: [], if: null, main: {id: 'main', uid: 'main', forkTick: 0, intervention: null, prompt: '', cursor: 0, snapshots: [{worldState: world, actions: [], summary: '午后，四人在各自的起始地点。', provider: '初始设定'}]}};
 }
 export function currentBranch(journal: Journal): Branch { return journal[journal.active]!; }
 export function currentWorld(journal: Journal): WorldState {
@@ -130,6 +131,9 @@ export function readJournal(raw: string, data: CanonData): Journal {
   for (const branch of [parsed.main, parsed.if, ...parsed.archives.map(a => a.branch)].filter((b): b is Branch => !!b)) {
     if (!branch.snapshots[branch.cursor]) throw new Error('存档快照索引无效。');
     for (const snapshot of branch.snapshots) {
+      const edition = parsed.editionId ?? 'original80', world = snapshot.worldState;
+      if ((world.editionId ?? 'original80') !== edition || (world.storyChapter ?? 23) > editionFor(edition, data.editionCatalog).chapters) throw new Error('存档文学版本或回目不一致。');
+      if (world.storyNodeId && !data.editionCatalog?.nodes.some(n => n.id === world.storyNodeId && n.editions.includes(edition) && n.chapter === world.storyChapter)) throw new Error('存档剧情起点不属于当前版本。');
       if (snapshot.worldState.branchId !== branch.id) throw new Error('存档分支不一致。');
       const gathering = snapshot.worldState.gathering;
       if (gathering && (!courtRoutes[gathering.place] || gathering.createdTick > snapshot.worldState.tick)) throw new Error('存档小聚地点或时间无效。');

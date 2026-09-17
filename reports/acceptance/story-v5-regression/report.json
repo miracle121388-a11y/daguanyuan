@@ -1,0 +1,85 @@
+{
+  "version": "literary-comics-20260917-v4",
+  "at": "2026-09-16T17:31:48.075Z",
+  "url": "http://127.0.0.1:4291/",
+  "checks": [
+    "eighty chapters is the default for a fresh visitor",
+    "eighty-chapter catalog excludes continuations",
+    "pause freezes the illustration",
+    "manual second panel is selected",
+    "pause after automatic arrival preserves the final panel",
+    "explicit play from the ended panel restarts the comic",
+    "Escape closes only the comic and returns to its library",
+    "Cheng continuation exposes chapter 97",
+    "entering chapter 97 saves the selected literary branch",
+    "comic returns to the simulation",
+    "Guiyou does not borrow the Cheng chapter",
+    "Guiyou has its own starting memory and node",
+    "switching back preserves the exact original Cheng journal",
+    "reload preserves edition and story branch",
+    "spoiler setting hides all later nodes",
+    "390px comic has no horizontal overflow",
+    "phone uses the full-resolution comic while previews stay small",
+    "320px playback controls stay on screen and touch sized",
+    "reduced motion removes spatial animation",
+    "static mode still supports panel navigation",
+    "320px library has no horizontal overflow",
+    "mobile entry remains reachable after closing dialogs",
+    "no browser runtime errors",
+    "no failed feature resources"
+  ],
+  "screenshots": [
+    "reports/acceptance/story-v5-regression/desktop-library.png",
+    "reports/acceptance/story-v5-regression/desktop-comic.png",
+    "reports/acceptance/story-v5-regression/cheng-comic.png",
+    "reports/acceptance/story-v5-regression/mobile-library.png",
+    "reports/acceptance/story-v5-regression/mobile-comic.png",
+    "reports/acceptance/story-v5-regression/compact-comic.png",
+    "reports/acceptance/story-v5-regression/compact-library.png"
+  ],
+  "errors": [],
+  "comicResponses": [
+    {
+      "url": "http://127.0.0.1:4291/comics/petals-mobile.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/petals.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/manuscript-mobile.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/manuscript.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/petals-mobile.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/bamboo-mobile.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/bamboo.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/petals-mobile.webp",
+      "status": 304
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/bamboo-mobile.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/bamboo.webp",
+      "status": 200
+    }
+  ],
+  "failed": [],
+  "passed": true
+}

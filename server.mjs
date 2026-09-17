@@ -3,9 +3,11 @@ import {createReadStream,statSync,existsSync,readFileSync} from 'node:fs';
 import {resolve,extname,sep} from 'node:path';
 import {gzipSync,brotliDecompressSync} from 'node:zlib';
 import {createSimulationApi} from './server/simulation-api.mjs';
+import {createDreamApi} from './server/dream-api.mjs';
 if(existsSync('.env')&&process.loadEnvFile)process.loadEnvFile('.env');
 const simulationApi=createSimulationApi();
 const root=resolve(process.env.STATIC_ROOT||'dist');
+const dreamApi=createDreamApi(process.env,fetch,{publicRoot:root});
 const aliasFile=resolve(root,'asset-aliases.json');
 const assetAliases=existsSync(aliasFile)?JSON.parse(readFileSync(aliasFile,'utf8')):{};
 const compressible=new Set(['.html','.js','.css','.json','.wasm','.glb']);
@@ -20,11 +22,12 @@ function gzipPayload(file,stat,decoded){
 }
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.glb':'model/gltf-binary','.wasm':'application/wasm','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.hdr':'application/octet-stream','.svg':'image/svg+xml'};
 const revision=()=>{try{return JSON.parse(readFileSync(resolve(root,'scene-manifest.json'),'utf8')).assetRevision??'2'}catch{return '2'}};
-createServer(async(req,res)=>{
+const httpServer=createServer(async(req,res)=>{
+ if(await dreamApi(req,res))return;
  if(await simulationApi(req,res))return;
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{'Allow':'GET, HEAD'});return res.end()}
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400);return res.end()}
- if(pathname==='/healthz'){res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});return res.end(JSON.stringify({status:'ok',application:'daguanyuan-rumeng',revision:revision()}))}
+ if(pathname==='/healthz'){res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});return res.end(JSON.stringify({status:'ok',application:'daguanyuan-rumeng',revision:revision(),featureRevision:'qwen-dream-album-20260917-v5'}))}
  let file=resolve(root,'.'+pathname);if(file!==root&&!file.startsWith(root+sep)){res.writeHead(403);return res.end()}
  if(pathname==='/'||pathname.endsWith('/'))file=resolve(file,'index.html');
  const alias=Object.hasOwn(assetAliases,pathname.slice(1))?assetAliases[pathname.slice(1)]:null;
@@ -46,3 +49,8 @@ createServer(async(req,res)=>{
  const body=dynamicGzip?gzipPayload(stored,stat,decoded):decoded;
  res.writeHead(200,{...headers,'Content-Length':body?body.length:stat.size});if(req.method==='HEAD')return res.end();if(body)return res.end(body);createReadStream(file).pipe(res);
 }).listen(Number(process.env.PORT)||3000,'0.0.0.0',()=>console.log('Daguanyuan static server ready'));
+
+process.once("SIGTERM", async () => {
+  const deadline = setTimeout(() => process.exit(0), 10000); deadline.unref();
+  await dreamApi.close(); httpServer.close(() => process.exit(0));
+});

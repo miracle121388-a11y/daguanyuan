@@ -1,0 +1,71 @@
+{
+  "at": "2026-09-16T16:19:51.535Z",
+  "url": "http://127.0.0.1:4291/",
+  "liveModel": true,
+  "results": [
+    {
+      "edition": "original80",
+      "nodeId": "flowers-27",
+      "literary": {
+        "id": "original80",
+        "title": "前八十回",
+        "chapter": 27,
+        "maxChapter": 80
+      },
+      "status": 200,
+      "durationMs": 1392,
+      "valid": true,
+      "response": {
+        "result": {
+          "reply": "我此刻只在潇湘馆里，眼前是窗前竹影与案上残花。见花落，便觉春去匆匆，心里有些说不出的怅然。我不知旁人心里如何，也不愿胡乱猜。只想着，若有人问起，我也不过说一句惜春伤花罢了。你要我说眼前之事，我便只说这些。",
+          "evidenceIds": [
+            "own-literary-memory"
+          ]
+        }
+      }
+    },
+    {
+      "edition": "cheng120",
+      "nodeId": "manuscript-97",
+      "literary": {
+        "id": "cheng120",
+        "title": "程高本 · 一百二十回",
+        "chapter": 97,
+        "maxChapter": 120
+      },
+      "status": 200,
+      "durationMs": 1214,
+      "valid": true,
+      "response": {
+        "result": {
+          "reply": "我这窗前的诗稿，一页页都是旧日心迹。如今翻着，竟不知该留还是该焚——留着，怕日后落入旁人眼中，徒增笑谈；焚了，又像把自己这些年的一口气也一并断了。外头竹子响得厉害，我倒也懒得唤人；只坐着，把这几页纸看了又看，心里空落落的。",
+          "evidenceIds": [
+            "own-literary-memory"
+          ]
+        }
+      }
+    },
+    {
+      "edition": "guiyou108",
+      "nodeId": "hope-90",
+      "literary": {
+        "id": "guiyou108",
+        "title": "癸酉本 · 一百零八回",
+        "chapter": 90,
+        "maxChapter": 108
+      },
+      "status": 200,
+      "durationMs": 1242,
+      "valid": true,
+      "response": {
+        "result": {
+          "reply": "我此刻在潇湘馆里，窗下药香未散，心里却比平日安稳些。说不上具体牵挂谁，只是隐约觉得，有些事情该有个音信了——可究竟是什么呢，我自己也说不分明。只觉着这几日风暖了些，竹影落在案上，倒像是喜事将近的模样。你今日来，可是要同我说什么体己话么？",
+          "evidenceIds": [
+            "own-literary-memory"
+          ]
+        }
+      }
+    }
+  ],
+  "passed": true
+}

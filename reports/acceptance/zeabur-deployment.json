@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-09-15T19:07:32.622806+00:00",
+  "verifiedAt": "2026-09-16T17:54:06.759387+00:00",
   "url": "https://daguanyuan-rumeng.zeabur.app/",
   "server": {
     "id": "6a8eee0bb11fb81fb4aaca05",
@@ -11,13 +11,14 @@
   "projectId": "6aa142fb6c3d9581b71560ed",
   "serviceId": "6aa143296c3d9581b71560fa",
   "environmentId": "6aa142fbda9bc245fba1e845",
-  "deploymentId": "6aa99631d3687c7a2564cfe3",
+  "deploymentId": "6aaad55505af289f92f97153",
   "cliDeploymentStatus": "RUNNING",
   "cliDomainStatus": "PROVISIONED",
   "health": {
     "status": "ok",
     "application": "daguanyuan-rumeng",
-    "revision": "spatial-garden-20260913-r15"
+    "revision": "spatial-garden-20260913-r15",
+    "featureRevision": "qwen-dream-album-20260917-v5"
   },
   "files": [
     {
@@ -105,31 +106,163 @@
       "matchesLocal": true
     },
     {
-      "path": "assets/GardenScene-B_0rzVtJ.js",
-      "sha256": "77468737b82b75bc8620a02a209e7517142da3dca5757e6a5455d60f948d2c02",
+      "path": "data/editionCatalog.json",
+      "sha256": "4430ac986150918e45c6e70d887523958e52bd81ea6ab46ad5c4b5424b6726f8",
+      "bytes": 15376,
+      "matchesLocal": true
+    },
+    {
+      "path": "data/comicArt.json",
+      "sha256": "68781e57b8ad987a59538acfd70d37641eed2546488411ecba03abcf04785209",
+      "bytes": 9713,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/bamboo-mobile.webp",
+      "sha256": "9d01f18887d6c16306b54b712621dadc011b8ab25e8349eff68fd2c2379743b8",
+      "bytes": 102092,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/bamboo-mobile.webp.json",
+      "sha256": "ef12b88e45530472e1068a8ad1cfe60328f24a9754afb7287fa4dfbfb54e308c",
+      "bytes": 1269,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/bamboo.webp",
+      "sha256": "dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f",
+      "bytes": 266744,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/bamboo.webp.json",
+      "sha256": "6ee0da8c617f29c153dad5fac0c051029e65b6c73eb098a0414d1d998dab327c",
+      "bytes": 1269,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/manuscript-mobile.webp",
+      "sha256": "422f7111d0684908a4b0b69fe8d08052271a33b9c7f2b3e3bf29e0bd378cdbe8",
+      "bytes": 95510,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/manuscript-mobile.webp.json",
+      "sha256": "5b464ea51ec54c31c92c2829adaac2f793380cc6ec3d7f510d4575f295b4c918",
+      "bytes": 1455,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/manuscript.webp",
+      "sha256": "38f51cbfe421a19d128b8523a2314286553c8d232fc1379970a11f32f5c818e0",
+      "bytes": 253204,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/manuscript.webp.json",
+      "sha256": "941e1e4a8a3bac229f66697648a7d4e1dab7dbd76f663109039f74754ef91c68",
+      "bytes": 1455,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/petals-mobile.webp",
+      "sha256": "729f6044c1036a3a9c8ae6762103b721a9302325e1a2ff182889a49f90202e2e",
+      "bytes": 167686,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/petals-mobile.webp.json",
+      "sha256": "c2d856ac59974797a79b971ed8e1fbfd20dbaed5e3c00171e85b4e33618e49fc",
+      "bytes": 1443,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/petals.webp",
+      "sha256": "5a70180ce2a16b2e1c58cdb805901dafc71b600af0592a5f6eae123ada538f31",
+      "bytes": 509078,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/petals.webp.json",
+      "sha256": "2a94c577a37bbceea28c5290b50f3b98322c9fa5081351c76404cc594c4efbdf",
+      "bytes": 1443,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/poetry-mobile.webp",
+      "sha256": "7f4027549681dd62ed403fef4dfe1c84f615b7c2c602830f310ac757f2bfda3c",
+      "bytes": 118286,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/poetry-mobile.webp.json",
+      "sha256": "68dde3eb901dbf19af13c6e5368d4b22ae39a18243d8d74d460a6e16bb00b8a5",
+      "bytes": 1411,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/poetry.webp",
+      "sha256": "e4ec8394772a16fab8be92e03af7cda83b4765c32fd4f7a9b8a8fe37325ba3ec",
+      "bytes": 325972,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/poetry.webp.json",
+      "sha256": "935c8d2c865e4d5c77cafeeed6dfdace0d7b724fe073797effbbf73890d6a705",
+      "bytes": 1411,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/storm-mobile.webp",
+      "sha256": "8a5cbba3d57e0c99574adbd0f8b25c47605da176c3ba2fbf58c8672f9b03341c",
+      "bytes": 117028,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/storm-mobile.webp.json",
+      "sha256": "9e241af66557e5b058019f25f2ce05a307462cd75b0a488b4d79cc8101aebf49",
+      "bytes": 1433,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/storm.webp",
+      "sha256": "53abdf7cf47c643928994401d8a69bef08c0a11d69f23672e2e2485488b16b63",
+      "bytes": 334988,
+      "matchesLocal": true
+    },
+    {
+      "path": "comics/storm.webp.json",
+      "sha256": "560bd4f8f65c5a2ecce6daf342af7c6795b5c805ffb28c0b6e95111844ef97e2",
+      "bytes": 1433,
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/GardenScene-BnwNGFhc.js",
+      "sha256": "2e90bae9b710176d60ca87e71a5056fcf2c9b5b09a3e43525ef8af4008f23a72",
       "bytes": 741315,
       "matchesLocal": true
     },
     {
-      "path": "assets/index-BJf2KuHF.js",
-      "sha256": "ec6ddc9e9cfc638d31eab986faea719ead74bc721d7ff7aa563ed62006cf1554",
-      "bytes": 752362,
+      "path": "assets/index-TUdwtLZZ.css",
+      "sha256": "b3c614402670bd097dad168d87bdf2a5aa85e3ed75f7c78c594d8760f560dbf7",
+      "bytes": 94297,
       "matchesLocal": true
     },
     {
-      "path": "assets/index-CQyej6nZ.css",
-      "sha256": "1ef8335b5a0687917423a5f92a1baad24a8d812555363eb61de26da7a417f3d9",
-      "bytes": 73734,
+      "path": "assets/index-mwX_4FuA.js",
+      "sha256": "2984dd521a3402cfcb4f263dffebacda85dff60c3a0b5baf48486d64719fe94d",
+      "bytes": 793847,
       "matchesLocal": true
     },
     {
       "path": "index.html",
-      "sha256": "fb60b6e79f1a102a2630b467afcc310d040d075715dd46c0ae44485428d25b09",
+      "sha256": "e2abb0659058ebbd6998d30dbe3f7cb4614824d2be2578ae8b78feb0242287e6",
       "bytes": 1273,
       "matchesLocal": true
     }
   ],
-  "responseHeaders": "HTTP/1.1 200 OK\r\nAlt-Svc: h3=\":443\"; ma=3600\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Encoding: gzip\r\nContent-Length: 874\r\nContent-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 15 Sep 2026 19:07:31 GMT\r\nEtag: \"4f9-1a0a6735b48-gzip\"\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Zeabur-Ip-Country: JP\r\nX-Zeabur-Request-Id: d0150cad-eac8-43fd-8156-2e10c12bb733\r\n\r\n",
+  "responseHeaders": "HTTP/1.1 200 OK\r\nAlt-Svc: h3=\":443\"; ma=3600\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Encoding: gzip\r\nContent-Length: 874\r\nContent-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 16 Sep 2026 17:54:06 GMT\r\nEtag: \"4f9-1a0ab52b780-gzip\"\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Zeabur-Ip-Country: SG\r\nX-Zeabur-Request-Id: a64f5de9-d40f-4166-8f2d-eafdad33d3a8\r\n\r\n",
   "dns": {
     "publicAddress": "47.89.212.251",
     "source": "Google DNS over HTTPS queried during this verification",
@@ -141,9 +274,9 @@
   "productionSmoke": "production-smoke.json",
   "requestTimeoutSeconds": 60,
   "browserObservationTimeoutMs": 90000,
-  "desktopReadyMs": 6943,
-  "mobileReadyMs": 5376,
-  "networkObservationReport": "reports/acceptance/simulation-participation-network.json",
+  "desktopReadyMs": 8024,
+  "mobileReadyMs": 9942,
+  "networkObservationReport": null,
   "newServerPurchased": false,
   "credentialsIncluded": false
 }

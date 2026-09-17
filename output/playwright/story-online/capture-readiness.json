@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-16T16:36:41.166Z",
+  "reason": "Initial desktop library capture preceded the preview image load; recapture only the three library views after decoding.",
+  "captures": [
+    "desktop-library",
+    "mobile-library",
+    "compact-library"
+  ],
+  "passed": true
+}

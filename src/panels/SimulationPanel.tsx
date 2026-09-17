@@ -9,6 +9,7 @@ import {SimulationRunControls, SimulationSpeed} from './SimulationControls';
 import SimulationInteractions from './SimulationInteractions';
 import SimulationParticipation from './SimulationParticipation';
 import {SimulationFlow, SimulationWorldlines} from './SimulationWorldlines';
+import {StoryEntry} from './StoryExperience';
 
 export const EXAMPLE_IF = '如果宝玉提前知道贾府准备让他迎娶薛宝钗，会发生什么？';
 const topics = [{label: '提前知情', text: EXAMPLE_IF}, {label: '黛玉静养', text: '如果黛玉的精力降到30'}, {label: '贾府收支', text: '如果贾府财力降到30'}];
@@ -60,6 +61,7 @@ export default function SimulationPanel() {
     <div className="sim-heading"><div><h2 tabIndex={-1} ref={heading}>一念之间</h2><p>走入园中，亲历另一种可能</p></div><button className="sim-expand" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>{expanded ? '收起面板' : '展开面板'}</button><button className="icon-button" aria-label="退出世界推演" onClick={s.toggle}><X size={18}/></button></div>
     <div className="sim-world-bar"><div role="group" aria-label="选择推演世界"><button disabled={busy} aria-pressed={s.journal.active === 'main'} onClick={() => s.switchBranch('main')}>主世界</button><button disabled={busy || !s.journal.if} aria-pressed={s.journal.active === 'if'} onClick={() => s.switchBranch('if')}><GitBranch size={13}/>IF 世界</button></div><span data-testid="sim-tick">Tick {world.tick}</span></div>
     <div className="sim-scroll" ref={scroll}>
+      <StoryEntry/>
       <div className="sim-clock"><strong>{clockLabel(world.minutes)}</strong><span>一步约一小时</span></div>
       <SimulationRunControls/><div className="sim-status"><p role="status">{status}</p>{busy && <button onClick={s.cancel}>撤销本步</button>}</div><SimulationSpeed/>
       {s.error && !(view === 'participate' && s.participationView === 'chat') && <div className="sim-error" role="alert">{s.error}<button aria-label="关闭推演提示" onClick={() => useSimulation.setState({error: ''})}><X size={14}/></button></div>}
@@ -81,7 +83,7 @@ export default function SimulationPanel() {
         <section className="sim-events" aria-label="推演日志"><h3>这一刻，园中发生了什么</h3>{world.events.length ? <ol>{world.events.map(e => <li key={e.id} className={'sim-event ' + e.kind}><time>{e.time.split(' ')[1]}</time><div><span>{kinds[e.kind] ?? '行动'}</span><p>{e.text}</p>{e.reason && <details><summary>为何这样行动</summary><p>{e.reason}</p><small>事件 {e.id}</small></details>}</div></li>)}</ol> : <div className="sim-empty"><p>四人各在一方，故事尚未展开。</p><span>创建一个 IF 世界，或先运行主世界作为对照。</span></div>}{!busy && world.events.length > 0 && <details className="sim-summary"><summary>本步小结 · {snapshot.provider}</summary><p>{snapshot.summary}</p></details>}</section>
       </>}
       {view === 'people' && <section className="sim-people" aria-label="人物状态与记忆">
-        <div className="sim-person-tabs">{agentIds.map(id => <button key={id} aria-pressed={id === person} onClick={() => s.focus(id)}><span style={{background: agentColors[id]}}/>{world.agents[id].name}</button>)}</div>
+        <div className="sim-person-tabs">{agentIds.map(id => <button key={id} disabled={!world.agents[id].alive} aria-pressed={id === person} onClick={() => s.focus(id)}><span style={{background: agentColors[id]}}/>{world.agents[id].name}</button>)}</div>
         <div className="sim-person-heading"><div><h3>{actor.name}</h3><p>{actor.id === 'wangxifeng' && actor.location === 'daguanyuan_gate' ? '贾府 · 园门展示锚点' : spotName(data, actor.location, actor.spot)}</p></div><button onClick={() => s.focus(person)}><LocateFixed size={15}/>跟随人物</button></div>
         <p className="sim-note">{actor.personality.join(' · ')}<br/>{actor.goals.join('；')}</p><div className="sim-world-stats"><span>平静 <strong>{actor.mood.calm}</strong></span><span>精力 <strong>{actor.mood.energy}</strong></span></div>
         <SimulationInteractions key={person} id={person} world={world} data={data}/>

@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-16T17:58:50.131170+00:00",
+  "phase": "before",
+  "container": "service-6aa143296c3d9581b71560fa-7f59675659-h7j9h",
+  "appStartTicks": "70269683",
+  "volume": {
+    "path": "/data/dreams",
+    "uid": 1000,
+    "gid": 1000,
+    "device": 64771,
+    "files": 2
+  },
+  "apps": [
+    {
+      "pid": 1,
+      "uids": [
+        1000,
+        1000,
+        1000,
+        1000
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "id": "42fe847a-be74-4d42-ba7c-9265d7417723",
+      "status": "ready",
+      "imageSha256": "7bb91260bbcc499c3858673ad9b5eac35a8b162237baf944e001423d51a9090c",
+      "attempts": 1,
+      "providerTaskRecorded": true
+    }
+  ],
+  "imageFiles": [
+    {
+      "sha256": "7bb91260bbcc499c3858673ad9b5eac35a8b162237baf944e001423d51a9090c",
+      "bytes": 2211741
+    }
+  ]
+}

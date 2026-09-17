@@ -1,0 +1,190 @@
+{
+  "at": "2026-09-16T18:02:17.656Z",
+  "note": "Root opened every capture at original size; no product edits after publication.",
+  "captures": [
+    {
+      "path": "reports/acceptance/dream-online/desktop-album.png",
+      "sha256": "5a5749a868bf9eaad5a5dbf9ca47ff13fcfbc8d47eba83d4ca38d6f4436c1b46",
+      "width": 1440,
+      "height": 900,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/desktop-generated-comic.png",
+      "sha256": "3bb3d5a2bc4a45e04205760faf9487f9517ccc846ffa7d398b8f59afdd944612",
+      "width": 1440,
+      "height": 900,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/mobile-album.png",
+      "sha256": "f0a8bed97604f4a2965cee1cd230816edda640da2232c4977d9d0c89c425977f",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/mobile-generated-comic.png",
+      "sha256": "57fae99bb946d7022d0cf4751db11c065e9473757b8d88e492f547e0030f1a55",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/compact-generated-comic.png",
+      "sha256": "1fb0ab288440f1d0add307729257f359200400129f20246996c9e47ad4a060ce",
+      "width": 320,
+      "height": 720,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/compact-static-comic.png",
+      "sha256": "7fe24c39a7b6a205599438e9e3bdf3353dcbe71e0ec112c3df363e114f104b1f",
+      "width": 320,
+      "height": 720,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/desktop-workshop.png",
+      "sha256": "d138b12cb5b6cb5502d0b57eea98518ab3bd1d571288508d8099960e55989951",
+      "width": 1440,
+      "height": 900,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/mobile-workshop.png",
+      "sha256": "ddfc5e89f46642dab7351737c32242166c3556f2a0cf7e040f4b2f294ef4b62d",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/compact-workshop-submit.png",
+      "sha256": "b1d3e5bb587098a2d5eb14163002d7815cdca8e60883f0de7a18bb7a2e01485a",
+      "width": 320,
+      "height": 720,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/mobile-pending-fixture.png",
+      "sha256": "c7b93645572a5bca615e1e4f9493c53cee8a3c49c7d89336ab825c72ef75f61d",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": true
+    },
+    {
+      "path": "reports/acceptance/dream-online/mobile-recovery-fixture.png",
+      "sha256": "6e4e64c6247097dbaafcf555d3d815446d5504094dc0d26d0fd2ab1bb9f89fa2",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": true
+    },
+    {
+      "path": "reports/acceptance/dream-online/mobile-empty-album.png",
+      "sha256": "5c2f9ad9f5dd92d1ba613a74c83250b7172f89e8c0850483895ab396423c3699",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/mobile-conversation-workshop.png",
+      "sha256": "d4bcc4131bcd2ba01da59568ec596a7fc971c36e514e48e32002521bec3fd747",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/dream-online/mobile-conversation-expanded.png",
+      "sha256": "adfc16b185af82d489143c2d0a63cfdb108967712bc6351e630e8063dda01d05",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/story-v5-online/desktop-library.png",
+      "sha256": "6d2c7b21b4269b1603109ba1447793b18ffa61b800b636535eb0eccd9e8771a9",
+      "width": 1440,
+      "height": 900,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/story-v5-online/desktop-comic.png",
+      "sha256": "e9ac595f8e20b7402e1bfea03a1f39783c6746d9bb374c924e4b9dd8fd04b336",
+      "width": 1440,
+      "height": 900,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/story-v5-online/cheng-comic.png",
+      "sha256": "81c8b38edef84447ddc2b2e38503c1afd83ff0f92283bf7d88f811352aeaa3b0",
+      "width": 1440,
+      "height": 900,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/story-v5-online/mobile-library.png",
+      "sha256": "b59a9e1bdfdb338931e8b7e7edb19fa5182ba96da218d5bf974568a204a66b24",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/story-v5-online/mobile-comic.png",
+      "sha256": "e302364d70733aade55871dfac94bbef80bcb789c0ccfcc234f480d2d7cf488d",
+      "width": 390,
+      "height": 844,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/story-v5-online/compact-comic.png",
+      "sha256": "ed3c18ad63c33041d9661b29e88d325682a98c3b2d7cdafceabec10241e2519a",
+      "width": 320,
+      "height": 720,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/acceptance/story-v5-online/compact-library.png",
+      "sha256": "e11d3a69bc91b672ef911002bf63e7ae7adc37f1a26746645eb0d8f7db21cf28",
+      "width": 320,
+      "height": 720,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/browser/dream-v5-production-desktop.png",
+      "sha256": "0a12e3232ed9c1f79662bdd9e37b164e9d08b012c0a3ef56162b9d209051611f",
+      "width": 1440,
+      "height": 900,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    },
+    {
+      "path": "reports/browser/dream-v5-production-mobile.png",
+      "sha256": "b4aaa0b5dd38b85555796e6f753a62cde4fdff16843cd60149e0535516bdd653",
+      "width": 1170,
+      "height": 2532,
+      "inspectedAtOriginalSize": true,
+      "fixture": false
+    }
+  ]
+}

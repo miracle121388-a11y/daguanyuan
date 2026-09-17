@@ -1,5 +1,6 @@
 import {z} from 'zod';
 import type {Vec3} from '../data/types';
+import {editionIdSchema, type LiteraryContext} from '../data/editions';
 
 // IDs deliberately match reviewed canon. Simulation records never enter canon.
 export const agentIds = ['baoyu', 'daiyu', 'baochai', 'wangxifeng'] as const;
@@ -51,6 +52,7 @@ export const conversationTurnSchema = z.object({
 });
 export type ConversationTurn = z.infer<typeof conversationTurnSchema>;
 export interface ConversationContext {
+  literary?: LiteraryContext;
   agent: AgentId; name: string; personality: string[]; place: string; mood: {calm: number; energy: number};
   intention: string; memories: {id: string; content: string}[];
   history: {message: string; reply: string}[]; message: string; tone: ConversationTurn['tone'];
@@ -84,6 +86,7 @@ export const eventSchema = z.object({
 });
 export type SimulationEvent = z.infer<typeof eventSchema>;
 export const worldSchema = z.object({
+  editionId: editionIdSchema.optional(), storyNodeId: z.string().optional(), storyChapter: z.number().int().min(1).max(120).optional(),
   tick: z.number().int().nonnegative(), minutes: z.number().int().nonnegative(), branchId: z.enum(['main', 'if']),
   world: z.object({jia_family_stability: score, jia_family_finance: score}),
   agents: z.record(agentIdSchema, agentSchema), events: z.array(eventSchema),
@@ -114,6 +117,7 @@ const branchSchema = z.object({
 });
 export type Branch = z.infer<typeof branchSchema>;
 export const journalSchema = z.object({
+  editionId: editionIdSchema.optional(),
   version: z.literal(1), layoutRevision: z.string(), active: z.enum(['main', 'if']),
   interventionSerial: z.number().int().nonnegative().default(0),
   main: branchSchema, if: branchSchema.nullable(),
@@ -123,6 +127,7 @@ export const journalSchema = z.object({
 export type Journal = z.infer<typeof journalSchema>;
 
 export interface Perception {
+  literary?: LiteraryContext;
   tick: number; time: string; self: Agent;
   household: {stability: number; finance?: number};
   nearby: {id: AgentId; name: string; location: string; spot?: 'gate' | 'court'}[];

@@ -2,6 +2,7 @@ import type {CanonData} from '../data/types';
 import {agentIds, type Agent, type AgentId, type Memory, type Perception, type WorldState} from './types';
 import {clockLabel, clone} from './world';
 import {placeSetting, spotName} from './space';
+import {literaryContext} from './story';
 
 export function retrieveMemories(agent: Agent, nearby: AgentId[]): Memory[] {
   return agent.memories.map((m, index) => ({m, score: index / Math.max(1, agent.memories.length) * 3 + (m.importance ?? (m.type === 'knowledge' ? 80 : 20)) / 10 + (m.participants.some(id => id !== agent.id && nearby.includes(id)) ? 4 : 0)}))
@@ -21,7 +22,7 @@ export function perceive(world: WorldState, id: AgentId, data: CanonData): Perce
   // Never serialize other agents' private memories, plans, moods, or locations.
   const hour = Math.floor(world.minutes / 60) % 24;
   const gathering = world.gathering?.status === 'pending' && world.gathering.participants.includes(id) ? world.gathering : null;
-  return {tick: world.tick, time: clockLabel(world.minutes), hour, context: {place: spotName(data, agent.location, agent.spot), setting: data.places.find(p => p.id === agent.location)?.theme ?? '', night: hour >= 19 || hour < 6},
+  return {literary: literaryContext(world, data), tick: world.tick, time: clockLabel(world.minutes), hour, context: {place: spotName(data, agent.location, agent.spot), setting: data.places.find(p => p.id === agent.location)?.theme ?? '', night: hour >= 19 || hour < 6},
     household: {stability: world.world.jia_family_stability, ...(id === 'wangxifeng' ? {finance: world.world.jia_family_finance} : {})}, self: {...clone(agent), memories}, nearby,
     places: data.places.map(place => placeSetting(data, place.id)), memories, dialogueOptions, directive: clone(world.directives.find(d => d.agent === id)),
     ...(gathering ? {gathering: {place: gathering.place, name: spotName(data, gathering.place, 'court'), activity: gathering.kind === 'poetry' ? 'write' as const : 'rest' as const,

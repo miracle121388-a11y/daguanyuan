@@ -46,7 +46,12 @@
     "models:understory": "node scripts/pipeline.mjs models-understory",
     "models:architecture": "node scripts/pipeline.mjs models-architecture",
     "models:architecture:lod": "node scripts/pipeline.mjs models-architecture-lod",
-    "test:simulation:participation": "node scripts/simulation_participation_smoke.mjs"
+    "test:simulation:participation": "node scripts/simulation_participation_smoke.mjs",
+    "content:editions": "python scripts/prepare_editions.py",
+    "content:comic-art": "node scripts/prepare_comic_art.mjs",
+    "test:story": "node scripts/story_smoke.mjs",
+    "test:dreams": "node scripts/dream_smoke.mjs && node scripts/dream_edges_smoke.mjs",
+    "test:dreams:live": "node scripts/dream_live_smoke.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

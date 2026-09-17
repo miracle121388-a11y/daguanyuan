@@ -1,0 +1,145 @@
+- generic [ref=e1]:
+  - generic [ref=e7]:
+    - link "跳转到园林内容" [ref=e8] [cursor=pointer]:
+      - /url: "#garden-main"
+    - banner [ref=e9]:
+      - button "大观园入梦，回到全园" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: 大观
+        - generic [ref=e12]:
+          - strong [ref=e13]: 大观园·入梦
+          - generic [ref=e14]: 一园山水，满纸红楼
+      - navigation "主导航" [ref=e15]:
+        - button "世界推演" [ref=e16] [cursor=pointer]
+        - button "园林漫游" [ref=e22] [cursor=pointer]
+        - button "人物群像" [ref=e26] [cursor=pointer]
+        - button "回目拾遗" [ref=e32] [cursor=pointer]
+      - generic [ref=e35]:
+        - button "剧情画卷" [ref=e36] [cursor=pointer]
+        - button "园景图录" [ref=e43] [cursor=pointer]
+        - button "来源与说明" [ref=e49] [cursor=pointer]
+        - button "游园设置" [ref=e53] [cursor=pointer]
+    - main [ref=e58]:
+      - generic [ref=e60]:
+        - button "定位大观园入口" [ref=e64] [cursor=pointer]:
+          - generic [ref=e65]: "01"
+          - text: 大观园入口
+        - button "定位潇湘馆" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: "03"
+          - text: 潇湘馆
+        - button "定位蘅芜苑" [ref=e71] [cursor=pointer]:
+          - generic [ref=e72]: "05"
+          - text: 蘅芜苑
+        - button "定位秋爽斋" [ref=e74] [cursor=pointer]:
+          - generic [ref=e75]: "06"
+          - text: 秋爽斋
+        - button "定位藕香榭" [ref=e77] [cursor=pointer]:
+          - generic [ref=e78]: "08"
+          - text: 藕香榭
+        - button "定位大观楼" [ref=e80] [cursor=pointer]:
+          - generic [ref=e81]: "13"
+          - text: 大观楼
+        - button "定位栊翠庵" [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]: "14"
+          - text: 栊翠庵
+        - button "定位暖香坞" [ref=e86] [cursor=pointer]:
+          - generic [ref=e87]: "15"
+          - text: 暖香坞
+      - generic:
+        - button "展开索引" [ref=e88] [cursor=pointer]
+        - generic:
+          - heading "一园山水" [level=1]
+          - paragraph: 沿一湾曲水，走入红楼深处。
+      - generic "园林光照" [ref=e92]:
+        - button "晨光" [pressed] [ref=e93] [cursor=pointer]
+        - button "月夜" [ref=e100] [cursor=pointer]
+      - generic [ref=e103]:
+        - button "回到全园" [ref=e104] [cursor=pointer]
+        - button "切换地点名签" [pressed] [ref=e108] [cursor=pointer]
+        - button "俯瞰全园布局" [ref=e113] [cursor=pointer]
+        - generic [ref=e117]: 俯瞰
+      - generic:
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 园图
+            - button "俯瞰" [ref=e121] [cursor=pointer]
+          - img "大观园小地图" [ref=e127]:
+            - button "地图选择大观园入口" [ref=e193] [cursor=pointer]
+            - button "地图选择曲径通幽" [ref=e196] [cursor=pointer]
+            - button "地图选择潇湘馆" [ref=e199] [cursor=pointer]
+            - button "地图选择怡红院" [ref=e202] [cursor=pointer]
+            - button "地图选择蘅芜苑" [ref=e205] [cursor=pointer]
+            - button "地图选择秋爽斋" [ref=e208] [cursor=pointer]
+            - button "地图选择稻香村" [ref=e211] [cursor=pointer]
+            - button "地图选择藕香榭" [ref=e214] [cursor=pointer]
+            - button "地图选择滴翠亭" [ref=e217] [cursor=pointer]
+            - button "地图选择芦雪庵" [ref=e220] [cursor=pointer]
+            - button "地图选择凸碧山庄" [ref=e223] [cursor=pointer]
+            - button "地图选择凹晶溪馆" [ref=e226] [cursor=pointer]
+            - button "地图选择大观楼" [ref=e229] [cursor=pointer]
+            - button "地图选择栊翠庵" [ref=e232] [cursor=pointer]
+            - button "地图选择暖香坞" [ref=e235] [cursor=pointer]
+        - generic:
+          - generic: 精细园景
+          - paragraph: 拖动旋转 · 滚轮缩放 · 右键平移
+          - text: 依据原著整理的文学空间再现
+    - generic [ref=e238]:
+      - generic [ref=e242]:
+        - strong [ref=e243]: 红楼拾遗
+        - generic [ref=e244]: 22 段有出处的故事
+      - contentinfo [ref=e245]:
+        - combobox "选择游园路线" [ref=e252] [cursor=pointer]:
+          - option "园林初览" [selected]
+          - option "诗社与雅集"
+          - option "刘姥姥游园"
+        - generic [ref=e253]:
+          - strong [ref=e254]: 从曲径到四处院落，读一遍园林的性情。
+          - generic [ref=e255]: 7 处停留 · 策划路线，非原著完整行迹
+        - button "开始游园" [ref=e257] [cursor=pointer]
+  - dialog [ref=e260]:
+    - banner [ref=e261]:
+      - generic [ref=e262]:
+        - heading "满纸红楼，一幕入梦" [level=2] [ref=e263]
+        - paragraph [ref=e264]: 选一本书，从一处心事开始。
+      - button "关闭剧情画卷" [active] [ref=e265] [cursor=pointer]
+    - generic [ref=e269]:
+      - generic [ref=e270]:
+        - generic [ref=e273]: 剧情版本
+        - combobox "剧情依据版本" [ref=e274]:
+          - option "前八十回" [selected]
+          - option "程高本 · 一百二十回"
+          - option "癸酉本 · 一百零八回"
+      - paragraph [ref=e275]: 第八十回之后保持开放，不预设任何续本结局。
+    - generic [ref=e276]:
+      - region "可进入的剧情节点" [ref=e277]:
+        - generic [ref=e278]:
+          - strong [ref=e279]: 八十回本
+          - generic [ref=e280]: 3 个剧情起点
+        - button "第 27 回 落花成冢 共同前八十回" [pressed] [ref=e281] [cursor=pointer]:
+          - generic [ref=e282]: 第 27 回
+          - strong [ref=e283]: 落花成冢
+          - generic [ref=e284]: 共同前八十回
+        - button "第 37 回 海棠初社 共同前八十回" [ref=e287] [cursor=pointer]:
+          - generic [ref=e288]: 第 37 回
+          - strong [ref=e289]: 海棠初社
+          - generic [ref=e290]: 共同前八十回
+        - button "第 74 回 抄检之夜 共同前八十回" [ref=e293] [cursor=pointer]:
+          - generic [ref=e294]: 第 74 回
+          - strong [ref=e295]: 抄检之夜
+          - generic [ref=e296]: 共同前八十回
+        - generic [ref=e299]:
+          - checkbox "关键节点自动展开漫画" [checked] [ref=e300]
+          - text: 关键节点自动展开漫画
+      - region "剧情画卷预览" [ref=e301]:
+        - generic [ref=e302]:
+          - img "落花成冢 · 全彩剧情插画" [ref=e303]
+          - generic [ref=e304]: AI 绘制 · 剧情演绎
+        - generic [ref=e305]:
+          - heading "落花成冢" [level=3] [ref=e306]
+          - paragraph [ref=e307]: 黛玉借葬花吟寄托伤春之情，宝玉听见吟咏。
+          - generic [ref=e308]:
+            - button "展开动态漫画" [ref=e309] [cursor=pointer]
+            - button "从此幕入局" [ref=e312] [cursor=pointer]
+          - paragraph [ref=e317]: 入局会创建独立 IF 线，保留主世界。三种版本分别存档。
+          - group [ref=e318]:
+            - generic "文本依据与改编范围" [ref=e319] [cursor=pointer]
+    - contentinfo [ref=e320]: 沿用项目已核对的前八十回数字文本，非单一脂本的逐字校勘。

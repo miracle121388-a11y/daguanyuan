@@ -1,10 +1,11 @@
 import { eventSchema, type CanonData, type CanonEvent } from '../data/types';
+import {editionCatalogSchema} from '../data/editions';
 export class LocalCanonProvider {
  async load():Promise<CanonData>{
-  const files=['places','characters','events','sources','routes','relations'];
+  const files=['places','characters','events','sources','routes','relations','editionCatalog'];
   const values=await Promise.all([...files.map(n=>`data/${n}.json`),'scene-manifest.json'].map(async p=>{const r=await fetch(import.meta.env.BASE_URL+p);if(!r.ok)throw new Error(`资料加载失败：${p} (${r.status})`);return r.json()}));
   const data=Object.fromEntries([...files,'manifest'].map((n,i)=>[n,values[i]])) as unknown as CanonData;
-  data.events=data.events.map(e=>eventSchema.parse(e));return data;
+  data.events=data.events.map(e=>eventSchema.parse(e));data.editionCatalog=editionCatalogSchema.parse(data.editionCatalog);return data;
  }
  static visibleEvents(events:CanonEvent[],limit:number|null){return events.filter(e=>e.reviewStatus==='source_checked'&&(limit===null||e.chapter<=limit))}
 }

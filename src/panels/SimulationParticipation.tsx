@@ -6,6 +6,7 @@ import {useSimulation} from '../simulation/store';
 import {agentColors, currentBranch} from '../simulation/world';
 import {encounterFor} from '../simulation/participation';
 import {courtRoutes, spotName} from '../simulation/space';
+import {DreamButton} from './DreamExperience';
 
 export default function SimulationParticipation({world, data}: {world: WorldState; data: CanonData}) {
   const s = useSimulation(), id = s.focused ?? 'baoyu', actor = world.agents[id], busy = s.phase !== 'ready';
@@ -31,6 +32,7 @@ function Conversation({id, world}: {id: AgentId; world: WorldState}) {
     {turns.length > 3 && <details className="sim-chat-earlier"><summary>查看更早的 {turns.length - 3} 次交谈</summary>{turns.slice(0, -3).map(t => <ConversationEntry key={t.id} turn={t} name={actor.name}/>)}</details>}
     <div className="sim-chat-transcript" role="log" aria-live="polite" aria-label="你们的对话">{turns.slice(-3).map(t => <ConversationEntry key={t.id} turn={t} name={actor.name}/>)}</div>
     <div ref={latest} aria-live="polite" className="sim-chat-live">{s.phase === 'conversing' ? `${world.agents[s.actor ?? id].name}正在回应…` : turns.length ? '回应已存入这一刻。' : '从一句问候开始，或说说你的打算。'}</div>
+    {turns.at(-1)?.tick === world.tick && <DreamButton capture trigger="conversation" focus={id}/>}
     <form className="sim-chat-form" onFocus={() => useSimulation.setState({automatic: false})} onSubmit={e => { e.preventDefault(); void submit(); }}>
       <label htmlFor="sim-chat-message">想对{actor.name}说什么</label>
       <textarea id="sim-chat-message" value={message} maxLength={400} rows={3} disabled={busy} placeholder="你此刻有什么牵挂？我愿听你慢慢说。" onChange={e => setMessage(e.target.value)} onKeyDown={e => { if ((e.ctrlKey || e.metaKey) && e.key === 'Enter' && !e.nativeEvent.isComposing) { e.preventDefault(); if (!busy && message.trim()) void submit(); } }}/>

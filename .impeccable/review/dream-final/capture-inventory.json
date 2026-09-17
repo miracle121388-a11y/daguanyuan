@@ -1,0 +1,63 @@
+{
+  "openedEveryImage": true,
+  "valid": true,
+  "fixRound": 1,
+  "images": [
+    {
+      "path": ".impeccable/review/dream-final/desktop-album.png",
+      "sha256": "6ba8c660ff16ea820fe6d508b8d1250ccb80ee44622e9109a91eb5cce2cf89b4"
+    },
+    {
+      "path": ".impeccable/review/dream-final/desktop-generated-comic.png",
+      "sha256": "d9ce632cade42cc80bdde2c8259f5315e1017164c199b799c0bf55db95dfa1dc"
+    },
+    {
+      "path": ".impeccable/review/dream-final/mobile-album.png",
+      "sha256": "b1095f1d0731005bfc81f0121b018a4f2bdda86ea9cf6e74a47acbb50ebf874b"
+    },
+    {
+      "path": ".impeccable/review/dream-final/mobile-generated-comic.png",
+      "sha256": "a140bed0f8a7219d37554489877449457318bd6bacef4233472ce0bc47bf60f1"
+    },
+    {
+      "path": ".impeccable/review/dream-final/compact-generated-comic.png",
+      "sha256": "868133616dad3797c24671cb16fbd2940d62bcaa8f8521cca59e2da598e1430b"
+    },
+    {
+      "path": ".impeccable/review/dream-final/compact-static-comic.png",
+      "sha256": "b090c67657033d65ae44a9917b46083e0b92e5455603431bb2c1a13ff8a845c2"
+    },
+    {
+      "path": ".impeccable/review/dream-final/desktop-workshop.png",
+      "sha256": "acf559d42ba4752716050ac84b4d0e762e6d132ad7f86c2cb740d988f8bb1019"
+    },
+    {
+      "path": ".impeccable/review/dream-final/mobile-workshop.png",
+      "sha256": "14e277d0c56b5443640b047c92f6af526f2440bfce05e6121e84d3449cfe94ff"
+    },
+    {
+      "path": ".impeccable/review/dream-final/compact-workshop-submit.png",
+      "sha256": "896bacce1234f08f1f667d0690c6d1c26f1225352f99d72644a4daf283966c6e"
+    },
+    {
+      "path": ".impeccable/review/dream-final/mobile-pending-fixture.png",
+      "sha256": "bb7f55a5af6ea69a434522738c5b4ee7d992abcfdaa1f2085fd73b1be0f43627"
+    },
+    {
+      "path": ".impeccable/review/dream-final/mobile-recovery-fixture.png",
+      "sha256": "53d54e46b7ca80809483c72c25698eafe05520c5236d7873a5e9df3c17392e24"
+    },
+    {
+      "path": ".impeccable/review/dream-final/mobile-empty-album.png",
+      "sha256": "5c2f9ad9f5dd92d1ba613a74c83250b7172f89e8c0850483895ab396423c3699"
+    },
+    {
+      "path": ".impeccable/review/dream-final/mobile-conversation-workshop.png",
+      "sha256": "9c13a580300ce888008805b721b21d8f3597eaeacc338f4decc5d0a32b8cb7ac"
+    },
+    {
+      "path": ".impeccable/review/dream-final/mobile-conversation-expanded.png",
+      "sha256": "e70fa3706fe3b487c8d0c5e303ec8281a91cb02432987227fde825b785cdf8e7"
+    }
+  ]
+}

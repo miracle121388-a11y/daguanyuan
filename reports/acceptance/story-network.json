@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-16T16:31:36.548Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "publicDnsAddress": "47.89.212.251",
+  "dnsSource": "Google DNS over HTTPS queried during this release",
+  "osDnsChanged": false,
+  "tlsVerificationEnabled": true,
+  "defaultBrowser": {
+    "passed": false,
+    "error": "Error: page.goto: net::ERR_CONNECTION_CLOSED at https://daguanyuan-rumeng.zeabur.app/\nCall log:\n\u001b[2m  - navigating to \"https://daguanyuan-rumeng.zeabur.app/\", waiting until \"load\"\u001b[22m\n"
+  }
+}

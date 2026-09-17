@@ -1,0 +1,94 @@
+{
+  "version": "qwen-dream-album-20260917-v5",
+  "at": "2026-09-16T17:39:55.181Z",
+  "url": "http://127.0.0.1:4291/",
+  "checks": [
+    "actual Qwen image downloaded, verified and collected",
+    "collection count reflects generated art only",
+    "downloaded provenance includes Qwen model, exact prompt, plot and image hash",
+    "downloaded metadata contains no image key",
+    "generated comic preserves the original edition and IF branch",
+    "pause freezes the real generated illustration",
+    "generated image supports sequential narration",
+    "Escape returns to the collection without changing the world",
+    "original image and favorite survive reload in IndexedDB",
+    "edition filter isolates collected story contexts",
+    "390px collection fits without horizontal overflow",
+    "320px generated comic remains inside viewport",
+    "compact comic playback remains touch sized",
+    "reduced-motion preference stops generated image animation",
+    "workshop shows the chosen book and captured scene",
+    "390px workshop preserves scene and usable form",
+    "320px submit remains reachable with scrolling",
+    "manual submission carries chosen mood and personal visual detail (intercepted fixture)",
+    "entering an actual plot node automatically offers its distinct world snapshot (intercepted fixture)",
+    "live generation leaves the garden usable while waiting",
+    "temporary failures retain a recoverable original-task action (fixture)",
+    "already-open collection keeps its verified local image without network",
+    "no browser runtime errors through collection, playback and submission"
+  ],
+  "screenshots": [
+    ".impeccable/review/dream-final/desktop-album.png",
+    ".impeccable/review/dream-final/desktop-generated-comic.png",
+    ".impeccable/review/dream-final/mobile-album.png",
+    ".impeccable/review/dream-final/mobile-generated-comic.png",
+    ".impeccable/review/dream-final/compact-generated-comic.png",
+    ".impeccable/review/dream-final/compact-static-comic.png",
+    ".impeccable/review/dream-final/desktop-workshop.png",
+    ".impeccable/review/dream-final/mobile-workshop.png",
+    ".impeccable/review/dream-final/compact-workshop-submit.png",
+    ".impeccable/review/dream-final/mobile-pending-fixture.png",
+    ".impeccable/review/dream-final/mobile-recovery-fixture.png"
+  ],
+  "errors": [],
+  "fixturePosts": [
+    {
+      "moment": {
+        "editionId": "original80",
+        "chapter": 27,
+        "tick": 0,
+        "worldId": "story:original80:flowers-27",
+        "snapshotId": "opening:flowers-27",
+        "branch": "main",
+        "trigger": "story",
+        "title": "落花成冢",
+        "text": "黛玉借葬花吟寄托伤春之情，宝玉听见吟咏。\n画面属于本幕的艺术演绎。",
+        "time": "日光中",
+        "placeId": "xiaoxiangguan",
+        "cast": [
+          "daiyu"
+        ],
+        "nodeId": "flowers-27",
+        "mood": "warm",
+        "framing": "scene",
+        "note": "白海棠含着雨珠，两人相视而笑。"
+      },
+      "authorized": true
+    },
+    {
+      "moment": {
+        "editionId": "original80",
+        "chapter": 27,
+        "tick": 0,
+        "worldId": "if:1",
+        "snapshotId": "0:0:if:1:opening",
+        "branch": "if",
+        "trigger": "story",
+        "title": "落花成冢",
+        "text": "从《八十回本》第27回「落花成冢」的改编起点入局。后续为自由推演，不预设书中结果。\n此刻林黛玉在潇湘馆。当下打算（未必已执行）：静静整理心绪，再决定是否向宝玉倾诉",
+        "time": "14时",
+        "placeId": "xiaoxiangguan",
+        "cast": [
+          "daiyu"
+        ],
+        "nodeId": "flowers-27",
+        "mood": "poetic",
+        "framing": "scene",
+        "note": ""
+      },
+      "authorized": true
+    }
+  ],
+  "liveGenerationCalls": 0,
+  "passed": true
+}

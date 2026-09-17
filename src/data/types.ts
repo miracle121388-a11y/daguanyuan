@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import type {EditionCatalog} from './editions';
 export type Vec3=[number,number,number];
 const refs=z.array(z.string()).min(1);
 export const eventSchema=z.object({id:z.string(),title:z.string(),chapter:z.number().int().min(1).max(120),summary:z.string(),characterIds:z.array(z.string()),canonicalPlaceId:z.string().nullable(),displayPlaceId:z.string().nullable(),locationCertainty:z.enum(['explicit','display_only','residency_inference']),sourceRefs:refs,contentType:z.literal('canonical'),reviewStatus:z.literal('source_checked')});
@@ -10,4 +11,4 @@ export interface Route {id:string;title:string;description:string;orderedStops:s
 export interface Relation {fromId:string;toId:string;relationType:string;label:string;validity:{fromChapter:number;toChapter:number|null};sourceRefs:string[]}
 export interface ScenePlace {id:string;name:string;position:Vec3;cameraPosition:Vec3;cameraTarget:Vec3;interiorCamera?:{position:Vec3;target:Vec3;fov:number};model:string;mobileModel?:string;featured:boolean;hotspots:{id:string;name:string;position:Vec3}[];boundingBox:{min:Vec3;max:Vec3}}
 export interface Manifest {understory?:{position:Vec3;scale:number;rotation:number;species:number;placeId?:string}[];groundCover?:{position:Vec3;scale:number;rotation:number}[];vegetation?:{position:Vec3;scale:Vec3;rotation:number;species?:number;placeId?:string|null}[];overview:string;overviewCamera:{position:Vec3;mobilePosition?:Vec3;target:Vec3};places:ScenePlace[];pathNodes:{id:string;position:Vec3}[];pathEdges:{from:string;to:string;kind:string}[];lake:{center:number[];radius:number[];outline?:number[][];holes?:number[][][]};boundary?:number[][];spatialBasis?:{note:string;url:string;plan:string}}
-export interface CanonData {places:Place[];characters:Character[];events:CanonEvent[];sources:Source[];routes:Route[];relations:Relation[];manifest:Manifest}
+export interface CanonData {places:Place[];characters:Character[];events:CanonEvent[];sources:Source[];routes:Route[];relations:Relation[];manifest:Manifest; editionCatalog?:EditionCatalog}

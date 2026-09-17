@@ -35,7 +35,7 @@ export function conversationContext(world: WorldState, id: AgentId, message: str
   if (!world.agents[id].alive) throw new Error('这位人物当前无法交谈。');
   const p = perceive(world, id, data);
   // Only this person's memories and their own conversation are sent upstream.
-  return {agent: id, name: p.self.name, personality: p.self.personality, place: p.context.place, mood: p.self.mood,
+  return {literary: p.literary, agent: id, name: p.self.name, personality: p.self.personality, place: p.context.place, mood: p.self.mood,
     intention: p.self.plan?.goal ?? p.self.goals.join('；'), memories: p.memories.map(m => ({id: m.id, content: m.content})),
     history: (world.conversations ?? []).filter(t => t.agent === id).slice(-4).map(t => ({message: t.message, reply: t.reply})), message: message.trim(), tone};
 }

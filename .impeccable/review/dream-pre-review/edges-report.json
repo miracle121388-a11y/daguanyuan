@@ -1,0 +1,19 @@
+{
+  "at": "2026-09-16T17:31:48.672Z",
+  "url": "http://127.0.0.1:4291/",
+  "checks": [
+    "fresh visitor sees an honest empty album",
+    "personal conversation capture contains the actual user line",
+    "reauthentication resumes the original job ID without a new-generation POST (fixture)",
+    "late-chapter arrival and pending prompts respect spoiler setting",
+    "spoiler setting hides later collected and unfinished artwork",
+    "edge flows have no browser runtime errors"
+  ],
+  "screenshots": [
+    ".impeccable/review/dream-final/mobile-empty-album.png",
+    ".impeccable/review/dream-final/mobile-conversation-workshop.png"
+  ],
+  "errors": [],
+  "liveGenerationCalls": 0,
+  "passed": true
+}

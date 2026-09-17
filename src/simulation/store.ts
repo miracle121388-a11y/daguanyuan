@@ -7,10 +7,21 @@ import {interventionSchema, type AgentId, type ConversationTurn, type Gathering,
 import {cancelGathering, chooseEncounter, conversationContext, forkMoment, inviteGathering, recordConversation} from './participation';
 import {clone, createJournal, currentBranch, currentWorld, forkWorld, queueDirective, readJournal, restoreTick, resumeArchive} from './world';
 import {evidenceReport} from './insights';
+import {editionIdSchema, type EditionId} from '../data/editions';
+import {forkStory} from './story';
+import {useDreams} from '../dreams/store';
+import {captureMoment} from '../dreams/moments';
 
 export const STORAGE_KEY = 'daguanyuan.simulation.v1';
+export const EDITION_KEY = 'daguanyuan.edition.v1';
+export const editionStorageKey = (id: EditionId) => id === 'original80' ? STORAGE_KEY : `${STORAGE_KEY}.${id}`;
+export interface ComicCue {nodeId: string; serial: number; kind: 'story' | 'if'; text?: string}
 interface Playback {id: number; command: SceneCommand; done: () => void}
 interface SimulationState {
+  editionId: EditionId; editionJournals: Partial<Record<EditionId, Journal>>;
+  libraryOpen: boolean; comicCue: ComicCue | null; comicAutomatic: boolean;
+  selectEdition: (id: EditionId) => void; enterStory: (id: string, play?: boolean) => void;
+  openComic: (id: string, kind?: 'story' | 'if', text?: string) => void; closeComic: () => void;
   open: boolean; journal: Journal | null; preview: WorldState | null;
   phase: 'ready' | 'deciding' | 'executing' | 'parsing' | 'conversing'; actor: AgentId | null;
   paused: boolean; automatic: boolean; playback: Playback | null; sceneReady: boolean;
@@ -39,10 +50,17 @@ interface SimulationState {
 let controller: AbortController | null = null;
 let playbackId = 0;
 let previousTime: 'day' | 'night' = 'day';
+const unreadableSaves = new Set<string>();
 const providerFor = () => useSimulation.getState().provider === 'remote' ? new RemoteProvider(useSimulation.getState().accessToken, useSimulation.getState().remoteLabel) : new MockProvider();
 
 function persist(journal: Journal) {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(journal)); useSimulation.setState({storageNotice: ''}); }
+  const editionId = journal.editionId ?? 'original80';
+  useSimulation.setState(s => ({editionJournals: {...s.editionJournals, [editionId]: journal}}));
+  try {
+    const key = editionStorageKey(editionId);
+    if (unreadableSaves.has(key)) { const raw = localStorage.getItem(key); if (raw) localStorage.setItem(`${key}.unreadable-backup`, raw); unreadableSaves.delete(key); }
+    localStorage.setItem(key, JSON.stringify(journal)); localStorage.setItem(EDITION_KEY, editionId); useSimulation.setState({storageNotice: ''});
+  }
   catch { useSimulation.setState({storageNotice: '浏览器空间不足或禁止存储。本次可继续推演，请导出存档以免关闭后丢失。'}); }
 }
 function commit(journal: Journal) { useSimulation.setState({journal}); persist(journal); }
@@ -62,6 +80,7 @@ function execute(command: SceneCommand, signal: AbortSignal): Promise<void> {
 }
 
 export const useSimulation = create<SimulationState>((set, get) => ({
+  editionId: 'original80', editionJournals: {}, libraryOpen: false, comicCue: null, comicAutomatic: true,
   open: false, journal: null, preview: null, phase: 'ready', actor: null,
   paused: false, automatic: false, playback: null, sceneReady: false,
   focused: null, focusRevision: 0, sceneRevision: 0, provider: 'mock', remoteLabel: '服务器模型', accessToken: '', error: '', storageNotice: '',
@@ -70,11 +89,46 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   inspectionTarget: null, inspectionRevision: 0,
   initialize: data => {
     if (get().journal) return;
-    let journal = createJournal(data);
-    try { const raw = localStorage.getItem(STORAGE_KEY); if (raw) journal = readJournal(raw, data); }
-    catch { set({storageNotice: '旧存档格式或道路版本已变化，已开启新的主世界。'}); }
-    set({journal});
+    let editionId: EditionId = 'original80';
+    try { editionId = editionIdSchema.safeParse(localStorage.getItem(EDITION_KEY)).data ?? 'original80'; } catch { /* In-memory mode. */ }
+    let journal = createJournal(data, editionId);
+    try { const raw = localStorage.getItem(editionStorageKey(editionId)); if (raw) { const saved = readJournal(raw, data); if ((saved.editionId ?? 'original80') !== editionId) throw new Error('版本不符'); journal = saved; } }
+    catch { unreadableSaves.add(editionStorageKey(editionId)); set({storageNotice: '旧存档格式或道路版本已变化，已开启新的主世界；旧内容将在下次保存前备份。'}); }
+    set({journal, editionId, editionJournals: {[editionId]: journal}});
   },
+  selectEdition: id => {
+    const data = useGarden.getState().data;
+    if (!data || !editionIdSchema.safeParse(id).success || get().phase !== 'ready' || id === get().editionId) return;
+    if (get().journal) persist(get().journal!);
+    let journal = get().editionJournals[id] ?? createJournal(data, id);
+    if (!get().editionJournals[id]) {
+      try { const raw = localStorage.getItem(editionStorageKey(id)); if (raw) { const saved = readJournal(raw, data); if ((saved.editionId ?? 'original80') !== id) throw new Error('版本不符'); journal = saved; } }
+      catch { unreadableSaves.add(editionStorageKey(id)); set({storageNotice: '此版本存档未能恢复，原存档仍保留；当前使用新世界。'}); }
+    }
+    set({editionId: id, journal, comicCue: null, preview: null, automatic: false, conversationDrafts: {}, error: '', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
+    useGarden.setState({selectedEventId: null, selectedChapter: null, panelOpen: false});
+    persist(journal);
+  },
+  enterStory: (id, play = true) => {
+    const data = useGarden.getState().data, garden = useGarden.getState(), journal = get().journal;
+    if (!data || !journal || get().phase !== 'ready') return;
+    const node = data.editionCatalog?.nodes.find(n => n.id === id && n.editions.includes(get().editionId));
+    if (!node || garden.spoilerLimit !== null && node.chapter > garden.spoilerLimit) return;
+    try {
+      const next = forkStory(journal, data, id);
+      if (!get().open) get().toggle();
+      commit(next);
+      set({libraryOpen: false, comicCue: null, automatic: false, error: '', focused: node.focus, recordView: 'participate', participationView: 'choice', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
+      useDreams.getState().offer({...captureMoment(next, data, 'story', node.focus), title: node.title});
+      if (play && get().comicAutomatic && !(useDreams.getState().config?.configured && useDreams.getState().accessToken && useDreams.getState().automatic)) get().openComic(id);
+    } catch (error) { set({error: (error as Error).message}); }
+  },
+  openComic: (id, kind = 'story', text) => {
+    const garden = useGarden.getState(), node = garden.data?.editionCatalog?.nodes.find(n => n.id === id && n.editions.includes(get().editionId));
+    if (!node || get().phase !== 'ready' || garden.spoilerLimit !== null && node.chapter > garden.spoilerLimit) return;
+    set({automatic: false, comicCue: {nodeId: id, serial: (get().comicCue?.serial ?? 0) + 1, kind, text}});
+  },
+  closeComic: () => set({comicCue: null}),
   toggle: () => {
     const open = !get().open;
     if (open) previousTime = useGarden.getState().timeOfDay;
@@ -94,6 +148,12 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       const result = await runTick(journal, data, providerFor(), execute, active.signal, (world, phase, actor) => set({preview: world, phase, actor}));
       if (active.signal.aborted) return;
       commit(result);
+      const after = currentWorld(result), before = currentWorld(journal);
+      if (after.gathering?.status === 'completed' && before.gathering?.status === 'pending') useDreams.getState().offer(captureMoment(result, data, 'gathering', after.gathering.participants[0]));
+      if (get().comicAutomatic && !(useDreams.getState().config?.configured && useDreams.getState().accessToken && useDreams.getState().automatic) && after.gathering?.status === 'completed' && before.gathering?.status === 'pending' && (after.storyChapter ?? 23) >= 37) {
+        set({phase: 'ready'});
+        get().openComic('poetry-37', 'if', after.events.find(e => e.kind === 'gathering')?.text);
+      }
     } catch (error) {
       const cancelled = active.signal.aborted;
       set({error: cancelled ? '本步已取消，人物与状态已回到上一个完整快照。' : error instanceof Error ? error.message : '本步未完成，请重试。', automatic: false, sceneRevision: get().sceneRevision + 1});
@@ -159,7 +219,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   choose: (agent, encounter, choice) => {
     const journal = get().journal, data = useGarden.getState().data;
     if (!journal || !data || get().phase !== 'ready') return;
-    try { commit(chooseEncounter(journal, data, agent, encounter, choice)); set({automatic: false, error: ''}); }
+    try { const next = chooseEncounter(journal, data, agent, encounter, choice); commit(next); set({automatic: false, error: ''}); const world = currentWorld(next); useDreams.getState().offer(captureMoment(next, data, 'choice', agent)); if (get().comicAutomatic && world.storyNodeId && !(useDreams.getState().config?.configured && useDreams.getState().accessToken && useDreams.getState().automatic)) get().openComic(world.storyNodeId, 'if', world.events.find(e => e.kind === 'choice')?.text); }
     catch (error) { set({error: (error as Error).message}); }
   },
   forkHere: () => {
@@ -210,7 +270,7 @@ export function exportJournal() {
   const journal = useSimulation.getState().journal;
   if (!journal) return;
   const link = document.createElement('a'), url = URL.createObjectURL(new Blob([JSON.stringify(journal, null, 2)], {type: 'application/json'}));
-  link.href = url; link.download = `大观园-${journal.active}-Tick${currentWorld(journal).tick}.json`;
+  link.href = url; link.download = `大观园-${journal.editionId ?? 'original80'}-${journal.active}-Tick${currentWorld(journal).tick}.json`;
   link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 export function activeSnapshot() { const journal = useSimulation.getState().journal!; const branch = currentBranch(journal); return branch.snapshots[branch.cursor]; }

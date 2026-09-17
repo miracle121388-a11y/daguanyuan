@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-15T19:06:25.808Z",
+  "at": "2026-09-16T17:51:27.990Z",
   "url": "https://daguanyuan-rumeng.zeabur.app/",
   "revision": "spatial-garden-20260913-r15",
   "planView": true,
@@ -7,7 +7,7 @@
   "quicDisabled": true,
   "tlsVerification": true,
   "observationTimeoutMs": 90000,
-  "desktopReadyMs": 6943,
+  "desktopReadyMs": 8024,
   "hooksAbsent": true,
   "sourceHooksAbsent": true,
   "focus": {
@@ -27,13 +27,13 @@
     "touchEmulation": true,
     "networkThrottle": false,
     "concurrentDesktopPage": false,
-    "readyMs": 5376,
+    "readyMs": 9942,
     "models": [
       "/models/overview-low.glb",
       "/models/vegetation/ground-cover.glb",
       "/models/places-low/xiaoxiangguan.glb",
-      "/models/vegetation/shrub.glb",
       "/models/vegetation/fern-1.glb",
+      "/models/vegetation/shrub.glb",
       "/models/vegetation/fern-0.glb",
       "/models/vegetation/broadleaf-2.glb",
       "/models/vegetation/broadleaf.glb"

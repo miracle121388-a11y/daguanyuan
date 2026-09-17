@@ -16,6 +16,17 @@ async function serve(env: Record<string, string | undefined> = {}, request: type
 const post = (url: string, body: unknown, headers = {}) => fetch(url + '/api/simulation', {method: 'POST', headers: {'Content-Type': 'application/json', Authorization: 'Bearer access-fixture', ...headers}, body: JSON.stringify(body)});
 
 describe('optional server-side model boundary', () => {
+  it('carries validated literary limits upstream and rejects out-of-version chapters', async () => {
+    const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{message: {content: JSON.stringify({reply: '只说我眼前所知。', evidenceIds: []})}}]})));
+    const url=await serve(settings,upstream as typeof fetch);
+    const payload={agent:'daiyu',name:'林黛玉',personality:['敏感'],place:'潇湘馆',mood:{calm:50,energy:70},intention:'写诗',memories:[],history:[],message:'你好',tone:'chat',literary:{id:'guiyou108',title:'癸酉本',chapter:82,maxChapter:108}};
+    expect((await post(url,{operation:'conversation',payload})).status).toBe(200);
+    const sent=JSON.parse((upstream.mock.calls[0] as unknown as [string,RequestInit])[1].body as string);
+    expect(sent.messages[0].content).toContain('严禁把另一本');expect(JSON.parse(sent.messages[1].content).literary.id).toBe('guiyou108');
+    expect((await post(url,{operation:'conversation',payload:{...payload,literary:{...payload.literary,chapter:120}}})).status).toBe(400);
+    expect((await post(url,{operation:'conversation',payload:{...payload,literary:{...payload.literary,id:'unreviewed'}}})).status).toBe(400);
+    expect(upstream).toHaveBeenCalledTimes(1);
+  });
   it('accepts personal conversation replies and rejects invented evidence and state patches', async () => {
     let reply: unknown = {reply: '我记得午后在院里读书。', evidenceIds: ['own-memory']};
     const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{message: {content: JSON.stringify(reply)}}]})));

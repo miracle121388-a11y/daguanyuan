@@ -4,7 +4,9 @@
       "D:\\Node.js\\node.exe",
       "D:\\Users\\Lenovo\\Desktop\\大观园\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "tests/e2e/simulation-interaction.spec.ts"
+      "tests/e2e/garden.spec.ts",
+      "--grep",
+      "published scene"
     ],
     "configFile": "D:\\Users\\Lenovo\\Desktop\\大观园\\playwright.config.ts",
     "rootDir": "D:/Users/Lenovo/Desktop/大观园/tests/e2e",
@@ -48,13 +50,13 @@
       [
         "json",
         {
-          "outputFile": "reports/acceptance/playwright-1789497041176.json"
+          "outputFile": "reports/acceptance/playwright-1789575699239.json"
         }
       ],
       [
         "html",
         {
-          "outputFolder": "reports/acceptance/playwright-1789497041176-html",
+          "outputFolder": "reports/acceptance/playwright-1789575699239-html",
           "open": "never"
         }
       ]
@@ -78,13 +80,13 @@
   },
   "suites": [
     {
-      "title": "simulation-interaction.spec.ts",
-      "file": "simulation-interaction.spec.ts",
+      "title": "garden.spec.ts",
+      "file": "garden.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "simulation keeps its scene and returns repeated interaction requests to the form",
+          "title": "published scene, real canvas picking, literary links, all tours, settings and screenshots",
           "ok": true,
           "tags": [],
           "tests": [
@@ -99,12 +101,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 32050,
+                  "duration": 63602,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-09-15T18:31:06.589Z",
+                  "startTime": "2026-09-16T16:21:49.462Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -112,9 +114,9 @@
               "status": "expected"
             }
           ],
-          "id": "ed48958f4ec747594b2f-945f312605bee8cdb73c",
-          "file": "simulation-interaction.spec.ts",
-          "line": 22,
+          "id": "8d392b78b326e6f8de96-be97911cb7a3bd2e9949",
+          "file": "garden.spec.ts",
+          "line": 18,
           "column": 1
         }
       ]
@@ -122,8 +124,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-15T18:30:42.820Z",
-    "duration": 59004.888,
+    "startTime": "2026-09-16T16:21:39.757Z",
+    "duration": 74847.637,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
