@@ -47,7 +47,7 @@ export const useDreams = create<DreamState>((set, get) => ({
   config: null, entries: [], initialized: false, busy: false, error: '', notice: '', accessToken: '', automatic: true, candidate: null, retrying: null, workshopOpen: false, collectionOpen: false, viewing: null, arrived: null,
   initialize: () => initializing ??= (async () => {
     try {const settings = JSON.parse(localStorage.getItem(preferenceKey) || '{}'); if (typeof settings.automatic === 'boolean') set({automatic: settings.automatic});} catch { /* Default preference. */ }
-    try {const entries = await savedDreams(); set({entries: entries.map(e => ({...e, ...(e.image ? {url: URL.createObjectURL(e.image)} : {})}))});} catch {set({notice: '本机画册暂不可用，完成后请下载原图留存。'});}
+    try {const entries = await savedDreams(); set({entries: entries.map(e => ({...e, ...(e.image ? {url: URL.createObjectURL(e.image)} : {})})).sort((a, b) => b.job.createdAt.localeCompare(a.job.createdAt))});} catch {set({notice: '本机画册暂不可用，完成后请下载原图留存。'});}
     set({initialized: true}); await get().refresh();
   })(),
   refresh: async () => {
@@ -55,7 +55,7 @@ export const useDreams = create<DreamState>((set, get) => ({
     try {
       const [config, list] = await Promise.all([fetch('/api/dreams/config', {signal: AbortSignal.timeout(15000)}).then(r => {if (!r.ok) throw new Error('无法读取生图服务状态。'); return r.json();}), api('jobs').then(r => r.json())]);
       set({config});
-      for (const raw of list.jobs) {const job = dreamJobSchema.parse(raw), prior = get().entries.find(e => e.job.id === job.id); if (!prior || prior.job.status !== job.status || job.status === 'ready' && !prior.image) await keep(job);}
+      for (const raw of list.jobs) {const job = dreamJobSchema.parse(raw), prior = get().entries.find(e => e.job.id === job.id); if (!prior || JSON.stringify(prior.job) !== JSON.stringify(job) || job.status === 'ready' && !prior.image) await keep(job);}
       for (const entry of get().entries) if (['queued', 'painting'].includes(entry.job.status) && !list.jobs.some((j: DreamJob) => j.id === entry.job.id)) await keep({...entry.job, status: 'failed', resumeAvailable: false, error: '服务器已找不到这个任务。剧情记录仍在，可以重新作画。'});
     } catch (e) {set({error: e instanceof Error ? e.message : '画册同步暂不可用，已有本机画作仍可查看。'});}
     finally {refreshing = false; schedule();}
@@ -90,8 +90,8 @@ export const useDreams = create<DreamState>((set, get) => ({
   setAutomatic: automatic => {set({automatic}); try {localStorage.setItem(preferenceKey, JSON.stringify({automatic}));} catch {set({notice: '自动作画偏好只在本次打开期间保留。'});}},
 }));
 export function downloadDream(entry: DreamEntry, metadata = false) {
-  const blob = metadata ? new Blob([JSON.stringify({job: entry.job, savedAt: entry.savedAt, favorite: entry.favorite, attribution: '玩家剧情生成画作，非原著证据；prompt与imageSha256用于记录来源。'}, null, 2)], {type: 'application/json'}) : entry.image;
+  const blob = metadata ? new Blob([JSON.stringify({job: entry.job, savedAt: entry.savedAt, favorite: entry.favorite, attribution: '玩家剧情生成画作，非原著证据；收藏编号标识剧情起点或个人画册顺序，不是原著真伪或稀有度。prompt、negativePrompt、referenceSet、seed与imageSha256记录本次创作。'}, null, 2)], {type: 'application/json'}) : entry.image;
   if (!blob) return; const url = URL.createObjectURL(blob), link = document.createElement('a'); link.href = url;
-  link.download = `大观园-${entry.job.moment.title.replace(/[<>:"/\\|?*]/g, '')}-${entry.job.id.slice(0, 8)}.${metadata ? 'json' : entry.job.mime === 'image/webp' ? 'webp' : entry.job.mime === 'image/jpeg' ? 'jpg' : 'png'}`;
+  link.download = `大观园-${entry.job.cardNo || '旧藏'}-${entry.job.moment.title.replace(/[<>:"/\\|?*]/g, '')}-${entry.job.id.slice(0, 8)}.${metadata ? 'json' : entry.job.mime === 'image/webp' ? 'webp' : entry.job.mime === 'image/jpeg' ? 'jpg' : 'png'}`;
   link.click(); setTimeout(() => URL.revokeObjectURL(url), 5000);
 }

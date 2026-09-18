@@ -1,8 +1,9 @@
 import {readFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {setTimeout as delay} from 'node:timers/promises';
-import {digest} from './dream-prompts.mjs';
+import {digest, joinPromptSections} from './dream-prompts.mjs';
 import {resolveImage, downloadPinned} from './dream-download.mjs';
+import {materializeReferences, describeReferences} from './dream-references.mjs';
 
 export const maximumImageBytes = 18 * 1024 * 1024;
 export async function bounded(response, maximum) {
@@ -21,23 +22,51 @@ async function jsonResponse(response) {
 }
 
 /** Persist the provider task before polling. Resuming it never sends another paid POST. */
-export async function renderDream(job, {env, endpoint, dashscope, publicRoot, catalog, request, signal, save, checkedImageUrl, pollMs = 8000}) {
+export async function renderDream(job, {env, endpoint, dashscope, publicRoot, catalog, references, request, signal, save, checkedImageUrl, pollMs = 8000}) {
   const authorization = {Authorization: `Bearer ${env.IMAGE_API_KEY}`};
   if (!job.providerResult && !job.providerTaskId) {
-    let payload = {model: job.model, prompt: job.prompt, n: 1, size: env.IMAGE_SIZE || '1536x1024'};
-    if (env.IMAGE_QUALITY) payload.quality = env.IMAGE_QUALITY;
-    if (env.IMAGE_OUTPUT_FORMAT) payload.output_format = env.IMAGE_OUTPUT_FORMAT;
+    const settings = job.providerSettings;
+    let payload = {model: job.model, prompt: job.prompt, n: 1, size: settings?.size || env.IMAGE_SIZE || '1536x1024'};
+    if (settings?.quality || !settings && env.IMAGE_QUALITY) payload.quality = settings?.quality || env.IMAGE_QUALITY;
+    if (settings?.outputFormat || !settings && env.IMAGE_OUTPUT_FORMAT) payload.output_format = settings?.outputFormat || env.IMAGE_OUTPUT_FORMAT;
     if (dashscope) {
-      const content = [{text: job.prompt}];
-      if (env.IMAGE_REFERENCE === 'true') {
+      const content = [];
+      if (job.referenceSet) {
+        const rendered = materializeReferences(job.referenceSet, references);
+        job.referenceSet = rendered.set;
+        if (rendered.set.planned) {
+          const pattern = /<reference-roles>[\s\S]*?<\/reference-roles>/;
+          const replacement = `<reference-roles>${describeReferences(rendered.set)}</reference-roles>`;
+          if (job.promptSections?.length) {
+            job.promptSections = job.promptSections.map(part => ({...part, text: part.text.replace(pattern, () => replacement)}));
+            job.prompt = joinPromptSections(job.promptSections);
+          } else job.prompt = job.prompt.replace(pattern, () => replacement);
+          job.promptSha256 = digest(job.prompt);
+        }
+        for (const image of rendered.images) content.push({image});
+      } else if (env.IMAGE_REFERENCE === 'true') {
+        // A retried v5 job keeps its old single-reference recipe and old style.
         const art = catalog.nodes.find(n => n.id === job.moment.nodeId)?.art || (job.moment.cast[0] === 'daiyu' ? 'bamboo' : 'poetry');
         if (!/^[a-z-]+$/.test(art)) throw new Error('参考画作标识无效。');
-        const reference = await readFile(resolve(publicRoot, `comics/${art}.webp`));
-        content.unshift({image: `data:image/webp;base64,${reference.toString('base64')}`});
-        job.referenceArt = art; job.referenceSha256 = digest(reference); await save(job);
+        try {
+          const reference = await readFile(resolve(publicRoot, `comics/${art}.webp`));
+          content.push({image: `data:image/webp;base64,${reference.toString('base64')}`});
+          job.referenceArt = art; job.referenceSha256 = digest(reference);
+        } catch {job.referenceFallback = '旧造型图不可用，本次按原文字提示生成。';}
       }
-      payload = {model: job.model, input: {messages: [{role: 'user', content}]}, parameters: {n: 1, size: (env.IMAGE_SIZE || '1536x1024').replace('x', '*'), prompt_extend: true, enable_thinking: true}};
+      content.push({text: job.prompt});
+      const parameters = {n: 1, size: (settings?.size || env.IMAGE_SIZE || '1536x1024').replace('x', '*')};
+      if (!settings || settings.nativeParameters) {
+        Object.assign(parameters, {prompt_extend: settings?.promptExtend ?? true, enable_thinking: settings?.enableThinking ?? true});
+        if (job.negativePrompt) parameters.negative_prompt = job.negativePrompt;
+        if (Number.isInteger(job.seed)) parameters.seed = job.seed;
+      }
+      payload = {model: job.model, input: {messages: [{role: 'user', content}]}, parameters};
     }
+    job.providerPayloadSha256 = digest(JSON.stringify(payload));
+    // Keep exact effective arguments without persisting the base64 references or key.
+    job.submittedParameters = dashscope ? payload.parameters : {n: payload.n, size: payload.size, ...(payload.quality ? {quality: payload.quality} : {}), ...(payload.output_format ? {output_format: payload.output_format} : {})};
+    await save(job);
     const response = await request(endpoint, {method: 'POST', headers: {...authorization, 'Content-Type': 'application/json', ...(dashscope ? {'X-DashScope-Async': 'enable'} : {})}, body: JSON.stringify(payload), signal});
     const result = await jsonResponse(response);
     job.providerRequestId = result.request_id || response.headers.get('x-request-id') || undefined;

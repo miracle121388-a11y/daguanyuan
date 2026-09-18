@@ -1,0 +1,166 @@
+{
+  "featureRevision": "honglou-silk-20260917-v6",
+  "at": "2026-09-17T11:40:27.425Z",
+  "status": "published and verified",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "deploymentId": "6aabcfecfa283769e51c22a5",
+  "server": {
+    "id": "6a8eee0bb11fb81fb4aaca05",
+    "name": "Aliyun California 4C 8GB",
+    "city": "Los Angeles",
+    "country": "US",
+    "regionId": "server-6a8eee0bb11fb81fb4aaca05"
+  },
+  "serviceId": "6aa143296c3d9581b71560fa",
+  "package": {
+    "directory": ".deploy/reference-20260917-112848-285186",
+    "bytes": 51097048,
+    "files": 542,
+    "uploadedHashesUnchanged": true,
+    "report": "dream-package-scan.json"
+  },
+  "sourceIdentity": [
+    {
+      "path": "server/dream-prompts.mjs",
+      "sha256": "9b9d988bfeef32b67fc073a4eb30c531b190784ab010187e25d62c05d262320a"
+    },
+    {
+      "path": "server/dream-scene-plan.mjs",
+      "sha256": "93c04ba8c60dd7b77cf471b09f101b63cdcee229b596ed1b3eed644afb07a992"
+    },
+    {
+      "path": "server/dream-style.mjs",
+      "sha256": "866342ccd21fc394a9558a193033b4565246c3953cd28efbab4155430f75313f"
+    },
+    {
+      "path": "server/dream-references.mjs",
+      "sha256": "2ff30fe1d724879cf49d2117bf063c8436137ec93f2da1ebd5a45b30a6e28511"
+    },
+    {
+      "path": "server/dream-cards.mjs",
+      "sha256": "45cb58e0420add2f1becd4aff2c9a8797ef99c5c3f6b4c3219a2f417dba96376"
+    },
+    {
+      "path": "server/dream-api.mjs",
+      "sha256": "6e624c52aa9af6bd6f672554fc197257332aea9e336f0e80f5a5935372eed4a5"
+    },
+    {
+      "path": "server/dream-provider.mjs",
+      "sha256": "71482c4b8b8e94f21c0fe2cf06f0a130d94be45a31e5afc6596c61079635465f"
+    },
+    {
+      "path": "server/dream-download.mjs",
+      "sha256": "d5a347b380c3c30af5919374acd84e9b01428d800c70f53a9049caf5b9e557d7"
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "7243cb08c2cf48c482a2fb10d45e5558ece45b06f69b21e4c787bb5f40723d2c"
+    },
+    {
+      "path": "src/dreams/types.ts",
+      "sha256": "f3e2ed3053cb1d4991f9f0781340b1fc1e168d629b2a355231ce28c9e3b2bf13"
+    },
+    {
+      "path": "src/dreams/store.ts",
+      "sha256": "052845f7926dc65fd3b3f63347c37c90953ef12c5c33cb19e2e445c6bea85b3d"
+    },
+    {
+      "path": "src/dreams/vault.ts",
+      "sha256": "0a4ff9bbf72c6701de814808c125f31de2eb0d2715add637cb2b727aa652f77a"
+    },
+    {
+      "path": "src/panels/DreamExperience.tsx",
+      "sha256": "b18701290f804498d31c9a80d21294f790e17268f519ad436e916cd238eb682d"
+    },
+    {
+      "path": "src/panels/StoryExperience.tsx",
+      "sha256": "1128b5751b42bf42b89415631afeb3d6af3142205548455701a5c2d453106dba"
+    },
+    {
+      "path": "src/styles/dreams.css",
+      "sha256": "32e8ca77ec42f01c699116d31c8ae200716d309a309754c5ca33232040b7f2ff"
+    },
+    {
+      "path": "config/dream.references.json",
+      "sha256": "96519280599aa794b45d265c22240e20e624016ebd60a29249f4e415e9a71aad"
+    },
+    {
+      "path": "data/canon/dreamReferences.json",
+      "sha256": "ddd1f3b11d69a29356501bf7509895b29210204f118b53bf735847e3b64767b9"
+    },
+    {
+      "path": "scripts/prepare_dream_references.mjs",
+      "sha256": "b04dc0b1e8d24d1e6a1be2cdd6fbcc5b1dd426abe92f652852ee65605b771ca0"
+    },
+    {
+      "path": "scripts/validate.mjs",
+      "sha256": "d7698898667be102e60cf4ef2978b1c1b239ca4c2d993b1ab6b837e447f64169"
+    },
+    {
+      "path": "package.json",
+      "sha256": "981cdd2bf186ac419bdb8cf238e1f5fbd41acf2316f89c11f2669b23f1542791"
+    }
+  ],
+  "checks": {
+    "unitAndApi": 93,
+    "integrity": 3974,
+    "lint": "npm run lint passed",
+    "build": "npm run build passed",
+    "localBrowser": 29,
+    "localBrowserReport": ".impeccable/review/dream-silk-action-confirm/report.json",
+    "onlineBrowser": 29,
+    "localStoryRegression": 24,
+    "localStoryReport": "reports/acceptance/story-v6-action-confirm/report.json",
+    "publicAssetHashes": 83,
+    "referenceAssets": 21,
+    "newProviderPostsFromBrowserTests": 0,
+    "liveImages": {
+      "localAttempts": 4,
+      "localTextRejectedTrials": 2,
+      "earlierLocalActionMismatch": 1,
+      "acceptedLocal": {
+        "width": 1536,
+        "height": 1024,
+        "bytes": 2678941,
+        "sha256": "ac5ba2a70275a213cd318a8b614812ea20189f774ee93e92363b7870275df6a2",
+        "path": "output/imagegen/dream-silk/qwen-silk-4.png"
+      },
+      "productionAttempts": 2,
+      "earlierProductionRejected": 1,
+      "productionImage": {
+        "path": "output/imagegen/dream-silk/qwen-silk-4-online.png",
+        "bytes": 2730751,
+        "sha256": "3709c316ef102b3e22c8b52c44b8f1a23486b656419738f5d27f76a3f055d407"
+      },
+      "localReport": "dream-silk-live.json",
+      "onlineReport": "dream-silk-live-online.json"
+    },
+    "designReview": {
+      "disposition": "ship",
+      "scope": "original first-phase UI/style extension plus resolved A1 whole-painting visibility fix; future consistency is not certified",
+      "report": ".impeccable/review/dream-silk-final/review.md",
+      "correctionReport": ".impeccable/review/dream-silk-action-confirm/review.md",
+      "documenter": ".impeccable/dream-surface.md"
+    },
+    "captures": {
+      "local": 11,
+      "online": 11
+    }
+  },
+  "configuration": {
+    "report": "dream-silk-service-config.json",
+    "existingVolume": "/data/dreams",
+    "newServerPurchased": false,
+    "unrelatedVariablesAndServicesPreserved": true
+  },
+  "limitations": [
+    "The default local Edge connection still closes; successful public checks pin a freshly obtained public DNS address per request/browser, preserving TLS and system settings.",
+    "Current actual samples support action and matte-material improvement; temporary references still carry idealized faces and do not guarantee future gesture, text suppression or recurring identity.",
+    "Two earlier local images drew text, the third local image missed its gesture, and the first online sample repeated the old pose with text. All records remain available; current recipe and reference revision changed in response.",
+    "Eight authored story starting nodes across three literature contexts; Guiyou continuation uses reviewed public headings, not full verified text.",
+    "Dynamic comic is one generated image across three camera/narration positions, not frame-by-frame character animation. Generated-image shots 1 and 3 show the whole painting; shot 2 is an intimate view.",
+    "Single-instance file queue and per-browser private album; no new cross-device sync or full offline startup."
+  ],
+  "previousReleaseArchive": "output/playwright/dream-v5-published-evidence/",
+  "previousSilkArchive": "output/playwright/dream-silk-3-evidence/"
+}

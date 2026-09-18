@@ -49,7 +49,7 @@ describe('private generated-story album',()=>{
     expect((await fetch(url+'/jobs/'+job.id+'/image',{headers:{'X-Dream-Album':other}})).status).toBe(404);
     expect((await(await fetch(url+'/jobs',{headers:{'X-Dream-Album':other}})).json()).jobs).toHaveLength(0);
     expect(JSON.stringify(job)).not.toContain('providerResult');expect(JSON.stringify(job)).not.toContain('owner');
-    const payload=JSON.parse((request.mock.calls[0] as unknown as [string,RequestInit])[1].body as string);expect(payload.prompt).toContain('尚未赴约');expect(payload.prompt).toContain('不借用其他版本结局');
+    const payload=JSON.parse((request.mock.calls[0] as unknown as [string,RequestInit])[1].body as string);expect(payload.prompt).toContain('尚未赴约');expect(payload.prompt).toContain('no endings from other editions');
   });
   it('recovers an accepted Qwen task after restart without another generation or quota charge',async()=>{
     let finished=false, submissions=0;

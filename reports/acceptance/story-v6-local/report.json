@@ -1,0 +1,27 @@
+{
+  "version": "literary-comics-20260917-v4",
+  "at": "2026-09-17T09:17:12.624Z",
+  "url": "http://127.0.0.1:4291/",
+  "checks": [
+    "eighty chapters is the default for a fresh visitor",
+    "eighty-chapter catalog excludes continuations"
+  ],
+  "screenshots": [
+    "reports/acceptance/story-v6-local/desktop-library.png",
+    "reports/acceptance/story-v6-local/failure.png"
+  ],
+  "errors": [],
+  "comicResponses": [
+    {
+      "url": "http://127.0.0.1:4291/comics/petals-mobile.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4291/comics/petals.webp",
+      "status": 200
+    }
+  ],
+  "failed": [],
+  "passed": false,
+  "failure": "Error: pause freezes the illustration"
+}

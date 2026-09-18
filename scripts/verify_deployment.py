@@ -26,7 +26,8 @@ files=[]
 art=json.loads((R/'public/art/manifest.json').read_text(encoding='utf8'))
 shared=next((R/'public/textures/shared').glob('*.jpg')).relative_to(R/'public').as_posix()
 comic_files=[p.relative_to(R/'public').as_posix() for p in sorted((R/'public/comics').glob('*')) if p.is_file()]
-for relative in ['models/overview.glb','models/overview-low.glb','models/vegetation/ground-cover.glb','textures/ground/soil.jpg','textures/ground/surface-zones.png','scene-manifest.json','models/places-low/xiaoxiangguan.glb','textures/vegetation/canopy-atlas.webp','textures/landscape-light.webp','textures/forest_grove.hdr','art/manifest.json',art[0]['url'],shared,'data/sources.json','data/editionCatalog.json','data/comicArt.json',*comic_files]:
+dream_files=[p.relative_to(R/'public').as_posix() for folder in ['dream-style','dream-characters','dream-scenes'] for p in sorted((R/'public'/folder).glob('*')) if p.is_file()]
+for relative in ['models/overview.glb','models/overview-low.glb','models/vegetation/ground-cover.glb','textures/ground/soil.jpg','textures/ground/surface-zones.png','scene-manifest.json','models/places-low/xiaoxiangguan.glb','textures/vegetation/canopy-atlas.webp','textures/landscape-light.webp','textures/forest_grove.hdr','art/manifest.json',art[0]['url'],shared,'data/sources.json','data/editionCatalog.json','data/comicArt.json','data/dreamReferences.json',*comic_files,*dream_files]:
  body=get('/'+relative);actual=hashlib.sha256(body).hexdigest();expected=hashlib.sha256((R/'public'/relative).read_bytes()).hexdigest()
  assert actual==expected,relative
  files.append({'path':relative,'sha256':actual,'bytes':len(body),'matchesLocal':True})

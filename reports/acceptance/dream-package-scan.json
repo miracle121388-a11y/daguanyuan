@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20260916-174034-411820",
+  "directory": ".deploy/reference-20260917-112848-285186",
   "files": [
     {
       "path": "Dockerfile",
@@ -7,7 +7,7 @@
     },
     {
       "path": "server.mjs",
-      "sha256": "6eedc2c65dc2486c369bcf5a407ba028d15d06e551b5f31cbc42b40404011a43"
+      "sha256": "7243cb08c2cf48c482a2fb10d45e5558ece45b06f69b21e4c787bb5f40723d2c"
     },
     {
       "path": "dist/asset-aliases.json",
@@ -19,11 +19,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "e2abb0659058ebbd6998d30dbe3f7cb4614824d2be2578ae8b78feb0242287e6"
+      "sha256": "f43fd5fc24b1a5957a1a7aedca8779a444ff7c41f803787fab77fc58263ad1f8"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "aada19c6f3489623bf2a9a8cd3c268a9a25e8640ca792819509ffed1570d8d51"
+      "sha256": "d327a760d336a0817d370115f1ae35594d61361387d910f27d7d8c1e1dff9539"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -35,7 +35,11 @@
     },
     {
       "path": "server/dream-api.mjs",
-      "sha256": "1d014192012fdd51d44a5df8e8adcdb758f242838867d6bb81f94cca9b7f1aea"
+      "sha256": "6e624c52aa9af6bd6f672554fc197257332aea9e336f0e80f5a5935372eed4a5"
+    },
+    {
+      "path": "server/dream-cards.mjs",
+      "sha256": "45cb58e0420add2f1becd4aff2c9a8797ef99c5c3f6b4c3219a2f417dba96376"
     },
     {
       "path": "server/dream-download.mjs",
@@ -43,11 +47,23 @@
     },
     {
       "path": "server/dream-prompts.mjs",
-      "sha256": "074cd5caa05c78e570f82d1d5b27f7b95f37a5cd53020de70770f6b3b44873c4"
+      "sha256": "9b9d988bfeef32b67fc073a4eb30c531b190784ab010187e25d62c05d262320a"
     },
     {
       "path": "server/dream-provider.mjs",
-      "sha256": "0986bb1ae2d30f9948b84982de7759301a025d9a436e6b2a392874556107638b"
+      "sha256": "71482c4b8b8e94f21c0fe2cf06f0a130d94be45a31e5afc6596c61079635465f"
+    },
+    {
+      "path": "server/dream-references.mjs",
+      "sha256": "2ff30fe1d724879cf49d2117bf063c8436137ec93f2da1ebd5a45b30a6e28511"
+    },
+    {
+      "path": "server/dream-scene-plan.mjs",
+      "sha256": "93c04ba8c60dd7b77cf471b09f101b63cdcee229b596ed1b3eed644afb07a992"
+    },
+    {
+      "path": "server/dream-style.mjs",
+      "sha256": "866342ccd21fc394a9558a193033b4565246c3953cd28efbab4155430f75313f"
     },
     {
       "path": "server/simulation-api.mjs",
@@ -426,20 +442,20 @@
       "sha256": "c0edf34ebcd70ab6b196b82b43d0d7d47d60d16eb61756ef0ff217c8d5739e0c"
     },
     {
-      "path": "dist/assets/GardenScene-BnwNGFhc.js.br",
-      "sha256": "27a42d8b6ce34017326f00ee6a2bc42d4cd12a9e56e19eef9dda38641d175a36"
+      "path": "dist/assets/GardenScene-CBQGpscj.js.br",
+      "sha256": "3e4f42dacf36b847daa9e75232d305269607ef658ad9b6c6580c0ce6f359891f"
     },
     {
-      "path": "dist/assets/index-mwX_4FuA.js.br",
-      "sha256": "5815584963dba520030f0dd8817d066f02d5bf0202ef1ca491c92adb68e31721"
+      "path": "dist/assets/index-BZGtLrvc.js.br",
+      "sha256": "e418894089cc0b02a72cba839210280883f19552b9a5e47460ccd0cc6e64d5db"
     },
     {
-      "path": "dist/assets/index-TUdwtLZZ.css",
-      "sha256": "b3c614402670bd097dad168d87bdf2a5aa85e3ed75f7c78c594d8760f560dbf7"
+      "path": "dist/assets/index-CDFQAyVl.css",
+      "sha256": "8397102edbb9f7a0aeff134fa7510c93f3a76a170ed6fe50cc1936989fa8d774"
     },
     {
-      "path": "dist/assets/index-TUdwtLZZ.css.br",
-      "sha256": "5e07962c5b606ba508e3fc4975977f270a60ce52c954758a4a0dc668a5c86f64"
+      "path": "dist/assets/index-CDFQAyVl.css.br",
+      "sha256": "ee40fd46006eb8b2570c1d74709a6f00e39c2c3063c72cc1f22dd9151443d300"
     },
     {
       "path": "dist/comics/bamboo-mobile.webp",
@@ -578,6 +594,14 @@
       "sha256": "f6a67e3711e35afec01aa7ba5232705371d45e987fc4d069695a14316fdd455a"
     },
     {
+      "path": "dist/data/dreamReferences.json",
+      "sha256": "0d3dd0a6bfbf72d8e1643482dc80d89d946dfec047439242dc9653647072f040"
+    },
+    {
+      "path": "dist/data/dreamReferences.json.br",
+      "sha256": "f333ebb02684ce88ad2244ca04c2daeb49a2bf4d6fa5ea35f6e3449961fe97d6"
+    },
+    {
       "path": "dist/data/editionCatalog.json",
       "sha256": "4430ac986150918e45c6e70d887523958e52bd81ea6ab46ad5c4b5424b6726f8"
     },
@@ -644,6 +668,258 @@
     {
       "path": "dist/draco/LICENSE",
       "sha256": "d3709b0fb4b8a94bbb1d02b8a2e484f258b0d9c5c5a01f940391f3fe662cd1a4"
+    },
+    {
+      "path": "dist/dream-characters/baochai.webp",
+      "sha256": "8d2d5d5acd421c80be58dab4320d6ddf7d3850f0b72ce01409df636f29aefdf9"
+    },
+    {
+      "path": "dist/dream-characters/baochai.webp.json",
+      "sha256": "f399c6ba8377c53a220c42d42d1aa298fe6b9596c15523ac8b1d7c1439286037"
+    },
+    {
+      "path": "dist/dream-characters/baochai.webp.json.br",
+      "sha256": "317a20abd7cfd38b6f5f34cccef07f7d1537e907e11c09f9bd09ceebd28ef908"
+    },
+    {
+      "path": "dist/dream-characters/baoyu.webp",
+      "sha256": "4391fc76ab148c03867d9d9e1af4d54003157c5e214b488da426a711cc733fa5"
+    },
+    {
+      "path": "dist/dream-characters/baoyu.webp.json",
+      "sha256": "4fa636da21c5543d085e46c3680b5e99ce23347d9abbe223321acb73565dd6bd"
+    },
+    {
+      "path": "dist/dream-characters/baoyu.webp.json.br",
+      "sha256": "527c63f73c8402170dbc56175bbb69b45c831a7e1529f2bf36b0a87f8cfb96fb"
+    },
+    {
+      "path": "dist/dream-characters/daiyu.webp",
+      "sha256": "77463a7c7c5db715b31d666c7de5182e50e63d0b26a8ec207509b483e1d17bf3"
+    },
+    {
+      "path": "dist/dream-characters/daiyu.webp.json",
+      "sha256": "bebfb8e3026adf5a3066d76b7a475297a1640458f8059a84b334d171425d2996"
+    },
+    {
+      "path": "dist/dream-characters/daiyu.webp.json.br",
+      "sha256": "4cdb8664390731a5199220c883e836e93e44b95edda0cec66a016916e5e9e257"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baochai-wangxifeng.webp",
+      "sha256": "7d30bbebce8a2a550f49e4ca68f37f529e67003a61d8a47f7f622f221b2ba8c7"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baochai-wangxifeng.webp.json",
+      "sha256": "ef996ceb84fb11a189915be9cdbccca988cfae5ff3f0937cab54a5bfa8426de5"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baochai-wangxifeng.webp.json.br",
+      "sha256": "909ff9de776d7b30f550fbeb05065409eb23eff861b0516d347145369aeedde9"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baoyu-baochai-wangxifeng.webp",
+      "sha256": "f7127651b8ac00fb2ff809d93bffb6bc864f18060b4225ae51b9fe4972807d37"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baoyu-baochai-wangxifeng.webp.json",
+      "sha256": "639f5f2a153a667409e224b2995d9c990f9a5d1622815d135bea943209c9495a"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baoyu-baochai-wangxifeng.webp.json.br",
+      "sha256": "670f7e039ff8150ad087ea2b49e1104d0853553ed70320495fb715eff2da85a0"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baoyu-baochai.webp",
+      "sha256": "6e716bfa3dbc282c24fee887d1d346d7d6adeeba22997651055a7d02eabe6d82"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baoyu-baochai.webp.json",
+      "sha256": "822ea80b08cb5ac070acb7a5720b9f62201c4c5c6a7ab527eaa69423d33a5eb6"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baoyu-baochai.webp.json.br",
+      "sha256": "ba548569bb951982fb552c1474c705a7f3c04f45bd26047306facfe6b02b09c7"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baoyu-wangxifeng.webp",
+      "sha256": "7dd3b324d91c1ee60c302f046a7d966b7b005a7073810255bc78bb35c55b757e"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baoyu-wangxifeng.webp.json",
+      "sha256": "2e8dfa3c296445f8a6fb479cbdb61f75d7563a573bc10f3ef306c3df5cef6d64"
+    },
+    {
+      "path": "dist/dream-characters/sheet-baoyu-wangxifeng.webp.json.br",
+      "sha256": "ff9763c1abd34e82c6077cce7ffe86ce4d1f82fa1323d21297faa3a06eddbd74"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baochai-wangxifeng.webp",
+      "sha256": "c1e410dc6a5b9aec2de2784f4d2621bd7192845ed1733fd65588e73015903ac4"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baochai-wangxifeng.webp.json",
+      "sha256": "eee402416e197a8641ff82df90e21610fb102af56d2166a406fbaaa904726354"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baochai-wangxifeng.webp.json.br",
+      "sha256": "8a06aca45bdb3f68f2760a9b522a18ada66bc220a56773c81ff5bf0bf96c2092"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baochai.webp",
+      "sha256": "25680254037b03efbefe2bc428d08f54e9631484c94cf9697ef39f8bab9a679f"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baochai.webp.json",
+      "sha256": "7dc4f359eb64b476a9c2ed33e43c99b78f3c08dde9e6428cd404bc3995e2b446"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baochai.webp.json.br",
+      "sha256": "3c433a1198200a43a813b8ad7df297994aabe4008928441456eacf68470f530b"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu-baochai-wangxifeng.webp",
+      "sha256": "2356f93fb8d14c93463d2a8afce7c04f20b882e1d64d014c8d2c48b14bfa6d11"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu-baochai-wangxifeng.webp.json",
+      "sha256": "b946f8d6a14de26c46a4d24ddf485041cdd676d662d68d15930343fdc2af7a0c"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu-baochai-wangxifeng.webp.json.br",
+      "sha256": "7e1d26f79aeda7fcd100dd50daf1edb04e241f9c916f64ec1abba0d3de5c2b59"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu-baochai.webp",
+      "sha256": "06b245af3ed0820cddbb6518dda4c2b34369fcea1475deeb9a3e652512ef5512"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu-baochai.webp.json",
+      "sha256": "284d5571b22c5d147b447294a106c9e7694be7a19df59f7ccf29ae56a6bac113"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu-baochai.webp.json.br",
+      "sha256": "2e2884e55e579aaeda28f130cca43109b01e8ca43d43b666b8c4ccadfa1d33db"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu-wangxifeng.webp",
+      "sha256": "b2f324cc4c0952e4d36070882728dd69db57c8130a3d96ffca9c727caf09762b"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu-wangxifeng.webp.json",
+      "sha256": "0e87a12fab9ec3faeb9fce90d84548d36dee3dc9901323c87f36ef421157f49e"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu-wangxifeng.webp.json.br",
+      "sha256": "d60e45dea195fb166a890f9630ab639e3288c6977926f0777c5491cb912cf729"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu.webp",
+      "sha256": "98f47b101f6762d669f23dfbbf7f8abb5edeff3b99789e554ac6baa5912bfe00"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu.webp.json",
+      "sha256": "347b5f39439e668d064be76a477ff5b7253a70c797a082d65cccd60f732d05a5"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-baoyu.webp.json.br",
+      "sha256": "b70363fa5deab82ad9e7abd1c81b59ea856ea71d720e8caf73a2bd087121a17b"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-wangxifeng.webp",
+      "sha256": "44bd3de29d2a59b9887746913c2f0f2c081bd2231be0e048f985dffb75d6306c"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-wangxifeng.webp.json",
+      "sha256": "7830beea4b04ee3e24c49aed589b398312a26324761737a53048a58292d6e41c"
+    },
+    {
+      "path": "dist/dream-characters/sheet-daiyu-wangxifeng.webp.json.br",
+      "sha256": "96093d5a2f3a471ee03bf400928935e5c79bae881b7f6f3a7a05de20a0436f53"
+    },
+    {
+      "path": "dist/dream-characters/wangxifeng.webp",
+      "sha256": "affce9b4beb6b2969f6a98f2927962820a8257ffa34b88009fb390f180d96d6b"
+    },
+    {
+      "path": "dist/dream-characters/wangxifeng.webp.json",
+      "sha256": "80b4ec5c71dbce973ea687adb94393ceef36a63df4b16cdc2dfba475b099dbb7"
+    },
+    {
+      "path": "dist/dream-characters/wangxifeng.webp.json.br",
+      "sha256": "edc6efe75ffc52a4ed7f5f37f0975784b8fc4031aa4806e89d1235072a60d4fa"
+    },
+    {
+      "path": "dist/dream-scenes/daoxiangcun.webp",
+      "sha256": "f763aa24229095ba8899b8756bec9aaf9948451e51f31bf666068ec3474ea80e"
+    },
+    {
+      "path": "dist/dream-scenes/daoxiangcun.webp.json",
+      "sha256": "5ef2586051e86f1e53ad5dd72eca5965a912f9b9e0d3526fd1641326d463907b"
+    },
+    {
+      "path": "dist/dream-scenes/daoxiangcun.webp.json.br",
+      "sha256": "4259e6de5f773b24376e1d28459f40503a727c424b6d5b798e880c094bfb9e07"
+    },
+    {
+      "path": "dist/dream-scenes/hengwuyuan.webp",
+      "sha256": "ccdfa1f30846e33e9a3ce0dfbd8af5f51f3b0703112e089c8a3ba9896ea2cdce"
+    },
+    {
+      "path": "dist/dream-scenes/hengwuyuan.webp.json",
+      "sha256": "1b4605ba6f2fd1c430d2558c38aa72927d5c4f04bcf3f734483f8f9ada4b6e5c"
+    },
+    {
+      "path": "dist/dream-scenes/hengwuyuan.webp.json.br",
+      "sha256": "e1e0200222bea6d2b2da06ac17b0bcf17a2138d4be612973fa3256c252e222b8"
+    },
+    {
+      "path": "dist/dream-scenes/qiushuangzhai.webp",
+      "sha256": "0cffca42410f4744290f9f4be6a780a42bc128bb792d2e585aaac6dc706de03e"
+    },
+    {
+      "path": "dist/dream-scenes/qiushuangzhai.webp.json",
+      "sha256": "0623d1d8cd9ba239180bb2b96fbe6a00562286ce2aa7bbe4b29fd735189f2fd2"
+    },
+    {
+      "path": "dist/dream-scenes/qiushuangzhai.webp.json.br",
+      "sha256": "cf8ffa8dc8155f9b75ff4998d44f3255c3ad9af900e3dcfd268b2ccaaf5c75b2"
+    },
+    {
+      "path": "dist/dream-scenes/xiaoxiangguan.webp",
+      "sha256": "9664b2105c3a949152c49444a4c2ad70aa44dd6b119f22e4ea4a66b3a70d7cb1"
+    },
+    {
+      "path": "dist/dream-scenes/xiaoxiangguan.webp.json",
+      "sha256": "0279bf8aab7b8d4d4ee6bfedbb4745f6859d4df5894b6053bf3a80b64674bcb3"
+    },
+    {
+      "path": "dist/dream-scenes/xiaoxiangguan.webp.json.br",
+      "sha256": "9c7e786fb79b7a6474f9cf3324e69868edd3dcbe6c4cdafd86fe4ab78caa4a63"
+    },
+    {
+      "path": "dist/dream-scenes/yihongyuan.webp",
+      "sha256": "4eca61f30d14d3d8be2c1eb156aadae082126049ee6b5363abf74e5a62dbe6f6"
+    },
+    {
+      "path": "dist/dream-scenes/yihongyuan.webp.json",
+      "sha256": "96230922355ab6264958deeb4709ffebf5bbd8fbeca04929fb6cee11ba5b19c7"
+    },
+    {
+      "path": "dist/dream-scenes/yihongyuan.webp.json.br",
+      "sha256": "063706ec3d507dc6f970669da39693d77f3c6d04c2ac3c15ace3fa3c18be906b"
+    },
+    {
+      "path": "dist/dream-style/silk-study-1.webp",
+      "sha256": "c5f6bce9f94caa1a2db82b82d1a17a8df016a5f5de44470aee42a5e0cd680267"
+    },
+    {
+      "path": "dist/dream-style/silk-study-1.webp.json",
+      "sha256": "1473b159ee44c80b26caa1e44cc6928bb4e307a647a01e13509b0b125919fdc3"
+    },
+    {
+      "path": "dist/dream-style/silk-study-1.webp.json.br",
+      "sha256": "ad204025bf1bbe023e75fbe47e0b0b3a24782e7ad6c261fd61749fc46d695147"
     },
     {
       "path": "dist/models/overview-low.glb.br",
@@ -1896,6 +2172,8 @@
   ],
   "credentialsFound": false,
   "decodedBrotliChecked": true,
-  "count": 473,
+  "matchesCompletedBuild": true,
+  "referencesMatched": 21,
+  "count": 542,
   "passed": true
 }

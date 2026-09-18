@@ -1,0 +1,22 @@
+{
+  "revision": "dream-references-2",
+  "style": {
+    "id": "silk-study-1",
+    "source": "bamboo",
+    "crop": {"left": 500, "top": 1, "width": 162, "height": 275},
+    "note": "临时风格母本：既有漫画中竹纹绢屏的局部，只取平面笔线与米绢底色；不是晚清原作，也不是最终风格素材。矿物色与哑光表面以梦绢文字规范为准。"
+  },
+  "characters": [
+    {"id": "daiyu", "name": "林黛玉", "source": "bamboo", "crop": {"left": 660, "top": 140, "width": 290, "height": 200}, "note": "既有漫画的发髻与面部上部局部，去除执笔、托腮的手势和桌案，减少动作泄漏；衣着以文字造型为准，面容按哑光工笔重绘。"},
+    {"id": "baoyu", "name": "贾宝玉", "source": "poetry", "crop": {"left": 20, "top": 180, "width": 350, "height": 475}},
+    {"id": "baochai", "name": "薛宝钗", "source": "poetry", "crop": {"left": 565, "top": 182, "width": 298, "height": 448}},
+    {"id": "wangxifeng", "name": "王熙凤", "source": "storm", "crop": {"left": 528, "top": 74, "width": 358, "height": 592}}
+  ],
+  "scenes": [
+    {"placeId": "xiaoxiangguan", "source": "xiaoxiangguan-day"},
+    {"placeId": "yihongyuan", "source": "yihongyuan-courtyard"},
+    {"placeId": "hengwuyuan", "source": "hengwuyuan"},
+    {"placeId": "daoxiangcun", "source": "daoxiangcun"},
+    {"placeId": "qiushuangzhai", "source": "qiushuangzhai"}
+  ]
+}

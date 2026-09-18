@@ -1,0 +1,82 @@
+{
+  "at": "2026-09-17T11:40:27.422Z",
+  "captures": [
+    {
+      "path": "reports/acceptance/dream-silk-online/desktop-album.png",
+      "sha256": "32646b57b21d35da922675e72c2b205b50cd52e38b804c83269467c4ba3f7196",
+      "width": 1440,
+      "height": 900,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/desktop-provenance.png",
+      "sha256": "44d5ef877855e0e1a1c358e31fa7b54ef6af3d424a6b9dc79b763c8e50d75e4b",
+      "width": 1440,
+      "height": 900,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/desktop-comic.png",
+      "sha256": "5913aa0eb888b2bb4df95fbbfacfd4b8243e09a6d2de1f2cba8bf94f7a8a1fd6",
+      "width": 1440,
+      "height": 900,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/mobile-album.png",
+      "sha256": "7c12c3e4ff84786590dd988d4d8fe7a8c1450980e96f2b1dab352bdf7d5b8195",
+      "width": 390,
+      "height": 844,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/mobile-comic.png",
+      "sha256": "baee36a5188bb560de407ef54a1b36e681fa18db55206f7a97ef2d683a5ae69f",
+      "width": 390,
+      "height": 844,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/compact-comic.png",
+      "sha256": "0b3ccb700312559885868e3aaf740c509119eea689789d129e17b2abdf173d6b",
+      "width": 320,
+      "height": 720,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/compact-album.png",
+      "sha256": "1090d573b8d9d587ef1873348161202be5416e088b2e322e23e72da47edbbfc6",
+      "width": 320,
+      "height": 720,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/user-441.png",
+      "sha256": "f542b58add94888267f836f502532cfb2aee9d41795056b569e3660f9cf0370b",
+      "width": 441,
+      "height": 694,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/desktop-workshop.png",
+      "sha256": "0786d7bad4280db47e85da0dbec3696f88e52ef750f9082b27262c24ea68e1b7",
+      "width": 1440,
+      "height": 900,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/mobile-workshop.png",
+      "sha256": "52a79f0c2f2ed6cda0d8afab7b08f6fb562eb8ca65e9dffea08baa899eaee5cb",
+      "width": 390,
+      "height": 844,
+      "rootOpenedAtOriginalSize": true
+    },
+    {
+      "path": "reports/acceptance/dream-silk-online/compact-workshop-submit.png",
+      "sha256": "9abe67db9bb77ec3ddd011aed8197eb3fb3670d16c7914b1a1448d21f2c3dfa3",
+      "width": 320,
+      "height": 720,
+      "rootOpenedAtOriginalSize": true
+    }
+  ]
+}

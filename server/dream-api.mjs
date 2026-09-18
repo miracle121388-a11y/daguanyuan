@@ -3,7 +3,11 @@ import {mkdir, readFile, writeFile, readdir, rename} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {resolveImage} from './dream-download.mjs';
 import {renderDream, maximumImageBytes} from './dream-provider.mjs';
-import {validMoment, cleanMoment, makeDreamPrompt, digest, promptRevision} from './dream-prompts.mjs';
+import {validMoment, cleanMoment, visibleSceneText, makeDreamPromptSections, joinPromptSections, digest, promptRevision} from './dream-prompts.mjs';
+import {styleVersion, styleName, negativePrompt, renderingSettings} from './dream-style.mjs';
+import {loadDreamReferences, chooseReferences} from './dream-references.mjs';
+import {assignCard, migrateDreamJobs} from './dream-cards.mjs';
+import {scenePlanSettings, prepareScenePlan} from './dream-scene-plan.mjs';
 
 const validId = s => /^[a-f0-9-]{36}$/.test(s ?? '');
 const ownerFor = req => /^[a-f0-9]{64}$/.test(req.headers['x-dream-album'] ?? '') ? digest(req.headers['x-dream-album']) : null;
@@ -28,7 +32,8 @@ export function createDreamApi(env = process.env, request = fetch, options = {})
   try {const u = new URL((env.IMAGE_BASE_URL || '').replace(/\/$/, '') + (dashscope ? '/services/aigc/image-generation/generation' : '/images/generations')); if (u.protocol === 'https:' || env.NODE_ENV !== 'production' && u.protocol === 'http:' && ['127.0.0.1', 'localhost'].includes(u.hostname)) endpoint = u.href;} catch { /* Optional service. */ }
   const configured = !!(endpoint && env.IMAGE_API_KEY && env.IMAGE_MODEL && token);
   const jobs = new Map(), controllers = new Map(), working = new Set(); let inflight = 0, storageBytes = 0, storageError = '', closed = false;
-  let catalog, places;
+  let catalog, places, references;
+  const settings = renderingSettings(env);
   const safe = job => {const {owner: _owner, providerResult: _result, providerEndpoint: _endpoint, ...rest} = job; return rest;};
   const today = () => new Date().toISOString().slice(0, 10);
   const attemptsToday = () => [...jobs.values()].reduce((sum, j) => sum + (j.attempts ?? []).filter(at => at.startsWith(today())).length, 0);
@@ -37,6 +42,7 @@ export function createDreamApi(env = process.env, request = fetch, options = {})
     try {
       await mkdir(root, {recursive: true});
       [catalog, places] = await Promise.all(['editionCatalog', 'places'].map(name => readFile(resolve(publicRoot, `data/${name}.json`), 'utf8').then(JSON.parse)));
+      references = await loadDreamReferences(publicRoot);
       for (const file of await readdir(root)) {
         if (!file.endsWith('.json') || !validId(file.slice(0, -5))) continue;
         const j = JSON.parse(await readFile(resolve(root, file), 'utf8'));
@@ -48,13 +54,22 @@ export function createDreamApi(env = process.env, request = fetch, options = {})
         }
         jobs.set(j.id, j); storageBytes += j.bytes || 0;
       }
+      for (const changed of migrateDreamJobs([...jobs.values()])) await save(changed);
     } catch {storageError = '画册存储暂时不可用，请联系管理员检查目录权限与资料。';}
   })();
   const paint = async job => {
     const abort = new AbortController(), timer = setTimeout(() => abort.abort(), timeout); controllers.set(job.id, abort); inflight++;
     try {
       job.status = 'painting'; job.startedAt = new Date().toISOString(); await save(job);
-      const bytes = await renderDream(job, {env, endpoint, dashscope, publicRoot, catalog, request, signal: abort.signal, save, checkedImageUrl, pollMs: options.pollMs});
+      if (job.scenePlanSettings && !job.scenePlan && !job.providerTaskId && !job.providerResult) {
+        const place = places.find(p => p.id === job.moment.placeId);
+        job.scenePlan = await prepareScenePlan({cast: job.moment.cast, snapshot: visibleSceneText(job.moment), note: job.moment.note, place: place.name, environment: place.description, time: job.moment.time}, job.scenePlanSettings, {env, request, signal: abort.signal});
+        job.promptSections = makeDreamPromptSections(job.moment, catalog, places, job.referenceSet, job.negativePrompt, job.scenePlan);
+        job.prompt = joinPromptSections(job.promptSections); job.promptSha256 = digest(job.prompt);
+        if (job.seedSource === 'derived') job.seed = Number.parseInt(digest(JSON.stringify({moment: job.moment, prompt: job.prompt, settings: job.providerSettings, referenceSet: job.referenceSet})).slice(0, 8), 16) % 2147483648;
+        await save(job);
+      }
+      const bytes = await renderDream(job, {env, endpoint, dashscope, publicRoot, catalog, references, request, signal: abort.signal, save, checkedImageUrl, pollMs: options.pollMs});
       try {job.mime = imageType(bytes);} catch (error) {job.resumeAvailable = false; delete job.providerResult; throw error;}
       job.imageSha256 = digest(bytes); job.bytes = bytes.length;
       await writeFile(resolve(root, job.id + '.image.next'), bytes); await rename(resolve(root, job.id + '.image.next'), resolve(root, job.id + '.image'));
@@ -71,7 +86,7 @@ export function createDreamApi(env = process.env, request = fetch, options = {})
     const path = req.url?.split('?')[0]; if (!path?.startsWith('/api/dreams/')) return false;
     const send = (status, data, headers = {}) => {if (!res.destroyed) {res.writeHead(status, {'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', ...headers}); res.end(JSON.stringify(data));}};
     await initialized;
-    if (path === '/api/dreams/config') {if (req.method !== 'GET') send(405, {error: '仅支持GET。'}); else send(200, {configured: configured && !storageError, needsToken: true, dailyLimit, remaining: Math.max(0, dailyLimit - attemptsToday()), model: env.IMAGE_MODEL || '', error: storageError}); return true;}
+    if (path === '/api/dreams/config') {if (req.method !== 'GET') send(405, {error: '仅支持GET。'}); else send(200, {configured: configured && !storageError, needsToken: true, dailyLimit, remaining: Math.max(0, dailyLimit - attemptsToday()), model: env.IMAGE_MODEL || '', styleVersion, styleName, promptRevision, referenceRevision: references?.manifest?.revision ?? 'text-only', error: storageError}); return true;}
     const owner = ownerFor(req); if (!owner) {send(401, {error: '画册身份无效，请刷新页面后重试。'}); return true;}
     if (storageError) {send(503, {error: storageError}); return true;}
     const parts = path.split('/'), job = validId(parts[4]) ? jobs.get(parts[4]) : null;
@@ -95,13 +110,23 @@ export function createDreamApi(env = process.env, request = fetch, options = {})
       if (job) {
         if (job.status !== 'failed') {send(200, {job: safe(job)}); return true;}
       } else if (!validMoment(body.moment, catalog, places)) {send(400, {error: '剧情快照不完整或与版本不符，请重新选取这一刻。'}); return true;}
-      const moment = job?.moment || cleanMoment(body.moment), key = digest(JSON.stringify({owner, moment, promptRevision}));
+      const moment = job?.moment || cleanMoment(body.moment);
+      let specification;
+      if (!job) {
+        const referenceSet = chooseReferences(moment, references, settings.referencesEnabled);
+        const promptSections = makeDreamPromptSections(moment, catalog, places, referenceSet), prompt = joinPromptSections(promptSections);
+        const seed = settings.nativeParameters ? settings.configuredSeed ?? Number.parseInt(digest(JSON.stringify({moment, prompt, settings, referenceSet})).slice(0, 8), 16) % 2147483648 : null;
+        specification = {styleVersion, styleName, negativePrompt, negativePromptSha256: digest(negativePrompt), promptRevision, promptSections, prompt, promptSha256: digest(prompt),
+          referenceSet, providerSettings: {...settings}, scenePlanSettings: scenePlanSettings(env), seed, seedSource: seed === null ? 'unsupported' : settings.configuredSeed !== null ? 'configured' : 'derived'};
+      }
+      const key = job?.key || digest(JSON.stringify({owner, moment, model: env.IMAGE_MODEL, ...specification}));
       const existing = [...jobs.values()].find(j => j.key === key);
       if (!job && existing) {send(200, {job: safe(existing), reused: true}); return true;}
       if (!job?.resumeAvailable && attemptsToday() >= dailyLimit) {send(429, {error: '今日生图次数已用完。已收藏的画作仍可回看。'}); return true;}
       if (storageBytes + ([...jobs.values()].filter(j => ['queued', 'painting'].includes(j.status)).length + 1) * maximumImageBytes > storageLimit || jobs.size >= 1000) {send(507, {error: '画册服务容量已满，请联系管理员扩展当前服务存储。'}); return true;}
       if ([...jobs.values()].filter(j => ['queued', 'painting'].includes(j.status)).length >= 5) {send(429, {error: '画师正在处理其他画作，请稍候再试。'}); return true;}
-      const at = new Date().toISOString(), next = job ? {...job, attempts: [...job.attempts]} : {id: randomUUID(), owner, key, moment, createdAt: at, attempts: [], model: env.IMAGE_MODEL, providerOrigin: new URL(endpoint).origin, promptRevision, prompt: makeDreamPrompt(moment, catalog, places), contentType: 'generated-art'};
+      const at = new Date().toISOString(), next = job ? {...job, attempts: [...job.attempts]} : {id: randomUUID(), owner, key, moment, createdAt: at, attempts: [], model: env.IMAGE_MODEL, providerOrigin: new URL(endpoint).origin,
+        ...specification, ...assignCard(moment, owner, jobs.values()), contentType: 'generated-art'};
       next.status = 'queued'; next.error = '';
       if (!next.resumeAvailable) {next.attempts.push(at); delete next.providerTaskId; delete next.providerEndpoint; delete next.providerResult;}
       next.promptSha256 = digest(next.prompt); jobs.set(next.id, next);

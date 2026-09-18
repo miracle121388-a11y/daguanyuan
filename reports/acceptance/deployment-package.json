@@ -1,14 +1,14 @@
 {
-  "directory": ".deploy/reference-20260916-174034-411820",
+  "directory": ".deploy/reference-20260917-112848-285186",
   "contents": [
     "dist/",
     "server.mjs",
     "server/*.mjs",
     "Dockerfile"
   ],
-  "rawBytes": 56519760,
-  "compressedBytes": 47263815,
-  "uploadDirectoryBytes": 49189185,
+  "rawBytes": 58359635,
+  "compressedBytes": 48947442,
+  "uploadDirectoryBytes": 51097048,
   "precompressedExtensions": [
     "html",
     "js",
@@ -29,5 +29,5 @@
     "models/overview.glb": "models/overview-low.glb"
   },
   "privateFilesIncluded": false,
-  "createdAt": "2026-09-16T17:40:36.616574+00:00"
+  "createdAt": "2026-09-17T11:28:51.776235+00:00"
 }

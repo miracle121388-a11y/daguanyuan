@@ -27,7 +27,7 @@ const httpServer=createServer(async(req,res)=>{
  if(await simulationApi(req,res))return;
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{'Allow':'GET, HEAD'});return res.end()}
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400);return res.end()}
- if(pathname==='/healthz'){res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});return res.end(JSON.stringify({status:'ok',application:'daguanyuan-rumeng',revision:revision(),featureRevision:'qwen-dream-album-20260917-v5'}))}
+ if(pathname==='/healthz'){res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});return res.end(JSON.stringify({status:'ok',application:'daguanyuan-rumeng',revision:revision(),featureRevision:'honglou-silk-20260917-v6'}))}
  let file=resolve(root,'.'+pathname);if(file!==root&&!file.startsWith(root+sep)){res.writeHead(403);return res.end()}
  if(pathname==='/'||pathname.endsWith('/'))file=resolve(file,'index.html');
  const alias=Object.hasOwn(assetAliases,pathname.slice(1))?assetAliases[pathname.slice(1)]:null;

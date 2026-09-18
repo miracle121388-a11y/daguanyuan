@@ -20,7 +20,7 @@ export async function saveDream(entry: DreamEntry) {
   const db = await open();
   return new Promise<void>((resolve, reject) => {
     const transaction = db.transaction('paintings', 'readwrite');
-    transaction.objectStore('paintings').put({id: entry.job.id, job: entry.job, image: entry.image, favorite: entry.favorite, savedAt: entry.savedAt});
+    transaction.objectStore('paintings').put({id: entry.job.id, job: dreamJobSchema.parse(entry.job), image: entry.image, favorite: entry.favorite, savedAt: entry.savedAt});
     transaction.oncomplete = () => resolve(); transaction.onabort = transaction.onerror = () => reject(transaction.error);
   });
 }

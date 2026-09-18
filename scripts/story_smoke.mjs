@@ -25,6 +25,7 @@ try {
  check(await lib().getByRole('combobox',{name:'剧情依据版本'}).inputValue()==='original80','eighty chapters is the default for a fresh visitor');
  check(await lib().locator('.story-chapters>button').count()===3,'eighty-chapter catalog excludes continuations');
  await shot('desktop-library');await button('展开动态漫画').click();await ready();await button('暂停漫画').click();
+ await page.waitForFunction(()=>document.querySelector('.motion-comic')?.classList.contains('is-paused')&&getComputedStyle(document.querySelector('.comic-art img')).animationPlayState==='paused');
  const frozen=await comic().locator('img').evaluate(e=>({scale:getComputedStyle(e).scale,transform:getComputedStyle(e).transform}));await page.waitForTimeout(350);
  check(JSON.stringify(frozen)===JSON.stringify(await comic().locator('img').evaluate(e=>({scale:getComputedStyle(e).scale,transform:getComputedStyle(e).transform}))),'pause freezes the illustration');
  await button('下一镜').click();check(await comic().getByRole('button',{name:'第2镜：惜春'}).getAttribute('aria-pressed')==='true','manual second panel is selected');

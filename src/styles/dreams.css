@@ -45,11 +45,20 @@
 .dream-album-summary p {margin:0}
 .dream-shelf {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;padding:0 32px 32px}
 .dream-painting {min-width:0;overflow:hidden}
-.dream-picture {position:relative;display:block;width:100%;padding:0;overflow:hidden;background:#d9e0cc;border-radius:4px}
-.dream-picture img {display:block;width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform .35s cubic-bezier(.16,1,.3,1)}
-.dream-picture:hover img {transform:scale(1.025)}
-.dream-picture>span {position:absolute;bottom:12px;right:12px;display:flex;align-items:center;gap:5px;padding:6px 9px;background:#183526df;color:#fff9eb;font-size:11px}
-.dream-painting-copy>p {font-size:12px;color:#58624f;line-height:1.6;margin:15px 0 8px}
+.dream-picture {box-sizing:border-box;position:relative;display:block;width:100%;padding:10px;overflow:hidden;background:#fcfaf3;border:1px solid #d4d8c8;border-radius:2px}
+.dream-picture img {display:block;width:100%;aspect-ratio:3/2;object-fit:contain}
+.dream-picture:hover {border-color:#89987e}
+.dream-painting-copy {padding-top:16px}
+.dream-painting-copy>p {font-size:12px;color:#58624f;line-height:1.6;margin:12px 0 6px}
+.dream-painting-copy>.dream-place-trigger {margin-top:4px}
+.dream-card-catalog {display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;color:#58624f;font-size:12px;line-height:1.8}
+.dream-card-no {font-family:STSong,SimSun,serif;font-size:16px;font-variant-numeric:tabular-nums;letter-spacing:.04em;color:#3d5940}
+.dream-style-intro {margin-top:24px;padding-top:18px;border-top:1px solid #d4d8c8}
+.dream-style-intro>strong {font:400 21px/1.5 STSong,SimSun,serif}
+.dream-style-intro>p {font-size:14px;margin:8px 0}
+.dream-colophon {display:grid;grid-template-columns:2.5em minmax(0,1fr);gap:8px 14px;border-top:1px solid #d4d8c8;padding-top:16px;color:#58624f}
+.dream-colophon dt {color:#3d5940}.dream-colophon dd {margin:0;overflow-wrap:anywhere}.dream-colophon dd>span {display:block;font-size:12px}
+.dream-reference-note {font-size:12px;color:#58624f}
 .dream-painting-copy h3 {font:400 23px/1.5 STSong,SimSun,serif;margin:0 0 8px}
 .dream-painting-copy small {font-size:12px;color:#58624f;line-height:1.7}
 .dream-painting-actions {display:flex;gap:14px;flex-wrap:wrap;margin-top:13px}
@@ -79,6 +88,17 @@
 .story-library>.dream-status {margin:0 32px 20px}
 .comic-bottom>.dream-status {margin-top:14px}
 .dream-working {animation:dream-working 3s linear infinite}
+/* A generated scene can place its crucial action anywhere. The opening and
+   closing shots preserve the entire painting; the middle shot remains intimate. */
+.motion-comic.is-whole-painting {display:flex;flex-direction:column;overflow-y:auto}
+.is-whole-painting .comic-heading {order:0;flex-shrink:0}
+.is-whole-painting .comic-art {position:relative;inset:auto;order:1;flex:1;min-height:180px;z-index:0}
+.is-whole-painting .comic-art picture {position:absolute;inset:0}
+.is-whole-painting .comic-art img {object-fit:contain;object-position:50% 50%!important;transform:scale(.97);transform-origin:center;animation-name:dream-whole-breathe}
+.is-whole-painting .comic-shade {display:none}
+.is-whole-painting .comic-bottom {position:relative;order:2;flex-shrink:0;max-height:45dvh;padding-top:18px}
+.is-whole-painting.reduced-motion .comic-art img {transform:none;scale:1}
+@keyframes dream-whole-breathe {from {scale:1} to {scale:1.025}}
 @keyframes dream-working {to {transform:rotate(360deg)}}
 @media(max-width:760px) {
  .story-dream-tools {margin:0 18px 10px}.story-dream-tools p {max-width:155px;font-size:11px}
@@ -95,4 +115,4 @@
  .dream-toast {right:18px;bottom:calc(76px + env(safe-area-inset-bottom))}.dream-status {padding:10px;gap:8px}.dream-status strong {font-size:15px}.dream-status>img {width:48px;height:48px}
  .story-library>.dream-status {margin:0 18px 16px}
 }
-@media(prefers-reduced-motion:reduce) {.dream-working {animation:none}.dream-picture img {transition:none}.dream-picture:hover img {transform:none}}
+@media(prefers-reduced-motion:reduce) {.dream-working {animation:none}.dream-picture img {transition:none}.dream-picture:hover img {transform:none}.is-whole-painting .comic-art img {transform:none;scale:1}}

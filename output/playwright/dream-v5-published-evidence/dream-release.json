@@ -1,0 +1,194 @@
+{
+  "featureVersion": "qwen-dream-album-20260917-v5",
+  "recordedAt": "2026-09-16T18:02:17.656Z",
+  "status": "published and verified",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "deploymentId": "6aaad55505af289f92f97153",
+  "server": {
+    "id": "6a8eee0bb11fb81fb4aaca05",
+    "name": "Aliyun California 4C 8GB",
+    "city": "Los Angeles",
+    "country": "US",
+    "regionId": "server-6a8eee0bb11fb81fb4aaca05"
+  },
+  "projectId": "6aa142fb6c3d9581b71560ed",
+  "serviceId": "6aa143296c3d9581b71560fa",
+  "environmentId": "6aa142fbda9bc245fba1e845",
+  "package": {
+    "directory": ".deploy/reference-20260916-174034-411820",
+    "bytes": 49189185,
+    "files": 473,
+    "allUploadedHashesUnchanged": true,
+    "scan": "dream-package-scan.json"
+  },
+  "sourceIdentity": [
+    {
+      "path": "src/App.tsx",
+      "bytes": 26648,
+      "sha256": "4d18790b91a124ec69b4c4944f45467772f03bb52f3fdbfe8f752548e02079e4"
+    },
+    {
+      "path": "src/main.tsx",
+      "bytes": 368,
+      "sha256": "d2954eb74066e62ff315153f3f04170a3cc4ae66ed971ddab46d3abbe0be9b3d"
+    },
+    {
+      "path": "src/styles/dreams.css",
+      "bytes": 9719,
+      "sha256": "9137b0e3ceaeefadf938c6e7b21b02b9fbfaf0c82341997dc6e7f4d0c645464e"
+    },
+    {
+      "path": "src/panels/DreamExperience.tsx",
+      "bytes": 13478,
+      "sha256": "bbf2c40268e2c35996078e5ab2318f503b257a279f9bd501789ad0d44b992c2b"
+    },
+    {
+      "path": "src/panels/StoryExperience.tsx",
+      "bytes": 13744,
+      "sha256": "d73a91f2a8c401a3fd86a31ab6b02bec3bc07b976a864c4d94d77ee5b06bfffc"
+    },
+    {
+      "path": "src/panels/SimulationParticipation.tsx",
+      "bytes": 11786,
+      "sha256": "47a855701a2889384b58b3d59b7ca6e2c023b36c7e866c0319d0b1de5f30a3bc"
+    },
+    {
+      "path": "src/dreams/types.ts",
+      "bytes": 1896,
+      "sha256": "540b40e4b575e1634c3e26b4c310e89a08b60fda17eaee0de1db0c2bce2a10d9"
+    },
+    {
+      "path": "src/dreams/moments.ts",
+      "bytes": 2845,
+      "sha256": "44c791fade5a274d54ef0e3775350e82a47f0d6041b11894a2291ca7caed587c"
+    },
+    {
+      "path": "src/dreams/store.ts",
+      "bytes": 8649,
+      "sha256": "60bc78024bffa5ba3bf9e43ae4cab644d45b53d7db4de538192d26f83f8ffd5f"
+    },
+    {
+      "path": "src/dreams/vault.ts",
+      "bytes": 1513,
+      "sha256": "253b51b225fbf7bf1065fc4dbf80544f06b251c0a4522dc45e10a715bb4034ad"
+    },
+    {
+      "path": "src/simulation/store.ts",
+      "bytes": 19588,
+      "sha256": "c4b041f6ca09d152fab0a26f8a8f949ed6ab8aa357e05cb2efd4d7f617de0f15"
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 5291,
+      "sha256": "6eedc2c65dc2486c369bcf5a407ba028d15d06e551b5f31cbc42b40404011a43"
+    },
+    {
+      "path": "server/start.mjs",
+      "bytes": 397,
+      "sha256": "695245c90fc95ebcf53be239b2d9a55267f3e14e2d5eaa133cc4166ecc15f433"
+    },
+    {
+      "path": "server/dream-api.mjs",
+      "bytes": 11265,
+      "sha256": "1d014192012fdd51d44a5df8e8adcdb758f242838867d6bb81f94cca9b7f1aea"
+    },
+    {
+      "path": "server/dream-provider.mjs",
+      "bytes": 5462,
+      "sha256": "0986bb1ae2d30f9948b84982de7759301a025d9a436e6b2a392874556107638b"
+    },
+    {
+      "path": "server/dream-download.mjs",
+      "bytes": 2624,
+      "sha256": "d5a347b380c3c30af5919374acd84e9b01428d800c70f53a9049caf5b9e557d7"
+    },
+    {
+      "path": "server/dream-prompts.mjs",
+      "bytes": 4271,
+      "sha256": "074cd5caa05c78e570f82d1d5b27f7b95f37a5cd53020de70770f6b3b44873c4"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 862,
+      "sha256": "74e2ce563c4abcfafeb25f82a47eb6bd19153b74768deb2a4023f39bcd406974"
+    },
+    {
+      "path": "package.json",
+      "bytes": 4324,
+      "sha256": "1b881a60612a27238f1d55880df5e8f6b92482255bcc11216fa42167fa18693b"
+    },
+    {
+      "path": "scripts/package_deploy.py",
+      "bytes": 4142,
+      "sha256": "5dd1b7f48e1fe37f3268e7c9f43543724cca95059efc00d7d0586ec848175fca"
+    }
+  ],
+  "checks": {
+    "unitAndApi": {
+      "passed": 82,
+      "source": "npm test observed in this task; includes private album, idempotency, quota, provider restart and real moment boundaries"
+    },
+    "integrity": {
+      "passed": 3804,
+      "report": "integrity.json"
+    },
+    "lint": "npm run lint passed after the final UI fixes",
+    "build": "npm run build passed with final source, types and reviewed data",
+    "localDream": {
+      "main": 23,
+      "edges": 7,
+      "report": ".impeccable/review/dream-final"
+    },
+    "onlineDream": {
+      "main": 23,
+      "edges": 7,
+      "report": "dream-online/",
+      "newProviderPostsFromBrowserTests": 0
+    },
+    "onlineStory": {
+      "passed": 24,
+      "report": "story-v5-online/report.json"
+    },
+    "originalGarden": "production-smoke.json",
+    "publicFiles": {
+      "passed": 40,
+      "report": "zeabur-deployment.json"
+    },
+    "actualImage": {
+      "model": "qwen-image-3.0-pro",
+      "bytes": 2211741,
+      "sha256": "7bb91260bbcc499c3858673ad9b5eac35a8b162237baf944e001423d51a9090c",
+      "report": "dream-live-online.json",
+      "deliberateProductionGenerations": 1
+    },
+    "restartPersistence": {
+      "passed": true,
+      "report": "dream-persistence-online.json"
+    },
+    "designReview": {
+      "disposition": "ship for F1 and F2 only",
+      "report": ".impeccable/review/dream-final/verdict.md",
+      "documenter": ".impeccable/dream-surface.md"
+    },
+    "captures": {
+      "opened": 23,
+      "report": "dream-online/capture-inventory.json"
+    }
+  },
+  "configuration": {
+    "report": "dream-service-config.json",
+    "persistentVolume": "/data/dreams",
+    "apiKeyServerOnly": true,
+    "unrelatedServicesUnchanged": true,
+    "newServerPurchased": false
+  },
+  "limitations": [
+    "Default local browser connection still closes; successful public tests use fresh public DNS pinned per request/browser with TLS verification, never system changes. See dream-network.json.",
+    "Three literature contexts have eight authored starting nodes, not full chapter-by-chapter coverage. Guiyou continuation draws only on reviewed public table-of-contents evidence.",
+    "Motion comics use one generated full-color illustration across three camera shots, not frame-by-frame character animation.",
+    "Individual generated details and recurring character consistency are not guaranteed.",
+    "Single-server file queue; saved browser artwork can be read in an already-open page offline, but full app offline startup and cross-device album sync are not implemented.",
+    "The initial local synchronous timeout had an uncertain provider outcome. Local asynchronous recovery reused the existing task; production used one deliberate task."
+  ],
+  "previousRelease": "output/playwright/literary-v4-published-evidence/"
+}

@@ -1,0 +1,248 @@
+{
+  "at": "2026-09-17T09:43:14.913Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "live": true,
+  "checks": [
+    "production reports current Dream Silk recipe",
+    "one actual online generation accepted",
+    "fixed story node receives stable NO.001 and Dream Silk metadata",
+    "real online payload recorded three reference layers, seed and exclusions",
+    "online private API returns the original verified image",
+    "same online recipe reuses one provider submission",
+    "deployed migration preserves legacy image, prompt and provider submissions"
+  ],
+  "dns": {
+    "ip": "47.89.212.251",
+    "tlsVerified": true,
+    "osChanged": false
+  },
+  "jobId": "d8185ab2-a969-4727-ad71-260cd9cb7c57",
+  "job": {
+    "id": "d8185ab2-a969-4727-ad71-260cd9cb7c57",
+    "key": "83db7b27067117e0f52b9b3b09a0f41a60eddcf6977dd37c67a8734eb7e245eb",
+    "moment": {
+      "editionId": "original80",
+      "chapter": 27,
+      "tick": 0,
+      "worldId": "story:original80:flowers-27",
+      "snapshotId": "opening:flowers-27",
+      "branch": "main",
+      "trigger": "story",
+      "title": "落花成冢",
+      "text": "黛玉借葬花吟寄托伤春之情，宝玉听见吟咏。\n画面属于本幕的艺术演绎。",
+      "time": "日光中",
+      "placeId": "xiaoxiangguan",
+      "cast": [
+        "daiyu"
+      ],
+      "nodeId": "flowers-27",
+      "mood": "poetic",
+      "framing": "scene",
+      "note": ""
+    },
+    "createdAt": "2026-09-17T09:43:16.559Z",
+    "attempts": [
+      "2026-09-17T09:43:16.559Z"
+    ],
+    "model": "qwen-image-3.0-pro",
+    "providerOrigin": "https://dashscope.aliyuncs.com",
+    "styleVersion": "honglou-silk-v1",
+    "styleName": "梦绢",
+    "negativePrompt": "photorealistic photography, 3D render, CGI, plastic skin, glossy skin, porcelain skin, glass-like eyes, anime face, kawaii, modern Chinese fantasy illustration, xianxia, wuxia poster, fantasy armor, cinematic rim lighting, HDR, bloom, strong bokeh, teal-orange grading, glossy silk, excessive gold decoration, poster composition, symmetrical idol portrait, modern objects, text, logo, watermark, extra fingers, duplicate people",
+    "negativePromptSha256": "80d738fb1bb0b4129c71e1e8af3b22c66ce84d30cb9a6db14f60dbb467c57693",
+    "promptRevision": "dream-silk-3",
+    "promptSections": [
+      {
+        "id": "style",
+        "heading": "一、总风格说明",
+        "text": "只生成一张完整、无字的绘画。整幅横向画面从边到边是同一个连续场景，不排版，不分栏，不制作说明书、资料页、人物设定表、画册封面或带注解的图。以下所有文字只用于指导作画，绝不能作为画面内容。创作一幅《红楼梦》剧情叙事画——晚清绢本工笔彩绘册页的当代叙事游戏化演绎。画面表面始终是一幅手绘绢本，留白也是画中的空气与水色，不是书页空栏。用细而稳定的墨线勾勒、矿物色层层罩染、浅晕染、少量露出的米绢底色与轻微手工不均匀感。石青、石绿、胭脂、赭石、藤黄相互节制，色彩充实而哑光。衣纹、花木与面容都以平面笔线和薄染表现，绢本是绘画载体，衣料不画成反光亮缎。眼睛小而含蓄、肤色淡染，不用现代大眼、玻璃眼、高光皮肤或磨皮妆容。这不是现代国风插画，不是仙侠，不是古装剧照，不是海报，不是3D渲染，也不是摄影风。\n<reference-roles>参考图1（风格）：只参考平面墨线、绘画材质和米绢底色。它是临时绢屏局部，不是最终风格范本；矿物色、罩染、哑光以本提示词为准，不复制其竹纹、帘幕、模糊或局部构图。\n参考图2（人物）：人物为林黛玉。只参考年龄感、发髻、服装色系与人物辨识特征，不继承眼睛大小、磨皮高光、影视妆容、原动作或原情节；面容必须重绘成含蓄的工笔人物。\n参考图3（场景）：只参考潇湘馆·竹径清泉 · 空间参考的空间、厅堂、路径与花木关系。忽略其摄影质感、天气、文字、反射与灯光；将建筑改画为界画式结构，不能照搬原场景镜头。\n三层各司其职；风格以梦绢文字规范为最高依据，人物和场景参考不能覆盖画面表面的绢本笔墨。必须按本次剧情重新安排动作、人物关系与构图，不复制参考图内容。</reference-roles>"
+      },
+      {
+        "id": "literature",
+        "heading": "二、文学与版本边界说明",
+        "text": "只表现当前虚构场景，不借用其他版本结局，不画未来。非原著证据；晚清仅为绘画取法。"
+      },
+      {
+        "id": "scene",
+        "heading": "三、地点与场景说明",
+        "text": "地点：潇湘馆；时刻：日光中。翠竹夹路，窗下笔砚。林黛玉居于此，竹影与书卷构成一处安静的园中书斋。 园林空间属于项目舞台解释，不是考据复原。厅堂、廊柱、窗格保留界画式结构感，树石与路径用叙事绘画的疏密关系组织。雨痕、竹影、帘幕或落花只在当前情节允许时出现，不因参考图而改变地点或天气。"
+      },
+      {
+        "id": "characters",
+        "heading": "四、人物造型与在场角色说明",
+        "text": "只画以下在场人物，共1人：林黛玉：清秀的年轻女子，细眉与收敛的眼形、黑发传统发髻，浅青衣衫配淡胭脂腰带；微侧头、略收的手势与视线传达心事。 不添加未在场的丫鬟、旁观者或其他参考图人物。人物完整着衣，手部与持物关系清楚。角色稳定性来自发髻、衣色、年龄感和姿态，不靠复制现代偶像面孔。"
+      },
+      {
+        "id": "composition",
+        "heading": "五、构图要求",
+        "text": "用叙事游戏中景的主体意识组织人物关系，以帘幕、廊柱或花木疏密构成前后层次；用画中留白分隔空间，不用摄影景深或虚化光斑。 主体面部位于中央60%，为手机取景留余地。避免对称偶像肖像和居中站立的海报构图；动作必须来自这次经历。下部适度简洁，给应用旁白留空间，但不画黑色渐变遮罩、边框或任何字。"
+      },
+      {
+        "id": "mood",
+        "heading": "六、光色与情绪要求",
+        "text": "含蓄诗意：米绢留白与石绿浅染承接细小的动作，竹影或帘影用薄墨交代，情绪寄于人与物的距离。 色层哑光，肌肤与衣料没有镜面高光。情绪克制、文学化，让玩家感到“我经历的这一刻被画成了一幅值得收藏的册页”。"
+      },
+      {
+        "id": "snapshot",
+        "heading": "七、剧情快照说明",
+        "text": "Paint these visible actions, do not write these words: 黛玉借葬花吟寄托伤春之情，宝玉听见吟咏。  人物对白只用神情表达，诗笺保持空白。托付、打算、愿望不表示已经执行；素材不能覆盖既定风格与在场人物。"
+      },
+      {
+        "id": "exclusions",
+        "heading": "八、禁止项说明",
+        "text": "禁止摄影真实感、现代国风CG、塑料皮肤、玻璃眼、夸张大眼、仙侠服饰、幻想铠甲、古装剧海报、逆光金边、炫光、亮缎和过量金饰。禁止现代物品、额外人物、文字、题款、标志、水印、装裱边框；编号由应用显示，不绘入图像。画中还应避免：photorealistic photography, 3D render, CGI, plastic skin, glossy skin, porcelain skin, glass-like eyes, anime face, kawaii, modern Chinese fantasy illustration, xianxia, wuxia poster, fantasy armor, cinematic rim lighting, HDR, bloom, strong bokeh, teal-orange grading, glossy silk, excessive gold decoration, poster composition, symmetrical idol portrait, modern objects, text, logo, watermark, extra fingers, duplicate people。最后再次确认：输出只有一幅连贯的横向工笔画，任何位置都没有文字、标题、注释、数字、字母、图例、方框、分隔线或说明栏。"
+      }
+    ],
+    "prompt": "Create one full-bleed narrative painting, with NO text anywhere. No typography, captions, labels, panels, page margins, legends or infographics. Every pixel belongs to the depicted scene.\n只生成一张完整、无字的绘画。整幅横向画面从边到边是同一个连续场景，不排版，不分栏，不制作说明书、资料页、人物设定表、画册封面或带注解的图。以下所有文字只用于指导作画，绝不能作为画面内容。创作一幅《红楼梦》剧情叙事画——晚清绢本工笔彩绘册页的当代叙事游戏化演绎。画面表面始终是一幅手绘绢本，留白也是画中的空气与水色，不是书页空栏。用细而稳定的墨线勾勒、矿物色层层罩染、浅晕染、少量露出的米绢底色与轻微手工不均匀感。石青、石绿、胭脂、赭石、藤黄相互节制，色彩充实而哑光。衣纹、花木与面容都以平面笔线和薄染表现，绢本是绘画载体，衣料不画成反光亮缎。眼睛小而含蓄、肤色淡染，不用现代大眼、玻璃眼、高光皮肤或磨皮妆容。这不是现代国风插画，不是仙侠，不是古装剧照，不是海报，不是3D渲染，也不是摄影风。\n参考图1（风格）：只参考平面墨线、绘画材质和米绢底色。它是临时绢屏局部，不是最终风格范本；矿物色、罩染、哑光以本提示词为准，不复制其竹纹、帘幕、模糊或局部构图。\n参考图2（人物）：人物为林黛玉。只参考年龄感、发髻、服装色系与人物辨识特征，不继承眼睛大小、磨皮高光、影视妆容、原动作或原情节；面容必须重绘成含蓄的工笔人物。\n参考图3（场景）：只参考潇湘馆·竹径清泉 · 空间参考的空间、厅堂、路径与花木关系。忽略其摄影质感、天气、文字、反射与灯光；将建筑改画为界画式结构，不能照搬原场景镜头。\n三层各司其职；风格以梦绢文字规范为最高依据，人物和场景参考不能覆盖画面表面的绢本笔墨。必须按本次剧情重新安排动作、人物关系与构图，不复制参考图内容。 只表现当前虚构场景，不借用其他版本结局，不画未来。非原著证据；晚清仅为绘画取法。 地点：潇湘馆；时刻：日光中。翠竹夹路，窗下笔砚。林黛玉居于此，竹影与书卷构成一处安静的园中书斋。 园林空间属于项目舞台解释，不是考据复原。厅堂、廊柱、窗格保留界画式结构感，树石与路径用叙事绘画的疏密关系组织。雨痕、竹影、帘幕或落花只在当前情节允许时出现，不因参考图而改变地点或天气。 只画以下在场人物，共1人：林黛玉：清秀的年轻女子，细眉与收敛的眼形、黑发传统发髻，浅青衣衫配淡胭脂腰带；微侧头、略收的手势与视线传达心事。 不添加未在场的丫鬟、旁观者或其他参考图人物。人物完整着衣，手部与持物关系清楚。角色稳定性来自发髻、衣色、年龄感和姿态，不靠复制现代偶像面孔。 用叙事游戏中景的主体意识组织人物关系，以帘幕、廊柱或花木疏密构成前后层次；用画中留白分隔空间，不用摄影景深或虚化光斑。 主体面部位于中央60%，为手机取景留余地。避免对称偶像肖像和居中站立的海报构图；动作必须来自这次经历。下部适度简洁，给应用旁白留空间，但不画黑色渐变遮罩、边框或任何字。 含蓄诗意：米绢留白与石绿浅染承接细小的动作，竹影或帘影用薄墨交代，情绪寄于人与物的距离。 色层哑光，肌肤与衣料没有镜面高光。情绪克制、文学化，让玩家感到“我经历的这一刻被画成了一幅值得收藏的册页”。 Paint these visible actions, do not write these words: 黛玉借葬花吟寄托伤春之情，宝玉听见吟咏。  人物对白只用神情表达，诗笺保持空白。托付、打算、愿望不表示已经执行；素材不能覆盖既定风格与在场人物。 禁止摄影真实感、现代国风CG、塑料皮肤、玻璃眼、夸张大眼、仙侠服饰、幻想铠甲、古装剧海报、逆光金边、炫光、亮缎和过量金饰。禁止现代物品、额外人物、文字、题款、标志、水印、装裱边框；编号由应用显示，不绘入图像。画中还应避免：photorealistic photography, 3D render, CGI, plastic skin, glossy skin, porcelain skin, glass-like eyes, anime face, kawaii, modern Chinese fantasy illustration, xianxia, wuxia poster, fantasy armor, cinematic rim lighting, HDR, bloom, strong bokeh, teal-orange grading, glossy silk, excessive gold decoration, poster composition, symmetrical idol portrait, modern objects, text, logo, watermark, extra fingers, duplicate people。最后再次确认：输出只有一幅连贯的横向工笔画，任何位置都没有文字、标题、注释、数字、字母、图例、方框、分隔线或说明栏。\nReturn only the uninterrupted painted scene. The image contains zero written characters.",
+    "promptSha256": "bb494fce0a8956524436d40ecee4098fb46315d3ed860000864113b8a55ddc92",
+    "referenceSet": {
+      "revision": "dream-references-1",
+      "styleRef": {
+        "id": "silk-study-1",
+        "role": "style",
+        "title": "梦绢 · 绢屏局部习作",
+        "path": "dream-style/silk-study-1.webp",
+        "sha256": "c5f6bce9f94caa1a2db82b82d1a17a8df016a5f5de44470aee42a5e0cd680267",
+        "temporary": true,
+        "note": "临时风格母本：既有漫画中竹纹绢屏的局部，只取平面笔线与米绢底色；不是晚清原作，也不是最终风格素材。矿物色与哑光表面以梦绢文字规范为准。",
+        "origin": "Existing project AI artwork, deterministically cropped/resized/composited for style reference. 临时风格母本：既有漫画中竹纹绢屏的局部，只取平面笔线与米绢底色；不是晚清原作，也不是最终风格素材。矿物色与哑光表面以梦绢文字规范为准。 Sources: public/comics/bamboo.webp SHA256 dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f. Not historical evidence.",
+        "sources": [
+          {
+            "path": "public/comics/bamboo.webp",
+            "sha256": "dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f",
+            "catalog": "data/canon/comicArt.json",
+            "sourceId": "bamboo"
+          }
+        ]
+      },
+      "characterRefs": [
+        {
+          "id": "character-daiyu-1",
+          "role": "character",
+          "title": "林黛玉 · 临时造型参考",
+          "path": "dream-characters/daiyu.webp",
+          "sha256": "a7b274954c5df1206fa96dbe2e432ee303d0b3ffcbf8bb74b31ad2cb7d2213d6",
+          "temporary": true,
+          "note": "既有项目漫画局部，暂取发髻、衣着与年龄感；不继承大眼、磨皮、光泽与原情节。",
+          "characterId": "daiyu",
+          "origin": "Existing project AI artwork, deterministically cropped/resized/composited for character reference. 既有项目漫画局部，暂取发髻、衣着与年龄感；不继承大眼、磨皮、光泽与原情节。 Sources: public/comics/bamboo.webp SHA256 dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f. Not historical evidence.",
+          "sources": [
+            {
+              "path": "public/comics/bamboo.webp",
+              "sha256": "dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f",
+              "catalog": "data/canon/comicArt.json",
+              "sourceId": "bamboo"
+            }
+          ]
+        }
+      ],
+      "characterSheet": {
+        "id": "character-daiyu-1",
+        "role": "character",
+        "title": "林黛玉 · 临时造型参考",
+        "path": "dream-characters/daiyu.webp",
+        "sha256": "a7b274954c5df1206fa96dbe2e432ee303d0b3ffcbf8bb74b31ad2cb7d2213d6",
+        "temporary": true,
+        "note": "既有项目漫画局部，暂取发髻、衣着与年龄感；不继承大眼、磨皮、光泽与原情节。",
+        "characterId": "daiyu",
+        "origin": "Existing project AI artwork, deterministically cropped/resized/composited for character reference. 既有项目漫画局部，暂取发髻、衣着与年龄感；不继承大眼、磨皮、光泽与原情节。 Sources: public/comics/bamboo.webp SHA256 dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f. Not historical evidence.",
+        "sources": [
+          {
+            "path": "public/comics/bamboo.webp",
+            "sha256": "dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f",
+            "catalog": "data/canon/comicArt.json",
+            "sourceId": "bamboo"
+          }
+        ]
+      },
+      "sceneRef": {
+        "id": "scene-xiaoxiangguan-1",
+        "role": "scene",
+        "title": "潇湘馆·竹径清泉 · 空间参考",
+        "path": "dream-scenes/xiaoxiangguan.webp",
+        "sha256": "9664b2105c3a949152c49444a4c2ad70aa44dd6b119f22e4ea4a66b3a70d7cb1",
+        "temporary": true,
+        "note": "已审阅园景美术的临时空间参考，只取厅堂、路径与花木关系；忽略摄影表面、天气、镜头光效与画面文字。不是原著考据复原。",
+        "placeId": "xiaoxiangguan",
+        "origin": "Existing project AI artwork, deterministically cropped/resized/composited for scene reference. 已审阅园景美术的临时空间参考，只取厅堂、路径与花木关系；忽略摄影表面、天气、镜头光效与画面文字。不是原著考据复原。 Sources: public/art/xiaoxiangguan-day.webp SHA256 8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2. Not historical evidence.",
+        "sources": [
+          {
+            "path": "public/art/xiaoxiangguan-day.webp",
+            "sha256": "8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2",
+            "catalog": "public/art/manifest.json",
+            "sourceId": "xiaoxiangguan-day"
+          }
+        ]
+      },
+      "inputs": [
+        {
+          "role": "style",
+          "refId": "silk-study-1",
+          "index": 1
+        },
+        {
+          "role": "character",
+          "refId": "character-daiyu-1",
+          "index": 2
+        },
+        {
+          "role": "scene",
+          "refId": "scene-xiaoxiangguan-1",
+          "index": 3
+        }
+      ],
+      "fallbacks": []
+    },
+    "providerSettings": {
+      "protocol": "dashscope",
+      "size": "1536x1024",
+      "promptExtend": false,
+      "enableThinking": true,
+      "thinkingEffective": false,
+      "nativeParameters": true,
+      "negativePromptTransport": "parameters.negative_prompt",
+      "referencesEnabled": true,
+      "configuredSeed": null,
+      "quality": null,
+      "outputFormat": null
+    },
+    "seed": 839594706,
+    "seedSource": "derived",
+    "cardNo": "NO.001",
+    "cardKind": "story-node",
+    "contentType": "generated-art",
+    "status": "ready",
+    "error": "",
+    "startedAt": "2026-09-17T09:43:16.561Z",
+    "providerPayloadSha256": "8a2321fc8b98988358b2b02484ab6aa57dd0f4d56c03f7a6bd6311b72dd00fb8",
+    "submittedParameters": {
+      "n": 1,
+      "size": "1536*1024",
+      "prompt_extend": false,
+      "enable_thinking": true,
+      "negative_prompt": "photorealistic photography, 3D render, CGI, plastic skin, glossy skin, porcelain skin, glass-like eyes, anime face, kawaii, modern Chinese fantasy illustration, xianxia, wuxia poster, fantasy armor, cinematic rim lighting, HDR, bloom, strong bokeh, teal-orange grading, glossy silk, excessive gold decoration, poster composition, symmetrical idol portrait, modern objects, text, logo, watermark, extra fingers, duplicate people",
+      "seed": 839594706
+    },
+    "providerRequestId": "9634e0e6-52dd-939b-91e6-d4482ca3f782",
+    "providerTaskId": "0b982e72-be99-41ef-acea-8a7c1c40aa78",
+    "resumeAvailable": false,
+    "usage": {
+      "output_width": 1536,
+      "input_image_count": 3,
+      "input_image_type": "qima_input_1k",
+      "output_image_count": 1,
+      "output_image_type": "qima_output_1k",
+      "output_height": 1024
+    },
+    "mime": "image/png",
+    "imageSha256": "4da76cab6c719c0a9a85f1154d57c5bfb8f62484fd5c0be2ab37605bf1f9c981",
+    "bytes": 2505690,
+    "finishedAt": "2026-09-17T09:43:53.974Z"
+  },
+  "image": {
+    "path": "output/imagegen/dream-silk/qwen-silk-online.png",
+    "bytes": 2505690,
+    "sha256": "4da76cab6c719c0a9a85f1154d57c5bfb8f62484fd5c0be2ab37605bf1f9c981"
+  },
+  "passed": true
+}

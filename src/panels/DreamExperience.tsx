@@ -1,6 +1,6 @@
 import {useEffect, useRef, useState} from 'react';
 import {createPortal} from 'react-dom';
-import {ArrowRight, BookOpen, Check, Download, Heart, ImagePlus, LoaderCircle, RefreshCw, X} from 'lucide-react';
+import {ArrowRight, BookOpen, Download, Heart, ImagePlus, LoaderCircle, RefreshCw, X} from 'lucide-react';
 import {useDreams, downloadDream} from '../dreams/store';
 import {captureMoment} from '../dreams/moments';
 import type {ArtMoment, DreamEntry} from '../dreams/types';
@@ -40,13 +40,13 @@ function Workshop({moment}: {moment: ArtMoment}) {
   const edition = editionFor(draft.editionId, garden.data?.editionCatalog), place = garden.data?.places.find(p => p.id === draft.placeId);
   return <dialog ref={ref} className="dream-workshop" aria-labelledby="dream-workshop-title" onCancel={e => {e.preventDefault(); close();}}>
     <header><div><h2 id="dream-workshop-title">为这一刻，留一幅画</h2><p>把这一幕的心事，画成一页梦藏。</p></div><button aria-label="关闭作画" onClick={close}><X size={20}/></button></header>
-    <div className="dream-workshop-body"><section className="dream-scene"><h3>{draft.title}</h3><span>{edition.shortTitle} · 第{draft.chapter}回 · {draft.branch === 'if' ? 'IF线' : '主世界'}</span><p>{draft.text.length > 180 ? draft.text.slice(0, 160).trimEnd() + '…' : draft.text}</p>{draft.text.length > 180 && <details className="dream-full-scene"><summary>阅读完整剧情</summary><p>{draft.text}</p></details>}<small>{place?.name} · {draft.time}</small></section>
+    <div className="dream-workshop-body"><section className="dream-scene"><h3>{draft.title}</h3><span>{edition.shortTitle} · 第{draft.chapter}回 · {draft.branch === 'if' ? 'IF线' : '主世界'}</span><p>{draft.text.length > 180 ? draft.text.slice(0, 160).trimEnd() + '…' : draft.text}</p>{draft.text.length > 180 && <details className="dream-full-scene"><summary>阅读完整剧情</summary><p>{draft.text}</p></details>}<small>{place?.name} · {draft.time}</small>{d.config?.styleVersion === 'honglou-silk-v1' && <div className="dream-style-intro"><strong>梦绢</strong><p>细墨勾线，矿物色薄染。让这一刻的心事，留成一页绢本叙事画。</p><small>参考素材仍在整理，画面为当代艺术演绎。</small></div>}</section>
       <form onSubmit={e => {e.preventDefault(); if (d.retrying) void d.retry(d.retrying); else void d.generate(draft);}}>
         <fieldset disabled={!!d.retrying}><legend>这一页的意境</legend><div className="dream-moods">{([['poetic','含蓄诗意'],['warm','温暖相逢'],['dramatic','风雨入梦']] as const).map(([value,label]) => <button type="button" key={value} aria-pressed={draft.mood === value} onClick={() => setDraft(v => ({...v, mood: value}))}>{label}</button>)}</div></fieldset>
         <label>画面取景<select disabled={!!d.retrying} value={draft.framing} onChange={e => setDraft(v => ({...v, framing: e.target.value as ArtMoment['framing']}))}><option value="scene">人与园景</option><option value="portrait">人物心绪</option></select></label>
         <label>想留下的细节 <span>可不填</span><textarea disabled={!!d.retrying} maxLength={180} rows={3} value={draft.note} placeholder="例如：雨后竹叶带着水珠，两人的神情比往日轻松。" onChange={e => setDraft(v => ({...v, note: e.target.value}))}/></label>
         <label>作画口令<input type="password" autoComplete="off" value={d.accessToken} onChange={e => useDreams.setState({accessToken: e.target.value, error: ''})}/></label>
-        <small>由园主提供；只在本次打开期间保存。仅将这一幕的文字与本站造型参考发送给生图服务。</small>
+        <small>由园主提供；只在本次打开期间保存。仅将这一幕的文字与本站画法、人物和空间参考发送给生图服务。</small>
         <label className="dream-auto"><input type="checkbox" checked={d.automatic} onChange={e => d.setAutomatic(e.target.checked)}/>后续关键剧情自动作画并收藏</label>
         {!d.config?.configured && <p className="dream-error">{d.config?.error || '生图服务暂不可用，剧情记录与现有画册可以继续使用。'}</p>}
         {d.error && <p className="dream-error" role="alert">{d.error}</p>}
@@ -74,11 +74,18 @@ function Album() {
 }
 function Painting({entry}: {entry: DreamEntry}) {
   const d = useDreams(), garden = useGarden(), {job} = entry, edition = editionFor(job.moment.editionId, garden.data?.editionCatalog);
-  return <article className="dream-painting">
-    {entry.url ? <button className="dream-picture" aria-label={`展开画作：${job.moment.title}`} onClick={() => useDreams.setState({viewing: job.id})}><img src={entry.url} alt={job.moment.title + ' · 根据这次剧情生成'} loading="lazy"/><span><Check size={13}/>剧情新绘</span></button> : <div className="dream-painting-wait">{job.status === 'failed' ? <ImagePlus size={30}/> : <LoaderCircle size={30} className="dream-working"/>}<strong>{job.status === 'failed' ? '这一页，尚未画成' : job.status === 'queued' ? '画师正在准备' : '笔下的故事正在成形'}</strong><p>{job.error || '可先回园，完成后会自动收藏。'}</p></div>}
-    <div className="dream-painting-copy"><h3>{job.moment.title}</h3><p>{edition.shortTitle} · 第{job.moment.chapter}回 · {triggerNames[job.moment.trigger]}</p><small>{new Date(job.createdAt).toLocaleString('zh-CN', {month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'})} · {job.moment.branch === 'if' ? 'IF线' : '主世界'}</small>
+  const place = garden.data?.places.find(p => p.id === job.moment.placeId), legacy = job.styleVersion === 'legacy';
+  const references = job.referenceSet?.inputs.map(input => ({style: '画法', character: '人物', scene: '空间'})[input.role]).join('／');
+  return <article className="dream-painting" data-style-version={job.styleVersion}>
+    {entry.url ? <button className="dream-picture" aria-label={`展开画作：${job.moment.title}`} onClick={() => useDreams.setState({viewing: job.id})}><img src={entry.url} alt={job.moment.title + ' · 根据这次剧情生成'} loading="lazy"/></button> : <div className="dream-painting-wait">{job.status === 'failed' ? <ImagePlus size={30}/> : <LoaderCircle size={30} className="dream-working"/>}<strong>{job.status === 'failed' ? '这一页，尚未画成' : job.status === 'queued' ? '画师正在准备' : '笔下的故事正在成形'}</strong><p>{job.error || '可先回园，完成后会自动收藏。'}</p></div>}
+    <div className="dream-painting-copy"><h3>{job.moment.title}</h3><div className="dream-card-catalog"><span className="dream-card-no" aria-label="收藏编号">{job.cardNo || '旧藏 · 未编目'}</span><span>{legacy ? '原画风' : job.styleName} · 剧情新绘</span></div><p>{edition.shortTitle} · 第{job.moment.chapter}回 · {job.moment.branch === 'if' ? 'IF线' : '主世界'}</p><p className="dream-place-trigger">{place?.name || job.moment.placeId} · {triggerNames[job.moment.trigger]}</p>
       <div className="dream-painting-actions">{entry.image && <><button aria-label={entry.favorite ? '取消珍藏' : '珍藏画作'} aria-pressed={entry.favorite} onClick={() => void d.favorite(job.id)}><Heart size={18}/>{entry.favorite ? '已珍藏' : '珍藏'}</button><button onClick={() => downloadDream(entry)}><Download size={17}/>原图</button><button onClick={() => downloadDream(entry, true)}>剧情记录</button></>}{job.status === 'failed' && <button disabled={d.busy} onClick={() => void d.retry(job.id)}>{job.resumeAvailable ? '继续查询原画' : '重新请求生图'}</button>}</div>
-      <details><summary>回看这一刻</summary><p>{job.moment.text}</p>{job.moment.note && <p>画意：{job.moment.note}</p>}<small>{job.model} · {job.promptRevision} · {job.referenceArt ? '沿用本站造型参考' : '文字生成'}</small></details>
+      <details><summary>回看这一刻</summary><p>{job.moment.text}</p>{job.moment.note && <p>画意：{job.moment.note}</p>}<dl className="dream-colophon">
+        <dt>编目</dt><dd>{job.cardNo || '旧藏尚未编目'} · {job.cardKind === 'story-node' ? '剧情起点；不同画意可共用编号' : '个人画册；保留当时的故事分支'}</dd>
+        <dt>画风</dt><dd>{legacy ? '旧藏原画风；保留原作' : job.styleName}<span>{job.styleVersion}</span></dd>
+        <dt>参考</dt><dd>{references ? `${references} · 临时素材` : job.referenceArt ? '旧版单图造型参考' : '文字生成'}</dd>
+        <dt>留存</dt><dd>{new Date(job.createdAt).toLocaleString('zh-CN')}</dd>
+      </dl>{job.referenceSet?.fallbacks.map((message, i) => <p className="dream-reference-note" key={i}>{message}</p>)}<small>{job.model} · {job.promptRevision}{job.seed !== null ? ` · seed ${job.seed}` : ''}。完整创作参数与来源可下载“剧情记录”。</small></details>
     </div>
   </article>;
 }

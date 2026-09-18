@@ -49,9 +49,11 @@
     "test:simulation:participation": "node scripts/simulation_participation_smoke.mjs",
     "content:editions": "python scripts/prepare_editions.py",
     "content:comic-art": "node scripts/prepare_comic_art.mjs",
+    "content:dream-refs": "node scripts/prepare_dream_references.mjs",
     "test:story": "node scripts/story_smoke.mjs",
     "test:dreams": "node scripts/dream_smoke.mjs && node scripts/dream_edges_smoke.mjs",
-    "test:dreams:live": "node scripts/dream_live_smoke.mjs"
+    "test:dreams:live": "node scripts/dream_live_smoke.mjs",
+    "test:dreams:silk": "node scripts/dream_silk_smoke.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

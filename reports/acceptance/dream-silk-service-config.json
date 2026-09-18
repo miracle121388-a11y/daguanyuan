@@ -1,0 +1,19 @@
+{
+  "at": "2026-09-17T09:36:42.330Z",
+  "serviceID": "6aa143296c3d9581b71560fa",
+  "environmentID": "6aa142fbda9bc245fba1e845",
+  "settings": {
+    "IMAGE_PROMPT_EXTEND": "false",
+    "IMAGE_ENABLE_THINKING": "true",
+    "IMAGE_NATIVE_PARAMETERS": "true"
+  },
+  "readbackMatched": true,
+  "unrelatedVariablesPreserved": true,
+  "volumes": [
+    {
+      "id": "dreams",
+      "dir": "/data/dreams"
+    }
+  ],
+  "credentialValuesLogged": false
+}

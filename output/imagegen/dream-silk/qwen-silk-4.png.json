@@ -1,0 +1,252 @@
+{
+  "contentType": "generated-art",
+  "purpose": "Private acceptance sample; never default player inventory.",
+  "artifact": {
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2678941,
+    "sha256": "ac5ba2a70275a213cd318a8b614812ea20189f774ee93e92363b7870275df6a2",
+    "path": "output/imagegen/dream-silk/qwen-silk-4.png"
+  },
+  "job": {
+    "id": "d00cc644-d0af-4874-a8a5-7aec7b1b98b8",
+    "key": "208f560073f639536349cc52e7b7a072d98c4d69868ac29bb04135f674b8b154",
+    "moment": {
+      "editionId": "original80",
+      "chapter": 27,
+      "tick": 7,
+      "worldId": "silk-action-acceptance",
+      "snapshotId": "7:flowers-bag",
+      "branch": "if",
+      "trigger": "manual",
+      "title": "花归绢袋",
+      "text": "舞台演绎：黛玉在竹篱旁蹲下，将地上的淡粉落花拾入左手撑开的素色绢袋；她低头望着袋口。",
+      "time": "雨后午间",
+      "placeId": "xiaoxiangguan",
+      "cast": [
+        "daiyu"
+      ],
+      "nodeId": "flowers-27",
+      "mood": "poetic",
+      "framing": "scene",
+      "note": ""
+    },
+    "createdAt": "2026-09-17T10:01:04.076Z",
+    "attempts": [
+      "2026-09-17T10:01:04.076Z"
+    ],
+    "model": "qwen-image-3.0-pro",
+    "providerOrigin": "https://dashscope.aliyuncs.com",
+    "styleVersion": "honglou-silk-v1",
+    "styleName": "梦绢",
+    "negativePrompt": "photorealistic photography, 3D render, CGI, plastic skin, glossy skin, porcelain skin, glass-like eyes, anime face, kawaii, modern Chinese fantasy illustration, xianxia, wuxia poster, fantasy armor, cinematic rim lighting, HDR, bloom, strong bokeh, teal-orange grading, glossy silk, excessive gold decoration, poster composition, symmetrical idol portrait, modern objects, text, logo, watermark, extra fingers, duplicate people",
+    "negativePromptSha256": "80d738fb1bb0b4129c71e1e8af3b22c66ce84d30cb9a6db14f60dbb467c57693",
+    "promptRevision": "dream-silk-4",
+    "promptSections": [
+      {
+        "id": "style",
+        "heading": "一、总风格说明",
+        "text": "A late-Qing gongbi narrative painting on matte silk, interpreted for a contemporary literary game. Fine steady ink contours, flat mineral-pigment glazes, thin washes and subtle ivory silk grain. Azurite, malachite, carmine and ochre; fully colored but restrained. Small natural eyes and pale ink-wash faces, handmade linework in garments and plants. Silk is the painting support, not shiny clothing. <reference-roles>Image 1 supplies only silk ground and fine ink lines, not its bamboo pattern or layout. Image 2 supplies only hair, age and clothing identity for Lin Daiyu. Do not copy its pose, hands, props, composition, glossy face or eye size. Image 3 supplies only garden architecture and planting relationships. Redraw as flat gongbi, without copying its viewpoint, weather or photographic lighting. The current action and matte gongbi style override all reference poses and surfaces.</reference-roles>"
+      },
+      {
+        "id": "literature",
+        "heading": "二、文学与版本边界说明",
+        "text": "Depict only this present moment, no endings from other editions and no future events. The painting is an artistic interpretation, not literary evidence."
+      },
+      {
+        "id": "scene",
+        "heading": "三、地点与场景说明",
+        "text": "A quiet garden path after rain, flanked by green bamboo and a low bamboo fence; wet soil and scattered pale pink petals near a bamboo grove outside a study window. Garden space is staged interpretation. Draw architectural lines and foliage in painted layers. Weather and the indoor/outdoor setting follow the current action, never an unrelated reference pose."
+      },
+      {
+        "id": "characters",
+        "heading": "四、人物造型与在场角色说明",
+        "text": "Exactly 1 people, only Lin Daiyu, a slender young woman with fine brows, small restrained eyes, a traditional black updo, pale celadon robes and a muted rose sash. No absent characters, maids or bystanders. Fully clothed, natural hands and clear contact with objects. Keep hair and clothing identity, redraw the bodies for the current action."
+      },
+      {
+        "id": "composition",
+        "heading": "五、构图要求",
+        "text": "An asymmetrical medium-wide narrative scene, with the complete action visible and layered plants or architecture. Keep the face within the central sixty percent for mobile viewing. Painted open air, no blank sidebars. One continuous landscape image from edge to edge."
+      },
+      {
+        "id": "mood",
+        "heading": "六、光色与情绪要求",
+        "text": "Quiet poetry through restrained gestures, muted malachite, pale ink and ivory air. Soft flat color, no specular highlights."
+      },
+      {
+        "id": "snapshot",
+        "heading": "七、剧情快照说明",
+        "text": "Daiyu crouches low beside the bamboo fence, her left hand holding open a plain pale silk bag at ground level. With her right hand she gathers fallen pale pink petals from the damp soil into the bag. Her head is bowed, her gaze fixed on the bag's opening as she places the blossoms inside. Depict the action, never transcribe the prose. Speech becomes expression, poems remain unlettered paper. Wishes and plans are not completed actions."
+      },
+      {
+        "id": "exclusions",
+        "heading": "八、禁止项说明",
+        "text": "Exclude photorealistic photography, 3D render, CGI, plastic skin, glossy skin, porcelain skin, glass-like eyes, anime face, kawaii, modern Chinese fantasy illustration, xianxia, wuxia poster, fantasy armor, cinematic rim lighting, HDR, bloom, strong bokeh, teal-orange grading, glossy silk, excessive gold decoration, poster composition, symmetrical idol portrait, modern objects, text, logo, watermark, extra fingers, duplicate people. No calligraphy, Chinese characters, letters, subtitles, captions, title, annotation, watermark, border, panels or explanatory page. Return only the uninterrupted painted scene."
+      }
+    ],
+    "prompt": "Create a NEW full-bleed painting of this action, with NO text anywhere: Daiyu crouches low beside the bamboo fence, her left hand holding open a plain pale silk bag at ground level. With her right hand she gathers fallen pale pink petals from the damp soil into the bag. Her head is bowed, her gaze fixed on the bag's opening as she places the blossoms inside. Depict the action, never transcribe the prose. Speech becomes expression, poems remain unlettered paper. Wishes and plans are not completed actions.\nA late-Qing gongbi narrative painting on matte silk, interpreted for a contemporary literary game. Fine steady ink contours, flat mineral-pigment glazes, thin washes and subtle ivory silk grain. Azurite, malachite, carmine and ochre; fully colored but restrained. Small natural eyes and pale ink-wash faces, handmade linework in garments and plants. Silk is the painting support, not shiny clothing. Image 1 supplies only silk ground and fine ink lines, not its bamboo pattern or layout. Image 2 supplies only hair, age and clothing identity for Lin Daiyu. Do not copy its pose, hands, props, composition, glossy face or eye size. Image 3 supplies only garden architecture and planting relationships. Redraw as flat gongbi, without copying its viewpoint, weather or photographic lighting. The current action and matte gongbi style override all reference poses and surfaces. Depict only this present moment, no endings from other editions and no future events. The painting is an artistic interpretation, not literary evidence. A quiet garden path after rain, flanked by green bamboo and a low bamboo fence; wet soil and scattered pale pink petals near a bamboo grove outside a study window. Garden space is staged interpretation. Draw architectural lines and foliage in painted layers. Weather and the indoor/outdoor setting follow the current action, never an unrelated reference pose. Exactly 1 people, only Lin Daiyu, a slender young woman with fine brows, small restrained eyes, a traditional black updo, pale celadon robes and a muted rose sash. No absent characters, maids or bystanders. Fully clothed, natural hands and clear contact with objects. Keep hair and clothing identity, redraw the bodies for the current action. An asymmetrical medium-wide narrative scene, with the complete action visible and layered plants or architecture. Keep the face within the central sixty percent for mobile viewing. Painted open air, no blank sidebars. One continuous landscape image from edge to edge. Quiet poetry through restrained gestures, muted malachite, pale ink and ivory air. Soft flat color, no specular highlights. Exclude photorealistic photography, 3D render, CGI, plastic skin, glossy skin, porcelain skin, glass-like eyes, anime face, kawaii, modern Chinese fantasy illustration, xianxia, wuxia poster, fantasy armor, cinematic rim lighting, HDR, bloom, strong bokeh, teal-orange grading, glossy silk, excessive gold decoration, poster composition, symmetrical idol portrait, modern objects, text, logo, watermark, extra fingers, duplicate people. No calligraphy, Chinese characters, letters, subtitles, captions, title, annotation, watermark, border, panels or explanatory page. Return only the uninterrupted painted scene.",
+    "promptSha256": "9add6400cdd320ef8faa26ae28798da7ba1f0ec41f70dc788475f9a4ef8d1897",
+    "referenceSet": {
+      "revision": "dream-references-2",
+      "styleRef": {
+        "id": "silk-study-1",
+        "role": "style",
+        "title": "梦绢 · 绢屏局部习作",
+        "path": "dream-style/silk-study-1.webp",
+        "sha256": "c5f6bce9f94caa1a2db82b82d1a17a8df016a5f5de44470aee42a5e0cd680267",
+        "temporary": true,
+        "note": "临时风格母本：既有漫画中竹纹绢屏的局部，只取平面笔线与米绢底色；不是晚清原作，也不是最终风格素材。矿物色与哑光表面以梦绢文字规范为准。",
+        "origin": "Existing project AI artwork, deterministically cropped/resized/composited for style reference. 临时风格母本：既有漫画中竹纹绢屏的局部，只取平面笔线与米绢底色；不是晚清原作，也不是最终风格素材。矿物色与哑光表面以梦绢文字规范为准。 Sources: public/comics/bamboo.webp SHA256 dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f. Not historical evidence.",
+        "sources": [
+          {
+            "path": "public/comics/bamboo.webp",
+            "sha256": "dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f",
+            "catalog": "data/canon/comicArt.json",
+            "sourceId": "bamboo"
+          }
+        ]
+      },
+      "characterRefs": [
+        {
+          "id": "character-daiyu-1",
+          "role": "character",
+          "title": "林黛玉 · 临时造型参考",
+          "path": "dream-characters/daiyu.webp",
+          "sha256": "77463a7c7c5db715b31d666c7de5182e50e63d0b26a8ec207509b483e1d17bf3",
+          "temporary": true,
+          "note": "既有漫画的发髻与面部上部局部，去除执笔、托腮的手势和桌案，减少动作泄漏；衣着以文字造型为准，面容按哑光工笔重绘。",
+          "characterId": "daiyu",
+          "origin": "Existing project AI artwork, deterministically cropped/resized/composited for character reference. 既有漫画的发髻与面部上部局部，去除执笔、托腮的手势和桌案，减少动作泄漏；衣着以文字造型为准，面容按哑光工笔重绘。 Sources: public/comics/bamboo.webp SHA256 dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f. Not historical evidence.",
+          "sources": [
+            {
+              "path": "public/comics/bamboo.webp",
+              "sha256": "dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f",
+              "catalog": "data/canon/comicArt.json",
+              "sourceId": "bamboo"
+            }
+          ]
+        }
+      ],
+      "characterSheet": {
+        "id": "character-daiyu-1",
+        "role": "character",
+        "title": "林黛玉 · 临时造型参考",
+        "path": "dream-characters/daiyu.webp",
+        "sha256": "77463a7c7c5db715b31d666c7de5182e50e63d0b26a8ec207509b483e1d17bf3",
+        "temporary": true,
+        "note": "既有漫画的发髻与面部上部局部，去除执笔、托腮的手势和桌案，减少动作泄漏；衣着以文字造型为准，面容按哑光工笔重绘。",
+        "characterId": "daiyu",
+        "origin": "Existing project AI artwork, deterministically cropped/resized/composited for character reference. 既有漫画的发髻与面部上部局部，去除执笔、托腮的手势和桌案，减少动作泄漏；衣着以文字造型为准，面容按哑光工笔重绘。 Sources: public/comics/bamboo.webp SHA256 dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f. Not historical evidence.",
+        "sources": [
+          {
+            "path": "public/comics/bamboo.webp",
+            "sha256": "dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f",
+            "catalog": "data/canon/comicArt.json",
+            "sourceId": "bamboo"
+          }
+        ]
+      },
+      "sceneRef": {
+        "id": "scene-xiaoxiangguan-1",
+        "role": "scene",
+        "title": "潇湘馆·竹径清泉 · 空间参考",
+        "path": "dream-scenes/xiaoxiangguan.webp",
+        "sha256": "9664b2105c3a949152c49444a4c2ad70aa44dd6b119f22e4ea4a66b3a70d7cb1",
+        "temporary": true,
+        "note": "已审阅园景美术的临时空间参考，只取厅堂、路径与花木关系；忽略摄影表面、天气、镜头光效与画面文字。不是原著考据复原。",
+        "placeId": "xiaoxiangguan",
+        "origin": "Existing project AI artwork, deterministically cropped/resized/composited for scene reference. 已审阅园景美术的临时空间参考，只取厅堂、路径与花木关系；忽略摄影表面、天气、镜头光效与画面文字。不是原著考据复原。 Sources: public/art/xiaoxiangguan-day.webp SHA256 8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2. Not historical evidence.",
+        "sources": [
+          {
+            "path": "public/art/xiaoxiangguan-day.webp",
+            "sha256": "8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2",
+            "catalog": "public/art/manifest.json",
+            "sourceId": "xiaoxiangguan-day"
+          }
+        ]
+      },
+      "inputs": [
+        {
+          "role": "style",
+          "refId": "silk-study-1",
+          "index": 1
+        },
+        {
+          "role": "character",
+          "refId": "character-daiyu-1",
+          "index": 2
+        },
+        {
+          "role": "scene",
+          "refId": "scene-xiaoxiangguan-1",
+          "index": 3
+        }
+      ],
+      "fallbacks": []
+    },
+    "providerSettings": {
+      "protocol": "dashscope",
+      "size": "1536x1024",
+      "promptExtend": false,
+      "enableThinking": true,
+      "thinkingEffective": false,
+      "nativeParameters": true,
+      "negativePromptTransport": "parameters.negative_prompt",
+      "referencesEnabled": true,
+      "configuredSeed": null,
+      "quality": null,
+      "outputFormat": null
+    },
+    "scenePlanSettings": {
+      "revision": "dream-scene-1",
+      "enabled": true,
+      "model": "deepseek-flash",
+      "providerOrigin": "https://api.deepseek.com"
+    },
+    "seed": 1979991106,
+    "seedSource": "derived",
+    "cardNo": "IF.0005",
+    "cardKind": "personal",
+    "contentType": "generated-art",
+    "status": "ready",
+    "error": "",
+    "startedAt": "2026-09-17T10:01:04.080Z",
+    "scenePlan": {
+      "revision": "dream-scene-1",
+      "sourceSha256": "f331e446274b90d8dd62e4fd41a0585873006200931e50cee0c77aabad58b02e",
+      "model": "deepseek-flash",
+      "status": "ready",
+      "cast": [
+        "daiyu"
+      ],
+      "setting": "A quiet garden path after rain, flanked by green bamboo and a low bamboo fence; wet soil and scattered pale pink petals near a bamboo grove outside a study window.",
+      "action": "Daiyu crouches low beside the bamboo fence, her left hand holding open a plain pale silk bag at ground level. With her right hand she gathers fallen pale pink petals from the damp soil into the bag. Her head is bowed, her gaze fixed on the bag's opening as she places the blossoms inside.",
+      "contentSha256": "9ddef4b237d83c46425d4df92f965784438e2ada4bf6ec65e3013d6191714169",
+      "requestSha256": "14d461f9cadbcc2a2e2b601d9c59d20e495babe2767eca1e4ada202396268db0"
+    },
+    "providerPayloadSha256": "b2b7f9960e3e31db54f53b21712882a6c6ecf08bc41a925a6c48c48c5625ba22",
+    "submittedParameters": {
+      "n": 1,
+      "size": "1536*1024",
+      "prompt_extend": false,
+      "enable_thinking": true,
+      "negative_prompt": "photorealistic photography, 3D render, CGI, plastic skin, glossy skin, porcelain skin, glass-like eyes, anime face, kawaii, modern Chinese fantasy illustration, xianxia, wuxia poster, fantasy armor, cinematic rim lighting, HDR, bloom, strong bokeh, teal-orange grading, glossy silk, excessive gold decoration, poster composition, symmetrical idol portrait, modern objects, text, logo, watermark, extra fingers, duplicate people",
+      "seed": 1979991106
+    },
+    "providerRequestId": "25fe6cc8-1382-9e06-bd74-2115fd2996a8",
+    "providerTaskId": "1bc53a69-b3ee-43e7-bb6c-fc2c32401bb1",
+    "resumeAvailable": false,
+    "usage": {
+      "output_width": 1536,
+      "input_image_count": 3,
+      "input_image_type": "qima_input_1k",
+      "output_image_count": 1,
+      "output_image_type": "qima_output_1k",
+      "output_height": 1024
+    },
+    "mime": "image/png",
+    "imageSha256": "ac5ba2a70275a213cd318a8b614812ea20189f774ee93e92363b7870275df6a2",
+    "bytes": 2678941,
+    "finishedAt": "2026-09-17T10:01:40.605Z"
+  }
+}
