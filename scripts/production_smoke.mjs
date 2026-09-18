@@ -8,16 +8,20 @@ const shotPrefix=process.env.GARDEN_SMOKE_SCREEN_PREFIX;
 // Optional per-browser DNS override for a newly provisioned domain behind local
 // proxy DNS caches. TLS verification stays enabled and OS settings stay intact.
 const resolveIp=process.env.APP_RESOLVE_IP;
+const http1=process.env.GARDEN_BROWSER_HTTP1==='1';
 const loadTimeout=Number(process.env.GARDEN_LOAD_TIMEOUT_MS||90000);
 if(!Number.isFinite(loadTimeout)||loadTimeout<1||loadTimeout>600000)throw Error('Invalid observation timeout');
-const browser=await chromium.launch({channel:'msedge',headless:true,args:resolveIp?[`--host-resolver-rules=MAP ${new URL(url).hostname} ${resolveIp}`,'--disable-quic']:[]});
+const browser=await chromium.launch({channel:process.env.GARDEN_BROWSER_CHANNEL??'chromium',headless:true,args:[...(resolveIp?[`--host-resolver-rules=MAP ${new URL(url).hostname} ${resolveIp}`,'--no-proxy-server','--disable-quic']:[]),...(http1?['--disable-http2']:[])]});
 const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[],failed=[];
 page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});
 page.on('console',m=>{if(m.type()==='error'&&/THREE.WebGLProgram|shader error|GL_INVALID/.test(m.text()))errors.push(m.text())});
 const desktopStarted=Date.now();
+page.on('requestfailed',r=>console.warn('Request failed:',new URL(r.url()).pathname,r.failure()?.errorText));
 await page.goto(url);await page.getByRole('button',{name:'定位潇湘馆',exact:true}).waitFor({timeout:loadTimeout});
+console.log('Desktop interface ready; waiting for the complete scene.');
 await page.locator('.canvas-wrap[data-scene-ready="true"]').waitFor({timeout:loadTimeout});
 const desktopReadyMs=Date.now()-desktopStarted;
+console.log('Desktop scene ready:',desktopReadyMs,'ms');
 const hooksAbsent=await page.evaluate(()=>!window.__gardenTest&&!window.__gardenMetrics&&!window.__simulationTest);
 const health=await page.evaluate(()=>fetch('/healthz').then(r=>r.json()));
 const expectedRevision=JSON.parse(readFileSync('public/scene-manifest.json','utf8')).assetRevision;
@@ -34,7 +38,7 @@ await page.locator('.canvas-wrap[data-scene-ready="true"]').waitFor({timeout:loa
 const build=JSON.parse(readFileSync('dist/.vite/manifest.json','utf8'));
 const sourceHooksAbsent=Object.values(build).filter(entry=>entry.file.endsWith('.js')).every(entry=>!/__gardenTest|__gardenMetrics|__simulationTest/.test(readFileSync('dist/'+entry.file,'utf8')));
 save(shotPrefix?shotPrefix+'-desktop.png':'reports/browser/13-production-desktop.png',await page.screenshot());
-const desktopResult={at:new Date().toISOString(),url:page.url(),revision:health.revision,planView:true,dnsOverride:resolveIp??null,quicDisabled:!!resolveIp,tlsVerification:new URL(url).protocol==='https:'?true:null,observationTimeoutMs:loadTimeout,desktopReadyMs,hooksAbsent,sourceHooksAbsent,focus,sceneVisible:true,refresh:true,selection:true,errors,failed};
+const desktopResult={at:new Date().toISOString(),url:page.url(),revision:health.revision,planView:true,dnsOverride:resolveIp??null,browserProxyMode:resolveIp?'direct':'system',http2Disabled:http1,quicDisabled:!!resolveIp,tlsVerification:new URL(url).protocol==='https:'?true:null,observationTimeoutMs:loadTimeout,desktopReadyMs,hooksAbsent,sourceHooksAbsent,focus,sceneVisible:true,refresh:true,selection:true,errors,failed};
 await page.close(); // Each device sample has one active WebGL page.
 const mobile=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:3,isMobile:true,hasTouch:true});
 const mobileModels=[];mobile.on('response',r=>{if(r.url().endsWith('.glb'))mobileModels.push(new URL(r.url()).pathname)});

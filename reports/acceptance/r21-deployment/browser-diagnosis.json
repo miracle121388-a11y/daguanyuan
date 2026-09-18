@@ -1,0 +1,173 @@
+{
+  "at": "2026-09-18T03:14:20.747Z",
+  "elapsedMs": 47335,
+  "pending": [
+    "https://daguanyuan-rumeng.zeabur.app/models/sunwen-architecture.glb",
+    "https://daguanyuan-rumeng.zeabur.app/models/overview.glb",
+    "https://daguanyuan-rumeng.zeabur.app/textures/vegetation/canopy-atlas.webp",
+    "https://daguanyuan-rumeng.zeabur.app/textures/ground/pond-normal.png",
+    "https://daguanyuan-rumeng.zeabur.app/models/sunwen-landscape.glb",
+    "https://daguanyuan-rumeng.zeabur.app/draco/draco_decoder.wasm",
+    "https://daguanyuan-rumeng.zeabur.app/textures/shared/56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33.jpg",
+    "https://daguanyuan-rumeng.zeabur.app/textures/shared/c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6.jpg",
+    "https://daguanyuan-rumeng.zeabur.app/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg",
+    "https://daguanyuan-rumeng.zeabur.app/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png"
+  ],
+  "errors": [],
+  "failures": [],
+  "responses": [
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/assets/index-CDFQAyVl.css",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/assets/index-D-eqew_8.js",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/data/places.json",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/data/characters.json",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/data/routes.json",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/data/editionCatalog.json",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/data/events.json",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/scene-manifest.json",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/data/sources.json",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/data/relations.json",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/art/manifest.json",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/api/dreams/jobs",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/api/dreams/config",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/assets/GardenScene-BPygUboB.js",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/textures/forest_grove.hdr",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/sunwen-architecture.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/sunwen-landscape.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/textures/ground/surface-zones.png",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/textures/vegetation/canopy-atlas.webp",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/textures/ground/pond-normal.png",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/vegetation/fern-1.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/vegetation/iris.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/vegetation/peony.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/vegetation/lotus.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/vegetation/chrysanthemum.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/vegetation/orchid.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/vegetation/fern-0.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/overview.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/vegetation/ground-cover.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/models/urban-context.glb",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/draco/draco_wasm_wrapper.js",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/draco/draco_decoder.wasm",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/textures/shared/56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/textures/shared/c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+      "status": 200
+    },
+    {
+      "url": "https://daguanyuan-rumeng.zeabur.app/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+      "status": 200
+    }
+  ],
+  "body": "跳转到园林内容\n大观\n大观园·入梦\n一园山水，满纸红楼\n世界推演\n园林漫游\n人物群像\n回目拾遗\n剧情画卷\n园景图录\n来源与说明\n园林即将展开\n一园山水\n\n沿一湾曲水，走入红楼深处。\n\n晨光\n月夜\n俯瞰\n园图\n俯瞰\n精细园景\n\n拖动旋转 · 滚轮缩放 · 右键平移\n\n依据原著整理的文学空间再现\n红楼拾遗\n22 段有出处的故事\n园林初览\n诗社与雅集\n刘姥姥游园\n从曲径到四处院落，读一遍园林的性情。\n7 处停留 · 策划路线，非原著完整行迹\n开始游园"
+}

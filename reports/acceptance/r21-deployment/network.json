@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-18T03:19:56.691Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "publicDnsAddress": "47.89.212.251",
+  "dnsEvidence": "Google DNS over HTTPS queried during this release",
+  "defaultCurlHealthSucceeded": true,
+  "defaultBrowser": {
+    "passed": false,
+    "reason": "Scene readiness timed out after 90000 ms",
+    "report": "checks/default-browser-attempt.txt"
+  },
+  "systemProxyObserved": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 7897
+  },
+  "directBrowserHealth": {
+    "status": 200,
+    "elapsedMs": 1875
+  },
+  "http2LargeAssetObservation": {
+    "path": "models/overview.glb",
+    "expectedCompressedBytes": 4146887,
+    "receivedBytes": 3309568,
+    "elapsedSeconds": 50.00599,
+    "bytesPerSecond": 66183,
+    "timedOut": true
+  },
+  "resolvedBrowserSettings": {
+    "dnsOverride": true,
+    "proxyMode": "direct",
+    "quicDisabled": true,
+    "http2Disabled": true,
+    "tlsVerification": true
+  },
+  "osProxyChanged": false,
+  "osDnsChanged": false,
+  "paidProviderRequests": 0,
+  "scope": "Functional browser acceptance uses a separate direct HTTP/1.1 browser. This does not establish normal Clash browser access or physical phone performance."
+}

@@ -1,0 +1,646 @@
+[
+  {
+    "timestamp": "2026-09-18T02:58:49.604499Z",
+    "message": "STEP  🔹 downloading uploaded source code"
+  },
+  {
+    "timestamp": "2026-09-18T02:58:49.604499Z",
+    "message": "STEP  🔹 emitting start event"
+  },
+  {
+    "timestamp": "2026-09-18T02:58:49.604499Z",
+    "message": "STEP  🔹 creating builder instance"
+  },
+  {
+    "timestamp": "2026-09-18T02:58:49.604499Z",
+    "message": "STEP  🔹 initializing builder"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.056995Z",
+    "message": "STEP  🔹 initializing build environment"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.056995Z",
+    "message": "STEP  🔹 preparing build environment"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.056995Z",
+    "message": "INFO  selected image builder builder=\"zbpack-v2\""
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.056995Z",
+    "message": "STEP  🔹 start building and pushing image"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.056995Z",
+    "message": "STEP  🔹 checking for banned images"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.336283Z",
+    "message": "INFO  🛠️ building image | #2 [internal] load metadata for docker.io/library/node:24-alpine"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.336283Z",
+    "message": "INFO  🛠️ building image | #1 DONE 0.1s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.336283Z",
+    "message": "INFO  🛠️ building image | #1 transferring dockerfile: 4.35kB done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.336283Z",
+    "message": "INFO  🛠️ building image | #1 [internal] load build definition from Dockerfile"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:35.336283Z",
+    "message": "STEP  🔹 building image"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:36.128819Z",
+    "message": "INFO  🛠️ building image | #4 [stage-0 1/7] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:36.128819Z",
+    "message": "INFO  🛠️ building image | #3 DONE 0.0s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:36.128819Z",
+    "message": "INFO  🛠️ building image | #3 transferring context: 2B done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:36.128819Z",
+    "message": "INFO  🛠️ building image | #3 [internal] load .dockerignore"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:36.128819Z",
+    "message": "INFO  🛠️ building image | #2 DONE 0.8s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:36.602542Z",
+    "message": "INFO  🛠️ building image | #4 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 49.28MB / 56.52MB 0.2s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:36.602542Z",
+    "message": "INFO  🛠️ building image | #4 sha256:02f40d53b06f6b91fec0cd6a6719656da99270bff8ee54ed8dcdf4c157763fc1 1.26MB / 1.26MB 0.0s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:36.602542Z",
+    "message": "INFO  🛠️ building image | #4 sha256:7ce7dcbafb7f750cf0c6be3c30e34372b06dd1182fa67f6ae30782c8150c5444 444B / 444B 0.0s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:36.602542Z",
+    "message": "INFO  🛠️ building image | #4 resolve docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1 0.0s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:37.201739Z",
+    "message": "INFO  🛠️ building image | #5 transferring context: 50.43MB 0.4s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:37.201739Z",
+    "message": "INFO  🛠️ building image | #5 [internal] load build context"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:37.201739Z",
+    "message": "INFO  🛠️ building image | #4 ..."
+  },
+  {
+    "timestamp": "2026-09-18T03:00:37.201739Z",
+    "message": "INFO  🛠️ building image | #4 sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5 3.85MB / 3.85MB 0.2s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:37.201739Z",
+    "message": "INFO  🛠️ building image | #4 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 56.52MB / 56.52MB 0.5s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:37.603436Z",
+    "message": "INFO  🛠️ building image | #4 [stage-0 1/7] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:37.603436Z",
+    "message": "INFO  🛠️ building image | #5 DONE 1.2s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:38.231031Z",
+    "message": "INFO  🛠️ building image | #4 [stage-0 1/7] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:38.231031Z",
+    "message": "INFO  🛠️ building image | #4 DONE 2.1s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:38.231031Z",
+    "message": "INFO  🛠️ building image | #4 extracting sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5 0.5s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:38.231031Z",
+    "message": "INFO  🛠️ building image | #4 extracting sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:38.231031Z",
+    "message": "INFO  🛠️ building image | #4 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 56.52MB / 56.52MB 1.4s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:38.602497Z",
+    "message": "INFO  🛠️ building image | #4 extracting sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:40.398037Z",
+    "message": "INFO  🛠️ building image | #4 extracting sha256:02f40d53b06f6b91fec0cd6a6719656da99270bff8ee54ed8dcdf4c157763fc1 0.7s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:40.398037Z",
+    "message": "INFO  🛠️ building image | #4 extracting sha256:02f40d53b06f6b91fec0cd6a6719656da99270bff8ee54ed8dcdf4c157763fc1"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:40.398037Z",
+    "message": "INFO  🛠️ building image | #4 [stage-0 1/7] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:40.398037Z",
+    "message": "INFO  🛠️ building image | #4 DONE 3.7s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:40.398037Z",
+    "message": "INFO  🛠️ building image | #4 extracting sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 1.7s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:40.6031Z",
+    "message": "INFO  🛠️ building image | #4 extracting sha256:7ce7dcbafb7f750cf0c6be3c30e34372b06dd1182fa67f6ae30782c8150c5444"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:40.6031Z",
+    "message": "INFO  🛠️ building image | #4 [stage-0 1/7] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:40.6031Z",
+    "message": "INFO  🛠️ building image | #4 DONE 4.4s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:41.602583Z",
+    "message": "INFO  🛠️ building image | #6 [stage-0 2/7] WORKDIR /app"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:41.602583Z",
+    "message": "INFO  🛠️ building image | #4 DONE 4.9s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:41.602583Z",
+    "message": "INFO  🛠️ building image | #4 extracting sha256:7ce7dcbafb7f750cf0c6be3c30e34372b06dd1182fa67f6ae30782c8150c5444 0.5s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:42.602716Z",
+    "message": "INFO  🛠️ building image | #6 DONE 1.6s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:43.189323Z",
+    "message": "INFO  🛠️ building image | #9 [stage-0 5/7] RUN --mount=type=secret,id=zeabur-env-97ba486e236a38f5707a2dc2061fc1a47a1a805ac266a761128002a720c55690,env=CONTAINER_HOSTNAME,required=true --mount=type=secret,id=zeabur-env-da0dc5a4a1783445ba06c3a0221a4a628891905dfc696e7f1afc2ad5b4ca45ef,env=DREAM_STORAGE_DIR,required=true --mount=type=secret,id=zeabur-env-a660f8e744e76765797569f3f6169d67bac324185844f0931affa8801087ba74,env=IMAGE_API_KEY,required=true --mount=type=secret,id=zeabur-env-1df1d26fb40395b6d374f965f130877d081d3ed87302aa235a2e8b0e016b8e32,env=IMAGE_BASE_URL,required=true --mount=type=secret,id=zeabur-env-7020bf972556f56d1e0b7245866a05da7d60c1731584d82b24a167ccf9e87bcb,env=IMAGE_DAILY_LIMIT,required=true --mount=type=secret,id=zeabur-env-3a190f5db21d0738b2285af5c876a7eca445af48f2e8166972b640f723517408,env=IMAGE_ENABLE_THINKING,required=true --mount=type=secret,id=zeabur-env-01585f5a02f0232fa6a0e1d942537b338eda3af3ba799d070bb25ab4f6db6e64,env=IMAGE_MODEL,required=true --mount=type=secret,id=zeabur-env-45e990a849d93f59b47e3acb70a10666dd32e1bea841117bdeb11c77829d0446,env=IMAGE_NATIVE_PARAMETERS,required=true --mount=type=secret,id=zeabur-env-3971f1bd2ac12c617a55113ae0a04f81e6296303a3618a11e5161a91831e9b2e,env=IMAGE_PROMPT_EXTEND,required=true --mount=type=secret,id=zeabur-env-524fb73a4682c6ac4fda1cee823e27e2fb4e507ae0a044d21499a53a449b1ab8,env=IMAGE_PROTOCOL,required=true --mount=type=secret,id=zeabur-env-0c6d09864b08b046334976140864f2f02aaf7f4f22b09b440aa91752c294addf,env=IMAGE_REFERENCE,required=true --mount=type=secret,id=zeabur-env-51e98c8d2f7b6ca594320a672a4ee77543f3e8993ec122eaa1d68c2c594fe374,env=IMAGE_SIZE,required=true --mount=type=secret,id=zeabur-env-cf7a5f4362b99cf7337044e2b9e7d3c22e03eed05395e51629dca92aa0b66b05,env=IMAGE_TIMEOUT_MS,required=true --mount=type=secret,id=zeabur-env-4c091397de6a99065adc6daf226ec3281e054e07a83fff516329199301244efe,env=LLM_ACCESS_TOKEN,required=true --mount=type=secret,id=zeabur-env-05d3d52d19d9167b8fb0d2a22757c3bba8b77746cda12f3e8271bdf025329c9a,env=LLM_API_KEY,required=true --mount=type=secret,id=zeabur-env-470b8068a4f395c8ed1762477cb9257caeeb58312680d70715c89b80913b1d81,env=LLM_BASE_URL,required=true --mount=type=secret,id=zeabur-env-0d627efe83956c36f7be8bd08394d788fbfa4932805347f7da84857f21c8da9f,env=LLM_MODEL,required=true --mount=type=secret,id=zeabur-env-dbe25ac07d344b0fc1b00447cfef20ff629af1b38f8c88efdd0abe01f1adba80,env=PASSWORD,required=true --mount=type=secret,id=zeabur-env-2861198599dac004c77c98018be0f1a70e832ee1f55ec1da9504322c568886c9,env=PORT,required=true --mount=type=secret,id=zeabur-env-b99a4cfe5c11a9d6219846c9edca651e148cde226c96850e68472cbd8e4a42e1,env=WEB_PORT,required=true --mount=type=secret,id=zeabur-env-a32cb9d0d2409ae104fc9c031fc0e2d50dbcaf8062ba72575322e74afc553935,env=ZEABUR,required=true --mount=type=secret,id=zeabur-env-171fb4d4d9773f237e140cd5edd72460867edcf339e4c059f8c4eba207ccdfb4,env=ZEABUR_ENVIRONMENT_ID,required=true --mount=type=secret,id=zeabur-env-de15cc3f66028b118d91f6bd863babc283a296435d746cae265c0cb5a3082036,env=ZEABUR_GIT_COMMIT_MESSAGE,required=true --mount=type=secret,id=zeabur-env-5b2cb06e65dd4d276a4e6f4f27b66a8d2434772d81de40eb7575e4e9583e76c9,env=ZEABUR_GIT_COMMIT_SHA,required=true --mount=type=secret,id=zeabur-env-a7dbdeae28bf18b1c56dfd48ab76edc8fcb4b9354aa24fe27bedc6e8c331e2ff,env=ZEABUR_PROJECT_ID,required=true --mount=type=secret,id=zeabur-env-ecbc4718e39493d7ef653333199acbbab0417b1300c0c7153605e7b31af96ab5,env=ZEABUR_REGION,required=true --mount=type=secret,id=zeabur-env-576e4ba2bc8ec905fb3ae28845ca59015347c1545ed0bde748c080bed38fba23,env=ZEABUR_SERVICE_ID,required=true --mount=type=secret,id=zeabur-env-1e795f5859d8fa39690e8ee80d7a34379ced471e5f441095b7909112b6c8b5ac,env=ZEABUR_USER_ID,required=true --mount=type=secret,id=zeabur-env-3b506eab9d11b5c4909614f408574dd22a430dd5b179c4b957639bee7bc5eedd,env=ZEABUR_WEB_DOMAIN,required=true --mount=type=secret,id=zeabur-env-18c9f9a0d7c7477eb5bbfc0aef3be51b7a8c9a9e8d8042c2c4d46b01d6ae29d3,env=ZEABUR_WEB_URL,required=true node hydrate-assets.mjs && rm deploy-assets.json hydrate-assets.mjs"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:43.189323Z",
+    "message": "INFO  🛠️ building image | #8 DONE 0.0s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:43.189323Z",
+    "message": "INFO  🛠️ building image | #8 [stage-0 4/7] COPY deploy-assets.json hydrate-assets.mjs ./"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:43.189323Z",
+    "message": "INFO  🛠️ building image | #7 DONE 0.5s"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:43.189323Z",
+    "message": "INFO  🛠️ building image | #7 [stage-0 3/7] COPY dist ./dist"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:43.602514Z",
+    "message": "INFO  🛠️ building image | #9 0.531 Verified build asset: art/sunwen-001.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:44.603164Z",
+    "message": "INFO  🛠️ building image | #9 0.606 Verified build asset: art/sunwen-146.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:44.603164Z",
+    "message": "INFO  🛠️ building image | #9 0.606 Verified build asset: art/sunwen-136.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:49.602915Z",
+    "message": "INFO  🛠️ building image | #9 6.427 Verified build asset: textures/vegetation/canopy-atlas.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:50.499693Z",
+    "message": "INFO  🛠️ building image | #9 7.460 Verified build asset: art/sunwen-077.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:50.499693Z",
+    "message": "INFO  🛠️ building image | #9 7.124 Verified build asset: art/sunwen-100.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:50.499693Z",
+    "message": "INFO  🛠️ building image | #9 6.936 Verified build asset: art/sunwen-096.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:50.499693Z",
+    "message": "INFO  🛠️ building image | #9 6.865 Verified build asset: art/sunwen-098.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:50.499693Z",
+    "message": "INFO  🛠️ building image | #9 6.843 Verified build asset: art/sunwen-092.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:51.091395Z",
+    "message": "INFO  🛠️ building image | #9 7.897 Verified build asset: art/sunwen-049.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:51.091395Z",
+    "message": "INFO  🛠️ building image | #9 7.844 Verified build asset: art/sunwen-108.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:51.091395Z",
+    "message": "INFO  🛠️ building image | #9 7.565 Verified build asset: art/sunwen-044.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:51.091395Z",
+    "message": "INFO  🛠️ building image | #9 7.499 Verified build asset: art/sunwen-064.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:51.091395Z",
+    "message": "INFO  🛠️ building image | #9 7.499 Verified build asset: art/sunwen-099.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:51.602339Z",
+    "message": "INFO  🛠️ building image | #9 8.504 Verified build asset: comics/storm.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:51.602339Z",
+    "message": "INFO  🛠️ building image | #9 8.242 Verified build asset: comics/petals.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:51.602339Z",
+    "message": "INFO  🛠️ building image | #9 7.898 Verified build asset: art/sunwen-053.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:52.603012Z",
+    "message": "INFO  🛠️ building image | #9 8.579 Verified build asset: art/sunwen-055.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:53.603035Z",
+    "message": "INFO  🛠️ building image | #9 10.49 Verified build asset: comics/bamboo.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:53.603035Z",
+    "message": "INFO  🛠️ building image | #9 10.27 Verified build asset: textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:53.603035Z",
+    "message": "INFO  🛠️ building image | #9 9.987 Verified build asset: textures/vegetation/canopy-atlas-low.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:53.603035Z",
+    "message": "INFO  🛠️ building image | #9 9.711 Verified build asset: comics/poetry.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:54.603322Z",
+    "message": "INFO  🛠️ building image | #9 11.40 Verified build asset: comics/manuscript.webp"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:54.603322Z",
+    "message": "INFO  🛠️ building image | #9 10.62 Verified build asset: textures/shared/1dee12acdb3f0fc7a0f9b6dcac05c046b8bfaa3072605ef855f61d3fe206bed2.jpg"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:55.60262Z",
+    "message": "INFO  🛠️ building image | #9 11.74 Restored 26 pinned images; runtime remains fully local."
+  },
+  {
+    "timestamp": "2026-09-18T03:00:55.60262Z",
+    "message": "INFO  🛠️ building image | #9 11.74 Verified build asset: textures/shared/68abb969fb5f7ffe28d0dc78c9649bc0eb7223cb9cacdf598020f082a0f49627.jpg"
+  },
+  {
+    "timestamp": "2026-09-18T03:00:55.60262Z",
+    "message": "INFO  🛠️ building image | #9 11.65 Verified build asset: textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:01.223258Z",
+    "message": "INFO  🛠️ building image | #11 DONE 0.1s"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:01.223258Z",
+    "message": "INFO  🛠️ building image | #11 [stage-0 7/7] COPY server ./server"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:01.223258Z",
+    "message": "INFO  🛠️ building image | #10 DONE 0.3s"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:01.223258Z",
+    "message": "INFO  🛠️ building image | #10 [stage-0 6/7] COPY server.mjs ./server.mjs"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:01.223258Z",
+    "message": "INFO  🛠️ building image | #9 DONE 17.7s"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:01.603341Z",
+    "message": "INFO  🛠️ building image | #12 exporting layers"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:01.603341Z",
+    "message": "INFO  🛠️ building image | #12 exporting to oci image format"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.265411Z",
+    "message": "INFO  🛠️ building image | #12 sending tarball 0.5s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.265411Z",
+    "message": "INFO  🛠️ building image | #12 sending tarball"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.265411Z",
+    "message": "INFO  🛠️ building image | #12 exporting config sha256:1656cd36d03f33547714ab7b9017f3847d2e6c71056c0e64906d4ef4e4c8c31f done"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.265411Z",
+    "message": "INFO  🛠️ building image | #12 exporting manifest sha256:5d672e5aefea62d7f8b8532dce4476f9930670806da90f0167356478958f2414 done"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.265411Z",
+    "message": "INFO  🛠️ building image | #12 exporting layers 1.5s done"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.602241Z",
+    "message": "INFO  🛠️ building image | #12 DONE 2.0s"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.889417Z",
+    "message": "INFO  🛠️ building image | 🔍 Checking remote index for e-6aa142fbda9bc245fba1e845/s-6aa143296c3d9581b71560fa..."
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.889417Z",
+    "message": "INFO  🛠️ building image | 📋 Loaded local index with 1 manifests"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.889417Z",
+    "message": "STEP  🔹 pushing image to Zeabur registry"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.889417Z",
+    "message": "built image manifest digest=\"sha256:5d672e5aefea62d7f8b8532dce4476f9930670806da90f0167356478958f2414\""
+  },
+  {
+    "timestamp": "2026-09-18T03:01:03.889417Z",
+    "message": "STEP  🔹 image build complete, ready to push"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.127264Z",
+    "message": "INFO  🛠️ building image | 🚀 Starting concurrent blob uploads (concurrency: 4)..."
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.127264Z",
+    "message": "INFO  🛠️ building image | 📦 Found 12 local blobs to upload"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.127264Z",
+    "message": "INFO  🛠️ building image | ✅ Merged index contains 6 manifests"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.127264Z",
+    "message": "INFO  🛠️ building image | 🔄 Merging indexes..."
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.127264Z",
+    "message": "INFO  🛠️ building image | 📥 Fetched remote index with 5 manifests"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.460339Z",
+    "message": "INFO  🛠️ building image | 📤 02f40d53b06f6b91 | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.460339Z",
+    "message": "INFO  🛠️ building image | 🔍 02f40d53b06f6b91 | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.460339Z",
+    "message": "INFO  🛠️ building image | 🚀 249c586e010de700 | Uploading (size=93 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.460339Z",
+    "message": "INFO  🛠️ building image | 📤 249c586e010de700 | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.460339Z",
+    "message": "INFO  🛠️ building image | 🔍 249c586e010de700 | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.6032Z",
+    "message": "INFO  🛠️ building image | 🚀 02f40d53b06f6b91 | Uploading (size=1261993 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.746056Z",
+    "message": "INFO  🛠️ building image | 📤 1656cd36d03f3354 | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.746056Z",
+    "message": "INFO  🛠️ building image | 🔍 1656cd36d03f3354 | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.746056Z",
+    "message": "INFO  🛠️ building image | 🚀 0e7c1e2d306405b8 | Uploading (size=22713 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.746056Z",
+    "message": "INFO  🛠️ building image | 📤 0e7c1e2d306405b8 | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:05.746056Z",
+    "message": "INFO  🛠️ building image | 🔍 0e7c1e2d306405b8 | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.603082Z",
+    "message": "INFO  🛠️ building image | ✅ 02f40d53b06f6b91 | Upload complete (1261993 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.603082Z",
+    "message": "INFO  🛠️ building image | ✅ 249c586e010de700 | Upload complete (93 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.603082Z",
+    "message": "INFO  🛠️ building image | 🚀 1656cd36d03f3354 | Uploading (size=8547 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.868731Z",
+    "message": "INFO  🛠️ building image | 🔍 5d672e5aefea62d7 | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.868731Z",
+    "message": "INFO  🛠️ building image | 🚀 3c504d5a797be28f | Uploading (size=56519242 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.868731Z",
+    "message": "INFO  🛠️ building image | 📤 3c504d5a797be28f | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.868731Z",
+    "message": "INFO  🛠️ building image | 🔍 3c504d5a797be28f | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.868731Z",
+    "message": "INFO  🛠️ building image | ✅ 1656cd36d03f3354 | Upload complete (8547 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.921051Z",
+    "message": "INFO  🛠️ building image | 🚀 7ce7dcbafb7f750c | Uploading (size=444 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.921051Z",
+    "message": "INFO  🛠️ building image | 📤 7ce7dcbafb7f750c | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.921051Z",
+    "message": "INFO  🛠️ building image | 🔍 7ce7dcbafb7f750c | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.921051Z",
+    "message": "INFO  🛠️ building image | 🚀 5d672e5aefea62d7 | Uploading (size=2195 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:06.921051Z",
+    "message": "INFO  🛠️ building image | 📤 5d672e5aefea62d7 | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:07.60295Z",
+    "message": "INFO  🛠️ building image | ✅ 0e7c1e2d306405b8 | Upload complete (22713 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:08.087447Z",
+    "message": "INFO  🛠️ building image | 🔍 c1aafb044654bfb9 | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:08.087447Z",
+    "message": "INFO  🛠️ building image | ✅ 7ce7dcbafb7f750c | Upload complete (444 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:08.087447Z",
+    "message": "INFO  🛠️ building image | 🚀 7ddd4f8993859f4e | Uploading (size=12550742 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:08.087447Z",
+    "message": "INFO  🛠️ building image | 📤 7ddd4f8993859f4e | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:08.087447Z",
+    "message": "INFO  🛠️ building image | 🔍 7ddd4f8993859f4e | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:08.602401Z",
+    "message": "INFO  🛠️ building image | ✅ 5d672e5aefea62d7 | Upload complete (2195 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:08.602401Z",
+    "message": "INFO  🛠️ building image | 🚀 c1aafb044654bfb9 | Uploading (size=48844453 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:08.602401Z",
+    "message": "INFO  🛠️ building image | 📤 c1aafb044654bfb9 | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:09.60323Z",
+    "message": "INFO  🛠️ building image | 🚀 d31bbf471f278283 | Uploading (size=2362 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:09.60323Z",
+    "message": "INFO  🛠️ building image | 📤 d31bbf471f278283 | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:09.60323Z",
+    "message": "INFO  🛠️ building image | 🔍 d31bbf471f278283 | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:10.603185Z",
+    "message": "INFO  🛠️ building image | 🚀 e2de96513ba9eb53 | Uploading (size=3849738 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:10.603185Z",
+    "message": "INFO  🛠️ building image | 📤 e2de96513ba9eb53 | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:10.603185Z",
+    "message": "INFO  🛠️ building image | 🔍 e2de96513ba9eb53 | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:10.603185Z",
+    "message": "INFO  🛠️ building image | ✅ d31bbf471f278283 | Upload complete (2362 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:11.603015Z",
+    "message": "INFO  🛠️ building image | 🚀 ffc5a37a4ccf9f9b | Uploading (size=2795 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:11.603015Z",
+    "message": "INFO  🛠️ building image | 📤 ffc5a37a4ccf9f9b | Processing blob"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:11.603015Z",
+    "message": "INFO  🛠️ building image | 🔍 ffc5a37a4ccf9f9b | New blob found, uploading"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:11.603015Z",
+    "message": "INFO  🛠️ building image | ✅ 7ddd4f8993859f4e | Upload complete (12550742 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:12.602469Z",
+    "message": "INFO  🛠️ building image | ✅ e2de96513ba9eb53 | Upload complete (3849738 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:12.602469Z",
+    "message": "INFO  🛠️ building image | ✅ ffc5a37a4ccf9f9b | Upload complete (2795 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:18.602592Z",
+    "message": "INFO  🛠️ building image | ✅ 3c504d5a797be28f | Upload complete (56519242 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:19.602422Z",
+    "message": "INFO  🛠️ building image | 🚀 index.json | Uploading (size=1791 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:19.602422Z",
+    "message": "INFO  🛠️ building image | 📋 Uploading updated index..."
+  },
+  {
+    "timestamp": "2026-09-18T03:01:19.602422Z",
+    "message": "INFO  🛠️ building image | 📊 Upload summary: 12 uploaded, 0 skipped"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:19.602422Z",
+    "message": "INFO  🛠️ building image | ✅ c1aafb044654bfb9 | Upload complete (48844453 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:20.593472Z",
+    "message": "INFO  🛠️ building image | ✅ Upload complete! Uploaded 12 blobs and updated index for e-6aa142fbda9bc245fba1e845/s-6aa143296c3d9581b71560fa"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:20.593472Z",
+    "message": "INFO  🛠️ building image | ✅ oci-layout | Upload complete (30 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:20.593472Z",
+    "message": "INFO  🛠️ building image | 🚀 oci-layout | Uploading (size=30 bytes, attempt 1/3)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:20.593472Z",
+    "message": "INFO  🛠️ building image | 📋 Uploading OCI layout metadata..."
+  },
+  {
+    "timestamp": "2026-09-18T03:01:20.593472Z",
+    "message": "INFO  🛠️ building image | ✅ index.json | Upload complete (1791 bytes)"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:20.814484Z",
+    "message": "DONE  ✅ build completed, see runtime logs for your application output"
+  },
+  {
+    "timestamp": "2026-09-18T03:01:20.814484Z",
+    "message": "STEP  🔹 emitting done event"
+  }
+]

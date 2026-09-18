@@ -1,0 +1,12 @@
+
+> daguanyuan-rumeng@1.0.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/ustinian/code/daguanyuan
+
+
+ Test Files  10 passed (10)
+      Tests  95 passed (95)
+   Start at  10:50:02
+   Duration  5.80s (transform 760ms, setup 0ms, import 1.49s, tests 6.52s, environment 1ms)

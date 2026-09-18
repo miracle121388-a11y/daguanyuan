@@ -1,12 +1,21 @@
 # 加利福尼亚部署 · 当前版本
 
-[在线推演与游园](https://daguanyuan-rumeng.zeabur.app/)。当前功能版本 `honglou-silk-20260917-v6`，部署ID `6aabcfecfa283769e51c22a5`，状态 **RUNNING**，2026-09-17T11:34:13.534Z 完成构建。实际提示词为 `dream-silk-4`、参考目录为 `dream-references-2`，园林模型仍为 `spatial-garden-20260913-r15`。最终验收范围以 `reports/acceptance/dream-silk-release.json` 为准。下方v5验证数字保留为历史记录。
+[在线推演与游园](https://daguanyuan-rumeng.zeabur.app/)。当前园林为 **`spatial-garden-20260918-r21`**（建筑 r18、京城街坊 r20、地表与树下种植 r21），已合并梦绢功能 `honglou-silk-20260917-v6`。部署ID `6aaca8df1d1f5891a859ff4f`，状态 **RUNNING**，2026-09-18T03:01:20.722Z 完成构建。提示词 `dream-silk-4` 与参考目录 `dream-references-2` 保留。当前部署验收见 `reports/acceptance/r21-deployment/release.json`；下方 v6、v5 数字明确保留为历史记录。
 
-使用既有 Aliyun California 4C 8GB 服务器，Los Angeles，美国。服务器ID `6a8eee0bb11fb81fb4aaca05`，区域 `server-6a8eee0bb11fb81fb4aaca05`；项目 `6aa142fb6c3d9581b71560ed`，服务 `6aa143296c3d9581b71560fa`，环境 `6aa142fbda9bc245fba1e845`。只更新当前服务的发布包、IMAGE配置与专用画册持久卷；原有模型变量保留，未购买新服务器或更改其他服务。
+使用既有 Aliyun California 4C 8GB 服务器，Los Angeles，美国。服务器ID `6a8eee0bb11fb81fb4aaca05`，区域 `server-6a8eee0bb11fb81fb4aaca05`；项目 `6aa142fb6c3d9581b71560ed`，服务 `6aa143296c3d9581b71560fa`，环境 `6aa142fbda9bc245fba1e845`。本轮只更新当前服务发布包；部署前后 18 个服务变量、原有持久卷及画册全部 6 份文件逐一匹配，未购买服务器、升级套餐或更改其他服务。
+
+## r21 本轮验收（2026-09-18）
+
+- 正式构建、lint、95 项单元/API 和 10339 项资料校验实际通过。发布包的 906 份文件在上传后再次核对哈希，623 份公开资源与本地原字节一致。
+- 线上健康检查返回 r21 与梦绢 v6；HTTPS、CSP、原 California 服务身份及 **627 份线上文件**（全部公开资源与当前 HTML/JS/CSS）SHA-256 一致。
+- 本地及线上各通过桌面／390px 触摸游园，以及 24 项三版本剧情漫画回归，包含 390／320px 漫画布局。已实际查看线上园景和代表性漫画截图；未将历史画册实调或实体手机测试算作本轮执行。
+- 18 个服务变量、画册挂载来源、6 份原画册文件全部保持，文件总计 7,486,038 字节。梦绢与世界推演配置接口正常。本轮没有提交新的付费文本或生图请求。
+
+本机默认浏览器在 Clash 系统代理下等待场景超时；本轮直连健康检查成功，但大模型 HTTP/2 下载也观察到较慢传输。最终浏览器验收使用独立 Chromium、实时公共 DNS、HTTP/1.1 及直连设置，保持 TLS 验证，未修改系统代理／DNS。桌面与手机模拟观察值为 77.125／122.074 秒，部分时段与全资源校验并行，**不作为独立性能测速或实体手机结论，也不代表默认 Clash 访问问题已经修复**。具体记录见 `r21-deployment/network.json` 与 `production-smoke.json`。
 
 ## 剧情新绘与我的梦藏
 
-本轮新增三个明确的服务端开关：`IMAGE_PROMPT_EXTEND=false`、`IMAGE_ENABLE_THINKING=true`、`IMAGE_NATIVE_PARAMETERS=true`，已回读匹配；密钥、其他变量与已有 `/data/dreams` 卷保持。`IMAGE_SCENE_PLAN` 默认开启，复用已有DeepSeek整理动作，结果落盘后再提交Qwen；可显式关闭，缺配置或整理失败则用原始场景正文。seed默认按最终创作配方稳定生成。配置、临时参考素材、编号与兼容方式见 [梦绢风格系统](DREAM_STYLE_SYSTEM.md)。八段式记录保留来源语境，实际作画提示去除分段标题与出版目录文案，先描述当前动作。旧画不改标新风格。
+v6 发布时新增三个明确的服务端开关：`IMAGE_PROMPT_EXTEND=false`、`IMAGE_ENABLE_THINKING=true`、`IMAGE_NATIVE_PARAMETERS=true`，已回读匹配；密钥、其他变量与已有 `/data/dreams` 卷保持。`IMAGE_SCENE_PLAN` 默认开启，复用已有DeepSeek整理动作，结果落盘后再提交Qwen；可显式关闭，缺配置或整理失败则用原始场景正文。seed默认按最终创作配方稳定生成。配置、临时参考素材、编号与兼容方式见 [梦绢风格系统](DREAM_STYLE_SYSTEM.md)。八段式记录保留来源语境，实际作画提示去除分段标题与出版目录文案，先描述当前动作。旧画不改标新风格。
 
 从“剧情画卷”选择版本与一幕，点“为此幕作画”；推演中的“此刻作画”和交谈后的“将这句心声入画”会捕获玩家当下的故事。选择意境、取景和细节，填写已有访问口令即可生成。开启“后续关键剧情自动作画并收藏”后，入局、临场抉择和小聚完成会提交新快照；等待时仍可游园。口令仅存当前页面内存，刷新后需重新填写。
 
@@ -22,7 +31,7 @@ API密钥只在服务端。全站每天最多20次实际提交（UTC日界），
 
 原有连续交谈、临场抉择、庭院小聚、漫游和院内细节继续保留。交谈保存当下时刻；托付和赴约在继续推演后执行。图像、人物关系和后续行动属于改编推演，原文证据独立展示。
 
-## 本轮梦绢 v6 验证
+## v6 历史验证（2026-09-17）
 
 - 当前部署 `6aabcfecfa283769e51c22a5` 为 RUNNING。发布包542文件、51,097,048字节（48.73MiB）；源模块、完整构建、21份参考图与侧车逐一匹配，Brotli解码内容亦未发现凭据。
 - `dream-silk-4` 线上实际葬花图已生成，1536×1024、2,730,751字节，SHA-256 `3709c316ef102b3e22c8b52c44b8f1a23486b656419738f5d27f76a3f055d407`。单次实测从开始到保存约55秒，不代表稳定耗时。画中黛玉跪在竹径旁、手边有落花与花穴，未见题字；属于短摘要的舞台演绎，不保证后续每幅质量。
@@ -52,16 +61,23 @@ API密钥只在服务端。全站每天最多20次实际提交（UTC日界），
 
 ## 发布包与更新
 
-本轮包 `.deploy/reference-20260916-174034-411820` 共473文件、49,189,185字节（46.91MiB）。逐文件及Brotli解码内容的凭据扫描通过；只包含当前Vite构建、已审核公开资源、HTTP服务与Dockerfile。私有生成图与凭据不在包内。发布后再次核对全部473份文件哈希未变。完整身份、范围及证据见 `reports/acceptance/dream-release.json`。
+本轮包 `.deploy/reference-20260918-025500-211236` 共 906 份上传文件、50,323,257 字节（47.99 MiB）。623 份公开运行资源经解码／构建恢复后，与本地文件逐字节相同；21 份梦绢参考图及侧车保留。包内及解码内容已按现有 4 个凭据值扫描，未发现凭据。
 
-```powershell
+当前账户单次上传上限为 50 MiB，完整包首次上传被平台拒绝，未替换旧服务。现由构建脚本按 GitHub 固定提交 `10c73e3532b19383e90edb9ab0709d3762e3eaba` 恢复 26 张已提交图片（12,558,504 字节），逐张核对大小与 SHA-256，失败则停止构建。所有模型仍完整随包上传，不重新压缩图片或降低模型精度。Docker 构建完成后，资源全部位于容器本地，浏览器不访问 GitHub。重新构建需要该公开提交可访问；脚本不会上传凭据或升级套餐。
+
+后续先在 main 提交并推送运行资源，再在 Conda 环境打包；构建恢复只选取与当前提交原字节一致的公开图片。已有 `.env` 或 `GARDEN_SECRET_VALUES_FILE` 指定的私有 JSON 字符串数组可用于凭据扫描，扫描报告只记录检查数量。
+
+```sh
+conda activate daguanyuan
 npm run build
 npm run deploy:package
-$gardenPackage = Get-Content -LiteralPath reports/acceptance/deployment-package.json | ConvertFrom-Json
-Push-Location -LiteralPath $gardenPackage.directory
-try {
-  npx --yes zeabur@0.22.2 deploy --service-id 6aa143296c3d9581b71560fa --project-id 6aa142fb6c3d9581b71560ed --environment-id 6aa142fbda9bc245fba1e845 -i=false
-} finally { Pop-Location }
+garden_package="$(node -p "require('./reports/acceptance/deployment-package.json').directory")"
+garden_hydrated="$PWD/.local/deploy-hydrated-assets"
+if [ -f "$garden_package/deploy-assets.json" ]; then
+  (cd "$garden_package" && GARDEN_HYDRATE_DIST="$garden_hydrated" node hydrate-assets.mjs)
+fi
+GARDEN_HYDRATED_DIST="$garden_hydrated" python scripts/check_dream_package.py
+(cd "$garden_package" && npx --yes zeabur@0.22.2 deploy --service-id 6aa143296c3d9581b71560fa --project-id 6aa142fb6c3d9581b71560ed --environment-id 6aa142fbda9bc245fba1e845 -i=false)
 ```
 
 Node24启动器准备专用画册目录后降权至UID1000运行，端口3000。GLB/JS/WASM只存一份Brotli，HTTP服务按客户端能力无损返回。文本模型POST `/api/simulation`；生图POST `/api/dreams/jobs`，状态与私有图片均由同源接口读取。公共文学和参考美术资料仅从已审核data/canon发布；运行时生成图存专用卷，不写入公共资料。
@@ -76,6 +92,6 @@ Node24启动器准备专用画册目录后降权至UID1000运行，端口3000。
 - `node scripts/story_model_smoke.mjs`：显式发起三次真实文本模型交谈；口令不写入报告，本次v5未重新执行。
 - 既有 `npm run test:simulation`、`test:simulation:model`、`test:simulation:participation` 继续可用；带model的流程会实际调用模型，本轮未宣称重新执行其全部历史验收。
 
-APP_RESOLVE_IP只作用于测试浏览器，不写系统hosts。本轮独立reviewer将长剧情完整阅读、标题先于元数据两项修正均记为resolved，disposition ship仅限两项；独立documenter核对14张最终本地图，记录于 `.impeccable/dream-surface.md`，DESIGN.md与design.json哈希不变。v4发布证据及旧部署说明保存在 `output/playwright/literary-v4-published-evidence/`；更早v3证据另行保留。
+APP_RESOLVE_IP 仅为独立测试浏览器指定解析、直连并关闭 QUIC，不写系统 hosts；GARDEN_BROWSER_HTTP1=1 可为该测试浏览器关闭 HTTP/2。本轮独立reviewer将长剧情完整阅读、标题先于元数据两项修正均记为resolved，disposition ship仅限两项；独立documenter核对14张最终本地图，记录于 `.impeccable/dream-surface.md`，DESIGN.md与design.json哈希不变。v4发布证据及旧部署说明保存在 `output/playwright/literary-v4-published-evidence/`；更早v3证据另行保留。
 
 v5发布确认日期：`2026-09-17`（Asia/Shanghai），报告为 `dream-release.json`；v6的精确时间、源文件、发布包哈希和当前验收范围见 `dream-silk-release.json`。

@@ -1,0 +1,28 @@
+
+> daguanyuan-rumeng@1.0.0 test:story
+> node scripts/story_smoke.mjs
+
+PASS eighty chapters is the default for a fresh visitor
+PASS eighty-chapter catalog excludes continuations
+PASS pause freezes the illustration
+PASS manual second panel is selected
+PASS pause after automatic arrival preserves the final panel
+PASS explicit play from the ended panel restarts the comic
+PASS Escape closes only the comic and returns to its library
+PASS Cheng continuation exposes chapter 97
+PASS entering chapter 97 saves the selected literary branch
+PASS comic returns to the simulation
+PASS Guiyou does not borrow the Cheng chapter
+PASS Guiyou has its own starting memory and node
+PASS switching back preserves the exact original Cheng journal
+PASS reload preserves edition and story branch
+PASS spoiler setting hides all later nodes
+PASS 390px comic has no horizontal overflow
+PASS phone uses the full-resolution comic while previews stay small
+PASS 320px playback controls stay on screen and touch sized
+PASS reduced motion removes spatial animation
+PASS static mode still supports panel navigation
+PASS 320px library has no horizontal overflow
+PASS mobile entry remains reachable after closing dialogs
+PASS no browser runtime errors
+PASS no failed feature resources

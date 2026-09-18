@@ -1,6 +1,7 @@
 """Verify public TLS assets and authenticated CLI status; never export credentials."""
 from pathlib import Path
-import subprocess,json,hashlib,datetime,os
+from concurrent.futures import ThreadPoolExecutor
+import subprocess,json,hashlib,datetime,os,time
 R=Path(__file__).resolve().parents[1]
 host='daguanyuan-rumeng.zeabur.app'
 fetch_timeout=int(os.environ.get('GARDEN_VERIFY_TIMEOUT_SECONDS','60'))
@@ -22,15 +23,22 @@ def get(path,head=False):
  return curl(*(['--head'] if head else []),'--resolve',f'{host}:443:{ip}','--compressed',f'https://{host}{path}')
 health=json.loads(get('/healthz'));assert health['status']=='ok'
 assert health['revision']==json.loads((R/'public/scene-manifest.json').read_text(encoding='utf8'))['assetRevision']
-files=[]
-art=json.loads((R/'public/art/manifest.json').read_text(encoding='utf8'))
-shared=next((R/'public/textures/shared').glob('*.jpg')).relative_to(R/'public').as_posix()
-comic_files=[p.relative_to(R/'public').as_posix() for p in sorted((R/'public/comics').glob('*')) if p.is_file()]
-dream_files=[p.relative_to(R/'public').as_posix() for folder in ['dream-style','dream-characters','dream-scenes'] for p in sorted((R/'public'/folder).glob('*')) if p.is_file()]
-for relative in ['models/overview.glb','models/overview-low.glb','models/vegetation/ground-cover.glb','textures/ground/soil.jpg','textures/ground/surface-zones.png','scene-manifest.json','models/places-low/xiaoxiangguan.glb','textures/vegetation/canopy-atlas.webp','textures/landscape-light.webp','textures/forest_grove.hdr','art/manifest.json',art[0]['url'],shared,'data/sources.json','data/editionCatalog.json','data/comicArt.json','data/dreamReferences.json',*comic_files,*dream_files]:
+package=json.loads((R/'reports/acceptance/deployment-package.json').read_text(encoding='utf8'))
+scan=json.loads((R/'reports/acceptance/dream-package-scan.json').read_text(encoding='utf8'))
+assert scan['passed'] and scan['directory']==package['directory']
+public_files={p.relative_to(R/'public').as_posix() for p in (R/'public').rglob('*') if p.is_file()}
+public_files-= {'models/sample.glb','models/pipeline-probe.glb'}
+assert public_files=={entry['path'] for entry in scan['publicFiles']}
+def verify_file(entry):
+ relative=entry['path']
  body=get('/'+relative);actual=hashlib.sha256(body).hexdigest();expected=hashlib.sha256((R/'public'/relative).read_bytes()).hexdigest()
- assert actual==expected,relative
- files.append({'path':relative,'sha256':actual,'bytes':len(body),'matchesLocal':True})
+ assert actual==expected==entry['sha256'],relative
+ return {'path':relative,'sha256':actual,'bytes':len(body),'matchesLocal':True}
+files=[]
+with ThreadPoolExecutor(max_workers=6) as pool:
+ for checked in pool.map(verify_file,scan['publicFiles']):
+  files.append(checked)
+  if len(files)%100==0:print(f'Verified {len(files)}/{len(public_files)} public assets',flush=True)
 build=json.loads((R/'dist/.vite/manifest.json').read_text(encoding='utf8'))
 bundles={'index.html'}
 for entry in build.values():
@@ -41,15 +49,26 @@ for relative in sorted(bundles):
  files.append({'path':relative,'sha256':actual,'bytes':len(body),'matchesLocal':True})
 headers=get('/',True).decode();assert '200' in headers.splitlines()[0]
 assert 'content-security-policy:' in headers.lower()
-smoke=json.loads((R/'reports/acceptance/production-smoke.json').read_text(encoding='utf8'))
+smoke_path=R/'reports/acceptance/production-smoke.json'
+# Asset requests can run independently while the browser completes. The final
+# acceptance still requires its atomically written report for this revision.
+smoke_wait=int(os.environ.get('GARDEN_SMOKE_WAIT_SECONDS','0'))
+assert 0<=smoke_wait<=600, 'Invalid browser report observation timeout'
+deadline=time.monotonic()+smoke_wait
+while True:
+ smoke=json.loads(smoke_path.read_text(encoding='utf8')) if smoke_path.exists() else {}
+ if smoke.get('revision')==health['revision'] and smoke.get('url')==f'https://{host}/':break
+ if time.monotonic()>=deadline:raise AssertionError('Current production browser report is not ready')
+ time.sleep(1)
 assert smoke['url']==f'https://{host}/' and smoke['sceneVisible'] and not smoke['errors'] and not smoke['failed']
 assert smoke['revision']==health['revision'] and smoke['planView']
 report={'verifiedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'url':f'https://{host}/',
  'server':{'id':'6a8eee0bb11fb81fb4aaca05','name':'Aliyun California 4C 8GB','city':'Los Angeles','country':'US','regionId':'server-6a8eee0bb11fb81fb4aaca05'},
  'projectId':deployment['projectID'],'serviceId':deployment['serviceID'],'environmentId':deployment['environmentID'],'deploymentId':deployment['ID'],
  'cliDeploymentStatus':deployment['status'],'cliDomainStatus':domain['status'],'health':health,'files':files,'responseHeaders':headers,
- 'dns':{'publicAddress':ip,'source':'Google DNS over HTTPS queried during this verification','browserOverrideUsed':bool(smoke['dnsOverride']),'osDnsChanged':False},
- 'tlsVerificationEnabled':True,'browserQuicDisabled':smoke['quicDisabled'],'productionSmoke':'production-smoke.json',
+ 'packageDirectory':package['directory'],'allPackagedPublicFilesVerified':True,'publicFileCount':len(public_files),
+ 'dns':{'publicAddress':ip,'source':'Google DNS over HTTPS queried during this verification','browserOverrideUsed':bool(smoke['dnsOverride']),'browserProxyMode':smoke.get('browserProxyMode','system'),'osDnsChanged':False,'osProxyChanged':False},
+ 'tlsVerificationEnabled':True,'browserQuicDisabled':smoke['quicDisabled'],'browserHttp2Disabled':smoke.get('http2Disabled',False),'productionSmoke':'production-smoke.json',
  'requestTimeoutSeconds':fetch_timeout,'browserObservationTimeoutMs':smoke.get('observationTimeoutMs',90000),
  'desktopReadyMs':smoke.get('desktopReadyMs'),'mobileReadyMs':smoke['mobile'].get('readyMs'),
  'networkObservationReport':os.environ.get('GARDEN_NETWORK_REPORT'),

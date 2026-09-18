@@ -1,0 +1,98 @@
+{
+  "at": "2026-09-18T03:25:25.539Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "status": "RUNNING",
+  "deploymentId": "6aaca8df1d1f5891a859ff4f",
+  "finishedAt": "2026-09-18T03:01:20.722Z",
+  "sourceCommit": "10c73e3532b19383e90edb9ab0709d3762e3eaba",
+  "branch": "main",
+  "sceneRevision": "spatial-garden-20260918-r21",
+  "featureRevision": "honglou-silk-20260917-v6",
+  "server": {
+    "id": "6a8eee0bb11fb81fb4aaca05",
+    "name": "Aliyun California 4C 8GB",
+    "city": "Los Angeles",
+    "country": "US",
+    "regionId": "server-6a8eee0bb11fb81fb4aaca05"
+  },
+  "projectId": "6aa142fb6c3d9581b71560ed",
+  "serviceId": "6aa143296c3d9581b71560fa",
+  "environmentId": "6aa142fbda9bc245fba1e845",
+  "package": {
+    "directory": ".deploy/reference-20260918-025500-211236",
+    "uploadBytes": 50323257,
+    "uploadFileCount": 906,
+    "allUploadedFileHashesRechecked": true,
+    "publicResources": 623,
+    "buildRestoredImages": 26,
+    "buildRestoredBytes": 12558504,
+    "pinnedSourceCommit": "10c73e3532b19383e90edb9ab0709d3762e3eaba",
+    "knownSecretValuesChecked": 4,
+    "credentialsFound": false
+  },
+  "validation": {
+    "build": true,
+    "lint": true,
+    "unitApiTests": 95,
+    "dataChecks": 10339,
+    "localStoryChecks": 24,
+    "onlineStoryChecks": 24,
+    "localProductionSmoke": true,
+    "onlineProductionSmoke": true,
+    "httpsFilesMatched": 627,
+    "allPublishedResourcesByteIdentical": true,
+    "sourceModelsRebuilt": false,
+    "physicalPhoneTest": false,
+    "newPaidModelCalls": 0,
+    "performanceBenchmark": false,
+    "resourceVerificationRanConcurrentlyWithPartOfBrowserChecks": true
+  },
+  "preservation": {
+    "checkedAt": "2026-09-18T03:03:13.199Z",
+    "variablesUnchanged": true,
+    "variableCount": 18,
+    "persistentMountUnchanged": true,
+    "allAlbumFilesUnchanged": true,
+    "albumFileCount": 6,
+    "albumBytes": 7486038,
+    "aggregateSha256": "61de19a7f29ace227c3c0f953b98013e9c924eefbef24b98ea3f05d39dfc88e9",
+    "uid": 1000,
+    "gid": 1000
+  },
+  "networkReport": "network.json",
+  "visualInspection": [
+    {
+      "path": "reports/browser/r21-deployment/local/garden-desktop.png",
+      "sha256": "2b43be001dd351b99dd668336b607c69d7072e0430253e7e9e5f7de72ecd7351"
+    },
+    {
+      "path": "reports/browser/r21-deployment/local/garden-mobile.png",
+      "sha256": "4fbdc6f49edb79e1e8658720fc36f9094d377b648ddac94edaa0ff4d0ac5a9e2"
+    },
+    {
+      "path": "reports/browser/r21-deployment/online/garden-desktop.png",
+      "sha256": "82bc37def4b5067a8cad4446297979aaf2a6c2486e822cce86aba13d8bec621f"
+    },
+    {
+      "path": "reports/browser/r21-deployment/online/garden-mobile.png",
+      "sha256": "bf54be41e98ab8cabdf79b2468289c15ddd5559f62b710168fd1a9097dd8a04d"
+    },
+    {
+      "path": "reports/acceptance/r21-deployment/online/story/desktop-comic.png",
+      "sha256": "41698aa7df62e36e668ea5ddd945ab22b181fbd0db74861926c06f86bef817af"
+    },
+    {
+      "path": "reports/acceptance/r21-deployment/online/story/compact-comic.png",
+      "sha256": "374794068d38b2c9762c4a5a340faed41492dbb7da2d94db8f0e08cf5ae401b7"
+    }
+  ],
+  "limitations": [
+    "Default system-proxy browser hit a 90-second scene-readiness timeout. Successful functional acceptance used a separate direct browser, fresh public DNS, TLS verification, HTTP/1.1, and disabled QUIC. OS DNS and proxy settings were unchanged.",
+    "Observed desktop/mobile load times are not an isolated performance benchmark or physical phone result.",
+    "No new paid image/text generation was submitted; provider configuration and existing archived files were verified."
+  ],
+  "newServerPurchased": false,
+  "planUpgraded": false,
+  "unrelatedServicesChanged": false,
+  "report": "../zeabur-deployment.json"
+}

@@ -1,0 +1,6 @@
+
+> daguanyuan-rumeng@1.0.0 deploy:package
+> python scripts/package_deploy.py
+
+Deployment package: 70.26 MiB raw; 47.99 MiB upload directory; 58.4 MiB transfer; 0 identical model aliases; budget 50 MiB
+Pinned build-time images: 26 ; unchanged bytes: 12558504 ; commit: 10c73e3532b19383e90edb9ab0709d3762e3eaba
