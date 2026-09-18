@@ -1,0 +1,62 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> node scripts/run_e2e.mjs tests/e2e/dream-merge.spec.ts tests/e2e/gallery.spec.ts tests/e2e/grounding.spec.ts tests/e2e/mobile.spec.ts
+
+[WebServer] (node:96786) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:96806) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 
+[WebServer] (!) Some chunks are larger than 1200 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:96825) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:96845) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 7 tests using 1 worker
+
+(node:96847) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/e2e/dream-merge.spec.ts:14:1 › merged Dream Silk album and comics coexist with the Sun Wen garden on desktop and phones (3.9s)
+(node:96894) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 tests/e2e/gallery.spec.ts:3:1 › a failed full-size reference image can be retried without leaving the viewer (1.4s)
+  ✓  3 tests/e2e/gallery.spec.ts:16:1 › gallery retries a failed manifest and filters original plates by chapter (1.8s)
+  ✓  4 tests/e2e/gallery.spec.ts:21:1 › 320px sources entry retains its accessible name (303ms)
+  ✓  5 tests/e2e/grounding.spec.ts:8:1 › root gardens connect soft ground, low planting and retained courts in the delivered scene (12.9s)
+  ✓  6 tests/e2e/mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard (21.9s)
+  ✓  7 tests/e2e/mobile.spec.ts:55:1 › 320px phone controls remain inside the viewport (1.9s)
+
+
+  1) tests/e2e/dream-merge.spec.ts:14:1 › merged Dream Silk album and comics coexist with the Sun Wen garden on desktop and phones 
+
+    Error: ENOENT: no such file or directory, open 'reports/browser/remote-merge-20260918/dream-1440.png.96847.next'
+
+       at artifacts.ts:3
+
+      1 | import fs from 'node:fs';
+      2 | import type {Page} from '@playwright/test';
+    > 3 | export function writeArtifact(path:string,data:string|Buffer){const temporary=path+'.'+process.pid+'.next';fs.writeFileSync(temporary,data);fs.renameSync(temporary,path)}
+        |                                                                                                               ^
+      4 | export async function shot(page:Page,path:string){writeArtifact(path,await page.screenshot())}
+      5 |
+        at writeArtifact (/Users/ustinian/code/daguanyuan/tests/e2e/artifacts.ts:3:111)
+        at shot (/Users/ustinian/code/daguanyuan/tests/e2e/artifacts.ts:4:51)
+        at /Users/ustinian/code/daguanyuan/tests/e2e/dream-merge.spec.ts:59:5
+
+    Error Context: test-results/dream-merge-merged-Dream-S-2bcda-arden-on-desktop-and-phones/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/dream-merge-merged-Dream-S-2bcda-arden-on-desktop-and-phones/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/dream-merge-merged-Dream-S-2bcda-arden-on-desktop-and-phones/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests/e2e/dream-merge.spec.ts:14:1 › merged Dream Silk album and comics coexist with the Sun Wen garden on desktop and phones 
+  6 passed (51.9s)

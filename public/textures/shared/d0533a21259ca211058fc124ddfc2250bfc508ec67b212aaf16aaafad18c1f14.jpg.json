@@ -1,0 +1,17 @@
+{
+  "sha256": "d0533a21259ca211058fc124ddfc2250bfc508ec67b212aaf16aaafad18c1f14",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "limestone",
+    "pigment": "#a3b79a",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-limestone.png",
+    "sha256": "5c34df8d96dd5b46fbae0a9a7e9ab9dcccf7aaa356c8d2af3a21803b1c95f7f0",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

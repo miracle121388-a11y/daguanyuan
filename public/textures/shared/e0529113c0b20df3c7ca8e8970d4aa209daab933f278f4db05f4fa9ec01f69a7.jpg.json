@@ -1,0 +1,18 @@
+{
+  "sha256": "e0529113c0b20df3c7ca8e8970d4aa209daab933f278f4db05f4fa9ec01f69a7",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "moon",
+    "role": "plaster",
+    "pigment": "#ebeee1",
+    "roughness": 0.84,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/moon-plaster.png",
+    "sha256": "570a72bfa1179272d20fd0e3e38512c091809142796a99120e59765cd47d7704",
+    "source": {
+      "file": "assets/processed/materials-r15/plaster_diff.png",
+      "sha256": "aa7086e0b6af67efe08ba1cfb2bcf0637ac4953eb2f0b38bb7d68632aa9b2d7c"
+    }
+  }
+}

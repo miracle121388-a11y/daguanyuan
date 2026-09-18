@@ -1,0 +1,118 @@
+{
+  "revision": "spatial-garden-20260917-r19",
+  "completedAt": "2026-09-17T15:21:11.998Z",
+  "scope": "Local urban-surroundings refinement; no push or deployment.",
+  "interpretation": "依据用户指定的宁荣府邸腹地空间关系进行三维营造；不是宁荣二府实测复原，不新增原著地点或游览路线。",
+  "courts": 264,
+  "urbanInstances": 3396,
+  "wallHeightM": 6.2,
+  "urbanModelBytes": 62624,
+  "masterSha256": "b6e4cd7240e4a55c8dc5346503c55a905d2991d88a0118675dde936fc546d8b1",
+  "validation": {
+    "unitApiTests": 82,
+    "initialFocusedBrowserTests": 4,
+    "finalBrowserTests": 3,
+    "finalBrowserScope": [
+      "urban day/night and eye/elevated views",
+      "390px throttled phone",
+      "320px touch controls"
+    ],
+    "finalUrbanChecks": 64198,
+    "architectureChecks": 1235,
+    "modelsVerifyPassed": true,
+    "typecheckPassed": true,
+    "lintPassed": true,
+    "productionBuildPassed": true,
+    "sunwenAssetChecks": 1132,
+    "integrityChecks": 8286
+  },
+  "mobile": {
+    "bytes": 7836794,
+    "MiB": 7.473749160766602,
+    "loadedMs": 13138.5,
+    "conditions": {
+      "viewport": [
+        390,
+        844
+      ],
+      "deviceScaleFactor": 3,
+      "renderDpr": 1,
+      "latencyMs": 80,
+      "downloadMbps": 9,
+      "cpuSlowdown": 4,
+      "realMobileHardware": false
+    },
+    "note": "Network-idle measurement includes the rendered urban context; browser simulation, not physical handset."
+  },
+  "deliverables": [
+    {
+      "file": "public/models/overview.glb",
+      "sha256": "ed6a89815ac2078d9a37262b22b1da2183fb0521c372bb48e150819c16a97ea3",
+      "bytes": 4792324
+    },
+    {
+      "file": "public/models/overview-low.glb",
+      "sha256": "73fca765edd0a4be239962f7a8685834840e4349f8c85809854e2a3f39e16cb4",
+      "bytes": 3499644
+    },
+    {
+      "file": "public/models/urban-context.glb",
+      "sha256": "6131135bb3d2ee6a8ab60d65f9a317292d7ac72779679c8058febc6a86ecdf45",
+      "bytes": 62624
+    },
+    {
+      "file": "public/urban-context.json",
+      "sha256": "f0809e81cb924381ce66249c7f142128f140b97c3aed4447d273f394e393cf2f",
+      "bytes": 360317
+    },
+    {
+      "file": "public/scene-manifest.json",
+      "sha256": "045a9f9594358c8bc22b64b0effc3943ee04d3fb605a04ac22988f63618aaecf",
+      "bytes": 220877
+    },
+    {
+      "file": "public/textures/landscape-light.webp",
+      "sha256": "f61cf4d915d33001a46b156a0db0ac7725a30a6df6dadf14ff439bdd2654bf58",
+      "bytes": 110144
+    },
+    {
+      "file": "public/textures/landscape-light-low.webp",
+      "sha256": "dd51468638a73a5c10e49b704f8ac25b77ff477f0a585feb1ea7548c19914933",
+      "bytes": 40418
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "reports/browser/r19/urban-overview.png",
+      "sha256": "bf801f4058254476fe302c8e75b9dc0d96e4849cca8c83babe2b4b573c7db222"
+    },
+    {
+      "file": "reports/browser/r19/garden-eye-east.png",
+      "sha256": "45158719de54ef8d82bff99e61be9242db275d9f550476d770152214f1a3dca9"
+    },
+    {
+      "file": "reports/browser/r19/upper-gallery-east.png",
+      "sha256": "adeeca03343e56c38b154d96a1b20be76325fb6f632f12a15d2dab9edc9303ed"
+    },
+    {
+      "file": "reports/browser/r19/water-eye-north.png",
+      "sha256": "091ecefa0f1641d37ac6b55a24b106902f30d05c2d8c106b5404ec9608fd43f3"
+    },
+    {
+      "file": "reports/browser/r19/mansion-aerial.png",
+      "sha256": "67dcf1753b8ec22ab5924614d1d728c5a738514b8177dedf4985b3ffd42b8d86"
+    },
+    {
+      "file": "reports/browser/r19/urban-night.png",
+      "sha256": "086d15598c8abbe649c919c57abfe406100b6a76dba4d46e9905902ca04f3746"
+    },
+    {
+      "file": "reports/browser/10-phone-4g.png",
+      "sha256": "0130f89f63a89429f21b58fc2cf7c5ab093f97281c89ac2e0b70a32a2f48e9f9"
+    },
+    {
+      "file": "reports/browser/11-phone-320.png",
+      "sha256": "6e8a125e3e0b791dc12c2cbef99f3698dd52fa3da3034dadffb457db5ab9c984"
+    }
+  ]
+}

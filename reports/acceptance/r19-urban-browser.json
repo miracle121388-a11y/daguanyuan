@@ -1,0 +1,294 @@
+{
+  "views": [
+    {
+      "name": "garden-eye-east",
+      "eye": [
+        52,
+        2.2,
+        -20
+      ],
+      "target": [
+        140,
+        1,
+        -22
+      ]
+    },
+    {
+      "name": "upper-gallery-east",
+      "eye": [
+        52,
+        27,
+        -20
+      ],
+      "target": [
+        175,
+        5,
+        -22
+      ]
+    },
+    {
+      "name": "water-eye-north",
+      "eye": [
+        20,
+        2.5,
+        -28
+      ],
+      "target": [
+        20,
+        1.1,
+        -143
+      ]
+    },
+    {
+      "name": "mansion-aerial",
+      "eye": [
+        -165,
+        130,
+        175
+      ],
+      "target": [
+        -30,
+        0,
+        -15
+      ]
+    }
+  ],
+  "native": [
+    {
+      "name": "Urban_hall_stone",
+      "instances": 282,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_hall_plaster",
+      "instances": 282,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_hall_wood",
+      "instances": 282,
+      "role": "wood",
+      "vertices": 864
+    },
+    {
+      "name": "Urban_hall_paper",
+      "instances": 282,
+      "role": "paper",
+      "vertices": 336
+    },
+    {
+      "name": "Urban_hall_roof",
+      "instances": 282,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_hall_tile",
+      "instances": 282,
+      "role": "tile",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_wing_stone",
+      "instances": 528,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_wing_plaster",
+      "instances": 528,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_wing_wood",
+      "instances": 528,
+      "role": "wood",
+      "vertices": 768
+    },
+    {
+      "name": "Urban_wing_paper",
+      "instances": 528,
+      "role": "paper",
+      "vertices": 288
+    },
+    {
+      "name": "Urban_wing_roof",
+      "instances": 528,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_wing_tile",
+      "instances": 528,
+      "role": "tile",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_back_stone",
+      "instances": 563,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_back_plaster",
+      "instances": 563,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_back_wood",
+      "instances": 563,
+      "role": "wood",
+      "vertices": 864
+    },
+    {
+      "name": "Urban_back_paper",
+      "instances": 563,
+      "role": "paper",
+      "vertices": 336
+    },
+    {
+      "name": "Urban_back_roof",
+      "instances": 563,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_back_tile",
+      "instances": 563,
+      "role": "tile",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_gallery_stone",
+      "instances": 38,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_gallery_wood",
+      "instances": 38,
+      "role": "wood",
+      "vertices": 192
+    },
+    {
+      "name": "Urban_gallery_roof",
+      "instances": 38,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_gallery_tile",
+      "instances": 38,
+      "role": "tile",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_gate_stone",
+      "instances": 302,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_gate_wood",
+      "instances": 302,
+      "role": "wood",
+      "vertices": 192
+    },
+    {
+      "name": "Urban_gate_roof",
+      "instances": 302,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_gate_tile",
+      "instances": 302,
+      "role": "tile",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_tower_stone",
+      "instances": 1,
+      "role": "stone",
+      "vertices": 48
+    },
+    {
+      "name": "Urban_tower_plaster",
+      "instances": 1,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_tower_wood",
+      "instances": 1,
+      "role": "wood",
+      "vertices": 768
+    },
+    {
+      "name": "Urban_tower_paper",
+      "instances": 1,
+      "role": "paper",
+      "vertices": 144
+    },
+    {
+      "name": "Urban_tower_roof",
+      "instances": 1,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_tower_tile",
+      "instances": 1,
+      "role": "tile",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_wall_plaster",
+      "instances": 1326,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_wall_stone",
+      "instances": 1326,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_wall_roof",
+      "instances": 1326,
+      "role": "roof",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_paving_paving",
+      "instances": 268,
+      "role": "paving",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_tree_wood",
+      "instances": 88,
+      "role": "wood",
+      "vertices": 198
+    },
+    {
+      "name": "Urban_tree_lightleaf",
+      "instances": 88,
+      "role": "lightleaf",
+      "vertices": 244
+    },
+    {
+      "name": "Urban_tree_leaf",
+      "instances": 88,
+      "role": "leaf",
+      "vertices": 182
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

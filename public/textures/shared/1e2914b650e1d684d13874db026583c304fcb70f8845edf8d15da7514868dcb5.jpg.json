@@ -1,0 +1,17 @@
+{
+  "sha256": "1e2914b650e1d684d13874db026583c304fcb70f8845edf8d15da7514868dcb5",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "bamboo",
+    "pigment": "#82b390",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-bamboo.png",
+    "sha256": "a4dc8bc683e1c5e4e66c5db1251e898a08cfd5207c18c9f5933fef96b39e7bf6",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

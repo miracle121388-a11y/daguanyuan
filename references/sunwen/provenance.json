@@ -1,0 +1,822 @@
+{
+  "repository": "https://github.com/changren-wcr/sunwen",
+  "commit": "9e9352d51a5f4a7006f77946ee8ace29d427a937",
+  "retrievedAt": "2026-09-17T09:22:55.757200+00:00",
+  "catalogueEntries": 203,
+  "files": [
+    {
+      "id": "SW001",
+      "number": 1,
+      "title": "001 第1回 石頭記大觀園全景",
+      "chapters": [
+        1
+      ],
+      "sourcePath": "docs/assets/sunwen/001 第1回 石頭記大觀園全景.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/001%20%E7%AC%AC1%E5%9B%9E%20%E7%9F%B3%E9%A0%AD%E8%A8%98%E5%A4%A7%E8%A7%80%E5%9C%92%E5%85%A8%E6%99%AF.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/001%20%E7%AC%AC1%E5%9B%9E%20%E7%9F%B3%E9%A0%AD%E8%A8%98%E5%A4%A7%E8%A7%80%E5%9C%92%E5%85%A8%E6%99%AF.jpg",
+      "gitBlob": "f4c8d8455efef936c87646c62fe0ab446ac08912",
+      "file": "references/sunwen/originals/001.jpg",
+      "sha256": "1ed2f698b218dac26da2b587e0f081e15a9727ee0430367458b8b74c52a9b33b",
+      "bytes": 10127236,
+      "dimensions": [
+        3348,
+        1901
+      ]
+    },
+    {
+      "id": "SW044",
+      "number": 44,
+      "title": "044第16-17回 賈政遊大觀園景一",
+      "chapters": [
+        16,
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/044第16-17回 賈政遊大觀園景一.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/044%E7%AC%AC16-17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B8%80.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/044%E7%AC%AC16-17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B8%80.jpg",
+      "gitBlob": "853d3dfe79010c0fd7767cf797eae71155b1642e",
+      "file": "references/sunwen/originals/044.jpg",
+      "sha256": "c083a80b19b8fe68cd698c27d6484b93941b52c5519289688c66cdab281d6dd0",
+      "bytes": 8888624,
+      "dimensions": [
+        3348,
+        1899
+      ]
+    },
+    {
+      "id": "SW045",
+      "number": 45,
+      "title": "045第17回 賈政遊大觀園景二",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/045第17回 賈政遊大觀園景二.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/045%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%BA%8C.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/045%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%BA%8C.jpg",
+      "gitBlob": "042da498cfcdd85e77bac42cbef21a6e5d5b80ee",
+      "file": "references/sunwen/originals/045.jpg",
+      "sha256": "cafb73feb2d344e312bcf88390b1a9972974298a0f24e87cce57b61914d8c692",
+      "bytes": 7484163,
+      "dimensions": [
+        3348,
+        1905
+      ]
+    },
+    {
+      "id": "SW046",
+      "number": 46,
+      "title": "046第17回 賈政遊大觀園景三",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/046第17回 賈政遊大觀園景三.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/046%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B8%89.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/046%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B8%89.jpg",
+      "gitBlob": "6e206d9a465d3b3d1f5584856d06a8a6dd220ec9",
+      "file": "references/sunwen/originals/046.jpg",
+      "sha256": "6f9042b7f6133c8290f041f39390dece429e3aaf03dfcbf8b3613b7fb77f8617",
+      "bytes": 8240775,
+      "dimensions": [
+        3348,
+        1896
+      ]
+    },
+    {
+      "id": "SW047",
+      "number": 47,
+      "title": "047第17回 賈政遊大觀園景四",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/047第17回 賈政遊大觀園景四.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/047%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%9B%9B.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/047%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%9B%9B.jpg",
+      "gitBlob": "787477b87ea9be82bb795e500bcf91cfaff75154",
+      "file": "references/sunwen/originals/047.jpg",
+      "sha256": "caf4991c3e46979be3a3057e9c190bb71dcb0ebad4ce8cbef322e4a979f4f9ac",
+      "bytes": 9085105,
+      "dimensions": [
+        3348,
+        1912
+      ]
+    },
+    {
+      "id": "SW048",
+      "number": 48,
+      "title": "048第17回 賈政遊大觀園景五",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/048第17回 賈政遊大觀園景五.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/048%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%BA%94.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/048%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%BA%94.jpg",
+      "gitBlob": "7096d8798e33cf56e660691b685f7d0d8add37da",
+      "file": "references/sunwen/originals/048.jpg",
+      "sha256": "180d9c559afbf00572466d625df72d85a9ae4c7340bd816f0ca1e5050ed0d131",
+      "bytes": 8524065,
+      "dimensions": [
+        3348,
+        1916
+      ]
+    },
+    {
+      "id": "SW049",
+      "number": 49,
+      "title": "049第17回 賈政遊大觀園景六",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/049第17回 賈政遊大觀園景六.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/049%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%85%AD.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/049%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%85%AD.jpg",
+      "gitBlob": "ea193c03d87cb8feac59785c22fcf19c1189e9ff",
+      "file": "references/sunwen/originals/049.jpg",
+      "sha256": "ccd2e2faecb749fd7253f86b39fc3448cb1d8804388cac726b82506f14d7608b",
+      "bytes": 8255191,
+      "dimensions": [
+        3348,
+        1904
+      ]
+    },
+    {
+      "id": "SW050",
+      "number": 50,
+      "title": "050第17回 賈政遊大觀園景七",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/050第17回 賈政遊大觀園景七.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/050%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B8%83.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/050%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B8%83.jpg",
+      "gitBlob": "606c751a54bafbe1695623f10d106f2d0fafb2d4",
+      "file": "references/sunwen/originals/050.jpg",
+      "sha256": "04a79d420e7061c92a352923a985cb6a6d2b56c329576fda8f68f455835b2b25",
+      "bytes": 8924272,
+      "dimensions": [
+        3348,
+        1903
+      ]
+    },
+    {
+      "id": "SW051",
+      "number": 51,
+      "title": "051第17回 賈政遊大觀園景八",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/051第17回 賈政遊大觀園景八.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/051%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%85%AB.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/051%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%85%AB.jpg",
+      "gitBlob": "df328797cefcbe739ec122d8c66c5de0b8a8068f",
+      "file": "references/sunwen/originals/051.jpg",
+      "sha256": "85220c5f0254c09fd07e98c00b8018a5c23d11dfe7ba5d12a48f3009f01cd96d",
+      "bytes": 8364485,
+      "dimensions": [
+        3365,
+        1903
+      ]
+    },
+    {
+      "id": "SW052",
+      "number": 52,
+      "title": "052第17回 賈政遊大觀園景九",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/052第17回 賈政遊大觀園景九.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/052%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B9%9D.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/052%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E4%B9%9D.jpg",
+      "gitBlob": "1f637ccf9c5cbd8ba64c22f2751a9b2af8a0ffcb",
+      "file": "references/sunwen/originals/052.jpg",
+      "sha256": "9a00b9cc27c2bca891cc2aa4821f11fa5bc0fedcbde3f72e2a77c0533a0cf36d",
+      "bytes": 8739367,
+      "dimensions": [
+        3347,
+        1903
+      ]
+    },
+    {
+      "id": "SW053",
+      "number": 53,
+      "title": "053第17回 贾政游大观园图景十",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/053第17回 贾政游大观园图景十.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/053%E7%AC%AC17%E5%9B%9E%20%E8%B4%BE%E6%94%BF%E6%B8%B8%E5%A4%A7%E8%A7%82%E5%9B%AD%E5%9B%BE%E6%99%AF%E5%8D%81.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/053%E7%AC%AC17%E5%9B%9E%20%E8%B4%BE%E6%94%BF%E6%B8%B8%E5%A4%A7%E8%A7%82%E5%9B%AD%E5%9B%BE%E6%99%AF%E5%8D%81.jpg",
+      "gitBlob": "954a7ad6bb6378eacc34c461a75f5ac00a29d67f",
+      "file": "references/sunwen/originals/053.jpg",
+      "sha256": "726b8434aae423065b1f716392f8f6497ed34233fb8efd8019b2a38200ab1267",
+      "bytes": 10758374,
+      "dimensions": [
+        3653,
+        2005
+      ]
+    },
+    {
+      "id": "SW054",
+      "number": 54,
+      "title": "054第17回 賈政遊大觀園景十一",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/054第17回 賈政遊大觀園景十一.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/054%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%8D%81%E4%B8%80.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/054%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%8D%81%E4%B8%80.jpg",
+      "gitBlob": "769b085c047ff85e3ecec0846ad4bbecfcbcf669",
+      "file": "references/sunwen/originals/054.jpg",
+      "sha256": "cd886ae67cf31903c5c9027e16c96f0b32ae89b35ad77c410213f05a93c19754",
+      "bytes": 8931867,
+      "dimensions": [
+        3348,
+        1848
+      ]
+    },
+    {
+      "id": "SW055",
+      "number": 55,
+      "title": "055第17回 賈政遊園同歸書房",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/055第17回 賈政遊園同歸書房.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/055%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%9C%92%E5%90%8C%E6%AD%B8%E6%9B%B8%E6%88%BF.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/055%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%9C%92%E5%90%8C%E6%AD%B8%E6%9B%B8%E6%88%BF.jpg",
+      "gitBlob": "0d46e8d2b8feb8f5f3717cc9048b8943037a5c92",
+      "file": "references/sunwen/originals/055.jpg",
+      "sha256": "3e702c4d3dde4b0eacec7a46e0357c5f5ec19aad86b3141935ba55142d4fbe77",
+      "bytes": 9839035,
+      "dimensions": [
+        3653,
+        2071
+      ]
+    },
+    {
+      "id": "SW056",
+      "number": 56,
+      "title": "056第17回 賈政遊大觀園景十二",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/056第17回 賈政遊大觀園景十二.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/056%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%8D%81%E4%BA%8C.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/056%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%8D%81%E4%BA%8C.jpg",
+      "gitBlob": "430b0511f2e00ebc3872d50e878d03704e4b5a42",
+      "file": "references/sunwen/originals/056.jpg",
+      "sha256": "d1766403dbb39f39ebd2fb2183a82ccfa6f0122f8447614813c5d60898f93327",
+      "bytes": 6970920,
+      "dimensions": [
+        3348,
+        1841
+      ]
+    },
+    {
+      "id": "SW057",
+      "number": 57,
+      "title": "057第17回 賈政遊大觀園景十三",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/057第17回 賈政遊大觀園景十三.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/057%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%8D%81%E4%B8%89.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/057%E7%AC%AC17%E5%9B%9E%20%E8%B3%88%E6%94%BF%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92%E6%99%AF%E5%8D%81%E4%B8%89.jpg",
+      "gitBlob": "a0d2a8a9797bb3b4e7c9c00174dbe4e0f0e5ef80",
+      "file": "references/sunwen/originals/057.jpg",
+      "sha256": "5fd3878565edb8936ebc0d955469a850db61cc1a1f1d991be0db0002f426230d",
+      "bytes": 8525117,
+      "dimensions": [
+        3348,
+        1844
+      ]
+    },
+    {
+      "id": "SW058",
+      "number": 58,
+      "title": "058第17回 因得彩解袋賞小廝 黛玉莽撞自悔絞袋",
+      "chapters": [
+        17
+      ],
+      "sourcePath": "docs/assets/sunwen/058第17回 因得彩解袋賞小廝 黛玉莽撞自悔絞袋.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/058%E7%AC%AC17%E5%9B%9E%20%E5%9B%A0%E5%BE%97%E5%BD%A9%E8%A7%A3%E8%A2%8B%E8%B3%9E%E5%B0%8F%E5%BB%9D%20%E9%BB%9B%E7%8E%89%E8%8E%BD%E6%92%9E%E8%87%AA%E6%82%94%E7%B5%9E%E8%A2%8B.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/058%E7%AC%AC17%E5%9B%9E%20%E5%9B%A0%E5%BE%97%E5%BD%A9%E8%A7%A3%E8%A2%8B%E8%B3%9E%E5%B0%8F%E5%BB%9D%20%E9%BB%9B%E7%8E%89%E8%8E%BD%E6%92%9E%E8%87%AA%E6%82%94%E7%B5%9E%E8%A2%8B.jpg",
+      "gitBlob": "34f79b6e6c19f4392d5567f0e109cb48af42d6a7",
+      "file": "references/sunwen/originals/058.jpg",
+      "sha256": "8ad4a00df2cb0362ab52654ed15d37c2f5029884383cd7c2957c6d751342b298",
+      "bytes": 8380872,
+      "dimensions": [
+        3362,
+        1904
+      ]
+    },
+    {
+      "id": "SW059",
+      "number": 59,
+      "title": "059第17-18回 兄妹拌嘴同住上房",
+      "chapters": [
+        17,
+        18
+      ],
+      "sourcePath": "docs/assets/sunwen/059第17-18回 兄妹拌嘴同住上房.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/059%E7%AC%AC17-18%E5%9B%9E%20%E5%85%84%E5%A6%B9%E6%8B%8C%E5%98%B4%E5%90%8C%E4%BD%8F%E4%B8%8A%E6%88%BF.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/059%E7%AC%AC17-18%E5%9B%9E%20%E5%85%84%E5%A6%B9%E6%8B%8C%E5%98%B4%E5%90%8C%E4%BD%8F%E4%B8%8A%E6%88%BF.jpg",
+      "gitBlob": "19ffc71fa84e237be5c983bb5db4ecc00fed197a",
+      "file": "references/sunwen/originals/059.jpg",
+      "sha256": "2b3dc629afbd5271db9feff27a22a3579c1529e520457fabe35c0e6c04b4efd2",
+      "bytes": 7940611,
+      "dimensions": [
+        3348,
+        1861
+      ]
+    },
+    {
+      "id": "SW060",
+      "number": 60,
+      "title": "060第17-18回 賈政奉旨貴妃省親",
+      "chapters": [
+        17,
+        18
+      ],
+      "sourcePath": "docs/assets/sunwen/060第17-18回 賈政奉旨貴妃省親.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/060%E7%AC%AC17-18%E5%9B%9E%20%E8%B3%88%E6%94%BF%E5%A5%89%E6%97%A8%E8%B2%B4%E5%A6%83%E7%9C%81%E8%A6%AA.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/060%E7%AC%AC17-18%E5%9B%9E%20%E8%B3%88%E6%94%BF%E5%A5%89%E6%97%A8%E8%B2%B4%E5%A6%83%E7%9C%81%E8%A6%AA.jpg",
+      "gitBlob": "5d729aae671a93fbbcc23e85a901ba3e595f50a9",
+      "file": "references/sunwen/originals/060.jpg",
+      "sha256": "abb83fcd7a8241313003ae33abde0a6ccea17c20bf8b250c89a18462ae818d9b",
+      "bytes": 7337076,
+      "dimensions": [
+        3348,
+        1876
+      ]
+    },
+    {
+      "id": "SW061",
+      "number": 61,
+      "title": "061第18回 青妃省親錦幕擋嚴",
+      "chapters": [
+        18
+      ],
+      "sourcePath": "docs/assets/sunwen/061第18回 青妃省親錦幕擋嚴.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/061%E7%AC%AC18%E5%9B%9E%20%E9%9D%92%E5%A6%83%E7%9C%81%E8%A6%AA%E9%8C%A6%E5%B9%95%E6%93%8B%E5%9A%B4.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/061%E7%AC%AC18%E5%9B%9E%20%E9%9D%92%E5%A6%83%E7%9C%81%E8%A6%AA%E9%8C%A6%E5%B9%95%E6%93%8B%E5%9A%B4.jpg",
+      "gitBlob": "b1688727d45a2497f3dd3cb6f07bd629a06adebf",
+      "file": "references/sunwen/originals/061.jpg",
+      "sha256": "5612343b8d395d8bc5b08450083fbf774937867762ffb767e4e1fed1e042f6c8",
+      "bytes": 12504956,
+      "dimensions": [
+        3348,
+        1863
+      ]
+    },
+    {
+      "id": "SW062",
+      "number": 62,
+      "title": "062第18回 賈母闔族迎接貴妃",
+      "chapters": [
+        18
+      ],
+      "sourcePath": "docs/assets/sunwen/062第18回 賈母闔族迎接貴妃.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/062%E7%AC%AC18%E5%9B%9E%20%E8%B3%88%E6%AF%8D%E9%97%94%E6%97%8F%E8%BF%8E%E6%8E%A5%E8%B2%B4%E5%A6%83.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/062%E7%AC%AC18%E5%9B%9E%20%E8%B3%88%E6%AF%8D%E9%97%94%E6%97%8F%E8%BF%8E%E6%8E%A5%E8%B2%B4%E5%A6%83.jpg",
+      "gitBlob": "5e80646444b9187731f02f496c20865082e471ce",
+      "file": "references/sunwen/originals/062.jpg",
+      "sha256": "14949e260b7090feb5155565cdb461fa7092dcd78e708b7cb64b071c8883e877",
+      "bytes": 7571859,
+      "dimensions": [
+        3348,
+        1887
+      ]
+    },
+    {
+      "id": "SW063",
+      "number": 63,
+      "title": "063第18回 坐龍舟遊玩大觀園",
+      "chapters": [
+        18
+      ],
+      "sourcePath": "docs/assets/sunwen/063第18回 坐龍舟遊玩大觀園.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/063%E7%AC%AC18%E5%9B%9E%20%E5%9D%90%E9%BE%8D%E8%88%9F%E9%81%8A%E7%8E%A9%E5%A4%A7%E8%A7%80%E5%9C%92.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/063%E7%AC%AC18%E5%9B%9E%20%E5%9D%90%E9%BE%8D%E8%88%9F%E9%81%8A%E7%8E%A9%E5%A4%A7%E8%A7%80%E5%9C%92.jpg",
+      "gitBlob": "645e08ac422b2bc7e11c9408e2da0ed829efd346",
+      "file": "references/sunwen/originals/063.jpg",
+      "sha256": "9e7891c5f277cf7e54195ce641ca0dbef15e6be7e123232c0f6be04c813f9f5e",
+      "bytes": 7610514,
+      "dimensions": [
+        3366,
+        1904
+      ]
+    },
+    {
+      "id": "SW064",
+      "number": 64,
+      "title": "064第18回 貴妃筵宴題大觀園 天倫樂寶玉逞才藻",
+      "chapters": [
+        18
+      ],
+      "sourcePath": "docs/assets/sunwen/064第18回 貴妃筵宴題大觀園 天倫樂寶玉逞才藻.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/064%E7%AC%AC18%E5%9B%9E%20%E8%B2%B4%E5%A6%83%E7%AD%B5%E5%AE%B4%E9%A1%8C%E5%A4%A7%E8%A7%80%E5%9C%92%20%E5%A4%A9%E5%80%AB%E6%A8%82%E5%AF%B6%E7%8E%89%E9%80%9E%E6%89%8D%E8%97%BB.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/064%E7%AC%AC18%E5%9B%9E%20%E8%B2%B4%E5%A6%83%E7%AD%B5%E5%AE%B4%E9%A1%8C%E5%A4%A7%E8%A7%80%E5%9C%92%20%E5%A4%A9%E5%80%AB%E6%A8%82%E5%AF%B6%E7%8E%89%E9%80%9E%E6%89%8D%E8%97%BB.jpg",
+      "gitBlob": "2fc977cb130f22d72f1a685dcec6c5e98fa9525c",
+      "file": "references/sunwen/originals/064.jpg",
+      "sha256": "26e01fa0c159acfa1f81473bf4c79ecbe7598cf1ab176fc7374eb0ac7f803d37",
+      "bytes": 8656025,
+      "dimensions": [
+        3358,
+        1902
+      ]
+    },
+    {
+      "id": "SW065",
+      "number": 65,
+      "title": "065第19-20回 寶玉進府茗烟求恕 情切切良宵花解語",
+      "chapters": [
+        19,
+        20
+      ],
+      "sourcePath": "docs/assets/sunwen/065第19-20回 寶玉進府茗烟求恕 情切切良宵花解語.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/065%E7%AC%AC19-20%E5%9B%9E%20%E5%AF%B6%E7%8E%89%E9%80%B2%E5%BA%9C%E8%8C%97%E7%83%9F%E6%B1%82%E6%81%95%20%E6%83%85%E5%88%87%E5%88%87%E8%89%AF%E5%AE%B5%E8%8A%B1%E8%A7%A3%E8%AA%9E.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/065%E7%AC%AC19-20%E5%9B%9E%20%E5%AF%B6%E7%8E%89%E9%80%B2%E5%BA%9C%E8%8C%97%E7%83%9F%E6%B1%82%E6%81%95%20%E6%83%85%E5%88%87%E5%88%87%E8%89%AF%E5%AE%B5%E8%8A%B1%E8%A7%A3%E8%AA%9E.jpg",
+      "gitBlob": "50dcffb6973e67685bd6ae247e573b4012695104",
+      "file": "references/sunwen/originals/065.jpg",
+      "sha256": "d631702b164e26bfc9312ba507bda470507dc0160000f99183993a9bdc0b915a",
+      "bytes": 8418871,
+      "dimensions": [
+        3348,
+        1887
+      ]
+    },
+    {
+      "id": "SW066",
+      "number": 66,
+      "title": "066第19-20回 王熙鳳正言彈妒意",
+      "chapters": [
+        19,
+        20
+      ],
+      "sourcePath": "docs/assets/sunwen/066第19-20回 王熙鳳正言彈妒意.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/066%E7%AC%AC19-20%E5%9B%9E%20%E7%8E%8B%E7%86%99%E9%B3%B3%E6%AD%A3%E8%A8%80%E5%BD%88%E5%A6%92%E6%84%8F.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/066%E7%AC%AC19-20%E5%9B%9E%20%E7%8E%8B%E7%86%99%E9%B3%B3%E6%AD%A3%E8%A8%80%E5%BD%88%E5%A6%92%E6%84%8F.jpg",
+      "gitBlob": "7ba989928ddd6a573cb2a708dcab21f30d53b32a",
+      "file": "references/sunwen/originals/066.jpg",
+      "sha256": "fe2fd9cba63b73c70b493fa14f81a6a9b50b9772bfd5ad43a5c7bbcd52bf3b9e",
+      "bytes": 7464108,
+      "dimensions": [
+        3348,
+        1873
+      ]
+    },
+    {
+      "id": "SW067",
+      "number": 67,
+      "title": "067第20-21回 林黛玉俏語谑嬌音 俊襲人嬌箴嗔寶玉 俏平兄軟語庇賈璉",
+      "chapters": [
+        20,
+        21
+      ],
+      "sourcePath": "docs/assets/sunwen/067第20-21回 林黛玉俏語谑嬌音 俊襲人嬌箴嗔寶玉 俏平兄軟語庇賈璉.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/067%E7%AC%AC20-21%E5%9B%9E%20%E6%9E%97%E9%BB%9B%E7%8E%89%E4%BF%8F%E8%AA%9E%E8%B0%91%E5%AC%8C%E9%9F%B3%20%E4%BF%8A%E8%A5%B2%E4%BA%BA%E5%AC%8C%E7%AE%B4%E5%97%94%E5%AF%B6%E7%8E%89%20%E4%BF%8F%E5%B9%B3%E5%85%84%E8%BB%9F%E8%AA%9E%E5%BA%87%E8%B3%88%E7%92%89.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/067%E7%AC%AC20-21%E5%9B%9E%20%E6%9E%97%E9%BB%9B%E7%8E%89%E4%BF%8F%E8%AA%9E%E8%B0%91%E5%AC%8C%E9%9F%B3%20%E4%BF%8A%E8%A5%B2%E4%BA%BA%E5%AC%8C%E7%AE%B4%E5%97%94%E5%AF%B6%E7%8E%89%20%E4%BF%8F%E5%B9%B3%E5%85%84%E8%BB%9F%E8%AA%9E%E5%BA%87%E8%B3%88%E7%92%89.jpg",
+      "gitBlob": "f1817b03626a31de79415851e6881a3f70f2436f",
+      "file": "references/sunwen/originals/067.jpg",
+      "sha256": "c6df0388b56dfb836548868e278f030b2428c39463726b15335fe5a45100e271",
+      "bytes": 7439579,
+      "dimensions": [
+        3348,
+        1876
+      ]
+    },
+    {
+      "id": "SW071",
+      "number": 71,
+      "title": "071第23-24回 衆姊妹進住大觀園 西廂記妙詞通戲語",
+      "chapters": [
+        23,
+        24
+      ],
+      "sourcePath": "docs/assets/sunwen/071第23-24回 衆姊妹進住大觀園 西廂記妙詞通戲語.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/071%E7%AC%AC23-24%E5%9B%9E%20%E8%A1%86%E5%A7%8A%E5%A6%B9%E9%80%B2%E4%BD%8F%E5%A4%A7%E8%A7%80%E5%9C%92%20%E8%A5%BF%E5%BB%82%E8%A8%98%E5%A6%99%E8%A9%9E%E9%80%9A%E6%88%B2%E8%AA%9E.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/071%E7%AC%AC23-24%E5%9B%9E%20%E8%A1%86%E5%A7%8A%E5%A6%B9%E9%80%B2%E4%BD%8F%E5%A4%A7%E8%A7%80%E5%9C%92%20%E8%A5%BF%E5%BB%82%E8%A8%98%E5%A6%99%E8%A9%9E%E9%80%9A%E6%88%B2%E8%AA%9E.jpg",
+      "gitBlob": "b3cf75ad9e314c39ab4b342fa03db05122a84603",
+      "file": "references/sunwen/originals/071.jpg",
+      "sha256": "db4d572a1789529065be72c908ed3ebc5efbe9b3011ac5b70087a557af6dade3",
+      "bytes": 7161733,
+      "dimensions": [
+        3353,
+        1902
+      ]
+    },
+    {
+      "id": "SW076",
+      "number": 76,
+      "title": "076第25-26回 瀟湘館春睏發幽情 哄寶玉薛蟠做生辰",
+      "chapters": [
+        25,
+        26
+      ],
+      "sourcePath": "docs/assets/sunwen/076第25-26回 瀟湘館春睏發幽情 哄寶玉薛蟠做生辰.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/076%E7%AC%AC25-26%E5%9B%9E%20%E7%80%9F%E6%B9%98%E9%A4%A8%E6%98%A5%E7%9D%8F%E7%99%BC%E5%B9%BD%E6%83%85%20%E5%93%84%E5%AF%B6%E7%8E%89%E8%96%9B%E8%9F%A0%E5%81%9A%E7%94%9F%E8%BE%B0.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/076%E7%AC%AC25-26%E5%9B%9E%20%E7%80%9F%E6%B9%98%E9%A4%A8%E6%98%A5%E7%9D%8F%E7%99%BC%E5%B9%BD%E6%83%85%20%E5%93%84%E5%AF%B6%E7%8E%89%E8%96%9B%E8%9F%A0%E5%81%9A%E7%94%9F%E8%BE%B0.jpg",
+      "gitBlob": "55dded17c65581e971c0c4fab0b6952a16e45561",
+      "file": "references/sunwen/originals/076.jpg",
+      "sha256": "36963ffe56e07b1893184ecba365504f0eb2f89ecc0210ea8d8c9000256d2974",
+      "bytes": 9474839,
+      "dimensions": [
+        3348,
+        1910
+      ]
+    },
+    {
+      "id": "SW077",
+      "number": 77,
+      "title": "077第27回 滴翠亭寶釵戲彩蝶",
+      "chapters": [
+        27
+      ],
+      "sourcePath": "docs/assets/sunwen/077第27回 滴翠亭寶釵戲彩蝶.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/077%E7%AC%AC27%E5%9B%9E%20%E6%BB%B4%E7%BF%A0%E4%BA%AD%E5%AF%B6%E9%87%B5%E6%88%B2%E5%BD%A9%E8%9D%B6.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/077%E7%AC%AC27%E5%9B%9E%20%E6%BB%B4%E7%BF%A0%E4%BA%AD%E5%AF%B6%E9%87%B5%E6%88%B2%E5%BD%A9%E8%9D%B6.jpg",
+      "gitBlob": "7e1a1f21199641ea14cfe93acca85a0310a24683",
+      "file": "references/sunwen/originals/077.jpg",
+      "sha256": "59c07a90486e730f62dd8d65cc97ed31a41a2c7e1b4d2dcaf20fc0792db8c76e",
+      "bytes": 8237691,
+      "dimensions": [
+        3348,
+        1876
+      ]
+    },
+    {
+      "id": "SW091",
+      "number": 91,
+      "title": "091第37回 賈芸寄書送花寶玉 秋爽齊偶結海棠社",
+      "chapters": [
+        37
+      ],
+      "sourcePath": "docs/assets/sunwen/091第37回 賈芸寄書送花寶玉 秋爽齊偶結海棠社.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/091%E7%AC%AC37%E5%9B%9E%20%E8%B3%88%E8%8A%B8%E5%AF%84%E6%9B%B8%E9%80%81%E8%8A%B1%E5%AF%B6%E7%8E%89%20%E7%A7%8B%E7%88%BD%E9%BD%8A%E5%81%B6%E7%B5%90%E6%B5%B7%E6%A3%A0%E7%A4%BE.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/091%E7%AC%AC37%E5%9B%9E%20%E8%B3%88%E8%8A%B8%E5%AF%84%E6%9B%B8%E9%80%81%E8%8A%B1%E5%AF%B6%E7%8E%89%20%E7%A7%8B%E7%88%BD%E9%BD%8A%E5%81%B6%E7%B5%90%E6%B5%B7%E6%A3%A0%E7%A4%BE.jpg",
+      "gitBlob": "0c57d9d3f471e7d302a04ef13ce3e2419e924e36",
+      "file": "references/sunwen/originals/091.jpg",
+      "sha256": "e4c238cb79cf303ada9fe6ad89dfee37a137d24c60617867a8849d05ab0a9a0d",
+      "bytes": 8451964,
+      "dimensions": [
+        3348,
+        1895
+      ]
+    },
+    {
+      "id": "SW092",
+      "number": 92,
+      "title": "092第37回 蘅蕪院夜擬菊花題 藕香榭飲宴吃螃蟹",
+      "chapters": [
+        37
+      ],
+      "sourcePath": "docs/assets/sunwen/092第37回 蘅蕪院夜擬菊花題 藕香榭飲宴吃螃蟹.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/092%E7%AC%AC37%E5%9B%9E%20%E8%98%85%E8%95%AA%E9%99%A2%E5%A4%9C%E6%93%AC%E8%8F%8A%E8%8A%B1%E9%A1%8C%20%E8%97%95%E9%A6%99%E6%A6%AD%E9%A3%B2%E5%AE%B4%E5%90%83%E8%9E%83%E8%9F%B9.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/092%E7%AC%AC37%E5%9B%9E%20%E8%98%85%E8%95%AA%E9%99%A2%E5%A4%9C%E6%93%AC%E8%8F%8A%E8%8A%B1%E9%A1%8C%20%E8%97%95%E9%A6%99%E6%A6%AD%E9%A3%B2%E5%AE%B4%E5%90%83%E8%9E%83%E8%9F%B9.jpg",
+      "gitBlob": "e7aad620fd52257004ae05bb22761ce37d4a674a",
+      "file": "references/sunwen/originals/092.jpg",
+      "sha256": "c6183e161e53d1ea9d2949df5876cd62e1f19a89931ff4e4dfdc0142b35ed94b",
+      "bytes": 8779987,
+      "dimensions": [
+        3348,
+        1897
+      ]
+    },
+    {
+      "id": "SW093",
+      "number": 93,
+      "title": "093第38-39回 林瀟湘魁奪菊花詩 薛蘅蕪諷和螃蟹咏",
+      "chapters": [
+        38,
+        39
+      ],
+      "sourcePath": "docs/assets/sunwen/093第38-39回 林瀟湘魁奪菊花詩 薛蘅蕪諷和螃蟹咏.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/093%E7%AC%AC38-39%E5%9B%9E%20%E6%9E%97%E7%80%9F%E6%B9%98%E9%AD%81%E5%A5%AA%E8%8F%8A%E8%8A%B1%E8%A9%A9%20%E8%96%9B%E8%98%85%E8%95%AA%E8%AB%B7%E5%92%8C%E8%9E%83%E8%9F%B9%E5%92%8F.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/093%E7%AC%AC38-39%E5%9B%9E%20%E6%9E%97%E7%80%9F%E6%B9%98%E9%AD%81%E5%A5%AA%E8%8F%8A%E8%8A%B1%E8%A9%A9%20%E8%96%9B%E8%98%85%E8%95%AA%E8%AB%B7%E5%92%8C%E8%9E%83%E8%9F%B9%E5%92%8F.jpg",
+      "gitBlob": "13d60a44316da80ecb18757dbc496f92a678944a",
+      "file": "references/sunwen/originals/093.jpg",
+      "sha256": "8f95968dc35d2e4e95fc1bcf8ce51ed20a1af238ee5e34cddcb47fc46d4de54c",
+      "bytes": 8934635,
+      "dimensions": [
+        3348,
+        1871
+      ]
+    },
+    {
+      "id": "SW095",
+      "number": 95,
+      "title": "095第40回 史太君兩宴大觀園 劉姥姥初遊大觀園",
+      "chapters": [
+        40
+      ],
+      "sourcePath": "docs/assets/sunwen/095第40回 史太君兩宴大觀園 劉姥姥初遊大觀園.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/095%E7%AC%AC40%E5%9B%9E%20%E5%8F%B2%E5%A4%AA%E5%90%9B%E5%85%A9%E5%AE%B4%E5%A4%A7%E8%A7%80%E5%9C%92%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E5%88%9D%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/095%E7%AC%AC40%E5%9B%9E%20%E5%8F%B2%E5%A4%AA%E5%90%9B%E5%85%A9%E5%AE%B4%E5%A4%A7%E8%A7%80%E5%9C%92%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E5%88%9D%E9%81%8A%E5%A4%A7%E8%A7%80%E5%9C%92.jpg",
+      "gitBlob": "2abf74948a925d2714d33ca3f708a3635b3b6a31",
+      "file": "references/sunwen/originals/095.jpg",
+      "sha256": "c87f8037a3f1f35889e13f44b87bcde3ae83660cbf48c07b451eed13a2d407fa",
+      "bytes": 7903409,
+      "dimensions": [
+        3348,
+        1921
+      ]
+    },
+    {
+      "id": "SW096",
+      "number": 96,
+      "title": "096第40回 劉姥姥初遊瀟湘館",
+      "chapters": [
+        40
+      ],
+      "sourcePath": "docs/assets/sunwen/096第40回 劉姥姥初遊瀟湘館.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/096%E7%AC%AC40%E5%9B%9E%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E5%88%9D%E9%81%8A%E7%80%9F%E6%B9%98%E9%A4%A8.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/096%E7%AC%AC40%E5%9B%9E%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E5%88%9D%E9%81%8A%E7%80%9F%E6%B9%98%E9%A4%A8.jpg",
+      "gitBlob": "cc3c260f736f018910ef97bdbc45dd9794df4080",
+      "file": "references/sunwen/originals/096.jpg",
+      "sha256": "a63e8b1926c595dfd0dc1ee26ea7bf96163ad35bd86fcf7e3d202aef352ba32a",
+      "bytes": 8885701,
+      "dimensions": [
+        3348,
+        1896
+      ]
+    },
+    {
+      "id": "SW097",
+      "number": 97,
+      "title": "097第40回 劉姥姥初遊紫菱洲",
+      "chapters": [
+        40
+      ],
+      "sourcePath": "docs/assets/sunwen/097第40回 劉姥姥初遊紫菱洲.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/097%E7%AC%AC40%E5%9B%9E%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E5%88%9D%E9%81%8A%E7%B4%AB%E8%8F%B1%E6%B4%B2.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/097%E7%AC%AC40%E5%9B%9E%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E5%88%9D%E9%81%8A%E7%B4%AB%E8%8F%B1%E6%B4%B2.jpg",
+      "gitBlob": "d2274fbb3e2897cce39807b55c99c0a04f3c7782",
+      "file": "references/sunwen/originals/097.jpg",
+      "sha256": "bfaf10cf993b84222fbbdf2b3d7b1f2ec3c6be9637622dcc77e914b3fa9e7c76",
+      "bytes": 8687449,
+      "dimensions": [
+        3348,
+        1888
+      ]
+    },
+    {
+      "id": "SW098",
+      "number": 98,
+      "title": "098第40回 王鳳姐擺飯秋爽齋 金鴛鴦三宣牙牌令",
+      "chapters": [
+        40
+      ],
+      "sourcePath": "docs/assets/sunwen/098第40回 王鳳姐擺飯秋爽齋 金鴛鴦三宣牙牌令.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/098%E7%AC%AC40%E5%9B%9E%20%E7%8E%8B%E9%B3%B3%E5%A7%90%E6%93%BA%E9%A3%AF%E7%A7%8B%E7%88%BD%E9%BD%8B%20%E9%87%91%E9%B4%9B%E9%B4%A6%E4%B8%89%E5%AE%A3%E7%89%99%E7%89%8C%E4%BB%A4.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/098%E7%AC%AC40%E5%9B%9E%20%E7%8E%8B%E9%B3%B3%E5%A7%90%E6%93%BA%E9%A3%AF%E7%A7%8B%E7%88%BD%E9%BD%8B%20%E9%87%91%E9%B4%9B%E9%B4%A6%E4%B8%89%E5%AE%A3%E7%89%99%E7%89%8C%E4%BB%A4.jpg",
+      "gitBlob": "a6e3726b4a29777a1b6e69526b531aa46e89ee92",
+      "file": "references/sunwen/originals/098.jpg",
+      "sha256": "ee9b5076ee5ac98d1751b63c62df5e50068ba7d0ff18da20821e6a6034f7cc11",
+      "bytes": 8510576,
+      "dimensions": [
+        3348,
+        1898
+      ]
+    },
+    {
+      "id": "SW099",
+      "number": 99,
+      "title": "099第41回 賈寶玉品茶櫳翠庵",
+      "chapters": [
+        41
+      ],
+      "sourcePath": "docs/assets/sunwen/099第41回 賈寶玉品茶櫳翠庵.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/099%E7%AC%AC41%E5%9B%9E%20%E8%B3%88%E5%AF%B6%E7%8E%89%E5%93%81%E8%8C%B6%E6%AB%B3%E7%BF%A0%E5%BA%B5.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/099%E7%AC%AC41%E5%9B%9E%20%E8%B3%88%E5%AF%B6%E7%8E%89%E5%93%81%E8%8C%B6%E6%AB%B3%E7%BF%A0%E5%BA%B5.jpg",
+      "gitBlob": "fff0de392a2099156ae8657319b8c0ca8472295d",
+      "file": "references/sunwen/originals/099.jpg",
+      "sha256": "eb16ff660547c8fc4c1a4c4cdcdd60b6f409e02d1995ceae31d6b0a0705e06bc",
+      "bytes": 8540423,
+      "dimensions": [
+        3348,
+        1931
+      ]
+    },
+    {
+      "id": "SW100",
+      "number": 100,
+      "title": "100第41-42回 劉姥姥醉臥怡紅院 蘅蕪君蘭言解疑癖",
+      "chapters": [
+        41,
+        42
+      ],
+      "sourcePath": "docs/assets/sunwen/100第41-42回 劉姥姥醉臥怡紅院 蘅蕪君蘭言解疑癖.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/100%E7%AC%AC41-42%E5%9B%9E%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E9%86%89%E8%87%A5%E6%80%A1%E7%B4%85%E9%99%A2%20%E8%98%85%E8%95%AA%E5%90%9B%E8%98%AD%E8%A8%80%E8%A7%A3%E7%96%91%E7%99%96.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/100%E7%AC%AC41-42%E5%9B%9E%20%E5%8A%89%E5%A7%A5%E5%A7%A5%E9%86%89%E8%87%A5%E6%80%A1%E7%B4%85%E9%99%A2%20%E8%98%85%E8%95%AA%E5%90%9B%E8%98%AD%E8%A8%80%E8%A7%A3%E7%96%91%E7%99%96.jpg",
+      "gitBlob": "c8a9d2202dc6868aa593aeaa6c7ddbf29e1c265e",
+      "file": "references/sunwen/originals/100.jpg",
+      "sha256": "14992d2889e25b79b41a19b0e71ea82ee54e6ba50293104955346939308f3532",
+      "bytes": 8623645,
+      "dimensions": [
+        3348,
+        1929
+      ]
+    },
+    {
+      "id": "SW108",
+      "number": 108,
+      "title": "108第48-49回 蘆雪廣爭聯即景詩 暖香塢雅製春燈謎",
+      "chapters": [
+        48,
+        49
+      ],
+      "sourcePath": "docs/assets/sunwen/108第48-49回 蘆雪廣爭聯即景詩 暖香塢雅製春燈謎.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/108%E7%AC%AC48-49%E5%9B%9E%20%E8%98%86%E9%9B%AA%E5%BB%A3%E7%88%AD%E8%81%AF%E5%8D%B3%E6%99%AF%E8%A9%A9%20%E6%9A%96%E9%A6%99%E5%A1%A2%E9%9B%85%E8%A3%BD%E6%98%A5%E7%87%88%E8%AC%8E.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/108%E7%AC%AC48-49%E5%9B%9E%20%E8%98%86%E9%9B%AA%E5%BB%A3%E7%88%AD%E8%81%AF%E5%8D%B3%E6%99%AF%E8%A9%A9%20%E6%9A%96%E9%A6%99%E5%A1%A2%E9%9B%85%E8%A3%BD%E6%98%A5%E7%87%88%E8%AC%8E.jpg",
+      "gitBlob": "597f855a48212a1d71f6cad0618a607de4b2aced",
+      "file": "references/sunwen/originals/108.jpg",
+      "sha256": "957cbba80c635622fff45bf3a276019bc64165624022e573a3222690176ebab3",
+      "bytes": 7872702,
+      "dimensions": [
+        3378,
+        1916
+      ]
+    },
+    {
+      "id": "SW127",
+      "number": 127,
+      "title": "127第62-63回 呆香菱情解石榴裙 壽怡紅羣芳開夜宴",
+      "chapters": [
+        62,
+        63
+      ],
+      "sourcePath": "docs/assets/sunwen/127第62-63回 呆香菱情解石榴裙 壽怡紅羣芳開夜宴.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/127%E7%AC%AC62-63%E5%9B%9E%20%E5%91%86%E9%A6%99%E8%8F%B1%E6%83%85%E8%A7%A3%E7%9F%B3%E6%A6%B4%E8%A3%99%20%E5%A3%BD%E6%80%A1%E7%B4%85%E7%BE%A3%E8%8A%B3%E9%96%8B%E5%A4%9C%E5%AE%B4.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/127%E7%AC%AC62-63%E5%9B%9E%20%E5%91%86%E9%A6%99%E8%8F%B1%E6%83%85%E8%A7%A3%E7%9F%B3%E6%A6%B4%E8%A3%99%20%E5%A3%BD%E6%80%A1%E7%B4%85%E7%BE%A3%E8%8A%B3%E9%96%8B%E5%A4%9C%E5%AE%B4.jpg",
+      "gitBlob": "7a174a5e9c7f5bb3edae597e4ffad1d9f7f2b3de",
+      "file": "references/sunwen/originals/127.jpg",
+      "sha256": "5a4027069760c450fb7def8c885b9b6b8ead35b1bf1d617809df2f9746893fe0",
+      "bytes": 10533790,
+      "dimensions": [
+        3652,
+        2113
+      ]
+    },
+    {
+      "id": "SW136",
+      "number": 136,
+      "title": "136第70回 姊妹走訪稻香老農",
+      "chapters": [
+        70
+      ],
+      "sourcePath": "docs/assets/sunwen/136第70回 姊妹走訪稻香老農.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/136%E7%AC%AC70%E5%9B%9E%20%E5%A7%8A%E5%A6%B9%E8%B5%B0%E8%A8%AA%E7%A8%BB%E9%A6%99%E8%80%81%E8%BE%B2.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/136%E7%AC%AC70%E5%9B%9E%20%E5%A7%8A%E5%A6%B9%E8%B5%B0%E8%A8%AA%E7%A8%BB%E9%A6%99%E8%80%81%E8%BE%B2.jpg",
+      "gitBlob": "e469886b08437515a94a92bd17a65095fbb7631c",
+      "file": "references/sunwen/originals/136.jpg",
+      "sha256": "aff2c8d0392d36d302f3b6a0c609a0fb1849d93d318250fdd031e70bb2e78b22",
+      "bytes": 10566974,
+      "dimensions": [
+        3652,
+        2126
+      ]
+    },
+    {
+      "id": "SW146",
+      "number": 146,
+      "title": "146第75-76回 凸碧堂品笛感悽清 凹晶館聯詩悲寂寞",
+      "chapters": [
+        75,
+        76
+      ],
+      "sourcePath": "docs/assets/sunwen/146第75-76回 凸碧堂品笛感悽清 凹晶館聯詩悲寂寞.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/146%E7%AC%AC75-76%E5%9B%9E%20%E5%87%B8%E7%A2%A7%E5%A0%82%E5%93%81%E7%AC%9B%E6%84%9F%E6%82%BD%E6%B8%85%20%E5%87%B9%E6%99%B6%E9%A4%A8%E8%81%AF%E8%A9%A9%E6%82%B2%E5%AF%82%E5%AF%9E.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/146%E7%AC%AC75-76%E5%9B%9E%20%E5%87%B8%E7%A2%A7%E5%A0%82%E5%93%81%E7%AC%9B%E6%84%9F%E6%82%BD%E6%B8%85%20%E5%87%B9%E6%99%B6%E9%A4%A8%E8%81%AF%E8%A9%A9%E6%82%B2%E5%AF%82%E5%AF%9E.jpg",
+      "gitBlob": "47562ada640957405b250b7b33139c7f9f3b569b",
+      "file": "references/sunwen/originals/146.jpg",
+      "sha256": "cb989700ea688d3a5b375a1f6457c4a6ddb393d4d79a446007c738cc4aabc48d",
+      "bytes": 9346648,
+      "dimensions": [
+        3348,
+        1930
+      ]
+    },
+    {
+      "id": "SW158",
+      "number": 158,
+      "title": "158第82回 病瀟湘癡魂警噩夢",
+      "chapters": [
+        82
+      ],
+      "sourcePath": "docs/assets/sunwen/158第82回 病瀟湘癡魂警噩夢.jpg",
+      "sourcePage": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/158%E7%AC%AC82%E5%9B%9E%20%E7%97%85%E7%80%9F%E6%B9%98%E7%99%A1%E9%AD%82%E8%AD%A6%E5%99%A9%E5%A4%A2.jpg",
+      "downloadUrl": "https://raw.githubusercontent.com/changren-wcr/sunwen/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/158%E7%AC%AC82%E5%9B%9E%20%E7%97%85%E7%80%9F%E6%B9%98%E7%99%A1%E9%AD%82%E8%AD%A6%E5%99%A9%E5%A4%A2.jpg",
+      "gitBlob": "a57d73dee3c63d614f569e892c230fa3cad24541",
+      "file": "references/sunwen/originals/158.jpg",
+      "sha256": "7bc6b058f946fa41f2083ce0c112b0ed2a00634dfaeff32f21a6b550064a727e",
+      "bytes": 9205193,
+      "dimensions": [
+        3348,
+        1923
+      ]
+    }
+  ],
+  "failures": [],
+  "rights": "Historical paintings attributed by the supplied repository to Qing artist Sun Wen. The underlying historical works are public domain; the repository supplies no separate license for its digital scans. Preserve scan provenance and avoid claiming an explicit repository license.",
+  "purpose": "Primary visual standard for this garden: architecture, pigments, open ground and ornamental planting. Painterly spatial interpretation is separate from reviewed novel evidence."
+}

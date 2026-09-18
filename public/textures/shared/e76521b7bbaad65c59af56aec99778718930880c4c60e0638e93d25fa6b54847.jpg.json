@@ -1,0 +1,18 @@
+{
+  "sha256": "e76521b7bbaad65c59af56aec99778718930880c4c60e0638e93d25fa6b54847",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "crimson",
+    "role": "tile",
+    "pigment": "#739d89",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/crimson-tile.png",
+    "sha256": "98f77b05a1d531d89ac6220e0fbac6fa85350900083e3e6f3e60fccdc321d58b",
+    "source": {
+      "file": "assets/processed/materials-r15/tile_diff.png",
+      "sha256": "0228148a26676a50576db343b0167a2e27221c06bfa5f8351b6850cdf0757977"
+    }
+  }
+}

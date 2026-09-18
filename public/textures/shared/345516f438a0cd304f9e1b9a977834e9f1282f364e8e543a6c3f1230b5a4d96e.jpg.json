@@ -1,0 +1,18 @@
+{
+  "sha256": "345516f438a0cd304f9e1b9a977834e9f1282f364e8e543a6c3f1230b5a4d96e",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "moon",
+    "role": "tilelight",
+    "pigment": "#cbd4c7",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/moon-tilelight.png",
+    "sha256": "3a527cae7de849fe40592e1ac5cef855af17ced3f540b869c670358a1728320b",
+    "source": {
+      "file": "assets/processed/materials-r15/tilelight_diff.png",
+      "sha256": "8b559586be8aa350bc6a7fe1d4e47eb38a33fb161e50d14c2d76b3a2082da574"
+    }
+  }
+}

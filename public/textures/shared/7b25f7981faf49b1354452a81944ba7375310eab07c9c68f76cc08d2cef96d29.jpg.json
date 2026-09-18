@@ -1,0 +1,18 @@
+{
+  "sha256": "7b25f7981faf49b1354452a81944ba7375310eab07c9c68f76cc08d2cef96d29",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "waterside",
+    "role": "tilelight",
+    "pigment": "#b6c8bb",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/waterside-tilelight.png",
+    "sha256": "d55e7c5a7d5cbb451e955d416b6c34136d983356813337701c21cb42b1a130d1",
+    "source": {
+      "file": "assets/processed/materials-r15/tilelight_diff.png",
+      "sha256": "8b559586be8aa350bc6a7fe1d4e47eb38a33fb161e50d14c2d76b3a2082da574"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sha256": "7775a42d323fdd6faf03b48e9aec9b89430f5d858a9b41dee0bd3559332d5916",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "stone",
+    "pigment": "#a2b4ab",
+    "roughness": 0.88,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-stone.png",
+    "sha256": "ac94316186a9915c454bf8c8a4b66ae5192af3d08aaac49727f76b69e7fa4383",
+    "source": {
+      "file": "assets/processed/materials-r15/stone_diff.png",
+      "sha256": "bdcee7579ca4ca7894242e76f717900b5695dcb8280ec9d0d029016086dbe7a8"
+    }
+  }
+}

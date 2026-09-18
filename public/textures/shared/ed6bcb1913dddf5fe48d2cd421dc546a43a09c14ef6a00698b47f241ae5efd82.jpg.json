@@ -1,0 +1,18 @@
+{
+  "sha256": "ed6bcb1913dddf5fe48d2cd421dc546a43a09c14ef6a00698b47f241ae5efd82",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "temple",
+    "role": "wood",
+    "pigment": "#887759",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/temple-wood.png",
+    "sha256": "353c68fe5c78ace099ec08c357d6d8a53697c6c71af52f47a6b5df6828005341",
+    "source": {
+      "file": "assets/processed/materials-r15/wood_diff.png",
+      "sha256": "44dffcd97d01a62e4a1c679d03f19beb22274d172ee4f658af0a54a00c43d14d"
+    }
+  }
+}

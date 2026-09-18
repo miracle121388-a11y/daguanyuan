@@ -1,0 +1,17 @@
+{
+  "sha256": "fd0cc7dd24a4a3cd609a10ec97117c9f6de5b196d9b9d4662efdf5d6abc57d13",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "bamboo",
+    "role": "gold",
+    "pigment": "#adb195",
+    "roughness": 0.48,
+    "metallic": 0.25,
+    "file": "assets/processed/sunwen-r17/bamboo-gold.png",
+    "sha256": "e28c487f6632bcbc6770be3c169922ceead416a028abe8d3a20a1700cd4c0cd2",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

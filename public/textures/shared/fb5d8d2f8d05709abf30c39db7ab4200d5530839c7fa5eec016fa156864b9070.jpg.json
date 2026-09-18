@@ -1,0 +1,18 @@
+{
+  "sha256": "fb5d8d2f8d05709abf30c39db7ab4200d5530839c7fa5eec016fa156864b9070",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "study",
+    "role": "wood",
+    "pigment": "#946749",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/study-wood.png",
+    "sha256": "c2f88473b396106d485fbd5679d1a0da3fbee783d4cd9bdfe594b7f1e743232f",
+    "source": {
+      "file": "assets/processed/materials-r15/wood_diff.png",
+      "sha256": "44dffcd97d01a62e4a1c679d03f19beb22274d172ee4f658af0a54a00c43d14d"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sha256": "7d406114c27915c88fe886c92f0999fc7ef593cc25dcb1d5eb5ecdab93377608",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "ceremonial",
+    "role": "gold",
+    "pigment": "#e6c476",
+    "roughness": 0.48,
+    "metallic": 0.25,
+    "file": "assets/processed/sunwen-r17/ceremonial-gold.png",
+    "sha256": "23134b364be01a4db816989b7cf9cd69fe5420321e6419e681988d33d9e75ea5",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

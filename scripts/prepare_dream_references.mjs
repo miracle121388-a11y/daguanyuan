@@ -5,7 +5,10 @@ import {createHash} from 'node:crypto';
 import sharp from 'sharp';
 const read = path => JSON.parse(readFileSync(path, 'utf8'));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
-const config = read('config/dream.references.json'), comics = read('data/canon/comicArt.json'), art = read('public/art/manifest.json');
+const config = read('config/dream.references.json'), comics = read('data/canon/comicArt.json');
+// Retired AI garden art stays in a source archive; the visitor gallery uses Sun Wen plates.
+const sceneSourceCatalog = config.sceneSourceCatalog || 'public/art/manifest.json';
+const art = read(sceneSourceCatalog);
 const paper = '#f3f0e6', refs = [], portraits = new Map();
 for (const group of ['style', 'characters', 'scenes']) mkdirSync(`public/dream-${group}`, {recursive: true});
 function comicSource(id) {
@@ -40,8 +43,10 @@ for (let mask = 1; mask < 2 ** config.characters.length; mask++) {
 }
 for (const scene of config.scenes) {
   const item = art.find(a => a.id === scene.source);
-  if (!item || item.placeId !== scene.placeId || hash(readFileSync('public/' + item.url)) !== item.sha256) throw Error('Unreviewed place source: ' + scene.placeId);
-  const source = {path: 'public/' + item.url, sha256: item.sha256, catalog: 'public/art/manifest.json', sourceId: item.id, prompt: item.prompt, licenseNote: item.provenance};
+  const sourcePath = item?.archivePath || 'public/' + item?.url;
+  if (!item || item.placeId !== scene.placeId || hash(readFileSync(sourcePath)) !== item.sha256) throw Error('Unreviewed place source: ' + scene.placeId);
+  const source = {path: sourcePath, sha256: item.sha256, catalog: sceneSourceCatalog, sourceId: item.id, prompt: item.prompt, licenseNote: item.provenance,
+    ...(item.archivePath ? {originalPath: item.originalPath, originalCatalog: item.originalCatalog} : {})};
   await save({id: `scene-${scene.placeId}-1`, role: 'scene', placeId: scene.placeId, title: item.title + ' · 空间参考', path: `dream-scenes/${scene.placeId}.webp`, note: '已审阅园景美术的临时空间参考，只取厅堂、路径与花木关系；忽略摄影表面、天气、镜头光效与画面文字。不是原著考据复原。'}, sharp(source.path).resize(768, 512, {fit: 'contain', background: paper}), [source], {resize: [768, 512], fit: 'contain'});
 }
 const manifest = {revision: config.revision, styleVersion: 'honglou-silk-v1', styleName: '梦绢', reviewStatus: 'source_checked', temporary: true, styleRef: config.style.id, characterOrder: config.characters.map(c => c.id), characterRefs: Object.fromEntries(config.characters.map(c => [c.id, `character-${c.id}-1`])), characterSheets: sheets, sceneRefs: Object.fromEntries(config.scenes.map(s => [s.placeId, `scene-${s.placeId}-1`])), refs};

@@ -20,7 +20,7 @@ def roof_tree(objects):
  vertices=[];faces=[];bpy.context.view_layer.update()
  for ob in objects:
   if ob.type!='MESH':continue
-  if not ((not floors and not paving and ob.get('roof')) or (ob.data.materials and all(m.name in roles for m in ob.data.materials))):continue
+  if not ((not floors and not paving and ob.get('roof')) or (ob.data.materials and all(m.get('sunwenRole',m.name) in roles for m in ob.data.materials))):continue
   offset=len(vertices);vertices.extend(ob.matrix_world@v.co for v in ob.data.vertices)
   faces.extend(tuple(offset+i for i in face.vertices) for face in ob.data.polygons)
  return BVHTree.FromPolygons(vertices,faces) if faces else None
@@ -44,6 +44,10 @@ for p in layout['places']:
  samples[p['id']]=own
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.gltf(filepath=str(R/'public/models/overview-low.glb'))
+# The browser composes the base overview and the architectural detail layer.
+# Check the same delivered assembly, including the new entrance roofs.
+details=R/'public/models/sunwen-architecture-low.glb'
+if details.exists():bpy.ops.import_scene.gltf(filepath=str(details))
 rows=[]
 for pid,points in samples.items():
  roots=[o for o in bpy.data.objects if o.get('entityType')=='place' and o.get('placeId')==pid]

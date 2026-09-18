@@ -5,13 +5,15 @@ test('touch phone on throttled 4G loads the small overview and mobile courtyard'
  const page=await context.newPage(),requests:string[]=[];page.on('request',r=>requests.push(r.url()));
  const cdp=await context.newCDPSession(page);await cdp.send('Network.enable');await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:80,downloadThroughput:9_000_000/8,uploadThroughput:1_500_000/8});await cdp.send('Emulation.setCPUThrottlingRate',{rate:4});
  await page.goto('/');await page.waitForFunction(()=>(window as any).__gardenTest?.state().loaded);
+ await page.waitForFunction(()=>{let rendered=false;(window as any).__gardenTest?.scene.traverse((o:any)=>{if(o.userData.urbanContext)rendered=true});return rendered});
+ await page.waitForLoadState('networkidle');
  const initial=await page.evaluate(()=>({loadedMs:performance.now(),resources:performance.getEntriesByType('resource').map(r=>({url:r.name,bytes:(r as PerformanceResourceTiming).transferSize})),metrics:(window as any).__gardenMetrics}));
  expect(requests.some(r=>r.includes('overview-low.glb'))).toBe(true);expect(requests.some(r=>r.endsWith('/overview.glb'))).toBe(false);
  // Reference-world budget includes a larger mobile landscape and local crown LOD.
  expect(initial.resources.reduce((sum,r)=>sum+r.bytes,0)).toBeLessThan(8*1024*1024);
  await page.getByRole('button',{name:'展开索引',exact:true}).tap();await page.locator('.place-row').filter({hasText:'潇湘馆'}).tap();await expect(page.locator('.index')).toHaveClass(/closed/);
  await expect(page.locator('.detail-scroll h2')).toHaveText('潇湘馆');await expect.poll(()=>requests.some(r=>r.includes('places-low/xiaoxiangguan.glb'))).toBe(true);
- await expect(page.locator('.place-reference button span')).toHaveText('艺术参考');
+ await expect(page.locator('.place-reference button span')).toHaveText('孙温绘本');
  await expect(page.locator('.place-reference button span')).toBeVisible();
  await page.waitForLoadState('networkidle');
  await expect(page.getByRole('button',{name:'看全院',exact:true})).toBeVisible();

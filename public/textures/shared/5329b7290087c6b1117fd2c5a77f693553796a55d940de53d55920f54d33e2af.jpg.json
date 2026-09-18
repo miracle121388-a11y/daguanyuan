@@ -1,0 +1,17 @@
+{
+  "sha256": "5329b7290087c6b1117fd2c5a77f693553796a55d940de53d55920f54d33e2af",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "bark",
+    "pigment": "#a5997a",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-bark.png",
+    "sha256": "66ef192138d5f5e93c16c740356a75b6359cf974267a19f0b9be8c49140a9af2",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

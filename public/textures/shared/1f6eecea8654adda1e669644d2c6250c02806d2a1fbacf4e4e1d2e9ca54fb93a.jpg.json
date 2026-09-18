@@ -1,7 +1,0 @@
-{
-  "origin": "Blender-exported plaster_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
-  "sourceMap": "plaster_diff",
-  "sourcePixelSha256": "aa7086e0b6af67efe08ba1cfb2bcf0637ac4953eb2f0b38bb7d68632aa9b2d7c",
-  "sha256": "1f6eecea8654adda1e669644d2c6250c02806d2a1fbacf4e4e1d2e9ca54fb93a",
-  "prompt": "Blender-exported plaster_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
-}

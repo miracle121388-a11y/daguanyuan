@@ -1,0 +1,17 @@
+{
+  "sha256": "2a14e77efe6687eaabb2c82016e330c221b833982edea32cc04e8581528ac2a3",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "paper",
+    "pigment": "#f4ecd0",
+    "roughness": 0.84,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-paper.png",
+    "sha256": "bcd3296e22a545e83437c11a234eb4fd0bb5f0e3b930a7ef97b7b5a42dcb5065",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

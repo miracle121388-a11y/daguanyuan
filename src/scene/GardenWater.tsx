@@ -77,7 +77,7 @@ export default function GardenWater({manifest}:{manifest:Manifest}){
   return {water,normals,refresh:()=>{dirty=true}};
  },[manifest,quality,source,zones]);
  useEffect(()=>{
-  surface.water.material.uniforms.waterColor.value.set(night?'#2e4651':'#337e77');
+  surface.water.material.uniforms.waterColor.value.set(night?'#2e4651':'#82aaa7');
   surface.water.material.uniforms.sunColor.value.set(night?'#b2c7d2':'#ffe8c4');
   surface.water.material.uniforms.sunDirection.value.set(...(night?[-74,98,76]:[-80,62,42])).normalize();
   surface.water.material.uniforms.night.value=night?1:0;surface.refresh();

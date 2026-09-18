@@ -66,3 +66,7 @@ output/** -text
 /reports/browser/playwright-report/data/610387fc53eb92fe281a024b198ba4fc4af9daac.zip filter=lfs diff=lfs merge=lfs -text
 /reports/checkpoints/r13-before/blender/daguanyuan_master.blend filter=lfs diff=lfs merge=lfs -text
 /reports/checkpoints/r14-before/blender/daguanyuan_master.blend filter=lfs diff=lfs merge=lfs -text
+
+# Pinned historical scans and reproducible Sun Wen model sources.
+/references/sunwen/originals/*.jpg filter=lfs diff=lfs merge=lfs -text
+/assets/processed/architecture-r17/*.glb filter=lfs diff=lfs merge=lfs -text

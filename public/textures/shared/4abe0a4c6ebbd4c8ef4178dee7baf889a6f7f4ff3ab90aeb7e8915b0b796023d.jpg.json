@@ -1,0 +1,18 @@
+{
+  "sha256": "4abe0a4c6ebbd4c8ef4178dee7baf889a6f7f4ff3ab90aeb7e8915b0b796023d",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "temple",
+    "role": "tiledark",
+    "pigment": "#46595a",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/temple-tiledark.png",
+    "sha256": "c312e69d92c16a5a40b7262c92fc7e409e469c35b9a0f9fc6b0f3f2546c2ee47",
+    "source": {
+      "file": "assets/processed/materials-r15/tiledark_diff.png",
+      "sha256": "93d0a3428b22ecbfaea001a61c521b05cd8634aef70e1f1ef220b8afb29da331"
+    }
+  }
+}

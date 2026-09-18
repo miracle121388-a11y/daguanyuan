@@ -1,0 +1,334 @@
+{
+  "revision": "r18",
+  "scenes": [
+    {
+      "id": "zilingzhou",
+      "name": "紫菱洲",
+      "position": [
+        80,
+        0.8181,
+        25
+      ],
+      "size": [
+        9,
+        6
+      ],
+      "height": 4.0,
+      "interpretation": "在现有东岸布置低亭与临景台，不另挖水面、不移动岸线。",
+      "character": "菱花水岸 · 低亭借景",
+      "cameraTarget": [
+        80,
+        2.8180923461914062,
+        25
+      ],
+      "cameraPosition": [
+        100,
+        18.818092346191406,
+        55
+      ]
+    },
+    {
+      "id": "zhuijinlou",
+      "name": "缀锦楼",
+      "position": [
+        87,
+        0.7198,
+        -4
+      ],
+      "size": [
+        12,
+        8
+      ],
+      "height": 10.0,
+      "interpretation": "与紫菱洲低亭组成景观组群；此楼为新建的迎春居处意象，不是省亲组群中的缀锦阁。",
+      "character": "锦窗叠阁 · 层楼含秀",
+      "cameraTarget": [
+        87,
+        2.7197799682617188,
+        -4
+      ],
+      "cameraPosition": [
+        107,
+        18.71977996826172,
+        26
+      ]
+    },
+    {
+      "id": "jiayintang",
+      "name": "嘉荫堂",
+      "position": [
+        -72,
+        0.6004,
+        -50
+      ],
+      "size": [
+        13,
+        7
+      ],
+      "height": 5.0,
+      "interpretation": "在现有西岸留白处营造敞厅，朝水借景；具体位置不作原著实测断言。",
+      "character": "嘉荫雅集 · 敞厅观园",
+      "cameraTarget": [
+        -72,
+        2.6003799438476562,
+        -50
+      ],
+      "cameraPosition": [
+        -88,
+        15.600379943847656,
+        -24
+      ]
+    }
+  ],
+  "records": [
+    {
+      "placeId": "daguanyuan_gate",
+      "profile": "ceremonial",
+      "motif": "cloud",
+      "richness": 0.58,
+      "features": [
+        "五间门庭与白石台基",
+        "精细木构与青绿额枋",
+        "尊贵而整洁的入园尺度"
+      ],
+      "halls": 1,
+      "meshes": 5,
+      "faces": 3028
+    },
+    {
+      "placeId": "qujingtongyou",
+      "profile": "herbal",
+      "motif": "rectilinear",
+      "richness": 0.08,
+      "features": [
+        "入口山石仍为主景",
+        "只添小尺度素木框景构件"
+      ],
+      "halls": 0,
+      "meshes": 0,
+      "faces": 0
+    },
+    {
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "motif": "bamboo",
+      "richness": 0.23,
+      "features": [
+        "黛青小瓦、竹青细木",
+        "疏朗竹节窗格、素色纸窗",
+        "窄檐书舍与轻巧门罩"
+      ],
+      "halls": 2,
+      "meshes": 8,
+      "faces": 5111
+    },
+    {
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "motif": "begonia",
+      "richness": 1.0,
+      "features": [
+        "朱红抱柱、石绿窗格、海棠式花心",
+        "双层彩绘额枋、垂莲门罩、藕粉帘额",
+        "廊下花牙子与明亮素墙相衬"
+      ],
+      "halls": 1,
+      "meshes": 11,
+      "faces": 15181
+    },
+    {
+      "placeId": "hengwuyuan",
+      "profile": "herbal",
+      "motif": "rectilinear",
+      "richness": 0.1,
+      "features": [
+        "灰绿卷棚、米白墙面",
+        "方整素木窗格、细窄回纹",
+        "对称门罩与低矮石座"
+      ],
+      "halls": 1,
+      "meshes": 7,
+      "faces": 3730
+    },
+    {
+      "placeId": "qiushuangzhai",
+      "profile": "study",
+      "motif": "diamond",
+      "richness": 0.38,
+      "features": [
+        "明朗青瓦、栗色木构",
+        "宽额枋、疏朗菱格、横向书斋长窗",
+        "开阔正厅与伸展的前檐"
+      ],
+      "halls": 1,
+      "meshes": 8,
+      "faces": 5121
+    },
+    {
+      "placeId": "daoxiangcun",
+      "profile": "rustic",
+      "motif": "woven",
+      "richness": 0.05,
+      "features": [
+        "精整茅脊、暖赭木构",
+        "细竹编窗、木棚与篱门",
+        "整齐檐口与朴素门枕石"
+      ],
+      "halls": 3,
+      "meshes": 5,
+      "faces": 1014
+    },
+    {
+      "placeId": "ouxiangxie",
+      "profile": "waterside",
+      "motif": "lotus",
+      "richness": 0.52,
+      "features": [
+        "四面开敞、退收折扇窗",
+        "纤细柱身、荷瓣栏板与坐槛",
+        "水色灰瓦与轻盈曲廊"
+      ],
+      "halls": 0,
+      "meshes": 5,
+      "faces": 4426
+    },
+    {
+      "placeId": "dicuiting",
+      "profile": "pavilion",
+      "motif": "lotus",
+      "richness": 0.35,
+      "features": [
+        "小巧攒尖亭、清碧檐缘",
+        "细栏与云牙挂落",
+        "以亭柱框取水色"
+      ],
+      "halls": 0,
+      "meshes": 2,
+      "faces": 1108
+    },
+    {
+      "placeId": "luxuean",
+      "profile": "rustic",
+      "motif": "woven",
+      "richness": 0.06,
+      "features": [
+        "芦苇茅檐、竹编门窗",
+        "细木额枋与小坐槛",
+        "临水村舍的诗社尺度"
+      ],
+      "halls": 1,
+      "meshes": 3,
+      "faces": 606
+    },
+    {
+      "placeId": "tubishanzhuang",
+      "profile": "hill",
+      "motif": "cross",
+      "richness": 0.38,
+      "features": [
+        "山巅横厅、青碧瓦面",
+        "开阔观景台与疏栏",
+        "高处宴集的通长额枋"
+      ],
+      "halls": 1,
+      "meshes": 4,
+      "faces": 1114
+    },
+    {
+      "placeId": "aojingxiguan",
+      "profile": "moon",
+      "motif": "moon",
+      "richness": 0.28,
+      "features": [
+        "低檐卷棚、月白墙面",
+        "月轮窗饰与水纹栏板",
+        "溪岸小坐、与山庄形成高低对景"
+      ],
+      "halls": 1,
+      "meshes": 4,
+      "faces": 2760
+    },
+    {
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "motif": "cloud",
+      "richness": 0.82,
+      "features": [
+        "金瓦朱柱、层檐楼阁",
+        "石青石绿彩枋、细金线收边",
+        "上下层与两翼保持明确尊卑"
+      ],
+      "halls": 8,
+      "meshes": 7,
+      "faces": 45680
+    },
+    {
+      "placeId": "longcuian",
+      "profile": "temple",
+      "motif": "octagon",
+      "richness": 0.08,
+      "features": [
+        "墨青瓦、暖灰粉墙",
+        "素木八角窗、低调素枋",
+        "小庵门罩与安静的廊角"
+      ],
+      "halls": 2,
+      "meshes": 7,
+      "faces": 4095
+    },
+    {
+      "placeId": "nuanxiangwu",
+      "profile": "warm",
+      "motif": "rounded",
+      "richness": 0.43,
+      "features": [
+        "暖灰瓦、蜜色木构",
+        "圆角冰纹窗、杏粉帘额",
+        "柔和浅檐与小尺度坐槛"
+      ],
+      "halls": 1,
+      "meshes": 8,
+      "faces": 4456
+    },
+    {
+      "placeId": "zilingzhou",
+      "profile": "purple",
+      "motif": "diamond",
+      "features": [
+        "低临水台、转折坐栏与轻亭",
+        "黛青瓦面配淡藕紫额枋",
+        "与缀锦楼形成低高相望的景观组群"
+      ],
+      "meshes": 7,
+      "faces": 6553,
+      "additionalScene": true
+    },
+    {
+      "placeId": "zhuijinlou",
+      "profile": "brocade",
+      "motif": "brocade",
+      "features": [
+        "两层楼阁、错落双檐",
+        "上层环廊与锦纹栏杆",
+        "下层素墙花窗衬出楼阁层次"
+      ],
+      "meshes": 12,
+      "faces": 29503,
+      "additionalScene": true
+    },
+    {
+      "placeId": "jiayintang",
+      "profile": "gathering",
+      "motif": "cross",
+      "features": [
+        "三间横厅、前廊敞开",
+        "疏栏坐槛、侧屏与雅集长案",
+        "正面留出完整观景与会聚空间"
+      ],
+      "meshes": 8,
+      "faces": 7807,
+      "additionalScene": true
+    }
+  ],
+  "evidenceBoundary": "建筑名称来自用户要求及已存文学资料；新增体量、尺度、位置、纹样和颜料色值为三维设计解释。缀锦楼与大观楼东侧的缀锦阁分开，不混同命名。新增三景不改写 canon、人物居处、原有地点坐标与行走图。"
+}

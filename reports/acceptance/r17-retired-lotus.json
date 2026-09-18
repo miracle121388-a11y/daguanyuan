@@ -1,0 +1,12 @@
+[
+  {
+    "file": "public/models/overview.glb",
+    "removedTriangles": 79,
+    "scope": "Only combined legacy plant triangles at water height within the reviewed lake polygon"
+  },
+  {
+    "file": "public/models/overview-low.glb",
+    "removedTriangles": 79,
+    "scope": "Only combined legacy plant triangles at water height within the reviewed lake polygon"
+  }
+]

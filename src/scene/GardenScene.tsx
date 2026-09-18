@@ -9,6 +9,10 @@ import {Environment} from '@react-three/drei';
 import LivingTrees from './LivingTrees';
 import GroundCover from './GroundCover';
 import Understory from './Understory';
+import SunwenPlanting from './SunwenPlanting';
+import SunwenArchitecture from './SunwenArchitecture';
+import UrbanContext from './UrbanContext';
+import SunwenLandscape from './SunwenLandscape';
 import {finishMaterials} from './materials';
 import {batchOverview,eventPlaceId} from './batchOverview';
 import {useGarden,relatedPlaces} from '../state/store';
@@ -27,7 +31,7 @@ class ModelBoundary extends Component<{children:ReactNode;onRetry:()=>void;label
  render(){return this.state.error?<Html center><div className="scene-error" role="alert"><strong>{this.props.label??'园景'}暂未载入</strong><p>模型文件加载失败，请重试。</p><button onClick={()=>{this.props.onRetry();this.setState({error:false})}}>重新加载</button></div></Html>:this.props.children}
 }
 function Overview({manifest,detailId,onReady}:{manifest:Manifest;detailId:string|null;onReady:(ready:boolean)=>void}){
- const gltf=useGLTF(base+manifest.overview),[light,soil,zones]=useTexture([base+'textures/landscape-light.webp',base+'textures/ground/soil.jpg',base+'textures/ground/surface-zones.png']);const scene=useMemo(()=>{soil.wrapS=soil.wrapT=THREE.RepeatWrapping;soil.colorSpace=THREE.SRGBColorSpace;const clone=gltf.scene.clone(true);finishMaterials(clone,light,soil,zones);return batchOverview(clone)},[gltf,manifest.overview,light,soil,zones]);
+ const gltf=useGLTF(base+manifest.overview),[light,soil,zones]=useTexture([base+`textures/landscape-light${manifest.overview.includes('-low')?'-low':''}.webp`,base+'textures/ground/garden-ground.webp',base+'textures/ground/garden-ground-zones.png']);const scene=useMemo(()=>{soil.colorSpace=THREE.SRGBColorSpace;const clone=gltf.scene.clone(true);finishMaterials(clone,light,soil,zones);return batchOverview(clone)},[gltf,manifest.overview,light,soil,zones]);
  const releases=useRef(new Map<THREE.Object3D,ReturnType<typeof setTimeout>>());
  useEffect(()=>{
   const pending=releases.current;
@@ -44,7 +48,7 @@ function Overview({manifest,detailId,onReady}:{manifest:Manifest;detailId:string
 function Detail({place,onReady,low}:{place:ScenePlace;onReady:(id:string|null)=>void;low:boolean}){
  const inside=useGarden(s=>s.hotspotId===place.id+'-study'&&s.cutaway);
  const time=useGarden(s=>s.timeOfDay);
- const url=base+(low&&place.mobileModel?place.mobileModel:place.model);const g=useGLTF(url),light=useTexture(base+'textures/landscape-light.webp');const scene=useMemo(()=>{const clone=g.scene.clone(true);finishMaterials(clone,light);return clone},[g,light]);
+ const url=base+(low&&place.mobileModel?place.mobileModel:place.model);const g=useGLTF(url),light=useTexture(base+`textures/landscape-light${low?'-low':''}.webp`);const scene=useMemo(()=>{const clone=g.scene.clone(true);finishMaterials(clone,light);return clone},[g,light]);
  useEffect(()=>{rememberDetail(url,g.scene,low?2:4);scene.traverse(o=>{if(o instanceof THREE.Mesh){o.castShadow=!low;o.receiveShadow=!low}});onReady(place.id);return()=>onReady(null)},[scene,g,url,low,place.id,onReady]);
  useEffect(()=>{scene.traverse(o=>{if(o instanceof THREE.Mesh){const materials=Array.isArray(o.material)?o.material:[o.material];if(o.userData.roof||materials.every(m=>['roof','tile','tilelight','tiledark'].includes(m.name)))o.visible=!inside;for(const m of materials)if(m instanceof THREE.MeshStandardMaterial&&['lantern','screen','silk','paper'].includes(m.name)){m.emissive.set('#ffc785');m.emissiveIntensity=time==='night'?(m.name==='lantern'?2.7:.32):0}}})},[scene,inside,time]);
  return <group position={place.position}><primitive object={scene} onClick={(e:ThreeEvent<MouseEvent>)=>{e.stopPropagation();if(useSimulation.getState().open)return;const state=useGarden.getState();if(state.selectedPlaceId!==place.id)state.choosePlace(place.id)}}/></group>;
@@ -55,7 +59,7 @@ function Atmosphere(){
  const lightAim=useMemo(()=>{const aim=new THREE.Object3D();if(place)aim.position.fromArray(place.position);return aim},[place]);
  const lightPosition:Vec3=place?[place.position[0]+(night?-74:-80),place.position[1]+(night?98:62),place.position[2]+(night?76:42)]:night?[-74,98,76]:[-80,62,42],shadowSpan=place?(place.id==='daguanlou'?90:40):165;
  useEffect(()=>{const mats=new Set<THREE.MeshStandardMaterial>();scene.traverse(o=>{if(o instanceof THREE.Mesh)for(const m of Array.isArray(o.material)?o.material:[o.material])if(m instanceof THREE.MeshStandardMaterial)mats.add(m)});for(const m of mats){if(['lantern','screen','silk','paper'].includes(m.name)){m.emissive.set(night?'#ffc785':'#201a0e');m.emissiveIntensity=night?(m.name==='lantern'?2.7:.32):0}}gl.shadowMap.needsUpdate=true;invalidate()},[scene,night,selected,loaded,invalidate,gl]);
- return <><color attach="background" args={[night?'#253d4b':'#c9dfda']}/><fog attach="fog" args={[night?'#253d4b':'#c9dfda',310,670]}/><hemisphereLight args={[night?'#9cb9d5':'#e5f1ed',night?'#304138':'#69744b',night?.60:.90]}/><ambientLight intensity={night?.055:.10}/><primitive object={lightAim}/><directionalLight target={lightAim} position={lightPosition} intensity={night?1.45:2.5} color={night?'#b0ccec':'#fff0d4'} castShadow shadow-mapSize={[2048,2048]} shadow-camera-left={-shadowSpan} shadow-camera-right={shadowSpan} shadow-camera-top={shadowSpan} shadow-camera-bottom={-shadowSpan} shadow-camera-far={480} shadow-normalBias={place?.025:.08} shadow-bias={-.0002}/><directionalLight position={[90,64,-140]} intensity={night?.19:.40} color="#b9d3cf"/><Suspense fallback={null}><Environment files={base+'textures/forest_grove.hdr'} environmentIntensity={night?.30:.50}/></Suspense></>;
+ return <><color attach="background" args={[night?'#253d4b':'#e3e7d7']}/><fog attach="fog" args={[night?'#253d4b':'#e3e7d7',310,670]}/><hemisphereLight args={[night?'#9cb9d5':'#fff4de',night?'#304138':'#c9bb99',night?.60:1.25]}/><ambientLight intensity={night?.055:.24}/><primitive object={lightAim}/><directionalLight target={lightAim} position={lightPosition} intensity={night?1.45:2.1} color={night?'#b0ccec':'#fff0d4'} castShadow shadow-mapSize={[2048,2048]} shadow-camera-left={-shadowSpan} shadow-camera-right={shadowSpan} shadow-camera-top={shadowSpan} shadow-camera-bottom={-shadowSpan} shadow-camera-far={480} shadow-normalBias={place?.025:.08} shadow-bias={-.0002}/><directionalLight position={[90,64,-140]} intensity={night?.19:.50} color="#b9d3cf"/><Suspense fallback={null}><Environment files={base+'textures/forest_grove.hdr'} environmentIntensity={night?.30:.18}/></Suspense></>;
 }
 function GardenLights({manifest}:{manifest:Manifest}){
  const night=useGarden(s=>s.timeOfDay==='night'),selected=useGarden(s=>s.selectedPlaceId),quality=useGarden(s=>s.qualityLevel);
@@ -84,15 +88,15 @@ function CameraManager({manifest}:{manifest:Manifest}){
  const {camera,size,gl}=useThree();const panelOpen=useGarden(s=>s.panelOpen),indoor=useGarden(s=>!!s.hotspotId?.endsWith('-study')&&!s.cutaway);
  useEffect(()=>{if(!(camera instanceof THREE.PerspectiveCamera))return;if(panelOpen){const mobile=size.width<601,region=visibleSceneRegion(gl.domElement,panelOpen);camera.setViewOffset(size.width,size.height,mobile?size.width/2-(region.left+region.right)/2:Math.min(360,size.width<1150?304:332)/2,mobile?size.height/2-(region.top+region.bottom)/2:0,size.width,size.height)}else if(size.width<601)camera.setViewOffset(size.width,size.height,0,size.height*.04,size.width,size.height);else camera.clearViewOffset();camera.updateProjectionMatrix()},[camera,size.width,size.height,panelOpen,indoor,gl]);
  const controls=useRef<CameraControls>(null);const selected=useGarden(s=>s.selectedPlaceId);const tour=useGarden(s=>s.tourState);const motion=useGarden(s=>s.motion);const controller=useRef<GuidedTourController|null>(null);const dwell=useRef(0);const started=useRef(false);
- const planView=useGarden(s=>s.planView),closeView=useGarden(s=>s.closeView);
+ const planView=useGarden(s=>s.planView),closeView=useGarden(s=>s.closeView),architecturalFocus=useGarden(s=>s.architecturalFocusId);
  const hotspot=useGarden(s=>s.hotspotId),cutaway=useGarden(s=>s.cutaway);
  useEffect(()=>{
   if(tour.status!=='idle'||(simulationOpen&&simulationFocus))return;
-  const p=manifest.places.find(p=>p.id===selected),h=p?.hotspots.find(h=>h.id===hotspot);
+  const p=manifest.places.find(p=>p.id===selected),h=p?.hotspots.find(h=>h.id===hotspot),v=manifest.architecturalScenes?.find(p=>p.id===architecturalFocus);
   const room=h?.id.endsWith('-study')&&!cutaway?p?.interiorCamera:undefined;
   const toWorld=(local:Vec3)=>local.map((v,i)=>v+(p?.position[i]??0)) as Vec3;
-  let target:Vec3=planView&&!p?[0,0,0]:room?toWorld(room.target):h&&p?toWorld(h.position):p?.cameraTarget??manifest.overviewCamera.target;
-  let position:Vec3=planView&&!p?[0,395,49]:room?toWorld(room.position):h?[target[0]+5,target[1]+13,target[2]+8]:p?.cameraPosition??(size.width<601?manifest.overviewCamera.mobilePosition??manifest.overviewCamera.position:manifest.overviewCamera.position);
+  let target:Vec3=v?v.cameraTarget:planView&&!p?[0,0,0]:room?toWorld(room.target):h&&p?toWorld(h.position):p?.cameraTarget??manifest.overviewCamera.target;
+  let position:Vec3=v?v.cameraPosition:planView&&!p?[0,395,49]:room?toWorld(room.position):h?[target[0]+5,target[1]+13,target[2]+8]:p?.cameraPosition??(size.width<601?manifest.overviewCamera.mobilePosition??manifest.overviewCamera.position:manifest.overviewCamera.position);
   if(camera instanceof THREE.PerspectiveCamera){
    camera.near=room?.06:.65;camera.fov=room?.fov??(size.width<601?(planView&&!p?72:58):p?43:48);camera.updateProjectionMatrix();
    if(size.width<601&&p&&!h){
@@ -117,7 +121,7 @@ function CameraManager({manifest}:{manifest:Manifest}){
    }
   }
   controls.current?.setLookAt(...position,...target,motion);
- },[selected,manifest,tour.status,motion,hotspot,cutaway,camera,size.width,size.height,planView,panelOpen,closeView,gl,simulationOpen,simulationFocus]);
+ },[selected,manifest,tour.status,motion,hotspot,cutaway,camera,size.width,size.height,planView,panelOpen,closeView,gl,simulationOpen,simulationFocus,architecturalFocus]);
  useEffect(()=>{const state=useGarden.getState();const route=state.data?.routes.find(r=>r.id===tour.routeId);if(!route||tour.status==='idle'){controller.current=null;started.current=false;return}
   const place=manifest.places.find(p=>p.id===route.orderedStops[tour.index])!;
   controls.current?.setLookAt(...place.cameraPosition,...place.cameraTarget,false);dwell.current=0;controller.current=null;started.current=false;useGarden.setState({panelOpen:true,hotspotId:null});
@@ -126,7 +130,7 @@ function CameraManager({manifest}:{manifest:Manifest}){
   if(!started.current){dwell.current+=Math.min(dt,1);if(dwell.current<5)return;if(tour.index>=route.orderedStops.length-1){useGarden.setState({tourState:{...tour,status:'paused'}});return}controller.current=new GuidedTourController(manifest,route.orderedStops[tour.index],route.orderedStops[tour.index+1]);started.current=true;useGarden.setState({panelOpen:false})}
   const state=controller.current?.tick(Math.min(dt,.5));if(state){const {position,lookAhead,done}=state;const target:Vec3=[lookAhead[0],lookAhead[1]+2.4,lookAhead[2]];if(!done)controls.current.setLookAt(position[0],position[1]+8,position[2]+.15,...target,false);else useGarden.getState().tourStep(tour.index+1)}
  });
- return <CameraControls ref={controls} makeDefault minDistance={hotspot?.endsWith('-study')||simulationOpen&&simulationClose?2.5:8} maxDistance={540} minPolarAngle={.12} maxPolarAngle={Math.PI/2.15} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
+ return <CameraControls ref={controls} makeDefault minDistance={hotspot?.endsWith('-study')||simulationOpen&&simulationClose?2.5:8} maxDistance={540} minPolarAngle={.12} maxPolarAngle={Math.PI/2-.012} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
 }
 function Markers({manifest}:{manifest:Manifest}){
  const simulationOpen=useSimulation(s=>s.open);
@@ -138,13 +142,13 @@ function Markers({manifest}:{manifest:Manifest}){
  {!simulationOpen&&manifest.places.map((p,i)=>{const chosen=state.selectedPlaceId===p.id,related=focused&&marks.includes(p.id);return <group key={p.id} position={p.position}>
  {!chosen&&<mesh position={[0,3.6,0]} userData={{placeId:p.id}} onClick={e=>{e.stopPropagation();state.choosePlace(p.id)}}><boxGeometry args={[p.featured?32:22,7.2,p.featured?28:20]}/><meshBasicMaterial transparent opacity={0} depthWrite={false} colorWrite={false}/></mesh>}
  {(chosen||related)&&<mesh rotation={[-Math.PI/2,0,0]} position={[0,.23,0]}><ringGeometry args={[17,17.35,64]}/><meshBasicMaterial color={chosen?'#9e573e':'#537e6d'} transparent opacity={.85} side={THREE.DoubleSide}/></mesh>}
- {state.labels&&(!state.selectedPlaceId||chosen)&&(related||chosen||(!focused&&(p.featured||['daguanyuan_gate','ouxiangxie'].includes(p.id))))&&<GardenLabel place={p} index={i} chosen={chosen} related={related}/>}
+ {state.labels&&!state.architecturalFocusId&&(!state.selectedPlaceId||chosen)&&(related||chosen||(!focused&&(p.featured||['daguanyuan_gate','ouxiangxie'].includes(p.id))))&&<GardenLabel place={p} index={i} chosen={chosen} related={related}/>}
  {chosen&&p.hotspots.map((h,j)=><Html key={h.id} position={h.position} center zIndexRange={[13,0]} occlude={false}><button className="hotspot" aria-label={h.name} aria-pressed={state.hotspotId===h.id} onClick={()=>useGarden.setState({hotspotId:h.id,panelOpen:true,cutaway:false})}>{j+1}</button></Html>)}
  </group>})}
  <group visible={camera.position.y>0}/>
  </>;
 }
-function Metrics(){const {gl,scene,camera}=useThree();const samples=useRef<number[]>([]);useFrame((_,dt)=>{if(import.meta.env.MODE!=='test')return;samples.current.push(dt*1000);if(samples.current.length>360)samples.current.shift();(window as any).__gardenMetrics={frames:samples.current,drawCalls:gl.info.render.calls,triangles:gl.info.render.triangles,geometries:gl.info.memory.geometries,textures:gl.info.memory.textures,dpr:gl.getPixelRatio(),renderer:gl.getContext().getParameter(gl.getContext().RENDERER)};(window as any).__gardenTest={state:()=>useGarden.getState(),project:(id:string)=>{const p=useGarden.getState().data!.manifest.places.find(p=>p.id===id)!;const vec=new THREE.Vector3(...p.position);vec.y+=3;vec.project(camera);return {x:(vec.x+1)/2*gl.domElement.clientWidth,y:(1-vec.y)/2*gl.domElement.clientHeight}},scene}});return null}
+function Metrics(){const {gl,scene,camera,controls}=useThree();const samples=useRef<number[]>([]);useFrame((_,dt)=>{if(import.meta.env.MODE!=='test')return;samples.current.push(dt*1000);if(samples.current.length>360)samples.current.shift();(window as any).__gardenMetrics={frames:samples.current,drawCalls:gl.info.render.calls,triangles:gl.info.render.triangles,geometries:gl.info.memory.geometries,textures:gl.info.memory.textures,dpr:gl.getPixelRatio(),renderer:gl.getContext().getParameter(gl.getContext().RENDERER)};(window as any).__gardenTest={state:()=>useGarden.getState(),project:(id:string)=>{const p=useGarden.getState().data!.manifest.places.find(p=>p.id===id)!;const vec=new THREE.Vector3(...p.position);vec.y+=3;vec.project(camera);return {x:(vec.x+1)/2*gl.domElement.clientWidth,y:(1-vec.y)/2*gl.domElement.clientHeight}},scene,controls,camera}});return null}
 function World({manifest}:{manifest:Manifest}){
  const {gl,invalidate}=useThree();const loaded=useGarden(s=>s.loaded);
  const [overviewReady,setOverviewReady]=useStableState(false),[treesReady,setTreesReady]=useStableState(false),[groundReady,setGroundReady]=useStableState(false);
@@ -153,11 +157,11 @@ function World({manifest}:{manifest:Manifest}){
  const selected=useGarden(s=>s.selectedPlaceId);const [detailId,setDetailId]=useStableState<string|null>(null);const quality=useGarden(s=>s.qualityLevel);const place=manifest.places.find(p=>p.id===selected);const modelManifest=useMemo(()=>quality==='low'?{...manifest,overview:'models/overview-low.glb'}:manifest,[quality,manifest]);
  useEffect(()=>{const canvas=gl.domElement.closest<HTMLElement>('.canvas-wrap');if(canvas)canvas.dataset.detailReady=detailId??''},[gl,detailId]);
  useEffect(()=>{gl.shadowMap.autoUpdate=false;gl.shadowMap.needsUpdate=true;invalidate()},[gl,invalidate,selected,quality,detailId,loaded,hotspot]);
- return <><Atmosphere/>
- <ModelBoundary key={modelManifest.overview} onRetry={()=>{useGLTF.clear(base+modelManifest.overview);useTexture.clear(base+'textures/landscape-light.webp');useTexture.clear(base+'textures/ground/soil.jpg');useTexture.clear(base+'textures/ground/surface-zones.png')}}><Suspense fallback={null}><Overview manifest={modelManifest} detailId={detailId} onReady={setOverviewReady}/></Suspense></ModelBoundary>
+ return <><Atmosphere/><Suspense fallback={null}><SunwenArchitecture/><SunwenLandscape/><UrbanContext/></Suspense>
+ <ModelBoundary key={modelManifest.overview} onRetry={()=>{useGLTF.clear(base+modelManifest.overview);useTexture.clear(base+'textures/landscape-light.webp');useTexture.clear(base+'textures/ground/garden-ground.webp');useTexture.clear(base+'textures/ground/garden-ground-zones.png')}}><Suspense fallback={null}><Overview manifest={modelManifest} detailId={detailId} onReady={setOverviewReady}/></Suspense></ModelBoundary>
  {place&&<ModelBoundary key={place.id+quality} label={place.name} onRetry={()=>useGLTF.clear(base+(quality==='low'&&place.mobileModel?place.mobileModel:place.model))}><Suspense fallback={null}><Detail place={place} low={quality==='low'} onReady={setDetailId}/></Suspense></ModelBoundary>}
- <ModelBoundary label="树影" onRetry={()=>{useTexture.clear(base+'textures/vegetation/canopy-atlas.webp');for(const name of ['broadleaf','broadleaf-low','broadleaf-2','pine','shrub'])useGLTF.clear(base+'models/vegetation/'+name+'.glb')}}><Suspense fallback={null}><LivingTrees manifest={manifest} onReady={setTreesReady}/></Suspense></ModelBoundary><ModelBoundary label="岸边草木" onRetry={()=>useGLTF.clear(base+'models/vegetation/ground-cover.glb')}><Suspense fallback={null}><GroundCover manifest={manifest} onReady={setGroundReady}/></Suspense></ModelBoundary><ModelBoundary label="竹下草木" onRetry={()=>{for(const i of [0,1])useGLTF.clear(base+`models/vegetation/fern-${i}.glb`)}}><Suspense fallback={null}>{(quality==='high'||selected)&&<Understory manifest={manifest}/>}</Suspense></ModelBoundary><GardenWater manifest={manifest}/><GardenLights manifest={manifest}/><Markers manifest={manifest}/><CameraManager manifest={manifest}/><SimulationActors/><Metrics/>
- <mesh rotation={[-Math.PI/2,0,0]} position={[0,-.35,0]} receiveShadow><planeGeometry args={[1600,1600]}/><meshStandardMaterial color="#4f6343" roughness={1}/></mesh>
+ <ModelBoundary label="树影" onRetry={()=>{useTexture.clear(base+'textures/vegetation/canopy-atlas.webp');for(const name of ['scholar-tree','ginkgo','chinese-pine','shrub','willow','crabapple','white-blossom','red-maple'])useGLTF.clear(base+'models/vegetation/'+name+'.glb')}}><Suspense fallback={null}><LivingTrees manifest={manifest} onReady={setTreesReady}/></Suspense></ModelBoundary><ModelBoundary label="岸边草木" onRetry={()=>useGLTF.clear(base+'models/vegetation/ground-cover.glb')}><Suspense fallback={null}><GroundCover manifest={manifest} onReady={setGroundReady}/></Suspense></ModelBoundary><ModelBoundary label="竹下草木" onRetry={()=>{for(const i of [0,1])useGLTF.clear(base+`models/vegetation/fern-${i}.glb`)}}><Suspense fallback={null}>{(quality==='high'||selected)&&<Understory manifest={manifest}/>}</Suspense></ModelBoundary><Suspense fallback={null}><SunwenPlanting manifest={manifest}/></Suspense><GardenWater manifest={manifest}/><GardenLights manifest={manifest}/><Markers manifest={manifest}/><CameraManager manifest={manifest}/><SimulationActors/><Metrics/>
+ <mesh rotation={[-Math.PI/2,0,0]} position={[0,-.35,0]} receiveShadow><planeGeometry args={[1800,1800]}/><meshStandardMaterial color="#a2aaa6" roughness={1}/></mesh>
  </>;
 }
 import {useState as useStableState} from 'react';

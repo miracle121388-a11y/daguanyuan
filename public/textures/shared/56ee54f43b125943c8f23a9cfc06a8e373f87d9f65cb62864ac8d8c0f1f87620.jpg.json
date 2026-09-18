@@ -1,0 +1,18 @@
+{
+  "sha256": "56ee54f43b125943c8f23a9cfc06a8e373f87d9f65cb62864ac8d8c0f1f87620",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "moon",
+    "role": "tile",
+    "pigment": "#a7bab8",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/moon-tile.png",
+    "sha256": "17b5e61258a63740be214a1d62cd00e4d179084ac610494cef2fe787e921fefa",
+    "source": {
+      "file": "assets/processed/materials-r15/tile_diff.png",
+      "sha256": "0228148a26676a50576db343b0167a2e27221c06bfa5f8351b6850cdf0757977"
+    }
+  }
+}

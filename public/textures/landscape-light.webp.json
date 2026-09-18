@@ -13,8 +13,8 @@
     ]
   },
   "sourceMaster": "blender/daguanyuan_master.blend",
-  "sourceMasterSha256": "486f2e96a05694aa833a8ff82f92a72f6dcde78c838c3ce547770f786b5b713e",
-  "renderSha256": "b29bb74d080b5a43ea2d5fe03c496206bc5dcbd3c5d7ee9ddfcc64e14c32a8e6",
+  "sourceMasterSha256": "58a1598283243f430c4407e38b8afc59b025433305fa12fe93fbf315c3a516fb",
+  "renderSha256": "814d13c12d6aab5436e319ba6af4f6829e4d557f68558d6d24ab5303fc7f6fd0",
   "prompt": "Render actual geometry shadows with blender/bake_landscape_light.py; 2048 square; orthographic 720m; camera [0,30,700]; Cycles 16 samples with denoising; world .14; sun2.8 at[-80,-42,62], angular size2.5deg; Standard color transform. Actual planted transforms use linked complete source crowns matching the distance atlas, instead of interactive sparse leaf subsets. Saved master unchanged.",
-  "sha256": "949ae9f77100d737e399b4be6ca5aecaa0514be7ad9cbe910cbcb4ba3375f069"
+  "sha256": "7161ea642f8d3c97eab0a42123df3fe446da6c500c22db71fdc57288d573507f"
 }

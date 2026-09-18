@@ -3,7 +3,7 @@ import bpy,math,json,hashlib,os,sys
 from pathlib import Path
 from mathutils import Vector
 R=Path(__file__).resolve().parents[1]
-REVISION=json.loads((R/'config/craft.materials.json').read_text(encoding='utf-8'))['revision']
+REVISION=json.loads((R/'public/scene-manifest.json').read_text(encoding='utf-8'))['assetRevision'].rsplit('-',1)[-1]
 master=R/'blender/daguanyuan_master.blend'
 bpy.ops.wm.open_mainfile(filepath=str(master))
 # Complete older masters with the editable native counterpart before recording
@@ -19,7 +19,7 @@ if 'Reference_Water_Surface' not in bpy.data.collections:
 # temporary shadow-render scene, never the saved editable master.
 sys.path.insert(0,str(R/'blender'))
 planted=[ob for ob in bpy.context.scene.objects if ob.name.startswith('LivingTree_')]
-native_full=bool(planted) and all(ob.get('nativeGeometry')=='full-source-crown' for ob in planted)
+native_full=bool(planted) and all(ob.get('nativeGeometry') in ['full-source-crown','authored-sunwen-crown'] for ob in planted)
 if not native_full:
  from source_crowns import source,shrub_source,SOURCES
  crowns={}

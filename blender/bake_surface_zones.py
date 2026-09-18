@@ -20,7 +20,7 @@ for ob in bpy.data.collections['Reference_Living_Trees'].objects:
 # Actual bamboo foot vertices define an irregular soil edge, without overlay plates.
 bpy.context.view_layer.update();roots=set()
 for ob in bpy.data.objects:
- if ob.type!='MESH' or not ob.parent or ob.parent.name!='xiaoxiangguan' or not any(m.name in ['bamboo','botanical_stem'] for m in ob.data.materials):continue
+ if ob.type!='MESH' or not ob.parent or ob.parent.name!='xiaoxiangguan' or not any(m.get('sunwenRole',m.name) in ['bamboo','botanical_stem'] for m in ob.data.materials):continue
  for v in ob.data.vertices:
   if v.co.z>.14:continue
   world=ob.matrix_world@v.co;roots.add((round(world.x*4)/4,round(world.y*4)/4))

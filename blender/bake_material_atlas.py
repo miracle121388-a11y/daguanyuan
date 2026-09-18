@@ -40,7 +40,7 @@ def bake_object(ob,resolution=1024):
   for node in nodes:
    if node.type=='TEX_IMAGE':links.new(uv.outputs['UV'],node.inputs['Vector'])
   ao=nodes.new('ShaderNodeAmbientOcclusion');ao.inputs['Distance'].default_value=1.5;ao.samples=12
-  mix=nodes.new('ShaderNodeMixRGB');mix.blend_type='MULTIPLY';mix.inputs[0].default_value=.72
+  mix=nodes.new('ShaderNodeMixRGB');mix.blend_type='MULTIPLY';mix.inputs[0].default_value=.38
   mix.inputs[1].default_value=bs.inputs['Base Color'].default_value
   if bs.inputs['Base Color'].is_linked:
    source=bs.inputs['Base Color'].links[0].from_socket

@@ -1,0 +1,18 @@
+{
+  "sha256": "a0194dd7d97bd9e77b58edc9dc42e073015adbc43f1c9fadbb3025bb21dae86c",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "moon",
+    "role": "darkwood",
+    "pigment": "#566e7c",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/moon-darkwood.png",
+    "sha256": "264a8a11d8032daa9f2d9f3f36501c1b5571e9a4a69eba4183908dd780288a21",
+    "source": {
+      "file": "assets/processed/materials-r15/darkwood_diff.png",
+      "sha256": "f9843750e5267d2fe17135fc0a26058461a70bcbcd98ff7b6f06637275acfb2e"
+    }
+  }
+}

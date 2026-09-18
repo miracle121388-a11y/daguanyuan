@@ -1,0 +1,47 @@
+{
+  "checks": 2,
+  "passed": true,
+  "materials": [
+    {
+      "model": "fern-0",
+      "material": "understory_fern.007",
+      "sourceVisibleRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "deliveredVisibleRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "maximumMeanChannelError": 0.0,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    },
+    {
+      "model": "fern-1",
+      "material": "understory_fern.007",
+      "sourceVisibleRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "deliveredVisibleRgbMean": [
+        72.82583598726114,
+        89.14594944267516,
+        32.34496914808917
+      ],
+      "maximumMeanChannelError": 0.0,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "passed": true
+    }
+  ],
+  "method": "Compare opaque leaf-area RGB in every delivered alpha-bearing fern/tree/shrub LOD against the current packed source PNG, with2/255 mean-channel tolerance; require actual transparent and opaque alpha pixels."
+}

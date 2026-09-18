@@ -1,0 +1,17 @@
+{
+  "sha256": "180a6146ec7957a350cf9bd5682ad9dabe9426f78e1662fcb9c8bc89dc26d03d",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "crimson",
+    "role": "silk",
+    "pigment": "#df9daf",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/crimson-silk.png",
+    "sha256": "c5dc3a15c42e7cfad902b8e6a30085ec7b211387cd74ffef50a20a068f151ebe",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

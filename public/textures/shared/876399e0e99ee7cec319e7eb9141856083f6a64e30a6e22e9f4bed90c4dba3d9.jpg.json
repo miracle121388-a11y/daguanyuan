@@ -1,0 +1,18 @@
+{
+  "sha256": "876399e0e99ee7cec319e7eb9141856083f6a64e30a6e22e9f4bed90c4dba3d9",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "bamboo",
+    "role": "tiledark",
+    "pigment": "#35565b",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/bamboo-tiledark.png",
+    "sha256": "0afe629abccb3235137fa286a1cb92018c25357e7a588540d6ec5969f7340be3",
+    "source": {
+      "file": "assets/processed/materials-r15/tiledark_diff.png",
+      "sha256": "93d0a3428b22ecbfaea001a61c521b05cd8634aef70e1f1ef220b8afb29da331"
+    }
+  }
+}

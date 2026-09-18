@@ -1,0 +1,18 @@
+{
+  "sha256": "28459838d44ded764c0c2dfebb99be9e64961a114aa9a39c273fa16cbc48f118",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "crimson",
+    "role": "tiledark",
+    "pigment": "#325d5b",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/crimson-tiledark.png",
+    "sha256": "7bc21b721e3ccc44d71aaa896685cee376ea5489560e95eaa438a04860279d66",
+    "source": {
+      "file": "assets/processed/materials-r15/tiledark_diff.png",
+      "sha256": "93d0a3428b22ecbfaea001a61c521b05cd8634aef70e1f1ef220b8afb29da331"
+    }
+  }
+}

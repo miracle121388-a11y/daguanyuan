@@ -1,0 +1,53 @@
+{
+  "revision": "r20",
+  "basis": "依据用户指定的宁荣府邸腹地空间关系进行三维营造；不是宁荣二府实测复原，不新增原著地点或游览路线。",
+  "gardenBounds": [
+    -148.5,
+    -138.5,
+    148.5,
+    148.5
+  ],
+  "groundBounds": [
+    -148.5,
+    -147,
+    148.5,
+    148.5
+  ],
+  "wallHeight": 6.2,
+  "groundExtent": 850,
+  "palette": {
+    "roof": "60757d",
+    "tile": "8a979a",
+    "plaster": "c9c7bb",
+    "stone": "9ba5a3",
+    "wood": "72534a",
+    "paper": "aaa88e",
+    "leaf": "799584",
+    "lightleaf": "9dae91",
+    "paving": "a2aaa6",
+    "warmroof": "827c70",
+    "slateroof": "586b76",
+    "brick": "969b95",
+    "redwood": "835747",
+    "mineral": "648880",
+    "gold": "b9a678",
+    "awning": "bb9377",
+    "sagecloth": "9bab90",
+    "water": "607e80",
+    "bronze": "837e5d",
+    "courtstone": "b2b9ad"
+  },
+  "layoutStrategy": "Unequal mansion plots, offset hutongs, shop courts and civic facilities; authored spatial interpretation.",
+  "references": [
+    {
+      "title": "故宫博物院：《乾隆京城全图》考略",
+      "url": "https://www.dpm.org.cn/paints/talk/203896.html",
+      "use": "Study of different urban land uses; no raster incorporated."
+    },
+    {
+      "title": "东洋文库／日本国立情报学研究所：乾隆京城全图",
+      "url": "https://dsr.nii.ac.jp/toyobunko/II-11-D-802/index.html.en",
+      "use": "Street and compound morphology; no measured site alignment claimed."
+    }
+  ]
+}

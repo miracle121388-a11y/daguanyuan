@@ -1,0 +1,146 @@
+{
+  "at": "2026-09-17T13:03:10.269Z",
+  "revision": "spatial-garden-20260917-r18",
+  "status": "Local architectural refinement complete; no push or deployment in this turn",
+  "architecturalIdentities": 18,
+  "canonicalPlaces": 15,
+  "supplementaryScenery": [
+    "zilingzhou",
+    "zhuijinlou",
+    "jiayintang"
+  ],
+  "preservation": {
+    "originalMeshes": 423,
+    "originalGeometryUnchanged": true,
+    "manualLayerPresent": true,
+    "existingLayoutAndRoutesPreserved": true
+  },
+  "tests": {
+    "unitAndApi": 82,
+    "fullE2E": {
+      "startTime": "2026-09-17T12:56:47.637Z",
+      "duration": 180953.863,
+      "expected": 15,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "actualArchitectureAndPreservation": 1181,
+    "enclosureRays": 3670,
+    "nativeModelVerification": "npm run models:verify passed; preserved meshes, grounded scene assemblies, wall openings, roofs, floors, paving, routes, water, court cavities and material pixels checked",
+    "sunwenIntegrity": 1133,
+    "dataIntegrity": 4892,
+    "typecheck": true,
+    "lint": true,
+    "productionBuild": true
+  },
+  "mobile": {
+    "initialBytes": 7770473,
+    "initialMiB": 7.411,
+    "loadSeconds": 10.75,
+    "conditions": {
+      "viewport": [
+        390,
+        844
+      ],
+      "deviceScaleFactor": 3,
+      "renderDpr": 1,
+      "latencyMs": 80,
+      "downloadMbps": 9,
+      "cpuSlowdown": 4,
+      "realMobileHardware": false
+    },
+    "initialBudgetMiB": 8,
+    "architecturalLayerBytes": 617144
+  },
+  "images": [
+    {
+      "file": "reports/browser/r18/aojingxiguan.png",
+      "sha256": "1131ad1f67a4a11d039b4570b446dc44f925aac0240d957a6af8c701403e301c"
+    },
+    {
+      "file": "reports/browser/r18/daguanlou.png",
+      "sha256": "98c3b0b0e3cc74678dc54558c58589798776f98f3875a044c9c30d657667ee0c"
+    },
+    {
+      "file": "reports/browser/r18/daoxiangcun.png",
+      "sha256": "6dbbb50f7ea8aff789683e7fabdd45e7487e1c3afe4417fb28027c80549f9f18"
+    },
+    {
+      "file": "reports/browser/r18/dicuiting.png",
+      "sha256": "111ba839cfda44762b13ed3fc4817d88f86a0179c5cadb4f13fa52e66110de5d"
+    },
+    {
+      "file": "reports/browser/r18/hengwuyuan.png",
+      "sha256": "8d30e1f10bc9823a0961f455d3fc312a51f75f96539449b82e5199ae4f36fc38"
+    },
+    {
+      "file": "reports/browser/r18/interior.png",
+      "sha256": "513b39903b33c5b7e8a00c8fe109d37db63cfb93e0603433591a79bbd5470ecf"
+    },
+    {
+      "file": "reports/browser/r18/jiayintang.png",
+      "sha256": "95081c0a58bf25b69a77de58d2738ad139ecc9937e2be81f888eb22245ce7257"
+    },
+    {
+      "file": "reports/browser/r18/longcuian.png",
+      "sha256": "a286ea7a877a67897714273c7d2c2caa1a214d36a68cef55a68811d004a26123"
+    },
+    {
+      "file": "reports/browser/r18/night.png",
+      "sha256": "7ddfc4e3e524c72c15615c8cc6c95f47d84c15b0b7edd27728a0ac60b8440fa0"
+    },
+    {
+      "file": "reports/browser/r18/nuanxiangwu.png",
+      "sha256": "1cded758f4a04d01a4821721b3048c2c605065391d585b1ba5431b2a25277af3"
+    },
+    {
+      "file": "reports/browser/r18/ouxiangxie.png",
+      "sha256": "ea812920f4f8b315ddc0834e89507488bec1400c035cd026d6665c6bbd43c5e2"
+    },
+    {
+      "file": "reports/browser/r18/overview.png",
+      "sha256": "30e67a945b959310bc1f5d084b2651bb2a78ff9bc60db9f114e05aac55d98d20"
+    },
+    {
+      "file": "reports/browser/r18/phone-320.png",
+      "sha256": "ad9a9022c81ce0dbb59d045b3594ddfa00d2e7ee48988773769c83bc904df470"
+    },
+    {
+      "file": "reports/browser/r18/phone-4g.png",
+      "sha256": "674e89cf27560bb5216aecb5c96432c507735fb366921e5bd5fc176ebc14d134"
+    },
+    {
+      "file": "reports/browser/r18/qiushuangzhai.png",
+      "sha256": "72356f7fa2f7c843d18de27b9547f501c0b9a135979d340ec4f80acc21590ecc"
+    },
+    {
+      "file": "reports/browser/r18/tubishanzhuang.png",
+      "sha256": "5a50e7b7c47e0123004f4017cfdcde6f039c60696bda0b7d50f2e2e1444ce79a"
+    },
+    {
+      "file": "reports/browser/r18/xiaoxiangguan.png",
+      "sha256": "03cb7667bfe5735fc3549ddcd71d291ccea0c2514fc0b4e5124c5d01511bfb0a"
+    },
+    {
+      "file": "reports/browser/r18/yihongyuan.png",
+      "sha256": "7a8f0a613e1beccf4b0980024598745cf78ba93298b5db00e4d54f25a27e78e7"
+    },
+    {
+      "file": "reports/browser/r18/zhuijinlou.png",
+      "sha256": "fd471ce4302d6d1af2a4dba2655696b3037481da39bc9a35a28c9ebde06a310e"
+    },
+    {
+      "file": "reports/browser/r18/zilingzhou.png",
+      "sha256": "c29da6fa131649f047d22089548cf9ca73d9aa987de76164c2074dd2ea99edb6"
+    }
+  ],
+  "masterSha256": "d6a25f3a7b7dbe6c491056ba243e70ddac48ea40917e26693bc7ce1701953264",
+  "notes": [
+    "Historical plates guide aesthetic design; dimensions, motifs, supplementary scene positions and flower combinations are interpretation.",
+    "Mobile relief omits fine raised tile courses while retaining complete textured roof shells and ridges.",
+    "Retired generated Ouxiang screens and wall backing remain hidden in the master and are excluded from all delivered variants.",
+    "First full E2E attempt: 13 passed, mobile budget exceeded and disk exhaustion interrupted trace writing. Final complete run: 15 passed after geometry optimization and cleanup of inactive Git LFS temporary files.",
+    "The new public architectural metadata was added to the explicit build allowlist and validated against the scene manifest."
+  ]
+}

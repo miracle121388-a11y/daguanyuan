@@ -1,0 +1,17 @@
+{
+  "sha256": "ac7dfc88d2f270a5a823212b0ebc9d76b49c0fd2ecb4d5c47356b160fcbbf34e",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "leaf",
+    "pigment": "#68a58b",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-leaf.png",
+    "sha256": "a4e54881edf02e6fe76df17bfbbc3cd753e33d4720e1f7d2b5066f608e696771",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

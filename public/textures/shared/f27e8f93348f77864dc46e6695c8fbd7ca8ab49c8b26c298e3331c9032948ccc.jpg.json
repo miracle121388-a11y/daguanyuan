@@ -1,0 +1,18 @@
+{
+  "sha256": "f27e8f93348f77864dc46e6695c8fbd7ca8ab49c8b26c298e3331c9032948ccc",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "crimson",
+    "role": "roof",
+    "pigment": "#517f76",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/crimson-roof.png",
+    "sha256": "0b3289b13c274baf7382ecaf835f9e077db22250392311f52a5817ef557c2003",
+    "source": {
+      "file": "assets/processed/materials-r15/roof_diff.png",
+      "sha256": "95a953933ab54ae72988f3748e24896b1ffc9bf89b11e3482c7b1c355e2b81e2"
+    }
+  }
+}

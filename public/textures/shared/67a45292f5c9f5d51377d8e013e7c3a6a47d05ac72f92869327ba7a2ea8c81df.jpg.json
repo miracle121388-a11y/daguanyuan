@@ -1,0 +1,18 @@
+{
+  "sha256": "67a45292f5c9f5d51377d8e013e7c3a6a47d05ac72f92869327ba7a2ea8c81df",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "goldroof",
+    "pigment": "#bca057",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-goldroof.png",
+    "sha256": "f1dfbc61ba584802935de7d98b3a48c5fa1917a3e043af8177bb4b587c13034f",
+    "source": {
+      "file": "assets/processed/materials-r15/goldroof_diff.png",
+      "sha256": "1c52cf652c6b4c18e270d7a299dc3918de08ff4093bd33a5d63208677ce4de7c"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sha256": "d1864224c43db98415e57495f01e834b0a178183f3bda5df9a07d70165750a79",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "crimson",
+    "role": "gold",
+    "pigment": "#d9b571",
+    "roughness": 0.48,
+    "metallic": 0.25,
+    "file": "assets/processed/sunwen-r17/crimson-gold.png",
+    "sha256": "755e4037b7fd9bb27b2accc59e80099b8a7fce6cd951cae7a704196a84d1b25e",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

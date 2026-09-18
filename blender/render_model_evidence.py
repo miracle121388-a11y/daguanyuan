@@ -19,9 +19,9 @@ scene.view_settings.view_transform='AgX';scene.view_settings.look='AgX - Medium 
 for ob in list(scene.objects):
  if ob.type=='LIGHT':bpy.data.objects.remove(ob,do_unlink=True)
 scene.world.use_nodes=True;nodes=scene.world.node_tree.nodes;nodes.clear();links=scene.world.node_tree.links
-background=nodes.new('ShaderNodeBackground');background.inputs[0].default_value=(.62,.74,.85,1);background.inputs[1].default_value=.65
+background=nodes.new('ShaderNodeBackground');background.inputs[0].default_value=(.80,.82,.75,1);background.inputs[1].default_value=.85
 output=nodes.new('ShaderNodeOutputWorld');links.new(background.outputs[0],output.inputs['Surface'])
-light=bpy.data.lights.new('Evidence_Daylight','SUN');light.energy=3.4;light.angle=math.radians(2.5);light.color=(1.0,.84,.64)
+light=bpy.data.lights.new('Evidence_Daylight','SUN');light.energy=2.6;light.angle=math.radians(2.5);light.color=(1.0,.92,.79)
 sun=bpy.data.objects.new('Evidence_Daylight',light);scene.collection.objects.link(sun);sun.location=(-80,-42,62);sun.rotation_euler=(-sun.location).to_track_quat('-Z','Y').to_euler()
 camera_data=bpy.data.cameras.new('Evidence_Camera');camera=bpy.data.objects.new('Evidence_Camera',camera_data);scene.collection.objects.link(camera);scene.camera=camera;camera_data.clip_end=1600
 unweb=lambda p:Vector((p[0],-p[2],p[1]))

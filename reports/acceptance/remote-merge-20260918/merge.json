@@ -1,0 +1,478 @@
+{
+  "completedAt": "2026-09-18T01:24:25.109Z",
+  "status": "local-merge-complete",
+  "branch": "codex/sunwen-garden-20260917",
+  "before": "c180416e7c7357a8702cfb3955c640bc9cd558f0",
+  "merged": "d9eeb94f90f101b7490f0c1a32cde71553ab13f0",
+  "remoteTitle": "漫画风格",
+  "remoteFileCount": 198,
+  "remoteTipRechecked": "d9eeb94f90f101b7490f0c1a32cde71553ab13f0",
+  "mergeMethod": "Fast-forward to origin/main, followed by reviewed integration of four overlapping local worktree files.",
+  "overlap": [
+    "docs/PROGRESS.md",
+    "package.json",
+    "reports/acceptance/integrity.json",
+    "scripts/validate.mjs"
+  ],
+  "backup": ".checkpoints/before-remote-merge-d9eeb94-r21",
+  "backupBranch": "codex/backup-before-remote-merge-20260918",
+  "preservation": {
+    "unaffectedLocalEntries": 1875,
+    "differences": [],
+    "models": [
+      {
+        "path": "blender/daguanyuan_master.blend",
+        "sha256": "58a1598283243f430c4407e38b8afc59b025433305fa12fe93fbf315c3a516fb",
+        "deleted": false
+      },
+      {
+        "path": "public/art/manifest.json",
+        "sha256": "844547b13e1734a09f11d6b0716c217d75302dc4a4d4e6d9b8c58425bc883f22",
+        "deleted": false
+      },
+      {
+        "path": "public/models/overview-low.glb",
+        "sha256": "c9aab2542f41857752794e57e868069dd33a8f2203c2bf59ec5aeac12f1598a1",
+        "deleted": false
+      },
+      {
+        "path": "public/models/overview.glb",
+        "sha256": "dfbacab7777f9393b1a535168fbf1a568a90dd65088109855d34e099f161c004",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/aojingxiguan.glb",
+        "sha256": "29e37d3123e2b187a5f820211920b18addfb4ad0fd90709a7204176f82e73f85",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/daguanlou.glb",
+        "sha256": "57b8024f9d9e21d46a0c86e50bacc363bace4b44c4cc2d48a387978b4ff8adbc",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/daguanyuan_gate.glb",
+        "sha256": "960aacbc6fb5ca4331d54d1e72855fe1fdc92d19e5c826e8e5e0837d667cba60",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/daoxiangcun.glb",
+        "sha256": "cdb94b1f1898375755add74722a8a072a7c39c59ecfc47eef35f7eae02a2bb0e",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/dicuiting.glb",
+        "sha256": "8a886bf0a48396e52fadc7c49557b72e1442143f3ed5d75ea0a692877a414acd",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/hengwuyuan.glb",
+        "sha256": "7b7b510e717d5b31efb573dfbb3978ebee0959bd805a47d299b2293141d0ea82",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/longcuian.glb",
+        "sha256": "8bda669ff14d08031e1e400a6251014379438de7043884a1f7ee63882bcdd5b3",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/luxuean.glb",
+        "sha256": "4132aecb87ce9787b80910eb18c2d570e79b90890a57be150b756935b7040bb3",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/nuanxiangwu.glb",
+        "sha256": "39ae614b73cda8ef04f59b682f9817d448df5904ca41a104a6eb30a53dc9f490",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/ouxiangxie.glb",
+        "sha256": "0834ff50e3eab67976456a4681eb776265c1c3c8594b6908c193b6e646e6d1b7",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/qiushuangzhai.glb",
+        "sha256": "6027cab3ade82afd39aa36c451164deafa00e2fd17550c624df77c6aa1b7f42d",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/qujingtongyou.glb",
+        "sha256": "d07572eebdde04a8509d045a13d6da52e0867d0a61f5f9fd1b0a44e3c3812df6",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/tubishanzhuang.glb",
+        "sha256": "388fd81be52ca7b765d6eb92ccf0802f34a94f8d532a8cc319588535a2910637",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/xiaoxiangguan.glb",
+        "sha256": "7c5902f5a5c43203f379af6924ff7ec5f4d4fbe51476b4c14093cd119119cfc4",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places-low/yihongyuan.glb",
+        "sha256": "3702ca7a14b30fd30e7566c53bebb6ab5d9a991646e0d2f543032671ddfc14c6",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/aojingxiguan.glb",
+        "sha256": "df2bcb2a656e22cd02810e9113b6f6aa8f0fd9d0176eebf8ea8f0f61dec3b139",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/daguanlou.glb",
+        "sha256": "5e6ed00ce505b85411451129b0565606ab8055b102ee612c333d34ee6e3f656f",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/daguanyuan_gate.glb",
+        "sha256": "03141e6e20735271f8adda0dcef5a362f626fc082405a6b13f953004f472572b",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/daoxiangcun.glb",
+        "sha256": "190b56369a62baea691b19a6146c2033b9b6009e883d2f43e57e6532a43415dd",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/dicuiting.glb",
+        "sha256": "1a37c23d01cec0e39f689cf8eddc49475aa0671790cb91998e33e05f4036ca18",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/hengwuyuan.glb",
+        "sha256": "1b0cdf432ec163972aa13758628467750ee49cf813444f113fd337dd6532b5fc",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/longcuian.glb",
+        "sha256": "055ce458df58b0e950dcddb30bfaf330514428e86d24ef0fe595916afb9afe98",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/luxuean.glb",
+        "sha256": "2ec46d58dc0ae0521ffa6309af30565b2271f7caad87b4c48b90e3cddf1840be",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/nuanxiangwu.glb",
+        "sha256": "adfc9d64845aad1710ec1ef872dc3676d25a89f9ab1773e59f1fc252d27e1601",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/ouxiangxie.glb",
+        "sha256": "ea0cc2a27c1706bd6d59f710807717816f7422fbed7048c8223f7dbc09d4b4cf",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/qiushuangzhai.glb",
+        "sha256": "b1bb8b00b2b35d3e21686da41930b98590d27822abfeca0febb8527e24db6460",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/qujingtongyou.glb",
+        "sha256": "cc5e10758a711d1651bc094fae9c5a468db5a8d77c928078d760a30aaa99a96b",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/tubishanzhuang.glb",
+        "sha256": "6065ab1dbb170705277dcfaa87934b436b0af97f459373be9e667920a5706f10",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/xiaoxiangguan.glb",
+        "sha256": "55203be7e838cbfb2a5e7b6b780df020fe47f0e2f45b3195b516f0c47e312273",
+        "deleted": false
+      },
+      {
+        "path": "public/models/places/yihongyuan.glb",
+        "sha256": "3ac45fcc60270424223e31cde5832115072c9865d8f3886d3a6aaeefa4ee3e94",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/broadleaf-2.glb",
+        "sha256": "5ea86f1aabfea7dcd85b3e8e74b3f1fd45ee323a57c1694ae1cdb4c06e2f0457",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/broadleaf-low.glb",
+        "sha256": "e2f540e3456412a34bb04d98e444cc358ce087b640fc5cdf9c993b0e82363532",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/broadleaf.glb",
+        "sha256": "d680d740973d6070b7a55376befe8b71d99a47b4db7e23071064c2cb62a427cf",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/fern-0.glb",
+        "sha256": "ed776375b0a2e2cd4d08fe013bccf221b52e8eb19cfb0b60773d86eae7166dcb",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/fern-1.glb",
+        "sha256": "10049ca9d95459047d9ec853310ce77ae3eed006a453d6097647c4e20a5500fe",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/ground-cover.glb",
+        "sha256": "07e385fdb8907d70dfa6da15fc5def6442456dd858c5d3854572a91c4935d270",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/pine.glb",
+        "sha256": "31c53c9307701dfa9b99ad6bba5bff26eb44679ddf6d2e336506bee78e4ec2d1",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/shrub.glb",
+        "sha256": "f3457c6e993f784f7ce1f0c2c4a7844c30e7d40f42206edf3a9331a154b65357",
+        "deleted": false
+      },
+      {
+        "path": "public/scene-manifest.json",
+        "sha256": "ff62af29f16f7105fde31181a61c23fa8d0b718af147a469dbc24679f4d944e5",
+        "deleted": false
+      },
+      {
+        "path": "public/textures/ground/surface-zones.png",
+        "sha256": "ce38a6691194b01151f1fcea89c43443b88d3ec1b0a9dd7aacffbd6ef5cc9769",
+        "deleted": false
+      },
+      {
+        "path": "public/textures/ground/surface-zones.png.json",
+        "sha256": "5aac72246adc0d5b8bab2dde20087c12badf134def9355f0d0391232f1bacd5a",
+        "deleted": false
+      },
+      {
+        "path": "public/models/sunwen-architecture-low.glb",
+        "sha256": "d8b226cf7b9de25842a55effa713046c073d43b6899c000a85c1db7acc6651e6",
+        "deleted": false
+      },
+      {
+        "path": "public/models/sunwen-architecture.glb",
+        "sha256": "f76adf03fc03d7398d4628bcee9b41b4f47938b6a627c508713fc30bc332334b",
+        "deleted": false
+      },
+      {
+        "path": "public/models/sunwen-landscape-low.glb",
+        "sha256": "5f3b2ba088727b32040e45dbca700dc55eeac38926de82be522988234c5e14b4",
+        "deleted": false
+      },
+      {
+        "path": "public/models/sunwen-landscape.glb",
+        "sha256": "ac5354be6f2186141907aa9b033f8857e32cf98f278910ee72e702df24b147ba",
+        "deleted": false
+      },
+      {
+        "path": "public/models/urban-context.glb",
+        "sha256": "05959ff28aa74b75eced1e1be653934ae65f08156b8e48ac5862cfb70797b837",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/chinese-pine.glb",
+        "sha256": "4fab6257bb675155bed530a02ac8e035bb177cc7e5e228f6cc088071fbdbe193",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/chrysanthemum.glb",
+        "sha256": "37eeff4c8b36cf9b968d93d81e09d5fad301eb11d809ba6189f627fb537dc1dc",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/crabapple.glb",
+        "sha256": "47e5a4bea9e5d20f2e4e7817d6f4ecd9e1dc7d1d0762e9de3b860aa73cd99b41",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/ginkgo.glb",
+        "sha256": "2615f950e6e33da96b08027948f8e23dc51cff723b5e9bc3651be705af25d931",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/iris.glb",
+        "sha256": "37cd3eaf2ab0beffee7608e209d73443acd5bf2cd6d45ab5ee94f4f3601925c9",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/lotus.glb",
+        "sha256": "5b4afc4c464c2d4e38b0799f5f24839d3851d8f22eef3c39372cd9f03c948890",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/orchid.glb",
+        "sha256": "37bb887153ec8d88334a3842495f596403ed0ab0f32fec2ae5c6bc69abdb7491",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/peony.glb",
+        "sha256": "df16a7869f3a7cf4a5be98fa9340b14d67fac570ba132e94644f2f99f93a7967",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/red-maple.glb",
+        "sha256": "f5a37d2a0f507d42d0f00d52a9c87602492bc137439fdfa1cbcff6be2a6ee855",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/scholar-tree.glb",
+        "sha256": "c250cdfed0cc6aa84985dffe26b2bfa6e80df0dc91688dbe91d874a9d3cb2e23",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/white-blossom.glb",
+        "sha256": "509ca1d696cc6b72fc6322e3a465ad2bdc946bc98e02b1f0e5986d30aa8a640f",
+        "deleted": false
+      },
+      {
+        "path": "public/models/vegetation/willow.glb",
+        "sha256": "0f29b6d87929e650b29a252e1488129ab20ea32c2401512850f46a779f431723",
+        "deleted": false
+      },
+      {
+        "path": "public/textures/ground/garden-ground-zones.png",
+        "sha256": "676eecfeec7e42d0520452a02e8dd71af6e4ee6d70ca1f2e85e5139ef40cd4de",
+        "deleted": false
+      },
+      {
+        "path": "public/textures/ground/garden-ground-zones.png.json",
+        "sha256": "e526ef1052231ff8092c9256813277cec3c957baa54420c14aad63ba66febf97",
+        "deleted": false
+      },
+      {
+        "path": "public/textures/ground/garden-ground.webp",
+        "sha256": "0fa2fe52f3cf4b9e869110889027bb0a810bf87f75b64e4b6be2a4ad53e91e91",
+        "deleted": false
+      },
+      {
+        "path": "public/textures/ground/garden-ground.webp.json",
+        "sha256": "7289b5754b942156135e6de36f7f02f893e52a7206022e62f42c8f5260bd6235",
+        "deleted": false
+      },
+      {
+        "path": "public/urban-context.json",
+        "sha256": "54b5a32238aec20d67baacb73849ba68b81a7539b14dff4e0b82d32a3199490c",
+        "deleted": false
+      }
+    ],
+    "priorReportsRestoredAfterArchivingVerification": [
+      {
+        "path": "reports/acceptance/mobile-4g.json",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/acceptance/mobile-4g.json"
+      },
+      {
+        "path": "reports/acceptance/playwright.json",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/acceptance/playwright.json"
+      },
+      {
+        "path": "reports/browser/10-phone-4g.png",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/browser/10-phone-4g.png"
+      },
+      {
+        "path": "reports/browser/11-phone-320.png",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/browser/11-phone-320.png"
+      },
+      {
+        "path": "reports/browser/r21/connected-west-groves.png",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/browser/r21/connected-west-groves.png"
+      },
+      {
+        "path": "reports/browser/r21/courtyard-flowering-tree-base.png",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/browser/r21/courtyard-flowering-tree-base.png"
+      },
+      {
+        "path": "reports/browser/r21/ground-overview.png",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/browser/r21/ground-overview.png"
+      },
+      {
+        "path": "reports/browser/r21/moss-north-wall.png",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/browser/r21/moss-north-wall.png"
+      },
+      {
+        "path": "reports/browser/r21/root-eye-west.png",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/browser/r21/root-eye-west.png"
+      },
+      {
+        "path": "reports/browser/r21/soft-east-courts.png",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/browser/r21/soft-east-courts.png"
+      },
+      {
+        "path": "reports/browser/r21/water-ground-transition.png",
+        "verification": "reports/acceptance/remote-merge-20260918/verification/browser/r21/water-ground-transition.png"
+      }
+    ]
+  },
+  "remoteFiles": {
+    "unchanged": 184,
+    "integrationChanges": [
+      "config/dream.references.json",
+      "data/canon/dreamReferences.json",
+      "docs/DREAM_STYLE_SYSTEM.md",
+      "docs/PROGRESS.md",
+      "package.json",
+      "public/data/dreamReferences.json",
+      "public/dream-scenes/daoxiangcun.webp.json",
+      "public/dream-scenes/hengwuyuan.webp.json",
+      "public/dream-scenes/qiushuangzhai.webp.json",
+      "public/dream-scenes/xiaoxiangguan.webp.json",
+      "public/dream-scenes/yihongyuan.webp.json",
+      "reports/acceptance/integrity.json",
+      "scripts/prepare_dream_references.mjs",
+      "scripts/validate.mjs"
+    ]
+  },
+  "sourceIntegration": {
+    "archivedSources": 5,
+    "archiveCatalog": "references/dream-scene-sources/manifest.json",
+    "incomingReferenceImages": 21,
+    "incomingReferenceImageBytesChanged": 0,
+    "gardenGallery": "15 Sun Wen historical plates, unchanged"
+  },
+  "verification": {
+    "build": "passed",
+    "lint": "passed",
+    "unitAndApiTests": 95,
+    "sourceChecks": 10339,
+    "sunwenAssetChecks": 1134,
+    "e2e": {
+      "distinctPassed": 7,
+      "first": {
+        "passed": 6,
+        "failed": 1,
+        "failure": "New regression test did not create its screenshot directory; product assertions passed up to screenshot writing."
+      },
+      "followup": {
+        "passed": 1,
+        "failed": 0
+      },
+      "fixtures": "Dream API responses use two existing committed acceptance images; all writes are intercepted; no model/provider calls."
+    },
+    "mobile": {
+      "bytes": 8295533,
+      "MiB": 7.911236763000488,
+      "loadedMs": 10302.899999976158,
+      "conditions": {
+        "viewport": [
+          390,
+          844
+        ],
+        "deviceScaleFactor": 3,
+        "renderDpr": 1,
+        "latencyMs": 80,
+        "downloadMbps": 9,
+        "cpuSlowdown": 4,
+        "realMobileHardware": false
+      }
+    },
+    "nativeModelRebuildRun": false,
+    "fullModelsVerifyRun": false
+  },
+  "localPreview": "http://127.0.0.1:5173/",
+  "git": {
+    "unmergedPaths": 0,
+    "localDesignChangesRemainUncommitted": true,
+    "pushed": false,
+    "deployed": false
+  }
+}

@@ -1,0 +1,28 @@
+
+> daguanyuan-rumeng@1.0.0 test:e2e
+> node scripts/run_e2e.mjs tests/e2e/grounding.spec.ts tests/e2e/landscape.spec.ts tests/e2e/mobile.spec.ts
+
+[WebServer] (node:80183) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:80202) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 
+[WebServer] (!) Some chunks are larger than 1200 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:80222) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:80243) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:80245) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/grounding.spec.ts:8:1 › root gardens connect soft ground, low planting and retained courts in the delivered scene (16.2s)
+  ✓  2 tests/e2e/landscape.spec.ts:7:1 › tended garden, five planting characters and night scene load without missing assets (26.2s)
+  ✓  3 tests/e2e/mobile.spec.ts:3:1 › touch phone on throttled 4G loads the small overview and mobile courtyard (28.4s)
+  ✓  4 tests/e2e/mobile.spec.ts:55:1 › 320px phone controls remain inside the viewport (3.5s)
+
+  4 passed (1.4m)

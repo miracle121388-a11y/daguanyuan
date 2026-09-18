@@ -1,0 +1,17 @@
+{
+  "sha256": "3c670ee842afe88c0dd378b6a7d7323615c7afc6f5825fcc2327a71267b3bb8b",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "water",
+    "pigment": "#95b7b3",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-water.png",
+    "sha256": "765742abae4a6fd36f0987d8bb3408629a54f7c47c596b229018aff313eaa6ec",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

@@ -5,13 +5,16 @@ import type {Manifest} from '../data/types';
 import {useGarden} from '../state/store';
 import {useThree,useFrame} from '@react-three/fiber';
 import {finishMaterials} from './materials';
+import aesthetics from '../../config/garden.sunwen.json';
+const speciesNames=aesthetics.planting.species;
 type Placement={position:[number,number,number];scale:[number,number,number];rotation:number;species?:number;placeId?:string|null};
-/** Camera-facing tree impostors are an overview LOD of the actual CC0 mesh.
+/** Camera-facing tree impostors are an overview LOD of the actual authored mesh.
  * Architecture, terrain, foreground planting and nearby crowns remain 3D.
  */
 function DistantGrove({points,onReady,variant=0,species=0}:{points:Placement[];onReady:(ready:boolean)=>void;variant?:number;species?:number}){
- const atlas=useTexture(import.meta.env.BASE_URL+'textures/vegetation/canopy-atlas.webp');
- const map=useMemo(()=>{const t=atlas.clone();t.colorSpace=THREE.SRGBColorSpace;t.repeat.set(1/5,1/4);t.offset.set(variant/5,(3-species)/4);t.needsUpdate=true;return t},[atlas,variant,species]);
+ const quality=useGarden(s=>s.qualityLevel);
+ const atlas=useTexture(import.meta.env.BASE_URL+`textures/vegetation/canopy-atlas${quality==='low'?'-low':''}.webp`);
+ const map=useMemo(()=>{const t=atlas.clone();t.colorSpace=THREE.SRGBColorSpace;t.repeat.set(1/5,1/speciesNames.length);t.offset.set(variant/5,(speciesNames.length-1-species)/speciesNames.length);t.needsUpdate=true;return t},[atlas,variant,species]);
  const night=useGarden(s=>s.timeOfDay==='night'),last=useRef(Number.NaN);
  const {camera,invalidate}=useThree();
  const dummy=useMemo(()=>new THREE.Object3D(),[]),previousRotation=useRef(new THREE.Quaternion()),direction=useMemo(()=>new THREE.Vector3(),[]),cameraUp=useMemo(()=>new THREE.Vector3(),[]);
@@ -38,7 +41,8 @@ function DistantGrove({points,onReady,variant=0,species=0}:{points:Placement[];o
    // Anchor its projected root to the planted point at every camera pitch.
    dummy.position.addScaledVector(cameraUp,(overhead?2.5*.01/26:2.5*24/26)*p.scale[1]);
    dummy.scale.set(p.scale[0],overhead?p.scale[2]:p.scale[1],1);dummy.quaternion.copy(camera.quaternion);dummy.updateMatrix();mesh.setMatrixAt(i,dummy.matrix);
-   mesh.setColorAt(i,new THREE.Color().setRGB(.86+(i%7)*.020,.90+(i%4)*.025,.80+(i%5)*.026));
+   const tint=(Math.round(p.position[0]*7+p.position[2]*11)%5+5)%5;
+   mesh.setColorAt(i,new THREE.Color().setRGB(.94+tint*.014,.96+tint*.010,.94+tint*.014));
   }
   mesh.instanceMatrix.needsUpdate=true;if(mesh.instanceColor)mesh.instanceColor.needsUpdate=true;last.current=1;previousRotation.current.copy(camera.quaternion);
  });
@@ -46,7 +50,7 @@ function DistantGrove({points,onReady,variant=0,species=0}:{points:Placement[];o
 }
 function Grove({points,detail,species,lod='near'}:{points:Placement[];detail:boolean;species:number;lod?:'near'|'middle'}){
  const {gl,invalidate}=useThree();
- const gltf=useGLTF(import.meta.env.BASE_URL+'models/vegetation/'+(lod==='middle'?'broadleaf-low':['broadleaf','broadleaf-2','pine','shrub'][species])+'.glb');
+ const gltf=useGLTF(import.meta.env.BASE_URL+'models/vegetation/'+(lod==='middle'?'broadleaf-low':speciesNames[species])+'.glb');
  const meshes=useMemo(()=>{gltf.scene.updateMatrixWorld(true);const result:THREE.InstancedMesh[]=[];const dummy=new THREE.Object3D();gltf.scene.traverse(o=>{if(!(o instanceof THREE.Mesh))return;const geometry=o.geometry.clone();geometry.applyMatrix4(o.matrixWorld);const material=(Array.isArray(o.material)?o.material:[o.material]).map(source=>{const m=source.clone();if(m instanceof THREE.MeshStandardMaterial&&/leaves|twig/.test(m.name)){m.alphaTest=.35;m.transparent=false;m.side=THREE.DoubleSide}return m});const m=new THREE.InstancedMesh(geometry,material.length===1?material[0]:material,points.length);m.name=lod==='middle'?'Living tree middle LOD':'Living tree canopy';m.userData.lod=lod;m.userData.ownsMaterial=true;m.castShadow=detail;m.receiveShadow=true;for(const [i,p] of points.entries()){dummy.position.fromArray(p.position);dummy.scale.fromArray(p.scale);dummy.rotation.set(0,p.rotation,0);dummy.updateMatrix();m.setMatrixAt(i,dummy.matrix)}m.instanceMatrix.needsUpdate=true;m.computeBoundingSphere();result.push(m)});return result},[gltf,points,detail,lod]);
  useEffect(()=>()=>{for(const m of meshes){m.geometry.dispose();if(m.userData.ownsMaterial){for(const material of Array.isArray(m.material)?m.material:[m.material])material.dispose()}m.dispose()}},[meshes]);
  useEffect(()=>{for(const m of meshes)finishMaterials(m);gl.shadowMap.needsUpdate=true;invalidate()},[meshes,gl,invalidate]);
@@ -82,10 +86,10 @@ export default function LivingTrees({manifest,onReady}:{manifest:Manifest;onRead
   const distance=(x:Placement)=>Math.hypot(x.position[0]-eye.x,x.position[1]-eye.y,x.position[2]-eye.z)/x.scale[1];
   const close=(x:Placement)=>(quality==='high'||!!p)&&(distance(x)<38||(p&&Math.hypot(x.position[0]-p.position[0],x.position[2]-p.position[2])<21));
   const near=points.filter(close).sort((a,b)=>distance(a)-distance(b)).slice(0,quality==='high'?(p?16:6):(p?3:0)),chosen=new Set(near);
-  const middle=quality==='high'?points.filter(x=>!chosen.has(x)&&(x.species??0)===0&&distance(x)<65).sort((a,b)=>distance(a)-distance(b)).slice(0,12):[];
+  const middle:Placement[]=[];
   for(const point of middle)chosen.add(point);
   const far=points.filter(x=>!chosen.has(x));
-  return {middle,near:Array.from({length:4},(_,s)=>near.filter(x=>(x.species??0)===s)),far:Array.from({length:8},(_,v)=>far.filter((x,i)=>(x.species??0)===Math.floor(v/2)&&i%2===v%2))};
+  return {middle,near:Array.from({length:speciesNames.length},(_,s)=>near.filter(x=>(x.species??0)===s)),far:Array.from({length:speciesNames.length*2},(_,v)=>far.filter((x,i)=>(x.species??0)===Math.floor(v/2)&&i%2===v%2))};
  },[manifest,selected,quality,eye,interior,closeView,camera,size.width]);
  return <>{groups.middle.length>0&&<Suspense fallback={null}><Grove points={groups.middle} species={0} detail={false} lod="middle"/></Suspense>}{groups.far.map((points,v)=><DistantGrove key={v} variant={v%2} species={Math.floor(v/2)} points={points} onReady={onReady}/>)}{groups.near.map((points,s)=>points.length>0&&<Suspense key={s} fallback={null}><Grove species={s} points={points} detail={quality==='high'}/></Suspense>)}</>;
 }

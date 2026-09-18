@@ -1,0 +1,18 @@
+{
+  "sha256": "2bea35154100bd0e689894d5535a0d4e7ba7d4f6995d4f398ecf7e82b40bbc7a",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "waterside",
+    "role": "darkwood",
+    "pigment": "#4b6874",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/waterside-darkwood.png",
+    "sha256": "55fd68114d56e468146981911018479e892369ee5cbf54fa8c5e43fee72f6cc2",
+    "source": {
+      "file": "assets/processed/materials-r15/darkwood_diff.png",
+      "sha256": "f9843750e5267d2fe17135fc0a26058461a70bcbcd98ff7b6f06637275acfb2e"
+    }
+  }
+}

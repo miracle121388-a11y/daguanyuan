@@ -1,0 +1,25 @@
+{
+  "revision": "spatial-garden-20260917-r17",
+  "protectedMeshCount": 423,
+  "geometryAndTransformsUnchanged": true,
+  "manualObjects": 0,
+  "treeCounts": {
+    "willow": 90,
+    "shrub": 123,
+    "scholar-tree": 69,
+    "white-blossom": 25,
+    "crabapple": 24,
+    "chinese-pine": 20,
+    "ginkgo": 8,
+    "red-maple": 2
+  },
+  "perennialGroups": 204,
+  "materials": 209,
+  "planting": {
+    "vegetation": 361,
+    "groundCover": 360,
+    "understory": 240
+  },
+  "masterSha256": "9c1afa98b919faa0a5b55da7a381aa6abb050767cd7703375fabca9f0d41c9ef",
+  "method": "Apply Sun Wen pigment surfaces and an open, authored garden to the master.\n\nThe original architectural topology, routes, water and Manual_Adjustments are\npreserved; material slots and the replaceable planting collections are revised.\n"
+}

@@ -1,0 +1,18 @@
+{
+  "sha256": "383fc3f68c44ebd735b33b2b71dca931fc8443bd342319353a5de079e47cfffa",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "botanical_stem",
+    "pigment": "#a6b97d",
+    "roughness": 0.85,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-botanical_stem.png",
+    "sha256": "1b4f02b063f42e539faa6535e64c259c3c2b6e18c79c62a1090b125628d8875c",
+    "source": {
+      "file": "assets/processed/focal-r12-fix2/stem.png",
+      "sha256": "7d3cdf1f7b570a45f391ba4ab4195dcc09c999d9dd8cf8094664c79e9790fa33"
+    }
+  }
+}

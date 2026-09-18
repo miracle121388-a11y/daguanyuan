@@ -1,0 +1,43 @@
+{
+  "origin": "World-registered pigments for soft garden ground, courts, paths and actual roots.",
+  "revision": "spatial-garden-20260918-r21",
+  "source": "config/sunwen.landscape.json",
+  "sourceSha256": "ee718636c8613ce663cf9443ff76b9cc9bd7741db311319842289b9a29c2914c",
+  "designSha256": "0e029a73178607470ccda551fd5030385e96d8ad50dfdc65cc09c9b03c0ded2f",
+  "rootPlanSha256": "22c515331eb73607cc1e2d079e4f34483b98e019f07a8f347ac46644f4540921",
+  "resolution": 2048,
+  "worldSpan": 768,
+  "channels": {
+    "R": "Soft herb/moss ground including connected root beds",
+    "G": "Stone courts",
+    "B": "Pebble paths"
+  },
+  "files": [
+    {
+      "file": "public/textures/ground/garden-ground.webp",
+      "sha256": "0fa2fe52f3cf4b9e869110889027bb0a810bf87f75b64e4b6be2a4ad53e91e91"
+    },
+    {
+      "file": "public/textures/ground/garden-ground-zones.png",
+      "sha256": "676eecfeec7e42d0520452a02e8dd71af6e4ee6d70ca1f2e85e5139ef40cd4de"
+    }
+  ],
+  "insidePlantedFraction": 0.7232446148869058,
+  "metrics": {
+    "dryLandSoftFraction": 0.7051551900159341,
+    "dryLandHardFraction": 0.2948982415296688,
+    "rootCount": 360,
+    "linkedPairs": 491,
+    "builtInCourtRoots": 22,
+    "builtInCourtRootsOnSoftGround": 22,
+    "rootsOnSoftGround": 360,
+    "rootMinimumSoftCoverage": 1.0,
+    "softGroundPigmentStdDev": [
+      10.59016408110802,
+      7.351185379231875,
+      6.190501420476201
+    ]
+  },
+  "sha256": "0fa2fe52f3cf4b9e869110889027bb0a810bf87f75b64e4b6be2a4ad53e91e91",
+  "prompt": "Deterministic scalar pigment fields from native roots and authored spatial coordinates; no image generator."
+}

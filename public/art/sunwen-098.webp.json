@@ -1,0 +1,13 @@
+{
+  "kind": "historical-painting",
+  "artist": "孙温",
+  "sourceFile": "references/sunwen/originals/098.jpg",
+  "sourceSha256": "ee9b5076ee5ac98d1751b63c62df5e50068ba7d0ff18da20821e6a6034f7cc11",
+  "sourceUrl": "https://github.com/changren-wcr/sunwen/blob/9e9352d51a5f4a7006f77946ee8ace29d427a937/docs/assets/sunwen/098%E7%AC%AC40%E5%9B%9E%20%E7%8E%8B%E9%B3%B3%E5%A7%90%E6%93%BA%E9%A3%AF%E7%A7%8B%E7%88%BD%E9%BD%8B%20%E9%87%91%E9%B4%9B%E9%B4%A6%E4%B8%89%E5%AE%A3%E7%89%99%E7%89%8C%E4%BB%A4.jpg",
+  "repositoryCommit": "9e9352d51a5f4a7006f77946ee8ace29d427a937",
+  "operation": "Preserve full image; resize and encode WebP without recoloring or generated additions.",
+  "file": "public/art/sunwen-098.webp",
+  "sha256": "6fd6765897912c293858dfbb4064c1d71de073ba384b50d35799b21e3091fc2f",
+  "width": 1600,
+  "height": 907
+}

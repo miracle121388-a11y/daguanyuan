@@ -10,7 +10,7 @@ if mobile:
  bpy.ops.import_scene.gltf(filepath=str(R/'public/models/overview-low.glb'))
 else:bpy.ops.wm.open_mainfile(filepath=str(R/'blender/daguanyuan_master.blend'),load_ui=False,use_scripts=False)
 layout=json.loads((R/'config/garden.layout.json').read_text(encoding='utf8'))
-obs=[o for o in bpy.data.objects if o.type=='MESH' and (o.name.startswith('Mobile_landscape_earth') if mobile else o.name.startswith('landscape_earth') and any(c.name=='Garden_Landscape' for c in o.users_collection))]
+obs=[o for o in bpy.data.objects if o.type=='MESH' and not o.get('urbanRetired') and (mobile or not o.hide_render) and any(m and (m.name=='earth' or m.get('sunwenRole')=='earth') for m in o.data.materials)]
 assert obs,'Expected ground meshes are missing'
 verts=[];faces=[];bpy.context.view_layer.update()
 for ob in obs:

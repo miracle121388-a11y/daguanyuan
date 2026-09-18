@@ -1,0 +1,394 @@
+{
+  "revision": "spatial-garden-20260918-r21",
+  "rights": "Authored geometry and pigments. Existing source grain retains its reviewed provenance. Historical scans are used only for study and the attributed gallery.",
+  "sources": [
+    {
+      "file": "config/garden.urban.json",
+      "sha256": "40a2156ab9ca243ee30b9bd6381abebbff3f9ac643fb700f28ba23b102ab9c32"
+    },
+    {
+      "file": "blender/urban_context.py",
+      "sha256": "a22934c32769ab0ba8181116b79c777854a28ae34c9af12731032f17a33ce090"
+    },
+    {
+      "file": "blender/urban_layout.py",
+      "sha256": "6f9bff8e1f0feb8635e7abde285063fd0c96bdf168da52c76c45fa91dad71db4"
+    },
+    {
+      "file": "blender/urban_architecture.py",
+      "sha256": "6422241193dd8f3ac9a91b56437ed49ea766372349048ee9e7b7ecb9956487d3"
+    },
+    {
+      "file": "scripts/apply_urban_ground.mjs",
+      "sha256": "4578157ce4d06c783e00789fe10be065fd4b756f998d8eed0396f5d692dd59b0"
+    },
+    {
+      "file": "src/scene/UrbanContext.tsx",
+      "sha256": "3c978901f1677f5ce80f74825a3d5a0146b1a635435e4e3ed03086a27a474056"
+    },
+    {
+      "file": "config/garden.sunwen.json",
+      "sha256": "22e4e86a59c76ca953f4e24df9bc99fbfe79e1ac6af06a42b25bbf6399e60661"
+    },
+    {
+      "file": "config/sunwen.architecture.json",
+      "sha256": "d493d418377cc7cefbe28329f0e7c4b46da4269af7b542b5ae7f922c68eaeb10"
+    },
+    {
+      "file": "config/sunwen.planting.json",
+      "sha256": "da26c0be1a688c6a4857315617f6cd282b42ecc40ca60857ce40239f655d19ac"
+    },
+    {
+      "file": "config/sunwen.landscape.json",
+      "sha256": "ee718636c8613ce663cf9443ff76b9cc9bd7741db311319842289b9a29c2914c"
+    },
+    {
+      "file": "scripts/compose_sunwen_planting.py",
+      "sha256": "b8d7e218e254800931fa8f143091b4e0dd293f7ede7688fa74dca2296cef9064"
+    },
+    {
+      "file": "scripts/prepare_sunwen_ground.py",
+      "sha256": "687a604013b34301afc4ba1dab70d670372822bc42de8427d9e0728e3681296b"
+    },
+    {
+      "file": "scripts/retire_legacy_lotus.mjs",
+      "sha256": "39e903ec6655a81e5d161abc246a8896b83520f26326b5d1bb84f42b23e7baa3"
+    },
+    {
+      "file": "blender/sunwen_architecture.py",
+      "sha256": "d4eef97b2535c12ec0ee3ea23564ca9c108701e44b36cd5613542c5ba3b8f23d"
+    },
+    {
+      "file": "blender/install_sunwen_landscape.py",
+      "sha256": "7358f756e658b8ee015d9e5680912740aee22f8ee4135284bb50679392ed2870"
+    },
+    {
+      "file": "blender/sunwen_landscape_lod.py",
+      "sha256": "72fb3627c3ea3aeac2645e26ce002ba98dea71280c5892fb003548ec7808d1e0"
+    },
+    {
+      "file": "blender/reduce_sunwen_mobile.py",
+      "sha256": "a815cef2aa5359235fbcad426954068294e0c333c457a87e168f66e69ca20cdf"
+    },
+    {
+      "file": "blender/native_ground.py",
+      "sha256": "de21340a6064cd78035704c7bedeee0fb4199a25d6a747a3d51f1fe310744056"
+    },
+    {
+      "file": "blender/sunwen_botany.py",
+      "sha256": "46fa6786747cce20fe4ffe66ed9f62dd3e0461b37c1989e9eb460eb7abd3342b"
+    },
+    {
+      "file": "blender/sunwen_ornaments.py",
+      "sha256": "e141b78b36417156f70e971b6c6ce838976298fb44973c55c6bab7111f1da51c"
+    },
+    {
+      "file": "blender/refine_sunwen_garden.py",
+      "sha256": "512e4068c09c332f08d291888ce287e2898d396ee989a416b5eb0db6059b7fd7"
+    },
+    {
+      "file": "scripts/prepare_sunwen_surfaces.py",
+      "sha256": "c77c6f7a699dcad00053f0ffae11bb7aa871a3bbb637ace217b11e5f2adad62c"
+    },
+    {
+      "file": "config/garden.grounding.json",
+      "sha256": "0e029a73178607470ccda551fd5030385e96d8ad50dfdc65cc09c9b03c0ded2f"
+    },
+    {
+      "file": "scripts/garden_ground_fields.py",
+      "sha256": "f0612a7db3ba801241b08106d2d491cf2be58b35cb817a5b4ff81846142a76b6"
+    },
+    {
+      "file": "blender/extract_garden_grounding.py",
+      "sha256": "25aa92461add6583820be5a0f0ac90c7a22705208b1f79b72064e653b73ae5d0"
+    },
+    {
+      "file": "blender/install_garden_grounding.py",
+      "sha256": "a9a7f87a23a1e3c08f86295c98cf670032d39e4a4caa1b90d210b4a76c142ce3"
+    },
+    {
+      "file": "blender/export_scene.py",
+      "sha256": "310187520f8c1315efd59a7cf3b98767d0a5d187b38da56c804918046bc12751"
+    },
+    {
+      "file": "assets/processed/grounding-r21/plan.json",
+      "sha256": "22c515331eb73607cc1e2d079e4f34483b98e019f07a8f347ac46644f4540921"
+    }
+  ],
+  "visualReferences": [
+    {
+      "file": "references/sunwen/originals/001.jpg",
+      "sha256": "1ed2f698b218dac26da2b587e0f081e15a9727ee0430367458b8b74c52a9b33b"
+    },
+    {
+      "file": "references/sunwen/originals/044.jpg",
+      "sha256": "c083a80b19b8fe68cd698c27d6484b93941b52c5519289688c66cdab281d6dd0"
+    },
+    {
+      "file": "references/sunwen/originals/045.jpg",
+      "sha256": "cafb73feb2d344e312bcf88390b1a9972974298a0f24e87cce57b61914d8c692"
+    },
+    {
+      "file": "references/sunwen/originals/046.jpg",
+      "sha256": "6f9042b7f6133c8290f041f39390dece429e3aaf03dfcbf8b3613b7fb77f8617"
+    },
+    {
+      "file": "references/sunwen/originals/047.jpg",
+      "sha256": "caf4991c3e46979be3a3057e9c190bb71dcb0ebad4ce8cbef322e4a979f4f9ac"
+    },
+    {
+      "file": "references/sunwen/originals/048.jpg",
+      "sha256": "180d9c559afbf00572466d625df72d85a9ae4c7340bd816f0ca1e5050ed0d131"
+    },
+    {
+      "file": "references/sunwen/originals/049.jpg",
+      "sha256": "ccd2e2faecb749fd7253f86b39fc3448cb1d8804388cac726b82506f14d7608b"
+    },
+    {
+      "file": "references/sunwen/originals/050.jpg",
+      "sha256": "04a79d420e7061c92a352923a985cb6a6d2b56c329576fda8f68f455835b2b25"
+    },
+    {
+      "file": "references/sunwen/originals/051.jpg",
+      "sha256": "85220c5f0254c09fd07e98c00b8018a5c23d11dfe7ba5d12a48f3009f01cd96d"
+    },
+    {
+      "file": "references/sunwen/originals/052.jpg",
+      "sha256": "9a00b9cc27c2bca891cc2aa4821f11fa5bc0fedcbde3f72e2a77c0533a0cf36d"
+    },
+    {
+      "file": "references/sunwen/originals/053.jpg",
+      "sha256": "726b8434aae423065b1f716392f8f6497ed34233fb8efd8019b2a38200ab1267"
+    },
+    {
+      "file": "references/sunwen/originals/054.jpg",
+      "sha256": "cd886ae67cf31903c5c9027e16c96f0b32ae89b35ad77c410213f05a93c19754"
+    },
+    {
+      "file": "references/sunwen/originals/055.jpg",
+      "sha256": "3e702c4d3dde4b0eacec7a46e0357c5f5ec19aad86b3141935ba55142d4fbe77"
+    },
+    {
+      "file": "references/sunwen/originals/056.jpg",
+      "sha256": "d1766403dbb39f39ebd2fb2183a82ccfa6f0122f8447614813c5d60898f93327"
+    },
+    {
+      "file": "references/sunwen/originals/057.jpg",
+      "sha256": "5fd3878565edb8936ebc0d955469a850db61cc1a1f1d991be0db0002f426230d"
+    },
+    {
+      "file": "references/sunwen/originals/058.jpg",
+      "sha256": "8ad4a00df2cb0362ab52654ed15d37c2f5029884383cd7c2957c6d751342b298"
+    },
+    {
+      "file": "references/sunwen/originals/059.jpg",
+      "sha256": "2b3dc629afbd5271db9feff27a22a3579c1529e520457fabe35c0e6c04b4efd2"
+    },
+    {
+      "file": "references/sunwen/originals/060.jpg",
+      "sha256": "abb83fcd7a8241313003ae33abde0a6ccea17c20bf8b250c89a18462ae818d9b"
+    },
+    {
+      "file": "references/sunwen/originals/061.jpg",
+      "sha256": "5612343b8d395d8bc5b08450083fbf774937867762ffb767e4e1fed1e042f6c8"
+    },
+    {
+      "file": "references/sunwen/originals/062.jpg",
+      "sha256": "14949e260b7090feb5155565cdb461fa7092dcd78e708b7cb64b071c8883e877"
+    },
+    {
+      "file": "references/sunwen/originals/063.jpg",
+      "sha256": "9e7891c5f277cf7e54195ce641ca0dbef15e6be7e123232c0f6be04c813f9f5e"
+    },
+    {
+      "file": "references/sunwen/originals/064.jpg",
+      "sha256": "26e01fa0c159acfa1f81473bf4c79ecbe7598cf1ab176fc7374eb0ac7f803d37"
+    },
+    {
+      "file": "references/sunwen/originals/065.jpg",
+      "sha256": "d631702b164e26bfc9312ba507bda470507dc0160000f99183993a9bdc0b915a"
+    },
+    {
+      "file": "references/sunwen/originals/066.jpg",
+      "sha256": "fe2fd9cba63b73c70b493fa14f81a6a9b50b9772bfd5ad43a5c7bbcd52bf3b9e"
+    },
+    {
+      "file": "references/sunwen/originals/067.jpg",
+      "sha256": "c6df0388b56dfb836548868e278f030b2428c39463726b15335fe5a45100e271"
+    },
+    {
+      "file": "references/sunwen/originals/071.jpg",
+      "sha256": "db4d572a1789529065be72c908ed3ebc5efbe9b3011ac5b70087a557af6dade3"
+    },
+    {
+      "file": "references/sunwen/originals/076.jpg",
+      "sha256": "36963ffe56e07b1893184ecba365504f0eb2f89ecc0210ea8d8c9000256d2974"
+    },
+    {
+      "file": "references/sunwen/originals/077.jpg",
+      "sha256": "59c07a90486e730f62dd8d65cc97ed31a41a2c7e1b4d2dcaf20fc0792db8c76e"
+    },
+    {
+      "file": "references/sunwen/originals/091.jpg",
+      "sha256": "e4c238cb79cf303ada9fe6ad89dfee37a137d24c60617867a8849d05ab0a9a0d"
+    },
+    {
+      "file": "references/sunwen/originals/092.jpg",
+      "sha256": "c6183e161e53d1ea9d2949df5876cd62e1f19a89931ff4e4dfdc0142b35ed94b"
+    },
+    {
+      "file": "references/sunwen/originals/093.jpg",
+      "sha256": "8f95968dc35d2e4e95fc1bcf8ce51ed20a1af238ee5e34cddcb47fc46d4de54c"
+    },
+    {
+      "file": "references/sunwen/originals/095.jpg",
+      "sha256": "c87f8037a3f1f35889e13f44b87bcde3ae83660cbf48c07b451eed13a2d407fa"
+    },
+    {
+      "file": "references/sunwen/originals/096.jpg",
+      "sha256": "a63e8b1926c595dfd0dc1ee26ea7bf96163ad35bd86fcf7e3d202aef352ba32a"
+    },
+    {
+      "file": "references/sunwen/originals/097.jpg",
+      "sha256": "bfaf10cf993b84222fbbdf2b3d7b1f2ec3c6be9637622dcc77e914b3fa9e7c76"
+    },
+    {
+      "file": "references/sunwen/originals/098.jpg",
+      "sha256": "ee9b5076ee5ac98d1751b63c62df5e50068ba7d0ff18da20821e6a6034f7cc11"
+    },
+    {
+      "file": "references/sunwen/originals/099.jpg",
+      "sha256": "eb16ff660547c8fc4c1a4c4cdcdd60b6f409e02d1995ceae31d6b0a0705e06bc"
+    },
+    {
+      "file": "references/sunwen/originals/100.jpg",
+      "sha256": "14992d2889e25b79b41a19b0e71ea82ee54e6ba50293104955346939308f3532"
+    },
+    {
+      "file": "references/sunwen/originals/108.jpg",
+      "sha256": "957cbba80c635622fff45bf3a276019bc64165624022e573a3222690176ebab3"
+    },
+    {
+      "file": "references/sunwen/originals/127.jpg",
+      "sha256": "5a4027069760c450fb7def8c885b9b6b8ead35b1bf1d617809df2f9746893fe0"
+    },
+    {
+      "file": "references/sunwen/originals/136.jpg",
+      "sha256": "aff2c8d0392d36d302f3b6a0c609a0fb1849d93d318250fdd031e70bb2e78b22"
+    },
+    {
+      "file": "references/sunwen/originals/146.jpg",
+      "sha256": "cb989700ea688d3a5b375a1f6457c4a6ddb393d4d79a446007c738cc4aabc48d"
+    },
+    {
+      "file": "references/sunwen/originals/158.jpg",
+      "sha256": "7bc6b058f946fa41f2083ce0c112b0ed2a00634dfaeff32f21a6b550064a727e"
+    }
+  ],
+  "derivatives": [
+    {
+      "file": "public/models/vegetation/scholar-tree.glb",
+      "sha256": "c250cdfed0cc6aa84985dffe26b2bfa6e80df0dc91688dbe91d874a9d3cb2e23"
+    },
+    {
+      "file": "public/models/vegetation/ginkgo.glb",
+      "sha256": "2615f950e6e33da96b08027948f8e23dc51cff723b5e9bc3651be705af25d931"
+    },
+    {
+      "file": "public/models/vegetation/chinese-pine.glb",
+      "sha256": "4fab6257bb675155bed530a02ac8e035bb177cc7e5e228f6cc088071fbdbe193"
+    },
+    {
+      "file": "public/models/vegetation/shrub.glb",
+      "sha256": "f3457c6e993f784f7ce1f0c2c4a7844c30e7d40f42206edf3a9331a154b65357"
+    },
+    {
+      "file": "public/models/vegetation/willow.glb",
+      "sha256": "0f29b6d87929e650b29a252e1488129ab20ea32c2401512850f46a779f431723"
+    },
+    {
+      "file": "public/models/vegetation/crabapple.glb",
+      "sha256": "47e5a4bea9e5d20f2e4e7817d6f4ecd9e1dc7d1d0762e9de3b860aa73cd99b41"
+    },
+    {
+      "file": "public/models/vegetation/white-blossom.glb",
+      "sha256": "509ca1d696cc6b72fc6322e3a465ad2bdc946bc98e02b1f0e5986d30aa8a640f"
+    },
+    {
+      "file": "public/models/vegetation/red-maple.glb",
+      "sha256": "f5a37d2a0f507d42d0f00d52a9c87602492bc137439fdfa1cbcff6be2a6ee855"
+    },
+    {
+      "file": "public/models/vegetation/iris.glb",
+      "sha256": "37cd3eaf2ab0beffee7608e209d73443acd5bf2cd6d45ab5ee94f4f3601925c9"
+    },
+    {
+      "file": "public/models/vegetation/peony.glb",
+      "sha256": "df16a7869f3a7cf4a5be98fa9340b14d67fac570ba132e94644f2f99f93a7967"
+    },
+    {
+      "file": "public/models/vegetation/lotus.glb",
+      "sha256": "5b4afc4c464c2d4e38b0799f5f24839d3851d8f22eef3c39372cd9f03c948890"
+    },
+    {
+      "file": "public/models/vegetation/chrysanthemum.glb",
+      "sha256": "37eeff4c8b36cf9b968d93d81e09d5fad301eb11d809ba6189f627fb537dc1dc"
+    },
+    {
+      "file": "public/models/vegetation/orchid.glb",
+      "sha256": "37bb887153ec8d88334a3842495f596403ed0ab0f32fec2ae5c6bc69abdb7491"
+    },
+    {
+      "file": "public/urban-context.json",
+      "sha256": "54b5a32238aec20d67baacb73849ba68b81a7539b14dff4e0b82d32a3199490c"
+    },
+    {
+      "file": "public/models/urban-context.glb",
+      "sha256": "05959ff28aa74b75eced1e1be653934ae65f08156b8e48ac5862cfb70797b837"
+    },
+    {
+      "file": "public/architecture-scenes.json",
+      "sha256": "8f4fbe616699829bd7c164f16e07e23e32be460331e5c2e14e67606e84169797"
+    },
+    {
+      "file": "public/models/sunwen-landscape.glb",
+      "sha256": "ac5354be6f2186141907aa9b033f8857e32cf98f278910ee72e702df24b147ba"
+    },
+    {
+      "file": "public/models/sunwen-landscape-low.glb",
+      "sha256": "5f3b2ba088727b32040e45dbca700dc55eeac38926de82be522988234c5e14b4"
+    },
+    {
+      "file": "public/textures/ground/garden-ground.webp",
+      "sha256": "0fa2fe52f3cf4b9e869110889027bb0a810bf87f75b64e4b6be2a4ad53e91e91"
+    },
+    {
+      "file": "public/textures/ground/garden-ground-zones.png",
+      "sha256": "676eecfeec7e42d0520452a02e8dd71af6e4ee6d70ca1f2e85e5139ef40cd4de"
+    },
+    {
+      "file": "public/models/sunwen-architecture.glb",
+      "sha256": "f76adf03fc03d7398d4628bcee9b41b4f47938b6a627c508713fc30bc332334b"
+    },
+    {
+      "file": "public/models/sunwen-architecture-low.glb",
+      "sha256": "d8b226cf7b9de25842a55effa713046c073d43b6899c000a85c1db7acc6651e6"
+    },
+    {
+      "file": "public/textures/vegetation/canopy-atlas.webp",
+      "sha256": "85e10a85fd505bcbedac51c1425daa1bbeeb14d46951d9e5cdb94ae2cff2a62c"
+    },
+    {
+      "file": "public/textures/vegetation/canopy-atlas-low.webp",
+      "sha256": "f79ef784e93e235295540ef4176be9baaac0f0abbac8b97f55893d52f5adf99d"
+    },
+    {
+      "file": "public/textures/landscape-light.webp",
+      "sha256": "7161ea642f8d3c97eab0a42123df3fe446da6c500c22db71fdc57288d573507f"
+    },
+    {
+      "file": "public/textures/landscape-light-low.webp",
+      "sha256": "8399c208a43e4c645894ae95cb3a09426190e0bbe66786eb0636057cd7cff7fb"
+    }
+  ]
+}

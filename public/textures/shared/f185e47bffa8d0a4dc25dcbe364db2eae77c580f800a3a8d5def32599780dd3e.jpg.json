@@ -1,0 +1,17 @@
+{
+  "sha256": "f185e47bffa8d0a4dc25dcbe364db2eae77c580f800a3a8d5def32599780dd3e",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "bamboo",
+    "role": "silk",
+    "pigment": "#a8c3b5",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/bamboo-silk.png",
+    "sha256": "9c2aac4ed5d908659c0571eea11ca1a9218d6512e29e35f763848d7f8ac66b8b",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sha256": "1ff29b3b78f9907cf658c083cd9a9e619145eeac14e4cbb3bc4a4095dc9e700e",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "ceremonial",
+    "role": "darkwood",
+    "pigment": "#426056",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/ceremonial-darkwood.png",
+    "sha256": "02e4435f4286968c48c74f7d266ca097986377aabc066be2a18aecf96b25ca93",
+    "source": {
+      "file": "assets/processed/materials-r15/darkwood_diff.png",
+      "sha256": "f9843750e5267d2fe17135fc0a26058461a70bcbcd98ff7b6f06637275acfb2e"
+    }
+  }
+}

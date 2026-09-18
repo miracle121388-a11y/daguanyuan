@@ -1,0 +1,18 @@
+{
+  "sha256": "119119467523fed4ccc1fca825257a6385693fc1fa6f19358353b644b995563b",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "warm",
+    "role": "plaster",
+    "pigment": "#f1e2c8",
+    "roughness": 0.84,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/warm-plaster.png",
+    "sha256": "a828ff6b9d2b8c6885c5bf8175fcb1518083502eb587a8cc209cbf095bdcf969",
+    "source": {
+      "file": "assets/processed/materials-r15/plaster_diff.png",
+      "sha256": "aa7086e0b6af67efe08ba1cfb2bcf0637ac4953eb2f0b38bb7d68632aa9b2d7c"
+    }
+  }
+}

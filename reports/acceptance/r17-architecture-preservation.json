@@ -1,0 +1,141 @@
+{
+  "revision": "spatial-garden-20260917-r18",
+  "rows": [
+    {
+      "file": "public/models/places-low/daguanyuan_gate.glb",
+      "removedArchitectureMeshes": 14,
+      "addedArchitectureMeshes": 14,
+      "retainedMeshes": 3,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1
+    },
+    {
+      "file": "public/models/places-low/qujingtongyou.glb",
+      "removedArchitectureMeshes": 0,
+      "addedArchitectureMeshes": 0,
+      "retainedMeshes": 3,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1
+    },
+    {
+      "file": "public/models/places-low/xiaoxiangguan.glb",
+      "removedArchitectureMeshes": 23,
+      "addedArchitectureMeshes": 23,
+      "retainedMeshes": 10,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4
+    },
+    {
+      "file": "public/models/places-low/yihongyuan.glb",
+      "removedArchitectureMeshes": 25,
+      "addedArchitectureMeshes": 25,
+      "retainedMeshes": 12,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4
+    },
+    {
+      "file": "public/models/places-low/hengwuyuan.glb",
+      "removedArchitectureMeshes": 25,
+      "addedArchitectureMeshes": 25,
+      "retainedMeshes": 9,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4
+    },
+    {
+      "file": "public/models/places-low/qiushuangzhai.glb",
+      "removedArchitectureMeshes": 26,
+      "addedArchitectureMeshes": 26,
+      "retainedMeshes": 8,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4
+    },
+    {
+      "file": "public/models/places-low/daoxiangcun.glb",
+      "removedArchitectureMeshes": 8,
+      "addedArchitectureMeshes": 8,
+      "retainedMeshes": 2,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1
+    },
+    {
+      "file": "public/models/places-low/ouxiangxie.glb",
+      "removedArchitectureMeshes": 17,
+      "addedArchitectureMeshes": 17,
+      "retainedMeshes": 1,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1
+    },
+    {
+      "file": "public/models/places-low/dicuiting.glb",
+      "removedArchitectureMeshes": 9,
+      "addedArchitectureMeshes": 9,
+      "retainedMeshes": 0,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1
+    },
+    {
+      "file": "public/models/places-low/luxuean.glb",
+      "removedArchitectureMeshes": 7,
+      "addedArchitectureMeshes": 7,
+      "retainedMeshes": 2,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1
+    },
+    {
+      "file": "public/models/places-low/tubishanzhuang.glb",
+      "removedArchitectureMeshes": 14,
+      "addedArchitectureMeshes": 14,
+      "retainedMeshes": 3,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1
+    },
+    {
+      "file": "public/models/places-low/aojingxiguan.glb",
+      "removedArchitectureMeshes": 14,
+      "addedArchitectureMeshes": 14,
+      "retainedMeshes": 3,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 1
+    },
+    {
+      "file": "public/models/places-low/daguanlou.glb",
+      "removedArchitectureMeshes": 24,
+      "addedArchitectureMeshes": 24,
+      "retainedMeshes": 8,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4
+    },
+    {
+      "file": "public/models/places-low/longcuian.glb",
+      "removedArchitectureMeshes": 23,
+      "addedArchitectureMeshes": 23,
+      "retainedMeshes": 4,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4
+    },
+    {
+      "file": "public/models/places-low/nuanxiangwu.glb",
+      "removedArchitectureMeshes": 23,
+      "addedArchitectureMeshes": 23,
+      "retainedMeshes": 5,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 4
+    },
+    {
+      "file": "public/models/overview.glb",
+      "removedArchitectureMeshes": 252,
+      "addedArchitectureMeshes": 252,
+      "retainedMeshes": 83,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 36
+    },
+    {
+      "file": "public/models/overview-low.glb",
+      "removedArchitectureMeshes": 252,
+      "addedArchitectureMeshes": 252,
+      "retainedMeshes": 83,
+      "retainedGeometryHashesMatch": true,
+      "semanticNodes": 36
+    }
+  ]
+}

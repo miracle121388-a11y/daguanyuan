@@ -1,0 +1,18 @@
+{
+  "sha256": "544bf03f63a365270e7fe0d9eb8c993a0804c203ad2bd0e6a59ff3b5fbe4d6cb",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "temple",
+    "role": "tile",
+    "pigment": "#7c8580",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/temple-tile.png",
+    "sha256": "dccbcdf903b75fa4a6b63a9419333972b7376894c33593509c60376c2e9fa29c",
+    "source": {
+      "file": "assets/processed/materials-r15/tile_diff.png",
+      "sha256": "0228148a26676a50576db343b0167a2e27221c06bfa5f8351b6850cdf0757977"
+    }
+  }
+}

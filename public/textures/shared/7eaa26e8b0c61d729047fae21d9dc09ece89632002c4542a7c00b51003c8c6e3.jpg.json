@@ -1,0 +1,18 @@
+{
+  "sha256": "7eaa26e8b0c61d729047fae21d9dc09ece89632002c4542a7c00b51003c8c6e3",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "gardenstone",
+    "pigment": "#6c927f",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-gardenstone.png",
+    "sha256": "776ae9f86a63a826c49ff3a63a061f0379c6c33540377fe9f69665f2aa4b44b8",
+    "source": {
+      "file": "assets/processed/materials-r15/gardenstone_diff.png",
+      "sha256": "6c78f4659c35f315dac5340686ff9ca5d12f91c941e92d565a7d290abb1ce2df"
+    }
+  }
+}

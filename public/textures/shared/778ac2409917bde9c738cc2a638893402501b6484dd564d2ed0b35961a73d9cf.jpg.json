@@ -1,0 +1,18 @@
+{
+  "sha256": "778ac2409917bde9c738cc2a638893402501b6484dd564d2ed0b35961a73d9cf",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "hill",
+    "role": "darkwood",
+    "pigment": "#6b574b",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/hill-darkwood.png",
+    "sha256": "5045439abea56c9f5d6f77532c86597037ecc89ae209e001a9e7f04f5a47d920",
+    "source": {
+      "file": "assets/processed/materials-r15/darkwood_diff.png",
+      "sha256": "f9843750e5267d2fe17135fc0a26058461a70bcbcd98ff7b6f06637275acfb2e"
+    }
+  }
+}

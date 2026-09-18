@@ -12,7 +12,7 @@ const worker=process.env.GARDEN_MODEL_WORKER;
 const filter=process.env.GARDEN_MODEL_FILTER?.split(',');
 const previous=filter?JSON.parse(readFileSync('reports/acceptance/model-optimization.json','utf8')):[];
 const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'draco3d.decoder':await draco3d.createDecoderModule(),'draco3d.encoder':await draco3d.createEncoderModule()});
-const files=['public/models/overview.glb','public/models/overview-low.glb',...['places','places-low','vegetation'].flatMap(dir=>readdirSync('public/models/'+dir).filter(f=>f.endsWith('.glb')).map(f=>'public/models/'+dir+'/'+f))];
+const files=['public/models/overview.glb','public/models/overview-low.glb',...(existsSync('public/models/urban-context.glb')?['public/models/urban-context.glb']:[]),...(existsSync('public/models/sunwen-architecture.glb')?['public/models/sunwen-architecture.glb','public/models/sunwen-architecture-low.glb']:[]),...(existsSync('public/models/sunwen-landscape.glb')?['public/models/sunwen-landscape.glb','public/models/sunwen-landscape-low.glb']:[]),...['places','places-low','vegetation'].flatMap(dir=>readdirSync('public/models/'+dir).filter(f=>f.endsWith('.glb')).map(f=>'public/models/'+dir+'/'+f))];
 mkdirSync('public/draco',{recursive:true});for(const f of ['draco_decoder.js','draco_decoder.wasm','draco_wasm_wrapper.js'])copyFileSync('node_modules/three/examples/jsm/libs/draco/gltf/'+f,'public/draco/'+f);
 for(const f of ['LICENSE','AUTHORS'])copyFileSync('references/licenses/draco-'+f,'public/draco/'+f);
 const reports=[];mkdirSync('assets/processed/baseline',{recursive:true});

@@ -1,0 +1,18 @@
+{
+  "sha256": "e31531dcf459b5d9e80a8ddac04a8aa1b482703329a3b2918bce9becc1545a51",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "rusticwood",
+    "pigment": "#ae945f",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-rusticwood.png",
+    "sha256": "f4987bb300fe45bd09d8a0b96f3d97fe771dacd98c71d0c60325c81bcf4dfead",
+    "source": {
+      "file": "assets/processed/materials-r15/rusticwood_diff.png",
+      "sha256": "8ed5e04bd53175e5100348ec6d8ac0f25f2895dc6212c8c2d7709df31fb07efb"
+    }
+  }
+}

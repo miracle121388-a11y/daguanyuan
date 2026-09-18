@@ -1,0 +1,17 @@
+{
+  "sha256": "c4f1a90edf8d89436163e83f151167af20c4fecbddd47835fa3712f632d2f950",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "warm",
+    "role": "gold",
+    "pigment": "#d7bb86",
+    "roughness": 0.48,
+    "metallic": 0.25,
+    "file": "assets/processed/sunwen-r17/warm-gold.png",
+    "sha256": "8ce80e0d8eafd374a6734393878abdfc2b2df2e40f499ac8a79e607a4144cc5f",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

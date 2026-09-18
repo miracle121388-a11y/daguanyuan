@@ -1,0 +1,303 @@
+{
+  "revision": "r18",
+  "standard": "孙温《红楼梦》清代工笔重彩贵族园林：共同的曲檐、粉墙、木构与矿物设色，各处以比例、门窗、彩绘密度和临景关系区别。",
+  "evidenceBoundary": "建筑名称来自用户要求及已存文学资料；新增体量、尺度、位置、纹样和颜料色值为三维设计解释。缀锦楼与大观楼东侧的缀锦阁分开，不混同命名。新增三景不改写 canon、人物居处、原有地点坐标与行走图。",
+  "referencePlates": [
+    "SW047",
+    "SW048",
+    "SW049",
+    "SW052",
+    "SW054",
+    "SW055",
+    "SW064",
+    "SW077",
+    "SW092",
+    "SW096",
+    "SW098",
+    "SW099",
+    "SW108",
+    "SW136"
+  ],
+  "places": {
+    "yihongyuan": {
+      "name": "怡红院",
+      "profile": "crimson",
+      "motif": "begonia",
+      "richness": 1.0,
+      "gate": "hanging-lotus",
+      "features": [
+        "朱红抱柱、石绿窗格、海棠式花心",
+        "双层彩绘额枋、垂莲门罩、藕粉帘额",
+        "廊下花牙子与明亮素墙相衬"
+      ],
+      "character": "红香绿玉 · 华美闺阁"
+    },
+    "xiaoxiangguan": {
+      "name": "潇湘馆",
+      "profile": "bamboo",
+      "motif": "bamboo",
+      "richness": 0.23,
+      "gate": "slender",
+      "features": [
+        "黛青小瓦、竹青细木",
+        "疏朗竹节窗格、素色纸窗",
+        "窄檐书舍与轻巧门罩"
+      ],
+      "character": "竹影书声 · 清幽秀雅"
+    },
+    "hengwuyuan": {
+      "name": "蘅芜苑",
+      "profile": "herbal",
+      "motif": "rectilinear",
+      "richness": 0.1,
+      "gate": "plain",
+      "features": [
+        "灰绿卷棚、米白墙面",
+        "方整素木窗格、细窄回纹",
+        "对称门罩与低矮石座"
+      ],
+      "character": "蘅芷清芬 · 端整素雅"
+    },
+    "qiushuangzhai": {
+      "name": "秋爽斋",
+      "profile": "study",
+      "motif": "diamond",
+      "richness": 0.38,
+      "gate": "wide",
+      "features": [
+        "明朗青瓦、栗色木构",
+        "宽额枋、疏朗菱格、横向书斋长窗",
+        "开阔正厅与伸展的前檐"
+      ],
+      "character": "桐剪秋风 · 开阔书斋"
+    },
+    "daoxiangcun": {
+      "name": "稻香村",
+      "profile": "rustic",
+      "motif": "woven",
+      "richness": 0.05,
+      "gate": "arbor",
+      "features": [
+        "精整茅脊、暖赭木构",
+        "细竹编窗、木棚与篱门",
+        "整齐檐口与朴素门枕石"
+      ],
+      "character": "杏帘在望 · 精致田园"
+    },
+    "ouxiangxie": {
+      "name": "藕香榭",
+      "profile": "waterside",
+      "motif": "lotus",
+      "richness": 0.52,
+      "gate": "none",
+      "features": [
+        "四面开敞、退收折扇窗",
+        "纤细柱身、荷瓣栏板与坐槛",
+        "水色灰瓦与轻盈曲廊"
+      ],
+      "character": "荷风四面 · 水榭通明"
+    },
+    "longcuian": {
+      "name": "栊翠庵",
+      "profile": "temple",
+      "motif": "octagon",
+      "richness": 0.08,
+      "gate": "quiet",
+      "features": [
+        "墨青瓦、暖灰粉墙",
+        "素木八角窗、低调素枋",
+        "小庵门罩与安静的廊角"
+      ],
+      "character": "梅影禅心 · 清净孤洁"
+    },
+    "nuanxiangwu": {
+      "name": "暖香坞",
+      "profile": "warm",
+      "motif": "rounded",
+      "richness": 0.43,
+      "gate": "soft",
+      "features": [
+        "暖灰瓦、蜜色木构",
+        "圆角冰纹窗、杏粉帘额",
+        "柔和浅檐与小尺度坐槛"
+      ],
+      "character": "画帘温香 · 柔和安适"
+    },
+    "tubishanzhuang": {
+      "name": "凸碧山庄",
+      "profile": "hill",
+      "motif": "cross",
+      "richness": 0.38,
+      "gate": "none",
+      "features": [
+        "山巅横厅、青碧瓦面",
+        "开阔观景台与疏栏",
+        "高处宴集的通长额枋"
+      ],
+      "character": "高台清赏 · 临风望月"
+    },
+    "aojingxiguan": {
+      "name": "凹晶溪馆",
+      "profile": "moon",
+      "motif": "moon",
+      "richness": 0.28,
+      "gate": "none",
+      "features": [
+        "低檐卷棚、月白墙面",
+        "月轮窗饰与水纹栏板",
+        "溪岸小坐、与山庄形成高低对景"
+      ],
+      "character": "溪光月影 · 低檐临水"
+    },
+    "daguanlou": {
+      "name": "大观楼",
+      "profile": "ceremonial",
+      "motif": "cloud",
+      "richness": 0.82,
+      "gate": "none",
+      "features": [
+        "金瓦朱柱、层檐楼阁",
+        "石青石绿彩枋、细金线收边",
+        "上下层与两翼保持明确尊卑"
+      ],
+      "character": "金碧层楼 · 省亲仪景"
+    },
+    "daguanyuan_gate": {
+      "name": "大观园入口",
+      "profile": "ceremonial",
+      "motif": "cloud",
+      "richness": 0.58,
+      "gate": "none",
+      "features": [
+        "五间门庭与白石台基",
+        "精细木构与青绿额枋",
+        "尊贵而整洁的入园尺度"
+      ],
+      "character": "重门启园 · 雅正端庄"
+    },
+    "dicuiting": {
+      "name": "滴翠亭",
+      "profile": "pavilion",
+      "motif": "lotus",
+      "richness": 0.35,
+      "gate": "none",
+      "features": [
+        "小巧攒尖亭、清碧檐缘",
+        "细栏与云牙挂落",
+        "以亭柱框取水色"
+      ],
+      "character": "滴翠流光 · 玲珑小亭"
+    },
+    "luxuean": {
+      "name": "芦雪庵",
+      "profile": "rustic",
+      "motif": "woven",
+      "richness": 0.06,
+      "gate": "none",
+      "features": [
+        "芦苇茅檐、竹编门窗",
+        "细木额枋与小坐槛",
+        "临水村舍的诗社尺度"
+      ],
+      "character": "芦汀雪意 · 素朴诗舍"
+    },
+    "qujingtongyou": {
+      "name": "曲径通幽",
+      "profile": "herbal",
+      "motif": "rectilinear",
+      "richness": 0.08,
+      "gate": "none",
+      "features": [
+        "入口山石仍为主景",
+        "只添小尺度素木框景构件"
+      ],
+      "character": "石径回环 · 障景入园"
+    },
+    "zilingzhou": {
+      "name": "紫菱洲",
+      "profile": "purple",
+      "motif": "diamond",
+      "richness": 0.35,
+      "gate": "none",
+      "features": [
+        "低临水台、转折坐栏与轻亭",
+        "黛青瓦面配淡藕紫额枋",
+        "与缀锦楼形成低高相望的景观组群"
+      ],
+      "character": "菱花水岸 · 低亭借景"
+    },
+    "zhuijinlou": {
+      "name": "缀锦楼",
+      "profile": "brocade",
+      "motif": "brocade",
+      "richness": 0.72,
+      "gate": "none",
+      "features": [
+        "两层楼阁、错落双檐",
+        "上层环廊与锦纹栏杆",
+        "下层素墙花窗衬出楼阁层次"
+      ],
+      "character": "锦窗叠阁 · 层楼含秀"
+    },
+    "jiayintang": {
+      "name": "嘉荫堂",
+      "profile": "gathering",
+      "motif": "cross",
+      "richness": 0.38,
+      "gate": "none",
+      "features": [
+        "三间横厅、前廊敞开",
+        "疏栏坐槛、侧屏与雅集长案",
+        "正面留出完整观景与会聚空间"
+      ],
+      "character": "嘉荫雅集 · 敞厅观园"
+    }
+  },
+  "additionalScenes": [
+    {
+      "id": "zilingzhou",
+      "name": "紫菱洲",
+      "position": [
+        80,
+        -25,
+        0
+      ],
+      "size": [
+        9,
+        6
+      ],
+      "height": 4.0,
+      "interpretation": "在现有东岸布置低亭与临景台，不另挖水面、不移动岸线。"
+    },
+    {
+      "id": "zhuijinlou",
+      "name": "缀锦楼",
+      "position": [
+        87,
+        4,
+        0
+      ],
+      "size": [
+        12,
+        8
+      ],
+      "height": 10.0,
+      "interpretation": "与紫菱洲低亭组成景观组群；此楼为新建的迎春居处意象，不是省亲组群中的缀锦阁。"
+    },
+    {
+      "id": "jiayintang",
+      "name": "嘉荫堂",
+      "position": [
+        -72,
+        50,
+        0
+      ],
+      "size": [
+        13,
+        7
+      ],
+      "height": 5.0,
+      "interpretation": "在现有西岸留白处营造敞厅，朝水借景；具体位置不作原著实测断言。"
+    }
+  ]
+}

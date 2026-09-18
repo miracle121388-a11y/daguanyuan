@@ -1004,12 +1004,14 @@
       "promptKind": "source-origin",
       "sources": [
         {
-          "path": "public/art/xiaoxiangguan-day.webp",
+          "path": "references/dream-scene-sources/xiaoxiangguan-day.webp",
           "sha256": "8e773c08b7fb30458f8ca1c1aa40ffc54fdf80a09d4042de48f7ea64636258f2",
-          "catalog": "public/art/manifest.json",
+          "catalog": "references/dream-scene-sources/manifest.json",
           "sourceId": "xiaoxiangguan-day",
           "prompt": "Use case: precise-object-edit. This image is the edit target, Xiaoxiangguan from Dream of the Red Chamber. Preserve the EXACT three-bay small house, tile profile, open center bay and desk, timber windows, bent left corridor, background rear rooms, pear tree and banana, bamboo edge framing, camera and exquisite photoreal light. Correct ONLY the ground, water and excessive front flower plantings. The novel says the spring channel is barely one chi wide: approximately 25–35 CENTIMETERS. Replace ALL broad foreground and side pools with SOLID gently sloping mossy ground and a clearly continuous narrow pebble path to the front stairs. Leave only ONE delicate narrow stone-lined rill, 25–35 cm across, alongside the right wall and under bamboo, then briefly across the foreground edge. It must read as a tiny drainage-sized garden spring, NOT a pond, moat, lake, brook or island house. Remove ALL cascades and waterfalls, replace their drop with a modest shallow inlet in the rear wall at ground level. No broad water directly before the house, no bridge across a pool. Reduce pink flowering shrubs in the front courtyard; bamboo, moss and stone should dominate. Keep rear pear blossom as in the image. No added structures or people, no text, no major color or camera changes. Beautiful realistically buildable land-based residence, extremely clear masonry and ground continuity. ONE landscape image.",
-          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery."
+          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery.",
+          "originalPath": "public/art/xiaoxiangguan-day.webp",
+          "originalCatalog": "public/art/manifest.json"
         }
       ],
       "transform": {
@@ -1039,12 +1041,14 @@
       "promptKind": "source-origin",
       "sources": [
         {
-          "path": "public/art/yihongyuan-courtyard.webp",
+          "path": "references/dream-scene-sources/yihongyuan-courtyard.webp",
           "sha256": "d500f09a8bd4033a3fb7a502aa1371a7a173194c631564a28d7a111a579956c2",
-          "catalog": "public/art/manifest.json",
+          "catalog": "references/dream-scene-sources/manifest.json",
           "sourceId": "yihongyuan-courtyard",
           "prompt": "Use case: historical-scene. Create ONE photorealistic architectural environment image for a coherent Dream of the Red Chamber / Grand View Garden reference collection, intended as a later 3D modeling reference, not a modeled asset or a technical blueprint. Landscape 3:2 frame, highest available native detail, no collage. The user's provided garden image is a STYLE reference: borrow its credible stone, timber and tiles, sophisticated layered gardens, convincing reflections and exceptional natural light, not its exact buildings. This is a literary aristocratic private garden in a premodern Chinese setting, with Jiangnan craftsmanship; do not falsely date the novel to one precise dynasty. Give the image a captivating, specific spatial idea rather than generic television-period scenery. Deep focus and restrained architectural perspective, clear load-bearing columns, plausible eaves, contiguous paths and roof junctions, real material scale, visible bases and thresholds, keep key structures legible through planting. Finely textured lime plaster, grey clay tiles, naturally finished hardwood and worked limestone, restrained jade, warm parchment and botanical color. No people, modern objects, electric lights, impossible floating buildings, plastic CGI, anime, oversaturated red, endless identical red lanterns, Forbidden City composition, gratuitous golden roofs, captions, logos, watermark or readable signage.\n\nAsset: 怡红院·红香绿玉\nYihongyuan, Jia Baoyu's exquisite yet youthful residential courtyard. Chapter 17 anchor: interconnected covered corridors on both sides, several ornamental rocks in the courtyard, a group of broad-leaf banana plants on one side and ONE umbrella-shaped Xifu crabapple tree in delicate pale pink/red bloom on the other. A refined low residential main hall with slender timber framing, fine openwork carved windows, modest grey curved tile roof, pale plaster, finely cut stone thresholds. Interlocking carved screens glimpsed in the open central room, softly colored silk and a tiny hint of reflective mirror. No central pond invented in this courtyard. Slightly elevated three-quarter perspective from the entrance corner at roughly 4m height, show main facade and one side corridor, roof meeting points, paving and circulation continuously; avoid blocking the facade with flowers. Side sunlight through crabapple petals, a small area of luminous pink against deep banana green, tactile restrained wealth, memorable intimate spatial composition.",
-          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery."
+          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery.",
+          "originalPath": "public/art/yihongyuan-courtyard.webp",
+          "originalCatalog": "public/art/manifest.json"
         }
       ],
       "transform": {
@@ -1074,12 +1078,14 @@
       "promptKind": "source-origin",
       "sources": [
         {
-          "path": "public/art/hengwuyuan.webp",
+          "path": "references/dream-scene-sources/hengwuyuan.webp",
           "sha256": "bcc0817bcc58d88371cdc995607a049881a5c2fceda4afd58eb890dba8f4af98",
-          "catalog": "public/art/manifest.json",
+          "catalog": "references/dream-scene-sources/manifest.json",
           "sourceId": "hengwuyuan",
           "prompt": "Use case: historical-scene. Create ONE photorealistic architectural environment image for a coherent Dream of the Red Chamber / Grand View Garden reference collection, intended as a later 3D modeling reference, not a modeled asset or a technical blueprint. Landscape 3:2 frame, highest available native detail, no collage. The user's provided garden image is a STYLE reference: borrow its credible stone, timber and tiles, sophisticated layered gardens, convincing reflections and exceptional natural light, not its exact buildings. This is a literary aristocratic private garden in a premodern Chinese setting, with Jiangnan craftsmanship; do not falsely date the novel to one precise dynasty. Give the image a captivating, specific spatial idea rather than generic television-period scenery. Deep focus and restrained architectural perspective, clear load-bearing columns, plausible eaves, contiguous paths and roof junctions, real material scale, visible bases and thresholds, keep key structures legible through planting. Finely textured lime plaster, grey clay tiles, naturally finished hardwood and worked limestone, restrained jade, warm parchment and botanical color. No people, modern objects, electric lights, impossible floating buildings, plastic CGI, anime, oversaturated red, endless identical red lanterns, Forbidden City composition, gratuitous golden roofs, captions, logos, watermark or readable signage.\n\nAsset: 蘅芜苑·石骨幽芳\nHengwuyuan, Xue Baochai's exceptionally restrained courtyard. Chapter 17 anchors: tall exquisite perforated limestone scholar-rock mass screens the entrance and partly conceals the residence; a five-bay clean main house with a rolled ridge / barrel-curved roof canopy and covered verandas on four sides; green-tinted wooden windows and smoothly finished walls. The court contains NO flowering trees: no magnolia, cherry, peach or flowering shrub beds. Its beauty comes from strange fragrant low herbs, narrow-leaved grasses and fine creeping vines threading the rock holes, falling over ledges and lightly winding near steps. A three-quarter slightly elevated oblique view from beside the rock screen so the five-bay hall and circulation remain intelligible; limestone is weathered porous karst, not a pile of random boulders. Through one open window a nearly bare pale room, a plain earthenware vase with a few chrysanthemums, two books and tea utensils, muted blue gauze. After-rain overcast light with a soft cool shaft, silver limestone, desaturated pale olive and subtle amber timber; quietly arresting through sculptural negative space, no generic lush floral fantasy.",
-          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery."
+          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery.",
+          "originalPath": "public/art/hengwuyuan.webp",
+          "originalCatalog": "public/art/manifest.json"
         }
       ],
       "transform": {
@@ -1109,12 +1115,14 @@
       "promptKind": "source-origin",
       "sources": [
         {
-          "path": "public/art/daoxiangcun.webp",
+          "path": "references/dream-scene-sources/daoxiangcun.webp",
           "sha256": "f8b6d087666556a16f7ad6ada3fbe707f827b4944514bd77167e0e66aae7a45e",
-          "catalog": "public/art/manifest.json",
+          "catalog": "references/dream-scene-sources/manifest.json",
           "sourceId": "daoxiangcun",
           "prompt": "Use case: historical-scene. Create ONE photorealistic architectural environment image for a coherent Dream of the Red Chamber / Grand View Garden reference collection, intended as a later 3D modeling reference, not a modeled asset or a technical blueprint. Landscape 3:2 frame, highest available native detail, no collage. The user's provided garden image is a STYLE reference: borrow its credible stone, timber and tiles, sophisticated layered gardens, convincing reflections and exceptional natural light, not its exact buildings. This is a literary aristocratic private garden in a premodern Chinese setting, with Jiangnan craftsmanship; do not falsely date the novel to one precise dynasty. Give the image a captivating, specific spatial idea rather than generic television-period scenery. Deep focus and restrained architectural perspective, clear load-bearing columns, plausible eaves, contiguous paths and roof junctions, real material scale, visible bases and thresholds, keep key structures legible through planting. Finely textured lime plaster, grey clay tiles, naturally finished hardwood and worked limestone, restrained jade, warm parchment and botanical color. No people, modern objects, electric lights, impossible floating buildings, plastic CGI, anime, oversaturated red, endless identical red lanterns, Forbidden City composition, gratuitous golden roofs, captions, logos, watermark or readable signage.\n\nAsset: 稻香村·杏坞茅舍\nDaoxiangcun inside the Grand View Garden, an intentionally composed rustic retreat, grounded in Chapter 17. Behind a gently curved low yellow-earth wall capped with bundles of rice straw stand several beautifully proportioned thatched cottages; plain mud walls, timber doors and simple paper/wood windows, not grey-tiled mansions. A grove of flowering apricot trees makes a luminous cloud behind the cottages. Outside, living green hedges woven from young mulberry, elm and hibiscus branches; on the slope a real earthen well and credible wooden counterweighted well sweep or windlass, below it clearly separated vegetable plots with a few yellow vegetable blossoms. The river and affluent garden are only distant borrowed views, no sprawling rural village outside the estate. Three-quarter slightly elevated camera across the well and vegetable beds, thatch thickness, eaves, earthen wall texture and water-lifting mechanics clear. Cool dawn lifting into honey-colored sunlight, humble material richness, small signs of tending, quiet spatial poetry. No rice paddies replacing the text's vegetable plots, no tiled pagodas, no decorative farm animals or people.",
-          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery."
+          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery.",
+          "originalPath": "public/art/daoxiangcun.webp",
+          "originalCatalog": "public/art/manifest.json"
         }
       ],
       "transform": {
@@ -1144,12 +1152,14 @@
       "promptKind": "source-origin",
       "sources": [
         {
-          "path": "public/art/qiushuangzhai.webp",
+          "path": "references/dream-scene-sources/qiushuangzhai.webp",
           "sha256": "eca5e4fd6f707e1cdd32a18c1df0c11495cfc5ee13abe9dfb8963c995e44df33",
-          "catalog": "public/art/manifest.json",
+          "catalog": "references/dream-scene-sources/manifest.json",
           "sourceId": "qiushuangzhai",
           "prompt": "Use case: precise-object-edit. Edit this exact Qiushuangzhai image. Preserve ALL architecture, the uninterrupted three-bay room, camera, daylight, table, inkstones, furniture, garden, timber colors and image quality. Correct only the flowers in the huge foreground-left celadon vase and the two narrow scrolls flanking the main ink landscape on the left wall. The white flowers must be dense spherical WHITE POMPON CHRYSANTHEMUMS, round like little crystal globes made of hundreds of tightly layered white petals, as specified in Dream of the Red Chamber chapter 40. No open daisy-shaped flowers or visible yellow/brown discs; keep the same vase, scale and arrangement fullness. The central wide ink landscape is unchanged. Replace the TWO adjacent narrow floral scroll designs with understated authentic vertical Chinese brush-calligraphy couplets: one scroll EXACTLY '煙霞閒骨格' (five characters vertically), the other EXACTLY '泉石野生涯' (five characters vertically). Keep their existing oblique wall perspective; only these small diegetic calligraphy lines are allowed, no captions or other added text, no seals required. Do not alter the rest of this beautiful realistic architectural image. One landscape image.",
-          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery."
+          "licenseNote": "User-approved image_gen reference, generated 2026-09-10; resized and encoded as WebP for delivery.",
+          "originalPath": "public/art/qiushuangzhai.webp",
+          "originalCatalog": "public/art/manifest.json"
         }
       ],
       "transform": {

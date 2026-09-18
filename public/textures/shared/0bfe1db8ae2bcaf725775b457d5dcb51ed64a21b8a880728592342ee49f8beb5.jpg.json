@@ -1,0 +1,18 @@
+{
+  "sha256": "0bfe1db8ae2bcaf725775b457d5dcb51ed64a21b8a880728592342ee49f8beb5",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "pavilion",
+    "role": "tiledark",
+    "pigment": "#386266",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/pavilion-tiledark.png",
+    "sha256": "9a7e1c7cb7321f60af13da10fae3eed817f9d72a68498fc1104a69581991e921",
+    "source": {
+      "file": "assets/processed/materials-r15/tiledark_diff.png",
+      "sha256": "93d0a3428b22ecbfaea001a61c521b05cd8634aef70e1f1ef220b8afb29da331"
+    }
+  }
+}

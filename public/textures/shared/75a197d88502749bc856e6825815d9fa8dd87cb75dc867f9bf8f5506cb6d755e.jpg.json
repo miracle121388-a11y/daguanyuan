@@ -1,0 +1,17 @@
+{
+  "sha256": "75a197d88502749bc856e6825815d9fa8dd87cb75dc867f9bf8f5506cb6d755e",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "herbal",
+    "role": "gold",
+    "pigment": "#b7b28e",
+    "roughness": 0.48,
+    "metallic": 0.25,
+    "file": "assets/processed/sunwen-r17/herbal-gold.png",
+    "sha256": "68b491da4453dff751411cdb39d9dd0303dfa071f4c97287edb91ae3170cf318",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

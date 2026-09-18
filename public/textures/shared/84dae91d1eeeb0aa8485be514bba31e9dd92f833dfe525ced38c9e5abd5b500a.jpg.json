@@ -1,0 +1,18 @@
+{
+  "sha256": "84dae91d1eeeb0aa8485be514bba31e9dd92f833dfe525ced38c9e5abd5b500a",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "pavilion",
+    "role": "darkwood",
+    "pigment": "#475c57",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/pavilion-darkwood.png",
+    "sha256": "68bf934f5f63705af4fe1b0b17f523ebfea253dd49218f422c66a7c00043b168",
+    "source": {
+      "file": "assets/processed/materials-r15/darkwood_diff.png",
+      "sha256": "f9843750e5267d2fe17135fc0a26058461a70bcbcd98ff7b6f06637275acfb2e"
+    }
+  }
+}

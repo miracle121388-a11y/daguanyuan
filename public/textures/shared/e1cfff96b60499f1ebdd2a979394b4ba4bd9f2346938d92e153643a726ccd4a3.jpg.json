@@ -1,0 +1,18 @@
+{
+  "sha256": "e1cfff96b60499f1ebdd2a979394b4ba4bd9f2346938d92e153643a726ccd4a3",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "botanical_petal",
+    "pigment": "#e6abc9",
+    "roughness": 0.85,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-botanical_petal.png",
+    "sha256": "f5d0e024763fb7463dc83236e3877f74da032554dbeacf854de69e16975c941b",
+    "source": {
+      "file": "assets/processed/focal-r12-fix2/petal.png",
+      "sha256": "f70e356b4452802faa4a04a3b53fa7b7e14cb2a043279ae99e60464064772686"
+    }
+  }
+}

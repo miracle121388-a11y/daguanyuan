@@ -1,0 +1,18 @@
+{
+  "sha256": "db54d84a1f4b317596b46e08227eb24ddd1b80f40066f6fd4a24872ccc772561",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "crimson",
+    "role": "plaster",
+    "pigment": "#f3e4cd",
+    "roughness": 0.84,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/crimson-plaster.png",
+    "sha256": "8f55cea3f1484c6d31a700189a40ca5ba50ab57616112c99ec5cb948a46aebd3",
+    "source": {
+      "file": "assets/processed/materials-r15/plaster_diff.png",
+      "sha256": "aa7086e0b6af67efe08ba1cfb2bcf0637ac4953eb2f0b38bb7d68632aa9b2d7c"
+    }
+  }
+}

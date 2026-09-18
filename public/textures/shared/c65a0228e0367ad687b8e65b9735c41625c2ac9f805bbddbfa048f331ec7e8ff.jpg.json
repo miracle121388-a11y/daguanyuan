@@ -1,0 +1,17 @@
+{
+  "sha256": "c65a0228e0367ad687b8e65b9735c41625c2ac9f805bbddbfa048f331ec7e8ff",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "leafdark",
+    "pigment": "#487f78",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-leafdark.png",
+    "sha256": "0a69ca0bf3448976495054c394eee949f4ba2cc8ec4fcb10c8ce66dac9d6d9b1",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

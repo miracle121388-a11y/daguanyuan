@@ -1,0 +1,18 @@
+{
+  "sha256": "12d8009f423fa1e8cd85d563868c0b230a0d6bdf291091824b6ea8d8bbbf211f",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "herbal",
+    "role": "latticewood",
+    "pigment": "#858e76",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/herbal-latticewood.png",
+    "sha256": "54e0f06ce7799883149d4651781147e0df77f9fdee20ead6b0788d5a19c2f94a",
+    "source": {
+      "file": "assets/processed/materials-r15/latticewood_diff.png",
+      "sha256": "830247d7ee90583237a6bbaeca5da79832b89449b71580363c2dca2ca521690a"
+    }
+  }
+}

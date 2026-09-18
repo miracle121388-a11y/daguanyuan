@@ -1,0 +1,1338 @@
+{
+  "revision": "spatial-garden-20260918-r21",
+  "meaning": "孙温画意及用户指定的贵族园林构图转译；非原著植物考据。",
+  "beds": [
+    {
+      "id": "grove-00",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "grove",
+      "center": [
+        -67.8092,
+        -117.147
+      ],
+      "radii": [
+        14.19,
+        9.3
+      ],
+      "angle": 1.651
+    },
+    {
+      "id": "grove-01",
+      "placeId": "qujingtongyou",
+      "profile": "herbal",
+      "kind": "grove",
+      "center": [
+        40.3844,
+        -108.825
+      ],
+      "radii": [
+        12.76,
+        11.19
+      ],
+      "angle": 2.85
+    },
+    {
+      "id": "grove-02",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "grove",
+      "center": [
+        -131.1415,
+        -97.3758
+      ],
+      "radii": [
+        13.31,
+        8.14
+      ],
+      "angle": 2.69
+    },
+    {
+      "id": "grove-03",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "grove",
+      "center": [
+        -108.288,
+        -99.9337
+      ],
+      "radii": [
+        13.64,
+        9.74
+      ],
+      "angle": 1.112
+    },
+    {
+      "id": "grove-04",
+      "placeId": "ouxiangxie",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        108.5818,
+        78.0093
+      ],
+      "radii": [
+        14.39,
+        9.82
+      ],
+      "angle": 2.389
+    },
+    {
+      "id": "grove-05",
+      "placeId": "hengwuyuan",
+      "profile": "herbal",
+      "kind": "grove",
+      "center": [
+        -81.0795,
+        64.2923
+      ],
+      "radii": [
+        14.39,
+        9.78
+      ],
+      "angle": 1.086
+    },
+    {
+      "id": "grove-06",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "grove",
+      "center": [
+        -105.5201,
+        -31.5054
+      ],
+      "radii": [
+        13.41,
+        11.65
+      ],
+      "angle": 2.304
+    },
+    {
+      "id": "grove-07",
+      "placeId": "daoxiangcun",
+      "profile": "rustic",
+      "kind": "grove",
+      "center": [
+        -77.1367,
+        5.3334
+      ],
+      "radii": [
+        15.56,
+        8.63
+      ],
+      "angle": 2.478
+    },
+    {
+      "id": "grove-08",
+      "placeId": "luxuean",
+      "profile": "rustic",
+      "kind": "grove",
+      "center": [
+        -20.8743,
+        94.6487
+      ],
+      "radii": [
+        15.56,
+        10.27
+      ],
+      "angle": 0.636
+    },
+    {
+      "id": "grove-09",
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "kind": "grove",
+      "center": [
+        128.3865,
+        -102.7868
+      ],
+      "radii": [
+        15.94,
+        9.52
+      ],
+      "angle": 2.074
+    },
+    {
+      "id": "grove-10",
+      "placeId": "ouxiangxie",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        131.5396,
+        82.4577
+      ],
+      "radii": [
+        15.48,
+        11.84
+      ],
+      "angle": 2.467
+    },
+    {
+      "id": "grove-11",
+      "placeId": "nuanxiangwu",
+      "profile": "crimson",
+      "kind": "grove",
+      "center": [
+        115.2715,
+        36.9585
+      ],
+      "radii": [
+        14.81,
+        9.79
+      ],
+      "angle": 0.464
+    },
+    {
+      "id": "grove-12",
+      "placeId": "longcuian",
+      "profile": "temple",
+      "kind": "grove",
+      "center": [
+        -92.8042,
+        123.7616
+      ],
+      "radii": [
+        13.49,
+        11.97
+      ],
+      "angle": 0.313
+    },
+    {
+      "id": "grove-13",
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "kind": "grove",
+      "center": [
+        68.6866,
+        -73.9151
+      ],
+      "radii": [
+        12.13,
+        8.1
+      ],
+      "angle": 1.71
+    },
+    {
+      "id": "grove-14",
+      "placeId": "qujingtongyou",
+      "profile": "herbal",
+      "kind": "grove",
+      "center": [
+        -37.5689,
+        -115.0483
+      ],
+      "radii": [
+        13.33,
+        9.57
+      ],
+      "angle": 2.132
+    },
+    {
+      "id": "grove-15",
+      "placeId": "dicuiting",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        -50.318,
+        -73.2185
+      ],
+      "radii": [
+        15.52,
+        11.63
+      ],
+      "angle": 1.747
+    },
+    {
+      "id": "grove-16",
+      "placeId": "qujingtongyou",
+      "profile": "herbal",
+      "kind": "grove",
+      "center": [
+        32.5687,
+        -59.7024
+      ],
+      "radii": [
+        16,
+        11.06
+      ],
+      "angle": 2.534
+    },
+    {
+      "id": "grove-17",
+      "placeId": "dicuiting",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        -58.1619,
+        -52.3195
+      ],
+      "radii": [
+        12.47,
+        11.14
+      ],
+      "angle": 0.786
+    },
+    {
+      "id": "grove-18",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "grove",
+      "center": [
+        26,
+        24.5
+      ],
+      "radii": [
+        15.96,
+        10.88
+      ],
+      "angle": 1.023
+    },
+    {
+      "id": "grove-19",
+      "placeId": "tubishanzhuang",
+      "profile": "study",
+      "kind": "grove",
+      "center": [
+        4.8184,
+        91.5939
+      ],
+      "radii": [
+        15.56,
+        10.68
+      ],
+      "angle": 2.211
+    },
+    {
+      "id": "grove-20",
+      "placeId": "qujingtongyou",
+      "profile": "herbal",
+      "kind": "grove",
+      "center": [
+        40.2387,
+        -81.6532
+      ],
+      "radii": [
+        15.2,
+        11.85
+      ],
+      "angle": 0.628
+    },
+    {
+      "id": "grove-21",
+      "placeId": "dicuiting",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        -60.6159,
+        -94.2708
+      ],
+      "radii": [
+        15.94,
+        11.48
+      ],
+      "angle": 3.099
+    },
+    {
+      "id": "grove-22",
+      "placeId": "qiushuangzhai",
+      "profile": "study",
+      "kind": "grove",
+      "center": [
+        73.7407,
+        -37.9233
+      ],
+      "radii": [
+        13.02,
+        9.8
+      ],
+      "angle": 3.124
+    },
+    {
+      "id": "grove-23",
+      "placeId": "aojingxiguan",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        68.5067,
+        136.5465
+      ],
+      "radii": [
+        12.36,
+        10.41
+      ],
+      "angle": 0.08
+    },
+    {
+      "id": "grove-24",
+      "placeId": "qiushuangzhai",
+      "profile": "study",
+      "kind": "grove",
+      "center": [
+        81.0974,
+        -12.0648
+      ],
+      "radii": [
+        14.03,
+        9.06
+      ],
+      "angle": 0.216
+    },
+    {
+      "id": "grove-25",
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "kind": "grove",
+      "center": [
+        62.6503,
+        -120.5367
+      ],
+      "radii": [
+        13.52,
+        10.72
+      ],
+      "angle": 3.084
+    },
+    {
+      "id": "grove-26",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "grove",
+      "center": [
+        -39.9805,
+        42.521
+      ],
+      "radii": [
+        15.3,
+        8.73
+      ],
+      "angle": 2.237
+    },
+    {
+      "id": "grove-27",
+      "placeId": "hengwuyuan",
+      "profile": "herbal",
+      "kind": "grove",
+      "center": [
+        -135.8189,
+        70.3977
+      ],
+      "radii": [
+        16.3,
+        10.57
+      ],
+      "angle": 1.541
+    },
+    {
+      "id": "grove-28",
+      "placeId": "daoxiangcun",
+      "profile": "rustic",
+      "kind": "grove",
+      "center": [
+        -63.6918,
+        -23.4694
+      ],
+      "radii": [
+        14.2,
+        8.07
+      ],
+      "angle": 0.212
+    },
+    {
+      "id": "grove-29",
+      "placeId": "luxuean",
+      "profile": "rustic",
+      "kind": "grove",
+      "center": [
+        -85.6732,
+        89.6593
+      ],
+      "radii": [
+        16.5,
+        8.05
+      ],
+      "angle": 1.85
+    },
+    {
+      "id": "grove-30",
+      "placeId": "tubishanzhuang",
+      "profile": "study",
+      "kind": "grove",
+      "center": [
+        -16.017,
+        116.745
+      ],
+      "radii": [
+        12.43,
+        11.71
+      ],
+      "angle": 2.736
+    },
+    {
+      "id": "grove-31",
+      "placeId": "luxuean",
+      "profile": "rustic",
+      "kind": "grove",
+      "center": [
+        -42.1576,
+        110.3172
+      ],
+      "radii": [
+        14,
+        11.82
+      ],
+      "angle": 1.507
+    },
+    {
+      "id": "grove-32",
+      "placeId": "longcuian",
+      "profile": "temple",
+      "kind": "grove",
+      "center": [
+        -109.1687,
+        88.7696
+      ],
+      "radii": [
+        15.7,
+        9.64
+      ],
+      "angle": 2.498
+    },
+    {
+      "id": "grove-33",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "grove",
+      "center": [
+        -75.3702,
+        -66.1505
+      ],
+      "radii": [
+        15.04,
+        8.23
+      ],
+      "angle": 3.039
+    },
+    {
+      "id": "grove-34",
+      "placeId": "hengwuyuan",
+      "profile": "herbal",
+      "kind": "grove",
+      "center": [
+        -136.4807,
+        38.1428
+      ],
+      "radii": [
+        16.4,
+        11.01
+      ],
+      "angle": 0.537
+    },
+    {
+      "id": "grove-35",
+      "placeId": "longcuian",
+      "profile": "temple",
+      "kind": "grove",
+      "center": [
+        -138.134,
+        129.1194
+      ],
+      "radii": [
+        15.97,
+        10.58
+      ],
+      "angle": 2.605
+    },
+    {
+      "id": "grove-36",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "grove",
+      "center": [
+        -26,
+        -18.5
+      ],
+      "radii": [
+        16.24,
+        9.29
+      ],
+      "angle": 0.088
+    },
+    {
+      "id": "grove-37",
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "kind": "grove",
+      "center": [
+        110.8468,
+        -74.5233
+      ],
+      "radii": [
+        15.51,
+        11.22
+      ],
+      "angle": 2.331
+    },
+    {
+      "id": "grove-38",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "grove",
+      "center": [
+        -86.674,
+        -104.4108
+      ],
+      "radii": [
+        12.15,
+        9.63
+      ],
+      "angle": 1.517
+    },
+    {
+      "id": "grove-39",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "grove",
+      "center": [
+        -108.0631,
+        -125.1045
+      ],
+      "radii": [
+        15.82,
+        11.39
+      ],
+      "angle": 2.059
+    },
+    {
+      "id": "grove-40",
+      "placeId": "ouxiangxie",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        39.4415,
+        61.3479
+      ],
+      "radii": [
+        16.75,
+        11.66
+      ],
+      "angle": 2.715
+    },
+    {
+      "id": "grove-41",
+      "placeId": "ouxiangxie",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        93.4868,
+        99.9315
+      ],
+      "radii": [
+        14.49,
+        10.99
+      ],
+      "angle": 2.234
+    },
+    {
+      "id": "grove-42",
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "kind": "grove",
+      "center": [
+        69.5909,
+        -97.9103
+      ],
+      "radii": [
+        13.89,
+        10
+      ],
+      "angle": 0.651
+    },
+    {
+      "id": "grove-43",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "grove",
+      "center": [
+        -44.1061,
+        19.1764
+      ],
+      "radii": [
+        16.47,
+        8.8
+      ],
+      "angle": 2.081
+    },
+    {
+      "id": "grove-44",
+      "placeId": "aojingxiguan",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        104.8999,
+        124.8101
+      ],
+      "radii": [
+        13.93,
+        9.64
+      ],
+      "angle": 0.702
+    },
+    {
+      "id": "grove-45",
+      "placeId": "nuanxiangwu",
+      "profile": "crimson",
+      "kind": "grove",
+      "center": [
+        105.7301,
+        -14.2298
+      ],
+      "radii": [
+        13.02,
+        9.52
+      ],
+      "angle": 3.048
+    },
+    {
+      "id": "grove-46",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "grove",
+      "center": [
+        26,
+        -18.5
+      ],
+      "radii": [
+        12.58,
+        8.2
+      ],
+      "angle": 2.063
+    },
+    {
+      "id": "grove-47",
+      "placeId": "nuanxiangwu",
+      "profile": "crimson",
+      "kind": "grove",
+      "center": [
+        85.8439,
+        23.0558
+      ],
+      "radii": [
+        16.01,
+        8.5
+      ],
+      "angle": 2.497
+    },
+    {
+      "id": "grove-48",
+      "placeId": "luxuean",
+      "profile": "rustic",
+      "kind": "grove",
+      "center": [
+        -53.9942,
+        77.9728
+      ],
+      "radii": [
+        15.47,
+        10.43
+      ],
+      "angle": 1.461
+    },
+    {
+      "id": "grove-49",
+      "placeId": "aojingxiguan",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        27.2785,
+        86.189
+      ],
+      "radii": [
+        15.5,
+        10.1
+      ],
+      "angle": 1.627
+    },
+    {
+      "id": "grove-50",
+      "placeId": "tubishanzhuang",
+      "profile": "study",
+      "kind": "grove",
+      "center": [
+        37,
+        124
+      ],
+      "radii": [
+        15.29,
+        9.95
+      ],
+      "angle": 0.632
+    },
+    {
+      "id": "grove-51",
+      "placeId": "qujingtongyou",
+      "profile": "herbal",
+      "kind": "grove",
+      "center": [
+        -23.9723,
+        -97.0326
+      ],
+      "radii": [
+        15.09,
+        11.76
+      ],
+      "angle": 2.518
+    },
+    {
+      "id": "grove-52",
+      "placeId": "daoxiangcun",
+      "profile": "rustic",
+      "kind": "grove",
+      "center": [
+        -86.3968,
+        26.2377
+      ],
+      "radii": [
+        13.69,
+        9.5
+      ],
+      "angle": 1.826
+    },
+    {
+      "id": "grove-53",
+      "placeId": "ouxiangxie",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        125.7353,
+        107.8497
+      ],
+      "radii": [
+        15.66,
+        10.88
+      ],
+      "angle": 0.211
+    },
+    {
+      "id": "grove-54",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "grove",
+      "center": [
+        -131.6675,
+        -127.8289
+      ],
+      "radii": [
+        15.53,
+        11.47
+      ],
+      "angle": 1.987
+    },
+    {
+      "id": "grove-55",
+      "placeId": "longcuian",
+      "profile": "temple",
+      "kind": "grove",
+      "center": [
+        -138.2268,
+        104.3539
+      ],
+      "radii": [
+        13.11,
+        10.46
+      ],
+      "angle": 1.634
+    },
+    {
+      "id": "grove-56",
+      "placeId": "qiushuangzhai",
+      "profile": "study",
+      "kind": "grove",
+      "center": [
+        95,
+        -48
+      ],
+      "radii": [
+        12.27,
+        8.8
+      ],
+      "angle": 0.818
+    },
+    {
+      "id": "grove-57",
+      "placeId": "aojingxiguan",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        128.5187,
+        130.679
+      ],
+      "radii": [
+        14.87,
+        11.63
+      ],
+      "angle": 0.18
+    },
+    {
+      "id": "grove-58",
+      "placeId": "ouxiangxie",
+      "profile": "waterside",
+      "kind": "grove",
+      "center": [
+        44.4988,
+        37.4722
+      ],
+      "radii": [
+        15.57,
+        8.33
+      ],
+      "angle": 1.142
+    },
+    {
+      "id": "grove-59",
+      "placeId": "qiushuangzhai",
+      "profile": "study",
+      "kind": "grove",
+      "center": [
+        117,
+        -48
+      ],
+      "radii": [
+        12.28,
+        11.52
+      ],
+      "angle": 2.262
+    },
+    {
+      "id": "grove-60",
+      "placeId": "daoxiangcun",
+      "profile": "rustic",
+      "kind": "grove",
+      "center": [
+        -110.6486,
+        25.7815
+      ],
+      "radii": [
+        13.58,
+        11.99
+      ],
+      "angle": 1.17
+    },
+    {
+      "id": "grove-61",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "grove",
+      "center": [
+        42.0089,
+        9.2657
+      ],
+      "radii": [
+        14.49,
+        11.91
+      ],
+      "angle": 1.887
+    },
+    {
+      "id": "xiaoxiangguan-bed-0",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "court",
+      "center": [
+        -108.5,
+        -69.5
+      ],
+      "radii": [
+        3.8,
+        3.2
+      ],
+      "angle": 0.3
+    },
+    {
+      "id": "xiaoxiangguan-bed-1",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "court",
+      "center": [
+        -107.5,
+        -64.4
+      ],
+      "radii": [
+        4,
+        2.5
+      ],
+      "angle": -0.25
+    },
+    {
+      "id": "xiaoxiangguan-bed-2",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "court",
+      "center": [
+        -92.7,
+        -65.1
+      ],
+      "radii": [
+        3.8,
+        3.5
+      ],
+      "angle": -0.25
+    },
+    {
+      "id": "xiaoxiangguan-bed-3",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "court",
+      "center": [
+        -92.1,
+        -72.1
+      ],
+      "radii": [
+        3.1,
+        1.1
+      ],
+      "angle": 0.1
+    },
+    {
+      "id": "xiaoxiangguan-bed-4",
+      "placeId": "xiaoxiangguan",
+      "profile": "bamboo",
+      "kind": "court",
+      "center": [
+        -115.4,
+        -50
+      ],
+      "radii": [
+        0.75,
+        4.5
+      ],
+      "angle": 0
+    },
+    {
+      "id": "yihongyuan-bed-0",
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "kind": "court",
+      "center": [
+        96.1,
+        -101.1
+      ],
+      "radii": [
+        2.5,
+        3.4
+      ],
+      "angle": -0.25
+    },
+    {
+      "id": "yihongyuan-bed-1",
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "kind": "court",
+      "center": [
+        112.5,
+        -100.5
+      ],
+      "radii": [
+        2.5,
+        4.2
+      ],
+      "angle": 0.2
+    },
+    {
+      "id": "yihongyuan-bed-2",
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "kind": "court",
+      "center": [
+        97.3,
+        -108.8
+      ],
+      "radii": [
+        3.9,
+        1.3
+      ],
+      "angle": 0.1
+    },
+    {
+      "id": "yihongyuan-bed-3",
+      "placeId": "yihongyuan",
+      "profile": "crimson",
+      "kind": "court",
+      "center": [
+        112.7,
+        -108.8
+      ],
+      "radii": [
+        2.3,
+        1.4
+      ],
+      "angle": -0.2
+    },
+    {
+      "id": "hengwuyuan-bed-0",
+      "placeId": "hengwuyuan",
+      "profile": "herbal",
+      "kind": "court",
+      "center": [
+        -107,
+        53.6
+      ],
+      "radii": [
+        3.6,
+        2.7
+      ],
+      "angle": 0.3
+    },
+    {
+      "id": "hengwuyuan-bed-1",
+      "placeId": "hengwuyuan",
+      "profile": "herbal",
+      "kind": "court",
+      "center": [
+        -100.6,
+        58.9
+      ],
+      "radii": [
+        2.8,
+        4.9
+      ],
+      "angle": 0.12
+    },
+    {
+      "id": "hengwuyuan-bed-2",
+      "placeId": "hengwuyuan",
+      "profile": "herbal",
+      "kind": "court",
+      "center": [
+        -107,
+        61.6
+      ],
+      "radii": [
+        3.4,
+        2.5
+      ],
+      "angle": -0.3
+    },
+    {
+      "id": "hengwuyuan-bed-3",
+      "placeId": "hengwuyuan",
+      "profile": "herbal",
+      "kind": "court",
+      "center": [
+        -101.2,
+        49.3
+      ],
+      "radii": [
+        3.3,
+        1.8
+      ],
+      "angle": -0.1
+    },
+    {
+      "id": "qiushuangzhai-bed-0",
+      "placeId": "qiushuangzhai",
+      "profile": "study",
+      "kind": "court",
+      "center": [
+        93.9,
+        -43.5
+      ],
+      "radii": [
+        2,
+        6.8
+      ],
+      "angle": 0.04
+    },
+    {
+      "id": "qiushuangzhai-bed-1",
+      "placeId": "qiushuangzhai",
+      "profile": "study",
+      "kind": "court",
+      "center": [
+        118.1,
+        -42
+      ],
+      "radii": [
+        1.9,
+        6.7
+      ],
+      "angle": -0.04
+    },
+    {
+      "id": "qiushuangzhai-bed-2",
+      "placeId": "qiushuangzhai",
+      "profile": "study",
+      "kind": "court",
+      "center": [
+        98.2,
+        -51.8
+      ],
+      "radii": [
+        5,
+        0.65
+      ],
+      "angle": 0.03
+    },
+    {
+      "id": "qiushuangzhai-bed-3",
+      "placeId": "qiushuangzhai",
+      "profile": "study",
+      "kind": "court",
+      "center": [
+        114.8,
+        -51.8
+      ],
+      "radii": [
+        3.8,
+        0.65
+      ],
+      "angle": -0.04
+    },
+    {
+      "id": "daguanlou-bed-0",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "court",
+      "center": [
+        -24,
+        -20
+      ],
+      "radii": [
+        6.2,
+        4
+      ],
+      "angle": 0.15
+    },
+    {
+      "id": "daguanlou-bed-1",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "court",
+      "center": [
+        24,
+        -20
+      ],
+      "radii": [
+        6.2,
+        4
+      ],
+      "angle": -0.15
+    },
+    {
+      "id": "daguanlou-bed-2",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "court",
+      "center": [
+        -23,
+        23
+      ],
+      "radii": [
+        4.7,
+        6.2
+      ],
+      "angle": 0.1
+    },
+    {
+      "id": "daguanlou-bed-3",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "court",
+      "center": [
+        23,
+        23
+      ],
+      "radii": [
+        4.7,
+        6.2
+      ],
+      "angle": -0.1
+    },
+    {
+      "id": "daguanlou-bed-4",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "court",
+      "center": [
+        -22,
+        53
+      ],
+      "radii": [
+        4,
+        7.2
+      ],
+      "angle": 0.05
+    },
+    {
+      "id": "daguanlou-bed-5",
+      "placeId": "daguanlou",
+      "profile": "ceremonial",
+      "kind": "court",
+      "center": [
+        22,
+        53
+      ],
+      "radii": [
+        4,
+        7.2
+      ],
+      "angle": -0.05
+    },
+    {
+      "id": "farm-plot-0",
+      "placeId": "daoxiangcun",
+      "profile": "rustic",
+      "kind": "plot",
+      "center": [
+        -122,
+        -12
+      ],
+      "radii": [
+        3.4,
+        6
+      ],
+      "angle": 0
+    },
+    {
+      "id": "farm-plot-1",
+      "placeId": "daoxiangcun",
+      "profile": "rustic",
+      "kind": "plot",
+      "center": [
+        -88,
+        -9
+      ],
+      "radii": [
+        3.6,
+        5
+      ],
+      "angle": 0
+    },
+    {
+      "id": "farm-plot-2",
+      "placeId": "daoxiangcun",
+      "profile": "rustic",
+      "kind": "plot",
+      "center": [
+        -120,
+        12
+      ],
+      "radii": [
+        3.5,
+        4.5
+      ],
+      "angle": 0
+    }
+  ],
+  "ground": {
+    "slate": "#8da9a5",
+    "court": "#b5c3ba",
+    "gravel": "#afbeb2",
+    "moss": "#648f7d",
+    "stoneGreen": "#73a58b",
+    "beanGreen": "#a9c68e",
+    "greyGreen": "#7d9f94",
+    "willowGreen": "#99be87",
+    "bambooGreen": "#5c9581",
+    "shore": "#537e73"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sha256": "7846421b10fbf6450d06011ecac9b3068080537ad8a377cb1bdf93eb9fff2ac4",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "ivory",
+    "pigment": "#f1e5c8",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-ivory.png",
+    "sha256": "37c9f6cd2c5fab23e80c57bc0c5d815b71b51a6104b78d62b06f41dcf6eb6600",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

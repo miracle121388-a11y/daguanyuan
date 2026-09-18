@@ -1,0 +1,17 @@
+{
+  "sha256": "79d0663056feeb8929df60303962b27a479f38c1bc21904670a59f6226742805",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "moss",
+    "pigment": "#618f7c",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-moss.png",
+    "sha256": "d831d6524973b04d1bb1caad7591ffc5753d9edc13be7de8570b4a469821fe13",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

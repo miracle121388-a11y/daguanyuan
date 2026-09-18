@@ -1,0 +1,208 @@
+{
+  "revision": "spatial-garden-20260917-r20",
+  "completedAt": "2026-09-17T16:01:47.752Z",
+  "scope": "Local urban morphology and civic facilities; no push or deployment.",
+  "interpretation": "依据用户指定的宁荣府邸腹地空间关系进行三维营造；不是宁荣二府实测复原，不新增原著地点或游览路线。",
+  "courtyardAndQuarterUnits": 342,
+  "urbanInstances": 5245,
+  "prototypeTypes": 24,
+  "composition": {
+    "plotTypes": {
+      "mansion": 19,
+      "scholars": 33,
+      "service": 70,
+      "office": 1,
+      "temple": 1,
+      "shop-court": 19,
+      "inn": 25,
+      "enclosed": 94,
+      "side-entry": 63,
+      "storehouse": 17
+    },
+    "kinds": {
+      "court-paving": 342,
+      "wall": 1615,
+      "gate": 323,
+      "hall": 98,
+      "annex": 1069,
+      "house": 834,
+      "gallery": 28,
+      "tree": 292,
+      "screen": 53,
+      "range": 214,
+      "shop-upper": 36,
+      "paifang": 5,
+      "hitching": 39,
+      "temple": 1,
+      "bell-pavilion": 2,
+      "shop": 92,
+      "stall": 61,
+      "well": 49,
+      "cart": 37,
+      "warehouse": 35,
+      "lane-gate": 4,
+      "drain": 2,
+      "slab-bridge": 4
+    }
+  },
+  "wallHeightM": 6.2,
+  "masterSha256": "1744c95bf2526ad5cd7f32c891ed54a2397b276a07009263bf04dcd3c7d82abc",
+  "validation": {
+    "unitApiTests": 82,
+    "browserTests": 3,
+    "browserScope": [
+      "urban day/night",
+      "garden eye level and elevated views",
+      "temple quarter, front street and market courts",
+      "390px throttled touch phone",
+      "320px controls"
+    ],
+    "urbanChecks": 107183,
+    "protectedGardenMeshes": 2279,
+    "actualRoofOverlaps": 0,
+    "typecheckPassed": true,
+    "lintPassed": true,
+    "productionBuildPassed": true,
+    "sunwenAssetChecks": 1132,
+    "integrityChecks": 10163
+  },
+  "mobile": {
+    "bytes": 7987017,
+    "MiB": 7.617012977600098,
+    "loadedMs": 11486.699999988079,
+    "triangles": 2266760,
+    "drawCalls": 383,
+    "conditions": {
+      "viewport": [
+        390,
+        844
+      ],
+      "deviceScaleFactor": 3,
+      "renderDpr": 1,
+      "latencyMs": 80,
+      "downloadMbps": 9,
+      "cpuSlowdown": 4,
+      "realMobileHardware": false
+    },
+    "note": "Network idle includes the urban scene. Browser simulation, not physical handset measurement."
+  },
+  "references": [
+    {
+      "title": "故宫博物院：《乾隆京城全图》考略",
+      "url": "https://www.dpm.org.cn/paints/talk/203896.html",
+      "use": "Study of different urban land uses; no raster incorporated."
+    },
+    {
+      "title": "东洋文库／日本国立情报学研究所：乾隆京城全图",
+      "url": "https://dsr.nii.ac.jp/toyobunko/II-11-D-802/index.html.en",
+      "use": "Street and compound morphology; no measured site alignment claimed."
+    }
+  ],
+  "deliverables": [
+    {
+      "file": "blender/urban_layout.py",
+      "sha256": "6f9bff8e1f0feb8635e7abde285063fd0c96bdf168da52c76c45fa91dad71db4",
+      "bytes": 17862
+    },
+    {
+      "file": "blender/urban_architecture.py",
+      "sha256": "6422241193dd8f3ac9a91b56437ed49ea766372349048ee9e7b7ecb9956487d3",
+      "bytes": 9383
+    },
+    {
+      "file": "blender/urban_context.py",
+      "sha256": "d86939e41a9aea67d0ac69a20a619f1c571fc33ff39580c9b74afaf9b73f9317",
+      "bytes": 8217
+    },
+    {
+      "file": "config/garden.urban.json",
+      "sha256": "40a2156ab9ca243ee30b9bd6381abebbff3f9ac643fb700f28ba23b102ab9c32",
+      "bytes": 1492
+    },
+    {
+      "file": "public/models/overview.glb",
+      "sha256": "dfbacab7777f9393b1a535168fbf1a568a90dd65088109855d34e099f161c004",
+      "bytes": 4785452
+    },
+    {
+      "file": "public/models/overview-low.glb",
+      "sha256": "c9aab2542f41857752794e57e868069dd33a8f2203c2bf59ec5aeac12f1598a1",
+      "bytes": 3492716
+    },
+    {
+      "file": "public/models/urban-context.glb",
+      "sha256": "05959ff28aa74b75eced1e1be653934ae65f08156b8e48ac5862cfb70797b837",
+      "bytes": 180920
+    },
+    {
+      "file": "public/urban-context.json",
+      "sha256": "54b5a32238aec20d67baacb73849ba68b81a7539b14dff4e0b82d32a3199490c",
+      "bytes": 669192
+    },
+    {
+      "file": "public/scene-manifest.json",
+      "sha256": "ebaf29a3fc62c404f59ffd290ae3695c7407027fcdc0da9049d80cbea1d200d7",
+      "bytes": 220877
+    },
+    {
+      "file": "public/textures/landscape-light.webp",
+      "sha256": "11b335a805de061eb150d7a2c02b86a8abc06eb21611b73728d96e78aa99a0c1",
+      "bytes": 109532
+    },
+    {
+      "file": "public/textures/landscape-light-low.webp",
+      "sha256": "597e429d85366dc13a303c262dae23dcd3b070140285319d674bd95d6b49669a",
+      "bytes": 40566
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "reports/browser/r20/capital-skyline.png",
+      "sha256": "dcbb6dd26772c38d6c8e97be57a701e68bec411d59b2521b64f5f5bf881f9b12"
+    },
+    {
+      "file": "reports/browser/r20/front-street.png",
+      "sha256": "42cbdf9452e333334b067f8798e97ded5d240b632d7cb96a56cf5fe7543abbc1"
+    },
+    {
+      "file": "reports/browser/r20/garden-eye-east.png",
+      "sha256": "4f7100b7a3e7a2d47c4d21d52cef5b5b966129c658ec59025334e5bc4ceae605"
+    },
+    {
+      "file": "reports/browser/r20/mansion-aerial.png",
+      "sha256": "d74be95d770fb8037d7ec50115c710e91109ba790d52b2b4bae01ea468d1d82b"
+    },
+    {
+      "file": "reports/browser/r20/market-courts.png",
+      "sha256": "f75e3de928d8c53cf6b80b47540fc2971adcdefd5d67b15685c2703a2fefa680"
+    },
+    {
+      "file": "reports/browser/r20/phone-320.png",
+      "sha256": "1997786c0d2302ed0dd3c3048c7e20d2605770f0c9b3b66daec3039d1e3f41fa"
+    },
+    {
+      "file": "reports/browser/r20/phone-390.png",
+      "sha256": "b9b80672fc7c00ef054534bf4e0b5fbad464c15facd59c9aa481da031d8d7cbf"
+    },
+    {
+      "file": "reports/browser/r20/temple-quarter.png",
+      "sha256": "9d426fc41cf153be071cce9f8865cdcc2b31529b05c1e4b9484dcec0ea540ba7"
+    },
+    {
+      "file": "reports/browser/r20/upper-gallery-east.png",
+      "sha256": "e0618a50e3af916f983bee810e13957f1f8e0e7dfca42b6c866c99b556450d8b"
+    },
+    {
+      "file": "reports/browser/r20/urban-night.png",
+      "sha256": "99994e9f62d57b097b71cd12b961365e48c60c10b3cb787ec13131c08f762043"
+    },
+    {
+      "file": "reports/browser/r20/urban-overview.png",
+      "sha256": "55c462b9ad4c2f6f4979d0aa11f6e172766856e8542a2d074ad13781199f3fab"
+    },
+    {
+      "file": "reports/browser/r20/water-eye-north.png",
+      "sha256": "98291611f01c8efb3ee55dc01ce42c260e8c01e617c010751503ed8da50bbbd9"
+    }
+  ]
+}

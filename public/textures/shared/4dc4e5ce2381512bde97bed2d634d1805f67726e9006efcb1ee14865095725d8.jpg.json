@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported paving_nor_gl material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "paving_nor_gl",
+  "sourcePixelSha256": "4dc4e5ce2381512bde97bed2d634d1805f67726e9006efcb1ee14865095725d8",
+  "sha256": "4dc4e5ce2381512bde97bed2d634d1805f67726e9006efcb1ee14865095725d8",
+  "prompt": "Blender-exported paving_nor_gl material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

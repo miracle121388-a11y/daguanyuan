@@ -1,0 +1,29 @@
+{
+  "revision": "r19",
+  "courts": 264,
+  "instances": 3396,
+  "retiredOutsideTrees": [
+    "LivingTree_SW_0342_chinese-pine",
+    "LivingTree_SW_0343_chinese-pine",
+    "LivingTree_SW_0344_scholar-tree",
+    "LivingTree_SW_0345_scholar-tree",
+    "LivingTree_SW_0346_chinese-pine",
+    "LivingTree_SW_0347_white-blossom",
+    "LivingTree_SW_0348_white-blossom",
+    "LivingTree_SW_0349_scholar-tree",
+    "LivingTree_SW_0350_scholar-tree",
+    "LivingTree_SW_0351_white-blossom",
+    "LivingTree_SW_0352_scholar-tree",
+    "LivingTree_SW_0353_scholar-tree",
+    "LivingTree_SW_0354_scholar-tree",
+    "LivingTree_SW_0355_chinese-pine",
+    "LivingTree_SW_0356_scholar-tree",
+    "LivingTree_SW_0357_white-blossom",
+    "LivingTree_SW_0358_chinese-pine",
+    "LivingTree_SW_0359_chinese-pine",
+    "LivingTree_SW_0360_chinese-pine"
+  ],
+  "originalEarthArchived": "landscape_earth.001",
+  "clippedEarthVertices": 7445,
+  "masterSha256": "b6e4cd7240e4a55c8dc5346503c55a905d2991d88a0118675dde936fc546d8b1"
+}

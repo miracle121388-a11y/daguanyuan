@@ -1,0 +1,17 @@
+{
+  "sha256": "235694de7785fdd9a7f6600b11d51e42d4a1f56d0230a4ff2c3fc507a06db8c2",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "pavilion",
+    "role": "gold",
+    "pigment": "#c8bd89",
+    "roughness": 0.48,
+    "metallic": 0.25,
+    "file": "assets/processed/sunwen-r17/pavilion-gold.png",
+    "sha256": "41e7d0ef0213eab27db1acc1c1b2a9383f309d01ced5fa04adefb586de697eec",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

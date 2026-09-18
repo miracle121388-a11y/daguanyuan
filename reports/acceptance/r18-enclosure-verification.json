@@ -1,0 +1,608 @@
+{
+  "revision": "spatial-garden-20260917-r18",
+  "checks": 3670,
+  "passed": true,
+  "method": "Bidirectional rays against delivered room envelopes: walls >=28cm, paper >=2cm, doorway voids. The r18 open Ouxiang water pavilion instead requires eight clear eye-level view rays against all active meshes on all four sides. Retired generated walls are excluded.",
+  "rows": [
+    {
+      "scope": "native",
+      "placeId": "daguanyuan_gate",
+      "checks": 36,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "qujingtongyou",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "xiaoxiangguan",
+      "checks": 48,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "yihongyuan",
+      "checks": 42,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "hengwuyuan",
+      "checks": 42,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "qiushuangzhai",
+      "checks": 30,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "daoxiangcun",
+      "checks": 54,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "ouxiangxie",
+      "checks": 8,
+      "envelopeMeshes": 23,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "dicuiting",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "luxuean",
+      "checks": 24,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "tubishanzhuang",
+      "checks": 30,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "aojingxiguan",
+      "checks": 30,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "daguanlou",
+      "checks": 306,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "longcuian",
+      "checks": 54,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "native",
+      "placeId": "nuanxiangwu",
+      "checks": 30,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "daguanyuan_gate",
+      "checks": 36,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "qujingtongyou",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "xiaoxiangguan",
+      "checks": 48,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "yihongyuan",
+      "checks": 42,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "hengwuyuan",
+      "checks": 42,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "qiushuangzhai",
+      "checks": 30,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "daoxiangcun",
+      "checks": 54,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "ouxiangxie",
+      "checks": 8,
+      "envelopeMeshes": 23,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "dicuiting",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "luxuean",
+      "checks": 24,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "tubishanzhuang",
+      "checks": 30,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "aojingxiguan",
+      "checks": 30,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "daguanlou",
+      "checks": 306,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "longcuian",
+      "checks": 54,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places",
+      "placeId": "nuanxiangwu",
+      "checks": 30,
+      "envelopeMeshes": 4,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "daguanyuan_gate",
+      "checks": 36,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "qujingtongyou",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "xiaoxiangguan",
+      "checks": 48,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "yihongyuan",
+      "checks": 42,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "hengwuyuan",
+      "checks": 42,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "qiushuangzhai",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "daoxiangcun",
+      "checks": 54,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "ouxiangxie",
+      "checks": 8,
+      "envelopeMeshes": 23,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "dicuiting",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "luxuean",
+      "checks": 24,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "tubishanzhuang",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "aojingxiguan",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "daguanlou",
+      "checks": 306,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "longcuian",
+      "checks": 54,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "places-low",
+      "placeId": "nuanxiangwu",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "daguanyuan_gate",
+      "checks": 36,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "qujingtongyou",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "xiaoxiangguan",
+      "checks": 48,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "yihongyuan",
+      "checks": 42,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "hengwuyuan",
+      "checks": 42,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "qiushuangzhai",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "daoxiangcun",
+      "checks": 54,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "ouxiangxie",
+      "checks": 8,
+      "envelopeMeshes": 23,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "dicuiting",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "luxuean",
+      "checks": 24,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "tubishanzhuang",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "aojingxiguan",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "daguanlou",
+      "checks": 306,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "longcuian",
+      "checks": 54,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview",
+      "placeId": "nuanxiangwu",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "daguanyuan_gate",
+      "checks": 36,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "qujingtongyou",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "xiaoxiangguan",
+      "checks": 48,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "yihongyuan",
+      "checks": 42,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "hengwuyuan",
+      "checks": 42,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "qiushuangzhai",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "daoxiangcun",
+      "checks": 54,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "ouxiangxie",
+      "checks": 8,
+      "envelopeMeshes": 23,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "dicuiting",
+      "checks": 0,
+      "envelopeMeshes": 0,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "luxuean",
+      "checks": 24,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "tubishanzhuang",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "aojingxiguan",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "daguanlou",
+      "checks": 306,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "longcuian",
+      "checks": 54,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    },
+    {
+      "scope": "overview-low",
+      "placeId": "nuanxiangwu",
+      "checks": 30,
+      "envelopeMeshes": 3,
+      "passed": true,
+      "failures": []
+    }
+  ]
+}

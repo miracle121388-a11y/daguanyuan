@@ -1,0 +1,18 @@
+{
+  "sha256": "e83c09341a3eba1b8126a7883bb867d21f6ea13cab754f65a2a25e18a5d74a3a",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "study",
+    "role": "roof",
+    "pigment": "#5f8094",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/study-roof.png",
+    "sha256": "3e20cf5eff4e5e875ba9bdea4345129ed0ff2dfabb830b011e409d9ed3a7f4b3",
+    "source": {
+      "file": "assets/processed/materials-r15/roof_diff.png",
+      "sha256": "95a953933ab54ae72988f3748e24896b1ffc9bf89b11e3482c7b1c355e2b81e2"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sha256": "97f3331f3e42de1952d5a82970ce82e1eb63d1b6515baf5ffa378ebce77aae84",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "goldtile",
+    "pigment": "#d2b864",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-goldtile.png",
+    "sha256": "c8271d806a7b60163c8944370563b71ad8eace6b657667c5c69e715f914bc12e",
+    "source": {
+      "file": "assets/processed/materials-r15/goldtile_diff.png",
+      "sha256": "67cc76755a4c9a438b94e7086d3ab305d3d8e1efff94f9fb2db474c272302780"
+    }
+  }
+}

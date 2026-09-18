@@ -1,0 +1,17 @@
+{
+  "sha256": "2eb2130afc349f416af3fd5ba2dd305da73e6a4c6ed99d41e446c9f3122b78a3",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "waterside",
+    "role": "gold",
+    "pigment": "#d0c6a4",
+    "roughness": 0.48,
+    "metallic": 0.25,
+    "file": "assets/processed/sunwen-r17/waterside-gold.png",
+    "sha256": "c0674e503f301902f6bd93e64cb845df2b8c3110cc05fa17c2ec8921dc120776",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

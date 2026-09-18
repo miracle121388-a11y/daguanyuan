@@ -1,7 +1,0 @@
-{
-  "origin": "Blender-exported courtbase_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
-  "sourceMap": "courtbase_diff",
-  "sourcePixelSha256": "1f5bdd8bc539d8708d8c237ee2c641a0b46328bc821d5ef8a33a1540da28757b",
-  "sha256": "554880fdcca3f5ba8e211e9e07324ea4897083a9e6dbc4d4b6b2af2c6539bb52",
-  "prompt": "Blender-exported courtbase_diff material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
-}

@@ -1,0 +1,924 @@
+{
+  "views": [
+    {
+      "name": "garden-eye-east",
+      "eye": [
+        52,
+        2.2,
+        -20
+      ],
+      "target": [
+        140,
+        1,
+        -22
+      ]
+    },
+    {
+      "name": "upper-gallery-east",
+      "eye": [
+        52,
+        27,
+        -20
+      ],
+      "target": [
+        175,
+        5,
+        -22
+      ]
+    },
+    {
+      "name": "water-eye-north",
+      "eye": [
+        20,
+        2.5,
+        -28
+      ],
+      "target": [
+        20,
+        1.1,
+        -143
+      ]
+    },
+    {
+      "name": "mansion-aerial",
+      "eye": [
+        -165,
+        130,
+        175
+      ],
+      "target": [
+        -30,
+        0,
+        -15
+      ]
+    },
+    {
+      "name": "capital-skyline",
+      "eye": [
+        130,
+        155,
+        260
+      ],
+      "target": [
+        -125,
+        0,
+        -185
+      ]
+    },
+    {
+      "name": "temple-quarter",
+      "eye": [
+        -190,
+        83,
+        -78
+      ],
+      "target": [
+        -242,
+        0,
+        -221
+      ]
+    },
+    {
+      "name": "front-street",
+      "eye": [
+        -64,
+        42,
+        270
+      ],
+      "target": [
+        0,
+        2,
+        204
+      ]
+    },
+    {
+      "name": "market-courts",
+      "eye": [
+        125,
+        76,
+        350
+      ],
+      "target": [
+        224,
+        0,
+        237
+      ]
+    }
+  ],
+  "native": [
+    {
+      "name": "Urban_hall_stone",
+      "kind": "hall",
+      "instances": 98,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_hall_plaster",
+      "kind": "hall",
+      "instances": 98,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_hall_redwood001",
+      "kind": "hall",
+      "instances": 98,
+      "role": "redwood",
+      "vertices": 1056
+    },
+    {
+      "name": "Urban_hall_paper",
+      "kind": "hall",
+      "instances": 98,
+      "role": "paper",
+      "vertices": 288
+    },
+    {
+      "name": "Urban_hall_mineral001",
+      "kind": "hall",
+      "instances": 98,
+      "role": "mineral",
+      "vertices": 48
+    },
+    {
+      "name": "Urban_hall_roof",
+      "kind": "hall",
+      "instances": 98,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_hall_tile",
+      "kind": "hall",
+      "instances": 98,
+      "role": "tile",
+      "vertices": 336
+    },
+    {
+      "name": "Urban_house_stone001",
+      "kind": "house",
+      "instances": 834,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_house_plaster001",
+      "kind": "house",
+      "instances": 834,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_house_wood001",
+      "kind": "house",
+      "instances": 834,
+      "role": "wood",
+      "vertices": 768
+    },
+    {
+      "name": "Urban_house_paper001",
+      "kind": "house",
+      "instances": 834,
+      "role": "paper",
+      "vertices": 192
+    },
+    {
+      "name": "Urban_house_roof001",
+      "kind": "house",
+      "instances": 834,
+      "role": "roof",
+      "vertices": 40
+    },
+    {
+      "name": "Urban_house_brick001",
+      "kind": "house",
+      "instances": 834,
+      "role": "brick",
+      "vertices": 22
+    },
+    {
+      "name": "Urban_house_tile001",
+      "kind": "house",
+      "instances": 834,
+      "role": "tile",
+      "vertices": 312
+    },
+    {
+      "name": "Urban_annex_stone001",
+      "kind": "annex",
+      "instances": 1069,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_annex_brick001",
+      "kind": "annex",
+      "instances": 1069,
+      "role": "brick",
+      "vertices": 46
+    },
+    {
+      "name": "Urban_annex_wood001",
+      "kind": "annex",
+      "instances": 1069,
+      "role": "wood",
+      "vertices": 480
+    },
+    {
+      "name": "Urban_annex_paper001",
+      "kind": "annex",
+      "instances": 1069,
+      "role": "paper",
+      "vertices": 96
+    },
+    {
+      "name": "Urban_annex_warmroof001",
+      "kind": "annex",
+      "instances": 1069,
+      "role": "warmroof",
+      "vertices": 40
+    },
+    {
+      "name": "Urban_annex_tile001",
+      "kind": "annex",
+      "instances": 1069,
+      "role": "tile",
+      "vertices": 216
+    },
+    {
+      "name": "Urban_range_stone001",
+      "kind": "range",
+      "instances": 214,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_range_plaster001",
+      "kind": "range",
+      "instances": 214,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_range_wood001",
+      "kind": "range",
+      "instances": 214,
+      "role": "wood",
+      "vertices": 1200
+    },
+    {
+      "name": "Urban_range_paper001",
+      "kind": "range",
+      "instances": 214,
+      "role": "paper",
+      "vertices": 336
+    },
+    {
+      "name": "Urban_range_slateroof001",
+      "kind": "range",
+      "instances": 214,
+      "role": "slateroof",
+      "vertices": 40
+    },
+    {
+      "name": "Urban_range_brick001",
+      "kind": "range",
+      "instances": 214,
+      "role": "brick",
+      "vertices": 22
+    },
+    {
+      "name": "Urban_range_tile001",
+      "kind": "range",
+      "instances": 214,
+      "role": "tile",
+      "vertices": 456
+    },
+    {
+      "name": "Urban_gallery_stone",
+      "kind": "gallery",
+      "instances": 28,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_gallery_redwood001",
+      "kind": "gallery",
+      "instances": 28,
+      "role": "redwood",
+      "vertices": 192
+    },
+    {
+      "name": "Urban_gallery_roof",
+      "kind": "gallery",
+      "instances": 28,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_gallery_tile",
+      "kind": "gallery",
+      "instances": 28,
+      "role": "tile",
+      "vertices": 312
+    },
+    {
+      "name": "Urban_gate_stone",
+      "kind": "gate",
+      "instances": 323,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_gate_redwood001",
+      "kind": "gate",
+      "instances": 323,
+      "role": "redwood",
+      "vertices": 192
+    },
+    {
+      "name": "Urban_gate_mineral001",
+      "kind": "gate",
+      "instances": 323,
+      "role": "mineral",
+      "vertices": 48
+    },
+    {
+      "name": "Urban_gate_roof",
+      "kind": "gate",
+      "instances": 323,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_gate_tile",
+      "kind": "gate",
+      "instances": 323,
+      "role": "tile",
+      "vertices": 120
+    },
+    {
+      "name": "Urban_shop_stone001",
+      "kind": "shop",
+      "instances": 92,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_shop_plaster001",
+      "kind": "shop",
+      "instances": 92,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_shop_wood001",
+      "kind": "shop",
+      "instances": 92,
+      "role": "wood",
+      "vertices": 528
+    },
+    {
+      "name": "Urban_shop_paper001",
+      "kind": "shop",
+      "instances": 92,
+      "role": "paper",
+      "vertices": 96
+    },
+    {
+      "name": "Urban_shop_warmroof001",
+      "kind": "shop",
+      "instances": 92,
+      "role": "warmroof",
+      "vertices": 40
+    },
+    {
+      "name": "Urban_shop_brick001",
+      "kind": "shop",
+      "instances": 92,
+      "role": "brick",
+      "vertices": 22
+    },
+    {
+      "name": "Urban_shop_tile001",
+      "kind": "shop",
+      "instances": 92,
+      "role": "tile",
+      "vertices": 168
+    },
+    {
+      "name": "Urban_shop_awning001",
+      "kind": "shop",
+      "instances": 92,
+      "role": "awning",
+      "vertices": 4
+    },
+    {
+      "name": "Urban_shop_gold001",
+      "kind": "shop",
+      "instances": 92,
+      "role": "gold",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_shop-upper_stone001",
+      "kind": "shop-upper",
+      "instances": 36,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_shop-upper_plaster001",
+      "kind": "shop-upper",
+      "instances": 36,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_shop-upper_wood001",
+      "kind": "shop-upper",
+      "instances": 36,
+      "role": "wood",
+      "vertices": 1128
+    },
+    {
+      "name": "Urban_shop-upper_paper001",
+      "kind": "shop-upper",
+      "instances": 36,
+      "role": "paper",
+      "vertices": 288
+    },
+    {
+      "name": "Urban_shop-upper_slateroof001",
+      "kind": "shop-upper",
+      "instances": 36,
+      "role": "slateroof",
+      "vertices": 40
+    },
+    {
+      "name": "Urban_shop-upper_brick001",
+      "kind": "shop-upper",
+      "instances": 36,
+      "role": "brick",
+      "vertices": 22
+    },
+    {
+      "name": "Urban_shop-upper_tile001",
+      "kind": "shop-upper",
+      "instances": 36,
+      "role": "tile",
+      "vertices": 216
+    },
+    {
+      "name": "Urban_shop-upper_sagecloth001",
+      "kind": "shop-upper",
+      "instances": 36,
+      "role": "sagecloth",
+      "vertices": 4
+    },
+    {
+      "name": "Urban_shop-upper_gold001",
+      "kind": "shop-upper",
+      "instances": 36,
+      "role": "gold",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_warehouse_stone001",
+      "kind": "warehouse",
+      "instances": 35,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_warehouse_brick001",
+      "kind": "warehouse",
+      "instances": 35,
+      "role": "brick",
+      "vertices": 46
+    },
+    {
+      "name": "Urban_warehouse_wood001",
+      "kind": "warehouse",
+      "instances": 35,
+      "role": "wood",
+      "vertices": 1200
+    },
+    {
+      "name": "Urban_warehouse_paper001",
+      "kind": "warehouse",
+      "instances": 35,
+      "role": "paper",
+      "vertices": 336
+    },
+    {
+      "name": "Urban_warehouse_slateroof001",
+      "kind": "warehouse",
+      "instances": 35,
+      "role": "slateroof",
+      "vertices": 40
+    },
+    {
+      "name": "Urban_warehouse_tile001",
+      "kind": "warehouse",
+      "instances": 35,
+      "role": "tile",
+      "vertices": 456
+    },
+    {
+      "name": "Urban_temple_stone001",
+      "kind": "temple",
+      "instances": 1,
+      "role": "stone",
+      "vertices": 96
+    },
+    {
+      "name": "Urban_temple_plaster001",
+      "kind": "temple",
+      "instances": 1,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_temple_redwood001",
+      "kind": "temple",
+      "instances": 1,
+      "role": "redwood",
+      "vertices": 504
+    },
+    {
+      "name": "Urban_temple_mineral001",
+      "kind": "temple",
+      "instances": 1,
+      "role": "mineral",
+      "vertices": 144
+    },
+    {
+      "name": "Urban_temple_roof001",
+      "kind": "temple",
+      "instances": 1,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_temple_tile001",
+      "kind": "temple",
+      "instances": 1,
+      "role": "tile",
+      "vertices": 312
+    },
+    {
+      "name": "Urban_temple_gold001",
+      "kind": "temple",
+      "instances": 1,
+      "role": "gold",
+      "vertices": 288
+    },
+    {
+      "name": "Urban_paifang_stone001",
+      "kind": "paifang",
+      "instances": 5,
+      "role": "stone",
+      "vertices": 192
+    },
+    {
+      "name": "Urban_paifang_redwood001",
+      "kind": "paifang",
+      "instances": 5,
+      "role": "redwood",
+      "vertices": 144
+    },
+    {
+      "name": "Urban_paifang_mineral001",
+      "kind": "paifang",
+      "instances": 5,
+      "role": "mineral",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_paifang_roof001",
+      "kind": "paifang",
+      "instances": 5,
+      "role": "roof",
+      "vertices": 234
+    },
+    {
+      "name": "Urban_paifang_tile001",
+      "kind": "paifang",
+      "instances": 5,
+      "role": "tile",
+      "vertices": 336
+    },
+    {
+      "name": "Urban_paifang_gold001",
+      "kind": "paifang",
+      "instances": 5,
+      "role": "gold",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_bell-pavilion_stone001",
+      "kind": "bell-pavilion",
+      "instances": 2,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_bell-pavilion_brick001",
+      "kind": "bell-pavilion",
+      "instances": 2,
+      "role": "brick",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_bell-pavilion_roof001",
+      "kind": "bell-pavilion",
+      "instances": 2,
+      "role": "roof",
+      "vertices": 156
+    },
+    {
+      "name": "Urban_bell-pavilion_tile001",
+      "kind": "bell-pavilion",
+      "instances": 2,
+      "role": "tile",
+      "vertices": 240
+    },
+    {
+      "name": "Urban_bell-pavilion_redwood001",
+      "kind": "bell-pavilion",
+      "instances": 2,
+      "role": "redwood",
+      "vertices": 96
+    },
+    {
+      "name": "Urban_bell-pavilion_mineral001",
+      "kind": "bell-pavilion",
+      "instances": 2,
+      "role": "mineral",
+      "vertices": 48
+    },
+    {
+      "name": "Urban_bell-pavilion_wood001",
+      "kind": "bell-pavilion",
+      "instances": 2,
+      "role": "wood",
+      "vertices": 36
+    },
+    {
+      "name": "Urban_bell-pavilion_bronze001",
+      "kind": "bell-pavilion",
+      "instances": 2,
+      "role": "bronze",
+      "vertices": 216
+    },
+    {
+      "name": "Urban_well_stone001",
+      "kind": "well",
+      "instances": 49,
+      "role": "stone",
+      "vertices": 168
+    },
+    {
+      "name": "Urban_well_water001",
+      "kind": "well",
+      "instances": 49,
+      "role": "water",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_well_wood001",
+      "kind": "well",
+      "instances": 49,
+      "role": "wood",
+      "vertices": 126
+    },
+    {
+      "name": "Urban_well_roof001",
+      "kind": "well",
+      "instances": 49,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_well_tile001",
+      "kind": "well",
+      "instances": 49,
+      "role": "tile",
+      "vertices": 96
+    },
+    {
+      "name": "Urban_screen_stone001",
+      "kind": "screen",
+      "instances": 53,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_screen_plaster001",
+      "kind": "screen",
+      "instances": 53,
+      "role": "plaster",
+      "vertices": 48
+    },
+    {
+      "name": "Urban_screen_brick001",
+      "kind": "screen",
+      "instances": 53,
+      "role": "brick",
+      "vertices": 46
+    },
+    {
+      "name": "Urban_screen_roof001",
+      "kind": "screen",
+      "instances": 53,
+      "role": "roof",
+      "vertices": 40
+    },
+    {
+      "name": "Urban_screen_tile001",
+      "kind": "screen",
+      "instances": 53,
+      "role": "tile",
+      "vertices": 192
+    },
+    {
+      "name": "Urban_stall_wood001",
+      "kind": "stall",
+      "instances": 61,
+      "role": "wood",
+      "vertices": 192
+    },
+    {
+      "name": "Urban_stall_awning001",
+      "kind": "stall",
+      "instances": 61,
+      "role": "awning",
+      "vertices": 8
+    },
+    {
+      "name": "Urban_stall_gold001",
+      "kind": "stall",
+      "instances": 61,
+      "role": "gold",
+      "vertices": 216
+    },
+    {
+      "name": "Urban_cart_wood001",
+      "kind": "cart",
+      "instances": 37,
+      "role": "wood",
+      "vertices": 312
+    },
+    {
+      "name": "Urban_cart_stone001",
+      "kind": "cart",
+      "instances": 37,
+      "role": "stone",
+      "vertices": 96
+    },
+    {
+      "name": "Urban_cart_awning001",
+      "kind": "cart",
+      "instances": 37,
+      "role": "awning",
+      "vertices": 48
+    },
+    {
+      "name": "Urban_hitching_stone001",
+      "kind": "hitching",
+      "instances": 39,
+      "role": "stone",
+      "vertices": 48
+    },
+    {
+      "name": "Urban_hitching_wood001",
+      "kind": "hitching",
+      "instances": 39,
+      "role": "wood",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_lane-gate_stone001",
+      "kind": "lane-gate",
+      "instances": 4,
+      "role": "stone",
+      "vertices": 96
+    },
+    {
+      "name": "Urban_lane-gate_redwood001",
+      "kind": "lane-gate",
+      "instances": 4,
+      "role": "redwood",
+      "vertices": 96
+    },
+    {
+      "name": "Urban_lane-gate_mineral001",
+      "kind": "lane-gate",
+      "instances": 4,
+      "role": "mineral",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_lane-gate_roof001",
+      "kind": "lane-gate",
+      "instances": 4,
+      "role": "roof",
+      "vertices": 78
+    },
+    {
+      "name": "Urban_lane-gate_tile001",
+      "kind": "lane-gate",
+      "instances": 4,
+      "role": "tile",
+      "vertices": 144
+    },
+    {
+      "name": "Urban_lane-gate_gold001",
+      "kind": "lane-gate",
+      "instances": 4,
+      "role": "gold",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_drain_stone001",
+      "kind": "drain",
+      "instances": 2,
+      "role": "stone",
+      "vertices": 48
+    },
+    {
+      "name": "Urban_drain_water001",
+      "kind": "drain",
+      "instances": 2,
+      "role": "water",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_slab-bridge_stone001",
+      "kind": "slab-bridge",
+      "instances": 4,
+      "role": "stone",
+      "vertices": 72
+    },
+    {
+      "name": "Urban_wall_plaster",
+      "kind": "wall",
+      "instances": 1621,
+      "role": "plaster",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_wall_stone",
+      "kind": "wall",
+      "instances": 1621,
+      "role": "stone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_wall_roof",
+      "kind": "wall",
+      "instances": 1621,
+      "role": "roof",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_paving_paving",
+      "kind": "paving",
+      "instances": 4,
+      "role": "paving",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_court-paving_courtstone001",
+      "kind": "court-paving",
+      "instances": 342,
+      "role": "courtstone",
+      "vertices": 24
+    },
+    {
+      "name": "Urban_tree_wood",
+      "kind": "tree",
+      "instances": 292,
+      "role": "wood",
+      "vertices": 198
+    },
+    {
+      "name": "Urban_tree_lightleaf",
+      "kind": "tree",
+      "instances": 292,
+      "role": "lightleaf",
+      "vertices": 244
+    },
+    {
+      "name": "Urban_tree_leaf",
+      "kind": "tree",
+      "instances": 292,
+      "role": "leaf",
+      "vertices": 182
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

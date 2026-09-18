@@ -1,0 +1,18 @@
+{
+  "sha256": "4ddbcc676e0de1c574396a9d500e061e7e7bce2fc0983ec9f64c407d3922492c",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "bamboo",
+    "role": "roof",
+    "pigment": "#577678",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/bamboo-roof.png",
+    "sha256": "dd8332234a254a29ebf29f537a63935618ae536507c8d29f9dde17b7fa3a8b81",
+    "source": {
+      "file": "assets/processed/materials-r15/roof_diff.png",
+      "sha256": "95a953933ab54ae72988f3748e24896b1ffc9bf89b11e3482c7b1c355e2b81e2"
+    }
+  }
+}

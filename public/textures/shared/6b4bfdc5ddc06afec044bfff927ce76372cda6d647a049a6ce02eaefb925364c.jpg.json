@@ -1,0 +1,18 @@
+{
+  "sha256": "6b4bfdc5ddc06afec044bfff927ce76372cda6d647a049a6ce02eaefb925364c",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "bamboo",
+    "role": "plaster",
+    "pigment": "#f1ead5",
+    "roughness": 0.84,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/bamboo-plaster.png",
+    "sha256": "5f7866709a52a92d65ce962a4c85dedf99745c716d6279216b361a77088edaaa",
+    "source": {
+      "file": "assets/processed/materials-r15/plaster_diff.png",
+      "sha256": "aa7086e0b6af67efe08ba1cfb2bcf0637ac4953eb2f0b38bb7d68632aa9b2d7c"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sha256": "dd4494dd6e81027ef9fed1ef32022ab95de05127376c2428885d5aa7bf8c210a",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "hill",
+    "role": "tile",
+    "pigment": "#6f9a8e",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/hill-tile.png",
+    "sha256": "94d5c506c17f6a338561f8621efb26b2ba35b290951237fa583175739ae9e727",
+    "source": {
+      "file": "assets/processed/materials-r15/tile_diff.png",
+      "sha256": "0228148a26676a50576db343b0167a2e27221c06bfa5f8351b6850cdf0757977"
+    }
+  }
+}

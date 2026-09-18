@@ -1,0 +1,18 @@
+{
+  "sha256": "d8331a5a313d580da39740a3a7f6707bf1f3f4a9d8a5c668c5f4ee25b1d771a6",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "vermillion-wall",
+    "role": "plaster",
+    "pigment": "#cc684d",
+    "roughness": 0.84,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/vermillion-wall-plaster.png",
+    "sha256": "4d0ed8e49b85c4a1e96685be36eb3cbc3b66c5a0560a423fb72a8ba32256662f",
+    "source": {
+      "file": "assets/processed/materials-r15/plaster_diff.png",
+      "sha256": "aa7086e0b6af67efe08ba1cfb2bcf0637ac4953eb2f0b38bb7d68632aa9b2d7c"
+    }
+  }
+}

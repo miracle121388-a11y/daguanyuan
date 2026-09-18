@@ -1,0 +1,18 @@
+{
+  "sha256": "a0dbc4761870577675fedc43130f5e574b96a7d1f6e7b5e209be2eedd4d43959",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "hill",
+    "role": "wood",
+    "pigment": "#a86748",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/hill-wood.png",
+    "sha256": "27beb98dda59989518545694d092e15625338edc7b5e441add428daee2ebbad2",
+    "source": {
+      "file": "assets/processed/materials-r15/wood_diff.png",
+      "sha256": "44dffcd97d01a62e4a1c679d03f19beb22274d172ee4f658af0a54a00c43d14d"
+    }
+  }
+}

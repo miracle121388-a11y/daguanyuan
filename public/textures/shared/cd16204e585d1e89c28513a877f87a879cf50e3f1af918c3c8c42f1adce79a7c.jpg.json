@@ -1,0 +1,18 @@
+{
+  "sha256": "cd16204e585d1e89c28513a877f87a879cf50e3f1af918c3c8c42f1adce79a7c",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "temple",
+    "role": "tilelight",
+    "pigment": "#a6b1a1",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/temple-tilelight.png",
+    "sha256": "e9c27ae1dfa95a4bc1748fe53abefe1720926cf7124aba85d3d80e580e644243",
+    "source": {
+      "file": "assets/processed/materials-r15/tilelight_diff.png",
+      "sha256": "8b559586be8aa350bc6a7fe1d4e47eb38a33fb161e50d14c2d76b3a2082da574"
+    }
+  }
+}

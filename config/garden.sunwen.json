@@ -1,0 +1,581 @@
+{
+  "revision": "r17",
+  "basis": "孙温《红楼梦》式清代工笔重彩贵族私家园林：青绿为底、百花映衬、层叠经营、疏密有致。青石、卵石、整洁院坪、苔痕、湿润岸线与花坛地被组织地面。禁用深绿密林、黄土荒地、现代大草坪、欧美自然花园。画作与用户要求的三维设计转译，非历史颜料测定或原著植物考据。",
+  "referenceFiles": [
+    "SW001",
+    "SW044–SW067",
+    "SW071",
+    "SW076",
+    "SW077",
+    "SW091–SW100",
+    "SW108",
+    "SW127",
+    "SW136",
+    "SW146",
+    "SW158"
+  ],
+  "defaults": {
+    "roof": "#718d92",
+    "tile": "#829d9e",
+    "tilelight": "#a8b9ab",
+    "tiledark": "#45686e",
+    "goldroof": "#bca057",
+    "goldtile": "#d2b864",
+    "goldtilelight": "#e7ce83",
+    "goldtiledark": "#98733e",
+    "wood": "#c94732",
+    "darkwood": "#475c57",
+    "latticewood": "#327c6e",
+    "rusticwood": "#ae945f",
+    "plaster": "#f0e8ce",
+    "qing_clay": "#dec698",
+    "screen": "#f4eed9",
+    "paper": "#f4ecd0",
+    "qing_azurite": "#315b96",
+    "qing_jade": "#3da983",
+    "gold": "#e6c476",
+    "silk": "#cf85ac",
+    "cutstone": "#c9d2c3",
+    "stone": "#a2b4ab",
+    "paving": "#9aafa9",
+    "courtbase": "#adbcb1",
+    "bankstone": "#759a90",
+    "gardenstone": "#6c927f",
+    "earth": "#91ac9c",
+    "botanical_banana": "#6cae7c",
+    "botanical_bamboo": "#589c82",
+    "botanical_stem": "#a6b97d",
+    "botanical_petal": "#e6abc9",
+    "botanical_litter": "#baa777",
+    "bamboo": "#82b390",
+    "leaf": "#68a58b",
+    "leaflight": "#a8c788",
+    "leafdark": "#487f78",
+    "grass": "#84ad8b",
+    "fern": "#73a38c",
+    "water": "#95b7b3",
+    "lightleaf": "#adca81",
+    "limestone": "#a3b79a",
+    "moss": "#618f7c",
+    "thatch": "#c7b58a",
+    "ivory": "#f1e5c8",
+    "marble": "#d9dac7",
+    "bark": "#a5997a"
+  },
+  "profiles": {
+    "landscape": {
+      "references": [
+        "SW001",
+        "SW045",
+        "SW050",
+        "SW053"
+      ],
+      "colors": {}
+    },
+    "vermillion-wall": {
+      "references": [
+        "SW001",
+        "SW057",
+        "SW061"
+      ],
+      "colors": {
+        "plaster": "#cc684d"
+      }
+    },
+    "ceremonial": {
+      "references": [
+        "SW001",
+        "SW052",
+        "SW063",
+        "SW064"
+      ],
+      "colors": {
+        "wood": "#c64732",
+        "darkwood": "#426056",
+        "latticewood": "#369d69",
+        "qing_azurite": "#285c9e",
+        "qing_jade": "#3daf79",
+        "plaster": "#f0dfb8",
+        "silk": "#d183b0"
+      }
+    },
+    "bamboo": {
+      "references": [
+        "SW047",
+        "SW076",
+        "SW096"
+      ],
+      "colors": {
+        "wood": "#738b79",
+        "darkwood": "#3e595b",
+        "latticewood": "#4e7770",
+        "qing_azurite": "#32789a",
+        "qing_jade": "#59ac8f",
+        "plaster": "#f1ead5",
+        "silk": "#a8c3b5",
+        "roof": "#577678",
+        "tile": "#688a88",
+        "tilelight": "#9bb4a4",
+        "tiledark": "#35565b",
+        "gold": "#adb195"
+      }
+    },
+    "crimson": {
+      "references": [
+        "SW054",
+        "SW055",
+        "SW100",
+        "SW127"
+      ],
+      "colors": {
+        "wood": "#b73543",
+        "darkwood": "#673945",
+        "latticewood": "#278575",
+        "qing_azurite": "#315882",
+        "qing_jade": "#479878",
+        "plaster": "#f3e4cd",
+        "silk": "#df9daf",
+        "roof": "#517f76",
+        "tile": "#739d89",
+        "tilelight": "#adc69b",
+        "tiledark": "#325d5b",
+        "gold": "#d9b571"
+      }
+    },
+    "herbal": {
+      "references": [
+        "SW049",
+        "SW056",
+        "SW091"
+      ],
+      "colors": {
+        "wood": "#938968",
+        "darkwood": "#696957",
+        "latticewood": "#858e76",
+        "qing_jade": "#8ba98b",
+        "plaster": "#ece9d7",
+        "roof": "#818c80",
+        "tile": "#949e8d",
+        "tilelight": "#bcc3ab",
+        "tiledark": "#5d7267",
+        "gold": "#b7b28e",
+        "qing_azurite": "#7a938d",
+        "silk": "#c4c5b1"
+      }
+    },
+    "study": {
+      "references": [
+        "SW058",
+        "SW091",
+        "SW098"
+      ],
+      "colors": {
+        "wood": "#946749",
+        "darkwood": "#695341",
+        "latticewood": "#637f85",
+        "qing_azurite": "#507c97",
+        "plaster": "#f2e8ce",
+        "silk": "#c7d4c5",
+        "roof": "#5f8094",
+        "tile": "#7d9fb0",
+        "tilelight": "#b3c6c5",
+        "tiledark": "#426176",
+        "qing_jade": "#7a9d8a",
+        "gold": "#c4b185"
+      }
+    },
+    "rustic": {
+      "references": [
+        "SW048",
+        "SW108",
+        "SW136"
+      ],
+      "colors": {
+        "roof": "#aaa078",
+        "tile": "#b4a984",
+        "tilelight": "#cec49b",
+        "tiledark": "#8e8d70",
+        "wood": "#b19462",
+        "darkwood": "#8d7756",
+        "latticewood": "#789574",
+        "plaster": "#e1d4b3",
+        "qing_clay": "#d6c49c",
+        "qing_azurite": "#648b93",
+        "qing_jade": "#7aab81",
+        "gold": "#c3ab77"
+      }
+    },
+    "temple": {
+      "references": [
+        "SW099"
+      ],
+      "colors": {
+        "wood": "#887759",
+        "darkwood": "#5d604e",
+        "latticewood": "#687e68",
+        "qing_jade": "#839d83",
+        "plaster": "#e4e4d3",
+        "silk": "#c6c9b8",
+        "roof": "#636e70",
+        "tile": "#7c8580",
+        "tilelight": "#a6b1a1",
+        "tiledark": "#46595a",
+        "qing_azurite": "#7d9795",
+        "gold": "#a3a486"
+      }
+    },
+    "waterside": {
+      "references": [
+        "SW046",
+        "SW077",
+        "SW092",
+        "SW093",
+        "SW146"
+      ],
+      "colors": {
+        "roof": "#6997a0",
+        "tile": "#8cb0b5",
+        "wood": "#a97170",
+        "darkwood": "#4b6874",
+        "latticewood": "#518a8a",
+        "qing_azurite": "#527e9c",
+        "plaster": "#e5e6cb",
+        "silk": "#d2aebc",
+        "tilelight": "#b6c8bb",
+        "tiledark": "#426f7d",
+        "qing_jade": "#74ad99",
+        "gold": "#d0c6a4"
+      }
+    },
+    "warm": {
+      "references": [
+        "SW047",
+        "SW048",
+        "SW049",
+        "SW052",
+        "SW054",
+        "SW055",
+        "SW064",
+        "SW077",
+        "SW092",
+        "SW096",
+        "SW098",
+        "SW099",
+        "SW108",
+        "SW136"
+      ],
+      "colors": {
+        "roof": "#8e958c",
+        "tile": "#a6ada0",
+        "tilelight": "#cdcdb6",
+        "tiledark": "#667a74",
+        "wood": "#bb8a69",
+        "darkwood": "#876954",
+        "latticewood": "#9b9576",
+        "plaster": "#f1e2c8",
+        "qing_jade": "#a2b391",
+        "qing_azurite": "#8eaaa7",
+        "gold": "#d7bb86",
+        "silk": "#dda6a0"
+      }
+    },
+    "hill": {
+      "references": [
+        "SW047",
+        "SW048",
+        "SW049",
+        "SW052",
+        "SW054",
+        "SW055",
+        "SW064",
+        "SW077",
+        "SW092",
+        "SW096",
+        "SW098",
+        "SW099",
+        "SW108",
+        "SW136"
+      ],
+      "colors": {
+        "roof": "#507d7a",
+        "tile": "#6f9a8e",
+        "tilelight": "#aac0a7",
+        "tiledark": "#3b605e",
+        "wood": "#a86748",
+        "darkwood": "#6b574b",
+        "latticewood": "#5f8977",
+        "qing_jade": "#71a58e",
+        "qing_azurite": "#4c778f",
+        "gold": "#d1b875",
+        "silk": "#c4be94"
+      }
+    },
+    "moon": {
+      "references": [
+        "SW047",
+        "SW048",
+        "SW049",
+        "SW052",
+        "SW054",
+        "SW055",
+        "SW064",
+        "SW077",
+        "SW092",
+        "SW096",
+        "SW098",
+        "SW099",
+        "SW108",
+        "SW136"
+      ],
+      "colors": {
+        "roof": "#859d9f",
+        "tile": "#a7bab8",
+        "tilelight": "#cbd4c7",
+        "tiledark": "#587781",
+        "wood": "#879694",
+        "darkwood": "#566e7c",
+        "latticewood": "#7298a4",
+        "plaster": "#ebeee1",
+        "qing_jade": "#9abaaa",
+        "qing_azurite": "#6a92ac",
+        "gold": "#c9ceb3",
+        "silk": "#c4ccd8"
+      }
+    },
+    "pavilion": {
+      "references": [
+        "SW047",
+        "SW048",
+        "SW049",
+        "SW052",
+        "SW054",
+        "SW055",
+        "SW064",
+        "SW077",
+        "SW092",
+        "SW096",
+        "SW098",
+        "SW099",
+        "SW108",
+        "SW136"
+      ],
+      "colors": {
+        "roof": "#527f80",
+        "tile": "#70a092",
+        "tiledark": "#386266",
+        "wood": "#927660",
+        "latticewood": "#527f78",
+        "qing_jade": "#71ad91",
+        "gold": "#c8bd89"
+      }
+    },
+    "purple": {
+      "references": [
+        "SW047",
+        "SW048",
+        "SW049",
+        "SW052",
+        "SW054",
+        "SW055",
+        "SW064",
+        "SW077",
+        "SW092",
+        "SW096",
+        "SW098",
+        "SW099",
+        "SW108",
+        "SW136"
+      ],
+      "colors": {
+        "roof": "#647e94",
+        "tile": "#88a0b2",
+        "tiledark": "#405c74",
+        "wood": "#a4829d",
+        "darkwood": "#67536d",
+        "latticewood": "#75939e",
+        "qing_jade": "#84b0a2",
+        "qing_azurite": "#7f7fab",
+        "gold": "#d2c29c",
+        "silk": "#cfb5d5"
+      }
+    },
+    "brocade": {
+      "references": [
+        "SW047",
+        "SW048",
+        "SW049",
+        "SW052",
+        "SW054",
+        "SW055",
+        "SW064",
+        "SW077",
+        "SW092",
+        "SW096",
+        "SW098",
+        "SW099",
+        "SW108",
+        "SW136"
+      ],
+      "colors": {
+        "roof": "#557f80",
+        "tile": "#77a293",
+        "tiledark": "#395c64",
+        "wood": "#a9566b",
+        "darkwood": "#6a4860",
+        "latticewood": "#558e86",
+        "qing_jade": "#6cab95",
+        "qing_azurite": "#706491",
+        "gold": "#d3b372",
+        "silk": "#d6afcf"
+      }
+    },
+    "gathering": {
+      "references": [
+        "SW047",
+        "SW048",
+        "SW049",
+        "SW052",
+        "SW054",
+        "SW055",
+        "SW064",
+        "SW077",
+        "SW092",
+        "SW096",
+        "SW098",
+        "SW099",
+        "SW108",
+        "SW136"
+      ],
+      "colors": {
+        "roof": "#748d7f",
+        "tile": "#92aa94",
+        "tiledark": "#4d6c5a",
+        "wood": "#ab7953",
+        "darkwood": "#74583d",
+        "latticewood": "#8a9b72",
+        "qing_jade": "#93b193",
+        "qing_azurite": "#6d9290",
+        "gold": "#d6bd84",
+        "silk": "#c5c7a2"
+      }
+    }
+  },
+  "places": {
+    "daguanyuan_gate": "ceremonial",
+    "daguanlou": "ceremonial",
+    "xiaoxiangguan": "bamboo",
+    "yihongyuan": "crimson",
+    "hengwuyuan": "herbal",
+    "qiushuangzhai": "study",
+    "daoxiangcun": "rustic",
+    "luxuean": "rustic",
+    "longcuian": "temple",
+    "ouxiangxie": "waterside",
+    "dicuiting": "pavilion",
+    "qujingtongyou": "herbal",
+    "aojingxiguan": "moon",
+    "tubishanzhuang": "hill",
+    "nuanxiangwu": "warm",
+    "zilingzhou": "purple",
+    "zhuijinlou": "brocade",
+    "jiayintang": "gathering"
+  },
+  "planting": {
+    "seed": 170917,
+    "species": [
+      "scholar-tree",
+      "ginkgo",
+      "chinese-pine",
+      "shrub",
+      "willow",
+      "crabapple",
+      "white-blossom",
+      "red-maple"
+    ],
+    "atlasColumns": 5,
+    "atlasTile": 384,
+    "shoreWillowDistance": 7,
+    "flowerGroves": [
+      {
+        "place": "yihongyuan",
+        "radius": 35,
+        "species": 5,
+        "fraction": 0.45
+      },
+      {
+        "place": "longcuian",
+        "radius": 24,
+        "species": 6,
+        "fraction": 0.29
+      },
+      {
+        "place": "daoxiangcun",
+        "radius": 28,
+        "species": 5,
+        "fraction": 0.26
+      },
+      {
+        "place": "nuanxiangwu",
+        "radius": 25,
+        "species": 6,
+        "fraction": 0.32
+      },
+      {
+        "place": "qiushuangzhai",
+        "radius": 28,
+        "species": 7,
+        "fraction": 0.22
+      }
+    ],
+    "note": "以院墙、廊道、桥榭和水岸组织成丛乔木、花灌木与连续低矮地被。保留轴线和院门视线；富丽花色为工笔重彩意境表达，不宣称所有花木同时开花的自然物候。",
+    "interiorSpacing": 10.5,
+    "outerSpacing": 19,
+    "outerLimit": 175,
+    "interiorLimit": 450,
+    "outerTreeLimit": 22,
+    "shrubLimit": 240,
+    "groundCoverLimit": 360,
+    "understoryLimit": 240,
+    "canopyScale": [
+      1.3,
+      1.86
+    ],
+    "perennialLimit": 1200
+  },
+  "assetRevision": "spatial-garden-20260918-r21",
+  "referenceRepository": "https://github.com/changren-wcr/sunwen",
+  "referenceCommit": "9e9352d51a5f4a7006f77946ee8ace29d427a937",
+  "landscape": {
+    "standard": "清代中国古典工笔重彩贵族园林",
+    "composition": "对景、借景、框景、障景；密而不塞，繁而不乱",
+    "ground": {
+      "slate": "#8da9a5",
+      "court": "#b5c3ba",
+      "gravel": "#afbeb2",
+      "moss": "#648f7d",
+      "stoneGreen": "#73a58b",
+      "beanGreen": "#a9c68e",
+      "greyGreen": "#7d9f94",
+      "willowGreen": "#99be87",
+      "bambooGreen": "#5c9581",
+      "shore": "#537e73"
+    },
+    "courts": {
+      "yihongyuan": "海棠红、芍药粉、蕉叶石绿；前庭留白，侧庭花木繁盛。",
+      "xiaoxiangguan": "修竹、芭蕉、苔痕与湿润泉渠；竹青与灰绿为主，白花少量点缀。",
+      "hengwuyuan": "青石院坪、山石藤蔓、芳草；克制素雅，保持通行空间。",
+      "daoxiangcun": "精整田畦、花篱、果木；嫩绿、菊黄与少量桃粉。",
+      "ouxiangxie": "分湾荷花、岸柳、鸢尾与水岸花木；留出开阔倒影面。"
+    },
+    "prohibited": [
+      "单一深绿色森林",
+      "野生密林",
+      "大面积裸露黄土",
+      "现代大草坪",
+      "欧美自然花园"
+    ]
+  },
+  "architectureRevision": "r18",
+  "urbanRevision": "r20",
+  "groundingRevision": "r21"
+}

@@ -117,9 +117,7 @@ def terrain(b,layout):
   base=hill_height(layout,x,y)
   if in_water(layout,x,y):return 0
   outside=max(abs(x)-148,y-149,-y-140,0)
-  if outside>0:
-   rise=min(1,outside/65)**2
-   return max(base,rise*(9+10*math.sin(x*.018+y*.007)**2+12*math.sin(y*.024-x*.01)**2))
+  if outside>0:return 0
   road_edges=[e for e in layout['pathEdges'] if e['kind'] in ['path','stairs']]
   nearest=min(road_edges,key=lambda e:distance(x,y,nodes[e['from']],nodes[e['to']]))
   a,c=nodes[nearest['from']],nodes[nearest['to']];clearance=distance(x,y,a,c)

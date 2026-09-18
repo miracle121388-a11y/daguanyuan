@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported banana material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "banana",
+  "sourcePixelSha256": "8123416f1a7e449b6e722930ec59cdbca715d101163cecc9f2352d7993dd768e",
+  "sha256": "8123416f1a7e449b6e722930ec59cdbca715d101163cecc9f2352d7993dd768e",
+  "prompt": "Blender-exported banana material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

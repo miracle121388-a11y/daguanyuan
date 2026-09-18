@@ -32,7 +32,7 @@ def paving_tree():
     vertices, faces = [], []
     bpy.context.view_layer.update()
     for ob in bpy.data.objects:
-        if ob.type != 'MESH' or not ob.data.materials or not all(m.name == 'paving' for m in ob.data.materials):
+        if ob.type != 'MESH' or not ob.data.materials or not all(m.get('sunwenRole',m.name) == 'paving' for m in ob.data.materials):
             continue
         offset = len(vertices)
         vertices.extend(ob.matrix_world @ v.co for v in ob.data.vertices)

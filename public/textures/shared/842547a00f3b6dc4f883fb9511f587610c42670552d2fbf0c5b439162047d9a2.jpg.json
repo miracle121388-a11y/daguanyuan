@@ -1,7 +1,0 @@
-{
-  "origin": "Blender-exported gardenstone_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
-  "sourceMap": "gardenstone_rough",
-  "sourcePixelSha256": "48e6ef602b1fe5f2e88c9605f165672b005e980957af84768700f131fa65d7c3",
-  "sha256": "842547a00f3b6dc4f883fb9511f587610c42670552d2fbf0c5b439162047d9a2",
-  "prompt": "Blender-exported gardenstone_rough material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
-}

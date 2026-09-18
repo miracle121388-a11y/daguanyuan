@@ -1,0 +1,96 @@
+{
+  "at": "2026-09-17T12:02:16.801221+00:00",
+  "revision": "spatial-garden-20260917-r17",
+  "status": "Local refinement complete; no push or deployment in this art-direction turn",
+  "counts": {
+    "vegetation": 361,
+    "groundCover": 360,
+    "understory": 240,
+    "sunwenPlanting": 918
+  },
+  "bedCount": 88,
+  "tests": {
+    "unitAndApi": 82,
+    "fullE2EBeforeFinalLotusCleanup": 13,
+    "targetedE2EAfterFinalLotusCleanup": 3,
+    "sunwenIntegrity": 1128,
+    "dataIntegrity": 4638,
+    "spatial": 319,
+    "nativeModelVerification": "npm run models:verify completed; final water-only disc cleanup verified by the 3 targeted browser cases",
+    "typecheck": true,
+    "lint": true,
+    "productionBuild": true
+  },
+  "mobile": {
+    "initialBytes": 7799848,
+    "initialMiB": 7.439,
+    "loadSeconds": 9.64,
+    "conditions": {
+      "viewport": [
+        390,
+        844
+      ],
+      "deviceScaleFactor": 3,
+      "renderDpr": 1,
+      "latencyMs": 80,
+      "downloadMbps": 9,
+      "cpuSlowdown": 4,
+      "realMobileHardware": false
+    },
+    "initialBudgetMiB": 8
+  },
+  "preserved": [
+    "15 place identities and anchors",
+    "Reviewed paths and shoreline",
+    "Existing architecture and Manual_Adjustments",
+    "Remote teammates feature work"
+  ],
+  "images": [
+    {
+      "file": "reports/browser/r17/overview.png",
+      "sha256": "14684ba1f3d076f625641b25c7a64209f9cc18837f41245823465b686c34be12"
+    },
+    {
+      "file": "reports/browser/r17/yihongyuan.png",
+      "sha256": "e0e9178bb32f10c7bd4ab5abcd877ada0cc95e97ce037baedc4ed4f6bf823d48"
+    },
+    {
+      "file": "reports/browser/r17/xiaoxiangguan.png",
+      "sha256": "2496f45433fb4addf60b440b237a400a860dd8837ad573c47b5500f4613e20d4"
+    },
+    {
+      "file": "reports/browser/r17/hengwuyuan.png",
+      "sha256": "d045ae26852ba098fdda9a916b1d04d38748a4ad18d733c6d544a2c486a4bae8"
+    },
+    {
+      "file": "reports/browser/r17/daoxiangcun.png",
+      "sha256": "6eb8e7ac5a15eecfcb9ab8a34c44425657f1622fb648e397fc2466d16b56cb9e"
+    },
+    {
+      "file": "reports/browser/r17/ouxiangxie.png",
+      "sha256": "362fa7b6679003927ffc5e4d347f81ea85c81c1efd93a7338d5bdf8ed29da893"
+    },
+    {
+      "file": "reports/browser/r17/night.png",
+      "sha256": "1e6ee8b087a1b02ad6043ec22a3edf24fccd13f0108e9a1fab0504f9056d6e0d"
+    },
+    {
+      "file": "reports/browser/10-phone-4g.png",
+      "sha256": "286e0ee4cb819400ff7945906671ecf5ef3dfbf1ac991cc633f6ddb57be537f4"
+    },
+    {
+      "file": "reports/blender/r17-master-full.png",
+      "sha256": "31e77e5699fec2c9aef179204b2e9909811040f6ace6dcaeb424b83b8b11693e"
+    },
+    {
+      "file": "reports/blender/r17-master-xiaoxiang.png",
+      "sha256": "ac45021c81895f62ddb08e276b668edc648e1dc007471823f06d1487a40ba6f6"
+    }
+  ],
+  "masterSha256": "b7176fc24cd149b957698f56504baddc24924d06dcf7157dd7a6bfe620cadf2d",
+  "notes": [
+    "First mobile test exceeded 8 MiB (10992007 bytes); optimized remote stones, stems and merged low bed geometry, then passed.",
+    "Historical reference evidence remains separate from artistic planting, flower seasons and spatial interpretation.",
+    "Authored lotus replaces the legacy floating low polygon discs; native source retained in a hidden layer."
+  ]
+}

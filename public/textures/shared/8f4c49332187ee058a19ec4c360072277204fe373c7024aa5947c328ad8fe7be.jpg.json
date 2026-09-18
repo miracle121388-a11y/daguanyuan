@@ -1,0 +1,17 @@
+{
+  "sha256": "8f4c49332187ee058a19ec4c360072277204fe373c7024aa5947c328ad8fe7be",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "lightleaf",
+    "pigment": "#adca81",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-lightleaf.png",
+    "sha256": "404d803e2ae87c0e5bae28fae0a06b0002565a9b1cc20a607c03f045247e1066",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

@@ -4,6 +4,8 @@ Every modifier is evaluated after depsgraph update. No hidden full-detail mesh.
 import bpy
 from mathutils import Vector
 
+def role(m):return m.get('sunwenRole',m.name)
+
 def build_mobile(objects,collection,bake=True,ratio=.07,split_roof=False,defer_bake=False):
  mat=bpy.data.materials.get('Mobile_VertexColor') or bpy.data.materials.new('Mobile_VertexColor');mat.use_nodes=True
  nodes=mat.node_tree.nodes;bs=nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=.95
@@ -11,14 +13,14 @@ def build_mobile(objects,collection,bake=True,ratio=.07,split_roof=False,defer_b
  groups={};lamps=[]
  for ob in objects:
   if ob.type!='MESH':continue
-  if any(m.name in ['lantern','screen','silk'] for m in ob.data.materials):
+  if any(role(m) in ['lantern','screen','silk'] for m in ob.data.materials):
    copy=ob.copy();copy.data=ob.data;collection.objects.link(copy);lamps.append(copy);continue
   parent=ob.parent if ob.parent and ob.parent.get('placeId') else None
-  is_roof=all(m.name in ['roof','tile','tilelight','tiledark'] for m in ob.data.materials)
-  roof_shell=all(m.name=='roof' for m in ob.data.materials)
-  vegetation=all(m.name.startswith(('leaf','lightleaf','canopy','bark','bamboo','flower','creamflower','moss')) for m in ob.data.materials)
-  surface=ob.data.materials[0].name if all(m.name in ['earth','limestone','bankstone','gardenstone','roof','floorwood','courtbase','paving'] for m in ob.data.materials) else None
-  if ob.data.materials and all(m.get('focalBotany') for m in ob.data.materials):surface=ob.data.materials[0].name
+  is_roof=all(role(m) in ['roof','tile','tilelight','tiledark'] for m in ob.data.materials)
+  roof_shell=all(role(m)=='roof' for m in ob.data.materials)
+  vegetation=all(role(m).startswith(('leaf','lightleaf','canopy','bark','bamboo','flower','creamflower','moss')) for m in ob.data.materials)
+  surface=role(ob.data.materials[0]) if all(role(m) in ['earth','limestone','bankstone','gardenstone','roof','floorwood','courtbase','paving'] for m in ob.data.materials) else None
+  if ob.data.materials and all(m.get('focalBotany') for m in ob.data.materials):surface=role(ob.data.materials[0])
   key=(parent.name if parent else 'landscape')+('_plants' if vegetation else '_roofshell' if roof_shell else '_'+surface if surface else '_roof' if parent and split_roof and is_roof else '')
   bucket=groups.setdefault(key,{'vs':[],'fs':[],'colors':[],'smooth':[],'uv':[],'materials':[],'indices':[],'parent':parent,'roof':is_roof and split_roof,'vegetation':vegetation,'surface':surface,'roofShell':roof_shell})
   modifier=ob.modifiers.new('Mobile_Overview','DECIMATE');modifier.ratio=1 if roof_shell or surface in ['floorwood','courtbase','paving','bankstone'] else (.62 if surface and surface.startswith('botanical_') else .60 if surface=='gardenstone' else .34 if surface=='limestone' else .22 if ob.name.startswith('landscape_earth') else ratio) if len(ob.data.polygons)>200 else 1

@@ -53,7 +53,18 @@
     "test:story": "node scripts/story_smoke.mjs",
     "test:dreams": "node scripts/dream_smoke.mjs && node scripts/dream_edges_smoke.mjs",
     "test:dreams:live": "node scripts/dream_live_smoke.mjs",
-    "test:dreams:silk": "node scripts/dream_silk_smoke.mjs"
+    "test:dreams:silk": "node scripts/dream_silk_smoke.mjs",
+    "references:sunwen": "python scripts/fetch_sunwen_references.py && python scripts/publish_sunwen_gallery.py",
+    "models:sunwen": "node scripts/pipeline.mjs models-sunwen",
+    "models:sunwen-landscape": "node scripts/pipeline.mjs models-sunwen-landscape",
+    "models:sunwen-architecture": "node scripts/pipeline.mjs models-sunwen-architecture",
+    "models:sunwen-architecture:lod": "node scripts/pipeline.mjs models-sunwen-architecture-lod",
+    "sunwen:check": "python scripts/check_sunwen_assets.py",
+    "models:urban": "node scripts/pipeline.mjs models-urban",
+    "models:urban:check": "node scripts/pipeline.mjs verify-urban",
+    "models:grounding": "node scripts/pipeline.mjs models-grounding",
+    "models:grounding:lod": "node scripts/pipeline.mjs models-grounding-lod",
+    "models:grounding:check": "node scripts/pipeline.mjs verify-grounding"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

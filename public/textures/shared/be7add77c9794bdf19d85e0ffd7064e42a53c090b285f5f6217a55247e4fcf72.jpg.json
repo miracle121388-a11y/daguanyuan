@@ -1,0 +1,18 @@
+{
+  "sha256": "be7add77c9794bdf19d85e0ffd7064e42a53c090b285f5f6217a55247e4fcf72",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "waterside",
+    "role": "latticewood",
+    "pigment": "#518a8a",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/waterside-latticewood.png",
+    "sha256": "88b603bd6fefe30b12264676bcee1641edea92c799a269bd0c935c0383178c62",
+    "source": {
+      "file": "assets/processed/materials-r15/latticewood_diff.png",
+      "sha256": "830247d7ee90583237a6bbaeca5da79832b89449b71580363c2dca2ca521690a"
+    }
+  }
+}

@@ -20,12 +20,16 @@ const dreamRefs=read('data/canon/dreamReferences.json');
 assert(dreamRefs.reviewStatus==='source_checked'&&dreamRefs.styleVersion==='honglou-silk-v1','reviewed dream style catalog');
 assert(new Set(dreamRefs.refs.map(r=>r.id)).size===dreamRefs.refs.length,'unique dream references');
 const referenceArt=read('public/art/manifest.json');
+const archivedSceneCatalog='references/dream-scene-sources/manifest.json';
+const archivedSceneArt=read(archivedSceneCatalog);
+assert(archivedSceneArt.length===5&&archivedSceneArt.every(a=>a.kind==='archived-generated-art'&&a.originalCatalog==='public/art/manifest.json'&&a.originalPath==='public/'+a.url&&a.archivePath==='references/dream-scene-sources/'+path.basename(a.url)&&/^[a-f0-9]{40}$/.test(a.sourceCommit)&&/^[a-f0-9]{64}$/.test(a.originalCatalogSha256)),'retired scene sources retain explicit archive provenance');
+for(const a of archivedSceneArt)assert(hash(a.archivePath)===a.sha256&&!existsSync(a.originalPath),'archived scene source preserved outside garden gallery '+a.id);
 for(const ref of dreamRefs.refs){
  assert(/^dream-(style|characters|scenes)\/[a-z0-9-]+\.webp$/.test(ref.path)&&ref.reviewStatus==='source_checked','local reviewed dream reference '+ref.id);
  assert(hash('public/'+ref.path)===ref.sha256&&statSync('public/'+ref.path).size===ref.bytes,'dream reference hash '+ref.id);
  assert(ref.temporary===true&&ref.note.length>20&&ref.origin.length>40&&ref.sources.length>0,'temporary provenance explicit '+ref.id);
  for(const source of ref.sources){
-  const approved=source.catalog==='data/canon/comicArt.json'?comicArt.find(a=>a.id===source.sourceId)?.derivatives.some(f=>f.file===source.path&&f.sha256===source.sha256):source.catalog==='public/art/manifest.json'&&referenceArt.some(a=>a.id===source.sourceId&&'public/'+a.url===source.path&&a.sha256===source.sha256);
+  const approved=source.catalog==='data/canon/comicArt.json'?comicArt.find(a=>a.id===source.sourceId)?.derivatives.some(f=>f.file===source.path&&f.sha256===source.sha256):source.catalog===archivedSceneCatalog?archivedSceneArt.some(a=>a.id===source.sourceId&&a.archivePath===source.path&&a.sha256===source.sha256&&a.originalPath===source.originalPath&&a.originalCatalog===source.originalCatalog&&a.prompt===source.prompt&&a.provenance===source.licenseNote):source.catalog==='public/art/manifest.json'&&referenceArt.some(a=>a.id===source.sourceId&&'public/'+a.url===source.path&&a.sha256===source.sha256);
   assert(approved&&hash(source.path)===source.sha256&&source.prompt.length>100&&source.licenseNote.length>30,'dream source chain '+ref.id+' '+source.sourceId);
  }
 }
@@ -43,9 +47,33 @@ for(const c of d.characters)for(const r of c.residencies){assert(places.has(r.pl
 for(const r of d.relations)assert(chars.has(r.fromId)&&chars.has(r.toId),'relation keys');
 for(const s of d.sources){const prefix=`data/raw/chapter-${String(s.chapter).padStart(3,'0')}`,raw=read(prefix+'.json');assert(s.rawSha256===hash(prefix+'.html'),'raw SHA256 '+s.id);assert(s.normalizedTextSha256===hash(prefix+'.txt'),'normalized SHA256 '+s.id);assert(raw.paragraphs[s.paragraphIndex].includes(s.evidenceExcerpt),'evidence located '+s.id)}
 const m=read('public/scene-manifest.json');assert(m.places.length===places.size&&m.places.every(p=>places.has(p.id)),'manifest matches canon places');
+if(existsSync('config/sunwen.architecture.json')){
+ const architecture=read('public/architecture-scenes.json'),design=read('config/sunwen.architecture.json');
+ const scenery=z.array(z.object({id:ids,name:ids,position:z.tuple([z.number(),z.number(),z.number()]),cameraPosition:z.tuple([z.number(),z.number(),z.number()]),cameraTarget:z.tuple([z.number(),z.number(),z.number()]),height:z.number().positive(),character:ids,interpretation:ids})).parse(architecture.scenes);
+ assert(architecture.revision===design.revision&&read('config/garden.sunwen.json').architectureRevision===design.revision,'architectural scene revision');
+ assert(JSON.stringify(m.architecturalScenes)===JSON.stringify(architecture.scenes),'architectural camera metadata matches published manifest');
+ assert(new Set(scenery.map(p=>p.id)).size===scenery.length&&scenery.length===3,'three unique supplementary scenery identities');
+ for(const p of scenery){assert(!places.has(p.id),'supplementary scenery stays distinct from canon '+p.id);assert(design.additionalScenes.some(n=>n.id===p.id&&n.name===p.name),'scenery matches architectural design '+p.id)}
+}
 const pathIDs=new Set(m.pathNodes.map(n=>n.id)),edgeKeys=new Set(m.pathEdges.flatMap(e=>[e.from+'|'+e.to,e.to+'|'+e.from]));
+if(existsSync('config/garden.urban.json')){
+ const urban=read('public/urban-context.json'),design=read('config/garden.urban.json');
+ const vector=z.tuple([z.number().finite(),z.number().finite(),z.number().finite()]);
+ const kinds=['hall','house','annex','range','gallery','gate','shop','shop-upper','warehouse','temple','paifang','bell-pavilion','well','screen','stall','cart','hitching','lane-gate','drain','slab-bridge','wall','paving','court-paving','tree'];
+ const rows=z.array(z.object({kind:z.enum(kinds),position:vector,scale:vector,rotation:z.number().finite(),district:ids})).parse(urban.instances);
+ assert(urban.revision===design.revision&&(read('config/garden.sunwen.json').urbanRevision??m.assetRevision.split('-').at(-1))===design.revision,'urban component revision matches its authored configuration');
+ assert(urban.model==='models/urban-context.glb'&&existsSync('public/'+urban.model),'local urban model');
+ assert(urban.courts.length>=200&&rows.length>2000,'continuous mansion and capital setting');
+ assert(new Set(urban.courts.map(c=>c.type)).size>=8,'distinct mansion, home, shop, temple and service compounds');
+ assert(new Set(urban.courts.map(c=>Math.round(c.bounds[2]-c.bounds[0]))).size>=20,'unequal plot widths');
+ assert(new Set(urban.courts.map(c=>Math.round(c.bounds[3]-c.bounds[1]))).size>=20,'unequal plot depths');
+ for(const kind of kinds)assert(rows.some(row=>row.kind===kind),'urban prototype used: '+kind);
+ assert(urban.streets.length>50&&new Set(urban.streets.map(s=>s.width)).size>3,'hierarchy of streets and offset hutongs');
+ assert(urban.interpretation===design.basis,'urban layout remains identified as spatial interpretation');
+ for(const row of rows)assert(row.scale.every(s=>s>0),'positive urban transform');
+}
 const gardenBounds=read('reports/acceptance/model-optimization.json').find(x=>x.file==='public/models/overview.glb').bounds;
-assert(m.pathNodes.every(n=>(n.position[0]/(gardenBounds.max[0]-1.5))**2+(n.position[2]/(gardenBounds.max[2]-1.5))**2<1),'all route nodes and road margins supported by garden base');
+assert(m.pathNodes.every(n=>n.position[0]>gardenBounds.min[0]+1.5&&n.position[0]<gardenBounds.max[0]-1.5&&n.position[2]>gardenBounds.min[2]+1.5&&n.position[2]<gardenBounds.max[2]-1.5),'all route nodes and road margins supported by garden base');
 for(const r of d.routes){assert(r.orderedStops.every(id=>places.has(id))&&r.eventIds.every(id=>events.has(id)),'route foreign keys '+r.id);assert(r.pathNodeIds.every(id=>pathIDs.has(id)),'route path nodes '+r.id);assert(r.pathNodeIds.slice(1).every((id,i)=>edgeKeys.has(r.pathNodeIds[i]+'|'+id)),'route uses connected edges '+r.id)}
 function glbJSON(file){const b=readFileSync(file);assert(b.subarray(0,4).toString()==='glTF','GLB magic '+file);assert(b.readUInt32LE(8)===b.length,'GLB size '+file);const length=b.readUInt32LE(12);return JSON.parse(b.subarray(20,20+length).toString())}
 const overview=glbJSON('public/models/overview.glb');
@@ -57,13 +85,13 @@ for(const p of m.places){assert(overview.nodes.some(n=>n.extras?.placeId===p.id)
 const assets=read('assets/manifest.json');for(const a of assets.filter(a=>a.status==='approved')){assert(existsSync(a.licenseEvidencePath),'license '+a.assetId);assert(hash(a.sourceFile)===a.sourceSha256,'asset hash '+a.assetId);for(const dep of a.dependencies??[])assert(hash(dep.file)===dep.sha256,'asset dependency '+dep.file)}
 for(const a of assets.filter(a=>a.status==='approved'))for(const [i,file]of (a.derivativeFiles??[]).entries())assert(hash(file)===a.derivativeSha256[i],'derivative hash '+file);
 const walk=p=>readdirSync(p,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(p+'/'+e.name):[p+'/'+e.name]);
-assert(walk('public').every(f=>/^(public\/models\/.*\.glb|public\/data\/(places|characters|events|sources|routes|relations|editionCatalog|comicArt|dreamReferences)\.json|public\/scene-manifest\.json|public\/textures\/.*\.(jpg|png|webp|hdr|json)|public\/comics\/[a-z0-9-]+\.webp(?:\.json)?|public\/dream-(style|characters|scenes)\/[a-z0-9-]+\.webp(?:\.json)?|public\/art\/[a-z0-9-]+\.(webp|json|webp\.json)|public\/draco\/(draco_decoder.js|draco_decoder.wasm|draco_wasm_wrapper.js|LICENSE|AUTHORS))$/.test(f)),'public file allowlist');
+assert(walk('public').every(f=>/^(public\/models\/.*\.glb|public\/data\/(places|characters|events|sources|routes|relations|editionCatalog|comicArt|dreamReferences)\.json|public\/(scene-manifest|architecture-scenes|urban-context)\.json|public\/textures\/.*\.(jpg|png|webp|hdr|json)|public\/comics\/[a-z0-9-]+\.webp(?:\.json)?|public\/dream-(style|characters|scenes)\/[a-z0-9-]+\.webp(?:\.json)?|public\/art\/[a-z0-9-]+\.(webp|json|webp\.json)|public\/draco\/(draco_decoder.js|draco_decoder.wasm|draco_wasm_wrapper.js|LICENSE|AUTHORS))$/.test(f)),'public file allowlist');
 for(const f of walk('public').filter(f=>/^public\/dream-/.test(f)))assert(dreamRefs.refs.some(r=>'public/'+r.path===f.replace(/\.json$/,'')),'no unreviewed dream reference '+f);
 for(const result of read('reports/acceptance/model-optimization.json')){
  assert(hash(result.file)===result.sha256,'optimized model hash '+result.file);
  for(const img of glbJSON(result.file).images??[]){if(img.bufferView!==undefined)continue;assert(!!img.uri&&!/^(https?:|data:|\/)/.test(img.uri),'local model texture '+result.file);const target=path.resolve(path.dirname(result.file),img.uri);assert(target.startsWith(path.resolve('public/textures/shared')+path.sep)&&existsSync(target),'shared texture exists '+img.uri);assert(hash(target)===path.basename(target).split('.')[0],'shared texture content hash '+img.uri)}
 }
-const art=read('public/art/manifest.json');assert(art.length===15,'15 approved visual references');for(const image of art){assert(image.placeId===null||places.has(image.placeId),'image links to a real destination '+image.id);assert(hash('public/'+image.url)===image.sha256,'published reference hash '+image.id);assert(image.prompt.length>100,'reference prompt provenance '+image.id)}
+const art=read('public/art/manifest.json');assert(art.length===15,'15 approved visual references');for(const image of art){assert(image.placeId===null||places.has(image.placeId),'image links to a real destination '+image.id);assert(hash('public/'+image.url)===image.sha256,'published reference hash '+image.id);assert(image.kind==='historical-painting'&&image.artist==='孙温'&&image.repositoryCommit==='9e9352d51a5f4a7006f77946ee8ace29d427a937','Sun Wen source provenance '+image.id);assert(hash(image.sourceFile)===image.sourceSha256,'original plate hash '+image.id);assert(hash('public/'+image.thumbnail)===image.thumbnailSha256,'reference thumbnail hash '+image.id)}
 assert(!existsSync('public/data/raw')&&!existsSync('public/data/pending'),'private raw and pending excluded');
 if(process.argv.includes('--publish')){for(const a of comicArt)for(const f of a.derivatives)write(f.file+'.json',JSON.stringify({prompt:a.prompt,origin:a.generator,sha256:f.sha256}));for(const ref of dreamRefs.refs)write('public/'+ref.path+'.json',JSON.stringify(ref));for(const name of ['editionCatalog','comicArt','dreamReferences'])write(`public/data/${name}.json`,JSON.stringify(read(`data/canon/${name}.json`)));mkdirSync('public/data',{recursive:true});for(const n of names)write(`public/data/${n}.json`,JSON.stringify(d[n]));}
 const allGLB=walk('public/models').filter(f=>f.endsWith('.glb'));const report={timestamp:new Date().toISOString(),passed:checks.length,checks,modelBytes:allGLB.reduce((sum,f)=>sum+statSync(f).size,0),overviewBytes:statSync('public/models/overview.glb').size,counts:Object.fromEntries(names.map(n=>[n,d[n].length]))};write('reports/acceptance/integrity.json',JSON.stringify(report,null,2));console.log('PASS',checks.length,'integrity checks.',report.counts);

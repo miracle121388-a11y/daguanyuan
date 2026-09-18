@@ -1,0 +1,17 @@
+{
+  "sha256": "96966e8f34f8b43f4967fd60b418f63a999aabe13824f050442bd89a4439f7d3",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "warm",
+    "role": "silk",
+    "pigment": "#dda6a0",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/warm-silk.png",
+    "sha256": "fe27f8bb5597291945a9fdbbcaa7c48d057e79e6bf8fc5fdcba003ffe010d07f",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

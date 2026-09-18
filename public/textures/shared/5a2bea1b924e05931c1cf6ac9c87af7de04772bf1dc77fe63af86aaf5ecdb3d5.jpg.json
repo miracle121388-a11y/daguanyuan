@@ -1,0 +1,17 @@
+{
+  "sha256": "5a2bea1b924e05931c1cf6ac9c87af7de04772bf1dc77fe63af86aaf5ecdb3d5",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "rustic",
+    "role": "qing_clay",
+    "pigment": "#d6c49c",
+    "roughness": 0.84,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/rustic-qing_clay.png",
+    "sha256": "803a7eefebab91ec9f2b03d066bd4371e6b7924162c0e7b4ad6f6761fa463ae9",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

@@ -9,6 +9,7 @@ const craftConfig=read('config/craft.materials.json'),craft=craftConfig.material
 const swatches=read(`assets/processed/materials-${revision}/manifest.json`).files;
 const foliageRevision=craftConfig.foliageRevision??revision;
 const foliage=read(`assets/processed/foliage-${foliageRevision}/manifest.json`).files;
+const sunwen=existsSync('assets/processed/sunwen-r17/manifest.json')?read('assets/processed/sunwen-r17/manifest.json').files:[];
 const crowns={island_tree_01:['broadleaf','broadleaf-low','shrub'],island_tree_02:['broadleaf-2'],pine_sapling_small:['pine']};
 const buildings=['public/models/overview.glb','public/models/overview-low.glb',...places.flatMap(p=>['public/models/places/'+p.id+'.glb','public/models/places-low/'+p.id+'.glb'])];
 for(const a of assets.filter(a=>a.status==='approved')){
@@ -54,13 +55,29 @@ for(const a of assets.filter(a=>a.status==='approved')){
  const packedLeaves=foliage.filter(item=>item.assetId===a.assetId);
  if(packedLeaves.length){a.derivativeFiles.push(...packedLeaves.map(item=>item.file));a.modifications+=' r11 decodes the 16-bit sRGB diffuse once to8-bit and joins the separately supplied alpha before Blender import; one packed RGBA node supplies both Colour and Alpha, avoiding the previous near-black exported RGB. The packed source, mask and output hashes are in assets/processed/foliage-'+foliageRevision+'/manifest.json. Visible leaf RGB as well as alpha are verified in delivered GLBs.';}
  if(existsSync('config/qing.palette.json')&&roles.length){a.modifications+=' r15 supersedes the architecture-atlas description above: occupied-room envelopes and polychrome material roles retain source UVs and shared PBR swatches in both low and high models. 36cm walls and opaque window backing bypass geometric simplification. Lacquer/mineral pigment is authored in a Blender material shader over unchanged source grain; settings and original hashes are recorded per swatch. The landscape and foliage keep their existing pipelines.';}
+ if(sunwen.length){
+  if(roles.length){a.derivativeFiles.push(...sunwen.filter(s=>roles.includes(s.role)).map(s=>s.file));a.modifications+=' r17: the Sun Wen pigment profiles supersede previous coloring. Source grain is retained; all pigments, roughness and hashes are in assets/processed/sunwen-r17/manifest.json. Paintings are not used as building texture maps.';}
+  if(crowns[a.assetId]){a.usedByPlaceIds=[];a.derivativeFiles=[];a.usage='Historical source retained for editing. Current tree instances and all eight atlas rows use project-authored Sun Wen tree forms.';a.modifications='The original source files are retained unchanged; not the provenance of the new authored trees.';}
+  if(a.assetId==='fern_02')a.modifications='240 terrain-seated instances retained from the reviewed source; original two fern meshes and UVs retained. Counts and precise placements are published from the master in scene-manifest.json.';
+  if(a.assetId==='grass_medium_01'){a.usage='360 terrain-seated low grass clumps within authored beds. Continuous ground combines blue stone, pebble paths, moss and bounded blue-green planting.';a.derivativeFiles=['public/models/vegetation/ground-cover.glb','public/textures/landscape-light.webp'];}
+ }
  a.derivativeFiles=a.derivativeFiles.filter(existsSync);
  const textures=new Set();
  for(const file of a.derivativeFiles){
   if(!file.endsWith('.glb'))continue;
   const b=readFileSync(file),j=JSON.parse(b.subarray(20,20+b.readUInt32LE(12)));
+  for(const mat of j.materials??[]){const role=mat.extras?.sunwenSurface?.role;if(!roles.includes(role))continue;const tex=mat.pbrMetallicRoughness?.baseColorTexture;if(!tex)continue;const img=j.images[j.textures[tex.index].source];if(img.uri)textures.add(path.relative('.',path.resolve(path.dirname(file),img.uri)).replaceAll('\\','/'))}
   for(const img of j.images??[])if(img.uri&&(img.name?.includes(a.assetId)||roles.some(role=>(img.name?.startsWith(revision+'_'+role+'_')||img.name?.startsWith(role+'_')))||(a.assetId==='grass_medium_01'&&img.name?.startsWith('turf'))||(!crowns[a.assetId]&&img.name?.startsWith('Baked_'))))textures.add(path.relative('.',path.resolve(path.dirname(file),img.uri)).replaceAll('\\','/'));
  }
  a.derivativeFiles=[...new Set([...a.derivativeFiles,...textures])];a.derivativeSha256=a.derivativeFiles.map(hash);
 }
 writeFileSync('assets/manifest.json.next',JSON.stringify(assets,null,2));replaceFile('assets/manifest.json.next','assets/manifest.json');
+
+if(sunwen.length){
+ const spec=read('config/garden.sunwen.json');
+ const sources=['config/garden.urban.json','blender/urban_context.py','blender/urban_layout.py','blender/urban_architecture.py','scripts/apply_urban_ground.mjs','src/scene/UrbanContext.tsx','config/garden.sunwen.json','config/sunwen.architecture.json','config/sunwen.planting.json','config/sunwen.landscape.json','scripts/compose_sunwen_planting.py','scripts/prepare_sunwen_ground.py','scripts/retire_legacy_lotus.mjs','blender/sunwen_architecture.py','blender/install_sunwen_landscape.py','blender/sunwen_landscape_lod.py','blender/reduce_sunwen_mobile.py','blender/native_ground.py','blender/sunwen_botany.py','blender/sunwen_ornaments.py','blender/refine_sunwen_garden.py','scripts/prepare_sunwen_surfaces.py'];
+ const derivatives=[...spec.planting.species,'iris','peony','lotus','chrysanthemum','orchid'].map(name=>'public/models/vegetation/'+name+'.glb');
+ if(existsSync('config/garden.grounding.json'))sources.push('config/garden.grounding.json','scripts/garden_ground_fields.py','blender/extract_garden_grounding.py','blender/install_garden_grounding.py','blender/export_scene.py','assets/processed/grounding-r21/plan.json');
+ derivatives.push('public/urban-context.json','public/models/urban-context.glb','public/architecture-scenes.json','public/models/sunwen-landscape.glb','public/models/sunwen-landscape-low.glb','public/textures/ground/garden-ground.webp','public/textures/ground/garden-ground-zones.png','public/models/sunwen-architecture.glb','public/models/sunwen-architecture-low.glb','public/textures/vegetation/canopy-atlas.webp','public/textures/vegetation/canopy-atlas-low.webp','public/textures/landscape-light.webp','public/textures/landscape-light-low.webp');
+ writeFileSync('assets/processed/sunwen-r17/generated-assets.json',JSON.stringify({revision:spec.assetRevision,rights:'Authored geometry and pigments. Existing source grain retains its reviewed provenance. Historical scans are used only for study and the attributed gallery.',sources:sources.map(file=>({file,sha256:hash(file)})),visualReferences:read('references/sunwen/provenance.json').files.map(row=>({file:row.file,sha256:row.sha256})),derivatives:derivatives.filter(existsSync).map(file=>({file,sha256:hash(file)}))},null,2)+'\n');
+}

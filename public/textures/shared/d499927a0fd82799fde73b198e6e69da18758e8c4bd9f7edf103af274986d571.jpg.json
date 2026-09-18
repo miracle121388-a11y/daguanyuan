@@ -1,0 +1,18 @@
+{
+  "sha256": "d499927a0fd82799fde73b198e6e69da18758e8c4bd9f7edf103af274986d571",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "waterside",
+    "role": "tiledark",
+    "pigment": "#426f7d",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/waterside-tiledark.png",
+    "sha256": "c410e8c768391898b6bd46dfc9e68fd7190aa40c84ea07659d0a0421c1e661ad",
+    "source": {
+      "file": "assets/processed/materials-r15/tiledark_diff.png",
+      "sha256": "93d0a3428b22ecbfaea001a61c521b05cd8634aef70e1f1ef220b8afb29da331"
+    }
+  }
+}

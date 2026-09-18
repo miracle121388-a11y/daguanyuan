@@ -1,0 +1,18 @@
+{
+  "sha256": "accba4d255c5f3aa4c0d51058cd5b5e8e2310c9a5cf3684879442ebe34b64fac",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "botanical_litter",
+    "pigment": "#baa777",
+    "roughness": 0.85,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-botanical_litter.png",
+    "sha256": "c8d460bce5fd6d3719cde501b37256fb9945c5f5c13b51a945c2cf450076b8e5",
+    "source": {
+      "file": "assets/processed/focal-r12-fix2/litter.png",
+      "sha256": "4642c8776c2597fc7f33c8c6446b1916d3a5438512ae9fa81ca615e6dbe9f763"
+    }
+  }
+}

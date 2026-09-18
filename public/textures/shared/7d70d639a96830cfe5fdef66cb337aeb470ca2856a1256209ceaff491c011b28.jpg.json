@@ -1,0 +1,18 @@
+{
+  "sha256": "7d70d639a96830cfe5fdef66cb337aeb470ca2856a1256209ceaff491c011b28",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "temple",
+    "role": "plaster",
+    "pigment": "#e4e4d3",
+    "roughness": 0.84,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/temple-plaster.png",
+    "sha256": "19ca653853f514df6c515d7a074ea4d82105867d5a63bb4a985a1287b5750fc7",
+    "source": {
+      "file": "assets/processed/materials-r15/plaster_diff.png",
+      "sha256": "aa7086e0b6af67efe08ba1cfb2bcf0637ac4953eb2f0b38bb7d68632aa9b2d7c"
+    }
+  }
+}

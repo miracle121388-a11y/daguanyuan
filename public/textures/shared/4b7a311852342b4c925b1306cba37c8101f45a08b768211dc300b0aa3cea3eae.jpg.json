@@ -1,0 +1,18 @@
+{
+  "sha256": "4b7a311852342b4c925b1306cba37c8101f45a08b768211dc300b0aa3cea3eae",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "bankstone",
+    "pigment": "#759a90",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-bankstone.png",
+    "sha256": "9da5cec9c870207b478000123d479e0921f3b9696197fa978ee961db7a32e59d",
+    "source": {
+      "file": "assets/processed/materials-r15/bankstone_diff.png",
+      "sha256": "b156dd7148cc18ca0f75e8ec3e75d67e6d417e0f9027abdfb1659244aa7667c8"
+    }
+  }
+}

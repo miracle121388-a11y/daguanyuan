@@ -1,0 +1,17 @@
+{
+  "sha256": "0794f89c46f388717314361eae6b43de9ca6283137c6c85eb42fc2c35c5c0ec5",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "temple",
+    "role": "gold",
+    "pigment": "#a3a486",
+    "roughness": 0.48,
+    "metallic": 0.25,
+    "file": "assets/processed/sunwen-r17/temple-gold.png",
+    "sha256": "724518c43ba3981dd9e9c123bcd6b65a469498b092c301fac8f8134d7ede9d3b",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

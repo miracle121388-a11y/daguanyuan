@@ -1,0 +1,18 @@
+{
+  "sha256": "f942542c287fa67537e63d01042b1d463082da5f83cfe6ccf7cce02c0fd02c65",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "herbal",
+    "role": "darkwood",
+    "pigment": "#696957",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/herbal-darkwood.png",
+    "sha256": "a6b0125a062e6e0493a29f966d84ea93c8108e0d828f36b88fcae06228d2a88b",
+    "source": {
+      "file": "assets/processed/materials-r15/darkwood_diff.png",
+      "sha256": "f9843750e5267d2fe17135fc0a26058461a70bcbcd98ff7b6f06637275acfb2e"
+    }
+  }
+}

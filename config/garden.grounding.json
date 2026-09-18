@@ -1,0 +1,32 @@
+{
+  "revision": "r21",
+  "basis": "用户指定的孙温绘本式经营园林：柔和地表、相连树下花木与湿润岸线；具体种植边界是美术与空间解释，不新增文学事实。",
+  "seed": 210918,
+  "palette": {
+    "lightHerb": "#afbc90",
+    "moss": "#6a927a",
+    "greyHerb": "#88a793",
+    "willowHerb": "#afbe91",
+    "dampLeaf": "#828f79",
+    "shore": "#6c9587",
+    "leaf": "#7fa589",
+    "beanLeaf": "#b2c799",
+    "jadeLeaf": "#739e90",
+    "pink": "#d89baa",
+    "white": "#e7dacc",
+    "gold": "#cfbb85"
+  },
+  "rootRadius": {"tree": 3.3, "shrub": 1.8},
+  "joinDistance": 12.5,
+  "joinWidth": 2.1,
+  "rootAdjustments": {
+    "LivingTree_Urban_011_white-blossom": [32, 136]
+  },
+  "pathHalfWidth": 2.65,
+  "pathEdgeBlend": 0.85,
+  "shoreWidth": 3.6,
+  "surfaceGrid": 0.8,
+  "underplantingLimit": 2400,
+  "heightLimit": 0.72,
+  "softLandFraction": [0.55, 0.88]
+}

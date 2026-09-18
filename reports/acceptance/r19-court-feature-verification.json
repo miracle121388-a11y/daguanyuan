@@ -1,0 +1,152 @@
+{
+  "at": "2026-09-17T15:19:45.264556+00:00",
+  "revision": "spatial-garden-20260917-r19",
+  "method": "Rays through actual Hengwu gardenstone mesh cavities, plus a solid-base negative control; read saved master, detail GLB, mobile GLB and overview GLB separately. This verifies retained openings, not geological authenticity or visual quality.",
+  "results": [
+    {
+      "mode": "master",
+      "vertices": 3514,
+      "faces": 5485,
+      "checks": [
+        {
+          "kind": "through-cavity",
+          "x": -1.4175,
+          "z": 2.4975,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": 1.3275,
+          "z": 3.8249999999999997,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": -0.225,
+          "z": 5.3325000000000005,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": 0.40499999999999997,
+          "z": 1.2600000000000002,
+          "passed": true
+        },
+        {
+          "kind": "solid-base-control",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "detail",
+      "vertices": 4935,
+      "faces": 7025,
+      "checks": [
+        {
+          "kind": "through-cavity",
+          "x": -1.4175,
+          "z": 2.4975,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": 1.3275,
+          "z": 3.8249999999999997,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": -0.225,
+          "z": 5.3325000000000005,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": 0.40499999999999997,
+          "z": 1.2600000000000002,
+          "passed": true
+        },
+        {
+          "kind": "solid-base-control",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "mobile",
+      "vertices": 3149,
+      "faces": 4213,
+      "checks": [
+        {
+          "kind": "through-cavity",
+          "x": -1.4175,
+          "z": 2.4975,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": 1.3275,
+          "z": 3.8249999999999997,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": -0.225,
+          "z": 5.3325000000000005,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": 0.40499999999999997,
+          "z": 1.2600000000000002,
+          "passed": true
+        },
+        {
+          "kind": "solid-base-control",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "overview",
+      "vertices": 2203,
+      "faces": 2779,
+      "checks": [
+        {
+          "kind": "through-cavity",
+          "x": -1.4175,
+          "z": 2.4975,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": 1.3275,
+          "z": 3.8249999999999997,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": -0.225,
+          "z": 5.3325000000000005,
+          "passed": true
+        },
+        {
+          "kind": "through-cavity",
+          "x": 0.40499999999999997,
+          "z": 1.2600000000000002,
+          "passed": true
+        },
+        {
+          "kind": "solid-base-control",
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

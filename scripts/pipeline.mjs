@@ -9,7 +9,31 @@ export function blenderBin(){
  throw new Error('Blender not found. Set BLENDER_BIN to the Blender executable; installation links and commands are in docs/MIGRATION.md.');
 }
 const action=process.argv[2];
-const run=(cmd,args)=>{const r=spawnSync(cmd,args,{stdio:'inherit',shell:false});if(r.status!==0)throw new Error(`${cmd} exited ${r.status}`)};
+const run=(cmd,args,env={})=>{const r=spawnSync(cmd,args,{stdio:'inherit',shell:false,env:{...process.env,...env}});if(r.status!==0)throw new Error(`${cmd} exited ${r.status}`)};
+const gardenGrounding=(finish=true)=>{
+ const blend=script=>run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python',script]);
+ blend('blender/extract_garden_grounding.py');
+ run(process.platform==='win32'?'python':'python3',['scripts/prepare_sunwen_ground.py']);
+ blend('blender/install_garden_grounding.py');
+ if(finish){
+  blend('blender/bake_landscape_light.py');run(process.execPath,['scripts/pack_landscape_light.mjs']);
+  run(process.execPath,['scripts/optimize.mjs'],{GARDEN_MODEL_FILTER:'sunwen-landscape.glb,sunwen-landscape-low.glb'});
+ }
+};
+if(action==='models-grounding')gardenGrounding();
+if(action==='verify-grounding')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/check_garden_grounding.py']);
+if(action==='models-grounding-lod'){
+ run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/install_garden_grounding.py','--','--lod-only']);
+ run(process.execPath,['scripts/optimize.mjs'],{GARDEN_MODEL_FILTER:'sunwen-landscape-low.glb'});
+}
+const urbanContext=()=>{
+ const blend=script=>run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python',script]);
+ blend('blender/urban_context.py');run(process.execPath,['scripts/apply_urban_ground.mjs']);
+ blend('blender/bake_landscape_light.py');run(process.execPath,['scripts/pack_landscape_light.mjs']);
+ run(process.execPath,['scripts/optimize.mjs'],{GARDEN_MODEL_FILTER:'overview.glb,overview-low.glb,urban-context.glb'});
+};
+if(action==='models-urban')urbanContext();
+if(action==='verify-urban')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/check_urban_context.py']);
 const qingArchitecture=()=>{
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/refresh_qing_architecture.py']);
  run(process.execPath,['scripts/apply_architecture_patch.mjs']);
@@ -18,6 +42,42 @@ const qingArchitectureLod=()=>{
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/refresh_qing_architecture.py','--','--lod-only']);
  run(process.execPath,['scripts/apply_architecture_patch.mjs']);
 };
+const sunwenGarden=(optimize=true,landscapeOnly=false)=>{
+ const python=process.platform==='win32'?'python':'python3';
+ for(const script of ['scripts/compose_sunwen_planting.py','scripts/prepare_sunwen_surfaces.py'])run(python,[script]);
+ const blend=(script,args=[])=>run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python',script,...(args.length?['--',...args]:[])]);
+ blend('blender/refine_sunwen_garden.py');blend('blender/extract_garden_grounding.py');
+ run(python,['scripts/prepare_sunwen_ground.py']);
+ for(const script of ['blender/install_sunwen_landscape.py','blender/sunwen_ornaments.py','blender/bake_surface_zones.py'])blend(script);
+ if(!landscapeOnly)blend('blender/export_mobile_overview.py');
+ blend('blender/refresh_qing_architecture.py',['--lod-only','--sunwen']);
+ run(process.execPath,['scripts/apply_architecture_patch.mjs','--sunwen']);
+ run(python,['scripts/apply_sunwen_surfaces.py']);
+ blend('blender/reduce_sunwen_mobile.py');
+ run(process.execPath,['scripts/retire_legacy_lotus.mjs']);
+ blend('blender/render_sunwen_atlas.py');
+ run(process.execPath,['scripts/pack_crown_atlas.mjs','--sunwen']);
+ if(existsSync('config/garden.urban.json')){blend('blender/urban_context.py');run(process.execPath,['scripts/apply_urban_ground.mjs'])}
+ if(existsSync('config/garden.grounding.json'))gardenGrounding(false);
+ blend('blender/bake_landscape_light.py');
+ run(process.execPath,['scripts/pack_landscape_light.mjs']);
+ if(optimize)run(process.execPath,['scripts/optimize.mjs']);
+};
+if(action==='models-sunwen')sunwenGarden();
+if(action==='models-sunwen-landscape')sunwenGarden(true,true);
+if(action==='models-sunwen-architecture'||action==='models-sunwen-architecture-lod'){
+ const lodOnly=action.endsWith('-lod');
+ const python=process.platform==='win32'?'python':'python3';
+ const blend=(script,args=[])=>run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python',script,...(args.length?['--',...args]:[])]);
+ if(!lodOnly)run(python,['scripts/prepare_sunwen_surfaces.py']);
+ blend('blender/sunwen_architecture.py',lodOnly?['--lod-only']:[]);
+ blend('blender/refresh_qing_architecture.py',['--lod-only','--sunwen']);
+ run(process.execPath,['scripts/apply_architecture_patch.mjs','--sunwen']);
+ run(python,['scripts/apply_sunwen_surfaces.py']);
+ if(!lodOnly){blend('blender/bake_landscape_light.py');run(process.execPath,['scripts/pack_landscape_light.mjs'])}
+ const files=['overview.glb','overview-low.glb','sunwen-architecture.glb','sunwen-architecture-low.glb',...['places','places-low'].flatMap(dir=>readdirSync('public/models/'+dir).filter(f=>f.endsWith('.glb')).map(f=>dir+'/'+f))];
+ run(process.execPath,['scripts/optimize.mjs'],{GARDEN_MODEL_FILTER:files.join(',')});
+}
 if(action==='models-architecture-lod')qingArchitectureLod();
 if(action==='models-architecture'){
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_craft_surfaces.py']);
@@ -49,7 +109,8 @@ if(action==='models'){
  const blend=process.argv.includes('--sample')?'blender/xiaoxiangguan_sample.blend':'blender/daguanyuan_master.blend';
  run(blenderBin(),['--background',...(existsSync(blend)?[blend]:[]),'--disable-autoexec','--python-exit-code','1','--python',process.argv.includes('--sample')?'blender/build_scene.py':'blender/reference_scene.py','--',...process.argv.slice(3)]);
  if(!process.argv.includes('--sample')&&existsSync('config/qing.palette.json'))qingArchitecture();
- if(!process.argv.includes('--sample')){
+ if(!process.argv.includes('--sample')&&existsSync('config/garden.sunwen.json'))sunwenGarden(false);
+ if(!process.argv.includes('--sample')&&!existsSync('config/garden.sunwen.json')){
   run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_landscape_light.py']);
   run(process.execPath,['scripts/pack_landscape_light.mjs']);
   run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/bake_surface_zones.py']);
@@ -76,6 +137,7 @@ if(action==='models-seat'){
  run(process.execPath,['scripts/record_derivatives.mjs']);
 }
 if(action==='verify-models'){
+ if(existsSync('config/sunwen.architecture.json'))run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/check_sunwen_architecture.py']);
  if(existsSync('config/qing.palette.json'))run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/check_enclosures.py']);
  for(const script of ['blender/validate_scene.py','blender/check_terrain_paths.py','blender/check_roof_coverage.py'])run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python',script]);
  run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/check_terrain_paths.py','--','--mobile']);

@@ -1,0 +1,547 @@
+{
+  "revision": "spatial-garden-20260917-r17",
+  "method": "Editable low planting, stone-edged beds and grouped flowers, shared with web.",
+  "beds": [
+    {
+      "id": "grove-00",
+      "profile": "bamboo",
+      "perennials": 8,
+      "faces": 2862
+    },
+    {
+      "id": "grove-01",
+      "profile": "herbal",
+      "perennials": 4,
+      "faces": 1736
+    },
+    {
+      "id": "grove-02",
+      "profile": "bamboo",
+      "perennials": 8,
+      "faces": 2174
+    },
+    {
+      "id": "grove-03",
+      "profile": "bamboo",
+      "perennials": 8,
+      "faces": 3090
+    },
+    {
+      "id": "grove-04",
+      "profile": "waterside",
+      "perennials": 8,
+      "faces": 1508
+    },
+    {
+      "id": "grove-05",
+      "profile": "herbal",
+      "perennials": 8,
+      "faces": 2012
+    },
+    {
+      "id": "grove-06",
+      "profile": "bamboo",
+      "perennials": 8,
+      "faces": 2966
+    },
+    {
+      "id": "grove-07",
+      "profile": "rustic",
+      "perennials": 8,
+      "faces": 3076
+    },
+    {
+      "id": "grove-08",
+      "profile": "rustic",
+      "perennials": 8,
+      "faces": 1756
+    },
+    {
+      "id": "grove-09",
+      "profile": "crimson",
+      "perennials": 8,
+      "faces": 2908
+    },
+    {
+      "id": "grove-10",
+      "profile": "waterside",
+      "perennials": 8,
+      "faces": 3140
+    },
+    {
+      "id": "grove-11",
+      "profile": "crimson",
+      "perennials": 8,
+      "faces": 3706
+    },
+    {
+      "id": "grove-12",
+      "profile": "temple",
+      "perennials": 8,
+      "faces": 2702
+    },
+    {
+      "id": "grove-13",
+      "profile": "crimson",
+      "perennials": 8,
+      "faces": 3360
+    },
+    {
+      "id": "grove-14",
+      "profile": "herbal",
+      "perennials": 8,
+      "faces": 2372
+    },
+    {
+      "id": "grove-15",
+      "profile": "waterside",
+      "perennials": 8,
+      "faces": 1216
+    },
+    {
+      "id": "grove-16",
+      "profile": "herbal",
+      "perennials": 8,
+      "faces": 2822
+    },
+    {
+      "id": "grove-17",
+      "profile": "waterside",
+      "perennials": 7,
+      "faces": 1490
+    },
+    {
+      "id": "grove-18",
+      "profile": "ceremonial",
+      "perennials": 0,
+      "faces": 0
+    },
+    {
+      "id": "grove-19",
+      "profile": "study",
+      "perennials": 8,
+      "faces": 2274
+    },
+    {
+      "id": "grove-20",
+      "profile": "herbal",
+      "perennials": 8,
+      "faces": 3378
+    },
+    {
+      "id": "grove-21",
+      "profile": "waterside",
+      "perennials": 8,
+      "faces": 2710
+    },
+    {
+      "id": "grove-22",
+      "profile": "study",
+      "perennials": 8,
+      "faces": 2904
+    },
+    {
+      "id": "grove-23",
+      "profile": "waterside",
+      "perennials": 8,
+      "faces": 2092
+    },
+    {
+      "id": "grove-24",
+      "profile": "study",
+      "perennials": 8,
+      "faces": 2680
+    },
+    {
+      "id": "grove-25",
+      "profile": "crimson",
+      "perennials": 8,
+      "faces": 3318
+    },
+    {
+      "id": "grove-26",
+      "profile": "ceremonial",
+      "perennials": 8,
+      "faces": 942
+    },
+    {
+      "id": "grove-27",
+      "profile": "herbal",
+      "perennials": 8,
+      "faces": 2128
+    },
+    {
+      "id": "grove-28",
+      "profile": "rustic",
+      "perennials": 8,
+      "faces": 2502
+    },
+    {
+      "id": "grove-29",
+      "profile": "rustic",
+      "perennials": 8,
+      "faces": 2262
+    },
+    {
+      "id": "grove-30",
+      "profile": "study",
+      "perennials": 8,
+      "faces": 3230
+    },
+    {
+      "id": "grove-31",
+      "profile": "rustic",
+      "perennials": 8,
+      "faces": 2320
+    },
+    {
+      "id": "grove-32",
+      "profile": "temple",
+      "perennials": 8,
+      "faces": 1568
+    },
+    {
+      "id": "grove-33",
+      "profile": "bamboo",
+      "perennials": 8,
+      "faces": 1972
+    },
+    {
+      "id": "grove-34",
+      "profile": "herbal",
+      "perennials": 8,
+      "faces": 2032
+    },
+    {
+      "id": "grove-35",
+      "profile": "temple",
+      "perennials": 8,
+      "faces": 1728
+    },
+    {
+      "id": "grove-36",
+      "profile": "ceremonial",
+      "perennials": 1,
+      "faces": 110
+    },
+    {
+      "id": "grove-37",
+      "profile": "crimson",
+      "perennials": 8,
+      "faces": 3314
+    },
+    {
+      "id": "grove-38",
+      "profile": "bamboo",
+      "perennials": 8,
+      "faces": 2774
+    },
+    {
+      "id": "grove-39",
+      "profile": "bamboo",
+      "perennials": 8,
+      "faces": 3756
+    },
+    {
+      "id": "grove-40",
+      "profile": "waterside",
+      "perennials": 7,
+      "faces": 746
+    },
+    {
+      "id": "grove-41",
+      "profile": "waterside",
+      "perennials": 6,
+      "faces": 1164
+    },
+    {
+      "id": "grove-42",
+      "profile": "crimson",
+      "perennials": 8,
+      "faces": 4098
+    },
+    {
+      "id": "grove-43",
+      "profile": "ceremonial",
+      "perennials": 8,
+      "faces": 1196
+    },
+    {
+      "id": "grove-44",
+      "profile": "waterside",
+      "perennials": 8,
+      "faces": 2536
+    },
+    {
+      "id": "grove-45",
+      "profile": "crimson",
+      "perennials": 8,
+      "faces": 1566
+    },
+    {
+      "id": "grove-46",
+      "profile": "ceremonial",
+      "perennials": 0,
+      "faces": 0
+    },
+    {
+      "id": "grove-47",
+      "profile": "crimson",
+      "perennials": 8,
+      "faces": 2440
+    },
+    {
+      "id": "grove-48",
+      "profile": "rustic",
+      "perennials": 8,
+      "faces": 2354
+    },
+    {
+      "id": "grove-49",
+      "profile": "waterside",
+      "perennials": 8,
+      "faces": 1536
+    },
+    {
+      "id": "grove-50",
+      "profile": "study",
+      "perennials": 6,
+      "faces": 588
+    },
+    {
+      "id": "grove-51",
+      "profile": "herbal",
+      "perennials": 8,
+      "faces": 2242
+    },
+    {
+      "id": "grove-52",
+      "profile": "rustic",
+      "perennials": 8,
+      "faces": 2100
+    },
+    {
+      "id": "grove-53",
+      "profile": "waterside",
+      "perennials": 8,
+      "faces": 3138
+    },
+    {
+      "id": "grove-54",
+      "profile": "bamboo",
+      "perennials": 8,
+      "faces": 2902
+    },
+    {
+      "id": "grove-55",
+      "profile": "temple",
+      "perennials": 8,
+      "faces": 1886
+    },
+    {
+      "id": "grove-56",
+      "profile": "study",
+      "perennials": 2,
+      "faces": 172
+    },
+    {
+      "id": "grove-57",
+      "profile": "waterside",
+      "perennials": 8,
+      "faces": 3562
+    },
+    {
+      "id": "grove-58",
+      "profile": "waterside",
+      "perennials": 5,
+      "faces": 1150
+    },
+    {
+      "id": "grove-59",
+      "profile": "study",
+      "perennials": 0,
+      "faces": 144
+    },
+    {
+      "id": "grove-60",
+      "profile": "rustic",
+      "perennials": 8,
+      "faces": 1348
+    },
+    {
+      "id": "grove-61",
+      "profile": "ceremonial",
+      "perennials": 8,
+      "faces": 1612
+    },
+    {
+      "id": "xiaoxiangguan-bed-0",
+      "profile": "bamboo",
+      "perennials": 7,
+      "faces": 1488
+    },
+    {
+      "id": "xiaoxiangguan-bed-1",
+      "profile": "bamboo",
+      "perennials": 3,
+      "faces": 1310
+    },
+    {
+      "id": "xiaoxiangguan-bed-2",
+      "profile": "bamboo",
+      "perennials": 12,
+      "faces": 1942
+    },
+    {
+      "id": "xiaoxiangguan-bed-3",
+      "profile": "bamboo",
+      "perennials": 1,
+      "faces": 628
+    },
+    {
+      "id": "xiaoxiangguan-bed-4",
+      "profile": "bamboo",
+      "perennials": 3,
+      "faces": 834
+    },
+    {
+      "id": "yihongyuan-bed-0",
+      "profile": "crimson",
+      "perennials": 12,
+      "faces": 1270
+    },
+    {
+      "id": "yihongyuan-bed-1",
+      "profile": "crimson",
+      "perennials": 17,
+      "faces": 1762
+    },
+    {
+      "id": "yihongyuan-bed-2",
+      "profile": "crimson",
+      "perennials": 6,
+      "faces": 642
+    },
+    {
+      "id": "yihongyuan-bed-3",
+      "profile": "crimson",
+      "perennials": 4,
+      "faces": 648
+    },
+    {
+      "id": "hengwuyuan-bed-0",
+      "profile": "herbal",
+      "perennials": 2,
+      "faces": 852
+    },
+    {
+      "id": "hengwuyuan-bed-1",
+      "profile": "herbal",
+      "perennials": 3,
+      "faces": 1338
+    },
+    {
+      "id": "hengwuyuan-bed-2",
+      "profile": "herbal",
+      "perennials": 1,
+      "faces": 1088
+    },
+    {
+      "id": "hengwuyuan-bed-3",
+      "profile": "herbal",
+      "perennials": 2,
+      "faces": 884
+    },
+    {
+      "id": "qiushuangzhai-bed-0",
+      "profile": "study",
+      "perennials": 6,
+      "faces": 1914
+    },
+    {
+      "id": "qiushuangzhai-bed-1",
+      "profile": "study",
+      "perennials": 5,
+      "faces": 1818
+    },
+    {
+      "id": "qiushuangzhai-bed-2",
+      "profile": "study",
+      "perennials": 1,
+      "faces": 784
+    },
+    {
+      "id": "qiushuangzhai-bed-3",
+      "profile": "study",
+      "perennials": 3,
+      "faces": 692
+    },
+    {
+      "id": "daguanlou-bed-0",
+      "profile": "ceremonial",
+      "perennials": 22,
+      "faces": 3090
+    },
+    {
+      "id": "daguanlou-bed-1",
+      "profile": "ceremonial",
+      "perennials": 22,
+      "faces": 3186
+    },
+    {
+      "id": "daguanlou-bed-2",
+      "profile": "ceremonial",
+      "perennials": 22,
+      "faces": 3886
+    },
+    {
+      "id": "daguanlou-bed-3",
+      "profile": "ceremonial",
+      "perennials": 22,
+      "faces": 4038
+    },
+    {
+      "id": "daguanlou-bed-4",
+      "profile": "ceremonial",
+      "perennials": 22,
+      "faces": 3798
+    },
+    {
+      "id": "daguanlou-bed-5",
+      "profile": "ceremonial",
+      "perennials": 22,
+      "faces": 4026
+    },
+    {
+      "id": "farm-plot-0",
+      "profile": "rustic",
+      "perennials": 4,
+      "faces": 516
+    },
+    {
+      "id": "farm-plot-1",
+      "profile": "rustic",
+      "perennials": 4,
+      "faces": 990
+    },
+    {
+      "id": "farm-plot-2",
+      "profile": "rustic",
+      "perennials": 4,
+      "faces": 694
+    }
+  ],
+  "lotusGroups": 240,
+  "retiredLotusMeshes": [
+    "landscape_lightleaf.001"
+  ],
+  "perennials": 918,
+  "terrainRaycast": true,
+  "routesUnchanged": true,
+  "sourcePlanSha256": "5ab78f533cef6c2ecf50be8e4cec383791af0160fdeaec2399d2ce437a3b52c0",
+  "models": {
+    "sunwen-landscape-low.glb": "1ea8ce7bfac8a713a15fa2308e832104974c00500cc8ddb281fa3890b8b0728d",
+    "sunwen-landscape.glb": "df4b4ce384b399f6e0a16f46ae7792bd22b9d8ab3a5a61fa47d4bfa51fa6f220"
+  },
+  "deliveryProcessing": "Draco compressed; low beds merged by material after geometric simplification; native bed IDs retained."
+}

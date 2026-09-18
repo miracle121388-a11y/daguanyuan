@@ -3,9 +3,11 @@ import {finishLeafMaterial} from './leafMaterial';
 export function finishMaterials(scene:THREE.Object3D,landscapeLight?:THREE.Texture,soil?:THREE.Texture,zones?:THREE.Texture){
  scene.traverse(object=>{if(!(object instanceof THREE.Mesh))return;for(const m of Array.isArray(object.material)?object.material:[object.material]){
   if(!(m instanceof THREE.MeshStandardMaterial)||m.userData.referenceFinished)continue;m.userData.referenceFinished=true;
-  if(m.name==='earth'){
-   m.color.set('#e4e8d4');m.roughness=1;
-   m.bumpMap=m.map;m.bumpScale=.055;
+  m.name=m.userData.sunwenRole??m.userData.sunwenSurface?.role??m.name;
+  if(m.name==='earth'||m.name==='Sunwen21_Root_Surface'){
+   if(m.name==='Sunwen21_Root_Surface')m.vertexColors=false;
+   m.color.set('#ffffff');m.roughness=1;
+   m.bumpMap=null;m.bumpScale=.018;
    m.onBeforeCompile=shader=>{
     shader.uniforms.gardenLight={value:landscapeLight};shader.uniforms.gardenSoil={value:soil};shader.uniforms.gardenZones={value:zones};
     shader.vertexShader='varying vec3 vGround;\n'+shader.vertexShader;
@@ -19,10 +21,20 @@ float groundNoise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);return mi
 `+shader.fragmentShader;
     const shadow=landscapeLight?'float gardenShade=texture2D(gardenLight,vec2((vGround.x+360.0)/720.0,(330.0-vGround.z)/720.0)).r;':'float gardenShade=1.0;';
     const zonesCode=zones?'vec3 groundZones=texture2D(gardenZones,vec2((vGround.x+384.0)/768.0,(384.0-vGround.z)/768.0)).rgb;':'vec3 groundZones=vec3(0.0);';
-    const blend=soil?'vec3 soilColor=texture2D(gardenSoil,vGround.xz/1.65).rgb;float bedEdge=smoothstep(.30,.68,groundZones.r+(groundNoise(vGround.xz*1.9)-.5)*.26);float exposed=max(max(bedEdge,groundZones.g*.38),groundZones.b*.75);diffuseColor.rgb=mix(diffuseColor.rgb,soilColor*vec3(1.04,1.06,.94),clamp(exposed,0.0,0.91));':'';
-    shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>','#include <map_fragment>\n'+shadow+'\n'+zonesCode+'\nfloat groundMix=groundNoise(vGround.xz*.065)*.55+groundNoise(vGround.xz*.43)*.30+groundNoise(vGround.xz*1.17)*.15;\n'+blend+'\ndiffuseColor.rgb*=mix(vec3(.81,.89,.76),vec3(1.18,1.15,1.06),groundMix);\ndiffuseColor.rgb*=mix(.51,1.0,pow(gardenShade,1.18));');
+    const blend=soil?`diffuseColor.rgb=texture2D(gardenSoil,vec2((vGround.x+384.0)/768.0,(384.0-vGround.z)/768.0)).rgb;
+vec2 courses=vGround.xz/vec2(2.4,1.6);
+courses.x+=mod(floor(courses.y),2.0)*.5;
+vec2 tile=fract(courses);
+float joint=smoothstep(.009,.027,min(min(tile.x,1.0-tile.x),min(tile.y,1.0-tile.y)));
+float stoneVariation=.92+.14*groundHash(floor(courses));
+float gravel=.93+.13*groundNoise(vGround.xz*9.0);
+float leaves=.91+.17*groundNoise(vGround.xz*6.2);
+diffuseColor.rgb*=mix(gravel,leaves,groundZones.r);
+diffuseColor.rgb*=mix(1.0,mix(.66,stoneVariation,joint),groundZones.g);
+`:'';
+    shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>','#include <map_fragment>\n'+shadow+'\n'+zonesCode+'\n'+blend+'\ndiffuseColor.rgb*=mix(.78,1.0,pow(gardenShade,1.12));');
    };
-   m.customProgramCacheKey=()=> 'garden-ground-r14-'+Boolean(landscapeLight)+Boolean(soil)+Boolean(zones);
+   m.customProgramCacheKey=()=> 'garden-ground-tended-sunwen-r21-'+Boolean(landscapeLight)+Boolean(soil)+Boolean(zones);
   }
   if(m.name==='plaster'){m.color.set('#ffffff');m.roughness=.84}
   if(['wood','darkwood','floorwood','latticewood','furniture','roof','tile','tilelight','tiledark','paving','courtbase','cutstone','bankstone','gardenstone','stone','litter'].includes(m.name)){m.color.set('#ffffff');if(m.map)m.map.anisotropy=4}

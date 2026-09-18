@@ -16,7 +16,7 @@ export default function GroundCover({manifest,onReady}:{manifest:Manifest;onRead
   gltf.scene.traverse(o=>{
    if(!(o instanceof THREE.Mesh))return;
    const geometry=o.geometry.clone().applyMatrix4(o.matrixWorld);
-   const materials=(Array.isArray(o.material)?o.material:[o.material]).map(source=>{const m=source.clone();if(m instanceof THREE.MeshStandardMaterial){m.side=THREE.DoubleSide;m.roughness=.95;m.color.set('#c0c5a7');m.transparent=false;m.alphaTest=.25}return m});
+   const materials=(Array.isArray(o.material)?o.material:[o.material]).map(source=>{const m=source.clone();if(m instanceof THREE.MeshStandardMaterial){m.side=THREE.DoubleSide;m.roughness=.95;m.color.set('#c4e0cf');m.transparent=false;m.alphaTest=.25}return m});
    const mesh=new THREE.InstancedMesh(geometry,materials.length===1?materials[0]:materials,(manifest.groundCover??[]).length);mesh.name='Linked shoreline ground plants';mesh.receiveShadow=quality==='high';mesh.castShadow=false;mesh.count=0;mesh.frustumCulled=false;
    mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);result.push(mesh);
   });return result;

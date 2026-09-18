@@ -1,0 +1,18 @@
+{
+  "sha256": "501a7dd33f692096c2feda542a163c1b47ae1b3b58a0654da5d244e0971acb00",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "moon",
+    "role": "tiledark",
+    "pigment": "#587781",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/moon-tiledark.png",
+    "sha256": "0e9f583269519395943898120adaf21e435bdea90fd1b15873ee3ae9f7e54dc5",
+    "source": {
+      "file": "assets/processed/materials-r15/tiledark_diff.png",
+      "sha256": "93d0a3428b22ecbfaea001a61c521b05cd8634aef70e1f1ef220b8afb29da331"
+    }
+  }
+}

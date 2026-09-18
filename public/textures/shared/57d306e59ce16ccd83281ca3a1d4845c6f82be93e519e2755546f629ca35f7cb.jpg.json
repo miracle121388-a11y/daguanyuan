@@ -1,0 +1,17 @@
+{
+  "sha256": "57d306e59ce16ccd83281ca3a1d4845c6f82be93e519e2755546f629ca35f7cb",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "thatch",
+    "pigment": "#c7b58a",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-thatch.png",
+    "sha256": "471a83888a333b2d4c06130581a66b0578c037600cca8d54a0bb4e3e978ba5a9",
+    "source": {
+      "method": "Authored pigment microvariation, deterministic seed 170917; no external image."
+    }
+  }
+}

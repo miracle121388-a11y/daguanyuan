@@ -1,0 +1,73 @@
+{
+  "source": "public/models/overview.glb",
+  "sourceSha256": "6c539a066f8714aa58aa01e429ad186d3865bb275deee8a4e8f557e900ca1258",
+  "masterSha256": "63ff57c1bc7f82b9fde4537610ec910322b9f33e7951af19d49ce62ad45ca002",
+  "masterUnchanged": true,
+  "method": "Simplify distant stones and low beds; preserve buildings and the native master.",
+  "rows": [
+    {
+      "mesh": "Mobile_xiaoxiangguan_botanical_stem",
+      "beforeFaces": 11498,
+      "afterFaces": 1839,
+      "roles": [
+        "botanical_stem"
+      ]
+    },
+    {
+      "mesh": "Mobile_yihongyuan_botanical_stem",
+      "beforeFaces": 1776,
+      "afterFaces": 284,
+      "roles": [
+        "botanical_stem"
+      ]
+    },
+    {
+      "mesh": "Mobile_hengwuyuan_botanical_stem",
+      "beforeFaces": 1176,
+      "afterFaces": 188,
+      "roles": [
+        "botanical_stem"
+      ]
+    },
+    {
+      "mesh": "Mobile_qiushuangzhai_botanical_stem",
+      "beforeFaces": 1248,
+      "afterFaces": 199,
+      "roles": [
+        "botanical_stem"
+      ]
+    },
+    {
+      "mesh": "Mobile_daguanlou_botanical_stem",
+      "beforeFaces": 3846,
+      "afterFaces": 615,
+      "roles": [
+        "botanical_stem"
+      ]
+    },
+    {
+      "mesh": "Mobile_daguanlou_limestone",
+      "beforeFaces": 733,
+      "afterFaces": 109,
+      "roles": [
+        "limestone"
+      ]
+    },
+    {
+      "mesh": "Mobile_landscape_botanical_stem",
+      "beforeFaces": 14886,
+      "afterFaces": 2381,
+      "roles": [
+        "botanical_stem"
+      ]
+    },
+    {
+      "mesh": "Mobile_landscape_limestone",
+      "beforeFaces": 117821,
+      "afterFaces": 17673,
+      "roles": [
+        "limestone"
+      ]
+    }
+  ]
+}

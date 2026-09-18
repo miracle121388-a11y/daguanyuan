@@ -13,7 +13,7 @@ for mode in ['master','detail','mobile','overview']:
         path=R/'public/models/overview-low.glb' if mode=='overview' else R/'public/models'/('places' if mode=='detail' else 'places-low')/'hengwuyuan.glb'
         bpy.ops.import_scene.gltf(filepath=str(path))
     root=next(o for o in bpy.context.scene.objects if o.get('entityType')=='place' and o.get('placeId')=='hengwuyuan')
-    rocks=[o for o in bpy.context.scene.objects if o.type=='MESH' and any(m.name=='gardenstone' for m in o.data.materials) and o.parent==root]
+    rocks=[o for o in bpy.context.scene.objects if o.type=='MESH' and any(m.get('sunwenRole',m.name)=='gardenstone' for m in o.data.materials) and o.parent==root]
     assert rocks,'Missing authored stone in '+mode
     vertices=[];faces=[]
     for ob in rocks:

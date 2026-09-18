@@ -2,7 +2,9 @@ import bpy,json,os
 from pathlib import Path
 def export_selected(path,objects):
  bpy.ops.object.select_all(action='DESELECT')
- for o in objects:o.hide_set(False);o.select_set(True)
+ for o in objects:
+  if o.get('urbanRetired'):continue
+  o.hide_set(False);o.select_set(True)
  path.parent.mkdir(parents=True,exist_ok=True)
  temp=path.with_name(path.stem+'.exporting.glb')
  # Native world-coordinate blending is applied by the web shader after export.
@@ -13,7 +15,7 @@ def export_selected(path,objects):
   bs=m.node_tree.nodes.get('Principled BSDF');source=m.node_tree.nodes.get(m['nativeGroundSource'])
   if not bs or not source:continue
   socket=bs.inputs['Base Color'];old=socket.links[0].from_socket if socket.is_linked else None;restore.append((m,socket,old));m.node_tree.links.new(source.outputs['Color'],socket)
- try:bpy.ops.export_scene.gltf(filepath=str(temp),export_format='GLB',use_selection=True,export_extras=True,export_cameras=False,export_lights=False,export_apply=True,export_yup=True,export_image_format='AUTO',export_jpeg_quality=80,export_vertex_color='ACTIVE')
+ try:bpy.ops.export_scene.gltf(filepath=str(temp),export_format='GLB',use_selection=True,use_active_scene=True,export_extras=True,export_cameras=False,export_lights=False,export_apply=True,export_yup=True,export_image_format='AUTO',export_jpeg_quality=80,export_vertex_color='ACTIVE')
  finally:
   for m,socket,source in restore:
    if source:m.node_tree.links.new(source,socket)

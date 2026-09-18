@@ -1,0 +1,18 @@
+{
+  "sha256": "0675292bc64babf1de5c850ab88dbe76e485811addd2eb294d924dbf00a0dd92",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "crimson",
+    "role": "wood",
+    "pigment": "#b73543",
+    "roughness": 0.51,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/crimson-wood.png",
+    "sha256": "7f72ef9e56159447ba7adb16e90cf164aa2cc1a8d8754691dfeb3f3089f45e98",
+    "source": {
+      "file": "assets/processed/materials-r15/wood_diff.png",
+      "sha256": "44dffcd97d01a62e4a1c679d03f19beb22274d172ee4f658af0a54a00c43d14d"
+    }
+  }
+}

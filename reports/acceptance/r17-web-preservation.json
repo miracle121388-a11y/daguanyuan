@@ -1,0 +1,229 @@
+{
+  "method": "Patch GLB materials without decoding or re-quantizing a single mesh vertex.",
+  "files": [
+    {
+      "file": "public/models/overview.glb",
+      "geometryHash": "c0437824c4c74e0aa230c344d2ede74fcbe7ecf9f472ef55ea664cb9ffc413f9",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "602ff395ad9164836a4acf6c9b275d3af887d4550ad3d8e51fac4760c1cd1bee",
+      "materials": 221
+    },
+    {
+      "file": "public/models/overview-low.glb",
+      "geometryHash": "00d1c614e61a2d3afa19cacba457767b44e795e4d6dbb24bc7d4fe4140d50a31",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "9741140a1a4362d6e6d2e6a9489befe94851eebad444cf20d79a91d122a2d089",
+      "materials": 221
+    },
+    {
+      "file": "public/models/places/aojingxiguan.glb",
+      "geometryHash": "4cd61239d9357efbb25290e8a3c88d1e20ab32bd1f5ee9ba39e9d07b604fb509",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "9d5e0109545b798e6f5aab28fad68bc4248af0e1b2c2f21a7b0cf2df7b00a6ae",
+      "materials": 18
+    },
+    {
+      "file": "public/models/places/daguanlou.glb",
+      "geometryHash": "8fd35cb2ab283729396b3531096a5b0008d7f4d3596db5fbba42894a9a971448",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "fb8eb445ada99f3d3252aa112ab1bcc2e4bcddbc4e49106b50ae33a027d5c5a7",
+      "materials": 33
+    },
+    {
+      "file": "public/models/places/daguanyuan_gate.glb",
+      "geometryHash": "3e43770c40152ba998c436cfda8572ee6d4ba16a817456673fcf901e21c093fa",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "5868b0831b3cd1dc58bd264e2619834e019f180c21dcbf4120e27cc17b689979",
+      "materials": 16
+    },
+    {
+      "file": "public/models/places/daoxiangcun.glb",
+      "geometryHash": "16b5931167711596bb3444c26723ab64173a17b6096600ec3c05d295a179fb3a",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "a67d2040533b8bbfce9711f0c3a2f487dd44dd09af9c6145c5ec504e38c108ee",
+      "materials": 13
+    },
+    {
+      "file": "public/models/places/dicuiting.glb",
+      "geometryHash": "17a0a3a9f09d3e2bbf6a67d0b2b416261d5517ea28f691fd5a5897bb21291098",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "39c60d83ba35ca476b50bd95f3dac3e8c6f8f4d9993aa40f8aad46add212e11c",
+      "materials": 9
+    },
+    {
+      "file": "public/models/places/hengwuyuan.glb",
+      "geometryHash": "6d2ea398f4a5d2aaa7886d34431253509dd3c62808e82ff9957dd1d3b3fee884",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "caaed150d3438c4710bb2fa52926af6dec6c88818d3f0aa2ce5e8bd08995c35f",
+      "materials": 35
+    },
+    {
+      "file": "public/models/places/longcuian.glb",
+      "geometryHash": "cdd88b36e143e29c5f7cdcb46edcdec00f5b86221501945775302aafccc9ac6d",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "c15964c5f0c45786959adfb1e9e9c3a59398e59486a86eb68c4c54d8652e11d0",
+      "materials": 29
+    },
+    {
+      "file": "public/models/places/luxuean.glb",
+      "geometryHash": "00c3ac58f9e8914b98d1602a95d7319fde233244a7678167d54f5ed96cc73326",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "929f2f3ed2872732d68818d9410ca1de650100a34df415c33faf6dfd4e13789d",
+      "materials": 10
+    },
+    {
+      "file": "public/models/places/nuanxiangwu.glb",
+      "geometryHash": "3d8de29e1492edbea8017d2c2c68bb598abdf60801578ef4d8a0903027088180",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "8d7ccebbe4fb527c8d3d7968337141f5f2760d17a9cc03605356e64548503e3d",
+      "materials": 27
+    },
+    {
+      "file": "public/models/places/ouxiangxie.glb",
+      "geometryHash": "2e12ed65b812a7c613835e9f50e2f71ff1ed9c1ae886e62cd4e3d605edec2c80",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "3840458af26fdc522c40a17b97656ceb4c781f7be3dd923b54b2f1224d356612",
+      "materials": 18
+    },
+    {
+      "file": "public/models/places/qiushuangzhai.glb",
+      "geometryHash": "7e7087093f9e88cfa30efbd99a992dab3ddd42cb18d9572d8db556f2dac47972",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "6bd4b323b7bffc7241e788e06082870870e67aad2c1aa7508ad3e3548c7ca145",
+      "materials": 34
+    },
+    {
+      "file": "public/models/places/qujingtongyou.glb",
+      "geometryHash": "e49e374def59c68f939f66253d5c399a7f7930db49b54137547ca80398c716a9",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "7f62040d94cd4d4db469c080a48d025db47740fc9b96b3852485881e4305da2b",
+      "materials": 6
+    },
+    {
+      "file": "public/models/places/tubishanzhuang.glb",
+      "geometryHash": "fba8cb33e27ead54832e0f19f74ab702d69c691da1696fd30e33f185ee1f897f",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "4c144273c45ee812db7b37b4a3cc989d098a89a800ca6d6a2dcd20f0cc00b209",
+      "materials": 18
+    },
+    {
+      "file": "public/models/places/xiaoxiangguan.glb",
+      "geometryHash": "5da3fb2dc370b4d8ef0f648f195d6a3c661cf7e40037077e1a36ac432949fdb1",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "8ec7021d10a72778c918535cbd2a9e0dd29cf9124ca4713a0280fe3eba8a2381",
+      "materials": 34
+    },
+    {
+      "file": "public/models/places/yihongyuan.glb",
+      "geometryHash": "8fe3b48c1b7270859dcccd959d50856c4a9994fd48e0708555630d318b62bdd2",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "2d74fd2f7a75287f7657a273604ae0b9f55440fbea422cf2531a4129d128744c",
+      "materials": 36
+    },
+    {
+      "file": "public/models/places-low/aojingxiguan.glb",
+      "geometryHash": "b91fc985cfe86aeb768b9deda00d2afbc3d0c166770813f99cc2430d68d7b6f1",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "039c001f5941badaec1ac3bbd4c788a83f7c45d35af7fefe116dc0fbb4bd5747",
+      "materials": 15
+    },
+    {
+      "file": "public/models/places-low/daguanlou.glb",
+      "geometryHash": "8e76f48a359151dffd8222b667234a17cc85def42756655118f6e358e7c7e814",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "452dfd747153b1dad00cc2777ba6b11ed8973c796a053d117a5033713634276b",
+      "materials": 30
+    },
+    {
+      "file": "public/models/places-low/daguanyuan_gate.glb",
+      "geometryHash": "b83e7bbe659123e4b16eae55c3fee025c3f52cac0b17b674c2c6ebde2bde49e3",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "a8bd3f91b6c82e8fd43eff392005649280ebef5bd56e4abe6fb8eb26b01e61c2",
+      "materials": 16
+    },
+    {
+      "file": "public/models/places-low/daoxiangcun.glb",
+      "geometryHash": "89ec5c146752438e0c0f14b73a15d39c2ebc734afb472f0683a7dd19bdc4a845",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "11f617f484d8ef53d2015d86ed50de61b9ca196b5c3bf218a1dbd60563692aa8",
+      "materials": 9
+    },
+    {
+      "file": "public/models/places-low/dicuiting.glb",
+      "geometryHash": "7bf3d600cbc31398924410cccc3113537223abd4bb148a2f10561bf9e4bf1b24",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "f0288b5099d766059c97fa5b5096dcbbfcef6d2888c8bc9347e0e961f1327caf",
+      "materials": 9
+    },
+    {
+      "file": "public/models/places-low/hengwuyuan.glb",
+      "geometryHash": "95f2b2199c39fec24d9b6c6a1d09ce788535bec30a260cf9c3eb7622f7af842d",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "b9a756b6968e5394cd81c3a0abb4663a06f53175b7fe10734a8ea9c95efa8e88",
+      "materials": 31
+    },
+    {
+      "file": "public/models/places-low/longcuian.glb",
+      "geometryHash": "d0270015e6c3080fd8431b607e317f78198e265ae6ac90387675256c64b50c0a",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "37153ee60624558c4a7c02ffb452f27baf530a4344fc2886e7461845f2112f81",
+      "materials": 24
+    },
+    {
+      "file": "public/models/places-low/luxuean.glb",
+      "geometryHash": "34af47231f1467f7a3564043c01709e83895a38325e7d1e5fdb64ab104a38ad9",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "fa0ef66773527ee3711eabda8e14bb61ef12bf562937f93c91b1e8992539cba4",
+      "materials": 9
+    },
+    {
+      "file": "public/models/places-low/nuanxiangwu.glb",
+      "geometryHash": "f474e5dc3aeb7507bf5e58f25595f14cd027d8ef4afacd734812877905522604",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "d92b05e189d9c5786bccd6fe015ac5ee3dd2c79eef34572878ecaaed7845b20a",
+      "materials": 26
+    },
+    {
+      "file": "public/models/places-low/ouxiangxie.glb",
+      "geometryHash": "03d212e4d4409980293620e40f5d13db42a55b68013121dc282e8174e85a585e",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "c6fd53b326d4503a133616686892c1e712d469887432c1d0a799d9f8762cbc7c",
+      "materials": 18
+    },
+    {
+      "file": "public/models/places-low/qiushuangzhai.glb",
+      "geometryHash": "41a9b8199e86675b2aabd71bf20c669e512f649e59a106917099af19babb86fb",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "1bf7da2f6da2841c850c10748c9e6eef031a75ba256f94c17a962f5d6b479503",
+      "materials": 31
+    },
+    {
+      "file": "public/models/places-low/qujingtongyou.glb",
+      "geometryHash": "74b419938eb3a682efc8daa81ac33e76ce9886c3151eef0e78aa9d806bc8add8",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "c5afe7742fd5901eaf5d41fe677ad7e8a53342d2d1a9604b9b73cec58605f300",
+      "materials": 3
+    },
+    {
+      "file": "public/models/places-low/tubishanzhuang.glb",
+      "geometryHash": "572f370668bb8651b2ee1331a7a7710251fac3071ee843ce3c35b676c85297c3",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "10cdb83ae372bba7d748b4538487bedceae076f41eadf7b57b50419592032326",
+      "materials": 15
+    },
+    {
+      "file": "public/models/places-low/xiaoxiangguan.glb",
+      "geometryHash": "18c9de18735ac0dd9d044119de60fadc9905d1181de29a591346faad4caa32cc",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "de482eeaa5cd23a9aab999d551d22ab952f194fe9ca02b90806c8f1eb3ce0b5d",
+      "materials": 31
+    },
+    {
+      "file": "public/models/places-low/yihongyuan.glb",
+      "geometryHash": "780b8aecafc469163c1e0620970c008cb5147f0f7c5dc64af05895859c2f476a",
+      "geometryAndSemanticsUnchanged": true,
+      "sha256": "7cfc33b26660abf8e13a2d5593a0f42c354e42f6cda1e93b34f499d17d1dac2c",
+      "materials": 34
+    }
+  ]
+}

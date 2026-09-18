@@ -1,0 +1,7 @@
+{
+  "origin": "Blender-exported bamboo material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions.",
+  "sourceMap": "bamboo",
+  "sourcePixelSha256": "fca8baff664c8ab04208a9b9916bfe4ed446ff512e805a9affbd7d86a4ab8ae6",
+  "sha256": "fca8baff664c8ab04208a9b9916bfe4ed446ff512e805a9affbd7d86a4ab8ae6",
+  "prompt": "Blender-exported bamboo material map. Derived from CC0 Poly Haven sources; Craft swatches are baked by Blender; physical scales and processing are in config/craft.materials.json and its current revision manifest in assets/processed. Source licenses and processing are recorded in assets/manifest.json. Opaque pixels encoded as JPEG at quality 83. Shared locally across scene partitions."
+}

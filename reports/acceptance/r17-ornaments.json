@@ -1,0 +1,87 @@
+{
+  "method": "Editable narrow polychrome friezes derived from SW052/055/064/098.\n\nExisting footprint builders supply the hall transforms. The bands, gilded\noutlines and flower medallions are modeled relief, not a pasted scene image.\n",
+  "records": [
+    {
+      "placeId": "daguanyuan_gate",
+      "meshes": 5,
+      "faces": 3384
+    },
+    {
+      "placeId": "qujingtongyou",
+      "meshes": 0,
+      "faces": 0
+    },
+    {
+      "placeId": "xiaoxiangguan",
+      "meshes": 5,
+      "faces": 3240
+    },
+    {
+      "placeId": "yihongyuan",
+      "meshes": 5,
+      "faces": 2952
+    },
+    {
+      "placeId": "hengwuyuan",
+      "meshes": 5,
+      "faces": 3384
+    },
+    {
+      "placeId": "qiushuangzhai",
+      "meshes": 5,
+      "faces": 3384
+    },
+    {
+      "placeId": "daoxiangcun",
+      "meshes": 0,
+      "faces": 0
+    },
+    {
+      "placeId": "ouxiangxie",
+      "meshes": 5,
+      "faces": 2148
+    },
+    {
+      "placeId": "dicuiting",
+      "meshes": 0,
+      "faces": 0
+    },
+    {
+      "placeId": "luxuean",
+      "meshes": 0,
+      "faces": 0
+    },
+    {
+      "placeId": "tubishanzhuang",
+      "meshes": 5,
+      "faces": 2784
+    },
+    {
+      "placeId": "aojingxiguan",
+      "meshes": 5,
+      "faces": 2508
+    },
+    {
+      "placeId": "daguanlou",
+      "meshes": 5,
+      "faces": 22860
+    },
+    {
+      "placeId": "longcuian",
+      "meshes": 5,
+      "faces": 4260
+    },
+    {
+      "placeId": "nuanxiangwu",
+      "meshes": 5,
+      "faces": 2508
+    }
+  ],
+  "sourcePlates": [
+    "SW052",
+    "SW055",
+    "SW064",
+    "SW098"
+  ],
+  "masterSha256": "89f3d50b43a2a3c2ef174d3b936f5bf0e6fbaf97381883a90ea06c78d4b0e05a"
+}

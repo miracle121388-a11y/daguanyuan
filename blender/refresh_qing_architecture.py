@@ -13,7 +13,13 @@ from publish_manifest import publish
 layout=json.loads((ROOT/'config/garden.layout.json').read_text(encoding='utf-8'))
 config=json.loads((ROOT/'config/craft.materials.json').read_text(encoding='utf-8'))
 palette=json.loads((ROOT/'config/qing.palette.json').read_text(encoding='utf-8'))
-revision=palette['revision']
+sunwen='--sunwen' in sys.argv
+if sunwen:
+    sunwen_spec=json.loads((ROOT/'config/garden.sunwen.json').read_text())
+    layout['assetRevision']=sunwen_spec['assetRevision']
+revision=sunwen_spec['revision'] if sunwen else palette['revision']
+
+def role(m):return m.get('sunwenRole',m.name)
 out=ROOT/f'assets/processed/architecture-{revision}'
 out.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=str(ROOT/'blender/daguanyuan_master.blend'),load_ui=False,use_scripts=False)
@@ -98,9 +104,9 @@ plant_prefix=('botanical_','leaf','lightleaf','canopy','bark','bamboo','flower',
 
 
 def architecture(ob):
-    if ob.type!='MESH' or not ob.data.materials:return False
+    if ob.type!='MESH' or not ob.data.materials or ob.get('sunwenOrnament') or ob.get('sunwenRetired'):return False
     if ob.get('enclosureRevision'):return True
-    return not all(m.name in keep_roles or m.name.startswith(plant_prefix) for m in ob.data.materials)
+    return not all(role(m) in keep_roles or role(m).startswith(plant_prefix) for m in ob.data.materials)
 
 
 def low_objects(root, collection, far=False):
@@ -108,8 +114,8 @@ def low_objects(root, collection, far=False):
     bpy.context.view_layer.update()
     for ob in list(root.children_recursive):
         if not architecture(ob):continue
-        ornament=all(m.name in ['wood','rusticwood','gold','qing_jade','qing_azurite'] for m in ob.data.materials)
-        protected=(bool(ob.get('preserveEnvelope')) and not ornament) or all(m.name in ['roof','goldroof','plaster','clay','courtbase'] for m in ob.data.materials)
+        ornament=all(role(m) in ['wood','rusticwood','gold','qing_jade','qing_azurite'] for m in ob.data.materials)
+        protected=(bool(ob.get('preserveEnvelope')) and not ornament) or all(role(m) in ['roof','goldroof','plaster','clay','courtbase'] for m in ob.data.materials)
         modifier=None
         if not protected and len(ob.data.polygons)>200:
             modifier=ob.modifiers.new('QingArchitectureLOD','DECIMATE');modifier.ratio=.018 if far else .32

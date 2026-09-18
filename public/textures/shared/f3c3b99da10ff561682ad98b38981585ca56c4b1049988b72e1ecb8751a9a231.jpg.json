@@ -1,0 +1,18 @@
+{
+  "sha256": "f3c3b99da10ff561682ad98b38981585ca56c4b1049988b72e1ecb8751a9a231",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "herbal",
+    "role": "tilelight",
+    "pigment": "#bcc3ab",
+    "roughness": 0.69,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/herbal-tilelight.png",
+    "sha256": "b4c73815ce88b7784115a95d68dcdcf7263def5f522898cd4b783354a3d4af42",
+    "source": {
+      "file": "assets/processed/materials-r15/tilelight_diff.png",
+      "sha256": "8b559586be8aa350bc6a7fe1d4e47eb38a33fb161e50d14c2d76b3a2082da574"
+    }
+  }
+}

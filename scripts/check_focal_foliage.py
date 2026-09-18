@@ -15,6 +15,7 @@ for tier in ['places','places-low']:
    if 'uri' in image:blob=(path.parent/image['uri']).read_bytes()
    else:
     view=doc['bufferViews'][image['bufferView']];offset=start+view.get('byteOffset',0);blob=data[offset:offset+view['byteLength']]
+   if mat.get('extras',{}).get('sunwenSurface'):source=R/mat['extras']['sunwenSurface']['file']
    actual=ImageStat.Stat(Image.open(io.BytesIO(blob)).convert('RGB'));expected=ImageStat.Stat(Image.open(source).convert('RGB'));error=max(abs(a-b) for a,b in zip(actual.mean,expected.mean))
    primitives=[p for mesh in doc['meshes'] for p in mesh['primitives'] if p.get('material')==index]
    uv_preserved=bool(primitives) and all('TEXCOORD_0' in p['attributes'] for p in primitives)

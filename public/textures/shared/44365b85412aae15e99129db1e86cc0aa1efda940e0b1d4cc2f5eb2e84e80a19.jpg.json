@@ -1,0 +1,18 @@
+{
+  "sha256": "44365b85412aae15e99129db1e86cc0aa1efda940e0b1d4cc2f5eb2e84e80a19",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "gathering",
+    "role": "paving",
+    "pigment": "#9aafa9",
+    "roughness": 0.88,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/gathering-paving.png",
+    "sha256": "e290fcef256af7052186313912d21349330c886c5c1c3d71f5106b51e9f25b54",
+    "source": {
+      "file": "assets/processed/materials-r15/paving_diff.png",
+      "sha256": "1f5bdd8bc539d8708d8c237ee2c641a0b46328bc821d5ef8a33a1540da28757b"
+    }
+  }
+}

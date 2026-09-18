@@ -1,0 +1,9 @@
+
+> daguanyuan-rumeng@1.0.0 models:grounding:check
+> node scripts/pipeline.mjs verify-grounding
+
+PASS GARDEN GROUNDING {"passed": 28348, "protectedMeshes": 26856, "roots": 360, "maximumRootTerrainError": 0.02000001072883606, "surfaceTriangles": 381, "underplantingClumps": 2400, "builtInCourtRoots": 22, "metrics": {"dryLandSoftFraction": 0.7051551900159341, "dryLandHardFraction": 0.2948982415296688, "rootCount": 360, "linkedPairs": 491, "builtInCourtRoots": 22, "builtInCourtRootsOnSoftGround": 22, "rootsOnSoftGround": 360, "rootMinimumSoftCoverage": 1.0, "softGroundPigmentStdDev": [10.59016408110802, 7.351185379231875, 6.190501420476201]}, "masterSha256": "58a1598283243f430c4407e38b8afc59b025433305fa12fe93fbf315c3a516fb"}
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:30:46)
+Read blend: "/Users/ustinian/code/daguanyuan/blender/daguanyuan_master.blend"
+
+Blender quit

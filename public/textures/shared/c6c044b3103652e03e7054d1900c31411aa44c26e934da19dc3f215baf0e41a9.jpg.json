@@ -1,0 +1,18 @@
+{
+  "sha256": "c6c044b3103652e03e7054d1900c31411aa44c26e934da19dc3f215baf0e41a9",
+  "origin": "Sunwen r17 authored pigment over reviewed local craft grain; paintings used for study only.",
+  "prompt": "Deterministic material processing by scripts/prepare_sunwen_surfaces.py",
+  "source": {
+    "profile": "waterside",
+    "role": "plaster",
+    "pigment": "#e5e6cb",
+    "roughness": 0.84,
+    "metallic": 0,
+    "file": "assets/processed/sunwen-r17/waterside-plaster.png",
+    "sha256": "80c351da8b2f136510b753cfe9dc38e8cfa2ebf6d35374e24428bb50ff47e321",
+    "source": {
+      "file": "assets/processed/materials-r15/plaster_diff.png",
+      "sha256": "aa7086e0b6af67efe08ba1cfb2bcf0637ac4953eb2f0b38bb7d68632aa9b2d7c"
+    }
+  }
+}
