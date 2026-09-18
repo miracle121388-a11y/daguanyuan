@@ -1,0 +1,11 @@
+
+> daguanyuan-rumeng@1.0.0 models:urban:check
+> node scripts/pipeline.mjs verify-urban
+
+PASS 113179 urban setting and preserved garden checks
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:30:46)
+Read blend: "/Users/ustinian/code/daguanyuan/blender/daguanyuan_master.blend"
+Read blend: "/Users/ustinian/code/daguanyuan/.checkpoints/before-urban-r22/blender/daguanyuan_master.blend"
+Read blend: "/Users/ustinian/code/daguanyuan/blender/daguanyuan_master.blend"
+
+Blender quit

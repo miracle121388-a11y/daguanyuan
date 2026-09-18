@@ -1,0 +1,32 @@
+
+> daguanyuan-rumeng@1.0.0 models:urban:check
+> node scripts/pipeline.mjs verify-urban
+
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:30:46)
+Read blend: "/Users/ustinian/code/daguanyuan/blender/daguanyuan_master.blend"
+Read blend: "/Users/ustinian/code/daguanyuan/.checkpoints/before-urban-r22/blender/daguanyuan_master.blend"
+Traceback (most recent call last):
+  File "/Users/ustinian/code/daguanyuan/blender/check_urban_context.py", line 22, in <module>
+    for name,value in protected().items():check(current.get(name)==value,'Garden mesh and transform retained: '+name)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ustinian/code/daguanyuan/blender/check_urban_context.py", line 12, in check
+    if not ok:raise AssertionError(message)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Garden mesh and transform retained: LivingTree_Urban_011_white-blossom
+
+Error: script failed, file: 'blender/check_urban_context.py', exiting.
+
+Blender quit
+file:///Users/ustinian/code/daguanyuan/scripts/pipeline.mjs:12
+const run=(cmd,args,env={})=>{const r=spawnSync(cmd,args,{stdio:'inherit',shell:false,env:{...process.env,...env}});if(r.status!==0)throw new Error(`${cmd} exited ${r.status}`)};
+                                                                                                                                          ^
+
+Error: /Users/ustinian/code/daguanyuan/.tools/blender-4.5.9/Blender.app/Contents/MacOS/Blender exited 1
+    at run (file:///Users/ustinian/code/daguanyuan/scripts/pipeline.mjs:12:139)
+    at file:///Users/ustinian/code/daguanyuan/scripts/pipeline.mjs:36:28
+    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.12.0
+ERROR conda.cli.main_run:execute(127): `conda run npm run models:urban:check` failed. (See above for error)

@@ -1,5 +1,6 @@
 """Small shared meshes for a varied, editable Qing capital backdrop."""
 import math
+import random
 import build_modules as core
 from urban_layout import BUILDINGS
 
@@ -68,7 +69,7 @@ def hall(b,kind,params):
         z=3.55
         b.box(timber,(0,-d/2-.13,z),(w*.86,.17,.62))
         b.mesh('awning' if kind=='shop' else 'sagecloth',
-               [(-w/2,-d/2-.18,z+.35),(w/2,-d/2-.18,z+.35),(w/2,-d/2-1.1,z-.08),(-w/2,-d/2-1.1,z-.08)],[(0,1,2,3),(3,2,1,0)])
+               [(-w/2,-d/2-.18,z+.35),(w/2,-d/2-.18,z+.35),(w/2,-d/2-1.1,z-.08),(-w/2,-d/2-1.1,z-.08)],[(0,1,2,3)])
         b.box(timber,(w*.40,-d/2-.3,2.35),(.6,.20,1.5))
         for zz in [1.95,2.35,2.75]:b.box('gold',(w*.40,-d/2-.42,zz),(.24,.025,.2))
     if kind=='shop-upper':
@@ -176,4 +177,39 @@ def create_prototypes(collection):
         batch.rod('wood',(.2,0,3),(x,y,z),.09,4,r2=.03)
         batch.ellipsoid('leaf' if i%2 else 'lightleaf',(x,y,z),(1.8,1.55,.85),seed=i+719,n=7,rings=4)
     models['tree']=batch.finish()
+    # Low, irregular planting under the full Sun Wen crowns. Ground colour is
+    # inherited from r21; these are real leaves and stones, not opaque discs.
+    batch=core.Batch('Urban_screen-bed',collection);rng=random.Random(220918)
+    for i in range(34):
+        a=rng.random()*math.tau;r=math.sqrt(rng.random())*2.8
+        x,y=math.cos(a)*r,math.sin(a)*r*.8
+        for j in range(4):
+            aa=a+j*1.7;reach=rng.uniform(.25,.53);z=rng.uniform(.14,.42)
+            batch.mesh('lightleaf' if i%3 else 'leaf',[(x,y,.01),(x+math.cos(aa-.55)*reach*.5,y+math.sin(aa-.55)*reach*.5,z),(x+math.cos(aa)*reach,y+math.sin(aa)*reach,z*.8),(x+math.cos(aa+.55)*reach*.5,y+math.sin(aa+.55)*reach*.5,z)],[(0,1,2,3)])
+    for x,y in [(-2,.4),(1.6,-1.1),(.6,1.7)]:batch.ellipsoid('mossstone',(x,y,.14),(.48,.34,.24),seed=int(x*100),rings=3,n=7)
+    models['screen-bed']=batch.finish()
+    batch=core.Batch('Urban_estate-bed',collection)
+    # An irregular, shallow planted island within a private courtyard. Fine
+    # foliage obscures its edge, instead of a tree rising through bare paving.
+    vs=[(0,0,.045)]+[(math.cos(i*math.tau/24)*(2.75+.22*math.sin(i*2.3)),math.sin(i*math.tau/24)*(2.25+.18*math.cos(i*1.9)),.012) for i in range(24)]
+    batch.mesh('moss',vs,[(0,i+1,(i+1)%24+1) for i in range(24)])
+    models['estate-bed']=batch.finish()
+    batch=core.Batch('Urban_screen-rock',collection)
+    for i,(x,y,z,s) in enumerate([(-1.7,0,.65,1.15),(-.7,.1,1.25,1.3),(.3,.3,1.9,1.05),(1.35,.2,.85,1.1),(.1,-.65,.4,.75)]):
+        batch.ellipsoid('mossstone',(x,y,z),(s*.73,s*.63,s),seed=i+992,rings=4,n=7)
+        batch.ellipsoid('moss',(x-.12,y-.2,z+s*.48),(s*.65,s*.53,.17),seed=i+88,rings=3,n=7)
+    models['screen-rock']=batch.finish()
+    batch=core.Batch('Urban_bamboo-screen',collection)
+    for i in range(18):
+        a=i*2.399;r=.3+(i%5)*.27;x,y=math.cos(a)*r,math.sin(a)*r;h=3.4+(i%7)*.32
+        batch.rod('bamboo',(x,y,0),(x+.2*math.cos(a),y+.2*math.sin(a),h),.038,5,r2=.018)
+        for j in range(4):
+            z=h*(.52+j*.13);aa=a+j*1.8;reach=.65
+            ex,ey=x+math.cos(aa)*reach,y+math.sin(aa)*reach
+            batch.rod('bamboo',(x,y,z),(ex,ey,z+.12),.015,4,r2=.005)
+            for k in range(5):
+                t=(k+1)/6;px=x+(ex-x)*t;py=y+(ey-y)*t;az=aa+(-.7 if k%2 else .7)
+                lx,ly=math.cos(az)*.48,math.sin(az)*.48
+                batch.mesh('leaf' if k%2 else 'lightleaf',[(px,py,z+.12*t),(px+lx*.4-ly*.10,py+ly*.4+lx*.10,z+.17),(px+lx,py+ly,z-.12),(px+lx*.4+ly*.10,py+ly*.4-lx*.10,z+.17)],[(0,1,2,3)])
+    models['bamboo-screen']=batch.finish()
     return models

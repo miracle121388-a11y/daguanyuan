@@ -542,7 +542,7 @@
     ],
     "perennialLimit": 1200
   },
-  "assetRevision": "spatial-garden-20260918-r21",
+  "assetRevision": "spatial-garden-20260918-r22",
   "referenceRepository": "https://github.com/changren-wcr/sunwen",
   "referenceCommit": "9e9352d51a5f4a7006f77946ee8ace29d427a937",
   "landscape": {
@@ -576,6 +576,6 @@
     ]
   },
   "architectureRevision": "r18",
-  "urbanRevision": "r20",
+  "urbanRevision": "r22",
   "groundingRevision": "r21"
 }

@@ -1,9 +1,9 @@
 [
   {
     "file": "public/models/overview.glb",
-    "beforeBytes": 38735716,
-    "afterBytes": 4785452,
-    "sha256": "dfbacab7777f9393b1a535168fbf1a568a90dd65088109855d34e099f161c004",
+    "beforeBytes": 38734948,
+    "afterBytes": 4787896,
+    "sha256": "59105a0c7770d432734b72be22cc9d58e1fbd8e5a0386590f1d84d26db0f3489",
     "semanticNodes": 36,
     "bounds": {
       "min": [
@@ -28,9 +28,9 @@
   },
   {
     "file": "public/models/overview-low.glb",
-    "beforeBytes": 24831684,
-    "afterBytes": 3492716,
-    "sha256": "c9aab2542f41857752794e57e868069dd33a8f2203c2bf59ec5aeac12f1598a1",
+    "beforeBytes": 24830916,
+    "afterBytes": 3495000,
+    "sha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
     "semanticNodes": 36,
     "bounds": {
       "min": [
@@ -55,14 +55,14 @@
   },
   {
     "file": "public/models/urban-context.glb",
-    "beforeBytes": 734464,
-    "afterBytes": 180920,
-    "sha256": "05959ff28aa74b75eced1e1be653934ae65f08156b8e48ac5862cfb70797b837",
+    "beforeBytes": 937316,
+    "afterBytes": 222852,
+    "sha256": "21fd9784992683e2d829d9b6af8281939f6c74b2a1bd4690ac2c261877d814ef",
     "semanticNodes": 0,
     "bounds": {
       "min": [
         -15.699999809265137,
-        -0.1599999964237213,
+        -0.6342195272445679,
         -7.71999979019165
       ],
       "max": [
@@ -71,7 +71,7 @@
         9.199939727783203
       ]
     },
-    "materials": 20,
+    "materials": 23,
     "steps": [
       "dedup accessors/textures",
       "weld",

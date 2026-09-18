@@ -1,0 +1,18 @@
+{
+  "origin": "Cycles shadow render of the editable Daguanyuan master. The camera sees only white earth receivers; the actual local buildings, source trees, bamboo, stones and furniture cast shadows. No painted replacement scene.",
+  "method": "2048 square; orthographic 720m; camera [0,30,700]; Cycles 16 samples with denoising; world .14; sun2.8 at[-80,-42,62], angular size2.5deg; Standard color transform. Actual planted transforms use linked complete source crowns matching the distance atlas, instead of interactive sparse leaf subsets. Saved master unchanged.",
+  "nativeFullCrowns": true,
+  "worldBounds": {
+    "x": [
+      -360,
+      360
+    ],
+    "blenderY": [
+      -330,
+      390
+    ]
+  },
+  "sourceMaster": "blender/daguanyuan_master.blend",
+  "sourceMasterSha256": "a872fbdadd482a00dbea0132d42c4415693a577f037e9cf225c12d2f02dbd446",
+  "renderSha256": "770a30db1c68f4b91396f202c1b0025712e1435faffdbd71752327c56be3d190"
+}

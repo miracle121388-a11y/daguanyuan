@@ -1,0 +1,142 @@
+{
+  "layer": [
+    {
+      "name": "Overview Sunwen21_Root_Surface",
+      "vertices": 564,
+      "colors": 564
+    },
+    {
+      "name": "Overview Sunwen21_jadeLeaf",
+      "vertices": 50608,
+      "colors": 0
+    },
+    {
+      "name": "Overview Sunwen21_leaf",
+      "vertices": 29133,
+      "colors": 0
+    },
+    {
+      "name": "Overview Sunwen21_beanLeaf",
+      "vertices": 99680,
+      "colors": 0
+    },
+    {
+      "name": "Overview Sunwen21_white",
+      "vertices": 3840,
+      "colors": 0
+    },
+    {
+      "name": "Overview Sunwen21_gold",
+      "vertices": 21700,
+      "colors": 0
+    },
+    {
+      "name": "Overview Sunwen21_moss",
+      "vertices": 72720,
+      "colors": 0
+    },
+    {
+      "name": "Overview Sunwen21_pink",
+      "vertices": 5460,
+      "colors": 0
+    }
+  ],
+  "rootCount": 432,
+  "builtInCourtRoots": 22,
+  "minimumRootMask": 255,
+  "views": [
+    {
+      "name": "ground-overview",
+      "eye": [
+        170,
+        165,
+        218
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "connected-west-groves",
+      "eye": [
+        -52,
+        18,
+        114
+      ],
+      "target": [
+        -72,
+        1.2,
+        90
+      ]
+    },
+    {
+      "name": "root-eye-west",
+      "eye": [
+        -61,
+        4.2,
+        122
+      ],
+      "target": [
+        -68,
+        2.5,
+        113
+      ]
+    },
+    {
+      "name": "soft-east-courts",
+      "eye": [
+        138,
+        39,
+        96
+      ],
+      "target": [
+        97,
+        0,
+        52
+      ]
+    },
+    {
+      "name": "moss-north-wall",
+      "eye": [
+        50,
+        9,
+        -128
+      ],
+      "target": [
+        25,
+        1,
+        -139
+      ]
+    },
+    {
+      "name": "water-ground-transition",
+      "eye": [
+        52,
+        3,
+        -20
+      ],
+      "target": [
+        90,
+        1,
+        -35
+      ]
+    },
+    {
+      "name": "courtyard-flowering-tree-base",
+      "eye": [
+        104,
+        2.4,
+        105
+      ],
+      "target": [
+        98,
+        0.65,
+        100
+      ]
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

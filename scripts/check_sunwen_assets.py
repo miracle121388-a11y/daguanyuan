@@ -40,7 +40,14 @@ for row in ground['files']:check(sha(row['file'])==row['sha256'],'Tended garden 
 grounding=read('config/garden.grounding.json')
 lo,hi=grounding['softLandFraction']
 check(lo<ground['metrics']['dryLandSoftFraction']<hi,'Soft garden ground with retained stone courts and paths, excluding water')
-check(ground['metrics']['rootsOnSoftGround']==len(manifest['vegetation']),'Every actual tree/shrub root sits in a soft planted field')
+boundary=read('public/urban-context.json').get('boundaryPlanting',[])
+check(ground['metrics']['rootsOnSoftGround']+len(boundary)==len(manifest['vegetation']),'Retained r21 roots plus new boundary crowns account for every tree')
+if boundary:
+    from PIL import Image
+    zones=Image.open(R/'public/textures/ground/garden-ground-zones.png').convert('RGB')
+    for row in boundary:
+        x,y,_=row['position'];px=int((x+384)/768*zones.width);py=int((384-y)/768*zones.height)
+        check(zones.getpixel((px,py))[0]>200,'New wall grove grows in retained soft ground: '+row['name'])
 check(ground['designSha256']==sha('config/garden.grounding.json'),'Grounding design hash')
 check(set(p['kind'] for p in manifest['sunwenPlanting'])=={'iris','peony','lotus','chrysanthemum','orchid'},'Five distinct flowering ground layers')
 check(len(manifest['sunwenPlanting'])>500,'Abundant grouped perennials')

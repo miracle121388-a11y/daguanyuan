@@ -1,22 +1,22 @@
 {
-  "revision": "spatial-garden-20260918-r21",
+  "revision": "spatial-garden-20260918-r22",
   "rights": "Authored geometry and pigments. Existing source grain retains its reviewed provenance. Historical scans are used only for study and the attributed gallery.",
   "sources": [
     {
       "file": "config/garden.urban.json",
-      "sha256": "40a2156ab9ca243ee30b9bd6381abebbff3f9ac643fb700f28ba23b102ab9c32"
+      "sha256": "1a067056076ed534b290a916b3c5e2e9ee20f1dd14d1a2740ae1144f52f18e51"
     },
     {
       "file": "blender/urban_context.py",
-      "sha256": "a22934c32769ab0ba8181116b79c777854a28ae34c9af12731032f17a33ce090"
+      "sha256": "dcdc776c5977b88fce2289505680fa6dae6633ff0d10d9f2e6473ae637ad7b90"
     },
     {
       "file": "blender/urban_layout.py",
-      "sha256": "6f9bff8e1f0feb8635e7abde285063fd0c96bdf168da52c76c45fa91dad71db4"
+      "sha256": "85b398bc48e60273ac017492a2963170f5c129bcd6d6473c636ed7e905c02d4c"
     },
     {
       "file": "blender/urban_architecture.py",
-      "sha256": "6422241193dd8f3ac9a91b56437ed49ea766372349048ee9e7b7ecb9956487d3"
+      "sha256": "8aa04f735abc9f9fcbcbcaadaceb025f1cd2150b0b1951a51771a8c5e7ac7333"
     },
     {
       "file": "scripts/apply_urban_ground.mjs",
@@ -24,11 +24,11 @@
     },
     {
       "file": "src/scene/UrbanContext.tsx",
-      "sha256": "3c978901f1677f5ce80f74825a3d5a0146b1a635435e4e3ed03086a27a474056"
+      "sha256": "2e93177d25374646c1ea56dd6ac51f0b3f7593c33070ad168818a007c05e6228"
     },
     {
       "file": "config/garden.sunwen.json",
-      "sha256": "22e4e86a59c76ca953f4e24df9bc99fbfe79e1ac6af06a42b25bbf6399e60661"
+      "sha256": "abb1a43cd24aceffe650868cded3496fb7075f8d3f2582775d03d9d439cf65e8"
     },
     {
       "file": "config/sunwen.architecture.json",
@@ -36,7 +36,7 @@
     },
     {
       "file": "config/sunwen.planting.json",
-      "sha256": "da26c0be1a688c6a4857315617f6cd282b42ecc40ca60857ce40239f655d19ac"
+      "sha256": "bda6c7661d4ebb3df57bdeaf8ba121e109a4b090e4b426ca461ce09c6ce3c81f"
     },
     {
       "file": "config/sunwen.landscape.json",
@@ -89,6 +89,10 @@
     {
       "file": "scripts/prepare_sunwen_surfaces.py",
       "sha256": "c77c6f7a699dcad00053f0ffae11bb7aa871a3bbb637ace217b11e5f2adad62c"
+    },
+    {
+      "file": "blender/urban_screening.py",
+      "sha256": "d61faf5fefb0b29ae1972a0cb2b3e8d5647321bf5dd9d526d0f25b334f4471ad"
     },
     {
       "file": "config/garden.grounding.json",
@@ -340,11 +344,11 @@
     },
     {
       "file": "public/urban-context.json",
-      "sha256": "54b5a32238aec20d67baacb73849ba68b81a7539b14dff4e0b82d32a3199490c"
+      "sha256": "86b74078650b7515155aef4bf5620143cb342f6befeda469643e8f1a6cb4f182"
     },
     {
       "file": "public/models/urban-context.glb",
-      "sha256": "05959ff28aa74b75eced1e1be653934ae65f08156b8e48ac5862cfb70797b837"
+      "sha256": "21fd9784992683e2d829d9b6af8281939f6c74b2a1bd4690ac2c261877d814ef"
     },
     {
       "file": "public/architecture-scenes.json",
@@ -384,11 +388,11 @@
     },
     {
       "file": "public/textures/landscape-light.webp",
-      "sha256": "7161ea642f8d3c97eab0a42123df3fe446da6c500c22db71fdc57288d573507f"
+      "sha256": "7e208e423e82d5ee3bbd58be457159a1f91d5a6fa0bcd8f59836fdb76b007c67"
     },
     {
       "file": "public/textures/landscape-light-low.webp",
-      "sha256": "8399c208a43e4c645894ae95cb3a09426190e0bbe66786eb0636057cd7cff7fb"
+      "sha256": "3283fe780991edd5baa2400a98dfa3f2df2d45792c8bedfefee50ba9a0f18c2a"
     }
   ]
 }

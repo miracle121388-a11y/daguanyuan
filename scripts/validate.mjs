@@ -59,7 +59,7 @@ const pathIDs=new Set(m.pathNodes.map(n=>n.id)),edgeKeys=new Set(m.pathEdges.fla
 if(existsSync('config/garden.urban.json')){
  const urban=read('public/urban-context.json'),design=read('config/garden.urban.json');
  const vector=z.tuple([z.number().finite(),z.number().finite(),z.number().finite()]);
- const kinds=['hall','house','annex','range','gallery','gate','shop','shop-upper','warehouse','temple','paifang','bell-pavilion','well','screen','stall','cart','hitching','lane-gate','drain','slab-bridge','wall','paving','court-paving','tree'];
+ const kinds=['hall','house','annex','range','gallery','gate','shop','shop-upper','warehouse','temple','paifang','bell-pavilion','well','screen','stall','cart','hitching','lane-gate','drain','slab-bridge','wall','paving','court-paving','tree','screen-bed','screen-rock','bamboo-screen','estate-bed'];
  const rows=z.array(z.object({kind:z.enum(kinds),position:vector,scale:vector,rotation:z.number().finite(),district:ids})).parse(urban.instances);
  assert(urban.revision===design.revision&&(read('config/garden.sunwen.json').urbanRevision??m.assetRevision.split('-').at(-1))===design.revision,'urban component revision matches its authored configuration');
  assert(urban.model==='models/urban-context.glb'&&existsSync('public/'+urban.model),'local urban model');

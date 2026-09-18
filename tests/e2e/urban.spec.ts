@@ -2,6 +2,7 @@ import {test,expect} from '@playwright/test';
 import {mkdirSync,readFileSync} from 'node:fs';
 import {shot,writeArtifact} from './artifacts';
 const urban=JSON.parse(readFileSync('public/urban-context.json','utf8')) as {revision:string;instances:{kind:string}[]};
+const overview=JSON.parse(readFileSync('public/scene-manifest.json','utf8')).overviewCamera;
 
 test('mansion roof setting renders at high and garden eye levels through day and night',async({page})=>{
  test.setTimeout(180000);const folder=`reports/browser/${urban.revision}`;mkdirSync(folder,{recursive:true});
@@ -22,6 +23,10 @@ test('mansion roof setting renders at high and garden eye levels through day and
  const views=[
   {name:'garden-eye-east',eye:[52,2.2,-20],target:[140,1,-22]},
   {name:'upper-gallery-east',eye:[52,27,-20],target:[175,5,-22]},
+  {name:'upper-storey-glimpse',eye:[65,12,-20],target:[170,6,-30]},
+  {name:'wall-grove-east',eye:[128,3.1,65],target:[142,5,36]},
+  {name:'wall-grove-north',eye:[5,3.1,-126],target:[-35,6,-142]},
+  {name:'private-backrange',eye:[176,29,62],target:[143,3,34]},
   {name:'water-eye-north',eye:[20,2.5,-28],target:[20,1.1,-143]},
   {name:'mansion-aerial',eye:[-165,130,175],target:[-30,0,-15]},
   {name:'capital-skyline',eye:[130,155,260],target:[-125,0,-185]},
@@ -36,6 +41,9 @@ test('mansion roof setting renders at high and garden eye levels through day and
   expect(camera.every((v:number,i:number)=>Math.abs(v-view.eye[i])<.15)).toBe(true);
  }
  await page.getByRole('button',{name:'回到全园',exact:true}).click();
+ // These inspection cameras are set directly through the test hook. Restore
+ // the authored overview explicitly before checking the night composition.
+ await page.evaluate(v=>(window as any).__gardenTest.controls.setLookAt(...v.position,...v.target,false),overview);
  await page.getByRole('button',{name:'月夜',exact:true}).click();await page.waitForTimeout(1300);await shot(page,`${folder}/urban-night.png`);
  expect(errors).toEqual([]);expect(failed).toEqual([]);
  writeArtifact(`reports/acceptance/${urban.revision}-urban-browser.json`,JSON.stringify({views,native,errors,failed},null,2));

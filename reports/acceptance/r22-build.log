@@ -1,0 +1,32 @@
+
+> daguanyuan-rumeng@1.0.0 build
+> node scripts/clean_build.mjs && npm run data:build && tsc --noEmit && vite build
+
+
+> daguanyuan-rumeng@1.0.0 data:build
+> node scripts/validate.mjs --publish
+
+PASS 10881 integrity checks. {
+  places: 15,
+  characters: 13,
+  events: 22,
+  sources: 46,
+  relations: 1,
+  routes: 3
+}
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 2272 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/.vite/manifest.json                 0.47 kB │ gzip:   0.22 kB
+dist/index.html                          1.27 kB │ gzip:   0.87 kB
+dist/assets/index-CDFQAyVl.css          95.81 kB │ gzip:  18.71 kB
+dist/assets/index-BgKExUGS.js          799.11 kB │ gzip: 236.34 kB
+dist/assets/GardenScene-BTuMzJu2.js  1,410.89 kB │ gzip: 272.53 kB
+
+(!) Some chunks are larger than 1200 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.10s

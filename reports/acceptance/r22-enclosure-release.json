@@ -1,0 +1,165 @@
+{
+  "at": "2026-09-18T03:53:46.042Z",
+  "sceneRevision": "spatial-garden-20260918-r22",
+  "branch": "main",
+  "status": "local-accepted",
+  "courts": 342,
+  "instances": 5783,
+  "boundaryTrees": 72,
+  "privateBackRanges": 45,
+  "coveredWallWalks": 6,
+  "bambooGroups": 25,
+  "rockeryGroups": 15,
+  "estateTreesAdded": 89,
+  "estateTreesEnlarged": 52,
+  "estatePlantedBases": 141,
+  "modelBytes": 222852,
+  "preservation": {
+    "baseline": ".checkpoints/before-urban-r22",
+    "retainedOriginalMeshes": 2288,
+    "originalIndependentTreesRetained": 360,
+    "retained": {
+      "pathNodes": true,
+      "pathEdges": true,
+      "lake": true,
+      "places": true,
+      "architecturalScenes": true,
+      "groundCover": true,
+      "understory": true,
+      "sunwenPlanting": true
+    },
+    "groundAssetsUnchanged": [
+      {
+        "file": "public/textures/ground/garden-ground.webp",
+        "sha256": "0fa2fe52f3cf4b9e869110889027bb0a810bf87f75b64e4b6be2a4ad53e91e91"
+      },
+      {
+        "file": "public/textures/ground/garden-ground-zones.png",
+        "sha256": "676eecfeec7e42d0520452a02e8dd71af6e4ee6d70ca1f2e85e5139ef40cd4de"
+      },
+      {
+        "file": "public/models/sunwen-landscape.glb",
+        "sha256": "ac5354be6f2186141907aa9b033f8857e32cf98f278910ee72e702df24b147ba"
+      },
+      {
+        "file": "public/models/sunwen-landscape-low.glb",
+        "sha256": "5f3b2ba088727b32040e45dbca700dc55eeac38926de82be522988234c5e14b4"
+      },
+      {
+        "file": "public/models/sunwen-architecture.glb",
+        "sha256": "f76adf03fc03d7398d4628bcee9b41b4f47938b6a627c508713fc30bc332334b"
+      },
+      {
+        "file": "public/models/sunwen-architecture-low.glb",
+        "sha256": "d8b226cf7b9de25842a55effa713046c073d43b6899c000a85c1db7acc6651e6"
+      }
+    ]
+  },
+  "validation": {
+    "nativeChecks": 113179,
+    "roofOverlaps": 0,
+    "visibility": [
+      {
+        "side": "east",
+        "height": 2.2,
+        "roofs": 34,
+        "clearAboveWall": 0,
+        "visibleBetweenCrowns": 0
+      },
+      {
+        "side": "east",
+        "height": 12,
+        "roofs": 34,
+        "clearAboveWall": 24,
+        "visibleBetweenCrowns": 14
+      },
+      {
+        "side": "east",
+        "height": 27,
+        "roofs": 34,
+        "clearAboveWall": 32,
+        "visibleBetweenCrowns": 26
+      },
+      {
+        "side": "west",
+        "height": 2.2,
+        "roofs": 48,
+        "clearAboveWall": 0,
+        "visibleBetweenCrowns": 0
+      },
+      {
+        "side": "west",
+        "height": 12,
+        "roofs": 48,
+        "clearAboveWall": 39,
+        "visibleBetweenCrowns": 13
+      },
+      {
+        "side": "west",
+        "height": 27,
+        "roofs": 48,
+        "clearAboveWall": 46,
+        "visibleBetweenCrowns": 35
+      },
+      {
+        "side": "north",
+        "height": 2.2,
+        "roofs": 44,
+        "clearAboveWall": 0,
+        "visibleBetweenCrowns": 0
+      },
+      {
+        "side": "north",
+        "height": 12,
+        "roofs": 44,
+        "clearAboveWall": 33,
+        "visibleBetweenCrowns": 20
+      },
+      {
+        "side": "north",
+        "height": 27,
+        "roofs": 44,
+        "clearAboveWall": 42,
+        "visibleBetweenCrowns": 38
+      },
+      {
+        "side": "south",
+        "height": 2.2,
+        "roofs": 40,
+        "clearAboveWall": 0,
+        "visibleBetweenCrowns": 0
+      },
+      {
+        "side": "south",
+        "height": 12,
+        "roofs": 40,
+        "clearAboveWall": 38,
+        "visibleBetweenCrowns": 13
+      },
+      {
+        "side": "south",
+        "height": 27,
+        "roofs": 40,
+        "clearAboveWall": 40,
+        "visibleBetweenCrowns": 29
+      }
+    ],
+    "sunwenChecks": 1278,
+    "dataChecks": 10881,
+    "unitApiTests": 95,
+    "browserTests": 4,
+    "build": true,
+    "lint": true,
+    "browserReport": "r22-browser-accepted.json",
+    "mobileReport": "r22-mobile.json",
+    "mobileInitialBytes": 8351895,
+    "mobileLoadedMs": 10379.800000011921,
+    "physicalPhone": false,
+    "fullModelsVerifyRerun": false,
+    "nightOverviewReport": "r22-night-browser.json"
+  },
+  "masterSha256": "a872fbdadd482a00dbea0132d42c4415693a577f037e9cf225c12d2f02dbd446",
+  "localURL": "http://127.0.0.1:5173/",
+  "literature": "第十六回提供借用东府花园、审察两府地方营造省亲别院的依据；京城街坊坐标、墙高、植被与镜头均属空间营造解释。",
+  "deployment": "See r22-deployment/release.json after publication"
+}

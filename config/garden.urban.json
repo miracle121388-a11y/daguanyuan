@@ -1,5 +1,5 @@
 {
-  "revision": "r20",
+  "revision": "r22",
   "basis": "依据用户指定的宁荣府邸腹地空间关系进行三维营造；不是宁荣二府实测复原，不新增原著地点或游览路线。",
   "gardenBounds": [
     -148.5,
@@ -35,7 +35,10 @@
     "sagecloth": "9bab90",
     "water": "607e80",
     "bronze": "837e5d",
-    "courtstone": "b2b9ad"
+    "courtstone": "b2b9ad",
+    "bamboo": "79977a",
+    "mossstone": "9ba78e",
+    "moss": "799b82"
   },
   "layoutStrategy": "Unequal mansion plots, offset hutongs, shop courts and civic facilities; authored spatial interpretation.",
   "references": [
@@ -48,6 +51,16 @@
       "title": "东洋文库／日本国立情报学研究所：乾隆京城全图",
       "url": "https://dsr.nii.ac.jp/toyobunko/II-11-D-802/index.html.en",
       "use": "Street and compound morphology; no measured site alignment claimed."
+    },
+    {
+      "title": "《红楼梦》第十六回",
+      "url": "https://zh.wikisource.org/wiki/紅樓夢/第016回",
+      "use": "东府花园与两府地方共同营造省亲别院的文字依据；本项目墙线、京城街坊与种植位置为空间解释，不作实测复原。"
     }
-  ]
+  ],
+  "screening": {
+    "seed": 220918,
+    "baseline": ".checkpoints/before-urban-r22/blender/daguanyuan_master.blend",
+    "principle": "实体园墙、贴墙竹木叠石与短回廊围合园景；墙外后罩房、府内夹道、多进宅院递进至京城街坊。"
+  }
 }

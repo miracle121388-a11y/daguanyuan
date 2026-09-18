@@ -22,7 +22,7 @@ BUILDINGS = {
 }
 FACILITIES = {'paifang', 'bell-pavilion', 'well', 'screen', 'stall',
               'cart', 'hitching', 'lane-gate', 'drain', 'slab-bridge'}
-PROTOTYPES = set(BUILDINGS) | FACILITIES | {'wall', 'paving', 'court-paving', 'tree'}
+PROTOTYPES = set(BUILDINGS) | FACILITIES | {'wall', 'paving', 'court-paving', 'tree', 'screen-bed', 'screen-rock', 'bamboo-screen', 'estate-bed'}
 
 
 def compose(cfg):
@@ -266,6 +266,52 @@ def compose(cfg):
         add('drain',10,(lo+hi)/2,scale=(1,hi-lo,1),district='street-drainage')
     for yy in [-350,-440,-535,-246]:add('slab-bridge',10,yy,district='street-drainage')
     for x,y in [(-307,-300),(307,306)]:add('paifang',x,y,scale=(.85,.9,.88),district='market-junction')
+    # Trees belong to the inhabited estate courts, behind the back ranges.
+    # Their overlapping crowns give upper-storey roof glimpses a second depth
+    # layer. Keep every public street and all roof footprints clear.
+    estate_tree_centres=[]
+    for row in instances:
+        if row['kind']=='tree' and max(abs(row['position'][0]),abs(row['position'][2]))<300:
+            row['scale']=[round(s*1.55,3) for s in row['scale']]
+            estate_tree_centres.append((row['position'][0],-row['position'][2]))
+    for i,c in enumerate(courts):
+        x0,y0,x1,y1=c['bounds']
+        if max(abs(c['center'][0]),abs(c['center'][1]))>290:continue
+        rng=random.Random(22918+i*17);planted=0
+        for trial in range(35):
+            x=rng.uniform(x0+6,x1-6);y=rng.uniform(y0+9,y1-7)
+            if any(f['bounds'][0]-5<x<f['bounds'][2]+5 and f['bounds'][1]-5<y<f['bounds'][3]+5 for f in footprints):continue
+            if any(math.hypot(x-a,y-b)<9 for a,b in estate_tree_centres):continue
+            size=rng.uniform(1.5,1.95)
+            add('tree',x,y,angle=rng.random()*math.tau,scale=(size,size,size*rng.uniform(.9,1.12)),district='estate-canopy')
+            estate_tree_centres.append((x,y));planted+=1
+            if planted>=2:break
+    for i,(x,y) in enumerate(estate_tree_centres):
+        add('estate-bed',x,y,angle=(i*2.399)%math.tau,scale=(1.25,1.1,1),district='estate-canopy')
+        add('screen-bed',x,y,angle=(i*2.399)%math.tau,scale=(1.25,1.1,1),district='estate-canopy')
+    # Private back ranges sit immediately outside the garden, before the
+    # larger mansion courts and public streets. Breaks form gated service
+    # passages; no shops or public facilities face the garden enclosure.
+    for side in ['west','east','north','south']:
+        t=-133.;rng=random.Random(220918+len(side))
+        while t<136:
+            width=min(rng.choice([14,18,22,25]),140-t)
+            if width<8:break
+            center=t+width/2
+            if side=='south' and abs(center)<34:
+                t=35;continue
+            x,y,angle=(-153.8,center,math.pi/2) if side=='west' else (153.8,center,math.pi/2) if side=='east' else (center,154.5,0) if side=='north' else (center,-147,0)
+            building('range' if width>19 else 'house',x,y,width=width,depth=3.5,
+                     height=rng.choice([.86,.95,1.02]),angle=angle,district='estate-backrange')
+            t+=width+rng.choice([3.2,4.5,6.0])
+        # Taller enclosure returns conceal the service lane mouths at corners.
+        if side in ['west','east']:
+            x=-153.6 if side=='west' else 153.6
+            for y in [-132,140]:add('wall',x,y,scale=(9.1,1,4.5),district='estate-passage')
+            streets.append(dict(name='府内夹道',axis='y',center=[x,0],width=3.2,length=270))
+        else:
+            y=151.0 if side=='north' else -142
+            streets.append(dict(name='后罩房夹道',axis='x',center=[0,y],width=3.0,length=280))
     streets.extend([
         dict(name='东西街',axis='x',center=[0,307],width=16,length=1260),
         dict(name='府南街',axis='x',center=[0,-308],width=16,length=1260),

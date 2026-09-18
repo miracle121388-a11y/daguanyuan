@@ -9,6 +9,7 @@ from export_scene import export_selected
 from publish_manifest import publish
 from urban_layout import compose, validate_plan
 from urban_architecture import create_prototypes
+from urban_screening import add_screening
 
 def collection(name):
     old=bpy.data.collections.get(name)
@@ -49,8 +50,6 @@ def build():
     # Near the viewer, use the garden's complete authored crowns, rather than
     # the reduced silhouette used among the distant city roofs.
     living=bpy.data.collections['Reference_Living_Trees']
-    for ob in list(living.objects):
-        if ob.get('urbanScreenCrown'):bpy.data.objects.remove(ob,do_unlink=True)
     from sunwen_architecture import ground_tree
     terrain=ground_tree();species=json.loads((R/'config/garden.sunwen.json').read_text())['planting']['species']
     full={ob['sunwenPrototype']:ob for ob in bpy.data.collections['Sunwen_Prototypes'].objects}
@@ -58,13 +57,18 @@ def build():
     grounding=R/'config/garden.grounding.json'
     root_adjustments=json.loads(grounding.read_text()).get('rootAdjustments',{}) if grounding.exists() else {}
     for i,(x,y) in enumerate(screen_points):
-        kind=6 if i%3==2 else 0;prototype=full[species[kind]];ob=prototype.copy();living.objects.link(ob)
-        ob.name=f'LivingTree_Urban_{i:03}_{species[kind]}';ob.hide_render=False;ob.hide_set(False)
+        kind=6 if i%3==2 else 0;name=f'LivingTree_Urban_{i:03}_{species[kind]}'
+        # r21 seated and normalised one crown's rotation. Keep existing meshes
+        # and transforms byte-for-byte instead of rebuilding those old trees.
+        if bpy.data.objects.get(name):continue
+        prototype=full[species[kind]];ob=prototype.copy();living.objects.link(ob)
+        ob.name=name;ob.hide_render=False;ob.hide_set(False)
         x,y=root_adjustments.get(ob.name,(x,y))
         hit=terrain.ray_cast(Vector((x,y,100)),Vector((0,0,-1)),200)[0]
         if hit is None:raise ValueError('Unseated wall-side crown')
         ob.location=(x,y,hit.z+.02);ob.scale=(1.2,1.2,1.15);ob.rotation_euler.z=i*1.73
         ob['urbanScreenCrown']=True;ob['sunwenSpecies']=kind;ob['nativeGeometry']='authored-sunwen-crown';ob['plantingLayer']='canopy'
+    boundary_roots=add_screening(cfg,layout,models,living,add)
     extent=cfg['groundExtent']
     # The outside base has a distinct stone material; it never samples garden turf.
     for center,size in [((-(extent+148)/2,0),(extent-148,extent*2)),(((extent+148)/2,0),(extent-148,extent*2)),((0,(extent+148)/2),(296,extent-148)),((0,-(extent+138)/2),(296,extent-138))]:
@@ -93,14 +97,14 @@ def build():
     export_selected(R/'public/models/urban-context.glb',[o for objects in models.values() for o in objects])
     for objects in models.values():
         for ob in objects:ob.hide_render=True;ob.hide_set(True)
-    manifest={'revision':cfg['revision'],'interpretation':cfg['basis'],'model':'models/urban-context.glb','gardenBounds':cfg['gardenBounds'],'wallHeight':height,'courts':courts,'streets':plan['streets'],'composition':plan['composition'],'instances':rows}
+    manifest={'revision':cfg['revision'],'interpretation':cfg['basis'],'model':'models/urban-context.glb','gardenBounds':cfg['gardenBounds'],'wallHeight':height,'courts':courts,'streets':plan['streets'],'composition':plan['composition'],'boundaryPlanting':boundary_roots,'instances':rows}
     (R/'public/urban-context.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':'))+'\n')
     bpy.ops.wm.save_as_mainfile(filepath=str(R/'blender/daguanyuan_master.blend'))
     publish(layout)
     planting['vegetation']=json.loads((R/'public/scene-manifest.json').read_text())['vegetation']
     planting['afterCounts']['vegetation']=len(planting['vegetation'])
     (R/'config/sunwen.planting.json').write_text(json.dumps(planting,ensure_ascii=False,indent=2)+'\n')
-    report={'revision':cfg['revision'],'courts':len(courts),'instances':len(rows),'retiredOutsideTrees':retired,'originalEarthArchived':source.name,'clippedEarthVertices':len(clipped.data.vertices),'planChecks':plan_checks,'masterSha256':hashlib.file_digest((R/'blender/daguanyuan_master.blend').open('rb'),'sha256').hexdigest()}
+    report={'revision':cfg['revision'],'courts':len(courts),'instances':len(rows),'boundaryTrees':len(boundary_roots),'retiredOutsideTrees':retired,'originalEarthArchived':source.name,'clippedEarthVertices':len(clipped.data.vertices),'planChecks':plan_checks,'masterSha256':hashlib.file_digest((R/'blender/daguanyuan_master.blend').open('rb'),'sha256').hexdigest()}
     (R/f"reports/acceptance/{cfg['revision']}-urban-generation.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print('URBAN CONTEXT',report,flush=True)
 

@@ -13,10 +13,10 @@ def check(ok,message):
     checks.append(message)
 def protected():
     bpy.context.view_layer.update()
-    return {o.name:geometry_hash(o) for col in bpy.data.collections if col.name.startswith('Place_') or col.name in ['Garden_Landscape','Urban_Garden_Ground','Manual_Adjustments','Sunwen_Architectural_Details','Reference_Living_Trees','Sunwen_Garden_Details','Reference_Sunwen_Planting'] for o in col.all_objects if o.type=='MESH'}
+    return {o.name:geometry_hash(o) for col in bpy.data.collections if col.name.startswith('Place_') or col.name in ['Garden_Landscape','Urban_Garden_Ground','Manual_Adjustments','Sunwen_Architectural_Details','Reference_Living_Trees','Sunwen_Garden_Details','Reference_Sunwen_Planting','Sunwen_Root_Gardens'] for o in col.all_objects if o.type=='MESH'}
 master=R/'blender/daguanyuan_master.blend'
 bpy.ops.wm.open_mainfile(filepath=str(master),load_ui=False,use_scripts=False)
-current=protected();baseline=R/'.checkpoints/before-urban-r20/blender/daguanyuan_master.blend'
+current=protected();baseline=R/cfg['screening']['baseline']
 if baseline.exists():
     bpy.ops.wm.open_mainfile(filepath=str(baseline),load_ui=False,use_scripts=False)
     for name,value in protected().items():check(current.get(name)==value,'Garden mesh and transform retained: '+name)
@@ -34,7 +34,7 @@ for v in clipped.data.vertices:check(xmin-.001<=v.co.x<=xmax+.001 and ymin-.001<
 archived=[o for o in bpy.context.scene.objects if o.get('urbanRetired')]
 check(bool(archived) and all(o.hide_render for o in archived),'Former mountains and outer woodland archived, invisible')
 check('Manual_Adjustments' in bpy.data.collections,'Manual adjustments collection retained')
-col=bpy.data.collections['Urban_Context'];bpy.context.view_layer.update();vertices=[];faces=[];native_counts={};roof_bounds={}
+col=bpy.data.collections['Urban_Context'];bpy.context.view_layer.update();vertices=[];faces=[];native_counts={};roof_bounds={};roof_heights={}
 for ob in col.objects:
     if ob.type!='MESH':continue
     i=ob['urbanInstance'];native_counts[i]=native_counts.get(i,0)+1
@@ -50,6 +50,7 @@ for ob in col.objects:
         if i in roof_bounds:
             old=roof_bounds[i];box=[min(old[0],box[0]),min(old[1],box[1]),max(old[2],box[2]),max(old[3],box[3])]
         roof_bounds[i]=box
+        roof_heights[i]=max(roof_heights.get(i,0),max(v.z for v in points))
     if row['district']=='garden-enclosure':
         offset=len(vertices);vertices.extend([tuple(ob.matrix_world@v.co) for v in ob.data.vertices]);faces.extend([tuple(offset+i for i in p.vertices) for p in ob.data.polygons])
 check(len(native_counts)==len(data['instances']),'Every published instance exists in native model')
@@ -65,9 +66,57 @@ for target in [(186,22,7),(-186,22,7),(0,208,7),(45,-164,7)]:
         start=Vector((0,0,height));end=Vector(target);delta=end-start;hit=tree.ray_cast(start,delta.normalized(),delta.length)[0]
         check((hit is not None)==(height==2.2),'Eye level screened / elevated roofs revealed: '+str((height,target)))
         rays.append({'eye':list(start),'roof':list(end),'occluded':hit is not None})
+# Test real roof vertices from actual near and middle distance buildings,
+# sampled from four garden edges. A wall must shield walking eye level while
+# a realistic upper-storey view admits scattered rooflines, without hiding
+# city instances based on the camera height.
+roof_targets=[]
+for i,box in roof_bounds.items():
+    row=data['instances'][i]
+    if max(abs(row['position'][0]),abs(row['position'][2]))>300:continue
+    if row['district']!='garden-screen':
+        roof_targets.append(Vector(((box[0]+box[2])/2,(box[1]+box[3])/2,roof_heights[i])))
+visibility=[]
+screen_objects=[o for o in bpy.data.collections['Reference_Living_Trees'].objects if not o.hide_render and (o.get('urbanBoundaryPlant') or o.get('urbanScreenCrown'))]
+screen_objects += [o for o in col.objects if data['instances'][o['urbanInstance']]['kind'] in ['tree','bamboo-screen','screen-rock']]
+screen_cache={};screen_rays=[]
+for ob in screen_objects:
+    key=ob.data.as_pointer()
+    if key not in screen_cache:
+        screen_cache[key]=BVHTree.FromPolygons([v.co for v in ob.data.vertices],[tuple(p.vertices) for p in ob.data.polygons])
+    screen_rays.append((ob.matrix_world.inverted(),screen_cache[key]))
+def planted_screen_hit(start,end):
+    for inverse,bvh in screen_rays:
+        a,b=inverse@start,inverse@end;delta=b-a
+        if bvh.ray_cast(a,delta.normalized(),delta.length)[0] is not None:return True
+    return False
+for side,xy,axis,sign in [('east',(65,20),0,1),('west',(-65,20),0,-1),('north',(0,70),1,1),('south',(58,-65),1,-1)]:
+    targets=[p for p in roof_targets if p[axis]*sign>150 and abs(p[1-axis]-xy[1-axis])<75]
+    for height in [2.2,12,27]:
+        start=Vector((*xy,height));clear=0;glimpses=0
+        for end in targets:
+            delta=end-start
+            if tree.ray_cast(start,delta.normalized(),delta.length)[0] is None:
+                clear+=1
+                if not planted_screen_hit(start,end):glimpses+=1
+        check(bool(targets),'Roof targets sampled '+side)
+        if height==2.2:check(clear==0,'Walking view shields all near-estate roofs '+side)
+        if height==12:
+            check(0<glimpses<clear,'Upper storey roof glimpses filtered by real crown geometry '+side)
+        visibility.append(dict(side=side,height=height,roofs=len(targets),clearAboveWall=clear,visibleBetweenCrowns=glimpses))
+boundary=data['boundaryPlanting']
+check(len(boundary)>=65,'Staggered managed boundary groves surround the garden')
+for side in ['west','east','north','south']:
+    check(sum(r['side']==side for r in boundary)>=10,'Layered planting on '+side)
+for row in boundary:
+    ob=bpy.data.objects[row['name']];x,y,z=ob.location
+    check(ob.get('urbanBoundaryPlant') and not ob.hide_render,'Full authored screening crown '+ob.name)
+    check(abs(x)>136 or y>136 or y<-129,'Dense grove confined to wall margin '+ob.name)
+    check(any(r['kind']=='screen-bed' and math.hypot(r['position'][0]-x,r['position'][2]+y)<.01 for r in data['instances']),'Underplanting at every new crown '+ob.name)
+check(sum(r['district']=='estate-backrange' for r in data['instances'])>=35,'Continuous private back ranges between garden and city')
 for role in ['roof','tile']:
     normals=[p.normal.z for ob in bpy.data.collections['Urban_Prototypes'].objects if ob.data.materials[0].get('urbanRole')==role for p in ob.data.polygons]
     check(any(n>.2 for n in normals),'Visible upward '+role+' surfaces')
-report={'passed':len(checks),'checks':checks,'courts':len(data['courts']),'instances':len(data['instances']),'plan':plan_checks,'actualRoofOverlaps':collisions,'protectedMeshes':len(current),'occlusionRays':rays,'masterSha256':hashlib.file_digest(master.open('rb'),'sha256').hexdigest()}
+report={'passed':len(checks),'checks':checks,'courts':len(data['courts']),'instances':len(data['instances']),'plan':plan_checks,'actualRoofOverlaps':collisions,'protectedMeshes':len(current),'occlusionRays':rays,'roofVisibility':visibility,'boundaryTrees':len(boundary),'masterSha256':hashlib.file_digest(master.open('rb'),'sha256').hexdigest()}
 (R/f"reports/acceptance/{cfg['revision']}-urban-verification.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print('PASS',len(checks),'urban setting and preserved garden checks',flush=True)
