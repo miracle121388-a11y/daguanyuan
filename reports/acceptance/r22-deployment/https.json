@@ -1,0 +1,69 @@
+{
+  "at": "2026-09-18T04:57:55.436Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "health": {
+    "status": "ok",
+    "application": "daguanyuan-rumeng",
+    "revision": "spatial-garden-20260918-r22",
+    "featureRevision": "honglou-silk-20260917-v6"
+  },
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "3099fd8051c8733fd13a54374a267c113c69c3ff57ed9b86b3ae1121bade5a7b",
+      "bytes": 1269
+    },
+    {
+      "path": "scene-manifest.json",
+      "sha256": "de490e980ac95dc52f4540f9c23f8f08ad10aa5b88be4da289a7953574bdf8bc",
+      "bytes": 227967
+    },
+    {
+      "path": "urban-context.json",
+      "sha256": "86b74078650b7515155aef4bf5620143cb342f6befeda469643e8f1a6cb4f182",
+      "bytes": 745091
+    },
+    {
+      "path": "models/urban-context.glb",
+      "sha256": "21fd9784992683e2d829d9b6af8281939f6c74b2a1bd4690ac2c261877d814ef",
+      "bytes": 222852
+    },
+    {
+      "path": "textures/landscape-light.webp",
+      "sha256": "7e208e423e82d5ee3bbd58be457159a1f91d5a6fa0bcd8f59836fdb76b007c67",
+      "bytes": 121830
+    },
+    {
+      "path": "textures/landscape-light-low.webp",
+      "sha256": "3283fe780991edd5baa2400a98dfa3f2df2d45792c8bedfefee50ba9a0f18c2a",
+      "bytes": 44918
+    },
+    {
+      "path": "textures/shared/4b7a311852342b4c925b1306cba37c8101f45a08b768211dc300b0aa3cea3eae.jpg",
+      "sha256": "4b7a311852342b4c925b1306cba37c8101f45a08b768211dc300b0aa3cea3eae",
+      "bytes": 13397
+    },
+    {
+      "path": "assets/index-BgKExUGS.js",
+      "sha256": "69f44868105b19132b240a3ed99786b2d1b65614bb2bed85593f77a3a16afdd7",
+      "bytes": 799105
+    },
+    {
+      "path": "assets/index-CDFQAyVl.css",
+      "sha256": "8397102edbb9f7a0aeff134fa7510c93f3a76a170ed6fe50cc1936989fa8d774",
+      "bytes": 95810
+    },
+    {
+      "path": "assets/GardenScene-BTuMzJu2.js",
+      "sha256": "6d47ad5d86ab44cace42bd2f73785b1dade566b4b292b7e19007ca481f81c3c4",
+      "bytes": 1410892
+    }
+  ],
+  "https": true,
+  "tlsVerification": true,
+  "http1": true,
+  "csp": true,
+  "dnsAddress": "47.89.212.251",
+  "fullResourceHashes": "runtime-assets.json",
+  "scope": "Critical runtime URLs over HTTPS; all 627 runtime files separately inspected in the deployed container"
+}

@@ -5,6 +5,7 @@ import subprocess,json,hashlib,datetime,os,time
 R=Path(__file__).resolve().parents[1]
 host='daguanyuan-rumeng.zeabur.app'
 fetch_timeout=int(os.environ.get('GARDEN_VERIFY_TIMEOUT_SECONDS','60'))
+http1=os.environ.get('GARDEN_VERIFY_HTTP1')=='1'
 if not 1<=fetch_timeout<=600:raise ValueError('Invalid verification request timeout')
 def cli(*args):
  result=subprocess.run(['npx.cmd' if os.name=='nt' else 'npx','--yes','zeabur@0.22.2',*args,'-i=false','--json'],check=True,capture_output=True,encoding='utf8')
@@ -16,7 +17,7 @@ domain=next(d for d in domains if d['domain']==host)
 assert deployment['status']=='RUNNING' and domain['status']=='PROVISIONED'
 assert project['Region']['ID']=='server-6a8eee0bb11fb81fb4aaca05'
 def curl(*args):
- return subprocess.run(['curl.exe' if os.name=='nt' else 'curl','--silent','--show-error','--fail','--retry','2','--retry-delay','1','--retry-all-errors','--max-time',str(fetch_timeout),*args],check=True,capture_output=True).stdout
+ return subprocess.run(['curl.exe' if os.name=='nt' else 'curl',*(['--http1.1'] if http1 else []),'--silent','--show-error','--fail','--retry','2','--retry-delay','1','--retry-all-errors','--max-time',str(fetch_timeout),*args],check=True,capture_output=True).stdout
 dns=json.loads(curl(f'https://dns.google/resolve?name={host}&type=A'))
 ip=next(x['data'] for x in dns['Answer'] if x['type']==1)
 def get(path,head=False):
@@ -69,7 +70,7 @@ report={'verifiedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'u
  'packageDirectory':package['directory'],'allPackagedPublicFilesVerified':True,'publicFileCount':len(public_files),
  'dns':{'publicAddress':ip,'source':'Google DNS over HTTPS queried during this verification','browserOverrideUsed':bool(smoke['dnsOverride']),'browserProxyMode':smoke.get('browserProxyMode','system'),'osDnsChanged':False,'osProxyChanged':False},
  'tlsVerificationEnabled':True,'browserQuicDisabled':smoke['quicDisabled'],'browserHttp2Disabled':smoke.get('http2Disabled',False),'productionSmoke':'production-smoke.json',
- 'requestTimeoutSeconds':fetch_timeout,'browserObservationTimeoutMs':smoke.get('observationTimeoutMs',90000),
+ 'requestTimeoutSeconds':fetch_timeout,'assetRequestsHttp1':http1,'browserObservationTimeoutMs':smoke.get('observationTimeoutMs',90000),
  'desktopReadyMs':smoke.get('desktopReadyMs'),'mobileReadyMs':smoke['mobile'].get('readyMs'),
  'networkObservationReport':os.environ.get('GARDEN_NETWORK_REPORT'),
  'newServerPurchased':False,'credentialsIncluded':False}

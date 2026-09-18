@@ -2,7 +2,7 @@
   "at": "2026-09-18T03:53:46.042Z",
   "sceneRevision": "spatial-garden-20260918-r22",
   "branch": "main",
-  "status": "local-accepted",
+  "status": "deployed-and-verified",
   "courts": 342,
   "instances": 5783,
   "boundaryTrees": 72,
@@ -161,5 +161,5 @@
   "masterSha256": "a872fbdadd482a00dbea0132d42c4415693a577f037e9cf225c12d2f02dbd446",
   "localURL": "http://127.0.0.1:5173/",
   "literature": "第十六回提供借用东府花园、审察两府地方营造省亲别院的依据；京城街坊坐标、墙高、植被与镜头均属空间营造解释。",
-  "deployment": "See r22-deployment/release.json after publication"
+  "deployment": "r22-deployment/release.json"
 }

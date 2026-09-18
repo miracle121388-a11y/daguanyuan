@@ -1,22 +1,10 @@
 {
-  "verifiedAt": "2026-09-18T05:00:19.255Z",
-  "url": "https://daguanyuan-rumeng.zeabur.app/",
-  "server": {
-    "id": "6a8eee0bb11fb81fb4aaca05",
-    "name": "Aliyun California 4C 8GB",
-    "regionId": "server-6a8eee0bb11fb81fb4aaca05"
-  },
-  "projectId": "6aa142fb6c3d9581b71560ed",
+  "at": "2026-09-18T04:57:03.568Z",
   "serviceId": "6aa143296c3d9581b71560fa",
-  "environmentId": "6aa142fbda9bc245fba1e845",
   "deploymentId": "6aacb78c0f50de6ff52c2a78",
-  "cliDeploymentStatus": "RUNNING",
-  "health": {
-    "status": "ok",
-    "application": "daguanyuan-rumeng",
-    "revision": "spatial-garden-20260918-r22",
-    "featureRevision": "honglou-silk-20260917-v6"
-  },
+  "method": "Authenticated read-only runtime container inspection; every stored identity/Brotli/gzip variant decoded and hashed",
+  "allRuntimeResourcesMatched": true,
+  "publicResources": 623,
   "files": [
     {
       "path": "architecture-scenes.json",
@@ -3154,30 +3142,5 @@
       "sha256": "6d47ad5d86ab44cace42bd2f73785b1dade566b4b292b7e19007ca481f81c3c4"
     }
   ],
-  "verificationMethods": {
-    "allFiles": "Authenticated read-only runtime container inspection; every stored identity/Brotli/gzip variant decoded and hashed",
-    "httpsFiles": [
-      "index.html",
-      "scene-manifest.json",
-      "urban-context.json",
-      "models/urban-context.glb",
-      "textures/landscape-light.webp",
-      "textures/landscape-light-low.webp",
-      "textures/shared/4b7a311852342b4c925b1306cba37c8101f45a08b768211dc300b0aa3cea3eae.jpg",
-      "assets/index-BgKExUGS.js",
-      "assets/index-CDFQAyVl.css",
-      "assets/GardenScene-BTuMzJu2.js"
-    ],
-    "browser": "production-smoke.json"
-  },
-  "allPackagedPublicFilesVerified": true,
-  "publicFileCount": 623,
-  "packageDirectory": ".deploy/reference-20260918-035541-483302",
-  "tlsVerificationEnabled": true,
-  "browserQuicDisabled": true,
-  "browserHttp2Disabled": true,
-  "releaseReport": "r22-deployment/release.json",
-  "newServerPurchased": false,
-  "credentialsIncluded": false,
-  "cliDomainStatus": "PROVISIONED"
+  "matchedCount": 627
 }

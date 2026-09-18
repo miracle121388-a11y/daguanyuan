@@ -1,0 +1,82 @@
+{
+  "at": "2026-09-18T05:00:19.255Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "status": "RUNNING",
+  "deploymentId": "6aacb78c0f50de6ff52c2a78",
+  "finishedAt": "2026-09-18T04:03:13.789Z",
+  "sourceCommit": "f44ac6734e45f932a44c6af62f744f7697464adb",
+  "branch": "main",
+  "sceneRevision": "spatial-garden-20260918-r22",
+  "featureRevision": "honglou-silk-20260917-v6",
+  "projectId": "6aa142fb6c3d9581b71560ed",
+  "serviceId": "6aa143296c3d9581b71560fa",
+  "environmentId": "6aa142fbda9bc245fba1e845",
+  "server": {
+    "id": "6a8eee0bb11fb81fb4aaca05",
+    "name": "Aliyun California 4C 8GB",
+    "regionId": "server-6a8eee0bb11fb81fb4aaca05"
+  },
+  "package": {
+    "directory": ".deploy/reference-20260918-035541-483302",
+    "uploadBytes": 50305204,
+    "uploadFiles": 905,
+    "buildRestoredImages": 27,
+    "buildRestoredBytes": 12726190,
+    "knownSecretValuesChecked": 4,
+    "credentialsFound": false,
+    "allUploadedFileHashesRechecked": true
+  },
+  "validation": {
+    "modelChecks": 113179,
+    "unitApiTests": 95,
+    "localBrowserTests": 4,
+    "nightOverviewRecheck": true,
+    "localProductionSmoke": true,
+    "onlineProductionSmoke": true,
+    "allRuntimeFilesMatched": 627,
+    "publicResourcesMatched": 623,
+    "hashMethod": "Authenticated read-only container inspection, including decoded identity/Brotli/gzip variants",
+    "httpsFileHashesMatched": 10,
+    "httpsCsp": true,
+    "browserDirect": true,
+    "browserHttp1": true,
+    "tlsVerification": true,
+    "newPaidModelCalls": 0,
+    "physicalPhoneTest": false,
+    "performanceBenchmark": false
+  },
+  "preservation": {
+    "at": "2026-09-18T04:05:00.950Z",
+    "variablesUnchanged": true,
+    "variableCount": 18,
+    "allAlbumFilesUnchanged": true,
+    "albumFileCount": 6,
+    "albumBytes": 7486038,
+    "aggregateSha256": "f99cee2944ce4b7e64d878cda50e52846553b1d05b016583f5be4ab3c7167145",
+    "uploadFilesRechecked": 905,
+    "uploadFilesUnchanged": true
+  },
+  "screenshots": [
+    {
+      "path": "reports/browser/r22-deployment/online-desktop.png",
+      "sha256": "6427b38a47d67f7082ab9159f0b0ccd4bc86112e109e1a911f0eae52ae9efa2a"
+    },
+    {
+      "path": "reports/browser/r22-deployment/online-mobile.png",
+      "sha256": "cf92fedf03359f17c0ceea5f32bfc7a0b10d067094a522ee67b44761791e8f04"
+    }
+  ],
+  "network": {
+    "desktopReadyMs": 12119,
+    "mobileReadyMs": 10651,
+    "firstAttempt": "first-attempt/",
+    "notes": [
+      "First mobile check hit a default 30-second canvas visibility timeout while loading; the check now waits for attachment and then uses the configured scene-readiness timeout.",
+      "A first full HTTP/2 asset download attempt timed out; every runtime asset was instead decoded and hashed in the container. Ten critical URLs, including the previously timed-out image, passed direct HTTPS/HTTP1 checks.",
+      "System Clash proxy and OS DNS settings were not changed. This does not claim the previously reported system-proxy issue is fixed."
+    ]
+  },
+  "newServerPurchased": false,
+  "unrelatedServicesChanged": false,
+  "cliDomainStatus": "PROVISIONED"
+}

@@ -45,8 +45,9 @@ const mobileModels=[];mobile.on('response',r=>{if(r.url().endsWith('.glb'))mobil
 mobile.on('pageerror',e=>errors.push(e.message));mobile.on('response',r=>{if(r.status()>=400)failed.push(r.url())});
 mobile.on('console',m=>{if(m.type()==='error'&&/THREE.WebGLProgram|shader error|GL_INVALID/.test(m.text()))errors.push(m.text())});
 const mobileStarted=Date.now();
-await mobile.goto(url);await mobile.locator('canvas').waitFor();
+await mobile.goto(url);await mobile.locator('canvas').waitFor({state:'attached',timeout:loadTimeout});
 await mobile.locator('.canvas-wrap[data-scene-ready="true"]').waitFor({timeout:loadTimeout});
+await mobile.locator('canvas').waitFor({state:'visible',timeout:loadTimeout});
 const mobileReadyMs=Date.now()-mobileStarted;
 const mobilePartition=mobile.waitForResponse(r=>r.url().includes('/models/places-low/xiaoxiangguan.glb')&&r.ok());
 await mobile.getByRole('button',{name:'展开索引',exact:true}).click();await mobile.locator('.place-row').filter({hasText:'潇湘馆'}).click();await mobile.locator('.detail-scroll h2').filter({hasText:'潇湘馆'}).waitFor();

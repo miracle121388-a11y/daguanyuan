@@ -1,0 +1,32 @@
+Verified 100/623 public assets
+Verified 200/623 public assets
+Verified 300/623 public assets
+Traceback (most recent call last):
+  File "/Users/ustinian/code/daguanyuan/scripts/verify_deployment.py", line 39, in <module>
+    for checked in pool.map(verify_file,scan['publicFiles']):
+                   ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ustinian/anaconda3/envs/daguanyuan/lib/python3.13/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/ustinian/anaconda3/envs/daguanyuan/lib/python3.13/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/Users/ustinian/anaconda3/envs/daguanyuan/lib/python3.13/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/ustinian/anaconda3/envs/daguanyuan/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/ustinian/anaconda3/envs/daguanyuan/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/ustinian/code/daguanyuan/scripts/verify_deployment.py", line 34, in verify_file
+    body=get('/'+relative);actual=hashlib.sha256(body).hexdigest();expected=hashlib.sha256((R/'public'/relative).read_bytes()).hexdigest()
+  File "/Users/ustinian/code/daguanyuan/scripts/verify_deployment.py", line 23, in get
+    return curl(*(['--head'] if head else []),'--resolve',f'{host}:443:{ip}','--compressed',f'https://{host}{path}')
+  File "/Users/ustinian/code/daguanyuan/scripts/verify_deployment.py", line 19, in curl
+    return subprocess.run(['curl.exe' if os.name=='nt' else 'curl','--silent','--show-error','--fail','--retry','2','--retry-delay','1','--retry-all-errors','--max-time',str(fetch_timeout),*args],check=True,capture_output=True).stdout
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ustinian/anaconda3/envs/daguanyuan/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['curl', '--silent', '--show-error', '--fail', '--retry', '2', '--retry-delay', '1', '--retry-all-errors', '--max-time', '180', '--resolve', 'daguanyuan-rumeng.zeabur.app:443:47.89.212.251', '--compressed', 'https://daguanyuan-rumeng.zeabur.app/textures/shared/4b7a311852342b4c925b1306cba37c8101f45a08b768211dc300b0aa3cea3eae.jpg']' returned non-zero exit status 28.
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/verify_deployment.py` failed. (See above for error)

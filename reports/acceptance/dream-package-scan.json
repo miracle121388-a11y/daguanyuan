@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20260918-025500-211236",
+  "directory": ".deploy/reference-20260918-035541-483302",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,7 +11,7 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "eb934afdd2d03ff0aeab1b2be856718edd412dc9f2d29641266b624b66eb1401"
+      "sha256": "d24a779a971a9e212a8dfe83add80536b1ddc73fb580da99ca76d4afcc979034"
     },
     {
       "path": "server.mjs",
@@ -19,19 +19,19 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "57a10697cfba94946deaa0fdd6ee7e10994d6c7f1e87359869e8cba117976cf0"
+      "sha256": "3099fd8051c8733fd13a54374a267c113c69c3ff57ed9b86b3ae1121bade5a7b"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "acb2ecd2cd067d51bee77b19167eada304d3c942822226fe1f2cab0dce3002c9"
+      "sha256": "5658835537f1153a91e18bd2569491708ceff9c010aee7c77cadec640ebd6cf9"
     },
     {
       "path": "dist/scene-manifest.json",
-      "sha256": "ff62af29f16f7105fde31181a61c23fa8d0b718af147a469dbc24679f4d944e5"
+      "sha256": "de490e980ac95dc52f4540f9c23f8f08ad10aa5b88be4da289a7953574bdf8bc"
     },
     {
       "path": "dist/urban-context.json.br",
-      "sha256": "de29f15c602cb60325673b93104940066f4fc9672f0d8b5a7f1e69338d25620a"
+      "sha256": "739db758ce43397251126b5872047d5bdf4c8499b4bb6bdb78ec9582ef91fda5"
     },
     {
       "path": "dist/architecture-scenes.json.br",
@@ -39,7 +39,7 @@
     },
     {
       "path": "dist/scene-manifest.json.br",
-      "sha256": "44b5aaaeaa85b4b7f34a73ada6daad757bf800bac9e4dadc06dfc6ab2468d252"
+      "sha256": "3657c79e7bab7ebe4a0de778d3c4ca72b60835b69e9a1bc5faa75cab3c611402"
     },
     {
       "path": "dist/asset-aliases.json",
@@ -55,7 +55,7 @@
     },
     {
       "path": "dist/urban-context.json",
-      "sha256": "54b5a32238aec20d67baacb73849ba68b81a7539b14dff4e0b82d32a3199490c"
+      "sha256": "86b74078650b7515155aef4bf5620143cb342f6befeda469643e8f1a6cb4f182"
     },
     {
       "path": "server/dream-api.mjs",
@@ -103,7 +103,7 @@
     },
     {
       "path": "dist/textures/landscape-light-low.webp",
-      "sha256": "8399c208a43e4c645894ae95cb3a09426190e0bbe66786eb0636057cd7cff7fb"
+      "sha256": "3283fe780991edd5baa2400a98dfa3f2df2d45792c8bedfefee50ba9a0f18c2a"
     },
     {
       "path": "dist/textures/forest_grove.hdr",
@@ -111,15 +111,15 @@
     },
     {
       "path": "dist/textures/landscape-light.webp",
-      "sha256": "7161ea642f8d3c97eab0a42123df3fe446da6c500c22db71fdc57288d573507f"
+      "sha256": "7e208e423e82d5ee3bbd58be457159a1f91d5a6fa0bcd8f59836fdb76b007c67"
     },
     {
       "path": "dist/textures/landscape-light-low.webp.json",
-      "sha256": "85590e9fbac1570d048e22516f2984faa5b2a364b5593eb4d4bfc39988a14749"
+      "sha256": "bd51916e85711a03e65e80f118b0935e0f6743017269cfb3562bc5bd8a3904c0"
     },
     {
       "path": "dist/textures/landscape-light-low.webp.json.br",
-      "sha256": "8fe4eae68d6af0cb774d42a123cb5235063ba754f78dec18f596699a7d2fc913"
+      "sha256": "ef91fef3edb6788c88cf1c561abaf3a8158773b771b7d4931fe9c3a7a488fa57"
     },
     {
       "path": "dist/textures/forest_grove.hdr.json",
@@ -127,11 +127,11 @@
     },
     {
       "path": "dist/textures/landscape-light.webp.json",
-      "sha256": "f7888ffdaff6f21a20c0a9f8a0075f646cac55ada41658821bbe6fb121a540b8"
+      "sha256": "faaf9c9745cc72d8308ecddbf4e4ec4a09e0b7c2849853f4b100858dd0c88d8d"
     },
     {
       "path": "dist/textures/landscape-light.webp.json.br",
-      "sha256": "c3bc3dafbb4c3f8f2565d911898f35128f714c0d61938079628317efb7e1ad98"
+      "sha256": "b19ba3f7c666d2272313e60f694535b6691c1159749b8c2c1980dd196a8dcf28"
     },
     {
       "path": "dist/comics/manuscript.webp.json",
@@ -188,10 +188,6 @@
     {
       "path": "dist/comics/bamboo.webp.json",
       "sha256": "6ee0da8c617f29c153dad5fac0c051029e65b6c73eb098a0414d1d998dab327c"
-    },
-    {
-      "path": "dist/comics/petals-mobile.webp",
-      "sha256": "729f6044c1036a3a9c8ae6762103b721a9302325e1a2ff182889a49f90202e2e"
     },
     {
       "path": "dist/comics/storm-mobile.webp.json.br",
@@ -563,7 +559,7 @@
     },
     {
       "path": "dist/models/urban-context.glb.br",
-      "sha256": "49d0b85b3102675f409b5d33fd5369cbff200c666b792192054668bb120650ab"
+      "sha256": "184724d76e65436ac237d1c8da288fa966bfdb471c8b34c7baff85ec5c9e5b98"
     },
     {
       "path": "dist/models/sunwen-landscape.glb.br",
@@ -575,11 +571,11 @@
     },
     {
       "path": "dist/models/overview.glb.br",
-      "sha256": "44c6fb8486c0a0daa4bcbb8d9191e268f8018dd47b29f3310f559a6d2d59df6e"
+      "sha256": "5e56105850cd90c028ac3a3b4aaa62344a92909e4da46af8a5b002c9e3714f68"
     },
     {
       "path": "dist/models/overview-low.glb.br",
-      "sha256": "e54f769a33bf061ba01afb4b6527b225699a2c20c97d29c1b23086f0daf370a8"
+      "sha256": "800c6d60ff9c3a67cd4e21c07d78ad04589c6e0adca9c5bf85447a4a1c75ccf3"
     },
     {
       "path": "dist/draco/LICENSE",
@@ -918,16 +914,16 @@
       "sha256": "ee40fd46006eb8b2570c1d74709a6f00e39c2c3063c72cc1f22dd9151443d300"
     },
     {
-      "path": "dist/assets/index-D-eqew_8.js.br",
-      "sha256": "c78365df02b35fbc31b41a47bca4158b2af5c69719b01accfbd5240d88e8a6a2"
+      "path": "dist/assets/index-BgKExUGS.js.br",
+      "sha256": "ba236a160ea46d9826ced66878fbe3dc0634a1728341c23aba368477e624a6b6"
+    },
+    {
+      "path": "dist/assets/GardenScene-BTuMzJu2.js.br",
+      "sha256": "1b3fd6efe98b83dc807a47e4efd6465f626d8dc48783adfd12fe361632b0f01f"
     },
     {
       "path": "dist/assets/index-CDFQAyVl.css",
       "sha256": "8397102edbb9f7a0aeff134fa7510c93f3a76a170ed6fe50cc1936989fa8d774"
-    },
-    {
-      "path": "dist/assets/GardenScene-BPygUboB.js.br",
-      "sha256": "ef01b347ffe5025487fef2e23774beb064992360603e3fc59e16ddb24e99241b"
     },
     {
       "path": "dist/models/places-low/hengwuyuan.glb.br",
@@ -4319,13 +4315,13 @@
     },
     {
       "path": "models/overview-low.glb",
-      "sha256": "c9aab2542f41857752794e57e868069dd33a8f2203c2bf59ec5aeac12f1598a1",
-      "bytes": 3492716
+      "sha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
+      "bytes": 3495000
     },
     {
       "path": "models/overview.glb",
-      "sha256": "dfbacab7777f9393b1a535168fbf1a568a90dd65088109855d34e099f161c004",
-      "bytes": 4785452
+      "sha256": "59105a0c7770d432734b72be22cc9d58e1fbd8e5a0386590f1d84d26db0f3489",
+      "bytes": 4787896
     },
     {
       "path": "models/places/aojingxiguan.glb",
@@ -4499,8 +4495,8 @@
     },
     {
       "path": "models/urban-context.glb",
-      "sha256": "05959ff28aa74b75eced1e1be653934ae65f08156b8e48ac5862cfb70797b837",
-      "bytes": 180920
+      "sha256": "21fd9784992683e2d829d9b6af8281939f6c74b2a1bd4690ac2c261877d814ef",
+      "bytes": 222852
     },
     {
       "path": "models/vegetation/broadleaf-2.glb",
@@ -4604,8 +4600,8 @@
     },
     {
       "path": "scene-manifest.json",
-      "sha256": "ff62af29f16f7105fde31181a61c23fa8d0b718af147a469dbc24679f4d944e5",
-      "bytes": 220691
+      "sha256": "de490e980ac95dc52f4540f9c23f8f08ad10aa5b88be4da289a7953574bdf8bc",
+      "bytes": 227967
     },
     {
       "path": "textures/forest_grove.hdr",
@@ -4669,22 +4665,22 @@
     },
     {
       "path": "textures/landscape-light-low.webp",
-      "sha256": "8399c208a43e4c645894ae95cb3a09426190e0bbe66786eb0636057cd7cff7fb",
-      "bytes": 40592
+      "sha256": "3283fe780991edd5baa2400a98dfa3f2df2d45792c8bedfefee50ba9a0f18c2a",
+      "bytes": 44918
     },
     {
       "path": "textures/landscape-light-low.webp.json",
-      "sha256": "85590e9fbac1570d048e22516f2984faa5b2a364b5593eb4d4bfc39988a14749",
+      "sha256": "bd51916e85711a03e65e80f118b0935e0f6743017269cfb3562bc5bd8a3904c0",
       "bytes": 1417
     },
     {
       "path": "textures/landscape-light.webp",
-      "sha256": "7161ea642f8d3c97eab0a42123df3fe446da6c500c22db71fdc57288d573507f",
-      "bytes": 110844
+      "sha256": "7e208e423e82d5ee3bbd58be457159a1f91d5a6fa0bcd8f59836fdb76b007c67",
+      "bytes": 121830
     },
     {
       "path": "textures/landscape-light.webp.json",
-      "sha256": "f7888ffdaff6f21a20c0a9f8a0075f646cac55ada41658821bbe6fb121a540b8",
+      "sha256": "faaf9c9745cc72d8308ecddbf4e4ec4a09e0b7c2849853f4b100858dd0c88d8d",
       "bytes": 1424
     },
     {
@@ -6739,16 +6735,16 @@
     },
     {
       "path": "urban-context.json",
-      "sha256": "54b5a32238aec20d67baacb73849ba68b81a7539b14dff4e0b82d32a3199490c",
-      "bytes": 669192
+      "sha256": "86b74078650b7515155aef4bf5620143cb342f6befeda469643e8f1a6cb4f182",
+      "bytes": 745091
     }
   ],
-  "buildAssetsVerified": 26,
+  "buildAssetsVerified": 27,
   "credentialsFound": false,
   "knownSecretValuesChecked": 4,
   "decodedBrotliChecked": true,
   "matchesCompletedBuild": true,
   "referencesMatched": 21,
-  "count": 906,
+  "count": 905,
   "passed": true
 }
