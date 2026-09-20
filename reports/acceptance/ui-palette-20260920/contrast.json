@@ -1,0 +1,73 @@
+{
+  "at": "2026-09-20T14:56:26.495Z",
+  "screens": [
+    "desktop-settings-focus",
+    "desktop-night",
+    "desktop-story",
+    "desktop-workshop",
+    "mobile-story-390",
+    "mobile-workshop-form-390",
+    "mobile-story-320",
+    "mobile-workshop-form-320"
+  ],
+  "textChecks": [
+    {
+      "screen": "desktop-panels",
+      "count": 60,
+      "minimum": 4.79,
+      "failures": []
+    },
+    {
+      "screen": "desktop-settings",
+      "count": 13,
+      "minimum": 6.57,
+      "failures": []
+    },
+    {
+      "screen": "night-controls",
+      "count": 22,
+      "minimum": 5.49,
+      "failures": []
+    },
+    {
+      "screen": "story",
+      "count": 29,
+      "minimum": 4.79,
+      "failures": []
+    },
+    {
+      "screen": "workshop",
+      "count": 25,
+      "minimum": 7.06,
+      "failures": []
+    },
+    {
+      "screen": "story-390",
+      "count": 20,
+      "minimum": 5.49,
+      "failures": []
+    },
+    {
+      "screen": "workshop-390",
+      "count": 20,
+      "minimum": 7.06,
+      "failures": []
+    },
+    {
+      "screen": "story-320",
+      "count": 18,
+      "minimum": 5.49,
+      "failures": []
+    },
+    {
+      "screen": "workshop-320",
+      "count": 18,
+      "minimum": 7.06,
+      "failures": []
+    }
+  ],
+  "limitations": [
+    "Chromium desktop and touch emulation, not physical phones",
+    "Disabled content and text drawn over artwork are outside the contrast samples"
+  ]
+}

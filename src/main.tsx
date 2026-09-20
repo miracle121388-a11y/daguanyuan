@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './styles/palette.css';
 import './styles/garden.css';
 import './styles/reference-world.css';
 import './styles/simulation.css';

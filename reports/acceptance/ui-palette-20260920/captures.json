@@ -1,0 +1,105 @@
+{
+  "at": "2026-09-20T14:57:39.181Z",
+  "screens": [
+    {
+      "path": "reports/browser/ui-palette-20260920/10-phone-4g.png",
+      "sha256": "aa0f58955402e41dc5c36d626d3aa7d2ac39b6cc14314fc8e324fc71d112de64"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/11-phone-320.png",
+      "sha256": "6ba425595e74d3466f10b36a8633d5cf2b7790efb32b931678cd205278f79c01"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/desktop-album.png",
+      "sha256": "59ae6341f96adf1584fa3ba72d0074fd93fb8930849e8b84b199dfeef06f7951"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/desktop-courtyard.png",
+      "sha256": "5f45745a9be57015bda9ec53f31299e66c58f9bd342e0f4c5969b99b4e1b248c"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/desktop-gallery.png",
+      "sha256": "e9feb1323d9a00706979b2da360e0c4e97929a3aad4b816f8151b6e3cd4ceef7"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/desktop-night.png",
+      "sha256": "2bd8312218e4fc331f008aac510fca4f0c53d8951d7a1602a4a21eefdebc18fa"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/desktop-overview.png",
+      "sha256": "abe14e8c82d160c9ea5cba2ada9fca11148d264482fb1ff16d27637ef6ebc1ae"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/desktop-settings-focus.png",
+      "sha256": "a4abb1daaf29f00b59b121c28b56f79e50d9f12ef526618a67b0780e4ca27759"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/desktop-simulation.png",
+      "sha256": "9200119691838e3328586e1b6528d6684e08ec54afb0ebc73a868bc47c2cf28d"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/desktop-story.png",
+      "sha256": "31ae2ef951f769cfed07eb56ee8168223c18b6391a354a819b2dac787371f129"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/desktop-workshop.png",
+      "sha256": "ef58bab0dbf77138a6bb0fcf30c764f6c00bf7446a13d3eaf296ab1b0a02e901"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-320.png",
+      "sha256": "f6f73e9a6a1109ea53e697b4a139aa4a1e151d0e9fc69ab66609267aa22f62e9"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-390.png",
+      "sha256": "9ade3e4c2be15a920c5a49da1e1719e834f6fb00b36acb35f584955ceac0b7b9"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-settings-320.png",
+      "sha256": "672c71c447badc9617a5401652eaa9c7766f3639b3a4ce8a0bb6353523b94abd"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-settings-390.png",
+      "sha256": "26291c3352a87ebe765264824f082e11a63d0562e5abc0ce069ef2bb81d6be81"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-story-320.png",
+      "sha256": "d45dda972a18e7dedad16a10653e7abdfef1c81dad09aa9cd2dba05eb4089627"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-story-390.png",
+      "sha256": "a26543648ebf7e9e44db50f8ea2b4a54e8e69f07034ac5f278162af631b69138"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-workshop-320.png",
+      "sha256": "1af4da5d2d74ace942ed9d9d453b6b6340b31139ff2b84a6cf6fc733be27a582"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-workshop-390.png",
+      "sha256": "7680f73ba8c0866cda3c9989ec63f74831eb94b848a4c503c58da1864ae564ec"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-workshop-form-320.png",
+      "sha256": "a023c58fce998463c92232b0a3ac425ac53a732d4c7acee6328312cdc6117495"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/mobile-workshop-form-390.png",
+      "sha256": "6ec5d5d43d137eb1abe96bdb295fb8b113e75ed4ae0e5e39c6296d526c5fae1e"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/regression-dream-1440.png",
+      "sha256": "56e235bb46f8a59b82acf6bd57ec0dcb08c6a08e8d9cc38d901c18c2711099fc"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/regression-dream-320.png",
+      "sha256": "0ddfc1939bc4c50fa66e085c1efc55510e12f05744296f7b0afc98920a1305a6"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/regression-dream-390.png",
+      "sha256": "342be01bff15836db8c42a50a59c833d0c9f3c90d977bc881fb52708139274ce"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/regression-garden-after-dream.png",
+      "sha256": "34625f55579e55fb040dd2d87c36cb71007b7059cc681dee3ce05c13106fb699"
+    }
+  ]
+}

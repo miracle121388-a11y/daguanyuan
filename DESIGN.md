@@ -1,22 +1,15 @@
 ---
 name: 大观园·入梦
-description: r15 有实体围护的清代重彩三维园林；保留纸面阅读系统和文学证据边界。
+description: 孙温绘本式三维园林，采用深黛青、暖宣纸白与绛红的现代控制面板。
 colors:
-  paper: "#f3f0e6"
-  paper-light: "#fcfaf3"
-  ink: "#28372c"
-  inherited-ink: "#343d34"
-  muted: "#606e5d"
-  line: "#d4d8c8"
-  jade: "#496343"
-  cinnabar: "#8b4b34"
-  icon-selection: "#e4e8dc"
-  index-selection: "#e3e8d8"
-  view-surface: "#e3e7d9"
-  scene-paper: "#f3f0e6eb"
-  tour-green: "#466345"
-  tour-green-hover: "#344f36"
-  action-paper: "#fff9eb"
+  panel: "#182B33"
+  panel-secondary: "#243C43"
+  panel-hover: "#355158"
+  text: "#F2E9D8"
+  text-muted: "#C8C2B5"
+  border: "#60736F"
+  accent: "#9E3D35"
+  gold: "#B9975B"
   world-earth: "#e4e8d4"
   world-plaster: "#eadcb6"
   world-limestone: "#d4d8d0"
@@ -84,84 +77,44 @@ spacing:
   desktop-edge: "27px"
 components:
   button-primary:
-    backgroundColor: "{colors.tour-green}"
-    textColor: "{colors.action-paper}"
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.text}"
     rounded: "{rounded.small-paper}"
     typography: "{typography.interface}"
     height: "44px"
-    padding: "0 24px"
-  button-primary-hover:
-    backgroundColor: "{colors.tour-green-hover}"
-    textColor: "#fff"
-  button-icon:
-    textColor: "{colors.inherited-ink}"
-    rounded: "{rounded.control}"
-    height: "44px"
-    width: "44px"
-  button-icon-hover:
-    backgroundColor: "{colors.icon-selection}"
-    textColor: "{colors.jade}"
-  navigation-active:
-    textColor: "#3a583e"
-    typography: "{typography.interface}"
-  search:
-    textColor: "{colors.ink}"
-  detail-point-select:
-    backgroundColor: "{colors.paper-light}"
-    textColor: "{colors.ink}"
-    typography: "{typography.label}"
-    rounded: "{rounded.control}"
-    height: "44px"
-    padding: "8px"
-  person-chip:
-    backgroundColor: "#edeedf"
-    textColor: "#586d51"
-    rounded: "{rounded.label}"
-    padding: "6px 10px"
-  catalogue-row:
-    rounded: "{rounded.label}"
-    padding: "11px 13px"
-    width: "100%"
-  catalogue-row-selected:
-    backgroundColor: "{colors.index-selection}"
-    textColor: "#3e614b"
-  atmosphere-button:
-    rounded: "{rounded.control}"
-    typography: "{typography.label}"
-    height: "44px"
-    padding: "10px 13px"
-  atmosphere-button-selected:
-    backgroundColor: "#455d43"
-    textColor: "#f8f4e8"
-  view-button:
-    backgroundColor: "{colors.view-surface}"
-    rounded: "{rounded.control}"
-    padding: "9px 5px"
-  view-button-selected:
-    backgroundColor: "#4e6749"
-    textColor: "#fff"
-  courtyard-framing:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.small-paper}"
-    typography: "{typography.label}"
-    height: "44px"
-    padding: "10px 14px"
-  interpretation-strip:
-    backgroundColor: "#eef0e5"
-    textColor: "#65715d"
-    padding: "10px 9px"
-  scene-label:
-    backgroundColor: "#f4f1e6ed"
-    textColor: "#314b37"
-    rounded: "{rounded.small-paper}"
-    padding: "6px 10px"
-  scene-label-selected:
-    backgroundColor: "#38573f"
-    textColor: "#fff"
+  button-secondary:
+    backgroundColor: "{colors.panel-secondary}"
+    textColor: "{colors.text}"
+  button-hover:
+    backgroundColor: "{colors.panel-hover}"
+    textColor: "{colors.text}"
+  navigation-selected:
+    backgroundColor: "{colors.panel-hover}"
+    textColor: "{colors.text}"
+    indicatorColor: "{colors.accent}"
+  field:
+    backgroundColor: "{colors.panel-secondary}"
+    textColor: "{colors.text}"
+    borderColor: "{colors.border}"
+  current-place-number:
+    backgroundColor: "{colors.panel}"
+    textColor: "{colors.gold}"
+  focus:
+    outlineColor: "{colors.text}"
 ---
 
 # Design System: 大观园·入梦
+
+## 2026-09-20 · 控制面板配色（当前）
+
+界面颜色以用户提供的八色为唯一基准，令牌集中在 `src/styles/palette.css`。主面板、浮动工具栏与阅读弹窗采用深黛青；输入框、卡片与次级区块采用黛青灰；悬停及选中底色采用青灰。主要文字使用宣纸暖白，说明文字使用月白灰，分割线采用淡青灰。
+
+绛红用于主要操作按钮、导航下划线和小范围状态标记；不用于深色底上的小字号正文。暗鎏金限于当前地点编号、画卷分镜标题和已珍藏图标。键盘焦点使用暖白描边，原生输入与下拉框采用深色外观。游园、设置、图录、推演、剧情与梦藏共用这一套变量，不另设红金主题。
+
+字体、排布、交互和触摸尺寸延续现有实现。三维园景、孙温原图、梦绢画作及漫画粒子属于内容层，不受 UI 配色替换。园景当前为 r22，状态及验证以 `docs/PROGRESS.md` 为准。
+
+以下为历史园景和界面记录；其中温纸底、青绿按钮及旧“当前版本”描述不再作为现行 UI 配色规范。
+
 
 ## r15 当前修正方向（2026-09-13）
 

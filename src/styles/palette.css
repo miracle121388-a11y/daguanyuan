@@ -1,0 +1,21 @@
+/* Sun Wen-inspired interface palette. These tokens style the UI, not the 3D world. */
+:root {
+  color-scheme: dark;
+  --panel: #182B33;
+  --panel-secondary: #243C43;
+  --panel-hover: #355158;
+  --text: #F2E9D8;
+  --text-muted: #C8C2B5;
+  --border: #60736F;
+  --accent: #9E3D35;
+  --gold: #B9975B;
+  --shadow: 0 16px 46px #182B3352;
+  --backdrop: #182B33EB;
+}
+
+/* Red is a filled action or a small marker, never low-contrast body text. */
+button, a, input, select, textarea, summary { -webkit-tap-highlight-color: transparent; }
+input, select, textarea { color-scheme: dark; }
+select option { color: var(--text); background: var(--panel-secondary); }
+input::placeholder, textarea::placeholder { color: var(--text-muted); opacity: 1; }
+::selection { color: var(--text); background: var(--panel-hover); }
