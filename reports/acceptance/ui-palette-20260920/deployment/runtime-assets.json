@@ -1,22 +1,7 @@
 {
-  "verifiedAt": "2026-09-20T15:26:51.589Z",
-  "url": "https://daguanyuan-rumeng.zeabur.app/",
-  "server": {
-    "id": "6a8eee0bb11fb81fb4aaca05",
-    "name": "Aliyun California 4C 8GB",
-    "regionId": "server-6a8eee0bb11fb81fb4aaca05"
-  },
-  "projectId": "6aa142fb6c3d9581b71560ed",
-  "serviceId": "6aa143296c3d9581b71560fa",
-  "environmentId": "6aa142fbda9bc245fba1e845",
-  "deploymentId": "6aaff9ed342483d22ad8a085",
-  "cliDeploymentStatus": "RUNNING",
-  "health": {
-    "status": "ok",
-    "application": "daguanyuan-rumeng",
-    "revision": "spatial-garden-20260918-r22",
-    "featureRevision": "honglou-silk-20260917-v6"
-  },
+  "at": "2026-09-20T15:24:34.112Z",
+  "method": "Decode and hash every runtime resource in the running container; check all stored compression variants",
+  "matched": 627,
   "files": [
     {
       "path": "architecture-scenes.json",
@@ -3153,29 +3138,5 @@
       "bytes": 1410892,
       "sha256": "816388e8a0016e3f8b6860d5f08924dcb2ca605cf77f5a0accfdc0bb40f8b51a"
     }
-  ],
-  "verificationMethods": {
-    "allFiles": "Decoded SHA-256 in the running container",
-    "httpsFiles": [
-      "index.html",
-      "assets/index-BsnLq-7Q.js",
-      "assets/index-CQEf5ynS.css",
-      "assets/GardenScene-DXC80FIL.js",
-      "scene-manifest.json",
-      "data/dreamReferences.json",
-      "models/urban-context.glb",
-      "textures/vegetation/canopy-atlas.webp"
-    ],
-    "browser": "Final production desktop and 390px touch browser smoke"
-  },
-  "allPackagedPublicFilesVerified": true,
-  "publicFileCount": 623,
-  "packageDirectory": ".deploy/reference-20260920-151049-266582",
-  "tlsVerificationEnabled": true,
-  "browserQuicDisabled": true,
-  "browserHttp2Disabled": true,
-  "releaseReport": "ui-palette-20260920/deployment/release.json",
-  "newServerPurchased": false,
-  "credentialsIncluded": false,
-  "cliDomainStatus": "PROVISIONED"
+  ]
 }

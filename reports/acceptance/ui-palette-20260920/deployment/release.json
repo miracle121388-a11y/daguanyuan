@@ -1,0 +1,75 @@
+{
+  "at": "2026-09-20T15:26:51.585Z",
+  "sourceCommit": "ede8ede8b774048033650fbdfe51dde708a2d4ef",
+  "uiVersion": "dark-teal-20260920",
+  "sceneRevision": "spatial-garden-20260918-r22",
+  "featureVersion": "honglou-silk-20260917-v6",
+  "uploadDirectoryBytes": 50308913,
+  "storedFiles": 905,
+  "publicFiles": 623,
+  "pinnedImageCount": 27,
+  "localProductionPassed": true,
+  "localBrowserTestsPassed": 7,
+  "visibleTextSamplesPassed": 225,
+  "notes": [
+    "No 3D or runtime art assets modified",
+    "Initial local image hydration timed out; same command with per-process --use-env-proxy completed with all 27 hashes validated",
+    "Local screenshot attempt using default headless shell timed out; project Chromium channel succeeded",
+    "Phone observations use touch emulation, not physical hardware",
+    "A final CSS priority refinement unified seven secondary/primary hover samples; the production desktop and phone checks were repeated after this change",
+    "The first upload of the hover refinement timed out in Zeabur prepare; existing first-palette deployment remained RUNNING. Retried the same validated package.",
+    "A retry failed when the local proxy closed the S3 upload connection. Subsequent upload bypassed the proxy only for the S3 upload host; no system proxy settings changed.",
+    "The final direct-S3 attempt also timed out waiting for Zeabur prepare, but a fresh status read confirmed deployment 6aaff9ed342483d22ad8a085 was already BUILDING. No duplicate retry after that confirmation.",
+    "The ad hoc HTTPS verifier initially checked CSP on the JSON health endpoint; corrected to check the HTML document, with no application change. Only the HTTPS stage was rerun."
+  ],
+  "hoverStatesPassed": 7,
+  "initialUiDeploymentId": "6aaff68d144e9773683576b4",
+  "finalExpectedDeploymentId": "6aaff9ed342483d22ad8a085",
+  "deploymentId": "6aaff9ed342483d22ad8a085",
+  "deploymentFinishedAt": "2026-09-20T15:23:18.008Z",
+  "status": "RUNNING",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "runtimeFilesMatched": 627,
+  "httpsFilesMatched": 8,
+  "onlineProductionPassed": true,
+  "preservation": {
+    "serviceId": "6aa143296c3d9581b71560fa",
+    "environmentId": "6aa142fbda9bc245fba1e845",
+    "variablesMatched": true,
+    "variableCount": 18,
+    "albumMatched": true,
+    "albumFileCount": 6,
+    "albumBytes": 7486038,
+    "paidModelCalls": 0
+  },
+  "validation": {
+    "build": true,
+    "lint": true,
+    "browserRegression": "../browser.json",
+    "contrast": "../contrast.json",
+    "hover": "../hover.json",
+    "localProduction": "local-smoke.json",
+    "onlineProduction": "online-smoke.json",
+    "package": "dream-package-scan.json",
+    "runtimeAssets": "runtime-assets.json",
+    "criticalHttps": "https.json"
+  },
+  "screens": [
+    {
+      "path": "reports/browser/ui-palette-20260920/deployment/local-desktop.png",
+      "sha256": "add122a5c9c90237775a9eb53f84c1b18c75a7d123b8b915636f722101499cdf"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/deployment/local-mobile.png",
+      "sha256": "568eca90aeec643da0251cd726d6ef54dc2b5e8f21c9f3b3c45db48fb8ff0a38"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/deployment/online-desktop.png",
+      "sha256": "1a0970f7db8f6627ab4ef0c668024e31a3ef23c686f5a6618ad5b0e885167da9"
+    },
+    {
+      "path": "reports/browser/ui-palette-20260920/deployment/online-mobile.png",
+      "sha256": "2a645d1edebff1793c843618a9014b158e47dfd2e27ee88adcde19357d7f3991"
+    }
+  ]
+}
