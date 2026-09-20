@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "index toggle",
+      "background": "rgb(53, 81, 88)"
+    },
+    {
+      "name": "primary tour action",
+      "background": "rgb(53, 81, 88)"
+    },
+    {
+      "name": "secondary view control",
+      "background": "rgb(53, 81, 88)"
+    },
+    {
+      "name": "simulation example",
+      "background": "rgb(53, 81, 88)"
+    },
+    {
+      "name": "story action",
+      "background": "rgb(53, 81, 88)"
+    },
+    {
+      "name": "painting mood",
+      "background": "rgb(53, 81, 88)"
+    },
+    {
+      "name": "gallery navigation",
+      "background": "rgb(53, 81, 88)"
+    }
+  ]
+}

@@ -19,3 +19,10 @@ input, select, textarea { color-scheme: dark; }
 select option { color: var(--text); background: var(--panel-secondary); }
 input::placeholder, textarea::placeholder { color: var(--text-muted); opacity: 1; }
 ::selection { color: var(--text); background: var(--panel-hover); }
+
+/* Apply after feature styles so secondary buttons share the same hover state.
+   Hotspots keep their small circular face inside the larger touch target. */
+button:enabled:hover:not(.hotspot) {
+  color: var(--text);
+  background-color: var(--panel-hover);
+}
