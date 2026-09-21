@@ -1,0 +1,59 @@
+{
+  "at": "2026-09-21T16:15:53.642Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "checks": [
+    "normal garden defers character model downloads",
+    "all four new local character models load over HTTPS",
+    "guided story entry is visible",
+    "new greeting entry saves a real local conversation with Daiyu",
+    "new tea entry completes real walks and a saved three-person gathering",
+    "390px touch scene retains handbook and story controls",
+    "390px scene has no horizontal overflow",
+    "walkthrough has no page or HTTP resource errors"
+  ],
+  "screenshots": [
+    "reports/browser/story-experience-20260921/online-story-entry.png",
+    "reports/browser/story-experience-20260921/online-tea-desktop.png",
+    "reports/browser/story-experience-20260921/online-tea-mobile.png"
+  ],
+  "characterResponses": [
+    {
+      "path": "/models/characters/baoyu.glb",
+      "status": 200
+    },
+    {
+      "path": "/models/characters/daiyu.glb",
+      "status": 200
+    },
+    {
+      "path": "/models/characters/baochai.glb",
+      "status": 200
+    },
+    {
+      "path": "/models/characters/wangxifeng.glb",
+      "status": 200
+    },
+    {
+      "path": "/models/characters/baochai.glb",
+      "status": 200
+    },
+    {
+      "path": "/models/characters/daiyu.glb",
+      "status": 200
+    },
+    {
+      "path": "/models/characters/baoyu.glb",
+      "status": 200
+    },
+    {
+      "path": "/models/characters/wangxifeng.glb",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "paidModelCalls": 0,
+  "dnsOverride": "47.89.212.251",
+  "tlsVerification": true,
+  "passed": true
+}

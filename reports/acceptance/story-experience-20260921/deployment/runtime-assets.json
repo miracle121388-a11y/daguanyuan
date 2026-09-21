@@ -1,22 +1,7 @@
 {
-  "verifiedAt": "2026-09-21T16:18:13.138Z",
-  "url": "https://daguanyuan-rumeng.zeabur.app/",
-  "server": {
-    "id": "6a8eee0bb11fb81fb4aaca05",
-    "name": "Aliyun California 4C 8GB",
-    "regionId": "server-6a8eee0bb11fb81fb4aaca05"
-  },
-  "projectId": "6aa142fb6c3d9581b71560ed",
-  "serviceId": "6aa143296c3d9581b71560fa",
-  "environmentId": "6aa142fbda9bc245fba1e845",
-  "deploymentId": "6ab154c1c71834649e10f7a8",
-  "cliDeploymentStatus": "RUNNING",
-  "health": {
-    "status": "ok",
-    "application": "daguanyuan-rumeng",
-    "revision": "spatial-garden-20260918-r22",
-    "featureRevision": "honglou-silk-20260917-v6"
-  },
+  "at": "2026-09-21T16:05:04.745Z",
+  "method": "Decode and hash every runtime resource in the running container; check all stored compression variants",
+  "matched": 637,
   "files": [
     {
       "path": "architecture-scenes.json",
@@ -3203,35 +3188,5 @@
       "bytes": 1413735,
       "sha256": "b83c24866bce64ed8875378086007669c8f63b3832b39285deaff7efec3abdbd"
     }
-  ],
-  "verificationMethods": {
-    "allFiles": "Decoded SHA-256 in the running container",
-    "httpsFiles": [
-      "index.html",
-      "assets/index-yepEMb_Q.js",
-      "assets/index-B3ZmnKrO.css",
-      "assets/garden-mark-COPNxcSD.svg",
-      "assets/GardenScene-CG8cIic5.js",
-      "scene-manifest.json",
-      "data/dreamReferences.json",
-      "models/urban-context.glb",
-      "textures/characters/manifest.json",
-      "models/characters/baoyu.glb",
-      "models/characters/daiyu.glb",
-      "models/characters/baochai.glb",
-      "models/characters/wangxifeng.glb",
-      "textures/vegetation/canopy-atlas.webp"
-    ],
-    "browser": "Desktop and 390px touch production flow; new story guide, four avatars, greeting and tea gathering; 21 participation and 24 comics checks"
-  },
-  "allPackagedPublicFilesVerified": true,
-  "publicFileCount": 632,
-  "packageDirectory": ".deploy/reference-20260921-155907-025107",
-  "tlsVerificationEnabled": true,
-  "browserQuicDisabled": true,
-  "browserHttp2Disabled": true,
-  "releaseReport": "story-experience-20260921/deployment/release.json",
-  "newServerPurchased": false,
-  "credentialsIncluded": false,
-  "cliDomainStatus": "PROVISIONED"
+  ]
 }

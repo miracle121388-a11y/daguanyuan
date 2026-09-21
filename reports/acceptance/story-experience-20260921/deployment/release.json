@@ -1,0 +1,87 @@
+{
+  "at": "2026-09-21T16:18:13.138Z",
+  "preparedAt": "2026-09-21T16:00:32.170Z",
+  "sourceCommit": "3c7a6d844cc46ef0fe020d01504cd71ae2ac3b6c",
+  "branch": "main",
+  "serverId": "6a8eee0bb11fb81fb4aaca05",
+  "projectId": "6aa142fb6c3d9581b71560ed",
+  "serviceId": "6aa143296c3d9581b71560fa",
+  "environmentId": "6aa142fbda9bc245fba1e845",
+  "sceneRevision": "spatial-garden-20260918-r22",
+  "characterRevision": "garden-players-20260921-v1",
+  "dreamFeatureVersion": "honglou-silk-20260917-v6",
+  "packageDirectory": ".deploy/reference-20260921-155907-025107",
+  "localValidation": "../validation.json",
+  "paidModelCalls": 0,
+  "deploymentId": "6ab154c1c71834649e10f7a8",
+  "deploymentFinishedAt": "2026-09-21T16:03:46.911Z",
+  "status": "RUNNING",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "runtimeFilesMatched": 637,
+  "httpsFilesMatched": 14,
+  "publicFilesMatched": 632,
+  "uploadFiles": 912,
+  "uploadDirectoryBytes": 50247269,
+  "buildImages": 31,
+  "preservation": {
+    "serviceId": "6aa143296c3d9581b71560fa",
+    "environmentId": "6aa142fbda9bc245fba1e845",
+    "variablesMatched": true,
+    "variableCount": 18,
+    "albumMatched": true,
+    "albumFileCount": 6,
+    "albumBytes": 7486038,
+    "paidModelCalls": 0
+  },
+  "validation": {
+    "local": "../validation.json",
+    "production": "production.json",
+    "participation": {
+      "report": "participation/report.json",
+      "checks": 21
+    },
+    "comics": {
+      "report": "story/report.json",
+      "checks": 24
+    },
+    "newPlayerWalkthrough": {
+      "report": "walkthrough.json",
+      "checks": 8
+    },
+    "package": "dream-package-scan.json",
+    "runtimeAssets": "runtime-assets.json",
+    "criticalHttps": "https.json"
+  },
+  "screens": [
+    {
+      "path": "reports/browser/story-experience-20260921/online-story-entry.png",
+      "sha256": "d50621ec4b46c25f5ec267fa2542fec39652e3d4da849dbfac605b1e17f12b90"
+    },
+    {
+      "path": "reports/browser/story-experience-20260921/online-tea-desktop.png",
+      "sha256": "214b16edd795fd09b570cfe4ec8174f8c3eb05e5fc4bc8925f095d062bf7aa89"
+    },
+    {
+      "path": "reports/browser/story-experience-20260921/online-tea-mobile.png",
+      "sha256": "e19478d4d8df315eef562d4cc2adc4adc51a740038a9ee85cffa1e998fb98b8c"
+    },
+    {
+      "path": "reports/browser/story-experience-20260921/online-production-mobile.png",
+      "sha256": "909313895c0485de24e9da450781dd045181da1f7f9aaeaeb1c3d8dda2a30afa"
+    },
+    {
+      "path": "reports/acceptance/story-experience-20260921/deployment/story/desktop-comic.png",
+      "sha256": "0b47c5d9027c8f237735af54ce88eb1163c34348c2be5821baa879abf2d70f4a"
+    }
+  ],
+  "notes": [
+    "Mobile browser touch emulation; not physical hardware.",
+    "No additional paid model calls.",
+    "Direct Chromium and HTTP/1.1 with fresh per-process DNS; TLS verified, system proxy unchanged.",
+    "Two extra walkthrough attempts omitted navigation steps (returning to the story guide and entering mobile immersion before selecting an actor). The script was corrected and the complete walkthrough rerun. Interrupted attempts are not counted as passed."
+  ],
+  "walkthroughScript": {
+    "path": "walkthrough-verification.mjs",
+    "sha256": "3f090f901ea7e5d49ddcc4d3884990aeac2c4db4fa7f5e28b10fba0d94412d6c"
+  }
+}
