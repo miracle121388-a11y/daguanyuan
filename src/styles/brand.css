@@ -1,0 +1,63 @@
+/* The moon gate, pavilion and water share one local SVG with the favicon. */
+.brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 12px;
+  min-width: 238px;
+  min-height: 44px;
+  padding: 0;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.brand-mark {
+  display: block;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+}
+
+.brand-wordmark { display: block; white-space: nowrap; }
+.brand strong { font: 23px/1.3 var(--serif); letter-spacing: 2px; }
+.brand small {
+  display: block;
+  margin-top: 5px;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--text-muted);
+}
+.brand-dot { padding: 0 7px; color: var(--text-muted); }
+.boot .brand-mark { width: 64px; height: 64px; }
+
+@media (max-width: 1150px) {
+  .brand { min-width: 218px; }
+  .brand .brand-mark { width: 36px; height: 36px; }
+  .brand strong { font-size: 21px; }
+}
+
+@media (max-width: 800px) {
+  .brand { min-width: 190px; }
+  .brand strong { font-size: 19px; }
+}
+
+/* Keep the desktop navigation on one line before the phone layout takes over. */
+@media (min-width: 601px) and (max-width: 760px) {
+  .brand { min-width: 44px; justify-content: center; }
+  .brand-wordmark { display: none; }
+}
+
+@media (max-width: 600px) {
+  .brand { min-width: 0; gap: 9px; }
+  .brand .brand-mark { width: 32px; height: 32px; }
+  .brand strong { display: block; font-size: 19px; line-height: 1.2; letter-spacing: 1.5px; }
+  .brand-suffix {
+    display: block;
+    margin-top: 2px;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 4px;
+    color: var(--text-muted);
+  }
+  .brand-dot, .brand small { display: none; }
+}
