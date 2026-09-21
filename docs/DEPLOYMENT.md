@@ -1,8 +1,14 @@
 # 加利福尼亚部署 · 当前版本
 
-[在线推演与游园](https://daguanyuan-rumeng.zeabur.app/)。控制面板已于 2026-09-20 更新为用户指定的深黛青八色方案，源码提交 ede8ede 已同步 main。园景仍为 **spatial-garden-20260918-r22**，梦绢仍为 **honglou-silk-20260917-v6**。最终部署 **6aaff9ed342483d22ad8a085** 于 2026-09-20T15:23:18.008Z 完成，状态 **RUNNING**。本轮记录：reports/acceptance/ui-palette-20260920/deployment/release.json。
+[在线推演与游园](https://daguanyuan-rumeng.zeabur.app/)。品牌图标已于 2026-09-21 更新为绛红底、暖白月洞门／亭榭／曲水 SVG，源码提交 b093a0e 已同步 main。园景仍为 **spatial-garden-20260918-r22**，梦绢仍为 **honglou-silk-20260917-v6**。最终部署 **6ab119d9638a7d95502073fc** 于 2026-09-21T11:54:10.372Z 完成，状态 **RUNNING**。本轮记录：reports/acceptance/brand-mark-20260921/deployment/release.json。
 
 沿用 Aliyun California 4C 8GB 服务器（Los Angeles），服务器 ID `6a8eee0bb11fb81fb4aaca05`，区域 `server-6a8eee0bb11fb81fb4aaca05`；项目 `6aa142fb6c3d9581b71560ed`、服务 `6aa143296c3d9581b71560fa`、环境 `6aa142fbda9bc245fba1e845`。18 项服务变量与原画册 6 份文件逐一匹配，未购买服务器或改动其他服务。
+
+## 2026-09-21 · 园林图标发布验收
+
+页眉、加载页和 favicon 共用原创 SVG，修复旧文字印章裁切；手机名称分两行，窄平板仅显示图标。正式构建、lint、本地和线上各 17 组 320–1440px 视口、加载页、返回全园、键盘焦点、手机触摸与 favicon 原字节检查通过。新 SVG 随 Vite 打包并按哈希缓存，无外部运行依赖。
+
+上传包 906 份文件、50,308,901 字节；27 张原图在构建时按固定提交恢复，原 623 份公开资源保持。容器 628 份运行文件全部解码哈希一致，另有 9 个关键 HTTPS URL 核对；18 项服务变量和画册 6 份文件保持，未新增付费模型请求。线上检查为独立直连 Chromium／HTTP1，TLS 验证保持；手机为触摸模拟。
 
 ## 2026-09-20 · 控制面板发布验收
 

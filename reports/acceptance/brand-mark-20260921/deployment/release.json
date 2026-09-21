@@ -1,0 +1,52 @@
+{
+  "at": "2026-09-21T11:55:32.110Z",
+  "sourceCommit": "b093a0e2571a30668ff819d0ec65ae890edfc377",
+  "packageDirectory": ".deploy/reference-20260921-114812-328330",
+  "uploadDirectoryBytes": 50308901,
+  "iconSha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070",
+  "deploymentId": "6ab119d9638a7d95502073fc",
+  "deploymentFinishedAt": "2026-09-21T11:54:10.372Z",
+  "status": "RUNNING",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "runtimeFilesMatched": 628,
+  "httpsFilesMatched": 9,
+  "onlineBrandCheckPassed": true,
+  "preservation": {
+    "serviceId": "6aa143296c3d9581b71560fa",
+    "environmentId": "6aa142fbda9bc245fba1e845",
+    "variablesMatched": true,
+    "variableCount": 18,
+    "albumMatched": true,
+    "albumFileCount": 6,
+    "albumBytes": 7486038,
+    "paidModelCalls": 0
+  },
+  "validation": {
+    "build": true,
+    "lint": true,
+    "localBrowser": "../local-browser.json",
+    "onlineBrowser": "../online-browser.json",
+    "iconProvenance": "../design.json",
+    "package": "dream-package-scan.json",
+    "runtimeAssets": "runtime-assets.json",
+    "criticalHttps": "https.json"
+  },
+  "screens": [
+    {
+      "path": "reports/browser/brand-mark-20260921/online-1440.png",
+      "sha256": "8af8a86d3b3e91149a593464d89739725b118dc7b88aafb060572a4f4d38a201"
+    },
+    {
+      "path": "reports/browser/brand-mark-20260921/online-390.png",
+      "sha256": "16d4984fd9eae95cd1efaea8536fbadb05bab4987834a1090261b4c4b047743c"
+    },
+    {
+      "path": "reports/browser/brand-mark-20260921/online-320.png",
+      "sha256": "dc949671c36644960c507007b51f6f7337deb8909f0aca3e744f9f40fcc559f7"
+    },
+    {
+      "path": "reports/browser/brand-mark-20260921/online-boot-320.png",
+      "sha256": "a28e6cef4b9c19b1033966afb9ee915c678b7feffc16360ffe100d0ff825d45f"
+    }
+  ]
+}
