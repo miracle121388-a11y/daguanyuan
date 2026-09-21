@@ -76,6 +76,22 @@ const gardenBounds=read('reports/acceptance/model-optimization.json').find(x=>x.
 assert(m.pathNodes.every(n=>n.position[0]>gardenBounds.min[0]+1.5&&n.position[0]<gardenBounds.max[0]-1.5&&n.position[2]>gardenBounds.min[2]+1.5&&n.position[2]<gardenBounds.max[2]-1.5),'all route nodes and road margins supported by garden base');
 for(const r of d.routes){assert(r.orderedStops.every(id=>places.has(id))&&r.eventIds.every(id=>events.has(id)),'route foreign keys '+r.id);assert(r.pathNodeIds.every(id=>pathIDs.has(id)),'route path nodes '+r.id);assert(r.pathNodeIds.slice(1).every((id,i)=>edgeKeys.has(r.pathNodeIds[i]+'|'+id)),'route uses connected edges '+r.id)}
 function glbJSON(file){const b=readFileSync(file);assert(b.subarray(0,4).toString()==='glTF','GLB magic '+file);assert(b.readUInt32LE(8)===b.length,'GLB size '+file);const length=b.readUInt32LE(12);return JSON.parse(b.subarray(20,20+length).toString())}
+const cast=read('public/textures/characters/manifest.json'),castDesign=read('config/simulation.characters.json');
+const castIds=['baoyu','daiyu','baochai','wangxifeng'];
+assert(cast.revision===castDesign.revision&&cast.basis===castDesign.basis&&cast.externalAssets.length===0,'original articulated cast has separate artistic provenance');
+assert(cast.generator==='blender/build_simulation_characters.py'&&hash(cast.generator)===cast.generatorSha256&&cast.configuration==='config/simulation.characters.json'&&hash(cast.configuration)===cast.configurationSha256,'character source hashes');
+assert(cast.files.length===8&&new Set(cast.files.map(f=>f.path)).size===8,'four local character models and four matching portraits');
+for(const id of castIds){
+ const model=`public/models/characters/${id}.glb`,portrait=`public/textures/characters/${id}.png`;
+ for(const file of [model,portrait]){const item=cast.files.find(f=>f.path===file&&f.agent===id);assert(item&&hash(file)===item.sha256&&statSync(file).size===item.bytes,'character derivative hash '+file)}
+ const figure=glbJSON(model),joints=['body','skirt','head','eyes','leftArm','rightArm','leftForearm','rightForearm','leftLeg','rightLeg','book','brush'];
+ for(const part of joints)assert(figure.nodes.filter(n=>n.name===`${id}_${part}`).length===1,'unique articulated joint '+id+' '+part);
+ for(const side of ['left','right'])assert(figure.nodes.find(n=>n.name===`${id}_${side}Arm`).children.includes(figure.nodes.findIndex(n=>n.name===`${id}_${side}Forearm`)),'sleeve and hand hierarchy '+id+' '+side);
+ assert(figure.buffers.every(b=>!b.uri)&&!(figure.images?.length),'self-contained character without external textures '+id);
+ const primitives=figure.meshes.flatMap(m=>m.primitives),triangles=primitives.reduce((total,p)=>total+figure.accessors[p.indices??p.attributes.POSITION].count/3,0);
+ assert(primitives.length<=12&&triangles<18000&&statSync(model).size<450000,'mobile character geometry budget '+id);
+ assert(primitives.every(p=>p.attributes.COLOR_0!==undefined),'original painted vertex colors '+id);
+}
 const overview=glbJSON('public/models/overview.glb');
 const low=glbJSON('public/models/overview-low.glb');
 for(const p of m.places)assert(low.nodes.some(n=>n.extras?.placeId===p.id),'low overview place '+p.id);

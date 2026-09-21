@@ -4,12 +4,13 @@ import path from 'node:path';
 export function blenderBin(){
  const executable=process.platform==='win32'?'blender.exe':'blender';
  const locations=['.tools',...(process.platform==='win32'?['C:/Program Files/Blender Foundation']:[])];
- const candidates=[process.env.BLENDER_BIN,'blender',...(process.platform==='darwin'?['/Applications/Blender.app/Contents/MacOS/Blender']:[]),...locations.flatMap(p=>existsSync(p)?readdirSync(p).filter(n=>n.toLowerCase().includes('blender')).map(n=>path.join(p,n,executable)):[])].filter(Boolean);
+ const candidates=[process.env.BLENDER_BIN,'blender',...(process.platform==='darwin'?['/Applications/Blender.app/Contents/MacOS/Blender']:[]),...locations.flatMap(p=>existsSync(p)?readdirSync(p).filter(n=>n.toLowerCase().includes('blender')).flatMap(n=>[path.join(p,n,executable),...(process.platform==='darwin'?[path.join(p,n,'Blender.app/Contents/MacOS/Blender')]:[])]):[])].filter(Boolean);
  for(const c of candidates){const r=spawnSync(c,['--version'],{encoding:'utf8',timeout:10000});if(r.status===0)return c==='blender'?c:path.resolve(c)}
  throw new Error('Blender not found. Set BLENDER_BIN to the Blender executable; installation links and commands are in docs/MIGRATION.md.');
 }
 const action=process.argv[2];
 const run=(cmd,args,env={})=>{const r=spawnSync(cmd,args,{stdio:'inherit',shell:false,env:{...process.env,...env}});if(r.status!==0)throw new Error(`${cmd} exited ${r.status}`)};
+if(action==='models-characters')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/build_simulation_characters.py']);
 const gardenGrounding=(finish=true)=>{
  const blend=script=>run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python',script]);
  blend('blender/extract_garden_grounding.py');

@@ -8,7 +8,7 @@ if (live && existsSync('.env')) process.loadEnvFile('.env');
 if (live && !process.env.LLM_ACCESS_TOKEN) throw new Error('Live model acceptance requires the local server access token.');
 mkdirSync(output, {recursive: true});
 const ip = process.env.APP_RESOLVE_IP;
-const browser = await chromium.launch({channel: 'msedge', headless: true, args: ip ? [`--host-resolver-rules=MAP ${new URL(base).hostname} ${ip}`, '--disable-quic'] : []});
+const browser = await chromium.launch({channel: process.env.GARDEN_BROWSER_CHANNEL ?? 'chromium', headless: true, args: [...(ip ? [`--host-resolver-rules=MAP ${new URL(base).hostname} ${ip}`, '--disable-quic', '--no-proxy-server'] : []),...(process.env.GARDEN_BROWSER_HTTP1==='1'?['--disable-http2']:[])]});
 const page = await browser.newPage({viewport: {width: 1440, height: 900}});
 page.setDefaultTimeout(90000);
 const report = {revision: 'simulation-participation-20260916-v3', at: new Date().toISOString(), url: base, dnsOverride: ip ?? null, tlsVerification: new URL(base).protocol === 'https:', liveModel: live, checks: [], requests: [], screenshots: [], errors: []};

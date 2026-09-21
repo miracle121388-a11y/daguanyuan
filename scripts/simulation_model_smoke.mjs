@@ -50,14 +50,14 @@ try {
   const knowledge = world.agents.baoyu.memories.find(m => m.origin === 'intervention');
   check(!!knowledge && ['daiyu', 'baochai', 'wangxifeng'].every(id => !world.agents[id].memories.some(m => m.knowledgeId && m.knowledgeId === knowledge.knowledgeId)), 'private IF knowledge remains confined to its recipient');
   await page.getByRole('button', {name: '4×', exact: true}).click();
-  await page.getByRole('button', {name: '运行下一 Tick', exact: true}).click();
+  await page.getByRole('button', {name: '继续故事', exact: true}).click();
   await completed(1);
   check(snapshot(await stored()).provider === config.modelLabel, 'saved snapshot identifies the actual model decision source');
   await page.getByRole('button', {name: '托付与追问', exact: true}).click();
   await page.locator('.sim-request select').first().selectOption('move');
   await page.getByRole('combobox', {name: '前往地点'}).selectOption('qiushuangzhai');
   await page.getByRole('button', {name: '记下托付', exact: true}).click();
-  await page.getByRole('button', {name: '运行下一 Tick', exact: true}).click();
+  await page.getByRole('button', {name: '继续故事', exact: true}).click();
   await completed(2);
   const final = snapshot(await stored()).worldState;
   check(final.agents.baoyu.location === 'qiushuangzhai' && final.agents.baoyu.spot === 'court', 'model follows the personal request through the existing courtyard route');

@@ -4,6 +4,7 @@ import './styles/garden.css';
 import './styles/reference-world.css';
 import './styles/brand.css';
 import './styles/simulation.css';
+import './styles/simulation-experience.css';
 import './styles/story.css';
 import './styles/dreams.css';
 import './styles/palette.css';

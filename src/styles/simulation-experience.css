@@ -1,0 +1,89 @@
+/* The play layer uses the same mineral-blue palette as the garden handbook. */
+.sim-playbook{margin:8px 0 20px;padding:19px 0 17px;border-block:1px solid var(--border)}
+.sim-eyebrow{color:var(--text-muted);font-size:10px;letter-spacing:2px}
+.sim-playbook h3{font:23px/1.55 var(--serif);margin:8px 0}
+.sim-playbook>p{font-size:12px;line-height:1.9;color:var(--text-muted);margin:0 0 16px}
+.sim-playbook-cards{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.sim-playbook-cards>button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:7px;min-width:0;text-align:left;padding:14px 12px;border:1px solid var(--border);border-radius:5px;background:var(--panel-secondary)}
+.sim-playbook-cards strong{font:17px/1.5 var(--serif)}
+.sim-playbook-cards span{font-size:10px;line-height:1.8;color:var(--text-muted)}
+.sim-playbook-cards svg:last-child{position:absolute;right:10px;top:15px;color:var(--text-muted)}
+.sim-playbook-story{width:100%;display:flex;align-items:center;gap:8px;font-size:12px;min-height:44px;padding:7px 2px;margin-top:7px}
+.sim-playbook-story svg:last-child{margin-left:auto}
+.sim-playbook-steps{list-style:none;display:flex;justify-content:space-between;gap:5px;margin:8px 0 0;padding:0}
+.sim-playbook-steps li{display:flex;align-items:center;gap:5px;color:var(--text-muted);font-size:10px}
+.sim-playbook-steps i{font-style:normal;display:grid;place-items:center;width:17px;height:17px;border:1px solid var(--border);border-radius:50%}
+.sim-playbook-steps [data-complete=true]{color:var(--text)}
+.sim-playbook-steps [data-complete=true] i{background:var(--panel-hover);color:var(--gold)}
+.sim-story-select{margin:0 0 16px;border-bottom:1px solid var(--border);padding-bottom:10px}
+.sim-story-select>summary{min-height:32px;cursor:pointer;font-size:12px;line-height:32px;color:var(--text-muted)}
+.sim-story-select>summary:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+.sim-scroll>.dream-status{margin:0 0 15px;max-width:100%;box-shadow:none}
+.sim-scroll>.dream-status strong{font-size:14px}
+.sim-scroll>.dream-status small{max-width:160px}
+.sim-keepsake-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.sim-stage-roster{padding:4px;border:1px solid color-mix(in srgb,var(--border),transparent 50%);box-shadow:var(--shadow);border-radius:6px}
+.sim-stage-roster button{padding:3px 10px 3px 3px;min-height:42px;border-radius:3px}
+.sim-stage-roster img{height:36px;width:31px;object-fit:contain;object-position:50% 0;border-bottom:2px solid;flex-shrink:0}
+.sim-stage-top :is(.sim-stage-time,.sim-stage-book){border:1px solid color-mix(in srgb,var(--border),transparent 50%);border-radius:5px}
+.sim-live-scene{position:absolute;left:20px;top:138px;width:255px;max-width:calc(100% - 40px);padding:13px 15px 12px;border:1px solid color-mix(in srgb,var(--border),transparent 50%);border-radius:5px;background:color-mix(in srgb,var(--panel) 93%,transparent);box-shadow:var(--shadow)}
+.sim-live-scene>span{font-size:10px;letter-spacing:1px;color:var(--text-muted)}
+.sim-live-scene>strong{display:block;margin:6px 0;font:19px/1.5 var(--serif)}
+.sim-live-scene>p{margin:0;font-size:11px;line-height:1.8;color:var(--text-muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sim-live-scene .sim-speech{position:static;transform:none;min-width:0;max-width:none;width:auto;background:transparent;border:0;border-left:2px solid var(--gold);padding:0 0 0 11px;margin:12px 0 0;font:15px/1.85 var(--serif);max-height:150px;overflow:auto;pointer-events:auto;box-shadow:none;white-space:normal}
+.sim-live-scene .sim-speech:after{display:none}
+.sim-action-progress{height:2px;margin-top:11px;background:var(--border);overflow:hidden;border-radius:2px}
+.sim-action-progress i{display:block;height:100%;background:var(--gold);transition:width .18s linear}
+.sim-stage-bottom{border:1px solid color-mix(in srgb,var(--border),transparent 50%);border-radius:6px;box-shadow:var(--shadow);background:color-mix(in srgb,var(--panel) 95%,transparent)}
+.sim-stage-person{padding:13px 16px}
+.sim-stage-person p{max-width:380px;color:var(--text-muted)}
+.sim-stage-views{padding:3px 8px;flex-wrap:wrap}
+.sim-stage-views button{min-height:40px}
+.sim-moment{display:flex;width:100%;align-items:center;gap:10px;text-align:left;padding:12px 16px;border-bottom:1px solid var(--border);border-radius:5px 5px 0 0}
+.sim-moment>svg{flex-shrink:0;color:var(--gold)}
+.sim-moment>svg:last-child{color:var(--text-muted);margin-left:auto}
+.sim-moment>span{min-width:0}
+.sim-moment small{display:block;color:var(--text-muted);font-size:10px;margin-bottom:4px}
+.sim-moment strong{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font:13px/1.7 var(--serif)}
+.sim-person-label{display:flex;align-items:center;gap:5px;border-radius:4px;background:color-mix(in srgb,var(--panel) 94%,transparent);border:1px solid var(--border);padding:5px 9px;box-shadow:0 3px 14px #182B3330}
+.sim-person-label>i{display:block;width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.sim-person-label>small:empty{display:none}
+.sim-person-label>small{margin:0!important;padding-left:4px}
+.sim-character-retry{padding:9px 12px;min-height:44px;width:155px;font-size:11px;color:var(--text);background:var(--panel);border:1px solid var(--border);border-radius:4px}
+@media(max-width:900px){
+ .sim-stage-roster{top:55px;left:12px;right:12px;width:max-content;max-width:calc(100% - 24px);gap:2px}
+ .sim-stage-roster button{font-size:11px;padding:3px 7px 3px 2px;gap:3px;min-height:44px}
+ .sim-stage-roster img{width:23px;height:30px}
+ .sim-live-scene{top:119px;left:12px;width:224px;padding:10px 12px}
+ .sim-live-scene>strong{font-size:16px;margin:4px 0}
+ .sim-stage-bottom{left:12px;right:12px}
+ .sim-stage-person{padding:10px 12px;align-items:center}
+ .sim-stage-person h2{font-size:19px}
+ .sim-stage-person p{font-size:12px;-webkit-line-clamp:1}
+ .sim-stage-actions{flex-direction:column;gap:1px}
+ .sim-stage-actions button{min-height:32px;font-size:11px}
+ .sim-stage-actions button:first-child{min-height:40px}
+ .sim-stage-views{padding:2px 5px;gap:0}
+ .sim-stage-views button{min-height:40px;padding:5px 8px;font-size:11px}
+ .sim-moment{padding:10px 12px;gap:8px}
+ .sim-moment strong{-webkit-line-clamp:1;font-size:12px}
+ .sim-stage-dock{gap:7px;padding:9px 12px}
+ .sim-stage-dock>p{font-size:10px}
+ .sim-playbook h3{font-size:22px}
+}
+@container simulation-scene (max-height:440px){
+ .sim-stage:not(.immersive) .sim-live-scene,.sim-stage:not(.immersive) .sim-moment{display:none}
+ .sim-stage:not(.immersive) .sim-stage-roster{display:none}
+ .sim-stage:not(.immersive) .sim-stage-person{padding:7px 10px}
+ .sim-stage:not(.immersive) .sim-stage-person h2{font-size:17px}
+}
+@media(max-width:360px){
+ .sim-stage-roster{left:8px;right:8px;max-width:calc(100% - 16px)}
+ .sim-stage-roster img{width:20px;height:27px}
+ .sim-stage-roster button{font-size:10px;padding-right:5px}
+ .sim-stage-bottom{left:8px;right:8px}
+ .sim-stage-views button{font-size:10px;padding-inline:6px}
+ .sim-live-scene{left:8px;top:118px;width:200px}
+ .sim-playbook-cards>button{padding-inline:10px}
+}
+@media(prefers-reduced-motion:reduce){.sim-action-progress i{transition:none}}

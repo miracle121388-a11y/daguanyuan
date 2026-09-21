@@ -102,5 +102,5 @@ export default function DreamExperience() {
   useEffect(() => {void useDreams.getState().initialize();}, []);
   useEffect(() => {if (s.accessToken) useDreams.setState({accessToken: s.accessToken});}, [s.accessToken]);
   const entry = d.entries.find(e => e.job.id === d.viewing && e.image && (garden.spoilerLimit === null || e.job.moment.chapter <= garden.spoilerLimit)), baseline = garden.data?.editionCatalog?.nodes[0];
-  return createPortal(<>{d.collectionOpen && <Album/>}{d.workshopOpen && d.candidate && <Workshop key={d.candidate.snapshotId} moment={d.candidate}/>}{entry && baseline && <MotionComic cue={{nodeId: entry.job.id, serial: 0, kind: 'story'}} node={dreamNode(entry, baseline)} painting={entry}/>}{!s.libraryOpen && !s.comicCue && !d.collectionOpen && !d.workshopOpen && !entry && <div className="dream-toast"><DreamStatus/></div>}</>, document.body);
+  return createPortal(<>{d.collectionOpen && <Album/>}{d.workshopOpen && d.candidate && <Workshop key={d.candidate.snapshotId} moment={d.candidate}/>}{entry && baseline && <MotionComic cue={{nodeId: entry.job.id, serial: 0, kind: 'story'}} node={dreamNode(entry, baseline)} painting={entry}/>}{!s.open && !s.libraryOpen && !s.comicCue && !d.collectionOpen && !d.workshopOpen && !entry && <div className="dream-toast"><DreamStatus/></div>}</>, document.body);
 }

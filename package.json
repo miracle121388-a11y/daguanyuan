@@ -64,7 +64,8 @@
     "models:urban:check": "node scripts/pipeline.mjs verify-urban",
     "models:grounding": "node scripts/pipeline.mjs models-grounding",
     "models:grounding:lod": "node scripts/pipeline.mjs models-grounding-lod",
-    "models:grounding:check": "node scripts/pipeline.mjs verify-grounding"
+    "models:grounding:check": "node scripts/pipeline.mjs verify-grounding",
+    "models:characters": "node scripts/pipeline.mjs models-characters"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

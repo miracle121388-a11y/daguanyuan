@@ -24,7 +24,7 @@ interface SimulationState {
   openComic: (id: string, kind?: 'story' | 'if', text?: string) => void; closeComic: () => void;
   open: boolean; journal: Journal | null; preview: WorldState | null;
   phase: 'ready' | 'deciding' | 'executing' | 'parsing' | 'conversing'; actor: AgentId | null;
-  paused: boolean; automatic: boolean; playback: Playback | null; sceneReady: boolean;
+  paused: boolean; automatic: boolean; playback: Playback | null; playbackProgress: number; director: boolean; sceneReady: boolean;
   focused: AgentId | null; focusRevision: number; sceneRevision: number;
   immersive: boolean; cameraMode: 'follow' | 'close'; playbackRate: 1 | 2 | 4;
   recordView: 'events' | 'people' | 'history' | 'flow' | 'worlds' | 'participate';
@@ -71,7 +71,7 @@ function execute(command: SceneCommand, signal: AbortSignal): Promise<void> {
     const abort = () => { if (!settled) { settled = true; reject(new DOMException('本步已取消', 'AbortError')); } };
     signal.addEventListener('abort', abort, {once: true});
     if (signal.aborted) { abort(); return; }
-    useSimulation.setState({playback: {id: ++playbackId, command, done: () => {
+    useSimulation.setState({playbackProgress: 0, playback: {id: ++playbackId, command, done: () => {
       if (settled) return;
       settled = true; signal.removeEventListener('abort', abort);
       useSimulation.setState({playback: null}); resolve();
@@ -82,9 +82,9 @@ function execute(command: SceneCommand, signal: AbortSignal): Promise<void> {
 export const useSimulation = create<SimulationState>((set, get) => ({
   editionId: 'original80', editionJournals: {}, libraryOpen: false, comicCue: null, comicAutomatic: true,
   open: false, journal: null, preview: null, phase: 'ready', actor: null,
-  paused: false, automatic: false, playback: null, sceneReady: false,
+  paused: false, automatic: false, playback: null, playbackProgress: 0, director: true, sceneReady: false,
   focused: null, focusRevision: 0, sceneRevision: 0, provider: 'mock', remoteLabel: '服务器模型', accessToken: '', error: '', storageNotice: '',
-  immersive: false, cameraMode: 'follow', playbackRate: 1, recordView: 'events', participationView: 'chat',
+  immersive: false, cameraMode: 'close', playbackRate: 1, recordView: 'events', participationView: 'chat',
   conversationDrafts: {},
   inspectionTarget: null, inspectionRevision: 0,
   initialize: data => {
@@ -145,10 +145,13 @@ export const useSimulation = create<SimulationState>((set, get) => ({
     const active = new AbortController(); controller = active;
     set({phase: 'deciding', paused: false, error: ''});
     try {
-      const result = await runTick(journal, data, providerFor(), execute, active.signal, (world, phase, actor) => set({preview: world, phase, actor}));
+      const result = await runTick(journal, data, providerFor(), execute, active.signal, (world, phase, actor) => set(current => ({preview: world, phase, actor, ...(current.director && current.focused !== actor ? {focused: actor, focusRevision: current.focusRevision + 1} : {})})));
       if (active.signal.aborted) return;
       commit(result);
       const after = currentWorld(result), before = currentWorld(journal);
+      if (get().director && after.gathering?.status === 'completed' && before.gathering?.status === 'pending') {
+        set({focused:after.gathering.participants[0],cameraMode:'close',focusRevision:get().focusRevision+1});
+      }
       if (after.gathering?.status === 'completed' && before.gathering?.status === 'pending') useDreams.getState().offer(captureMoment(result, data, 'gathering', after.gathering.participants[0]));
       if (get().comicAutomatic && !(useDreams.getState().config?.configured && useDreams.getState().accessToken && useDreams.getState().automatic) && after.gathering?.status === 'completed' && before.gathering?.status === 'pending' && (after.storyChapter ?? 23) >= 37) {
         set({phase: 'ready'});
@@ -192,7 +195,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   cancel: () => { set({automatic: false, ...(get().phase === 'conversing' ? {error: '这次交谈已取消，未写入存档。输入仍可修改后重试。'} : {})}); controller?.abort(); },
   focus: id => {
     useGarden.setState({panelOpen: false, hotspotId: null});
-    set({focused: id, focusRevision: get().focusRevision + 1});
+    set({focused: id, director: false, focusRevision: get().focusRevision + 1});
   },
   inspect: id => {
     get().focus(id);

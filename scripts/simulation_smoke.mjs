@@ -6,11 +6,11 @@ const output = process.env.SIM_REPORT_DIR || 'output/playwright/simulation';
 mkdirSync(output, {recursive: true});
 const software = process.env.SIM_SOFTWARE !== '0';
 const resolveIp = process.env.APP_RESOLVE_IP;
-const report = {renderer: software ? 'Edge / ANGLE SwiftShader (software)' : 'Edge / default renderer', at: new Date().toISOString(), url: base, dnsOverride: resolveIp ?? null, tlsVerification: new URL(base).protocol === 'https:', checks: [], errors: [], failedRequests: [], screenshots: []};
+const report = {renderer: software ? 'Chromium / ANGLE SwiftShader (software)' : 'Chromium / default renderer', at: new Date().toISOString(), url: base, dnsOverride: resolveIp ?? null, tlsVerification: new URL(base).protocol === 'https:', checks: [], errors: [], failedRequests: [], screenshots: []};
 const assert = (condition, label) => { if (!condition) throw new Error(label); report.checks.push(label); };
 // Optional test-browser DNS override only; TLS checks remain enabled.
-const args = [...(software ? ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] : []), ...(resolveIp ? [`--host-resolver-rules=MAP ${new URL(base).hostname} ${resolveIp}`, '--disable-quic'] : [])];
-const browser = await chromium.launch({channel: 'msedge', headless: true, args});
+const args = [...(software ? ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] : []), ...(resolveIp ? [`--host-resolver-rules=MAP ${new URL(base).hostname} ${resolveIp}`, '--disable-quic', '--no-proxy-server'] : []), ...(process.env.GARDEN_BROWSER_HTTP1==='1'?['--disable-http2']:[])];
+const browser = await chromium.launch({channel: process.env.GARDEN_BROWSER_CHANNEL ?? 'chromium', headless: true, args});
 const key = 'daguanyuan.simulation.v1';
 const stored = page => page.evaluate(key => JSON.parse(localStorage.getItem(key)), key);
 const current = journal => journal[journal.active].snapshots[journal[journal.active].cursor].worldState;
@@ -30,13 +30,14 @@ async function start(options) {
   }
   await page.getByRole('button', {name: '世界推演', exact: true}).click();
   await page.getByRole('heading', {name: '一念之间'}).waitFor();
-  await page.getByRole('button', {name: '运行下一 Tick', exact: true}).waitFor();
+  await page.getByRole('button', {name: '继续故事', exact: true}).waitFor();
+  if (['2','4'].includes(process.env.SIM_PLAYBACK_RATE)) await page.locator('.sim-scroll').getByRole('button',{name:process.env.SIM_PLAYBACK_RATE+'×',exact:true}).click();
   await page.waitForTimeout(900);
   return page;
 }
 async function tick(page, target) {
-  await page.getByRole('button', {name: '运行下一 Tick', exact: true}).click();
-  await page.getByText(`已保存至 Tick ${target}`, {exact: true}).waitFor({timeout: 120000});
+  await page.getByRole('button', {name: '继续故事', exact: true}).click();
+  await page.getByText(`故事已记至第 ${target} 步`, {exact: true}).waitFor({timeout: 120000});
 }
 try {
   const page = await start({viewport: {width: 1440, height: 900}});
@@ -48,7 +49,7 @@ try {
   const forked = await stored(page);
   assert(current(forked).tick === 0 && current(forked).agents.baoyu.location === 'yihongyuan', 'IF changes knowledge without advancing time or moving a character');
   assert(!JSON.stringify(current(forked).agents.daiyu.memories).includes('迎娶'), 'Daiyu does not know the private IF condition');
-  await page.getByRole('button', {name: '运行下一 Tick', exact: true}).click();
+  await page.getByRole('button', {name: '继续故事', exact: true}).click();
   await page.locator('.sim-person-label[data-agent="baoyu"] small').filter({hasText: '行走'}).waitFor({timeout: 10000});
   const hooks = await page.evaluate(() => !!window.__simulationTest);
   if (hooks) {
@@ -67,12 +68,12 @@ try {
     assert(JSON.stringify(paused) === JSON.stringify(await page.evaluate(() => window.__simulationTest.positions().baoyu)), 'pause freezes the actual 3D character');
   }
   await page.getByRole('button', {name: '继续本步', exact: true}).click();
-  await page.getByText('已保存至 Tick 1', {exact: true}).waitFor({timeout: 120000});
+  await page.getByText('故事已记至第 1 步', {exact: true}).waitFor({timeout: 120000});
   assert(current(await stored(page)).agents.baoyu.location === 'xiaoxiangguan', 'Baoyu arrives in Xiaoxiangguan');
-  await page.getByRole('button', {name: '运行下一 Tick', exact: true}).click();
+  await page.getByRole('button', {name: '继续故事', exact: true}).click();
   await page.locator('.sim-speech').filter({hasText: '迎娶'}).waitFor({timeout: 20000});
   await screenshot(page, 'desktop-dialogue');
-  await page.getByText('已保存至 Tick 2', {exact: true}).waitFor({timeout: 120000});
+  await page.getByText('故事已记至第 2 步', {exact: true}).waitFor({timeout: 120000});
   const second = await stored(page);
   for (const id of ['baoyu', 'daiyu']) assert(current(second).agents[id].memories.some(m => m.type === 'interaction' && m.content.includes('迎娶')), `${id} stores the conversation in personal memory`);
   assert(!JSON.stringify(second.main).includes('迎娶'), 'the original main world stays isolated');
@@ -103,7 +104,7 @@ try {
   await page.getByRole('button', {name: '世界推演', exact: true}).click();
   assert(current(await stored(page)).tick === 2, 'completed snapshots survive page reload');
   await page.getByRole('button', {name: 'IF 世界', exact: true}).click();
-  await page.getByRole('button', {name: '运行下一 Tick', exact: true}).click();
+  await page.getByRole('button', {name: '继续故事', exact: true}).click();
   await page.getByRole('button', {name: '撤销本步', exact: true}).click();
   await page.getByText('本步已取消，人物与状态已回到上一个完整快照。', {exact: true}).waitFor();
   assert(current(await stored(page)).tick === 0, 'cancel rolls back to the complete IF snapshot');
@@ -161,7 +162,7 @@ try {
   assert((await stored(page)).if.uid === preservedUid && (await stored(page)).archives.length === 1, 'restoring an archived world swaps both branches without loss');
   report.style = await page.evaluate(() => {
     const panel = document.querySelector('.simulation-panel'), note = document.querySelector('.sim-note');
-    return {panel: getComputedStyle(panel).backgroundColor, muted: getComputedStyle(note).color, font: getComputedStyle(note).fontSize, focus: getComputedStyle(panel).getPropertyValue('--cinnabar')};
+    return {panel: getComputedStyle(panel).backgroundColor, muted: getComputedStyle(note).color, font: getComputedStyle(note).fontSize, focus: getComputedStyle(panel).getPropertyValue('--text')};
   });
   await page.getByRole('button', {name: '退出世界推演', exact: true}).click();
   assert(await page.getByRole('button', {name: '开始游园', exact: true}).isVisible(), 'original garden touring remains available');
@@ -174,8 +175,8 @@ try {
   await screenshot(mobile, 'mobile-initial');
   await mobile.getByRole('button', {name: '创建 IF 世界', exact: true}).click();
   await mobile.waitForFunction(key => JSON.parse(localStorage.getItem(key) || 'null')?.active === 'if', key);
-  await mobile.getByRole('button', {name: '运行下一 Tick', exact: true}).click();
-  await mobile.getByText('已保存至 Tick 1', {exact: true}).waitFor({timeout: 120000});
+  await mobile.getByRole('button', {name: '继续故事', exact: true}).click();
+  await mobile.getByText('故事已记至第 1 步', {exact: true}).waitFor({timeout: 120000});
   await tick(mobile, 2);
   assert(current(await stored(mobile)).agents.daiyu.memories.some(m => m.type === 'interaction' && m.content.includes('迎娶')), 'mobile scene executes the full IF → walk → dialogue chain');
   await mobile.getByRole('button', {name: '人物心迹', exact: true}).click();
@@ -203,8 +204,9 @@ try {
   await mobile.close();
   const linear = c => (c/=255) <= .04045 ? c/12.92 : ((c+.055)/1.055)**2.4;
   const lum = rgb => rgb.match(/[0-9]+/g).slice(0,3).map(Number).map(linear).reduce((v,c,i)=>v+c*[.2126,.7152,.0722][i],0);
-  report.mutedContrast = (lum(report.style.panel)+.05)/(lum(report.style.muted)+.05);
-  assert(report.mutedContrast >= 4.5, 'secondary reading text meets 4.5:1 contrast on paper');
+  const foreground=lum(report.style.muted),background=lum(report.style.panel);
+  report.mutedContrast = (Math.max(foreground,background)+.05)/(Math.min(foreground,background)+.05);
+  assert(report.mutedContrast >= 4.5, 'secondary reading text meets 4.5:1 contrast against the actual panel');
   assert(report.errors.length === 0, 'no browser runtime errors');
   assert(report.failedRequests.length === 0, 'no failed resource or API requests');
   report.status = 'passed';

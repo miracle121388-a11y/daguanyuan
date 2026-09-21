@@ -4,7 +4,7 @@ import {useSimulation} from '../simulation/store';
 export function SimulationRunControls({compact = false}: {compact?: boolean}) {
   const s = useSimulation(), busy = s.phase !== 'ready';
   return <div className={'sim-run-controls ' + (compact ? 'compact' : '')}>
-    <button className="sim-primary" disabled={busy || !s.sceneReady} onClick={() => { useSimulation.setState({automatic: false}); void s.next(); }}><StepForward size={16}/>{compact ? '下一刻' : '运行下一 Tick'}</button>
+    <button className="sim-primary" disabled={busy || !s.sceneReady} onClick={() => { useSimulation.setState({automatic: false}); void s.next(); }}><StepForward size={16}/>{compact ? '下一刻' : '继续故事'}</button>
     {busy && !['parsing', 'conversing'].includes(s.phase) ? <button onClick={s.pause}>{s.paused ? <Play size={15}/> : <Pause size={15}/>}<span>{s.paused ? '继续本步' : '暂停'}</span></button> : <button disabled={busy || !s.sceneReady} aria-pressed={s.automatic} onClick={() => useSimulation.setState({automatic: !s.automatic})}>{s.automatic ? <Pause size={15}/> : <Play size={15}/>}<span>{s.automatic ? '停止自动' : '自动运行'}</span></button>}
   </div>;
 }

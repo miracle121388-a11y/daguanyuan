@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-21T15:53:27.238Z",
+  "unitTests": 102,
+  "lint": true,
+  "build": true,
+  "integrity": 10968,
+  "browserRegression": {
+    "report": "playwright-final.json",
+    "passed": 7
+  },
+  "finalActionChecks": {
+    "report": "playwright-actions.json",
+    "passed": 3
+  },
+  "simulation": {
+    "report": "simulation/report.json",
+    "passed": 38
+  },
+  "participation": {
+    "report": "participation/report.json",
+    "passed": 21
+  },
+  "comics": {
+    "report": "story/report.json",
+    "passed": 24
+  },
+  "mobile": "mobile-4g.json",
+  "characters": "characters.json",
+  "preservation": "preservation-local.json",
+  "paidModelCalls": 0,
+  "notes": [
+    "One earlier development-server acceptance was interrupted by source hot reload; it is not counted as passed.",
+    "The legacy contrast assertion assumed a light panel. It now computes lighter/darker luminance; the complete flow was rerun and passed.",
+    "The final gait and tea prop refinements were followed by three fresh scene checks and a fresh production build.",
+    "Phones use Chromium emulation, not physical devices."
+  ]
+}

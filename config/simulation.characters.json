@@ -1,0 +1,10 @@
+{
+  "revision": "garden-players-20260921-v1",
+  "basis": "Original stylized figures for the existing staged routes in config/garden.layout.json. Dress and hair are artistic interpretations in the Sun Wen garden palette, not historical portrait reconstructions.",
+  "characters": {
+    "baoyu": {"name":"贾宝玉","robe":"#A63F45","skirt":"#E2BBAB","trim":"#D5AD65","lining":"#8BAE99","skin":"#EDC4A7","hair":"#292B31","scale":1.02,"motif":"红衣玉佩，少年公子"},
+    "daiyu": {"name":"林黛玉","robe":"#87B6AF","skirt":"#D4DFD1","trim":"#DFCAA0","lining":"#E2A9B2","skin":"#F0D0BC","hair":"#262A30","scale":0.97,"motif":"柳绿披帛，素簪书卷"},
+    "baochai": {"name":"薛宝钗","robe":"#DCCCA5","skirt":"#719B95","trim":"#C99F59","lining":"#C49EAA","skin":"#E9C4AD","hair":"#2E2B2B","scale":1.0,"motif":"米金衣缘，青裙金锁"},
+    "wangxifeng": {"name":"王熙凤","robe":"#925570","skirt":"#A85551","trim":"#D5AA56","lining":"#567D82","skin":"#E8BFA7","hair":"#2D292F","scale":1.02,"motif":"绛紫锦衣，金钗高髻"}
+  }
+}

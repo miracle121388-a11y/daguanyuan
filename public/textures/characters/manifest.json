@@ -1,0 +1,60 @@
+{
+  "revision": "garden-players-20260921-v1",
+  "origin": "Original procedural geometry and vertex colors, authored for this project",
+  "basis": "Original stylized figures for the existing staged routes in config/garden.layout.json. Dress and hair are artistic interpretations in the Sun Wen garden palette, not historical portrait reconstructions.",
+  "externalAssets": [],
+  "generator": "blender/build_simulation_characters.py",
+  "generatorSha256": "a791b5953ed766834bae46d58c2ac286a17f1b183632ec99d603ae2c4352919f",
+  "configuration": "config/simulation.characters.json",
+  "configurationSha256": "95138df314bad46a2064b18662c927ddd857ebf54897de29a695081822e33f5b",
+  "files": [
+    {
+      "agent": "baoyu",
+      "path": "public/models/characters/baoyu.glb",
+      "bytes": 331704,
+      "sha256": "23fd0861a6ce9bd50398e18fc33c134ac317a936a020f3b63d3191eb8a8af8e7"
+    },
+    {
+      "agent": "daiyu",
+      "path": "public/models/characters/daiyu.glb",
+      "bytes": 341224,
+      "sha256": "981e4dc733fc149a7594289cfeba344ac1eaa7ed88641f1623c1931f0af1ba28"
+    },
+    {
+      "agent": "baochai",
+      "path": "public/models/characters/baochai.glb",
+      "bytes": 345304,
+      "sha256": "d99ea4240d1885087c2fddce42e71a6dcdc113489d01b0bafd21ab19d5a6f095"
+    },
+    {
+      "agent": "wangxifeng",
+      "path": "public/models/characters/wangxifeng.glb",
+      "bytes": 365488,
+      "sha256": "f8da4e62978cacb4899668a3cd5f20bedf96dd06a6a40b110a231ea761933c5e"
+    },
+    {
+      "agent": "baoyu",
+      "path": "public/textures/characters/baoyu.png",
+      "bytes": 65971,
+      "sha256": "a2be184e6df808be8592557b51150e8914eea23fd062baeb738061ff3290e62f"
+    },
+    {
+      "agent": "daiyu",
+      "path": "public/textures/characters/daiyu.png",
+      "bytes": 64625,
+      "sha256": "7faf9061aebe0915dbfeaebcd426a7aeb96832d3b8b04bea668c14aa332968e5"
+    },
+    {
+      "agent": "baochai",
+      "path": "public/textures/characters/baochai.png",
+      "bytes": 68535,
+      "sha256": "301fa7ab115e24dad3bcf6ad1cb5b157664772a672284d6aae3d975406d32312"
+    },
+    {
+      "agent": "wangxifeng",
+      "path": "public/textures/characters/wangxifeng.png",
+      "bytes": 71062,
+      "sha256": "a2a6b713233aef8157b76aa4c6fbd15658154aeacc7d2320689620567db1fc29"
+    }
+  ]
+}

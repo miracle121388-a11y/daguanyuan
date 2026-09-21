@@ -1,3 +1,4 @@
+import SimulationPlaybook from './SimulationPlaybook';
 import {useEffect, useRef, useState} from 'react';
 import {ArrowRight, Download, GitBranch, LocateFixed, RotateCcw, X} from 'lucide-react';
 import {useGarden} from '../state/store';
@@ -10,6 +11,7 @@ import SimulationInteractions from './SimulationInteractions';
 import SimulationParticipation from './SimulationParticipation';
 import {SimulationFlow, SimulationWorldlines} from './SimulationWorldlines';
 import {StoryEntry} from './StoryExperience';
+import {DreamStatus} from './DreamExperience';
 
 export const EXAMPLE_IF = '如果宝玉提前知道贾府准备让他迎娶薛宝钗，会发生什么？';
 const topics = [{label: '提前知情', text: EXAMPLE_IF}, {label: '黛玉静养', text: '如果黛玉的精力降到30'}, {label: '贾府收支', text: '如果贾府财力降到30'}];
@@ -56,21 +58,21 @@ export default function SimulationPanel() {
   if (!s.open || !s.journal || !data) return null;
   const world = s.preview ?? currentWorld(s.journal), branch = currentBranch(s.journal), snapshot = branch.snapshots[branch.cursor];
   const busy = s.phase !== 'ready', person = s.focused ?? 'baoyu', actor = world.agents[person], view = s.recordView;
-  const status = s.phase === 'conversing' ? `${world.agents[s.actor ?? 'baoyu'].name}正在回应…` : s.paused ? '已暂停 · 可继续或撤销本步' : s.phase === 'parsing' ? '正在解析假设条件…' : s.phase === 'deciding' ? `${world.agents[s.actor ?? 'baoyu'].name}正在思量…` : s.phase === 'executing' ? `${world.agents[s.actor!].name}正在${actions[world.agents[s.actor!].currentAction?.action ?? 'wait']}…` : s.automatic ? '自动推演中' : `已保存至 Tick ${world.tick}`;
+  const status = s.phase === 'conversing' ? `${world.agents[s.actor ?? 'baoyu'].name}正在回应…` : s.paused ? '已暂停 · 可继续或撤销本步' : s.phase === 'parsing' ? '正在解析假设条件…' : s.phase === 'deciding' ? `${world.agents[s.actor ?? 'baoyu'].name}正在思量…` : s.phase === 'executing' ? `${world.agents[s.actor!].name}正在${actions[world.agents[s.actor!].currentAction?.action ?? 'wait']}…` : s.automatic ? '自动推演中' : `故事已记至第 ${world.tick} 步`;
   return <aside className={'simulation-panel ' + (expanded ? 'expanded' : '')} aria-label="世界推演控制台" hidden={s.immersive}>
     <div className="sim-heading"><div><h2 tabIndex={-1} ref={heading}>一念之间</h2><p>走入园中，亲历另一种可能</p></div><button className="sim-expand" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>{expanded ? '收起面板' : '展开面板'}</button><button className="icon-button" aria-label="退出世界推演" onClick={s.toggle}><X size={18}/></button></div>
-    <div className="sim-world-bar"><div role="group" aria-label="选择推演世界"><button disabled={busy} aria-pressed={s.journal.active === 'main'} onClick={() => s.switchBranch('main')}>主世界</button><button disabled={busy || !s.journal.if} aria-pressed={s.journal.active === 'if'} onClick={() => s.switchBranch('if')}><GitBranch size={13}/>IF 世界</button></div><span data-testid="sim-tick">Tick {world.tick}</span></div>
+    <div className="sim-world-bar"><div role="group" aria-label="选择推演世界"><button disabled={busy} aria-pressed={s.journal.active === 'main'} onClick={() => s.switchBranch('main')}>主世界</button><button disabled={busy || !s.journal.if} aria-pressed={s.journal.active === 'if'} onClick={() => s.switchBranch('if')}><GitBranch size={13}/>IF 世界</button></div><span data-testid="sim-tick">第 {world.tick} 步</span></div>
     <div className="sim-scroll" ref={scroll}>
-      <StoryEntry/>
-      <div className="sim-clock"><strong>{clockLabel(world.minutes)}</strong><span>一步约一小时</span></div>
+      <div className="sim-clock"><strong>{clockLabel(world.minutes)}</strong><span>四位故人的下一刻</span></div>
       <SimulationRunControls/><div className="sim-status"><p role="status">{status}</p>{busy && <button onClick={s.cancel}>撤销本步</button>}</div><SimulationSpeed/>
       {s.error && !(view === 'participate' && s.participationView === 'chat') && <div className="sim-error" role="alert">{s.error}<button aria-label="关闭推演提示" onClick={() => useSimulation.setState({error: ''})}><X size={14}/></button></div>}
       {!s.sceneReady && <p className="sim-note">三维园林载入后即可运行。若设备不支持三维，仍可查看人物和存档。</p>}
       {s.storageNotice && <p className="sim-error" role="status">{s.storageNotice}</p>}
+      <DreamStatus/>
+      {view === 'events' && <SimulationPlaybook world={currentWorld(s.journal)}/>}<details className="sim-story-select"><summary>故事版本与画卷</summary><StoryEntry/></details>
       <div className="sim-tabs" ref={records} role="group" aria-label="推演记录分类">{([['participate', '入局互动'], ['events', '园中纪事'], ['people', '人物心迹'], ['flow', '消息流转'], ['worlds', '世界线'], ['history', '时间快照']] as const).map(([key, label]) => <button key={key} aria-pressed={view === key} onClick={() => useSimulation.setState({recordView: key, ...(key === 'participate' ? {automatic: false} : {})})}>{label}</button>)}</div>
       {view === 'participate' && <SimulationParticipation world={world} data={data}/>}
       {view === 'events' && <>
-        <button className="sim-participation-entry" onClick={() => s.participate(person)}><span><strong>这一回，由你入局</strong><small>与人物交谈、临场抉择、邀人同游相聚</small></span><ArrowRight size={18}/></button>
         <form className="sim-if" onSubmit={e => { e.preventDefault(); void s.createIf(prompt); }}>
           <label htmlFor="sim-if-input">若当时，换一个条件</label><textarea id="sim-if-input" value={prompt} maxLength={400} rows={3} disabled={busy} onChange={e => setPrompt(e.target.value)} aria-describedby="sim-if-help"/>
           <div className="sim-examples">{topics.map(topic => <button type="button" key={topic.label} disabled={busy} onClick={() => setPrompt(topic.text)}>{topic.label}</button>)}</div>
