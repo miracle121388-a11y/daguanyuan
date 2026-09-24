@@ -1,0 +1,168 @@
+{
+  "at": "2026-09-24T07:34:15.198Z",
+  "note": "Configured proxy now routes this exact site through the existing proxy group with a verified public IP mapping and UDP reject rule. proxy-ip-diagnostic overrides CONNECT destination only; original TLS hostname and certificate validation retained. This diagnostic is not an ordinary browser route.",
+  "results": [
+    {
+      "mode": "direct",
+      "path": "/healthz",
+      "exit": 0,
+      "httpCode": 200,
+      "httpVersion": "2",
+      "seconds": 1.336535,
+      "downloadBytes": 189,
+      "tlsVerifyResult": 0,
+      "altSvc": [
+        "alt-svc: h3=\":443\"; ma=3600"
+      ],
+      "country": "CN",
+      "decodedBytes": 189,
+      "sha256": "6759aadf6ad38d3c1bbb4516e189c195848ef50e42fb069a7438a091f086ecc5",
+      "matchesLocal": null,
+      "error": ""
+    },
+    {
+      "mode": "direct",
+      "path": "/reading.html",
+      "exit": 0,
+      "httpCode": 200,
+      "httpVersion": "2",
+      "seconds": 0.895635,
+      "downloadBytes": 14246,
+      "tlsVerifyResult": 0,
+      "altSvc": [
+        "alt-svc: h3=\":443\"; ma=3600"
+      ],
+      "country": "CN",
+      "decodedBytes": 58249,
+      "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61",
+      "matchesLocal": true,
+      "error": ""
+    },
+    {
+      "mode": "direct",
+      "path": "/models/overview-low.glb",
+      "exit": 0,
+      "httpCode": 200,
+      "httpVersion": "2",
+      "seconds": 75.79651,
+      "downloadBytes": 2867205,
+      "tlsVerifyResult": 0,
+      "altSvc": [
+        "alt-svc: h3=\":443\"; ma=3600"
+      ],
+      "country": "CN",
+      "decodedBytes": 3495000,
+      "sha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
+      "matchesLocal": true,
+      "error": ""
+    },
+    {
+      "mode": "configured-proxy",
+      "path": "/healthz",
+      "exit": 0,
+      "httpCode": 200,
+      "httpVersion": "2",
+      "seconds": 0.705005,
+      "downloadBytes": 189,
+      "tlsVerifyResult": 0,
+      "altSvc": [
+        "alt-svc: h3=\":443\"; ma=3600"
+      ],
+      "country": "US",
+      "decodedBytes": 189,
+      "sha256": "6759aadf6ad38d3c1bbb4516e189c195848ef50e42fb069a7438a091f086ecc5",
+      "matchesLocal": null,
+      "error": ""
+    },
+    {
+      "mode": "configured-proxy",
+      "path": "/reading.html",
+      "exit": 0,
+      "httpCode": 200,
+      "httpVersion": "2",
+      "seconds": 1.186956,
+      "downloadBytes": 14246,
+      "tlsVerifyResult": 0,
+      "altSvc": [
+        "alt-svc: h3=\":443\"; ma=3600"
+      ],
+      "country": "US",
+      "decodedBytes": 58249,
+      "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61",
+      "matchesLocal": true,
+      "error": ""
+    },
+    {
+      "mode": "configured-proxy",
+      "path": "/models/overview-low.glb",
+      "exit": 0,
+      "httpCode": 200,
+      "httpVersion": "2",
+      "seconds": 3.276317,
+      "downloadBytes": 2867205,
+      "tlsVerifyResult": 0,
+      "altSvc": [
+        "alt-svc: h3=\":443\"; ma=3600"
+      ],
+      "country": "US",
+      "decodedBytes": 3495000,
+      "sha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
+      "matchesLocal": true,
+      "error": ""
+    },
+    {
+      "mode": "proxy-ip-diagnostic",
+      "path": "/healthz",
+      "exit": 0,
+      "httpCode": 200,
+      "httpVersion": "2",
+      "seconds": 0.863506,
+      "downloadBytes": 189,
+      "tlsVerifyResult": 0,
+      "altSvc": [
+        "alt-svc: h3=\":443\"; ma=3600"
+      ],
+      "country": "US",
+      "decodedBytes": 189,
+      "sha256": "6759aadf6ad38d3c1bbb4516e189c195848ef50e42fb069a7438a091f086ecc5",
+      "matchesLocal": null,
+      "error": ""
+    },
+    {
+      "mode": "proxy-ip-diagnostic",
+      "path": "/reading.html",
+      "exit": 0,
+      "httpCode": 200,
+      "httpVersion": "2",
+      "seconds": 0.85972,
+      "downloadBytes": 14246,
+      "tlsVerifyResult": 0,
+      "altSvc": [
+        "alt-svc: h3=\":443\"; ma=3600"
+      ],
+      "country": "US",
+      "decodedBytes": 58249,
+      "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61",
+      "matchesLocal": true,
+      "error": ""
+    },
+    {
+      "mode": "proxy-ip-diagnostic",
+      "path": "/models/overview-low.glb",
+      "exit": 0,
+      "httpCode": 200,
+      "httpVersion": "2",
+      "seconds": 3.103042,
+      "downloadBytes": 2867205,
+      "tlsVerifyResult": 0,
+      "altSvc": [
+        "alt-svc: h3=\":443\"; ma=3600"
+      ],
+      "country": "US",
+      "decodedBytes": 3495000,
+      "sha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
+      "matchesLocal": true,
+      "error": ""
+    }
+  ]
+}

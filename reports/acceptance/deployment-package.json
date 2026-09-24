@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20260924-044145-687232",
+  "directory": ".deploy/reference-20260924-072906-384918",
   "contents": [
     "dist/",
     "server.mjs",
@@ -8,196 +8,196 @@
     "deploy-assets.json",
     "hydrate-assets.mjs"
   ],
-  "rawBytes": 75564564,
-  "compressedBytes": 61846647,
-  "uploadDirectoryBytes": 50250699,
+  "rawBytes": 75617495,
+  "compressedBytes": 61853093,
+  "uploadDirectoryBytes": 50315775,
   "uploadDirectoryBudgetMiB": 50,
   "buildAssets": [
     {
       "path": "textures/vegetation/canopy-atlas.webp",
       "bytes": 902858,
       "sha256": "85e10a85fd505bcbedac51c1425daa1bbeeb14d46951d9e5cdb94ae2cff2a62c",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/textures/vegetation/canopy-atlas.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/textures/vegetation/canopy-atlas.webp"
     },
     {
       "path": "art/sunwen-001.webp",
       "bytes": 700016,
       "sha256": "e4180a208d29a184f252d4ddbc41632c3d5e84c73c0f69ab5621d2742c38eb93",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-001.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-001.webp"
     },
     {
       "path": "art/sunwen-146.webp",
       "bytes": 625278,
       "sha256": "48e09450cf3142be47c2be12544ed76555d0f76d4dfa171dca982fc422fb5c87",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-146.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-146.webp"
     },
     {
       "path": "art/sunwen-136.webp",
       "bytes": 605338,
       "sha256": "913b7d0ede03a9b72c42de421033087dde6a6b2d9bbb77ddbd03be0aeaa3780c",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-136.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-136.webp"
     },
     {
       "path": "art/sunwen-096.webp",
       "bytes": 591602,
       "sha256": "ee91892d81348adba5dcfd3ba9317749fcbe34388d599121012848cc06fce8cb",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-096.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-096.webp"
     },
     {
       "path": "art/sunwen-092.webp",
       "bytes": 589254,
       "sha256": "a8169db4ad58ed7862b9737cc861e5e3b4d742e4b3bcd08812a4f643a39dcb98",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-092.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-092.webp"
     },
     {
       "path": "art/sunwen-098.webp",
       "bytes": 581200,
       "sha256": "6fd6765897912c293858dfbb4064c1d71de073ba384b50d35799b21e3091fc2f",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-098.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-098.webp"
     },
     {
       "path": "art/sunwen-100.webp",
       "bytes": 574626,
       "sha256": "f06a22804490a56cce68a90876992cfa0f3fd6382341c850934fbbf1befc7ccd",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-100.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-100.webp"
     },
     {
       "path": "art/sunwen-044.webp",
       "bytes": 573794,
       "sha256": "eeccd2b8531cbb1d6c0ebdd288127dc9ac5e041fa8987cbcdead5a0c6cee2103",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-044.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-044.webp"
     },
     {
       "path": "art/sunwen-077.webp",
       "bytes": 569662,
       "sha256": "9e8cd1c4fc9637acaf95de7d41b3d646789ed60d6e50be83091a44da76059744",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-077.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-077.webp"
     },
     {
       "path": "art/sunwen-099.webp",
       "bytes": 569514,
       "sha256": "9449f3b1548392a13cf49487f43d2959217f8f174213a2a7901b2de7d7998e40",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-099.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-099.webp"
     },
     {
       "path": "art/sunwen-064.webp",
       "bytes": 567942,
       "sha256": "285bcf7e2858b69c820beab0e2749abdb1c3883c2bf6ef208a48c4453a9e714a",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-064.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-064.webp"
     },
     {
       "path": "art/sunwen-049.webp",
       "bytes": 557440,
       "sha256": "cd1746880c4ad7e935c364941d2804e1c519959e4d853607fb5c68c4bdbd929a",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-049.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-049.webp"
     },
     {
       "path": "art/sunwen-053.webp",
       "bytes": 540916,
       "sha256": "ee37d6b982f3b75f8163d050089ec3798827eb22493081bd237f058d90184648",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-053.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-053.webp"
     },
     {
       "path": "comics/petals.webp",
       "bytes": 509078,
       "sha256": "5a70180ce2a16b2e1c58cdb805901dafc71b600af0592a5f6eae123ada538f31",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/comics/petals.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/comics/petals.webp"
     },
     {
       "path": "art/sunwen-108.webp",
       "bytes": 483932,
       "sha256": "54b77ce598904a5030ccbdb65889e915519d9ad7963b833ed23635f0bd8ab979",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-108.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-108.webp"
     },
     {
       "path": "textures/vegetation/canopy-atlas-low.webp",
       "bytes": 466750,
       "sha256": "f79ef784e93e235295540ef4176be9baaac0f0abbac8b97f55893d52f5adf99d",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/textures/vegetation/canopy-atlas-low.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/textures/vegetation/canopy-atlas-low.webp"
     },
     {
       "path": "art/sunwen-055.webp",
       "bytes": 463742,
       "sha256": "b5ec1027022d046a97a60c2359f48154564f55cecb23831ed717e2c948a1845d",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/art/sunwen-055.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/art/sunwen-055.webp"
     },
     {
       "path": "comics/storm.webp",
       "bytes": 334988,
       "sha256": "53abdf7cf47c643928994401d8a69bef08c0a11d69f23672e2e2485488b16b63",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/comics/storm.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/comics/storm.webp"
     },
     {
       "path": "comics/poetry.webp",
       "bytes": 325972,
       "sha256": "e4ec8394772a16fab8be92e03af7cda83b4765c32fd4f7a9b8a8fe37325ba3ec",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/comics/poetry.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/comics/poetry.webp"
     },
     {
       "path": "textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
       "bytes": 293677,
       "sha256": "179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png"
     },
     {
       "path": "comics/bamboo.webp",
       "bytes": 266744,
       "sha256": "dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/comics/bamboo.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/comics/bamboo.webp"
     },
     {
       "path": "comics/manuscript.webp",
       "bytes": 253204,
       "sha256": "38f51cbfe421a19d128b8523a2314286553c8d232fc1379970a11f32f5c818e0",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/comics/manuscript.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/comics/manuscript.webp"
     },
     {
       "path": "textures/shared/1dee12acdb3f0fc7a0f9b6dcac05c046b8bfaa3072605ef855f61d3fe206bed2.jpg",
       "bytes": 220374,
       "sha256": "1dee12acdb3f0fc7a0f9b6dcac05c046b8bfaa3072605ef855f61d3fe206bed2",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/textures/shared/1dee12acdb3f0fc7a0f9b6dcac05c046b8bfaa3072605ef855f61d3fe206bed2.jpg"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/textures/shared/1dee12acdb3f0fc7a0f9b6dcac05c046b8bfaa3072605ef855f61d3fe206bed2.jpg"
     },
     {
       "path": "textures/shared/68abb969fb5f7ffe28d0dc78c9649bc0eb7223cb9cacdf598020f082a0f49627.jpg",
       "bytes": 212722,
       "sha256": "68abb969fb5f7ffe28d0dc78c9649bc0eb7223cb9cacdf598020f082a0f49627",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/textures/shared/68abb969fb5f7ffe28d0dc78c9649bc0eb7223cb9cacdf598020f082a0f49627.jpg"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/textures/shared/68abb969fb5f7ffe28d0dc78c9649bc0eb7223cb9cacdf598020f082a0f49627.jpg"
     },
     {
       "path": "textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg",
       "bytes": 177881,
       "sha256": "0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg"
     },
     {
       "path": "comics/petals-mobile.webp",
       "bytes": 167686,
       "sha256": "729f6044c1036a3a9c8ae6762103b721a9302325e1a2ff182889a49f90202e2e",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/comics/petals-mobile.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/comics/petals-mobile.webp"
     },
     {
       "path": "textures/shared/7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28.jpg",
       "bytes": 163694,
       "sha256": "7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/textures/shared/7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28.jpg"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/textures/shared/7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28.jpg"
     },
     {
       "path": "dream-scenes/daoxiangcun.webp",
       "bytes": 151132,
       "sha256": "f763aa24229095ba8899b8756bec9aaf9948451e51f31bf666068ec3474ea80e",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/dream-scenes/daoxiangcun.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/dream-scenes/daoxiangcun.webp"
     },
     {
       "path": "textures/ground/pond-normal.png",
       "bytes": 150785,
       "sha256": "e074f358936501eb66c7576b0896d2fdcde233927bbb5dabd4fa8eca90b879ec",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/textures/ground/pond-normal.png"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/textures/ground/pond-normal.png"
     },
     {
       "path": "dream-scenes/xiaoxiangguan.webp",
       "bytes": 146896,
       "sha256": "9664b2105c3a949152c49444a4c2ad70aa44dd6b119f22e4ea4a66b3a70d7cb1",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/5affbd243942cc7d74194153183c55d2c62ed684/public/dream-scenes/xiaoxiangguan.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/fbd2ba2c043f49cccfdff63dff16bd665bb0375b/public/dream-scenes/xiaoxiangguan.webp"
     }
   ],
   "precompressedExtensions": [
@@ -218,5 +218,5 @@
   "brotli": true,
   "contentAliases": {},
   "privateFilesIncluded": false,
-  "createdAt": "2026-09-24T04:41:57.385147+00:00"
+  "createdAt": "2026-09-24T07:29:10.474104+00:00"
 }

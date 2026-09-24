@@ -1,0 +1,224 @@
+{
+  "at": "2026-09-24T07:37:28.782Z",
+  "sourceCommit": "fbd2ba2c043f49cccfdff63dff16bd665bb0375b",
+  "deployment": {
+    "ID": "6ab4d185e92e928954acb631",
+    "projectID": "6aa142fb6c3d9581b71560ed",
+    "serviceID": "6aa143296c3d9581b71560fa",
+    "environmentID": "6aa142fbda9bc245fba1e845",
+    "gitProvider": "GITHUB",
+    "repoOwner": "",
+    "repoName": "",
+    "ref": "",
+    "commitSHA": "",
+    "commitMessage": "",
+    "planType": "docker",
+    "createdAt": "2026-09-24T07:30:13.553Z",
+    "scheduledAt": "2026-09-24T07:30:15.671Z",
+    "startedAt": "2026-09-24T07:30:21.036Z",
+    "finishedAt": "2026-09-24T07:32:01.846Z",
+    "status": "RUNNING"
+  },
+  "preservation": {
+    "serviceId": "6aa143296c3d9581b71560fa",
+    "environmentId": "6aa142fbda9bc245fba1e845",
+    "variablesMatched": true,
+    "variableCount": 18,
+    "albumMatched": true,
+    "albumFileCount": 6,
+    "albumBytes": 7486038,
+    "paidModelCalls": 0
+  },
+  "runtimeFileCount": 638,
+  "httpsFileCount": 15,
+  "tests": {
+    "build": true,
+    "lint": true,
+    "unitTests": 111
+  },
+  "network": {
+    "at": "2026-09-24T07:34:15.198Z",
+    "note": "Configured proxy now routes this exact site through the existing proxy group with a verified public IP mapping and UDP reject rule. proxy-ip-diagnostic overrides CONNECT destination only; original TLS hostname and certificate validation retained. This diagnostic is not an ordinary browser route.",
+    "results": [
+      {
+        "mode": "direct",
+        "path": "/healthz",
+        "exit": 0,
+        "httpCode": 200,
+        "httpVersion": "2",
+        "seconds": 1.336535,
+        "downloadBytes": 189,
+        "tlsVerifyResult": 0,
+        "altSvc": [
+          "alt-svc: h3=\":443\"; ma=3600"
+        ],
+        "country": "CN",
+        "decodedBytes": 189,
+        "sha256": "6759aadf6ad38d3c1bbb4516e189c195848ef50e42fb069a7438a091f086ecc5",
+        "matchesLocal": null,
+        "error": ""
+      },
+      {
+        "mode": "direct",
+        "path": "/reading.html",
+        "exit": 0,
+        "httpCode": 200,
+        "httpVersion": "2",
+        "seconds": 0.895635,
+        "downloadBytes": 14246,
+        "tlsVerifyResult": 0,
+        "altSvc": [
+          "alt-svc: h3=\":443\"; ma=3600"
+        ],
+        "country": "CN",
+        "decodedBytes": 58249,
+        "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61",
+        "matchesLocal": true,
+        "error": ""
+      },
+      {
+        "mode": "direct",
+        "path": "/models/overview-low.glb",
+        "exit": 0,
+        "httpCode": 200,
+        "httpVersion": "2",
+        "seconds": 75.79651,
+        "downloadBytes": 2867205,
+        "tlsVerifyResult": 0,
+        "altSvc": [
+          "alt-svc: h3=\":443\"; ma=3600"
+        ],
+        "country": "CN",
+        "decodedBytes": 3495000,
+        "sha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
+        "matchesLocal": true,
+        "error": ""
+      },
+      {
+        "mode": "configured-proxy",
+        "path": "/healthz",
+        "exit": 0,
+        "httpCode": 200,
+        "httpVersion": "2",
+        "seconds": 0.705005,
+        "downloadBytes": 189,
+        "tlsVerifyResult": 0,
+        "altSvc": [
+          "alt-svc: h3=\":443\"; ma=3600"
+        ],
+        "country": "US",
+        "decodedBytes": 189,
+        "sha256": "6759aadf6ad38d3c1bbb4516e189c195848ef50e42fb069a7438a091f086ecc5",
+        "matchesLocal": null,
+        "error": ""
+      },
+      {
+        "mode": "configured-proxy",
+        "path": "/reading.html",
+        "exit": 0,
+        "httpCode": 200,
+        "httpVersion": "2",
+        "seconds": 1.186956,
+        "downloadBytes": 14246,
+        "tlsVerifyResult": 0,
+        "altSvc": [
+          "alt-svc: h3=\":443\"; ma=3600"
+        ],
+        "country": "US",
+        "decodedBytes": 58249,
+        "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61",
+        "matchesLocal": true,
+        "error": ""
+      },
+      {
+        "mode": "configured-proxy",
+        "path": "/models/overview-low.glb",
+        "exit": 0,
+        "httpCode": 200,
+        "httpVersion": "2",
+        "seconds": 3.276317,
+        "downloadBytes": 2867205,
+        "tlsVerifyResult": 0,
+        "altSvc": [
+          "alt-svc: h3=\":443\"; ma=3600"
+        ],
+        "country": "US",
+        "decodedBytes": 3495000,
+        "sha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
+        "matchesLocal": true,
+        "error": ""
+      },
+      {
+        "mode": "proxy-ip-diagnostic",
+        "path": "/healthz",
+        "exit": 0,
+        "httpCode": 200,
+        "httpVersion": "2",
+        "seconds": 0.863506,
+        "downloadBytes": 189,
+        "tlsVerifyResult": 0,
+        "altSvc": [
+          "alt-svc: h3=\":443\"; ma=3600"
+        ],
+        "country": "US",
+        "decodedBytes": 189,
+        "sha256": "6759aadf6ad38d3c1bbb4516e189c195848ef50e42fb069a7438a091f086ecc5",
+        "matchesLocal": null,
+        "error": ""
+      },
+      {
+        "mode": "proxy-ip-diagnostic",
+        "path": "/reading.html",
+        "exit": 0,
+        "httpCode": 200,
+        "httpVersion": "2",
+        "seconds": 0.85972,
+        "downloadBytes": 14246,
+        "tlsVerifyResult": 0,
+        "altSvc": [
+          "alt-svc: h3=\":443\"; ma=3600"
+        ],
+        "country": "US",
+        "decodedBytes": 58249,
+        "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61",
+        "matchesLocal": true,
+        "error": ""
+      },
+      {
+        "mode": "proxy-ip-diagnostic",
+        "path": "/models/overview-low.glb",
+        "exit": 0,
+        "httpCode": 200,
+        "httpVersion": "2",
+        "seconds": 3.103042,
+        "downloadBytes": 2867205,
+        "tlsVerifyResult": 0,
+        "altSvc": [
+          "alt-svc: h3=\":443\"; ma=3600"
+        ],
+        "country": "US",
+        "decodedBytes": 3495000,
+        "sha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
+        "matchesLocal": true,
+        "error": ""
+      }
+    ]
+  },
+  "experiment": {
+    "applicationAltSvc": "reverted",
+    "reason": "Zeabur ingress appended h3 alongside clear; not a reliable site-level HTTP/3 switch",
+    "sharedIngressChanged": false
+  },
+  "localProxy": {
+    "scope": "exact project hostname only",
+    "existingGroupRetained": true,
+    "publicIp": "47.89.212.251",
+    "udpFallback": true,
+    "unrelatedConfigurationCompared": true,
+    "backup": ".checkpoints/proxy-mac-20260924/",
+    "oldSiteConnectionClosed": true
+  },
+  "cdn": false,
+  "customDomainAvailable": false,
+  "universalProxyReachabilityGuaranteed": false
+}
