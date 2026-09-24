@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-24T04:44:16.439811+00:00",
+  "unitAndApi": {
+    "passed": 107,
+    "command": "npm test -- --no-file-parallelism"
+  },
+  "afterConversationPromptChange": {
+    "apiTestsPassed": 12,
+    "lint": "passed"
+  },
+  "build": "npm run build passed",
+  "integrityChecks": 10968,
+  "localBrowserChecks": 35,
+  "liveModel": {
+    "passed": true,
+    "requests": 11,
+    "checks": 11,
+    "report": "live-local-final/report.json"
+  },
+  "conversationReview": {
+    "firstOnlineReply": "Rejected for unsupported past visits despite correctly declining knowledge of marriage",
+    "groundedReply": "Only supplied reading memory; no invented past visits",
+    "unverifiedHistory": "Does not turn prior unsupported model reply into confirmed knowledge; evidenceIds empty"
+  },
+  "imageCalls": 0,
+  "initialFailures": [
+    "Windows file handles and polling reads blocked fixture cleanup/atomic rename; test I/O corrected and full suite passed.",
+    "Old live script addressed the follow-camera selection instead of Baoyu. Explicit actor selection fixed; model requests themselves all succeeded.",
+    "Software renderer browser run timed out during a screenshot; full default-renderer regression passed.",
+    "Bundled Chromium was absent and download timed out. Completed browser checks used installed Edge.",
+    "TLS/proxy and HTTP3 loading failures are documented in docs/NETWORK.md. Final site configuration passed without browser networking flags."
+  ],
+  "limitations": [
+    "Local Clash fix applies to this computer/current subscription.",
+    "Domain mapping needs updating if the public server address changes.",
+    "Mobile checks use browser touch emulation.",
+    "Limited model samples cannot prove every possible narrative is factually grounded."
+  ],
+  "paidTextCalls": 26,
+  "finalOnlineConversation": "conversation-grounded-online.json"
+}

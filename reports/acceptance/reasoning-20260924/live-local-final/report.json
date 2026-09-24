@@ -1,0 +1,164 @@
+{
+  "at": "2026-09-24T04:24:19.063Z",
+  "url": "http://127.0.0.1:4293/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "checks": [
+    "server advertises the configured DeepSeek model without credentials",
+    "real model parses the IF condition without advancing time",
+    "private IF knowledge remains confined to its recipient",
+    "live model completes and saves Tick 1",
+    "saved snapshot identifies the actual model decision source",
+    "live model completes and saves Tick 2",
+    "model follows the personal request through the existing courtyard route",
+    "completed request is consumed only after the saved action",
+    "one intervention, eight personal decisions and two summaries succeed over real HTTP",
+    "all four people receive separate model decisions",
+    "no browser runtime errors"
+  ],
+  "requests": [
+    {
+      "operation": "intervention",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    }
+  ],
+  "decisions": [
+    {
+      "agent": "baoyu",
+      "action": "visit",
+      "target": "daiyu",
+      "reason": "新得知贾府要让我娶宝钗，心里不安，想私下找黛玉商量；她是我最信任的人。",
+      "evidenceIds": [
+        "baoyu:0:1:knowledge:if:1:0:baoyu"
+      ]
+    },
+    {
+      "agent": "daiyu",
+      "action": "talk",
+      "target": "baoyu",
+      "reason": "按当前计划，既然在潇湘馆门前遇见宝玉，先问安，再继续自己的安排。",
+      "content": "今日可还安好？",
+      "evidenceIds": []
+    },
+    {
+      "agent": "baochai",
+      "action": "move",
+      "target": "hengwuyuan",
+      "spot": "court",
+      "reason": "按日常计划，先移步蘅芷步道清静处，以便坐定读书。",
+      "evidenceIds": [
+        "baochai:0:0:activity:"
+      ]
+    },
+    {
+      "agent": "wangxifeng",
+      "action": "write",
+      "target": "daguanyuan_gate",
+      "reason": "午后来到园门，四下人少，正合我核理今日出入用度。依日常惯例先记下几笔账目与差事，免得回房后事杂遗忘，也便于回禀太太。",
+      "spot": "gate",
+      "evidenceIds": []
+    },
+    {
+      "agent": "baoyu",
+      "action": "move",
+      "target": "qiushuangzhai",
+      "spot": "court",
+      "reason": "玩家托付我前往秋爽斋，虽刚至潇湘馆见黛玉在门前，但须先依嘱执行此步；此刻精神尚可，沿园中路径前往。",
+      "evidenceIds": []
+    },
+    {
+      "agent": "daiyu",
+      "action": "move",
+      "target": "xiaoxiangguan",
+      "spot": "court",
+      "reason": "按当前计划，先离开门前烦扰，到竹径深处静一静，理清诗思，再提笔写作。",
+      "evidenceIds": [
+        "daiyu:interaction:if:1:1:1",
+        "daiyu:0:0:activity:"
+      ]
+    },
+    {
+      "agent": "baochai",
+      "action": "read",
+      "reason": "午后已按计划移至蘅芷步道，此处幽芳清静，无闲人打扰，正合依日常计划坐定读书，以践读书自持之志。",
+      "evidenceIds": [
+        "baochai:activity:if:1:1:4",
+        "baochai:0:0:activity:"
+      ]
+    },
+    {
+      "agent": "wangxifeng",
+      "action": "observe",
+      "target": "daguanyuan_gate",
+      "reason": "账目已记下，园门午后出入渐多，正好留神看视门户与往来，兼顾家务，也不枉在此。",
+      "spot": "gate",
+      "evidenceIds": [
+        "wangxifeng:1:0:activity:"
+      ]
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "reports/acceptance/reasoning-20260924/live-local-final/desktop-model-settings.png",
+    "reports/acceptance/reasoning-20260924/live-local-final/desktop-model-court.png",
+    "reports/acceptance/reasoning-20260924/live-local-final/mobile-model-settings.png"
+  ],
+  "modelLabel": "DeepSeek-V4.1-Flash",
+  "final": {
+    "tick": 2,
+    "baoyu": {
+      "location": "qiushuangzhai",
+      "spot": "court"
+    },
+    "provider": "DeepSeek-V4.1-Flash"
+  },
+  "passed": true
+}

@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-24T04:47:19.196725+00:00",
+  "matched": 7,
+  "files": [
+    {
+      "path": "server.mjs",
+      "sha256": "e65d04c4fe9af829c2baf7916210932900ccc617eadb6c44389df59587cfcbe6",
+      "bytes": 5339
+    },
+    {
+      "path": "server/simulation-api.mjs",
+      "sha256": "c6346a24d2481df61a5f6cd188ddbac5fd66c4d2d0a414075134fa3f0a8e8346",
+      "bytes": 17572
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "796c8dd8ef9d20e10f2c8e9799c7b80793df4003954b2fac0554fba430788e8b",
+      "bytes": 1349
+    },
+    {
+      "path": "dist/assets/index-DKlVxA3W.js",
+      "sha256": "f5f38974894d24a7c3541cd69829b9cb896366da7790128a7626fcbaa9e2e410",
+      "bytes": 805646
+    },
+    {
+      "path": "dist/assets/index-B3ZmnKrO.css",
+      "sha256": "1d092e7494f167bde31f562e2abea7a8cf4a5a5d6678d7aba0cc26d3cd53a463",
+      "bytes": 106750
+    },
+    {
+      "path": "dist/assets/garden-mark-COPNxcSD.svg",
+      "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070",
+      "bytes": 458
+    },
+    {
+      "path": "dist/assets/GardenScene-DTnsxuMm.js",
+      "sha256": "8645ce78e478ef7c5b9676c4fcb29042eb653a253f8f1b38a1f144a741ddffa1",
+      "bytes": 1413735
+    }
+  ]
+}

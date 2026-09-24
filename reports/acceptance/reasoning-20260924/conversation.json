@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-24T04:39:28.851Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app",
+  "operation": "conversation",
+  "status": 200,
+  "paidTextCalls": 1,
+  "question": "方才你在何处做什么？宝玉已经告诉你婚事了吗？",
+  "providedMemories": [
+    {
+      "id": "own-reading",
+      "content": "午后在潇湘馆读书，尚未收到任何婚事消息。"
+    }
+  ],
+  "reply": {
+    "reply": "（手中书卷微顿）方才只在潇湘馆里坐着读书，窗外竹影摇动，也没往别处去。至于什么婚事……你这话从何说起？我可没听谁提起过。宝二哥近日不过常来坐坐，说些闲话，问我的药吃了没有，哪有什么正经事同我讲。倒是你，忽然问起这个，倒叫人心头一跳。莫不是外头又有什么风声，你先听着了，却拿来试我？",
+    "evidenceIds": [
+      "own-reading"
+    ]
+  },
+  "internalReasoningReturned": false
+}

@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-24T04:47:40.254Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "checks": [
+    {
+      "mode": "system",
+      "readyMs": 12333,
+      "health": {
+        "status": "ok",
+        "application": "daguanyuan-rumeng",
+        "revision": "spatial-garden-20260918-r22",
+        "featureRevision": "honglou-silk-20260917-v6",
+        "simulationRevision": "personal-reasoning-20260924-v2"
+      },
+      "failures": [],
+      "dnsOverride": false,
+      "tlsVerified": true,
+      "httpVersionOverride": false
+    },
+    {
+      "mode": "explicit-proxy",
+      "readyMs": 8617,
+      "health": {
+        "status": "ok",
+        "application": "daguanyuan-rumeng",
+        "revision": "spatial-garden-20260918-r22",
+        "featureRevision": "honglou-silk-20260917-v6",
+        "simulationRevision": "personal-reasoning-20260924-v2"
+      },
+      "failures": [],
+      "dnsOverride": false,
+      "tlsVerified": true,
+      "httpVersionOverride": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-24T04:40:56.657Z",
+  "url": "http://127.0.0.1:4294",
+  "operation": "conversation",
+  "status": 200,
+  "paidTextCalls": 1,
+  "question": "方才你在何处做什么？宝玉已经告诉你婚事了吗？",
+  "providedMemories": [
+    {
+      "id": "own-reading",
+      "content": "午后在潇湘馆读书，尚未收到任何婚事消息。"
+    }
+  ],
+  "reply": {
+    "reply": "我方才不过是在潇湘馆里读书，午后也未曾出去。你忽然问起宝玉的婚事，我倒不知这话从何而来——我并未收到什么婚事消息。若外头真有什么传言，也该先问明来处，莫拿这些没影儿的话来试我。",
+    "evidenceIds": [
+      "own-reading"
+    ]
+  },
+  "internalReasoningReturned": false
+}

@@ -1,0 +1,57 @@
+{
+  "at": "2026-09-24T04:49:00.098028+00:00",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "sourceCommit": "5affbd243942cc7d74194153183c55d2c62ed684",
+  "branch": "main",
+  "serverId": "6a8eee0bb11fb81fb4aaca05",
+  "serviceId": "6aa143296c3d9581b71560fa",
+  "projectId": "6aa142fb6c3d9581b71560ed",
+  "environmentId": "6aa142fbda9bc245fba1e845",
+  "deploymentId": "6ab4aa6ae92e928954aca52b",
+  "finishedAt": "2026-09-24T04:45:30.88Z",
+  "status": "RUNNING",
+  "simulationRevision": "personal-reasoning-20260924-v2",
+  "sceneRevision": "spatial-garden-20260918-r22",
+  "dreamRevision": "honglou-silk-20260917-v6",
+  "packageDirectory": ".deploy/reference-20260924-044145-687232",
+  "uploadBytes": 50250699,
+  "uploadFiles": 912,
+  "publicResourcesVerified": 632,
+  "sourceAndBundleHashesVerified": 7,
+  "preservation": {
+    "at": "2026-09-24T04:47:24.371Z",
+    "variablesUnchanged": true,
+    "variableCount": 18,
+    "volumeUnchanged": true,
+    "albumUnchanged": true,
+    "albumFiles": 6,
+    "albumBytes": 7486038
+  },
+  "validation": "../validation.json",
+  "network": "final-network/report.json",
+  "conversation": "../conversation-grounded-online.json",
+  "paidTextCalls": 26,
+  "paidImageCalls": 0,
+  "newServerPurchased": false,
+  "unrelatedServicesChanged": false,
+  "proxyFix": {
+    "scope": "this computer/current Clash subscription; daguanyuan-rumeng.zeabur.app only",
+    "domainAddress": "47.89.212.251",
+    "existingProxyGroupRetained": true,
+    "siteUdpFallsBackToTcp": true,
+    "browserDnsOverride": false,
+    "browserHttpVersionFlags": false,
+    "tlsVerification": true,
+    "details": "docs/NETWORK.md"
+  },
+  "screens": [
+    {
+      "path": "reports/acceptance/reasoning-20260924/deployment/final-network/explicit-proxy.png",
+      "sha256": "7e8877fcba239eb625d3614d5681da009b9f0e1c24fa95b99121d08d953db9b1"
+    },
+    {
+      "path": "reports/acceptance/reasoning-20260924/deployment/final-network/system.png",
+      "sha256": "3ac4768f5d4c13708ddabb601afc991090d5671b6c0073f630a21578eb87ac88"
+    }
+  ]
+}

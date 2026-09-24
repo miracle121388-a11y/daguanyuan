@@ -1,0 +1,153 @@
+{
+  "at": "2026-09-24T04:21:09.766Z",
+  "url": "http://127.0.0.1:4293/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "checks": [
+    "server advertises the configured DeepSeek model without credentials",
+    "real model parses the IF condition without advancing time",
+    "private IF knowledge remains confined to its recipient",
+    "live model completes and saves Tick 1",
+    "saved snapshot identifies the actual model decision source",
+    "live model completes and saves Tick 2"
+  ],
+  "requests": [
+    {
+      "operation": "intervention",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baoyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "daiyu",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "baochai",
+      "status": 200
+    },
+    {
+      "operation": "action",
+      "agent": "wangxifeng",
+      "status": 200
+    },
+    {
+      "operation": "summary",
+      "status": 200
+    }
+  ],
+  "decisions": [
+    {
+      "agent": "baoyu",
+      "action": "visit",
+      "target": "daiyu",
+      "reason": "方才得知贾府欲为我定亲宝钗，心中难安，原午后闲歇已不足安心；黛玉是我最信重之人，先去潇湘馆找她商议，听她怎么说。",
+      "evidenceIds": [
+        "baoyu:0:1:knowledge:if:1:0:baoyu"
+      ]
+    },
+    {
+      "agent": "daiyu",
+      "action": "talk",
+      "target": "baoyu",
+      "reason": "午后在潇湘馆歇息方起，见宝玉到竹影下来，正好依计先问一声近况，再安顿自己的读写之事。",
+      "content": "今日可还安好？",
+      "evidenceIds": []
+    },
+    {
+      "agent": "baochai",
+      "action": "move",
+      "target": "hengwuyuan",
+      "spot": "court",
+      "reason": "午后已歇息，精力尚可，按当前计划先往蘅芷步道，以便停留读书。",
+      "evidenceIds": [
+        "baochai:0:0:activity:"
+      ]
+    },
+    {
+      "agent": "wangxifeng",
+      "action": "write",
+      "reason": "依例行计划，在园门附近核理日常事务；午后精力尚可，先记下需办事项，以免出入账目疏漏。",
+      "evidenceIds": [
+        "wangxifeng:0:0:activity:"
+      ]
+    },
+    {
+      "agent": "baoyu",
+      "action": "talk",
+      "target": "daiyu",
+      "reason": "我午后本已歇过，此刻并不困乏；方才得了贾府欲为我定亲宝钗的消息，心中难安，黛玉是我最信重之人，既已到潇湘馆门前，便依前定主意把这桩心事当面说与她，听她如何说。",
+      "content": "我得知：贾府准备让他迎娶薛宝钗",
+      "knowledgeId": "if:1:0:baoyu",
+      "evidenceIds": [
+        "baoyu:0:1:knowledge:if:1:0:baoyu",
+        "baoyu:interaction:if:1:1:1"
+      ]
+    },
+    {
+      "agent": "daiyu",
+      "action": "talk",
+      "target": "baoyu",
+      "reason": "方才宝玉亲口传来贾府欲为他娶宝钗的消息，我心绪难平，需先回应他，容自己静一静再理清此事。",
+      "content": "此事来得突然，容我静一静。",
+      "evidenceIds": [
+        "daiyu:knowledge:if:1:2:0",
+        "daiyu:interaction:if:1:2:0"
+      ]
+    },
+    {
+      "agent": "baochai",
+      "action": "read",
+      "reason": "午后已歇息，精力尚可，按当前计划在蘅芷步道停留读书；四下无人可谈，正合静心自持。",
+      "evidenceIds": [
+        "baochai:activity:if:1:1:4",
+        "baochai:0:0:activity:"
+      ]
+    },
+    {
+      "agent": "wangxifeng",
+      "action": "move",
+      "target": "qiushuangzhai",
+      "spot": "court",
+      "reason": "玩家有托付在身，秋爽斋尚待我去料理；此刻午后精神尚可，趁早动身，免得耽搁正事。",
+      "evidenceIds": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "reports/acceptance/reasoning-20260924/live-local/desktop-model-settings.png",
+    "reports/acceptance/reasoning-20260924/live-local/failure.png"
+  ],
+  "modelLabel": "DeepSeek-V4.1-Flash",
+  "passed": false,
+  "failure": "model follows the personal request through the existing courtyard route"
+}

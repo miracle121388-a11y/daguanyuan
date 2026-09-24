@@ -1,0 +1,15 @@
+{
+  "renderer": "Chromium / ANGLE SwiftShader (software)",
+  "at": "2026-09-24T04:29:35.540Z",
+  "url": "http://127.0.0.1:4293/",
+  "dnsOverride": null,
+  "tlsVerification": false,
+  "checks": [],
+  "errors": [],
+  "failedRequests": [],
+  "screenshots": [
+    "reports/acceptance/reasoning-20260924/local-regression/failure.png"
+  ],
+  "status": "failed",
+  "failure": "page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n\n    at screenshot (D:\\Users\\Lenovo\\Desktop\\大观园\\scripts\\simulation_smoke.mjs:17:125)\n    at async file:///D:/Users/Lenovo/Desktop/%E5%A4%A7%E8%A7%82%E5%9B%AD/scripts/simulation_smoke.mjs:44:3"
+}
