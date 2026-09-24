@@ -16,6 +16,37 @@ async function serve(env: Record<string, string | undefined> = {}, request: type
 const post = (url: string, body: unknown, headers = {}) => fetch(url + '/api/simulation', {method: 'POST', headers: {'Content-Type': 'application/json', Authorization: 'Bearer access-fixture', ...headers}, body: JSON.stringify(body)});
 
 describe('optional server-side model boundary', () => {
+  it('deliberates on actions, retains grounded evidence and does not expose internal reasoning', async () => {
+    const result = {agent: 'baoyu', action: 'rest', reason: '刚走过长路，先歇息。', evidenceIds: ['walk']};
+    const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{finish_reason: 'stop', message: {content: JSON.stringify(result), reasoning_content: 'private reasoning fixture'}}]})));
+    const url = await serve({...settings, LLM_BASE_URL: 'https://api.deepseek.com', LLM_MODEL: 'deepseek-flash'}, upstream as typeof fetch);
+    const response = await post(url, {operation: 'action', payload: {self: {id: 'baoyu'}, memories: [{id: 'walk', content: '刚走过长路'}], nearby: [], places: [], dialogueOptions: []}});
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({result});
+    const sent = JSON.parse((upstream.mock.calls[0] as unknown as [string, RequestInit])[1].body as string);
+    expect(sent).toMatchObject({thinking: {type: 'enabled'}, reasoning_effort: 'high', max_tokens: 8192});
+  });
+  it('rejects fabricated action evidence, unknown visits and ignored priority plans', async () => {
+    let result: Record<string, unknown> = {agent: 'baoyu', action: 'rest', evidenceIds: ['someone-elses-memory']};
+    const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{message: {content: JSON.stringify(result)}}]})));
+    const url = await serve(settings, upstream as typeof fetch);
+    const payload = {self: {id: 'baoyu', plan: {trigger: 'needs', steps: [{action: 'rest'}]}}, memories: [], nearby: [], places: [], dialogueOptions: []};
+    expect((await post(url, {operation: 'action', payload})).status).toBe(502);
+    result = {agent: 'baoyu', action: 'read', evidenceIds: []};
+    expect((await post(url, {operation: 'action', payload})).status).toBe(502);
+    result = {agent: 'baoyu', action: 'rest', evidenceIds: []};
+    expect((await post(url, {operation: 'action', payload})).status).toBe(200);
+    result = {agent: 'baoyu', action: 'visit', target: 'daiyu', evidenceIds: []};
+    expect((await post(url, {operation: 'action', payload: {...payload, self: {id: 'baoyu'}}})).status).toBe(502);
+    expect((await post(url, {operation: 'action', payload: {...payload, self: {id: 'baoyu', knownLocations: {daiyu: 'xiaoxiangguan'}}}})).status).toBe(200);
+  });
+  it('does not save a token-truncated decision even when its JSON parses', async () => {
+    const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{finish_reason: 'length', message: {content: '{"agent":"baoyu","action":"rest"}'}}]})));
+    const url = await serve(settings, upstream as typeof fetch);
+    const response = await post(url, {operation: 'action', payload: {self: {id: 'baoyu'}, memories: [], nearby: [], places: [], dialogueOptions: []}});
+    expect(response.status).toBe(502);
+    expect((await response.json()).error).toContain('未完成思考');
+  });
   it('carries validated literary limits upstream and rejects out-of-version chapters', async () => {
     const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{message: {content: JSON.stringify({reply: '只说我眼前所知。', evidenceIds: []})}}]})));
     const url=await serve(settings,upstream as typeof fetch);

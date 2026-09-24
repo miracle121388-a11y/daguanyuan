@@ -30,14 +30,16 @@ export class RemoteProvider implements LLMProvider {
     const abort = () => timeout.abort();
     signal.addEventListener('abort', abort, {once: true});
     if (signal.aborted) timeout.abort();
-    const timer = setTimeout(() => timeout.abort(), 30000);
+    const timeoutMs = ['action', 'conversation'].includes(operation) ? 75000 : 30000;
+    const timer = setTimeout(() => timeout.abort(), timeoutMs);
     try {
       const response = await fetch('/api/simulation', {method: 'POST', headers: {'Content-Type': 'application/json', ...(this.accessToken ? {Authorization: `Bearer ${this.accessToken}`} : {})}, body: JSON.stringify({operation, payload}), signal: timeout.signal});
       const result = await response.json();
       if (!response.ok) throw new Error(result.error || `模型请求失败（${response.status}）。`);
       return result.result;
     } catch (error) {
-      if (timeout.signal.aborted && !signal.aborted) throw new Error('模型响应超过30秒，本步未保存。请重试或切换本地规则。');
+      if (timeout.signal.aborted && !signal.aborted) throw new Error(`模型响应超过${timeoutMs / 1000}秒，本步未保存。请重试或切换本地规则。`);
+      if (error instanceof TypeError && !signal.aborted) throw new Error('未能连接推演服务，本步未保存。请检查当前网络或代理线路后重试。');
       throw error;
     } finally { clearTimeout(timer); signal.removeEventListener('abort', abort); }
   }

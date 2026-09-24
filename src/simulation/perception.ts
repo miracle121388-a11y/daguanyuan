@@ -5,8 +5,15 @@ import {placeSetting, spotName} from './space';
 import {literaryContext} from './story';
 
 export function retrieveMemories(agent: Agent, nearby: AgentId[]): Memory[] {
-  return agent.memories.map((m, index) => ({m, score: index / Math.max(1, agent.memories.length) * 3 + (m.importance ?? (m.type === 'knowledge' ? 80 : 20)) / 10 + (m.participants.some(id => id !== agent.id && nearby.includes(id)) ? 4 : 0)}))
-    .sort((a, b) => b.score - a.score).slice(0, 6).map(({m}) => clone(m));
+  // Reserve room for actual recent outcomes so old important news cannot hide
+  // a just-completed visit or conversation. Reflections are interpretations.
+  const recent = agent.memories.filter(m => m.type !== 'reflection').slice(-2).reverse();
+  const evidence = new Set(agent.plan?.evidenceIds ?? []);
+  const ranked = agent.memories.map((m, index) => ({m, score: index / Math.max(1, agent.memories.length) * 3 + (m.importance ?? (m.type === 'knowledge' ? 80 : 20)) / 10 + (m.participants.some(id => id !== agent.id && nearby.includes(id)) ? 4 : 0) + (evidence.has(m.id) ? 5 : 0) - (m.type === 'reflection' ? 3 : 0)}))
+    .sort((a, b) => b.score - a.score);
+  const selected = [...recent];
+  for (const {m} of ranked) if (selected.length < 6 && !selected.some(item => item.id === m.id)) selected.push(m);
+  return selected.map(m => clone(m));
 }
 export function perceive(world: WorldState, id: AgentId, data: CanonData): Perception {
   const agent = world.agents[id];

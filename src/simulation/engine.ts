@@ -107,13 +107,13 @@ function applyAction(world: WorldState, baseline: WorldState, command: SceneComm
     actor.position = [...command.path.at(-1)!];
     actor.knownLocations[id] = actor.location;
     const text = `${actor.name}从${from}沿步道来到${spotName(data, actor.location, actor.spot)}。`;
-    const event = log('action', text, id, {location: actor.location, knowledgeId: action.knowledgeId, evidenceIds: actor.plan?.evidenceIds, reason: action.reason});
+    const event = log('action', text, id, {location: actor.location, knowledgeId: action.knowledgeId, evidenceIds: action.evidenceIds ?? actor.plan?.evidenceIds, reason: action.reason});
     addMemory(actor, {tick: world.tick, type: 'activity', content: text, participants: [id], origin: 'generated', sourceEventId: event.id});
     actor.mood.energy = clamp(actor.mood.energy - 5);
   } else if (action.action === 'talk') {
     const other = world.agents[action.target as AgentId];
     const knowledge = action.knowledgeId && actor.memories.find(m => m.type === 'knowledge' && m.knowledgeId === action.knowledgeId);
-    const event = log('dialogue', `${actor.name}对${other.name}说：“${action.content}”`, id, {target: other.id, location: actor.location, knowledgeId: action.knowledgeId, evidenceIds: knowledge ? [knowledge.id] : actor.plan?.evidenceIds, reason: action.reason});
+    const event = log('dialogue', `${actor.name}对${other.name}说：“${action.content}”`, id, {target: other.id, location: actor.location, knowledgeId: action.knowledgeId, evidenceIds: knowledge ? [knowledge.id] : action.evidenceIds ?? actor.plan?.evidenceIds, reason: action.reason});
     for (const person of [actor, other]) {
       if (knowledge && !person.memories.some(m => m.type === 'knowledge' && m.knowledgeId === knowledge.knowledgeId)) {
         addMemory(person, {tick: world.tick, type: 'knowledge', content: knowledge.content, participants: [id, other.id], knowledgeId: knowledge.knowledgeId, origin: 'generated', sourceAgent: id, sourceEventId: event.id, importance: 85});
@@ -150,6 +150,6 @@ function applyAction(world: WorldState, baseline: WorldState, command: SceneComm
       const nearby = agentIds.filter(other => other !== id && world.agents[other].alive && world.agents[other].location === actor.location);
       addMemory(actor, {tick: world.tick, type: 'observation', content: nearby.length ? `在此看见${nearby.map(other => world.agents[other].name).join('、')}。` : '此处暂未遇见其他人。', participants: [id, ...nearby], origin: 'generated'});
     } else addMemory(actor, {tick: world.tick, type: 'activity', content: text, participants: [id], origin: 'generated'});
-    log('action', text, id, {location: actor.location, evidenceIds: actor.plan?.evidenceIds, reason: action.reason});
+    log('action', text, id, {location: actor.location, evidenceIds: action.evidenceIds ?? actor.plan?.evidenceIds, reason: action.reason});
   }
 }

@@ -33,8 +33,9 @@ it('rebuilds the comic references from archived sources while retaining the Sun 
     expect(ref.sources[0].catalog).toBe('references/dream-scene-sources/manifest.json');
     expect(ref.sources[0].originalCatalog).toBe('public/art/manifest.json');
     // Archive paths change EXIF provenance; the actual image pixels must remain identical.
-    const generated = await sharp(resolve(root, 'public', ref.path)).raw().toBuffer();
-    expect(generated).toEqual(await sharp(resolve(repository, 'public', ref.path)).raw().toBuffer());
+    // Buffer input avoids libvips retaining Windows file handles after decoding.
+    const generated = await sharp(await readFile(resolve(root, 'public', ref.path))).raw().toBuffer();
+    expect(generated).toEqual(await sharp(await readFile(resolve(repository, 'public', ref.path))).raw().toBuffer());
   }
 }, 45000);
 

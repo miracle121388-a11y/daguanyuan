@@ -15,6 +15,7 @@ export const actionSchema = z.object({
   content: z.string().max(600).optional(),
   knowledgeId: z.string().max(100).optional(),
   spot: z.enum(['gate', 'court']).optional(),
+  evidenceIds: z.array(z.string().max(300)).max(6).optional(),
 }).strict();
 export type SemanticAction = z.infer<typeof actionSchema>;
 const score = z.number().finite().min(0).max(100);

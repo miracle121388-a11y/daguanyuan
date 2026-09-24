@@ -11,6 +11,12 @@ export function validateAction(raw: unknown, id: AgentId, world: WorldState, per
   if (!parsed.success) return wait('行动结构不合法，已改为等待。');
   let action = parsed.data;
   if (action.agent !== id) return wait('不能替其他人物作决定。');
+  if (action.evidenceIds?.some(memoryId => !perception.memories.some(m => m.id === memoryId))) return wait('行动引用了本人当前不可知的记忆，已拒绝使用。');
+  const plan = perception.self.plan;
+  if (plan && ['player', 'needs'].includes(plan.trigger)) {
+    const next = plan.steps[0];
+    if (!next || action.action !== next.action || action.target !== next.target || action.spot !== next.spot) return wait('本步须先处理身体需要或当前托付，已拒绝偏离计划。');
+  }
   const actor = world.agents[id];
   if (!actor.alive) return wait('人物已不在世，停止行动。');
   if (action.knowledgeId && !actor.memories.some(m => m.knowledgeId === action.knowledgeId)) return wait('人物尚不知道这条信息，已拒绝使用。');
@@ -26,7 +32,7 @@ export function validateAction(raw: unknown, id: AgentId, world: WorldState, per
       if (!known) return wait('尚不知道对方所在的地点。');
       if (action.action === 'talk') notes.push('两人尚未同处，先沿道路前往已知的地点。');
       if (observed && distance > 4) notes.push('先沿院内步道走到对方身边。');
-      action = {agent: id, action: 'move', target: observed ? actor.location : known, spot: observed?.spot ?? 'gate', reason: action.reason, knowledgeId: action.knowledgeId};
+      action = {agent: id, action: 'move', target: observed ? actor.location : known, spot: observed?.spot ?? 'gate', reason: action.reason, knowledgeId: action.knowledgeId, evidenceIds: action.evidenceIds};
     } else {
       if (distance > 4) return wait('对话距离过远，暂不能交谈。');
       const offered = perception.dialogueOptions.find(option => option.target === otherId && option.content === action.content && option.knowledgeId === action.knowledgeId);

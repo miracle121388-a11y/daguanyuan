@@ -1,4 +1,4 @@
-// Opt-in live model acceptance: one IF plus two complete ticks (11 small calls).
+// Opt-in live model acceptance: one IF plus two complete ticks (11 calls).
 // Reads only server-side credentials. Reports never contain headers or tokens.
 import {chromium} from 'playwright';
 import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
@@ -27,7 +27,7 @@ async function completed(tick) {
   await page.waitForFunction(({key, tick}) => {
     const j = JSON.parse(localStorage.getItem(key) || 'null');
     return j?.[j.active].snapshots[j[j.active].cursor].worldState.tick === tick || !!document.querySelector('.sim-error[role="alert"]');
-  }, {key, tick}, {timeout: 180000});
+  }, {key, tick}, {timeout: 360000});
   check(snapshot(await stored()).worldState.tick === tick, `live model completes and saves Tick ${tick}`);
 }
 try {
@@ -54,6 +54,8 @@ try {
   await completed(1);
   check(snapshot(await stored()).provider === config.modelLabel, 'saved snapshot identifies the actual model decision source');
   await page.getByRole('button', {name: '托付与追问', exact: true}).click();
+  // Story follow-camera can select the last acting person after a tick.
+  await page.locator('.sim-person-tabs').getByRole('button', {name: '贾宝玉', exact: true}).click();
   await page.locator('.sim-request select').first().selectOption('move');
   await page.getByRole('combobox', {name: '前往地点'}).selectOption('qiushuangzhai');
   await page.getByRole('button', {name: '记下托付', exact: true}).click();

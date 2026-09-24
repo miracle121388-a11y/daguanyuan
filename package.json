@@ -27,6 +27,7 @@
     "build": "node scripts/clean_build.mjs && npm run data:build && tsc --noEmit && vite build",
     "test:simulation": "node scripts/simulation_smoke.mjs",
     "test:simulation:model": "node scripts/simulation_model_smoke.mjs",
+    "test:network": "node scripts/network_smoke.mjs",
     "simulation:space": "node scripts/check_simulation_routes.mjs",
     "test:e2e": "node scripts/run_e2e.mjs",
     "pipeline": "node scripts/pipeline.mjs all",

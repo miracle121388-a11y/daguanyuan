@@ -60,8 +60,11 @@ describe('private generated-story album',()=>{
     });
     const env={...settings,IMAGE_PROTOCOL:'dashscope',IMAGE_DAILY_LIMIT:'1'};
     const first=await serve(env,request as typeof fetch,undefined,10000);const {job}=await(await post(first.url+'/jobs')).json();
-    await vi.waitFor(async()=>expect(JSON.parse(await readFile(resolve(first.root,job.id+'.json'),'utf8')).providerTaskId).toBe('fixture-task-001'));
+    // Observe through HTTP while the worker atomically replaces its file.
+    // Repeated Windows readFile calls can deny the concurrent rename.
+    await vi.waitFor(async()=>expect((await(await fetch(first.url+'/jobs/'+job.id,{headers})).json()).job.providerTaskId).toBe('fixture-task-001'),{timeout:4000,interval:20});
     await first.api.close();finished=true;
+    expect(JSON.parse(await readFile(resolve(first.root,job.id+'.json'),'utf8')).providerTaskId).toBe('fixture-task-001');
     const next=await serve(env,request as typeof fetch,first.root);const done=await waitJob(next.url,job.id);
     expect(done.attempts).toHaveLength(1);expect(submissions).toBe(1);
     expect((await(await fetch(next.url+'/config')).json()).remaining).toBe(0);

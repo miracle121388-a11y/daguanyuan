@@ -11,6 +11,7 @@ const instructions = {
   summary: `仅概括收到的虚构推演日志，返回JSON {"summary":"不超过600字"}。禁止添加事件、因果或原著事实，不改变任何世界状态。`,
 };
 const actionFormat = `当self.plan.trigger为player时，当前计划已经处理身体需要的优先级；本步须执行steps[0]规定的action、target和spot，仅reason可结合自己的性格说明，不要用闲谈或旧消息替换这次托付。若身体状态确实要求先歇息，收到的计划会明确标为needs。输出示例：{"agent":"daiyu","action":"talk","target":"baoyu","reason":"向眼前的人问安","content":"今日可还安好？"}。示例仅说明格式，实际人物和话语必须取自本次感知。knowledgeId是可选字段：所选dialogueOptions没有knowledgeId时，必须省略此字段；绝不能用选项索引、memory.id、evidenceIds或自造编号代替。其他不适用的可选字段也省略。`;
+const decisionRule = `作决定前区分亲历事实、听闻消息、个人猜测和未知事项；reflection只是本人猜想，不是新事实。结合最近行动的实际结果、性格目标、关系和身体需要，比较可行选择，避免重复已经完成或没有结果的行动。玩家托付和needs计划须执行steps[0]；其他计划是建议，可因当前证据调整。visit只能去nearby或self.knownLocations中已知的人，旧地点不代表对方仍在那里。不得假定传话、见面或和解已经成功。最终只输出一个行动，reason简述当前依据和行动目的，不输出思考过程；增加evidenceIds数组，仅引用本次memories里的id，最多6条；只依据眼前状态时用空数组。`;
 const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const text = (value, max) => typeof value === 'string' && value.length <= max;
 function normalizeResult(operation, result) {
@@ -40,12 +41,18 @@ function validResult(operation, result, payload) {
   if (operation === 'conversation') return Object.keys(result).every(k => ['reply', 'evidenceIds'].includes(k)) && text(result.reply, 600) && result.reply.trim().length > 0
     && Array.isArray(result.evidenceIds) && result.evidenceIds.length <= 6 && result.evidenceIds.every(id => typeof id === 'string' && payload.memories.some(m => m.id === id));
   if (operation === 'action') {
-    if (Object.keys(result).some(k => !['agent', 'action', 'target', 'reason', 'content', 'knowledgeId', 'spot'].includes(k))) return false;
+    if (Object.keys(result).some(k => !['agent', 'action', 'target', 'reason', 'content', 'knowledgeId', 'spot', 'evidenceIds'].includes(k))) return false;
+    if (result.evidenceIds !== undefined && (!Array.isArray(result.evidenceIds) || result.evidenceIds.length > 6 || result.evidenceIds.some(id => typeof id !== 'string' || !payload.memories.some(m => m.id === id)))) return false;
+    const plan = payload.self.plan;
+    if (['player', 'needs'].includes(plan?.trigger)) {
+      const next = plan.steps?.[0];
+      if (!next || ['action', 'target', 'spot'].some(k => result[k] !== next[k])) return false;
+    }
     if (result.spot !== undefined && !['gate', 'court'].includes(result.spot)) return false;
     if (result.agent !== payload.self.id || !actions.includes(result.action) || (result.reason !== undefined && !text(result.reason, 240))) return false;
     if (result.action === 'talk') return payload.dialogueOptions.some(o => o.target === result.target && o.content === result.content && o.knowledgeId === result.knowledgeId);
     if (result.action === 'move') return payload.places.some(p => p.id === result.target && (result.spot !== 'court' || p.spots?.includes('court')));
-    if (result.action === 'visit') return ids.includes(result.target);
+    if (result.action === 'visit') return ids.includes(result.target) && result.target !== payload.self.id && !!(payload.nearby.some(p => p.id === result.target) || payload.self.knownLocations?.[result.target]);
     return true;
   }
   if (result.type === 'knowledge') return ids.includes(result.target) && text(result.content, 400) && result.content.trim().length > 0 && Object.keys(result).every(k => ['type', 'target', 'content'].includes(k));
@@ -92,20 +99,28 @@ export function createSimulationApi(env = process.env, request = fetch) {
     if (Date.now() - windowStart > 60000) { windowStart = Date.now(); requestCount = 0; }
     if (inflight >= 2 || requestCount >= 30) { send(429, {error: '模型请求较多，请稍后重试。'}, {'Retry-After': '60'}); return true; }
     inflight++; requestCount++;
-    const abort = new AbortController(), timer = setTimeout(() => abort.abort(), 25000);
+    const abort = new AbortController();
+    let timer = setTimeout(() => abort.abort(), 25000);
     const disconnected = () => { if (!res.writableEnded) abort.abort(); };
     res.on('close', disconnected);
     try {
       const body = await readBody(req);
       if (!validInput(body.operation, body.payload)) { send(400, {error: '推演请求格式不正确。'}); return true; }
+      const deliberative = ['action', 'conversation'].includes(body.operation);
+      clearTimeout(timer);
+      timer = setTimeout(() => abort.abort(), deliberative ? 65000 : 25000);
       const response = await request(endpoint, {
         method: 'POST', headers: {'Content-Type': 'application/json', Authorization: `Bearer ${env.LLM_API_KEY}`}, signal: abort.signal,
-        body: JSON.stringify({model, messages: [{role: 'system', content: instructions[body.operation] + (['action', 'conversation'].includes(body.operation) ? literaryRule : '') + (body.operation === 'action' ? actionFormat : '')}, {role: 'user', content: JSON.stringify(body.payload)}], response_format: {type: 'json_object'}, ...(deepseek ? {max_tokens: 1600, thinking: {type: 'disabled'}} : {max_completion_tokens: 1600})}),
+        body: JSON.stringify({model, messages: [{role: 'system', content: instructions[body.operation] + (deliberative ? literaryRule : '') + (body.operation === 'action' ? actionFormat + decisionRule : '')}, {role: 'user', content: JSON.stringify(body.payload)}], response_format: {type: 'json_object'}, ...(deepseek ? {max_tokens: deliberative ? 8192 : 1600, thinking: {type: deliberative ? 'enabled' : 'disabled'}, ...(deliberative ? {reasoning_effort: 'high'} : {})} : {max_completion_tokens: 1600})}),
       });
       if (!response.ok) { send(502, {error: `模型服务未完成请求（${response.status}）。本步未保存，可重试。`}); return true; }
       const raw = await response.text();
-      if (raw.length > 64 * 1024) throw new Error('response-size');
-      const result = normalizeResult(body.operation, JSON.parse(JSON.parse(raw).choices?.[0]?.message?.content ?? ''));
+      if (raw.length > 256 * 1024) throw new Error('response-size');
+      const completion = JSON.parse(raw).choices?.[0];
+      if (completion?.finish_reason === 'length') { send(502, {error: '人物尚未完成思考，本步未保存。请重试。'}); return true; }
+      let result;
+      try { result = normalizeResult(body.operation, JSON.parse(completion?.message?.content ?? '')); }
+      catch { send(502, {error: '模型未返回完整的行动数据，本步未保存。请重试。'}); return true; }
       if (!validResult(body.operation, result, body.payload)) { send(502, {error: '模型返回了不符合规则的内容。本步未保存，请重试。'}); return true; }
       send(200, {result});
     } catch (error) {

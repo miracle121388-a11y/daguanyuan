@@ -57,6 +57,25 @@ describe('world and counterfactual interventions', () => {
 });
 
 describe('perception and rule boundary', () => {
+  it('retains recent outcomes alongside important news without promoting reflections to facts', () => {
+    const actor = currentWorld(createJournal(data)).agents.baoyu;
+    for (let i = 1; i <= 8; i++) addMemory(actor, {tick: i, type: 'knowledge', content: `消息${i}`, participants: ['baoyu'], origin: 'intervention', importance: 100});
+    addMemory(actor, {tick: 9, type: 'activity', content: '刚到院门', participants: ['baoyu'], origin: 'generated', importance: 10});
+    addMemory(actor, {tick: 10, type: 'observation', content: '院内未见约见的人', participants: ['baoyu'], origin: 'generated', importance: 10});
+    addMemory(actor, {tick: 10, type: 'reflection', content: '也许她去了别处', participants: ['baoyu'], origin: 'generated', importance: 45});
+    const memories = retrieveMemories(actor, []);
+    expect(memories).toHaveLength(6);
+    expect(memories.map(m => m.content)).toEqual(expect.arrayContaining(['刚到院门', '院内未见约见的人', '消息8']));
+    expect(memories.some(m => m.type === 'reflection')).toBe(false);
+  });
+  it('rejects another person’s evidence and persists the chosen action’s evidence', async () => {
+    const journal = createJournal(data), world = currentWorld(journal), p = perceive(world, 'baoyu', data);
+    expect(validateAction({agent: 'baoyu', action: 'read', evidenceIds: ['unseen-memory']}, 'baoyu', world, p, data).command.action.action).toBe('wait');
+    const id = p.memories[0].id;
+    const custom = Object.assign(new MockProvider(), {generateAgentAction: async (perception: typeof p) => ({agent: perception.self.id, action: 'read', reason: '依自己的经历安排。', evidenceIds: perception.self.id === 'baoyu' ? [id] : []})});
+    const next = currentWorld(await tick(journal, custom));
+    expect(next.events.find(e => e.agent === 'baoyu' && e.kind === 'action')?.evidenceIds).toEqual([id]);
+  });
   it('does not leak another agent’s private knowledge or actual distant whereabouts', async () => {
     const world = currentWorld(await fork());
     world.agents.baoyu.location = 'daoxiangcun';
