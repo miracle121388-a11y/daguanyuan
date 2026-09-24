@@ -23,6 +23,9 @@ function gzipPayload(file,stat,decoded){
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.glb':'model/gltf-binary','.wasm':'application/wasm','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.hdr':'application/octet-stream','.svg':'image/svg+xml'};
 const revision=()=>{try{return JSON.parse(readFileSync(resolve(root,'scene-manifest.json'),'utf8')).assetRevision??'2'}catch{return '2'}};
 const httpServer=createServer(async(req,res)=>{
+ // Keep this origin on TCP when a proxy cannot reliably carry QUIC. Clearing
+ // alternatives also expires a browser's previously cached HTTP/3 endpoint.
+ res.setHeader('Alt-Svc','clear');
  if(await dreamApi(req,res))return;
  if(await simulationApi(req,res))return;
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{'Allow':'GET, HEAD'});return res.end()}

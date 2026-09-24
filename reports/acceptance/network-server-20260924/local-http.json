@@ -1,0 +1,54 @@
+{
+  "at": "2026-09-24T07:20:21.852Z",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "method": "GET",
+      "altSvc": "clear"
+    },
+    {
+      "path": "/healthz",
+      "status": 200,
+      "method": "GET",
+      "altSvc": "clear"
+    },
+    {
+      "path": "/api/simulation/config",
+      "status": 200,
+      "method": "GET",
+      "altSvc": "clear"
+    },
+    {
+      "path": "/not-a-resource",
+      "status": 404,
+      "method": "GET",
+      "altSvc": "clear"
+    },
+    {
+      "path": "/models/overview-low.glb",
+      "status": 200,
+      "method": "HEAD",
+      "altSvc": "clear"
+    },
+    {
+      "path": "/index.html",
+      "status": 405,
+      "method": "POST",
+      "altSvc": "clear"
+    },
+    {
+      "encoding": "identity",
+      "modelSha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d"
+    },
+    {
+      "encoding": "gzip",
+      "modelSha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d"
+    },
+    {
+      "encoding": "br",
+      "modelSha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d"
+    }
+  ],
+  "passed": true
+}
