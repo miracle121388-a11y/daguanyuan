@@ -1,3 +1,7 @@
+# 最新访问结论
+
+2026-09-24 已上线弱网阅读后备与请求恢复，公网三维加载仍有波动，跨网络顺畅访问尚未全部完成。当前记录以 [NETWORK.md](NETWORK.md) 首节与 `reports/acceptance/access-20260924/release.json` 为准；下文为历史诊断。
+
 # 当前访问结果 · r14
 
 新版 `spatial-garden-20260912-r14` 的公网健康接口返回正常，完整桌面／触摸模拟交互检查通过。该次成功检查临时使用公共 DNS 地址47.89.212.251并关闭 QUIC，TLS 验证保持开启；本机默认浏览器仍返回 `ERR_CONNECTION_CLOSED`。两种网络条件分别记录在 `reports/acceptance/r14-network-observations.json`，不能把临时解析成功说成默认访问修好。

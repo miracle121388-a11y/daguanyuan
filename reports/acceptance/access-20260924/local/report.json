@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-24T07:20:38.399Z",
+  "url": "http://127.0.0.1:4317/",
+  "checks": [
+    {
+      "name": "reading-1440",
+      "javascript": false,
+      "downloadKbps": 400,
+      "latencyMs": 400,
+      "readyMs": 777,
+      "requests": 1,
+      "passed": true
+    },
+    {
+      "name": "reading-320",
+      "javascript": false,
+      "downloadKbps": 400,
+      "latencyMs": 400,
+      "readyMs": 739,
+      "requests": 1,
+      "passed": true
+    },
+    {
+      "name": "entry-script-failure-reading-recovery",
+      "passed": true
+    },
+    {
+      "name": "transient-data-and-scene-script-failure-keeps-reading",
+      "passed": true
+    }
+  ]
+}

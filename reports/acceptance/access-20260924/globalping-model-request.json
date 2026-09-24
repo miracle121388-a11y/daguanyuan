@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-24T07:26:56.183Z",
+  "request": {
+    "target": "daguanyuan-rumeng.zeabur.app",
+    "type": "http",
+    "locations": [
+      {
+        "country": "CN",
+        "asn": 4134,
+        "limit": 2
+      },
+      {
+        "country": "CN",
+        "asn": 4837,
+        "limit": 2
+      },
+      {
+        "country": "CN",
+        "asn": 9808,
+        "limit": 2
+      }
+    ],
+    "measurementOptions": {
+      "protocol": "HTTPS",
+      "request": {
+        "method": "GET",
+        "path": "/models/overview-low.glb",
+        "headers": {
+          "Accept-Encoding": "br"
+        }
+      }
+    }
+  },
+  "status": 202,
+  "result": {
+    "id": "2ttXnnPM7C7Mu6SoP00021C1u",
+    "probesCount": 6
+  }
+}

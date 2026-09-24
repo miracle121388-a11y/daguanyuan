@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-24T07:26:33.422574+00:00",
+  "matched": 8,
+  "files": [
+    {
+      "path": "server.mjs",
+      "sha256": "e65d04c4fe9af829c2baf7916210932900ccc617eadb6c44389df59587cfcbe6",
+      "bytes": 5339
+    },
+    {
+      "path": "server/simulation-api.mjs",
+      "sha256": "c6346a24d2481df61a5f6cd188ddbac5fd66c4d2d0a414075134fa3f0a8e8346",
+      "bytes": 17572
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "b7f241f16401ab85503ac2d7f229399104e8e9de8d2c4c265acc7ff69a57813e",
+      "bytes": 2196
+    },
+    {
+      "path": "dist/reading.html",
+      "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61",
+      "bytes": 58249
+    },
+    {
+      "path": "dist/assets/index-DHXB28Uc.js",
+      "sha256": "3df3e51846cf723ec087838794f93062ee3acce166831e947cb6477763c98808",
+      "bytes": 430578
+    },
+    {
+      "path": "dist/assets/index-B3ZmnKrO.css",
+      "sha256": "1d092e7494f167bde31f562e2abea7a8cf4a5a5d6678d7aba0cc26d3cd53a463",
+      "bytes": 106750
+    },
+    {
+      "path": "dist/assets/garden-mark-COPNxcSD.svg",
+      "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070",
+      "bytes": 458
+    },
+    {
+      "path": "dist/assets/GardenScene-lSnbJI5k.js",
+      "sha256": "7022a91f62615abb79c97d52d849b49596c98234ef2c9e52272c13c986940cbd",
+      "bytes": 1782642
+    }
+  ]
+}

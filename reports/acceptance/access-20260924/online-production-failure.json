@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-24T07:31:13.130530+00:00",
+  "passed": false,
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "script": "scripts/production_smoke.mjs",
+  "desktopReadyMs": 8545,
+  "desktopScreenshot": "online-production-desktop.png",
+  "failedStep": "mobile canvas attached",
+  "timeoutMs": 90000,
+  "error": "locator.waitFor: Timeout 90000ms exceeded waiting for locator('canvas') at production_smoke.mjs:48:55",
+  "dnsOverride": false,
+  "httpVersionOverride": false,
+  "tlsVerified": true,
+  "note": "Whole online production smoke failed; separate network checks passed under their recorded conditions."
+}

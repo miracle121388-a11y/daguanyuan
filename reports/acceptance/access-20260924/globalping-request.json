@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-24T07:25:44.165Z",
+  "request": {
+    "target": "daguanyuan-rumeng.zeabur.app",
+    "type": "http",
+    "locations": [
+      {
+        "country": "CN",
+        "limit": 3
+      },
+      {
+        "country": "HK"
+      },
+      {
+        "country": "SG"
+      },
+      {
+        "country": "JP"
+      },
+      {
+        "country": "US"
+      },
+      {
+        "country": "DE"
+      }
+    ],
+    "measurementOptions": {
+      "protocol": "HTTPS",
+      "request": {
+        "method": "GET",
+        "path": "/healthz"
+      }
+    }
+  },
+  "status": 202,
+  "result": {
+    "id": "27l4a6elHwD8JCv6200021C1t",
+    "probesCount": 8
+  }
+}

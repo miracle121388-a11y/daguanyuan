@@ -3,13 +3,13 @@ import {mkdirSync,writeFileSync} from 'node:fs';
 const url=process.env.APP_URL||'https://daguanyuan-rumeng.zeabur.app/';
 const output=process.env.NETWORK_REPORT_DIR||'reports/acceptance/network-20260924';
 mkdirSync(output,{recursive:true});
-const modes=[{name:'system'},...(process.env.GARDEN_TEST_PROXY?[{name:'explicit-proxy',proxy:{server:process.env.GARDEN_TEST_PROXY}}]:[])];
+const modes=process.env.GARDEN_SYSTEM_MOBILE==='1'?[{name:'system-mobile',mobile:true}]:[{name:'system'},...(process.env.GARDEN_TEST_PROXY?[{name:'explicit-proxy',mobile:true,proxy:{server:process.env.GARDEN_TEST_PROXY}}]:[])];
 const checks=[];
 for(const mode of modes){
  const browser=await chromium.launch({channel:process.env.GARDEN_BROWSER_CHANNEL||'msedge',headless:true,...(mode.proxy?{proxy:mode.proxy}:{})});
- const result={mode:mode.name,dnsOverride:false,tlsVerified:true,httpVersionOverride:false,failures:[],passed:false};checks.push(result);
+ const result={mode:mode.name,dnsOverride:false,tlsVerified:new URL(url).protocol==='https:'?true:null,httpVersionOverride:false,failures:[],passed:false};checks.push(result);
  try{
-  const context=await browser.newContext({viewport:mode.proxy?{width:390,height:844}:{width:1440,height:900},...(mode.proxy?{isMobile:true,hasTouch:true}:{})});
+  const context=await browser.newContext({viewport:mode.mobile?{width:390,height:844}:{width:1440,height:900},...(mode.mobile?{isMobile:true,hasTouch:true}:{})});
   const page=await context.newPage();const pending=new Set();
   page.on('request',req=>pending.add(new URL(req.url()).pathname));
   page.on('requestfinished',req=>pending.delete(new URL(req.url()).pathname));
