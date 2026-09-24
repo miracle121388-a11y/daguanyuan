@@ -220,5 +220,16 @@
   },
   "cdn": false,
   "customDomainAvailable": false,
-  "universalProxyReachabilityGuaranteed": false
+  "universalProxyReachabilityGuaranteed": false,
+  "browser": {
+    "at": "2026-09-24T07:38:46.752Z",
+    "method": "Native Chrome UI via CUA; existing system proxy; normal certificate verification",
+    "gardenRendered": true,
+    "quality": "lightweight",
+    "cacheDisabledDuringFinalLoad": true,
+    "devtoolsSettingsRestored": true,
+    "oldDirectConnectionReplaced": true,
+    "initialAttempts": "Old pooled DIRECT connection remained after proxy reload; interrupted site-only connection and reloaded. Earlier failures are not successful tests.",
+    "fullFunctionalRegression": false
+  }
 }
