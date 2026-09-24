@@ -8,7 +8,4 @@ export function waterShape(lake:Manifest['lake']){
  for(const hole of lake.holes??[])shape.holes.push(new THREE.Path(hole.map(p=>new THREE.Vector2(p[0],p[1]))));
  return shape;
 }
-export function waterMapPath(lake:Manifest['lake']){
- const paths=[lake.outline??[],...(lake.holes??[])];
- return paths.filter(p=>p.length>2).map(p=>'M'+p.map(([x,y])=>`${x},${-y}`).join('L')+'Z').join('');
-}
+export {waterMapPath} from '../data/waterMapPath';

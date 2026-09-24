@@ -14,6 +14,7 @@ for entry in build.values():bundles.add(entry['file']);bundles.update(entry.get(
 for file in bundles:
  assert file.startswith('assets/') and '..' not in Path(file).parts
  shutil.copy2(R/'dist'/file,output/file)
+shutil.copy2(R/'dist/reading.html',output/'reading.html')
 shutil.copy2(R/'server.mjs',target/'server.mjs')
 (target/'server').mkdir()
 for server_file in (R/'server').glob('*.mjs'):shutil.copy2(server_file,target/'server'/server_file.name)
