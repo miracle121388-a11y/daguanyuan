@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-24T07:21:42.462392+00:00",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "passed": false,
+  "sceneWaitTimeoutMs": 120000,
+  "error": "locator.waitFor: Timeout 120000ms exceeded for .canvas-wrap[data-scene-ready=true]",
+  "dnsOverride": false,
+  "httpVersionOverride": false,
+  "note": "Original network_smoke did not save reports on failure; preserved from actual command result."
+}

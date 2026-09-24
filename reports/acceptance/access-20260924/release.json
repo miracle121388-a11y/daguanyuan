@@ -1,0 +1,113 @@
+{
+  "at": "2026-09-24T07:29:38.974287+00:00",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "readingUrl": "https://daguanyuan-rumeng.zeabur.app/reading.html",
+  "sourceCommit": "7af3cb0",
+  "deployment": {
+    "ID": "6ab4cfbbe92e928954acb575",
+    "projectID": "6aa142fb6c3d9581b71560ed",
+    "serviceID": "6aa143296c3d9581b71560fa",
+    "environmentID": "6aa142fbda9bc245fba1e845",
+    "gitProvider": "GITHUB",
+    "repoOwner": "",
+    "repoName": "",
+    "ref": "",
+    "commitSHA": "",
+    "commitMessage": "",
+    "planType": "docker",
+    "createdAt": "2026-09-24T07:22:35.837Z",
+    "scheduledAt": "2026-09-24T07:22:38.091Z",
+    "startedAt": "2026-09-24T07:22:42.493Z",
+    "finishedAt": "2026-09-24T07:24:27.52Z",
+    "status": "RUNNING"
+  },
+  "runtime": {
+    "at": "2026-09-24T07:26:33.422574+00:00",
+    "matched": 8,
+    "files": [
+      {
+        "path": "server.mjs",
+        "sha256": "e65d04c4fe9af829c2baf7916210932900ccc617eadb6c44389df59587cfcbe6",
+        "bytes": 5339
+      },
+      {
+        "path": "server/simulation-api.mjs",
+        "sha256": "c6346a24d2481df61a5f6cd188ddbac5fd66c4d2d0a414075134fa3f0a8e8346",
+        "bytes": 17572
+      },
+      {
+        "path": "dist/index.html",
+        "sha256": "b7f241f16401ab85503ac2d7f229399104e8e9de8d2c4c265acc7ff69a57813e",
+        "bytes": 2196
+      },
+      {
+        "path": "dist/reading.html",
+        "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61",
+        "bytes": 58249
+      },
+      {
+        "path": "dist/assets/index-DHXB28Uc.js",
+        "sha256": "3df3e51846cf723ec087838794f93062ee3acce166831e947cb6477763c98808",
+        "bytes": 430578
+      },
+      {
+        "path": "dist/assets/index-B3ZmnKrO.css",
+        "sha256": "1d092e7494f167bde31f562e2abea7a8cf4a5a5d6678d7aba0cc26d3cd53a463",
+        "bytes": 106750
+      },
+      {
+        "path": "dist/assets/garden-mark-COPNxcSD.svg",
+        "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070",
+        "bytes": 458
+      },
+      {
+        "path": "dist/assets/GardenScene-lSnbJI5k.js",
+        "sha256": "7022a91f62615abb79c97d52d849b49596c98234ef2c9e52272c13c986940cbd",
+        "bytes": 1782642
+      }
+    ]
+  },
+  "preservation": {
+    "at": "2026-09-24T07:26:38.973Z",
+    "variablesUnchanged": true,
+    "variableCount": 18,
+    "volumeUnchanged": true,
+    "albumUnchanged": true,
+    "albumFiles": 6,
+    "albumBytes": 7486038
+  },
+  "validation": {
+    "build": true,
+    "integrityChecks": 10968,
+    "lint": true,
+    "tests": 111,
+    "localRecoveryChecks": 4,
+    "localProductionSmoke": "local-production.json",
+    "onlineNetwork": "online/report.json",
+    "httpsHashes": "https.json",
+    "onlineProductionSmoke": "online-production-failure.json",
+    "systemMobileDiagnostic": "online-system-mobile/report.json"
+  },
+  "entryGzipBytes": {
+    "before": 240322,
+    "after": 136863
+  },
+  "readingBytes": {
+    "html": 58249,
+    "gzip": 14246,
+    "brotli": 12179
+  },
+  "globalProbeScope": "8 HTTPS health probes; 6 China eyeball probes each for reading and model URLs. All returned 200 and authorized TLS. Bodies truncated: these are reachability checks, NOT full model download or browser tests.",
+  "knownLimits": [
+    "Initial ordinary-browser baseline exceeded 120 seconds; subsequent baseline was 38.09 seconds.",
+    "Post-release separate network runs: system desktop 46.301 seconds; explicit proxy touch emulation 19.487 seconds. Not a controlled before/after speed benchmark.",
+    "No physical phone or Safari testing in this turn.",
+    "This computer retains its previously configured site-specific proxy workaround; independent probes are separate evidence.",
+    "No custom domain/CDN configured; broad network reliability remains unresolved.",
+    "Additional complete production smoke passed desktop stage but timed out at mobile canvas attachment after 90 seconds; full online functional regression did not pass.",
+    "Follow-up ordinary mobile diagnostic succeeded in 28191 ms; it does not erase the preceding 90-second failure or rerun the full functional flow."
+  ],
+  "newServerPurchased": false,
+  "unrelatedServicesChanged": false,
+  "paidModelCalls": 0
+}

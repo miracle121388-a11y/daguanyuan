@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-24T07:19:18.144Z",
+  "bytes": 58249,
+  "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61",
+  "sources": [
+    {
+      "path": "public/data/places.json",
+      "sha256": "e04693a63dd766e56f65256a1b589dc45ca06e311059a82576769e69d2aacb88"
+    },
+    {
+      "path": "public/data/characters.json",
+      "sha256": "88f643c7363fa9b54e7ca64f41e7a46bc2b0ce8409c5634502e3312ff13e717c"
+    },
+    {
+      "path": "public/data/events.json",
+      "sha256": "51f6bc89555e28a4b61989e0de7c9dfef8320b7156963977f81408b4026302cc"
+    },
+    {
+      "path": "public/data/sources.json",
+      "sha256": "55d56b810e3cf82fb0999e2cc1b2cc41ea5369217e84e3ac057de0aa6766fa10"
+    }
+  ],
+  "counts": {
+    "places": 15,
+    "characters": 13,
+    "events": 22,
+    "sources": 46
+  },
+  "javascriptRequired": false,
+  "externalRuntimeRequests": 0
+}

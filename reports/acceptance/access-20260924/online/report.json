@@ -1,0 +1,2344 @@
+{
+  "at": "2026-09-24T07:27:38.485Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "checks": [
+    {
+      "mode": "system",
+      "dnsOverride": false,
+      "tlsVerified": true,
+      "httpVersionOverride": false,
+      "failures": [],
+      "passed": true,
+      "readyMs": 46301,
+      "health": {
+        "status": "ok",
+        "application": "daguanyuan-rumeng",
+        "revision": "spatial-garden-20260918-r22",
+        "featureRevision": "honglou-silk-20260917-v6",
+        "simulationRevision": "personal-reasoning-20260924-v2"
+      },
+      "resources": [
+        {
+          "name": "/assets/index-DHXB28Uc.js",
+          "duration": 1966,
+          "transferSize": 124028,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/index-B3ZmnKrO.css",
+          "duration": 1017,
+          "transferSize": 18456,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/garden-mark-COPNxcSD.svg",
+          "duration": 1268,
+          "transferSize": 758,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/places.json",
+          "duration": 1262,
+          "transferSize": 2621,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/characters.json",
+          "duration": 1258,
+          "transferSize": 1248,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/events.json",
+          "duration": 1259,
+          "transferSize": 3142,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/sources.json",
+          "duration": 1261,
+          "transferSize": 10284,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/routes.json",
+          "duration": 1262,
+          "transferSize": 1172,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/relations.json",
+          "duration": 1360,
+          "transferSize": 445,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/editionCatalog.json",
+          "duration": 1361,
+          "transferSize": 4793,
+          "protocol": "h2"
+        },
+        {
+          "name": "/scene-manifest.json",
+          "duration": 1259,
+          "transferSize": 50866,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/garden-mark-COPNxcSD.svg",
+          "duration": 1259,
+          "transferSize": 0,
+          "protocol": "h2"
+        },
+        {
+          "name": "/art/manifest.json",
+          "duration": 304,
+          "transferSize": 4886,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/garden-mark-COPNxcSD.svg",
+          "duration": 1,
+          "transferSize": 0,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/GardenScene-lSnbJI5k.js",
+          "duration": 4390,
+          "transferSize": 337165,
+          "protocol": "h2"
+        },
+        {
+          "name": "/api/dreams/config",
+          "duration": 2350,
+          "transferSize": 535,
+          "protocol": "h2"
+        },
+        {
+          "name": "/api/dreams/jobs",
+          "duration": 2663,
+          "transferSize": 311,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/forest_grove.hdr",
+          "duration": 2682,
+          "transferSize": 118436,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/sunwen-architecture-low.glb",
+          "duration": 21206,
+          "transferSize": 434769,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/overview-low.glb",
+          "duration": 31988,
+          "transferSize": 2854829,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/ground-cover.glb",
+          "duration": 3789,
+          "transferSize": 4300,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/iris.glb",
+          "duration": 5120,
+          "transferSize": 6531,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/peony.glb",
+          "duration": 5120,
+          "transferSize": 11237,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/lotus.glb",
+          "duration": 5120,
+          "transferSize": 6230,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/chrysanthemum.glb",
+          "duration": 5120,
+          "transferSize": 11150,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/orchid.glb",
+          "duration": 5120,
+          "transferSize": 6475,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/vegetation/canopy-atlas-low.webp",
+          "duration": 27837,
+          "transferSize": 467050,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/ground/pond-normal.png",
+          "duration": 23126,
+          "transferSize": 151085,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/ground/surface-zones.png",
+          "duration": 27241,
+          "transferSize": 91458,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/sunwen-landscape-low.glb",
+          "duration": 26931,
+          "transferSize": 880410,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/urban-context.glb",
+          "duration": 12374,
+          "transferSize": 103767,
+          "protocol": "h2"
+        },
+        {
+          "name": "/draco/draco_wasm_wrapper.js",
+          "duration": 5599,
+          "transferSize": 11168,
+          "protocol": "h2"
+        },
+        {
+          "name": "/draco/draco_decoder.wasm",
+          "duration": 9078,
+          "transferSize": 55261,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33.jpg",
+          "duration": 7152,
+          "transferSize": 35356,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6.jpg",
+          "duration": 7966,
+          "transferSize": 44192,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg",
+          "duration": 9077,
+          "transferSize": 59983,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d7eda7d492e153322e43c7f2bcb2d57dab92879a1cf816ba198ac1663ce152a1.jpg",
+          "duration": 972,
+          "transferSize": 2363,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/412aaaf35456b13303bb3b24117490959e503f205de2f7185a622f6c706c5108.jpg",
+          "duration": 1842,
+          "transferSize": 3243,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/631271dd27499bb806328111f4f59ecbb178f55f04335137cc391598122fec10.jpg",
+          "duration": 720,
+          "transferSize": 3241,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4b6b90f49a49a8fbd61fbdcde6143124a77f84fd9053a5798c1248cf283fe4db.jpg",
+          "duration": 1309,
+          "transferSize": 2522,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f41c80fa93d0074d2277cbd8642784cc00be86af37e52f7755d281ff67830f93.jpg",
+          "duration": 972,
+          "transferSize": 2264,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/20529dd96145a01fa459fa9567d1e85fe43b15d5a4cc3c3e74f44fd6b918768b.jpg",
+          "duration": 1841,
+          "transferSize": 3047,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a6ed62ed78a5ea692502ae095dc26400f92e11b88850ba610bf2c2488c1c62f8.jpg",
+          "duration": 971,
+          "transferSize": 2213,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/95abffce5b076605a2493ec2bd6b6f9863fba337510e983ce53c675a4d3154a6.jpg",
+          "duration": 719,
+          "transferSize": 3005,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/15b2b299a781fe14f4cabc85b072d438d3200e49856368c0263f8b8d4fc4a82e.jpg",
+          "duration": 971,
+          "transferSize": 3175,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c20073ca9f373fb59101995165cb91953626a0ef9f57b7530511b8d550b71851.jpg",
+          "duration": 971,
+          "transferSize": 2343,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/80d4a7f944ec5155af7662bdc0b74355b87d0d05d36a00ea1f0d972d079ea704.jpg",
+          "duration": 719,
+          "transferSize": 3341,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/ground/garden-ground-zones.png",
+          "duration": 1028,
+          "transferSize": 69300,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/landscape-light-low.webp",
+          "duration": 1304,
+          "transferSize": 45218,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/ground/garden-ground.webp",
+          "duration": 1306,
+          "transferSize": 47604,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd.jpg",
+          "duration": 796,
+          "transferSize": 14908,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg",
+          "duration": 795,
+          "transferSize": 5013,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7f1860a70e917d844ed2165aab4fa98fb6cea15753cb6f8a0713333174cd7f33.jpg",
+          "duration": 795,
+          "transferSize": 4515,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d0533a21259ca211058fc124ddfc2250bfc508ec67b212aaf16aaafad18c1f14.jpg",
+          "duration": 795,
+          "transferSize": 2174,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/04e4070e9af6553bdc8929aeb01b85fe7ecc1806060a40159e5234afb5b0605b.jpg",
+          "duration": 627,
+          "transferSize": 35616,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/44365b85412aae15e99129db1e86cc0aa1efda940e0b1d4cc2f5eb2e84e80a19.jpg",
+          "duration": 1186,
+          "transferSize": 8547,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/99509b772fd605882713cdbed1413e99cb278b03548aad3cc801c676ba38f4ca.jpg",
+          "duration": 795,
+          "transferSize": 10989,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg",
+          "duration": 795,
+          "transferSize": 11540,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d842713a6b3fada97bb70350b1e085dcd30cce45835a84887404332a2bf94104.jpg",
+          "duration": 796,
+          "transferSize": 5788,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9edcc07ccfd0c9b754e9db2ab9c9199b45994bee7deb8d3df12c2edf6f732703.jpg",
+          "duration": 1186,
+          "transferSize": 10562,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/1ff29b3b78f9907cf658c083cd9a9e619145eeac14e4cbb3bc4a4095dc9e700e.jpg",
+          "duration": 455,
+          "transferSize": 3687,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/eeec952a21652999a4102f77248b4d43f89200e9a0486ca6b7cad0e59f98d89e.jpg",
+          "duration": 286,
+          "transferSize": 6405,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9c642fbc0ed041e5a659e0ce7e7b8a0fc02297a8c74c1a6aac35ee64ee95aab3.jpg",
+          "duration": 795,
+          "transferSize": 5082,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/47d38faa5990c2bba481878e93fcba01a4c62f7832a9ccc5e2642dec449b1381.jpg",
+          "duration": 796,
+          "transferSize": 5689,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/14fa3e3ef537284b55057cdc22b8395f1a264ed9abed38c3dce61b908f14b7a9.jpg",
+          "duration": 1188,
+          "transferSize": 2640,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+          "duration": 1188,
+          "transferSize": 10983,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7775a42d323fdd6faf03b48e9aec9b89430f5d858a9b41dee0bd3559332d5916.jpg",
+          "duration": 1188,
+          "transferSize": 9420,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9a66f3110cc4d3dfedb8c385a36ae6e042b1c8e9b22dc065b3c6b1c95d72d2a0.jpg",
+          "duration": 1200,
+          "transferSize": 5485,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/307ac6ee5a8bf9d1e47612b3974de4b7430b29ae8c7bcc89a48b72a1d7d66e74.jpg",
+          "duration": 1186,
+          "transferSize": 3755,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/1a28477f11c083ac165edc2956e7a33d0482e88cfb0b8af12ac49d6e40f60df9.jpg",
+          "duration": 1189,
+          "transferSize": 6328,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a836979c6fa37b527b6c83701684e1f7bc236ebbd7042007a8c670176dafba5c.jpg",
+          "duration": 1200,
+          "transferSize": 6344,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d8331a5a313d580da39740a3a7f6707bf1f3f4a9d8a5c668c5f4ee25b1d771a6.jpg",
+          "duration": 1200,
+          "transferSize": 3785,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7eaa26e8b0c61d729047fae21d9dc09ece89632002c4542a7c00b51003c8c6e3.jpg",
+          "duration": 1185,
+          "transferSize": 10138,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/da1bbffac4577763fe3d59034231e78a2c5eaacd4a3a104f874d61610cfddb1b.jpg",
+          "duration": 2066,
+          "transferSize": 28199,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/fca8baff664c8ab04208a9b9916bfe4ed446ff512e805a9affbd7d86a4ab8ae6.jpg",
+          "duration": 2677,
+          "transferSize": 2414,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4b7a311852342b4c925b1306cba37c8101f45a08b768211dc300b0aa3cea3eae.jpg",
+          "duration": 2882,
+          "transferSize": 13697,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/401b533b7e7a7db3a1247909aa38ac9d070a536543143b6c0c25f478c7a2b00d.jpg",
+          "duration": 2882,
+          "transferSize": 9590,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a7ba847389063b027ff5314a9db90f7f92840c8b59c5de2510b327172837f34d.jpg",
+          "duration": 2882,
+          "transferSize": 10513,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/8123416f1a7e449b6e722930ec59cdbca715d101163cecc9f2352d7993dd768e.jpg",
+          "duration": 2882,
+          "transferSize": 7156,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/accba4d255c5f3aa4c0d51058cd5b5e8e2310c9a5cf3684879442ebe34b64fac.jpg",
+          "duration": 2881,
+          "transferSize": 6971,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e1cfff96b60499f1ebdd2a979394b4ba4bd9f2346938d92e153643a726ccd4a3.jpg",
+          "duration": 2881,
+          "transferSize": 7438,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/383fc3f68c44ebd735b33b2b71dca931fc8443bd342319353a5de079e47cfffa.jpg",
+          "duration": 1199,
+          "transferSize": 9791,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/44a06d9d9206b7fe197217c2847e35b2731c417b4d6edb61fa9c829364d760de.jpg",
+          "duration": 2678,
+          "transferSize": 4019,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a0d2d6d79a4124a3a8153a1587120b3c562dd423f43fbd9ae7a9aef7f7093a64.jpg",
+          "duration": 2677,
+          "transferSize": 3634,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/fd0cc7dd24a4a3cd609a10ec97117c9f6de5b196d9b9d4662efdf5d6abc57d13.jpg",
+          "duration": 2677,
+          "transferSize": 2138,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7846421b10fbf6450d06011ecac9b3068080537ad8a377cb1bdf93eb9fff2ac4.jpg",
+          "duration": 2677,
+          "transferSize": 2700,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/581f439106209d436e9f03db0b2b33d50a97a1b93c75dc5843bc685b775bbbee.jpg",
+          "duration": 2880,
+          "transferSize": 5844,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/2a14e77efe6687eaabb2c82016e330c221b833982edea32cc04e8581528ac2a3.jpg",
+          "duration": 2677,
+          "transferSize": 2712,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/6b4bfdc5ddc06afec044bfff927ce76372cda6d647a049a6ce02eaefb925364c.jpg",
+          "duration": 2880,
+          "transferSize": 5756,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4ddbcc676e0de1c574396a9d500e061e7e7bce2fc0983ec9f64c407d3922492c.jpg",
+          "duration": 2880,
+          "transferSize": 4436,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f185e47bffa8d0a4dc25dcbe364db2eae77c580f800a3a8d5def32599780dd3e.jpg",
+          "duration": 2677,
+          "transferSize": 2279,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/876399e0e99ee7cec319e7eb9141856083f6a64e30a6e22e9f4bed90c4dba3d9.jpg",
+          "duration": 2674,
+          "transferSize": 3091,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/bfa072f3d2fed770cd671931de45f75d03ac48ce820ccd5477a2c05c9b80d30a.jpg",
+          "duration": 2880,
+          "transferSize": 4973,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e20a09d8487880fdeab3ea6095ecf132a6bbb39f70488def868adb419250d459.jpg",
+          "duration": 2880,
+          "transferSize": 6319,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0b63c587aa5f008f365e41b4267e3df239d7c1a357689aecf151e2694ad1f0af.jpg",
+          "duration": 2879,
+          "transferSize": 6347,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/fa00f4e80f1bf2bfcf12efa512150c2b87539070a288bcba79ad982f9fb5aa2e.jpg",
+          "duration": 2880,
+          "transferSize": 8732,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/37ed2821dab72ec81a5bccc1bc86a7207965b389589c732c4793fb632b01d2e3.jpg",
+          "duration": 2879,
+          "transferSize": 6663,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a2ffac879e95497895b469122a30484187605d7b3a69966a558a06a58c3d4b48.jpg",
+          "duration": 2676,
+          "transferSize": 3437,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d1864224c43db98415e57495f01e834b0a178183f3bda5df9a07d70165750a79.jpg",
+          "duration": 2676,
+          "transferSize": 2222,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/86263db65c85bda20bd20e6772a975e359982217421268ca5570732bc6d68bdc.jpg",
+          "duration": 2880,
+          "transferSize": 6144,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/db54d84a1f4b317596b46e08227eb24ddd1b80f40066f6fd4a24872ccc772561.jpg",
+          "duration": 2880,
+          "transferSize": 5622,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f27e8f93348f77864dc46e6695c8fbd7ca8ab49c8b26c298e3331c9032948ccc.jpg",
+          "duration": 2879,
+          "transferSize": 4637,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/180a6146ec7957a350cf9bd5682ad9dabe9426f78e1662fcb9c8bc89dc26d03d.jpg",
+          "duration": 2675,
+          "transferSize": 2300,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e76521b7bbaad65c59af56aec99778718930880c4c60e0638e93d25fa6b54847.jpg",
+          "duration": 2879,
+          "transferSize": 5461,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/28459838d44ded764c0c2dfebb99be9e64961a114aa9a39c273fa16cbc48f118.jpg",
+          "duration": 2675,
+          "transferSize": 3653,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/979bd23c5bff0e6a0f6006a271cec7ff407fedd9d62ffb0a26ca0858d51d98f0.jpg",
+          "duration": 2878,
+          "transferSize": 6829,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0675292bc64babf1de5c850ab88dbe76e485811addd2eb294d924dbf00a0dd92.jpg",
+          "duration": 2878,
+          "transferSize": 5674,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f942542c287fa67537e63d01042b1d463082da5f83cfe6ccf7cce02c0fd02c65.jpg",
+          "duration": 2674,
+          "transferSize": 3876,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/75a197d88502749bc856e6825815d9fa8dd87cb75dc867f9bf8f5506cb6d755e.jpg",
+          "duration": 2674,
+          "transferSize": 2119,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/12d8009f423fa1e8cd85d563868c0b230a0d6bdf291091824b6ea8d8bbbf211f.jpg",
+          "duration": 2877,
+          "transferSize": 6487,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/5738f410c9948dd30070326a15908fadd7f61935b6a3fff060b786ea06475139.jpg",
+          "duration": 2877,
+          "transferSize": 5695,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c1b62a2d898869915e637f39da4aa3d118acb4aba7e60c8013e70aa86201f538.jpg",
+          "duration": 2877,
+          "transferSize": 4795,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0c4663e91f91eae05975a545f8385375384e95a7928c4e12b85895a3a15504bd.jpg",
+          "duration": 2877,
+          "transferSize": 5415,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9b3eb33e9a913b9725c396c951d173f3d501a67cdf4c40ca4eb7a3dbb95fa255.jpg",
+          "duration": 2673,
+          "transferSize": 3758,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f3c3b99da10ff561682ad98b38981585ca56c4b1049988b72e1ecb8751a9a231.jpg",
+          "duration": 2877,
+          "transferSize": 6735,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/2ae1549e3555688757a170fb3a2a9ccd369259ab4061cbb966cb029b9953da67.jpg",
+          "duration": 2877,
+          "transferSize": 6713,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/47131fafabd7e2cfce8071dfd30f4927c1c73494a2d9dc5e2929256c8c0c9b01.jpg",
+          "duration": 2877,
+          "transferSize": 4412,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0a73eb8fd39a15316906843b26076003601349aaf3e1685847caeb918e49d1ba.jpg",
+          "duration": 2673,
+          "transferSize": 3588,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d7968e68f47158b60353754c0ddffce56005ff77cd0ebb0b090d861c419ab893.jpg",
+          "duration": 2673,
+          "transferSize": 2287,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/3d2d559e93539b606aab3cbdd031c99dea2b8fcc60cd9275e34e15d5d7dd5f13.jpg",
+          "duration": 2877,
+          "transferSize": 6343,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9c00c7b47cef12e4ed4308edad7c400e49d43d27a12e69178e0227c74e4f78f7.jpg",
+          "duration": 2673,
+          "transferSize": 2487,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/951efcd8fd0af08f249e6687c9d5cf57cfada80254e56c3b5657c217ffc30358.jpg",
+          "duration": 2876,
+          "transferSize": 5783,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e83c09341a3eba1b8126a7883bb867d21f6ea13cab754f65a2a25e18a5d74a3a.jpg",
+          "duration": 2876,
+          "transferSize": 4888,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/822e01357c3d5c400e6e9f52c276cb41f5c33f0c4debd907ef0bf0bf056fd0ee.jpg",
+          "duration": 2671,
+          "transferSize": 2452,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/81e43105730f2de4866443f37d9e5bb0e179031248fc7b884b45ccefbbda5846.jpg",
+          "duration": 2875,
+          "transferSize": 5923,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9b77239d0533e3d162fb97bec08f9420633c46209c9da88e26cabd93a5a3689c.jpg",
+          "duration": 2671,
+          "transferSize": 3830,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/801e42a3addfccee2a0968b99d4ff2384c80164e686d7d2f3fe677fbb02089db.jpg",
+          "duration": 2875,
+          "transferSize": 6647,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/fb5d8d2f8d05709abf30c39db7ab4200d5530839c7fa5eec016fa156864b9070.jpg",
+          "duration": 2875,
+          "transferSize": 6027,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/5a2bea1b924e05931c1cf6ac9c87af7de04772bf1dc77fe63af86aaf5ecdb3d5.jpg",
+          "duration": 2671,
+          "transferSize": 2385,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/98ddbb61e71f2bb45f67a4299efc666d82a6bd1afa866466ca99a90e25ab8365.jpg",
+          "duration": 2875,
+          "transferSize": 5555,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e31531dcf459b5d9e80a8ddac04a8aa1b482703329a3b2918bce9becc1545a51.jpg",
+          "duration": 2875,
+          "transferSize": 8242,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/57d306e59ce16ccd83281ca3a1d4845c6f82be93e519e2755546f629ca35f7cb.jpg",
+          "duration": 2866,
+          "transferSize": 2184,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/2bea35154100bd0e689894d5535a0d4e7ba7d4f6995d4f398ecf7e82b40bbc7a.jpg",
+          "duration": 2866,
+          "transferSize": 3800,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/2eb2130afc349f416af3fd5ba2dd305da73e6a4c6ed99d41e446c9f3122b78a3.jpg",
+          "duration": 2866,
+          "transferSize": 2386,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/be7add77c9794bdf19d85e0ffd7064e42a53c090b285f5f6217a55247e4fcf72.jpg",
+          "duration": 2874,
+          "transferSize": 6159,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c6c044b3103652e03e7054d1900c31411aa44c26e934da19dc3f215baf0e41a9.jpg",
+          "duration": 2874,
+          "transferSize": 5567,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e897b87fc521798c7c79fc74e2e8ae3ee25002c8f92a11d7f3bcbc71f419662f.jpg",
+          "duration": 2875,
+          "transferSize": 5353,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d499927a0fd82799fde73b198e6e69da18758e8c4bd9f7edf103af274986d571.jpg",
+          "duration": 2866,
+          "transferSize": 4041,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/619112600dd9a8586397bfcbec986cd87b786ef0f63b0cf3878e759ee281fec4.jpg",
+          "duration": 2874,
+          "transferSize": 5991,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7b25f7981faf49b1354452a81944ba7375310eab07c9c68f76cc08d2cef96d29.jpg",
+          "duration": 2874,
+          "transferSize": 6620,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f61c379b762d7a21863cfb8b5f817897ac48677fb9d4c2b7b9c40d2a4041c4a0.jpg",
+          "duration": 2874,
+          "transferSize": 6543,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/84dae91d1eeeb0aa8485be514bba31e9dd92f833dfe525ced38c9e5abd5b500a.jpg",
+          "duration": 2866,
+          "transferSize": 3582,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/235694de7785fdd9a7f6600b11d51e42d4a1f56d0230a4ff2c3fc507a06db8c2.jpg",
+          "duration": 2866,
+          "transferSize": 2382,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0413677e286172114c3be182202f5db5556495538a266c374eb9a290bc7ade95.jpg",
+          "duration": 2874,
+          "transferSize": 4627,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/861c40fc200cb4a9f0039046c8626ff017874f3406d01899f9aabd25aa645ad7.jpg",
+          "duration": 2874,
+          "transferSize": 5566,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0bfe1db8ae2bcaf725775b457d5dcb51ed64a21b8a880728592342ee49f8beb5.jpg",
+          "duration": 2866,
+          "transferSize": 3648,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4e8d430be9b4953305fac742b927b663ce7790632f85fda506c82b08c5fb1780.jpg",
+          "duration": 2874,
+          "transferSize": 6073,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/778ac2409917bde9c738cc2a638893402501b6484dd564d2ed0b35961a73d9cf.jpg",
+          "duration": 2865,
+          "transferSize": 3815,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f84a7cd3c5106de4749cda024cec506711be674d90e791512d324e7dae0b1a69.jpg",
+          "duration": 2874,
+          "transferSize": 6206,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/057d16e52a34ca69fdddd771519f2bb234bda4e7b5f845b99f8488e7397047c1.jpg",
+          "duration": 2874,
+          "transferSize": 5323,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7785b30d8a7de0940fd8ea4d55a607f11ae5101ac7d368dc4a439e8b40447ffd.jpg",
+          "duration": 2874,
+          "transferSize": 4655,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/93f6798f0318d6e4fcf7c5ce22d26b4e6709082dbc7c57e3dcdb97fad58f801f.jpg",
+          "duration": 2865,
+          "transferSize": 3422,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/dd4494dd6e81027ef9fed1ef32022ab95de05127376c2428885d5aa7bf8c210a.jpg",
+          "duration": 2874,
+          "transferSize": 5309,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c260a0fad52ae0f555435d3e8a397c99dba5d2a58d75416b158d2ccc83f76657.jpg",
+          "duration": 2874,
+          "transferSize": 6598,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a0dbc4761870577675fedc43130f5e574b96a7d1f6e7b5e209be2eedd4d43959.jpg",
+          "duration": 2874,
+          "transferSize": 6398,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a0194dd7d97bd9e77b58edc9dc42e073015adbc43f1c9fadbb3025bb21dae86c.jpg",
+          "duration": 2865,
+          "transferSize": 4325,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a700a24b8eca7ca68621dd61709cca23d8e4cdd6b5dd1ec77baf37a939b661b7.jpg",
+          "duration": 2874,
+          "transferSize": 6982,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e0529113c0b20df3c7ca8e8970d4aa209daab933f278f4db05f4fa9ec01f69a7.jpg",
+          "duration": 2874,
+          "transferSize": 5778,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f33a5e20777d3ed763f1c808d75777551ac99a3e77f76516404fd220d97f7481.jpg",
+          "duration": 2874,
+          "transferSize": 5265,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/56ee54f43b125943c8f23a9cfc06a8e373f87d9f65cb62864ac8d8c0f1f87620.jpg",
+          "duration": 2874,
+          "transferSize": 6010,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/501a7dd33f692096c2feda542a163c1b47ae1b3b58a0654da5d244e0971acb00.jpg",
+          "duration": 2864,
+          "transferSize": 4045,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/345516f438a0cd304f9e1b9a977834e9f1282f364e8e543a6c3f1230b5a4d96e.jpg",
+          "duration": 2898,
+          "transferSize": 6850,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/32eb8c807c3d9dd387b0aab87893bf5179cb857d99df5fdc2aadeae463dc441f.jpg",
+          "duration": 2898,
+          "transferSize": 6859,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7d406114c27915c88fe886c92f0999fc7ef593cc25dcb1d5eb5ecdab93377608.jpg",
+          "duration": 2864,
+          "transferSize": 2561,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/67a45292f5c9f5d51377d8e013e7c3a6a47d05ac72f92869327ba7a2ea8c81df.jpg",
+          "duration": 2873,
+          "transferSize": 7581,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/97f3331f3e42de1952d5a82970ce82e1eb63d1b6515baf5ffa378ebce77aae84.jpg",
+          "duration": 2897,
+          "transferSize": 8862,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/b9c29f057123f5702216d88cc9f503e0f9280fe2c3fbe9a33e1ccda4fbfeb1f7.jpg",
+          "duration": 2897,
+          "transferSize": 5827,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f32c9c9d8d2ea049fb387333bfef3ce99a2ce2da2d2388e9dfd9e0db099a9ef3.jpg",
+          "duration": 2897,
+          "transferSize": 9432,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/1945800a43d9808c147738f2edae6aab9160a8551229cf86cbae1f5a0ac696ca.jpg",
+          "duration": 2865,
+          "transferSize": 3594,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0794f89c46f388717314361eae6b43de9ca6283137c6c85eb42fc2c35c5c0ec5.jpg",
+          "duration": 2865,
+          "transferSize": 2148,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/cd50052830567c1e7dc91ca3dca756d1dcde20a8cb284668c8e4c16198c7c443.jpg",
+          "duration": 2897,
+          "transferSize": 6260,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7d70d639a96830cfe5fdef66cb337aeb470ca2856a1256209ceaff491c011b28.jpg",
+          "duration": 2897,
+          "transferSize": 5565,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/483887264df0c430e1c88b9f86d8fee2b2133a9611e5307eaad1cb6a6f8357f0.jpg",
+          "duration": 2865,
+          "transferSize": 4244,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/544bf03f63a365270e7fe0d9eb8c993a0804c203ad2bd0e6a59ff3b5fbe4d6cb.jpg",
+          "duration": 2896,
+          "transferSize": 4885,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4abe0a4c6ebbd4c8ef4178dee7baf889a6f7f4ff3ab90aeb7e8915b0b796023d.jpg",
+          "duration": 2865,
+          "transferSize": 3253,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/cd16204e585d1e89c28513a877f87a879cf50e3f1af918c3c8c42f1adce79a7c.jpg",
+          "duration": 2897,
+          "transferSize": 6266,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/ed6bcb1913dddf5fe48d2cd421dc546a43a09c14ef6a00698b47f241ae5efd82.jpg",
+          "duration": 2896,
+          "transferSize": 6478,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4907caa1c5fa7742ebf120ea68adc2884fabdd57f83d0cd2c3d2d96e9464d91e.jpg",
+          "duration": 2896,
+          "transferSize": 9333,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/6d45760ded03e1aaac8a97eaa9e7e281caa68ca862cdf6caff9168ace74b1f94.jpg",
+          "duration": 2896,
+          "transferSize": 4603,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c4f1a90edf8d89436163e83f151167af20c4fecbddd47835fa3712f632d2f950.jpg",
+          "duration": 2865,
+          "transferSize": 2446,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/96ffca6fe1edfdb9bf04a5ce82258b6d330b77fc59beef5b2648c4fbc657802e.jpg",
+          "duration": 2895,
+          "transferSize": 7030,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/119119467523fed4ccc1fca825257a6385693fc1fa6f19358353b644b995563b.jpg",
+          "duration": 2895,
+          "transferSize": 5809,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7db575c40a51c1e02fabdab087ce2603784554b900d2c340e96d0e6955e533a0.jpg",
+          "duration": 2896,
+          "transferSize": 4919,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/96966e8f34f8b43f4967fd60b418f63a999aabe13824f050442bd89a4439f7d3.jpg",
+          "duration": 2865,
+          "transferSize": 2356,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/15fbd41a38e8d0d220b2d8d435e718dec1d9c4899e10c3ad5d598e204a7218b2.jpg",
+          "duration": 2896,
+          "transferSize": 5779,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/5a80c086bb71a7e0ea167e89abff6cd7969da627504c2257da21a4ae5a50964a.jpg",
+          "duration": 2865,
+          "transferSize": 3880,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/60261377b3df8f32ce615a919577726a2b5a9f1ade06abe2584de882cf03e8be.jpg",
+          "duration": 2895,
+          "transferSize": 6784,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/edd02b919c804c2cb9b2f8b9cbcdc475f23bae716cfc52ab928596f79ce56be0.jpg",
+          "duration": 2895,
+          "transferSize": 7246,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/1dee12acdb3f0fc7a0f9b6dcac05c046b8bfaa3072605ef855f61d3fe206bed2.jpg",
+          "duration": 3249,
+          "transferSize": 220674,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/896312f607b028082efc8b10607bf1c015c53337a9572352e04dbafd780ede7d.jpg",
+          "duration": 2865,
+          "transferSize": 2145,
+          "protocol": "h2"
+        },
+        {
+          "name": "/healthz",
+          "duration": 508,
+          "transferSize": 489,
+          "protocol": "h2"
+        }
+      ],
+      "reading": {
+        "passed": true,
+        "readyMs": 1008,
+        "javascriptEnabled": false
+      }
+    },
+    {
+      "mode": "explicit-proxy",
+      "dnsOverride": false,
+      "tlsVerified": true,
+      "httpVersionOverride": false,
+      "failures": [],
+      "passed": true,
+      "readyMs": 19487,
+      "health": {
+        "status": "ok",
+        "application": "daguanyuan-rumeng",
+        "revision": "spatial-garden-20260918-r22",
+        "featureRevision": "honglou-silk-20260917-v6",
+        "simulationRevision": "personal-reasoning-20260924-v2"
+      },
+      "resources": [
+        {
+          "name": "/assets/index-DHXB28Uc.js",
+          "duration": 935,
+          "transferSize": 124028,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/index-B3ZmnKrO.css",
+          "duration": 745,
+          "transferSize": 18456,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/garden-mark-COPNxcSD.svg",
+          "duration": 599,
+          "transferSize": 758,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/places.json",
+          "duration": 599,
+          "transferSize": 2621,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/characters.json",
+          "duration": 599,
+          "transferSize": 1248,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/events.json",
+          "duration": 475,
+          "transferSize": 3142,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/sources.json",
+          "duration": 597,
+          "transferSize": 10284,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/routes.json",
+          "duration": 598,
+          "transferSize": 1172,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/relations.json",
+          "duration": 599,
+          "transferSize": 445,
+          "protocol": "h2"
+        },
+        {
+          "name": "/data/editionCatalog.json",
+          "duration": 599,
+          "transferSize": 4793,
+          "protocol": "h2"
+        },
+        {
+          "name": "/scene-manifest.json",
+          "duration": 478,
+          "transferSize": 50866,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/garden-mark-COPNxcSD.svg",
+          "duration": 599,
+          "transferSize": 0,
+          "protocol": "h2"
+        },
+        {
+          "name": "/art/manifest.json",
+          "duration": 699,
+          "transferSize": 4886,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/GardenScene-lSnbJI5k.js",
+          "duration": 1458,
+          "transferSize": 337165,
+          "protocol": "h2"
+        },
+        {
+          "name": "/assets/garden-mark-COPNxcSD.svg",
+          "duration": 1,
+          "transferSize": 0,
+          "protocol": "h2"
+        },
+        {
+          "name": "/api/dreams/config",
+          "duration": 479,
+          "transferSize": 535,
+          "protocol": "h2"
+        },
+        {
+          "name": "/api/dreams/jobs",
+          "duration": 479,
+          "transferSize": 311,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/forest_grove.hdr",
+          "duration": 1380,
+          "transferSize": 118436,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/sunwen-architecture-low.glb",
+          "duration": 2569,
+          "transferSize": 434769,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/overview-low.glb",
+          "duration": 11726,
+          "transferSize": 2854829,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/ground-cover.glb",
+          "duration": 1609,
+          "transferSize": 4300,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/iris.glb",
+          "duration": 1866,
+          "transferSize": 6531,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/peony.glb",
+          "duration": 2566,
+          "transferSize": 11237,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/chrysanthemum.glb",
+          "duration": 902,
+          "transferSize": 11150,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/lotus.glb",
+          "duration": 2672,
+          "transferSize": 6230,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/vegetation/orchid.glb",
+          "duration": 2672,
+          "transferSize": 6475,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/vegetation/canopy-atlas-low.webp",
+          "duration": 9850,
+          "transferSize": 467050,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/ground/pond-normal.png",
+          "duration": 9373,
+          "transferSize": 151085,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/ground/surface-zones.png",
+          "duration": 10722,
+          "transferSize": 91458,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/sunwen-landscape-low.glb",
+          "duration": 8960,
+          "transferSize": 880410,
+          "protocol": "h2"
+        },
+        {
+          "name": "/models/urban-context.glb",
+          "duration": 4226,
+          "transferSize": 103767,
+          "protocol": "h2"
+        },
+        {
+          "name": "/draco/draco_wasm_wrapper.js",
+          "duration": 3324,
+          "transferSize": 11168,
+          "protocol": "h2"
+        },
+        {
+          "name": "/draco/draco_decoder.wasm",
+          "duration": 3537,
+          "transferSize": 55261,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/56efbc52a72c2b78b69dc7bac8cd4fa9eba511bae6119458401899649a128b33.jpg",
+          "duration": 3569,
+          "transferSize": 35356,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c6ce78b0ad6d975d68188eb86a1be97a745933f1880c90a281989cffa4e469d6.jpg",
+          "duration": 3582,
+          "transferSize": 44192,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/bf419c6dfc099cc8f4e48bb2d8b5406a2ce5ce14fa22a2cc114f4d249a436f71.jpg",
+          "duration": 3959,
+          "transferSize": 59983,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d7eda7d492e153322e43c7f2bcb2d57dab92879a1cf816ba198ac1663ce152a1.jpg",
+          "duration": 2996,
+          "transferSize": 2363,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/412aaaf35456b13303bb3b24117490959e503f205de2f7185a622f6c706c5108.jpg",
+          "duration": 2996,
+          "transferSize": 3243,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4b6b90f49a49a8fbd61fbdcde6143124a77f84fd9053a5798c1248cf283fe4db.jpg",
+          "duration": 2995,
+          "transferSize": 2522,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/631271dd27499bb806328111f4f59ecbb178f55f04335137cc391598122fec10.jpg",
+          "duration": 2995,
+          "transferSize": 3241,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f41c80fa93d0074d2277cbd8642784cc00be86af37e52f7755d281ff67830f93.jpg",
+          "duration": 2995,
+          "transferSize": 2264,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/20529dd96145a01fa459fa9567d1e85fe43b15d5a4cc3c3e74f44fd6b918768b.jpg",
+          "duration": 2995,
+          "transferSize": 3047,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a6ed62ed78a5ea692502ae095dc26400f92e11b88850ba610bf2c2488c1c62f8.jpg",
+          "duration": 2994,
+          "transferSize": 2213,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/95abffce5b076605a2493ec2bd6b6f9863fba337510e983ce53c675a4d3154a6.jpg",
+          "duration": 2994,
+          "transferSize": 3005,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c20073ca9f373fb59101995165cb91953626a0ef9f57b7530511b8d550b71851.jpg",
+          "duration": 2994,
+          "transferSize": 2343,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/15b2b299a781fe14f4cabc85b072d438d3200e49856368c0263f8b8d4fc4a82e.jpg",
+          "duration": 2994,
+          "transferSize": 3175,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/80d4a7f944ec5155af7662bdc0b74355b87d0d05d36a00ea1f0d972d079ea704.jpg",
+          "duration": 2994,
+          "transferSize": 3341,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/ground/garden-ground-zones.png",
+          "duration": 984,
+          "transferSize": 69300,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/landscape-light-low.webp",
+          "duration": 984,
+          "transferSize": 45218,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/ground/garden-ground.webp",
+          "duration": 984,
+          "transferSize": 47604,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/06cbeaa89ef408192de4bf202119e0ba723c8b3ea83cd9c937870f3097146edd.jpg",
+          "duration": 298,
+          "transferSize": 14908,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/6d966d8574872d7fbb5fd402c401e000611d9bebe5e51e7b66d83dee2f83e9d9.jpg",
+          "duration": 293,
+          "transferSize": 5013,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7f1860a70e917d844ed2165aab4fa98fb6cea15753cb6f8a0713333174cd7f33.jpg",
+          "duration": 293,
+          "transferSize": 4515,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d0533a21259ca211058fc124ddfc2250bfc508ec67b212aaf16aaafad18c1f14.jpg",
+          "duration": 292,
+          "transferSize": 2174,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/04e4070e9af6553bdc8929aeb01b85fe7ecc1806060a40159e5234afb5b0605b.jpg",
+          "duration": 683,
+          "transferSize": 35616,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/44365b85412aae15e99129db1e86cc0aa1efda940e0b1d4cc2f5eb2e84e80a19.jpg",
+          "duration": 684,
+          "transferSize": 8547,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/99509b772fd605882713cdbed1413e99cb278b03548aad3cc801c676ba38f4ca.jpg",
+          "duration": 475,
+          "transferSize": 10989,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/44b95552771dcf621667bb465f23affa3d33110588f14f98949174196ec39330.jpg",
+          "duration": 477,
+          "transferSize": 11540,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d842713a6b3fada97bb70350b1e085dcd30cce45835a84887404332a2bf94104.jpg",
+          "duration": 298,
+          "transferSize": 5788,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/eeec952a21652999a4102f77248b4d43f89200e9a0486ca6b7cad0e59f98d89e.jpg",
+          "duration": 477,
+          "transferSize": 6405,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9edcc07ccfd0c9b754e9db2ab9c9199b45994bee7deb8d3df12c2edf6f732703.jpg",
+          "duration": 477,
+          "transferSize": 10562,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/1ff29b3b78f9907cf658c083cd9a9e619145eeac14e4cbb3bc4a4095dc9e700e.jpg",
+          "duration": 478,
+          "transferSize": 3687,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/47d38faa5990c2bba481878e93fcba01a4c62f7832a9ccc5e2642dec449b1381.jpg",
+          "duration": 475,
+          "transferSize": 5689,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9c642fbc0ed041e5a659e0ce7e7b8a0fc02297a8c74c1a6aac35ee64ee95aab3.jpg",
+          "duration": 684,
+          "transferSize": 5082,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/22ebdbb9b75d4598b92cdccfa8145d4075bd69f9d38008f8773811cee051a872.jpg",
+          "duration": 478,
+          "transferSize": 10983,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/14fa3e3ef537284b55057cdc22b8395f1a264ed9abed38c3dce61b908f14b7a9.jpg",
+          "duration": 684,
+          "transferSize": 2640,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7775a42d323fdd6faf03b48e9aec9b89430f5d858a9b41dee0bd3559332d5916.jpg",
+          "duration": 684,
+          "transferSize": 9420,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9a66f3110cc4d3dfedb8c385a36ae6e042b1c8e9b22dc065b3c6b1c95d72d2a0.jpg",
+          "duration": 685,
+          "transferSize": 5485,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/1a28477f11c083ac165edc2956e7a33d0482e88cfb0b8af12ac49d6e40f60df9.jpg",
+          "duration": 297,
+          "transferSize": 6328,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/307ac6ee5a8bf9d1e47612b3974de4b7430b29ae8c7bcc89a48b72a1d7d66e74.jpg",
+          "duration": 685,
+          "transferSize": 3755,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a836979c6fa37b527b6c83701684e1f7bc236ebbd7042007a8c670176dafba5c.jpg",
+          "duration": 685,
+          "transferSize": 6344,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d8331a5a313d580da39740a3a7f6707bf1f3f4a9d8a5c668c5f4ee25b1d771a6.jpg",
+          "duration": 685,
+          "transferSize": 3785,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7eaa26e8b0c61d729047fae21d9dc09ece89632002c4542a7c00b51003c8c6e3.jpg",
+          "duration": 685,
+          "transferSize": 10138,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/da1bbffac4577763fe3d59034231e78a2c5eaacd4a3a104f874d61610cfddb1b.jpg",
+          "duration": 920,
+          "transferSize": 28199,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4b7a311852342b4c925b1306cba37c8101f45a08b768211dc300b0aa3cea3eae.jpg",
+          "duration": 921,
+          "transferSize": 13697,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/401b533b7e7a7db3a1247909aa38ac9d070a536543143b6c0c25f478c7a2b00d.jpg",
+          "duration": 922,
+          "transferSize": 9590,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/fca8baff664c8ab04208a9b9916bfe4ed446ff512e805a9affbd7d86a4ab8ae6.jpg",
+          "duration": 922,
+          "transferSize": 2414,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a7ba847389063b027ff5314a9db90f7f92840c8b59c5de2510b327172837f34d.jpg",
+          "duration": 923,
+          "transferSize": 10513,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/8123416f1a7e449b6e722930ec59cdbca715d101163cecc9f2352d7993dd768e.jpg",
+          "duration": 921,
+          "transferSize": 7156,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/accba4d255c5f3aa4c0d51058cd5b5e8e2310c9a5cf3684879442ebe34b64fac.jpg",
+          "duration": 922,
+          "transferSize": 6971,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e1cfff96b60499f1ebdd2a979394b4ba4bd9f2346938d92e153643a726ccd4a3.jpg",
+          "duration": 923,
+          "transferSize": 7438,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/383fc3f68c44ebd735b33b2b71dca931fc8443bd342319353a5de079e47cfffa.jpg",
+          "duration": 924,
+          "transferSize": 9791,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a0d2d6d79a4124a3a8153a1587120b3c562dd423f43fbd9ae7a9aef7f7093a64.jpg",
+          "duration": 923,
+          "transferSize": 3634,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/44a06d9d9206b7fe197217c2847e35b2731c417b4d6edb61fa9c829364d760de.jpg",
+          "duration": 924,
+          "transferSize": 4019,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/fd0cc7dd24a4a3cd609a10ec97117c9f6de5b196d9b9d4662efdf5d6abc57d13.jpg",
+          "duration": 923,
+          "transferSize": 2138,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7846421b10fbf6450d06011ecac9b3068080537ad8a377cb1bdf93eb9fff2ac4.jpg",
+          "duration": 925,
+          "transferSize": 2700,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/581f439106209d436e9f03db0b2b33d50a97a1b93c75dc5843bc685b775bbbee.jpg",
+          "duration": 919,
+          "transferSize": 5844,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/6b4bfdc5ddc06afec044bfff927ce76372cda6d647a049a6ce02eaefb925364c.jpg",
+          "duration": 920,
+          "transferSize": 5756,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4ddbcc676e0de1c574396a9d500e061e7e7bce2fc0983ec9f64c407d3922492c.jpg",
+          "duration": 920,
+          "transferSize": 4436,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/2a14e77efe6687eaabb2c82016e330c221b833982edea32cc04e8581528ac2a3.jpg",
+          "duration": 922,
+          "transferSize": 2712,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f185e47bffa8d0a4dc25dcbe364db2eae77c580f800a3a8d5def32599780dd3e.jpg",
+          "duration": 921,
+          "transferSize": 2279,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/bfa072f3d2fed770cd671931de45f75d03ac48ce820ccd5477a2c05c9b80d30a.jpg",
+          "duration": 922,
+          "transferSize": 4973,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/876399e0e99ee7cec319e7eb9141856083f6a64e30a6e22e9f4bed90c4dba3d9.jpg",
+          "duration": 922,
+          "transferSize": 3091,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e20a09d8487880fdeab3ea6095ecf132a6bbb39f70488def868adb419250d459.jpg",
+          "duration": 923,
+          "transferSize": 6319,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0b63c587aa5f008f365e41b4267e3df239d7c1a357689aecf151e2694ad1f0af.jpg",
+          "duration": 924,
+          "transferSize": 6347,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/fa00f4e80f1bf2bfcf12efa512150c2b87539070a288bcba79ad982f9fb5aa2e.jpg",
+          "duration": 922,
+          "transferSize": 8732,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/37ed2821dab72ec81a5bccc1bc86a7207965b389589c732c4793fb632b01d2e3.jpg",
+          "duration": 923,
+          "transferSize": 6663,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a2ffac879e95497895b469122a30484187605d7b3a69966a558a06a58c3d4b48.jpg",
+          "duration": 924,
+          "transferSize": 3437,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d1864224c43db98415e57495f01e834b0a178183f3bda5df9a07d70165750a79.jpg",
+          "duration": 924,
+          "transferSize": 2222,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/86263db65c85bda20bd20e6772a975e359982217421268ca5570732bc6d68bdc.jpg",
+          "duration": 925,
+          "transferSize": 6144,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/db54d84a1f4b317596b46e08227eb24ddd1b80f40066f6fd4a24872ccc772561.jpg",
+          "duration": 996,
+          "transferSize": 5622,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f27e8f93348f77864dc46e6695c8fbd7ca8ab49c8b26c298e3331c9032948ccc.jpg",
+          "duration": 998,
+          "transferSize": 4637,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/180a6146ec7957a350cf9bd5682ad9dabe9426f78e1662fcb9c8bc89dc26d03d.jpg",
+          "duration": 997,
+          "transferSize": 2300,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/28459838d44ded764c0c2dfebb99be9e64961a114aa9a39c273fa16cbc48f118.jpg",
+          "duration": 999,
+          "transferSize": 3653,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e76521b7bbaad65c59af56aec99778718930880c4c60e0638e93d25fa6b54847.jpg",
+          "duration": 998,
+          "transferSize": 5461,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0675292bc64babf1de5c850ab88dbe76e485811addd2eb294d924dbf00a0dd92.jpg",
+          "duration": 924,
+          "transferSize": 5674,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/979bd23c5bff0e6a0f6006a271cec7ff407fedd9d62ffb0a26ca0858d51d98f0.jpg",
+          "duration": 1000,
+          "transferSize": 6829,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f942542c287fa67537e63d01042b1d463082da5f83cfe6ccf7cce02c0fd02c65.jpg",
+          "duration": 995,
+          "transferSize": 3876,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/75a197d88502749bc856e6825815d9fa8dd87cb75dc867f9bf8f5506cb6d755e.jpg",
+          "duration": 925,
+          "transferSize": 2119,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/12d8009f423fa1e8cd85d563868c0b230a0d6bdf291091824b6ea8d8bbbf211f.jpg",
+          "duration": 924,
+          "transferSize": 6487,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/5738f410c9948dd30070326a15908fadd7f61935b6a3fff060b786ea06475139.jpg",
+          "duration": 996,
+          "transferSize": 5695,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c1b62a2d898869915e637f39da4aa3d118acb4aba7e60c8013e70aa86201f538.jpg",
+          "duration": 995,
+          "transferSize": 4795,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9b3eb33e9a913b9725c396c951d173f3d501a67cdf4c40ca4eb7a3dbb95fa255.jpg",
+          "duration": 996,
+          "transferSize": 3758,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0c4663e91f91eae05975a545f8385375384e95a7928c4e12b85895a3a15504bd.jpg",
+          "duration": 997,
+          "transferSize": 5415,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f3c3b99da10ff561682ad98b38981585ca56c4b1049988b72e1ecb8751a9a231.jpg",
+          "duration": 998,
+          "transferSize": 6735,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/2ae1549e3555688757a170fb3a2a9ccd369259ab4061cbb966cb029b9953da67.jpg",
+          "duration": 998,
+          "transferSize": 6713,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/47131fafabd7e2cfce8071dfd30f4927c1c73494a2d9dc5e2929256c8c0c9b01.jpg",
+          "duration": 998,
+          "transferSize": 4412,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0a73eb8fd39a15316906843b26076003601349aaf3e1685847caeb918e49d1ba.jpg",
+          "duration": 998,
+          "transferSize": 3588,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d7968e68f47158b60353754c0ddffce56005ff77cd0ebb0b090d861c419ab893.jpg",
+          "duration": 998,
+          "transferSize": 2287,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9c00c7b47cef12e4ed4308edad7c400e49d43d27a12e69178e0227c74e4f78f7.jpg",
+          "duration": 998,
+          "transferSize": 2487,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/3d2d559e93539b606aab3cbdd031c99dea2b8fcc60cd9275e34e15d5d7dd5f13.jpg",
+          "duration": 999,
+          "transferSize": 6343,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/951efcd8fd0af08f249e6687c9d5cf57cfada80254e56c3b5657c217ffc30358.jpg",
+          "duration": 922,
+          "transferSize": 5783,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e83c09341a3eba1b8126a7883bb867d21f6ea13cab754f65a2a25e18a5d74a3a.jpg",
+          "duration": 998,
+          "transferSize": 4888,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/822e01357c3d5c400e6e9f52c276cb41f5c33f0c4debd907ef0bf0bf056fd0ee.jpg",
+          "duration": 999,
+          "transferSize": 2452,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/81e43105730f2de4866443f37d9e5bb0e179031248fc7b884b45ccefbbda5846.jpg",
+          "duration": 1000,
+          "transferSize": 5923,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/9b77239d0533e3d162fb97bec08f9420633c46209c9da88e26cabd93a5a3689c.jpg",
+          "duration": 1000,
+          "transferSize": 3830,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/801e42a3addfccee2a0968b99d4ff2384c80164e686d7d2f3fe677fbb02089db.jpg",
+          "duration": 1000,
+          "transferSize": 6647,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/fb5d8d2f8d05709abf30c39db7ab4200d5530839c7fa5eec016fa156864b9070.jpg",
+          "duration": 1000,
+          "transferSize": 6027,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/98ddbb61e71f2bb45f67a4299efc666d82a6bd1afa866466ca99a90e25ab8365.jpg",
+          "duration": 1000,
+          "transferSize": 5555,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/5a2bea1b924e05931c1cf6ac9c87af7de04772bf1dc77fe63af86aaf5ecdb3d5.jpg",
+          "duration": 1000,
+          "transferSize": 2385,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e31531dcf459b5d9e80a8ddac04a8aa1b482703329a3b2918bce9becc1545a51.jpg",
+          "duration": 1275,
+          "transferSize": 8242,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/57d306e59ce16ccd83281ca3a1d4845c6f82be93e519e2755546f629ca35f7cb.jpg",
+          "duration": 1275,
+          "transferSize": 2184,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/2bea35154100bd0e689894d5535a0d4e7ba7d4f6995d4f398ecf7e82b40bbc7a.jpg",
+          "duration": 1275,
+          "transferSize": 3800,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/2eb2130afc349f416af3fd5ba2dd305da73e6a4c6ed99d41e446c9f3122b78a3.jpg",
+          "duration": 1276,
+          "transferSize": 2386,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c6c044b3103652e03e7054d1900c31411aa44c26e934da19dc3f215baf0e41a9.jpg",
+          "duration": 999,
+          "transferSize": 5567,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e897b87fc521798c7c79fc74e2e8ae3ee25002c8f92a11d7f3bcbc71f419662f.jpg",
+          "duration": 1000,
+          "transferSize": 5353,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/be7add77c9794bdf19d85e0ffd7064e42a53c090b285f5f6217a55247e4fcf72.jpg",
+          "duration": 1276,
+          "transferSize": 6159,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/619112600dd9a8586397bfcbec986cd87b786ef0f63b0cf3878e759ee281fec4.jpg",
+          "duration": 1275,
+          "transferSize": 5991,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/d499927a0fd82799fde73b198e6e69da18758e8c4bd9f7edf103af274986d571.jpg",
+          "duration": 1276,
+          "transferSize": 4041,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7b25f7981faf49b1354452a81944ba7375310eab07c9c68f76cc08d2cef96d29.jpg",
+          "duration": 1276,
+          "transferSize": 6620,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f61c379b762d7a21863cfb8b5f817897ac48677fb9d4c2b7b9c40d2a4041c4a0.jpg",
+          "duration": 1277,
+          "transferSize": 6543,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/84dae91d1eeeb0aa8485be514bba31e9dd92f833dfe525ced38c9e5abd5b500a.jpg",
+          "duration": 1278,
+          "transferSize": 3582,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/235694de7785fdd9a7f6600b11d51e42d4a1f56d0230a4ff2c3fc507a06db8c2.jpg",
+          "duration": 1278,
+          "transferSize": 2382,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0413677e286172114c3be182202f5db5556495538a266c374eb9a290bc7ade95.jpg",
+          "duration": 1276,
+          "transferSize": 4627,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/861c40fc200cb4a9f0039046c8626ff017874f3406d01899f9aabd25aa645ad7.jpg",
+          "duration": 1276,
+          "transferSize": 5566,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0bfe1db8ae2bcaf725775b457d5dcb51ed64a21b8a880728592342ee49f8beb5.jpg",
+          "duration": 1276,
+          "transferSize": 3648,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4e8d430be9b4953305fac742b927b663ce7790632f85fda506c82b08c5fb1780.jpg",
+          "duration": 1277,
+          "transferSize": 6073,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/778ac2409917bde9c738cc2a638893402501b6484dd564d2ed0b35961a73d9cf.jpg",
+          "duration": 1277,
+          "transferSize": 3815,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f84a7cd3c5106de4749cda024cec506711be674d90e791512d324e7dae0b1a69.jpg",
+          "duration": 998,
+          "transferSize": 6206,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/057d16e52a34ca69fdddd771519f2bb234bda4e7b5f845b99f8488e7397047c1.jpg",
+          "duration": 1279,
+          "transferSize": 5323,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7785b30d8a7de0940fd8ea4d55a607f11ae5101ac7d368dc4a439e8b40447ffd.jpg",
+          "duration": 1279,
+          "transferSize": 4655,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/dd4494dd6e81027ef9fed1ef32022ab95de05127376c2428885d5aa7bf8c210a.jpg",
+          "duration": 1280,
+          "transferSize": 5309,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/93f6798f0318d6e4fcf7c5ce22d26b4e6709082dbc7c57e3dcdb97fad58f801f.jpg",
+          "duration": 1280,
+          "transferSize": 3422,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c260a0fad52ae0f555435d3e8a397c99dba5d2a58d75416b158d2ccc83f76657.jpg",
+          "duration": 1281,
+          "transferSize": 6598,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a0dbc4761870577675fedc43130f5e574b96a7d1f6e7b5e209be2eedd4d43959.jpg",
+          "duration": 1281,
+          "transferSize": 6398,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a0194dd7d97bd9e77b58edc9dc42e073015adbc43f1c9fadbb3025bb21dae86c.jpg",
+          "duration": 1282,
+          "transferSize": 4325,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/a700a24b8eca7ca68621dd61709cca23d8e4cdd6b5dd1ec77baf37a939b661b7.jpg",
+          "duration": 1282,
+          "transferSize": 6982,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/e0529113c0b20df3c7ca8e8970d4aa209daab933f278f4db05f4fa9ec01f69a7.jpg",
+          "duration": 1282,
+          "transferSize": 5778,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f33a5e20777d3ed763f1c808d75777551ac99a3e77f76516404fd220d97f7481.jpg",
+          "duration": 1277,
+          "transferSize": 5265,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/56ee54f43b125943c8f23a9cfc06a8e373f87d9f65cb62864ac8d8c0f1f87620.jpg",
+          "duration": 1278,
+          "transferSize": 6010,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/501a7dd33f692096c2feda542a163c1b47ae1b3b58a0654da5d244e0971acb00.jpg",
+          "duration": 1278,
+          "transferSize": 4045,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/345516f438a0cd304f9e1b9a977834e9f1282f364e8e543a6c3f1230b5a4d96e.jpg",
+          "duration": 1278,
+          "transferSize": 6850,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/32eb8c807c3d9dd387b0aab87893bf5179cb857d99df5fdc2aadeae463dc441f.jpg",
+          "duration": 1279,
+          "transferSize": 6859,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7d406114c27915c88fe886c92f0999fc7ef593cc25dcb1d5eb5ecdab93377608.jpg",
+          "duration": 1279,
+          "transferSize": 2561,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/67a45292f5c9f5d51377d8e013e7c3a6a47d05ac72f92869327ba7a2ea8c81df.jpg",
+          "duration": 1279,
+          "transferSize": 7581,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/97f3331f3e42de1952d5a82970ce82e1eb63d1b6515baf5ffa378ebce77aae84.jpg",
+          "duration": 1279,
+          "transferSize": 8862,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/b9c29f057123f5702216d88cc9f503e0f9280fe2c3fbe9a33e1ccda4fbfeb1f7.jpg",
+          "duration": 1279,
+          "transferSize": 5827,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/f32c9c9d8d2ea049fb387333bfef3ce99a2ce2da2d2388e9dfd9e0db099a9ef3.jpg",
+          "duration": 1279,
+          "transferSize": 9432,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/1945800a43d9808c147738f2edae6aab9160a8551229cf86cbae1f5a0ac696ca.jpg",
+          "duration": 1279,
+          "transferSize": 3594,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/0794f89c46f388717314361eae6b43de9ca6283137c6c85eb42fc2c35c5c0ec5.jpg",
+          "duration": 1280,
+          "transferSize": 2148,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7d70d639a96830cfe5fdef66cb337aeb470ca2856a1256209ceaff491c011b28.jpg",
+          "duration": 1276,
+          "transferSize": 5565,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/cd50052830567c1e7dc91ca3dca756d1dcde20a8cb284668c8e4c16198c7c443.jpg",
+          "duration": 1280,
+          "transferSize": 6260,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/483887264df0c430e1c88b9f86d8fee2b2133a9611e5307eaad1cb6a6f8357f0.jpg",
+          "duration": 1277,
+          "transferSize": 4244,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/544bf03f63a365270e7fe0d9eb8c993a0804c203ad2bd0e6a59ff3b5fbe4d6cb.jpg",
+          "duration": 1280,
+          "transferSize": 4885,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4abe0a4c6ebbd4c8ef4178dee7baf889a6f7f4ff3ab90aeb7e8915b0b796023d.jpg",
+          "duration": 1281,
+          "transferSize": 3253,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/cd16204e585d1e89c28513a877f87a879cf50e3f1af918c3c8c42f1adce79a7c.jpg",
+          "duration": 1281,
+          "transferSize": 6266,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/ed6bcb1913dddf5fe48d2cd421dc546a43a09c14ef6a00698b47f241ae5efd82.jpg",
+          "duration": 1281,
+          "transferSize": 6478,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/4907caa1c5fa7742ebf120ea68adc2884fabdd57f83d0cd2c3d2d96e9464d91e.jpg",
+          "duration": 1281,
+          "transferSize": 9333,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/6d45760ded03e1aaac8a97eaa9e7e281caa68ca862cdf6caff9168ace74b1f94.jpg",
+          "duration": 1282,
+          "transferSize": 4603,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/c4f1a90edf8d89436163e83f151167af20c4fecbddd47835fa3712f632d2f950.jpg",
+          "duration": 1282,
+          "transferSize": 2446,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/96ffca6fe1edfdb9bf04a5ce82258b6d330b77fc59beef5b2648c4fbc657802e.jpg",
+          "duration": 1282,
+          "transferSize": 7030,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/119119467523fed4ccc1fca825257a6385693fc1fa6f19358353b644b995563b.jpg",
+          "duration": 1282,
+          "transferSize": 5809,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/7db575c40a51c1e02fabdab087ce2603784554b900d2c340e96d0e6955e533a0.jpg",
+          "duration": 1282,
+          "transferSize": 4919,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/96966e8f34f8b43f4967fd60b418f63a999aabe13824f050442bd89a4439f7d3.jpg",
+          "duration": 1282,
+          "transferSize": 2356,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/15fbd41a38e8d0d220b2d8d435e718dec1d9c4899e10c3ad5d598e204a7218b2.jpg",
+          "duration": 1283,
+          "transferSize": 5779,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/5a80c086bb71a7e0ea167e89abff6cd7969da627504c2257da21a4ae5a50964a.jpg",
+          "duration": 1283,
+          "transferSize": 3880,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/60261377b3df8f32ce615a919577726a2b5a9f1ade06abe2584de882cf03e8be.jpg",
+          "duration": 1283,
+          "transferSize": 6784,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/edd02b919c804c2cb9b2f8b9cbcdc475f23bae716cfc52ab928596f79ce56be0.jpg",
+          "duration": 1283,
+          "transferSize": 7246,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/1dee12acdb3f0fc7a0f9b6dcac05c046b8bfaa3072605ef855f61d3fe206bed2.jpg",
+          "duration": 1732,
+          "transferSize": 220674,
+          "protocol": "h2"
+        },
+        {
+          "name": "/textures/shared/896312f607b028082efc8b10607bf1c015c53337a9572352e04dbafd780ede7d.jpg",
+          "duration": 1280,
+          "transferSize": 2145,
+          "protocol": "h2"
+        },
+        {
+          "name": "/healthz",
+          "duration": 286,
+          "transferSize": 489,
+          "protocol": "h2"
+        }
+      ],
+      "reading": {
+        "passed": true,
+        "readyMs": 1774,
+        "javascriptEnabled": false
+      }
+    }
+  ]
+}
