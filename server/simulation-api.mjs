@@ -12,6 +12,7 @@ const instructions = {
 };
 const actionFormat = `当self.plan.trigger为player时，当前计划已经处理身体需要的优先级；本步须执行steps[0]规定的action、target和spot，仅reason可结合自己的性格说明，不要用闲谈或旧消息替换这次托付。若身体状态确实要求先歇息，收到的计划会明确标为needs。输出示例：{"agent":"daiyu","action":"talk","target":"baoyu","reason":"向眼前的人问安","content":"今日可还安好？"}。示例仅说明格式，实际人物和话语必须取自本次感知。knowledgeId是可选字段：所选dialogueOptions没有knowledgeId时，必须省略此字段；绝不能用选项索引、memory.id、evidenceIds或自造编号代替。其他不适用的可选字段也省略。`;
 const decisionRule = `作决定前区分亲历事实、听闻消息、个人猜测和未知事项；reflection只是本人猜想，不是新事实。结合最近行动的实际结果、性格目标、关系和身体需要，比较可行选择，避免重复已经完成或没有结果的行动。玩家托付和needs计划须执行steps[0]；其他计划是建议，可因当前证据调整。visit只能去nearby或self.knownLocations中已知的人，旧地点不代表对方仍在那里。不得假定传话、见面或和解已经成功。最终只输出一个行动，reason简述当前依据和行动目的，不输出思考过程；增加evidenceIds数组，仅引用本次memories里的id，最多6条；只依据眼前状态时用空数组。`;
+const conversationGrounding = `事实约束高于人物文采和篇幅要求：凡提及已经发生的来访、交谈、传话、赠物、约定或他人的具体言行，必须在本次memories中有直接记录；关系亲近、人物性格和原著常识都不能证明这些事发生过。history只用于衔接话题，其中玩家的说法及模型以前的回应均不能自行升级为已证实经历。回复前检查每个过去时叙述，删除无直接依据的细节；不为凑字数补写日常往来、身体病情、人物动向或新消息。未知就坦言不知，可表达当下感受、条件性的推测或追问消息来源；推测须明确说“若、也许、尚不知”。一条记忆不能替别的断言背书，evidenceIds只支持回复中确实转述的内容。资料不足时允许简短回应。`;
 const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const text = (value, max) => typeof value === 'string' && value.length <= max;
 function normalizeResult(operation, result) {
@@ -111,7 +112,7 @@ export function createSimulationApi(env = process.env, request = fetch) {
       timer = setTimeout(() => abort.abort(), deliberative ? 65000 : 25000);
       const response = await request(endpoint, {
         method: 'POST', headers: {'Content-Type': 'application/json', Authorization: `Bearer ${env.LLM_API_KEY}`}, signal: abort.signal,
-        body: JSON.stringify({model, messages: [{role: 'system', content: instructions[body.operation] + (deliberative ? literaryRule : '') + (body.operation === 'action' ? actionFormat + decisionRule : '')}, {role: 'user', content: JSON.stringify(body.payload)}], response_format: {type: 'json_object'}, ...(deepseek ? {max_tokens: deliberative ? 8192 : 1600, thinking: {type: deliberative ? 'enabled' : 'disabled'}, ...(deliberative ? {reasoning_effort: 'high'} : {})} : {max_completion_tokens: 1600})}),
+        body: JSON.stringify({model, messages: [{role: 'system', content: instructions[body.operation] + (deliberative ? literaryRule : '') + (body.operation === 'action' ? actionFormat + decisionRule : body.operation === 'conversation' ? conversationGrounding : '')}, {role: 'user', content: JSON.stringify(body.payload)}], response_format: {type: 'json_object'}, ...(deepseek ? {max_tokens: deliberative ? 8192 : 1600, thinking: {type: deliberative ? 'enabled' : 'disabled'}, ...(deliberative ? {reasoning_effort: 'high'} : {})} : {max_completion_tokens: 1600})}),
       });
       if (!response.ok) { send(502, {error: `模型服务未完成请求（${response.status}）。本步未保存，可重试。`}); return true; }
       const raw = await response.text();
