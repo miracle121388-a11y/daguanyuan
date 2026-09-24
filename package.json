@@ -24,7 +24,7 @@
     "lint": "eslint src tests scripts server server.mjs --no-warn-ignored",
     "test": "vitest run",
     "verify": "node scripts/validate.mjs",
-    "build": "node scripts/clean_build.mjs && npm run data:build && tsc --noEmit && vite build",
+    "build": "node scripts/clean_build.mjs && npm run data:build && tsc --noEmit && vite build && node scripts/build_reading.mjs",
     "test:simulation": "node scripts/simulation_smoke.mjs",
     "test:simulation:model": "node scripts/simulation_model_smoke.mjs",
     "test:network": "node scripts/network_smoke.mjs",
