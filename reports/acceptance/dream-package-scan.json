@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20260924-072906-384918",
+  "directory": ".deploy/reference-20260926-025148-603083",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,7 +11,7 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "2661b733184d3cda74f95ef9fa40012fdf2c178dc2f2c4f1220129b3c4581ee4"
+      "sha256": "1b84a54f5aa79e155d7db7a43f0710c9aa2d9726ffb3fd91e82962216cc8056e"
     },
     {
       "path": "server.mjs",
@@ -19,11 +19,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "233e5834ea3bce24c8fa740c25994fcd9182794eed6647df2d47e7e19c64bcd9"
+      "sha256": "6fd58c94281ab0db86b2950abf4d70e45b35cdb13da3cf9b04db107a1a61d9fe"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "9420593cad56c52ebefead4d39e6a4b682c35f448884808b244c2716bdd49975"
+      "sha256": "39385eb96d4a77cbeb4069f4b3c97b318fb9ba11bc623fc94c3903250b6a56a0"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -910,24 +910,24 @@
       "sha256": "041f99af7673e0b6307373b10cf3052eb48d6f139782ff763b21f13380ed9ebd"
     },
     {
-      "path": "dist/assets/index-DHXB28Uc.js.br",
-      "sha256": "b30fa8a345c5f1087dac43b8746ec036d21c6a8fe66cbba8414fd298815d9874"
+      "path": "dist/assets/index-DWhHKq7b.css",
+      "sha256": "65a6f2659a3c7c2cc6ed8e062a15604a09d93e3c367c4bc847f831f0bbc4cac7"
     },
     {
-      "path": "dist/assets/index-B3ZmnKrO.css",
-      "sha256": "1d092e7494f167bde31f562e2abea7a8cf4a5a5d6678d7aba0cc26d3cd53a463"
+      "path": "dist/assets/index-BD35Np-n.js.br",
+      "sha256": "3f141d094fd3f694acf8be96183c2fc496e1596e1c1f190ded433d5e892fd364"
     },
     {
-      "path": "dist/assets/index-B3ZmnKrO.css.br",
-      "sha256": "65f8cac4fa404fd3c48ab058577551cc0df35f65f7a204c8b2fcb09df60b2adf"
+      "path": "dist/assets/index-DWhHKq7b.css.br",
+      "sha256": "3516c6c9e392404d366cba0bf8875660aab207a5ae771cee10b02d9bc7009c10"
+    },
+    {
+      "path": "dist/assets/GardenScene-yUy-darD.js.br",
+      "sha256": "b2c54045c257c5e6845f0181903bf863a3fa5764e2edc0463c35b7d0125a9c6b"
     },
     {
       "path": "dist/assets/garden-mark-COPNxcSD.svg",
       "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
-    },
-    {
-      "path": "dist/assets/GardenScene-lSnbJI5k.js.br",
-      "sha256": "9174d1a29998264eb5b43613e5b1278c2f8aa2c862dd54be486b0567261409a0"
     },
     {
       "path": "dist/models/places-low/hengwuyuan.glb.br",
