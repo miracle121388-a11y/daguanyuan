@@ -72,10 +72,47 @@ describe('edition persistence and comic trigger guards', () => {
   beforeEach(()=>{
     items.clear(); vi.stubGlobal('localStorage',{getItem:(key:string)=>items.get(key)??null,setItem:(key:string,value:string)=>items.set(key,value)});
     useGarden.setState({data,spoilerLimit:null});
-    useSimulation.setState({journal:null,editionId:'original80',editionJournals:{},phase:'ready',comicCue:null,open:false,comicAutomatic:true,error:''});
+    useSimulation.setState({journal:null,editionId:'original80',editionJournals:{},phase:'ready',comicCue:null,open:false,ifComposerOpen:false,comicAutomatic:true,error:'',provider:'mock'});
     useSimulation.getState().initialize(data);
   });
   afterEach(()=>vi.unstubAllGlobals());
+  it('opens IF creation directly without creating or altering a world until submitted', async ()=>{
+    const s=useSimulation.getState(), before=JSON.stringify(s.journal);
+    s.openWorld('if');
+    expect(useSimulation.getState()).toMatchObject({open:true,ifComposerOpen:true,recordView:'events'});
+    expect(JSON.stringify(useSimulation.getState().journal)).toBe(before);
+    await useSimulation.getState().createIf('如果黛玉的精力降到30');
+    expect(useSimulation.getState().ifComposerOpen).toBe(false);
+    expect(useSimulation.getState().journal?.active).toBe('if');
+    expect(currentWorld(useSimulation.getState().journal!).agents.daiyu.mood.energy).toBe(30);
+    expect(useSimulation.getState().journal?.main).toEqual(JSON.parse(before).main);
+  });
+  it('returns to an existing IF from the main entry without duplicating or losing its snapshots', async ()=>{
+    await useSimulation.getState().createIf('如果黛玉的精力降到30');
+    const saved=JSON.stringify(useSimulation.getState().journal?.if);
+    useSimulation.getState().openWorld('main');
+    expect(useSimulation.getState().journal?.active).toBe('main');
+    useSimulation.getState().openWorld('if');
+    expect(useSimulation.getState().ifComposerOpen).toBe(false);
+    expect(JSON.stringify(useSimulation.getState().journal?.if)).toBe(saved);
+    expect(useSimulation.getState().journal?.archives).toHaveLength(0);
+  });
+  it('blocks top-level branch changes during execution and closes an unfinished composer on leaving', ()=>{
+    useSimulation.getState().openWorld('if');
+    useSimulation.setState({phase:'executing'});
+    useSimulation.getState().openWorld('main');
+    expect(useSimulation.getState().ifComposerOpen).toBe(true);
+    useSimulation.setState({phase:'ready'});
+    useSimulation.getState().toggle();
+    expect(useSimulation.getState()).toMatchObject({open:false,ifComposerOpen:false});
+  });
+  it('opens a scene interaction from the IF composer without changing the saved world', ()=>{
+    useSimulation.getState().openWorld('if');
+    const before=JSON.stringify(useSimulation.getState().journal);
+    useSimulation.getState().participate('daiyu');
+    expect(useSimulation.getState()).toMatchObject({ifComposerOpen:false,recordView:'participate',focused:'daiyu'});
+    expect(JSON.stringify(useSimulation.getState().journal)).toBe(before);
+  });
   it('keeps all three journals when switching, and restores the last selected version after reload', ()=>{
     for(const id of ['original80','cheng120','guiyou108'] as EditionId[]){useSimulation.getState().selectEdition(id); currentWorld(useSimulation.getState().journal!).agents.baoyu.mood.calm=id==='cheng120'?31:id==='guiyou108'?62:73;}
     useSimulation.getState().selectEdition('cheng120'); expect(currentWorld(useSimulation.getState().journal!).agents.baoyu.mood.calm).toBe(31);

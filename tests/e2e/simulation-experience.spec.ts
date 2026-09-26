@@ -1,3 +1,4 @@
+import {chooseSpeed, cameraAction} from '../../scripts/ui_navigation.mjs';
 import {expect, test, type Page} from '@playwright/test';
 import {mkdirSync} from 'node:fs';
 const output = 'reports/browser/story-experience-20260921';
@@ -25,7 +26,7 @@ test('articulated actors follow real paths, pause, roll back and show a reading 
   await button(page,'世界推演').click();
   await page.waitForFunction(() => (window as any).__simulationTest?.poses().wangxifeng[0]);
   expect(new Set(requests.filter(url=>url.startsWith('/models/characters/'))).size).toBe(4);
-  await button(page,'临场').click();
+  await cameraAction(page, '临场');
   const before = await state(page);
   await button(page,'继续故事').click();
   await page.waitForFunction(() => (window as any).__simulationTest.state().playbackProgress > .15);
@@ -49,18 +50,18 @@ test('articulated actors follow real paths, pause, roll back and show a reading 
   await expect.poll(async()=>(await state(page)).positions).toEqual(before.positions);
   expect((await state(page)).world.tick).toBe(0);
   await button(page,'关闭推演提示').click();
-  await page.locator('.sim-scroll').getByRole('button',{name:'4×',exact:true}).click();
+  await chooseSpeed(page, '4×');
   await button(page,'继续故事').click();
   await page.waitForFunction(() => (window as any).__simulationTest.state().actor==='daiyu');
   expect((await state(page)).focused).toBe('daiyu');
   await page.locator('.sim-stage-roster').getByRole('button',{name:'贾宝玉',exact:true}).click();
   expect((await state(page)).director).toBe(false);
-  await button(page,'剧情跟拍').click();
+  await cameraAction(page, '剧情跟拍');
   const resumed = await state(page);
   expect(resumed.director).toBe(true);expect(resumed.focused).toBe(resumed.actor);
   await page.waitForFunction(() => (window as any).__simulationTest.state().phase==='ready');
   expect((await state(page)).world.tick).toBe(1);
-  await page.locator('.sim-scroll').getByRole('button',{name:'1×',exact:true}).click();
+  await chooseSpeed(page, '1×');
   await button(page,'继续故事').click();
   await page.waitForFunction(() => (window as any).__simulationTest.state().playback?.command.action.action==='read' && (window as any).__simulationTest.state().playbackProgress>.3);
   await button(page,'暂停').click();
@@ -72,7 +73,7 @@ test('articulated actors follow real paths, pause, roll back and show a reading 
   await expect(page.getByLabel('当前人物行动')).toContainText('展卷细读');
   await page.screenshot({path:`${output}/verified-reading.png`});
   await button(page,'继续本步').click();
-  await page.locator('.sim-scroll').getByRole('button',{name:'4×',exact:true}).click();
+  await chooseSpeed(page, '4×');
   await page.waitForFunction(() => (window as any).__simulationTest.state().phase==='ready');
   expect((await state(page)).world.tick).toBe(2);
   await expect(page.locator('.sim-moment')).toBeVisible();
@@ -83,17 +84,20 @@ test('phone play entry records a conversation, completes an invitation, and keep
   test.setTimeout(210000);
   await page.setViewportSize({width:390,height:844});
   await ready(page);
-  await page.getByRole('button',{name:/竹下问安/}).click();
+  await button(page,'入局互动').click();
+  await page.getByRole('group',{name:'选择交谈人物'}).getByRole('button',{name:'林黛玉',exact:true}).click();
   await page.getByLabel(/^想对/).fill('今日竹影正好，你可想歇一歇？');
   await button(page,'说给他听').click();
   await page.waitForFunction(() => (window as any).__simulationTest.world().conversations?.length === 1);
   const conversation = (await state(page)).world.conversations[0];
   expect(conversation.agent).toBe('daiyu');expect(conversation.reply.length).toBeGreaterThan(10);
-  await button(page,'园中纪事').click();
-  await expect(page.locator('.sim-playbook-steps li').first()).toHaveAttribute('data-complete','true');
-  await page.getByRole('button',{name:/邀一席茶/}).click();
+  await expect(page.getByLabel('你们的对话')).toContainText('今日竹影正好');
+  await button(page,'邀人小聚').click();
+  await page.getByLabel('薛宝钗',{exact:true}).check();
+  await page.getByLabel('席间做什么',{exact:true}).selectOption('tea');
+  await button(page,'发出邀请').click();
   expect((await state(page)).world.gathering.status).toBe('pending');
-  await page.locator('.sim-scroll').getByRole('button',{name:'4×',exact:true}).click();
+  await chooseSpeed(page, '4×');
   for(let step=0;step<6&&(await state(page)).world.gathering.status==='pending';step++) {
     await button(page,'继续这场小聚').click();
     await page.waitForFunction(() => (window as any).__simulationTest.state().phase==='ready');
@@ -106,7 +110,7 @@ test('phone play entry records a conversation, completes an invitation, and keep
   await page.screenshot({path:`${output}/verified-phone-gathering.png`});
   await button(page,'入园沉浸').click();
   await page.locator('.sim-stage-roster').getByRole('button',{name:'林黛玉',exact:true}).click();
-  await button(page,'临场').click();
+  await cameraAction(page, '临场');
   await page.waitForTimeout(1300);
   for(const width of [390,320]) {
     await page.setViewportSize({width,height:844});await page.waitForTimeout(1100);

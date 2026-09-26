@@ -1,3 +1,4 @@
+import {inspectPerson, cameraAction, viewAction} from '../../scripts/ui_navigation.mjs';
 import {expect, test, type Page} from '@playwright/test';
 
 async function clickGardenMesh(page: Page, id: string) {
@@ -23,15 +24,15 @@ test('simulation keeps its scene and returns repeated interaction requests to th
   await page.goto('/');
   await page.waitForFunction(() => (window as any).__gardenTest?.state().loaded);
   await page.getByRole('button', {name: '世界推演', exact: true}).click();
-  await page.getByRole('button', {name: '托付与追问', exact: true}).click();
+  await inspectPerson(page);
   const firstField = page.locator('.sim-request select').first();
   await expect(firstField).toBeFocused(); await expect(firstField).toBeInViewport();
   await page.locator('.sim-scroll').evaluate(el => { el.scrollTop = el.scrollHeight; });
   await expect(firstField).not.toBeInViewport();
-  await page.getByRole('button', {name: '托付与追问', exact: true}).click();
+  await inspectPerson(page);
   await expect(firstField).toBeFocused(); await expect(firstField).toBeInViewport();
 
-  await page.getByRole('button', {name: '全园', exact: true}).click();
+  await cameraAction(page, '全园');
   await page.waitForTimeout(1800);
   await clickGardenMesh(page, 'xiaoxiangguan');
   expect(await page.evaluate(() => { const s = (window as any).__gardenTest.state(); return [s.selectedPlaceId, s.panelOpen]; })).toEqual([null, false]);
@@ -39,8 +40,8 @@ test('simulation keeps its scene and returns repeated interaction requests to th
   await expect.poll(() => page.evaluate(() => (window as any).__gardenTest.state().selectedPlaceId)).toBe('yihongyuan');
 
   // The same scene remains pickable after leaving simulation.
-  await page.getByRole('button', {name: '退出世界推演', exact: true}).click();
-  await page.getByRole('button', {name: '切换地点名签', exact: true}).click();
+  await page.getByRole('button', {name: '园林漫游', exact: true}).click();
+  await viewAction(page, '切换地点名签');
   await page.waitForTimeout(1800);
   await clickGardenMesh(page, 'xiaoxiangguan');
   await expect.poll(() => page.evaluate(() => (window as any).__gardenTest.state().selectedPlaceId)).toBe('xiaoxiangguan');
@@ -48,9 +49,9 @@ test('simulation keeps its scene and returns repeated interaction requests to th
   await page.setViewportSize({width: 320, height: 740});
   await page.getByRole('button', {name: '世界推演', exact: true}).click();
   await page.getByRole('button', {name: '展开面板', exact: true}).click();
-  await page.getByRole('button', {name: '托付与追问', exact: true}).click();
+  await inspectPerson(page);
   await expect(firstField).toBeFocused(); await expect(firstField).toBeInViewport();
   await page.locator('.sim-scroll').evaluate(el => { el.scrollTop = el.scrollHeight; });
-  await page.getByRole('button', {name: '托付与追问', exact: true}).click();
+  await inspectPerson(page);
   await expect(firstField).toBeFocused(); await expect(firstField).toBeInViewport();
 });

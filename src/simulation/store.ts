@@ -22,7 +22,7 @@ interface SimulationState {
   libraryOpen: boolean; comicCue: ComicCue | null; comicAutomatic: boolean;
   selectEdition: (id: EditionId) => void; enterStory: (id: string, play?: boolean) => void;
   openComic: (id: string, kind?: 'story' | 'if', text?: string) => void; closeComic: () => void;
-  open: boolean; journal: Journal | null; preview: WorldState | null;
+  open: boolean; ifComposerOpen: boolean; openWorld: (branch: 'main' | 'if') => void; journal: Journal | null; preview: WorldState | null;
   phase: 'ready' | 'deciding' | 'executing' | 'parsing' | 'conversing'; actor: AgentId | null;
   paused: boolean; automatic: boolean; playback: Playback | null; playbackProgress: number; director: boolean; sceneReady: boolean;
   focused: AgentId | null; focusRevision: number; sceneRevision: number;
@@ -81,7 +81,7 @@ function execute(command: SceneCommand, signal: AbortSignal): Promise<void> {
 
 export const useSimulation = create<SimulationState>((set, get) => ({
   editionId: 'original80', editionJournals: {}, libraryOpen: false, comicCue: null, comicAutomatic: true,
-  open: false, journal: null, preview: null, phase: 'ready', actor: null,
+  open: false, ifComposerOpen: false, journal: null, preview: null, phase: 'ready', actor: null,
   paused: false, automatic: false, playback: null, playbackProgress: 0, director: true, sceneReady: false,
   focused: null, focusRevision: 0, sceneRevision: 0, provider: 'mock', remoteLabel: '服务器模型', accessToken: '', error: '', storageNotice: '',
   immersive: false, cameraMode: 'close', playbackRate: 1, recordView: 'events', participationView: 'chat',
@@ -105,7 +105,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       try { const raw = localStorage.getItem(editionStorageKey(id)); if (raw) { const saved = readJournal(raw, data); if ((saved.editionId ?? 'original80') !== id) throw new Error('版本不符'); journal = saved; } }
       catch { unreadableSaves.add(editionStorageKey(id)); set({storageNotice: '此版本存档未能恢复，原存档仍保留；当前使用新世界。'}); }
     }
-    set({editionId: id, journal, comicCue: null, preview: null, automatic: false, conversationDrafts: {}, error: '', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
+    set({editionId: id, journal, ifComposerOpen: get().ifComposerOpen && !journal.if, comicCue: null, preview: null, automatic: false, conversationDrafts: {}, error: '', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
     useGarden.setState({selectedEventId: null, selectedChapter: null, panelOpen: false});
     persist(journal);
   },
@@ -118,7 +118,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       const next = forkStory(journal, data, id);
       if (!get().open) get().toggle();
       commit(next);
-      set({libraryOpen: false, comicCue: null, automatic: false, error: '', focused: node.focus, recordView: 'participate', participationView: 'choice', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
+      set({libraryOpen: false, ifComposerOpen: false, comicCue: null, automatic: false, error: '', focused: node.focus, recordView: 'participate', participationView: 'choice', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
       useDreams.getState().offer({...captureMoment(next, data, 'story', node.focus), title: node.title});
       if (play && get().comicAutomatic && !(useDreams.getState().config?.configured && useDreams.getState().accessToken && useDreams.getState().automatic)) get().openComic(id);
     } catch (error) { set({error: (error as Error).message}); }
@@ -135,8 +135,14 @@ export const useSimulation = create<SimulationState>((set, get) => ({
     if (!open && get().phase !== 'ready') get().cancel();
     useGarden.getState().exitTour();
     useGarden.setState({panelOpen: false, indexOpen: false, sourcesOpen: false, settingsOpen: false, galleryOpen: false, selectedPlaceId: null, hotspotId: null});
-    set({open, automatic: false, immersive: false, inspectionTarget: null, focused: open ? 'baoyu' : null, focusRevision: get().focusRevision + 1});
+    set({open, ifComposerOpen: false, automatic: false, immersive: false, inspectionTarget: null, focused: open ? 'baoyu' : null, focusRevision: get().focusRevision + 1});
     if (!open) useGarden.setState({timeOfDay: previousTime});
+  },
+  openWorld: branch => {
+    if (get().phase !== 'ready' || !get().journal) return;
+    if (!get().open) get().toggle();
+    if (get().journal?.[branch]) get().switchBranch(branch);
+    set({ifComposerOpen: branch === 'if' && !get().journal?.if, immersive: false, recordView: 'events', automatic: false});
   },
   next: async () => {
     const {journal, phase, sceneReady} = get(), data = useGarden.getState().data;
@@ -177,7 +183,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       const parsed = interventionSchema.safeParse(raw);
       if (!parsed.success) throw new Error('条件格式无效。数值应在0至100之间，且只能改变知情、情绪或贾府状态。');
       commit(forkWorld(journal, parsed.data, prompt.trim()));
-      set({sceneRevision: get().sceneRevision + 1, focused: parsed.data.type === 'world' ? 'wangxifeng' : parsed.data.target, focusRevision: get().focusRevision + 1});
+      set({ifComposerOpen: false, sceneRevision: get().sceneRevision + 1, focused: parsed.data.type === 'world' ? 'wangxifeng' : parsed.data.target, focusRevision: get().focusRevision + 1});
     } catch (error) { if (!active.signal.aborted) set({error: error instanceof Error ? error.message : '条件解析失败，请调整输入。'}); }
     finally { if (controller === active) controller = null; set({phase: 'ready'}); }
   },
@@ -199,11 +205,11 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   },
   inspect: id => {
     get().focus(id);
-    set({recordView: 'people', immersive: false, automatic: false, inspectionTarget: id, inspectionRevision: get().inspectionRevision + 1});
+    set({ifComposerOpen: false, recordView: 'people', immersive: false, automatic: false, inspectionTarget: id, inspectionRevision: get().inspectionRevision + 1});
   },
   participate: id => {
     get().focus(id);
-    set({recordView: 'participate', immersive: false, automatic: false, cameraMode: 'close', participationView: 'chat', inspectionRevision: get().inspectionRevision + 1});
+    set({ifComposerOpen: false, recordView: 'participate', immersive: false, automatic: false, cameraMode: 'close', participationView: 'chat', inspectionRevision: get().inspectionRevision + 1});
   },
   converse: async (id, message, tone) => {
     const journal = get().journal, data = useGarden.getState().data;

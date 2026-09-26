@@ -1,3 +1,4 @@
+import {viewAction} from '../../scripts/ui_navigation.mjs';
 import {test,expect} from '@playwright/test';
 import {mkdirSync,readFileSync} from 'node:fs';
 import {shot,writeArtifact} from './artifacts';
@@ -11,7 +12,7 @@ test('root gardens connect soft ground, low planting and retained courts in the 
  page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});
  await page.goto('/');await page.waitForFunction(()=>(window as any).__gardenTest?.state().loaded);
  await page.waitForLoadState('networkidle');
- await page.getByRole('button',{name:'切换地点名签',exact:true}).click();
+ await viewAction(page, '切换地点名签');
  const layer=await page.evaluate(()=>{
   const meshes:any[]=[];(window as any).__gardenTest.scene.traverse((o:any)=>{
    if(o.isMesh&&o.name.includes('Sunwen21_'))meshes.push({name:o.name,vertices:o.geometry.attributes.position.count,colors:o.geometry.attributes.color?.count??0});

@@ -1,3 +1,4 @@
+import {toolAction} from './ui_navigation.mjs';
 // Real Qwen art is read from the private acceptance album. Later lifecycle cases
 // use explicitly intercepted test jobs so UI regression checks incur no charges.
 import {chromium} from 'playwright';
@@ -18,9 +19,9 @@ const button=name=>page.getByRole('button',{name,exact:true});
 const album=()=>page.locator('.dream-album'),workshop=()=>page.locator('.dream-workshop'),comic=()=>page.locator('.motion-comic');
 const shot=async name=>{await page.evaluate(()=>document.fonts.ready);await page.waitForTimeout(180);const path=`${output}/${name}.png`;await page.screenshot({path});report.screenshots.push(path);};
 const fits=loc=>loc.evaluate(e=>e.scrollWidth<=e.clientWidth+1&&e.getBoundingClientRect().right<=innerWidth+1);
-const openAlbum=async()=>{await button('剧情画卷').click();await page.locator('.story-dream-tools .dream-entry').click();await album().waitFor();};
+const openAlbum=async()=>{await toolAction(page, '剧情画卷');await page.locator('.story-dream-tools .dream-entry').click();await album().waitFor();};
 try{
- await page.goto(base);await button('剧情画卷').waitFor();await openAlbum();
+ await page.goto(base);await page.locator('.workspace-more > summary').waitFor();await openAlbum();
  await album().locator('.dream-picture img').waitFor();await page.waitForFunction(()=>document.querySelector('.dream-picture img')?.naturalWidth===1536);
  check(await album().locator('.dream-picture').count()===1,'actual Qwen image downloaded, verified and collected');
  check((await album().textContent()).includes('已收 1 幅'),'collection count reflects generated art only');
@@ -36,7 +37,7 @@ try{
  check(JSON.stringify(frozen)===JSON.stringify(await comic().locator('img').evaluate(e=>({scale:getComputedStyle(e).scale,transform:getComputedStyle(e).transform}))),'pause freezes the real generated illustration');
  await button('下一镜').click();check(await comic().getByRole('button',{name:'第2镜：心事'}).getAttribute('aria-pressed')==='true','generated image supports sequential narration');
  await page.keyboard.press('Escape');check(await album().isVisible()&&await comic().count()===0,'Escape returns to the collection without changing the world');
- await page.reload();await button('剧情画卷').waitFor();await openAlbum();await album().getByRole('button',{name:'取消珍藏',exact:true}).waitFor();
+ await page.reload();await page.locator('.workspace-more > summary').waitFor();await openAlbum();await album().getByRole('button',{name:'取消珍藏',exact:true}).waitFor();
  check(await album().locator('.dream-picture').count()===1,'original image and favorite survive reload in IndexedDB');
  await album().getByRole('combobox',{name:'文学版本'}).selectOption('original80');check(await album().locator('.dream-picture').count()===0,'edition filter isolates collected story contexts');await album().getByRole('combobox',{name:'文学版本'}).selectOption('all');
  await page.setViewportSize({width:390,height:844});await shot('mobile-album');check(await fits(album()),'390px collection fits without horizontal overflow');

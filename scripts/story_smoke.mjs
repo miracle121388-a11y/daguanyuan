@@ -1,3 +1,4 @@
+import {toolAction} from './ui_navigation.mjs';
 // Browser acceptance of the shipped feature. No model calls or mocked pass claims.
 import {chromium} from 'playwright';
 import {mkdirSync, writeFileSync} from 'node:fs';
@@ -22,7 +23,7 @@ const world=j=>j[j.active].snapshots[j[j.active].cursor].worldState;
 const shot=async name=>{if(name!=='failure')await page.waitForFunction(()=>{const im=document.querySelector('.motion-comic img')??document.querySelector('.story-preview img');return !im||(im.complete&&im.naturalWidth>0);});await page.waitForTimeout(200);const path=`${output}/${name}.png`;await page.screenshot({path});report.screenshots.push(path);};
 const ready=()=>page.waitForFunction(()=>{const im=document.querySelector('.motion-comic img');return im?.complete&&im.naturalWidth>0;});
 try {
- await page.goto(base);await button('剧情画卷').waitFor();await button('剧情画卷').click();
+ await page.goto(base);await page.locator('.workspace-more > summary').waitFor();await toolAction(page, '剧情画卷');
  check(await lib().getByRole('combobox',{name:'剧情依据版本'}).inputValue()==='original80','eighty chapters is the default for a fresh visitor');
  check(await lib().locator('.story-chapters>button').count()===3,'eighty-chapter catalog excludes continuations');
  await shot('desktop-library');await button('展开动态漫画').click();await ready();await button('暂停漫画').click();
@@ -39,17 +40,17 @@ try {
  check(world(await journal()).storyNodeId==='manuscript-97'&&world(await journal()).editionId==='cheng120','entering chapter 97 saves the selected literary branch');
  await button('暂停漫画').click();await shot('cheng-comic');await button('回到园中').click();
  check(await page.getByLabel('世界推演控制台').isVisible(),'comic returns to the simulation');
- const original=await journal();await button('剧情画卷').click();await chooseVersion('guiyou108');
+ const original=await journal();await toolAction(page, '剧情画卷');await chooseVersion('guiyou108');
  check(await lib().getByRole('button',{name:/第 97 回/}).count()===0,'Guiyou does not borrow the Cheng chapter');
  await lib().getByRole('button',{name:/第 90 回 春日待好姻/}).click();await button('从此幕入局').click();await ready();await button('关闭动态漫画').click();
  check(world(await journal()).storyNodeId==='hope-90','Guiyou has its own starting memory and node');
- await button('剧情画卷').click();await chooseVersion('cheng120');check(JSON.stringify(await journal())===JSON.stringify(original),'switching back preserves the exact original Cheng journal');
- await chooseVersion('guiyou108');await button('关闭剧情画卷').click();await page.reload();await button('剧情画卷').waitFor();
- await button('剧情画卷').click();check(await lib().getByRole('combobox',{name:'剧情依据版本'}).inputValue()==='guiyou108'&&world(await journal()).storyNodeId==='hope-90','reload preserves edition and story branch');
- await button('关闭剧情画卷').click();await button('游园设置').click();await page.getByLabel('避免剧透',{exact:true}).check();await page.getByRole('slider',{name:'阅读进度'}).fill('40');await button('关闭设置').click();await button('剧情画卷').click();
+ await toolAction(page, '剧情画卷');await chooseVersion('cheng120');check(JSON.stringify(await journal())===JSON.stringify(original),'switching back preserves the exact original Cheng journal');
+ await chooseVersion('guiyou108');await button('关闭剧情画卷').click();await page.reload();await page.locator('.workspace-more > summary').waitFor();
+ await toolAction(page, '剧情画卷');check(await lib().getByRole('combobox',{name:'剧情依据版本'}).inputValue()==='guiyou108'&&world(await journal()).storyNodeId==='hope-90','reload preserves edition and story branch');
+ await button('关闭剧情画卷').click();await toolAction(page, '游园设置');await page.getByLabel('避免剧透',{exact:true}).check();await page.getByRole('slider',{name:'阅读进度'}).fill('40');await button('关闭设置').click();await toolAction(page, '剧情画卷');
  check(await lib().locator('.story-chapters>button').count()===2,'spoiler setting hides all later nodes');
- await button('关闭剧情画卷').click();await button('游园设置').click();await page.getByLabel('避免剧透',{exact:true}).uncheck();await button('关闭设置').click();
- await page.setViewportSize({width:390,height:844});await button('剧情画卷').click();await lib().getByRole('combobox',{name:'选择剧情节点'}).selectOption('poems-82');
+ await button('关闭剧情画卷').click();await toolAction(page, '游园设置');await page.getByLabel('避免剧透',{exact:true}).uncheck();await button('关闭设置').click();
+ await page.setViewportSize({width:390,height:844});await toolAction(page, '剧情画卷');await lib().getByRole('combobox',{name:'选择剧情节点'}).selectOption('poems-82');
  await lib().evaluate(e=>e.scrollTop=0);await shot('mobile-library');await button('展开动态漫画').click();await ready();await button('暂停漫画').click();await shot('mobile-comic');
  check(await comic().evaluate(e=>e.scrollWidth<=innerWidth),'390px comic has no horizontal overflow');
  const imageUrl=await comic().locator('img').evaluate(e=>e.currentSrc);check(imageUrl.endsWith('/bamboo.webp'),'phone uses the full-resolution comic while previews stay small');
@@ -59,7 +60,7 @@ try {
  await button('下一镜').click();check(await comic().getByRole('button',{name:'第2镜：独吟'}).getAttribute('aria-pressed')==='true','static mode still supports panel navigation');
  await button('关闭动态漫画').click();await lib().evaluate(e=>e.scrollTop=0);await shot('compact-library');
  check(await lib().evaluate(e=>e.scrollWidth<=e.clientWidth+1),'320px library has no horizontal overflow');
- await button('关闭剧情画卷').click();check(await button('剧情画卷').isVisible(),'mobile entry remains reachable after closing dialogs');
+ await button('关闭剧情画卷').click();await page.locator('.workspace-more > summary').click();check(await button('剧情画卷').isVisible(),'mobile story entry remains reachable from More after closing dialogs');
  check(report.errors.length===0,'no browser runtime errors');check(report.failed.length===0,'no failed feature resources');
  report.passed=true;
 } catch(e){report.passed=false;report.failure=String(e);await shot('failure');process.exitCode=1;}

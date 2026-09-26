@@ -1,3 +1,4 @@
+import {viewAction} from '../../scripts/ui_navigation.mjs';
 import {test,expect} from '@playwright/test';
 import {mkdirSync,readFileSync} from 'node:fs';
 import {shot,writeArtifact} from './artifacts';
@@ -26,7 +27,7 @@ test('tended garden, five planting characters and night scene load without missi
   await shot(page,`${screenshots}/${id}.png`);
  }
  await page.getByRole('button',{name:'回到全园',exact:true}).click();
- await page.getByRole('button',{name:'月夜',exact:true}).click();
+ await viewAction(page, '月夜');
  await page.waitForTimeout(1800);
  await shot(page,`${screenshots}/night.png`);
  expect(errors).toEqual([]);expect(failed).toEqual([]);

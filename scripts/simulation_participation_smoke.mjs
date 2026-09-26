@@ -1,3 +1,4 @@
+import {chooseSpeed} from './ui_navigation.mjs';
 // Acceptance through the shipped UI and actual persisted simulation state.
 import {chromium} from 'playwright';
 import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
@@ -75,13 +76,14 @@ try {
     await page.locator('.sim-choice-outcome').scrollIntoViewIfNeeded(); await shot('desktop-choice');
     await button('回到选择之前').click();
     check(!world(await journal()).directives.some(d => d.agent === 'baoyu'), 'restoring the moment removes the later choice and pending request');
-    await button('主世界').click();
+    await button('世界推演').click();
+    await button('入局互动').click();
     await button('邀人小聚').click();
     await page.getByLabel('薛宝钗', {exact: true}).check(); await page.getByLabel('王熙凤', {exact: true}).check();
     await button('发出邀请').click();
     check(world(await journal()).gathering.participants.length === 4, 'invitation includes all four selected people');
     await page.locator('.sim-gathering-status').scrollIntoViewIfNeeded(); await shot('desktop-invitation');
-    await button('4×').click();
+    await chooseSpeed(page, '4×');
     await advance(1);
     const arrived = world(await journal());
     check(arrived.gathering.status === 'pending' && Object.values(arrived.agents).every(a => a.location === 'qiushuangzhai' && a.spot === 'court'), 'all four walk into the existing modeled courtyard before the gathering completes');

@@ -1,3 +1,4 @@
+import {viewAction} from '../../scripts/ui_navigation.mjs';
 import {test,expect} from '@playwright/test';
 import {mkdirSync,readFileSync} from 'node:fs';
 import {shot,writeArtifact} from './artifacts';
@@ -21,7 +22,7 @@ test('distinct court architecture, open water pavilion and cutaway stay usable',
   await shot(page,`reports/browser/${revision}/${id}.png`);
  }
  await page.getByRole('button',{name:'回到全园',exact:true}).click();
- await page.getByRole('button',{name:'月夜',exact:true}).click();await page.waitForTimeout(1500);
+ await viewAction(page, '月夜');await page.waitForTimeout(1500);
  await shot(page,`reports/browser/${revision}/night.png`);
  expect(errors).toEqual([]);expect(failed).toEqual([]);
  writeArtifact(`reports/acceptance/${revision}-architecture-browser.json`,JSON.stringify({views:['overview',...places.map(([id])=>id),'night'],errors,failed},null,2));

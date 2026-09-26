@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-26T02:51:20.811Z",
+  "scope": "Simplify the main workspace and IF creation flow",
+  "automated": {
+    "lint": "passed",
+    "typecheck": "passed",
+    "unitTests": 115,
+    "unitFiles": 12,
+    "build": "passed",
+    "e2eScripts": "Updated for the new navigation; not executed in this session"
+  },
+  "manual": {
+    "method": "Native browser controls through CUA; inspect rendered screenshots and accessibility states",
+    "checks": [
+      "Chrome desktop: world entry, direct IF editor, IF creation and a complete local-rule step",
+      "Chrome desktop: version and branch controls disabled during the step; camera/speed disclosure usable",
+      "Chrome iPhone 16 emulation, 393×852: versions and all three main entries visible; simulation run controls visible; garden and IF editor layouts inspected",
+      "Safari desktop: create IF, switch to Cheng version, return to original80 and recover the original IF condition",
+      "Safari desktop: return to main without the IF condition",
+      "Safari desktop: More menu displays all retained tools; Escape closes it while simulation remains open",
+      "Safari desktop: More records opens the world comparison"
+    ],
+    "screenshots": [
+      "reports/browser/navigation-20260926/safari-desktop.png"
+    ],
+    "limitations": [
+      "Phone check is browser emulation, not a physical device.",
+      "No full automated browser regression or 320px manual pass is claimed.",
+      "Browser connection API was unavailable; native browser inspection was used."
+    ]
+  },
+  "paidModelCalls": 0
+}

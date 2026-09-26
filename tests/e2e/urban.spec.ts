@@ -1,3 +1,4 @@
+import {viewAction} from '../../scripts/ui_navigation.mjs';
 import {test,expect} from '@playwright/test';
 import {mkdirSync,readFileSync} from 'node:fs';
 import {shot,writeArtifact} from './artifacts';
@@ -10,7 +11,7 @@ test('mansion roof setting renders at high and garden eye levels through day and
  page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push(r.url())});
  await page.goto('/');await page.waitForFunction(()=>(window as any).__gardenTest?.state().loaded);
  await page.waitForLoadState('networkidle');
- await page.getByRole('button',{name:'切换地点名签',exact:true}).click();
+ await viewAction(page, '切换地点名签');
  const native=await page.evaluate(()=>{
   const meshes:any[]=[];(window as any).__gardenTest.scene.traverse((o:any)=>{if(o.userData.urbanContext)meshes.push({name:o.name,kind:o.userData.urbanPrototype,instances:o.count,role:o.userData.urbanRole,vertices:o.geometry.attributes.position.count})});
   return meshes;
@@ -44,7 +45,7 @@ test('mansion roof setting renders at high and garden eye levels through day and
  // These inspection cameras are set directly through the test hook. Restore
  // the authored overview explicitly before checking the night composition.
  await page.evaluate(v=>(window as any).__gardenTest.controls.setLookAt(...v.position,...v.target,false),overview);
- await page.getByRole('button',{name:'月夜',exact:true}).click();await page.waitForTimeout(1300);await shot(page,`${folder}/urban-night.png`);
+ await viewAction(page, '月夜');await page.waitForTimeout(1300);await shot(page,`${folder}/urban-night.png`);
  expect(errors).toEqual([]);expect(failed).toEqual([]);
  writeArtifact(`reports/acceptance/${urban.revision}-urban-browser.json`,JSON.stringify({views,native,errors,failed},null,2));
 });

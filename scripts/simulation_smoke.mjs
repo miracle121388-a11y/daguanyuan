@@ -1,3 +1,4 @@
+import {recordAction, chooseSpeed, cameraAction, inspectPerson} from './ui_navigation.mjs';
 // Browser acceptance against the actual app. Run after starting Vite or npm start.
 import {chromium} from 'playwright';
 import {mkdirSync, writeFileSync} from 'node:fs';
@@ -29,9 +30,9 @@ async function start(options) {
     report.checks.push('scene recovered using the light preset');
   }
   await page.getByRole('button', {name: '世界推演', exact: true}).click();
-  await page.getByRole('heading', {name: '一念之间'}).waitFor();
+  await page.getByRole('heading', {name: '世界推演', exact: true}).waitFor();
   await page.getByRole('button', {name: '继续故事', exact: true}).waitFor();
-  if (['2','4'].includes(process.env.SIM_PLAYBACK_RATE)) await page.locator('.sim-scroll').getByRole('button',{name:process.env.SIM_PLAYBACK_RATE+'×',exact:true}).click();
+  if (['2','4'].includes(process.env.SIM_PLAYBACK_RATE)) await chooseSpeed(page, process.env.SIM_PLAYBACK_RATE+'×');
   await page.waitForTimeout(900);
   return page;
 }
@@ -42,6 +43,7 @@ async function tick(page, target) {
 try {
   const page = await start({viewport: {width: 1440, height: 900}});
   await screenshot(page, 'desktop-initial');
+  await page.getByRole('button', {name: 'IF 世界', exact: true}).click();
   assert(await page.locator('textarea').inputValue() === '如果宝玉提前知道贾府准备让他迎娶薛宝钗，会发生什么？', 'required IF example is available');
   await page.getByRole('button', {name: '创建 IF 世界', exact: true}).click();
   await page.getByRole('button', {name: 'IF 世界', exact: true}).filter({has: page.locator('svg')}).waitFor();
@@ -77,11 +79,11 @@ try {
   const second = await stored(page);
   for (const id of ['baoyu', 'daiyu']) assert(current(second).agents[id].memories.some(m => m.type === 'interaction' && m.content.includes('迎娶')), `${id} stores the conversation in personal memory`);
   assert(!JSON.stringify(second.main).includes('迎娶'), 'the original main world stays isolated');
-  await page.getByRole('button', {name: '人物心迹', exact: true}).click();
+  await recordAction(page, '人物心迹');
   await page.locator('.sim-person-tabs').getByRole('button', {name: '林黛玉', exact: true}).click();
   await page.locator('.sim-memories').scrollIntoViewIfNeeded();
   await screenshot(page, 'desktop-memory');
-  await page.getByRole('button', {name: '时间快照', exact: true}).click();
+  await recordAction(page, '时间快照');
   await page.locator('.sim-history li').first().getByRole('button', {name: '恢复', exact: true}).click();
   assert(current(await stored(page)).tick === 0, 'snapshot restoration restores tick zero');
   if (hooks) {
@@ -91,7 +93,7 @@ try {
     });
     report.checks.push('restoration also resets the rendered character position');
   }
-  await page.getByRole('button', {name: '主世界', exact: true}).click();
+  await page.getByRole('button', {name: '世界推演', exact: true}).click();
   await tick(page, 1);
   assert(current(await stored(page)).agents.baoyu.location === 'yihongyuan', 'main-world behavior differs from IF behavior');
   await page.getByRole('button', {name: '自动运行', exact: true}).click();
@@ -110,17 +112,17 @@ try {
   assert(current(await stored(page)).tick === 0, 'cancel rolls back to the complete IF snapshot');
   // Scene-linked player agency and evidence-based worldlines.
   await page.getByRole('button', {name: '关闭推演提示', exact: true}).click();
-  await page.getByRole('button', {name: '人物心迹', exact: true}).click();
+  await recordAction(page, '人物心迹');
   await page.locator('.sim-person-tabs').getByRole('button', {name: '贾宝玉', exact: true}).click();
   await page.locator('.sim-request select').nth(1).selectOption('qiushuangzhai');
   await page.getByRole('button', {name: '记下托付', exact: true}).click();
   assert(current(await stored(page)).tick === 0 && current(await stored(page)).directives[0].target === 'qiushuangzhai', 'player request is saved pending without moving or advancing time');
-  await page.locator('.sim-scroll').getByRole('button', {name: '4×', exact: true}).click();
+  await chooseSpeed(page, '4×');
   await tick(page, 1);
   let staged = current(await stored(page)).agents.baoyu;
   assert(staged.location === 'qiushuangzhai' && staged.spot === 'court', 'player-directed movement reaches the existing Qiushuangzhai court');
   assert(current(await stored(page)).directives.length === 0, 'completed request is consumed exactly once');
-  await page.getByRole('button', {name: '临场', exact: true}).click();
+  await cameraAction(page, '临场');
   await page.locator('.sim-request select').first().selectOption('read');
   await page.getByRole('button', {name: '记下托付', exact: true}).click();
   await tick(page, 2);
@@ -136,7 +138,7 @@ try {
   assert(await page.evaluate(() => Math.abs(document.querySelector('canvas').getBoundingClientRect().width - document.querySelector('#garden-main').getBoundingClientRect().width) < 2), 'immersive canvas resizes across the full garden workspace');
   await page.getByRole('button', {name: '打开推演手记', exact: true}).click();
   for (let target = 3; target <= 4; target++) await tick(page, target);
-  await page.getByRole('button', {name: '消息流转', exact: true}).click();
+  await recordAction(page, '消息流转');
   assert(await page.locator('.sim-flow-events li').count() >= 1, 'message graph contains only completed knowledge dialogue');
   await page.locator('.sim-flow').scrollIntoViewIfNeeded();
   await screenshot(page, 'desktop-message-flow');
@@ -145,26 +147,28 @@ try {
   await page.getByRole('button', {name: '导出有事件依据的推演纪要', exact: true}).click();
   const download = await downloadReady; await download.saveAs(`${output}/evidence-report.md`);
   assert(download.suggestedFilename().endsWith('.md'), 'evidence report downloads as Markdown');
-  await page.getByRole('button', {name: '时间快照', exact: true}).click();
+  await recordAction(page, '时间快照');
   await page.locator('.sim-history li').filter({hasText: 'Tick 2'}).getByRole('button', {name: '恢复', exact: true}).click();
-  await page.getByRole('button', {name: '世界线', exact: true}).click();
+  await recordAction(page, '世界线');
   assert((await page.locator('.sim-comparison-time').innerText()).includes('Tick 2'), 'world comparison uses main and IF snapshots at exactly the same tick');
   await page.locator('.sim-worldlines').scrollIntoViewIfNeeded();
   await screenshot(page, 'desktop-world-comparison');
   const preservedUid = (await stored(page)).if.uid;
   await page.getByRole('button', {name: '园中纪事', exact: true}).click();
+  await page.getByRole('button', {name: '新建假设', exact: true}).click();
+  await page.locator('.sim-examples-disclosure > summary').click();
   await page.getByRole('button', {name: '黛玉静养', exact: true}).click();
   await page.getByRole('button', {name: '创建新的 IF 世界', exact: true}).click();
   await page.waitForFunction(key => JSON.parse(localStorage.getItem(key)).archives.length === 1, key);
   assert((await stored(page)).archives[0].branch.uid === preservedUid, 'creating another IF preserves the old world and future snapshots');
-  await page.getByRole('button', {name: '世界线', exact: true}).click();
+  await recordAction(page, '世界线');
   await page.getByRole('button', {name: '恢复这条世界线', exact: true}).click();
   assert((await stored(page)).if.uid === preservedUid && (await stored(page)).archives.length === 1, 'restoring an archived world swaps both branches without loss');
   report.style = await page.evaluate(() => {
     const panel = document.querySelector('.simulation-panel'), note = document.querySelector('.sim-note');
     return {panel: getComputedStyle(panel).backgroundColor, muted: getComputedStyle(note).color, font: getComputedStyle(note).fontSize, focus: getComputedStyle(panel).getPropertyValue('--text')};
   });
-  await page.getByRole('button', {name: '退出世界推演', exact: true}).click();
+  await page.getByRole('button', {name: '园林漫游', exact: true}).click();
   assert(await page.getByRole('button', {name: '开始游园', exact: true}).isVisible(), 'original garden touring remains available');
   await page.close();
 
@@ -173,13 +177,14 @@ try {
   let dimensions = await measure();
   assert(dimensions.width === dimensions.scroll && dimensions.scene >= 180 && dimensions.panel >= 250, '390px mobile keeps the scene visible without horizontal overflow');
   await screenshot(mobile, 'mobile-initial');
+  await mobile.getByRole('button', {name: 'IF 世界', exact: true}).click();
   await mobile.getByRole('button', {name: '创建 IF 世界', exact: true}).click();
   await mobile.waitForFunction(key => JSON.parse(localStorage.getItem(key) || 'null')?.active === 'if', key);
   await mobile.getByRole('button', {name: '继续故事', exact: true}).click();
   await mobile.getByText('故事已记至第 1 步', {exact: true}).waitFor({timeout: 120000});
   await tick(mobile, 2);
   assert(current(await stored(mobile)).agents.daiyu.memories.some(m => m.type === 'interaction' && m.content.includes('迎娶')), 'mobile scene executes the full IF → walk → dialogue chain');
-  await mobile.getByRole('button', {name: '人物心迹', exact: true}).click();
+  await recordAction(mobile, '人物心迹');
   await mobile.getByRole('button', {name: '展开面板', exact: true}).click();
   await mobile.locator('.sim-person-tabs').getByRole('button', {name: '林黛玉', exact: true}).click();
   await mobile.locator('.sim-memories li').filter({hasText: '迎娶'}).first().scrollIntoViewIfNeeded();
@@ -191,13 +196,13 @@ try {
   await mobile.waitForTimeout(900);
   await screenshot(mobile, 'mobile-320');
   await mobile.getByRole('button', {name: '入园沉浸', exact: true}).click();
-  await mobile.getByRole('button', {name: '临场', exact: true}).click();
+  await cameraAction(mobile, '临场');
   assert(!(await mobile.locator('.simulation-panel').isVisible()), '320px immersive mode gives the full workspace to the garden');
   assert(await mobile.getByRole('button', {name: '下一刻', exact: true}).isVisible(), 'mobile immersive mode keeps next-step and pause controls within reach');
   await mobile.waitForTimeout(500);
   await screenshot(mobile, 'mobile-320-immersive');
   await mobile.getByRole('button', {name: '打开推演手记', exact: true}).click();
-  await mobile.getByRole('button', {name: '托付与追问', exact: true}).click();
+  await inspectPerson(mobile);
   await mobile.locator('.sim-request').scrollIntoViewIfNeeded();
   await screenshot(mobile, 'mobile-320-request');
   assert((await measure()).width === (await measure()).scroll, 'mobile request form does not overflow');

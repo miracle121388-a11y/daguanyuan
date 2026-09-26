@@ -1,3 +1,4 @@
+import {chooseSpeed, inspectPerson} from './ui_navigation.mjs';
 // Opt-in live model acceptance: one IF plus two complete ticks (11 calls).
 // Reads only server-side credentials. Reports never contain headers or tokens.
 import {chromium} from 'playwright';
@@ -42,6 +43,7 @@ try {
   await page.getByLabel('推演访问口令').fill(process.env.LLM_ACCESS_TOKEN);
   await page.locator('.sim-options').evaluate(el => el.scrollIntoView({block: 'start'}));
   await shot('desktop-model-settings');
+  await page.getByRole('button', {name: 'IF 世界', exact: true}).click();
   await page.getByRole('button', {name: '创建 IF 世界', exact: true}).click();
   await page.waitForFunction(key => JSON.parse(localStorage.getItem(key) || 'null')?.active === 'if' || !!document.querySelector('.sim-error[role="alert"]'), key, {timeout: 40000});
   const fork = await stored();
@@ -49,11 +51,11 @@ try {
   const world = snapshot(fork).worldState;
   const knowledge = world.agents.baoyu.memories.find(m => m.origin === 'intervention');
   check(!!knowledge && ['daiyu', 'baochai', 'wangxifeng'].every(id => !world.agents[id].memories.some(m => m.knowledgeId && m.knowledgeId === knowledge.knowledgeId)), 'private IF knowledge remains confined to its recipient');
-  await page.getByRole('button', {name: '4×', exact: true}).click();
+  await chooseSpeed(page, '4×');
   await page.getByRole('button', {name: '继续故事', exact: true}).click();
   await completed(1);
   check(snapshot(await stored()).provider === config.modelLabel, 'saved snapshot identifies the actual model decision source');
-  await page.getByRole('button', {name: '托付与追问', exact: true}).click();
+  await inspectPerson(page);
   // Story follow-camera can select the last acting person after a tick.
   await page.locator('.sim-person-tabs').getByRole('button', {name: '贾宝玉', exact: true}).click();
   await page.locator('.sim-request select').first().selectOption('move');
@@ -66,7 +68,7 @@ try {
   check(!final.directives.some(d => d.agent === 'baoyu'), 'completed request is consumed only after the saved action');
   check(report.requests.length === 11 && report.requests.every(r => r.status === 200), 'one intervention, eight personal decisions and two summaries succeed over real HTTP');
   check(new Set(report.requests.filter(r => r.operation === 'action').map(r => r.agent)).size === 4, 'all four people receive separate model decisions');
-  await page.getByRole('button', {name: '托付与追问', exact: true}).click();
+  await inspectPerson(page);
   await shot('desktop-model-court');
   await page.setViewportSize({width: 390, height: 844});
   await page.getByRole('button', {name: '展开面板', exact: true}).click();

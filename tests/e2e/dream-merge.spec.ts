@@ -1,3 +1,4 @@
+import {toolAction} from '../../scripts/ui_navigation.mjs';
 import {test, expect} from '@playwright/test';
 import {mkdirSync, readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -32,7 +33,7 @@ test('merged Dream Silk album and comics coexist with the Sun Wen garden on desk
   const button = (name: string) => page.getByRole('button', {name, exact: true});
   const comic = page.locator('.motion-comic');
   const silk = page.locator('.dream-painting[data-style-version="honglou-silk-v1"]');
-  const openAlbum = async () => {await button('剧情画卷').click(); await page.locator('.story-dream-tools .dream-entry').click(); await expect(silk.locator('img')).toBeVisible();};
+  const openAlbum = async () => {await toolAction(page, '剧情画卷'); await page.locator('.story-dream-tools .dream-entry').click(); await expect(silk.locator('img')).toBeVisible();};
   await page.goto('/');
   await page.waitForFunction(() => (window as any).__gardenTest?.state().loaded);
   const gallery = await (await page.request.get('/art/manifest.json')).json();

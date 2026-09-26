@@ -8,5 +8,6 @@ import './styles/simulation-experience.css';
 import './styles/story.css';
 import './styles/dreams.css';
 import './styles/palette.css';
+import './styles/workspace.css';
 // The R3F canvas owns GPU resources; mount it once during local development.
 ReactDOM.createRoot(document.getElementById('root')!).render(<App/>);

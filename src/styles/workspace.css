@@ -1,0 +1,108 @@
+/* The three ways to enter the garden stay visible; tools open only on demand. */
+.workspace-header{position:relative;z-index:40;flex-shrink:0;background:var(--panel);border-bottom:1px solid var(--border);box-shadow:0 6px 24px #182B3329}
+.workspace-topline{display:flex;align-items:center;gap:28px;min-height:76px;padding:10px 28px}
+.workspace-header .brand{min-width:230px;gap:12px}
+.workspace-header .brand strong{font-size:24px}
+.workspace-header .brand small{font-size:10px;letter-spacing:2px}
+.version-switch{display:flex;align-items:center;gap:14px;margin:auto;min-width:0}
+.version-label{color:var(--text-muted);font-size:12px;white-space:nowrap}
+.version-switch>div{display:flex;gap:4px;padding:4px;background:var(--panel-secondary);border-radius:7px}
+.version-switch button{display:flex;align-items:center;justify-content:center;gap:10px;min-height:44px;min-width:106px;padding:8px 16px;border:1px solid transparent;border-radius:4px}
+.version-switch strong{font-size:13px;font-weight:500;white-space:nowrap}
+.version-switch small{font-size:10px;color:var(--text-muted);white-space:nowrap}
+.version-switch [aria-pressed=true]{background:var(--panel-hover);border-color:var(--border);box-shadow:inset 0 -2px var(--gold)}
+.workspace-navline{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 28px}
+.workspace-navline nav{display:flex;gap:6px;min-width:0}
+.workspace-navline nav button{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;min-width:146px;min-height:54px;padding:10px 24px;font-size:15px;color:var(--text-muted);border-radius:5px 5px 0 0}
+.workspace-navline nav button.active{color:var(--text);background:var(--panel-secondary)}
+.workspace-navline nav button.active:after{content:"";height:3px;position:absolute;left:20px;right:20px;bottom:0;background:var(--accent);border-radius:2px}
+.workspace-navline nav button.primary-entry{color:var(--text)}
+.workspace-navline>p{font:13px/1.6 var(--serif);letter-spacing:1px;color:var(--text-muted);margin:0}
+.action-disclosure{position:relative;min-width:0;font-size:12px}
+.action-disclosure>summary{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 13px;list-style:none;cursor:pointer;border-radius:4px;color:var(--text)}
+.action-disclosure>summary::-webkit-details-marker{display:none}
+.action-disclosure>summary:after{content:"";width:5px;height:5px;border-right:1px solid;border-bottom:1px solid;transform:rotate(45deg);margin-left:4px;margin-top:-3px}
+.action-disclosure[open]>summary{background:var(--panel-hover)}
+.action-disclosure>summary:hover{background:var(--panel-hover)}
+.disclosure-content{position:absolute;z-index:60;right:0;top:calc(100% + 6px);min-width:180px;background:var(--panel-secondary);color:var(--text);padding:8px;border:1px solid var(--border);border-radius:7px;box-shadow:var(--shadow)}
+.disclosure-content button,.disclosure-content a{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;padding:9px 12px;text-align:left;font-size:13px;border-radius:3px;white-space:normal;text-decoration:none}
+.disclosure-content button[aria-pressed=true]{background:var(--panel-hover)}
+.disclosure-content button:focus-visible,.disclosure-content a:focus-visible{outline-offset:-2px}
+.workspace-more{margin-left:auto;flex-shrink:0}
+.workspace-more>summary{border:1px solid var(--border)}
+.workspace-more .disclosure-content{width:268px;max-height:calc(100dvh - 100px);overflow:auto;overscroll-behavior:contain}
+.menu-label{color:var(--text-muted);font-size:10px;letter-spacing:2px;padding:8px 12px;margin:0}
+.menu-label:not(:first-child){border-top:1px solid var(--border);margin-top:8px;padding-top:16px}
+.version-boundary{border-top:1px solid var(--border);margin:8px 4px 0;padding:12px 8px 4px;font-size:11px;line-height:1.9;color:var(--text-muted)}
+.garden-view-tools{position:absolute;right:24px;top:22px;z-index:19;display:flex;align-items:center;gap:4px;padding:4px;background:var(--panel);border:1px solid var(--border);border-radius:6px;box-shadow:var(--shadow)}
+.garden-view-tools>.icon-button{width:44px;height:44px}
+.garden-view-tools .disclosure-content{min-width:210px}
+.garden-view-tools .atmosphere-control{position:static;box-shadow:none;padding:0;margin:0 0 8px;display:flex;background:none}
+.garden-view-tools .atmosphere-control button{width:auto;flex:1;padding:8px;justify-content:center}
+.simulation-open .garden-view-tools{display:none}
+.bottom-area{left:auto;max-width:750px;min-width:400px;right:24px;height:68px}
+.tour-bar{height:68px;padding:0 18px}
+.tour-description{max-width:300px}
+.scene-bottom{bottom:22px;right:auto}
+.scene-caption{display:none}
+.detail-panel{bottom:102px}
+.settings-panel{right:20px;top:16px;max-height:calc(100% - 32px);overflow:auto;overscroll-behavior:contain}
+.simulation-panel{width:410px}
+.sim-heading{padding:19px 22px 8px}
+.sim-heading h2{font-size:24px;letter-spacing:1px}
+.sim-heading p{font-size:11px;line-height:1.6}
+.sim-session-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 22px 10px;min-height:36px;font-size:11px;color:var(--text-muted)}
+.sim-session-bar>button{display:flex;align-items:center;gap:6px;min-height:36px;font-size:11px;padding:3px 8px;border:1px solid var(--border);border-radius:4px;color:var(--text)}
+.sim-primary-dock{padding:0 22px 0;border-bottom:1px solid var(--border);flex-shrink:0}
+.sim-primary-dock .sim-status{min-height:26px;margin:8px 0;font-size:11px}
+.sim-primary-dock .sim-status button{min-height:28px;margin-top:-4px}
+.sim-run-controls>.sim-primary{font-size:14px;min-height:46px;font-weight:500}
+.sim-scroll{padding:0 22px 20px}
+.sim-tabs{position:relative;align-items:center;gap:3px;margin:0 0 12px;padding-top:6px;justify-content:initial}
+.sim-tabs>button{flex:1;font-size:13px;min-height:48px;padding:8px 5px}
+.sim-tabs .sim-records-more{margin-left:auto}
+.sim-records-more>summary{font-size:12px;padding:8px 10px;color:var(--text-muted)}
+.sim-records-more .disclosure-content button{font-size:13px;border:0;justify-content:flex-start}
+.sim-if{border:0;padding:4px 0 0}
+.if-composer{padding-top:10px}
+.sim-if>label{font-size:24px;margin:8px 0 16px}
+.sim-if textarea{min-height:125px}
+.sim-if .sim-branch-button{background:var(--accent);color:var(--text);font-size:14px;min-height:48px}
+.sim-examples-disclosure>summary{min-height:44px;line-height:44px;color:var(--text-muted);font-size:12px;cursor:pointer}
+.sim-examples{margin-top:0}
+.sim-examples button{min-height:44px}
+.sim-playbook{border-top:0;margin:0 0 16px;padding:15px 0}
+.sim-playbook h3{font-size:23px}
+.sim-playbook-story{background:var(--panel-secondary);padding:10px 12px;border:1px solid var(--border);border-radius:4px}
+.sim-world-stats{margin:12px 0}
+.sim-options{margin-top:20px}
+.sim-options>summary{min-height:44px;line-height:44px;cursor:pointer}
+.sim-options .sim-speed{margin:10px 0}
+.sim-footer{padding:10px 22px;font-size:10px}
+.sim-stage-time small{display:none}
+.sim-stage-views.action-disclosure{position:absolute;left:0;bottom:calc(100% + 10px);padding:0;background:var(--panel);border:1px solid var(--border);border-radius:5px;pointer-events:auto;display:block}
+.sim-stage-views>.disclosure-content{right:auto;left:0;top:auto;bottom:calc(100% + 6px);width:220px}
+.sim-stage-views .disclosure-content button{min-height:44px;justify-content:flex-start;font-size:12px}
+.sim-stage-views .sim-speed{padding:8px 4px 0;margin:6px 0 0;border-top:1px solid var(--border)}
+.sim-stage-views .sim-speed button{width:auto;min-width:42px;justify-content:center}
+.sim-stage-actions{flex-direction:row}
+.sim-stage-actions button{white-space:nowrap}
+.sim-stage:not(.immersive) .sim-stage-time{display:none}
+.sim-stage-top{justify-content:flex-end}
+.sim-stage:not(.immersive) .sim-stage-roster{top:18px;max-width:calc(100% - 155px);flex-wrap:wrap}
+.sim-stage-person h2 span{font-size:11px}
+@media(min-width:901px) and (max-width:1180px){
+ .workspace-topline{gap:18px;padding-inline:20px}.workspace-header .brand{min-width:180px}.workspace-header .brand strong{font-size:20px}.workspace-header .brand-suffix{display:none}.version-switch{gap:10px}.version-switch button{min-width:90px;padding-inline:12px}.version-switch small{display:none}.workspace-navline{padding-inline:20px}.simulation-panel{width:370px}
+}
+@media(max-width:900px){
+ .workspace-topline{gap:14px;min-height:68px;padding:8px 18px}.workspace-header .brand{min-width:150px;gap:8px}.workspace-header .brand .brand-mark{width:32px;height:32px}.workspace-header .brand strong{font-size:21px}.workspace-header .brand-suffix,.workspace-header .brand small{display:none}.version-label{display:none}.version-switch{margin-left:auto;margin-right:0}.version-switch button{min-width:80px;padding-inline:10px}.version-switch small{display:none}.workspace-more{margin-left:0}.workspace-navline{padding-inline:18px}.workspace-navline nav button{min-width:132px;padding-inline:18px;min-height:50px}.workspace-navline>p{display:none}.simulation-open .workspace{margin-bottom:0}.simulation-panel{width:100%;height:56%;max-height:none;min-height:250px}.simulation-panel.expanded{height:72%}.sim-heading{padding:12px 18px 6px}.sim-heading h2{font-size:21px}.sim-heading p{display:none}.sim-session-bar{padding:0 18px 6px;min-height:24px}.sim-primary-dock{padding-inline:18px}.sim-scroll{padding-inline:18px}.sim-stage:not(.immersive) .sim-stage-roster{top:12px;max-width:calc(100% - 148px)}.sim-stage-views.action-disclosure{bottom:calc(100% + 7px)}.sim-stage-person p{display:none}.bottom-area{min-width:340px}.tour-description{display:none}.sim-footer{padding:8px 18px}
+}
+@media(max-width:600px){
+ .workspace-topline{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:9px 12px 8px}.workspace-header .brand{min-width:0}.workspace-header .brand .brand-wordmark{display:block}.workspace-header .brand strong{font-size:20px;letter-spacing:2px}.workspace-more{grid-column:2;grid-row:1}.workspace-more>summary{min-height:44px;padding:7px 10px}.version-switch{grid-column:1/-1;grid-row:2;display:flex;gap:10px;width:100%;margin:0}.version-label{display:block;font-size:11px;letter-spacing:1px;flex-shrink:0}.version-switch>div{flex:1;min-width:0;padding:3px;gap:2px}.version-switch button{min-width:0;flex:1;padding:8px 4px;min-height:44px}.version-switch strong{font-size:12px}.workspace-navline{padding:0 8px}.workspace-navline nav{width:100%;gap:2px}.workspace-navline nav button{min-width:0;flex:1;min-height:49px;padding:8px 4px;font-size:13px;gap:7px}.workspace-navline nav button.active:after{left:10px;right:10px}.workspace-more .disclosure-content{position:fixed;top:58px;right:12px;max-height:calc(100dvh - 76px)}.garden-view-tools{right:12px;top:13px;padding:2px;gap:0}.garden-view-tools>.icon-button{width:38px}.garden-view-tools .action-disclosure>summary{padding:7px 8px}.scene-heading{max-width:calc(100% - 136px);left:12px}.scene-heading h1{font-size:21px}.scene-heading>.icon-button{width:44px}.index.open~.garden-main .scene-heading{left:12px}.index{top:12px;bottom:98px;left:12px}.bottom-area{left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));width:auto;min-width:0;height:62px}.tour-bar{height:62px;padding:0 10px}.scene-bottom{left:12px;right:auto;bottom:89px}.minimap{width:82px}.detail-panel,.reading-place .detail-panel{position:absolute;top:40%;bottom:88px;left:9px;right:9px;min-height:150px}.reading-place .detail-panel{bottom:12px}.settings-panel{top:12px;right:12px;max-height:calc(100% - 24px)}.sources-page{position:absolute;top:0;bottom:0;z-index:33}.simulation-open .workspace{margin-bottom:0}.simulation-panel{height:57%;max-height:none;min-height:250px}.simulation-panel.expanded,.simulation-panel.composing{height:74%}.simulation-open .garden-main{min-height:150px}.sim-heading{padding:10px 14px 4px}.sim-heading h2{font-size:20px}.sim-expand{min-height:36px}.sim-session-bar{padding:0 14px 6px;font-size:10px}.sim-session-bar>button{min-height:32px}.sim-primary-dock{padding-inline:14px}.sim-primary-dock .sim-status{margin-block:6px;font-size:10px;min-height:22px}.sim-scroll{padding:0 14px 18px}.sim-tabs>button{font-size:12px;min-height:44px}.sim-records-more>summary{font-size:11px;padding-inline:9px}.sim-playbook h3{font-size:21px}.sim-stage-top{top:10px;right:10px;left:10px}.sim-stage-book{min-height:38px;padding:7px 10px;font-size:11px}.sim-stage:not(.immersive) .sim-stage-roster{display:none}.sim-stage-bottom{left:10px;right:10px;bottom:10px}.sim-stage-person{padding:9px 11px}.sim-stage-person h2{font-size:18px}.sim-stage-person h2 span{font-size:10px}.sim-stage:not(.immersive) .sim-stage-views{display:none}.sim-stage.immersive .sim-stage-roster{top:58px;max-width:calc(100% - 20px);left:10px}.sim-stage.immersive .sim-live-scene{top:120px}.sim-stage-dock{padding:9px 11px}.sim-footer{padding:7px 14px;font-size:9px}.sim-participation-modes button{font-size:11px}.sim-if>label{font-size:22px}.sim-if textarea{min-height:110px}.sim-person-tabs button{min-height:44px}
+}
+@media(max-width:360px){
+ .version-label{font-size:10px;letter-spacing:0}.version-switch{gap:6px}.version-switch strong{font-size:11px}.workspace-navline nav button{font-size:12px;gap:5px}.workspace-navline nav svg{width:15px}.scene-heading h1{font-size:19px}.sim-session-bar{font-size:9px}.sim-run-controls>button{padding-inline:10px}.sim-records-more>summary{padding-inline:7px}.sim-stage-actions button{padding-inline:8px}
+}
+@media(max-height:620px) and (min-width:601px){
+ .workspace-topline{min-height:56px;padding-block:4px}.workspace-navline nav button{min-height:44px}.simulation-open .workspace{flex-direction:row}.simulation-panel{height:auto;width:360px;min-height:0}.simulation-open .garden-main{min-height:0}.sim-heading{padding-top:10px}.sim-scroll{min-height:0}
+}
