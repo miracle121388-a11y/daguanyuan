@@ -13,7 +13,7 @@
     "four reading poses"
   ],
   "browser": "not completed: CUA still returns Mac locked after user reported unlock",
-  "deployment": "not performed",
+  "deployment": "RUNNING: 6ab9012adcbdc0de6fc4e2ee",
   "geometry": [
     {
       "agent": "baoyu",
@@ -75,5 +75,8 @@
   "tests": {
     "files": 13,
     "passed": 118
-  }
+  },
+  "containerResourcesMatched": 642,
+  "httpsFilesMatched": 23,
+  "serviceVariablesAndAlbum": "unchanged"
 }
