@@ -327,7 +327,8 @@ def build(cid,c,high):
         sleeve=.060*sy if male else .054*sy
         fore=empty(cid+'_'+label+'Forearm',arm,(0,-upper,0))
         fore['handAnchorY']=-fore_length-.065
-        anatomy.hand(fore,side,skinmat,(1,1,1,1),high)
+        hand=anatomy.hand(fore,side,skinmat,(1,1,1,1),high)
+        hand.rotation_euler.y=side*math.pi/2
         arm.rotation_euler.z=side*.075
     if male:
         rig=create_cloth_rig(cid,anatomy,body)
@@ -366,7 +367,15 @@ def build(cid,c,high):
                 bpy.data.objects.remove(obj,do_unlink=True)
         for part in ['leftArm','rightArm']:bpy.data.objects[cid+'_'+part].rotation_euler.z=0
         install_ming_clothing(cid,anatomy,body,high)
-    head=empty(cid+'_head',body,anatomy.head_position);eyes=empty(cid+'_eyes',head)
+        for side,label in [(-1,'left'),(1,'right')]:bpy.data.objects[cid+'_'+label+'Arm'].rotation_euler.z=side*.075
+    # Correct cervical inclination around the garment attachment, not by
+    # sliding the neck across the collar. Facial animation remains on head.
+    collar_anchor=Vector((0,anatomy.joints['joint-neck'].y-.050,anatomy.joints['joint-neck'].z-.010))
+    neck_mount=empty(cid+'_neckMount',body,collar_anchor)
+    neck_mount.rotation_euler.x=-math.radians(6)
+    neck_mount['fixedCollarAnchor']=list(collar_anchor)
+    neck_mount['cervicalUprightCorrectionDegrees']=6
+    head=empty(cid+'_head',neck_mount,anatomy.head_position-collar_anchor);eyes=empty(cid+'_eyes',head)
     skin=color(c['skin']);lip=color(c['face']['lip']);rouge=color('#C47872')
     def skin_color(p):
         front=smooth((p.z-.056)/.025)
@@ -437,6 +446,7 @@ for cid,c in DESIGN['characters'].items():
             for suffix,pos,target,width,res in [('portrait',(.35,height,2.5),(0,height-.18,0),.66,(384,448)),('face',(.08,height-.12,.8),(0,height-.12,.015),.40,(780,900)),('full',(.8,height*.8,3),(0,height*.5,0),height*1.12,(900,1200)),('profile',(2,height-.17,0),(0,height-.20,0),.65,(780,900)),('blink',(.08,height-.12,.8),(0,height-.12,.015),.40,(520,600)),('reading',(.65,height*.8,3),(0,height*.5,0),height*1.12,(900,1200))]:
                 for obj in blink_meshes:obj.data.shape_keys.key_blocks['blink'].value=1 if suffix=='blink' else 0
                 if suffix=='reading':
+                    for part in ['leftHand','rightHand']:bpy.data.objects[cid+'_'+part].rotation_euler.y=0
                     for part in ['leftArm','rightArm']:bpy.data.objects[cid+'_'+part].rotation_euler.x=-.48
                     for part in ['leftForearm','rightForearm']:bpy.data.objects[cid+'_'+part].rotation_euler.x=-.70
                     for obj in root.children_recursive:
@@ -450,6 +460,7 @@ for cid,c in DESIGN['characters'].items():
         if high:
             for obj in blink_meshes:obj.data.shape_keys.key_blocks['blink'].value=0
             for part in ['leftArm','rightArm','leftForearm','rightForearm']:bpy.data.objects[cid+'_'+part].rotation_euler.x=0
+            for side,label in [(-1,'left'),(1,'right')]:bpy.data.objects[cid+'_'+label+'Hand'].rotation_euler.y=side*math.pi/2
         # Keep object names stable for the next character/L0 export.
         if not high:
             for o in [root,*root.children_recursive]:o.name+='__low'

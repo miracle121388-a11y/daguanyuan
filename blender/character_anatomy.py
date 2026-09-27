@@ -100,7 +100,7 @@ class Anatomy:
             t=max(0,min(1,(vertex.y*self.scale-neck.y+.085)/.085))
             weight=t*t*(3-2*t)
             vertex.y-=.025*weight/self.scale
-            vertex.z-=.034*weight/self.scale
+            vertex.z-=.026*weight/self.scale
         self.anchor = average_group(self.vertices, 'joint-head')
         self.head_position = self.anchor*self.scale
         self.eye_positions = []
@@ -203,7 +203,7 @@ class Anatomy:
         across = (across - length * across.dot(length)).normalized()
         normal = across.cross(length).normalized()
         source = Matrix((across, length, normal)).transposed()
-        to_long = Vector((0, -1, .14)).normalized()
+        to_long = Vector((0, -1, 0))
         to_across = Vector((-side, 0, 0))
         to_normal = to_across.cross(to_long).normalized()
         rotation = Matrix((to_across, to_long, to_normal)).transposed() @ source.transposed()

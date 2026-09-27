@@ -1,5 +1,5 @@
 {
-  "revision": "garden-players-ming-20260927-v8",
+  "revision": "garden-players-ming-20260927-v10",
   "models": [
     {
       "path": "public/models/characters/baoyu.glb",
@@ -8,24 +8,24 @@
       "textures": 5,
       "expressions": [
         {
+          "mesh": "baoyu_leftHand",
+          "maxDisplacement": 0.12150251120328903
+        },
+        {
           "mesh": "Mesh",
           "maxDisplacement": 0.00976146012544632
         },
         {
           "mesh": "Mesh",
-          "maxDisplacement": 0.03292436897754669
+          "maxDisplacement": 0.03292436525225639
         },
         {
           "mesh": "baoyu_lashes",
           "maxDisplacement": 0.016263294965028763
         },
         {
-          "mesh": "baoyu_leftHand",
-          "maxDisplacement": 0.11959727108478546
-        },
-        {
           "mesh": "baoyu_rightHand",
-          "maxDisplacement": 0.11959727108478546
+          "maxDisplacement": 0.12150253355503082
         }
       ]
     },
@@ -35,6 +35,10 @@
       "meshes": 19,
       "textures": 5,
       "expressions": [
+        {
+          "mesh": "baoyu_leftHand.001",
+          "maxDisplacement": 0.12150251120328903
+        },
         {
           "mesh": "baoyu_face.001",
           "maxDisplacement": 0.010433059185743332
@@ -48,12 +52,8 @@
           "maxDisplacement": 0.016263294965028763
         },
         {
-          "mesh": "baoyu_leftHand.001",
-          "maxDisplacement": 0.11959727108478546
-        },
-        {
           "mesh": "baoyu_rightHand.001",
-          "maxDisplacement": 0.11959727108478546
+          "maxDisplacement": 0.12150253355503082
         }
       ]
     },
@@ -63,6 +63,10 @@
       "meshes": 55,
       "textures": 10,
       "expressions": [
+        {
+          "mesh": "daiyu_leftHand",
+          "maxDisplacement": 0.09985058009624481
+        },
         {
           "mesh": "Mesh.001",
           "maxDisplacement": 0.009947717189788818
@@ -76,12 +80,8 @@
           "maxDisplacement": 0.01657361537218094
         },
         {
-          "mesh": "daiyu_leftHand",
-          "maxDisplacement": 0.09821198880672455
-        },
-        {
           "mesh": "daiyu_rightHand",
-          "maxDisplacement": 0.09821199625730515
+          "maxDisplacement": 0.09985058009624481
         }
       ]
     },
@@ -91,6 +91,10 @@
       "meshes": 55,
       "textures": 10,
       "expressions": [
+        {
+          "mesh": "daiyu_leftHand.001",
+          "maxDisplacement": 0.09985058009624481
+        },
         {
           "mesh": "daiyu_face.001",
           "maxDisplacement": 0.01063213124871254
@@ -104,12 +108,8 @@
           "maxDisplacement": 0.01657361537218094
         },
         {
-          "mesh": "daiyu_leftHand.001",
-          "maxDisplacement": 0.09821198880672455
-        },
-        {
           "mesh": "daiyu_rightHand.001",
-          "maxDisplacement": 0.09821199625730515
+          "maxDisplacement": 0.09985058009624481
         }
       ]
     },
@@ -120,24 +120,24 @@
       "textures": 10,
       "expressions": [
         {
+          "mesh": "baochai_leftHand",
+          "maxDisplacement": 0.10346753895282745
+        },
+        {
           "mesh": "Mesh.002",
           "maxDisplacement": 0.010091584175825119
         },
         {
           "mesh": "Mesh.002",
-          "maxDisplacement": 0.034037843346595764
+          "maxDisplacement": 0.034037865698337555
         },
         {
           "mesh": "baochai_lashes",
           "maxDisplacement": 0.016813311725854874
         },
         {
-          "mesh": "baochai_leftHand",
-          "maxDisplacement": 0.10178525745868683
-        },
-        {
           "mesh": "baochai_rightHand",
-          "maxDisplacement": 0.10178526490926743
+          "maxDisplacement": 0.10346753150224686
         }
       ]
     },
@@ -147,6 +147,10 @@
       "meshes": 57,
       "textures": 10,
       "expressions": [
+        {
+          "mesh": "baochai_leftHand.001",
+          "maxDisplacement": 0.10346753895282745
+        },
         {
           "mesh": "baochai_face.001",
           "maxDisplacement": 0.010785896331071854
@@ -160,12 +164,8 @@
           "maxDisplacement": 0.016813311725854874
         },
         {
-          "mesh": "baochai_leftHand.001",
-          "maxDisplacement": 0.10178525745868683
-        },
-        {
           "mesh": "baochai_rightHand.001",
-          "maxDisplacement": 0.10178526490926743
+          "maxDisplacement": 0.10346753150224686
         }
       ]
     },
@@ -176,24 +176,24 @@
       "textures": 10,
       "expressions": [
         {
+          "mesh": "wangxifeng_leftHand",
+          "maxDisplacement": 0.10363825410604477
+        },
+        {
           "mesh": "Mesh.003",
           "maxDisplacement": 0.00980563834309578
         },
         {
           "mesh": "Mesh.003",
-          "maxDisplacement": 0.033073361963033676
+          "maxDisplacement": 0.03307336941361427
         },
         {
           "mesh": "wangxifeng_lashes",
           "maxDisplacement": 0.016336895525455475
         },
         {
-          "mesh": "wangxifeng_leftHand",
-          "maxDisplacement": 0.10195304453372955
-        },
-        {
           "mesh": "wangxifeng_rightHand",
-          "maxDisplacement": 0.10195304453372955
+          "maxDisplacement": 0.10363825410604477
         }
       ]
     },
@@ -203,6 +203,10 @@
       "meshes": 55,
       "textures": 10,
       "expressions": [
+        {
+          "mesh": "wangxifeng_leftHand.001",
+          "maxDisplacement": 0.10363825410604477
+        },
         {
           "mesh": "wangxifeng_face.001",
           "maxDisplacement": 0.010480273514986038
@@ -216,12 +220,8 @@
           "maxDisplacement": 0.016336895525455475
         },
         {
-          "mesh": "wangxifeng_leftHand.001",
-          "maxDisplacement": 0.10195304453372955
-        },
-        {
           "mesh": "wangxifeng_rightHand.001",
-          "maxDisplacement": 0.10195304453372955
+          "maxDisplacement": 0.10363825410604477
         }
       ]
     }

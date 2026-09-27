@@ -15,7 +15,7 @@ function PaintedFigure({id, pose, paused, motion, rate, tea, detail}: Props & {d
   const {scene} = useGLTF(characterAsset(id, detail, import.meta.env.BASE_URL), `${import.meta.env.BASE_URL}draco/`);
   const model = useMemo(() => cloneSkeleton(scene), [scene]);
   const clock = useRef(0);
-  const rig = useMemo(() => Object.fromEntries(['body','head','eyes','skirt','leftArm','rightArm','leftForearm','rightForearm','leftLeg','rightLeg','book','brush'].map(part => [part, model.getObjectByName(`${id}_${part}`)!])), [id, model]);
+  const rig = useMemo(() => Object.fromEntries(['body','head','eyes','skirt','leftArm','rightArm','leftForearm','rightForearm','leftHand','rightHand','leftLeg','rightLeg','book','brush'].map(part => [part, model.getObjectByName(`${id}_${part}`)!])), [id, model]);
   const expressions = useMemo(() => ['face','lashes','leftHand','rightHand'].map(part => model.getObjectByName(`${id}_${part}`) as THREE.Mesh), [id, model]);
   const clothJoints = useMemo(() => ['leftArm','rightArm','leftForearm','rightForearm'].map(part => ({bone:model.getObjectByName(`${id}_cloth_${part}`),driver:rig[part]})), [id, model, rig]);
   useEffect(() => {
@@ -46,10 +46,13 @@ function PaintedFigure({id, pose, paused, motion, rate, tea, detail}: Props & {d
     blend(rig.rightLeg, 'x', -stride * .34);
     blend(rig.leftArm, 'x', reading ? -.48 : speaking ? -.22 : -stride * .24);
     blend(rig.rightArm, 'x', reading ? -.48 : speaking ? -.55 + Math.sin(t * 2) * .12 : stride * .24);
-    blend(rig.leftArm, 'z', reading ? .14 : -.12);
-    blend(rig.rightArm, 'z', reading ? -.14 : speaking ? .24 : .12);
-    blend(rig.leftForearm, 'x', reading ? -.7 : pose === 'rest' ? -.5 : -.08);
-    blend(rig.rightForearm, 'x', reading ? -.7 + (pose === 'write' ? Math.sin(t * 5) * .08 : 0) : speaking ? -.4 : pose === 'rest' ? -.5 : -.08);
+    blend(rig.leftArm, 'z', reading ? .14 : -.075);
+    blend(rig.rightArm, 'z', reading ? -.14 : speaking ? .24 : .075);
+    blend(rig.leftForearm, 'x', reading ? -.7 : pose === 'rest' ? -.5 : -.035);
+    blend(rig.rightForearm, 'x', reading ? -.7 + (pose === 'write' ? Math.sin(t * 5) * .08 : 0) : speaking ? -.4 : pose === 'rest' ? -.5 : -.035);
+    const usingHands = reading || speaking || pose === 'rest';
+    blend(rig.leftHand, 'y', usingHands ? 0 : -Math.PI / 2);
+    blend(rig.rightHand, 'y', usingHands ? 0 : Math.PI / 2);
     for (const {bone,driver} of clothJoints) bone?.quaternion.copy(driver.quaternion);
     rig.book.visible = reading;
     rig.brush.visible = pose === 'write';

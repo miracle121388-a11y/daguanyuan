@@ -33,6 +33,9 @@ for(const entry of manifest.files.filter(f=>f.path.endsWith('.glb'))){
   }
  }
  assert(root.listNodes().find(n=>n.getName()===`${entry.agent}_face`)?.getExtras().collarProtectedFaceVertices>100,'face and jaw protected from collar compression');
+ const neckMount=root.listNodes().find(n=>n.getName()===`${entry.agent}_neckMount`);
+ assert(neckMount?.listChildren().some(n=>n.getName()===`${entry.agent}_head`),'head animation retains the fixed cervical mount');
+ assert(neckMount.getTranslation().every((v,i)=>Math.abs(v-neckMount.getExtras().fixedCollarAnchor[i])<1e-6),'cervical correction keeps the collar attachment fixed');
  assert(expressions.length>=4,'blink, speak and two hand grasps');
  assert(root.listTextures().every(t=>t.getImage()?.length>0),'embedded textures decoded');
  const rightForearm=root.listNodes().find(n=>n.getName()===`${entry.agent}_rightForearm`);
