@@ -13,7 +13,7 @@
     "four reading poses"
   ],
   "browser": "Local Chrome world simulation: Daiyu side view observed; not every action reviewed",
-  "deployment": "v5 pending deployment",
+  "deployment": "RUNNING: 6ab907814236e69929d7627b",
   "geometry": [
     {
       "agent": "baoyu",
@@ -76,5 +76,7 @@
     "files": 13,
     "passed": 118
   },
-  "serviceVariablesAndAlbum": "unchanged"
+  "serviceVariablesAndAlbum": "unchanged",
+  "containerResourcesMatched": 642,
+  "httpsFilesMatched": 23
 }

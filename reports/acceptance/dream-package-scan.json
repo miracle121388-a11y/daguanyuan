@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20260927-114054-271394",
+  "directory": ".deploy/reference-20260927-120755-534175",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,7 +11,7 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "ae471fb4ef509bd3f24e18d8ca4d8bae14d2b20f0f926c29643e03b03b2d3d36"
+      "sha256": "06e61b49859a029f5f619c3114867f1cddc11e91d466456923da98c35c5e72c9"
     },
     {
       "path": "server.mjs",
@@ -19,11 +19,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "aec0ac0578b8ec5498412021e8ca8b4714bc05a07544a164d5b0319a0875b631"
+      "sha256": "48122463649bdf305c60237b3db54e9357790565b7d625276ce5fb08e4ea4256"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "a3776a580411ed108a70965a6036dca33871787851e7ea012b79350927535d57"
+      "sha256": "8c7ede7ff01b9bcb0c6d3d780066c0411d1ff9c98685b852f070e7de67341853"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -994,16 +994,16 @@
       "sha256": "65a6f2659a3c7c2cc6ed8e062a15604a09d93e3c367c4bc847f831f0bbc4cac7"
     },
     {
-      "path": "dist/assets/index-BiLnm_B5.js.br",
-      "sha256": "18c86a0e48728cee2171d8a600729fb09b66662b13ca9673d5d2db02d831313e"
-    },
-    {
       "path": "dist/assets/index-DWhHKq7b.css.br",
       "sha256": "3516c6c9e392404d366cba0bf8875660aab207a5ae771cee10b02d9bc7009c10"
     },
     {
-      "path": "dist/assets/GardenScene-DoBxiL0S.js.br",
-      "sha256": "097aed551ab28390e8c6c8a9ac69b5bec58190e6be5cd9e77baaa332dd1b6015"
+      "path": "dist/assets/GardenScene-CqT4X9yg.js.br",
+      "sha256": "cde391076e0484b98765ce5795755dca1a67a00997c42737e06d1f5803d13276"
+    },
+    {
+      "path": "dist/assets/index-B0RP94br.js.br",
+      "sha256": "f4ec16769d237fa9df93a8f4a60a654e54ab8301270a78836b96de59670ca672"
     },
     {
       "path": "dist/assets/garden-mark-COPNxcSD.svg",
@@ -1199,23 +1199,23 @@
     },
     {
       "path": "dist/models/characters/baoyu.glb.br",
-      "sha256": "9394119d653636b53b3f35e379ca78cc9be3c1e9404adf7de23288064c32ba95"
+      "sha256": "dcbd0c45dc670a346ff4bde198503dcd47209a71b93a1893138d8bdcd349e161"
     },
     {
       "path": "dist/models/characters/daiyu-low.glb.br",
-      "sha256": "88ff8a04daff7fd77e8c0d317ac4f8ba9cbcdfe3539de1eab6ad844df34fe230"
+      "sha256": "ef3cf5d134441762ff10d5eccbcebb32d0a69acc301750fc10f791b034689ac1"
     },
     {
       "path": "dist/models/characters/baoyu-low.glb.br",
-      "sha256": "dc01719331e2266d9f8060c93aeb898f40a218321769f0f54810d2afc1b80b9a"
+      "sha256": "bee03c92ff4d0c101277c18b9a3e4156b642d0e1bf0d1d666d328c402bd3376e"
     },
     {
       "path": "dist/models/characters/wangxifeng-low.glb.br",
-      "sha256": "4605fd6fdbdf15cd3a615eae8d8d290dad8752678c994f7f2584d984866f43f3"
+      "sha256": "17eac480117c31d2b08fce6371dd50dcfde21589dc9c39ec1527aa78e847173b"
     },
     {
       "path": "dist/models/characters/baochai-low.glb.br",
-      "sha256": "f4c21ca6b307db8a5efec913d8480b69a2d358451cfdf9223880200dca30da2f"
+      "sha256": "a476088767044b03e262686dcfa7fbda0e500cd75eae425a312ab94c9853e376"
     },
     {
       "path": "dist/textures/ground/garden-ground.webp",
@@ -3739,27 +3739,27 @@
     },
     {
       "path": "dist/textures/characters/baoyu.png",
-      "sha256": "b50f4319ea2b25c4c10a4a5b7ef7623915c1415246821e7b6d7ae527460cbbb3"
+      "sha256": "e6202ebf2eff793c6536b6ba0759bd1e502d9ca5998865f1924a8f72a8789cf7"
     },
     {
       "path": "dist/textures/characters/wangxifeng.png",
-      "sha256": "721a6c09f6bede8aae01f20198fd28920af2330d55a6a956eb52e52d7de5834c"
+      "sha256": "54580ea38609a070597acbeb366ae58592b2b7aaa7ceb11b1bb6d64bb862bbe3"
     },
     {
       "path": "dist/textures/characters/manifest.json",
-      "sha256": "5d16f98d07ba0f7dc676daffb996c8aad382330d2d7966eaab7334439ef67e57"
+      "sha256": "7cb43d83febe27f6ae0ac70f7ea0bca439885619952cb1a43bd436b41083454a"
     },
     {
       "path": "dist/textures/characters/daiyu.png",
-      "sha256": "678adf4320dea6f5fcbcd1b7a4121d8ab782d24d8a475792bd0b9a6276920a71"
+      "sha256": "a4ffb11f63e983e569fcf6dab0fa295f46f6450361bea09cdf45224ac79e894d"
     },
     {
       "path": "dist/textures/characters/manifest.json.br",
-      "sha256": "a1b1fb938125f7bc2830f3542215c4a1344f1ff86b23b9c0dc135cf723d2f621"
+      "sha256": "e68a5cd2ee4311b7b2ca4e87675b9ead86e416c22386083616454bad70bec67a"
     },
     {
       "path": "dist/textures/characters/baochai.png",
-      "sha256": "163df22273586baa5579b1175aaeca4d009d3d540133806be1a39beb19aaffd5"
+      "sha256": "f1b9365322389b8439d948698f8cb6d5c0aba7757265f67a4874e3345b2df550"
     }
   ],
   "publicFiles": [
@@ -4455,43 +4455,43 @@
     },
     {
       "path": "models/characters/baochai-low.glb",
-      "sha256": "d286a6d6d18ad720f5edb3814fe27a1ba27a9c46f80f611f339e9cf1a7651b1c",
-      "bytes": 2038328
+      "sha256": "c8ead323c051483a71bb0983f26549c85e5737be9c85a0e57e74f4798eafdd8b",
+      "bytes": 2038480
     },
     {
       "path": "models/characters/baochai.glb",
-      "sha256": "3528163760cb0d278bfab1235a7ef0d905ed8fa98cdf940148162363639a5733",
-      "bytes": 3414512
+      "sha256": "a499b36d8a6d15b2dccbb975217e560411624393055c19cd3beb3759c1de1e12",
+      "bytes": 3414780
     },
     {
       "path": "models/characters/baoyu-low.glb",
-      "sha256": "aa18e814a7c568933ed87afb5c3d507a1809c472329b3c11debc1fc7fbb018c6",
-      "bytes": 770928
+      "sha256": "47d9c5fae5c7ae72b6a7ace35c12f4202dd764b25bebd1f107b5c2b6742ee763",
+      "bytes": 771088
     },
     {
       "path": "models/characters/baoyu.glb",
-      "sha256": "fe666701aefc1e9035c3c9c54286e2bb14ea24c44f3a63de5cc10c5249100421",
-      "bytes": 1618936
+      "sha256": "029b0514bc8f6ffe3f36874c230964c88ead4153e537bd10575c0fa64f8bcc1e",
+      "bytes": 1619436
     },
     {
       "path": "models/characters/daiyu-low.glb",
-      "sha256": "d7f3083da6f8e575e71f8d92daaffb14a258fa59e56ddc55cd8709be9cdacb69",
-      "bytes": 2028600
+      "sha256": "d7c0bb42747f3a187a8264cb771df97e272d56fdfde97f03917d0a3865123333",
+      "bytes": 2028804
     },
     {
       "path": "models/characters/daiyu.glb",
-      "sha256": "32c8b44a99e454c9cb29e856e740873e81e9a837218921521a0ef34b5a16f038",
-      "bytes": 3406332
+      "sha256": "ceed0d13896d9caa7ae28c1cdb4a2451ea75ada944b14b06e8295645951ee793",
+      "bytes": 3406972
     },
     {
       "path": "models/characters/wangxifeng-low.glb",
-      "sha256": "1122dd1ad8a7e4c91f480bc7d2273894483803d217325677886bfc3dfe7d4b39",
-      "bytes": 1929120
+      "sha256": "b4fa7bdeec97c38cf893c019b3a02f59c78360a283d588728ae8b91cf78f5b4a",
+      "bytes": 1929224
     },
     {
       "path": "models/characters/wangxifeng.glb",
-      "sha256": "166cbcb2a89ea6de9c39df50f115798c84537c40fb28701eeb8a4d171274e67f",
-      "bytes": 3276808
+      "sha256": "9cd4ad171ae4ab01cad3e8df17cba3d16d0eb3f4793bb21217d9cfdd7e0d1b7f",
+      "bytes": 3277424
     },
     {
       "path": "models/overview-low.glb",
@@ -4785,28 +4785,28 @@
     },
     {
       "path": "textures/characters/baochai.png",
-      "sha256": "163df22273586baa5579b1175aaeca4d009d3d540133806be1a39beb19aaffd5",
-      "bytes": 131098
+      "sha256": "f1b9365322389b8439d948698f8cb6d5c0aba7757265f67a4874e3345b2df550",
+      "bytes": 128500
     },
     {
       "path": "textures/characters/baoyu.png",
-      "sha256": "b50f4319ea2b25c4c10a4a5b7ef7623915c1415246821e7b6d7ae527460cbbb3",
-      "bytes": 139206
+      "sha256": "e6202ebf2eff793c6536b6ba0759bd1e502d9ca5998865f1924a8f72a8789cf7",
+      "bytes": 135754
     },
     {
       "path": "textures/characters/daiyu.png",
-      "sha256": "678adf4320dea6f5fcbcd1b7a4121d8ab782d24d8a475792bd0b9a6276920a71",
-      "bytes": 129280
+      "sha256": "a4ffb11f63e983e569fcf6dab0fa295f46f6450361bea09cdf45224ac79e894d",
+      "bytes": 126149
     },
     {
       "path": "textures/characters/manifest.json",
-      "sha256": "5d16f98d07ba0f7dc676daffb996c8aad382330d2d7966eaab7334439ef67e57",
+      "sha256": "7cb43d83febe27f6ae0ac70f7ea0bca439885619952cb1a43bd436b41083454a",
       "bytes": 5802
     },
     {
       "path": "textures/characters/wangxifeng.png",
-      "sha256": "721a6c09f6bede8aae01f20198fd28920af2330d55a6a956eb52e52d7de5834c",
-      "bytes": 136330
+      "sha256": "54580ea38609a070597acbeb366ae58592b2b7aaa7ceb11b1bb6d64bb862bbe3",
+      "bytes": 133522
     },
     {
       "path": "textures/forest_grove.hdr",

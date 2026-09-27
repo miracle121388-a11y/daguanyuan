@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-27T11:48:52.742Z",
+  "at": "2026-09-27T12:12:19.665Z",
   "domain": "daguanyuan-rumeng.zeabur.app",
   "ip": "47.89.212.251",
   "tlsVerification": true,
@@ -17,7 +17,7 @@
     {
       "path": "index.html",
       "bytes": 2192,
-      "sha256": "aec0ac0578b8ec5498412021e8ca8b4714bc05a07544a164d5b0319a0875b631"
+      "sha256": "48122463649bdf305c60237b3db54e9357790565b7d625276ce5fb08e4ea4256"
     },
     {
       "path": "reading.html",
@@ -25,14 +25,14 @@
       "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61"
     },
     {
-      "path": "assets/index-BiLnm_B5.js",
-      "bytes": 435658,
-      "sha256": "bcac9060b6a25a175f73302e50b84496b7834b1c5fa208a05b876511bceb1b43"
-    },
-    {
       "path": "assets/index-DWhHKq7b.css",
       "bytes": 120282,
       "sha256": "65a6f2659a3c7c2cc6ed8e062a15604a09d93e3c367c4bc847f831f0bbc4cac7"
+    },
+    {
+      "path": "assets/index-B0RP94br.js",
+      "bytes": 435659,
+      "sha256": "73104ebf58bc86195285ed304ff221ea3137227b56c8798bbb682716bbddcd5b"
     },
     {
       "path": "assets/garden-mark-COPNxcSD.svg",
@@ -40,9 +40,9 @@
       "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
     },
     {
-      "path": "assets/GardenScene-DoBxiL0S.js",
-      "bytes": 1783860,
-      "sha256": "c5e48222350cb610127974afadb2033e47d85aa827fb76362f495719bef1687f"
+      "path": "data/dreamReferences.json",
+      "bytes": 101650,
+      "sha256": "f1d6f7f04804ea4919821db5f6958fc57dd182f889e18eee9777b3845fe3b72d"
     },
     {
       "path": "scene-manifest.json",
@@ -50,9 +50,14 @@
       "sha256": "de490e980ac95dc52f4540f9c23f8f08ad10aa5b88be4da289a7953574bdf8bc"
     },
     {
-      "path": "data/dreamReferences.json",
-      "bytes": 101650,
-      "sha256": "f1d6f7f04804ea4919821db5f6958fc57dd182f889e18eee9777b3845fe3b72d"
+      "path": "assets/GardenScene-CqT4X9yg.js",
+      "bytes": 1783844,
+      "sha256": "14f071002a4f9285097b41b3b2946a86c539c7d010933f0d937787fd18e50b2a"
+    },
+    {
+      "path": "textures/characters/manifest.json",
+      "bytes": 5802,
+      "sha256": "7cb43d83febe27f6ae0ac70f7ea0bca439885619952cb1a43bd436b41083454a"
     },
     {
       "path": "models/urban-context.glb",
@@ -60,69 +65,64 @@
       "sha256": "21fd9784992683e2d829d9b6af8281939f6c74b2a1bd4690ac2c261877d814ef"
     },
     {
-      "path": "textures/characters/manifest.json",
-      "bytes": 5802,
-      "sha256": "5d16f98d07ba0f7dc676daffb996c8aad382330d2d7966eaab7334439ef67e57"
-    },
-    {
       "path": "models/characters/baoyu.glb",
-      "bytes": 1618936,
-      "sha256": "fe666701aefc1e9035c3c9c54286e2bb14ea24c44f3a63de5cc10c5249100421"
+      "bytes": 1619436,
+      "sha256": "029b0514bc8f6ffe3f36874c230964c88ead4153e537bd10575c0fa64f8bcc1e"
     },
     {
       "path": "models/characters/daiyu.glb",
-      "bytes": 3406332,
-      "sha256": "32c8b44a99e454c9cb29e856e740873e81e9a837218921521a0ef34b5a16f038"
-    },
-    {
-      "path": "models/characters/baochai.glb",
-      "bytes": 3414512,
-      "sha256": "3528163760cb0d278bfab1235a7ef0d905ed8fa98cdf940148162363639a5733"
-    },
-    {
-      "path": "models/characters/wangxifeng.glb",
-      "bytes": 3276808,
-      "sha256": "166cbcb2a89ea6de9c39df50f115798c84537c40fb28701eeb8a4d171274e67f"
-    },
-    {
-      "path": "models/characters/baoyu-low.glb",
-      "bytes": 770928,
-      "sha256": "aa18e814a7c568933ed87afb5c3d507a1809c472329b3c11debc1fc7fbb018c6"
+      "bytes": 3406972,
+      "sha256": "ceed0d13896d9caa7ae28c1cdb4a2451ea75ada944b14b06e8295645951ee793"
     },
     {
       "path": "textures/characters/baoyu.png",
-      "bytes": 139206,
-      "sha256": "b50f4319ea2b25c4c10a4a5b7ef7623915c1415246821e7b6d7ae527460cbbb3"
+      "bytes": 135754,
+      "sha256": "e6202ebf2eff793c6536b6ba0759bd1e502d9ca5998865f1924a8f72a8789cf7"
     },
     {
-      "path": "models/characters/daiyu-low.glb",
-      "bytes": 2028600,
-      "sha256": "d7f3083da6f8e575e71f8d92daaffb14a258fa59e56ddc55cd8709be9cdacb69"
+      "path": "models/characters/baoyu-low.glb",
+      "bytes": 771088,
+      "sha256": "47d9c5fae5c7ae72b6a7ace35c12f4202dd764b25bebd1f107b5c2b6742ee763"
     },
     {
-      "path": "textures/characters/daiyu.png",
-      "bytes": 129280,
-      "sha256": "678adf4320dea6f5fcbcd1b7a4121d8ab782d24d8a475792bd0b9a6276920a71"
+      "path": "models/characters/wangxifeng.glb",
+      "bytes": 3277424,
+      "sha256": "9cd4ad171ae4ab01cad3e8df17cba3d16d0eb3f4793bb21217d9cfdd7e0d1b7f"
     },
     {
-      "path": "models/characters/baochai-low.glb",
-      "bytes": 2038328,
-      "sha256": "d286a6d6d18ad720f5edb3814fe27a1ba27a9c46f80f611f339e9cf1a7651b1c"
+      "path": "models/characters/baochai.glb",
+      "bytes": 3414780,
+      "sha256": "a499b36d8a6d15b2dccbb975217e560411624393055c19cd3beb3759c1de1e12"
     },
     {
       "path": "textures/characters/baochai.png",
-      "bytes": 131098,
-      "sha256": "163df22273586baa5579b1175aaeca4d009d3d540133806be1a39beb19aaffd5"
+      "bytes": 128500,
+      "sha256": "f1b9365322389b8439d948698f8cb6d5c0aba7757265f67a4874e3345b2df550"
     },
     {
-      "path": "models/characters/wangxifeng-low.glb",
-      "bytes": 1929120,
-      "sha256": "1122dd1ad8a7e4c91f480bc7d2273894483803d217325677886bfc3dfe7d4b39"
+      "path": "textures/characters/daiyu.png",
+      "bytes": 126149,
+      "sha256": "a4ffb11f63e983e569fcf6dab0fa295f46f6450361bea09cdf45224ac79e894d"
+    },
+    {
+      "path": "models/characters/baochai-low.glb",
+      "bytes": 2038480,
+      "sha256": "c8ead323c051483a71bb0983f26549c85e5737be9c85a0e57e74f4798eafdd8b"
+    },
+    {
+      "path": "models/characters/daiyu-low.glb",
+      "bytes": 2028804,
+      "sha256": "d7c0bb42747f3a187a8264cb771df97e272d56fdfde97f03917d0a3865123333"
     },
     {
       "path": "textures/characters/wangxifeng.png",
-      "bytes": 136330,
-      "sha256": "721a6c09f6bede8aae01f20198fd28920af2330d55a6a956eb52e52d7de5834c"
+      "bytes": 133522,
+      "sha256": "54580ea38609a070597acbeb366ae58592b2b7aaa7ceb11b1bb6d64bb862bbe3"
+    },
+    {
+      "path": "models/characters/wangxifeng-low.glb",
+      "bytes": 1929224,
+      "sha256": "b4fa7bdeec97c38cf893c019b3a02f59c78360a283d588728ae8b91cf78f5b4a"
     },
     {
       "path": "models/places/daguanlou.glb",
