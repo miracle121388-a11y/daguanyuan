@@ -10,6 +10,8 @@ export function blenderBin(){
 }
 const action=process.argv[2];
 const run=(cmd,args,env={})=>{const r=spawnSync(cmd,args,{stdio:'inherit',shell:false,env:{...process.env,...env}});if(r.status!==0)throw new Error(`${cmd} exited ${r.status}`)};
+if(action==='models-characters-bases')run(blenderBin(),['--background','--factory-startup','--python-exit-code','1','--python','blender/prepare_character_bases.py']);
+if(action==='models-characters-clothing')run(blenderBin(),['--background','--factory-startup','--python-exit-code','1','--python','blender/prepare_style3d_clothing.py']);
 if(action==='models-characters')run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python','blender/build_simulation_characters.py']);
 const gardenGrounding=(finish=true)=>{
  const blend=script=>run(blenderBin(),['--background','--disable-autoexec','--python-exit-code','1','--python',script]);

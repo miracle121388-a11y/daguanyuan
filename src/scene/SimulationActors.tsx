@@ -8,6 +8,7 @@ import {agentColors, currentWorld} from '../simulation/world';
 import {commandDuration, prepareRoute, routePoint, turnToward} from '../simulation/presentation';
 import {useGarden} from '../state/store';
 import GardenCharacter from './GardenCharacter';
+import {characterPortraitHeight} from './characterPresentation';
 
 const actionLabels: Record<string, string> = {read: '读书', write: '写字', rest: '歇息', observe: '观望', wait: '等候', move: '行走', talk: '交谈'};
 
@@ -88,11 +89,11 @@ function FollowCamera({motion}: {motion: boolean}) {
     const c=controls as unknown as {setLookAt:(x:number,y:number,z:number,tx:number,ty:number,tz:number,smooth:boolean)=>void};
     if(!initialized.current){
       if(camera instanceof THREE.PerspectiveCamera){camera.fov=42;camera.near=.045;camera.updateProjectionMatrix();}
-      const portrait=state.cameraMode==='portrait';
-      if(portrait)offset.current.set(.22,1.69,.95).applyAxisAngle(new THREE.Vector3(0,1,0),object.rotation.y);
+      const portrait=state.cameraMode==='portrait',portraitHeight=characterPortraitHeight(state.focused);
+      if(portrait)offset.current.set(.17,portraitHeight+.04,.90).applyAxisAngle(new THREE.Vector3(0,1,0),object.rotation.y);
       else if(state.cameraMode==='close')offset.current.set(2.35,2.0,4.2);else offset.current.set(6,6.5,9);
       const compact = size.width <= 600;
-      framing.current = portrait ? 1.62 : compact && size.height >= 530 ? .6 : size.height < 530 ? 1.05 : .75;
+      framing.current = portrait ? portraitHeight : compact && size.height >= 530 ? .6 : size.height < 530 ? 1.05 : .75;
       if(compact && size.height >= 530 && state.cameraMode==='close')offset.current.multiplyScalar(1.18);
       if(!portrait&&size.width<=900&&size.height<530)offset.current.multiplyScalar(state.cameraMode==='close'?.9:Math.max(.45,size.height/650));
       target.current.copy(position).add(new THREE.Vector3(0,framing.current,0));

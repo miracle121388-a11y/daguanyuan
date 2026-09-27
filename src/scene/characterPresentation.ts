@@ -3,6 +3,9 @@ import type {AgentId} from '../simulation/types';
 
 export type CharacterDetail = 'high' | 'low';
 export const characterRevision = design.revision;
+export function characterPortraitHeight(id: AgentId): number {
+  return design.characters[id].anatomy.height - .12;
+}
 export function characterDetail(focused: boolean, quality: 'high' | 'low', camera: string): CharacterDetail {
   return focused && (camera === 'portrait' || quality === 'high' && camera !== 'follow') ? 'high' : 'low';
 }

@@ -2,6 +2,7 @@ import {Component, Suspense, useEffect, useMemo, useRef, type ReactNode} from 'r
 import {Html, useGLTF} from '@react-three/drei';
 import {createPortal, useFrame} from '@react-three/fiber';
 import * as THREE from 'three';
+import {clone as cloneSkeleton} from 'three/examples/jsm/utils/SkeletonUtils.js';
 import type {AgentId} from '../simulation/types';
 import {agentColors} from '../simulation/world';
 import {useGarden} from '../state/store';
@@ -12,10 +13,11 @@ type Props = {id: AgentId; pose: string; paused: boolean; motion: boolean; rate:
 
 function PaintedFigure({id, pose, paused, motion, rate, calm, tea, detail}: Props & {detail: CharacterDetail}) {
   const {scene} = useGLTF(characterAsset(id, detail, import.meta.env.BASE_URL), `${import.meta.env.BASE_URL}draco/`);
-  const model = useMemo(() => scene.clone(true), [scene]);
+  const model = useMemo(() => cloneSkeleton(scene), [scene]);
   const clock = useRef(0);
   const rig = useMemo(() => Object.fromEntries(['body','head','eyes','skirt','leftArm','rightArm','leftForearm','rightForearm','leftLeg','rightLeg','book','brush'].map(part => [part, model.getObjectByName(`${id}_${part}`)!])), [id, model]);
-  const expressions = useMemo(() => ['face','leftHand','rightHand'].map(part => model.getObjectByName(`${id}_${part}`) as THREE.Mesh), [id, model]);
+  const expressions = useMemo(() => ['face','lashes','leftHand','rightHand'].map(part => model.getObjectByName(`${id}_${part}`) as THREE.Mesh), [id, model]);
+  const clothJoints = useMemo(() => ['leftArm','rightArm','leftForearm','rightForearm'].map(part => ({bone:model.getObjectByName(`${id}_cloth_${part}`),driver:rig[part]})), [id, model, rig]);
   useEffect(() => {
     model.traverse(object => {if (object instanceof THREE.Mesh) {object.castShadow = true; object.receiveShadow = true;}});
     rig.book.visible = false; rig.brush.visible = false;
@@ -48,10 +50,11 @@ function PaintedFigure({id, pose, paused, motion, rate, calm, tea, detail}: Prop
     blend(rig.rightArm, 'z', reading ? -.14 : speaking ? .24 : .12);
     blend(rig.leftForearm, 'x', reading ? -.7 : pose === 'rest' ? -.5 : -.08);
     blend(rig.rightForearm, 'x', reading ? -.7 + (pose === 'write' ? Math.sin(t * 5) * .08 : 0) : speaking ? -.4 : pose === 'rest' ? -.5 : -.08);
+    for (const {bone,driver} of clothJoints) bone?.quaternion.copy(driver.quaternion);
     rig.book.visible = reading;
     rig.brush.visible = pose === 'write';
     rig.brush.rotation.z = pose === 'write' ? Math.sin(t * 5) * .09 : 0;
-    rig.brush.position.x = .15 + (pose === 'write' ? Math.sin(t * 3) * .025 : 0);
+    rig.brush.position.x = .01 + (pose === 'write' ? Math.sin(t * 3) * .005 : 0);
   });
   return <><primitive object={model} dispose={null}/>{tea && pose === 'rest' && createPortal(<TeaCup id={id} forearm={rig.rightForearm}/>, rig.rightForearm)}</>;
 }
@@ -66,7 +69,7 @@ function TeaCup({id, forearm}: {id: AgentId; forearm: THREE.Object3D}) {
     forearm.getWorldQuaternion(orientation);
     cup.current.quaternion.copy(orientation).invert();
   });
-  return <group ref={cup} name={`${id}_teaCup`} position={[0,-.35,.07]}>
+  return <group ref={cup} name={`${id}_teaCup`} position={[0,Number(forearm.userData.handAnchorY??-.32),.07]}>
     <mesh castShadow><latheGeometry args={[contour,16]}/><meshStandardMaterial color="#E5E8D5" roughness={.34} side={THREE.DoubleSide}/></mesh>
     <mesh rotation={[-Math.PI/2,0,0]} position={[0,.062,0]}><circleGeometry args={[.037,16]}/><meshStandardMaterial color="#795D35" roughness={.22}/></mesh>
     <mesh rotation={[-Math.PI/2,0,0]} position={[0,.075,0]}><torusGeometry args={[.045,.0025,5,16]}/><meshStandardMaterial color="#588F91" roughness={.4}/></mesh>

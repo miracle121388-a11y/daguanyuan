@@ -1,6 +1,6 @@
 {
-  "revision": "garden-players-20260926-v2",
-  "basis": "Character interpretations in the Sun Wen garden palette. Anatomical head and hands adapted from reviewed CC0 MakeHuman mesh/target data; clothing, hair, ornament, makeup and acting authored for this project. These are fictional character designs, not historical portrait reconstructions.",
+  "revision": "garden-players-ming-20260927-v4",
+  "basis": "Fictional character designs using MPFB Asian male/female anatomical bases and Ming-inspired Han clothing and hair. Heights and identities are artistic casting choices, not a claim of one ethnic body standard or historical portrait reconstruction. Garden architecture remains unchanged.",
   "characters": {
     "baoyu": {
       "name": "贾宝玉",
@@ -10,19 +10,30 @@
       "lining": "#8BAE99",
       "skin": "#DFB494",
       "hair": "#292B31",
-      "scale": 1.02,
+      "scale": 1,
       "motif": "红衣玉佩，少年公子",
       "face": {
-        "male": 0.76,
-        "scale": 0.113,
-        "width": 1.01,
-        "morphs": {
-          "head-oval": 0.18,
-          "head-age-decr": 0.1
-        },
+        "male": 1,
+        "scale": 0.1,
+        "width": 1,
+        "morphs": {},
         "lip": "#A75C58",
         "brow": "#42332E"
-      }
+      },
+      "anatomy": {
+        "height": 1.7,
+        "gender": 1,
+        "age": 0.43,
+        "weight": 0.5,
+        "muscle": 0.48,
+        "headScale": 1.04,
+        "targets": {
+          "head/head-oval": 0.12,
+          "chin/chin-width-incr": 0.12
+        }
+      },
+      "clothing": "ming-daopao",
+      "hairStyle": "full-hair-topknot"
     },
     "daiyu": {
       "name": "林黛玉",
@@ -32,19 +43,34 @@
       "lining": "#E2A9B2",
       "skin": "#E9C9B4",
       "hair": "#262A30",
-      "scale": 0.97,
+      "scale": 1,
       "motif": "柳绿披帛，素簪书卷",
       "face": {
         "male": 0,
-        "scale": 0.11,
-        "width": 0.96,
-        "morphs": {
-          "head-oval": 0.25,
-          "head-fat-decr": 0.1
-        },
+        "scale": 0.1,
+        "width": 1,
+        "morphs": {},
         "lip": "#AD6565",
         "brow": "#4B383B"
-      }
+      },
+      "anatomy": {
+        "height": 1.6,
+        "gender": 0,
+        "age": 0.43,
+        "weight": 0.44,
+        "muscle": 0.42,
+        "headScale": 1.04,
+        "targets": {
+          "head/head-oval": 0.24,
+          "head/head-fat-decr": 0.08,
+          "chin/chin-width-decr": 0.08,
+          "nose/nose-width2-decr": 0.18,
+          "mouth/mouth-scale-horiz-decr": 0.12,
+          "eyebrows/eyebrows-angle-down": 0.06
+        }
+      },
+      "clothing": "ming-ao-mamianqun",
+      "hairStyle": "paired-low-buns"
     },
     "baochai": {
       "name": "薛宝钗",
@@ -58,14 +84,29 @@
       "motif": "米金衣缘，青裙金锁",
       "face": {
         "male": 0,
-        "scale": 0.113,
-        "width": 1.025,
-        "morphs": {
-          "head-round": 0.19
-        },
+        "scale": 0.1,
+        "width": 1,
+        "morphs": {},
         "lip": "#AA615D",
         "brow": "#48352D"
-      }
+      },
+      "anatomy": {
+        "height": 1.64,
+        "gender": 0,
+        "age": 0.45,
+        "weight": 0.55,
+        "muscle": 0.44,
+        "headScale": 1.03,
+        "targets": {
+          "head/head-round": 0.23,
+          "head/head-fat-incr": 0.1,
+          "mouth/mouth-scale-horiz-incr": 0.13,
+          "nose/nose-width2-incr": 0.16,
+          "chin/chin-height-decr": 0.07
+        }
+      },
+      "clothing": "ming-ao-mamianqun",
+      "hairStyle": "coiled-back-bun"
     },
     "wangxifeng": {
       "name": "王熙凤",
@@ -75,30 +116,46 @@
       "lining": "#567D82",
       "skin": "#DEB398",
       "hair": "#2D292F",
-      "scale": 1.02,
+      "scale": 1,
       "motif": "绛紫锦衣，金钗高髻",
       "face": {
         "male": 0,
-        "scale": 0.114,
-        "width": 0.98,
-        "morphs": {
-          "head-invertedtriangular": 0.18
-        },
+        "scale": 0.1,
+        "width": 1,
+        "morphs": {},
         "lip": "#A14448",
         "brow": "#342C30"
-      }
+      },
+      "anatomy": {
+        "height": 1.65,
+        "gender": 0,
+        "age": 0.52,
+        "weight": 0.5,
+        "muscle": 0.48,
+        "headScale": 1.03,
+        "targets": {
+          "head/head-diamond": 0.17,
+          "chin/chin-width-incr": 0.18,
+          "eyes/l-eye-corner2-up": 0.08,
+          "eyes/r-eye-corner2-up": 0.08,
+          "eyebrows/eyebrows-angle-up": 0.15,
+          "nose/nose-scale-depth-incr": 0.09
+        }
+      },
+      "clothing": "ming-ao-mamianqun",
+      "hairStyle": "ming-diji-bun"
     }
   },
   "geometryBudget": {
     "high": {
-      "triangles": 95000,
-      "primitives": 44,
-      "bytes": 1700000
+      "triangles": 180000,
+      "primitives": 65,
+      "bytes": 4800000
     },
     "low": {
-      "triangles": 39000,
-      "primitives": 38,
-      "bytes": 800000
+      "triangles": 75000,
+      "primitives": 65,
+      "bytes": 2500000
     }
   }
 }

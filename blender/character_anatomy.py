@@ -87,33 +87,40 @@ def subdivide_shape_keys(obj):
 class Anatomy:
     def __init__(self, identity, design):
         self.identity, self.design = identity, design
-        self.vertices = [v.copy() for v in BASE]
-        male = design['face']['male']
-        for name, weight in [('asian-male-young', male), ('asian-female-young', 1-male), *design['face']['morphs'].items()]:
-            for index, delta in target(name).items(): self.vertices[index] += delta * weight
+        source = json.loads((ROOT/'assets/characters/mpfb/generated'/(identity+'.json')).read_text())
+        self.scale = source['sourceScale']
+        self.width = 1
+        self.vertices = [Vector(v)/self.scale for v in source['vertices']]
+        self.joints = {name:Vector(p) for name,p in source['joints'].items()}
         self.anchor = average_group(self.vertices, 'joint-head')
-        self.scale = design['face']['scale']
-        self.width = design['face']['width']
+        self.head_position = self.anchor*self.scale
         self.eye_positions = []
+        self.fore_length=(self.joints['joint-l-elbow']-self.joints['joint-l-hand']).length
 
     def local(self, vertex):
-        p = (vertex - self.anchor) * self.scale
-        p.x *= self.width
-        if p.y < -.07:
-            t=max(0,min(1,(-p.y-.07)/.055))
-            p.x*=1-t*.72
-            p.z=p.z*(1-t*.40)
-            p.y-=t*.022
-        return p
+        return (vertex-self.anchor)*self.scale
 
     def delta(self, delta):
         return Vector((delta.x * self.width, delta.y, delta.z)) * self.scale
 
     def head(self, parent, material, color_fn, high):
-        source_faces = [f for f in GROUPS['body'] if all(BASE[i].y > 5.62 for i, _ in f)]
+        neck_y=self.joints['joint-neck'].y
+        source_faces = [f for f in GROUPS['body'] if all(BASE[i].y > 5.62 and self.vertices[i].y*self.scale > neck_y-.03 for i, _ in f)]
         ids = sorted(set(i for f in source_faces for i, _ in f))
         index = {old: new for new, old in enumerate(ids)}
         coordinates = [self.local(self.vertices[i]) for i in ids]
+        # Keep the lower boundary inside the collar. Cutting by X discarded
+        # whole faces and left visible saw-tooth edges beside the neck.
+        for p in coordinates:
+            world=p+self.head_position
+            weight=max(0,min(1,(neck_y+.045-world.y)/.045))
+            if weight:
+                rx,rz=(.050,.045) if self.identity=='baoyu' else (.043,.039)
+                radial=((world.x/rx)**2+((world.z-self.joints['joint-neck'].z)/rz)**2)**.5
+                if radial>1:
+                    factor=1-weight*(1-1/radial)
+                    p.x*=factor
+                    p.z=(world.z-self.joints['joint-neck'].z)*factor+self.joints['joint-neck'].z-self.head_position.z
         faces = [[(index[i], uv) for i, uv in face] for face in source_faces]
         obj = make_mesh(self.identity + '_face', coordinates, faces, UV, material, parent)
         color = obj.data.color_attributes.new(name='Color', type='FLOAT_COLOR', domain='CORNER')
@@ -142,7 +149,7 @@ class Anatomy:
         for row in mapping:
             p = sum((self.vertices[int(row[i])] * float(row[i+3]) for i in range(3)), Vector())
             p += Vector(float(row[i+6]) * scales[i] for i in range(3))
-            point=self.local(p);point.z+=.0025
+            point=self.local(p);point.z+=.0005
             fitted.append(point)
         obj = make_mesh(self.identity + '_eyeballs', fitted, [face for face in sum(EYE_GROUPS.values(), []) if not all(EYE_UV[uv][0]>.82 and EYE_UV[uv][1]<.18 for _,uv in face)], [(cx+(u-cx)*1.10,cy+(v-cy)*1.10) for u,v in EYE_UV for cx,cy in [((.28,.29) if u<.5 else (.71,.70))]], material, parent)
         for side in [-1, 1]:
@@ -170,18 +177,45 @@ class Anatomy:
         neutral_axis = (neutral_tip-neutral_wrist).normalized()
         fs = [f for f in GROUPS['body'] if all(BASE[i].x * side > 3.75 and (BASE[i]-neutral_wrist).dot(neutral_axis)>-.20 for i, _ in f)]
         ids = sorted(set(i for f in fs for i, _ in f)); index = {v:i for i,v in enumerate(ids)}
-        coords = [rotation @ (self.vertices[i]-wrist) * .096 + Vector((0,-.273,.004)) for i in ids]
+        coords = [rotation @ (self.vertices[i]-wrist) * self.scale + Vector((0,-self.fore_length,.004)) for i in ids]
         obj = make_mesh(self.identity + ('_leftHand' if side<0 else '_rightHand'), coords, [[(index[i],uv) for i,uv in f] for f in fs], UV, material, parent)
         attr = obj.data.color_attributes.new(name='Color', type='FLOAT_COLOR', domain='CORNER')
         for item in attr.data: item.color = rgba
         obj.shape_key_add(name='Basis')
         grasp=obj.shape_key_add(name='grasp')
         for point,co in zip(grasp.data,coords):
-            weight=max(0,min(1,(-co.y-.318)/.104))
+            weight=max(0,min(1,(-co.y-self.fore_length-.025)/.09))
             angle=weight*.95
-            dy=co.y+.318
-            point.co.y=-.318+dy*math.cos(angle)
+            finger_root=self.fore_length+.045
+            dy=co.y+finger_root
+            point.co.y=-finger_root+dy*math.cos(angle)
             point.co.z=co.z-dy*math.sin(angle)
         # Native hand topology already models every finger and nail bed.
         # Keep it for both LODs; extra tessellation here does not improve silhouette.
+        return obj
+
+    def attachment(self, parent, material, folder, name, blink=False):
+        """Fit CC0 brow/lash meshes with their authored barycentric mapping."""
+        objfile=next(folder.glob('*.obj'));clofile=next(folder.glob('*.mhclo'))
+        original, uv, groups=obj_data(objfile);mapping=[];scales={}
+        for line in clofile.read_text().splitlines():
+            a=line.split()
+            if not a:continue
+            if a[0] in ['x_scale','y_scale','z_scale']:
+                axis='xyz'.index(a[0][0]);scales[axis]=abs(self.vertices[int(a[1])][axis]-self.vertices[int(a[2])][axis])/float(a[3])
+            elif a[0].isdigit() and len(a)==9:mapping.append(a)
+            elif a[0].isdigit() and len(a)==1:mapping.append([a[0],a[0],a[0],'1','0','0','0','0','0'])
+        assert len(mapping)==len(original),(name,len(mapping),len(original))
+        coords=[]
+        for row in mapping:
+            p=sum((self.vertices[int(row[i])]*float(row[i+3]) for i in range(3)),Vector())
+            p+=Vector(float(row[i+6])*scales[i] for i in range(3))
+            coords.append(self.local(p))
+        obj=make_mesh(self.identity+'_'+name,coords,sum(groups.values(),[]),uv,material,parent)
+        if blink:
+            obj.shape_key_add(name='Basis');key=obj.shape_key_add(name='blink')
+            deltas={}
+            for t in ['eye-left-closure','eye-right-closure']:
+                for i,d in target(t).items():deltas[i]=deltas.get(i,Vector())+d
+            for point,row in zip(key.data,mapping):point.co+=sum((self.delta(deltas.get(int(row[i]),Vector()))*float(row[i+3]) for i in range(3)),Vector())
         return obj

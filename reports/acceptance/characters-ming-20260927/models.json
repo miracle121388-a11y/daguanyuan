@@ -1,0 +1,230 @@
+{
+  "revision": "garden-players-ming-20260927-v4",
+  "models": [
+    {
+      "path": "public/models/characters/baoyu.glb",
+      "triangles": 96340,
+      "meshes": 19,
+      "textures": 5,
+      "expressions": [
+        {
+          "mesh": "Mesh",
+          "maxDisplacement": 0.010356288403272629
+        },
+        {
+          "mesh": "Mesh",
+          "maxDisplacement": 0.03493066504597664
+        },
+        {
+          "mesh": "baoyu_lashes",
+          "maxDisplacement": 0.01725432276725769
+        },
+        {
+          "mesh": "baoyu_leftHand",
+          "maxDisplacement": 0.12100648134946823
+        },
+        {
+          "mesh": "baoyu_rightHand",
+          "maxDisplacement": 0.12100651115179062
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/baoyu-low.glb",
+      "triangles": 43320,
+      "meshes": 19,
+      "textures": 5,
+      "expressions": [
+        {
+          "mesh": "baoyu_face.001",
+          "maxDisplacement": 0.011068809777498245
+        },
+        {
+          "mesh": "baoyu_face.001",
+          "maxDisplacement": 0.035376787185668945
+        },
+        {
+          "mesh": "baoyu_lashes.001",
+          "maxDisplacement": 0.01725432276725769
+        },
+        {
+          "mesh": "baoyu_leftHand.001",
+          "maxDisplacement": 0.12100648134946823
+        },
+        {
+          "mesh": "baoyu_rightHand.001",
+          "maxDisplacement": 0.12100651115179062
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/daiyu.glb",
+      "triangles": 153746,
+      "meshes": 56,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "Mesh.001",
+          "maxDisplacement": 0.010591717436909676
+        },
+        {
+          "mesh": "Mesh.001",
+          "maxDisplacement": 0.03572474420070648
+        },
+        {
+          "mesh": "daiyu_lashes",
+          "maxDisplacement": 0.017646566033363342
+        },
+        {
+          "mesh": "daiyu_leftHand",
+          "maxDisplacement": 0.0989779382944107
+        },
+        {
+          "mesh": "daiyu_rightHand",
+          "maxDisplacement": 0.0989779457449913
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/daiyu-low.glb",
+      "triangles": 59502,
+      "meshes": 56,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "daiyu_face.001",
+          "maxDisplacement": 0.011320438235998154
+        },
+        {
+          "mesh": "daiyu_face.001",
+          "maxDisplacement": 0.0361810103058815
+        },
+        {
+          "mesh": "daiyu_lashes.001",
+          "maxDisplacement": 0.017646566033363342
+        },
+        {
+          "mesh": "daiyu_leftHand.001",
+          "maxDisplacement": 0.0989779382944107
+        },
+        {
+          "mesh": "daiyu_rightHand.001",
+          "maxDisplacement": 0.0989779457449913
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/baochai.glb",
+      "triangles": 148590,
+      "meshes": 57,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "Mesh.002",
+          "maxDisplacement": 0.010764669626951218
+        },
+        {
+          "mesh": "Mesh.002",
+          "maxDisplacement": 0.03630807623267174
+        },
+        {
+          "mesh": "baochai_lashes",
+          "maxDisplacement": 0.017934711650013924
+        },
+        {
+          "mesh": "baochai_leftHand",
+          "maxDisplacement": 0.10262738913297653
+        },
+        {
+          "mesh": "baochai_rightHand",
+          "maxDisplacement": 0.10262738168239594
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/baochai-low.glb",
+      "triangles": 57471,
+      "meshes": 57,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "baochai_face.001",
+          "maxDisplacement": 0.011505287140607834
+        },
+        {
+          "mesh": "baochai_face.001",
+          "maxDisplacement": 0.03677180036902428
+        },
+        {
+          "mesh": "baochai_lashes.001",
+          "maxDisplacement": 0.017934711650013924
+        },
+        {
+          "mesh": "baochai_leftHand.001",
+          "maxDisplacement": 0.10262738913297653
+        },
+        {
+          "mesh": "baochai_rightHand.001",
+          "maxDisplacement": 0.10262738168239594
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/wangxifeng.glb",
+      "triangles": 148544,
+      "meshes": 56,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "Mesh.003",
+          "maxDisplacement": 0.010503202676773071
+        },
+        {
+          "mesh": "Mesh.003",
+          "maxDisplacement": 0.035426173359155655
+        },
+        {
+          "mesh": "wangxifeng_lashes",
+          "maxDisplacement": 0.017499087378382683
+        },
+        {
+          "mesh": "wangxifeng_leftHand",
+          "maxDisplacement": 0.10277712345123291
+        },
+        {
+          "mesh": "wangxifeng_rightHand",
+          "maxDisplacement": 0.10277710855007172
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/wangxifeng-low.glb",
+      "triangles": 57439,
+      "meshes": 56,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "wangxifeng_face.001",
+          "maxDisplacement": 0.011225830763578415
+        },
+        {
+          "mesh": "wangxifeng_face.001",
+          "maxDisplacement": 0.035878632217645645
+        },
+        {
+          "mesh": "wangxifeng_lashes.001",
+          "maxDisplacement": 0.017499087378382683
+        },
+        {
+          "mesh": "wangxifeng_leftHand.001",
+          "maxDisplacement": 0.10277712345123291
+        },
+        {
+          "mesh": "wangxifeng_rightHand.001",
+          "maxDisplacement": 0.10277710855007172
+        }
+      ]
+    }
+  ],
+  "unchangedOtherPublicFiles": 625
+}

@@ -79,7 +79,7 @@ function glbJSON(file){const b=readFileSync(file);assert(b.subarray(0,4).toStrin
 const cast=read('public/textures/characters/manifest.json'),castDesign=read('config/simulation.characters.json');
 const castIds=['baoyu','daiyu','baochai','wangxifeng'];
 assert(cast.revision===castDesign.revision&&cast.basis===castDesign.basis,'character design revision and interpretation');
-assert(cast.externalAssets.length===1&&cast.externalAssets[0].license==='CC0-1.0','reviewed CC0 anatomy provenance');
+assert(cast.externalAssets.length===3&&cast.externalAssets.every(a=>['CC0-1.0','CC-BY-4.0'].includes(a.license)),'reviewed anatomy and Ming clothing provenance');
 for(const source of cast.externalAssets){assert(hash(source.provenance)===source.sha256,'anatomy provenance hash');const record=read(source.provenance);assert(existsSync(record.licenseEvidencePath),'anatomy license evidence');for(const file of record.files)assert(hash(file.path)===file.sha256,'anatomy source hash '+file.path)}
 assert(cast.generator==='blender/build_simulation_characters.py'&&hash(cast.generator)===cast.generatorSha256&&cast.configuration==='config/simulation.characters.json'&&hash(cast.configuration)===cast.configurationSha256,'character generator and configuration hashes');
 for(const dependency of cast.generatorDependencies)assert(hash(dependency.path)===dependency.sha256,'anatomy adapter source hash');

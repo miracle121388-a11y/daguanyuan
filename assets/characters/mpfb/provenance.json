@@ -1,0 +1,162 @@
+{
+  "assetId": "mpfb-asian-character-bases",
+  "author": "MakeHuman Community",
+  "license": "CC0-1.0",
+  "licenseEvidencePath": "assets/characters/mpfb/LICENSE.ASSETS.md",
+  "repository": "https://github.com/makehumancommunity/mpfb2",
+  "commit": "3edf9df0551765be43563d047888cf7877eb89b4",
+  "scope": "MPFB-generated body coordinates and CC0 system skin, eyebrow and eyelash assets. The external MPFB authoring tool is GPL; its application source is not bundled.",
+  "archive": {
+    "url": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+    "sha256": "b542127a8e25547c7c29c19f2d1d2adb9a664c80396ecd694095dbc8028a0107",
+    "bytes": 280737770
+  },
+  "generator": {
+    "path": "blender/prepare_character_bases.py",
+    "sha256": "14bdf6fa9fc6f8be4ccebe0f42fe5fb790d5b5cc9858035eb9b72a448b4923e0"
+  },
+  "configuration": {
+    "path": "config/simulation.characters.json",
+    "sha256": "cce03eb4c48fa6cab57666d38070a552cde19881756da0fa6ee69f1d7d26f5ed"
+  },
+  "files": [
+    {
+      "path": "assets/characters/mpfb/LICENSE.ASSETS.md",
+      "bytes": 6962,
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+      "origin": "Pinned MPFB repository"
+    },
+    {
+      "path": "assets/characters/mpfb/LICENSE.md",
+      "bytes": 3188,
+      "sha256": "5cefb60680cb9efd4550a2e65d719021cfbec9dad3658481d11d48ae863ce04d",
+      "origin": "Pinned MPFB repository"
+    },
+    {
+      "path": "assets/characters/mpfb/eyebrows/eyebrow001/eyebrow001.mhclo",
+      "bytes": 9141,
+      "sha256": "54c8892c2ba577f4152d779ce1f20f7cd323beb8cbd9cb701796165c221b4f5b",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/eyebrows/eyebrow001/eyebrow001.mhmat",
+      "bytes": 1098,
+      "sha256": "976e5f4f1d3922d7a11c6e2db233f8b4584b068d00619d5749687e81c92d61fc",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/eyebrows/eyebrow001/eyebrow001.obj",
+      "bytes": 8227,
+      "sha256": "88b13146395133f3901715e11706cdfd293e5d6087ad7c5e01efe1485a26b513",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/eyebrows/eyebrow001/eyebrow001.png",
+      "bytes": 89619,
+      "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/eyebrows/eyebrow001/eyebrow001.thumb",
+      "bytes": 137534,
+      "sha256": "98b68eccf50977ff00242a33eb1dc6e3eaf4cc262e1f6c4ceca5c1c564f6c745",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/eyelashes/eyelashes01/eyelashes01.mhclo",
+      "bytes": 2265,
+      "sha256": "5a86b29c15649273d723084954b7fa7bf199112571d4f58539b46734d397ee6b",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/eyelashes/eyelashes01/eyelashes01.mhmat",
+      "bytes": 1074,
+      "sha256": "8029c99d94f3d87a1e81825fad6b90eec773ae6955a5b2592222ef237377e190",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/eyelashes/eyelashes01/eyelashes01.obj",
+      "bytes": 18832,
+      "sha256": "f78f5b93fea1946fcae103d32c4f082dd9612a1ec2e7e2f90b03ebe59b0baf20",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/eyelashes/eyelashes01/eyelashes01.png",
+      "bytes": 91600,
+      "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/eyelashes/eyelashes01/eyelashes01.thumb",
+      "bytes": 140641,
+      "sha256": "34ab06601745c2b74fcfa6f63a374fcea58cb4501e728a3c6935a3a1ed794aa3",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/generated/baochai.json",
+      "bytes": 627248,
+      "sha256": "32e5e5d3a57b8aa6b99efb39aadef1e89d4a8520d55d73ae8728630d52d958be",
+      "origin": "Generated with pinned MPFB and project configuration"
+    },
+    {
+      "path": "assets/characters/mpfb/generated/baoyu.json",
+      "bytes": 627812,
+      "sha256": "e262e509737d25295192a7f26b121726fbee9fdcc4fbc3ef56ee77dc883a9247",
+      "origin": "Generated with pinned MPFB and project configuration"
+    },
+    {
+      "path": "assets/characters/mpfb/generated/daiyu.json",
+      "bytes": 627191,
+      "sha256": "c88b81d8e0e613f9ccdae0b3660cd1d62b5c6b0ab77659428154994119b6446b",
+      "origin": "Generated with pinned MPFB and project configuration"
+    },
+    {
+      "path": "assets/characters/mpfb/generated/measurements.json",
+      "bytes": 1839,
+      "sha256": "075b76249af016b580a8fa11ded0b914fb0bc1cd816a84c88de61d0938968bba",
+      "origin": "Generated with pinned MPFB and project configuration"
+    },
+    {
+      "path": "assets/characters/mpfb/generated/wangxifeng.json",
+      "bytes": 627164,
+      "sha256": "886d9100a13d66ee1a1a1433d18c66aa117cfbfc4941daf9e88174e06365465e",
+      "origin": "Generated with pinned MPFB and project configuration"
+    },
+    {
+      "path": "assets/characters/mpfb/skins/young_asian_female/young_asian_female.mhmat",
+      "bytes": 1459,
+      "sha256": "2baeded5fdfd31acc187e83b278f9c4e4cbb59a7ffedf50ebcffcc44e4eab220",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/skins/young_asian_female/young_asian_female.thumb",
+      "bytes": 79011,
+      "sha256": "736d4ed1967431c989c5629655aa65f162a3e325d5aed7cd75ca3c2cc8f91a8d",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/skins/young_asian_female/young_lightskinned_female_diffuse3.png",
+      "bytes": 3884420,
+      "sha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/skins/young_asian_male/young_asian_male.mhmat",
+      "bytes": 1452,
+      "sha256": "9fdfc9863cd15d1359311435f2da7de3906f81d6eea549fba6bf14cd82ceb6a0",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/skins/young_asian_male/young_asian_male.thumb",
+      "bytes": 79327,
+      "sha256": "21245c121a4efc96d18cb64a2fc7d95bfcc768f7b333d59b7a471708551ed13d",
+      "origin": "MakeHuman system assets CC0 archive"
+    },
+    {
+      "path": "assets/characters/mpfb/skins/young_asian_male/young_lightskinned_male_diffuse3.png",
+      "bytes": 3593099,
+      "sha256": "f50016a5507fc687dc8df06599c8ea48de950cd185de33a71cafc1319ddab4d5",
+      "origin": "MakeHuman system assets CC0 archive"
+    }
+  ]
+}
