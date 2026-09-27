@@ -1,5 +1,5 @@
 {
-  "revision": "garden-players-ming-20260927-v4",
+  "revision": "garden-players-ming-20260927-v5",
   "models": [
     {
       "path": "public/models/characters/baoyu.glb",
@@ -9,11 +9,11 @@
       "expressions": [
         {
           "mesh": "Mesh",
-          "maxDisplacement": 0.010356288403272629
+          "maxDisplacement": 0.010356292128562927
         },
         {
           "mesh": "Mesh",
-          "maxDisplacement": 0.03493066504597664
+          "maxDisplacement": 0.03493066132068634
         },
         {
           "mesh": "baoyu_lashes",
@@ -69,7 +69,7 @@
         },
         {
           "mesh": "Mesh.001",
-          "maxDisplacement": 0.03572474420070648
+          "maxDisplacement": 0.035724740475416183
         },
         {
           "mesh": "daiyu_lashes",
@@ -121,11 +121,11 @@
       "expressions": [
         {
           "mesh": "Mesh.002",
-          "maxDisplacement": 0.010764669626951218
+          "maxDisplacement": 0.01076466590166092
         },
         {
           "mesh": "Mesh.002",
-          "maxDisplacement": 0.03630807623267174
+          "maxDisplacement": 0.036308079957962036
         },
         {
           "mesh": "baochai_lashes",
@@ -177,11 +177,11 @@
       "expressions": [
         {
           "mesh": "Mesh.003",
-          "maxDisplacement": 0.010503202676773071
+          "maxDisplacement": 0.010503197088837624
         },
         {
           "mesh": "Mesh.003",
-          "maxDisplacement": 0.035426173359155655
+          "maxDisplacement": 0.035426169633865356
         },
         {
           "mesh": "wangxifeng_lashes",

@@ -435,7 +435,7 @@ for cid,c in DESIGN['characters'].items():
         if high:
             height=c['anatomy']['height']
             blink_meshes=[o for o in root.children_recursive if o.type=='MESH' and o.data.shape_keys and 'blink' in o.data.shape_keys.key_blocks]
-            for suffix,pos,target,width,res in [('portrait',(.35,height,2.5),(0,height-.18,0),.66,(384,448)),('face',(.08,height-.12,.8),(0,height-.12,.015),.40,(780,900)),('full',(.8,height*.8,3),(0,height*.5,0),height*1.12,(900,1200)),('blink',(.08,height-.12,.8),(0,height-.12,.015),.40,(520,600)),('reading',(.65,height*.8,3),(0,height*.5,0),height*1.12,(900,1200))]:
+            for suffix,pos,target,width,res in [('portrait',(.35,height,2.5),(0,height-.18,0),.66,(384,448)),('face',(.08,height-.12,.8),(0,height-.12,.015),.40,(780,900)),('full',(.8,height*.8,3),(0,height*.5,0),height*1.12,(900,1200)),('profile',(2,height-.17,0),(0,height-.20,0),.65,(780,900)),('blink',(.08,height-.12,.8),(0,height-.12,.015),.40,(520,600)),('reading',(.65,height*.8,3),(0,height*.5,0),height*1.12,(900,1200))]:
                 for obj in blink_meshes:obj.data.shape_keys.key_blocks['blink'].value=1 if suffix=='blink' else 0
                 if suffix=='reading':
                     for part in ['leftArm','rightArm']:bpy.data.objects[cid+'_'+part].rotation_euler.x=-.48

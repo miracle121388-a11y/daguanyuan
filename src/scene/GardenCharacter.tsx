@@ -11,7 +11,7 @@ import {characterAsset, characterDetail, facePerformance, type CharacterDetail} 
 
 type Props = {id: AgentId; pose: string; paused: boolean; motion: boolean; rate: number; calm: number; tea: boolean};
 
-function PaintedFigure({id, pose, paused, motion, rate, calm, tea, detail}: Props & {detail: CharacterDetail}) {
+function PaintedFigure({id, pose, paused, motion, rate, tea, detail}: Props & {detail: CharacterDetail}) {
   const {scene} = useGLTF(characterAsset(id, detail, import.meta.env.BASE_URL), `${import.meta.env.BASE_URL}draco/`);
   const model = useMemo(() => cloneSkeleton(scene), [scene]);
   const clock = useRef(0);
@@ -40,7 +40,7 @@ function PaintedFigure({id, pose, paused, motion, rate, calm, tea, detail}: Prop
     rig.body.position.y = walking ? Math.abs(stride) * .018 : Math.sin(t * 1.8) * .003;
     blend(rig.body, 'z', walking ? stride * .018 : 0);
     blend(rig.skirt, 'x', walking ? stride * .023 : 0);
-    blend(rig.head, 'x', reading ? .19 : calm < 45 ? .09 : speaking ? Math.sin(t * 2.4) * .035 : 0);
+    blend(rig.head, 'x', reading ? .075 : speaking ? Math.sin(t * 2.4) * .02 : 0);
     blend(rig.head, 'y', pose === 'observe' ? Math.sin(t * .6) * .25 : speaking ? Math.sin(t) * .065 : 0);
     blend(rig.leftLeg, 'x', stride * .34);
     blend(rig.rightLeg, 'x', -stride * .34);

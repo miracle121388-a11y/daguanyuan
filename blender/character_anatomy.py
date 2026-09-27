@@ -92,6 +92,14 @@ class Anatomy:
         self.width = 1
         self.vertices = [Vector(v)/self.scale for v in source['vertices']]
         self.joints = {name:Vector(p) for name,p in source['joints'].items()}
+        # Compress only the cervical transition. The jaw, face, hair and eyes
+        # translate together; the collar and shoulder anchors stay in place.
+        neck=self.joints['joint-neck']
+        for vertex in self.vertices:
+            t=max(0,min(1,(vertex.y*self.scale-neck.y)/.085))
+            weight=t*t*(3-2*t)
+            vertex.y-=.028*weight/self.scale
+            vertex.z-=.018*weight/self.scale
         self.anchor = average_group(self.vertices, 'joint-head')
         self.head_position = self.anchor*self.scale
         self.eye_positions = []

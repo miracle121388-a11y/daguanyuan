@@ -1,5 +1,5 @@
 {
-  "revision": "garden-players-ming-20260927-v4",
+  "revision": "garden-players-ming-20260927-v5",
   "origin": "MPFB/MakeHuman CC0 anatomy; adapted Style3D CC BY Ming womenswear; original male tailoring, hair and ornaments",
   "basis": "Fictional character designs using MPFB Asian male/female anatomical bases and Ming-inspired Han clothing and hair. Heights and identities are artistic casting choices, not a claim of one ethnic body standard or historical portrait reconstruction. Garden architecture remains unchanged.",
   "externalAssets": [
@@ -13,7 +13,7 @@
       "assetId": "mpfb-asian-character-bases",
       "license": "CC0-1.0",
       "provenance": "assets/characters/mpfb/provenance.json",
-      "sha256": "03d2c2799db5269f868db3edd0426ee517550c5722fd36be0a66ef32662f7d5b"
+      "sha256": "15264e2c529372150100c3407b802e9da39b4254fe41e0b975a19f9b7c9cc497"
     },
     {
       "assetId": "style3d-ming-clothing",
@@ -23,11 +23,11 @@
     }
   ],
   "generator": "blender/build_simulation_characters.py",
-  "generatorSha256": "2e594aa2e2741152a229a1b8e8ce84342f044f4d39eadd5fc223fe18859e3537",
+  "generatorSha256": "b844c9fa4ab2720c3061da28e13f8721a0f439a732153033e54c7037f6e0e8e0",
   "generatorDependencies": [
     {
       "path": "blender/character_anatomy.py",
-      "sha256": "b5c532eb885f7bb69ea68f4170bd222328a4b3df35c104281ab0388f38637bc1"
+      "sha256": "32c374d95c70c43cb0f02b940080811623bd25bf1b0965abfc9238ef7c3849ca"
     },
     {
       "path": "blender/style3d_clothing.py",
@@ -43,87 +43,87 @@
     }
   ],
   "configuration": "config/simulation.characters.json",
-  "configurationSha256": "cce03eb4c48fa6cab57666d38070a552cde19881756da0fa6ee69f1d7d26f5ed",
+  "configurationSha256": "f79e018073d1bce987c556b8125013d4b5f5dd0ccdbfaf0bdddbc29ce33b98ec",
   "files": [
     {
       "agent": "baoyu",
       "detail": "high",
       "path": "public/models/characters/baoyu.glb",
-      "bytes": 1618936,
-      "sha256": "fe666701aefc1e9035c3c9c54286e2bb14ea24c44f3a63de5cc10c5249100421"
+      "bytes": 1619436,
+      "sha256": "029b0514bc8f6ffe3f36874c230964c88ead4153e537bd10575c0fa64f8bcc1e"
     },
     {
       "agent": "baoyu",
       "path": "public/textures/characters/baoyu.png",
-      "bytes": 139206,
-      "sha256": "b50f4319ea2b25c4c10a4a5b7ef7623915c1415246821e7b6d7ae527460cbbb3"
+      "bytes": 135754,
+      "sha256": "e6202ebf2eff793c6536b6ba0759bd1e502d9ca5998865f1924a8f72a8789cf7"
     },
     {
       "agent": "baoyu",
       "detail": "low",
       "path": "public/models/characters/baoyu-low.glb",
-      "bytes": 770928,
-      "sha256": "aa18e814a7c568933ed87afb5c3d507a1809c472329b3c11debc1fc7fbb018c6"
+      "bytes": 771088,
+      "sha256": "47d9c5fae5c7ae72b6a7ace35c12f4202dd764b25bebd1f107b5c2b6742ee763"
     },
     {
       "agent": "daiyu",
       "detail": "high",
       "path": "public/models/characters/daiyu.glb",
-      "bytes": 3406332,
-      "sha256": "32c8b44a99e454c9cb29e856e740873e81e9a837218921521a0ef34b5a16f038"
+      "bytes": 3406972,
+      "sha256": "ceed0d13896d9caa7ae28c1cdb4a2451ea75ada944b14b06e8295645951ee793"
     },
     {
       "agent": "daiyu",
       "path": "public/textures/characters/daiyu.png",
-      "bytes": 129280,
-      "sha256": "678adf4320dea6f5fcbcd1b7a4121d8ab782d24d8a475792bd0b9a6276920a71"
+      "bytes": 126149,
+      "sha256": "a4ffb11f63e983e569fcf6dab0fa295f46f6450361bea09cdf45224ac79e894d"
     },
     {
       "agent": "daiyu",
       "detail": "low",
       "path": "public/models/characters/daiyu-low.glb",
-      "bytes": 2028600,
-      "sha256": "d7f3083da6f8e575e71f8d92daaffb14a258fa59e56ddc55cd8709be9cdacb69"
+      "bytes": 2028804,
+      "sha256": "d7c0bb42747f3a187a8264cb771df97e272d56fdfde97f03917d0a3865123333"
     },
     {
       "agent": "baochai",
       "detail": "high",
       "path": "public/models/characters/baochai.glb",
-      "bytes": 3414512,
-      "sha256": "3528163760cb0d278bfab1235a7ef0d905ed8fa98cdf940148162363639a5733"
+      "bytes": 3414780,
+      "sha256": "a499b36d8a6d15b2dccbb975217e560411624393055c19cd3beb3759c1de1e12"
     },
     {
       "agent": "baochai",
       "path": "public/textures/characters/baochai.png",
-      "bytes": 131098,
-      "sha256": "163df22273586baa5579b1175aaeca4d009d3d540133806be1a39beb19aaffd5"
+      "bytes": 128500,
+      "sha256": "f1b9365322389b8439d948698f8cb6d5c0aba7757265f67a4874e3345b2df550"
     },
     {
       "agent": "baochai",
       "detail": "low",
       "path": "public/models/characters/baochai-low.glb",
-      "bytes": 2038328,
-      "sha256": "d286a6d6d18ad720f5edb3814fe27a1ba27a9c46f80f611f339e9cf1a7651b1c"
+      "bytes": 2038480,
+      "sha256": "c8ead323c051483a71bb0983f26549c85e5737be9c85a0e57e74f4798eafdd8b"
     },
     {
       "agent": "wangxifeng",
       "detail": "high",
       "path": "public/models/characters/wangxifeng.glb",
-      "bytes": 3276808,
-      "sha256": "166cbcb2a89ea6de9c39df50f115798c84537c40fb28701eeb8a4d171274e67f"
+      "bytes": 3277424,
+      "sha256": "9cd4ad171ae4ab01cad3e8df17cba3d16d0eb3f4793bb21217d9cfdd7e0d1b7f"
     },
     {
       "agent": "wangxifeng",
       "path": "public/textures/characters/wangxifeng.png",
-      "bytes": 136330,
-      "sha256": "721a6c09f6bede8aae01f20198fd28920af2330d55a6a956eb52e52d7de5834c"
+      "bytes": 133522,
+      "sha256": "54580ea38609a070597acbeb366ae58592b2b7aaa7ceb11b1bb6d64bb862bbe3"
     },
     {
       "agent": "wangxifeng",
       "detail": "low",
       "path": "public/models/characters/wangxifeng-low.glb",
-      "bytes": 1929120,
-      "sha256": "1122dd1ad8a7e4c91f480bc7d2273894483803d217325677886bfc3dfe7d4b39"
+      "bytes": 1929224,
+      "sha256": "b4fa7bdeec97c38cf893c019b3a02f59c78360a283d588728ae8b91cf78f5b4a"
     }
   ],
   "geometry": [
@@ -132,56 +132,56 @@
       "detail": "high",
       "triangles": 96340,
       "meshes": 19,
-      "bytes": 1618936
+      "bytes": 1619436
     },
     {
       "agent": "baoyu",
       "detail": "low",
       "triangles": 43320,
       "meshes": 19,
-      "bytes": 770928
+      "bytes": 771088
     },
     {
       "agent": "daiyu",
       "detail": "high",
       "triangles": 153746,
       "meshes": 56,
-      "bytes": 3406332
+      "bytes": 3406972
     },
     {
       "agent": "daiyu",
       "detail": "low",
       "triangles": 59502,
       "meshes": 56,
-      "bytes": 2028600
+      "bytes": 2028804
     },
     {
       "agent": "baochai",
       "detail": "high",
       "triangles": 148590,
       "meshes": 57,
-      "bytes": 3414512
+      "bytes": 3414780
     },
     {
       "agent": "baochai",
       "detail": "low",
       "triangles": 57471,
       "meshes": 57,
-      "bytes": 2038328
+      "bytes": 2038480
     },
     {
       "agent": "wangxifeng",
       "detail": "high",
       "triangles": 148544,
       "meshes": 56,
-      "bytes": 3276808
+      "bytes": 3277424
     },
     {
       "agent": "wangxifeng",
       "detail": "low",
       "triangles": 57439,
       "meshes": 56,
-      "bytes": 1929120
+      "bytes": 1929224
     }
   ]
 }
