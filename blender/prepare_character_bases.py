@@ -22,7 +22,10 @@ for cid,c in DESIGN['characters'].items():
     macro.update({k:a[k] for k in ['gender','age','weight','muscle']})
     # Keep MPFB's balanced universal defaults; no singled-out ancestry preset.
     obj=HumanService.create_human(mask_helpers=False,feet_on_ground=False,scale=.1,macro_detail_dict=macro)
-    for name,value in a['targets'].items():TargetService.load_target(obj,str(TOOL/'src/mpfb/data/targets'/(name+'.target.gz')),weight=value)
+    for name,value in a['targets'].items():
+        target_path=TOOL/'src/mpfb/data/targets'/(name+'.target.gz')
+        assert target_path.is_file() and 0<=value<=1, f'Invalid face target for {cid}: {name}'
+        TargetService.load_target(obj,str(target_path),weight=value)
     bpy.context.view_layer.update();graph=bpy.context.evaluated_depsgraph_get();evaluated=obj.evaluated_get(graph);mesh=evaluated.to_mesh()
     # Blender Z-up -> application's Y-up, retaining exact HM08 vertex ordering.
     vertices=[Vector((v.co.x,v.co.z,-v.co.y)) for v in mesh.vertices]
@@ -37,7 +40,9 @@ for cid,c in DESIGN['characters'].items():
     joints={k:list(center(k)) for k in groups if k.startswith('joint-')}
     body={'id':cid,'generator':'MPFB 2','toolCommit':COMMIT,'phenotype':macro,'design':a,'unit':'metre','axis':'Y-up','sourceVertexCount':len(vertices),'vertices':[[round(n,7) for n in v] for v in vertices],'joints':joints,'sourceScale':.1*scale}
     (OUT/(cid+'.json')).write_text(json.dumps(body,separators=(',',':'))+'\n')
-    measurements.append({'id':cid,'height':a['height'],'headJoint':joints['joint-head'],'neck':joints.get('joint-neck'),'shoulderLeft':joints.get('joint-l-shoulder'),'shoulderRight':joints.get('joint-r-shoulder')})
+    eyes=(center('joint-l-eye')+center('joint-r-eye'))/2
+    cheek_band=[vertices[i] for i in groups['body'] if abs(vertices[i].y-(eyes.y-.025))<.012]
+    measurements.append({'id':cid,'height':a['height'],'headJoint':joints['joint-head'],'neck':joints.get('joint-neck'),'shoulderLeft':joints.get('joint-l-shoulder'),'shoulderRight':joints.get('joint-r-shoulder'),'faceIdentity':a.get('identity',{}),'faceMetrics':{'eyeToChin':round(eyes.y-vertices[791].y,5),'eyeSpacing':round(abs(center('joint-l-eye').x-center('joint-r-eye').x),5),'cheekWidth':round(max(p.x for p in cheek_band)-min(p.x for p in cheek_band),5)}})
     evaluated.to_mesh_clear();bpy.data.objects.remove(obj,do_unlink=True)
 (OUT/'measurements.json').write_text(json.dumps(measurements,indent=2)+'\n')
 print('BODY_MEASUREMENTS',json.dumps(measurements))

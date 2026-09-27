@@ -79,7 +79,7 @@ eye_nodes=MATS['eye'].node_tree.nodes;eye_tex=eye_nodes.new('ShaderNodeTexImage'
 MATS['eye'].node_tree.links.new(eye_tex.outputs['Color'],eye_nodes['Principled BSDF'].inputs['Base Color'])
 
 def skin_material(cid,c,high):
-    gender='male' if cid=='baoyu' else 'female'
+    gender='male' if c['anatomy']['gender']>=.5 else 'female'
     folder=ROOT/'assets/characters/mpfb/skins'/('young_asian_'+gender)
     texpath=next(folder.glob('*diffuse*.png'))
     mat=bpy.data.materials.new(cid+' natural skin');mat.use_nodes=True
@@ -95,11 +95,15 @@ def skin_material(cid,c,high):
     mat.node_tree.links.new(tex.outputs['Color'],bsdf.inputs['Base Color'])
     return mat
 
-def haircard_material(folder,name):
+def haircard_material(folder,name,shade=None):
     mat=bpy.data.materials.new(name);mat.use_nodes=True;mat.surface_render_method='DITHERED'
     bsdf=mat.node_tree.nodes.get('Principled BSDF');bsdf.inputs['Roughness'].default_value=.85
     tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(next(folder.glob('*.png'))),check_existing=True);tex.image.pack()
-    mat.node_tree.links.new(tex.outputs['Color'],bsdf.inputs['Base Color']);mat.node_tree.links.new(tex.outputs['Alpha'],bsdf.inputs['Alpha'])
+    if shade:
+        tint=mat.node_tree.nodes.new('ShaderNodeMixRGB');tint.blend_type='MULTIPLY';tint.inputs[0].default_value=.6;tint.inputs[2].default_value=color(shade)
+        mat.node_tree.links.new(tex.outputs['Color'],tint.inputs[1]);mat.node_tree.links.new(tint.outputs[0],bsdf.inputs['Base Color'])
+    else:mat.node_tree.links.new(tex.outputs['Color'],bsdf.inputs['Base Color'])
+    mat.node_tree.links.new(tex.outputs['Alpha'],bsdf.inputs['Alpha'])
     return mat
 
 def empty(name,parent=None,position=(0,0,0)):
@@ -260,6 +264,7 @@ def embroidery(body,c,high):
 
 def build(cid,c,high):
     root=empty(cid);root['agentId']=cid;root['artisticInterpretation']=c['motif'];root['detailLevel']='high' if high else 'low'
+    root['faceIdentity']=c['anatomy'].get('identity',{})
     body=empty(cid+'_body',root);skirt=empty(cid+'_skirt',body)
     anatomy=Anatomy(cid,c);skinmat=skin_material(cid,c,high)
     height=c['anatomy']['height'];sy=height/1.7
@@ -387,7 +392,7 @@ def build(cid,c,high):
     face=anatomy.head(head,skinmat,lambda p:(1,1,1,1),high);anatomy.eyes(eyes,MATS['eye']);head_hair(head,c,high,face)
     for folder,name,blink in [('eyebrows/eyebrow001','brows',False),('eyelashes/eyelashes01','lashes',True)]:
         path=ROOT/'assets/characters/mpfb'/folder
-        anatomy.attachment(head,haircard_material(path,cid+' '+name),path,name,blink)
+        anatomy.attachment(head,haircard_material(path,cid+' '+name,c['face']['brow'] if name=='brows' else None),path,name,blink)
     if cid in ['baoyu','baochai']:
         pendant_y=shoulder_y-.10
         stroke(body,[(-.045*sy,neck_y-.01,.052*sy),(0,pendant_y,.12*sy),(.045*sy,neck_y-.01,.052*sy)],'#8E7654',.0014,'pendant cord',sides=5)

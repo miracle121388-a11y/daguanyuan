@@ -1,5 +1,5 @@
 {
-  "revision": "garden-players-ming-20260927-v10",
+  "revision": "garden-players-ming-20260928-v11",
   "basis": "Fictional individual character designs from CC0 anatomical bases, without a singled-out ethnicity preset. Ming-inspired clothing and hair; garden architecture unchanged.",
   "characters": {
     "baoyu": {
@@ -18,7 +18,8 @@
         "width": 1,
         "morphs": {},
         "lip": "#A75C58",
-        "brow": "#42332E"
+        "brow": "#493C32",
+        "browThickness": 1.15
       },
       "anatomy": {
         "height": 1.7,
@@ -28,16 +29,27 @@
         "muscle": 0.48,
         "headScale": 1.02,
         "targets": {
-          "head/head-oval": 0.22,
-          "chin/chin-prominent-incr": 0.18,
-          "chin/chin-width-decr": 0.25,
-          "nose/nose-scale-depth-incr": 0.09,
-          "head/head-fat-decr": 0.06,
-          "eyes/l-eye-height2-incr": 0.12,
-          "eyes/r-eye-height2-incr": 0.12,
-          "head/head-scale-vert-incr": 0.4,
-          "chin/chin-height-incr": 0.34
-        }
+          "head/head-oval": 0.16,
+          "head/head-round": 0.22,
+          "head/head-fat-incr": 0.1,
+          "chin/chin-prominent-incr": 0.16,
+          "chin/chin-width-incr": 0.12,
+          "chin/chin-bones-incr": 0.2,
+          "chin/chin-height-incr": 0.04,
+          "head/head-scale-vert-incr": 0.04,
+          "nose/nose-scale-depth-incr": 0.14,
+          "nose/nose-scale-horiz-incr": 0.1,
+          "mouth/mouth-scale-horiz-incr": 0.08,
+          "mouth/mouth-lowerlip-volume-incr": 0.06,
+          "eyebrows/eyebrows-trans-down": 0.1,
+          "eyes/l-eye-height2-incr": 0.08,
+          "eyes/r-eye-height2-incr": 0.08
+        },
+        "identity": {
+          "faceShape": "short-oval",
+          "description": "较短椭圆脸，少年男性下颌，舒展眉眼，略宽鼻翼"
+        },
+        "neckDrop": 0.025
       },
       "clothing": "ming-daopao",
       "hairStyle": "full-hair-topknot"
@@ -58,7 +70,8 @@
         "width": 1,
         "morphs": {},
         "lip": "#AD6565",
-        "brow": "#4B383B"
+        "brow": "#796761",
+        "browThickness": 0.82
       },
       "anatomy": {
         "height": 1.6,
@@ -68,16 +81,27 @@
         "muscle": 0.42,
         "headScale": 1.02,
         "targets": {
-          "head/head-oval": 0.22,
-          "chin/chin-prominent-incr": 0.12,
-          "chin/chin-width-decr": 0.34,
-          "nose/nose-scale-depth-incr": 0.09,
-          "head/head-fat-decr": 0.06,
-          "eyes/l-eye-height2-incr": 0.12,
-          "eyes/r-eye-height2-incr": 0.12,
+          "head/head-oval": 0.32,
+          "head/head-fat-decr": 0.1,
           "head/head-scale-vert-incr": 0.45,
-          "chin/chin-height-incr": 0.38
-        }
+          "chin/chin-height-incr": 0.3,
+          "chin/chin-prominent-incr": 0.12,
+          "chin/chin-width-decr": 0.36,
+          "nose/nose-scale-depth-incr": 0.09,
+          "nose/nose-scale-horiz-decr": 0.18,
+          "mouth/mouth-scale-horiz-decr": 0.14,
+          "mouth/mouth-upperlip-volume-decr": 0.12,
+          "eyebrows/eyebrows-trans-up": 0.08,
+          "eyes/l-eye-height2-incr": 0.12,
+          "cheek/l-cheek-volume-decr": 0.2,
+          "eyes/r-eye-height2-incr": 0.12,
+          "cheek/r-cheek-volume-decr": 0.2
+        },
+        "identity": {
+          "faceShape": "long-tapered",
+          "description": "修长窄脸，收拢下颌，纤细鼻形，较窄唇形，清瘦面颊"
+        },
+        "neckDrop": 0.025
       },
       "clothing": "ming-ao-mamianqun",
       "hairStyle": "paired-low-buns"
@@ -98,7 +122,8 @@
         "width": 1,
         "morphs": {},
         "lip": "#AA615D",
-        "brow": "#48352D"
+        "brow": "#6D5949",
+        "browThickness": 1
       },
       "anatomy": {
         "height": 1.64,
@@ -108,17 +133,30 @@
         "muscle": 0.44,
         "headScale": 1.02,
         "targets": {
-          "head/head-oval": 0.12,
-          "chin/chin-prominent-incr": 0.12,
-          "chin/chin-width-decr": 0.28,
-          "nose/nose-scale-depth-incr": 0.09,
-          "head/head-fat-decr": 0,
-          "head/head-round": 0.08,
-          "eyes/l-eye-height2-incr": 0.12,
-          "eyes/r-eye-height2-incr": 0.12,
-          "head/head-scale-vert-incr": 0.32,
-          "chin/chin-height-incr": 0.34
-        }
+          "head/head-round": 0.42,
+          "head/head-fat-incr": 0.18,
+          "head/head-scale-vert-decr": 0.12,
+          "chin/chin-height-decr": 0.12,
+          "chin/chin-width-decr": 0.06,
+          "chin/chin-prominent-incr": 0.08,
+          "nose/nose-scale-depth-incr": 0.06,
+          "nose/nose-point-width-incr": 0.12,
+          "mouth/mouth-scale-horiz-incr": 0.1,
+          "mouth/mouth-upperlip-volume-incr": 0.18,
+          "mouth/mouth-lowerlip-volume-incr": 0.16,
+          "eyebrows/eyebrows-trans-up": 0.04,
+          "eyes/l-eye-height2-incr": 0.18,
+          "cheek/l-cheek-volume-incr": 0.22,
+          "eyes/l-eye-scale-incr": 0.05,
+          "eyes/r-eye-height2-incr": 0.18,
+          "cheek/r-cheek-volume-incr": 0.22,
+          "eyes/r-eye-scale-incr": 0.05
+        },
+        "identity": {
+          "faceShape": "short-round",
+          "description": "短圆脸，丰润面颊，圆润下巴，饱满唇形，较圆的眼形"
+        },
+        "neckDrop": 0.042
       },
       "clothing": "ming-ao-mamianqun",
       "hairStyle": "coiled-back-bun"
@@ -139,7 +177,8 @@
         "width": 1,
         "morphs": {},
         "lip": "#A14448",
-        "brow": "#342C30"
+        "brow": "#40312B",
+        "browThickness": 1.1
       },
       "anatomy": {
         "height": 1.65,
@@ -149,17 +188,30 @@
         "muscle": 0.48,
         "headScale": 1.02,
         "targets": {
-          "head/head-oval": 0.22,
-          "chin/chin-prominent-incr": 0.12,
-          "chin/chin-width-decr": 0.34,
-          "nose/nose-scale-depth-incr": 0.09,
-          "head/head-fat-decr": 0.06,
-          "head/head-diamond": 0.06,
-          "eyes/l-eye-height2-incr": 0.12,
-          "eyes/r-eye-height2-incr": 0.12,
-          "head/head-scale-vert-incr": 0.42,
-          "chin/chin-height-incr": 0.34
-        }
+          "head/head-diamond": 0.3,
+          "head/head-oval": 0.1,
+          "head/head-scale-vert-incr": 0.18,
+          "head/head-fat-decr": 0.08,
+          "chin/chin-height-incr": 0.13,
+          "chin/chin-width-decr": 0.25,
+          "chin/chin-prominent-incr": 0.16,
+          "nose/nose-scale-depth-incr": 0.18,
+          "nose/nose-scale-horiz-decr": 0.05,
+          "mouth/mouth-cupidsbow-incr": 0.15,
+          "mouth/mouth-scale-horiz-incr": 0.04,
+          "eyebrows/eyebrows-angle-up": 0.28,
+          "eyes/l-eye-height2-incr": 0.05,
+          "cheek/l-cheek-bones-incr": 0.22,
+          "eyes/l-eye-corner2-up": 0.12,
+          "eyes/r-eye-height2-incr": 0.05,
+          "cheek/r-cheek-bones-incr": 0.22,
+          "eyes/r-eye-corner2-up": 0.12
+        },
+        "identity": {
+          "faceShape": "medium-diamond",
+          "description": "中等偏长菱形脸，较鲜明颧骨，扬眉，利落鼻形与唇峰"
+        },
+        "neckDrop": 0.034
       },
       "clothing": "ming-ao-mamianqun",
       "hairStyle": "ming-diji-bun"

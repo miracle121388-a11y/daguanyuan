@@ -99,7 +99,7 @@ class Anatomy:
         for vertex in self.vertices:
             t=max(0,min(1,(vertex.y*self.scale-neck.y+.085)/.085))
             weight=t*t*(3-2*t)
-            vertex.y-=.025*weight/self.scale
+            vertex.y-=design['anatomy'].get('neckDrop',.025)*weight/self.scale
             vertex.z-=.026*weight/self.scale
         self.anchor = average_group(self.vertices, 'joint-head')
         self.head_position = self.anchor*self.scale
@@ -134,7 +134,7 @@ class Anatomy:
             weight=max(0,min(1,(chin_y-world.y)/.004))
             if weight:
                 base=max(0,min(1,(neck_y-.010-world.y)/.040))
-                rx,rz=(.047-.014*base,.043-.016*base) if self.identity=='baoyu' else (.039-.012*base,.035-.012*base)
+                rx,rz=(.047-.014*base,.043-.016*base) if self.design['anatomy']['gender']>=.5 else (.039-.012*base,.035-.012*base)
                 center_z=self.joints['joint-neck'].z-.010*base
                 radial=((world.x/rx)**2+((world.z-center_z)/rz)**2)**.5
                 if radial>1:
@@ -247,6 +247,12 @@ class Anatomy:
             p+=Vector(float(row[i+6])*scales[i] for i in range(3))
             coords.append(self.local(p))
         obj=make_mesh(self.identity+'_'+name,coords,sum(groups.values(),[]),uv,material,parent)
+        if name=='brows':
+            thickness=self.design['face'].get('browThickness',1)
+            for side in [-1,1]:
+                half=[v for v in obj.data.vertices if v.co.x*side>0]
+                middle=sum(v.co.y for v in half)/len(half)
+                for v in half:v.co.y=middle+(v.co.y-middle)*thickness
         if blink:
             obj.shape_key_add(name='Basis');key=obj.shape_key_add(name='blink')
             deltas={}

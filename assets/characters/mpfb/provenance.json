@@ -13,11 +13,11 @@
   },
   "generator": {
     "path": "blender/prepare_character_bases.py",
-    "sha256": "23f1e9bc246e96f6008d3c5859187dbaef6c86a12062b1fdfd8d7e5891e900ee"
+    "sha256": "aef640a7ee4d8e6e966dd7ef50627d560f9e169cf420a5a2ec846c690c55064d"
   },
   "configuration": {
     "path": "config/simulation.characters.json",
-    "sha256": "2b1192073aa0fa35f2903720a5516571726914308288cde708d0cd92c1ae195b"
+    "sha256": "8323122463759433d71eca08bfe00af1c4b790529d5f38497ff7b612ef7a8f45"
   },
   "files": [
     {
@@ -94,32 +94,32 @@
     },
     {
       "path": "assets/characters/mpfb/generated/baochai.json",
-      "bytes": 627314,
-      "sha256": "ea848ff0a6143dd84d6ef923f2b00e5cac7501145fb2dd6ccfd3629901c9957f",
+      "bytes": 627973,
+      "sha256": "59cc257c1e079e6c5ef94a49d8e3f63253b7245bc4d2991f5ecd0d6b07040d34",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/baoyu.json",
-      "bytes": 627912,
-      "sha256": "75730a1001c2e355d878c181c049b3906a709ec5c703810ee2ae6fe4a107488f",
+      "bytes": 628336,
+      "sha256": "f3b0d61e9b63d2803a619dc065da798c68f70aef075b9d08d361b7053d6fa439",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/daiyu.json",
-      "bytes": 627305,
-      "sha256": "8bf37618b52ef390f06403611cab744af06eede3b7d3c3de68854880966e91e1",
+      "bytes": 627847,
+      "sha256": "0a0b2d574bd08360a9353ed1c2d52d599b4c0a7e12d7b000265409ecbbad2982",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/measurements.json",
-      "bytes": 1829,
-      "sha256": "656d7803a0470eb5b891da86cfcfd0673abd839921c747e7d8b735a34b94bee9",
+      "bytes": 3235,
+      "sha256": "938300c57c94ea17052d28a199dd7a6d5e57aca679702b5d3c1698785622d623",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/wangxifeng.json",
-      "bytes": 627379,
-      "sha256": "c105fccc4dde0a552ae870b8a1db6b0b49e4ee9c6789ef62d8c0acdc50f79a07",
+      "bytes": 628052,
+      "sha256": "d8920aa99aad51ba217feddeaa45d4340d77f6533d2fb3ac18e4f92af8f4bc92",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
