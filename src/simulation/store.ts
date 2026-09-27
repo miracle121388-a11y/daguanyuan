@@ -26,7 +26,7 @@ interface SimulationState {
   phase: 'ready' | 'deciding' | 'executing' | 'parsing' | 'conversing'; actor: AgentId | null;
   paused: boolean; automatic: boolean; playback: Playback | null; playbackProgress: number; director: boolean; sceneReady: boolean;
   focused: AgentId | null; focusRevision: number; sceneRevision: number;
-  immersive: boolean; cameraMode: 'follow' | 'close'; playbackRate: 1 | 2 | 4;
+  immersive: boolean; cameraMode: 'follow' | 'close' | 'portrait'; playbackRate: 1 | 2 | 4;
   recordView: 'events' | 'people' | 'history' | 'flow' | 'worlds' | 'participate';
   participationView: 'chat' | 'choice' | 'gathering';
   conversationDrafts: Partial<Record<AgentId, {message: string; tone: ConversationTurn['tone']}>>;

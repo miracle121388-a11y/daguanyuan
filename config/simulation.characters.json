@@ -1,10 +1,104 @@
 {
-  "revision": "garden-players-20260921-v1",
-  "basis": "Original stylized figures for the existing staged routes in config/garden.layout.json. Dress and hair are artistic interpretations in the Sun Wen garden palette, not historical portrait reconstructions.",
+  "revision": "garden-players-20260926-v2",
+  "basis": "Character interpretations in the Sun Wen garden palette. Anatomical head and hands adapted from reviewed CC0 MakeHuman mesh/target data; clothing, hair, ornament, makeup and acting authored for this project. These are fictional character designs, not historical portrait reconstructions.",
   "characters": {
-    "baoyu": {"name":"贾宝玉","robe":"#A63F45","skirt":"#E2BBAB","trim":"#D5AD65","lining":"#8BAE99","skin":"#EDC4A7","hair":"#292B31","scale":1.02,"motif":"红衣玉佩，少年公子"},
-    "daiyu": {"name":"林黛玉","robe":"#87B6AF","skirt":"#D4DFD1","trim":"#DFCAA0","lining":"#E2A9B2","skin":"#F0D0BC","hair":"#262A30","scale":0.97,"motif":"柳绿披帛，素簪书卷"},
-    "baochai": {"name":"薛宝钗","robe":"#DCCCA5","skirt":"#719B95","trim":"#C99F59","lining":"#C49EAA","skin":"#E9C4AD","hair":"#2E2B2B","scale":1.0,"motif":"米金衣缘，青裙金锁"},
-    "wangxifeng": {"name":"王熙凤","robe":"#925570","skirt":"#A85551","trim":"#D5AA56","lining":"#567D82","skin":"#E8BFA7","hair":"#2D292F","scale":1.02,"motif":"绛紫锦衣，金钗高髻"}
+    "baoyu": {
+      "name": "贾宝玉",
+      "robe": "#A63F45",
+      "skirt": "#E2BBAB",
+      "trim": "#D5AD65",
+      "lining": "#8BAE99",
+      "skin": "#DFB494",
+      "hair": "#292B31",
+      "scale": 1.02,
+      "motif": "红衣玉佩，少年公子",
+      "face": {
+        "male": 0.76,
+        "scale": 0.113,
+        "width": 1.01,
+        "morphs": {
+          "head-oval": 0.18,
+          "head-age-decr": 0.1
+        },
+        "lip": "#A75C58",
+        "brow": "#42332E"
+      }
+    },
+    "daiyu": {
+      "name": "林黛玉",
+      "robe": "#87B6AF",
+      "skirt": "#D4DFD1",
+      "trim": "#DFCAA0",
+      "lining": "#E2A9B2",
+      "skin": "#E9C9B4",
+      "hair": "#262A30",
+      "scale": 0.97,
+      "motif": "柳绿披帛，素簪书卷",
+      "face": {
+        "male": 0,
+        "scale": 0.11,
+        "width": 0.96,
+        "morphs": {
+          "head-oval": 0.25,
+          "head-fat-decr": 0.1
+        },
+        "lip": "#AD6565",
+        "brow": "#4B383B"
+      }
+    },
+    "baochai": {
+      "name": "薛宝钗",
+      "robe": "#DCCCA5",
+      "skirt": "#719B95",
+      "trim": "#C99F59",
+      "lining": "#C49EAA",
+      "skin": "#E4C1A6",
+      "hair": "#2E2B2B",
+      "scale": 1,
+      "motif": "米金衣缘，青裙金锁",
+      "face": {
+        "male": 0,
+        "scale": 0.113,
+        "width": 1.025,
+        "morphs": {
+          "head-round": 0.19
+        },
+        "lip": "#AA615D",
+        "brow": "#48352D"
+      }
+    },
+    "wangxifeng": {
+      "name": "王熙凤",
+      "robe": "#925570",
+      "skirt": "#A85551",
+      "trim": "#D5AA56",
+      "lining": "#567D82",
+      "skin": "#DEB398",
+      "hair": "#2D292F",
+      "scale": 1.02,
+      "motif": "绛紫锦衣，金钗高髻",
+      "face": {
+        "male": 0,
+        "scale": 0.114,
+        "width": 0.98,
+        "morphs": {
+          "head-invertedtriangular": 0.18
+        },
+        "lip": "#A14448",
+        "brow": "#342C30"
+      }
+    }
+  },
+  "geometryBudget": {
+    "high": {
+      "triangles": 95000,
+      "primitives": 44,
+      "bytes": 1700000
+    },
+    "low": {
+      "triangles": 39000,
+      "primitives": 38,
+      "bytes": 800000
+    }
   }
 }

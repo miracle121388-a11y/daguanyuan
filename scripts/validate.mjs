@@ -78,19 +78,23 @@ for(const r of d.routes){assert(r.orderedStops.every(id=>places.has(id))&&r.even
 function glbJSON(file){const b=readFileSync(file);assert(b.subarray(0,4).toString()==='glTF','GLB magic '+file);assert(b.readUInt32LE(8)===b.length,'GLB size '+file);const length=b.readUInt32LE(12);return JSON.parse(b.subarray(20,20+length).toString())}
 const cast=read('public/textures/characters/manifest.json'),castDesign=read('config/simulation.characters.json');
 const castIds=['baoyu','daiyu','baochai','wangxifeng'];
-assert(cast.revision===castDesign.revision&&cast.basis===castDesign.basis&&cast.externalAssets.length===0,'original articulated cast has separate artistic provenance');
-assert(cast.generator==='blender/build_simulation_characters.py'&&hash(cast.generator)===cast.generatorSha256&&cast.configuration==='config/simulation.characters.json'&&hash(cast.configuration)===cast.configurationSha256,'character source hashes');
-assert(cast.files.length===8&&new Set(cast.files.map(f=>f.path)).size===8,'four local character models and four matching portraits');
-for(const id of castIds){
- const model=`public/models/characters/${id}.glb`,portrait=`public/textures/characters/${id}.png`;
- for(const file of [model,portrait]){const item=cast.files.find(f=>f.path===file&&f.agent===id);assert(item&&hash(file)===item.sha256&&statSync(file).size===item.bytes,'character derivative hash '+file)}
+assert(cast.revision===castDesign.revision&&cast.basis===castDesign.basis,'character design revision and interpretation');
+assert(cast.externalAssets.length===1&&cast.externalAssets[0].license==='CC0-1.0','reviewed CC0 anatomy provenance');
+for(const source of cast.externalAssets){assert(hash(source.provenance)===source.sha256,'anatomy provenance hash');const record=read(source.provenance);assert(existsSync(record.licenseEvidencePath),'anatomy license evidence');for(const file of record.files)assert(hash(file.path)===file.sha256,'anatomy source hash '+file.path)}
+assert(cast.generator==='blender/build_simulation_characters.py'&&hash(cast.generator)===cast.generatorSha256&&cast.configuration==='config/simulation.characters.json'&&hash(cast.configuration)===cast.configurationSha256,'character generator and configuration hashes');
+for(const dependency of cast.generatorDependencies)assert(hash(dependency.path)===dependency.sha256,'anatomy adapter source hash');
+assert(cast.files.length===12&&new Set(cast.files.map(f=>f.path)).size===12,'four detailed characters, four lighter characters and four matching portraits');
+for(const item of cast.files)assert(hash(item.path)===item.sha256&&statSync(item.path).size===item.bytes,'character derivative hash '+item.path);
+for(const id of castIds)for(const detail of ['high','low']){
+ const model='public/models/characters/'+id+(detail==='low'?'-low':'')+'.glb';
  const figure=glbJSON(model),joints=['body','skirt','head','eyes','leftArm','rightArm','leftForearm','rightForearm','leftLeg','rightLeg','book','brush'];
- for(const part of joints)assert(figure.nodes.filter(n=>n.name===`${id}_${part}`).length===1,'unique articulated joint '+id+' '+part);
- for(const side of ['left','right'])assert(figure.nodes.find(n=>n.name===`${id}_${side}Arm`).children.includes(figure.nodes.findIndex(n=>n.name===`${id}_${side}Forearm`)),'sleeve and hand hierarchy '+id+' '+side);
- assert(figure.buffers.every(b=>!b.uri)&&!(figure.images?.length),'self-contained character without external textures '+id);
- const primitives=figure.meshes.flatMap(m=>m.primitives),triangles=primitives.reduce((total,p)=>total+figure.accessors[p.indices??p.attributes.POSITION].count/3,0);
- assert(primitives.length<=12&&triangles<18000&&statSync(model).size<450000,'mobile character geometry budget '+id);
- assert(primitives.every(p=>p.attributes.COLOR_0!==undefined),'original painted vertex colors '+id);
+ for(const part of joints)assert(figure.nodes.filter(n=>n.name===id+'_'+part).length===1,'unique articulated joint '+id+' '+detail+' '+part);
+ for(const side of ['left','right'])assert(figure.nodes.find(n=>n.name===id+'_'+side+'Arm').children.includes(figure.nodes.findIndex(n=>n.name===id+'_'+side+'Forearm')),'sleeve and hand hierarchy '+id+' '+detail+' '+side);
+ assert(figure.buffers.every(b=>!b.uri)&&figure.images.every(i=>i.bufferView!==undefined&&!i.uri),'self-contained character textures '+id+' '+detail);
+ const primitives=figure.meshes.flatMap(m=>m.primitives),triangles=primitives.reduce((total,p)=>total+figure.accessors[p.indices??p.attributes.POSITION].count/3,0),budget=castDesign.geometryBudget[detail];
+ assert(primitives.length<=budget.primitives&&triangles<budget.triangles&&statSync(model).size<budget.bytes,'character geometry budget '+id+' '+detail);
+ assert(figure.extensionsUsed.includes('KHR_draco_mesh_compression'),'compressed character delivery '+id+' '+detail);
+ for(const part of ['face','leftHand','rightHand']){const node=figure.nodes.find(n=>n.name===id+'_'+part),mesh=node&&figure.meshes[node.mesh],names=mesh?.extras?.targetNames??[];assert(part==='face'?names.includes('blink')&&names.includes('speak'):names.includes('grasp'),'anatomical expressions '+id+' '+detail+' '+part)}
 }
 const overview=glbJSON('public/models/overview.glb');
 const low=glbJSON('public/models/overview-low.glb');

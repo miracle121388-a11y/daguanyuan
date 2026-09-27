@@ -134,7 +134,7 @@ test('phone play entry records a conversation, completes an invitation, and keep
 
 test('a failed character download can be retried without losing the garden or saved world', async ({page}) => {
   let attempts = 0;
-  await page.route('**/models/characters/baoyu.glb',route=>++attempts===1?route.abort('failed'):route.continue());
+  await page.route('**/models/characters/baoyu.glb*',route=>++attempts===1?route.abort('failed'):route.continue());
   await page.goto('/');await page.waitForFunction(() => (window as any).__gardenTest?.state().loaded);
   await button(page,'世界推演').click();
   const retry=button(page,'人物暂未载入 · 重试');

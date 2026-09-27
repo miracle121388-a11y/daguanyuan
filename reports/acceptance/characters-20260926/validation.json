@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-27",
+  "build": "passed including TypeScript and provenance validation",
+  "lint": "passed",
+  "unitApiTests": 118,
+  "modelDecode": "eight GLBs passed",
+  "otherPublicResourcesUnchanged": 625,
+  "browser": {
+    "engine": "Safari desktop",
+    "observed": [
+      "world simulation entry",
+      "portrait framing",
+      "character switching",
+      "local-rule action start"
+    ],
+    "fullE2E": false,
+    "physicalMobile": false
+  },
+  "paidModelCalls": 0
+}

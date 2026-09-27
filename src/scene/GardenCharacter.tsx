@@ -4,14 +4,18 @@ import {createPortal, useFrame} from '@react-three/fiber';
 import * as THREE from 'three';
 import type {AgentId} from '../simulation/types';
 import {agentColors} from '../simulation/world';
+import {useGarden} from '../state/store';
+import {useSimulation} from '../simulation/store';
+import {characterAsset, characterDetail, facePerformance, type CharacterDetail} from './characterPresentation';
 
 type Props = {id: AgentId; pose: string; paused: boolean; motion: boolean; rate: number; calm: number; tea: boolean};
 
-function PaintedFigure({id, pose, paused, motion, rate, calm, tea}: Props) {
-  const {scene} = useGLTF(`${import.meta.env.BASE_URL}models/characters/${id}.glb`);
+function PaintedFigure({id, pose, paused, motion, rate, calm, tea, detail}: Props & {detail: CharacterDetail}) {
+  const {scene} = useGLTF(characterAsset(id, detail, import.meta.env.BASE_URL), `${import.meta.env.BASE_URL}draco/`);
   const model = useMemo(() => scene.clone(true), [scene]);
   const clock = useRef(0);
   const rig = useMemo(() => Object.fromEntries(['body','head','eyes','skirt','leftArm','rightArm','leftForearm','rightForearm','leftLeg','rightLeg','book','brush'].map(part => [part, model.getObjectByName(`${id}_${part}`)!])), [id, model]);
+  const expressions = useMemo(() => ['face','leftHand','rightHand'].map(part => model.getObjectByName(`${id}_${part}`) as THREE.Mesh), [id, model]);
   useEffect(() => {
     model.traverse(object => {if (object instanceof THREE.Mesh) {object.castShadow = true; object.receiveShadow = true;}});
     rig.book.visible = false; rig.brush.visible = false;
@@ -22,8 +26,14 @@ function PaintedFigure({id, pose, paused, motion, rate, calm, tea}: Props) {
     const t = motion ? clock.current : 0, walking = pose === 'move';
     const stride = walking && motion ? Math.sin(t * 8) : 0;
     const reading = pose === 'read' || pose === 'write', speaking = pose === 'talk';
-    const blink = (t + ['baoyu','daiyu','baochai','wangxifeng'].indexOf(id) * 1.07) % 4.7;
-    rig.eyes.scale.y = motion && blink < .16 ? Math.max(.08, Math.abs(blink - .08) / .08) : 1;
+    const acting = facePerformance(t, ['baoyu','daiyu','baochai','wangxifeng'].indexOf(id), pose, motion, tea);
+    for (const mesh of expressions) {
+      if (!mesh?.morphTargetDictionary || !mesh.morphTargetInfluences) continue;
+      for (const [name, value] of Object.entries(acting)) {
+        const index = mesh.morphTargetDictionary[name];
+        if (index !== undefined) mesh.morphTargetInfluences[index] = value;
+      }
+    }
     const blend = (object: THREE.Object3D, axis: 'x' | 'y' | 'z', value: number) => {object.rotation[axis] = motion ? THREE.MathUtils.damp(object.rotation[axis], value, 10, delta) : value;};
     rig.body.position.y = walking ? Math.abs(stride) * .018 : Math.sin(t * 1.8) * .003;
     blend(rig.body, 'z', walking ? stride * .018 : 0);
@@ -66,11 +76,13 @@ function TeaCup({id, forearm}: {id: AgentId; forearm: THREE.Object3D}) {
 function Silhouette({id}: {id: AgentId}) {
   return <group><mesh position={[0,.65,0]}><capsuleGeometry args={[.22,.8,5,10]}/><meshStandardMaterial color={agentColors[id]}/></mesh><mesh position={[0,1.45,0]}><sphereGeometry args={[.17,12,8]}/><meshStandardMaterial color="#EDC4A7"/></mesh></group>;
 }
-class CharacterBoundary extends Component<{id: AgentId; children: ReactNode}, {failed: boolean}> {
+class CharacterBoundary extends Component<{id: AgentId; detail: CharacterDetail; children: ReactNode}, {failed: boolean}> {
   state = {failed: false};
   static getDerivedStateFromError() {return {failed: true};}
-  render() {return this.state.failed ? <><Silhouette id={this.props.id}/><Html position={[0,1.05,0]} center><button className="sim-character-retry" onClick={() => {useGLTF.clear(`${import.meta.env.BASE_URL}models/characters/${this.props.id}.glb`);this.setState({failed:false});}}>人物暂未载入 · 重试</button></Html></> : this.props.children;}
+  render() {return this.state.failed ? <><Silhouette id={this.props.id}/><Html position={[0,1.05,0]} center><button className="sim-character-retry" onClick={() => {useGLTF.clear(characterAsset(this.props.id, this.props.detail, import.meta.env.BASE_URL));this.setState({failed:false});}}>人物暂未载入 · 重试</button></Html></> : this.props.children;}
 }
 export default function GardenCharacter(props: Props) {
-  return <CharacterBoundary id={props.id}><Suspense fallback={<Silhouette id={props.id}/>}><PaintedFigure {...props}/></Suspense></CharacterBoundary>;
+  const quality = useGarden(s => s.qualityLevel), focused = useSimulation(s => s.focused === props.id), camera = useSimulation(s => s.cameraMode);
+  const detail = characterDetail(focused, quality, camera);
+  return <CharacterBoundary key={props.id+detail} id={props.id} detail={detail}><Suspense fallback={<Silhouette id={props.id}/>}><PaintedFigure {...props} detail={detail}/></Suspense></CharacterBoundary>;
 }

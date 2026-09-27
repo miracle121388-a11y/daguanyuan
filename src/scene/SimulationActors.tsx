@@ -87,12 +87,14 @@ function FollowCamera({motion}: {motion: boolean}) {
     const position=object.position;
     const c=controls as unknown as {setLookAt:(x:number,y:number,z:number,tx:number,ty:number,tz:number,smooth:boolean)=>void};
     if(!initialized.current){
-      if(camera instanceof THREE.PerspectiveCamera){camera.fov=42;camera.updateProjectionMatrix();}
-      if(state.cameraMode==='close')offset.current.set(2.35,2.0,4.2);else offset.current.set(6,6.5,9);
+      if(camera instanceof THREE.PerspectiveCamera){camera.fov=42;camera.near=.045;camera.updateProjectionMatrix();}
+      const portrait=state.cameraMode==='portrait';
+      if(portrait)offset.current.set(.22,1.69,.95).applyAxisAngle(new THREE.Vector3(0,1,0),object.rotation.y);
+      else if(state.cameraMode==='close')offset.current.set(2.35,2.0,4.2);else offset.current.set(6,6.5,9);
       const compact = size.width <= 600;
-      framing.current = compact && size.height >= 530 ? .6 : size.height < 530 ? 1.05 : .75;
+      framing.current = portrait ? 1.62 : compact && size.height >= 530 ? .6 : size.height < 530 ? 1.05 : .75;
       if(compact && size.height >= 530 && state.cameraMode==='close')offset.current.multiplyScalar(1.18);
-      if(size.width<=900&&size.height<530)offset.current.multiplyScalar(state.cameraMode==='close'?.9:Math.max(.45,size.height/650));
+      if(!portrait&&size.width<=900&&size.height<530)offset.current.multiplyScalar(state.cameraMode==='close'?.9:Math.max(.45,size.height/650));
       target.current.copy(position).add(new THREE.Vector3(0,framing.current,0));
       const destination = position.clone().add(offset.current);
       // Distant courts use a cut: a long flight would pass through walls and

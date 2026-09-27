@@ -84,7 +84,7 @@ function visibleSceneRegion(canvas:HTMLCanvasElement,panelOpen:boolean){
  return {left:14,right:Math.max(150,rect.width-64),top:64,bottom:Math.max(190,Math.min(rect.height-145,panel?panel.top-rect.top-12:rect.height-145))};
 }
 function CameraManager({manifest}:{manifest:Manifest}){
- const simulationOpen=useSimulation(s=>s.open),simulationFocus=useSimulation(s=>s.focused),simulationClose=useSimulation(s=>s.cameraMode==='close');
+ const simulationOpen=useSimulation(s=>s.open),simulationFocus=useSimulation(s=>s.focused),simulationClose=useSimulation(s=>s.cameraMode!=='follow');
  const {camera,size,gl}=useThree();const panelOpen=useGarden(s=>s.panelOpen),indoor=useGarden(s=>!!s.hotspotId?.endsWith('-study')&&!s.cutaway);
  useEffect(()=>{if(!(camera instanceof THREE.PerspectiveCamera))return;if(panelOpen){const mobile=size.width<601,region=visibleSceneRegion(gl.domElement,panelOpen);camera.setViewOffset(size.width,size.height,mobile?size.width/2-(region.left+region.right)/2:Math.min(360,size.width<1150?304:332)/2,mobile?size.height/2-(region.top+region.bottom)/2:0,size.width,size.height)}else if(size.width<601)camera.setViewOffset(size.width,size.height,0,size.height*.04,size.width,size.height);else camera.clearViewOffset();camera.updateProjectionMatrix()},[camera,size.width,size.height,panelOpen,indoor,gl]);
  const controls=useRef<CameraControls>(null);const selected=useGarden(s=>s.selectedPlaceId);const tour=useGarden(s=>s.tourState);const motion=useGarden(s=>s.motion);const controller=useRef<GuidedTourController|null>(null);const dwell=useRef(0);const started=useRef(false);
@@ -130,7 +130,7 @@ function CameraManager({manifest}:{manifest:Manifest}){
   if(!started.current){dwell.current+=Math.min(dt,1);if(dwell.current<5)return;if(tour.index>=route.orderedStops.length-1){useGarden.setState({tourState:{...tour,status:'paused'}});return}controller.current=new GuidedTourController(manifest,route.orderedStops[tour.index],route.orderedStops[tour.index+1]);started.current=true;useGarden.setState({panelOpen:false})}
   const state=controller.current?.tick(Math.min(dt,.5));if(state){const {position,lookAhead,done}=state;const target:Vec3=[lookAhead[0],lookAhead[1]+2.4,lookAhead[2]];if(!done)controls.current.setLookAt(position[0],position[1]+8,position[2]+.15,...target,false);else useGarden.getState().tourStep(tour.index+1)}
  });
- return <CameraControls ref={controls} makeDefault minDistance={hotspot?.endsWith('-study')||simulationOpen&&simulationClose?2.5:8} maxDistance={540} minPolarAngle={.12} maxPolarAngle={Math.PI/2-.012} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
+ return <CameraControls ref={controls} makeDefault minDistance={simulationOpen && simulationClose ? .38 : hotspot?.endsWith('-study')?2.5:8} dollyToCursor={simulationOpen&&simulationClose} maxDistance={540} minPolarAngle={.12} maxPolarAngle={Math.PI/2-.012} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
 }
 function Markers({manifest}:{manifest:Manifest}){
  const simulationOpen=useSimulation(s=>s.open);
