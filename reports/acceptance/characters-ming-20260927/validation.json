@@ -12,8 +12,8 @@
     "four closed-eye renders",
     "four reading poses"
   ],
-  "browser": "v6: four local Chrome portrait views reviewed. v7: four frontal renders and closed-eye render reviewed; browser recheck pending.",
-  "deployment": "v7 pending",
+  "browser": "v7: all four local in-app browser portrait views loaded and visually reviewed; frontal, profile and blink renders reviewed; not every story action reviewed",
+  "deployment": "6ab93193dcbdc0de6fc4e8a4 RUNNING",
   "geometry": [
     {
       "agent": "baoyu",
@@ -76,5 +76,7 @@
     "files": 13,
     "passed": 118
   },
-  "serviceVariablesAndAlbum": "unchanged"
+  "serviceVariablesAndAlbum": "unchanged",
+  "containerFilesMatched": 642,
+  "httpsFilesMatched": 23
 }
