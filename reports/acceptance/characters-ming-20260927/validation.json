@@ -13,7 +13,7 @@
     "four reading poses"
   ],
   "browser": "Local browser: v8 Baoyu closeup/side view and v10 Daiyu scene reviewed. v10 frontal/profile/full/reading renders reviewed; not every action reviewed in browser.",
-  "deployment": "v10 pending",
+  "deployment": "6ab93a8adcbdc0de6fc4e9ad RUNNING",
   "geometry": [
     {
       "agent": "baoyu",
@@ -76,5 +76,7 @@
     "files": 13,
     "passed": 118
   },
-  "serviceVariablesAndAlbum": "unchanged"
+  "serviceVariablesAndAlbum": "unchanged",
+  "containerFilesMatched": 642,
+  "httpsFilesMatched": 23
 }
