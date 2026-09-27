@@ -1,4 +1,4 @@
-"""Generate reproducible, complete Asian phenotype bodies with the MPFB tool.
+"""Generate reproducible, complete individually proportioned bodies with the MPFB tool.
 
 MPFB is an external GPL Blender tool in .tools; its generated asset output is CC0.
 Run via Conda and the project Blender. No user Blender preferences are saved.
@@ -19,7 +19,8 @@ OUT=ROOT/'assets/characters/mpfb/generated';OUT.mkdir(exist_ok=True,parents=True
 measurements=[]
 for cid,c in DESIGN['characters'].items():
     a=c['anatomy'];macro=TargetService.get_default_macro_info_dict()
-    macro.update({k:a[k] for k in ['gender','age','weight','muscle']});macro['race']={'asian':1.,'caucasian':0.,'african':0.}
+    macro.update({k:a[k] for k in ['gender','age','weight','muscle']})
+    # Keep MPFB's balanced universal defaults; no singled-out ancestry preset.
     obj=HumanService.create_human(mask_helpers=False,feet_on_ground=False,scale=.1,macro_detail_dict=macro)
     for name,value in a['targets'].items():TargetService.load_target(obj,str(TOOL/'src/mpfb/data/targets'/(name+'.target.gz')),weight=value)
     bpy.context.view_layer.update();graph=bpy.context.evaluated_depsgraph_get();evaluated=obj.evaluated_get(graph);mesh=evaluated.to_mesh()

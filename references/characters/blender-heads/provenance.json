@@ -1,0 +1,39 @@
+{
+  "assetId": "blender-human-head-reference-v1.4.1",
+  "title": "Blender Studio and community Human Base Meshes",
+  "license": "CC0-1.0",
+  "sourceUrl": "https://www.blender.org/download/demo-files/",
+  "downloadUrl": "https://download.blender.org/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip",
+  "archiveBytes": 50643039,
+  "archiveSha256": "811f43accbb31a88266d932f8f5563b2d13586fca0ba2693aad1f5fe582b3515",
+  "usage": "Anatomical review reference only. Not the head mesh exported in production characters.",
+  "extraction": "GEO-head_animation_realistic, evaluated Multires level 1; OBJ positions and faces in source local coordinates; thumbnails copied unchanged.",
+  "files": [
+    {
+      "path": "references/characters/blender-heads/realistic_jaw.png",
+      "sha256": "dd4e660be8b2ade390ed185928c6f4d5bc2eb0b924637d45332b38fd09979693",
+      "bytes": 52225
+    },
+    {
+      "path": "references/characters/blender-heads/realistic_head_anim.png",
+      "sha256": "36a3f33a554ab4b934a6eb7b96012e3e73256678c35bd0eedbb202f76afa1f52",
+      "bytes": 57406
+    },
+    {
+      "path": "references/characters/blender-heads/realistic-head.obj",
+      "sha256": "88f3d73020a5edd6a321b12a0ebfec084c4e30826cf6d4c9e3f8951785c04bb2",
+      "bytes": 699454
+    },
+    {
+      "path": "references/characters/blender-heads/realistic_head_sculpt.png",
+      "sha256": "e179b6aba8385b270a24d3b030b3cae6e3d826e16c5c1134707905fd78d73f61",
+      "bytes": 56695
+    },
+    {
+      "path": "references/characters/blender-heads/license-evidence.html",
+      "bytes": 177527,
+      "sha256": "e2120e72ea1b8c80e9d05b8a0f2b0586f86296dd5d85c54ceac7f2c6aa6d409f"
+    }
+  ],
+  "licenseEvidencePath": "references/characters/blender-heads/license-evidence.html"
+}

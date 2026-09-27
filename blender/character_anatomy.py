@@ -119,9 +119,12 @@ class Anatomy:
         coordinates = [self.local(self.vertices[i]) for i in ids]
         # Keep the lower boundary inside the collar. Cutting by X discarded
         # whole faces and left visible saw-tooth edges beside the neck.
+        protected_face=[]
         for p in coordinates:
             world=p+self.head_position
-            weight=max(0,min(1,(neck_y+.045-world.y)/.045))
+            if world.y>neck_y+.035 and world.z>self.joints['joint-neck'].z+.05:
+                protected_face.append((p,p.copy()))
+            weight=max(0,min(1,(neck_y+.025-world.y)/.030))
             if weight:
                 rx,rz=(.050,.045) if self.identity=='baoyu' else (.043,.039)
                 radial=((world.x/rx)**2+((world.z-self.joints['joint-neck'].z)/rz)**2)**.5
@@ -129,6 +132,8 @@ class Anatomy:
                     factor=1-weight*(1-1/radial)
                     p.x*=factor
                     p.z=(world.z-self.joints['joint-neck'].z)*factor+self.joints['joint-neck'].z-self.head_position.z
+        assert protected_face, 'Facial region must be present'
+        assert all((p-original).length<1e-8 for p,original in protected_face), 'Collar fitting must not retract the jaw or deform the face'
         faces = [[(index[i], uv) for i, uv in face] for face in source_faces]
         obj = make_mesh(self.identity + '_face', coordinates, faces, UV, material, parent)
         color = obj.data.color_attributes.new(name='Color', type='FLOAT_COLOR', domain='CORNER')
@@ -141,6 +146,7 @@ class Anatomy:
                     if old in index: key.data[index[old]].co += self.delta(delta)
         if high: obj = subdivide_shape_keys(obj)
         obj['anatomySource'] = PROVENANCE['assetId']
+        obj['collarProtectedFaceVertices']=len(protected_face)
         return obj
 
     def eyes(self, parent, material):

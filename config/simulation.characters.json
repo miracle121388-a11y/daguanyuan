@@ -1,6 +1,6 @@
 {
-  "revision": "garden-players-ming-20260927-v5",
-  "basis": "Fictional character designs using MPFB Asian male/female anatomical bases and Ming-inspired Han clothing and hair. Heights and identities are artistic casting choices, not a claim of one ethnic body standard or historical portrait reconstruction. Garden architecture remains unchanged.",
+  "revision": "garden-players-ming-20260927-v6",
+  "basis": "Fictional individual character designs from CC0 anatomical bases, without a singled-out ethnicity preset. Ming-inspired clothing and hair; garden architecture unchanged.",
   "characters": {
     "baoyu": {
       "name": "贾宝玉",
@@ -26,10 +26,15 @@
         "age": 0.43,
         "weight": 0.5,
         "muscle": 0.48,
-        "headScale": 1.04,
+        "headScale": 1.02,
         "targets": {
-          "head/head-oval": 0.12,
-          "chin/chin-width-incr": 0.12
+          "head/head-oval": 0.22,
+          "chin/chin-prominent-incr": 0.18,
+          "chin/chin-width-decr": 0.08,
+          "nose/nose-scale-depth-incr": 0.09,
+          "head/head-fat-decr": 0.06,
+          "eyes/l-eye-height2-incr": 0.12,
+          "eyes/r-eye-height2-incr": 0.12
         }
       },
       "clothing": "ming-daopao",
@@ -59,14 +64,15 @@
         "age": 0.43,
         "weight": 0.44,
         "muscle": 0.42,
-        "headScale": 1.04,
+        "headScale": 1.02,
         "targets": {
-          "head/head-oval": 0.24,
-          "head/head-fat-decr": 0.08,
-          "chin/chin-width-decr": 0.08,
-          "nose/nose-width2-decr": 0.18,
-          "mouth/mouth-scale-horiz-decr": 0.12,
-          "eyebrows/eyebrows-angle-down": 0.06
+          "head/head-oval": 0.22,
+          "chin/chin-prominent-incr": 0.12,
+          "chin/chin-width-decr": 0.15,
+          "nose/nose-scale-depth-incr": 0.09,
+          "head/head-fat-decr": 0.06,
+          "eyes/l-eye-height2-incr": 0.12,
+          "eyes/r-eye-height2-incr": 0.12
         }
       },
       "clothing": "ming-ao-mamianqun",
@@ -96,13 +102,16 @@
         "age": 0.45,
         "weight": 0.55,
         "muscle": 0.44,
-        "headScale": 1.03,
+        "headScale": 1.02,
         "targets": {
-          "head/head-round": 0.23,
-          "head/head-fat-incr": 0.1,
-          "mouth/mouth-scale-horiz-incr": 0.13,
-          "nose/nose-width2-incr": 0.16,
-          "chin/chin-height-decr": 0.07
+          "head/head-oval": 0.12,
+          "chin/chin-prominent-incr": 0.12,
+          "chin/chin-width-decr": 0.15,
+          "nose/nose-scale-depth-incr": 0.09,
+          "head/head-fat-decr": 0.0,
+          "head/head-round": 0.08,
+          "eyes/l-eye-height2-incr": 0.12,
+          "eyes/r-eye-height2-incr": 0.12
         }
       },
       "clothing": "ming-ao-mamianqun",
@@ -132,14 +141,16 @@
         "age": 0.52,
         "weight": 0.5,
         "muscle": 0.48,
-        "headScale": 1.03,
+        "headScale": 1.02,
         "targets": {
-          "head/head-diamond": 0.17,
-          "chin/chin-width-incr": 0.18,
-          "eyes/l-eye-corner2-up": 0.08,
-          "eyes/r-eye-corner2-up": 0.08,
-          "eyebrows/eyebrows-angle-up": 0.15,
-          "nose/nose-scale-depth-incr": 0.09
+          "head/head-oval": 0.22,
+          "chin/chin-prominent-incr": 0.12,
+          "chin/chin-width-decr": 0.15,
+          "nose/nose-scale-depth-incr": 0.09,
+          "head/head-fat-decr": 0.06,
+          "head/head-diamond": 0.06,
+          "eyes/l-eye-height2-incr": 0.12,
+          "eyes/r-eye-height2-incr": 0.12
         }
       },
       "clothing": "ming-ao-mamianqun",

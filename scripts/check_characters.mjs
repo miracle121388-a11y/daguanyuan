@@ -32,6 +32,7 @@ for(const entry of manifest.files.filter(f=>f.path.endsWith('.glb'))){
    expressions.push({mesh:mesh.getName(),maxDisplacement:max});
   }
  }
+ assert(root.listNodes().find(n=>n.getName()===`${entry.agent}_face`)?.getExtras().collarProtectedFaceVertices>100,'face and jaw protected from collar compression');
  assert(expressions.length>=4,'blink, speak and two hand grasps');
  assert(root.listTextures().every(t=>t.getImage()?.length>0),'embedded textures decoded');
  const rightForearm=root.listNodes().find(n=>n.getName()===`${entry.agent}_rightForearm`);

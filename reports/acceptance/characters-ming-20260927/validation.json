@@ -1,5 +1,5 @@
 {
-  "revision": "garden-players-ming-20260927-v5",
+  "revision": "garden-players-ming-20260927-v6",
   "build": "passed",
   "typecheck": "passed",
   "lint": "passed",
@@ -12,71 +12,69 @@
     "four closed-eye renders",
     "four reading poses"
   ],
-  "browser": "Local Chrome world simulation: Daiyu side view observed; not every action reviewed",
-  "deployment": "RUNNING: 6ab907814236e69929d7627b",
+  "browser": "Local Chrome: all four character portrait views loaded and visually reviewed; blink renders inspected; not every story action reviewed",
+  "deployment": "v6 pending",
   "geometry": [
     {
       "agent": "baoyu",
       "detail": "high",
-      "triangles": 96340,
+      "triangles": 96356,
       "meshes": 19,
-      "bytes": 1619436
+      "bytes": 1619816
     },
     {
       "agent": "baoyu",
       "detail": "low",
-      "triangles": 43320,
+      "triangles": 43324,
       "meshes": 19,
-      "bytes": 771088
+      "bytes": 771440
     },
     {
       "agent": "daiyu",
       "detail": "high",
       "triangles": 153746,
       "meshes": 56,
-      "bytes": 3406972
+      "bytes": 3407012
     },
     {
       "agent": "daiyu",
       "detail": "low",
-      "triangles": 59502,
+      "triangles": 59503,
       "meshes": 56,
-      "bytes": 2028804
+      "bytes": 2028928
     },
     {
       "agent": "baochai",
       "detail": "high",
       "triangles": 148590,
       "meshes": 57,
-      "bytes": 3414780
+      "bytes": 3414752
     },
     {
       "agent": "baochai",
       "detail": "low",
       "triangles": 57471,
       "meshes": 57,
-      "bytes": 2038480
+      "bytes": 2038420
     },
     {
       "agent": "wangxifeng",
       "detail": "high",
-      "triangles": 148544,
+      "triangles": 148560,
       "meshes": 56,
-      "bytes": 3277424
+      "bytes": 3277624
     },
     {
       "agent": "wangxifeng",
       "detail": "low",
-      "triangles": 57439,
+      "triangles": 57442,
       "meshes": 56,
-      "bytes": 1929224
+      "bytes": 1929324
     }
   ],
   "tests": {
     "files": 13,
     "passed": 118
   },
-  "serviceVariablesAndAlbum": "unchanged",
-  "containerResourcesMatched": 642,
-  "httpsFilesMatched": 23
+  "serviceVariablesAndAlbum": "unchanged"
 }

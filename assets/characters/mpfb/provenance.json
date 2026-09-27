@@ -5,7 +5,7 @@
   "licenseEvidencePath": "assets/characters/mpfb/LICENSE.ASSETS.md",
   "repository": "https://github.com/makehumancommunity/mpfb2",
   "commit": "3edf9df0551765be43563d047888cf7877eb89b4",
-  "scope": "MPFB-generated body coordinates and CC0 system skin, eyebrow and eyelash assets. The external MPFB authoring tool is GPL; its application source is not bundled.",
+  "scope": "MPFB individual body bases using balanced universal macro defaults, plus CC0 system skin, eyebrow and eyelash assets. No singled-out ancestry preset. External MPFB tool is GPL; bundled generated assets are CC0.",
   "archive": {
     "url": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
     "sha256": "b542127a8e25547c7c29c19f2d1d2adb9a664c80396ecd694095dbc8028a0107",
@@ -13,11 +13,11 @@
   },
   "generator": {
     "path": "blender/prepare_character_bases.py",
-    "sha256": "14bdf6fa9fc6f8be4ccebe0f42fe5fb790d5b5cc9858035eb9b72a448b4923e0"
+    "sha256": "23f1e9bc246e96f6008d3c5859187dbaef6c86a12062b1fdfd8d7e5891e900ee"
   },
   "configuration": {
     "path": "config/simulation.characters.json",
-    "sha256": "f79e018073d1bce987c556b8125013d4b5f5dd0ccdbfaf0bdddbc29ce33b98ec"
+    "sha256": "0cb7fe0d88df48a1a0aac8eec4ae4623918cd10bce9613243c588e7c0a66a29d"
   },
   "files": [
     {
@@ -94,32 +94,32 @@
     },
     {
       "path": "assets/characters/mpfb/generated/baochai.json",
-      "bytes": 627248,
-      "sha256": "32e5e5d3a57b8aa6b99efb39aadef1e89d4a8520d55d73ae8728630d52d958be",
+      "bytes": 627316,
+      "sha256": "4438b67b08c9879aa61aa81043b21b611ec15f93631ea9616a67f0d3203e6248",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/baoyu.json",
-      "bytes": 627812,
-      "sha256": "e262e509737d25295192a7f26b121726fbee9fdcc4fbc3ef56ee77dc883a9247",
+      "bytes": 627901,
+      "sha256": "9dbcdf8c534297a13f3099f052f154ac2edb55096b08038b9c5ab38029e025d4",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/daiyu.json",
-      "bytes": 627191,
-      "sha256": "c88b81d8e0e613f9ccdae0b3660cd1d62b5c6b0ab77659428154994119b6446b",
+      "bytes": 627289,
+      "sha256": "4b244d693867857f3e05570b1e08c37cd2d7e211fc5ecddf9695fc38ca5226b2",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/measurements.json",
-      "bytes": 1839,
-      "sha256": "075b76249af016b580a8fa11ded0b914fb0bc1cd816a84c88de61d0938968bba",
+      "bytes": 1824,
+      "sha256": "8d0afb1663ca97f1c149fd7ae656fd4fd94b315c21437c8e3adcd53cf69a9519",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/wangxifeng.json",
-      "bytes": 627164,
-      "sha256": "886d9100a13d66ee1a1a1433d18c66aa117cfbfc4941daf9e88174e06365465e",
+      "bytes": 627480,
+      "sha256": "5f77dfb3bbfb42e796efa916d80d7724651e0c6b2c7b4d613d7b966e30befe56",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
