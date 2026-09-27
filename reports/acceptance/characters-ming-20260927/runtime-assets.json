@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-27T15:52:07.474Z",
+  "at": "2026-09-27T16:14:36.010Z",
   "method": "Decode and hash every runtime resource in the running container; check all stored compression variants",
   "matched": 642,
   "files": [
@@ -695,43 +695,43 @@
     },
     {
       "path": "models/characters/baochai-low.glb",
-      "sha256": "1e0036bd1942b58cdaf4b027539d55b5883b44bb5748a8188bece3356132b617",
-      "bytes": 2041144
+      "sha256": "a7c22e8166fc45aa0c9d2545dc6ad9a67233dbb13cdee75b3a39339390e103e3",
+      "bytes": 2041580
     },
     {
       "path": "models/characters/baochai.glb",
-      "sha256": "d3fb581462839e99a092c0dd04ad07811d35757a0f7bd8e0a7ec9c3179160b2d",
-      "bytes": 3427464
+      "sha256": "95676d5c69226e91b626b08eef516d06fc29a29220f6ea063ff801b60988a2f5",
+      "bytes": 3428064
     },
     {
       "path": "models/characters/baoyu-low.glb",
-      "sha256": "09b3a7c7a02857cca8b75846eca388d8d9468b81d3158161b8b7306a536115e9",
-      "bytes": 774740
+      "sha256": "126ae2bb1f9a2c0470c2344a7195c03bea14ab6ccc6ec5e265428c0903001c70",
+      "bytes": 774940
     },
     {
       "path": "models/characters/baoyu.glb",
-      "sha256": "18b91c939752e07c1cc6fe529cb30a3e467739693ff153c6081df508602db7c6",
-      "bytes": 1632848
+      "sha256": "1f46c8a27776aae994f84c616f9e764fc69b2e353811cc4c1034d948dd382c4a",
+      "bytes": 1633100
     },
     {
       "path": "models/characters/daiyu-low.glb",
-      "sha256": "419cc9b3069ae17dce839da0e56baed6d7ade6730e76b81e544e7a831456d542",
-      "bytes": 2030676
+      "sha256": "9ba7898b16e2407469940bb3a93cc6cee578f25e89c8b49d850b5861925169cc",
+      "bytes": 2030976
     },
     {
       "path": "models/characters/daiyu.glb",
-      "sha256": "a8f82dab5315a53e9cce490b2af343f0c2e8f82d4d177f362ef3483f2c38ca91",
-      "bytes": 3418504
+      "sha256": "6ceebacdb578836baab0cd973c2662100fbc349ea41a52930411a23aaf1c3802",
+      "bytes": 3418812
     },
     {
       "path": "models/characters/wangxifeng-low.glb",
-      "sha256": "3cfaee37027512bdb3cf624594ce3d3c6c050210b99484be2af289b95ff1c37d",
-      "bytes": 1930900
+      "sha256": "66967d9c877ca42bededcc1a66ab79e648d8c4360f5622a3d9089402923c0f40",
+      "bytes": 1931256
     },
     {
       "path": "models/characters/wangxifeng.glb",
-      "sha256": "5795bb0187e3956619f689f6253ddc6ba59ca985a9bf0528ce083d4d5b7d1ff9",
-      "bytes": 3289204
+      "sha256": "470a3e18c97a937b316999ea9d2b13d1190f6b05152d3c8582c04f24ed14b26c",
+      "bytes": 3289444
     },
     {
       "path": "models/overview-low.glb",
@@ -1025,28 +1025,28 @@
     },
     {
       "path": "textures/characters/baochai.png",
-      "sha256": "01581d0bf416ede6bb913032f9a916cb7a32cfed462be5f24db403e18baf7052",
-      "bytes": 127455
+      "sha256": "272eb3067ea3804e43b927d0d47fd75e5a15a89aae80d6d3ac329e33ddb5ff74",
+      "bytes": 127756
     },
     {
       "path": "textures/characters/baoyu.png",
-      "sha256": "1b6062cf380a1c12baaf8b43caede8ae79c7e956bf25a162524ef40a72637aca",
-      "bytes": 134658
+      "sha256": "2ec8fab87b9ba47519b1c00bb11b9c7c05f3617fe7031c4d21d949b00c80119d",
+      "bytes": 137255
     },
     {
       "path": "textures/characters/daiyu.png",
-      "sha256": "6d55c18de9f792899d248e2cb9b369cf38ec3b8dde53851bd850e4b6e1309410",
-      "bytes": 126519
+      "sha256": "b5399486a8134e77144af4738bee6d46bc814f21bbfb73ca1c58b1ddc43f22f0",
+      "bytes": 126081
     },
     {
       "path": "textures/characters/manifest.json",
-      "sha256": "3bc9389851d66aba83cf12fc843a2d545240775c9b1dbfdb0ba64f5101f04341",
+      "sha256": "e5390359ac911863b3223eaa0bc42ad87cea7c4e850d65e0f9bc6d9e5d4f7109",
       "bytes": 5687
     },
     {
       "path": "textures/characters/wangxifeng.png",
-      "sha256": "477e1fcbdb35b6c00d2cbac29824a92ccfc006e8ee4061b7ddb2a09bfd552f65",
-      "bytes": 128903
+      "sha256": "1d0039388847a6c8a56680779ceb529862d88b38d3c07ca3534a457e54b6ff04",
+      "bytes": 130506
     },
     {
       "path": "textures/forest_grove.hdr",
@@ -3186,7 +3186,7 @@
     {
       "path": "index.html",
       "bytes": 2192,
-      "sha256": "209d2e6a192ce14fda78dbb0398459be2e3e2215a35c2d9969fa57ab6e8a1c16"
+      "sha256": "2c7c3a7cc80388d0bee2ff6a0a48e46cff0d86b736be44b1f5530c3a9fc8a811"
     },
     {
       "path": "reading.html",
@@ -3194,9 +3194,9 @@
       "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61"
     },
     {
-      "path": "assets/index-B95NmLOT.js",
-      "bytes": 436202,
-      "sha256": "1849747e3c5c15164610d773663996551fa912a9e24bfb24b200dab150a74325"
+      "path": "assets/index-CTuofAg0.js",
+      "bytes": 437731,
+      "sha256": "f940d5ad6c8a280c417ee5e3d50289ab2deb860c7dba352bdfeb5f589e34695a"
     },
     {
       "path": "assets/index-DWhHKq7b.css",
@@ -3209,9 +3209,9 @@
       "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
     },
     {
-      "path": "assets/GardenScene-DFvgmVTZ.js",
+      "path": "assets/GardenScene-DzNU6u8v.js",
       "bytes": 1783962,
-      "sha256": "957233d71dfedbac0e0ab9a96218c346f4b1007787620db8e3337f54a3e24d6d"
+      "sha256": "95aaedce7d22f0d71bcfb4113d54e002a2b6e040fa7158ccca50a1d5827468a1"
     }
   ]
 }
