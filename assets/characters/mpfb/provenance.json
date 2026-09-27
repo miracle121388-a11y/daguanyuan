@@ -17,7 +17,7 @@
   },
   "configuration": {
     "path": "config/simulation.characters.json",
-    "sha256": "5f3f8bf2fc9e6407eede461a146b1a1e168870292aa4b3935cf1a8d74b2df89b"
+    "sha256": "18d5444fd468f4a972f42260df94bf6b020b02f6665dfe3a34e49678145b0eaf"
   },
   "files": [
     {
@@ -94,20 +94,20 @@
     },
     {
       "path": "assets/characters/mpfb/generated/baochai.json",
-      "bytes": 627302,
-      "sha256": "389a83f925825623d7f35b7f78560ec5d1582ae59459cb12eb9bf001ba895217",
+      "bytes": 627314,
+      "sha256": "ea848ff0a6143dd84d6ef923f2b00e5cac7501145fb2dd6ccfd3629901c9957f",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/baoyu.json",
-      "bytes": 627972,
-      "sha256": "03a3a46e6c36f8675e4800182f29d032153ed9953e19e313f3a015cc052202eb",
+      "bytes": 627912,
+      "sha256": "75730a1001c2e355d878c181c049b3906a709ec5c703810ee2ae6fe4a107488f",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/daiyu.json",
-      "bytes": 627323,
-      "sha256": "011d8caf788a817a6d84a163baab38e9c4680966f6e487054fa1752592d79f0b",
+      "bytes": 627305,
+      "sha256": "8bf37618b52ef390f06403611cab744af06eede3b7d3c3de68854880966e91e1",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
@@ -118,8 +118,8 @@
     },
     {
       "path": "assets/characters/mpfb/generated/wangxifeng.json",
-      "bytes": 627418,
-      "sha256": "c7d1d3220bec403972352b9760fd839352c67b9aac030cb4954ce5635583b860",
+      "bytes": 627379,
+      "sha256": "c105fccc4dde0a552ae870b8a1db6b0b49e4ee9c6789ef62d8c0acdc50f79a07",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {

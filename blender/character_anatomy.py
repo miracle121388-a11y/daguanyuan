@@ -91,15 +91,16 @@ class Anatomy:
         self.scale = source['sourceScale']
         self.width = 1
         self.vertices = [Vector(v)/self.scale for v in source['vertices']]
+        self.rest_vertices = [Vector(v) for v in source['vertices']]
         self.joints = {name:Vector(p) for name,p in source['joints'].items()}
         # Compress only the cervical transition. The jaw, face, hair and eyes
         # translate together; the collar and shoulder anchors stay in place.
         neck=self.joints['joint-neck']
         for vertex in self.vertices:
-            t=max(0,min(1,(vertex.y*self.scale-neck.y)/.085))
+            t=max(0,min(1,(vertex.y*self.scale-neck.y+.085)/.085))
             weight=t*t*(3-2*t)
-            vertex.y-=.028*weight/self.scale
-            vertex.z-=.018*weight/self.scale
+            vertex.y-=.025*weight/self.scale
+            vertex.z-=.034*weight/self.scale
         self.anchor = average_group(self.vertices, 'joint-head')
         self.head_position = self.anchor*self.scale
         self.eye_positions = []
@@ -113,25 +114,45 @@ class Anatomy:
 
     def head(self, parent, material, color_fn, high):
         neck_y=self.joints['joint-neck'].y
-        source_faces = [f for f in GROUPS['body'] if all(BASE[i].y > 5.62 and self.vertices[i].y*self.scale > neck_y-.03 for i, _ in f)]
+        # Retain the continuous anatomical neck down inside the garment, rather
+        # than hiding a short cut edge behind a separate cloth-colored cylinder.
+        source_faces = [f for f in GROUPS['body'] if all(self.rest_vertices[i].y > neck_y-.065 for i, _ in f)]
         ids = sorted(set(i for f in source_faces for i, _ in f))
         index = {old: new for new, old in enumerate(ids)}
         coordinates = [self.local(self.vertices[i]) for i in ids]
         # Keep the lower boundary inside the collar. Cutting by X discarded
         # whole faces and left visible saw-tooth edges beside the neck.
         protected_face=[]
-        for p in coordinates:
+        # HM08 vertex 791 is the central inferior chin landmark, retained by
+        # MPFB. Fit only below this moving anatomical boundary, never the jaw.
+        chin_y=self.vertices[791].y*self.scale
+        for old,p in zip(ids,coordinates):
             world=p+self.head_position
-            if world.y>neck_y+.035 and world.z>self.joints['joint-neck'].z+.05:
+            rest=self.rest_vertices[old]
+            if world.y>=chin_y and rest.z>self.joints['joint-neck'].z+.05:
                 protected_face.append((p,p.copy()))
-            weight=max(0,min(1,(neck_y+.025-world.y)/.030))
+            weight=max(0,min(1,(chin_y-world.y)/.004))
             if weight:
-                rx,rz=(.050,.045) if self.identity=='baoyu' else (.043,.039)
-                radial=((world.x/rx)**2+((world.z-self.joints['joint-neck'].z)/rz)**2)**.5
+                base=max(0,min(1,(neck_y-.010-world.y)/.040))
+                rx,rz=(.047-.014*base,.043-.016*base) if self.identity=='baoyu' else (.039-.012*base,.035-.012*base)
+                center_z=self.joints['joint-neck'].z-.010*base
+                radial=((world.x/rx)**2+((world.z-center_z)/rz)**2)**.5
                 if radial>1:
                     factor=1-weight*(1-1/radial)
                     p.x*=factor
-                    p.z=(world.z-self.joints['joint-neck'].z)*factor+self.joints['joint-neck'].z-self.head_position.z
+                    p.z=(world.z-center_z)*factor+center_z-self.head_position.z
+        # Relax the neck surface after fitting; retain the face and jaw exactly.
+        # This removes a visible rim where the anatomical nape meets the taper.
+        neighbors=[set() for _ in coordinates]
+        for face in source_faces:
+            ring=[index[i] for i,_ in face]
+            for a,b in zip(ring,ring[1:]+ring[:1]):
+                neighbors[a].add(b);neighbors[b].add(a)
+        protected_ids={id(p) for p,_ in protected_face}
+        neck_ids=[i for i,p in enumerate(coordinates) if id(p) not in protected_ids and (p+self.head_position).y<chin_y+.018 and ((p+self.head_position).y<chin_y or (p+self.head_position).z<self.joints['joint-neck'].z+.020)]
+        for _ in range(6):
+            relaxed={i:coordinates[i].lerp(sum((coordinates[j] for j in neighbors[i]),Vector())/len(neighbors[i]),.35) for i in neck_ids if neighbors[i]}
+            for i,p in relaxed.items():coordinates[i][:]=p
         assert protected_face, 'Facial region must be present'
         assert all((p-original).length<1e-8 for p,original in protected_face), 'Collar fitting must not retract the jaw or deform the face'
         faces = [[(index[i], uv) for i, uv in face] for face in source_faces]

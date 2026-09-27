@@ -1,5 +1,5 @@
 {
-  "revision": "garden-players-ming-20260927-v7",
+  "revision": "garden-players-ming-20260927-v8",
   "build": "passed",
   "typecheck": "passed",
   "lint": "passed",
@@ -12,71 +12,69 @@
     "four closed-eye renders",
     "four reading poses"
   ],
-  "browser": "v7: all four local in-app browser portrait views loaded and visually reviewed; frontal, profile and blink renders reviewed; not every story action reviewed",
-  "deployment": "6ab93193dcbdc0de6fc4e8a4 RUNNING",
+  "browser": "v8: Baoyu local browser portrait and side view reviewed; character frontal/profile and blink renders reviewed. Not every character action reviewed in browser.",
+  "deployment": "v8 pending",
   "geometry": [
     {
       "agent": "baoyu",
       "detail": "high",
-      "triangles": 96356,
+      "triangles": 97492,
       "meshes": 19,
-      "bytes": 1619676
+      "bytes": 1632436
     },
     {
       "agent": "baoyu",
       "detail": "low",
-      "triangles": 43324,
+      "triangles": 43608,
       "meshes": 19,
-      "bytes": 771376
+      "bytes": 774336
     },
     {
       "agent": "daiyu",
       "detail": "high",
-      "triangles": 153746,
-      "meshes": 56,
-      "bytes": 3406684
+      "triangles": 154822,
+      "meshes": 55,
+      "bytes": 3418296
     },
     {
       "agent": "daiyu",
       "detail": "low",
-      "triangles": 59506,
-      "meshes": 56,
-      "bytes": 2028828
+      "triangles": 59715,
+      "meshes": 55,
+      "bytes": 2030324
     },
     {
       "agent": "baochai",
       "detail": "high",
-      "triangles": 148590,
+      "triangles": 149618,
       "meshes": 57,
-      "bytes": 3414576
+      "bytes": 3427020
     },
     {
       "agent": "baochai",
       "detail": "low",
-      "triangles": 57473,
+      "triangles": 57671,
       "meshes": 57,
-      "bytes": 2038272
+      "bytes": 2040864
     },
     {
       "agent": "wangxifeng",
       "detail": "high",
-      "triangles": 148560,
-      "meshes": 56,
-      "bytes": 3277604
+      "triangles": 149588,
+      "meshes": 55,
+      "bytes": 3288660
     },
     {
       "agent": "wangxifeng",
       "detail": "low",
-      "triangles": 57442,
-      "meshes": 56,
-      "bytes": 1929252
+      "triangles": 57639,
+      "meshes": 55,
+      "bytes": 1930504
     }
   ],
   "tests": {
     "files": 13,
     "passed": 118
   },
-  "serviceVariablesAndAlbum": "unchanged",
-  "containerFilesMatched": 642,
-  "httpsFilesMatched": 23
+  "serviceVariablesAndAlbum": "unchanged"
 }

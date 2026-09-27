@@ -265,7 +265,7 @@ def build(cid,c,high):
     height=c['anatomy']['height'];sy=height/1.7
     shoulder_y=anatomy.joints['joint-l-shoulder'].y
     shoulder_x=anatomy.joints['joint-l-shoulder'].x
-    neck_y=anatomy.joints['joint-neck'].y
+    neck_y=anatomy.joints['joint-neck'].y-(.028 if cid=='baoyu' else 0)
     waist_y=height*.59;hem_y=height*.045
     male=cid=='baoyu';segments=80 if high else 48
     # The garments fit a measured MPFB torso; 15–25 mm wearing ease.
@@ -366,7 +366,6 @@ def build(cid,c,high):
                 bpy.data.objects.remove(obj,do_unlink=True)
         for part in ['leftArm','rightArm']:bpy.data.objects[cid+'_'+part].rotation_euler.z=0
         install_ming_clothing(cid,anatomy,body,high)
-        loft(body,[(neck_y-.026,.051,.046),(neck_y+.020,.047,.042)],'#E6E3D5','soft inner standing collar',center=(0,0,anatomy.joints['joint-neck'].z),segments=64 if high else 32)
     head=empty(cid+'_head',body,anatomy.head_position);eyes=empty(cid+'_eyes',head)
     skin=color(c['skin']);lip=color(c['face']['lip']);rouge=color('#C47872')
     def skin_color(p):

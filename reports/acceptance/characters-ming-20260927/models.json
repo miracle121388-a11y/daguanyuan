@@ -1,9 +1,9 @@
 {
-  "revision": "garden-players-ming-20260927-v7",
+  "revision": "garden-players-ming-20260927-v8",
   "models": [
     {
       "path": "public/models/characters/baoyu.glb",
-      "triangles": 96356,
+      "triangles": 97492,
       "meshes": 19,
       "textures": 5,
       "expressions": [
@@ -13,7 +13,7 @@
         },
         {
           "mesh": "Mesh",
-          "maxDisplacement": 0.03292437642812729
+          "maxDisplacement": 0.03292436897754669
         },
         {
           "mesh": "baoyu_lashes",
@@ -31,7 +31,7 @@
     },
     {
       "path": "public/models/characters/baoyu-low.glb",
-      "triangles": 43324,
+      "triangles": 43608,
       "meshes": 19,
       "textures": 5,
       "expressions": [
@@ -59,8 +59,8 @@
     },
     {
       "path": "public/models/characters/daiyu.glb",
-      "triangles": 153746,
-      "meshes": 56,
+      "triangles": 154822,
+      "meshes": 55,
       "textures": 10,
       "expressions": [
         {
@@ -69,7 +69,7 @@
         },
         {
           "mesh": "Mesh.001",
-          "maxDisplacement": 0.03355260565876961
+          "maxDisplacement": 0.03355259820818901
         },
         {
           "mesh": "daiyu_lashes",
@@ -87,8 +87,8 @@
     },
     {
       "path": "public/models/characters/daiyu-low.glb",
-      "triangles": 59506,
-      "meshes": 56,
+      "triangles": 59715,
+      "meshes": 55,
       "textures": 10,
       "expressions": [
         {
@@ -115,7 +115,7 @@
     },
     {
       "path": "public/models/characters/baochai.glb",
-      "triangles": 148590,
+      "triangles": 149618,
       "meshes": 57,
       "textures": 10,
       "expressions": [
@@ -125,7 +125,7 @@
         },
         {
           "mesh": "Mesh.002",
-          "maxDisplacement": 0.03403785079717636
+          "maxDisplacement": 0.034037843346595764
         },
         {
           "mesh": "baochai_lashes",
@@ -143,7 +143,7 @@
     },
     {
       "path": "public/models/characters/baochai-low.glb",
-      "triangles": 57473,
+      "triangles": 57671,
       "meshes": 57,
       "textures": 10,
       "expressions": [
@@ -171,8 +171,8 @@
     },
     {
       "path": "public/models/characters/wangxifeng.glb",
-      "triangles": 148560,
-      "meshes": 56,
+      "triangles": 149588,
+      "meshes": 55,
       "textures": 10,
       "expressions": [
         {
@@ -181,7 +181,7 @@
         },
         {
           "mesh": "Mesh.003",
-          "maxDisplacement": 0.03307338058948517
+          "maxDisplacement": 0.033073361963033676
         },
         {
           "mesh": "wangxifeng_lashes",
@@ -199,8 +199,8 @@
     },
     {
       "path": "public/models/characters/wangxifeng-low.glb",
-      "triangles": 57442,
-      "meshes": 56,
+      "triangles": 57639,
+      "meshes": 55,
       "textures": 10,
       "expressions": [
         {

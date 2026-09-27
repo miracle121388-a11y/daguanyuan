@@ -82,7 +82,7 @@ def install(cid,anatomy,body,high):
             arm_p=Vector((side*shoulder.x+rotated.x*scale,shoulder.y+rotated.y*(arm_length/.65),shoulder.z+src.z*scale))
             # Preserve jacket length and the high skirt waistband, while locating
             # the standing collar at the actual body neck rather than head height.
-            knots=[(0,.055),(.96,height*.50),(1.10,height*.585),(1.425,shoulder.y),(1.548,anatomy.joints['joint-neck'].y+.018)]
+            knots=[(0,.055),(.96,height*.50),(1.10,height*.585),(1.425,shoulder.y),(1.548,anatomy.joints['joint-neck'].y-.020)]
             y=src.y
             for (a,b),(c,d) in zip(knots,knots[1:]):
                 if src.y<=c:y=b+(src.y-a)/(c-a)*(d-b);break
