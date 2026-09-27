@@ -1,5 +1,5 @@
 {
-  "revision": "garden-players-ming-20260927-v6",
+  "revision": "garden-players-ming-20260927-v7",
   "basis": "Fictional individual character designs from CC0 anatomical bases, without a singled-out ethnicity preset. Ming-inspired clothing and hair; garden architecture unchanged.",
   "characters": {
     "baoyu": {
@@ -34,7 +34,9 @@
           "nose/nose-scale-depth-incr": 0.09,
           "head/head-fat-decr": 0.06,
           "eyes/l-eye-height2-incr": 0.12,
-          "eyes/r-eye-height2-incr": 0.12
+          "eyes/r-eye-height2-incr": 0.12,
+          "head/head-scale-vert-incr": 0.4,
+          "chin/chin-height-incr": 0.2
         }
       },
       "clothing": "ming-daopao",
@@ -72,7 +74,9 @@
           "nose/nose-scale-depth-incr": 0.09,
           "head/head-fat-decr": 0.06,
           "eyes/l-eye-height2-incr": 0.12,
-          "eyes/r-eye-height2-incr": 0.12
+          "eyes/r-eye-height2-incr": 0.12,
+          "head/head-scale-vert-incr": 0.45,
+          "chin/chin-height-incr": 0.22
         }
       },
       "clothing": "ming-ao-mamianqun",
@@ -108,10 +112,12 @@
           "chin/chin-prominent-incr": 0.12,
           "chin/chin-width-decr": 0.15,
           "nose/nose-scale-depth-incr": 0.09,
-          "head/head-fat-decr": 0.0,
+          "head/head-fat-decr": 0,
           "head/head-round": 0.08,
           "eyes/l-eye-height2-incr": 0.12,
-          "eyes/r-eye-height2-incr": 0.12
+          "eyes/r-eye-height2-incr": 0.12,
+          "head/head-scale-vert-incr": 0.32,
+          "chin/chin-height-incr": 0.18
         }
       },
       "clothing": "ming-ao-mamianqun",
@@ -150,7 +156,9 @@
           "head/head-fat-decr": 0.06,
           "head/head-diamond": 0.06,
           "eyes/l-eye-height2-incr": 0.12,
-          "eyes/r-eye-height2-incr": 0.12
+          "eyes/r-eye-height2-incr": 0.12,
+          "head/head-scale-vert-incr": 0.42,
+          "chin/chin-height-incr": 0.2
         }
       },
       "clothing": "ming-ao-mamianqun",

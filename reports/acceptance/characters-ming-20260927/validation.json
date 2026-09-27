@@ -1,5 +1,5 @@
 {
-  "revision": "garden-players-ming-20260927-v6",
+  "revision": "garden-players-ming-20260927-v7",
   "build": "passed",
   "typecheck": "passed",
   "lint": "passed",
@@ -12,64 +12,64 @@
     "four closed-eye renders",
     "four reading poses"
   ],
-  "browser": "Local Chrome: all four character portrait views loaded and visually reviewed; blink renders inspected; not every story action reviewed",
-  "deployment": "v6 pending",
+  "browser": "v6: four local Chrome portrait views reviewed. v7: four frontal renders and closed-eye render reviewed; browser recheck pending.",
+  "deployment": "v7 pending",
   "geometry": [
     {
       "agent": "baoyu",
       "detail": "high",
       "triangles": 96356,
       "meshes": 19,
-      "bytes": 1619816
+      "bytes": 1619676
     },
     {
       "agent": "baoyu",
       "detail": "low",
       "triangles": 43324,
       "meshes": 19,
-      "bytes": 771440
+      "bytes": 771376
     },
     {
       "agent": "daiyu",
       "detail": "high",
       "triangles": 153746,
       "meshes": 56,
-      "bytes": 3407012
+      "bytes": 3406684
     },
     {
       "agent": "daiyu",
       "detail": "low",
-      "triangles": 59503,
+      "triangles": 59506,
       "meshes": 56,
-      "bytes": 2028928
+      "bytes": 2028828
     },
     {
       "agent": "baochai",
       "detail": "high",
       "triangles": 148590,
       "meshes": 57,
-      "bytes": 3414752
+      "bytes": 3414576
     },
     {
       "agent": "baochai",
       "detail": "low",
-      "triangles": 57471,
+      "triangles": 57473,
       "meshes": 57,
-      "bytes": 2038420
+      "bytes": 2038272
     },
     {
       "agent": "wangxifeng",
       "detail": "high",
       "triangles": 148560,
       "meshes": 56,
-      "bytes": 3277624
+      "bytes": 3277604
     },
     {
       "agent": "wangxifeng",
       "detail": "low",
       "triangles": 57442,
       "meshes": 56,
-      "bytes": 1929324
+      "bytes": 1929252
     }
   ],
   "tests": {

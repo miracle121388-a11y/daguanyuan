@@ -17,7 +17,7 @@
   },
   "configuration": {
     "path": "config/simulation.characters.json",
-    "sha256": "0cb7fe0d88df48a1a0aac8eec4ae4623918cd10bce9613243c588e7c0a66a29d"
+    "sha256": "5f3f8bf2fc9e6407eede461a146b1a1e168870292aa4b3935cf1a8d74b2df89b"
   },
   "files": [
     {
@@ -94,32 +94,32 @@
     },
     {
       "path": "assets/characters/mpfb/generated/baochai.json",
-      "bytes": 627316,
-      "sha256": "4438b67b08c9879aa61aa81043b21b611ec15f93631ea9616a67f0d3203e6248",
+      "bytes": 627302,
+      "sha256": "389a83f925825623d7f35b7f78560ec5d1582ae59459cb12eb9bf001ba895217",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/baoyu.json",
-      "bytes": 627901,
-      "sha256": "9dbcdf8c534297a13f3099f052f154ac2edb55096b08038b9c5ab38029e025d4",
+      "bytes": 627972,
+      "sha256": "03a3a46e6c36f8675e4800182f29d032153ed9953e19e313f3a015cc052202eb",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/daiyu.json",
-      "bytes": 627289,
-      "sha256": "4b244d693867857f3e05570b1e08c37cd2d7e211fc5ecddf9695fc38ca5226b2",
+      "bytes": 627323,
+      "sha256": "011d8caf788a817a6d84a163baab38e9c4680966f6e487054fa1752592d79f0b",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/measurements.json",
-      "bytes": 1824,
-      "sha256": "8d0afb1663ca97f1c149fd7ae656fd4fd94b315c21437c8e3adcd53cf69a9519",
+      "bytes": 1829,
+      "sha256": "656d7803a0470eb5b891da86cfcfd0673abd839921c747e7d8b735a34b94bee9",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
       "path": "assets/characters/mpfb/generated/wangxifeng.json",
-      "bytes": 627480,
-      "sha256": "5f77dfb3bbfb42e796efa916d80d7724651e0c6b2c7b4d613d7b966e30befe56",
+      "bytes": 627418,
+      "sha256": "c7d1d3220bec403972352b9760fd839352c67b9aac030cb4954ce5635583b860",
       "origin": "Generated with pinned MPFB and project configuration"
     },
     {
