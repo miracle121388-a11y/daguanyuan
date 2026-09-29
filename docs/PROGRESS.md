@@ -876,3 +876,8 @@ Mac 锁屏使 CUA 无法操作浏览器，已请求用户解锁；尚未完成�
 - 新增面貌说明与生成后尺寸记录，模型检查覆盖长短脸比例差异；扩展方法见 docs/CHARACTERS.md。
 - v11 本地验收：118 项测试、lint、类型检查、生产构建、八份模型解码通过；625 个其他 public 文件未改动。检查四人面部渲染及浏览器宝玉、宝钗近景。
 - v11 已部署原 California 服务，部署 `6ab93fae4236e69929d76ac9` 为 RUNNING。642 个容器文件、23 个 HTTPS 关键资源核验一致；服务变量与相册未变。模型与生成配置已同步 main。
+
+### 2026-09-29 生产环境皮肤贴图加载修复
+- 复现线上白脸、白手与眼睛无色：生产 CSP 的 connect-src 仅 self，阻止 Three.js ImageBitmapLoader 读取 GLB 内嵌贴图的 blob URL；img-src 已允许 blob 但不足以覆盖 fetch。
+- connect-src 增加 blob，仅补充本地内存资源读取；保留同源网络限制及其余 CSP。
+- 同一生产构建在修复前重现白色皮肤和 GLTFLoader 贴图错误，修复后宝玉皮肤与眼睛恢复颜色。模型文件未修改。

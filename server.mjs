@@ -42,7 +42,9 @@ const httpServer=createServer(async(req,res)=>{
  }
  const stored=packedOnly&&encoding!=='br'?file+'.br':file;
  const stat=statSync(stored),etag='"'+stat.size.toString(16)+'-'+Math.round(stat.mtimeMs).toString(16)+'-'+(encoding??'identity')+'"';
- const headers={'Content-Type':types[ext]??'application/octet-stream','ETag':etag,'Vary':'Accept-Encoding','Cache-Control':pathname.startsWith('/assets/')||pathname.startsWith('/draco/')||/^\/textures\/shared\/[a-f0-9]{64}\.(jpg|png)$/.test(pathname)?'public, max-age=31536000, immutable':'public, max-age=0, must-revalidate','X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Content-Security-Policy':"default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"};
+ // GLTFLoader decodes embedded textures through ImageBitmapLoader.fetch(blob:).
+ // img-src alone does not cover this local in-memory texture read.
+ const headers={'Content-Type':types[ext]??'application/octet-stream','ETag':etag,'Vary':'Accept-Encoding','Cache-Control':pathname.startsWith('/assets/')||pathname.startsWith('/draco/')||/^\/textures\/shared\/[a-f0-9]{64}\.(jpg|png)$/.test(pathname)?'public, max-age=31536000, immutable':'public, max-age=0, must-revalidate','X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Content-Security-Policy':"default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' blob:; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"};
  if(encoding)headers['Content-Encoding']=encoding;
  if(req.headers['if-none-match']===etag){res.writeHead(304,headers);return res.end()}
  const decoded=packedOnly&&encoding!=='br'?brotliDecompressSync(readFileSync(stored)):null;
