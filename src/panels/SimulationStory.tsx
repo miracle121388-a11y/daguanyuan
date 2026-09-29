@@ -15,7 +15,7 @@ export default function SimulationStory({world,busy}:{world:WorldState;busy:bool
  return <section className="sim-story" aria-label="故事续演">
   <div className="sim-story-heading"><h3>{c?.sequence?'故事正在继续':'从已有故事，续演下去'}</h3></div>
   <p className="sim-note">{edition.shortTitle} · 第{through}回之后 · {c?.source.imported?'已导入原文':'依据已核对节选，尚未导入完整原文'}</p>
-  {!c?.sequence&&<label>推演口令<input type="password" autoComplete="off" value={s.accessToken} onChange={e=>useSimulation.setState({accessToken:e.target.value})}/></label>}
+  <label>推演口令<input type="password" autoComplete="off" value={s.accessToken} onChange={e=>useSimulation.setState({accessToken:e.target.value})}/></label>
   <label>你希望故事如何发展？<textarea aria-label="故事发展方向" maxLength={800} disabled={busy} value={c?.direction??''} onChange={e=>s.setContinuation(e.target.value,through)} placeholder="可以留空，让人物依照前情自行选择；也可以提出想探索的变化。"/></label>
   <details><summary>原文与续演起点</summary>
    <label>导入原文截止第几回<input type="number" min={1} max={edition.chapters} disabled={busy||!!c?.sequence} value={importThrough} onChange={e=>setImportThrough(Number(e.target.value))}/></label>
