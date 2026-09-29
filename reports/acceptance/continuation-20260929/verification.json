@@ -1,0 +1,81 @@
+{
+  "at": "2026-09-29T15:16:54.338Z",
+  "commit": "662c8c2ab1206a5ca833d8f9ca1370aba1c64a3c",
+  "deployment": "6abbd52858d9ca410d885a57",
+  "status": "RUNNING",
+  "testsPassed": 140,
+  "buildPassed": true,
+  "lintPassed": true,
+  "modelHttpCalls": [
+    {
+      "operation": "story-read",
+      "status": 200
+    },
+    {
+      "operation": "story-continue",
+      "status": 200
+    },
+    {
+      "operation": "story-continue",
+      "status": 200
+    },
+    {
+      "operation": "story-review",
+      "status": 200
+    },
+    {
+      "operation": "story-review",
+      "status": 200
+    },
+    {
+      "operation": "story-continue",
+      "status": 200
+    },
+    {
+      "operation": "story-continue",
+      "status": 200
+    },
+    {
+      "operation": "story-review",
+      "status": 200
+    },
+    {
+      "operation": "story-review",
+      "status": 200
+    }
+  ],
+  "editions": [
+    {
+      "edition": "cheng120",
+      "sourceThrough": 105,
+      "episodes": 1
+    },
+    {
+      "edition": "guiyou108",
+      "sourceThrough": 91,
+      "episodes": 1
+    },
+    {
+      "edition": "original80",
+      "sourceThrough": 80,
+      "episodes": 2
+    }
+  ],
+  "browser": {
+    "origin": "local production server",
+    "importedSource": "176-character synthetic fixture, not the eighty-chapter novel",
+    "actualModelGeneration": true,
+    "stagingCompleted": true,
+    "episodeTitle": "晨核账目",
+    "screenshot": "ui.png"
+  },
+  "completeEightyChapterQualityAcceptance": false,
+  "runtimeFilesMatched": 643,
+  "httpsResourcesMatched": 23,
+  "serverModuleHashes": "server.json",
+  "preserved": {
+    "variables": true,
+    "album": true,
+    "skinTextureCsp": true
+  }
+}

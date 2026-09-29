@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20260929-142603-241130",
+  "directory": ".deploy/reference-20260929-150959-822317",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,7 +11,7 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "fdc7a91d2908d4a1e73cdb4e6ccf68c1873aaf3bce88357fc4d65cc89af8e905"
+      "sha256": "569f4e2571b055f01ab8e810877172dc388214937f79547bc6e8e7b0c75ab867"
     },
     {
       "path": "server.mjs",
@@ -19,11 +19,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "974437af0c942a2ebdbef8c3f71d730e2eaca7d82dd2a77760297513f659aaf2"
+      "sha256": "6818b7c46c5a46f11aa1668d6c11000eaa44d32c3be8312ff6b0880fbafbaf79"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "93b42e55af007cca69c7687e65502387d76340e688ce2dee574866ae62129f62"
+      "sha256": "e19f4d25597484407516ef351609213be309bc148b9ba6af7849a309decbef7e"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -71,7 +71,7 @@
     },
     {
       "path": "server/simulation-api.mjs",
-      "sha256": "e572970926bcac24340d4c2c609f3968d209bbadbe9868e2834b0129c806c1ab"
+      "sha256": "bd9827042c5d0c3e32288bff55d22b69f523a659742eb926c5ddad006726f50e"
     },
     {
       "path": "server/dream-references.mjs",
@@ -88,6 +88,10 @@
     {
       "path": "server/dream-scene-plan.mjs",
       "sha256": "93c04ba8c60dd7b77cf471b09f101b63cdcee229b596ed1b3eed644afb07a992"
+    },
+    {
+      "path": "server/continuation.mjs",
+      "sha256": "6323ae0e8684a8e3a618b14a0f5776f3bc1dc1fd1cae3ab00fa6fc4894204e8d"
     },
     {
       "path": "server/dream-prompts.mjs",
@@ -998,12 +1002,12 @@
       "sha256": "f219eafa34695751e6abe6f9397a2c5eb467caa8bdd0ff4b2da00b7637cf3431"
     },
     {
-      "path": "dist/assets/index-DAb3RzOx.js.br",
-      "sha256": "1a07c480f031805ebd0686c29bcdf865498a182acd5ec63baa6e8e78067908df"
+      "path": "dist/assets/GardenScene-DlCJ68jY.js.br",
+      "sha256": "f5ffcdbae3cef6d2c8fd39152d09e93c3a816943a155ebcbbbd341a19acb5cd3"
     },
     {
-      "path": "dist/assets/GardenScene-CWkxTdlI.js.br",
-      "sha256": "a1759e5e48c9e92b16ed8fd3c27079fb9d7698bb7f3090df72df49beb3f3de92"
+      "path": "dist/assets/index-CgcplStd.js.br",
+      "sha256": "70e53689037c773dadb74bbd5e10f452082a2aea02f9eaf8b60d482d16815fac"
     },
     {
       "path": "dist/assets/index-CEqecs4a.css.br",
@@ -6963,6 +6967,6 @@
   "decodedBrotliChecked": true,
   "matchesCompletedBuild": true,
   "referencesMatched": 21,
-  "count": 942,
+  "count": 943,
   "passed": true
 }
