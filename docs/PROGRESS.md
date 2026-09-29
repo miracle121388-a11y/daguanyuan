@@ -881,3 +881,4 @@ Mac 锁屏使 CUA 无法操作浏览器，已请求用户解锁；尚未完成�
 - 复现线上白脸、白手与眼睛无色：生产 CSP 的 connect-src 仅 self，阻止 Three.js ImageBitmapLoader 读取 GLB 内嵌贴图的 blob URL；img-src 已允许 blob 但不足以覆盖 fetch。
 - connect-src 增加 blob，仅补充本地内存资源读取；保留同源网络限制及其余 CSP。
 - 同一生产构建在修复前重现白色皮肤和 GLTFLoader 贴图错误，修复后宝玉皮肤与眼睛恢复颜色。模型文件未修改。
+- 修复部署 `6abbbafbad96bf301ede4ffb` RUNNING；线上 HTTPS 响应已核验 connect-src 含 blob，642 个容器文件一致，服务变量与相册保留。语法检查、lint、部署包扫描通过。浏览器实际验收为本地生产服务器宝玉/黛玉，线上浏览器连接超时，未宣称线上视觉验收完成。

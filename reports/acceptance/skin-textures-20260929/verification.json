@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-29",
+  "cause": "Production connect-src blocked ImageBitmapLoader fetch of embedded blob textures",
+  "fix": "connect-src 'self' blob:",
+  "localProduction": {
+    "before": "white skin reproduced, GLTFLoader blob texture errors",
+    "after": "Baoyu and Daiyu colors visually verified; zero errors from corrected origin"
+  },
+  "checks": {
+    "syntax": "passed",
+    "lint": "passed",
+    "package": "passed"
+  },
+  "deployment": "6abbbafbad96bf301ede4ffb RUNNING",
+  "liveCsp": "verified over HTTPS",
+  "containerFilesMatched": 642,
+  "onlineBrowser": "navigation timed out; no live visual claim"
+}

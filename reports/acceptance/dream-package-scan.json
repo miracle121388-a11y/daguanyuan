@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20260927-160639-033097",
+  "directory": ".deploy/reference-20260929-131838-126970",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,11 +11,11 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "a0f123b7e04af6cbaa04ad303f46a0d00c81ed8d4311930aa1e144b392a4bb91"
+      "sha256": "aee4fb32553c3e8df4f2432d1b8bd027a1a9ea6f5905ff273ac6cfd6ac6409c2"
     },
     {
       "path": "server.mjs",
-      "sha256": "07c45cb52b07f900c862cf630a5e9a393db5a4d1b0302a6a5643e72e2d2d5ad7"
+      "sha256": "b50637f4e496d51c25f27157dc5bdd970558bbbe92d6f1f2114cc1c17cefa337"
     },
     {
       "path": "dist/index.html",

@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-27T16:14:49.106Z",
+  "at": "2026-09-29T13:23:58.413Z",
   "domain": "daguanyuan-rumeng.zeabur.app",
   "ip": "47.89.212.251",
   "tlsVerification": true,
@@ -65,14 +65,14 @@
       "sha256": "21fd9784992683e2d829d9b6af8281939f6c74b2a1bd4690ac2c261877d814ef"
     },
     {
-      "path": "models/characters/baoyu.glb",
-      "bytes": 1633100,
-      "sha256": "1f46c8a27776aae994f84c616f9e764fc69b2e353811cc4c1034d948dd382c4a"
-    },
-    {
       "path": "models/characters/daiyu.glb",
       "bytes": 3418812,
       "sha256": "6ceebacdb578836baab0cd973c2662100fbc349ea41a52930411a23aaf1c3802"
+    },
+    {
+      "path": "models/characters/baoyu.glb",
+      "bytes": 1633100,
+      "sha256": "1f46c8a27776aae994f84c616f9e764fc69b2e353811cc4c1034d948dd382c4a"
     },
     {
       "path": "textures/characters/baoyu.png",
@@ -85,19 +85,14 @@
       "sha256": "126ae2bb1f9a2c0470c2344a7195c03bea14ab6ccc6ec5e265428c0903001c70"
     },
     {
-      "path": "models/characters/baochai.glb",
-      "bytes": 3428064,
-      "sha256": "95676d5c69226e91b626b08eef516d06fc29a29220f6ea063ff801b60988a2f5"
-    },
-    {
       "path": "models/characters/wangxifeng.glb",
       "bytes": 3289444,
       "sha256": "470a3e18c97a937b316999ea9d2b13d1190f6b05152d3c8582c04f24ed14b26c"
     },
     {
-      "path": "textures/characters/daiyu.png",
-      "bytes": 126081,
-      "sha256": "b5399486a8134e77144af4738bee6d46bc814f21bbfb73ca1c58b1ddc43f22f0"
+      "path": "models/characters/baochai.glb",
+      "bytes": 3428064,
+      "sha256": "95676d5c69226e91b626b08eef516d06fc29a29220f6ea063ff801b60988a2f5"
     },
     {
       "path": "textures/characters/baochai.png",
@@ -105,14 +100,19 @@
       "sha256": "272eb3067ea3804e43b927d0d47fd75e5a15a89aae80d6d3ac329e33ddb5ff74"
     },
     {
-      "path": "models/characters/baochai-low.glb",
-      "bytes": 2041580,
-      "sha256": "a7c22e8166fc45aa0c9d2545dc6ad9a67233dbb13cdee75b3a39339390e103e3"
+      "path": "textures/characters/daiyu.png",
+      "bytes": 126081,
+      "sha256": "b5399486a8134e77144af4738bee6d46bc814f21bbfb73ca1c58b1ddc43f22f0"
     },
     {
       "path": "models/characters/daiyu-low.glb",
       "bytes": 2030976,
       "sha256": "9ba7898b16e2407469940bb3a93cc6cee578f25e89c8b49d850b5861925169cc"
+    },
+    {
+      "path": "models/characters/baochai-low.glb",
+      "bytes": 2041580,
+      "sha256": "a7c22e8166fc45aa0c9d2545dc6ad9a67233dbb13cdee75b3a39339390e103e3"
     },
     {
       "path": "textures/characters/wangxifeng.png",
