@@ -31,7 +31,7 @@ export class RemoteProvider implements LLMProvider {
     const abort = () => timeout.abort();
     signal.addEventListener('abort', abort, {once: true});
     if (signal.aborted) timeout.abort();
-    const timeoutMs = (['action', 'conversation'].includes(operation) || operation.startsWith('story-')) ? 75000 : 30000;
+    const timeoutMs = ['story-read','story-continue','story-review'].includes(operation) ? 125000 : (['action', 'conversation'].includes(operation) || operation.startsWith('story-')) ? 75000 : 30000;
     const timer = setTimeout(() => timeout.abort(), timeoutMs);
     try {
       const response = await fetch('/api/simulation', {method: 'POST', headers: {'Content-Type': 'application/json', ...(this.accessToken ? {Authorization: `Bearer ${this.accessToken}`} : {})}, body: JSON.stringify({operation, payload}), signal: timeout.signal});
@@ -39,11 +39,12 @@ export class RemoteProvider implements LLMProvider {
       if (!response.ok) throw new Error(result.error || `模型请求失败（${response.status}）。`);
       return result.result;
     } catch (error) {
-      if (timeout.signal.aborted && !signal.aborted) throw new Error(`模型响应超过${timeoutMs / 1000}秒，本步未保存。请重试或切换本地规则。`);
+      if (timeout.signal.aborted && !signal.aborted) throw new Error(`模型响应超过${timeoutMs / 1000}秒，本步未保存。请重试。`);
       if (error instanceof TypeError && !signal.aborted) throw new Error('未能连接推演服务，本步未保存。请检查当前网络或代理线路后重试。');
       throw error;
     } finally { clearTimeout(timer); signal.removeEventListener('abort', abort); }
   }
+  narrative(operation: 'story-read'|'story-continue'|'story-review', payload: unknown, signal: AbortSignal) { return this.request(operation,payload,signal); }
   story(operation: 'story-plan' | 'story-dialogue' | 'story-outcome', payload: StoryRequest, signal: AbortSignal) { return this.request(operation, payload, signal); }
   generateAgentAction(perception: Perception, signal: AbortSignal) { return this.request('action', perception, signal); }
   converse(context: ConversationContext, signal: AbortSignal) { return this.request('conversation', context, signal); }

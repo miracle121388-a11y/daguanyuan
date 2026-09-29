@@ -1,3 +1,4 @@
+import {continuationSchema} from './continuationTypes';
 import {z} from 'zod';
 import {storyAgentSchema, storyRecordSchema, type StoryRequest} from './openstoryTypes';
 import type {Vec3} from '../data/types';
@@ -98,6 +99,7 @@ export const worldSchema = z.object({
   interactionSerial: z.number().int().nonnegative().optional(),
   conversations: z.array(conversationTurnSchema).max(20).optional(),
   resolvedEncounters: z.array(z.object({id: z.string(), choice: z.string(), outcome: z.string().max(400), tick: z.number().int().nonnegative()})).max(32).optional(),
+  continuation: continuationSchema.optional(),
   storyRecords: z.array(storyRecordSchema).max(40).optional(),
   gathering: gatheringSchema.nullable().optional(),
 });

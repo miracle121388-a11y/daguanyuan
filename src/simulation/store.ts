@@ -2,7 +2,7 @@ import {setStoryTask} from './openstory';
 import {create} from 'zustand';
 import type {CanonData} from '../data/types';
 import {useGarden} from '../state/store';
-import {runTick} from './engine';
+import {defaultContinuationChapter, prepareContinuation, readStorySource, runContinuation} from './continuation';
 import {MockProvider, RemoteProvider} from './providers';
 import {interventionSchema, type AgentId, type ConversationTurn, type Gathering, type Journal, type PlayerDirective, type SceneCommand, type WorldState} from './types';
 import {cancelGathering, chooseEncounter, conversationContext, forkMoment, inviteGathering, recordConversation} from './participation';
@@ -24,7 +24,7 @@ interface SimulationState {
   selectEdition: (id: EditionId) => void; enterStory: (id: string, play?: boolean) => void;
   openComic: (id: string, kind?: 'story' | 'if', text?: string) => void; closeComic: () => void;
   open: boolean; ifComposerOpen: boolean; openWorld: (branch: 'main' | 'if') => void; journal: Journal | null; preview: WorldState | null;
-  phase: 'ready' | 'deciding' | 'executing' | 'parsing' | 'conversing'; actor: AgentId | null;
+  phase: 'ready' | 'deciding' | 'reviewing' | 'executing' | 'parsing' | 'conversing'; actor: AgentId | null;
   paused: boolean; automatic: boolean; playback: Playback | null; playbackProgress: number; director: boolean; sceneReady: boolean;
   focused: AgentId | null; focusRevision: number; sceneRevision: number;
   immersive: boolean; cameraMode: 'follow' | 'close' | 'portrait'; playbackRate: 1 | 2 | 4;
@@ -45,6 +45,9 @@ interface SimulationState {
   invite: (input: Pick<Gathering, 'place' | 'kind' | 'participants'>) => void;
   dismissGathering: () => void;
   issueDirective: (input: Omit<PlayerDirective, 'id' | 'tick'>) => boolean;
+  readingProgress: string;
+  setContinuation: (direction:string, through:number) => void;
+  importSource: (file:File,through:number) => Promise<void>;
   assignStoryTask: (id: AgentId, task: string) => boolean;
   withdrawDirective: (id: AgentId) => void;
   resumeBranch: (id: string) => void; deleteArchive: (id: string) => void;
@@ -85,10 +88,25 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   editionId: 'original80', editionJournals: {}, libraryOpen: false, comicCue: null, comicAutomatic: true,
   open: false, ifComposerOpen: false, journal: null, preview: null, phase: 'ready', actor: null,
   paused: false, automatic: false, playback: null, playbackProgress: 0, director: true, sceneReady: false,
-  focused: null, focusRevision: 0, sceneRevision: 0, provider: 'mock', remoteLabel: '服务器模型', accessToken: '', error: '', storageNotice: '',
+  focused: null, focusRevision: 0, sceneRevision: 0, provider: 'remote', remoteLabel: '服务器模型', accessToken: '', error: '', storageNotice: '',
   immersive: false, cameraMode: 'close', playbackRate: 1, recordView: 'events', participationView: 'chat',
   conversationDrafts: {},
   inspectionTarget: null, inspectionRevision: 0,
+  readingProgress: '',
+  setContinuation: (direction,through) => {
+    const {journal,phase}=get(),data=useGarden.getState().data;if(!journal||!data||phase!=='ready')return;
+    try{commit(prepareContinuation(journal,data,direction,through));set({error:''});}catch(e){set({error:(e as Error).message});}
+  },
+  importSource: async(file,through) => {
+    const {journal,phase}=get(),data=useGarden.getState().data;if(!journal||!data||phase!=='ready')return;
+    if(!get().accessToken.trim()){set({error:'请先填写推演口令。'});return;}
+    if(currentWorld(journal).continuation?.sequence){set({error:'请先在时间快照回到续演前，再更换原文。'});return;}
+    if(file.size>5*1024*1024||! /\.(txt|md)$/i.test(file.name)){set({error:'请选择不超过5MB的TXT或Markdown纯文本。'});return;}
+    const active=new AbortController();controller=active;set({phase:'parsing',automatic:false,error:'',readingProgress:'正在读取原文…'});
+    try{const bytes=await file.arrayBuffer();let text;try{text=new TextDecoder('utf-8',{fatal:true}).decode(bytes);}catch{text=new TextDecoder('gb18030',{fatal:true}).decode(bytes);}text=text.replace(/^\uFEFF/,'');const source=await readStorySource(text,file.name,through,get().editionId,new RemoteProvider(get().accessToken,get().remoteLabel),active.signal,(done,total)=>set({readingProgress:`正在整理原文 ${done}/${total}`}));active.signal.throwIfAborted();commit(prepareContinuation(journal,data,currentWorld(journal).continuation?.direction??'',through,source));}
+    catch(e){set({error:active.signal.aborted?'原文读取已取消，原存档未更改。':(e as Error).message});}
+    finally{if(controller===active)controller=null;set({phase:'ready',readingProgress:''});}
+  },
   initialize: data => {
     if (get().journal) return;
     let editionId: EditionId = 'original80';
@@ -149,12 +167,13 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   next: async () => {
     const {journal, phase, sceneReady} = get(), data = useGarden.getState().data;
     if (!journal || !data || phase !== 'ready') return;
-    if(get().provider==='remote'&&!get().accessToken.trim()){set({error:'请先填写故事模式的推演访问口令。',automatic:false});return;}
+    if(!get().accessToken.trim()){set({error:'请先填写推演口令，再生成后续故事。',automatic:false});return;}
     if (!sceneReady) { set({error: '三维园林尚未就绪，请等待载入或重试模型。', automatic: false}); return; }
     const active = new AbortController(); controller = active;
     set({phase: 'deciding', paused: false, error: ''});
     try {
-      const result = await runTick(journal, data, providerFor(), execute, active.signal, (world, phase, actor) => set(current => ({preview: world, phase, actor, ...(current.director && current.focused !== actor ? {focused: actor, focusRevision: current.focusRevision + 1} : {})})));
+      const prepared = currentWorld(journal).continuation ? journal : prepareContinuation(journal,data,'',defaultContinuationChapter(data,get().editionId,currentWorld(journal)));
+      const result = await runContinuation(prepared, data, new RemoteProvider(get().accessToken,get().remoteLabel), execute, active.signal, (world, phase, actor) => set(current => ({preview: world, phase, actor, ...(current.director && current.focused !== actor ? {focused: actor, focusRevision: current.focusRevision + 1} : {})})));
       if (active.signal.aborted) return;
       commit(result);
       const after = currentWorld(result), before = currentWorld(journal);
