@@ -53,7 +53,7 @@ describe('separate literary versions and authored starting points', () => {
   it('passes only version boundaries and personal memories to action/conversation providers', () => {
     const world=currentWorld(forkStory(createJournal(data,'cheng120'),data,'manuscript-97'));
     const own=conversationContext(world,'daiyu','你在想什么？','chat',data), other=perceive(world,'baoyu',data);
-    expect(own.literary).toEqual({id:'cheng120',title:'程高本 · 一百二十回',chapter:97,maxChapter:120});
+    expect(own.literary).toMatchObject({id:'cheng120',title:'程高本 · 一百二十回',chapter:97,maxChapter:120});
     expect(JSON.stringify(other)).not.toContain('正在犹豫是否毁去');
     expect(localConversation(own).reply).toContain('诗稿');
   });

@@ -1,0 +1,28 @@
+{
+  "source": "https://github.com/ZJU-LLMs/OpenStory",
+  "commit": "3e4857a07ec141a9ed6d3be586dd5d3c573ae389",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "20b933ab722f2f40cae22122fcc36babba2f49a317d0df943aacbe93c3ac0819"
+    },
+    {
+      "path": "examples/story_of_the_stone/story/plugins/agent/plan/BasicPlanPlugin.py",
+      "sha256": "0ca2e1d6d3b48b30eec99a4692cfc4b67f0d24a3cec4e0a95663d4308fdcf573"
+    },
+    {
+      "path": "examples/story_of_the_stone/story/plugins/agent/invoke/BasicInvokePlugin.py",
+      "sha256": "72f51fa828c68725d9a9af75e70474f0de83d43c931a6e165e19f4f22a10dccf"
+    },
+    {
+      "path": "examples/story_of_the_stone/story/plugins/agent/reflect/BasicReflectPlugin.py",
+      "sha256": "771823375edf1fe366538ac2f85c99b8d68db7a2b92771d23e372592cefebbcc"
+    },
+    {
+      "path": "examples/story_of_the_stone/story/run_simulation.py",
+      "sha256": "296578a518f9f3fd93e0e905c223fb0719962b7662b2704c53211e296dc1ec2a"
+    }
+  ],
+  "adaptation": "TypeScript/Node port of long-task planning, time-slot plans, alternating character dialogue, occupation arbitration, reflection, score and branch snapshots. Fixed chapter 80 replaced with selected edition/start. No upstream credentials, datasets or frontend copied."
+}

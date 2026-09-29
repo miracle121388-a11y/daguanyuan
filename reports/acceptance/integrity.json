@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-27T16:01:23.376Z",
-  "passed": 11172,
+  "timestamp": "2026-09-29T14:20:06.836Z",
+  "passed": 11173,
   "checks": [
     "three separate literary editions",
     "unique story nodes",
@@ -7763,6 +7763,7 @@
     "derivative hash public/models/characters/wangxifeng.glb",
     "derivative hash public/textures/characters/wangxifeng.png",
     "derivative hash public/models/characters/wangxifeng-low.glb",
+    "OpenStory license matches reviewed source",
     "public file allowlist",
     "no unreviewed dream reference public/dream-characters/baochai.webp",
     "no unreviewed dream reference public/dream-characters/baochai.webp.json",

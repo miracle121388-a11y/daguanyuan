@@ -1,3 +1,4 @@
+import type {StoryRequest} from './openstoryTypes';
 import {planAgent} from './planning';
 import {type ConversationContext, type LLMProvider, type Perception, type SimulationEvent} from './types';
 import {localConversation} from './participation';
@@ -30,7 +31,7 @@ export class RemoteProvider implements LLMProvider {
     const abort = () => timeout.abort();
     signal.addEventListener('abort', abort, {once: true});
     if (signal.aborted) timeout.abort();
-    const timeoutMs = ['action', 'conversation'].includes(operation) ? 75000 : 30000;
+    const timeoutMs = (['action', 'conversation'].includes(operation) || operation.startsWith('story-')) ? 75000 : 30000;
     const timer = setTimeout(() => timeout.abort(), timeoutMs);
     try {
       const response = await fetch('/api/simulation', {method: 'POST', headers: {'Content-Type': 'application/json', ...(this.accessToken ? {Authorization: `Bearer ${this.accessToken}`} : {})}, body: JSON.stringify({operation, payload}), signal: timeout.signal});
@@ -43,6 +44,7 @@ export class RemoteProvider implements LLMProvider {
       throw error;
     } finally { clearTimeout(timer); signal.removeEventListener('abort', abort); }
   }
+  story(operation: 'story-plan' | 'story-dialogue' | 'story-outcome', payload: StoryRequest, signal: AbortSignal) { return this.request(operation, payload, signal); }
   generateAgentAction(perception: Perception, signal: AbortSignal) { return this.request('action', perception, signal); }
   converse(context: ConversationContext, signal: AbortSignal) { return this.request('conversation', context, signal); }
   parseIntervention(input: string, signal: AbortSignal) { return this.request('intervention', {input}, signal); }

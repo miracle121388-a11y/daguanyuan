@@ -1,3 +1,4 @@
+import {setStoryTask} from './openstory';
 import {create} from 'zustand';
 import type {CanonData} from '../data/types';
 import {useGarden} from '../state/store';
@@ -44,6 +45,7 @@ interface SimulationState {
   invite: (input: Pick<Gathering, 'place' | 'kind' | 'participants'>) => void;
   dismissGathering: () => void;
   issueDirective: (input: Omit<PlayerDirective, 'id' | 'tick'>) => boolean;
+  assignStoryTask: (id: AgentId, task: string) => boolean;
   withdrawDirective: (id: AgentId) => void;
   resumeBranch: (id: string) => void; deleteArchive: (id: string) => void;
 }
@@ -147,6 +149,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   next: async () => {
     const {journal, phase, sceneReady} = get(), data = useGarden.getState().data;
     if (!journal || !data || phase !== 'ready') return;
+    if(get().provider==='remote'&&!get().accessToken.trim()){set({error:'请先填写故事模式的推演访问口令。',automatic:false});return;}
     if (!sceneReady) { set({error: '三维园林尚未就绪，请等待载入或重试模型。', automatic: false}); return; }
     const active = new AbortController(); controller = active;
     set({phase: 'deciding', paused: false, error: ''});
@@ -251,6 +254,11 @@ export const useSimulation = create<SimulationState>((set, get) => ({
     if (!journal || !data || get().phase !== 'ready') return false;
     try { commit(queueDirective(journal, data, input)); set({error: '', automatic: false}); return true; }
     catch (error) { set({error: (error as Error).message}); return false; }
+  },
+  assignStoryTask: (id, task) => {
+    if (!get().journal || get().phase !== 'ready') return false;
+    try { commit(setStoryTask(get().journal!, id, task)); set({automatic:false,error:''}); return true; }
+    catch(error) { set({error:(error as Error).message}); return false; }
   },
   withdrawDirective: id => {
     if (get().phase !== 'ready' || !get().journal) return;

@@ -27,7 +27,7 @@ export const storyNodeSchema = z.object({
 export type StoryNode = z.infer<typeof storyNodeSchema>;
 export const editionCatalogSchema = z.object({editions: z.array(editionSchema).length(3), sources: z.array(editionSourceSchema), nodes: z.array(storyNodeSchema)});
 export type EditionCatalog = z.infer<typeof editionCatalogSchema>;
-export interface LiteraryContext {id: EditionId; title: string; chapter: number; maxChapter: number}
+export interface LiteraryContext {id: EditionId; title: string; chapter: number; maxChapter: number; boundary?: string; coverage?: string}
 export const fallbackEditions: Edition[] = [
   {id: 'original80', title: '前八十回', shortTitle: '八十回本', chapters: 80, description: '以曹雪芹前八十回为依据。', boundary: '第八十回之后保持开放，不预设续本结局。', coverage: '沿用已核对的共同前八十回节点。'},
   {id: 'cheng120', title: '程高本 · 一百二十回', shortTitle: '程高本', chapters: 120, description: '含程伟元、高鹗整理刊行的后四十回。', boundary: '后四十回单独标为程高续本依据；不混入癸酉本。', coverage: '共同前八十回与已核对的后四十回关键节点。'},

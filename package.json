@@ -69,7 +69,8 @@
     "models:characters:bases": "node scripts/pipeline.mjs models-characters-bases",
     "models:characters:clothing": "node scripts/pipeline.mjs models-characters-clothing",
     "models:characters": "node scripts/pipeline.mjs models-characters",
-    "models:characters:check": "node scripts/check_characters.mjs"
+    "models:characters:check": "node scripts/check_characters.mjs",
+    "test:openstory:model": "node --use-env-proxy scripts/openstory_live.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

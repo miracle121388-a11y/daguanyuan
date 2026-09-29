@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {storyAgentSchema, storyRecordSchema, type StoryRequest} from './openstoryTypes';
 import type {Vec3} from '../data/types';
 import {editionIdSchema, type LiteraryContext} from '../data/editions';
 
@@ -75,12 +76,13 @@ export const agentSchema = z.object({
   spot: z.enum(['gate', 'court']).optional(), plan: planSchema.nullable().optional(),
   knowledgeLedger: z.record(z.string(), z.object({source: agentIdSchema.optional(), sharedWith: z.array(agentIdSchema).max(4), learnedTick: z.number().int().nonnegative()})).refine(value => Object.keys(value).length <= 48).optional(),
   reflection: z.object({tick: z.number().int().nonnegative(), text: z.string(), evidenceIds: z.array(z.string())}).optional(),
+  story: storyAgentSchema.optional(),
   playerBond: score.optional(), playerEffectTick: z.number().int().nonnegative().optional(),
 });
 export type Agent = z.infer<typeof agentSchema>;
 export const eventSchema = z.object({
   id: z.string(), tick: z.number().int().nonnegative(), time: z.string(),
-  agent: agentIdSchema.optional(), kind: z.enum(['action', 'dialogue', 'rule', 'relationship', 'intervention', 'player', 'reflection', 'conversation', 'choice', 'gathering']),
+  agent: agentIdSchema.optional(), kind: z.enum(['action', 'dialogue', 'rule', 'relationship', 'intervention', 'player', 'reflection', 'conversation', 'choice', 'gathering', 'story']),
   text: z.string(), contentType: z.literal('generated'),
   target: agentIdSchema.optional(), location: z.string().optional(), knowledgeId: z.string().optional(),
   evidenceIds: z.array(z.string()).max(8).optional(), reason: z.string().max(240).optional(),
@@ -96,6 +98,7 @@ export const worldSchema = z.object({
   interactionSerial: z.number().int().nonnegative().optional(),
   conversations: z.array(conversationTurnSchema).max(20).optional(),
   resolvedEncounters: z.array(z.object({id: z.string(), choice: z.string(), outcome: z.string().max(400), tick: z.number().int().nonnegative()})).max(32).optional(),
+  storyRecords: z.array(storyRecordSchema).max(40).optional(),
   gathering: gatheringSchema.nullable().optional(),
 });
 export type WorldState = z.infer<typeof worldSchema>;
@@ -141,6 +144,7 @@ export interface Perception {
 }
 export interface LLMProvider {
   readonly name: string;
+  story?(operation: 'story-plan' | 'story-dialogue' | 'story-outcome', payload: StoryRequest, signal: AbortSignal): Promise<unknown>;
   generateAgentAction(perception: Perception, signal: AbortSignal): Promise<unknown>;
   parseIntervention(input: string, signal: AbortSignal): Promise<unknown>;
   summarizeTick(events: SimulationEvent[], signal: AbortSignal): Promise<string>;
