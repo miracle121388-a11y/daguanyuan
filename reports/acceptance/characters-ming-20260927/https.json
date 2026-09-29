@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-29T13:23:58.413Z",
+  "at": "2026-09-29T14:31:11.922Z",
   "domain": "daguanyuan-rumeng.zeabur.app",
   "ip": "47.89.212.251",
   "tlsVerification": true,
@@ -17,7 +17,7 @@
     {
       "path": "index.html",
       "bytes": 2192,
-      "sha256": "2c7c3a7cc80388d0bee2ff6a0a48e46cff0d86b736be44b1f5530c3a9fc8a811"
+      "sha256": "974437af0c942a2ebdbef8c3f71d730e2eaca7d82dd2a77760297513f659aaf2"
     },
     {
       "path": "reading.html",
@@ -25,19 +25,14 @@
       "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61"
     },
     {
-      "path": "assets/index-DWhHKq7b.css",
-      "bytes": 120282,
-      "sha256": "65a6f2659a3c7c2cc6ed8e062a15604a09d93e3c367c4bc847f831f0bbc4cac7"
+      "path": "assets/index-CEqecs4a.css",
+      "bytes": 121314,
+      "sha256": "f219eafa34695751e6abe6f9397a2c5eb467caa8bdd0ff4b2da00b7637cf3431"
     },
     {
-      "path": "assets/index-CTuofAg0.js",
-      "bytes": 437731,
-      "sha256": "f940d5ad6c8a280c417ee5e3d50289ab2deb860c7dba352bdfeb5f589e34695a"
-    },
-    {
-      "path": "data/dreamReferences.json",
-      "bytes": 101650,
-      "sha256": "f1d6f7f04804ea4919821db5f6958fc57dd182f889e18eee9777b3845fe3b72d"
+      "path": "assets/index-DAb3RzOx.js",
+      "bytes": 450983,
+      "sha256": "c4e1d976cc008b88e7061ff76eff97df3a233c276a07ba1bb6f091083e60d1fb"
     },
     {
       "path": "assets/garden-mark-COPNxcSD.svg",
@@ -45,14 +40,19 @@
       "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
     },
     {
+      "path": "data/dreamReferences.json",
+      "bytes": 101650,
+      "sha256": "f1d6f7f04804ea4919821db5f6958fc57dd182f889e18eee9777b3845fe3b72d"
+    },
+    {
       "path": "scene-manifest.json",
       "bytes": 227967,
       "sha256": "de490e980ac95dc52f4540f9c23f8f08ad10aa5b88be4da289a7953574bdf8bc"
     },
     {
-      "path": "assets/GardenScene-DzNU6u8v.js",
+      "path": "assets/GardenScene-CWkxTdlI.js",
       "bytes": 1783962,
-      "sha256": "95aaedce7d22f0d71bcfb4113d54e002a2b6e040fa7158ccca50a1d5827468a1"
+      "sha256": "60b13db6892fff395fe704d76d52693ea85719a6876ae1ab44ab88ae7bbeff0a"
     },
     {
       "path": "textures/characters/manifest.json",
@@ -65,14 +65,14 @@
       "sha256": "21fd9784992683e2d829d9b6af8281939f6c74b2a1bd4690ac2c261877d814ef"
     },
     {
-      "path": "models/characters/daiyu.glb",
-      "bytes": 3418812,
-      "sha256": "6ceebacdb578836baab0cd973c2662100fbc349ea41a52930411a23aaf1c3802"
-    },
-    {
       "path": "models/characters/baoyu.glb",
       "bytes": 1633100,
       "sha256": "1f46c8a27776aae994f84c616f9e764fc69b2e353811cc4c1034d948dd382c4a"
+    },
+    {
+      "path": "models/characters/daiyu.glb",
+      "bytes": 3418812,
+      "sha256": "6ceebacdb578836baab0cd973c2662100fbc349ea41a52930411a23aaf1c3802"
     },
     {
       "path": "textures/characters/baoyu.png",
@@ -85,14 +85,14 @@
       "sha256": "126ae2bb1f9a2c0470c2344a7195c03bea14ab6ccc6ec5e265428c0903001c70"
     },
     {
-      "path": "models/characters/wangxifeng.glb",
-      "bytes": 3289444,
-      "sha256": "470a3e18c97a937b316999ea9d2b13d1190f6b05152d3c8582c04f24ed14b26c"
-    },
-    {
       "path": "models/characters/baochai.glb",
       "bytes": 3428064,
       "sha256": "95676d5c69226e91b626b08eef516d06fc29a29220f6ea063ff801b60988a2f5"
+    },
+    {
+      "path": "models/characters/wangxifeng.glb",
+      "bytes": 3289444,
+      "sha256": "470a3e18c97a937b316999ea9d2b13d1190f6b05152d3c8582c04f24ed14b26c"
     },
     {
       "path": "textures/characters/baochai.png",

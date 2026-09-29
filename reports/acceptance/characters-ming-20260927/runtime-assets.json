@@ -1,7 +1,7 @@
 {
-  "at": "2026-09-29T13:23:19.502Z",
+  "at": "2026-09-29T14:30:44.178Z",
   "method": "Decode and hash every runtime resource in the running container; check all stored compression variants",
-  "matched": 642,
+  "matched": 643,
   "files": [
     {
       "path": "architecture-scenes.json",
@@ -692,6 +692,11 @@
       "path": "dream-style/silk-study-1.webp.json",
       "sha256": "1473b159ee44c80b26caa1e44cc6928bb4e307a647a01e13509b0b125919fdc3",
       "bytes": 3021
+    },
+    {
+      "path": "licenses/openstory/LICENSE.txt",
+      "sha256": "20b933ab722f2f40cae22122fcc36babba2f49a317d0df943aacbe93c3ac0819",
+      "bytes": 11348
     },
     {
       "path": "models/characters/baochai-low.glb",
@@ -3186,7 +3191,7 @@
     {
       "path": "index.html",
       "bytes": 2192,
-      "sha256": "2c7c3a7cc80388d0bee2ff6a0a48e46cff0d86b736be44b1f5530c3a9fc8a811"
+      "sha256": "974437af0c942a2ebdbef8c3f71d730e2eaca7d82dd2a77760297513f659aaf2"
     },
     {
       "path": "reading.html",
@@ -3194,14 +3199,14 @@
       "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61"
     },
     {
-      "path": "assets/index-CTuofAg0.js",
-      "bytes": 437731,
-      "sha256": "f940d5ad6c8a280c417ee5e3d50289ab2deb860c7dba352bdfeb5f589e34695a"
+      "path": "assets/index-DAb3RzOx.js",
+      "bytes": 450983,
+      "sha256": "c4e1d976cc008b88e7061ff76eff97df3a233c276a07ba1bb6f091083e60d1fb"
     },
     {
-      "path": "assets/index-DWhHKq7b.css",
-      "bytes": 120282,
-      "sha256": "65a6f2659a3c7c2cc6ed8e062a15604a09d93e3c367c4bc847f831f0bbc4cac7"
+      "path": "assets/index-CEqecs4a.css",
+      "bytes": 121314,
+      "sha256": "f219eafa34695751e6abe6f9397a2c5eb467caa8bdd0ff4b2da00b7637cf3431"
     },
     {
       "path": "assets/garden-mark-COPNxcSD.svg",
@@ -3209,9 +3214,9 @@
       "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
     },
     {
-      "path": "assets/GardenScene-DzNU6u8v.js",
+      "path": "assets/GardenScene-CWkxTdlI.js",
       "bytes": 1783962,
-      "sha256": "95aaedce7d22f0d71bcfb4113d54e002a2b6e040fa7158ccca50a1d5827468a1"
+      "sha256": "60b13db6892fff395fe704d76d52693ea85719a6876ae1ab44ab88ae7bbeff0a"
     }
   ]
 }

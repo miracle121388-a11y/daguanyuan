@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20260929-131838-126970",
+  "directory": ".deploy/reference-20260929-142603-241130",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,7 +11,7 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "aee4fb32553c3e8df4f2432d1b8bd027a1a9ea6f5905ff273ac6cfd6ac6409c2"
+      "sha256": "fdc7a91d2908d4a1e73cdb4e6ccf68c1873aaf3bce88357fc4d65cc89af8e905"
     },
     {
       "path": "server.mjs",
@@ -19,11 +19,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "2c7c3a7cc80388d0bee2ff6a0a48e46cff0d86b736be44b1f5530c3a9fc8a811"
+      "sha256": "974437af0c942a2ebdbef8c3f71d730e2eaca7d82dd2a77760297513f659aaf2"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "4837bbeaf143eaed74c183d817d288fbd65408880bb07ef392fbdfa5dabbb7cd"
+      "sha256": "93b42e55af007cca69c7687e65502387d76340e688ce2dee574866ae62129f62"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -71,7 +71,7 @@
     },
     {
       "path": "server/simulation-api.mjs",
-      "sha256": "a775640df1187b55b18c6dbef2b489ce3d22770fe77c3f0eb5af9c1cc3b2cd5e"
+      "sha256": "e572970926bcac24340d4c2c609f3968d209bbadbe9868e2834b0129c806c1ab"
     },
     {
       "path": "server/dream-references.mjs",
@@ -104,6 +104,10 @@
     {
       "path": "server/dream-cards.mjs",
       "sha256": "45cb58e0420add2f1becd4aff2c9a8797ef99c5c3f6b4c3219a2f417dba96376"
+    },
+    {
+      "path": "server/openstory.mjs",
+      "sha256": "54a82bd52071cfed6914c8300d1da0b9998bf0766d9b137d4664e6dce3d6031d"
     },
     {
       "path": "dist/textures/forest_grove.hdr.json.br",
@@ -990,20 +994,20 @@
       "sha256": "041f99af7673e0b6307373b10cf3052eb48d6f139782ff763b21f13380ed9ebd"
     },
     {
-      "path": "dist/assets/index-DWhHKq7b.css",
-      "sha256": "65a6f2659a3c7c2cc6ed8e062a15604a09d93e3c367c4bc847f831f0bbc4cac7"
+      "path": "dist/assets/index-CEqecs4a.css",
+      "sha256": "f219eafa34695751e6abe6f9397a2c5eb467caa8bdd0ff4b2da00b7637cf3431"
     },
     {
-      "path": "dist/assets/index-DWhHKq7b.css.br",
-      "sha256": "3516c6c9e392404d366cba0bf8875660aab207a5ae771cee10b02d9bc7009c10"
+      "path": "dist/assets/index-DAb3RzOx.js.br",
+      "sha256": "1a07c480f031805ebd0686c29bcdf865498a182acd5ec63baa6e8e78067908df"
     },
     {
-      "path": "dist/assets/index-CTuofAg0.js.br",
-      "sha256": "243c143d513aa56839882d9a2b26542ea81ef790f23de6cff26fa99859804a9a"
+      "path": "dist/assets/GardenScene-CWkxTdlI.js.br",
+      "sha256": "a1759e5e48c9e92b16ed8fd3c27079fb9d7698bb7f3090df72df49beb3f3de92"
     },
     {
-      "path": "dist/assets/GardenScene-DzNU6u8v.js.br",
-      "sha256": "38633234a9295bd8f013c6ce7c8ab920cbd9c4d289af99a080ab0355af0fa83c"
+      "path": "dist/assets/index-CEqecs4a.css.br",
+      "sha256": "7380275e66b7bba3050b3384cc64bc68ad85853def0113259056ec12e87e9206"
     },
     {
       "path": "dist/assets/garden-mark-COPNxcSD.svg",
@@ -1216,6 +1220,10 @@
     {
       "path": "dist/models/characters/baochai-low.glb.br",
       "sha256": "a62425bf0df651e50753835b930df8d4ae68b1f6c84c75a2b21d51caaa971326"
+    },
+    {
+      "path": "dist/licenses/openstory/LICENSE.txt",
+      "sha256": "20b933ab722f2f40cae22122fcc36babba2f49a317d0df943aacbe93c3ac0819"
     },
     {
       "path": "dist/textures/ground/garden-ground.webp",
@@ -4454,6 +4462,11 @@
       "bytes": 3021
     },
     {
+      "path": "licenses/openstory/LICENSE.txt",
+      "sha256": "20b933ab722f2f40cae22122fcc36babba2f49a317d0df943aacbe93c3ac0819",
+      "bytes": 11348
+    },
+    {
       "path": "models/characters/baochai-low.glb",
       "sha256": "a7c22e8166fc45aa0c9d2545dc6ad9a67233dbb13cdee75b3a39339390e103e3",
       "bytes": 2041580
@@ -6950,6 +6963,6 @@
   "decodedBrotliChecked": true,
   "matchesCompletedBuild": true,
   "referencesMatched": 21,
-  "count": 940,
+  "count": 942,
   "passed": true
 }
