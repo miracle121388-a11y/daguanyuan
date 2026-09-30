@@ -1,0 +1,20 @@
+{
+  "editionId": "guiyou108",
+  "status": "missing_fulltext",
+  "checkedAt": "2026-09-30",
+  "candidates": [
+    {
+      "url": "https://github.com/vicalloy/the-guiyou-version-of-dream-of-the-red-chamber",
+      "finding": "后28回公开整理仓库；未声明转载许可，也不是全108回独立校本。"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:吴氏石头记增删试评本_钞本〖阅〗108.pdf",
+      "finding": "页面标为删减版、17页、CC BY-SA 4.0；不能作为全108回正文。"
+    },
+    {
+      "url": "https://www.sanmin.com.tw/product/index/004615400",
+      "finding": "2014年九州版后28回书目；既有回目证据，不含可分发全文。"
+    }
+  ],
+  "policy": "不拼接他本，不生成缺章；新增正文须核实具体版本、完整性、来源与收录许可。"
+}

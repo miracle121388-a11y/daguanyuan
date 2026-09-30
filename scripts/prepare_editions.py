@@ -68,5 +68,8 @@ for key, needle in [('poems-82','林黛玉悶作十獨吟'),('hope-90','林黛�
     ref = source('guiyou-catalog', '癸酉本后28回 · 2014九州版书目', needle, '三民书店公开目录，ISBN 9787510827310', catalog=True)
     sources[-1]['id'] = key+'-source'
     next(n for n in nodes if n['id']==key)['sourceRefs']=[sources[-1]['id']]
+if (R/'data/canon/corpus/manifest.json').exists():
+    editions[0]['coverage'] = '已收录数字汇校本第1—80回本地正文与段落索引；非单一脂本逐字校勘。'
+    editions[1]['coverage'] = '已收录数字汇校本第1—120回本地正文与段落索引；后40回以程甲本为底本，不等同于程甲刻本逐字转录。剧情节点仍为选编。'
 (R/'data/canon/editionCatalog.json').write_text(json.dumps(dict(editions=editions,sources=sources,nodes=nodes),ensure_ascii=False,indent=2),encoding='utf-8')
 print(f'Reviewed {len(editions)} editions, {len(nodes)} key nodes, {len(sources)} evidence excerpts.')

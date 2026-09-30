@@ -1,0 +1,39 @@
+{
+  "staticFiles": [
+    {
+      "path": "original80.txt",
+      "bytes": 1766365,
+      "sha256": "60ffcedc1eba93f2f6f290b1c369ea7a17611b42e0668ec5dc5acac8d5a44d99",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "cheng120.txt",
+      "bytes": 2597217,
+      "sha256": "8031e434a45d310737548887e1d9f40295862900907f051671b5b3162d7f1eec",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "daguanyuan-texts.zip",
+      "bytes": 4273971,
+      "sha256": "d33d9c239ed1686a98c8b20eb579c7ed74acbbc3a7c53b672089955b15cf5376",
+      "contentType": "application/zip"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 2864113,
+      "sha256": "8ce1dd7beb4c4bc18329c0bdb6e4054a6496fd48db69f6ddb6285cb22d4f7a20",
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "guiyou108-status.json",
+      "bytes": 845,
+      "sha256": "2b460f50a6faeff352a707e46cdbf339cf1f22ecee3cc333e911352460aa8797",
+      "contentType": "application/json; charset=utf-8"
+    }
+  ],
+  "zipMembers": 125,
+  "zipIntegrity": true,
+  "testsPassed": 118,
+  "paidModelCalls": 0,
+  "guiyou108": "missing_fulltext"
+}

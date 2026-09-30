@@ -49,6 +49,8 @@
     "models:architecture:lod": "node scripts/pipeline.mjs models-architecture-lod",
     "test:simulation:participation": "node scripts/simulation_participation_smoke.mjs",
     "content:editions": "python scripts/prepare_editions.py",
+    "content:corpus:fetch": "python scripts/fetch_corpus.py",
+    "content:corpus": "python scripts/prepare_corpus.py",
     "content:comic-art": "node scripts/prepare_comic_art.mjs",
     "content:dream-refs": "node scripts/prepare_dream_references.mjs",
     "test:story": "node scripts/story_smoke.mjs",

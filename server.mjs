@@ -5,12 +5,12 @@ import {gzipSync,brotliDecompressSync} from 'node:zlib';
 import {createSimulationApi} from './server/simulation-api.mjs';
 import {createDreamApi} from './server/dream-api.mjs';
 if(existsSync('.env')&&process.loadEnvFile)process.loadEnvFile('.env');
-const simulationApi=createSimulationApi();
+const simulationApi=createSimulationApi(process.env,fetch,{corpusRoot:resolve(process.env.STATIC_ROOT||'dist','data/corpus')});
 const root=resolve(process.env.STATIC_ROOT||'dist');
 const dreamApi=createDreamApi(process.env,fetch,{publicRoot:root});
 const aliasFile=resolve(root,'asset-aliases.json');
 const assetAliases=existsSync(aliasFile)?JSON.parse(readFileSync(aliasFile,'utf8')):{};
-const compressible=new Set(['.html','.js','.css','.json','.wasm','.glb']);
+const compressible=new Set(['.html','.js','.css','.json','.txt','.wasm','.glb']);
 const gzipCache=new Map();let gzipCacheBytes=0;
 function gzipPayload(file,stat,decoded){
  const key=file+':'+stat.size+':'+stat.mtimeMs;
@@ -20,7 +20,7 @@ function gzipPayload(file,stat,decoded){
  if(body.length<=8*1048576){gzipCache.set(key,body);gzipCacheBytes+=body.length}
  return body;
 }
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.glb':'model/gltf-binary','.wasm':'application/wasm','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.hdr':'application/octet-stream','.svg':'image/svg+xml'};
+const types={'.txt':'text/plain; charset=utf-8','.zip':'application/zip','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.glb':'model/gltf-binary','.wasm':'application/wasm','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.hdr':'application/octet-stream','.svg':'image/svg+xml'};
 const revision=()=>{try{return JSON.parse(readFileSync(resolve(root,'scene-manifest.json'),'utf8')).assetRevision??'2'}catch{return '2'}};
 const httpServer=createServer(async(req,res)=>{
  if(await dreamApi(req,res))return;

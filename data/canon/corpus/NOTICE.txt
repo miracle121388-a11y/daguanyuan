@@ -1,0 +1,14 @@
+大观园原文资料包
+
+original80.txt：维基文库《红楼梦》数字汇校本第1—80回的阅读范围，不是独立脂本校勘。
+cheng120.txt：同一数字汇校本第1—120回；前80回以庚辰本、后40回以程甲本为底本。不是程甲/程乙刻本逐字影印转录。
+chapters/：同一底本的分回UTF-8正文，保留繁体及原有异体字。去除网页导航、脚注标号、页脚；诗歌保留换行。未做简繁转换或自动补文。
+guiyou108：全文缺失。现有2014年ISBN 9787510827310书目仅支持回目证据，不能以120回截取108回冒充，也不能把共同前80回说成癸酉本异文。
+
+来源：https://zh.wikisource.org/wiki/紅樓夢
+底本说明：https://zh.wikisource.org/wiki/Portal:紅樓夢
+署名：曹雪芹及后四十回相关作者；维基文库各页贡献者（各章节URL的历史页可查）。
+古籍正文为公版；数字整理保守按CC BY-SA 4.0署名及相同方式共享：https://creativecommons.org/licenses/by-sa/4.0/
+贡献历史：每回URL追加?action=history。原始HTML含当次修订及许可信息并保存在仓库data/raw/corpus。
+manifest.json记录每回来源、获取时间、原始/整理文件SHA-256及稳定段落编号。source_checked仅表示来源/结构/哈希检查，不表示逐字学术校勘。
+引用格式：版本阅读范围 + 数字汇校本 + 第N回 + collated-NNN-pNNNN + 章节文件SHA-256；原文、空间解释与虚构推演分开。

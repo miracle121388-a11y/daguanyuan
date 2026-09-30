@@ -29,8 +29,8 @@ export const editionCatalogSchema = z.object({editions: z.array(editionSchema).l
 export type EditionCatalog = z.infer<typeof editionCatalogSchema>;
 export interface LiteraryContext {id: EditionId; title: string; chapter: number; maxChapter: number}
 export const fallbackEditions: Edition[] = [
-  {id: 'original80', title: '前八十回', shortTitle: '八十回本', chapters: 80, description: '以曹雪芹前八十回为依据。', boundary: '第八十回之后保持开放，不预设续本结局。', coverage: '沿用已核对的共同前八十回节点。'},
-  {id: 'cheng120', title: '程高本 · 一百二十回', shortTitle: '程高本', chapters: 120, description: '含程伟元、高鹗整理刊行的后四十回。', boundary: '后四十回单独标为程高续本依据；不混入癸酉本。', coverage: '共同前八十回与已核对的后四十回关键节点。'},
+  {id: 'original80', title: '前八十回', shortTitle: '八十回本', chapters: 80, description: '以曹雪芹前八十回为依据。', boundary: '第八十回之后保持开放，不预设续本结局。', coverage: '已收录数字汇校本第1—80回本地正文与段落索引；非单一脂本逐字校勘。'},
+  {id: 'cheng120', title: '程高本 · 一百二十回', shortTitle: '程高本', chapters: 120, description: '含程伟元、高鹗整理刊行的后四十回。', boundary: '后四十回单独标为程高续本依据；不混入癸酉本。', coverage: '已收录数字汇校本第1—120回本地正文；后40回以程甲本为底本，不等同于程甲刻本逐字转录。'},
   {id: 'guiyou108', title: '癸酉本 · 一百零八回', shortTitle: '癸酉本', chapters: 108, description: '又称《吴氏石头记》，采用独立的后续走向。', boundary: '来源与真伪有争议，不作为曹雪芹原稿定论。', coverage: '前八十回借用共同节点，未作异文校勘；后续按2014年版公开回目设定起点，未收录全文。'},
 ];
 export function editionFor(id: EditionId, catalog?: EditionCatalog) { return (catalog?.editions ?? fallbackEditions).find(e => e.id === id)!; }

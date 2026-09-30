@@ -6,7 +6,7 @@ const servers: Server[] = [];
 afterEach(async () => { for (const server of servers.splice(0)) await new Promise<void>(resolve => { server.closeAllConnections(); server.close(() => resolve()); }); });
 const settings = {LLM_BASE_URL: 'https://model.example/v1', LLM_MODEL: 'configured-model', LLM_API_KEY: 'server-secret-fixture', LLM_ACCESS_TOKEN: 'access-fixture'};
 async function serve(env: Record<string, string | undefined> = {}, request: typeof fetch = fetch) {
-  const api = createSimulationApi(env, request);
+  const api = createSimulationApi(env, request, {corpusRoot: 'data/canon/corpus'});
   const server = createServer((req, res) => { void api(req, res).then(handled => { if (!handled) { res.statusCode = 404; res.end(); } }); });
   servers.push(server);
   await new Promise<void>(resolve => server.listen(0, '127.0.0.1', resolve));
@@ -16,6 +16,18 @@ async function serve(env: Record<string, string | undefined> = {}, request: type
 const post = (url: string, body: unknown, headers = {}) => fetch(url + '/api/simulation', {method: 'POST', headers: {'Content-Type': 'application/json', Authorization: 'Bearer access-fixture', ...headers}, body: JSON.stringify(body)});
 
 describe('optional server-side model boundary', () => {
+  it('adds server-owned local literary evidence without promoting it to personal memory', async () => {
+    const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{message: {content: '{"agent":"daiyu","action":"rest","evidenceIds":[]}'}}]})));
+    const url = await serve(settings, upstream as typeof fetch);
+    const payload = {literary: {id: 'original80', title: '前八十回', chapter: 27, maxChapter: 80}, self: {id: 'daiyu', name: '林黛玉'}, memories: [], nearby: [], places: [], dialogueOptions: []};
+    expect((await post(url, {operation: 'action', payload})).status).toBe(200);
+    const sent = JSON.parse((upstream.mock.calls[0] as unknown as [string, RequestInit])[1].body as string);
+    const context = JSON.parse(sent.messages[1].content);
+    expect(context.literaryReferences.status).toBe('available');
+    expect(context.literaryReferences.excerpts.length).toBeGreaterThan(0);
+    expect(context.literaryReferences.excerpts.every((p: {chapter: number}) => p.chapter < 27)).toBe(true);
+    expect(context.memories).toEqual([]);
+  });
   it('deliberates on actions, retains grounded evidence and does not expose internal reasoning', async () => {
     const result = {agent: 'baoyu', action: 'rest', reason: '刚走过长路，先歇息。', evidenceIds: ['walk']};
     const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{finish_reason: 'stop', message: {content: JSON.stringify(result), reasoning_content: 'private reasoning fixture'}}]})));
