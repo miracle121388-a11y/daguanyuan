@@ -1,0 +1,113 @@
+{
+  "assetId": "makehuman-hm08-anatomy",
+  "author": "MakeHuman Community",
+  "license": "CC0-1.0",
+  "licenseEvidencePath": "assets/characters/makehuman/LICENSE.ASSETS.md",
+  "scope": "Bundled base mesh and morph target data only; no upstream application source code is included or executed.",
+  "repository": "https://github.com/makehumancommunity/makehuman",
+  "commit": "a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+  "files": [
+    {
+      "path": "assets/characters/makehuman/base.obj",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/3dobjs/base.obj",
+      "bytes": 1749303,
+      "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c"
+    },
+    {
+      "path": "assets/characters/makehuman/LICENSE.md",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/LICENSE.md",
+      "bytes": 3598,
+      "sha256": "edd99571ca62698f78c943fd4fffb159a413c315fa0d4819d3cec5cadaf8b4f1"
+    },
+    {
+      "path": "assets/characters/makehuman/LICENSE.ASSETS.md",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/LICENSE.ASSETS.md",
+      "bytes": 6962,
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"
+    },
+    {
+      "path": "assets/characters/makehuman/asian-female-young.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/macrodetails/asian-female-young.target",
+      "bytes": 435553,
+      "sha256": "095fe79694fa19e1fe98d93009ec116199bd524e081c640351a10eccf2cca1eb"
+    },
+    {
+      "path": "assets/characters/makehuman/asian-male-young.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/macrodetails/asian-male-young.target",
+      "bytes": 421040,
+      "sha256": "ed2e8c191cb6b87b4a2d97c80486acb2604fa549316c7aa2a738a5d5a14334dc"
+    },
+    {
+      "path": "assets/characters/makehuman/head-oval.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/head/head-oval.target",
+      "bytes": 36452,
+      "sha256": "a17cd3a600588a344babe520fbd4d4edcb096db3328051fe692dfb997a1a678d"
+    },
+    {
+      "path": "assets/characters/makehuman/head-round.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/head/head-round.target",
+      "bytes": 32961,
+      "sha256": "bd96b745b19432ac838f15438aa87e9002f597e59353861721e12e6da0f2c625"
+    },
+    {
+      "path": "assets/characters/makehuman/head-fat-decr.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/head/head-fat-decr.target",
+      "bytes": 14347,
+      "sha256": "00473b6069f9cf6c05a2f1fd0c0bae20bb4ec45e9552bb5695f1d1533f3cc119"
+    },
+    {
+      "path": "assets/characters/makehuman/head-invertedtriangular.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/head/head-invertedtriangular.target",
+      "bytes": 32815,
+      "sha256": "d236302afe23f2f2d6d753e4b73f91c1220d17dca24417931fe477a232f18116"
+    },
+    {
+      "path": "assets/characters/makehuman/head-age-decr.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/head/head-age-decr.target",
+      "bytes": 75981,
+      "sha256": "dce4ba0fcd18e7a4e5bc86d98785452ac5ca6d33b993d7c37ffdb339e50ff568"
+    },
+    {
+      "path": "assets/characters/makehuman/eye-left-closure.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/expression/units/asian/eye-left-closure.target",
+      "bytes": 3926,
+      "sha256": "96d43015f95af63d1d5d64c2d234ac29571d7b05a21e900cf5ee15a246337ebf"
+    },
+    {
+      "path": "assets/characters/makehuman/eye-right-closure.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/expression/units/asian/eye-right-closure.target",
+      "bytes": 3756,
+      "sha256": "772a8a1c62dac36fa2ed6b0808d167bda298ec1ece956af0561e7324a0c91a6b"
+    },
+    {
+      "path": "assets/characters/makehuman/mouth-open.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/expression/units/asian/mouth-open.target",
+      "bytes": 26859,
+      "sha256": "2222072e34027f7bc05e53548878832b041cb9b749062e369468d6946e68a32b"
+    },
+    {
+      "path": "assets/characters/makehuman/mouth-parling.target",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/targets/expression/units/asian/mouth-parling.target",
+      "bytes": 4095,
+      "sha256": "2da1d3143b3fcf4193629fc5c26b015b8c505cc3258dc41ecd3e20d598b65ccb"
+    },
+    {
+      "path": "assets/characters/makehuman/high-poly-eyes.obj",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/eyes/high-poly/high-poly.obj",
+      "bytes": 100882,
+      "sha256": "da2493215b708a344c33dc72f2a9a5b8fa985dcc5a70ad3b208995cf871da8e1"
+    },
+    {
+      "path": "assets/characters/makehuman/high-poly.mhclo",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/eyes/high-poly/high-poly.mhclo",
+      "bytes": 72490,
+      "sha256": "b183cfe37120ab726f9b3f2ea6cd3a64c44ce7b4bd91a77c841cf70c04f83a0d"
+    },
+    {
+      "path": "assets/characters/makehuman/brown_eye.png",
+      "url": "https://raw.githubusercontent.com/makehumancommunity/makehuman/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/eyes/materials/brown_eye.png",
+      "bytes": 610817,
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+    }
+  ]
+}

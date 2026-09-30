@@ -1,3 +1,4 @@
+import {toolAction, viewAction} from './ui_navigation.mjs';
 import {chromium} from 'playwright';
 import {mkdirSync,writeFileSync,readFileSync,renameSync} from 'node:fs';
 const url=process.env.APP_URL||'http://127.0.0.1:4174/';
@@ -21,11 +22,11 @@ try{
  const page=await setup({viewport:{width:1440,height:900},deviceScaleFactor:1});
  await shot(page,'desktop');await page.getByRole('button',{name:'俯瞰全园布局',exact:true}).click();await page.waitForTimeout(1500);await shot(page,'plan');await page.getByRole('button',{name:'回到全园',exact:true}).click();await page.waitForTimeout(1500);
  await page.getByRole('button',{name:'定位潇湘馆',exact:true}).click();await page.locator('.detail-scroll h2').filter({hasText:'潇湘馆'}).waitFor();await page.locator('[data-detail-ready="xiaoxiangguan"]').waitFor();await page.waitForLoadState('networkidle');await page.waitForTimeout(2000);await shot(page,'courtyard');await foliage(page,'desktop-courtyard');
- await page.getByRole('button',{name:'游园设置',exact:true}).click();await page.getByRole('checkbox',{name:'水面与路径动态',exact:true}).uncheck();await page.getByRole('button',{name:'游园设置',exact:true}).click();
+ await toolAction(page, '游园设置');await page.getByRole('checkbox',{name:'水面与路径动态',exact:true}).uncheck();await page.getByRole('button',{name:'关闭设置',exact:true}).click();
  await page.getByRole('button',{name:'屋内陈设',exact:true}).click();await page.waitForTimeout(2500);await shot(page,'interior');await page.getByRole('button',{name:'剖视结构',exact:true}).click();await page.waitForTimeout(1500);await shot(page,'cutaway');results.checks.push('courtyard, eye-level room and reversible cutaway');
- await page.getByRole('button',{name:'回到全园',exact:true}).click();await page.getByRole('button',{name:'月夜',exact:true}).click();await page.waitForTimeout(1800);await shot(page,'night');results.checks.push('night lighting');
- await page.getByRole('button',{name:'园景图录',exact:true}).click();await page.locator('.reference-grid button').first().waitFor();if(await page.locator('.reference-grid button').count()!==15)throw Error('Missing gallery images');await page.locator('.reference-grid button').filter({hasText:'大观楼'}).click();await page.getByRole('button',{name:'进入此处三维园景'}).click();await page.locator('.detail-scroll h2').filter({hasText:'大观楼'}).waitFor();await page.locator('[data-detail-ready="daguanlou"]').waitFor();await page.waitForLoadState('networkidle');results.checks.push('15-image catalogue links to 3D destinations');
- await page.getByRole('button',{name:'晨光',exact:true}).click();await page.waitForTimeout(1800);await shot(page,'central-ensemble');await foliage(page,'central-ensemble');
+ await page.getByRole('button',{name:'回到全园',exact:true}).click();await viewAction(page, '月夜');await page.waitForTimeout(1800);await shot(page,'night');results.checks.push('night lighting');
+ await toolAction(page, '园景图录');await page.locator('.reference-grid button').first().waitFor();if(await page.locator('.reference-grid button').count()!==15)throw Error('Missing gallery images');await page.locator('.reference-grid button').filter({hasText:'大观楼'}).click();await page.getByRole('button',{name:'进入此处三维园景'}).click();await page.locator('.detail-scroll h2').filter({hasText:'大观楼'}).waitFor();await page.locator('[data-detail-ready="daguanlou"]').waitFor();await page.waitForLoadState('networkidle');results.checks.push('15-image catalogue links to 3D destinations');
+ await viewAction(page, '晨光');await page.waitForTimeout(1800);await shot(page,'central-ensemble');await foliage(page,'central-ensemble');
  // The brief's four featured courts and literary states join the same bounded
  // capture matrix. Wait for actual detail geometry and local images, not a timer alone.
  for(const [id,name] of [['yihongyuan','怡红院'],['hengwuyuan','蘅芜苑'],['qiushuangzhai','秋爽斋']]){
@@ -33,8 +34,8 @@ try{
   await page.getByRole('tab',{name:'地点',exact:true}).click();await page.locator('.place-row').filter({hasText:name}).click();
   await page.locator(`[data-detail-ready="${id}"]`).waitFor();await page.waitForLoadState('networkidle');await page.waitForTimeout(1800);await shot(page,id);await foliage(page,id);
  }
- await page.getByRole('button',{name:'人物群像',exact:true}).click();await page.locator('.character-list button').filter({hasText:'林黛玉'}).click();await page.waitForLoadState('networkidle');await page.waitForTimeout(1800);await shot(page,'character');
- await page.getByRole('button',{name:'回目拾遗',exact:true}).click();await page.locator('.chapter-list button').filter({hasText:'第三十七回'}).click();await page.locator('.event-row').filter({hasText:'海棠结社'}).click();await page.locator('[data-detail-ready="qiushuangzhai"]').waitFor();await page.locator('.source-list summary').first().click();await page.locator('.source-body blockquote').waitFor();await page.waitForLoadState('networkidle');await page.waitForTimeout(1800);await shot(page,'event');
+ await toolAction(page, '人物群像');await page.locator('.character-list button').filter({hasText:'林黛玉'}).click();await page.waitForLoadState('networkidle');await page.waitForTimeout(1800);await shot(page,'character');
+ await toolAction(page, '回目拾遗');await page.locator('.chapter-list button').filter({hasText:'第三十七回'}).click();await page.locator('.event-row').filter({hasText:'海棠结社'}).click();await page.locator('[data-detail-ready="qiushuangzhai"]').waitFor();await page.locator('.source-list summary').first().click();await page.locator('.source-body blockquote').waitFor();await page.waitForLoadState('networkidle');await page.waitForTimeout(1800);await shot(page,'event');
  results.checks.push('four featured courts, character links and original event source');
  results.metrics=await page.evaluate(()=>window.__gardenMetrics??null);await page.close();
  const actual=await setup({viewport:{width:1266,height:712},deviceScaleFactor:1});await shot(actual,'user-1266');await actual.close();

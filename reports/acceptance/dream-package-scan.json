@@ -1,9 +1,9 @@
 {
-  "directory": ".deploy/reference-20260924-072906-384918",
+  "directory": ".deploy/reference-20260929-150959-822317",
   "files": [
     {
       "path": "hydrate-assets.mjs",
-      "sha256": "281521e3f30402a7fa77d542acae1fddd5fd401ec62620913bc519584b90ae83"
+      "sha256": "c950ab99102b7a019122b8ca2ea68a1522bf0e1d441aa38dabe20eaf4d2b21fd"
     },
     {
       "path": "Dockerfile",
@@ -11,19 +11,19 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "2661b733184d3cda74f95ef9fa40012fdf2c178dc2f2c4f1220129b3c4581ee4"
+      "sha256": "569f4e2571b055f01ab8e810877172dc388214937f79547bc6e8e7b0c75ab867"
     },
     {
       "path": "server.mjs",
-      "sha256": "07c45cb52b07f900c862cf630a5e9a393db5a4d1b0302a6a5643e72e2d2d5ad7"
+      "sha256": "b50637f4e496d51c25f27157dc5bdd970558bbbe92d6f1f2114cc1c17cefa337"
     },
     {
       "path": "dist/index.html",
-      "sha256": "233e5834ea3bce24c8fa740c25994fcd9182794eed6647df2d47e7e19c64bcd9"
+      "sha256": "6818b7c46c5a46f11aa1668d6c11000eaa44d32c3be8312ff6b0880fbafbaf79"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "9420593cad56c52ebefead4d39e6a4b682c35f448884808b244c2716bdd49975"
+      "sha256": "e19f4d25597484407516ef351609213be309bc148b9ba6af7849a309decbef7e"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -71,7 +71,7 @@
     },
     {
       "path": "server/simulation-api.mjs",
-      "sha256": "a775640df1187b55b18c6dbef2b489ce3d22770fe77c3f0eb5af9c1cc3b2cd5e"
+      "sha256": "bd9827042c5d0c3e32288bff55d22b69f523a659742eb926c5ddad006726f50e"
     },
     {
       "path": "server/dream-references.mjs",
@@ -90,6 +90,10 @@
       "sha256": "93c04ba8c60dd7b77cf471b09f101b63cdcee229b596ed1b3eed644afb07a992"
     },
     {
+      "path": "server/continuation.mjs",
+      "sha256": "6323ae0e8684a8e3a618b14a0f5776f3bc1dc1fd1cae3ab00fa6fc4894204e8d"
+    },
+    {
       "path": "server/dream-prompts.mjs",
       "sha256": "8a980e9d0bf0983ce0fabed27a813ce2b0c33e7ab1339c01147812545811a8b4"
     },
@@ -104,6 +108,10 @@
     {
       "path": "server/dream-cards.mjs",
       "sha256": "45cb58e0420add2f1becd4aff2c9a8797ef99c5c3f6b4c3219a2f417dba96376"
+    },
+    {
+      "path": "server/openstory.mjs",
+      "sha256": "54a82bd52071cfed6914c8300d1da0b9998bf0766d9b137d4664e6dce3d6031d"
     },
     {
       "path": "dist/textures/forest_grove.hdr.json.br",
@@ -174,6 +182,10 @@
       "sha256": "9e241af66557e5b058019f25f2ce05a307462cd75b0a488b4d79cc8101aebf49"
     },
     {
+      "path": "dist/comics/storm.webp",
+      "sha256": "53abdf7cf47c643928994401d8a69bef08c0a11d69f23672e2e2485488b16b63"
+    },
+    {
       "path": "dist/comics/poetry-mobile.webp.json.br",
       "sha256": "71448aa53dfe7e46fb2fca8ec1d33d88448e2a6bc872d645876e4bac517900a7"
     },
@@ -196,6 +208,10 @@
     {
       "path": "dist/comics/bamboo.webp.json",
       "sha256": "6ee0da8c617f29c153dad5fac0c051029e65b6c73eb098a0414d1d998dab327c"
+    },
+    {
+      "path": "dist/comics/petals-mobile.webp",
+      "sha256": "729f6044c1036a3a9c8ae6762103b721a9302325e1a2ff182889a49f90202e2e"
     },
     {
       "path": "dist/comics/storm-mobile.webp.json.br",
@@ -222,12 +238,28 @@
       "sha256": "9d01f18887d6c16306b54b712621dadc011b8ab25e8349eff68fd2c2379743b8"
     },
     {
+      "path": "dist/comics/petals.webp",
+      "sha256": "5a70180ce2a16b2e1c58cdb805901dafc71b600af0592a5f6eae123ada538f31"
+    },
+    {
       "path": "dist/comics/petals.webp.json",
       "sha256": "2a94c577a37bbceea28c5290b50f3b98322c9fa5081351c76404cc594c4efbdf"
     },
     {
+      "path": "dist/comics/bamboo.webp",
+      "sha256": "dcdefeb7380e2b19abd692a22fde4090b4dd14452ccb1afa84136132691c5a0f"
+    },
+    {
       "path": "dist/comics/storm.webp.json.br",
       "sha256": "c99d2a43832b906366e5e13e393f305f101d0faf764e54e9f574fd3353155d75"
+    },
+    {
+      "path": "dist/comics/poetry.webp",
+      "sha256": "e4ec8394772a16fab8be92e03af7cda83b4765c32fd4f7a9b8a8fe37325ba3ec"
+    },
+    {
+      "path": "dist/comics/manuscript.webp",
+      "sha256": "38f51cbfe421a19d128b8523a2314286553c8d232fc1379970a11f32f5c818e0"
     },
     {
       "path": "dist/comics/poetry-mobile.webp.json",
@@ -254,6 +286,10 @@
       "sha256": "c0d0295f1cd60b2c77ccd1392ddd4885dccb3a71e93aad14af66db970b0dca09"
     },
     {
+      "path": "dist/art/sunwen-096.webp",
+      "sha256": "ee91892d81348adba5dcfd3ba9317749fcbe34388d599121012848cc06fce8cb"
+    },
+    {
       "path": "dist/art/sunwen-064.webp.json",
       "sha256": "3a03d2a77be25bed419a4f079655cfd4c8474f6a92487a90fe874f0f8c9335d2"
     },
@@ -264,6 +300,10 @@
     {
       "path": "dist/art/sunwen-098.webp.json",
       "sha256": "02aec36b6c3120939cff54813a44234d1c69b69524308c8a5cec3072b65086eb"
+    },
+    {
+      "path": "dist/art/sunwen-055.webp",
+      "sha256": "b5ec1027022d046a97a60c2359f48154564f55cecb23831ed717e2c948a1845d"
     },
     {
       "path": "dist/art/sunwen-077-thumb.webp",
@@ -298,6 +338,10 @@
       "sha256": "636a07a5c418cee6723a457c9a1cbd5b38f0e5e6be089f56d6ce684096a16564"
     },
     {
+      "path": "dist/art/sunwen-146.webp",
+      "sha256": "48e09450cf3142be47c2be12544ed76555d0f76d4dfa171dca982fc422fb5c87"
+    },
+    {
       "path": "dist/art/sunwen-108.webp.json",
       "sha256": "e2ef1bd9a9f1c1205ac9fffd4f83cd3dd2a5d259835f9b1f6c2a31a6c8e92cca"
     },
@@ -322,8 +366,16 @@
       "sha256": "a2e560d114d5421e4990c79a1f135cc40d343129c03682dee668128166759c26"
     },
     {
+      "path": "dist/art/sunwen-136.webp",
+      "sha256": "913b7d0ede03a9b72c42de421033087dde6a6b2d9bbb77ddbd03be0aeaa3780c"
+    },
+    {
       "path": "dist/art/sunwen-044-thumb.webp.json.br",
       "sha256": "49abb0e10f3306692bad2c55b32803e7ac074ed349d6ed201893a0302881a729"
+    },
+    {
+      "path": "dist/art/sunwen-049.webp",
+      "sha256": "cd1746880c4ad7e935c364941d2804e1c519959e4d853607fb5c68c4bdbd929a"
     },
     {
       "path": "dist/art/sunwen-044.webp.json",
@@ -362,6 +414,10 @@
       "sha256": "11315c7ec9f9f9c0cfa3cbb7e804167e00abb565f3b04d2a8574eb247da8f573"
     },
     {
+      "path": "dist/art/sunwen-100.webp",
+      "sha256": "f06a22804490a56cce68a90876992cfa0f3fd6382341c850934fbbf1befc7ccd"
+    },
+    {
       "path": "dist/art/sunwen-049.webp.json",
       "sha256": "a47d831aaf1571ead90c39f8c0e003ef1b6d1559fd3f6a6033b33b3d5c0b6fcf"
     },
@@ -378,12 +434,20 @@
       "sha256": "7bb6c97be45de7379fca64db5d59dc54afa3dd5928ae3ac9bec1dc486541735c"
     },
     {
+      "path": "dist/art/sunwen-053.webp",
+      "sha256": "ee37d6b982f3b75f8163d050089ec3798827eb22493081bd237f058d90184648"
+    },
+    {
       "path": "dist/art/sunwen-136.webp.json.br",
       "sha256": "b0329629cd65c4031f7afd99a9c3ec3f79ad19b6c80c32b667feb122d52ffaa6"
     },
     {
       "path": "dist/art/sunwen-077-thumb.webp.json.br",
       "sha256": "ef78cd6537aa9b0aef9178a8f4fecac21a541cabf19ea32590ddc8353fc4904c"
+    },
+    {
+      "path": "dist/art/sunwen-044.webp",
+      "sha256": "eeccd2b8531cbb1d6c0ebdd288127dc9ac5e041fa8987cbcdead5a0c6cee2103"
     },
     {
       "path": "dist/art/sunwen-001.webp.json.br",
@@ -412,6 +476,10 @@
     {
       "path": "dist/art/sunwen-100.webp.json.br",
       "sha256": "46ac26c70368f0f79158ec7dfb8e635aeb20fdd0eb29c7dbdaf8f75acce099c6"
+    },
+    {
+      "path": "dist/art/sunwen-064.webp",
+      "sha256": "285bcf7e2858b69c820beab0e2749abdb1c3883c2bf6ef208a48c4453a9e714a"
     },
     {
       "path": "dist/art/sunwen-055-thumb.webp.json",
@@ -448,6 +516,10 @@
     {
       "path": "dist/art/sunwen-108-thumb.webp",
       "sha256": "c84449134392f5c169e8293dc6fb95ccd91e7779ffeaa295da4bfbbd226e8160"
+    },
+    {
+      "path": "dist/art/sunwen-092.webp",
+      "sha256": "a8169db4ad58ed7862b9737cc861e5e3b4d742e4b3bcd08812a4f643a39dcb98"
     },
     {
       "path": "dist/art/sunwen-049-thumb.webp",
@@ -522,12 +594,28 @@
       "sha256": "e063d834749287c7b38536138e139b5b330c9731d5cda3e0fea5b9a5471181c5"
     },
     {
+      "path": "dist/art/sunwen-108.webp",
+      "sha256": "54b77ce598904a5030ccbdb65889e915519d9ad7963b833ed23635f0bd8ab979"
+    },
+    {
       "path": "dist/art/manifest.json.br",
       "sha256": "97f2c34d51357d9c6f531a7a821a63696032991c61c9f8bbad0da4322af82e6a"
     },
     {
       "path": "dist/art/sunwen-100-thumb.webp.json",
       "sha256": "e5ec77b72f5538ffb8cb682eab709b69ac38ea57be0d9c489c8e217ff76548e3"
+    },
+    {
+      "path": "dist/art/sunwen-077.webp",
+      "sha256": "9e8cd1c4fc9637acaf95de7d41b3d646789ed60d6e50be83091a44da76059744"
+    },
+    {
+      "path": "dist/art/sunwen-098.webp",
+      "sha256": "6fd6765897912c293858dfbb4064c1d71de073ba384b50d35799b21e3091fc2f"
+    },
+    {
+      "path": "dist/art/sunwen-099.webp",
+      "sha256": "9449f3b1548392a13cf49487f43d2959217f8f174213a2a7901b2de7d7998e40"
     },
     {
       "path": "dist/art/sunwen-108.webp.json.br",
@@ -554,6 +642,10 @@
       "sha256": "f034e6971aec5ba33c478e53b7f7304752b3c7b13a3829ddb82d936eff147b39"
     },
     {
+      "path": "dist/art/sunwen-001.webp",
+      "sha256": "e4180a208d29a184f252d4ddbc41632c3d5e84c73c0f69ab5621d2742c38eb93"
+    },
+    {
       "path": "dist/art/sunwen-049.webp.json.br",
       "sha256": "56e267924d824d08ec84456689cef4c2e980f971ff60208cebfa45461680426b"
     },
@@ -570,20 +662,8 @@
       "sha256": "184724d76e65436ac237d1c8da288fa966bfdb471c8b34c7baff85ec5c9e5b98"
     },
     {
-      "path": "dist/models/sunwen-landscape.glb.br",
-      "sha256": "9f0eb254bbca945251c1c74feb7ae4ed18c2f7976356385affa50328cb54c316"
-    },
-    {
       "path": "dist/models/sunwen-architecture.glb.br",
       "sha256": "b616173c80818a696866e74418fdae638ff44513e302e88d3189218761239068"
-    },
-    {
-      "path": "dist/models/overview.glb.br",
-      "sha256": "5e56105850cd90c028ac3a3b4aaa62344a92909e4da46af8a5b002c9e3714f68"
-    },
-    {
-      "path": "dist/models/overview-low.glb.br",
-      "sha256": "800c6d60ff9c3a67cd4e21c07d78ad04589c6e0adca9c5bf85447a4a1c75ccf3"
     },
     {
       "path": "dist/draco/LICENSE",
@@ -618,6 +698,10 @@
       "sha256": "4eca61f30d14d3d8be2c1eb156aadae082126049ee6b5363abf74e5a62dbe6f6"
     },
     {
+      "path": "dist/dream-scenes/daoxiangcun.webp",
+      "sha256": "f763aa24229095ba8899b8756bec9aaf9948451e51f31bf666068ec3474ea80e"
+    },
+    {
       "path": "dist/dream-scenes/hengwuyuan.webp",
       "sha256": "ccdfa1f30846e33e9a3ce0dfbd8af5f51f3b0703112e089c8a3ba9896ea2cdce"
     },
@@ -636,6 +720,10 @@
     {
       "path": "dist/dream-scenes/xiaoxiangguan.webp.json",
       "sha256": "7b7bd17b16e0c3bb883fd681860a85ad3d0ac7cc2b779ad319cb30f90bd63cb1"
+    },
+    {
+      "path": "dist/dream-scenes/xiaoxiangguan.webp",
+      "sha256": "9664b2105c3a949152c49444a4c2ad70aa44dd6b119f22e4ea4a66b3a70d7cb1"
     },
     {
       "path": "dist/dream-scenes/qiushuangzhai.webp",
@@ -910,24 +998,24 @@
       "sha256": "041f99af7673e0b6307373b10cf3052eb48d6f139782ff763b21f13380ed9ebd"
     },
     {
-      "path": "dist/assets/index-DHXB28Uc.js.br",
-      "sha256": "b30fa8a345c5f1087dac43b8746ec036d21c6a8fe66cbba8414fd298815d9874"
+      "path": "dist/assets/index-CEqecs4a.css",
+      "sha256": "f219eafa34695751e6abe6f9397a2c5eb467caa8bdd0ff4b2da00b7637cf3431"
     },
     {
-      "path": "dist/assets/index-B3ZmnKrO.css",
-      "sha256": "1d092e7494f167bde31f562e2abea7a8cf4a5a5d6678d7aba0cc26d3cd53a463"
+      "path": "dist/assets/GardenScene-DlCJ68jY.js.br",
+      "sha256": "f5ffcdbae3cef6d2c8fd39152d09e93c3a816943a155ebcbbbd341a19acb5cd3"
     },
     {
-      "path": "dist/assets/index-B3ZmnKrO.css.br",
-      "sha256": "65f8cac4fa404fd3c48ab058577551cc0df35f65f7a204c8b2fcb09df60b2adf"
+      "path": "dist/assets/index-CgcplStd.js.br",
+      "sha256": "70e53689037c773dadb74bbd5e10f452082a2aea02f9eaf8b60d482d16815fac"
+    },
+    {
+      "path": "dist/assets/index-CEqecs4a.css.br",
+      "sha256": "7380275e66b7bba3050b3384cc64bc68ad85853def0113259056ec12e87e9206"
     },
     {
       "path": "dist/assets/garden-mark-COPNxcSD.svg",
       "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
-    },
-    {
-      "path": "dist/assets/GardenScene-lSnbJI5k.js.br",
-      "sha256": "9174d1a29998264eb5b43613e5b1278c2f8aa2c862dd54be486b0567261409a0"
     },
     {
       "path": "dist/models/places-low/hengwuyuan.glb.br",
@@ -960,10 +1048,6 @@
     {
       "path": "dist/models/places-low/qujingtongyou.glb.br",
       "sha256": "df8059c863ea6c5475978059e41f3254f7e75e7d4a252aaa258989c5444a54f9"
-    },
-    {
-      "path": "dist/models/places-low/daguanlou.glb.br",
-      "sha256": "4123d5230babfae2507902fefc728b27ceb8ad085d2679be87afe361902f163b"
     },
     {
       "path": "dist/models/places-low/ouxiangxie.glb.br",
@@ -1022,10 +1106,6 @@
       "sha256": "bd40817bfb2ed4de558824ca4a3959dc8e84fd8a8bc76fb20199df281b357ebe"
     },
     {
-      "path": "dist/models/places/daguanlou.glb.br",
-      "sha256": "d404938081b17e306b3986d73fe87a8eac886a1fb4d511f8c09daf08c4405e7b"
-    },
-    {
       "path": "dist/models/places/ouxiangxie.glb.br",
       "sha256": "8fa381edef82c0acfebe985b72b6c77d82c73dbb653a2d123c2cafab334071b7"
     },
@@ -1036,10 +1116,6 @@
     {
       "path": "dist/models/places/aojingxiguan.glb.br",
       "sha256": "47a42dde66f671e689bc024e221590d38d3627020830ba5e2e0eaa92c1afd89b"
-    },
-    {
-      "path": "dist/models/places/xiaoxiangguan.glb.br",
-      "sha256": "c44cb3dc1e7eed6fe76670311706e8a9f9cb44459878fef2da40f9765ea8c486"
     },
     {
       "path": "dist/models/places/daoxiangcun.glb.br",
@@ -1130,20 +1206,28 @@
       "sha256": "664a57fcc0fbdec3c5b903e891355b7e86ef2178d1b22feb87483e5c6a7ca5af"
     },
     {
-      "path": "dist/models/characters/baochai.glb.br",
-      "sha256": "38ec96067c1e6fef8376fa7db899c680b7adbe8de188c26dbcb4ee0c9d49c9e8"
-    },
-    {
       "path": "dist/models/characters/baoyu.glb.br",
-      "sha256": "9d04a180eeac3bdacfcace72b276595763937d2ad92c186ab87823389dc28cf7"
+      "sha256": "0a6bc1059fe44fe0b4dd05b0b4630513316e910d0e3ec112b4120b8ea2d0a871"
     },
     {
-      "path": "dist/models/characters/wangxifeng.glb.br",
-      "sha256": "f2c3a5059d6053c132e484f88fc29b5d19857f424fb72b7b057f0431e588020d"
+      "path": "dist/models/characters/daiyu-low.glb.br",
+      "sha256": "35a7bbd664ce84fbbe7c5e1ecaca98bdb9c526f9e5b5269ccd33edf7c9751394"
     },
     {
-      "path": "dist/models/characters/daiyu.glb.br",
-      "sha256": "68acd32666fc968a2b93b28b52cbe53a6127e8b931ec676b0ee1b57f6db11136"
+      "path": "dist/models/characters/baoyu-low.glb.br",
+      "sha256": "f8f4681a46466a314e925c04572830b9d62fd9dbe02b6058c382e92537d5975a"
+    },
+    {
+      "path": "dist/models/characters/wangxifeng-low.glb.br",
+      "sha256": "d9b90609251b53689efb630bb2d7a7b929e496f8b9b0124bc71c47488ba0c294"
+    },
+    {
+      "path": "dist/models/characters/baochai-low.glb.br",
+      "sha256": "a62425bf0df651e50753835b930df8d4ae68b1f6c84c75a2b21d51caaa971326"
+    },
+    {
+      "path": "dist/licenses/openstory/LICENSE.txt",
+      "sha256": "20b933ab722f2f40cae22122fcc36babba2f49a317d0df943aacbe93c3ac0819"
     },
     {
       "path": "dist/textures/ground/garden-ground.webp",
@@ -1192,6 +1276,10 @@
     {
       "path": "dist/textures/ground/garden-ground-zones.png.json",
       "sha256": "e526ef1052231ff8092c9256813277cec3c957baa54420c14aad63ba66febf97"
+    },
+    {
+      "path": "dist/textures/ground/pond-normal.png",
+      "sha256": "e074f358936501eb66c7576b0896d2fdcde233927bbb5dabd4fa8eca90b879ec"
     },
     {
       "path": "dist/textures/ground/pond-normal.png.json",
@@ -1396,6 +1484,10 @@
     {
       "path": "dist/textures/shared/4b6b90f49a49a8fbd61fbdcde6143124a77f84fd9053a5798c1248cf283fe4db.jpg",
       "sha256": "4b6b90f49a49a8fbd61fbdcde6143124a77f84fd9053a5798c1248cf283fe4db"
+    },
+    {
+      "path": "dist/textures/shared/0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81.jpg",
+      "sha256": "0cef11da227e66d948e5814ab7c4337b67990aa3417c12b8d0efee18c352fa81"
     },
     {
       "path": "dist/textures/shared/d1864224c43db98415e57495f01e834b0a178183f3bda5df9a07d70165750a79.jpg.json",
@@ -1616,6 +1708,10 @@
     {
       "path": "dist/textures/shared/20529dd96145a01fa459fa9567d1e85fe43b15d5a4cc3c3e74f44fd6b918768b.jpg",
       "sha256": "20529dd96145a01fa459fa9567d1e85fe43b15d5a4cc3c3e74f44fd6b918768b"
+    },
+    {
+      "path": "dist/textures/shared/7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28.jpg",
+      "sha256": "7e6b2e2d89e169310ce037d07ead6930fdd8152bd41eb6dc7a2bf87a18b0ca28"
     },
     {
       "path": "dist/textures/shared/7eaa26e8b0c61d729047fae21d9dc09ece89632002c4542a7c00b51003c8c6e3.jpg",
@@ -2162,6 +2258,10 @@
       "sha256": "c680c831eb8c02b73babd7c83242fff6144267e6d2609b114384a06e295821de"
     },
     {
+      "path": "dist/textures/shared/68abb969fb5f7ffe28d0dc78c9649bc0eb7223cb9cacdf598020f082a0f49627.jpg",
+      "sha256": "68abb969fb5f7ffe28d0dc78c9649bc0eb7223cb9cacdf598020f082a0f49627"
+    },
+    {
       "path": "dist/textures/shared/b17ad6ae115b5fbe0eed5574902da8f9a779d1a0d6ceba7b8e151f17e43c2159.jpg.json",
       "sha256": "129e1c0302c82de5aa9cb97a8f50d99aad3d890c27a625780432315dab4be29c"
     },
@@ -2608,6 +2708,10 @@
     {
       "path": "dist/textures/shared/93f6798f0318d6e4fcf7c5ce22d26b4e6709082dbc7c57e3dcdb97fad58f801f.jpg.json.br",
       "sha256": "e41525ad646fcdf0b06425cc5434c6dd86565381fc823846c77d5ad8fb383ed1"
+    },
+    {
+      "path": "dist/textures/shared/179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d.png",
+      "sha256": "179cfb37c2829c819c7059311d623692992d2744aa1353d56b29ef797f3a8c9d"
     },
     {
       "path": "dist/textures/shared/84dae91d1eeeb0aa8485be514bba31e9dd92f833dfe525ced38c9e5abd5b500a.jpg",
@@ -3326,6 +3430,10 @@
       "sha256": "7c75a04142c25fc076b623cc2a1164d20353aebb17579b39de1d68eaba147d52"
     },
     {
+      "path": "dist/textures/shared/1dee12acdb3f0fc7a0f9b6dcac05c046b8bfaa3072605ef855f61d3fe206bed2.jpg",
+      "sha256": "1dee12acdb3f0fc7a0f9b6dcac05c046b8bfaa3072605ef855f61d3fe206bed2"
+    },
+    {
       "path": "dist/textures/shared/95abffce5b076605a2493ec2bd6b6f9863fba337510e983ce53c675a4d3154a6.jpg.json.br",
       "sha256": "2b52e3da803d9d1dc1a017367c0fd785714e3d4ce11b09dedee2d48cc7a0ea93"
     },
@@ -3622,8 +3730,16 @@
       "sha256": "38be499ccd9bb1eb22d22bd2fa4138c750260db2984f21ececee4cbba751a6eb"
     },
     {
+      "path": "dist/textures/vegetation/canopy-atlas.webp",
+      "sha256": "85e10a85fd505bcbedac51c1425daa1bbeeb14d46951d9e5cdb94ae2cff2a62c"
+    },
+    {
       "path": "dist/textures/vegetation/canopy-atlas.webp.json",
       "sha256": "4652f0f1a05bd9d063de95196b3172d9938721393c470a7edfdb0b4e54bc5c7e"
+    },
+    {
+      "path": "dist/textures/vegetation/canopy-atlas-low.webp",
+      "sha256": "f79ef784e93e235295540ef4176be9baaac0f0abbac8b97f55893d52f5adf99d"
     },
     {
       "path": "dist/textures/vegetation/canopy-atlas-low.webp.json",
@@ -3635,27 +3751,27 @@
     },
     {
       "path": "dist/textures/characters/baoyu.png",
-      "sha256": "a2be184e6df808be8592557b51150e8914eea23fd062baeb738061ff3290e62f"
+      "sha256": "2ec8fab87b9ba47519b1c00bb11b9c7c05f3617fe7031c4d21d949b00c80119d"
     },
     {
       "path": "dist/textures/characters/wangxifeng.png",
-      "sha256": "a2a6b713233aef8157b76aa4c6fbd15658154aeacc7d2320689620567db1fc29"
+      "sha256": "1d0039388847a6c8a56680779ceb529862d88b38d3c07ca3534a457e54b6ff04"
     },
     {
       "path": "dist/textures/characters/manifest.json",
-      "sha256": "79528f4cea634e84e046cfc76068fcb96e6ffd5e6885078762e952b04675e69d"
+      "sha256": "e5390359ac911863b3223eaa0bc42ad87cea7c4e850d65e0f9bc6d9e5d4f7109"
     },
     {
       "path": "dist/textures/characters/daiyu.png",
-      "sha256": "7faf9061aebe0915dbfeaebcd426a7aeb96832d3b8b04bea668c14aa332968e5"
+      "sha256": "b5399486a8134e77144af4738bee6d46bc814f21bbfb73ca1c58b1ddc43f22f0"
     },
     {
       "path": "dist/textures/characters/manifest.json.br",
-      "sha256": "a116aea239251308bdcebd558ec1dc04da84c7e76f8cb0a76ce67eb111b5f2da"
+      "sha256": "c73b7ee0a0c18d9124387d49ea60d57f9b5b4547e9cff54c3483f23bec3b7047"
     },
     {
       "path": "dist/textures/characters/baochai.png",
-      "sha256": "301fa7ab115e24dad3bcf6ad1cb5b157664772a672284d6aae3d975406d32312"
+      "sha256": "272eb3067ea3804e43b927d0d47fd75e5a15a89aae80d6d3ac329e33ddb5ff74"
     }
   ],
   "publicFiles": [
@@ -4350,24 +4466,49 @@
       "bytes": 3021
     },
     {
+      "path": "licenses/openstory/LICENSE.txt",
+      "sha256": "20b933ab722f2f40cae22122fcc36babba2f49a317d0df943aacbe93c3ac0819",
+      "bytes": 11348
+    },
+    {
+      "path": "models/characters/baochai-low.glb",
+      "sha256": "a7c22e8166fc45aa0c9d2545dc6ad9a67233dbb13cdee75b3a39339390e103e3",
+      "bytes": 2041580
+    },
+    {
       "path": "models/characters/baochai.glb",
-      "sha256": "d99ea4240d1885087c2fddce42e71a6dcdc113489d01b0bafd21ab19d5a6f095",
-      "bytes": 345304
+      "sha256": "95676d5c69226e91b626b08eef516d06fc29a29220f6ea063ff801b60988a2f5",
+      "bytes": 3428064
+    },
+    {
+      "path": "models/characters/baoyu-low.glb",
+      "sha256": "126ae2bb1f9a2c0470c2344a7195c03bea14ab6ccc6ec5e265428c0903001c70",
+      "bytes": 774940
     },
     {
       "path": "models/characters/baoyu.glb",
-      "sha256": "23fd0861a6ce9bd50398e18fc33c134ac317a936a020f3b63d3191eb8a8af8e7",
-      "bytes": 331704
+      "sha256": "1f46c8a27776aae994f84c616f9e764fc69b2e353811cc4c1034d948dd382c4a",
+      "bytes": 1633100
+    },
+    {
+      "path": "models/characters/daiyu-low.glb",
+      "sha256": "9ba7898b16e2407469940bb3a93cc6cee578f25e89c8b49d850b5861925169cc",
+      "bytes": 2030976
     },
     {
       "path": "models/characters/daiyu.glb",
-      "sha256": "981e4dc733fc149a7594289cfeba344ac1eaa7ed88641f1623c1931f0af1ba28",
-      "bytes": 341224
+      "sha256": "6ceebacdb578836baab0cd973c2662100fbc349ea41a52930411a23aaf1c3802",
+      "bytes": 3418812
+    },
+    {
+      "path": "models/characters/wangxifeng-low.glb",
+      "sha256": "66967d9c877ca42bededcc1a66ab79e648d8c4360f5622a3d9089402923c0f40",
+      "bytes": 1931256
     },
     {
       "path": "models/characters/wangxifeng.glb",
-      "sha256": "f8da4e62978cacb4899668a3cd5f20bedf96dd06a6a40b110a231ea761933c5e",
-      "bytes": 365488
+      "sha256": "470a3e18c97a937b316999ea9d2b13d1190f6b05152d3c8582c04f24ed14b26c",
+      "bytes": 3289444
     },
     {
       "path": "models/overview-low.glb",
@@ -4661,28 +4802,28 @@
     },
     {
       "path": "textures/characters/baochai.png",
-      "sha256": "301fa7ab115e24dad3bcf6ad1cb5b157664772a672284d6aae3d975406d32312",
-      "bytes": 68535
+      "sha256": "272eb3067ea3804e43b927d0d47fd75e5a15a89aae80d6d3ac329e33ddb5ff74",
+      "bytes": 127756
     },
     {
       "path": "textures/characters/baoyu.png",
-      "sha256": "a2be184e6df808be8592557b51150e8914eea23fd062baeb738061ff3290e62f",
-      "bytes": 65971
+      "sha256": "2ec8fab87b9ba47519b1c00bb11b9c7c05f3617fe7031c4d21d949b00c80119d",
+      "bytes": 137255
     },
     {
       "path": "textures/characters/daiyu.png",
-      "sha256": "7faf9061aebe0915dbfeaebcd426a7aeb96832d3b8b04bea668c14aa332968e5",
-      "bytes": 64625
+      "sha256": "b5399486a8134e77144af4738bee6d46bc814f21bbfb73ca1c58b1ddc43f22f0",
+      "bytes": 126081
     },
     {
       "path": "textures/characters/manifest.json",
-      "sha256": "79528f4cea634e84e046cfc76068fcb96e6ffd5e6885078762e952b04675e69d",
-      "bytes": 2281
+      "sha256": "e5390359ac911863b3223eaa0bc42ad87cea7c4e850d65e0f9bc6d9e5d4f7109",
+      "bytes": 5687
     },
     {
       "path": "textures/characters/wangxifeng.png",
-      "sha256": "a2a6b713233aef8157b76aa4c6fbd15658154aeacc7d2320689620567db1fc29",
-      "bytes": 71062
+      "sha256": "1d0039388847a6c8a56680779ceb529862d88b38d3c07ca3534a457e54b6ff04",
+      "bytes": 130506
     },
     {
       "path": "textures/forest_grove.hdr",
@@ -6820,12 +6961,12 @@
       "bytes": 745091
     }
   ],
-  "buildAssetsVerified": 31,
+  "buildAssetsVerified": 9,
   "credentialsFound": false,
   "knownSecretValuesChecked": 3,
   "decodedBrotliChecked": true,
   "matchesCompletedBuild": true,
   "referencesMatched": 21,
-  "count": 914,
+  "count": 943,
   "passed": true
 }

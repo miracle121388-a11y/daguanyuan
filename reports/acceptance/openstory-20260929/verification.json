@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-29T14:31:55.335Z",
+  "commit": "c75027899538ec4c67207eee47d506a07dfc91f9",
+  "deployment": "6abbcae324978d70ffde18ed",
+  "status": "RUNNING",
+  "testsPassed": 130,
+  "buildPassed": true,
+  "lintPassed": true,
+  "liveModelEditions": [
+    "original80",
+    "cheng120",
+    "guiyou108"
+  ],
+  "liveModelTicksPerEdition": 2,
+  "liveDialogueTurns": 4,
+  "liveModelSceneExecutor": "stub; not full browser animation acceptance",
+  "browserChecks": [
+    "task submission",
+    "edition switching",
+    "edition task isolation"
+  ],
+  "runtimeFilesMatched": 643,
+  "httpsResourcesMatched": 23,
+  "variablesPreserved": true,
+  "albumPreserved": true
+}

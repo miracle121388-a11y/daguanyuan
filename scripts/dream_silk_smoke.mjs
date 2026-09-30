@@ -1,3 +1,4 @@
+import {toolAction} from './ui_navigation.mjs';
 // Reads two actual acceptance images. All browser POSTs are blocked: no paid calls.
 import {chromium} from 'playwright';
 import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
@@ -54,9 +55,9 @@ async function shot(name) {
   await page.evaluate(async () => {await document.fonts.ready; await Promise.all([...document.querySelectorAll('dialog[open] img, .motion-comic img')].map(img => img.decode().catch(() => {})));});
   const path = `${output}/${name}.png`; await page.screenshot({path, fullPage: true, animations: 'disabled'}); report.screenshots.push(path);
 }
-async function openAlbum() {await button('剧情画卷').click(); await page.locator('.story-dream-tools .dream-entry').click(); await silk().locator('img').waitFor();}
+async function openAlbum() {await toolAction(page, '剧情画卷'); await page.locator('.story-dream-tools .dream-entry').click(); await silk().locator('img').waitFor();}
 try {
-  await page.goto(base); await button('剧情画卷').waitFor(); await openAlbum();
+  await page.goto(base); await page.locator('.workspace-more > summary').waitFor(); await openAlbum();
   await page.waitForFunction(() => [...document.querySelectorAll('.dream-picture img')].filter(img => img.naturalWidth === 1536).length >= 2);
   check(await silk().count() === 1 && await legacy().count() >= 1, 'real new and legacy artwork coexist in one album');
   check(await silk().getByLabel('收藏编号').textContent() === live.job.cardNo, 'new artwork displays its persisted collection number');
@@ -77,7 +78,7 @@ try {
   check(createHash('sha256').update(readFileSync(await original.path())).digest('hex') === live.job.imageSha256, 'original-image download is byte-identical');
   await silk().getByRole('button', {name: '珍藏画作', exact: true}).click();
   await silk().getByRole('button', {name: '取消珍藏', exact: true}).waitFor();
-  await page.reload(); await button('剧情画卷').waitFor(); await openAlbum();
+  await page.reload(); await page.locator('.workspace-more > summary').waitFor(); await openAlbum();
   await silk().getByRole('button', {name: '取消珍藏', exact: true}).waitFor();
   check(await silk().getByLabel('收藏编号').textContent() === live.job.cardNo, 'favorite, image and catalog metadata survive IndexedDB reload');
   check(await page.locator('.dream-painting').first().getAttribute('data-style-version') === 'honglou-silk-v1', 'newest artwork remains first after a full reload');

@@ -111,3 +111,11 @@
 }
 @media (max-width:360px) {.edition-picker label {flex-wrap:wrap}.edition-picker select {flex-basis:100%}.comic-narration p {font-size:19px}.comic-heading {padding:16px}.comic-bottom {padding-left:16px;padding-right:16px}.story-preview-actions {flex-direction:column}}
 @media (prefers-reduced-motion:reduce) {.comic-art img {animation:none;transition:none;transform:none}.comic-atmosphere {display:none}}
+
+.sim-story {margin: 14px 0; padding: 16px; background: var(--panel-secondary, #243C43); border: 1px solid #60736F; border-radius: 4px;}
+.sim-story-heading {display: flex; flex-wrap: wrap; align-items: center; gap: 8px; justify-content: space-between;}
+.sim-story-heading h3 {margin: 0;}.sim-story-heading span,.sim-story small {color: #C8C2B5; font-size: 12px;}
+.sim-story p {line-height: 1.8; white-space: pre-wrap;}.sim-story label {display: grid; gap: 8px; margin: 10px 0;}
+.sim-story textarea,.sim-story input {width: 100%; box-sizing: border-box; background: #182B33; color: #F2E9D8; border: 1px solid #60736F; padding: 10px; border-radius: 3px;}.sim-story textarea {min-height: 80px;resize: vertical;}
+.sim-story button {background: #9E3D35; color: #F2E9D8; border: 0; padding: 10px 14px; cursor: pointer;}.sim-story button:disabled {opacity: .45;cursor: default;}
+.sim-story article {border-top: 1px solid #60736F; margin-top: 18px; padding-top: 14px;}.sim-story h4 {margin: 8px 0;}.sim-story-thread {border-left: 2px solid #B9975B;padding-left: 12px;}.sim-story details {margin-top: 12px;}.sim-story summary {cursor: pointer;}

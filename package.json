@@ -68,7 +68,12 @@
     "models:grounding": "node scripts/pipeline.mjs models-grounding",
     "models:grounding:lod": "node scripts/pipeline.mjs models-grounding-lod",
     "models:grounding:check": "node scripts/pipeline.mjs verify-grounding",
-    "models:characters": "node scripts/pipeline.mjs models-characters"
+    "models:characters:bases": "node scripts/pipeline.mjs models-characters-bases",
+    "models:characters:clothing": "node scripts/pipeline.mjs models-characters-clothing",
+    "models:characters": "node scripts/pipeline.mjs models-characters",
+    "models:characters:check": "node scripts/check_characters.mjs",
+    "test:openstory:model": "node --use-env-proxy scripts/openstory_live.mjs",
+    "test:continuation:model": "node --use-env-proxy scripts/continuation_live.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

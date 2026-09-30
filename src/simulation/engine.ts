@@ -1,3 +1,4 @@
+import {runOpenStoryTick} from './openstory';
 import type {CanonData} from '../data/types';
 import {agentIds, type AgentId, type Journal, type LLMProvider, type SceneCommand, type SceneExecutor, type SemanticAction, type SimulationEvent, type WorldState} from './types';
 import {addMemory, clamp, clockLabel, clone, currentBranch, currentWorld} from './world';
@@ -12,6 +13,7 @@ const abortIfNeeded = (signal: AbortSignal) => { if (signal.aborted) throw new D
 /** Atomic tick: execute validated scene actions in order, then save one snapshot.
  * A failure never commits a partial tick. The view restores the last snapshot. */
 export async function runTick(journal: Journal, data: CanonData, provider: LLMProvider, execute: SceneExecutor, signal: AbortSignal, progress: (world: WorldState, phase: 'deciding' | 'executing', actor: AgentId) => void): Promise<Journal> {
+  if (provider.story) return runOpenStoryTick(journal, data, provider, execute, signal, progress);
   const world = clone(currentWorld(journal)), actions: SemanticAction[] = [];
   const baseline = clone(world);
   world.tick += 1;

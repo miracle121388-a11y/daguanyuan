@@ -1,10 +1,232 @@
 {
-  "revision": "garden-players-20260921-v1",
-  "basis": "Original stylized figures for the existing staged routes in config/garden.layout.json. Dress and hair are artistic interpretations in the Sun Wen garden palette, not historical portrait reconstructions.",
+  "revision": "garden-players-ming-20260928-v11",
+  "basis": "Fictional individual character designs from CC0 anatomical bases, without a singled-out ethnicity preset. Ming-inspired clothing and hair; garden architecture unchanged.",
   "characters": {
-    "baoyu": {"name":"贾宝玉","robe":"#A63F45","skirt":"#E2BBAB","trim":"#D5AD65","lining":"#8BAE99","skin":"#EDC4A7","hair":"#292B31","scale":1.02,"motif":"红衣玉佩，少年公子"},
-    "daiyu": {"name":"林黛玉","robe":"#87B6AF","skirt":"#D4DFD1","trim":"#DFCAA0","lining":"#E2A9B2","skin":"#F0D0BC","hair":"#262A30","scale":0.97,"motif":"柳绿披帛，素簪书卷"},
-    "baochai": {"name":"薛宝钗","robe":"#DCCCA5","skirt":"#719B95","trim":"#C99F59","lining":"#C49EAA","skin":"#E9C4AD","hair":"#2E2B2B","scale":1.0,"motif":"米金衣缘，青裙金锁"},
-    "wangxifeng": {"name":"王熙凤","robe":"#925570","skirt":"#A85551","trim":"#D5AA56","lining":"#567D82","skin":"#E8BFA7","hair":"#2D292F","scale":1.02,"motif":"绛紫锦衣，金钗高髻"}
+    "baoyu": {
+      "name": "贾宝玉",
+      "robe": "#A63F45",
+      "skirt": "#E2BBAB",
+      "trim": "#D5AD65",
+      "lining": "#8BAE99",
+      "skin": "#DFB494",
+      "hair": "#292B31",
+      "scale": 1,
+      "motif": "红衣玉佩，少年公子",
+      "face": {
+        "male": 1,
+        "scale": 0.1,
+        "width": 1,
+        "morphs": {},
+        "lip": "#A75C58",
+        "brow": "#493C32",
+        "browThickness": 1.15
+      },
+      "anatomy": {
+        "height": 1.7,
+        "gender": 1,
+        "age": 0.43,
+        "weight": 0.5,
+        "muscle": 0.48,
+        "headScale": 1.02,
+        "targets": {
+          "head/head-oval": 0.16,
+          "head/head-round": 0.22,
+          "head/head-fat-incr": 0.1,
+          "chin/chin-prominent-incr": 0.16,
+          "chin/chin-width-incr": 0.12,
+          "chin/chin-bones-incr": 0.2,
+          "chin/chin-height-incr": 0.04,
+          "head/head-scale-vert-incr": 0.04,
+          "nose/nose-scale-depth-incr": 0.14,
+          "nose/nose-scale-horiz-incr": 0.1,
+          "mouth/mouth-scale-horiz-incr": 0.08,
+          "mouth/mouth-lowerlip-volume-incr": 0.06,
+          "eyebrows/eyebrows-trans-down": 0.1,
+          "eyes/l-eye-height2-incr": 0.08,
+          "eyes/r-eye-height2-incr": 0.08
+        },
+        "identity": {
+          "faceShape": "short-oval",
+          "description": "较短椭圆脸，少年男性下颌，舒展眉眼，略宽鼻翼"
+        },
+        "neckDrop": 0.025
+      },
+      "clothing": "ming-daopao",
+      "hairStyle": "full-hair-topknot"
+    },
+    "daiyu": {
+      "name": "林黛玉",
+      "robe": "#87B6AF",
+      "skirt": "#D4DFD1",
+      "trim": "#DFCAA0",
+      "lining": "#E2A9B2",
+      "skin": "#E9C9B4",
+      "hair": "#262A30",
+      "scale": 1,
+      "motif": "柳绿披帛，素簪书卷",
+      "face": {
+        "male": 0,
+        "scale": 0.1,
+        "width": 1,
+        "morphs": {},
+        "lip": "#AD6565",
+        "brow": "#796761",
+        "browThickness": 0.82
+      },
+      "anatomy": {
+        "height": 1.6,
+        "gender": 0,
+        "age": 0.43,
+        "weight": 0.44,
+        "muscle": 0.42,
+        "headScale": 1.02,
+        "targets": {
+          "head/head-oval": 0.32,
+          "head/head-fat-decr": 0.1,
+          "head/head-scale-vert-incr": 0.45,
+          "chin/chin-height-incr": 0.3,
+          "chin/chin-prominent-incr": 0.12,
+          "chin/chin-width-decr": 0.36,
+          "nose/nose-scale-depth-incr": 0.09,
+          "nose/nose-scale-horiz-decr": 0.18,
+          "mouth/mouth-scale-horiz-decr": 0.14,
+          "mouth/mouth-upperlip-volume-decr": 0.12,
+          "eyebrows/eyebrows-trans-up": 0.08,
+          "eyes/l-eye-height2-incr": 0.12,
+          "cheek/l-cheek-volume-decr": 0.2,
+          "eyes/r-eye-height2-incr": 0.12,
+          "cheek/r-cheek-volume-decr": 0.2
+        },
+        "identity": {
+          "faceShape": "long-tapered",
+          "description": "修长窄脸，收拢下颌，纤细鼻形，较窄唇形，清瘦面颊"
+        },
+        "neckDrop": 0.025
+      },
+      "clothing": "ming-ao-mamianqun",
+      "hairStyle": "paired-low-buns"
+    },
+    "baochai": {
+      "name": "薛宝钗",
+      "robe": "#DCCCA5",
+      "skirt": "#719B95",
+      "trim": "#C99F59",
+      "lining": "#C49EAA",
+      "skin": "#E4C1A6",
+      "hair": "#2E2B2B",
+      "scale": 1,
+      "motif": "米金衣缘，青裙金锁",
+      "face": {
+        "male": 0,
+        "scale": 0.1,
+        "width": 1,
+        "morphs": {},
+        "lip": "#AA615D",
+        "brow": "#6D5949",
+        "browThickness": 1
+      },
+      "anatomy": {
+        "height": 1.64,
+        "gender": 0,
+        "age": 0.45,
+        "weight": 0.55,
+        "muscle": 0.44,
+        "headScale": 1.02,
+        "targets": {
+          "head/head-round": 0.42,
+          "head/head-fat-incr": 0.18,
+          "head/head-scale-vert-decr": 0.12,
+          "chin/chin-height-decr": 0.12,
+          "chin/chin-width-decr": 0.06,
+          "chin/chin-prominent-incr": 0.08,
+          "nose/nose-scale-depth-incr": 0.06,
+          "nose/nose-point-width-incr": 0.12,
+          "mouth/mouth-scale-horiz-incr": 0.1,
+          "mouth/mouth-upperlip-volume-incr": 0.18,
+          "mouth/mouth-lowerlip-volume-incr": 0.16,
+          "eyebrows/eyebrows-trans-up": 0.04,
+          "eyes/l-eye-height2-incr": 0.18,
+          "cheek/l-cheek-volume-incr": 0.22,
+          "eyes/l-eye-scale-incr": 0.05,
+          "eyes/r-eye-height2-incr": 0.18,
+          "cheek/r-cheek-volume-incr": 0.22,
+          "eyes/r-eye-scale-incr": 0.05
+        },
+        "identity": {
+          "faceShape": "short-round",
+          "description": "短圆脸，丰润面颊，圆润下巴，饱满唇形，较圆的眼形"
+        },
+        "neckDrop": 0.042
+      },
+      "clothing": "ming-ao-mamianqun",
+      "hairStyle": "coiled-back-bun"
+    },
+    "wangxifeng": {
+      "name": "王熙凤",
+      "robe": "#925570",
+      "skirt": "#A85551",
+      "trim": "#D5AA56",
+      "lining": "#567D82",
+      "skin": "#DEB398",
+      "hair": "#2D292F",
+      "scale": 1,
+      "motif": "绛紫锦衣，金钗高髻",
+      "face": {
+        "male": 0,
+        "scale": 0.1,
+        "width": 1,
+        "morphs": {},
+        "lip": "#A14448",
+        "brow": "#40312B",
+        "browThickness": 1.1
+      },
+      "anatomy": {
+        "height": 1.65,
+        "gender": 0,
+        "age": 0.52,
+        "weight": 0.5,
+        "muscle": 0.48,
+        "headScale": 1.02,
+        "targets": {
+          "head/head-diamond": 0.3,
+          "head/head-oval": 0.1,
+          "head/head-scale-vert-incr": 0.18,
+          "head/head-fat-decr": 0.08,
+          "chin/chin-height-incr": 0.13,
+          "chin/chin-width-decr": 0.25,
+          "chin/chin-prominent-incr": 0.16,
+          "nose/nose-scale-depth-incr": 0.18,
+          "nose/nose-scale-horiz-decr": 0.05,
+          "mouth/mouth-cupidsbow-incr": 0.15,
+          "mouth/mouth-scale-horiz-incr": 0.04,
+          "eyebrows/eyebrows-angle-up": 0.28,
+          "eyes/l-eye-height2-incr": 0.05,
+          "cheek/l-cheek-bones-incr": 0.22,
+          "eyes/l-eye-corner2-up": 0.12,
+          "eyes/r-eye-height2-incr": 0.05,
+          "cheek/r-cheek-bones-incr": 0.22,
+          "eyes/r-eye-corner2-up": 0.12
+        },
+        "identity": {
+          "faceShape": "medium-diamond",
+          "description": "中等偏长菱形脸，较鲜明颧骨，扬眉，利落鼻形与唇峰"
+        },
+        "neckDrop": 0.034
+      },
+      "clothing": "ming-ao-mamianqun",
+      "hairStyle": "ming-diji-bun"
+    }
+  },
+  "geometryBudget": {
+    "high": {
+      "triangles": 180000,
+      "primitives": 65,
+      "bytes": 4800000
+    },
+    "low": {
+      "triangles": 75000,
+      "primitives": 65,
+      "bytes": 2500000
+    }
   }
 }

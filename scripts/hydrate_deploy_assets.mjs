@@ -1,4 +1,4 @@
-// Build-time only: restore pinned public images and reject any byte mismatch.
+// Build-time only: restore pinned public assets and reject any byte mismatch.
 import {readFile, mkdir, writeFile} from 'node:fs/promises';
 import {resolve, dirname, sep} from 'node:path';
 import {createHash} from 'node:crypto';
@@ -29,4 +29,4 @@ const restore = async asset => {
   console.log(`Verified build asset: ${asset.path}`);
 };
 for (let offset = 0; offset < manifest.files.length; offset += 4) await Promise.all(manifest.files.slice(offset, offset + 4).map(restore));
-console.log(`Restored ${manifest.files.length} pinned images; runtime remains fully local.`);
+console.log(`Restored ${manifest.files.length} pinned assets; runtime remains fully local.`);

@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-26T02:59:19.719Z",
+  "sourceCommit": "90500046622e89bd288012ded7d5fb2960e710a6",
+  "branch": "main",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "deployment": "6ab733f9e92e928954ad38c0",
+  "status": "RUNNING",
+  "package": {
+    "report": "reports/acceptance/deployment-package.json",
+    "scan": "reports/acceptance/dream-package-scan.json",
+    "publicFilesMatched": 632,
+    "buildImagesVerified": 31
+  },
+  "verification": {
+    "runtimeFilesMatched": 638,
+    "httpsFilesMatched": 15,
+    "httpsMethod": "Normal TLS; per-request direct HTTP/1.1 with public-DNS IP resolution. Does not establish every network path.",
+    "browser": {
+      "method": "Safari through native CUA on the existing system network; no browser DNS override or TLS bypass",
+      "checks": [
+        "Garden scene rendered",
+        "World simulation opened with fixed run controls",
+        "IF world opened its editor directly",
+        "Top version changed to Cheng while keeping IF entry active"
+      ],
+      "screenshot": "reports/browser/navigation-20260926/online-if.png",
+      "paidModelCalls": 0
+    },
+    "local": "reports/acceptance/navigation-20260926/validation.json"
+  },
+  "preservation": {
+    "serviceId": "6aa143296c3d9581b71560fa",
+    "environmentId": "6aa142fbda9bc245fba1e845",
+    "variablesMatched": true,
+    "variableCount": 18,
+    "albumMatched": true,
+    "albumFileCount": 6,
+    "albumBytes": 7486038,
+    "paidModelCalls": 0
+  },
+  "limitations": [
+    "Full automated browser regression was updated but not run in this session.",
+    "Phone layout verification used Chrome emulation; no physical phone or 320px manual pass is claimed.",
+    "This release does not establish access from all networks."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "sourceCommit": "9f78c4830b51110b87be055d19247f1a4df4061c",
+  "deploymentId": "6ab89dcb4236e69929d753c6",
+  "status": "RUNNING",
+  "finishedAt": "2026-09-27T04:40:23.983Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "publicFilesMatched": 636,
+  "runtimeFilesMatched": 642,
+  "httpsFilesMatched": 23,
+  "pinnedBuildImagesVerified": 89,
+  "preservation": {
+    "serviceId": "6aa143296c3d9581b71560fa",
+    "environmentId": "6aa142fbda9bc245fba1e845",
+    "variablesMatched": true,
+    "variableCount": 18,
+    "albumMatched": true,
+    "albumFileCount": 6,
+    "albumBytes": 7486038,
+    "paidModelCalls": 0
+  },
+  "browser": {
+    "engine": "Safari desktop",
+    "network": "Existing system network, no DNS override or TLS bypass",
+    "observed": [
+      "garden loaded",
+      "world simulation opened",
+      "portrait control present",
+      "detailed Daiyu model displayed"
+    ],
+    "screenshot": "reports/browser/characters-20260926/daiyu-online.png"
+  },
+  "limitations": [
+    "Stylized characters, not photoreal scans",
+    "No physical mobile or full E2E run",
+    "HTTPS hash checks use per-request direct connection; not an all-network availability claim"
+  ]
+}

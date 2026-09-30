@@ -1,0 +1,82 @@
+{
+  "assetId": "style3d-ming-clothing",
+  "license": "CC-BY-4.0",
+  "sources": [
+    {
+      "id": "woven-gold",
+      "title": "Ming Dynasty embroidered woven gold horse set",
+      "author": "Style3D CG (@Style3DMeta)",
+      "url": "https://sketchfab.com/3d-models/ming-dynasty-embroidered-woven-gold-horse-set-e1be47eff14c4c4084f5e4dca0201c6c",
+      "license": "CC-BY-4.0",
+      "licenseURL": "http://creativecommons.org/licenses/by/4.0/",
+      "sourceFile": 70899888,
+      "sourceSha256": "4c935e451955559ca2366c790a3ecba7062a67159387da6a0d68ba38ef7c8880",
+      "originalPose": "seated, no skeleton"
+    },
+    {
+      "id": "standing-xiangyun",
+      "title": "Ming Dynasty group embroidery horse skirt set",
+      "author": "Style3D CG (@Style3DMeta)",
+      "url": "https://sketchfab.com/3d-models/ming-dynasty-group-embroidery-horse-skirt-set-48182a1d5ada4ddeafdb7e97b0930960",
+      "license": "CC-BY-4.0",
+      "licenseURL": "http://creativecommons.org/licenses/by/4.0/",
+      "sourceFile": 52814892,
+      "sourceSha256": "3422db74d06be46fa52bfe9f55956c1bc9c3d1cac01ded6606d226281175028b",
+      "originalPose": "standing A-pose, no skeleton"
+    }
+  ],
+  "changes": "Authoring work in progress: clothing-only extraction, resized textures, reduced mesh density, MPFB body fitting and new deformation rig. No source body, face, hairstyle or chair used.",
+  "files": [
+    {
+      "path": "assets/characters/style3d/ATTRIBUTION.md",
+      "bytes": 695,
+      "sha256": "355975f8a87a64a762f5a1a44eb38fd1870b052a61734ef9a92440e94e51c031"
+    },
+    {
+      "path": "assets/characters/style3d/LICENSE-CC-BY-4.0.txt",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
+      "path": "assets/characters/style3d/ming-standing-clothing.glb",
+      "bytes": 6300448,
+      "sha256": "74f507a338ed9e306d674771e477dc2ff64cf36961a66650645966a5ecdd533a"
+    },
+    {
+      "path": "assets/characters/style3d/standing-texture-00.jpg",
+      "bytes": 232088,
+      "sha256": "84c69c7c182e757d4f68c37060dc4f394cd33bcb3fab918aa57b428b860408fe"
+    },
+    {
+      "path": "assets/characters/style3d/standing-texture-01.jpg",
+      "bytes": 642500,
+      "sha256": "7c9e7afb7c4de581a4744ba6cb9f5615054fb5b68bb5d029b64885a7dfff85cd"
+    },
+    {
+      "path": "assets/characters/style3d/standing-texture-02.jpg",
+      "bytes": 403580,
+      "sha256": "6a3aee40523222bbc02d0e3bc45a7313bd996e2da8f69b89b860652735dbedc1"
+    },
+    {
+      "path": "assets/characters/style3d/standing-texture-02.png",
+      "bytes": 1264354,
+      "sha256": "d46473c912758b7d934bdead271494b9877b9cc13bdc6be4888013c9420be85e"
+    },
+    {
+      "path": "assets/characters/style3d/standing-texture-03.jpg",
+      "bytes": 403580,
+      "sha256": "6a3aee40523222bbc02d0e3bc45a7313bd996e2da8f69b89b860652735dbedc1"
+    },
+    {
+      "path": "assets/characters/style3d/standing-texture-04.jpg",
+      "bytes": 178207,
+      "sha256": "71ac92064a3b036adaf1063ccfa945fd935b87c1211cb5db4019c66dcc6f4082"
+    },
+    {
+      "path": "assets/characters/style3d/standing-texture-05.jpg",
+      "bytes": 553268,
+      "sha256": "2573e9c7bb8faddb69da846a608cd13c6438a2d49f112e7a0b9e70fc33319125"
+    }
+  ],
+  "licenseEvidencePath": "assets/characters/style3d/LICENSE-CC-BY-4.0.txt"
+}

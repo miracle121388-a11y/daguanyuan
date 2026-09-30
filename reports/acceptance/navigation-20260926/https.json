@@ -1,0 +1,93 @@
+{
+  "at": "2026-09-26T02:57:48.178Z",
+  "domain": "daguanyuan-rumeng.zeabur.app",
+  "ip": "47.89.212.251",
+  "tlsVerification": true,
+  "proxyMode": "per-request direct, system proxy unchanged",
+  "httpVersion": "HTTP/1.1",
+  "health": {
+    "status": "ok",
+    "application": "daguanyuan-rumeng",
+    "revision": "spatial-garden-20260918-r22",
+    "featureRevision": "honglou-silk-20260917-v6",
+    "simulationRevision": "personal-reasoning-20260924-v2"
+  },
+  "cspPresent": true,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 2192,
+      "sha256": "6fd58c94281ab0db86b2950abf4d70e45b35cdb13da3cf9b04db107a1a61d9fe"
+    },
+    {
+      "path": "reading.html",
+      "bytes": 58249,
+      "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61"
+    },
+    {
+      "path": "assets/index-BD35Np-n.js",
+      "bytes": 432277,
+      "sha256": "c31f5ea17cc7488208d21ef9b811d8f35155ab76425210a2b54b8c5c21bd320d"
+    },
+    {
+      "path": "assets/index-DWhHKq7b.css",
+      "bytes": 120282,
+      "sha256": "65a6f2659a3c7c2cc6ed8e062a15604a09d93e3c367c4bc847f831f0bbc4cac7"
+    },
+    {
+      "path": "assets/garden-mark-COPNxcSD.svg",
+      "bytes": 458,
+      "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
+    },
+    {
+      "path": "assets/GardenScene-yUy-darD.js",
+      "bytes": 1782642,
+      "sha256": "14e49669a9cf4364deebbd91de3e3f42805c00173f219311d02d711ef2436769"
+    },
+    {
+      "path": "scene-manifest.json",
+      "bytes": 227967,
+      "sha256": "de490e980ac95dc52f4540f9c23f8f08ad10aa5b88be4da289a7953574bdf8bc"
+    },
+    {
+      "path": "data/dreamReferences.json",
+      "bytes": 101650,
+      "sha256": "f1d6f7f04804ea4919821db5f6958fc57dd182f889e18eee9777b3845fe3b72d"
+    },
+    {
+      "path": "models/urban-context.glb",
+      "bytes": 222852,
+      "sha256": "21fd9784992683e2d829d9b6af8281939f6c74b2a1bd4690ac2c261877d814ef"
+    },
+    {
+      "path": "textures/characters/manifest.json",
+      "bytes": 2281,
+      "sha256": "79528f4cea634e84e046cfc76068fcb96e6ffd5e6885078762e952b04675e69d"
+    },
+    {
+      "path": "models/characters/baoyu.glb",
+      "bytes": 331704,
+      "sha256": "23fd0861a6ce9bd50398e18fc33c134ac317a936a020f3b63d3191eb8a8af8e7"
+    },
+    {
+      "path": "models/characters/daiyu.glb",
+      "bytes": 341224,
+      "sha256": "981e4dc733fc149a7594289cfeba344ac1eaa7ed88641f1623c1931f0af1ba28"
+    },
+    {
+      "path": "models/characters/baochai.glb",
+      "bytes": 345304,
+      "sha256": "d99ea4240d1885087c2fddce42e71a6dcdc113489d01b0bafd21ab19d5a6f095"
+    },
+    {
+      "path": "models/characters/wangxifeng.glb",
+      "bytes": 365488,
+      "sha256": "f8da4e62978cacb4899668a3cd5f20bedf96dd06a6a40b110a231ea761933c5e"
+    },
+    {
+      "path": "textures/vegetation/canopy-atlas.webp",
+      "bytes": 902858,
+      "sha256": "85e10a85fd505bcbedac51c1425daa1bbeeb14d46951d9e5cdb94ae2cff2a62c"
+    }
+  ]
+}

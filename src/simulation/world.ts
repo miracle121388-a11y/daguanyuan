@@ -81,7 +81,7 @@ export function forkWorld(journal: Journal, intervention: Intervention, prompt: 
   world.branchId = 'if';
   world.worldId = `if:${result.interventionSerial}`;
   world.resolvedEncounters = (world.resolvedEncounters ?? []).map(e => ({...e, id: e.id.replace(/^(main|if:\d+):encounter:/, `${world.worldId}:encounter:`)}));
-  for (const id of agentIds) world.agents[id].plan = null;
+  for (const id of agentIds) { world.agents[id].plan = null; if(world.agents[id].story)world.agents[id].story!.steps=[]; }
   if (intervention.type === 'knowledge') {
     addMemory(world.agents[intervention.target], {tick: world.tick, type: 'knowledge', content: intervention.content, participants: [intervention.target], knowledgeId: `if:${result.interventionSerial}:${world.tick}:${intervention.target}`, origin: 'intervention'});
   } else if (intervention.type === 'mood') world.agents[intervention.target].mood[intervention.field] = intervention.value;
@@ -140,6 +140,7 @@ export function readJournal(raw: string, data: CanonData): Journal {
       if ((snapshot.worldState.conversations ?? []).some(t => t.tick > snapshot.worldState.tick) || (snapshot.worldState.resolvedEncounters ?? []).some(e => e.tick > snapshot.worldState.tick)) throw new Error('存档互动时间无效。');
       for (const id of agentIds) {
         const agent = snapshot.worldState.agents[id];
+        if(agent.story?.steps.some(step=>!data.places.some(p=>p.id===step.place)||step.target===id))throw new Error('存档剧情计划含无效地点或人物。');
         const expected = placePosition(data.manifest, agent.location, id, agent.spot ?? 'gate');
         if (agent.id !== id || agent.position.some((v, i) => Math.abs(v - expected[i]) > .001)) throw new Error('存档人物不在有效道路节点。');
         if (Object.values(agent.knownLocations).some(place => !data.places.some(p => p.id === place))) throw new Error('存档含未知地点。');

@@ -5,7 +5,7 @@ import {addMemory, clone, clockLabel, createWorld, placePosition} from './world'
 
 export function literaryContext(world: WorldState, data: CanonData): LiteraryContext {
   const id = world.editionId ?? 'original80', edition = editionFor(id, data.editionCatalog);
-  return {id, title: edition.title, chapter: world.storyChapter ?? 23, maxChapter: edition.chapters};
+  return {id, title: edition.title, chapter: world.storyChapter ?? 23, maxChapter: edition.chapters, boundary: edition.boundary, coverage: edition.coverage};
 }
 /** An authored starting condition creates its own IF branch; it never rewrites canon or the main world. */
 export function forkStory(journal: Journal, data: CanonData, nodeId: string): Journal {

@@ -1,0 +1,364 @@
+{
+  "revision": "garden-players-ming-20260928-v11",
+  "faceMeasurements": [
+    {
+      "id": "baoyu",
+      "height": 1.7,
+      "headJoint": [
+        0,
+        1.5431286096572876,
+        0.04853419214487076
+      ],
+      "neck": [
+        -5.820766091346741e-11,
+        1.4481022357940674,
+        0.011579005047678947
+      ],
+      "shoulderLeft": [
+        0.18176639080047607,
+        1.3448433876037598,
+        0.017285853624343872
+      ],
+      "shoulderRight": [
+        -0.18176639080047607,
+        1.3448433876037598,
+        0.017285853624343872
+      ],
+      "faceIdentity": {
+        "faceShape": "short-oval",
+        "description": "较短椭圆脸，少年男性下颌，舒展眉眼，略宽鼻翼"
+      },
+      "faceMetrics": {
+        "eyeToChin": 0.13727,
+        "eyeSpacing": 0.06054,
+        "cheekWidth": 0.18205
+      }
+    },
+    {
+      "id": "daiyu",
+      "height": 1.6,
+      "headJoint": [
+        -5.820766091346741e-11,
+        1.4335029125213623,
+        0.039296701550483704
+      ],
+      "neck": [
+        0,
+        1.3343374729156494,
+        -0.00017829984426498413
+      ],
+      "shoulderLeft": [
+        0.1517390012741089,
+        1.2520968914031982,
+        0.019487615674734116
+      ],
+      "shoulderRight": [
+        -0.1517390012741089,
+        1.2520968914031982,
+        0.019487615674734116
+      ],
+      "faceIdentity": {
+        "faceShape": "long-tapered",
+        "description": "修长窄脸，收拢下颌，纤细鼻形，较窄唇形，清瘦面颊"
+      },
+      "faceMetrics": {
+        "eyeToChin": 0.13222,
+        "eyeSpacing": 0.05914,
+        "cheekWidth": 0.17175
+      }
+    },
+    {
+      "id": "baochai",
+      "height": 1.64,
+      "headJoint": [
+        1.1641532182693481e-10,
+        1.496385097503662,
+        0.04108687490224838
+      ],
+      "neck": [
+        -5.820766091346741e-11,
+        1.3865681886672974,
+        -0.000504865194670856
+      ],
+      "shoulderLeft": [
+        0.15793894231319427,
+        1.301180362701416,
+        0.020562821999192238
+      ],
+      "shoulderRight": [
+        -0.15793894231319427,
+        1.301180362701416,
+        0.020562821999192238
+      ],
+      "faceIdentity": {
+        "faceShape": "short-round",
+        "description": "短圆脸，丰润面颊，圆润下巴，饱满唇形，较圆的眼形"
+      },
+      "faceMetrics": {
+        "eyeToChin": 0.11891,
+        "eyeSpacing": 0.06097,
+        "cheekWidth": 0.17932
+      }
+    },
+    {
+      "id": "wangxifeng",
+      "height": 1.65,
+      "headJoint": [
+        -1.1641532182693481e-10,
+        1.4944274425506592,
+        0.04316947981715202
+      ],
+      "neck": [
+        0,
+        1.3885586261749268,
+        0.0006898220162838697
+      ],
+      "shoulderLeft": [
+        0.15884198248386383,
+        1.3033108711242676,
+        0.022952957078814507
+      ],
+      "shoulderRight": [
+        -0.15884198248386383,
+        1.3033108711242676,
+        0.022952957078814507
+      ],
+      "faceIdentity": {
+        "faceShape": "medium-diamond",
+        "description": "中等偏长菱形脸，较鲜明颧骨，扬眉，利落鼻形与唇峰"
+      },
+      "faceMetrics": {
+        "eyeToChin": 0.12628,
+        "eyeSpacing": 0.05994,
+        "cheekWidth": 0.1689
+      }
+    }
+  ],
+  "models": [
+    {
+      "path": "public/models/characters/baoyu.glb",
+      "triangles": 97492,
+      "meshes": 19,
+      "textures": 5,
+      "expressions": [
+        {
+          "mesh": "baoyu_leftHand",
+          "maxDisplacement": 0.12251245975494385
+        },
+        {
+          "mesh": "Mesh",
+          "maxDisplacement": 0.009823821485042572
+        },
+        {
+          "mesh": "Mesh",
+          "maxDisplacement": 0.033134713768959045
+        },
+        {
+          "mesh": "baoyu_lashes",
+          "maxDisplacement": 0.016367193311452866
+        },
+        {
+          "mesh": "baoyu_rightHand",
+          "maxDisplacement": 0.12251248955726624
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/baoyu-low.glb",
+      "triangles": 43608,
+      "meshes": 19,
+      "textures": 5,
+      "expressions": [
+        {
+          "mesh": "baoyu_leftHand.001",
+          "maxDisplacement": 0.12251245975494385
+        },
+        {
+          "mesh": "baoyu_face.001",
+          "maxDisplacement": 0.010499708354473114
+        },
+        {
+          "mesh": "baoyu_face.001",
+          "maxDisplacement": 0.03355789929628372
+        },
+        {
+          "mesh": "baoyu_lashes.001",
+          "maxDisplacement": 0.016367193311452866
+        },
+        {
+          "mesh": "baoyu_rightHand.001",
+          "maxDisplacement": 0.12251248955726624
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/daiyu.glb",
+      "triangles": 154822,
+      "meshes": 55,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "daiyu_leftHand",
+          "maxDisplacement": 0.09975538402795792
+        },
+        {
+          "mesh": "Mesh.001",
+          "maxDisplacement": 0.00994078442454338
+        },
+        {
+          "mesh": "Mesh.001",
+          "maxDisplacement": 0.03352919593453407
+        },
+        {
+          "mesh": "daiyu_lashes",
+          "maxDisplacement": 0.01656205952167511
+        },
+        {
+          "mesh": "daiyu_rightHand",
+          "maxDisplacement": 0.09975538402795792
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/daiyu-low.glb",
+      "triangles": 59715,
+      "meshes": 55,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "daiyu_leftHand.001",
+          "maxDisplacement": 0.09975538402795792
+        },
+        {
+          "mesh": "daiyu_face.001",
+          "maxDisplacement": 0.0106247179210186
+        },
+        {
+          "mesh": "daiyu_face.001",
+          "maxDisplacement": 0.033957429230213165
+        },
+        {
+          "mesh": "daiyu_lashes.001",
+          "maxDisplacement": 0.01656205952167511
+        },
+        {
+          "mesh": "daiyu_rightHand.001",
+          "maxDisplacement": 0.09975538402795792
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/baochai.glb",
+      "triangles": 149602,
+      "meshes": 57,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "baochai_leftHand",
+          "maxDisplacement": 0.10472782701253891
+        },
+        {
+          "mesh": "Mesh.002",
+          "maxDisplacement": 0.010182388126850128
+        },
+        {
+          "mesh": "Mesh.002",
+          "maxDisplacement": 0.03434410318732262
+        },
+        {
+          "mesh": "baochai_lashes",
+          "maxDisplacement": 0.016964588314294815
+        },
+        {
+          "mesh": "baochai_rightHand",
+          "maxDisplacement": 0.10472782701253891
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/baochai-low.glb",
+      "triangles": 57665,
+      "meshes": 57,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "baochai_leftHand.001",
+          "maxDisplacement": 0.10472782701253891
+        },
+        {
+          "mesh": "baochai_face.001",
+          "maxDisplacement": 0.010882943868637085
+        },
+        {
+          "mesh": "baochai_face.001",
+          "maxDisplacement": 0.03478274494409561
+        },
+        {
+          "mesh": "baochai_lashes.001",
+          "maxDisplacement": 0.016964588314294815
+        },
+        {
+          "mesh": "baochai_rightHand.001",
+          "maxDisplacement": 0.10472782701253891
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/wangxifeng.glb",
+      "triangles": 149588,
+      "meshes": 55,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "wangxifeng_leftHand",
+          "maxDisplacement": 0.10425166040658951
+        },
+        {
+          "mesh": "Mesh.003",
+          "maxDisplacement": 0.009848520159721375
+        },
+        {
+          "mesh": "Mesh.003",
+          "maxDisplacement": 0.03321802616119385
+        },
+        {
+          "mesh": "wangxifeng_lashes",
+          "maxDisplacement": 0.016408346593379974
+        },
+        {
+          "mesh": "wangxifeng_rightHand",
+          "maxDisplacement": 0.10425165295600891
+        }
+      ]
+    },
+    {
+      "path": "public/models/characters/wangxifeng-low.glb",
+      "triangles": 57639,
+      "meshes": 55,
+      "textures": 10,
+      "expressions": [
+        {
+          "mesh": "wangxifeng_leftHand.001",
+          "maxDisplacement": 0.10425166040658951
+        },
+        {
+          "mesh": "wangxifeng_face.001",
+          "maxDisplacement": 0.010526109486818314
+        },
+        {
+          "mesh": "wangxifeng_face.001",
+          "maxDisplacement": 0.033642273396253586
+        },
+        {
+          "mesh": "wangxifeng_lashes.001",
+          "maxDisplacement": 0.016408346593379974
+        },
+        {
+          "mesh": "wangxifeng_rightHand.001",
+          "maxDisplacement": 0.10425165295600891
+        }
+      ]
+    }
+  ],
+  "unchangedOtherPublicFiles": 625
+}

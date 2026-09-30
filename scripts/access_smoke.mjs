@@ -21,7 +21,7 @@ try{
  }
  {
   const page=await browser.newPage();let tries=0;await page.route('**/data/places.json',route=>++tries===1?route.fulfill({status:503,body:'temporary'}):route.continue());await page.route('**/assets/GardenScene-*.js',route=>route.abort());await page.goto(url,{waitUntil:'domcontentloaded'});
-  await page.getByRole('heading',{name:'园景暂未载入',exact:true}).waitFor();assert.equal(tries,2);await page.getByRole('button',{name:'园林漫游',exact:true}).click();await page.locator('.place-row').filter({hasText:'潇湘馆'}).first().click();await page.getByTestId('detail-panel').waitFor();checks.push({name:'transient-data-and-scene-script-failure-keeps-reading',passed:true});await page.screenshot({path:`${output}/scene-failure.png`});await page.close();
+  await page.getByRole('heading',{name:'园景暂未载入',exact:true}).waitFor();assert.equal(tries,2);await page.getByRole('button',{name:'园林漫游',exact:true}).click();await page.getByRole('button',{name:'展开索引',exact:true}).click();await page.locator('.place-row').filter({hasText:'潇湘馆'}).first().click();await page.getByTestId('detail-panel').waitFor();checks.push({name:'transient-data-and-scene-script-failure-keeps-reading',passed:true});await page.screenshot({path:`${output}/scene-failure.png`});await page.close();
  }
 }finally{await browser.close();writeFileSync(`${output}/report.json`,JSON.stringify({at:new Date().toISOString(),url,checks},null,2))}
 console.log(`Access recovery checks passed: ${checks.length}`);

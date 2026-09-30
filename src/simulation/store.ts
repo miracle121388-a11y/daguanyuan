@@ -1,7 +1,8 @@
+import {setStoryTask} from './openstory';
 import {create} from 'zustand';
 import type {CanonData} from '../data/types';
 import {useGarden} from '../state/store';
-import {runTick} from './engine';
+import {defaultContinuationChapter, prepareContinuation, readStorySource, runContinuation} from './continuation';
 import {MockProvider, RemoteProvider} from './providers';
 import {interventionSchema, type AgentId, type ConversationTurn, type Gathering, type Journal, type PlayerDirective, type SceneCommand, type WorldState} from './types';
 import {cancelGathering, chooseEncounter, conversationContext, forkMoment, inviteGathering, recordConversation} from './participation';
@@ -22,11 +23,11 @@ interface SimulationState {
   libraryOpen: boolean; comicCue: ComicCue | null; comicAutomatic: boolean;
   selectEdition: (id: EditionId) => void; enterStory: (id: string, play?: boolean) => void;
   openComic: (id: string, kind?: 'story' | 'if', text?: string) => void; closeComic: () => void;
-  open: boolean; journal: Journal | null; preview: WorldState | null;
-  phase: 'ready' | 'deciding' | 'executing' | 'parsing' | 'conversing'; actor: AgentId | null;
+  open: boolean; ifComposerOpen: boolean; openWorld: (branch: 'main' | 'if') => void; journal: Journal | null; preview: WorldState | null;
+  phase: 'ready' | 'deciding' | 'reviewing' | 'executing' | 'parsing' | 'conversing'; actor: AgentId | null;
   paused: boolean; automatic: boolean; playback: Playback | null; playbackProgress: number; director: boolean; sceneReady: boolean;
   focused: AgentId | null; focusRevision: number; sceneRevision: number;
-  immersive: boolean; cameraMode: 'follow' | 'close'; playbackRate: 1 | 2 | 4;
+  immersive: boolean; cameraMode: 'follow' | 'close' | 'portrait'; playbackRate: 1 | 2 | 4;
   recordView: 'events' | 'people' | 'history' | 'flow' | 'worlds' | 'participate';
   participationView: 'chat' | 'choice' | 'gathering';
   conversationDrafts: Partial<Record<AgentId, {message: string; tone: ConversationTurn['tone']}>>;
@@ -44,6 +45,10 @@ interface SimulationState {
   invite: (input: Pick<Gathering, 'place' | 'kind' | 'participants'>) => void;
   dismissGathering: () => void;
   issueDirective: (input: Omit<PlayerDirective, 'id' | 'tick'>) => boolean;
+  readingProgress: string;
+  setContinuation: (direction:string, through:number) => void;
+  importSource: (file:File,through:number) => Promise<void>;
+  assignStoryTask: (id: AgentId, task: string) => boolean;
   withdrawDirective: (id: AgentId) => void;
   resumeBranch: (id: string) => void; deleteArchive: (id: string) => void;
 }
@@ -81,12 +86,27 @@ function execute(command: SceneCommand, signal: AbortSignal): Promise<void> {
 
 export const useSimulation = create<SimulationState>((set, get) => ({
   editionId: 'original80', editionJournals: {}, libraryOpen: false, comicCue: null, comicAutomatic: true,
-  open: false, journal: null, preview: null, phase: 'ready', actor: null,
+  open: false, ifComposerOpen: false, journal: null, preview: null, phase: 'ready', actor: null,
   paused: false, automatic: false, playback: null, playbackProgress: 0, director: true, sceneReady: false,
-  focused: null, focusRevision: 0, sceneRevision: 0, provider: 'mock', remoteLabel: '服务器模型', accessToken: '', error: '', storageNotice: '',
+  focused: null, focusRevision: 0, sceneRevision: 0, provider: 'remote', remoteLabel: '服务器模型', accessToken: '', error: '', storageNotice: '',
   immersive: false, cameraMode: 'close', playbackRate: 1, recordView: 'events', participationView: 'chat',
   conversationDrafts: {},
   inspectionTarget: null, inspectionRevision: 0,
+  readingProgress: '',
+  setContinuation: (direction,through) => {
+    const {journal,phase}=get(),data=useGarden.getState().data;if(!journal||!data||phase!=='ready')return;
+    try{commit(prepareContinuation(journal,data,direction,through));set({error:''});}catch(e){set({error:(e as Error).message});}
+  },
+  importSource: async(file,through) => {
+    const {journal,phase}=get(),data=useGarden.getState().data;if(!journal||!data||phase!=='ready')return;
+    if(!get().accessToken.trim()){set({error:'请先填写推演口令。'});return;}
+    if(currentWorld(journal).continuation?.sequence){set({error:'请先在时间快照回到续演前，再更换原文。'});return;}
+    if(file.size>5*1024*1024||! /\.(txt|md)$/i.test(file.name)){set({error:'请选择不超过5MB的TXT或Markdown纯文本。'});return;}
+    const active=new AbortController();controller=active;set({phase:'parsing',automatic:false,error:'',readingProgress:'正在读取原文…'});
+    try{const bytes=await file.arrayBuffer();let text;try{text=new TextDecoder('utf-8',{fatal:true}).decode(bytes);}catch{text=new TextDecoder('gb18030',{fatal:true}).decode(bytes);}text=text.replace(/^\uFEFF/,'');const source=await readStorySource(text,file.name,through,get().editionId,new RemoteProvider(get().accessToken,get().remoteLabel),active.signal,(done,total)=>set({readingProgress:`正在整理原文 ${done}/${total}`}));active.signal.throwIfAborted();commit(prepareContinuation(journal,data,currentWorld(journal).continuation?.direction??'',through,source));}
+    catch(e){set({error:active.signal.aborted?'原文读取已取消，原存档未更改。':(e as Error).message});}
+    finally{if(controller===active)controller=null;set({phase:'ready',readingProgress:''});}
+  },
   initialize: data => {
     if (get().journal) return;
     let editionId: EditionId = 'original80';
@@ -105,7 +125,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       try { const raw = localStorage.getItem(editionStorageKey(id)); if (raw) { const saved = readJournal(raw, data); if ((saved.editionId ?? 'original80') !== id) throw new Error('版本不符'); journal = saved; } }
       catch { unreadableSaves.add(editionStorageKey(id)); set({storageNotice: '此版本存档未能恢复，原存档仍保留；当前使用新世界。'}); }
     }
-    set({editionId: id, journal, comicCue: null, preview: null, automatic: false, conversationDrafts: {}, error: '', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
+    set({editionId: id, journal, ifComposerOpen: get().ifComposerOpen && !journal.if, comicCue: null, preview: null, automatic: false, conversationDrafts: {}, error: '', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
     useGarden.setState({selectedEventId: null, selectedChapter: null, panelOpen: false});
     persist(journal);
   },
@@ -118,7 +138,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       const next = forkStory(journal, data, id);
       if (!get().open) get().toggle();
       commit(next);
-      set({libraryOpen: false, comicCue: null, automatic: false, error: '', focused: node.focus, recordView: 'participate', participationView: 'choice', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
+      set({libraryOpen: false, ifComposerOpen: false, comicCue: null, automatic: false, error: '', focused: node.focus, recordView: 'participate', participationView: 'choice', sceneRevision: get().sceneRevision + 1, focusRevision: get().focusRevision + 1});
       useDreams.getState().offer({...captureMoment(next, data, 'story', node.focus), title: node.title});
       if (play && get().comicAutomatic && !(useDreams.getState().config?.configured && useDreams.getState().accessToken && useDreams.getState().automatic)) get().openComic(id);
     } catch (error) { set({error: (error as Error).message}); }
@@ -135,17 +155,25 @@ export const useSimulation = create<SimulationState>((set, get) => ({
     if (!open && get().phase !== 'ready') get().cancel();
     useGarden.getState().exitTour();
     useGarden.setState({panelOpen: false, indexOpen: false, sourcesOpen: false, settingsOpen: false, galleryOpen: false, selectedPlaceId: null, hotspotId: null});
-    set({open, automatic: false, immersive: false, inspectionTarget: null, focused: open ? 'baoyu' : null, focusRevision: get().focusRevision + 1});
+    set({open, ifComposerOpen: false, automatic: false, immersive: false, inspectionTarget: null, focused: open ? 'baoyu' : null, focusRevision: get().focusRevision + 1});
     if (!open) useGarden.setState({timeOfDay: previousTime});
+  },
+  openWorld: branch => {
+    if (get().phase !== 'ready' || !get().journal) return;
+    if (!get().open) get().toggle();
+    if (get().journal?.[branch]) get().switchBranch(branch);
+    set({ifComposerOpen: branch === 'if' && !get().journal?.if, immersive: false, recordView: 'events', automatic: false});
   },
   next: async () => {
     const {journal, phase, sceneReady} = get(), data = useGarden.getState().data;
     if (!journal || !data || phase !== 'ready') return;
+    if(!get().accessToken.trim()){set({error:'请先填写推演口令，再生成后续故事。',automatic:false});return;}
     if (!sceneReady) { set({error: '三维园林尚未就绪，请等待载入或重试模型。', automatic: false}); return; }
     const active = new AbortController(); controller = active;
     set({phase: 'deciding', paused: false, error: ''});
     try {
-      const result = await runTick(journal, data, providerFor(), execute, active.signal, (world, phase, actor) => set(current => ({preview: world, phase, actor, ...(current.director && current.focused !== actor ? {focused: actor, focusRevision: current.focusRevision + 1} : {})})));
+      const prepared = currentWorld(journal).continuation ? journal : prepareContinuation(journal,data,'',defaultContinuationChapter(data,get().editionId,currentWorld(journal)));
+      const result = await runContinuation(prepared, data, new RemoteProvider(get().accessToken,get().remoteLabel), execute, active.signal, (world, phase, actor) => set(current => ({preview: world, phase, actor, ...(current.director && current.focused !== actor ? {focused: actor, focusRevision: current.focusRevision + 1} : {})})));
       if (active.signal.aborted) return;
       commit(result);
       const after = currentWorld(result), before = currentWorld(journal);
@@ -177,7 +205,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       const parsed = interventionSchema.safeParse(raw);
       if (!parsed.success) throw new Error('条件格式无效。数值应在0至100之间，且只能改变知情、情绪或贾府状态。');
       commit(forkWorld(journal, parsed.data, prompt.trim()));
-      set({sceneRevision: get().sceneRevision + 1, focused: parsed.data.type === 'world' ? 'wangxifeng' : parsed.data.target, focusRevision: get().focusRevision + 1});
+      set({ifComposerOpen: false, sceneRevision: get().sceneRevision + 1, focused: parsed.data.type === 'world' ? 'wangxifeng' : parsed.data.target, focusRevision: get().focusRevision + 1});
     } catch (error) { if (!active.signal.aborted) set({error: error instanceof Error ? error.message : '条件解析失败，请调整输入。'}); }
     finally { if (controller === active) controller = null; set({phase: 'ready'}); }
   },
@@ -199,11 +227,11 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   },
   inspect: id => {
     get().focus(id);
-    set({recordView: 'people', immersive: false, automatic: false, inspectionTarget: id, inspectionRevision: get().inspectionRevision + 1});
+    set({ifComposerOpen: false, recordView: 'people', immersive: false, automatic: false, inspectionTarget: id, inspectionRevision: get().inspectionRevision + 1});
   },
   participate: id => {
     get().focus(id);
-    set({recordView: 'participate', immersive: false, automatic: false, cameraMode: 'close', participationView: 'chat', inspectionRevision: get().inspectionRevision + 1});
+    set({ifComposerOpen: false, recordView: 'participate', immersive: false, automatic: false, cameraMode: 'close', participationView: 'chat', inspectionRevision: get().inspectionRevision + 1});
   },
   converse: async (id, message, tone) => {
     const journal = get().journal, data = useGarden.getState().data;
@@ -245,6 +273,11 @@ export const useSimulation = create<SimulationState>((set, get) => ({
     if (!journal || !data || get().phase !== 'ready') return false;
     try { commit(queueDirective(journal, data, input)); set({error: '', automatic: false}); return true; }
     catch (error) { set({error: (error as Error).message}); return false; }
+  },
+  assignStoryTask: (id, task) => {
+    if (!get().journal || get().phase !== 'ready') return false;
+    try { commit(setStoryTask(get().journal!, id, task)); set({automatic:false,error:''}); return true; }
+    catch(error) { set({error:(error as Error).message}); return false; }
   },
   withdrawDirective: id => {
     if (get().phase !== 'ready' || !get().journal) return;
