@@ -27,8 +27,8 @@ gui = source('guiyou-catalog', '癸酉本后28回 · 2014九州版书目', '林�
 
 editions = [
  dict(id='original80', title='前八十回', shortTitle='八十回本', chapters=80, description='以曹雪芹前八十回为依据，未完处留白。', boundary='第八十回之后保持开放，不预设任何续本结局。', coverage='沿用项目已核对的前八十回数字文本，非单一脂本的逐字校勘。'),
- dict(id='cheng120', title='程高本 · 一百二十回', shortTitle='程高本', chapters=120, description='含程伟元、高鹗整理刊行的后四十回，常称高鹗续本。', boundary='后四十回独立标注；其作者归属存在讨论，不与前八十回混称。', coverage='前八十回共同节点，加第97、105回已核对片段；不是全120回的逐回剧情库。'),
- dict(id='guiyou108', title='癸酉本 · 一百零八回', shortTitle='癸酉本', chapters=108, description='又称《吴氏石头记》，后续走向独立。', boundary='来源与真伪有争议，不作为曹雪芹原稿的定论。', coverage='前八十回借用共同节点，未作异文校勘；后续依据2014年版公开回目设定起点，未收录全文。'),
+ dict(id='cheng120', title='程高本 · 一百二十回', shortTitle='程高本', chapters=120, description='含程伟元、高鹗整理刊行的后四十回，常称高鹗续本。', boundary='后四十回独立标注；其作者归属存在讨论，不与前八十回混称。', coverage='从第80回结束起，按数字汇校本后40回正文逐回演绎；以程甲本为底本，不是刻本逐字校勘。'),
+ dict(id='guiyou108', title='癸酉本 · 一百零八回', shortTitle='癸酉本', chapters=108, description='又称《吴氏石头记》，后续走向独立。', boundary='来源与真伪有争议，不作为曹雪芹原稿的定论。', coverage='从第80回结束起，按用户提供108回PDF的后28回正文逐回演绎；私人正文不提供公开下载，不认证其古本真伪。'),
 ]
 all_editions = [e['id'] for e in editions]
 def frames(rows, focus='60% 40%'):
@@ -71,5 +71,7 @@ for key, needle in [('poems-82','林黛玉悶作十獨吟'),('hope-90','林黛�
 if (R/'data/canon/corpus/manifest.json').exists():
     editions[0]['coverage'] = '已收录数字汇校本第1—80回本地正文与段落索引；非单一脂本逐字校勘。'
     editions[1]['coverage'] = '已收录数字汇校本第1—120回本地正文与段落索引；后40回以程甲本为底本，不等同于程甲刻本逐字转录。剧情节点仍为选编。'
-(R/'data/canon/editionCatalog.json').write_text(json.dumps(dict(editions=editions,sources=sources,nodes=nodes),ensure_ascii=False,indent=2),encoding='utf-8')
+catalog_path=R/'data/canon/editionCatalog.json'
+newline='\r\n' if catalog_path.exists() and b'\r\n' in catalog_path.read_bytes() else '\n'
+catalog_path.write_bytes(json.dumps(dict(editions=editions,sources=sources,nodes=nodes),ensure_ascii=False,indent=2).replace('\n',newline).encode('utf-8'))
 print(f'Reviewed {len(editions)} editions, {len(nodes)} key nodes, {len(sources)} evidence excerpts.')

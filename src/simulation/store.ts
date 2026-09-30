@@ -2,7 +2,7 @@ import {setStoryTask} from './openstory';
 import {create} from 'zustand';
 import type {CanonData} from '../data/types';
 import {useGarden} from '../state/store';
-import {defaultContinuationChapter, prepareContinuation, readStorySource, runContinuation} from './continuation';
+import {defaultContinuationChapter, prepareContinuation, readStorySource, runContinuation, isBookPlayback, playbackComplete} from './continuation';
 import {MockProvider, RemoteProvider} from './providers';
 import {interventionSchema, type AgentId, type ConversationTurn, type Gathering, type Journal, type PlayerDirective, type SceneCommand, type WorldState} from './types';
 import {cancelGathering, chooseEncounter, conversationContext, forkMoment, inviteGathering, recordConversation} from './participation';
@@ -13,7 +13,8 @@ import {forkStory} from './story';
 import {useDreams} from '../dreams/store';
 import {captureMoment} from '../dreams/moments';
 
-export const STORAGE_KEY = 'daguanyuan.simulation.v1';
+// The previous v1 keys remain untouched; old 74/105/91 timelines are not replayed at 80.
+export const STORAGE_KEY = 'daguanyuan.simulation.after80.v1';
 export const EDITION_KEY = 'daguanyuan.edition.v1';
 export const editionStorageKey = (id: EditionId) => id === 'original80' ? STORAGE_KEY : `${STORAGE_KEY}.${id}`;
 export interface ComicCue {nodeId: string; serial: number; kind: 'story' | 'if'; text?: string}
@@ -99,6 +100,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   },
   importSource: async(file,through) => {
     const {journal,phase}=get(),data=useGarden.getState().data;if(!journal||!data||phase!=='ready')return;
+    if(through!==80||isBookPlayback(journal)){set({error:'续本演绎使用该版本已核验正文。自选前情仅用于80回后的自由创作或IF世界。'});return;}
     if(!get().accessToken.trim()){set({error:'请先填写推演口令。'});return;}
     if(currentWorld(journal).continuation?.sequence){set({error:'请先在时间快照回到续演前，再更换原文。'});return;}
     if(file.size>5*1024*1024||! /\.(txt|md)$/i.test(file.name)){set({error:'请选择不超过5MB的TXT或Markdown纯文本。'});return;}
@@ -176,6 +178,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       const result = await runContinuation(prepared, data, new RemoteProvider(get().accessToken,get().remoteLabel), execute, active.signal, (world, phase, actor) => set(current => ({preview: world, phase, actor, ...(current.director && current.focused !== actor ? {focused: actor, focusRevision: current.focusRevision + 1} : {})})));
       if (active.signal.aborted) return;
       commit(result);
+      if(playbackComplete(result))set({automatic:false});
       const after = currentWorld(result), before = currentWorld(journal);
       if (get().director && after.gathering?.status === 'completed' && before.gathering?.status === 'pending') {
         set({focused:after.gathering.participants[0],cameraMode:'close',focusRevision:get().focusRevision+1});
@@ -308,6 +311,13 @@ export function exportJournal() {
   const link = document.createElement('a'), url = URL.createObjectURL(new Blob([JSON.stringify(journal, null, 2)], {type: 'application/json'}));
   link.href = url; link.download = `大观园-${journal.editionId ?? 'original80'}-${journal.active}-Tick${currentWorld(journal).tick}.json`;
   link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+const previousKeys=['daguanyuan.simulation.v1','daguanyuan.simulation.v1.cheng120','daguanyuan.simulation.v1.guiyou108'];
+export function hasPreviousSaves(){try{return previousKeys.some(key=>!!localStorage.getItem(key));}catch{return false;}}
+export function exportPreviousSaves(){
+ try{const saves=Object.fromEntries(previousKeys.map(key=>[key,localStorage.getItem(key)]).filter(([,value])=>value));if(!Object.keys(saves).length)return;
+ const url=URL.createObjectURL(new Blob([JSON.stringify({format:'daguanyuan-previous-timelines',saves},null,2)],{type:'application/json'})),link=document.createElement('a');link.href=url;link.download='大观园-旧版世界存档.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ }catch{useSimulation.setState({storageNotice:'旧版存档暂时无法读取，浏览器中的原始数据未更改。'});}
 }
 export function activeSnapshot() { const journal = useSimulation.getState().journal!; const branch = currentBranch(journal); return branch.snapshots[branch.cursor]; }
 export function exportEvidenceReport() {

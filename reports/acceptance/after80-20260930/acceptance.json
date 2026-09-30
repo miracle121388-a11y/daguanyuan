@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-30T12:18:22.847Z",
+  "startChapter": 80,
+  "unitTests": 158,
+  "integrityChecks": 11173,
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "build": true,
+    "tests": true
+  },
+  "realModel": {
+    "original80": {
+      "scenes": 2
+    },
+    "cheng120": {
+      "chapters": [
+        81,
+        82
+      ]
+    },
+    "guiyou108": {
+      "chapters": [
+        81,
+        82
+      ]
+    }
+  },
+  "scope": "Actual sampled model continuation and separate reviews; CLI 3D executor simulated. Local browser separately verified Guiyou scenes and persistence. All chapter sequence tests mocked, not complete literary quality evaluation. Early failed calls retained privately; no full-book model reading claimed."
+}

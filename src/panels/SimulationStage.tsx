@@ -10,6 +10,7 @@ import {agentIds} from '../simulation/types';
 import {agentColors, clockLabel, currentWorld} from '../simulation/world';
 import {spotName} from '../simulation/space';
 import {SimulationRunControls, SimulationSpeed} from './SimulationControls';
+import {isBookPlayback} from '../simulation/continuation';
 
 export default function SimulationStage() {
   const s = useSimulation(), data = useGarden(g => g.data);
@@ -34,8 +35,10 @@ export default function SimulationStage() {
   const performing = s.actor && world.agents[s.actor];
   const live = s.playback?.command;
   const utterance = s.playback?.command.action.action === 'talk' ? {agent: s.playback.command.action.agent, text: s.playback.command.action.content} : null;
+  const book = !!s.journal && isBookPlayback(s.journal);
+  const storyMoment = book ? `原文演绎 · 第${world.continuation?.playbackChapter ?? 80}回` : world.continuation?.sequence ? `故事镜头 · 第${world.continuation.sequence}段` : '第80回结束 · 故事待续演';
   return <div className={'sim-stage ' + (s.immersive ? 'immersive' : '')} aria-label="场景推演互动">
-    <div className="sim-stage-top"><div className="sim-stage-time">{world.continuation ? <BookOpen size={15}/> : night ? <Moon size={15}/> : <Sun size={15}/>}<span>{world.continuation ? (world.continuation.sequence ? `故事镜头 · 第${world.continuation.sequence}段` : '故事待续演') : clockLabel(world.minutes)}</span><small>{s.journal?.active === 'if' ? 'IF 世界' : '主世界'}</small></div><button className="sim-stage-book" title={s.immersive&&dreamNotice?'有画卷动态，打开手记查看':undefined} onClick={() => useSimulation.setState({immersive: !s.immersive})}>{s.immersive ? <BookOpen size={16}/> : <Expand size={16}/>}<span>{s.immersive ? '打开推演手记' : '入园沉浸'}</span>{s.immersive&&dreamNotice&&<i className="sim-keepsake-dot" aria-hidden="true"/>}</button></div>
+    <div className="sim-stage-top"><div className="sim-stage-time">{world.continuation ? <BookOpen size={15}/> : night ? <Moon size={15}/> : <Sun size={15}/>}<span>{world.continuation ? storyMoment : clockLabel(world.minutes)}</span><small>{s.journal?.active === 'if' ? 'IF 世界' : '主世界'}</small></div><button className="sim-stage-book" title={s.immersive&&dreamNotice?'有画卷动态，打开手记查看':undefined} onClick={() => useSimulation.setState({immersive: !s.immersive})}>{s.immersive ? <BookOpen size={16}/> : <Expand size={16}/>}<span>{s.immersive ? '打开推演手记' : '入园沉浸'}</span>{s.immersive&&dreamNotice&&<i className="sim-keepsake-dot" aria-hidden="true"/>}</button></div>
     <div className="sim-stage-roster" role="group" aria-label="选择场景人物">{agentIds.map(id => <button key={id} disabled={!world.agents[id].alive} title={world.agents[id].alive ? undefined : "此幕已退场"} aria-pressed={s.focused === id} onClick={() => s.focus(id)}><img src={`${import.meta.env.BASE_URL}textures/characters/${id}.png?v=${characterRevision}`} alt="" width="28" height="32" style={{borderColor:agentColors[id]}}/>{world.agents[id].name}</button>)}</div>
     {performing && s.phase !== 'ready' && <section className="sim-live-scene" aria-live="polite" aria-label="当前人物行动"><span>{s.paused ? '暂歇片刻' : s.phase === 'reviewing' ? '正在核对前情' : s.phase === 'deciding' ? '正在续演故事' : '剧情节选'}</span><strong>{performing.name} · {s.phase === 'conversing' ? '正听你说' : s.phase === 'deciding' ? '有所思量' : actionNames[live?.action.action ?? 'wait']}</strong><p>{live?.destination ? `沿园径前往${data.places.find(p => p.id === live.destination)?.name ?? ''}` : live?.action.reason || performing.plan?.goal || '故事将在此刻继续。'}</p>{utterance && <blockquote className="sim-speech">{utterance.text}</blockquote>}{live && <div className="sim-action-progress" role="progressbar" aria-label="本次行动进度" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(s.playbackProgress*100)}><i style={{width:`${s.playbackProgress*100}%`}}/></div>}</section>}
     <div className="sim-stage-bottom">

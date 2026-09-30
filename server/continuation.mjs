@@ -11,6 +11,9 @@ characterStates须列出四位三维人物在本段末的生死状态（仅按so
 };
 continuationInstructions['story-continue'] += '\n服务器提供的literaryReferences为独立原文证据。status=available时，首段须核对endpoint中的资料终点，历史excerpts不能越过source.through，且不能覆盖续演中已发生的history、memory或IF改变。它只是检索片段，不代表模型已读全书；不得把参考片段当角色亲历记忆。其他status不得声称查阅了完整原文。';
 continuationInstructions['story-review'] = '你是连续小说的严格前情编辑。任务是核对并修复draft，不是另起故事。首先以source.tail所给资料终点为准，继而核对history最后一段结尾和memory。不能返回已越过的旧情节：例如程高本第105回查抄之后，不得再演第97回之前的议亲冲喜；已知去世的人物不得当下登场。stageActors中alive为false的人物必须保持死亡，只能回忆，不能通过改状态来迁就草稿。检查过去事件是否有source/history依据，新事件是否在本段真正展开；消除同场重复、时间倒退和凭空知情。发现矛盾要重写矛盾段落及其memory、threads、characterStates和consequences，一并修复，不能只改评论。输出仅为同结构JSON，不加审核报告。' + continuationInstructions['story-continue'];
+export const playbackInstructions = `本次是续本原文演绎，以下要求优先于通用自由创作规则：三个版本共同起点为第80回结束，只改编adaptationSource这一回，不另造冲突或改写结局。它的text是长篇原文资料，绝对不能直接复制进narrative。任务是将整回压缩为有画面、有动作和少量对白的现代中文演绎，让读者在一次阅读中看到本回主要事件及其结果。不是返回整回原文，也不是逐段翻译。narrative目标900至1500字，硬性上限1800字；即使原文超过一万字，也必须先选取主线、合并次要场景、压缩对白。保留顺序和因果，次要细节一句带过；不能通过省略主要结果来留下伪造悬念。提交前检查长度，超长就重新精简，不要整段照抄原文。title最多100字，memory最多10000字，causality最多500字，threads最多8条每条200字。
+source和literaryReferences仅为前情，history是本世界已演绎回目。不得引用别的版本或后面回目；不得改变人物生死、婚配、时间顺序及本回结局。批语、回前批、按语、预言、编者猜测与作者归属不是已发生的叙事事实。幻境或神魂显现不等于肉身复活。人物只能知道自己在本回亲历或明确听闻的事；consequences中没有新知情事实的人直接省略，不能把未出场、全知叙述或背景关系写成此人新记忆。characterStates完整列出四位角色，本回没有死亡则沿用stageActors状态。本回没有三维角色在园内的实际行动时staging为空，不能为动画伪造地点、行动；最多两条，动作和地点沿用既定格式。
+如果有draft，当前是独立编辑：对照本回原文修正草稿及memory、状态、后果，保持精简演绎，不得恢复为整回原文，narrative仍不得超过1800字。只返回既定JSON结构；sourceChapter由服务器填写，不自行生成。`;
 const obj=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
 const str=(x,n,min=0)=>typeof x==='string'&&x.trim().length>=min&&x.length<=n;
 const arr=(x,n,f)=>Array.isArray(x)&&x.length<=n&&x.every(f);
@@ -19,11 +22,18 @@ const limits={original80:80,cheng120:120,guiyou108:108};
 export function validContinuationInput(op,p){
  if(!obj(p)||!obj(p.edition)||!Object.hasOwn(limits,p.edition.id))return false;
  if(op==='story-read')return str(p.text,18000,1)&&str(p.previous,10000)&&Number.isInteger(p.part)&&p.part>=1;
+ if(p.mode!==undefined&&(p.source?.through!==80||!['creative','playback'].includes(p.mode)))return false;
+ if(p.mode==='creative'&&p.nextChapter!==undefined)return false;
+ if(p.mode==='playback'&&(p.edition.id==='original80'||p.source.imported||p.branchCondition!==''||!Number.isInteger(p.nextChapter)||p.nextChapter<81||p.nextChapter>limits[p.edition.id]))return false;
  return ['story-continue','story-review'].includes(op)&&obj(p.source)&&str(p.source.summary,16000,1)&&str(p.source.tail,6000)&&str(p.source.label,160,1)&&Number.isInteger(p.source.through)&&p.source.through>=1&&p.source.through<=limits[p.edition.id]&&str(p.direction,800)&&str(p.memory,10000)&&str(p.branchCondition,800)&&arr(p.threads,8,x=>str(x,200))&&arr(p.history,3,x=>obj(x)&&str(x.title,100)&&str(x.narrative,3000))&&arr(p.stageActors,4,x=>obj(x)&&ids.includes(x.id))&&arr(p.places,100,x=>obj(x)&&str(x.id,80)&&str(x.name,80))&&(p.draft===undefined||validContinuationResult(op,p.draft,p));
 }
 export function validContinuationResult(op,r,p){
  if(!obj(r))return false;
  if(op==='story-read')return Object.keys(r).every(k=>k==='summary')&&str(r.summary,10000,1);
- if(Object.keys(r).some(k=>!['title','narrative','memory','threads','causality','characterStates','consequences','staging'].includes(k)))return false;
+ if(Object.keys(r).some(k=>!['title','narrative','memory','threads','causality','characterStates','consequences','staging','sourceChapter'].includes(k)))return false;
+ if(p.mode==='playback'){
+  const s=r.sourceChapter;
+  if(!obj(s)||s.chapter!==p.nextChapter||!str(s.title,200,1)||!str(s.sourceEdition,80,1)||!/^[a-f0-9]{64}$/.test(s.sha256)||Object.keys(s).some(k=>!['chapter','title','sourceEdition','sha256'].includes(k)))return false;
+ }else if(r.sourceChapter!==undefined)return false;
  return str(r.title,100,1)&&str(r.narrative,3000,200)&&str(r.memory,10000,1)&&str(r.causality,500,1)&&arr(r.threads,8,x=>str(x,200,1))&&arr(r.characterStates,4,x=>obj(x)&&Object.keys(x).every(k=>['agent','alive'].includes(k))&&ids.includes(x.agent)&&typeof x.alive==='boolean')&&new Set(r.characterStates.map(x=>x.agent)).size===4&&r.characterStates.every(x=>!x.alive||p.stageActors.some(a=>a.id===x.agent&&a.alive))&&arr(r.consequences,4,x=>obj(x)&&Object.keys(x).every(k=>['agent','fact'].includes(k))&&ids.includes(x.agent)&&str(x.fact,500,1))&&new Set(r.consequences.map(x=>x.agent)).size===r.consequences.length&&arr(r.staging,2,x=>obj(x)&&Object.keys(x).every(k=>['agent','place','action','caption'].includes(k))&&p.stageActors.some(a=>a.id===x.agent)&&r.characterStates.some(a=>a.agent===x.agent&&a.alive)&&p.places.some(a=>a.id===x.place)&&['read','write','rest','observe'].includes(x.action)&&str(x.caption,120,1));
 }

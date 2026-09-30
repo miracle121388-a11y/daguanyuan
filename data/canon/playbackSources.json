@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "guiyou108",
+      "reviewStatus": "source_checked",
+      "reviewScope": "来源文件哈希、108回结构、提取与字符保留；非版本真伪认证或逐字校勘",
+      "distribution": "private_server_only",
+      "license": "unspecified_in_supplied_pdf",
+      "localRoot": ".local/corpus/guiyou108",
+      "manifestSha256": "cf324bda0c0e62732b7c24b27f3f302e3f5df652e387cf2fc859db64d3959851",
+      "sourcePdfSha256": "bc2fdebcca79d05b6bc1db22d3ae3696f2a97fb3e15b263a6f7515cf1086dd77",
+      "textSha256": "e37f8c440bd38da412302925dab7d7e1033f06ffbc00aa756c1a927620ba7fcf",
+      "chapters": 108,
+      "identity": "用户提供108回PDF电子整理本；原文与批语/按语分开使用。",
+      "checkedAt": "2026-09-30",
+      "acceptance": "reports/acceptance/guiyou-pdf-20260930.json"
+    }
+  ]
+}

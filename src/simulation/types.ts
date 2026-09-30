@@ -119,7 +119,7 @@ const branchSchema = z.object({
   id: z.enum(['main', 'if']), forkTick: z.number().int().nonnegative(),
   uid: z.string().optional(),
   intervention: interventionSchema.nullable(), prompt: z.string(),
-  snapshots: z.array(snapshotSchema).min(1).max(30), cursor: z.number().int().nonnegative(),
+  snapshots: z.array(snapshotSchema).min(1).max(64), cursor: z.number().int().nonnegative(),
 });
 export type Branch = z.infer<typeof branchSchema>;
 export const journalSchema = z.object({

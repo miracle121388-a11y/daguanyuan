@@ -18,6 +18,26 @@ shutil.copy2(R/'dist/reading.html',output/'reading.html')
 shutil.copy2(R/'server.mjs',target/'server.mjs')
 (target/'server').mkdir()
 for server_file in (R/'server').glob('*.mjs'):shutil.copy2(server_file,target/'server'/server_file.name)
+# Reviewed user-provided literature is server-only, outside the static root.
+# It is never fetched from GitHub or exposed as a downloadable corpus file.
+private_sources=[]
+private_catalog=R/'data/canon/playbackSources.json'
+if private_catalog.exists():
+ for source in json.loads(private_catalog.read_text(encoding='utf8'))['sources']:
+  assert source['reviewStatus']=='source_checked' and source['distribution']=='private_server_only'
+  assert source['id']=='guiyou108' and source['localRoot']=='.local/corpus/guiyou108'
+  private_root=R/source['localRoot'];manifest_bytes=(private_root/'manifest.json').read_bytes()
+  assert hashlib.sha256(manifest_bytes).hexdigest()==source['manifestSha256'], 'Private corpus review changed'
+  manifest=json.loads(manifest_bytes);assert len(manifest['chapters'])==108
+  chapter_texts=[];destination=target/'server/private-corpus/guiyou108'
+  (destination/'chapters').mkdir(parents=True)
+  shutil.copy2(private_root/'manifest.json',destination/'manifest.json')
+  for i,chapter in enumerate(manifest['chapters'],1):
+   assert chapter['chapter']==i and chapter['path']==f'chapters/{i:03}.txt'
+   text=(private_root/chapter['path']).read_bytes();assert hashlib.sha256(text).hexdigest()==chapter['sha256']
+   chapter_texts.append(text.decode('utf8'));shutil.copy2(private_root/chapter['path'],destination/chapter['path'])
+  assert hashlib.sha256('\n'.join(chapter_texts).encode()).hexdigest()==source['textSha256']
+  private_sources.append({'id':source['id'],'directory':'server/private-corpus/guiyou108','manifestSha256':source['manifestSha256'],'chapters':108,'distribution':source['distribution']})
 for name in ['sample.glb','pipeline-probe.glb']:(output/'models'/name).unlink(missing_ok=True)
 # Identical LOD files need only one stored copy. Both public URLs continue to
 # return the original bytes; source models in Git are left intact.
@@ -75,6 +95,6 @@ if upload_bytes>=budget_mib*1048576:
  docker.write_text(docker.read_text().replace('COPY dist ./dist\n','COPY dist ./dist\nCOPY deploy-assets.json hydrate-assets.mjs ./\nRUN node hydrate-assets.mjs && rm deploy-assets.json hydrate-assets.mjs\n'))
  upload_bytes=sum(f.stat().st_size for f in target.rglob('*') if f.is_file())
 assert upload_bytes<budget_mib*1048576, f'Deployment package exceeds {budget_mib} MiB budget: {upload_bytes}'
-(R/'reports/acceptance/deployment-package.json').write_text(json.dumps({'directory':target.relative_to(R).as_posix(),'contents':['dist/','server.mjs','server/*.mjs','Dockerfile']+(['deploy-assets.json','hydrate-assets.mjs'] if build_assets else []),'rawBytes':raw,'compressedBytes':compressed,'uploadDirectoryBytes':upload_bytes,'uploadDirectoryBudgetMiB':budget_mib,'buildAssets':build_assets,'precompressedExtensions':['html','js','css','json','wasm'],'precompressedFormat':'br' if brotli else 'gzip','packedOnlyExtensions':['glb','js','wasm'] if brotli else [],'packedBinaryIdentity':'server returns losslessly decoded original bytes; no raw duplicate in upload' if brotli else None,'gzipFallback':'bounded runtime cache' if brotli else 'precompressed','brotli':bool(brotli),'contentAliases':aliases,'privateFilesIncluded':False,'createdAt':datetime.datetime.now(datetime.timezone.utc).isoformat()},indent=2))
+(R/'reports/acceptance/deployment-package.json').write_text(json.dumps({'directory':target.relative_to(R).as_posix(),'contents':['dist/','server.mjs','server/*.mjs','Dockerfile']+(['server/private-corpus/'] if private_sources else [])+(['deploy-assets.json','hydrate-assets.mjs'] if build_assets else []),'rawBytes':raw,'compressedBytes':compressed,'uploadDirectoryBytes':upload_bytes,'uploadDirectoryBudgetMiB':budget_mib,'buildAssets':build_assets,'precompressedExtensions':['html','js','css','json','wasm'],'precompressedFormat':'br' if brotli else 'gzip','packedOnlyExtensions':['glb','js','wasm'] if brotli else [],'packedBinaryIdentity':'server returns losslessly decoded original bytes; no raw duplicate in upload' if brotli else None,'gzipFallback':'bounded runtime cache' if brotli else 'precompressed','brotli':bool(brotli),'contentAliases':aliases,'privateFilesIncluded':bool(private_sources),'privateLiterarySources':private_sources,'createdAt':datetime.datetime.now(datetime.timezone.utc).isoformat()},indent=2))
 print('Deployment package:',round(raw/1048576,2),'MiB raw;',round(upload_bytes/1048576,2),'MiB upload directory;',round(compressed/1048576,2),'MiB transfer;',len(aliases),'identical model aliases; budget',budget_mib,'MiB')
 if build_assets:print('Pinned build-time assets:',len(build_assets),'; unchanged bytes:',sum(asset['bytes'] for asset in build_assets),'; commit:',commit)

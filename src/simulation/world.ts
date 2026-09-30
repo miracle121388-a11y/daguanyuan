@@ -64,7 +64,8 @@ export function layoutRevision(data: CanonData) {
 }
 export function createJournal(data: CanonData, editionId: EditionId = 'original80'): Journal {
   const world = createWorld(data, editionId);
-  return {editionId, version: 1, layoutRevision: layoutRevision(data), active: 'main', interventionSerial: 0, directiveSerial: 0, archives: [], if: null, main: {id: 'main', uid: 'main', forkTick: 0, intervention: null, prompt: '', cursor: 0, snapshots: [{worldState: world, actions: [], summary: '午后，四人在各自的起始地点。', provider: '初始设定'}]}};
+  world.storyChapter=80;
+  return {editionId, version: 1, layoutRevision: layoutRevision(data), active: 'main', interventionSerial: 0, directiveSerial: 0, archives: [], if: null, main: {id: 'main', uid: 'main', forkTick: 0, intervention: null, prompt: '', cursor: 0, snapshots: [{worldState: world, actions: [], summary: '第80回结束。人物站位是三维展示锚点，不代表原文地点。', provider: '初始设定'}]}};
 }
 export function currentBranch(journal: Journal): Branch { return journal[journal.active]!; }
 export function currentWorld(journal: Journal): WorldState {

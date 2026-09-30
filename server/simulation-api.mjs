@@ -1,7 +1,8 @@
-import {continuationInstructions, validContinuationInput, validContinuationResult} from './continuation.mjs';
+import {continuationInstructions, playbackInstructions, validContinuationInput, validContinuationResult} from './continuation.mjs';
 import {storyInstructions, validStoryInput, validStoryResult} from './openstory.mjs';
 import {timingSafeEqual} from 'node:crypto';
 import {literaryReferences, continuationReferences} from './literary-corpus.mjs';
+import {playbackSource, guiyouReferences} from './story-playback.mjs';
 
 const ids = ['baoyu', 'daiyu', 'baochai', 'wangxifeng'];
 const actions = ['move', 'talk', 'observe', 'rest', 'read', 'write', 'visit', 'wait'];
@@ -82,7 +83,7 @@ async function readBody(req) {
 }
 /** Same handler for Vite development, preview and the existing Node server.
  * API keys never reach browser bundles. No extra runtime dependency is needed. */
-export function createSimulationApi(env = process.env, request = fetch, {corpusRoot} = {}) {
+export function createSimulationApi(env = process.env, request = fetch, {corpusRoot, guiyouRoot} = {}) {
   let endpoint;
   try {
     const candidate = new URL((env.LLM_BASE_URL ?? '').replace(/\/$/, '') + '/chat/completions');
@@ -119,16 +120,32 @@ export function createSimulationApi(env = process.env, request = fetch, {corpusR
       if (!validInput(body.operation, body.payload)) { send(400, {error: '推演请求格式不正确。'}); return true; }
       const narrative = Object.hasOwn(continuationInstructions, body.operation);
       const deliberative = narrative || ['action', 'conversation'].includes(body.operation) || Object.hasOwn(storyInstructions, body.operation);
-      const modelPayload = ['story-continue', 'story-review'].includes(body.operation)
-        ? {...body.payload, literaryReferences: continuationReferences(body.payload, corpusRoot)}
+      const story = ['story-continue', 'story-review'].includes(body.operation);
+      const refs = story ? body.payload.edition.id==='guiyou108'&&!body.payload.source.imported
+        ? guiyouReferences(body.payload, guiyouRoot) : continuationReferences(body.payload, corpusRoot) : null;
+      if(story&&body.payload.mode&&!body.payload.source.imported&&refs.status!=='available'){
+        send(503,{error:'本版本第80回前情正文缺失或校验失败，本次未保存。'});return true;
+      }
+      let adaptationSource;
+      if(story&&body.payload.mode==='playback'){
+        try{adaptationSource=playbackSource(body.payload.edition.id,body.payload.nextChapter,corpusRoot,guiyouRoot);}
+        catch{send(503,{error:'本回原文缺失或校验失败，不能用模型补造续本。本回未保存。'});return true;}
+      }
+      const modelPayload = story
+        ? {...body.payload, literaryReferences: refs, adaptationSource,
+          ...(!body.payload.source.imported&&body.payload.mode?{source:{...body.payload.source,tail:refs.endpoint.map(p=>p.text).join('\n').slice(-6000)}}:{})}
         : ['action', 'conversation'].includes(body.operation) ? {...body.payload, literaryReferences: literaryReferences(body.payload, corpusRoot)} : body.payload;
       clearTimeout(timer);
       timer = setTimeout(() => abort.abort(), narrative ? 115000 : deliberative ? 65000 : 25000);
-      const thinking = deliberative && body.operation !== 'story-dialogue';
-      const response = await request(endpoint, {
+      // A known chapter needs faithful adaptation, not open-ended plot planning.
+      // Keep the independent editorial call, without spending its token budget on speculation.
+      const thinking = deliberative && body.operation !== 'story-dialogue' && !adaptationSource;
+      const messages = [{role: 'system', content: instructions[body.operation] + (adaptationSource?'\n'+playbackInstructions:'') + (deliberative && !narrative ? literaryRule : '') + (body.operation === 'action' ? actionFormat + decisionRule : body.operation === 'conversation' ? conversationGrounding : '')}, {role: 'user', content: JSON.stringify(modelPayload)}];
+      const complete = () => request(endpoint, {
         method: 'POST', headers: {'Content-Type': 'application/json', Authorization: `Bearer ${env.LLM_API_KEY}`}, signal: abort.signal,
-        body: JSON.stringify({model, messages: [{role: 'system', content: instructions[body.operation] + (deliberative && !narrative ? literaryRule : '') + (body.operation === 'action' ? actionFormat + decisionRule : body.operation === 'conversation' ? conversationGrounding : '')}, {role: 'user', content: JSON.stringify(modelPayload)}], response_format: {type: 'json_object'}, ...(deepseek ? {max_tokens: narrative ? 16000 : thinking ? 8192 : 1600, thinking: {type: thinking ? 'enabled' : 'disabled'}, ...(thinking ? {reasoning_effort: 'high'} : {})} : {max_completion_tokens: narrative ? 10000 : 1600})}),
+        body: JSON.stringify({model, messages, response_format: {type: 'json_object'}, ...(deepseek ? {max_tokens: narrative ? 16000 : thinking ? 8192 : 1600, thinking: {type: thinking ? 'enabled' : 'disabled'}, ...(thinking ? {reasoning_effort: 'high'} : {})} : {max_completion_tokens: narrative ? 10000 : 1600})}),
       });
+      const response = await complete();
       if (!response.ok) { send(502, {error: `模型服务未完成请求（${response.status}）。本步未保存，可重试。`}); return true; }
       const raw = await response.text();
       if (raw.length > 256 * 1024) throw new Error('response-size');
@@ -137,6 +154,22 @@ export function createSimulationApi(env = process.env, request = fetch, {corpusR
       let result;
       try { result = normalizeResult(body.operation, JSON.parse(completion?.message?.content ?? '')); }
       catch { send(502, {error: '模型未返回完整的行动数据，本步未保存。请重试。'}); return true; }
+      if(adaptationSource&&isObject(result)){const {chapter,title,sourceEdition,sha256}=adaptationSource;result.sourceChapter={chapter,title,sourceEdition,sha256};}
+      // Repair an overlong adaptation once within the same request deadline.
+      // Never truncate prose: doing so loses outcomes while retaining their memories.
+      if(adaptationSource&&isObject(result)&&typeof result.narrative==='string'&&result.narrative.length>1800){
+        // A separate compression brief avoids reintroducing the long source as
+        // a competing output template. The independent review still sees it.
+        messages.splice(0,messages.length,
+          {role:'system',content:`你是小说演绎的篇幅编辑。输入JSON的narrative有${result.narrative.length}字，超过1800字上限。仅重写narrative，其他字段逐字保留。将全部情节压缩为600—1000字的现代中文演绎，最多8个短段，每段最多150字。保留主要事件、人物行动、因果、时间顺序、重要结果；少量对白保留人物个性。诗词只点明题名或意境，不抄写全诗；次要场景合并一句。不能整回照抄，不能只截取开头、遗漏结尾结果，不能创造新事实。只输出完整JSON。`},
+          {role:'user',content:JSON.stringify(result)});
+        const repaired=await complete();
+        if(!repaired.ok)throw new Error('repair-provider');
+        const repairRaw=await repaired.text();if(repairRaw.length>256*1024)throw new Error('response-size');
+        const choice=JSON.parse(repairRaw).choices?.[0];if(choice?.finish_reason==='length')throw new Error('repair-length');
+        result=JSON.parse(choice?.message?.content??'');
+        if(isObject(result)){const {chapter,title,sourceEdition,sha256}=adaptationSource;result.sourceChapter={chapter,title,sourceEdition,sha256};}
+      }
       if (!validResult(body.operation, result, body.payload)) { send(502, {error: '模型返回了不符合规则的内容。本步未保存，请重试。'}); return true; }
       send(200, {result});
     } catch (error) {
