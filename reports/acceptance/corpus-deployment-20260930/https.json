@@ -1,0 +1,77 @@
+{
+  "at": "2026-09-30T03:46:27.810391+00:00",
+  "matched": 14,
+  "tlsVerified": true,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 2196,
+      "sha256": "2ad0a5620d2d23524451890bb0ac56387cfdf07a94189ae7c0b2dd2debb51004"
+    },
+    {
+      "path": "reading.html",
+      "bytes": 58249,
+      "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61"
+    },
+    {
+      "path": "data/editionCatalog.json",
+      "bytes": 15455,
+      "sha256": "99b17e745e2c5de026cfd50d40cb307b29bfc31bcf27af71360e04d301f43d3f"
+    },
+    {
+      "path": "data/corpus/manifest.json",
+      "bytes": 2864113,
+      "sha256": "8ce1dd7beb4c4bc18329c0bdb6e4054a6496fd48db69f6ddb6285cb22d4f7a20"
+    },
+    {
+      "path": "data/corpus/archive.json",
+      "bytes": 137,
+      "sha256": "dbfbfe4fc14595c64fdd1c78debf72d67b4fedffa15927a67221f638c8577aff"
+    },
+    {
+      "path": "data/corpus/NOTICE.txt",
+      "bytes": 1479,
+      "sha256": "54959bac80a2d68650dac7ce944304b9f85bd2f1b79510cec2eaf8340a511e93"
+    },
+    {
+      "path": "data/corpus/original80.txt",
+      "bytes": 1766365,
+      "sha256": "60ffcedc1eba93f2f6f290b1c369ea7a17611b42e0668ec5dc5acac8d5a44d99"
+    },
+    {
+      "path": "data/corpus/cheng120.txt",
+      "bytes": 2597217,
+      "sha256": "8031e434a45d310737548887e1d9f40295862900907f051671b5b3162d7f1eec"
+    },
+    {
+      "path": "data/corpus/guiyou108-status.json",
+      "bytes": 845,
+      "sha256": "2b460f50a6faeff352a707e46cdbf339cf1f22ecee3cc333e911352460aa8797"
+    },
+    {
+      "path": "data/corpus/daguanyuan-texts.zip",
+      "bytes": 4273971,
+      "sha256": "d33d9c239ed1686a98c8b20eb579c7ed74acbbc3a7c53b672089955b15cf5376"
+    },
+    {
+      "path": "assets/index-BuPu-R07.js",
+      "bytes": 444471,
+      "sha256": "297f16cc308af639336b2472343067d4f370189a4a6fd95e8d1aa1da00bc6c93"
+    },
+    {
+      "path": "assets/index-CEqecs4a.css",
+      "bytes": 121314,
+      "sha256": "f219eafa34695751e6abe6f9397a2c5eb467caa8bdd0ff4b2da00b7637cf3431"
+    },
+    {
+      "path": "assets/garden-mark-COPNxcSD.svg",
+      "bytes": 458,
+      "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
+    },
+    {
+      "path": "assets/GardenScene-DEXqZ5Zr.js",
+      "bytes": 1783962,
+      "sha256": "93a28510e581bb9ff4269cb5defd834d6ea46b3c36b8bb088d57594b8355a73b"
+    }
+  ]
+}

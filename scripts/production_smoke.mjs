@@ -26,8 +26,9 @@ const hooksAbsent=await page.evaluate(()=>!window.__gardenTest&&!window.__garden
 const health=await page.evaluate(()=>fetch('/healthz').then(r=>r.json()));
 const expectedRevision=JSON.parse(readFileSync('public/scene-manifest.json','utf8')).assetRevision;
 if(health.status!=='ok'||health.revision!==expectedRevision)throw Error('Production is serving a different scene revision');
+await page.locator('.garden-view-tools .action-disclosure > summary').click();
 await page.getByRole('button',{name:'俯瞰全园布局',exact:true}).focus();await page.keyboard.press('Enter');
-if(await page.getByRole('button',{name:'俯瞰全园布局',exact:true}).getAttribute('aria-pressed')!=='true')throw Error('Plan view control did not activate');
+if(await page.getByRole('button',{name:'俯瞰全园布局',exact:true,includeHidden:true}).getAttribute('aria-pressed')!=='true')throw Error('Plan view control did not activate');
 await page.getByRole('button',{name:'回到全园',exact:true}).click();
 await page.getByRole('button',{name:'展开索引',exact:true}).click();
 await page.getByRole('textbox',{name:'搜索园中内容'}).focus();

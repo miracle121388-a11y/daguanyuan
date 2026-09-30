@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-30T03:48:56.489Z",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "revision": "spatial-garden-20260918-r22",
+  "planView": true,
+  "dnsOverride": null,
+  "browserProxyMode": "system",
+  "http2Disabled": false,
+  "quicDisabled": false,
+  "tlsVerification": true,
+  "observationTimeoutMs": 150000,
+  "desktopReadyMs": 6846,
+  "hooksAbsent": true,
+  "sourceHooksAbsent": true,
+  "focus": {
+    "width": "2px",
+    "style": "solid"
+  },
+  "sceneVisible": true,
+  "refresh": true,
+  "selection": true,
+  "errors": [],
+  "failed": [],
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "touchEmulation": true,
+    "networkThrottle": false,
+    "concurrentDesktopPage": false,
+    "readyMs": 5827,
+    "models": [
+      "/models/overview-low.glb",
+      "/models/sunwen-architecture-low.glb",
+      "/models/vegetation/ground-cover.glb",
+      "/models/vegetation/iris.glb",
+      "/models/vegetation/peony.glb",
+      "/models/vegetation/lotus.glb",
+      "/models/vegetation/chrysanthemum.glb",
+      "/models/vegetation/orchid.glb",
+      "/models/sunwen-landscape-low.glb",
+      "/models/urban-context.glb",
+      "/models/places-low/xiaoxiangguan.glb",
+      "/models/vegetation/fern-0.glb",
+      "/models/vegetation/fern-1.glb",
+      "/models/vegetation/ginkgo.glb",
+      "/models/vegetation/scholar-tree.glb"
+    ],
+    "selection": true,
+    "hotspotTap": true,
+    "equivalentDetailPicker": true,
+    "closeAndFullCourtyard": true
+  }
+}

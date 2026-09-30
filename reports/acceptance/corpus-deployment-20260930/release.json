@@ -1,0 +1,74 @@
+{
+  "at": "2026-09-30T03:49:45.124335+00:00",
+  "sourceCommit": "9fedd0063eec756da78bc2faa0429227ccb9b85b",
+  "deployment": {
+    "ID": "6abc8544c997a72fa1746515",
+    "projectID": "6aa142fb6c3d9581b71560ed",
+    "serviceID": "6aa143296c3d9581b71560fa",
+    "environmentID": "6aa142fbda9bc245fba1e845",
+    "gitProvider": "GITHUB",
+    "repoOwner": "",
+    "repoName": "",
+    "ref": "",
+    "commitSHA": "",
+    "commitMessage": "",
+    "planType": "docker",
+    "createdAt": "2026-09-30T03:43:00.5Z",
+    "scheduledAt": "2026-09-30T03:43:02.785Z",
+    "startedAt": "2026-09-30T03:43:10.506Z",
+    "finishedAt": "2026-09-30T03:45:23.893Z",
+    "status": "RUNNING"
+  },
+  "serverId": "6a8eee0bb11fb81fb4aaca05",
+  "runtimeFilesMatched": 784,
+  "httpsFilesMatched": 14,
+  "preservation": {
+    "at": "2026-09-30T03:47:11.086Z",
+    "variablesUnchanged": true,
+    "variableCount": 18,
+    "volumeUnchanged": true,
+    "albumUnchanged": true,
+    "albumFiles": 6,
+    "albumBytes": 7486038
+  },
+  "retrieval": {
+    "status": "available",
+    "excerpts": [
+      {
+        "chapter": 26,
+        "paragraphId": "collated-026-p0012",
+        "sha256": "88161cfd5e40d0eab62f25056f35680779b873dbd7ed7f7d1ce8dd28d12aa9b2"
+      },
+      {
+        "chapter": 26,
+        "paragraphId": "collated-026-p0013",
+        "sha256": "88161cfd5e40d0eab62f25056f35680779b873dbd7ed7f7d1ce8dd28d12aa9b2"
+      },
+      {
+        "chapter": 26,
+        "paragraphId": "collated-026-p0014",
+        "sha256": "88161cfd5e40d0eab62f25056f35680779b873dbd7ed7f7d1ce8dd28d12aa9b2"
+      }
+    ],
+    "guiyouStatus": "missing_fulltext",
+    "paidModelCalls": 0
+  },
+  "tests": {
+    "unit": 147,
+    "lint": true,
+    "build": true,
+    "integrity": 11173,
+    "browser": true
+  },
+  "browser": {
+    "desktopReadyMs": 6846,
+    "mobileReadyMs": 5827,
+    "mobileEmulated": true
+  },
+  "limitations": [
+    "guiyou108 full text unavailable; explicitly marked in corpus",
+    "No paid model calls",
+    "CLI upload prepare timed out but deployment completed; no duplicate upload",
+    "Initial browser script failed twice on outdated disclosure interaction; corrected script full desktop/mobile run passed"
+  ]
+}

@@ -127,3 +127,7 @@ Node24启动器准备专用画册目录后降权至UID1000运行，端口3000。
 APP_RESOLVE_IP 仅为独立测试浏览器指定解析、直连并关闭 QUIC，不写系统 hosts；GARDEN_BROWSER_HTTP1=1 可为该测试浏览器关闭 HTTP/2。本轮独立reviewer将长剧情完整阅读、标题先于元数据两项修正均记为resolved，disposition ship仅限两项；独立documenter核对14张最终本地图，记录于 `.impeccable/dream-surface.md`，DESIGN.md与design.json哈希不变。v4发布证据及旧部署说明保存在 `output/playwright/literary-v4-published-evidence/`；更早v3证据另行保留。
 
 v5发布确认日期：`2026-09-17`（Asia/Shanghai），报告为 `dream-release.json`；v6的精确时间、源文件、发布包哈希和当前验收范围见 `dream-silk-release.json`。
+
+## 2026-09-30 · 本地原文库发布
+
+源码9fedd00已部署原California服务，部署6abc8544c997a72fa1746515为RUNNING。前80回和120回数字汇校本文本、分回索引与许可说明现可从 `/data/corpus/daguanyuan-texts.zip` 下载。癸酉108回仍标全文未收录，未以他本替代。147项测试、构建及lint通过；784份容器运行文件和14份HTTPS文件哈希匹配，桌面及触摸模拟通过。原18项变量、卷和画册保持；完整记录见reports/acceptance/corpus-deployment-20260930/release.json。
