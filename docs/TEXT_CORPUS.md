@@ -8,6 +8,17 @@
 |120回|`cheng120.txt`|同一数字汇校本1—120回；前80回以庚辰本、后40回以程甲本为底本，不是程甲刻本逐字转录|
 |癸酉108回|`guiyou108-status.json`|全文未收录；记录查找结果、候选来源与未采用原因，禁止以其他本截取或拼接代替|
 
+上表为**公开原文库**。2026-09-30用户另提供621页108回PDF，已转换为私人导入用TXT，保存在 `.local/corpus/guiyou108/`，下载目录也有合订TXT副本。目录与正文108回的顺序、分回范围、末回、字符保留和SHA-256均已核验；不代表版本真伪鉴定或逐字校勘。PDF未附公开转载许可，正文不进入Git、公开canon或部署包；因此公开库的 `missing_fulltext` 状态仍准确，用户可用私人导入功能读取这份完整文件。
+
+PDF转换复现（仅该文件的SHA-256与版式适用）：
+
+```sh
+conda run -n daguanyuan python -m pip install -r requirements-pdf.txt
+conda run -n daguanyuan python scripts/extract_guiyou_pdf.py '/path/to/用户提供的108回.pdf' --through 91
+```
+
+输出全文108回TXT、截至91回TXT、108份分回正文及来源/页码/哈希索引。保留批语、按语、异体字、注音和物理行换行，不以其他本补文。第81回起由A4变为Letter，逐行中心坐标剔除页眉页脚，保留跨入页脚边缘的正文；PDF第238页原本无正文，明确记录。完整TXT为889044字符/2609968字节，现有导入器分为56块；截止91回分为47块。这里只验证了导入结构及完整分片覆盖，尚未让模型通读全文。实测记录：`reports/acceptance/guiyou-pdf-20260930.json`。
+
 `daguanyuan-texts.zip` 包含两份合订文本、120份分回正文、段落索引、署名许可说明和癸酉本缺口记录。`archive.json` 保存ZIP的SHA-256；`manifest.json` 保存正文文件与原始网页的SHA-256、获取时间、来源链接、修订编号和稳定段落编号。`NOTICE.txt` 随包分发，数字整理按CC BY-SA 4.0署名及相同方式共享。
 
 来源底本说明：[维基文库红楼梦导览](https://zh.wikisource.org/wiki/Portal:紅樓夢)。正文保留繁体和异体字，移除网页导航、脚注标号、许可页脚，保留诗歌换行。原始HTML及提取中间结果在 `data/raw/corpus/`；`source_checked` 指来源、结构及哈希核查，不代表对120回逐字学术校勘。

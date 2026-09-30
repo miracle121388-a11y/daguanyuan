@@ -1,0 +1,2 @@
+# Optional, local PDF-to-TXT extraction only; not a production dependency.
+PyMuPDF==1.28.2
