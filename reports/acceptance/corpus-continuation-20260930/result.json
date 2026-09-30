@@ -1,0 +1,57 @@
+{
+  "at": "2026-09-30T07:32:53.711Z",
+  "scope": "本地真实浏览器、真实服务器模型；前80回范围第74回起点与120回范围第105回起点，各连续两段。不是模型通读80/120回全文、不是整本终点后续写验收。癸酉本按用户指示未测试。",
+  "modelPath": "story-continue → story-review → validated staging → atomic save",
+  "corpus": "Wikisource collated edition; endpoint 6000 characters and at most 4 preceding retrieval fragments; private imported source excluded from built-in supplementation",
+  "runs": [
+    {
+      "edition": "original80",
+      "through": 74,
+      "titles": [
+        "抄检余波",
+        "逐司棋"
+      ],
+      "assessment": "第二段承接晴雯被移出、宝钗搬离；时间从前一夜推进到次日，未重演抄检。仍有李纨病中又被请管事的解释不充分。"
+    },
+    {
+      "edition": "cheng120",
+      "through": 105,
+      "titles": [
+        "查抄之后：荣府夜守",
+        "天明候旨：贾母散资，凤姐认券"
+      ],
+      "assessment": "第二段承接守夜、借券追查与求医，推进到次日筹款及递呈；无黛玉复活或回退到议亲。首段仅余一个男丁的表述与贾政在场冲突，复核尚未消除此类细节。"
+    }
+  ],
+  "verified": [
+    "both branches reached sequence 2",
+    "both source chapters retained",
+    "reload retained Cheng episodes",
+    "edition switch restored original episodes independently",
+    "snapshot labels now use episode count instead of a fabricated literary timestamp"
+  ],
+  "limitations": [
+    "检索不等于全文通读，默认起点未自动变为80/120回。",
+    "三维呈现仅支持现有角色与场景的节选，未实现全文动作及文学时刻驱动的完整演出。",
+    "导出下载事件在本次浏览器接口中超时，未宣称已完成导出验收。",
+    "修正目前为本地改动，未部署线上。"
+  ],
+  "artifacts": [
+    {
+      "name": "original80-1.txt",
+      "sha256": "8ea7ba2e891af2a73644d2f8bec97642e84e04a95c3a2a5946a5f74910405fa7"
+    },
+    {
+      "name": "original80-2.txt",
+      "sha256": "f236b87abd7413f2e624ea34b14e273e0c8b47f9136379768201b883a70eb709"
+    },
+    {
+      "name": "cheng120-1.txt",
+      "sha256": "5a233ed50fd0e4e58dcf8a7ac479506fd52b15b24601ae627f2db1f85f01339d"
+    },
+    {
+      "name": "cheng120-2.txt",
+      "sha256": "82d722a8360b0a6e4d59d85b8be1e32861d1b6291f35a730ec82c2ea5bb44fe9"
+    }
+  ]
+}

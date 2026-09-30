@@ -2,7 +2,7 @@ import {describe, it, expect} from 'vitest';
 import {readFileSync, mkdtempSync, writeFileSync, rmSync, mkdirSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join, resolve, sep} from 'node:path';
-import {loadCorpus, searchCorpus, literaryReferences} from '../server/literary-corpus.mjs';
+import {loadCorpus, searchCorpus, literaryReferences, continuationReferences} from '../server/literary-corpus.mjs';
 import {verifyCorpus} from '../scripts/corpus.mjs';
 
 const root = 'data/canon/corpus';
@@ -37,6 +37,19 @@ describe('local literary corpus', () => {
     expect(result.status).toBe('available');
     expect(result.excerpts.every(r => r.chapter < 27)).toBe(true);
     expect(literaryReferences({literary: {id: 'original80', chapter: 1}, message: '黛玉'}, root).excerpts).toEqual([]);
+  });
+  it('grounds continuation at the selected ending without leaking future chapters or replacing private imports', () => {
+    const payload = {edition: {id: 'original80'}, source: {through: 80, imported: false}, direction: '黛玉', memory: '', threads: [], history: [], stageActors: []};
+    const refs = continuationReferences(payload, root);
+    expect(refs.status).toBe('available');
+    expect(refs.endpoint.map(p => p.text).join('')).toBe(corpus.chapters[79].paragraphs.map(p => p.text).join('').slice(-6000));
+    for (const p of [...refs.endpoint, ...refs.excerpts]) {
+      expect(p.chapter).toBeLessThanOrEqual(80);
+      expect(corpus.chapters[p.chapter - 1].paragraphs.find(row => row.id === p.paragraphId).text.slice(p.startOffset, p.endOffset)).toBe(p.text);
+    }
+    expect(continuationReferences({...payload, edition: {id: 'guiyou108'}}, root).status).toBe('missing_fulltext');
+    expect(continuationReferences({...payload, source: {...payload.source, imported: true}}, root)).toMatchObject({status: 'user_source', excerpts: []});
+    expect(continuationReferences(payload, 'nonexistent/corpus').status).toBe('unavailable');
   });
   it('fails closed for damaged text and does not pretend retrieval succeeded', () => {
     const temporary = mkdtempSync(join(tmpdir(), 'daguanyuan-corpus-'));

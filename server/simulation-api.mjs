@@ -1,7 +1,7 @@
 import {continuationInstructions, validContinuationInput, validContinuationResult} from './continuation.mjs';
 import {storyInstructions, validStoryInput, validStoryResult} from './openstory.mjs';
 import {timingSafeEqual} from 'node:crypto';
-import {literaryReferences} from './literary-corpus.mjs';
+import {literaryReferences, continuationReferences} from './literary-corpus.mjs';
 
 const ids = ['baoyu', 'daiyu', 'baochai', 'wangxifeng'];
 const actions = ['move', 'talk', 'observe', 'rest', 'read', 'write', 'visit', 'wait'];
@@ -119,7 +119,9 @@ export function createSimulationApi(env = process.env, request = fetch, {corpusR
       if (!validInput(body.operation, body.payload)) { send(400, {error: '推演请求格式不正确。'}); return true; }
       const narrative = Object.hasOwn(continuationInstructions, body.operation);
       const deliberative = narrative || ['action', 'conversation'].includes(body.operation) || Object.hasOwn(storyInstructions, body.operation);
-      const modelPayload = ['action', 'conversation'].includes(body.operation) ? {...body.payload, literaryReferences: literaryReferences(body.payload, corpusRoot)} : body.payload;
+      const modelPayload = ['story-continue', 'story-review'].includes(body.operation)
+        ? {...body.payload, literaryReferences: continuationReferences(body.payload, corpusRoot)}
+        : ['action', 'conversation'].includes(body.operation) ? {...body.payload, literaryReferences: literaryReferences(body.payload, corpusRoot)} : body.payload;
       clearTimeout(timer);
       timer = setTimeout(() => abort.abort(), narrative ? 115000 : deliberative ? 65000 : 25000);
       const thinking = deliberative && body.operation !== 'story-dialogue';
