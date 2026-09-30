@@ -1,0 +1,48 @@
+{
+  "at": "2026-09-30T12:40:51.573Z",
+  "edition": "guiyou108",
+  "start": 80,
+  "sourceChapter": {
+    "chapter": 81,
+    "title": "第八十一回 惜昵近公子做良媒 讳笞罚丫鬟结恶党",
+    "sourceEdition": "user-pdf-guiyou108",
+    "sha256": "4aa03fc63ed653b209e810d1638aafd7a9aea1fdb0f2ef7eea09ba026845e8a5"
+  },
+  "title": "第八十一回 惜昵近公子做良媒 讳笞罚丫鬟结恶党",
+  "narrativeLength": 817,
+  "characterStates": [
+    {
+      "agent": "baoyu",
+      "alive": true
+    },
+    {
+      "agent": "daiyu",
+      "alive": true
+    },
+    {
+      "agent": "baochai",
+      "alive": true
+    },
+    {
+      "agent": "wangxifeng",
+      "alive": true
+    }
+  ],
+  "staging": [
+    {
+      "agent": "baoyu",
+      "place": "yihongyuan",
+      "action": "observe",
+      "caption": "宝玉回到怡红院，见葵官、蕊官、艾官三个围着袭人推搡叫骂，忙上前拉劝。"
+    },
+    {
+      "agent": "daiyu",
+      "place": "xiaoxiangguan",
+      "action": "rest",
+      "caption": "黛玉歪在炕上听紫鹃说起绮霰来道别、宝玉放人的事，呆了半天。"
+    }
+  ],
+  "writerAndReviewPassed": true,
+  "saved": false,
+  "scope": "Production API calls only; no browser world or album written. Additional bounded compression may occur."
+}

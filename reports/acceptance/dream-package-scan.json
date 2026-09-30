@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20260930-075150-054779",
+  "directory": ".deploy/reference-20260930-121925-645531",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,7 +11,7 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "7756d9ccff02524530f01bfa32e47dbf8016998900daeddb89ed18bdc7afa191"
+      "sha256": "41c4980f193ee767d4c2bf0ad286be9f3c4e169077aebc6a7ebbb8310f846a01"
     },
     {
       "path": "server.mjs",
@@ -19,11 +19,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "0cb8e4fc134a1207b8b7e6f0d8212ab6c41000fdf05cbb0cb1a0321a34d096fe"
+      "sha256": "a01174d82cf09058db46cc3c0da217fe48a6f8348613c3a935cfba4332bd5aa6"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "bab3fd485be4dc681236c6b1c049e1f3f9eba9b81a3ced0062bb5ac5e0eb5dd1"
+      "sha256": "b6ee3ae439d052d4e094c56181b937e88ba9b6fe8b520299cde27251f798022e"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -71,7 +71,7 @@
     },
     {
       "path": "server/simulation-api.mjs",
-      "sha256": "c774a694ff3befe9575ad04175978028771ddb755a0cb570b8b45521b8e8c351"
+      "sha256": "4eaaec203962c90f9b90ff818d4c185169c2972ef80cdc22b89fef6bb96e522b"
     },
     {
       "path": "server/dream-references.mjs",
@@ -95,11 +95,15 @@
     },
     {
       "path": "server/continuation.mjs",
-      "sha256": "c3860601f265d44952fcf9d8630be3f078bb3acb61d2a6bc5045198f6e618bea"
+      "sha256": "6f347649e450755ee9a2e040bb9652cb84a7166e3647ca910909d91ada9eeaa4"
     },
     {
       "path": "server/dream-prompts.mjs",
       "sha256": "8a980e9d0bf0983ce0fabed27a813ce2b0c33e7ab1339c01147812545811a8b4"
+    },
+    {
+      "path": "server/story-playback.mjs",
+      "sha256": "8ca4473f2ab885b008585a545d84a8a27ed48a53857a6f937e7a7c91ffb592e1"
     },
     {
       "path": "server/dream-style.mjs",
@@ -116,6 +120,442 @@
     {
       "path": "server/openstory.mjs",
       "sha256": "54a82bd52071cfed6914c8300d1da0b9998bf0766d9b137d4664e6dce3d6031d"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/manifest.json",
+      "sha256": "cf324bda0c0e62732b7c24b27f3f302e3f5df652e387cf2fc859db64d3959851"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/060.txt",
+      "sha256": "0262b4907bacf9e94ef5e1325e6eacf10c7c7d23923bd36c29f25a96c81c2fe7"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/074.txt",
+      "sha256": "91336b77f477d0d6bec5002a86f4d1465ff3bce0b1195730bc627726c5caeab3"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/048.txt",
+      "sha256": "dbcd863f7e0b7553f2e62560aa3439a68c49a5c21676bb71b2f298fb62d221fc"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/100.txt",
+      "sha256": "137cf9688c0c1f48a2b2fd9ae9e22bb01b0352888f81b0fb5de498d41f73a354"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/101.txt",
+      "sha256": "f6e6f79075f562b67d1fc9d1d6da28ec42ffe013fa196f5956706178559b8ff5"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/049.txt",
+      "sha256": "5133419c3983cf5721cdb1ae4f3467fe79abcff60ca8461696d0ef11e9b75dad"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/075.txt",
+      "sha256": "30e0cc0fb47e8e3dd96e7b58ef3c0ec9928b8258378fbbcdb9df79ba5638774d"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/061.txt",
+      "sha256": "b1ed30c104608f1b14125f71e453e797ebcb5e323c4cb4cbb22b2e3c62eed2a5"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/088.txt",
+      "sha256": "1fffb841de431d44a41b54909a27e06df757b7325a484f463764eb9793701ee0"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/077.txt",
+      "sha256": "5c358b83f6763a0ec99de0036ef616d2746becf18dc53e8cc2ca50ce0ffd2933"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/063.txt",
+      "sha256": "9dc16fde0bc8da8370a31c8c48e057270ca5b2a71b12b7137a95aff1456cd6b8"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/103.txt",
+      "sha256": "13d71443f33a0fff0fddc88232ea953b5b107e5e784e176e43f71a682c64c65d"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/102.txt",
+      "sha256": "8519eff2b4b3282dc93007ded59265de4a69920f386afb166b2d98db04949c87"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/062.txt",
+      "sha256": "aaa440b943b6372686e5cd238b6dbaf761c5cbc9cfb11980064d6756a27043d2"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/076.txt",
+      "sha256": "d8b41e2d814dcb12251e9049c3a2b58205fad39d43481c7160248ef2c5d3f763"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/089.txt",
+      "sha256": "d684b280d1407b066bec21d3ae16a1d8d08833d562e7f897fc297d1556305608"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/099.txt",
+      "sha256": "14e8be742fac32cfebf64230d98702aeaaf98cb4f5f813f95f42fd5f05f4bfec"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/072.txt",
+      "sha256": "39c06065820e9b2aaf480e3c5c3697258cf9c2236cb7285b99adde1aca5cfa7d"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/066.txt",
+      "sha256": "0c7a2fb044ba7f8b2ab2783bc9d35c5cb8ce90e843d99d4e087ad0f8e557fc46"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/106.txt",
+      "sha256": "4b5a848c1c597a18b678750e0711bab56fb060dd996fac076d42476144508e33"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/107.txt",
+      "sha256": "6617291de339fbcdf4054a9198771b831b643a2e64a132b131b5e68c9a94ae2b"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/067.txt",
+      "sha256": "940c92fe52392a5d3e18938648e330a9ecf25a9245f543a2c26e25149d05550e"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/073.txt",
+      "sha256": "19c58d65e2f94f17c233e699edea6281626a4ab6b1ba72b86f5f242c9aca83ee"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/098.txt",
+      "sha256": "d2c5a9d06df2613b1a21bdf1beacfc304c867296e1f8c9374949187002431421"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/059.txt",
+      "sha256": "44f37255a4a9da38c14887efa74fbffc33851990af6947163b89cbdc3d712bd8"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/065.txt",
+      "sha256": "975d643c74ecbc68ae8f0351ec6a117abfbbe22466eda3c56b1317b63412a3bc"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/071.txt",
+      "sha256": "985c3ae7d1bc2da7da4f70fc6b0e36bd3d8d71cff36a732072ad7cb834b63a9e"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/105.txt",
+      "sha256": "fb9009974d4a451021324f5352f9983d6398f6f0a5194e433c792d8b2e9b8f12"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/104.txt",
+      "sha256": "a14d5805c4edcda4864885d3796a990fd8997289d4665168d15ed19be6c3c71a"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/070.txt",
+      "sha256": "ed89e62b00b60e2f53f80bc1cebd10e1c6186d3c9dc661bb2fdac044ebc51fa7"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/064.txt",
+      "sha256": "d0bb815c71fc051816d41174810e8a76815bacfe4485d2da0936c819530d2705"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/058.txt",
+      "sha256": "13d4fa3d5fc1e569023bcd9227976be9083e7c1e33b4e8cb23e42bce6229c925"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/003.txt",
+      "sha256": "fba8c6c85bb08236f9a397e6fbdf4e30a4db4a1c63e662ddb4e30863bcf7d3ab"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/017.txt",
+      "sha256": "2b275a281c57790b3aa8b1f62b554c5cf4cab49a8bd3e15dc13a748ae7544b40"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/016.txt",
+      "sha256": "65ef733578bb36d097b2f1fa169c61c0ae301fc638c950b6d02fba8c4c822f4b"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/002.txt",
+      "sha256": "8ba4baabc5acb8d6efa049020293d6a8362a885804aad919d14b0f104827643b"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/014.txt",
+      "sha256": "916574fa827ea71c803db8b1f8edd83db0865173a69c0ccd26c7739c33994fd7"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/028.txt",
+      "sha256": "28c9a866b30390938748851d3ca5231e9ead26581df8ccddec22ced669ab8537"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/029.txt",
+      "sha256": "472a843bfac12260eca0dcf3d7dac16eae10262742f9fcf020ab93a47a482c29"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/001.txt",
+      "sha256": "0b1b96f878c624a43e1e2595ce5d1d252acc2b8d46c64cef18b41af67c1ba1fa"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/015.txt",
+      "sha256": "31d03c79c0d00153d2712254f09009d7f04893b21fe7782c7811a8f7110eadb2"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/039.txt",
+      "sha256": "1c5b74b1fb86dc85d6916a4cf1c93c8d6dd74c0dddb0627286fa97708e991c12"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/011.txt",
+      "sha256": "8a4bca877797157ad6716cd793197fd5ba795c3a3d411f357dec56d0ec169714"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/005.txt",
+      "sha256": "af741c0bf95fa41a2ba774acf4b8410f46bf2e0226186ba1118217256af2d4e7"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/004.txt",
+      "sha256": "f5abfe961e0e3ec03cdbc745cc25e896365dde4a350b99ab83a9ad40b14711ee"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/010.txt",
+      "sha256": "6179db166112a28328d0569ebd6429332e41a0748a33662f7926ba2e9b45eeb7"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/038.txt",
+      "sha256": "9fe2fa4011b0ea5b430967c7f4b25bd0da60eccfbc99ef311db03a770499f7b9"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/006.txt",
+      "sha256": "de4ea30a008e7eb6b62c8a8930cbe2d2a0f50f1e85f7c8f275ccffbe639b6457"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/012.txt",
+      "sha256": "c51bede5977a82120886539c3ddd8bb1eba8ae53d352a282a6274e0ea255f1c5"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/013.txt",
+      "sha256": "8a0e8b8b7a601850ed003bbbd70e7723e103dcaf9722fadc05446ee1cfd9cfdd"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/007.txt",
+      "sha256": "f2faa60414f885770666dd003ec3a1d918291d9803647c0a855f93edc72ed44d"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/022.txt",
+      "sha256": "b43dedc82e12f650aaead5d6930bd3d5ba0fb11b1f1da05c6a110eeaad1465eb"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/036.txt",
+      "sha256": "df409d9a5b042483f83d80ffef392e290a028707a4bac7a0361c19c3ff783e2a"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/037.txt",
+      "sha256": "24b5bab8e78b5e6dabb7db52941db25d80e005e8056f1923313f886280a32d7a"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/023.txt",
+      "sha256": "53e1061ec92e59be0ec5a1ec6132744f4e868bf5c6871b56b1177f3fcfd3812a"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/035.txt",
+      "sha256": "15753a57ea0b506367cff201d0b60454063d2be4be0789ea94c2576fd4c1bfdd"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/021.txt",
+      "sha256": "289eb9aa9bb038be9acbc4ce1a866201877934f3cde74d77c225fa88d03d802a"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/009.txt",
+      "sha256": "10e2c2f461fd1997c25ed2123e87a8072185016ab8ce80c6058bae3531fac627"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/008.txt",
+      "sha256": "985c4c7fd022939b3499c70f9b4eaf0955794afd3d08b637bde6ff0e7bdfecd4"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/020.txt",
+      "sha256": "0fb1435a378d15c6c546c549982d40abc501abc94b07574549c1d111c744a562"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/034.txt",
+      "sha256": "c50482180a950cb13db4d353b9eff2a07cfc640ccd73a7fea3f9ff28d47b2471"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/018.txt",
+      "sha256": "17047dd86b7d1b2e691b3392f6079a7cd1dcdb9940061cfb5ff497bc24e7034c"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/030.txt",
+      "sha256": "847a5b31d698deb0b4874f775639d96737e9d3dfc973738d0b6276325fa08682"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/024.txt",
+      "sha256": "d483819f42dd74537afa401d44d4246e7e332fa8a3213dea5059de9ed4e51609"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/025.txt",
+      "sha256": "78f7ef7bd317099e87e89cc00a773750557c39acd282f3c1108a0b7d5f59f14e"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/031.txt",
+      "sha256": "16fb1ba3cfc2e1e211a0c586fb260c2a2da4f10e962cbea85ba5eadafd5b113c"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/019.txt",
+      "sha256": "b0468234a0c9235887ea2a8d4693ff35ae5ecf5627e97a86cee5c10070d05823"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/027.txt",
+      "sha256": "20f832ac35e1d7d974de59ecf1b0b0c20a2f3b3e5fff09608b24fa866bad866b"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/033.txt",
+      "sha256": "34aab09b432f9882419a54f4889767dfcb6283c41fe26b94a11398bd760282b4"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/032.txt",
+      "sha256": "bd0b6ba4ad889532a51c560cd61650532e4593f8e8be25b8bee924b78cd0f8d8"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/026.txt",
+      "sha256": "bb1bfbddd25dc81616dd04411db9de769d020c10c86bc3aa5f5bacbd339b2324"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/082.txt",
+      "sha256": "4441cb5ceea67b095aa3d1ddb7dac29fd759ceda4f6a582806342d2df0ce45cd"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/096.txt",
+      "sha256": "87901ba647cbbb6aaf9b60a3fe0b8927a1736f1119bb58fe1ed7cffdeb07b8b3"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/041.txt",
+      "sha256": "a14af5d48642b7d04254a906179123b2757d2ce4735c4712a2ad7bc20ca402d0"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/055.txt",
+      "sha256": "e86da69a545594f65d50a0fb35ab37ba83332d784f6e43bd7550f8af1f441620"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/069.txt",
+      "sha256": "4a38d00df56618a046adf64a0fcdd4782041f7a90ee3713099a42d4efbc5f3ff"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/108.txt",
+      "sha256": "3317ac1aba13a28ca33b4fc263d6eb9893c643e5176577ad60ef06bf7da50bc7"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/068.txt",
+      "sha256": "e05f60f3c9ececbf12269103a3bc4e1ac8e11e4e1ad31b8ada6b035fffd0e9e1"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/054.txt",
+      "sha256": "daf488cbd5b9e1fbfcd7b29a4d6b3f201aee26086fc00faa00c2a56e8b8b631d"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/040.txt",
+      "sha256": "f75bf74cfda25fb19f9679f0da7549509ae27179fec9de306d35af1bb30b3ce3"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/097.txt",
+      "sha256": "96b2b0c0b9874ee6f030080141f4efb23ac3f78471ae22b44de0c2326f336194"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/083.txt",
+      "sha256": "29c486f743643e37559224397c8acab7c6aa7f59632bb2b6414f5ae251043477"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/095.txt",
+      "sha256": "0009575919ce7378fd6912c0b1c0bad8c320bd5b1855def0d595df2f7c1ccbfe"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/081.txt",
+      "sha256": "4aa03fc63ed653b209e810d1638aafd7a9aea1fdb0f2ef7eea09ba026845e8a5"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/056.txt",
+      "sha256": "94a69b79f15e08ac6f2c37c1f1fa3fafa0d538282b9d739a54625adcaff30ce9"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/042.txt",
+      "sha256": "d96a7ba24eec0d2fcaac5c04dc6dc85d732f05baa5de9cbdf824000a9a58b156"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/043.txt",
+      "sha256": "599e5932274a119df8d4d31572e25a6df42390bcf7d18c7f72092d5070c61807"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/057.txt",
+      "sha256": "74272617f002401df5a6b6dab19df6ba013d207f47502ad292b1acf387ef4be3"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/080.txt",
+      "sha256": "dde36821d46d726f1a02217c4a0e4e5b6272a1192d921553d9aa59e1e57027d2"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/094.txt",
+      "sha256": "d83c3c2185c0773de222f14396870a8ce020f00a77199c73fe1def4e3eddc226"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/090.txt",
+      "sha256": "1a2236eda1707bb85afb5a391ba9e3382feedb0519563c3356c3edfd9e75a1fd"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/084.txt",
+      "sha256": "ec5ae41918038a6ffa20795f97411bc6647760cee2a442a3b1381ef62898171f"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/053.txt",
+      "sha256": "fdb6f7f91559e7dbca43214c0bbb869209ce36f088e5af82f6013a3fc43e9a97"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/047.txt",
+      "sha256": "24946e4d9f1f86b55035037a5d0cdd1e0b15f1dd28a01fe2bb7a1257aa3b4159"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/046.txt",
+      "sha256": "b09f078e57d8d93f1794e59c6a3646b9b36440d436225d778a872af005a2ae07"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/052.txt",
+      "sha256": "53b7ad0538c872c53b1023fdbcb01290b13cf2a0527db59d8993a0c4bb9aebe1"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/085.txt",
+      "sha256": "dd14c560a06032a9624699515f864cc9ab022ac20d1d9d9592d24c5376edc189"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/091.txt",
+      "sha256": "4bd7ea6624a6ef9fde38da6737e376615cca5298ed6ad47fc06610b228d29746"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/087.txt",
+      "sha256": "89581a447eb4d56afff66bfd71b062de38b17f57ce7fd4b44dc375d7ae166990"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/093.txt",
+      "sha256": "e15199ab1e952c2d35d4354c15292aa2d842022cdbd8f57a8beaea809dd03451"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/078.txt",
+      "sha256": "ca2c03f1ccaa531b93dc6f810d6d28442ad2b31b2874564204463f2e5da3b293"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/044.txt",
+      "sha256": "1b0e58ed7f321aa2e6e5a44f3d6f29f0ed75bf8eee311266f0d62c3f80761258"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/050.txt",
+      "sha256": "835ce0eab8d69ec3f6b4aed952e09033da24c4c19df14ec1eb0a536d406ca3c4"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/051.txt",
+      "sha256": "6842e9b05e3c16d84cd578dc1636ccd1b27b480bf53712bbb09994c7ce82b2cc"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/045.txt",
+      "sha256": "3a5c0d3a07be581e9763984dc1414516534e5be5356dd1749216ccfd81dee8e6"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/079.txt",
+      "sha256": "2c1cbf36d68865648120ec03afe5df8d3a1d7b0f041598f437da6124ea2fc7cd"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/092.txt",
+      "sha256": "c5adc215a1090f870c9013f5172e2f7a16a7ceda27926e55b23cfab348f71491"
+    },
+    {
+      "path": "server/private-corpus/guiyou108/chapters/086.txt",
+      "sha256": "46fd5e0933f7a0cc788d36c446f20ff743de24d0e466138b7f13b7fe3cd86a20"
     },
     {
       "path": "dist/textures/forest_grove.hdr.json.br",
@@ -654,10 +1094,6 @@
       "sha256": "56e267924d824d08ec84456689cef4c2e980f971ff60208cebfa45461680426b"
     },
     {
-      "path": "dist/models/sunwen-landscape-low.glb.br",
-      "sha256": "0ae9b79aab69edf3e1f98ad6c7f0655ace5fa595e79a06437a43c5180cb0370e"
-    },
-    {
       "path": "dist/models/sunwen-architecture-low.glb.br",
       "sha256": "c7718dcd08217d9a704def6a8880f53007a4828647bade28b06d28fb0d9e1639"
     },
@@ -935,7 +1371,7 @@
     },
     {
       "path": "dist/data/editionCatalog.json.br",
-      "sha256": "c02ca193ea85130f7c609bcbc4ff706f3b74fb99b63fec5d7e095ff2195a2819"
+      "sha256": "7aa0647854c9ddd81e316259a9dcea12632ad68ffb33acc8f9e3867d4a8b54f5"
     },
     {
       "path": "dist/data/events.json",
@@ -979,7 +1415,7 @@
     },
     {
       "path": "dist/data/editionCatalog.json",
-      "sha256": "99b17e745e2c5de026cfd50d40cb307b29bfc31bcf27af71360e04d301f43d3f"
+      "sha256": "fe6d01d70e0850bd323d4f02caaee41750dceb471d318fda8f9a18f8d1178434"
     },
     {
       "path": "dist/data/sources.json.br",
@@ -1002,12 +1438,12 @@
       "sha256": "f219eafa34695751e6abe6f9397a2c5eb467caa8bdd0ff4b2da00b7637cf3431"
     },
     {
-      "path": "dist/assets/index-CEyJ6wwG.js.br",
-      "sha256": "a5cecb26e2eb8706a20ceef21184205aea0dae907c6dc201590e90f91af2386f"
+      "path": "dist/assets/index-BD6XKKYI.js.br",
+      "sha256": "a34cef0d1ac2fd5818685445ae41aa126fbf7898a39cd833c32254e7a10ce048"
     },
     {
-      "path": "dist/assets/GardenScene-BLNy9Af0.js.br",
-      "sha256": "ad68cd16c3b652cc212b07659dd5be5d1f3595e86704d8b724c240f97baf4330"
+      "path": "dist/assets/GardenScene-DCenVsEj.js.br",
+      "sha256": "5c5616dbc565938bd2f3fc3d397f12230444e39f1604accb1177dcffd693c39a"
     },
     {
       "path": "dist/assets/index-CEqecs4a.css.br",
@@ -1548,10 +1984,6 @@
     {
       "path": "dist/models/places-low/tubishanzhuang.glb.br",
       "sha256": "2d810b1f589dc212a14d42fa7c8a4dcc73a3599ec50e4d2067217fd6a6bf401d"
-    },
-    {
-      "path": "dist/models/places-low/yihongyuan.glb.br",
-      "sha256": "2901af140575d1d610838bb17b29976519f471b7ce88f0be60a34f75eae70ef1"
     },
     {
       "path": "dist/models/places-low/qiushuangzhai.glb.br",
@@ -4214,10 +4646,6 @@
       "sha256": "38be499ccd9bb1eb22d22bd2fa4138c750260db2984f21ececee4cbba751a6eb"
     },
     {
-      "path": "dist/textures/vegetation/canopy-atlas.webp",
-      "sha256": "85e10a85fd505bcbedac51c1425daa1bbeeb14d46951d9e5cdb94ae2cff2a62c"
-    },
-    {
       "path": "dist/textures/vegetation/canopy-atlas.webp.json",
       "sha256": "4652f0f1a05bd9d063de95196b3172d9938721393c470a7edfdb0b4e54bc5c7e"
     },
@@ -5321,8 +5749,8 @@
     },
     {
       "path": "data/editionCatalog.json",
-      "sha256": "99b17e745e2c5de026cfd50d40cb307b29bfc31bcf27af71360e04d301f43d3f",
-      "bytes": 15455
+      "sha256": "fe6d01d70e0850bd323d4f02caaee41750dceb471d318fda8f9a18f8d1178434",
+      "bytes": 15476
     },
     {
       "path": "data/events.json",
@@ -8080,12 +8508,12 @@
       "bytes": 745091
     }
   ],
-  "buildAssetsVerified": 19,
+  "buildAssetsVerified": 22,
   "credentialsFound": false,
   "knownSecretValuesChecked": 3,
   "decodedBrotliChecked": true,
   "matchesCompletedBuild": true,
   "referencesMatched": 21,
-  "count": 1064,
+  "count": 1171,
   "passed": true
 }

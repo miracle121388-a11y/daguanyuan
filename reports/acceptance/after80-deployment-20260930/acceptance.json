@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-30T12:45:38.050Z",
+  "sourceCommit": "a0ca985249d679d504033149681b95b24a2f0b81",
+  "deploymentId": "6abd00869fbfb7e884173fc8",
+  "status": "RUNNING",
+  "uploadFiles": 1171,
+  "uploadBytes": 50250048,
+  "pinnedBuildAssets": 22,
+  "runtimeFiles": 770,
+  "serverModules": 15,
+  "httpsFiles": 26,
+  "privateGuiyouChapters": 108,
+  "privateHttpStatus": 404,
+  "variablesMatched": true,
+  "albumMatched": true,
+  "productionModel": {
+    "edition": "guiyou108",
+    "chapter": 81,
+    "writerAndReviewPassed": true
+  },
+  "onlineVisualChecked": false,
+  "onlineVisualReason": "Computer-use browser interface timed out; local browser separately verified chapters 81/82 and save persistence.",
+  "scope": "Actual package, container, normal TLS HTTPS and sampled production model calls. Not all chapter literary quality or all network/proxy route acceptance."
+}
