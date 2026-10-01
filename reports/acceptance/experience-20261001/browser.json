@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-01T03:57:07.145Z",
+  "site": "http://127.0.0.1:3005/",
+  "desktop": {
+    "width": 1280,
+    "height": 720
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844
+  },
+  "sharedAccessUnlocked": true,
+  "sharedAccessRetainedAfterReload": true,
+  "realConversationSaved": true,
+  "realConversationRetainedAfterReload": true,
+  "visibleProviderNames": false,
+  "screenshots": [
+    "overview-desktop.png",
+    "overview-mobile.png",
+    "conversation-browser.png"
+  ],
+  "limitations": [
+    "Gathering tested through current store with simulated scene executor, not a full browser gathering",
+    "Production browser rendering not yet verified"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-01T03:59:35.563Z",
+  "invalid": {
+    "status": 401,
+    "body": {
+      "error": "访问口令不正确，请重新填写。"
+    }
+  },
+  "valid": {
+    "status": 200,
+    "body": {
+      "authorized": true
+    }
+  },
+  "paidModelCalls": 0
+}
