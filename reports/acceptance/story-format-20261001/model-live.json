@@ -1,0 +1,251 @@
+{
+  "at": "2026-10-01T11:31:09.260Z",
+  "scope": "Six real-model story episodes, main and IF in each edition, using real corpus and continuation/save pipeline; simulated 3D executor. Deliberate fault injection is listed separately and is not evidence of native model failures. Bounded acceptance, not zero-failure or all-book literary guarantee.",
+  "upstreamCalls": 20,
+  "calls": [
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "edition": "original80",
+      "branch": "main",
+      "seconds": 25.34
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "edition": "original80",
+      "branch": "main",
+      "seconds": 82.613
+    },
+    {
+      "operation": "intervention",
+      "status": 200,
+      "branch": "main",
+      "seconds": 0.561
+    },
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "edition": "original80",
+      "branch": "if",
+      "seconds": 14.205
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "edition": "original80",
+      "branch": "if",
+      "seconds": 77.738
+    },
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "edition": "cheng120",
+      "branch": "main",
+      "seconds": 11.65
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "edition": "cheng120",
+      "branch": "main",
+      "seconds": 79.099
+    },
+    {
+      "operation": "intervention",
+      "status": 200,
+      "branch": "main",
+      "seconds": 0.469
+    },
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "edition": "cheng120",
+      "branch": "if",
+      "seconds": 13.766
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "edition": "cheng120",
+      "branch": "if",
+      "seconds": 45.667
+    },
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "edition": "guiyou108",
+      "branch": "main",
+      "seconds": 12.275
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "edition": "guiyou108",
+      "branch": "main",
+      "seconds": 97.774
+    },
+    {
+      "operation": "intervention",
+      "status": 200,
+      "branch": "main",
+      "seconds": 0.645
+    },
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "edition": "guiyou108",
+      "branch": "if",
+      "seconds": 16.016
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "edition": "guiyou108",
+      "branch": "if",
+      "seconds": 79.129
+    }
+  ],
+  "injections": [
+    {
+      "scope": "original80 initial writer",
+      "type": "causality too long"
+    },
+    {
+      "scope": "original80 initial writer",
+      "type": "invalid JSON"
+    },
+    {
+      "scope": "original80 first review",
+      "type": "missing editorial report"
+    }
+  ],
+  "runs": [
+    {
+      "edition": "original80",
+      "main": [
+        {
+          "title": "迎春去后蘅芜问病",
+          "characters": 892,
+          "reviewApproved": true,
+          "reviewCategories": [
+            "chronology",
+            "knowledge",
+            "motivation",
+            "continuity",
+            "branch",
+            "edition",
+            "staging"
+          ]
+        }
+      ],
+      "branch": [
+        {
+          "title": "金玉信至，潇湘掩语",
+          "characters": 1520,
+          "reviewApproved": true,
+          "reviewCategories": [
+            "chronology",
+            "knowledge",
+            "motivation",
+            "continuity",
+            "branch",
+            "edition",
+            "staging"
+          ]
+        }
+      ],
+      "errors": [],
+      "saveReadback": true,
+      "mainIsolated": true
+    },
+    {
+      "edition": "cheng120",
+      "main": [
+        {
+          "title": "钓竿折处问前因",
+          "characters": 1509,
+          "reviewApproved": true,
+          "reviewCategories": [
+            "chronology",
+            "knowledge",
+            "motivation",
+            "continuity",
+            "branch",
+            "edition",
+            "staging"
+          ],
+          "sourceChapter": {
+            "chapter": 81,
+            "title": "第八十一回　占旺相四美釣游魚　奉嚴詞兩番入家塾",
+            "sourceEdition": "wikisource-collated",
+            "sha256": "637ce06d3dc94b8e937e78b030e8b86df6e94d0194a4f0e9006cdeb167672c0a"
+          }
+        }
+      ],
+      "branch": [
+        {
+          "title": "石子打鸳鸯",
+          "characters": 1849,
+          "reviewApproved": true,
+          "reviewCategories": [
+            "chronology",
+            "knowledge",
+            "motivation",
+            "continuity",
+            "branch",
+            "edition",
+            "staging"
+          ]
+        }
+      ],
+      "errors": [],
+      "saveReadback": true,
+      "mainIsolated": true
+    },
+    {
+      "edition": "guiyou108",
+      "main": [
+        {
+          "title": "公子做良媒，香菱魂归阊门",
+          "characters": 1647,
+          "reviewApproved": true,
+          "reviewCategories": [
+            "chronology",
+            "knowledge",
+            "motivation",
+            "continuity",
+            "branch",
+            "edition",
+            "staging"
+          ],
+          "sourceChapter": {
+            "chapter": 81,
+            "title": "第八十一回 惜昵近公子做良媒 讳笞罚丫鬟结恶党",
+            "sourceEdition": "user-pdf-guiyou108",
+            "sha256": "4aa03fc63ed653b209e810d1638aafd7a9aea1fdb0f2ef7eea09ba026845e8a5"
+          }
+        }
+      ],
+      "branch": [
+        {
+          "title": "公子已知金玉信，探钗问黛各沉吟",
+          "characters": 1500,
+          "reviewApproved": true,
+          "reviewCategories": [
+            "chronology",
+            "knowledge",
+            "motivation",
+            "continuity",
+            "branch",
+            "edition",
+            "staging"
+          ]
+        }
+      ],
+      "errors": [],
+      "saveReadback": true,
+      "mainIsolated": true
+    }
+  ]
+}

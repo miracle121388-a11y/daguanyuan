@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-01T11:32:27.461Z",
+  "scope": "Replay a real failed Guiyou oversized draft at the provider boundary; actual model compression and independent editorial review, real corpus and save readback, simulated 3D executor. First upstream response deliberately replaced by captured actual output; not a fresh native failure.",
+  "upstreamCalls": 3,
+  "calls": [
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "edition": "guiyou108",
+      "branch": "main",
+      "seconds": 31.546
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "edition": "guiyou108",
+      "branch": "main",
+      "seconds": 80.864
+    }
+  ],
+  "injections": [
+    {
+      "type": "Replay of an actual previously generated overlong Guiyou draft (2771 characters), all subsequent corrections and editorial review call the real model"
+    }
+  ],
+  "runs": [
+    {
+      "edition": "guiyou108",
+      "main": [
+        {
+          "title": "宝玉放婢做媒，司棋结党香菱殒命",
+          "characters": 1192,
+          "reviewApproved": true,
+          "reviewCategories": [
+            "chronology",
+            "knowledge",
+            "motivation",
+            "continuity",
+            "branch",
+            "edition",
+            "staging"
+          ],
+          "sourceChapter": {
+            "chapter": 81,
+            "title": "第八十一回 惜昵近公子做良媒 讳笞罚丫鬟结恶党",
+            "sourceEdition": "user-pdf-guiyou108",
+            "sha256": "4aa03fc63ed653b209e810d1638aafd7a9aea1fdb0f2ef7eea09ba026845e8a5"
+          }
+        }
+      ],
+      "branch": [],
+      "errors": [],
+      "saveReadback": true
+    }
+  ]
+}

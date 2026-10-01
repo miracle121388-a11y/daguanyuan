@@ -188,21 +188,21 @@ it('does not publish an unresolved editorial result as a successful story',async
  const payload={edition:{id:'original80'},source:{label:'私人前情',through:80,summary:'已到傍晚',tail:'',imported:true},direction:'',memory:'',branchCondition:'',threads:[],history:[],stageActors:result.characterStates.map(a=>({id:a.agent,alive:a.alive})),places:[],draft};
  const response=await post(url,{operation:'story-review',payload});expect(response.status).toBe(422);expect((await response.json()).result).toBeUndefined();expect(upstream).toHaveBeenCalledTimes(1);expect(ignored.approved).toBe(false);
 });
-it('repairs story JSON syntax once, preserves the draft, and still fails closed on a second malformed response',async()=>{
+it('repairs story JSON syntax, preserves the draft, and fails closed after the bounded recovery budget',async()=>{
  const story={title:'园中叙话',narrative:'宝玉读信后停步思量，尚未把消息告诉旁人。'.repeat(20),memory:'宝玉刚读完信。',threads:[],causality:'读信后作出选择。',characterStates:['baoyu','daiyu','baochai','wangxifeng'].map(agent=>({agent,alive:true})),consequences:[],staging:[]};
  const malformed=JSON.stringify(story).replace('"threads":[],','"threads":[]、');let failRepair=false;const requests:any[]=[];
  const upstream=vi.fn(async(_url:any,options:any)=>{const request=JSON.parse(options.body);requests.push(request);return new Response(JSON.stringify({choices:[{finish_reason:'stop',message:{content:requests.length%2===1||failRepair?malformed:JSON.stringify(story)}}]}));});
  const url=await serve(settings,upstream as typeof fetch),payload={edition:{id:'original80'},source:{label:'私人资料',through:80,summary:'已读信',tail:'',imported:true},direction:'',memory:'',branchCondition:'',threads:[],history:[],stageActors:story.characterStates.map(a=>({id:a.agent,alive:a.alive})),places:[]};
  const response=await post(url,{operation:'story-continue',payload});expect(response.status).toBe(200);expect((await response.json()).result).toEqual(story);expect(requests).toHaveLength(2);expect(requests[1].messages[0].content).toContain('只修复JSON语法');expect(JSON.parse(requests[1].messages[1].content).raw).toBe(malformed);
- failRepair=true;expect((await post(url,{operation:'story-continue',payload})).status).toBe(502);expect(requests).toHaveLength(4);
+ failRepair=true;expect((await post(url,{operation:'story-continue',payload})).status).toBe(502);expect(requests).toHaveLength(6);
 });
 it('requires actual editorial evidence after a missing report and never fabricates a local approval',async()=>{
  const result={title:'继续叙事',narrative:'宝玉把新消息写在纸上，暂不交给旁人。'.repeat(20),memory:'宝玉决定暂缓传话。',threads:[],causality:'未核实前避免外传。',characterStates:['baoyu','daiyu','baochai','wangxifeng'].map(agent=>({agent,alive:true})),consequences:[],staging:[]};
  const requests:any[]=[];let alwaysMissing=false;
  const upstream=vi.fn(async(_url:any,options:any)=>{requests.push(JSON.parse(options.body));return new Response(JSON.stringify({choices:[{message:{content:JSON.stringify({...result,...(!alwaysMissing&&requests.length%2===0?{review:approvedReview()}:{})})}}]}));});
  const url=await serve(settings,upstream as typeof fetch),payload={edition:{id:'original80'},source:{label:'私人资料',through:80,summary:'前情',tail:'',imported:true},direction:'',memory:'',branchCondition:'',threads:[],history:[],stageActors:result.characterStates.map(a=>({id:a.agent,alive:a.alive})),places:[],draft:result};
- const response=await post(url,{operation:'story-review',payload});expect(response.status).toBe(200);expect((await response.json()).result.review).toEqual(approvedReview());expect(requests).toHaveLength(2);expect(requests[1].messages[0].content).toContain('遗漏了review');
- alwaysMissing=true;expect((await post(url,{operation:'story-review',payload})).status).toBe(502);expect(requests).toHaveLength(4);
+ const response=await post(url,{operation:'story-review',payload});expect(response.status).toBe(200);expect((await response.json()).result.review).toEqual(approvedReview());expect(requests).toHaveLength(2);expect(JSON.parse(requests[1].messages[1].content).correction.issues).toContain('$.review: required');
+ alwaysMissing=true;expect((await post(url,{operation:'story-review',payload})).status).toBe(502);expect(requests).toHaveLength(6);
 });
 it('anchors the initial moment to the very end of chapter 80 and later moments to the inherited story ending',async()=>{
  const result={title:'后续场景',narrative:'众人已送走迎春，宝玉留在园中思量下一步。'.repeat(20),memory:'迎春已被接回孙家。',threads:[],causality:'承接原文结尾。',characterStates:['baoyu','daiyu','baochai','wangxifeng'].map(agent=>({agent,alive:true})),consequences:[],staging:[],review:approvedReview()};

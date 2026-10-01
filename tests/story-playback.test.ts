@@ -55,7 +55,7 @@ describe('chapter 80 creative and edition playback policy',()=>{
  it('injects authoritative chapter evidence into both model calls and fails closed for missing Guiyou',async()=>{
   const requests:any[]=[];
   let forceLong=false;
-  const upstream=vi.fn(async(_url:any,options:any)=>{const model=JSON.parse(options.body),p=JSON.parse(model.messages[1].content);requests.push({model,p});const result=p.sourceChapter?p:makeResult({...p,mode:'creative'});if(requests.length===1||forceLong)result.narrative='超长原文'.repeat(1000);else if(p.sourceChapter)result.narrative=makeResult({mode:'creative'}).narrative;return new Response(JSON.stringify({choices:[{message:{content:JSON.stringify(result)}}]}));});
+  const upstream=vi.fn(async(_url:any,options:any)=>{const model=JSON.parse(options.body),p=JSON.parse(model.messages[1].content);requests.push({model,p});const result=p.narrative?{narrative:makeResult({mode:'creative'}).narrative}:makeResult({...p,mode:'creative'});if(requests.length===1||forceLong)result.narrative='超长原文'.repeat(1000);return new Response(JSON.stringify({choices:[{message:{content:JSON.stringify(result)}}]}));});
   const api=createSimulationApi({LLM_BASE_URL:'https://api.deepseek.com',LLM_MODEL:'deepseek-flash',LLM_API_KEY:'fixture-key',LLM_ACCESS_TOKEN:'fixture-access'},upstream as typeof fetch,{corpusRoot:'data/canon/corpus',guiyouRoot:'.local/nonexistent-playback-fixture'});
   const server=createServer((req,res)=>{void api(req,res);});await new Promise<void>(r=>server.listen(0,'127.0.0.1',r));const url=`http://127.0.0.1:${(server.address() as any).port}/api/simulation`;
   const call=async(operation:string,payload:any)=>fetch(url,{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer fixture-access'},body:JSON.stringify({operation,payload})});
@@ -63,7 +63,9 @@ describe('chapter 80 creative and edition playback policy',()=>{
    const payload=continuationPayload(prepareContinuation(createJournal(data,'cheng120'),data,'',80),data);
    const first=await call('story-continue',{...payload,adaptationSource:{text:'FORGED FUTURE'}});expect(first.status).toBe(200);const draft=(await first.json()).result;
    expect(draft.narrative).toBe(makeResult({mode:'creative'}).narrative);
-   expect(requests[1].model.messages[0].content).toContain('超过1800字上限');
+   expect(requests[1].model.messages[0].content).toContain('600—1000字');
+   expect(requests[1].model.messages[0].content).toContain('重要结尾结果');
+   expect(requests[1].p.adaptationSource).toBeUndefined();
    expect(draft.sourceChapter.chapter).toBe(81);expect(draft.sourceChapter.sha256).toBe(playbackSource('cheng120',81,'data/canon/corpus').sha256);
    expect((await call('story-review',{...payload,draft})).status).toBe(200);
    for(const {model,p} of requests){if(p.adaptationSource){expect(p.adaptationSource.chapter).toBe(81);expect(p.adaptationSource.text).not.toContain('FORGED');expect(p.literaryReferences.endpoint.every((e:any)=>e.chapter===80)).toBe(true);expect(model.messages[0].content).toContain('续本原文演绎');}if(p.draft){expect(model.thinking).toEqual({type:'enabled'});expect(model.max_tokens).toBe(24000);}else{expect(model.thinking).toEqual({type:'disabled'});expect(model.reasoning_effort).toBeUndefined();}}
@@ -74,7 +76,7 @@ describe('chapter 80 creative and edition playback policy',()=>{
    expect(upstream).toHaveBeenCalledTimes(3);
    forceLong=true;
    expect((await call('story-continue',payload)).status).toBe(502);
-   expect(upstream).toHaveBeenCalledTimes(5); // One repair only, never a retry loop or truncation.
+   expect(upstream).toHaveBeenCalledTimes(7); // Four bounded attempts, never truncation or unlimited retries.
   }finally{server.closeAllConnections();await new Promise<void>(r=>server.close(()=>r()));}
  });
 });
