@@ -6,6 +6,7 @@ import {useSimulation} from '../simulation/store';
 import {StoryButton} from './StoryExperience';
 import {DreamButton} from './DreamExperience';
 import {GalleryButton} from './ReferenceExperience';
+import AccessGate from './AccessGate';
 import Disclosure from './Disclosure';
 
 export default function WorkspaceHeader() {
@@ -53,7 +54,7 @@ export default function WorkspaceHeader() {
         <button aria-label="IF 世界" className={mode === 'if' ? 'active' : ''} aria-pressed={mode === 'if'} disabled={sim.phase !== 'ready'} onClick={() => sim.openWorld('if')}><GitBranch size={17}/><span>IF 世界</span></button>
         <button aria-label="园林漫游" className={mode === 'garden' ? 'active' : ''} aria-pressed={mode === 'garden'} onClick={() => browse()}><Compass size={17}/><span>园林漫游</span></button>
       </nav>
-      <p>{mode === 'garden' ? '循景入书，因人见园' : mode === 'if' ? '改一念，看看故事如何不同' : '与园中人相逢，让故事继续'}</p>
+      <AccessGate/>
     </div>
   </header>;
 }

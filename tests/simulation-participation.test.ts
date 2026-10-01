@@ -80,7 +80,7 @@ describe('participation is personal, durable and reversible', () => {
     let release: ((value: Response) => void) | undefined;
     globalThis.fetch = () => new Promise(resolve => { release = resolve; });
     const journal = createJournal(data);
-    useGarden.setState({data}); useSimulation.setState({journal, phase: 'ready', provider: 'remote'});
+    useGarden.setState({data}); useSimulation.setState({journal, phase: 'ready', provider: 'remote', accessToken: 'fixture'});
     try {
       const work = useSimulation.getState().converse('baoyu', '你好', 'chat');
       expect(useSimulation.getState().phase).toBe('conversing');

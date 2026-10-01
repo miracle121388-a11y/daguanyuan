@@ -5,6 +5,8 @@ import type {LLMProvider,AgentId} from '../src/simulation/types';
 import {forkStory} from '../src/simulation/story';
 import {MockProvider} from '../src/simulation/providers';
 import {runTick} from '../src/simulation/engine';
+import {inviteGathering} from '../src/simulation/participation';
+import {prepareContinuation} from '../src/simulation/continuation';
 import {setStoryTask} from '../src/simulation/openstory';
 import {clone,createJournal,currentWorld,placePosition,readJournal,forkWorld,restoreTick} from '../src/simulation/world';
 import {validStoryInput,validStoryResult} from '../server/openstory.mjs';
@@ -40,4 +42,23 @@ describe('OpenStory integrated story loop',()=>{
  it('rejects abort even after a scene executor returns',async()=>{const j=fixture(),controller=new AbortController();await expect(runTick(j,data,model(),async()=>{controller.abort();},controller.signal,()=>{})).rejects.toThrow();expect(currentWorld(j).tick).toBe(0);});
  it('invalidates pending story plans when an IF state changes',async()=>{const initial=await run(),w=currentWorld(initial);w.agents.baoyu.story!.steps=[{intent:'未完成打算',place:'yihongyuan',activity:'read',importance:5}];const fork=forkWorld(initial,{type:'world',field:'jia_family_finance',value:25},'家计变化');expect(currentWorld(fork).agents.baoyu.story!.steps).toHaveLength(0);expect(currentWorld(initial).agents.baoyu.story!.steps).toHaveLength(1);});
  it('bounds score changes and rejects duplicate relationship updates',()=>{const p={participants:['baoyu','daiyu']};expect(validStoryResult('story-outcome',outcome,p)).toBe(true);expect(validStoryResult('story-outcome',{...outcome,finance:99},p)).toBe(false);expect(validStoryResult('story-outcome',{...outcome,relations:[...outcome.relations,...outcome.relations]},p)).toBe(false);expect(validStoryInput('story-plan',{})).toBe(false);});
+});
+
+it('the gathering UI action advances real scene commands without generating a new literary chapter',async()=>{
+ const {useSimulation}=await import('../src/simulation/store'),{useGarden}=await import('../src/state/store');
+ const before=useSimulation.getState(),gardenBefore=useGarden.getState();
+ const j=inviteGathering(prepareContinuation(fixture(),data,'',80),data,{place:'qiushuangzhai',kind:'poetry',participants:['baoyu','daiyu']});
+ const commands:string[]=[];
+ const unsubscribe=useSimulation.subscribe(state=>{if(state.playback){commands.push(state.playback.command.action.action);state.playback.done();}});
+ vi.stubGlobal('localStorage',{getItem:()=>null,setItem:()=>{}});
+ const upstream=vi.fn();vi.stubGlobal('fetch',upstream);
+ try {
+  useGarden.setState({data});useSimulation.setState({journal:j,phase:'ready',sceneReady:true,accessToken:'fixture',comicAutomatic:false});
+  for(let step=0;step<4&&currentWorld(useSimulation.getState().journal!).gathering?.status==='pending';step++)await useSimulation.getState().advanceParticipation();
+  const after=currentWorld(useSimulation.getState().journal!);
+  expect(useSimulation.getState().error).toBe('');expect(after.gathering?.status).toBe('completed');expect(commands).toContain('move');expect(commands).toContain('write');
+  expect(after.continuation?.sequence).toBe(0);expect(after.continuation?.playbackChapter).toBe(currentWorld(j).continuation?.playbackChapter);
+  expect(after.agents.baoyu.memories.some(m=>m.content.includes('完成了联句'))).toBe(true);
+  expect(upstream).not.toHaveBeenCalled(); // A scheduled invitation uses route/arrival rules, not fabricated completion.
+ }finally{unsubscribe();vi.unstubAllGlobals();useSimulation.setState(before,true);useGarden.setState(gardenBefore,true);}
 });

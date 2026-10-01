@@ -16,6 +16,18 @@ async function serve(env: Record<string, string | undefined> = {}, request: type
 const post = (url: string, body: unknown, headers = {}) => fetch(url + '/api/simulation', {method: 'POST', headers: {'Content-Type': 'application/json', Authorization: 'Bearer access-fixture', ...headers}, body: JSON.stringify(body)});
 
 describe('optional server-side model boundary', () => {
+  it('validates the shared site pass without calling the model or revealing its name', async () => {
+    const upstream = vi.fn(); const url = await serve(settings, upstream as typeof fetch);
+    const access = (headers = {}) => fetch(url + '/api/simulation/access', {headers});
+    expect((await access()).status).toBe(401);
+    expect((await access({Authorization:'Bearer wrong'})).status).toBe(401);
+    const response = await access({Authorization:'Bearer access-fixture'});
+    expect(response.status).toBe(200); expect(await response.json()).toEqual({authorized:true});
+    expect((await access({Authorization:'Bearer access-fixture',Origin:'https://foreign.example'})).status).toBe(403);
+    expect((await fetch(url+'/api/simulation/access',{method:'POST'})).status).toBe(405);
+    expect((await fetch(await serve()+'/api/simulation/access')).status).toBe(503);
+    expect(upstream).not.toHaveBeenCalled();
+  });
   it('sends corpus endpoint evidence to both the story writer and independent reviewer', async () => {
     const result = {title: '续演', narrative: '新的故事场景。'.repeat(40), memory: '发生了新的选择。', threads: [], causality: '承接前情。', characterStates: ['baoyu','daiyu','baochai','wangxifeng'].map(agent=>({agent,alive:true})), consequences: [], staging: []};
     const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{message: {content: JSON.stringify(result)}}]})));

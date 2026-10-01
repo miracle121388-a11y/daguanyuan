@@ -28,7 +28,7 @@ function Conversation({id, world}: {id: AgentId; world: WorldState}) {
   useEffect(() => { if (turns.length) latest.current?.scrollIntoView({block: 'nearest'}); }, [turns.at(-1)?.id]);
   const submit = async () => { if (await s.converse(id, message, tone)) setMessage(''); };
   return <div className="sim-conversation">
-    <p className="sim-note">{s.provider === 'mock' ? '本地模式按人物状态组织回应。切换服务器模型，可自由展开话题。' : `${s.remoteLabel} 会结合此人记忆和最近四轮对话作答。`}交谈即时存档，不推进时辰。</p>
+    <p className="sim-note">人物会结合自己的记忆和最近四轮对话作答。交谈即时存档，不推进时辰。</p>
     {turns.length > 3 && <details className="sim-chat-earlier"><summary>查看更早的 {turns.length - 3} 次交谈</summary>{turns.slice(0, -3).map(t => <ConversationEntry key={t.id} turn={t} name={actor.name}/>)}</details>}
     <div className="sim-chat-transcript" role="log" aria-live="polite" aria-label="你们的对话">{turns.slice(-3).map(t => <ConversationEntry key={t.id} turn={t} name={actor.name}/>)}</div>
     <div ref={latest} aria-live="polite" className="sim-chat-live">{s.phase === 'conversing' ? `${world.agents[s.actor ?? id].name}正在回应…` : turns.length ? '回应已存入这一刻。' : '从一句问候开始，或说说你的打算。'}</div>
@@ -46,7 +46,7 @@ function Conversation({id, world}: {id: AgentId; world: WorldState}) {
 }
 function ConversationEntry({turn: t, name}: {turn: ConversationTurn; name: string}) {
   return <article className="sim-chat-entry"><p className="sim-chat-player"><span>你 · {t.tone === 'comfort' ? '宽慰' : t.tone === 'challenge' ? '直言' : '叙话'}</span>{t.message}</p>
-    <div className="sim-chat-reply"><span>{name} · {t.provider} · Tick {t.tick}</span><p>{t.reply}</p><small>{t.outcome}</small>
+    <div className="sim-chat-reply"><span>{name} · 第 {t.tick} 步</span><p>{t.reply}</p><small>{t.outcome}</small>
       {t.evidence.length > 0 && <details><summary>他想起的经历 · {t.evidence.length} 条</summary>{t.evidence.map(e => <p key={e.id}>{e.text}</p>)}</details>}
     </div></article>;
 }
@@ -66,7 +66,7 @@ function GatheringInvitation({world, data}: {world: WorldState; data: CanonData}
   const gathering = world.gathering, pending = gathering?.status === 'pending', busy = s.phase !== 'ready';
   return <div className="sim-gathering"><h4>邀几位故人，同坐一席</h4><p className="sim-note">选一处已有庭院，邀请两至四人。赴约、等候与联句或茶叙都在园中逐步发生。</p>
     {gathering && <div className="sim-gathering-status" role="status"><strong>{gathering.status === 'completed' ? '小聚已成' : pending ? '一席待故人' : '这场邀约已散'}</strong><p>{spotName(data, gathering.place, 'court')} · {gathering.kind === 'poetry' ? '联句' : '品茗'}</p><ul>{gathering.participants.map(id => <li key={id}><span>{world.agents[id].name}</span><span>{pending ? world.agents[id].location === gathering.place && world.agents[id].spot === 'court' ? '已到院中' : world.agents[id].mood.energy < 35 ? '先歇息，再赴约' : world.directives.some(d => d.agent === id) ? '先完成已有托付' : '待沿路赴约' : gathering.status === 'completed' ? '留下一段共同经历' : '回到各自安排'}</span></li>)}</ul>
-      {pending && <><button className="sim-branch-button" disabled={busy || !s.sceneReady} onClick={() => void s.next()}>{busy ? '众人正在行动' : '继续这场小聚'}<ArrowRight size={15}/></button><button className="sim-text-action" disabled={busy} onClick={s.dismissGathering}>撤回邀请</button><p className="sim-note">身体需要、已有托付可能推迟赴约。六步仍未成席，会自动散约。</p></>}
+      {pending && <><button className="sim-branch-button" disabled={busy || !s.sceneReady} onClick={() => void s.advanceParticipation()}>{busy ? '众人正在行动' : '继续这场小聚'}<ArrowRight size={15}/></button><button className="sim-text-action" disabled={busy} onClick={s.dismissGathering}>撤回邀请</button><p className="sim-note">身体需要、已有托付可能推迟赴约。六步仍未成席，会自动散约。</p></>}
     </div>}
     {!pending && <form className="sim-gathering-form" onFocus={() => useSimulation.setState({automatic: false})} onSubmit={e => { e.preventDefault(); s.invite({place, kind, participants}); }}>
       <label>相聚地点<select value={place} disabled={busy} onChange={e => setPlace(e.target.value)}>{data.places.filter(p => courtRoutes[p.id]).map(p => <option key={p.id} value={p.id}>{spotName(data, p.id, 'court')}</option>)}</select></label>

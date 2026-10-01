@@ -1,3 +1,5 @@
+import {savedAccess} from './access';
+import {runTick} from './engine';
 import {setStoryTask} from './openstory';
 import {create} from 'zustand';
 import type {CanonData} from '../data/types';
@@ -34,7 +36,7 @@ interface SimulationState {
   conversationDrafts: Partial<Record<AgentId, {message: string; tone: ConversationTurn['tone']}>>;
   inspectionTarget: AgentId | null; inspectionRevision: number;
   provider: 'mock' | 'remote'; remoteLabel: string; accessToken: string; error: string; storageNotice: string;
-  initialize: (data: CanonData) => void; toggle: () => void; next: () => Promise<void>;
+  initialize: (data: CanonData) => void; toggle: () => void; next: () => Promise<void>; advanceParticipation: () => Promise<void>;
   createIf: (prompt: string) => Promise<void>; switchBranch: (id: 'main' | 'if') => void;
   restore: (index: number) => void; pause: () => void; cancel: () => void;
   focus: (id: AgentId | null) => void;
@@ -89,7 +91,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   editionId: 'original80', editionJournals: {}, libraryOpen: false, comicCue: null, comicAutomatic: true,
   open: false, ifComposerOpen: false, journal: null, preview: null, phase: 'ready', actor: null,
   paused: false, automatic: false, playback: null, playbackProgress: 0, director: true, sceneReady: false,
-  focused: null, focusRevision: 0, sceneRevision: 0, provider: 'remote', remoteLabel: '服务器模型', accessToken: '', error: '', storageNotice: '',
+  focused: null, focusRevision: 0, sceneRevision: 0, provider: 'remote', remoteLabel: '故事推演', accessToken: savedAccess(), error: '', storageNotice: '',
   immersive: false, cameraMode: 'close', playbackRate: 1, recordView: 'events', participationView: 'chat',
   conversationDrafts: {},
   inspectionTarget: null, inspectionRevision: 0,
@@ -101,7 +103,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   importSource: async(file,through) => {
     const {journal,phase}=get(),data=useGarden.getState().data;if(!journal||!data||phase!=='ready')return;
     if(through!==80||isBookPlayback(journal)){set({error:'续本演绎使用该版本已核验正文。自选前情仅用于80回后的自由创作或IF世界。'});return;}
-    if(!get().accessToken.trim()){set({error:'请先填写推演口令。'});return;}
+    if(!get().accessToken.trim()){set({error:'请先在页面顶部解锁访问口令。'});return;}
     if(currentWorld(journal).continuation?.sequence){set({error:'请先在时间快照回到续演前，再更换原文。'});return;}
     if(file.size>5*1024*1024||! /\.(txt|md)$/i.test(file.name)){set({error:'请选择不超过5MB的TXT或Markdown纯文本。'});return;}
     const active=new AbortController();controller=active;set({phase:'parsing',automatic:false,error:'',readingProgress:'正在读取原文…'});
@@ -169,7 +171,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   next: async () => {
     const {journal, phase, sceneReady} = get(), data = useGarden.getState().data;
     if (!journal || !data || phase !== 'ready') return;
-    if(!get().accessToken.trim()){set({error:'请先填写推演口令，再生成后续故事。',automatic:false});return;}
+    if(!get().accessToken.trim()){set({error:'请先在页面顶部解锁访问口令，再生成后续故事。',automatic:false});return;}
     if (!sceneReady) { set({error: '三维园林尚未就绪，请等待载入或重试模型。', automatic: false}); return; }
     const active = new AbortController(); controller = active;
     set({phase: 'deciding', paused: false, error: ''});
@@ -195,6 +197,19 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       if (controller === active) controller = null;
       set({phase: 'ready', actor: null, preview: null, playback: null, paused: false});
     }
+  },
+  advanceParticipation: async () => {
+    const {journal, phase, sceneReady} = get(), data = useGarden.getState().data;
+    if (!journal || !data || phase !== 'ready') return;
+    if (!get().accessToken.trim()) {set({error:'请先在页面顶部解锁访问口令。'}); return;}
+    if (!sceneReady) {set({error:'三维园林尚未就绪，请等待载入。'}); return;}
+    const active = new AbortController(); controller = active;
+    set({phase:'deciding',automatic:false,error:''});
+    try {
+      const result = await runTick(journal,data,new RemoteProvider(get().accessToken,get().remoteLabel),execute,active.signal,(world,phase,actor)=>set({preview:world,phase,actor}));
+      if (!active.signal.aborted) commit(result);
+    } catch(error) {set({error:active.signal.aborted?'本步已取消，未写入存档。':error instanceof Error?error.message:'互动未完成，请重试。',sceneRevision:get().sceneRevision+1});}
+    finally {if(controller===active)controller=null;set({phase:'ready',actor:null,preview:null,playback:null,paused:false});}
   },
   createIf: async prompt => {
     const journal = get().journal;
@@ -239,6 +254,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   converse: async (id, message, tone) => {
     const journal = get().journal, data = useGarden.getState().data;
     if (!journal || !data || get().phase !== 'ready') return false;
+    if (!get().accessToken.trim() && get().provider === 'remote') {set({error:'请先在页面顶部解锁访问口令。'});return false;}
     const active = new AbortController(); controller = active;
     set({phase: 'conversing', actor: id, automatic: false, error: ''});
     try {

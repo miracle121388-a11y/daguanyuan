@@ -98,12 +98,20 @@ export function createSimulationApi(env = process.env, request = fetch, {corpusR
   let inflight = 0, windowStart = Date.now(), requestCount = 0;
   return async (req, res) => {
     const path = req.url?.split('?')[0];
-    if (!['/api/simulation', '/api/simulation/config'].includes(path)) return false;
+    if (!['/api/simulation', '/api/simulation/config', '/api/simulation/access'].includes(path)) return false;
     const send = (status, data, headers = {}) => { if (!res.destroyed) { res.writeHead(status, {'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', ...headers}); res.end(JSON.stringify(data)); } };
     if (path.endsWith('/config')) { if (req.method !== 'GET') send(405, {error: '仅支持GET。'}, {Allow: 'GET'}); else send(200, {configured, needsToken: configured, ...(configured ? {modelLabel} : {})}); return true; }
+    if (path.endsWith('/access')) {
+      if (req.method !== 'GET') { send(405, {error: '仅支持GET。'}, {Allow: 'GET'}); return true; }
+      if (!configured) { send(503, {error: '故事服务暂不可用，请稍后重试。'}); return true; }
+      if (!tokenMatches(req.headers.authorization, env.LLM_ACCESS_TOKEN)) { send(401, {error: '访问口令不正确，请重新填写。'}); return true; }
+      try { if (req.headers.origin && new URL(req.headers.origin).host !== req.headers.host) { send(403, {error: '请求来源不允许。'}); return true; } }
+      catch { send(403, {error: '请求来源无效。'}); return true; }
+      send(200, {authorized: true}); return true;
+    }
     if (req.method !== 'POST') { send(405, {error: '仅支持POST。'}, {Allow: 'POST'}); return true; }
     if (!configured) { send(503, {error: '服务器尚未配置模型，请先使用本地规则。'}); return true; }
-    if (!tokenMatches(req.headers.authorization, env.LLM_ACCESS_TOKEN)) { send(401, {error: '访问口令不正确，请在推演方式中填写。'}); return true; }
+    if (!tokenMatches(req.headers.authorization, env.LLM_ACCESS_TOKEN)) { send(401, {error: '访问口令不正确，请在页面顶部重新填写。'}); return true; }
     try {
       if (req.headers.origin && new URL(req.headers.origin).host !== req.headers.host) { send(403, {error: '请求来源不允许。'}); return true; }
     } catch { send(403, {error: '请求来源无效。'}); return true; }

@@ -21,7 +21,7 @@ export async function runOpenStoryTick(journal:Journal,data:CanonData,provider:L
  if(!provider.story)throw new Error('此推演需要已配置的服务器模型。');
  const world=clone(currentWorld(journal));world.tick++;world.events=[];world.storyRecords??=[];
  const occupied=new Set<AgentId>(),actions:SemanticAction[]=[];
- const log=(id:AgentId,text:string,kind:'story'|'dialogue'|'rule'|'action'='story')=>{
+ const log=(id:AgentId,text:string,kind:'story'|'dialogue'|'rule'|'action'|'gathering'='story')=>{
   const event={id:`${world.worldId??world.branchId}:${world.tick}:${world.events.length}`,tick:world.tick,time:clockLabel(world.minutes),kind,text,agent:id,contentType:'generated' as const};world.events.push(event);return event;
  };
  const act=async(id:AgentId,action:SemanticAction)=>{
@@ -113,12 +113,12 @@ export async function runOpenStoryTick(journal:Journal,data:CanonData,provider:L
   const activity=gathering.kind==='poetry'?'write':'rest';
   if(gathering.participants.every(id=>world.agents[id].location===gathering.place&&world.agents[id].spot==='court'&&actions.some(a=>a.agent===id&&a.action===activity))){
    gathering.status='completed';gathering.finishedTick=world.tick;
-   const e=log(gathering.participants[0],gathering.participants.map(id=>world.agents[id].name).join('、')+'在约定庭院完成了'+(gathering.kind==='poetry'?'联句':'茶叙')+'。');
-   for(const id of gathering.participants){world.agents[id].mood.calm=clamp(world.agents[id].mood.calm+3);addMemory(world.agents[id],{tick:world.tick,type:'interaction',content:e.text,participants:gathering.participants,origin:'generated',sourceEventId:e.id});}
+   const e=log(gathering.participants[0],gathering.participants.map(id=>world.agents[id].name).join('、')+'在约定庭院完成了'+(gathering.kind==='poetry'?'联句':'茶叙')+'。','gathering');
+   for(const id of gathering.participants){world.agents[id].mood.calm=clamp(world.agents[id].mood.calm+3);for(const other of gathering.participants.filter(other=>other!==id))world.agents[id].relationships[other].trust=clamp(world.agents[id].relationships[other].trust+2);addMemory(world.agents[id],{tick:world.tick,type:'interaction',content:e.text,participants:gathering.participants,origin:'generated',sourceEventId:e.id});}
   }else if(world.tick-gathering.createdTick>=6){gathering.status='cancelled';gathering.finishedTick=world.tick;log(gathering.participants[0],'等候已久，本次小聚未能完成，约定暂且作罢。');}
  }
  world.minutes+=120;
  const records=world.storyRecords.filter(r=>r.tick===world.tick);
  const summary=records.length?records.map(r=>r.narrative).join('\n\n'):world.events.map(e=>e.text).join(' ');
- const next=clone(journal),branch=currentBranch(next);branch.snapshots=branch.snapshots.slice(0,branch.cursor+1);branch.snapshots.push({worldState:world,actions,summary,provider:`OpenStory · ${provider.name}`});if(branch.snapshots.length>30)branch.snapshots.shift();branch.cursor=branch.snapshots.length-1;return next;
+ const next=clone(journal),branch=currentBranch(next);branch.snapshots=branch.snapshots.slice(0,branch.cursor+1);branch.snapshots.push({worldState:world,actions,summary,provider:`OpenStory · ${provider.name}`});if(!world.continuation&&branch.snapshots.length>30)branch.snapshots.shift();branch.cursor=branch.snapshots.length-1;return next;
 }

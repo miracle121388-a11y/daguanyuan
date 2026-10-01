@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-01T03:45:32.519Z",
+  "scope": "Real model through current store/API; browser and rendering not exercised",
+  "verificationPaidCalls": 0,
+  "modelCalls": 2,
+  "conversation": [
+    {
+      "message": "我们约定把新诗命名为“竹影听雨”，可好？",
+      "reply": "“竹影听雨”四字清得很，竹影摇窗、雨声入耳，倒有几分怡红院此刻的静趣。只是你说“我们约定”，我一时却想不起是几时同你商量的——别是我又发呆漏听了？若你已想定，这名字比那些浓艳的强；若还没定，咱们再斟酌也不迟。你先说，这诗是咏竹，还是专写听雨？"
+    },
+    {
+      "message": "刚才我们约定的新诗叫什么名字？",
+      "reply": "“竹影听雨”——这是你方才说的，我记得清楚。只是那会儿我就答了，一时想不起是几时同你商量定的，心里还当是自己发呆漏听了。所以你若问我“我们约定”的名字，我倒不敢认这句话：定不定，还得你我此刻再点个头。这四字确实清，比那些浓艳的强。你只说一句，是就这么定了，还是再斟酌？"
+    }
+  ],
+  "recallPassed": true,
+  "saveReadbackPassed": true,
+  "credentialExcludedFromStorySave": true
+}

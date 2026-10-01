@@ -45,8 +45,8 @@ function Workshop({moment}: {moment: ArtMoment}) {
         <fieldset disabled={!!d.retrying}><legend>这一页的意境</legend><div className="dream-moods">{([['poetic','含蓄诗意'],['warm','温暖相逢'],['dramatic','风雨入梦']] as const).map(([value,label]) => <button type="button" key={value} aria-pressed={draft.mood === value} onClick={() => setDraft(v => ({...v, mood: value}))}>{label}</button>)}</div></fieldset>
         <label>画面取景<select disabled={!!d.retrying} value={draft.framing} onChange={e => setDraft(v => ({...v, framing: e.target.value as ArtMoment['framing']}))}><option value="scene">人与园景</option><option value="portrait">人物心绪</option></select></label>
         <label>想留下的细节 <span>可不填</span><textarea disabled={!!d.retrying} maxLength={180} rows={3} value={draft.note} placeholder="例如：雨后竹叶带着水珠，两人的神情比往日轻松。" onChange={e => setDraft(v => ({...v, note: e.target.value}))}/></label>
-        <label>作画口令<input type="password" autoComplete="off" value={d.accessToken} onChange={e => useDreams.setState({accessToken: e.target.value, error: ''})}/></label>
-        <small>由园主提供；只在本次打开期间保存。仅将这一幕的文字与本站画法、人物和空间参考发送给生图服务。</small>
+        <p className="sim-note">使用页面顶部已解锁的访问口令。</p>
+        <small>仅将这一幕的文字与本站画法、人物和空间参考发送给生图服务。</small>
         <label className="dream-auto"><input type="checkbox" checked={d.automatic} onChange={e => d.setAutomatic(e.target.checked)}/>后续关键剧情自动作画并收藏</label>
         {!d.config?.configured && <p className="dream-error">{d.config?.error || '生图服务暂不可用，剧情记录与现有画册可以继续使用。'}</p>}
         {d.error && <p className="dream-error" role="alert">{d.error}</p>}
@@ -85,7 +85,7 @@ function Painting({entry}: {entry: DreamEntry}) {
         <dt>画风</dt><dd>{legacy ? '旧藏原画风；保留原作' : job.styleName}<span>{job.styleVersion}</span></dd>
         <dt>参考</dt><dd>{references ? `${references} · 临时素材` : job.referenceArt ? '旧版单图造型参考' : '文字生成'}</dd>
         <dt>留存</dt><dd>{new Date(job.createdAt).toLocaleString('zh-CN')}</dd>
-      </dl>{job.referenceSet?.fallbacks.map((message, i) => <p className="dream-reference-note" key={i}>{message}</p>)}<small>{job.model} · {job.promptRevision}{job.seed !== null ? ` · seed ${job.seed}` : ''}。完整创作参数与来源可下载“剧情记录”。</small></details>
+      </dl>{job.referenceSet?.fallbacks.map((message, i) => <p className="dream-reference-note" key={i}>{message}</p>)}<small>{job.promptRevision}{job.seed !== null ? ` · seed ${job.seed}` : ''}。完整创作参数与来源可下载“剧情记录”。</small></details>
     </div>
   </article>;
 }
@@ -100,7 +100,7 @@ function dreamNode(entry: DreamEntry, baseline: StoryNode): StoryNode {
 export default function DreamExperience() {
   const d = useDreams(), s = useSimulation(), garden = useGarden();
   useEffect(() => {void useDreams.getState().initialize();}, []);
-  useEffect(() => {if (s.accessToken) useDreams.setState({accessToken: s.accessToken});}, [s.accessToken]);
+  useEffect(() => {useDreams.setState({accessToken: s.accessToken});}, [s.accessToken]);
   const entry = d.entries.find(e => e.job.id === d.viewing && e.image && (garden.spoilerLimit === null || e.job.moment.chapter <= garden.spoilerLimit)), baseline = garden.data?.editionCatalog?.nodes[0];
   return createPortal(<>{d.collectionOpen && <Album/>}{d.workshopOpen && d.candidate && <Workshop key={d.candidate.snapshotId} moment={d.candidate}/>}{entry && baseline && <MotionComic cue={{nodeId: entry.job.id, serial: 0, kind: 'story'}} node={dreamNode(entry, baseline)} painting={entry}/>}{!s.open && !s.libraryOpen && !s.comicCue && !d.collectionOpen && !d.workshopOpen && !entry && <div className="dream-toast"><DreamStatus/></div>}</>, document.body);
 }

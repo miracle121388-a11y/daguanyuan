@@ -1,3 +1,4 @@
+import {overviewFrame} from './overviewFraming';
 import SimulationActors from './SimulationActors';
 import {useSimulation} from '../simulation/store';
 import {Suspense,useEffect,useMemo,useRef,Component,type ReactNode} from 'react';
@@ -54,7 +55,8 @@ function Detail({place,onReady,low}:{place:ScenePlace;onReady:(id:string|null)=>
  return <group position={place.position}><primitive object={scene} onClick={(e:ThreeEvent<MouseEvent>)=>{e.stopPropagation();if(useSimulation.getState().open)return;const state=useGarden.getState();if(state.selectedPlaceId!==place.id)state.choosePlace(place.id)}}/></group>;
 }
 function Atmosphere(){
- const night=useGarden(s=>s.timeOfDay==='night'),{scene,invalidate,gl}=useThree(),selected=useGarden(s=>s.selectedPlaceId),loaded=useGarden(s=>s.loaded);
+ const night=useGarden(s=>s.timeOfDay==='night'),{scene,camera,invalidate,gl}=useThree(),selected=useGarden(s=>s.selectedPlaceId),loaded=useGarden(s=>s.loaded);
+ useFrame(()=>{if(scene.fog instanceof THREE.Fog){scene.fog.near=Math.max(310,camera.position.length()+100);scene.fog.far=scene.fog.near+360;}});
  const place=useGarden(s=>s.data?.manifest.places.find(p=>p.id===s.selectedPlaceId));
  const lightAim=useMemo(()=>{const aim=new THREE.Object3D();if(place)aim.position.fromArray(place.position);return aim},[place]);
  const lightPosition:Vec3=place?[place.position[0]+(night?-74:-80),place.position[1]+(night?98:62),place.position[2]+(night?76:42)]:night?[-74,98,76]:[-80,62,42],shadowSpan=place?(place.id==='daguanlou'?90:40):165;
@@ -99,6 +101,7 @@ function CameraManager({manifest}:{manifest:Manifest}){
   let position:Vec3=v?v.cameraPosition:planView&&!p?[0,395,49]:room?toWorld(room.position):h?[target[0]+5,target[1]+13,target[2]+8]:p?.cameraPosition??(size.width<601?manifest.overviewCamera.mobilePosition??manifest.overviewCamera.position:manifest.overviewCamera.position);
   if(camera instanceof THREE.PerspectiveCamera){
    camera.near=room?.06:.65;camera.fov=room?.fov??(size.width<601?(planView&&!p?72:58):p?43:48);camera.updateProjectionMatrix();
+   if(!p&&!v){const framing=overviewFrame(manifest,size.width,size.height,camera.fov,planView);target=framing.target;position=framing.position;}
    if(size.width<601&&p&&!h){
     const box=new THREE.Box3(new THREE.Vector3(...p.boundingBox.min),new THREE.Vector3(...p.boundingBox.max));
     if(closeView){
@@ -130,7 +133,7 @@ function CameraManager({manifest}:{manifest:Manifest}){
   if(!started.current){dwell.current+=Math.min(dt,1);if(dwell.current<5)return;if(tour.index>=route.orderedStops.length-1){useGarden.setState({tourState:{...tour,status:'paused'}});return}controller.current=new GuidedTourController(manifest,route.orderedStops[tour.index],route.orderedStops[tour.index+1]);started.current=true;useGarden.setState({panelOpen:false})}
   const state=controller.current?.tick(Math.min(dt,.5));if(state){const {position,lookAhead,done}=state;const target:Vec3=[lookAhead[0],lookAhead[1]+2.4,lookAhead[2]];if(!done)controls.current.setLookAt(position[0],position[1]+8,position[2]+.15,...target,false);else useGarden.getState().tourStep(tour.index+1)}
  });
- return <CameraControls ref={controls} makeDefault minDistance={simulationOpen && simulationClose ? .38 : hotspot?.endsWith('-study')?2.5:8} dollyToCursor={simulationOpen&&simulationClose} maxDistance={540} minPolarAngle={.12} maxPolarAngle={Math.PI/2-.012} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
+ return <CameraControls ref={controls} makeDefault minDistance={simulationOpen && simulationClose ? .38 : hotspot?.endsWith('-study')?2.5:8} dollyToCursor={simulationOpen&&simulationClose} maxDistance={1200} minPolarAngle={.12} maxPolarAngle={Math.PI/2-.012} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
 }
 function Markers({manifest}:{manifest:Manifest}){
  const simulationOpen=useSimulation(s=>s.open);
