@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-01T06:03:52.898Z",
+  "sourceCommit": "27ebfe10e87e69401a129a11f29074e351841cd1",
+  "tests": {
+    "command": "npm test -- --maxWorkers=1",
+    "filesPassed": 19,
+    "testsPassed": 200,
+    "exit": 0
+  },
+  "lint": {
+    "command": "npm run lint",
+    "exit": 0
+  },
+  "build": {
+    "command": "npm run build",
+    "exit": 0,
+    "integrityChecks": 11173,
+    "warning": "Existing GardenScene bundle exceeds Vite chunk warning; not a build failure"
+  },
+  "diffCheck": {
+    "command": "git diff --check",
+    "exit": 0
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20261001-044934-533225",
+  "directory": ".deploy/reference-20261001-060302-073046",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,7 +11,7 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "34b2685b076bc668a14f0f189923c9a5ec3b1bab5c17367811911747116f162f"
+      "sha256": "6da459d8681f4e545dbb8847aabb715405cc18f8bb185505e64a0999564bab09"
     },
     {
       "path": "server.mjs",
@@ -19,11 +19,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "efaaadacbaad341d2e973d98ca267803120a19e52f7dc1619d1e266a4ae64faa"
+      "sha256": "4925ad36fb92c1fba2c2f1b0417484d8551481831532984598a83d4d89e0c7cc"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "4956b7df5f473a1152bd951610a11e0bc1021f909e1fd7d9cba4adcebe345e10"
+      "sha256": "328f162227bb61cfe88ebc774ec2595d5ffdd8848f9b48f533fd1dd92ba94dcd"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -71,7 +71,7 @@
     },
     {
       "path": "server/simulation-api.mjs",
-      "sha256": "75f1c5571e0855b4c1eb5396c91e30928c59473eb9812394d27a79350f44ec19"
+      "sha256": "f689e0b478c7457061d98a27c242855d24e908e6f5a5b2b93febdb86a40d3225"
     },
     {
       "path": "server/dream-references.mjs",
@@ -83,7 +83,7 @@
     },
     {
       "path": "server/literary-corpus.mjs",
-      "sha256": "fa1bab0e5d3fc39f17bebf8419ab4867c02727b1f31460abe560ac32de09ce3e"
+      "sha256": "7877dfe0769b75b42036513439c1feed0f3eccd72071f202cb5a147b83abb323"
     },
     {
       "path": "server/start.mjs",
@@ -95,7 +95,7 @@
     },
     {
       "path": "server/continuation.mjs",
-      "sha256": "6f347649e450755ee9a2e040bb9652cb84a7166e3647ca910909d91ada9eeaa4"
+      "sha256": "a217b676ce655f26084cd0bf5b18995ce869faa28598db2e9ac33da794047c3c"
     },
     {
       "path": "server/dream-prompts.mjs",
@@ -103,7 +103,7 @@
     },
     {
       "path": "server/story-playback.mjs",
-      "sha256": "8ca4473f2ab885b008585a545d84a8a27ed48a53857a6f937e7a7c91ffb592e1"
+      "sha256": "18bc7e9605daae109aff91cad2123155e4c4b4944436d762e3681aaa0ef93d28"
     },
     {
       "path": "server/dream-style.mjs",
@@ -1434,24 +1434,24 @@
       "sha256": "041f99af7673e0b6307373b10cf3052eb48d6f139782ff763b21f13380ed9ebd"
     },
     {
-      "path": "dist/assets/index-CBdt3-Sa.css",
-      "sha256": "7552a09f60344d1c00356690cc3cb85aca4699e7868cec85f9e1b8ebfa90c26b"
+      "path": "dist/assets/index-qn5Iq6RP.css",
+      "sha256": "7c41971b3cf8fa2bdeddc21a441ad5136b700b5f3a053ae48398d9f598db8307"
     },
     {
-      "path": "dist/assets/GardenScene-CVDHX7wU.js.br",
-      "sha256": "cad6e50afb4a99369f45db48889f98d90904f2eeb71782e4b45fcd21e22f1bf1"
+      "path": "dist/assets/index-qn5Iq6RP.css.br",
+      "sha256": "979caaa2cb231f5c1e84bf78be3d5911fc82082b3c0ec36f4e09c7830c2590b5"
     },
     {
-      "path": "dist/assets/index-A084WGft.js.br",
-      "sha256": "7b3dd92613107dac59540986ff3207d5b9da24d1ac9427c90356563a178717cb"
+      "path": "dist/assets/GardenScene-CG0h6Xqk.js.br",
+      "sha256": "6c21d4ef9febb7db3f53ad726f4822281e238e04dad0ccde60c6f0adc3d8a9d2"
+    },
+    {
+      "path": "dist/assets/index-CiwSJsfN.js.br",
+      "sha256": "2d62e48f1f2eb25801cc399972eaabc0bf9bc4fa5eddb40e38f3f9de0b80b471"
     },
     {
       "path": "dist/assets/garden-mark-COPNxcSD.svg",
       "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
-    },
-    {
-      "path": "dist/assets/index-CBdt3-Sa.css.br",
-      "sha256": "058f32989a51dd3cf606ed371a3d45a14b5bdb88167767949c60aadfcddbaa0b"
     },
     {
       "path": "dist/data/corpus/archive.json",

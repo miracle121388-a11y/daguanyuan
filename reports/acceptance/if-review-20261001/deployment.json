@@ -1,0 +1,18 @@
+{
+  "ID": "6abdf7dd794080511aa2ee8c",
+  "projectID": "6aa142fb6c3d9581b71560ed",
+  "serviceID": "6aa143296c3d9581b71560fa",
+  "environmentID": "6aa142fbda9bc245fba1e845",
+  "gitProvider": "GITHUB",
+  "repoOwner": "",
+  "repoName": "",
+  "ref": "",
+  "commitSHA": "",
+  "commitMessage": "",
+  "planType": "docker",
+  "createdAt": "2026-10-01T06:04:13.763Z",
+  "scheduledAt": "2026-10-01T06:04:16.199Z",
+  "startedAt": "2026-10-01T06:04:20.003Z",
+  "finishedAt": "2026-10-01T06:06:28.503Z",
+  "status": "RUNNING"
+}
