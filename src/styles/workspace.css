@@ -136,3 +136,5 @@
 @media(max-height:620px) and (min-width:601px){.simulation-panel.if-world{height:auto}.sim-branch-premise{max-height:68px}.sim-branch-hero{padding-block:8px;margin-block:0 6px}}
 @media(max-width:900px){.simulation-panel.if-world.expanded{height:100%;max-height:none}.workspace:has(>.simulation-panel.if-world.expanded)>.garden-main{display:none}}
 .sim-auto-option{min-height:40px;border:1px solid var(--border);padding:8px 12px;border-radius:4px;margin:8px 0;font-size:12px}
+.background-story{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 18px;background:var(--panel-secondary);color:var(--text-muted);font-size:12px;border-top:1px solid var(--border)}
+.background-story button{flex-shrink:0;color:var(--text);padding:4px 10px;border:1px solid var(--border);border-radius:6px}

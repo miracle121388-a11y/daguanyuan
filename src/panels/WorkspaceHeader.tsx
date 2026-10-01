@@ -50,11 +50,14 @@ export default function WorkspaceHeader() {
     </div>
     <div className="workspace-navline">
       <nav aria-label="主导航">
-        <button aria-label="世界推演" className={mode === 'main' ? 'active' : 'primary-entry'} aria-pressed={mode === 'main'} disabled={sim.phase !== 'ready'} onClick={() => sim.openWorld('main')}><Sparkles size={17}/><span>世界推演</span></button>
-        <button aria-label="IF 世界" className={mode === 'if' ? 'active' : ''} aria-pressed={mode === 'if'} disabled={sim.phase !== 'ready'} onClick={() => sim.openWorld('if')}><GitBranch size={17}/><span>IF 世界</span></button>
+        <button aria-label="世界推演" className={mode === 'main' ? 'active' : 'primary-entry'} aria-pressed={mode === 'main'} disabled={sim.phase !== 'ready' && sim.journal?.active !== 'main'} onClick={() => sim.openWorld('main')}><Sparkles size={17}/><span>世界推演</span></button>
+        <button aria-label="IF 世界" className={mode === 'if' ? 'active' : ''} aria-pressed={mode === 'if'} disabled={sim.phase !== 'ready' && sim.journal?.active !== 'if'} onClick={() => sim.openWorld('if')}><GitBranch size={17}/><span>IF 世界</span></button>
         <button aria-label="园林漫游" className={mode === 'garden' ? 'active' : ''} aria-pressed={mode === 'garden'} onClick={() => browse()}><Compass size={17}/><span>园林漫游</span></button>
       </nav>
       <AccessGate/>
     </div>
+    {!sim.open && sim.phase !== 'ready' && <div className="background-story" role="status"><span>{sim.phase === 'reviewing' ? '后台正在核对情节' : sim.phase === 'executing' ? '后台正在演绎人物行动' : sim.phase === 'conversing' ? '后台正在完成交谈' : '故事任务在后台继续'} · 完成后自动存档</span><button onClick={() => sim.openWorld(sim.journal?.active ?? 'main')}>查看进度</button></div>}
+    {!sim.open && sim.phase === 'ready' && sim.error && <div className="background-story" role="status"><span>{sim.error}</span><button onClick={() => sim.openWorld(sim.journal?.active ?? 'main')}>返回故事</button></div>}
+    {!sim.open && sim.phase === 'ready' && !sim.error && sim.backgroundNotice && <div className="background-story" role="status"><span>{sim.backgroundNotice}</span><button onClick={() => sim.openWorld(sim.journal?.active ?? 'main')}>查看结果</button></div>}
   </header>;
 }

@@ -1,4 +1,4 @@
-import {Component, Suspense, useEffect, useMemo, useRef, type ReactNode} from 'react';
+import {Component, Suspense, useDeferredValue, useEffect, useMemo, useRef, type ReactNode} from 'react';
 import {Html, useGLTF} from '@react-three/drei';
 import {createPortal, useFrame} from '@react-three/fiber';
 import * as THREE from 'three';
@@ -19,7 +19,7 @@ function PaintedFigure({id, pose, paused, motion, rate, tea, detail}: Props & {d
   const expressions = useMemo(() => ['face','lashes','leftHand','rightHand'].map(part => model.getObjectByName(`${id}_${part}`) as THREE.Mesh), [id, model]);
   const clothJoints = useMemo(() => ['leftArm','rightArm','leftForearm','rightForearm'].map(part => ({bone:model.getObjectByName(`${id}_cloth_${part}`),driver:rig[part]})), [id, model, rig]);
   useEffect(() => {
-    model.traverse(object => {if (object instanceof THREE.Mesh) {object.castShadow = true; object.receiveShadow = true;}});
+    model.traverse(object => {if (object instanceof THREE.Mesh) {object.castShadow = true; object.receiveShadow = true; if (object instanceof THREE.SkinnedMesh || object.morphTargetInfluences) object.frustumCulled = false;}});
     rig.book.visible = false; rig.brush.visible = false;
   }, [model, rig]);
   useFrame((_state, delta) => {
@@ -58,7 +58,7 @@ function PaintedFigure({id, pose, paused, motion, rate, tea, detail}: Props & {d
     rig.brush.visible = pose === 'write';
     rig.brush.rotation.z = pose === 'write' ? Math.sin(t * 5) * .09 : 0;
     rig.brush.position.x = .01 + (pose === 'write' ? Math.sin(t * 3) * .005 : 0);
-  });
+  }, -3);
   return <><primitive object={model} dispose={null}/>{tea && pose === 'rest' && createPortal(<TeaCup id={id} forearm={rig.rightForearm}/>, rig.rightForearm)}</>;
 }
 
@@ -89,6 +89,8 @@ class CharacterBoundary extends Component<{id: AgentId; detail: CharacterDetail;
 }
 export default function GardenCharacter(props: Props) {
   const quality = useGarden(s => s.qualityLevel), focused = useSimulation(s => s.focused === props.id), camera = useSimulation(s => s.cameraMode);
-  const detail = characterDetail(focused, quality, camera);
-  return <CharacterBoundary key={props.id+detail} id={props.id} detail={detail}><Suspense fallback={<Silhouette id={props.id}/>}><PaintedFigure {...props} detail={detail}/></Suspense></CharacterBoundary>;
+  const detail = useDeferredValue(characterDetail(focused, quality, camera));
+  // Keep the incumbent model rendered while the new LOD suspends. A boundary
+  // keyed by detail discarded it immediately and flashed a loading silhouette.
+  return <CharacterBoundary key={props.id} id={props.id} detail={detail}><Suspense fallback={<Silhouette id={props.id}/>}><PaintedFigure {...props} detail={detail}/></Suspense></CharacterBoundary>;
 }

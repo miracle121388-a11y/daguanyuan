@@ -5,7 +5,7 @@ import * as THREE from 'three';
 import {agentIds, type AgentId} from '../simulation/types';
 import {displayedWorld, useSimulation} from '../simulation/store';
 import {agentColors, currentWorld} from '../simulation/world';
-import {commandDuration, prepareRoute, routePoint, turnToward} from '../simulation/presentation';
+import {prepareRoute, routePoint, turnToward} from '../simulation/presentation';
 import {useGarden} from '../state/store';
 import GardenCharacter from './GardenCharacter';
 import {applyLens, characterFrame,subjectBounds} from './cameraFraming';
@@ -19,9 +19,9 @@ function Figure({id, motion}: {id: AgentId; motion: boolean}) {
   const actor = world?.agents[id];
   const active = state.playback?.command.action.agent === id ? state.playback : null;
   const route = useMemo(() => prepareRoute(active?.command.path ?? []), [active]);
-  const elapsed = useRef(0), completed = useRef(false), lastProgress = useRef(-1);
+  const completed = useRef(false);
   const attention = useRef(new THREE.Vector3());
-  useEffect(() => {elapsed.current = 0; completed.current = false; lastProgress.current = -1;}, [active?.id]);
+  useEffect(() => {completed.current = false; attention.current.set(0,0,0);}, [active?.id]);
   useEffect(() => {if (actor && group.current) group.current.position.fromArray(actor.position);}, [actor?.position[0], actor?.position[1], actor?.position[2], state.sceneRevision]);
   const conversing = state.phase === 'conversing' && state.actor === id;
   const pose = conversing ? 'talk' : active?.command.action.action ?? (actor?.currentAction?.action === 'move' ? 'observe' : actor?.currentAction?.action ?? 'observe');
@@ -42,10 +42,7 @@ function Figure({id, motion}: {id: AgentId; motion: boolean}) {
     }
     if (conversing) face(camera.position);
     if (!active || completed.current) return;
-    elapsed.current += Math.min(delta, .1) * state.playbackRate;
-    const progress = Math.min(1, elapsed.current / commandDuration(active.command, route.length));
-    const step = Math.floor(progress * 10);
-    if (step !== lastProgress.current) {lastProgress.current = step; useSimulation.setState({playbackProgress: progress});}
+    const progress = active.progress();
     if (route.length > .01) {
       const distance = route.length * (progress * progress * (3 - 2 * progress));
       const point = routePoint(route, distance), ahead = routePoint(route, Math.min(route.length, distance + .6));
@@ -55,18 +52,18 @@ function Figure({id, motion}: {id: AgentId; motion: boolean}) {
     else if (['read','write','rest'].includes(active.command.action.action)) {
       // Pick a presentation-facing direction once, then keep it while the
       // visitor orbits. Dialogue still faces its actual conversation partner.
-      if (elapsed.current < .35 * state.playbackRate || attention.current.lengthSq() === 0) attention.current.copy(camera.position);
+      if (attention.current.lengthSq() === 0) attention.current.copy(camera.position);
       face(attention.current);
     }
     if (progress >= 1) {completed.current = true; active.done();}
-  });
+  }, -4);
   if (!actor || !actor.alive) return null;
   return <group ref={group} name={`simulation-${id}`} userData={{simulationAgent: id}}>
-    <group onClick={e => {e.stopPropagation(); state.inspect(id);}}>
+    <group onClick={e => {if (!state.open) return; e.stopPropagation(); state.inspect(id);}}>
       <GardenCharacter id={id} pose={pose} paused={state.paused} motion={motion} rate={state.playbackRate} calm={actor.mood.calm} tea={world?.gathering?.kind==='tea' && world.gathering.participants.includes(id) && world.gathering.status!=='cancelled' && actor.location===world.gathering.place && actor.spot==='court'}/>
     </group>
     {state.focused === id && <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0,.035,0]}><ringGeometry args={[.43,.455,48]}/><meshBasicMaterial color="#F2E9D8" transparent opacity={.65} side={THREE.DoubleSide} depthWrite={false}/></mesh>}
-    <Html position={[0,2.16,0]} center zIndexRange={[15,1]}><button ref={label} className="sim-person-label" data-agent={id} data-nearby={agentIds.some(other => other !== id && world?.agents[other].location === actor.location)} aria-pressed={state.focused === id} onClick={() => state.inspect(id)}><i style={{background:agentColors[id]}}/>{actor.name}<small>{active ? actionLabels[active.command.action.action] : ''}</small></button></Html>
+    {state.open && <Html position={[0,2.16,0]} center zIndexRange={[15,1]}><button ref={label} className="sim-person-label" data-agent={id} data-nearby={agentIds.some(other => other !== id && world?.agents[other].location === actor.location)} aria-pressed={state.focused === id} onClick={() => state.inspect(id)}><i style={{background:agentColors[id]}}/>{actor.name}<small>{active ? actionLabels[active.command.action.action] : ''}</small></button></Html>}
   </group>;
 }
 
@@ -89,7 +86,9 @@ function FollowCamera() {
  useFrame(({scene})=>{
   if(!state.focused||!controls||cancelled.current||!(camera instanceof THREE.PerspectiveCamera))return;
   const object=scene.getObjectByName(`simulation-${state.focused}`);if(!object)return;
-  const revision=object.getObjectByName(`${state.focused}_face`)?.uuid??'loading';
+  // A loaded LOD replacement has the same anatomical frame; do not jump the
+  // camera each time a focus change finishes loading another level of detail.
+  const revision=object.getObjectByName(`${state.focused}_face`)?'ready':'loading';
   if(revision!==model.current){model.current=revision;initialized.current=false;}
   const position=object.position,c=controls as unknown as {setLookAt:(x:number,y:number,z:number,tx:number,ty:number,tz:number,smooth:boolean)=>void};
   if(!initialized.current){
@@ -104,15 +103,17 @@ function FollowCamera() {
   }else if(previous.current&&previous.current.distanceTo(position)>.005){
    const destination=position.clone().add(offset.current),target=position.clone().add(aim.current);c.setLookAt(destination.x,destination.y,destination.z,target.x,target.y,target.z,false);previous.current.copy(position);
   }
- });
+ }, -2);
  return null;
 }
 
 export default function SimulationActors(){
   const state=useSimulation(),loaded=useGarden(s=>s.loaded),gardenMotion=useGarden(s=>s.motion),root=useThree(),{invalidate,gl}=root;
   const [reduced,setReduced]=useState(()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const [visited,setVisited]=useState(false);
   const motion=gardenMotion&&!reduced;
   useEffect(()=>{const mq=window.matchMedia('(prefers-reduced-motion: reduce)'),change=()=>setReduced(mq.matches);mq.addEventListener('change',change);return()=>mq.removeEventListener('change',change);},[]);
+  useEffect(()=>{if(state.open)setVisited(true);},[state.open]);
   useEffect(()=>{useSimulation.setState({sceneReady:loaded});return()=>{useSimulation.getState().cancel();useSimulation.setState({sceneReady:false});};},[loaded]);
   useEffect(()=>{invalidate();},[state.preview,state.playback,state.focusRevision,state.sceneRevision,state.paused,invalidate]);
   useEffect(()=>{
@@ -130,6 +131,6 @@ export default function SimulationActors(){
     };
   });
   const path=state.playback?.command.path;
-  if(!state.open||!state.journal)return null;
-  return <>{agentIds.map(id=><Figure key={id} id={id} motion={motion}/>)}{path&&path.length>1&&<Line points={path.map(p=>[p[0],p[1]+.04,p[2]])} lineWidth={1.3} color="#E3D5B6" transparent opacity={.42}/>}<FollowCamera/></>;
+  if((!state.open&&!visited)||!state.journal)return null;
+  return <><group visible={state.open}>{agentIds.map(id=><Figure key={id} id={id} motion={motion}/>)}{path&&path.length>1&&<Line points={path.map(p=>[p[0],p[1]+.04,p[2]])} lineWidth={1.3} color="#E3D5B6" transparent opacity={.42}/>}</group>{state.open&&<FollowCamera/>}</>;
 }

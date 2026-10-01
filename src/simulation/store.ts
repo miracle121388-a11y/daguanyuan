@@ -14,13 +14,15 @@ import {editionIdSchema, type EditionId} from '../data/editions';
 import {forkStory} from './story';
 import {useDreams} from '../dreams/store';
 import {captureMoment} from '../dreams/moments';
+import {PlaybackTimeline} from './playback';
+import {commandDuration, prepareRoute} from './presentation';
 
 // The previous v1 keys remain untouched; old 74/105/91 timelines are not replayed at 80.
 export const STORAGE_KEY = 'daguanyuan.simulation.after80.v1';
 export const EDITION_KEY = 'daguanyuan.edition.v1';
 export const editionStorageKey = (id: EditionId) => id === 'original80' ? STORAGE_KEY : `${STORAGE_KEY}.${id}`;
 export interface ComicCue {nodeId: string; serial: number; kind: 'story' | 'if'; text?: string}
-interface Playback {id: number; command: SceneCommand; done: () => void}
+interface Playback {id: number; command: SceneCommand; progress: () => number; done: () => void}
 interface SimulationState {
   editionId: EditionId; editionJournals: Partial<Record<EditionId, Journal>>;
   libraryOpen: boolean; comicCue: ComicCue | null; comicAutomatic: boolean;
@@ -35,7 +37,7 @@ interface SimulationState {
   participationView: 'chat' | 'choice' | 'gathering';
   conversationDrafts: Partial<Record<AgentId, {message: string; tone: ConversationTurn['tone']}>>;
   inspectionTarget: AgentId | null; inspectionRevision: number;
-  provider: 'mock' | 'remote'; remoteLabel: string; accessToken: string; error: string; storageNotice: string;
+  provider: 'mock' | 'remote'; remoteLabel: string; accessToken: string; error: string; storageNotice: string; backgroundNotice: string;
   initialize: (data: CanonData) => void; toggle: () => void; next: () => Promise<void>; advanceParticipation: () => Promise<void>;
   createIf: (prompt: string) => Promise<void>; switchBranch: (id: 'main' | 'if') => void;
   restore: (index: number) => void; pause: () => void; cancel: () => void;
@@ -71,19 +73,37 @@ function persist(journal: Journal) {
   }
   catch { useSimulation.setState({storageNotice: '浏览器空间不足或禁止存储。本次可继续推演，请导出存档以免关闭后丢失。'}); }
 }
-function commit(journal: Journal) { useSimulation.setState({journal}); persist(journal); }
+function commit(journal: Journal) {
+  const state = useSimulation.getState();
+  useSimulation.setState({journal}); persist(journal);
+  if (!state.open && state.phase !== 'ready') useSimulation.setState({backgroundNotice: useSimulation.getState().storageNotice ? '本次任务已完成，存档未写入，请返回导出' : '本次任务已完成，已存到本机'});
+}
 function execute(command: SceneCommand, signal: AbortSignal): Promise<void> {
   if (!useSimulation.getState().sceneReady) return Promise.reject(new Error('三维场景尚未就绪，请等待园林载入后重试。'));
   return new Promise((resolve, reject) => {
     let settled = false;
-    const abort = () => { if (!settled) { settled = true; reject(new DOMException('本步已取消', 'AbortError')); } };
+    const timeline = new PlaybackTimeline(commandDuration(command, prepareRoute(command.path).length));
+    const progress = () => {const s = useSimulation.getState(); return timeline.sample(s.paused, s.playbackRate);};
+    // Settle elapsed time with the OLD controls before a pause/speed change.
+    const unsubscribe = useSimulation.subscribe((state, previous) => {
+      if (state.paused !== previous.paused || state.playbackRate !== previous.playbackRate) timeline.sample(previous.paused, previous.playbackRate);
+    });
+    const cleanup = () => {clearInterval(timer); unsubscribe(); signal.removeEventListener('abort', abort);};
+    const abort = () => { if (!settled) { settled = true; cleanup(); reject(new DOMException('本步已取消', 'AbortError')); } };
+    const playback: Playback = {id: ++playbackId, command, progress, done: () => {
+      if (settled) return;
+      settled = true; cleanup();
+      useSimulation.setState({playback: null}); resolve();
+    }};
+    const timer = setInterval(() => {
+      if (settled) return;
+      const value = progress();
+      if (value >= 1) playback.done();
+      else if (Math.floor(value * 10) !== Math.floor(useSimulation.getState().playbackProgress * 10)) useSimulation.setState({playbackProgress: value});
+    }, 100);
     signal.addEventListener('abort', abort, {once: true});
     if (signal.aborted) { abort(); return; }
-    useSimulation.setState({playbackProgress: 0, playback: {id: ++playbackId, command, done: () => {
-      if (settled) return;
-      settled = true; signal.removeEventListener('abort', abort);
-      useSimulation.setState({playback: null}); resolve();
-    }}});
+    useSimulation.setState({playbackProgress: 0, playback});
   });
 }
 
@@ -92,6 +112,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   open: false, ifComposerOpen: false, journal: null, preview: null, phase: 'ready', actor: null,
   paused: false, automatic: false, playback: null, playbackProgress: 0, director: true, sceneReady: false,
   focused: null, focusRevision: 0, sceneRevision: 0, provider: 'remote', remoteLabel: '故事推演', accessToken: savedAccess(), error: '', storageNotice: '',
+  backgroundNotice: '',
   immersive: false, cameraMode: 'close', playbackRate: 1, recordView: 'events', participationView: 'chat',
   conversationDrafts: {},
   inspectionTarget: null, inspectionRevision: 0,
@@ -156,14 +177,18 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   toggle: () => {
     const open = !get().open;
     if (open) previousTime = useGarden.getState().timeOfDay;
-    if (!open && get().phase !== 'ready') get().cancel();
     useGarden.getState().exitTour();
     useGarden.setState({panelOpen: false, indexOpen: false, sourcesOpen: false, settingsOpen: false, galleryOpen: false, selectedPlaceId: null, hotspotId: null});
-    set({open, ifComposerOpen: false, automatic: false, immersive: false, inspectionTarget: null, focused: open ? 'baoyu' : null, focusRevision: get().focusRevision + 1});
+    set({open, ifComposerOpen: false, automatic: false, immersive: false, inspectionTarget: null, ...(open ? {backgroundNotice: ''} : {paused: false}), focused: open ? get().actor ?? get().focused ?? 'baoyu' : get().focused, focusRevision: get().focusRevision + 1});
     if (!open) useGarden.setState({timeOfDay: previousTime});
   },
   openWorld: branch => {
-    if (get().phase !== 'ready' || !get().journal) return;
+    if (!get().journal) return;
+    if (get().phase !== 'ready') {
+      if (branch !== get().journal?.active) return;
+      if (!get().open) get().toggle();
+      set({immersive: false}); return;
+    }
     if (!get().open) get().toggle();
     if (get().journal?.[branch]) get().switchBranch(branch);
     set({ifComposerOpen: branch === 'if' && !get().journal?.if, immersive: false, recordView: 'events', automatic: false});

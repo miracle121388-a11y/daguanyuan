@@ -41,7 +41,7 @@ export default function SimulationPanel() {
     return () => clearTimeout(timer);
   }, [s.automatic, s.phase, s.open, s.paused, s.journal]);
   useEffect(() => {
-    const visibility = () => { if (document.hidden) useSimulation.setState({automatic: false, paused: useSimulation.getState().phase !== 'ready'}); };
+    const visibility = () => { if (document.hidden) useSimulation.setState({automatic: false}); };
     document.addEventListener('visibilitychange', visibility); return () => document.removeEventListener('visibilitychange', visibility);
   }, []);
   useEffect(() => {

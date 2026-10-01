@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-01T12:44:03.321Z",
+  "tests": 223,
+  "testFiles": 21,
+  "lint": true,
+  "productionBuild": true,
+  "typecheck": true,
+  "canonChecks": 11173,
+  "realBrowser": {
+    "isolatedOrigin": "http://127.0.0.1:3006",
+    "edition": "cheng120",
+    "generatedChapter": 81,
+    "reviewChecks": 7,
+    "browseDuringGeneration": true,
+    "guidedTourDuringReview": true,
+    "completedWithoutReopeningPanel": true,
+    "refreshRestored": true,
+    "hiddenExecutingFrames": 355,
+    "hiddenRenderFramesAllHidden": true,
+    "playerDirectiveCompleted": true,
+    "sourceChapterStayed81": true,
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "horizontalOverflow": 0,
+      "backgroundRealConversation": true,
+      "conversationCount": 1,
+      "refreshRestored": true
+    },
+    "lodSlowLoading": {
+      "frames": 2500,
+      "missing": 0,
+      "levels": [
+        4756,
+        24558
+      ],
+      "networkRestored": true
+    }
+  },
+  "limitations": [
+    "Browser tab closure/reload does not resume unfinished jobs",
+    "Local saves do not synchronize between devices",
+    "No assertion of zero defects on every physical device"
+  ]
+}
