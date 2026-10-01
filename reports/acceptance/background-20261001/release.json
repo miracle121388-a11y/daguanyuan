@@ -1,0 +1,108 @@
+{
+  "at": "2026-10-01T13:09:28.212Z",
+  "sourceCommit": "d725e7cd27f503844d09b7bdeed508fae4ef64a4",
+  "branch": "main",
+  "deploymentId": "6abe5908794080511aa30597",
+  "finishedAt": "2026-10-01T13:00:59.944Z",
+  "status": "RUNNING",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "existingProjectAndService": true,
+  "runtimeFilesMatched": 770,
+  "serverFilesMatched": 16,
+  "httpsFilesMatched": 26,
+  "tlsVerification": true,
+  "privateLiteratureRetained": true,
+  "privateLiteratureUrls404": true,
+  "variablesRetained": 18,
+  "albumFilesRetained": 6,
+  "productionPaidModelCalls": 0,
+  "browserValidation": "Local isolated desktop and 390px canvas; actual online runtime/HTTPS byte comparison, not a claim of online visual playback",
+  "uploadConfirmationTimedOut": true,
+  "platformReceiptConfirmed": true,
+  "noDuplicateUpload": true,
+  "runtimeStarted": true,
+  "localChecks": {
+    "at": "2026-10-01T12:44:03.321Z",
+    "tests": 223,
+    "testFiles": 21,
+    "lint": true,
+    "productionBuild": true,
+    "typecheck": true,
+    "canonChecks": 11173,
+    "realBrowser": {
+      "isolatedOrigin": "http://127.0.0.1:3006",
+      "edition": "cheng120",
+      "generatedChapter": 81,
+      "reviewChecks": 7,
+      "browseDuringGeneration": true,
+      "guidedTourDuringReview": true,
+      "completedWithoutReopeningPanel": true,
+      "refreshRestored": true,
+      "hiddenExecutingFrames": 355,
+      "hiddenRenderFramesAllHidden": true,
+      "playerDirectiveCompleted": true,
+      "sourceChapterStayed81": true,
+      "mobile": {
+        "width": 390,
+        "height": 844,
+        "horizontalOverflow": 0,
+        "backgroundRealConversation": true,
+        "conversationCount": 1,
+        "refreshRestored": true
+      },
+      "lodSlowLoading": {
+        "frames": 2500,
+        "missing": 0,
+        "levels": [
+          4756,
+          24558
+        ],
+        "networkRestored": true
+      }
+    },
+    "limitations": [
+      "Browser tab closure/reload does not resume unfinished jobs",
+      "Local saves do not synchronize between devices",
+      "No assertion of zero defects on every physical device"
+    ]
+  },
+  "movement": {
+    "at": "2026-10-01T12:39:39.243Z",
+    "method": "Actual UI player directive, validated garden path, real scene frames sampled after main-camera render",
+    "frames": 674,
+    "travel": 210.54437218719585,
+    "relativeCameraOffsetMaxError": 0.004627751240040665,
+    "modelIdentityChanges": 0,
+    "missingFaces": 0,
+    "wrongDeformationCulling": 0,
+    "syntheticProbeCounted": false
+  },
+  "lod": {
+    "at": "2026-10-01T12:44:30.920Z",
+    "method": "Cold detailed model selection with tab-only 250 ms latency and 256000 B/s download; restored network emulation after capture",
+    "frames": 2500,
+    "vertexLevels": [
+      4756,
+      24558
+    ],
+    "missingModelFrames": 0,
+    "identities": 2
+  },
+  "freeCamera": {
+    "before": [
+      202.6580197622561,
+      284.29275205484555,
+      459.2117755467651
+    ],
+    "after": [
+      202.6580197622561,
+      284.29275205484555,
+      459.2117755467651
+    ],
+    "open": false,
+    "focused": "wangxifeng",
+    "method": "Development probe changes hidden simulation focus after rotating the actual garden controls; no persistence; test tab reloaded and closed",
+    "at": "2026-10-01T12:56:32.564Z",
+    "maxCameraDisplacement": 0
+  }
+}
