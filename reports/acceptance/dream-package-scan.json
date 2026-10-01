@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20261001-035305-167213",
+  "directory": ".deploy/reference-20261001-044934-533225",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,7 +11,7 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "cee5b9eb5ec1dedf9098d0db557c96c2564edd6d8123419725eaaa7eb4fb3c5b"
+      "sha256": "34b2685b076bc668a14f0f189923c9a5ec3b1bab5c17367811911747116f162f"
     },
     {
       "path": "server.mjs",
@@ -19,11 +19,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "9e5c069341fbca4dbc8439cb778e723a0cbefb37a22d8a0aa9c0106bcd07894d"
+      "sha256": "efaaadacbaad341d2e973d98ca267803120a19e52f7dc1619d1e266a4ae64faa"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "900b742b133dd940947a199a24fbaec62a248c8d4e12aac0ba2d112c1db55396"
+      "sha256": "4956b7df5f473a1152bd951610a11e0bc1021f909e1fd7d9cba4adcebe345e10"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -1434,24 +1434,24 @@
       "sha256": "041f99af7673e0b6307373b10cf3052eb48d6f139782ff763b21f13380ed9ebd"
     },
     {
-      "path": "dist/assets/index-DIDGlNBi.css",
-      "sha256": "be524ae3446e7e160a19f8ed3eae523faa022e17ac895cb4fc64ee9202162a50"
+      "path": "dist/assets/index-CBdt3-Sa.css",
+      "sha256": "7552a09f60344d1c00356690cc3cb85aca4699e7868cec85f9e1b8ebfa90c26b"
     },
     {
-      "path": "dist/assets/index-DIDGlNBi.css.br",
-      "sha256": "1a168280ec23bbfb532c53df2fbd60a3de52b3ff95850bd02bb28f806f08ddeb"
+      "path": "dist/assets/GardenScene-CVDHX7wU.js.br",
+      "sha256": "cad6e50afb4a99369f45db48889f98d90904f2eeb71782e4b45fcd21e22f1bf1"
     },
     {
-      "path": "dist/assets/GardenScene-BIQQpB0V.js.br",
-      "sha256": "020baf23635cd5558a3960da398e473ff32f93abb8e98eb506df5de36fc7560a"
-    },
-    {
-      "path": "dist/assets/index-BPy8PDLx.js.br",
-      "sha256": "2d6f256916bea5142f38f8589fd1c714da06aea8214d044aea4348513b2aed41"
+      "path": "dist/assets/index-A084WGft.js.br",
+      "sha256": "7b3dd92613107dac59540986ff3207d5b9da24d1ac9427c90356563a178717cb"
     },
     {
       "path": "dist/assets/garden-mark-COPNxcSD.svg",
       "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
+    },
+    {
+      "path": "dist/assets/index-CBdt3-Sa.css.br",
+      "sha256": "058f32989a51dd3cf606ed371a3d45a14b5bdb88167767949c60aadfcddbaa0b"
     },
     {
       "path": "dist/data/corpus/archive.json",
