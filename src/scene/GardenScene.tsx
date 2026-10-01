@@ -1,3 +1,4 @@
+import {applyLens, courtyardFrame, fitBox} from './cameraFraming';
 import {overviewFrame} from './overviewFraming';
 import SimulationActors from './SimulationActors';
 import {useSimulation} from '../simulation/store';
@@ -81,59 +82,36 @@ function MoonlitBanks({manifest,low}:{manifest:Manifest;low:boolean}){
 }
 
 function GardenLabel({place,index,chosen,related}:{place:ScenePlace;index:number;chosen:boolean;related:boolean}){const button=useRef<HTMLButtonElement>(null);const {camera,size}=useThree();const position=useMemo(()=>new THREE.Vector3(place.position[0],place.boundingBox.max[1]+2.5,place.position[2]),[place]);useFrame(()=>{if(!button.current)return;const p=position.clone().project(camera);button.current.style.visibility=p.z<1&&Math.abs(p.x)<(size.width<601?.74:.91)&&p.y<.76&&p.y>-.69?'visible':'hidden'});if(chosen&&size.width<601)return null;return <Html position={[0,place.boundingBox.max[1]-place.position[1]+2.5,0]} center zIndexRange={[12,0]} occlude={false}><button ref={button} className={'place-label '+(chosen?'selected':'')+(related?' related':'')} onClick={()=>useGarden.getState().choosePlace(place.id)} aria-label={'定位'+place.name}><span>{String(index+1).padStart(2,'0')}</span>{place.name}</button></Html>}
-function visibleSceneRegion(canvas:HTMLCanvasElement,panelOpen:boolean){
- const rect=canvas.getBoundingClientRect(),panel=panelOpen?document.querySelector('.detail-panel')?.getBoundingClientRect():null;
- return {left:14,right:Math.max(150,rect.width-64),top:64,bottom:Math.max(190,Math.min(rect.height-145,panel?panel.top-rect.top-12:rect.height-145))};
-}
 function CameraManager({manifest}:{manifest:Manifest}){
- const simulationOpen=useSimulation(s=>s.open),simulationFocus=useSimulation(s=>s.focused),simulationClose=useSimulation(s=>s.cameraMode!=='follow');
- const {camera,size,gl}=useThree();const panelOpen=useGarden(s=>s.panelOpen),indoor=useGarden(s=>!!s.hotspotId?.endsWith('-study')&&!s.cutaway);
- useEffect(()=>{if(!(camera instanceof THREE.PerspectiveCamera))return;if(panelOpen){const mobile=size.width<601,region=visibleSceneRegion(gl.domElement,panelOpen);camera.setViewOffset(size.width,size.height,mobile?size.width/2-(region.left+region.right)/2:Math.min(360,size.width<1150?304:332)/2,mobile?size.height/2-(region.top+region.bottom)/2:0,size.width,size.height)}else if(size.width<601)camera.setViewOffset(size.width,size.height,0,size.height*.04,size.width,size.height);else camera.clearViewOffset();camera.updateProjectionMatrix()},[camera,size.width,size.height,panelOpen,indoor,gl]);
- const controls=useRef<CameraControls>(null);const selected=useGarden(s=>s.selectedPlaceId);const tour=useGarden(s=>s.tourState);const motion=useGarden(s=>s.motion);const controller=useRef<GuidedTourController|null>(null);const dwell=useRef(0);const started=useRef(false);
- const planView=useGarden(s=>s.planView),closeView=useGarden(s=>s.closeView),architecturalFocus=useGarden(s=>s.architecturalFocusId);
- const hotspot=useGarden(s=>s.hotspotId),cutaway=useGarden(s=>s.cutaway);
+ const simulationOpen=useSimulation(s=>s.open),simulationFocus=useSimulation(s=>s.focused),cameraMode=useSimulation(s=>s.cameraMode);
+ const {camera,size}=useThree();const panelOpen=useGarden(s=>s.panelOpen);
+ const controls=useRef<CameraControls>(null),selected=useGarden(s=>s.selectedPlaceId),tour=useGarden(s=>s.tourState);
+ const controller=useRef<GuidedTourController|null>(null),dwell=useRef(0),started=useRef(false);
+ const planView=useGarden(s=>s.planView),closeView=useGarden(s=>s.closeView),architecturalFocus=useGarden(s=>s.architecturalFocusId),hotspot=useGarden(s=>s.hotspotId),cutaway=useGarden(s=>s.cutaway);
+ useEffect(()=>{const state=useGarden.getState(),route=state.data?.routes.find(r=>r.id===tour.routeId);if(!route||tour.status==='idle'){controller.current=null;started.current=false;return;}
+  dwell.current=0;controller.current=null;started.current=false;useGarden.setState({panelOpen:true,hotspotId:null});
+ },[tour.routeId,tour.index,tour.revision,manifest]);
  useEffect(()=>{
-  if(tour.status!=='idle'||(simulationOpen&&simulationFocus))return;
+  if(simulationOpen&&simulationFocus||!(camera instanceof THREE.PerspectiveCamera))return;
   const p=manifest.places.find(p=>p.id===selected),h=p?.hotspots.find(h=>h.id===hotspot),v=manifest.architecturalScenes?.find(p=>p.id===architecturalFocus);
   const room=h?.id.endsWith('-study')&&!cutaway?p?.interiorCamera:undefined;
-  const toWorld=(local:Vec3)=>local.map((v,i)=>v+(p?.position[i]??0)) as Vec3;
-  let target:Vec3=v?v.cameraTarget:planView&&!p?[0,0,0]:room?toWorld(room.target):h&&p?toWorld(h.position):p?.cameraTarget??manifest.overviewCamera.target;
-  let position:Vec3=v?v.cameraPosition:planView&&!p?[0,395,49]:room?toWorld(room.position):h?[target[0]+5,target[1]+13,target[2]+8]:p?.cameraPosition??(size.width<601?manifest.overviewCamera.mobilePosition??manifest.overviewCamera.position:manifest.overviewCamera.position);
-  if(camera instanceof THREE.PerspectiveCamera){
-   camera.near=room?.06:.65;camera.fov=room?.fov??(size.width<601?(planView&&!p?72:58):p?43:48);camera.updateProjectionMatrix();
-   if(!p&&!v){const framing=overviewFrame(manifest,size.width,size.height,camera.fov,planView);target=framing.target;position=framing.position;}
-   if(size.width<601&&p&&!h){
-    const box=new THREE.Box3(new THREE.Vector3(...p.boundingBox.min),new THREE.Vector3(...p.boundingBox.max));
-    if(closeView){
-     const px=p.position[0],pz=p.position[2];
-     const half=p.id==='daguanlou'?20:p.featured?8.8:7;
-     box.min.x=Math.max(box.min.x,px-half);box.max.x=Math.min(box.max.x,px+half);
-     box.min.z=Math.max(box.min.z,pz-(p.id==='daguanlou'?5:2));box.max.z=Math.min(box.max.z,pz+(p.id==='daguanlou'?23:12.6));
-     box.min.y=Math.max(box.min.y,p.position[1]+.05);box.max.y=Math.min(box.max.y,p.position[1]+(p.id==='daguanlou'?16:6.5));
-    }
-    const center=box.getCenter(new THREE.Vector3()),direction=new THREE.Vector3(closeView?.38:.30,closeView?.62:1.32,1).normalize();
-    const forward=direction.clone().negate(),right=forward.clone().cross(camera.up).normalize(),up=right.clone().cross(forward).normalize();
-    const region=visibleSceneRegion(gl.domElement,panelOpen),tangent=Math.tan(THREE.MathUtils.degToRad(camera.fov*.5));
-    const tx=tangent*size.width/size.height*(region.right-region.left)/size.width,ty=tangent*(region.bottom-region.top)/size.height;
-    let distance=0;
-    for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z]){
-     const delta=new THREE.Vector3(x,y,z).sub(center),depth=delta.dot(forward);
-     distance=Math.max(distance,Math.abs(delta.dot(right))/tx-depth,Math.abs(delta.dot(up))/ty-depth);
-    }
-    target=center.toArray() as Vec3;position=center.clone().addScaledVector(direction,distance*1.06).toArray() as Vec3;
-   }
-  }
-  controls.current?.setLookAt(...position,...target,motion);
- },[selected,manifest,tour.status,motion,hotspot,cutaway,camera,size.width,size.height,planView,panelOpen,closeView,gl,simulationOpen,simulationFocus,architecturalFocus]);
- useEffect(()=>{const state=useGarden.getState();const route=state.data?.routes.find(r=>r.id===tour.routeId);if(!route||tour.status==='idle'){controller.current=null;started.current=false;return}
-  const place=manifest.places.find(p=>p.id===route.orderedStops[tour.index])!;
-  controls.current?.setLookAt(...place.cameraPosition,...place.cameraTarget,false);dwell.current=0;controller.current=null;started.current=false;useGarden.setState({panelOpen:true,hotspotId:null});
- },[tour.routeId,tour.index,tour.revision,manifest]);
+  applyLens(camera,size.width,size.height,room?'interior':'garden');
+  if(tour.status!=='idle'&&started.current)return;
+  const toWorld=(local:Vec3)=>local.map((value,i)=>value+(p?.position[i]??0)) as Vec3;
+  let framing:{position:Vec3;target:Vec3};
+  if(room)framing={position:toWorld(room.position),target:toWorld(room.target)};
+  else if(h&&p){const target=toWorld(h.position);framing=fitBox(new THREE.Box3(new THREE.Vector3(...target).addScalar(-3),new THREE.Vector3(...target).addScalar(3)),new THREE.Vector3(.35,.55,1),size.width,size.height,camera.fov);}
+  else if(p)framing=courtyardFrame(p,size.width,size.height,camera.fov,closeView&&tour.status==='idle');
+  else if(v){const half=(v.size??[14,10]).map(n=>n/2+2);framing=fitBox(new THREE.Box3(new THREE.Vector3(v.position[0]-half[0],v.position[1],v.position[2]-half[1]),new THREE.Vector3(v.position[0]+half[0],v.position[1]+v.height+2,v.position[2]+half[1])),new THREE.Vector3(...v.cameraPosition).sub(new THREE.Vector3(...v.cameraTarget)),size.width,size.height,camera.fov);}
+  else framing=overviewFrame(manifest,size.width,size.height,camera.fov,planView);
+  controls.current?.setLookAt(...framing.position,...framing.target,false);
+ },[selected,manifest,tour.status,tour.index,hotspot,cutaway,camera,size.width,size.height,planView,panelOpen,closeView,simulationOpen,simulationFocus,architecturalFocus]);
  useFrame((_,dt)=>{if(tour.status!=='playing'||!controls.current)return;const route=useGarden.getState().data?.routes.find(r=>r.id===tour.routeId);if(!route)return;
-  if(!started.current){dwell.current+=Math.min(dt,1);if(dwell.current<5)return;if(tour.index>=route.orderedStops.length-1){useGarden.setState({tourState:{...tour,status:'paused'}});return}controller.current=new GuidedTourController(manifest,route.orderedStops[tour.index],route.orderedStops[tour.index+1]);started.current=true;useGarden.setState({panelOpen:false})}
-  const state=controller.current?.tick(Math.min(dt,.5));if(state){const {position,lookAhead,done}=state;const target:Vec3=[lookAhead[0],lookAhead[1]+2.4,lookAhead[2]];if(!done)controls.current.setLookAt(position[0],position[1]+8,position[2]+.15,...target,false);else useGarden.getState().tourStep(tour.index+1)}
+  if(!started.current){dwell.current+=Math.min(dt,1);if(dwell.current<5)return;if(tour.index>=route.orderedStops.length-1){useGarden.setState({tourState:{...tour,status:'paused'}});return;}controller.current=new GuidedTourController(manifest,route.orderedStops[tour.index],route.orderedStops[tour.index+1]);started.current=true;useGarden.setState({panelOpen:false});}
+  const state=controller.current?.tick(Math.min(dt,.5));if(state){const {position,lookAhead,done}=state,target:Vec3=[lookAhead[0],lookAhead[1]+2.4,lookAhead[2]];if(!done)controls.current.setLookAt(position[0],position[1]+8,position[2]+.15,...target,false);else useGarden.getState().tourStep(tour.index+1);}
  });
- return <CameraControls ref={controls} makeDefault minDistance={simulationOpen && simulationClose ? .38 : hotspot?.endsWith('-study')?2.5:8} dollyToCursor={simulationOpen&&simulationClose} maxDistance={1200} minPolarAngle={.12} maxPolarAngle={Math.PI/2-.012} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
+ const minDistance=simulationOpen?(cameraMode==='portrait'?.95:cameraMode==='close'?2.2:4):hotspot?.endsWith('-study')?1.4:8;
+ return <CameraControls ref={controls} makeDefault minDistance={minDistance} dollyToCursor={false} maxDistance={2000} minPolarAngle={.12} maxPolarAngle={Math.PI/2-.012} smoothTime={.65} draggingSmoothTime={.12} onControlStart={()=>{if(useGarden.getState().tourState.status==='playing')useGarden.setState({tourState:{...useGarden.getState().tourState,status:'paused'}})}}/>;
 }
 function Markers({manifest}:{manifest:Manifest}){
  const simulationOpen=useSimulation(s=>s.open);
@@ -168,12 +146,28 @@ function World({manifest}:{manifest:Manifest}){
  </>;
 }
 import {useState as useStableState} from 'react';
+function useSceneInsets(panelOpen:boolean,simulationOpen:boolean){
+ const [insets,setInsets]=useStableState({right:0,bottom:0});
+ useEffect(()=>{
+  if(!panelOpen||simulationOpen){setInsets({right:0,bottom:0});return;}
+  const main=document.getElementById('garden-main'),panel=document.querySelector('.detail-panel');if(!main||!panel)return;
+  const update=()=>{const m=main.getBoundingClientRect(),p=panel.getBoundingClientRect(),mobile=window.innerWidth<=600;
+   const next=mobile?{right:0,bottom:Math.min(Math.max(0,m.height-100),Math.max(0,m.bottom-p.top+6))}:{right:Math.min(Math.max(0,m.width-140),Math.max(0,m.right-p.left+6)),bottom:0};
+   setInsets(old=>old.right===next.right&&old.bottom===next.bottom?old:next);
+  };
+  const observer=new ResizeObserver(update);observer.observe(main);observer.observe(panel);window.addEventListener('resize',update);update();
+  return()=>{observer.disconnect();window.removeEventListener('resize',update);};
+ },[panelOpen,simulationOpen]);
+ return insets;
+}
 function Loading(){const {progress,active}=useProgress();const loaded=useGarden(s=>s.loaded);return active&&!loaded?<div className="loading" role="status"><div className="loading-seal">园</div><h2>山水渐入眼前</h2><p>正在展开园林 · {Math.round(progress)}%</p><progress max={100} value={progress}/><a href="./reading.html">网络较慢？先打开轻量阅读</a></div>:null}
 function ContextHealth({onLost}:{onLost:()=>void}){
  const {gl}=useThree();
  useEffect(()=>{const canvas=gl.domElement;const lost=(event:Event)=>{event.preventDefault();useSimulation.getState().cancel();useSimulation.setState({sceneReady:false});useGarden.setState({loaded:false});onLost()};canvas.addEventListener('webglcontextlost',lost);return()=>canvas.removeEventListener('webglcontextlost',lost)},[gl,onLost]);
  return null;
 }
-export default function GardenScene({manifest}:{manifest:Manifest}){const [contextLost,setContextLost]=useStableState(false);const [contextVersion,setContextVersion]=useStableState(0);const loaded=useGarden(s=>s.loaded);const quality=useGarden(s=>s.qualityLevel);const motion=useGarden(s=>s.motion);const selected=useGarden(s=>s.selectedPlaceId),closeView=useGarden(s=>s.closeView),hotspot=useGarden(s=>s.hotspotId);const playing=useGarden(s=>s.tourState.status==='playing');const webgl=useMemo(()=>{try{return !!document.createElement('canvas').getContext('webgl2')}catch{return false}},[]);if(!webgl)return <div className="fallback"><h2>当前设备无法显示三维园景</h2><p>仍可通过地点、人物与回目索引阅读全部资料。</p></div>;
- return <div className="canvas-wrap" data-testid="garden-canvas" data-scene-ready={loaded} aria-busy={!loaded}><Canvas key={contextVersion} frameloop={playing||(motion&&quality==='high')?'always':'demand'} camera={{position:manifest.overviewCamera.position,fov:43,near:.65,far:1600}} dpr={quality==='high'?[1,1.5]:1} shadows={quality==='high'} gl={{antialias:true,alpha:false,powerPreference:'high-performance',toneMapping:THREE.ACESFilmicToneMapping,toneMappingExposure:1.0}}><World manifest={manifest}/><ContextHealth onLost={()=>setContextLost(true)}/></Canvas>{selected&&!hotspot&&<button className="court-framing" onClick={()=>useGarden.setState({closeView:!closeView})}>{closeView?'看全院':'拉近院景'}</button>}<Loading/>{contextLost&&<div className="fallback context-error" role="alert"><h2>三维场景已中断</h2><p>图形上下文已失效，当前推演已取消。可用轻量画质重新载入。</p><button onClick={()=>{useGarden.setState({qualityLevel:'low',loaded:false});setContextLost(false);setContextVersion(contextVersion+1)}}>重新加载三维场景</button></div>}</div>;
+export default function GardenScene({manifest}:{manifest:Manifest}){const [contextLost,setContextLost]=useStableState(false);const [contextVersion,setContextVersion]=useStableState(0);const loaded=useGarden(s=>s.loaded);const quality=useGarden(s=>s.qualityLevel);const motion=useGarden(s=>s.motion);const selected=useGarden(s=>s.selectedPlaceId),closeView=useGarden(s=>s.closeView),hotspot=useGarden(s=>s.hotspotId);const playing=useGarden(s=>s.tourState.status==='playing');const webgl=useMemo(()=>{try{return !!document.createElement('canvas').getContext('webgl2')}catch{return false}},[]);
+ const insets=useSceneInsets(useGarden(s=>s.panelOpen),useSimulation(s=>s.open));
+ if(!webgl)return <div className="fallback"><h2>当前设备无法显示三维园景</h2><p>仍可通过地点、人物与回目索引阅读全部资料。</p></div>;
+ return <div className="canvas-wrap" style={insets} data-testid="garden-canvas" data-scene-ready={loaded} aria-busy={!loaded}><Canvas key={contextVersion} frameloop={playing||(motion&&quality==='high')?'always':'demand'} camera={{position:manifest.overviewCamera.position,fov:38,near:.08,far:2400}} dpr={quality==='high'?[1,1.5]:1} shadows={quality==='high'} gl={{antialias:true,alpha:false,powerPreference:'high-performance',toneMapping:THREE.ACESFilmicToneMapping,toneMappingExposure:1.0}}><World manifest={manifest}/><ContextHealth onLost={()=>setContextLost(true)}/></Canvas>{selected&&!hotspot&&<button className="court-framing" onClick={()=>useGarden.setState({closeView:!closeView})}>{closeView?'抬高看全院':'平视院景'}</button>}<Loading/>{contextLost&&<div className="fallback context-error" role="alert"><h2>三维场景已中断</h2><p>图形上下文已失效，当前推演已取消。可用轻量画质重新载入。</p><button onClick={()=>{useGarden.setState({qualityLevel:'low',loaded:false});setContextLost(false);setContextVersion(contextVersion+1)}}>重新加载三维场景</button></div>}</div>;
 }

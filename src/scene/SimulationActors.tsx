@@ -8,6 +8,7 @@ import {agentColors, currentWorld} from '../simulation/world';
 import {commandDuration, prepareRoute, routePoint, turnToward} from '../simulation/presentation';
 import {useGarden} from '../state/store';
 import GardenCharacter from './GardenCharacter';
+import {applyLens, characterFrame,subjectBounds} from './cameraFraming';
 import {characterPortraitHeight} from './characterPresentation';
 
 const actionLabels: Record<string, string> = {read: '读书', write: '写字', rest: '歇息', observe: '观望', wait: '等候', move: '行走', talk: '交谈'};
@@ -69,45 +70,42 @@ function Figure({id, motion}: {id: AgentId; motion: boolean}) {
   </group>;
 }
 
-function FollowCamera({motion}: {motion: boolean}) {
-  const {controls,camera,invalidate,size} = useThree(), state = useSimulation();
-  const initialized = useRef(false), previous = useRef<THREE.Vector3 | null>(null), cancelled = useRef(false);
-  const offset = useRef(new THREE.Vector3()), target = useRef(new THREE.Vector3());
-  const framing = useRef(.75);
-  useEffect(() => {initialized.current=false; cancelled.current=false; previous.current=null; invalidate();}, [state.focused,state.cameraMode,state.focusRevision,state.sceneRevision,size.width,size.height,invalidate]);
-  useEffect(() => {
-    const c=controls as unknown as {addEventListener?: (name:string,fn:()=>void)=>void;removeEventListener?: (name:string,fn:()=>void)=>void};
-    const release=()=>{cancelled.current=true;};
-    c?.addEventListener?.('controlstart',release);
-    return()=>c?.removeEventListener?.('controlstart',release);
-  },[controls]);
-  useFrame(({scene})=>{
-    if(!state.focused||!controls||cancelled.current)return;
-    const object=scene.getObjectByName(`simulation-${state.focused}`);
-    if(!object)return;
-    const position=object.position;
-    const c=controls as unknown as {setLookAt:(x:number,y:number,z:number,tx:number,ty:number,tz:number,smooth:boolean)=>void};
-    if(!initialized.current){
-      if(camera instanceof THREE.PerspectiveCamera){camera.fov=42;camera.near=.045;camera.updateProjectionMatrix();}
-      const portrait=state.cameraMode==='portrait',portraitHeight=characterPortraitHeight(state.focused);
-      if(portrait)offset.current.set(.17,portraitHeight+.04,.90).applyAxisAngle(new THREE.Vector3(0,1,0),object.rotation.y);
-      else if(state.cameraMode==='close')offset.current.set(2.35,2.0,4.2);else offset.current.set(6,6.5,9);
-      const compact = size.width <= 600;
-      framing.current = portrait ? portraitHeight : compact && size.height >= 530 ? .6 : size.height < 530 ? 1.05 : .75;
-      if(compact && size.height >= 530 && state.cameraMode==='close')offset.current.multiplyScalar(1.18);
-      if(!portrait&&size.width<=900&&size.height<530)offset.current.multiplyScalar(state.cameraMode==='close'?.9:Math.max(.45,size.height/650));
-      target.current.copy(position).add(new THREE.Vector3(0,framing.current,0));
-      const destination = position.clone().add(offset.current);
-      // Distant courts use a cut: a long flight would pass through walls and
-      // leave the next performer outside the frame for most of their action.
-      c.setLookAt(destination.x,destination.y,destination.z,target.current.x,target.current.y,target.current.z,motion && camera.position.distanceTo(destination)<24);
-      previous.current=position.clone();initialized.current=true;
-    }else if(previous.current&&previous.current.distanceTo(position)>.005){
-      c.setLookAt(position.x+offset.current.x,position.y+offset.current.y,position.z+offset.current.z,position.x,position.y+framing.current,position.z,false);
-      previous.current.copy(position);
-    }
-  });
-  return null;
+function FollowCamera() {
+ const {controls,camera,invalidate,size}=useThree(),state=useSimulation();
+ const initialized=useRef(false),previous=useRef<THREE.Vector3|null>(null),cancelled=useRef(false),model=useRef('');
+ const offset=useRef(new THREE.Vector3()),aim=useRef(new THREE.Vector3());
+ const safe=useRef({top:0,bottom:0});
+ useEffect(()=>{
+  const main=document.getElementById('garden-main');if(!main)return;
+  const parts=['.sim-stage-top','.sim-stage-roster','.sim-stage-bottom'].map(s=>main.querySelector(s)).filter((e):e is Element=>!!e);
+  const update=()=>{const m=main.getBoundingClientRect();let top=0,bottom=0;
+   for(const element of parts){const r=element.getBoundingClientRect();if(!r.height)continue;if(element.matches('.sim-stage-bottom'))bottom=m.bottom-r.top+12;else top=Math.max(top,r.bottom-m.top+12);}
+   if(top!==safe.current.top||bottom!==safe.current.bottom){safe.current={top,bottom};initialized.current=false;invalidate();}
+  };
+  const observer=new ResizeObserver(update);observer.observe(main);parts.forEach(p=>observer.observe(p));update();return()=>observer.disconnect();
+ },[controls,invalidate]);
+ useEffect(()=>{initialized.current=false;cancelled.current=false;previous.current=null;invalidate();},[state.focused,state.cameraMode,state.focusRevision,state.sceneRevision,size.width,size.height,controls,invalidate]);
+ useEffect(()=>{const c=controls as unknown as {addEventListener?:(name:string,fn:()=>void)=>void;removeEventListener?:(name:string,fn:()=>void)=>void};const release=()=>{cancelled.current=true;};c?.addEventListener?.('controlstart',release);return()=>c?.removeEventListener?.('controlstart',release);},[controls]);
+ useFrame(({scene})=>{
+  if(!state.focused||!controls||cancelled.current||!(camera instanceof THREE.PerspectiveCamera))return;
+  const object=scene.getObjectByName(`simulation-${state.focused}`);if(!object)return;
+  const revision=object.getObjectByName(`${state.focused}_face`)?.uuid??'loading';
+  if(revision!==model.current){model.current=revision;initialized.current=false;}
+  const position=object.position,c=controls as unknown as {setLookAt:(x:number,y:number,z:number,tx:number,ty:number,tz:number,smooth:boolean)=>void};
+  if(!initialized.current){
+   const portrait=state.cameraMode==='portrait';applyLens(camera,size.width,size.height,portrait?'portrait':'character');
+   const box=subjectBounds(object);
+   if(box.isEmpty())box.set(position.clone().add(new THREE.Vector3(-.55,0,-.4)),position.clone().add(new THREE.Vector3(.55,1.9,.4)));
+   const direction=portrait?new THREE.Vector3(.10,.03,1).applyAxisAngle(new THREE.Vector3(0,1,0),object.rotation.y):new THREE.Vector3(.42,state.cameraMode==='follow'?.4:.18,1);
+   const frame=characterFrame(box,direction,size.width,size.height,camera.fov,state.cameraMode,characterPortraitHeight(state.focused),safe.current);
+   offset.current.fromArray(frame.position).sub(position);aim.current.fromArray(frame.target).sub(position);
+   c.setLookAt(...frame.position,...frame.target,false);
+   previous.current=position.clone();initialized.current=true;
+  }else if(previous.current&&previous.current.distanceTo(position)>.005){
+   const destination=position.clone().add(offset.current),target=position.clone().add(aim.current);c.setLookAt(destination.x,destination.y,destination.z,target.x,target.y,target.z,false);previous.current.copy(position);
+  }
+ });
+ return null;
 }
 
 export default function SimulationActors(){
@@ -133,5 +131,5 @@ export default function SimulationActors(){
   });
   const path=state.playback?.command.path;
   if(!state.open||!state.journal)return null;
-  return <>{agentIds.map(id=><Figure key={id} id={id} motion={motion}/>)}{path&&path.length>1&&<Line points={path.map(p=>[p[0],p[1]+.04,p[2]])} lineWidth={1.3} color="#E3D5B6" transparent opacity={.42}/>}<FollowCamera motion={motion}/></>;
+  return <>{agentIds.map(id=><Figure key={id} id={id} motion={motion}/>)}{path&&path.length>1&&<Line points={path.map(p=>[p[0],p[1]+.04,p[2]])} lineWidth={1.3} color="#E3D5B6" transparent opacity={.42}/>}<FollowCamera/></>;
 }

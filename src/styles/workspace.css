@@ -91,6 +91,8 @@
 .sim-stage-top{justify-content:flex-end}
 .sim-stage:not(.immersive) .sim-stage-roster{top:18px;max-width:calc(100% - 155px);flex-wrap:wrap}
 .sim-stage-person h2 span{font-size:11px}
+.sim-stage.immersive .sim-moment{display:none}
+@container simulation-scene (max-height:350px){.sim-stage:not(.immersive) .sim-moment{display:none}}
 @media(min-width:901px) and (max-width:1180px){
  .workspace-topline{gap:18px;padding-inline:20px}.workspace-header .brand{min-width:180px}.workspace-header .brand strong{font-size:20px}.workspace-header .brand-suffix{display:none}.version-switch{gap:10px}.version-switch button{min-width:90px;padding-inline:12px}.version-switch small{display:none}.workspace-navline{padding-inline:20px}.simulation-panel{width:370px}
 }

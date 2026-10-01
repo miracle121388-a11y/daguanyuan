@@ -1,0 +1,22 @@
+
+> daguanyuan-rumeng@1.0.0 test
+> vitest run --maxWorkers=1 --reporter=dot
+
+
+ RUN  v4.1.11 /Users/ustinian/code/daguanyuan
+
+···········(node:88808) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·················································································································(node:88863) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+······················(node:88864) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·······(node:88871) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+·······································
+
+ Test Files  19 passed (19)
+      Tests  192 passed (192)
+   Start at  12:46:26
+   Duration  42.15s (transform 967ms, setup 0ms, import 3.33s, tests 34.12s, environment 2ms)
+
