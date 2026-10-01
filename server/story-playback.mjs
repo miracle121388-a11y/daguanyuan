@@ -1,7 +1,7 @@
 import {readFileSync, existsSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
-import {loadCorpus, searchCorpus} from './literary-corpus.mjs';
+import {draftReferences, loadCorpus, searchCorpus} from './literary-corpus.mjs';
 
 const hash = data => createHash('sha256').update(data).digest('hex');
 const books = new Map();
@@ -58,7 +58,7 @@ export function guiyouReferences(payload, guiyouRoot) {
         text: p.text.slice(startOffset), startOffset, endOffset: p.text.length, sha256: c.sha256,
         path: `private-corpus/guiyou108/${c.path}`, url: null, truncated: startOffset > 0}];
     }).reverse();
-    return {status: 'available', endpoint, excerpts: searchCorpus(manifest, {editionId: 'guiyou108', maxChapter: through - 1,
+    return {status: 'available', endpoint, verificationExcerpts:draftReferences(manifest,payload).map(p=>({...p,path:`private-corpus/guiyou108/chapters/${String(p.chapter).padStart(3,'0')}.txt`})), excerpts: searchCorpus(manifest, {editionId: 'guiyou108', maxChapter: through - 1,
       query: [payload.memory, ...payload.threads, ...payload.stageActors.map(a => a.name)].join(' '), limit: 3}).map(p=>({...p,path:`private-corpus/guiyou108/chapters/${String(p.chapter).padStart(3,'0')}.txt`})),
       note: '用户提供PDF的独立正文；批语与按语不作叙事事实。仅资料终点与此前片段，不认证其古本真伪。'};
   } catch { return {status: 'unavailable', excerpts: [], note: '癸酉本私人正文缺失或校验失败；不借用程高本，不补造原文。'}; }

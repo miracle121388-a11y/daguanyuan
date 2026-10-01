@@ -1,3 +1,4 @@
+import {approvedReview} from './review-fixture';
 import {describe,it,expect,vi} from 'vitest';
 import {readFileSync} from 'node:fs';
 import {createServer} from 'node:http';
@@ -8,7 +9,7 @@ import {createJournal,currentWorld,forkWorld,readJournal} from '../src/simulatio
 import type {CanonData} from '../src/data/types';
 const read=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
 const data=Object.fromEntries([...['places','characters','events','sources','routes','relations','editionCatalog'].map(k=>[k,read(`data/canon/${k}.json`)]),['manifest',read('public/scene-manifest.json')]]) as unknown as CanonData;
-const makeResult=(p:any)=>({title:'原文演绎',narrative:'依据本回原文展现人物行动与结果。'.repeat(25),memory:'本回情节已经展现。',threads:[],causality:'仅承接本回正文。',characterStates:['baoyu','daiyu','baochai','wangxifeng'].map(agent=>({agent,alive:true})),consequences:[],staging:[],...(p.mode==='playback'?{sourceChapter:{chapter:p.nextChapter,title:`第${p.nextChapter}回`,sourceEdition:'fixture',sha256:'b'.repeat(64)}}:{})});
+const makeResult=(p:any)=>({review:approvedReview(),title:'原文演绎',narrative:'依据本回原文展现人物行动与结果。'.repeat(25),memory:'本回情节已经展现。',threads:[],causality:'仅承接本回正文。',characterStates:['baoyu','daiyu','baochai','wangxifeng'].map(agent=>({agent,alive:true})),consequences:[],staging:[],...(p.mode==='playback'?{sourceChapter:{chapter:p.nextChapter,title:`第${p.nextChapter}回`,sourceEdition:'fixture',sha256:'b'.repeat(64)}}:{})});
 describe('chapter 80 creative and edition playback policy',()=>{
  for(const id of ['original80','cheng120','guiyou108'] as const)it(`${id} always begins after 80`,()=>{
   const journal=createJournal(data,id),world=currentWorld(journal);world.storyChapter=105;
@@ -65,7 +66,7 @@ describe('chapter 80 creative and edition playback policy',()=>{
    expect(requests[1].model.messages[0].content).toContain('超过1800字上限');
    expect(draft.sourceChapter.chapter).toBe(81);expect(draft.sourceChapter.sha256).toBe(playbackSource('cheng120',81,'data/canon/corpus').sha256);
    expect((await call('story-review',{...payload,draft})).status).toBe(200);
-   for(const {model,p} of requests){if(p.adaptationSource){expect(p.adaptationSource.chapter).toBe(81);expect(p.adaptationSource.text).not.toContain('FORGED');expect(p.literaryReferences.endpoint.every((e:any)=>e.chapter===80)).toBe(true);expect(model.messages[0].content).toContain('续本原文演绎');}expect(model.thinking).toEqual({type:'disabled'});expect(model.reasoning_effort).toBeUndefined();}
+   for(const {model,p} of requests){if(p.adaptationSource){expect(p.adaptationSource.chapter).toBe(81);expect(p.adaptationSource.text).not.toContain('FORGED');expect(p.literaryReferences.endpoint.every((e:any)=>e.chapter===80)).toBe(true);expect(model.messages[0].content).toContain('续本原文演绎');}if(p.draft){expect(model.thinking).toEqual({type:'enabled'});expect(model.max_tokens).toBe(24000);}else{expect(model.thinking).toEqual({type:'disabled'});expect(model.reasoning_effort).toBeUndefined();}}
    const gui=continuationPayload(prepareContinuation(createJournal(data,'guiyou108'),data,'',80),data);
    expect((await call('story-continue',gui)).status).toBe(503);
    expect((await call('story-continue',{...payload,edition:{id:'original80'}})).status).toBe(400);

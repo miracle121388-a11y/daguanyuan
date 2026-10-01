@@ -74,6 +74,7 @@ export function currentWorld(journal: Journal): WorldState {
 }
 export function forkWorld(journal: Journal, intervention: Intervention, prompt: string): Journal {
   const result = clone(journal), world = clone(currentWorld(journal));
+  if (intervention.type !== 'world' && !world.agents[intervention.target].alive) throw new Error('不能改变已故人物的当下知情或状态。请回到更早的快照再创建分支。');
   if (result.if) {
     if (result.archives.length >= 3) throw new Error('已保留三条历史世界线。请先导出存档，再删除一条不再需要的历史线。');
     result.archives.push({id: result.if.uid ?? 'legacy-if', name: result.if.prompt.slice(0, 24), branch: clone(result.if)});
@@ -88,7 +89,7 @@ export function forkWorld(journal: Journal, intervention: Intervention, prompt: 
   } else if (intervention.type === 'mood') world.agents[intervention.target].mood[intervention.field] = intervention.value;
   else world.world[intervention.field] = intervention.value;
   world.events = [{id: `${world.worldId}:${world.tick}:intervention`, tick: world.tick, time: clockLabel(world.minutes), kind: 'intervention', text: interventionDescription(world, intervention), contentType: 'generated'}];
-  result.if = {id: 'if', uid: world.worldId, forkTick: world.tick, intervention, prompt, cursor: 0, snapshots: [{worldState: world, actions: [], summary: '只改变起始条件；后续行为等待下一步推演。', provider: '用户设定'}]};
+  result.if = {id: 'if', uid: world.worldId, forkTick: world.tick, forkSequence:world.continuation?.sequence??0, forkChapter:world.continuation?.playbackChapter??80, intervention, prompt, cursor: 0, snapshots: [{worldState: world, actions: [], summary: '只改变起始条件；后续行为等待下一步推演。', provider: '用户设定'}]};
   result.active = 'if';
   return result;
 }
@@ -102,6 +103,11 @@ export function restoreTick(journal: Journal, index: number): Journal {
   if (!Number.isInteger(index) || !branch.snapshots[index]) throw new Error('此快照不存在。');
   branch.cursor = index;
   return next;
+}
+/** Older saves may have lost their first snapshot; never invent their origin. */
+export function branchOrigin(branch: Branch) {
+  const initial=branch.snapshots[0].worldState, exact=initial.tick===branch.forkTick;
+  return {sequence:branch.forkSequence??(exact?initial.continuation?.sequence??0:undefined),chapter:branch.forkChapter??(exact?initial.continuation?.playbackChapter??80:undefined)};
 }
 export function resumeArchive(journal: Journal, archiveId: string): Journal {
   const next = clone(journal), index = next.archives.findIndex(a => a.id === archiveId);

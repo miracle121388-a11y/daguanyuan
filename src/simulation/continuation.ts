@@ -4,7 +4,7 @@ import {editionFor, type EditionId} from '../data/editions';
 import {validContinuationResult} from '../../server/continuation.mjs';
 import {continuationResultSchema, type NarrativeProvider, type StorySource} from './continuationTypes';
 import {agentIds, type AgentId, type Journal, type SceneExecutor, type WorldState} from './types';
-import {addMemory, clockLabel, clone, currentBranch, currentWorld, createWorld} from './world';
+import {addMemory, branchOrigin, clockLabel, clone, currentBranch, currentWorld, createWorld} from './world';
 import {perceive} from './perception';
 import {validateAction} from './rules';
 
@@ -51,9 +51,11 @@ export async function readStorySource(text:string,label:string,through:number,ed
 export function continuationPayload(journal:Journal,data:CanonData){
  const world=currentWorld(journal),c=world.continuation;if(!c)throw new Error('请先选择续演起点。');
  const inactive=!c.sequence&&!c.source.imported?data.editionCatalog?.nodes.find(n=>n.editions.includes(journal.editionId??'original80')&&n.chapter===c.source.through)?.seed.inactiveAgents??[]:[];
- const playback=isBookPlayback(journal);
- return {edition:editionFor(journal.editionId??'original80',data.editionCatalog),source:c.source,mode:playback?'playback' as const:'creative' as const,...(playback?{nextChapter:(c.playbackChapter??80)+1}:{}),direction:playback?'':c.direction,memory:c.memory,threads:c.threads,history:c.episodes,branchCondition:currentBranch(journal).prompt,
- stageActors:agentIds.map(id=>{const a=world.agents[id];return {id,name:a.name,alive:!inactive.includes(id)&&(!c.sequence||a.alive),personality:a.personality,memories:a.memories.filter(m=>c.sequence>0||m.origin==='intervention'||m.origin==='player').slice(-6),task:c.sequence?a.story?.task??'':'',directives:world.directives.filter(d=>d.agent===id)};}),
+ const playback=isBookPlayback(journal),branch=currentBranch(journal),origin=branchOrigin(branch);
+ return {edition:editionFor(journal.editionId??'original80',data.editionCatalog),source:c.source,mode:playback?'playback' as const:'creative' as const,...(playback?{nextChapter:(c.playbackChapter??80)+1}:{}),direction:playback?'':c.direction,memory:c.memory,threads:c.threads,history:c.episodes.map(({review: _review,...episode})=>episode),branchCondition:currentBranch(journal).prompt,
+ branchContext:branch.intervention?{forkTick:branch.forkTick,inheritedSequence:origin.sequence,inheritedChapter:origin.chapter,intervention:branch.intervention}:null,
+ householdState:world.world,
+ stageActors:agentIds.map(id=>{const a=world.agents[id];return {id,name:a.name,alive:!inactive.includes(id)&&a.alive,personality:a.personality,mood:a.mood,memories:a.memories.filter(m=>c.sequence>0||m.origin==='intervention'||m.origin==='player').slice(-6),task:c.sequence?a.story?.task??'':'',directives:world.directives.filter(d=>d.agent===id)};}),
  places:data.places.filter(p=>data.manifest.pathNodes.some(n=>n.id===p.id)).map(p=>({id:p.id,name:p.name}))};
 }
 export async function runContinuation(journal:Journal,data:CanonData,provider:NarrativeProvider&{name:string},execute:SceneExecutor,signal:AbortSignal,progress:(world:WorldState,phase:'deciding'|'reviewing'|'executing',actor:AgentId)=>void):Promise<Journal>{
@@ -64,7 +66,8 @@ export async function runContinuation(journal:Journal,data:CanonData,provider:Na
  if(!validContinuationResult('story-continue',draft,payload))throw new Error('模型剧情格式不完整，本段未保存，请重试。');
  progress(clone(world),'reviewing','baoyu');
  const raw=await provider.narrative('story-review',{...payload,draft},signal);signal.throwIfAborted();
- if(!validContinuationResult('story-continue',raw,payload))throw new Error('模型剧情格式不完整，本段未保存，请重试。');
+ if(!validContinuationResult('story-review',raw,payload))throw new Error('情节复核未返回完整核对记录，本段未保存，请重试。');
+ if(!(raw as {review:{approved:boolean}}).review.approved)throw new Error('情节复核仍有未解决的矛盾，本段未保存。请调整方向或重试。');
  const result=continuationResultSchema.parse(raw);world.tick++;world.events=[];
  const draftSource=continuationResultSchema.parse(draft).sourceChapter;
  if(payload.mode==='playback'&&(!draftSource||result.sourceChapter?.sha256!==draftSource.sha256))throw new Error('创作与复核的原文来源不一致，本回未保存。');
@@ -82,7 +85,7 @@ export async function runContinuation(journal:Journal,data:CanonData,provider:Na
  for(const item of result.consequences)addMemory(world.agents[item.agent],{tick:world.tick,type:'interaction',content:item.fact,participants:[item.agent],origin:'generated',importance:90});
  c.sequence++;c.memory=result.memory;c.threads=result.threads;
  if(result.sourceChapter){c.playbackChapter=result.sourceChapter.chapter;world.storyChapter=result.sourceChapter.chapter;}
- c.episodes=[...c.episodes,{number:c.sequence,title:result.title,narrative:result.narrative,causality:result.causality,...(result.sourceChapter?{sourceChapter:result.sourceChapter}:{})}].slice(-3);
+ c.episodes=[...c.episodes,{number:c.sequence,title:result.title,narrative:result.narrative,causality:result.causality,review:result.review,...(result.sourceChapter?{sourceChapter:result.sourceChapter}:{})}].slice(-3);
  log('story',result.narrative);world.minutes+=120;
  const next=clone(journal),branch=currentBranch(next);branch.snapshots=branch.snapshots.slice(0,branch.cursor+1);branch.snapshots.push({worldState:world,actions,summary:result.narrative,provider:provider.name,label:`${result.sourceChapter?`第${result.sourceChapter.chapter}回演绎`:`续演${c.sequence}`} · ${result.title}`.slice(0,100)});if(branch.snapshots.length>(isBookPlayback(next)?64:30))branch.snapshots.shift();branch.cursor=branch.snapshots.length-1;return next;
 }

@@ -215,10 +215,11 @@ export const useSimulation = create<SimulationState>((set, get) => ({
     const journal = get().journal;
     if (!journal || get().phase !== 'ready') return;
     if (!prompt.trim() || prompt.length > 400) { set({error: '请写下1至400字的假设条件。'}); return; }
+    if (!get().accessToken.trim()) { set({error: '请先在页面顶部填写访问口令，即可创建分支和推演故事。'}); return; }
     const active = new AbortController(); controller = active;
     set({phase: 'parsing', error: '', automatic: false});
     try {
-      const raw = await providerFor().parseIntervention(prompt, active.signal);
+      const raw = await new RemoteProvider(get().accessToken,get().remoteLabel).parseIntervention(prompt, active.signal);
       if (active.signal.aborted) return;
       const parsed = interventionSchema.safeParse(raw);
       if (!parsed.success) throw new Error('条件格式无效。数值应在0至100之间，且只能改变知情、情绪或贾府状态。');

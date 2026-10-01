@@ -72,7 +72,8 @@ describe('edition persistence and comic trigger guards', () => {
   beforeEach(()=>{
     items.clear(); vi.stubGlobal('localStorage',{getItem:(key:string)=>items.get(key)??null,setItem:(key:string,value:string)=>items.set(key,value)});
     useGarden.setState({data,spoilerLimit:null});
-    useSimulation.setState({journal:null,editionId:'original80',editionJournals:{},phase:'ready',comicCue:null,open:false,ifComposerOpen:false,comicAutomatic:true,error:'',provider:'mock'});
+    useSimulation.setState({journal:null,editionId:'original80',editionJournals:{},phase:'ready',comicCue:null,open:false,ifComposerOpen:false,comicAutomatic:true,error:'',provider:'mock',accessToken:'fixture'});
+    vi.stubGlobal('fetch',vi.fn(async()=>new Response(JSON.stringify({result:{type:'mood',target:'daiyu',field:'energy',value:30}}))));
     useSimulation.getState().initialize(data);
   });
   afterEach(()=>vi.unstubAllGlobals());

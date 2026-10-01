@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-01T06:00:30.250Z",
+  "origin": "http://127.0.0.1:3006",
+  "desktop": [
+    1440,
+    900
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "checks": {
+    "realModelStoryAnd3dExecution": true,
+    "separateNewForkFromMain": true,
+    "premiseFixedAboveReader": true,
+    "mobileExpandHidesGarden": true,
+    "mobileShrinkRestoresGarden": true,
+    "noHorizontalOverflow": true,
+    "sevenReviewCategoriesVisible": true,
+    "refreshRetainsStory": true,
+    "refreshRetainsSharedAccess": true,
+    "mainUnchangedAtStep0": true
+  },
+  "title": "窗下惊闻议婚语",
+  "scope": "隔离端口浏览器存档；模型实测；非线上视觉验收"
+}

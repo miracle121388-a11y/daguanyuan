@@ -118,6 +118,7 @@ export type Snapshot = z.infer<typeof snapshotSchema>;
 const branchSchema = z.object({
   id: z.enum(['main', 'if']), forkTick: z.number().int().nonnegative(),
   uid: z.string().optional(),
+  forkSequence: z.number().int().nonnegative().optional(), forkChapter: z.number().int().min(80).max(120).optional(),
   intervention: interventionSchema.nullable(), prompt: z.string(),
   snapshots: z.array(snapshotSchema).min(1).max(64), cursor: z.number().int().nonnegative(),
 });
