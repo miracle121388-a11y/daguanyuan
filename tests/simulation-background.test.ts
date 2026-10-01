@@ -9,7 +9,7 @@ import {approvedReview} from './review-fixture';
 
 const read = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
 const data = Object.fromEntries([...['places','characters','events','sources','routes','relations','editionCatalog'].map(k => [k, read(`data/canon/${k}.json`)]), ['manifest', read('public/scene-manifest.json')]]) as unknown as CanonData;
-const story = {title:'竹窗书信', narrative:'黛玉在竹窗下展卷，宝玉在院外候了一刻，待紫鹃传话方才进来。'.repeat(16), memory:'黛玉读书，宝玉候在院外。', threads:['次日的书信'], causality:'院外等候后得到传话，才在窗边读书。', review:approvedReview(), characterStates:['baoyu','daiyu','baochai','wangxifeng'].map(agent => ({agent, alive:true})), consequences:[], staging:[{agent:'baoyu',place:'xiaoxiangguan',action:'read',caption:'循径来访，再在窗边展卷。'}]};
+const story = {title:'竹窗书信', narrative:'黛玉在竹窗下展卷，宝玉在院外候了一刻，待紫鹃传话方才进来。'.repeat(16), memory:'黛玉读书，宝玉候在院外。', threads:['次日的书信'], causality:'院外等候后得到传话，才在窗边读书。', review:approvedReview(), characterStates:['baoyu','daiyu','baochai','wangxifeng'].map(agent => ({agent, alive:true})), consequences:[], staging:[{agent:'daiyu',place:'xiaoxiangguan',action:'read',caption:'在窗下展卷。'},{agent:'baoyu',place:'xiaoxiangguan',action:'read',caption:'循径来访，再在窗边展卷。'}]};
 const initialSimulation = useSimulation.getState(), initialGarden = useGarden.getState();
 let saves: Map<string, string>;
 beforeEach(() => {
@@ -28,12 +28,14 @@ describe('background story tasks remain transactional', () => {
     vi.stubGlobal('fetch', fetch);
     const original = useSimulation.getState().journal!, work = useSimulation.getState().next();
     useSimulation.getState().toggle(); useGarden.getState().home();
+    const focusRevision = useSimulation.getState().focusRevision;
     expect(signal.aborted).toBe(false); expect(useSimulation.getState().phase).toBe('deciding');
     useSimulation.getState().selectEdition('cheng120'); useSimulation.getState().openWorld('if');
     expect(useSimulation.getState().editionId).toBe('original80'); expect(useSimulation.getState().open).toBe(false);
     release(respond()); await vi.advanceTimersByTimeAsync(50_000); await work;
     const state = useSimulation.getState(), saved = readJournal(saves.get(editionStorageKey('original80'))!, data);
     expect(state.open).toBe(false); expect(state.phase).toBe('ready'); expect(state.error).toBe(''); expect(state.backgroundNotice).toContain('已存到本机');
+    expect(state.focusRevision).toBe(focusRevision);
     expect(currentBranch(saved).snapshots).toHaveLength(2); expect(currentWorld(saved).agents.baoyu.location).toBe('xiaoxiangguan'); expect(currentWorld(saved).continuation?.sequence).toBe(1);
     expect(original.main.snapshots).toHaveLength(1); expect(fetch.mock.calls.map(([,init]) => JSON.parse(init.body).operation)).toEqual(['story-continue','story-review']);
     useSimulation.getState().openWorld('main'); expect(useSimulation.getState().open).toBe(true); expect(useSimulation.getState().backgroundNotice).toBe('');

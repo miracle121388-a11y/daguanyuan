@@ -83,7 +83,7 @@ function MoonlitBanks({manifest,low}:{manifest:Manifest;low:boolean}){
 
 function GardenLabel({place,index,chosen,related}:{place:ScenePlace;index:number;chosen:boolean;related:boolean}){const button=useRef<HTMLButtonElement>(null);const {camera,size}=useThree();const position=useMemo(()=>new THREE.Vector3(place.position[0],place.boundingBox.max[1]+2.5,place.position[2]),[place]);useFrame(()=>{if(!button.current)return;const p=position.clone().project(camera);button.current.style.visibility=p.z<1&&Math.abs(p.x)<(size.width<601?.74:.91)&&p.y<.76&&p.y>-.69?'visible':'hidden'});if(chosen&&size.width<601)return null;return <Html position={[0,place.boundingBox.max[1]-place.position[1]+2.5,0]} center zIndexRange={[12,0]} occlude={false}><button ref={button} className={'place-label '+(chosen?'selected':'')+(related?' related':'')} onClick={()=>useGarden.getState().choosePlace(place.id)} aria-label={'定位'+place.name}><span>{String(index+1).padStart(2,'0')}</span>{place.name}</button></Html>}
 function CameraManager({manifest}:{manifest:Manifest}){
- const simulationOpen=useSimulation(s=>s.open),simulationFocus=useSimulation(s=>s.focused),cameraMode=useSimulation(s=>s.cameraMode);
+ const simulationOpen=useSimulation(s=>s.open),simulationFocus=useSimulation(s=>s.open?s.focused:null),cameraMode=useSimulation(s=>s.cameraMode);
  const {camera,size}=useThree();const panelOpen=useGarden(s=>s.panelOpen);
  const controls=useRef<CameraControls>(null),selected=useGarden(s=>s.selectedPlaceId),tour=useGarden(s=>s.tourState);
  const controller=useRef<GuidedTourController|null>(null),dwell=useRef(0),started=useRef(false);

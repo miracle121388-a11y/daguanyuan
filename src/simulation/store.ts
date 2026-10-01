@@ -202,12 +202,12 @@ export const useSimulation = create<SimulationState>((set, get) => ({
     set({phase: 'deciding', paused: false, error: ''});
     try {
       const prepared = currentWorld(journal).continuation ? journal : prepareContinuation(journal,data,'',defaultContinuationChapter(data,get().editionId,currentWorld(journal)));
-      const result = await runContinuation(prepared, data, new RemoteProvider(get().accessToken,get().remoteLabel), execute, active.signal, (world, phase, actor) => set(current => ({preview: world, phase, actor, ...(current.director && current.focused !== actor ? {focused: actor, focusRevision: current.focusRevision + 1} : {})})));
+      const result = await runContinuation(prepared, data, new RemoteProvider(get().accessToken,get().remoteLabel), execute, active.signal, (world, phase, actor) => set(current => ({preview: world, phase, actor, ...(current.open && current.director && current.focused !== actor ? {focused: actor, focusRevision: current.focusRevision + 1} : {})})));
       if (active.signal.aborted) return;
       commit(result);
       if(playbackComplete(result))set({automatic:false});
       const after = currentWorld(result), before = currentWorld(journal);
-      if (get().director && after.gathering?.status === 'completed' && before.gathering?.status === 'pending') {
+      if (get().open && get().director && after.gathering?.status === 'completed' && before.gathering?.status === 'pending') {
         set({focused:after.gathering.participants[0],cameraMode:'close',focusRevision:get().focusRevision+1});
       }
       if (after.gathering?.status === 'completed' && before.gathering?.status === 'pending') useDreams.getState().offer(captureMoment(result, data, 'gathering', after.gathering.participants[0]));
