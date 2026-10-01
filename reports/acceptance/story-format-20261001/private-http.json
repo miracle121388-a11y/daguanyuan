@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-01T11:45:34.687Z",
+  "tlsVerification": true,
+  "paths": [
+    {
+      "path": "server/private-corpus/guiyou108/manifest.json",
+      "status": 404
+    },
+    {
+      "path": "private-corpus/guiyou108/chapters/081.txt",
+      "status": 404
+    },
+    {
+      "path": ".local/corpus/guiyou108/manifest.json",
+      "status": 404
+    }
+  ]
+}

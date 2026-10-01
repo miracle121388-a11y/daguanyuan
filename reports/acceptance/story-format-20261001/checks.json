@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-01T11:53:45.721Z",
+  "sourceCommit": "873f8f2ff1406a8a10bc46097f055483ce3600ec",
+  "tests": {
+    "command": "npm test -- --maxWorkers=1",
+    "passed": 216,
+    "files": 20
+  },
+  "lintPassed": true,
+  "buildPassed": true,
+  "buildIncludesTypecheck": true,
+  "canonValidationPassed": true,
+  "canonChecks": 11173,
+  "allModelSamplesCompleted": true,
+  "productionHttpsModelCompleted": true,
+  "scope": "All results are bounded checks actually run. No claim of exhaustive literary accuracy or permanent external-service availability."
+}

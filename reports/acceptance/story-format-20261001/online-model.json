@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-01T11:52:09.643Z",
+  "scope": "Two public production HTTPS API requests to actual deployed handler and real model, Guiyou chapter81 generation and independent editorial review; no browser world or album written. TLS certificate/SNI verification enabled. Not a browser/3D or all-book literary acceptance.",
+  "domain": "daguanyuan-rumeng.zeabur.app",
+  "tlsVerification": true,
+  "remoteExecProbe": "Previous CLI long-command probe ended with its gateway 504 and was NOT counted as accepted. This acceptance uses the public site HTTP route.",
+  "checks": [
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "seconds": 17.489,
+      "characters": 1621,
+      "sourceChapter": 81,
+      "sourceHash": "4aa03fc63ed653b209e810d1638aafd7a9aea1fdb0f2ef7eea09ba026845e8a5"
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "seconds": 75.763,
+      "characters": 654,
+      "sourceChapter": 81,
+      "sourceHash": "4aa03fc63ed653b209e810d1638aafd7a9aea1fdb0f2ef7eea09ba026845e8a5",
+      "approved": true,
+      "categories": [
+        "chronology",
+        "knowledge",
+        "motivation",
+        "continuity",
+        "branch",
+        "edition",
+        "staging"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20261001-060302-073046",
+  "directory": ".deploy/reference-20261001-113353-477613",
   "files": [
     {
       "path": "hydrate-assets.mjs",
@@ -11,7 +11,7 @@
     },
     {
       "path": "deploy-assets.json",
-      "sha256": "6da459d8681f4e545dbb8847aabb715405cc18f8bb185505e64a0999564bab09"
+      "sha256": "03be39a12fcf0e657bf28b6cec10fde43a8ef8f5c9fc8bb7106c4d9a88ccbebf"
     },
     {
       "path": "server.mjs",
@@ -19,11 +19,11 @@
     },
     {
       "path": "dist/index.html",
-      "sha256": "4925ad36fb92c1fba2c2f1b0417484d8551481831532984598a83d4d89e0c7cc"
+      "sha256": "37fe0f7e3112da8c00ba9ba4cd16d89ff1e99e538182405b14388e7297f1fed3"
     },
     {
       "path": "dist/index.html.br",
-      "sha256": "328f162227bb61cfe88ebc774ec2595d5ffdd8848f9b48f533fd1dd92ba94dcd"
+      "sha256": "01fe48d105c0fae842d80ccecc8ae33c22280db482a78e16bbe0d87b4b93c42f"
     },
     {
       "path": "dist/scene-manifest.json",
@@ -71,7 +71,11 @@
     },
     {
       "path": "server/simulation-api.mjs",
-      "sha256": "f689e0b478c7457061d98a27c242855d24e908e6f5a5b2b93febdb86a40d3225"
+      "sha256": "21bc764eb41bec190182d1f9fafa989537f13ad0294f970f12262aa2bb652cad"
+    },
+    {
+      "path": "server/story-format.mjs",
+      "sha256": "c191c805382d94c842d76512009bb5a497b2a03783efc0a50f8940100dbf1eec"
     },
     {
       "path": "server/dream-references.mjs",
@@ -95,7 +99,7 @@
     },
     {
       "path": "server/continuation.mjs",
-      "sha256": "a217b676ce655f26084cd0bf5b18995ce869faa28598db2e9ac33da794047c3c"
+      "sha256": "564c2b9e6244355792dec1c4b1a4da4742999c136f3e0a8615af76391004852e"
     },
     {
       "path": "server/dream-prompts.mjs",
@@ -1434,6 +1438,10 @@
       "sha256": "041f99af7673e0b6307373b10cf3052eb48d6f139782ff763b21f13380ed9ebd"
     },
     {
+      "path": "dist/assets/index-pQmMhnQc.js.br",
+      "sha256": "9f8eccba9385e5660d48308dcdb61dfda7b45090747b4e44e419534ffe8bfc7c"
+    },
+    {
       "path": "dist/assets/index-qn5Iq6RP.css",
       "sha256": "7c41971b3cf8fa2bdeddc21a441ad5136b700b5f3a053ae48398d9f598db8307"
     },
@@ -1442,12 +1450,8 @@
       "sha256": "979caaa2cb231f5c1e84bf78be3d5911fc82082b3c0ec36f4e09c7830c2590b5"
     },
     {
-      "path": "dist/assets/GardenScene-CG0h6Xqk.js.br",
-      "sha256": "6c21d4ef9febb7db3f53ad726f4822281e238e04dad0ccde60c6f0adc3d8a9d2"
-    },
-    {
-      "path": "dist/assets/index-CiwSJsfN.js.br",
-      "sha256": "2d62e48f1f2eb25801cc399972eaabc0bf9bc4fa5eddb40e38f3f9de0b80b471"
+      "path": "dist/assets/GardenScene-Cw0HrimG.js.br",
+      "sha256": "bcf47396ed5b70c7732b16cfe5e7b6fead1f455000894c0af519b23375504dd9"
     },
     {
       "path": "dist/assets/garden-mark-COPNxcSD.svg",
@@ -8514,6 +8518,6 @@
   "decodedBrotliChecked": true,
   "matchesCompletedBuild": true,
   "referencesMatched": 21,
-  "count": 1171,
+  "count": 1172,
   "passed": true
 }
