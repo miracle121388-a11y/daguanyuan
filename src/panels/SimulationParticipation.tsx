@@ -58,7 +58,7 @@ function Choices({id, world, data}: {id: AgentId; world: WorldState; data: Canon
   return <div className="sim-encounter"><h4>{encounter.title}</h4><p className="sim-encounter-scene">{encounter.text}</p>
     {outcome ? <div className="sim-choice-outcome" role="status"><strong>你的选择已经留下痕迹</strong><p>{outcome}</p><span>继续推演，看看这番话如何影响他的安排。</span>{previous && <button disabled={busy} onClick={() => s.restore(branch!.cursor - 1)}>回到选择之前</button>}</div>
       : <><button className="sim-text-action" disabled={busy} onClick={s.forkHere}><GitBranch size={14}/>从此刻另开一线</button><p className="sim-note">先分岔，可保留原线；每个情境只能选一次。状态变化或三个 Tick 后，可能遇到新情境。</p><div className="sim-choice-list">{encounter.choices.map(choice => <button key={choice.id} disabled={busy} onClick={() => s.choose(id, encounter.id, choice.id)}><strong>{choice.label}</strong><span>{choice.consequence}{choice.directive && world.directives.some(d => d.agent === id) ? ' 将替换此人原有托付。' : ''}</span><ArrowRight size={16}/></button>)}</div></>}
-    {outcome && <button className="sim-branch-button" disabled={busy || !s.sceneReady} onClick={() => void s.next()}>让故事继续<ArrowRight size={15}/></button>}
+    {outcome && <button className="sim-branch-button" disabled={busy} onClick={() => void s.next()}>让故事继续<ArrowRight size={15}/></button>}
   </div>;
 }
 function GatheringInvitation({world, data}: {world: WorldState; data: CanonData}) {
@@ -66,7 +66,7 @@ function GatheringInvitation({world, data}: {world: WorldState; data: CanonData}
   const gathering = world.gathering, pending = gathering?.status === 'pending', busy = s.phase !== 'ready';
   return <div className="sim-gathering"><h4>邀几位故人，同坐一席</h4><p className="sim-note">选一处已有庭院，邀请两至四人。赴约、等候与联句或茶叙都在园中逐步发生。</p>
     {gathering && <div className="sim-gathering-status" role="status"><strong>{gathering.status === 'completed' ? '小聚已成' : pending ? '一席待故人' : '这场邀约已散'}</strong><p>{spotName(data, gathering.place, 'court')} · {gathering.kind === 'poetry' ? '联句' : '品茗'}</p><ul>{gathering.participants.map(id => <li key={id}><span>{world.agents[id].name}</span><span>{pending ? world.agents[id].location === gathering.place && world.agents[id].spot === 'court' ? '已到院中' : world.agents[id].mood.energy < 35 ? '先歇息，再赴约' : world.directives.some(d => d.agent === id) ? '先完成已有托付' : '待沿路赴约' : gathering.status === 'completed' ? '留下一段共同经历' : '回到各自安排'}</span></li>)}</ul>
-      {pending && <><button className="sim-branch-button" disabled={busy || !s.sceneReady} onClick={() => void s.advanceParticipation()}>{busy ? '众人正在行动' : '继续这场小聚'}<ArrowRight size={15}/></button><button className="sim-text-action" disabled={busy} onClick={s.dismissGathering}>撤回邀请</button><p className="sim-note">身体需要、已有托付可能推迟赴约。六步仍未成席，会自动散约。</p></>}
+      {pending && <><button className="sim-branch-button" disabled={busy} onClick={() => void s.advanceParticipation()}>{busy ? '众人正在行动' : '继续这场小聚'}<ArrowRight size={15}/></button><button className="sim-text-action" disabled={busy} onClick={s.dismissGathering}>撤回邀请</button><p className="sim-note">身体需要、已有托付可能推迟赴约。六步仍未成席，会自动散约。</p></>}
     </div>}
     {!pending && <form className="sim-gathering-form" onFocus={() => useSimulation.setState({automatic: false})} onSubmit={e => { e.preventDefault(); s.invite({place, kind, participants}); }}>
       <label>相聚地点<select value={place} disabled={busy} onChange={e => setPlace(e.target.value)}>{data.places.filter(p => courtRoutes[p.id]).map(p => <option key={p.id} value={p.id}>{spotName(data, p.id, 'court')}</option>)}</select></label>

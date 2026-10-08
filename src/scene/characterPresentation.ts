@@ -10,7 +10,7 @@ export function characterDetail(focused: boolean, quality: 'high' | 'low', camer
   return focused && (camera === 'portrait' || quality === 'high' && camera !== 'follow') ? 'high' : 'low';
 }
 export function characterAsset(id: AgentId, detail: CharacterDetail, base = '/'): string {
-  return `${base}models/characters/${id}${detail === 'low' ? '-low' : ''}.glb?v=${characterRevision}`;
+  return `${base}models/characters-stream/${id}${detail === 'low' ? '-low' : ''}.glb?v=${characterRevision}`;
 }
 export function facePerformance(time: number, index: number, pose: string, motion: boolean, tea: boolean) {
   const phase = (time + index * 1.07) % 4.7;

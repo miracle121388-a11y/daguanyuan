@@ -1,4 +1,4 @@
-import {Suspense,useEffect,useMemo,useRef,useState} from 'react';
+import {Suspense,useDeferredValue,useEffect,useMemo,useRef,useState} from 'react';
 import {useGLTF,useTexture} from '@react-three/drei';
 import * as THREE from 'three';
 import type {Manifest} from '../data/types';
@@ -11,9 +11,10 @@ type Placement={position:[number,number,number];scale:[number,number,number];rot
 /** Camera-facing tree impostors are an overview LOD of the actual authored mesh.
  * Architecture, terrain, foreground planting and nearby crowns remain 3D.
  */
-function DistantGrove({points,onReady,variant=0,species=0}:{points:Placement[];onReady:(ready:boolean)=>void;variant?:number;species?:number}){
+function DistantGrove({points,onReady,variant=0,species=0,coarse=false}:{points:Placement[];onReady?:(ready:boolean)=>void;variant?:number;species?:number;coarse?:boolean}){
  const quality=useGarden(s=>s.qualityLevel);
- const atlas=useTexture(import.meta.env.BASE_URL+`textures/vegetation/canopy-atlas${quality==='low'?'-low':''}.webp`);
+ const url=useDeferredValue(import.meta.env.BASE_URL+`textures/vegetation/canopy-atlas${quality==='low'||coarse?'-low':''}.webp`);
+ const atlas=useTexture(url);
  const map=useMemo(()=>{const t=atlas.clone();t.colorSpace=THREE.SRGBColorSpace;t.repeat.set(1/5,1/speciesNames.length);t.offset.set(variant/5,(speciesNames.length-1-species)/speciesNames.length);t.needsUpdate=true;return t},[atlas,variant,species]);
  const night=useGarden(s=>s.timeOfDay==='night'),last=useRef(Number.NaN);
  const {camera,invalidate}=useThree();
@@ -25,7 +26,7 @@ function DistantGrove({points,onReady,variant=0,species=0}:{points:Placement[];o
   return m;
  },[map,points.length]);
  useEffect(()=>{last.current=Number.NaN;invalidate()},[points,invalidate]);
- useEffect(()=>{onReady(true)},[onReady,map]);
+ useEffect(()=>{onReady?.(true)},[onReady,map]);
  useEffect(()=>{mesh.material.color.set(night?'#8097a7':'#ffffff');invalidate()},[mesh,night,invalidate]);
  useEffect(()=>()=>{mesh.geometry.dispose();mesh.material.dispose();mesh.dispose()},[mesh]);
  useEffect(()=>()=>map.dispose(),[map]);
@@ -56,7 +57,7 @@ function Grove({points,detail,species,lod='near'}:{points:Placement[];detail:boo
  useEffect(()=>{for(const m of meshes)finishMaterials(m);gl.shadowMap.needsUpdate=true;invalidate()},[meshes,gl,invalidate]);
  return <group>{meshes.map(m=><primitive object={m} key={m.uuid}/>)}</group>;
 }
-export default function LivingTrees({manifest,onReady}:{manifest:Manifest;onReady:(ready:boolean)=>void}){
+export default function LivingTrees({manifest,onReady,coarse=false}:{manifest:Manifest;onReady?:(ready:boolean)=>void;coarse?:boolean}){
  const selected=useGarden(s=>s.selectedPlaceId),quality=useGarden(s=>s.qualityLevel),interior=useGarden(s=>!!s.hotspotId?.endsWith('-study')&&!s.cutaway),closeView=useGarden(s=>s.closeView),{camera,size}=useThree();
  const [eye,setEye]=useState(()=>camera.position.clone()),sampled=useRef(0);
  useFrame(({clock})=>{if(clock.elapsedTime-sampled.current>.3&&camera.position.distanceTo(eye)>(selected?2:12)){sampled.current=clock.elapsedTime;setEye(camera.position.clone())}});
@@ -85,11 +86,11 @@ export default function LivingTrees({manifest,onReady}:{manifest:Manifest;onRead
   });
   const distance=(x:Placement)=>Math.hypot(x.position[0]-eye.x,x.position[1]-eye.y,x.position[2]-eye.z)/x.scale[1];
   const close=(x:Placement)=>(quality==='high'||!!p)&&(distance(x)<38||(p&&Math.hypot(x.position[0]-p.position[0],x.position[2]-p.position[2])<21));
-  const near=points.filter(close).sort((a,b)=>distance(a)-distance(b)).slice(0,quality==='high'?(p?16:6):(p?3:0)),chosen=new Set(near);
+  const near=points.filter(close).sort((a,b)=>distance(a)-distance(b)).slice(0,coarse?0:quality==='high'?(p?16:6):(p?3:0)),chosen=new Set(near);
   const middle:Placement[]=[];
   for(const point of middle)chosen.add(point);
   const far=points.filter(x=>!chosen.has(x));
   return {middle,near:Array.from({length:speciesNames.length},(_,s)=>near.filter(x=>(x.species??0)===s)),far:Array.from({length:speciesNames.length*2},(_,v)=>far.filter((x,i)=>(x.species??0)===Math.floor(v/2)&&i%2===v%2))};
- },[manifest,selected,quality,eye,interior,closeView,camera,size.width]);
- return <>{groups.middle.length>0&&<Suspense fallback={null}><Grove points={groups.middle} species={0} detail={false} lod="middle"/></Suspense>}{groups.far.map((points,v)=><DistantGrove key={v} variant={v%2} species={Math.floor(v/2)} points={points} onReady={onReady}/>)}{groups.near.map((points,s)=>points.length>0&&<Suspense key={s} fallback={null}><Grove species={s} points={points} detail={quality==='high'}/></Suspense>)}</>;
+ },[manifest,selected,quality,eye,interior,closeView,camera,size.width,coarse]);
+ return <>{groups.middle.length>0&&<Suspense fallback={null}><Grove points={groups.middle} species={0} detail={false} lod="middle"/></Suspense>}{groups.far.map((points,v)=><DistantGrove key={v} variant={v%2} species={Math.floor(v/2)} points={points} onReady={onReady} coarse={coarse}/>)}{groups.near.map((points,s)=>points.length>0&&<Suspense key={s} fallback={null}><Grove species={s} points={points} detail={quality==='high'}/></Suspense>)}</>;
 }

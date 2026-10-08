@@ -22,6 +22,18 @@ afterEach(() => {useSimulation.getState().cancel(); vi.clearAllTimers(); vi.useR
 const respond = () => new Response(JSON.stringify({result:story}));
 
 describe('background story tasks remain transactional', () => {
+  it('generates, reviews and saves a real story without a ready 3D scene',async()=>{
+    useGarden.setState({loaded:false});useSimulation.setState({sceneReady:false});
+    const upstream=vi.fn<typeof fetch>(async()=>respond());vi.stubGlobal('fetch',upstream);
+    await useSimulation.getState().next();
+    const state=useSimulation.getState();
+    expect(state.error).toBe('');expect(state.phase).toBe('ready');expect(state.playback).toBeNull();
+    expect(upstream.mock.calls.map(([,init])=>JSON.parse(init?.body as string).operation)).toEqual(['story-continue','story-review']);
+    const saved=readJournal(saves.get(editionStorageKey('original80'))!,data);
+    expect(currentWorld(saved).continuation?.sequence).toBe(1);
+    expect(currentWorld(saved).agents.baoyu.location).toBe('xiaoxiangguan');
+    expect(vi.getTimerCount()).toBe(0);
+  });
   it('continues delayed generation/review and commits movement without any scene frames', async () => {
     let release!: (response:Response) => void, signal!: AbortSignal;
     const fetch = vi.fn((_url, init) => {signal = init.signal; return fetch.mock.calls.length === 1 ? new Promise<Response>(resolve => {release=resolve;}) : Promise.resolve(respond());});

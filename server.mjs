@@ -10,6 +10,8 @@ const root=resolve(process.env.STATIC_ROOT||'dist');
 const dreamApi=createDreamApi(process.env,fetch,{publicRoot:root});
 const aliasFile=resolve(root,'asset-aliases.json');
 const assetAliases=existsSync(aliasFile)?JSON.parse(readFileSync(aliasFile,'utf8')):{};
+const assetIndexFile=resolve(root,'asset-index.json');
+const assetIndex=existsSync(assetIndexFile)?JSON.parse(readFileSync(assetIndexFile,'utf8')):{revision:null,entries:{}};
 const compressible=new Set(['.html','.js','.css','.json','.txt','.wasm','.glb']);
 const gzipCache=new Map();let gzipCacheBytes=0;
 function gzipPayload(file,stat,decoded){
@@ -26,7 +28,7 @@ const httpServer=createServer(async(req,res)=>{
  if(await dreamApi(req,res))return;
  if(await simulationApi(req,res))return;
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{'Allow':'GET, HEAD'});return res.end()}
- let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400);return res.end()}
+ let pathname,url;try{url=new URL(req.url,'http://localhost');pathname=decodeURIComponent(url.pathname)}catch{res.writeHead(400);return res.end()}
  if(pathname==='/healthz'){res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});return res.end(JSON.stringify({status:'ok',application:'daguanyuan-rumeng',revision:revision(),featureRevision:'honglou-silk-20260917-v6',simulationRevision:'personal-reasoning-20260924-v2'}))}
  let file=resolve(root,'.'+pathname);if(file!==root&&!file.startsWith(root+sep)){res.writeHead(403);return res.end()}
  if(pathname==='/'||pathname.endsWith('/'))file=resolve(file,'index.html');
@@ -44,7 +46,9 @@ const httpServer=createServer(async(req,res)=>{
  const stat=statSync(stored),etag='"'+stat.size.toString(16)+'-'+Math.round(stat.mtimeMs).toString(16)+'-'+(encoding??'identity')+'"';
  // GLTFLoader decodes embedded textures through ImageBitmapLoader.fetch(blob:).
  // img-src alone does not cover this local in-memory texture read.
- const headers={'Content-Type':types[ext]??'application/octet-stream','ETag':etag,'Vary':'Accept-Encoding','Cache-Control':pathname.startsWith('/assets/')||pathname.startsWith('/draco/')||/^\/textures\/shared\/[a-f0-9]{64}\.(jpg|png)$/.test(pathname)?'public, max-age=31536000, immutable':'public, max-age=0, must-revalidate','X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Content-Security-Policy':"default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' blob:; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"};
+ const entry=assetIndex.entries[pathname.slice(1)],versioned=entry&&url.searchParams.get('v')===entry.sha256.slice(0,20);
+ const immutable=versioned||pathname.startsWith('/assets/')||/^\/textures\/shared\/[a-f0-9]{64}\.(jpg|png|webp)$/.test(pathname);
+ const headers={'Content-Type':types[ext]??'application/octet-stream','ETag':etag,'Vary':'Accept-Encoding','Cache-Control':immutable?'public, max-age=31536000, immutable':'public, max-age=0, must-revalidate','X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Content-Security-Policy':"default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' blob:; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"};
  if(encoding)headers['Content-Encoding']=encoding;
  if(req.headers['if-none-match']===etag){res.writeHead(304,headers);return res.end()}
  const decoded=packedOnly&&encoding!=='br'?brotliDecompressSync(readFileSync(stored)):null;

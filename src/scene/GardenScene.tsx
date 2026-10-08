@@ -2,11 +2,15 @@ import {applyLens, courtyardFrame, fitBox} from './cameraFraming';
 import {overviewFrame} from './overviewFraming';
 import SimulationActors from './SimulationActors';
 import {useSimulation} from '../simulation/store';
-import {Suspense,useEffect,useMemo,useRef,Component,type ReactNode} from 'react';
+import {currentWorld} from '../simulation/world';
+import {Suspense,useCallback,useDeferredValue,useEffect,useMemo,useRef,Component,type ReactNode} from 'react';
+import {prioritizeAsset,versionAsset} from '../loading/assetDelivery';
+import {useLoadingStages} from '../loading/stages';
 import {Canvas,useFrame,useThree,type ThreeEvent} from '@react-three/fiber';
 import {CameraControls,Html,Line,useGLTF,useProgress,useTexture} from '@react-three/drei';
 import * as THREE from 'three';
 import GardenWater from './GardenWater';
+import {waterShape} from './waterGeometry';
 import {Environment} from '@react-three/drei';
 import LivingTrees from './LivingTrees';
 import GroundCover from './GroundCover';
@@ -22,18 +26,28 @@ import type {Manifest,ScenePlace,Vec3} from '../data/types';
 import {GuidedTourController} from '../navigation/GuidedTourController';
 const base=import.meta.env.BASE_URL;
 useGLTF.setDecoderPath(base+'draco/');
-const detailCache=new Map<string,THREE.Object3D>();
+THREE.DefaultLoadingManager.setURLModifier(versionAsset);
+const detailCache=new Map<string,{scene:THREE.Object3D;users:number}>();
+function trimDetails(limit:number){
+ for(const [url,entry] of detailCache){
+  if(detailCache.size<=limit)break;
+  if(entry.users)continue;
+  const resources=new Set<{dispose:()=>void}>();entry.scene.traverse(o=>{if(o instanceof THREE.Mesh){resources.add(o.geometry);for(const mat of Array.isArray(o.material)?o.material:[o.material]){resources.add(mat);for(const value of Object.values(mat))if(value instanceof THREE.Texture)resources.add(value)}}});
+  for(const resource of resources)resource.dispose();useGLTF.clear(url);detailCache.delete(url);
+ }
+}
 function rememberDetail(url:string,scene:THREE.Object3D,limit:number){
- detailCache.delete(url);detailCache.set(url,scene);
- while(detailCache.size>limit){const oldest=detailCache.keys().next().value!;const unused=detailCache.get(oldest)!;const resources=new Set<{dispose:()=>void}>();unused.traverse(o=>{if(o instanceof THREE.Mesh){resources.add(o.geometry);for(const mat of Array.isArray(o.material)?o.material:[o.material]){resources.add(mat);for(const value of Object.values(mat))if(value instanceof THREE.Texture)resources.add(value)}}});for(const value of resources)value.dispose();useGLTF.clear(oldest);detailCache.delete(oldest)}
+ const entry=detailCache.get(url)??{scene,users:0};entry.users++;detailCache.delete(url);detailCache.set(url,entry);trimDetails(limit);
+ return()=>{entry.users--;setTimeout(()=>trimDetails(limit),0)};
 }
 export function findPlaceId(object:THREE.Object3D):string|null{let current:THREE.Object3D|null=object;while(current){if(current.userData.placeId)return current.userData.placeId;current=current.parent}return null}
-class ModelBoundary extends Component<{children:ReactNode;onRetry:()=>void;label?:string},{error:boolean}>{
+class ModelBoundary extends Component<{children:ReactNode;onRetry:()=>void;label?:string;fallback?:ReactNode},{error:boolean}>{
  state={error:false};static getDerivedStateFromError(){return {error:true}}
- render(){return this.state.error?<Html center><div className="scene-error" role="alert"><strong>{this.props.label??'园景'}暂未载入</strong><p>模型文件加载失败，请重试。</p><button onClick={()=>{this.props.onRetry();this.setState({error:false})}}>重新加载</button></div></Html>:this.props.children}
+ componentDidUpdate(previous:Readonly<{label?:string}>){if(this.state.error&&previous.label!==this.props.label)this.setState({error:false})}
+ render(){return this.state.error?<>{this.props.fallback}<Html position={[0,3,0]} center><div className="scene-error" role="alert"><strong>{this.props.label??'园景'}细节暂不可用</strong><p>可继续阅读和推演，也可重新下载此处细节。</p><button onClick={()=>{this.props.onRetry();this.setState({error:false})}}>重试此处</button></div></Html></>:this.props.children}
 }
 function Overview({manifest,detailId,onReady}:{manifest:Manifest;detailId:string|null;onReady:(ready:boolean)=>void}){
- const gltf=useGLTF(base+manifest.overview),[light,soil,zones]=useTexture([base+`textures/landscape-light${manifest.overview.includes('-low')?'-low':''}.webp`,base+'textures/ground/garden-ground.webp',base+'textures/ground/garden-ground-zones.png']);const scene=useMemo(()=>{soil.colorSpace=THREE.SRGBColorSpace;const clone=gltf.scene.clone(true);finishMaterials(clone,light,soil,zones);return batchOverview(clone)},[gltf,manifest.overview,light,soil,zones]);
+ const gltf=useGLTF(base+manifest.overview),[light,soil,zones]=useTexture([base+`textures/landscape-light${/-low|-fast/.test(manifest.overview)?'-low':''}.webp`,base+'textures/ground/garden-ground.webp',base+'textures/ground/garden-ground-zones.png']);const scene=useMemo(()=>{soil.colorSpace=THREE.SRGBColorSpace;const clone=gltf.scene.clone(true);finishMaterials(clone,light,soil,zones);return batchOverview(clone)},[gltf,manifest.overview,light,soil,zones]);
  const releases=useRef(new Map<THREE.Object3D,ReturnType<typeof setTimeout>>());
  useEffect(()=>{
   const pending=releases.current;
@@ -47,22 +61,25 @@ function Overview({manifest,detailId,onReady}:{manifest:Manifest;detailId:string
  const click=(e:ThreeEvent<MouseEvent>)=>{if(useSimulation.getState().open)return;const id=eventPlaceId(e);if(id){e.stopPropagation();useGarden.getState().choosePlace(id)}};
  return <primitive object={scene} onClick={click} onPointerOver={(e:ThreeEvent<PointerEvent>)=>{if(!useSimulation.getState().open&&eventPlaceId(e)){e.stopPropagation();document.body.style.cursor='pointer'}}} onPointerOut={()=>{document.body.style.cursor='auto'}}/>;
 }
-function Detail({place,onReady,low}:{place:ScenePlace;onReady:(id:string|null)=>void;low:boolean}){
+type DetailTier='fast'|'low'|'high';
+function Detail({place,onReady,tier}:{place:ScenePlace;onReady:(id:string|null,tier:DetailTier)=>void;tier:DetailTier}){
+ const requestedURL=base+(tier==='fast'?`models/places-fast/${place.id}.glb`:tier==='low'&&place.mobileModel?place.mobileModel:place.model);
+ const url=useDeferredValue(requestedURL),renderedTier:DetailTier=url.includes('places-fast/')?'fast':url.includes('places-low/')?'low':'high',low=renderedTier!=='high';
  const inside=useGarden(s=>s.hotspotId===place.id+'-study'&&s.cutaway);
  const time=useGarden(s=>s.timeOfDay);
- const url=base+(low&&place.mobileModel?place.mobileModel:place.model);const g=useGLTF(url),light=useTexture(base+`textures/landscape-light${low?'-low':''}.webp`);const scene=useMemo(()=>{const clone=g.scene.clone(true);finishMaterials(clone,light);return clone},[g,light]);
- useEffect(()=>{rememberDetail(url,g.scene,low?2:4);scene.traverse(o=>{if(o instanceof THREE.Mesh){o.castShadow=!low;o.receiveShadow=!low}});onReady(place.id);return()=>onReady(null)},[scene,g,url,low,place.id,onReady]);
+ const g=useGLTF(url),light=useTexture(base+`textures/landscape-light${low?'-low':''}.webp`);const scene=useMemo(()=>{const clone=g.scene.clone(true);finishMaterials(clone,light);return clone},[g.scene,light]);
+ useEffect(()=>{const release=rememberDetail(url,g.scene,low?4:5);scene.traverse(o=>{if(o instanceof THREE.Mesh){o.castShadow=!low;o.receiveShadow=!low}});onReady(place.id,renderedTier);return()=>{onReady(null,renderedTier);release()}},[scene,g.scene,url,low,place.id,onReady,renderedTier]);
  useEffect(()=>{scene.traverse(o=>{if(o instanceof THREE.Mesh){const materials=Array.isArray(o.material)?o.material:[o.material];if(o.userData.roof||materials.every(m=>['roof','tile','tilelight','tiledark'].includes(m.name)))o.visible=!inside;for(const m of materials)if(m instanceof THREE.MeshStandardMaterial&&['lantern','screen','silk','paper'].includes(m.name)){m.emissive.set('#ffc785');m.emissiveIntensity=time==='night'?(m.name==='lantern'?2.7:.32):0}}})},[scene,inside,time]);
- return <group position={place.position}><primitive object={scene} onClick={(e:ThreeEvent<MouseEvent>)=>{e.stopPropagation();if(useSimulation.getState().open)return;const state=useGarden.getState();if(state.selectedPlaceId!==place.id)state.choosePlace(place.id)}}/></group>;
+ return <group position={place.position}><primitive object={scene} dispose={null} onClick={(e:ThreeEvent<MouseEvent>)=>{e.stopPropagation();if(useSimulation.getState().open)return;const state=useGarden.getState();if(state.selectedPlaceId!==place.id)state.choosePlace(place.id)}}/></group>;
 }
-function Atmosphere(){
+function Atmosphere({environment=true}:{environment?:boolean}){
  const night=useGarden(s=>s.timeOfDay==='night'),{scene,camera,invalidate,gl}=useThree(),selected=useGarden(s=>s.selectedPlaceId),loaded=useGarden(s=>s.loaded);
  useFrame(()=>{if(scene.fog instanceof THREE.Fog){scene.fog.near=Math.max(310,camera.position.length()+100);scene.fog.far=scene.fog.near+360;}});
  const place=useGarden(s=>s.data?.manifest.places.find(p=>p.id===s.selectedPlaceId));
  const lightAim=useMemo(()=>{const aim=new THREE.Object3D();if(place)aim.position.fromArray(place.position);return aim},[place]);
  const lightPosition:Vec3=place?[place.position[0]+(night?-74:-80),place.position[1]+(night?98:62),place.position[2]+(night?76:42)]:night?[-74,98,76]:[-80,62,42],shadowSpan=place?(place.id==='daguanlou'?90:40):165;
  useEffect(()=>{const mats=new Set<THREE.MeshStandardMaterial>();scene.traverse(o=>{if(o instanceof THREE.Mesh)for(const m of Array.isArray(o.material)?o.material:[o.material])if(m instanceof THREE.MeshStandardMaterial)mats.add(m)});for(const m of mats){if(['lantern','screen','silk','paper'].includes(m.name)){m.emissive.set(night?'#ffc785':'#201a0e');m.emissiveIntensity=night?(m.name==='lantern'?2.7:.32):0}}gl.shadowMap.needsUpdate=true;invalidate()},[scene,night,selected,loaded,invalidate,gl]);
- return <><color attach="background" args={[night?'#253d4b':'#e3e7d7']}/><fog attach="fog" args={[night?'#253d4b':'#e3e7d7',310,670]}/><hemisphereLight args={[night?'#9cb9d5':'#fff4de',night?'#304138':'#c9bb99',night?.60:1.25]}/><ambientLight intensity={night?.055:.24}/><primitive object={lightAim}/><directionalLight target={lightAim} position={lightPosition} intensity={night?1.45:2.1} color={night?'#b0ccec':'#fff0d4'} castShadow shadow-mapSize={[2048,2048]} shadow-camera-left={-shadowSpan} shadow-camera-right={shadowSpan} shadow-camera-top={shadowSpan} shadow-camera-bottom={-shadowSpan} shadow-camera-far={480} shadow-normalBias={place?.025:.08} shadow-bias={-.0002}/><directionalLight position={[90,64,-140]} intensity={night?.19:.50} color="#b9d3cf"/><Suspense fallback={null}><Environment files={base+'textures/forest_grove.hdr'} environmentIntensity={night?.30:.18}/></Suspense></>;
+ return <><color attach="background" args={[night?'#253d4b':'#e3e7d7']}/><fog attach="fog" args={[night?'#253d4b':'#e3e7d7',310,670]}/><hemisphereLight args={[night?'#9cb9d5':'#fff4de',night?'#304138':'#c9bb99',night?.60:1.25]}/><ambientLight intensity={night?.055:.24}/><primitive object={lightAim}/><directionalLight target={lightAim} position={lightPosition} intensity={night?1.45:2.1} color={night?'#b0ccec':'#fff0d4'} castShadow shadow-mapSize={[2048,2048]} shadow-camera-left={-shadowSpan} shadow-camera-right={shadowSpan} shadow-camera-top={shadowSpan} shadow-camera-bottom={-shadowSpan} shadow-camera-far={480} shadow-normalBias={place?.025:.08} shadow-bias={-.0002}/><directionalLight position={[90,64,-140]} intensity={night?.19:.50} color="#b9d3cf"/>{environment&&<Suspense fallback={null}><Environment files={base+'textures/forest_grove.hdr'} environmentIntensity={night?.30:.18}/></Suspense>}</>;
 }
 function GardenLights({manifest}:{manifest:Manifest}){
  const night=useGarden(s=>s.timeOfDay==='night'),selected=useGarden(s=>s.selectedPlaceId),quality=useGarden(s=>s.qualityLevel);
@@ -132,18 +149,53 @@ function Markers({manifest}:{manifest:Manifest}){
 function Metrics(){const {gl,scene,camera,controls}=useThree();const samples=useRef<number[]>([]);useFrame((_,dt)=>{if(import.meta.env.MODE!=='test')return;samples.current.push(dt*1000);if(samples.current.length>360)samples.current.shift();(window as any).__gardenMetrics={frames:samples.current,drawCalls:gl.info.render.calls,triangles:gl.info.render.triangles,geometries:gl.info.memory.geometries,textures:gl.info.memory.textures,dpr:gl.getPixelRatio(),renderer:gl.getContext().getParameter(gl.getContext().RENDERER)};(window as any).__gardenTest={state:()=>useGarden.getState(),project:(id:string)=>{const p=useGarden.getState().data!.manifest.places.find(p=>p.id===id)!;const vec=new THREE.Vector3(...p.position);vec.y+=3;vec.project(camera);return {x:(vec.x+1)/2*gl.domElement.clientWidth,y:(1-vec.y)/2*gl.domElement.clientHeight}},scene,controls,camera}});return null}
 function World({manifest}:{manifest:Manifest}){
  const {gl,invalidate}=useThree();const loaded=useGarden(s=>s.loaded);
- const [overviewReady,setOverviewReady]=useStableState(false),[treesReady,setTreesReady]=useStableState(false),[groundReady,setGroundReady]=useStableState(false);
- useEffect(()=>{if(overviewReady&&treesReady&&groundReady)useGarden.setState({loaded:true})},[overviewReady,treesReady,groundReady]);
+ const [overviewReady,setOverviewReady]=useStableState(false);
+ const stage=useLoadingStages(overviewReady);
+ useEffect(()=>{if(overviewReady)useGarden.setState({loaded:true})},[overviewReady]);
  const hotspot=useGarden(s=>s.hotspotId);
- const selected=useGarden(s=>s.selectedPlaceId);const [detailId,setDetailId]=useStableState<string|null>(null);const quality=useGarden(s=>s.qualityLevel);const place=manifest.places.find(p=>p.id===selected);const modelManifest=useMemo(()=>quality==='low'?{...manifest,overview:'models/overview-low.glb'}:manifest,[quality,manifest]);
+ const selected=useGarden(s=>s.selectedPlaceId);const [detailStatus,setDetailStatus]=useStableState<{id:string;tier:DetailTier}|null>(null);const quality=useGarden(s=>s.qualityLevel);
+ const detailId=detailStatus?.id??null;
+ const setDetailId=useCallback((id:string|null,tier:DetailTier)=>setDetailStatus(previous=>id?{id,tier}:previous?.tier===tier?null:previous),[]);
+ const storyPlace=useSimulation(s=>s.open?(s.preview??(s.journal?currentWorld(s.journal):null))?.agents[s.focused??'baoyu'].location:null);
+ const currentPlace=manifest.places.find(p=>p.id===(selected??storyPlace));
+ const architecturalFocus=useGarden(s=>s.architecturalFocusId);
+ useEffect(()=>{if(currentPlace)prioritizeAsset(`models/places-fast/${currentPlace.id}.glb`,currentPlace.mobileModel??currentPlace.model,currentPlace.model)},[currentPlace]);
+ // A detailed global overview brings little at this distance. Preserve close
+ // quality in the selected courtyard rather than downloading both global LODs.
+ const requestedManifest=useMemo(()=>({...manifest,overview:'models/overview-fast.glb'}),[manifest]);
+ const modelManifest=requestedManifest;
+ const fastManifest=useMemo(()=>({...manifest,overview:'models/overview-fast.glb'}),[manifest]);
+ const [upgrade,setUpgrade]=useStableState<{id:string;tier:DetailTier}|null>(null);
+ useEffect(()=>{
+  if(!currentPlace||detailId!==currentPlace.id||detailStatus?.tier==='high'||quality==='low'&&detailStatus?.tier==='low')return;
+  const tier=detailStatus?.tier==='fast'?'low':'high';const timer=setTimeout(()=>setUpgrade({id:currentPlace.id,tier}),900);return()=>clearTimeout(timer);
+ },[currentPlace,detailId,detailStatus?.tier,quality]);
+ const tier:DetailTier=upgrade&&currentPlace&&upgrade.id===currentPlace.id?(quality==='low'&&upgrade.tier==='high'?'low':upgrade.tier):'fast';
+ const requestedDetail=useMemo(()=>({place:currentPlace,tier}),[currentPlace,tier]);
+ const detail=requestedDetail,place=detail.place;
+ const nearReady=!!architecturalFocus||!!currentPlace&&detailId===currentPlace.id&&detailStatus?.tier!=='fast';
+ if(import.meta.env.MODE==='test')(window as any).__gardenLoading={stage,overviewReady,overview:modelManifest.overview,detailId,detailTier:detailStatus?.tier,requestedTier:tier,place:place?.id};
  useEffect(()=>{const canvas=gl.domElement.closest<HTMLElement>('.canvas-wrap');if(canvas)canvas.dataset.detailReady=detailId??''},[gl,detailId]);
  useEffect(()=>{gl.shadowMap.autoUpdate=false;gl.shadowMap.needsUpdate=true;invalidate()},[gl,invalidate,selected,quality,detailId,loaded,hotspot]);
- return <><Atmosphere/><Suspense fallback={null}><SunwenArchitecture/><SunwenLandscape/><UrbanContext/></Suspense>
- <ModelBoundary key={modelManifest.overview} onRetry={()=>{useGLTF.clear(base+modelManifest.overview);useTexture.clear(base+`textures/landscape-light${quality==='low'?'-low':''}.webp`);useTexture.clear(base+'textures/ground/garden-ground.webp');useTexture.clear(base+'textures/ground/garden-ground-zones.png')}}><Suspense fallback={null}><Overview manifest={modelManifest} detailId={detailId} onReady={setOverviewReady}/></Suspense></ModelBoundary>
- {place&&<ModelBoundary key={place.id+quality} label={place.name} onRetry={()=>useGLTF.clear(base+(quality==='low'&&place.mobileModel?place.mobileModel:place.model))}><Suspense fallback={null}><Detail place={place} low={quality==='low'} onReady={setDetailId}/></Suspense></ModelBoundary>}
- <ModelBoundary label="树影" onRetry={()=>{useTexture.clear(base+'textures/vegetation/canopy-atlas.webp');for(const name of ['scholar-tree','ginkgo','chinese-pine','shrub','willow','crabapple','white-blossom','red-maple'])useGLTF.clear(base+'models/vegetation/'+name+'.glb')}}><Suspense fallback={null}><LivingTrees manifest={manifest} onReady={setTreesReady}/></Suspense></ModelBoundary><ModelBoundary label="岸边草木" onRetry={()=>useGLTF.clear(base+'models/vegetation/ground-cover.glb')}><Suspense fallback={null}><GroundCover manifest={manifest} onReady={setGroundReady}/></Suspense></ModelBoundary><ModelBoundary label="竹下草木" onRetry={()=>{for(const i of [0,1])useGLTF.clear(base+`models/vegetation/fern-${i}.glb`)}}><Suspense fallback={null}>{(quality==='high'||selected)&&<Understory manifest={manifest}/>}</Suspense></ModelBoundary><Suspense fallback={null}><SunwenPlanting manifest={manifest}/></Suspense><GardenWater manifest={manifest}/><GardenLights manifest={manifest}/><Markers manifest={manifest}/><CameraManager manifest={manifest}/><SimulationActors/><Metrics/>
+ return <><Atmosphere environment={stage>=2}/>
+ <ModelBoundary label="彩绘建筑" onRetry={()=>{for(const suffix of ['-fast','-low',''])useGLTF.clear(base+`models/sunwen-architecture${suffix}.glb`)}} fallback={<Suspense fallback={null}><SunwenArchitecture fast/></Suspense>}><Suspense fallback={null}><SunwenArchitecture fast={!nearReady} detailed={stage>=3&&nearReady}/></Suspense></ModelBoundary>
+ <ModelBoundary label="庭园景观" onRetry={()=>{for(const suffix of ['-fast','-low',''])useGLTF.clear(base+`models/sunwen-landscape${suffix}.glb`)}} fallback={<Suspense fallback={null}><SunwenLandscape fast/></Suspense>}><Suspense fallback={null}><SunwenLandscape fast={!nearReady} detailed={stage>=3&&nearReady}/></Suspense></ModelBoundary>
+ <ModelBoundary label="园外街坊" onRetry={()=>useGLTF.clear(base+'models/urban-context.glb')}><Suspense fallback={null}><UrbanContext/></Suspense></ModelBoundary>
+ <ModelBoundary fallback={<Suspense fallback={null}><Overview manifest={fastManifest} detailId={detailId} onReady={setOverviewReady}/></Suspense>} onRetry={()=>useGLTF.clear(base+modelManifest.overview)}><Suspense fallback={null}><Overview manifest={modelManifest} detailId={detailId} onReady={setOverviewReady}/></Suspense></ModelBoundary>
+ {place&&<ModelBoundary key={place.id} label={place.name} onRetry={()=>{useGLTF.clear(base+place.model);useGLTF.clear(base+`models/places-fast/${place.id}.glb`);if(place.mobileModel)useGLTF.clear(base+place.mobileModel)}}><Suspense fallback={null}><Detail key={place.id} place={place} tier={detail.tier} onReady={setDetailId}/></Suspense></ModelBoundary>}
+ <ModelBoundary label="树影" onRetry={()=>{for(const suffix of ['', '-low'])useTexture.clear(base+`textures/vegetation/canopy-atlas${suffix}.webp`);for(const name of ['scholar-tree','ginkgo','chinese-pine','shrub','willow','crabapple','white-blossom','red-maple'])useGLTF.clear(base+'models/vegetation/'+name+'.glb')}}><Suspense fallback={null}><LivingTrees manifest={manifest} coarse={stage<2}/></Suspense></ModelBoundary>
+ {stage>=2&&<ModelBoundary label="岸边草木" onRetry={()=>useGLTF.clear(base+'models/vegetation/ground-cover.glb')}><Suspense fallback={null}><GroundCover manifest={manifest}/></Suspense></ModelBoundary>}
+ {(stage>=3||!!selected)&&<ModelBoundary label="竹下草木" onRetry={()=>useGLTF.clear([0,1].map(i=>base+`models/vegetation/fern-${i}.glb`))}><Suspense fallback={null}><Understory manifest={manifest}/></Suspense></ModelBoundary>}
+ {stage>=2&&<ModelBoundary label="庭院花木" onRetry={()=>useGLTF.clear(['iris','peony','lotus','chrysanthemum','orchid'].map(name=>base+`models/vegetation/${name}.glb`))}><Suspense fallback={null}><SunwenPlanting manifest={manifest}/></Suspense></ModelBoundary>}
+ <ModelBoundary label="水面" fallback={<SimpleWater manifest={manifest}/>} onRetry={()=>useTexture.clear(['pond-normal','surface-zones'].map(name=>base+`textures/ground/${name}.png`))}><Suspense fallback={<SimpleWater manifest={manifest}/>}>{stage>=2?<GardenWater manifest={manifest}/>:<SimpleWater manifest={manifest}/>}</Suspense></ModelBoundary>
+ <GardenLights manifest={manifest}/><Markers manifest={manifest}/><CameraManager manifest={manifest}/><SimulationActors/><Metrics/>
  <mesh rotation={[-Math.PI/2,0,0]} position={[0,-.35,0]} receiveShadow><planeGeometry args={[1800,1800]}/><meshStandardMaterial color="#a2aaa6" roughness={1}/></mesh>
  </>;
+}
+function SimpleWater({manifest}:{manifest:Manifest}){
+ const geometry=useMemo(()=>new THREE.ShapeGeometry(waterShape(manifest.lake)),[manifest]);
+ const night=useGarden(s=>s.timeOfDay==='night');
+ return <mesh geometry={geometry} rotation={[-Math.PI/2,0,0]} position={[0,-.12,0]}><meshStandardMaterial color={night?'#2e4651':'#82aaa7'} roughness={.38}/></mesh>;
 }
 import {useState as useStableState} from 'react';
 function useSceneInsets(panelOpen:boolean,simulationOpen:boolean){
@@ -160,14 +212,14 @@ function useSceneInsets(panelOpen:boolean,simulationOpen:boolean){
  },[panelOpen,simulationOpen]);
  return insets;
 }
-function Loading(){const {progress,active}=useProgress();const loaded=useGarden(s=>s.loaded);return active&&!loaded?<div className="loading" role="status"><div className="loading-seal">园</div><h2>山水渐入眼前</h2><p>正在展开园林 · {Math.round(progress)}%</p><progress max={100} value={progress}/><a href="./reading.html">网络较慢？先打开轻量阅读</a></div>:null}
+function Loading(){const {active}=useProgress();const loaded=useGarden(s=>s.loaded);return active?<div className="scene-loading" role="status"><span className="live-dot"/>{loaded?'正在补齐园景细节':'园景正在后台展开'}<small>阅读、推演与切换页面均可继续</small></div>:null}
 function ContextHealth({onLost}:{onLost:()=>void}){
  const {gl}=useThree();
- useEffect(()=>{const canvas=gl.domElement;const lost=(event:Event)=>{event.preventDefault();useSimulation.getState().cancel();useSimulation.setState({sceneReady:false});useGarden.setState({loaded:false});onLost()};canvas.addEventListener('webglcontextlost',lost);return()=>canvas.removeEventListener('webglcontextlost',lost)},[gl,onLost]);
+ useEffect(()=>{const canvas=gl.domElement;const lost=(event:Event)=>{event.preventDefault();useSimulation.setState({sceneReady:false});useGarden.setState({loaded:false});onLost()};canvas.addEventListener('webglcontextlost',lost);return()=>canvas.removeEventListener('webglcontextlost',lost)},[gl,onLost]);
  return null;
 }
-export default function GardenScene({manifest}:{manifest:Manifest}){const [contextLost,setContextLost]=useStableState(false);const [contextVersion,setContextVersion]=useStableState(0);const loaded=useGarden(s=>s.loaded);const quality=useGarden(s=>s.qualityLevel);const motion=useGarden(s=>s.motion);const selected=useGarden(s=>s.selectedPlaceId),closeView=useGarden(s=>s.closeView),hotspot=useGarden(s=>s.hotspotId);const playing=useGarden(s=>s.tourState.status==='playing');const webgl=useMemo(()=>{try{return !!document.createElement('canvas').getContext('webgl2')}catch{return false}},[]);
+export default function GardenScene({manifest}:{manifest:Manifest}){const [contextLost,setContextLost]=useStableState(false);const [contextVersion,setContextVersion]=useStableState(0);const loaded=useGarden(s=>s.loaded);const quality=useGarden(s=>s.qualityLevel);const selected=useGarden(s=>s.selectedPlaceId),closeView=useGarden(s=>s.closeView),hotspot=useGarden(s=>s.hotspotId);const playing=useGarden(s=>s.tourState.status==='playing');const webgl=useMemo(()=>{try{return !!document.createElement('canvas').getContext('webgl2')}catch{return false}},[]);
  const insets=useSceneInsets(useGarden(s=>s.panelOpen),useSimulation(s=>s.open));
  if(!webgl)return <div className="fallback"><h2>当前设备无法显示三维园景</h2><p>仍可通过地点、人物与回目索引阅读全部资料。</p></div>;
- return <div className="canvas-wrap" style={insets} data-testid="garden-canvas" data-scene-ready={loaded} aria-busy={!loaded}><Canvas key={contextVersion} frameloop={playing||(motion&&quality==='high')?'always':'demand'} camera={{position:manifest.overviewCamera.position,fov:38,near:.08,far:2400}} dpr={quality==='high'?[1,1.5]:1} shadows={quality==='high'} gl={{antialias:true,alpha:false,powerPreference:'high-performance',toneMapping:THREE.ACESFilmicToneMapping,toneMappingExposure:1.0}}><World manifest={manifest}/><ContextHealth onLost={()=>setContextLost(true)}/></Canvas>{selected&&!hotspot&&<button className="court-framing" onClick={()=>useGarden.setState({closeView:!closeView})}>{closeView?'抬高看全院':'平视院景'}</button>}<Loading/>{contextLost&&<div className="fallback context-error" role="alert"><h2>三维场景已中断</h2><p>图形上下文已失效，当前推演已取消。可用轻量画质重新载入。</p><button onClick={()=>{useGarden.setState({qualityLevel:'low',loaded:false});setContextLost(false);setContextVersion(contextVersion+1)}}>重新加载三维场景</button></div>}</div>;
+ return <div className="canvas-wrap" style={insets} data-testid="garden-canvas" data-scene-ready={loaded} aria-busy={!loaded}><Canvas key={contextVersion} frameloop={playing?'always':'demand'} camera={{position:manifest.overviewCamera.position,fov:38,near:.08,far:2400}} dpr={quality==='high'?[1,1.5]:1} shadows={quality==='high'} gl={{antialias:true,alpha:false,powerPreference:'high-performance',toneMapping:THREE.ACESFilmicToneMapping,toneMappingExposure:1.0}}><World manifest={manifest}/><ContextHealth onLost={()=>setContextLost(true)}/></Canvas>{selected&&!hotspot&&<button className="court-framing" onClick={()=>useGarden.setState({closeView:!closeView})}>{closeView?'抬高看全院':'平视院景'}</button>}<Loading/>{contextLost&&<div className="fallback context-error" role="alert"><h2>三维场景已中断</h2><p>园景显示已中断，故事推演与存档继续进行。可用轻量画质重新载入。</p><button onClick={()=>{useGarden.setState({qualityLevel:'low',loaded:false});setContextLost(false);setContextVersion(contextVersion+1)}}>重新加载三维场景</button></div>}</div>;
 }

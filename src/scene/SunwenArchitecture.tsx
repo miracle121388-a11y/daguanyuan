@@ -1,4 +1,4 @@
-import {useEffect,useMemo,useRef} from 'react';
+import {useDeferredValue,useEffect,useMemo,useRef} from 'react';
 import {Html,useGLTF} from '@react-three/drei';
 import {useFrame,useThree} from '@react-three/fiber';
 import * as THREE from 'three';
@@ -15,12 +15,13 @@ function SceneryLabel({place,chosen}:{place:ArchitecturalScene;chosen:boolean}){
 }
 
 /** Modeled windows, porticoes and supplementary scenery from the saved master. */
-export default function SunwenArchitecture(){
+export default function SunwenArchitecture({fast=false,detailed=true}:{fast?:boolean;detailed?:boolean}){
  const quality=useGarden(s=>s.qualityLevel);
  const selected=useGarden(s=>s.selectedPlaceId),focus=useGarden(s=>s.architecturalFocusId),labels=useGarden(s=>s.labels),night=useGarden(s=>s.timeOfDay==='night');
  const inside=useGarden(s=>s.cutaway&&!!s.hotspotId?.endsWith('-study'));
  const scenes=useGarden(s=>s.data?.manifest.architecturalScenes),simulation=useSimulation(s=>s.open);
- const gltf=useGLTF(import.meta.env.BASE_URL+`models/sunwen-architecture${quality==='low'?'-low':''}.glb`);
+ const url=useDeferredValue(import.meta.env.BASE_URL+`models/sunwen-architecture${fast?'-fast':quality==='low'||!detailed?'-low':''}.glb`);
+ const gltf=useGLTF(url);
  const scene=useMemo(()=>batchOverview(gltf.scene.clone(true)),[gltf]);
  useEffect(()=>()=>{scene.traverse(o=>{if(o instanceof THREE.BatchedMesh)o.dispose()})},[scene]);
  useEffect(()=>{scene.traverse(o=>{

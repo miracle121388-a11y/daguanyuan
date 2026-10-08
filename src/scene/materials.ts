@@ -36,8 +36,8 @@ diffuseColor.rgb*=mix(1.0,mix(.66,stoneVariation,joint),groundZones.g);
    };
    m.customProgramCacheKey=()=> 'garden-ground-tended-sunwen-r21-'+Boolean(landscapeLight)+Boolean(soil)+Boolean(zones);
   }
-  if(m.name==='plaster'){m.color.set('#ffffff');m.roughness=.84}
-  if(['wood','darkwood','floorwood','latticewood','furniture','roof','tile','tilelight','tiledark','paving','courtbase','cutstone','bankstone','gardenstone','stone','litter'].includes(m.name)){m.color.set('#ffffff');if(m.map)m.map.anisotropy=4}
+  if(m.name==='plaster'){if(!m.userData.deliveryPigment)m.color.set('#ffffff');m.roughness=.84}
+  if(['wood','darkwood','floorwood','latticewood','furniture','roof','tile','tilelight','tiledark','paving','courtbase','cutstone','bankstone','gardenstone','stone','litter'].includes(m.name)){if(!m.userData.deliveryPigment)m.color.set('#ffffff');if(m.map)m.map.anisotropy=4}
 
   
   
@@ -55,7 +55,7 @@ diffuseColor.rgb*=mix(1.0,mix(.66,stoneVariation,joint),groundZones.g);
    m.customProgramCacheKey=()=> 'garden-wet-stone-r12';
   }
    if(['leaf','lightleaf','leafdark','canopy_light','canopy_shadow','Living_Foliage'].includes(m.name)){m.side=THREE.DoubleSide;m.roughness=.94}
-   if(m.name.startsWith('botanical_')){m.side=THREE.DoubleSide;m.color.set('#ffffff');m.roughness=m.name==='botanical_banana'?.78:.88;if(m.map)m.map.anisotropy=4}
+   if(m.name.startsWith('botanical_')){m.side=THREE.DoubleSide;if(!m.userData.deliveryPigment)m.color.set('#ffffff');m.roughness=m.name==='botanical_banana'?.78:.88;if(m.map)m.map.anisotropy=4}
    if(m.name==='botanical_bamboo')finishLeafMaterial(m,.46);
    if(m.name==='botanical_banana')finishLeafMaterial(m,.22);
   m.needsUpdate=true;

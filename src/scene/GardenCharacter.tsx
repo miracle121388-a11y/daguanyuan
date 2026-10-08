@@ -1,4 +1,4 @@
-import {Component, Suspense, useDeferredValue, useEffect, useMemo, useRef, type ReactNode} from 'react';
+import {Component, Suspense, useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode} from 'react';
 import {Html, useGLTF} from '@react-three/drei';
 import {createPortal, useFrame} from '@react-three/fiber';
 import * as THREE from 'three';
@@ -11,7 +11,7 @@ import {characterAsset, characterDetail, facePerformance, type CharacterDetail} 
 
 type Props = {id: AgentId; pose: string; paused: boolean; motion: boolean; rate: number; calm: number; tea: boolean};
 
-function PaintedFigure({id, pose, paused, motion, rate, tea, detail}: Props & {detail: CharacterDetail}) {
+function PaintedFigure({id, pose, paused, motion, rate, tea, detail,onLoaded}: Props & {detail: CharacterDetail;onLoaded:()=>void}) {
   const {scene} = useGLTF(characterAsset(id, detail, import.meta.env.BASE_URL), `${import.meta.env.BASE_URL}draco/`);
   const model = useMemo(() => cloneSkeleton(scene), [scene]);
   const clock = useRef(0);
@@ -21,7 +21,8 @@ function PaintedFigure({id, pose, paused, motion, rate, tea, detail}: Props & {d
   useEffect(() => {
     model.traverse(object => {if (object instanceof THREE.Mesh) {object.castShadow = true; object.receiveShadow = true; if (object instanceof THREE.SkinnedMesh || object.morphTargetInfluences) object.frustumCulled = false;}});
     rig.book.visible = false; rig.brush.visible = false;
-  }, [model, rig]);
+    onLoaded();
+  }, [model, rig,onLoaded]);
   useFrame((_state, delta) => {
     if (paused || document.hidden) return;
     clock.current += Math.min(delta, .1) * rate;
@@ -89,8 +90,10 @@ class CharacterBoundary extends Component<{id: AgentId; detail: CharacterDetail;
 }
 export default function GardenCharacter(props: Props) {
   const quality = useGarden(s => s.qualityLevel), focused = useSimulation(s => s.focused === props.id), camera = useSimulation(s => s.cameraMode);
-  const detail = useDeferredValue(characterDetail(focused, quality, camera));
+  const open=useSimulation(s=>s.open),[baseReady,setBaseReady]=useState(false);
+  const ready=useMemo(()=>()=>setBaseReady(true),[]);
+  const detail = useDeferredValue(baseReady&&open?characterDetail(focused, quality, camera):'low');
   // Keep the incumbent model rendered while the new LOD suspends. A boundary
   // keyed by detail discarded it immediately and flashed a loading silhouette.
-  return <CharacterBoundary key={props.id} id={props.id} detail={detail}><Suspense fallback={<Silhouette id={props.id}/>}><PaintedFigure {...props} detail={detail}/></Suspense></CharacterBoundary>;
+  return <CharacterBoundary key={props.id} id={props.id} detail={detail}><Suspense fallback={<Silhouette id={props.id}/>}><PaintedFigure {...props} detail={detail} onLoaded={ready}/></Suspense></CharacterBoundary>;
 }

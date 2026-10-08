@@ -114,7 +114,7 @@ export default function SimulationActors(){
   const motion=gardenMotion&&!reduced;
   useEffect(()=>{const mq=window.matchMedia('(prefers-reduced-motion: reduce)'),change=()=>setReduced(mq.matches);mq.addEventListener('change',change);return()=>mq.removeEventListener('change',change);},[]);
   useEffect(()=>{if(state.open)setVisited(true);},[state.open]);
-  useEffect(()=>{useSimulation.setState({sceneReady:loaded});return()=>{useSimulation.getState().cancel();useSimulation.setState({sceneReady:false});};},[loaded]);
+  useEffect(()=>{useSimulation.setState({sceneReady:loaded});return()=>{useSimulation.setState({sceneReady:false});};},[loaded]);
   useEffect(()=>{invalidate();},[state.preview,state.playback,state.focusRevision,state.sceneRevision,state.paused,invalidate]);
   useEffect(()=>{
     if(!state.open||!motion)return;

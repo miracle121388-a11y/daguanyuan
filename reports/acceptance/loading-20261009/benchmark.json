@@ -1,0 +1,174 @@
+{
+  "profile": "Desktop Chromium, 10Mbps downstream/100ms latency, cold HTTP cache. Not a physical mobile-device measurement.",
+  "controlsMs": 1209,
+  "readyMs": 8071,
+  "initialTransferBytes": 4125192,
+  "initialDecodedBytes": 7316624,
+  "initial3DDecodedBytes": 4479290,
+  "errors": [],
+  "blankCanvasDuringRapidSwitches": 0,
+  "resources": [
+    {
+      "url": "http://127.0.0.1:3007/assets/index-BwxPwPdj.js",
+      "transfer": 184045,
+      "decoded": 578307,
+      "end": 384.39999997615814
+    },
+    {
+      "url": "http://127.0.0.1:3007/assets/index-BTF1rXZk.css",
+      "transfer": 22854,
+      "decoded": 126251,
+      "end": 256.09999999403954
+    },
+    {
+      "url": "http://127.0.0.1:3007/assets/garden-mark-COPNxcSD.svg",
+      "transfer": 758,
+      "decoded": 458,
+      "end": 512.5
+    },
+    {
+      "url": "http://127.0.0.1:3007/data/places.json?v=e04693a63dd766e56f65",
+      "transfer": 2833,
+      "decoded": 6751,
+      "end": 521.0999999940395
+    },
+    {
+      "url": "http://127.0.0.1:3007/data/characters.json?v=88f643c7363fa9b54e7c",
+      "transfer": 1360,
+      "decoded": 3170,
+      "end": 518.7999999821186
+    },
+    {
+      "url": "http://127.0.0.1:3007/data/events.json?v=51f6bc89555e28a4b619",
+      "transfer": 3194,
+      "decoded": 9255,
+      "end": 522.0999999940395
+    },
+    {
+      "url": "http://127.0.0.1:3007/scene-manifest.json?v=de490e980ac95dc52f45",
+      "transfer": 53053,
+      "decoded": 227967,
+      "end": 674.7999999821186
+    },
+    {
+      "url": "http://127.0.0.1:3007/data/editionCatalog.json?v=fe6d01d70e0850bd323d",
+      "transfer": 5444,
+      "decoded": 15476,
+      "end": 636.3999999761581
+    },
+    {
+      "url": "http://127.0.0.1:3007/data/relations.json?v=3cafe63927a9f73fffe4",
+      "transfer": 473,
+      "decoded": 176,
+      "end": 629.1999999880791
+    },
+    {
+      "url": "http://127.0.0.1:3007/data/routes.json?v=700320122748b19f4fa5",
+      "transfer": 1275,
+      "decoded": 3638,
+      "end": 737.3999999761581
+    },
+    {
+      "url": "http://127.0.0.1:3007/data/sources.json?v=55d56b810e3cf82fb099",
+      "transfer": 11707,
+      "decoded": 52471,
+      "end": 748
+    },
+    {
+      "url": "http://127.0.0.1:3007/assets/GardenScene-BgkfMDyy.js",
+      "transfer": 127119,
+      "decoded": 864646,
+      "end": 1081.5
+    },
+    {
+      "url": "http://127.0.0.1:3007/assets/Gltf-Umw-Wje_.js",
+      "transfer": 250042,
+      "decoded": 925965,
+      "end": 1180.0999999940395
+    },
+    {
+      "url": "http://127.0.0.1:3007/art/manifest.json",
+      "transfer": 5263,
+      "decoded": 22574,
+      "end": 887.6999999880791
+    },
+    {
+      "url": "http://127.0.0.1:3007/api/dreams/config",
+      "transfer": 518,
+      "decoded": 218,
+      "end": 886.6999999880791
+    },
+    {
+      "url": "http://127.0.0.1:3007/api/dreams/jobs",
+      "transfer": 311,
+      "decoded": 11,
+      "end": 886.7999999821186
+    },
+    {
+      "url": "http://127.0.0.1:3007/textures/vegetation/canopy-atlas-low.webp?v=f79ef784e93e23529554",
+      "transfer": 467050,
+      "decoded": 466750,
+      "end": 1793.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:3007/models/sunwen-architecture-fast.glb?v=439be8cee807418e8b1f",
+      "transfer": 298959,
+      "decoded": 463048,
+      "end": 2392
+    },
+    {
+      "url": "http://127.0.0.1:3007/models/urban-context.glb?v=21fd9784992683e2d829",
+      "transfer": 107384,
+      "decoded": 222852,
+      "end": 2041.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:3007/models/sunwen-landscape-fast.glb?v=9c48f195db28ef13f0e2",
+      "transfer": 641573,
+      "decoded": 692528,
+      "end": 3041.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:3007/models/overview-fast.glb?v=4f803a43800205ddf94a",
+      "transfer": 1580030,
+      "decoded": 2100184,
+      "end": 4123.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:3007/draco/draco_decoder.wasm?v=a680d927bed9cb864ddb",
+      "transfer": 63707,
+      "decoded": 192420,
+      "end": 2647.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:3007/draco/draco_wasm_wrapper.js?v=8bb2952d2ba7d67e1414",
+      "transfer": 11988,
+      "decoded": 58456,
+      "end": 2780.7999999821186
+    },
+    {
+      "url": "http://127.0.0.1:3007/textures/landscape-light.webp?v=7e208e423e82d5ee3bbd",
+      "transfer": 122130,
+      "decoded": 121830,
+      "end": 4100.799999982119
+    },
+    {
+      "url": "http://127.0.0.1:3007/textures/ground/garden-ground.webp?v=0fa2fe52f3cf4b9e8691",
+      "transfer": 47604,
+      "decoded": 47304,
+      "end": 3961.699999988079
+    },
+    {
+      "url": "http://127.0.0.1:3007/textures/ground/garden-ground-zones.png?v=676eecfeec7e42d05204",
+      "transfer": 69300,
+      "decoded": 69000,
+      "end": 4016.7999999821186
+    },
+    {
+      "url": "http://127.0.0.1:3007/textures/landscape-light-low.webp?v=3283fe780991edd5baa2",
+      "transfer": 45218,
+      "decoded": 44918,
+      "end": 5929.5999999940395
+    }
+  ]
+}

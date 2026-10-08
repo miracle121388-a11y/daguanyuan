@@ -53,7 +53,7 @@ it('the gathering UI action advances real scene commands without generating a ne
  vi.stubGlobal('localStorage',{getItem:()=>null,setItem:()=>{}});
  const upstream=vi.fn();vi.stubGlobal('fetch',upstream);
  try {
-  useGarden.setState({data});useSimulation.setState({journal:j,phase:'ready',sceneReady:true,accessToken:'fixture',comicAutomatic:false});
+  useGarden.setState({data});useSimulation.setState({journal:j,open:true,phase:'ready',sceneReady:true,accessToken:'fixture',comicAutomatic:false});
   for(let step=0;step<4&&currentWorld(useSimulation.getState().journal!).gathering?.status==='pending';step++)await useSimulation.getState().advanceParticipation();
   const after=currentWorld(useSimulation.getState().journal!);
   expect(useSimulation.getState().error).toBe('');expect(after.gathering?.status).toBe('completed');expect(commands).toContain('move');expect(commands).toContain('write');

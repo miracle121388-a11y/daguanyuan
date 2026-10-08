@@ -24,7 +24,7 @@
     "lint": "eslint src tests scripts server server.mjs --no-warn-ignored",
     "test": "vitest run",
     "verify": "node scripts/validate.mjs",
-    "build": "node scripts/clean_build.mjs && npm run data:build && tsc --noEmit && vite build && node scripts/build_reading.mjs",
+    "build": "node scripts/clean_build.mjs && npm run data:build && npm run models:fast && npm run models:character-delivery && npm run delivery:prepare && tsc --noEmit && vite build && node scripts/build_reading.mjs",
     "test:simulation": "node scripts/simulation_smoke.mjs",
     "test:simulation:model": "node scripts/simulation_model_smoke.mjs",
     "test:network": "node scripts/network_smoke.mjs",
@@ -73,7 +73,10 @@
     "models:characters": "node scripts/pipeline.mjs models-characters",
     "models:characters:check": "node scripts/check_characters.mjs",
     "test:openstory:model": "node --use-env-proxy scripts/openstory_live.mjs",
-    "test:continuation:model": "node --use-env-proxy scripts/continuation_live.mjs"
+    "test:continuation:model": "node --use-env-proxy scripts/continuation_live.mjs",
+    "models:fast": "node scripts/prepare_fast_models.mjs",
+    "delivery:prepare": "node scripts/prepare_delivery.mjs",
+    "models:character-delivery": "node scripts/prepare_character_delivery.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",
@@ -99,6 +102,7 @@
     "draco3dgltf": "1.5.7",
     "eslint": "9.34.0",
     "globals": "16.3.0",
+    "meshoptimizer": "^0.22.0",
     "sharp": "0.35.4",
     "typescript": "5.9.2",
     "typescript-eslint": "8.41.0",

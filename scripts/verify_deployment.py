@@ -8,14 +8,14 @@ fetch_timeout=int(os.environ.get('GARDEN_VERIFY_TIMEOUT_SECONDS','60'))
 http1=os.environ.get('GARDEN_VERIFY_HTTP1')=='1'
 if not 1<=fetch_timeout<=600:raise ValueError('Invalid verification request timeout')
 def cli(*args):
- result=subprocess.run(['npx.cmd' if os.name=='nt' else 'npx','--yes','zeabur@0.22.2',*args,'-i=false','--json'],check=True,capture_output=True,encoding='utf8')
+ result=subprocess.run(['npx.cmd' if os.name=='nt' else 'npx','--yes','zeabur@latest',*args,'-i=false','--json'],check=True,capture_output=True,encoding='utf8')
  return json.loads(result.stdout)
-deployment=cli('deployment','get','--env-id','6aa142fbda9bc245fba1e845','--service-id','6aa143296c3d9581b71560fa')
-project=cli('project','get','--id','6aa142fb6c3d9581b71560ed')
-domains=cli('domain','list','--env-id','6aa142fbda9bc245fba1e845','--id','6aa143296c3d9581b71560fa')
+deployment=cli('deployment','get','--env-id','6ac7c86589c17dc8a99e6a7d','--service-id','6ac7cb8b3913920b91cae4bc')
+project=cli('project','get','--id','6ac7c8653913920b91cae35c')
+domains=cli('domain','list','--env-id','6ac7c86589c17dc8a99e6a7d','--id','6ac7cb8b3913920b91cae4bc')
 domain=next(d for d in domains if d['domain']==host)
 assert deployment['status']=='RUNNING' and domain['status']=='PROVISIONED'
-assert project['Region']['ID']=='server-6a8eee0bb11fb81fb4aaca05'
+assert project['Region']['ID']=='server-69dfdbcbbae4af582816c8e2'
 def curl(*args):
  return subprocess.run(['curl.exe' if os.name=='nt' else 'curl',*(['--http1.1'] if http1 else []),'--silent','--show-error','--fail','--retry','2','--retry-delay','1','--retry-all-errors','--max-time',str(fetch_timeout),*args],check=True,capture_output=True).stdout
 dns=json.loads(curl(f'https://dns.google/resolve?name={host}&type=A'))

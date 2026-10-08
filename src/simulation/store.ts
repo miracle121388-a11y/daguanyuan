@@ -79,7 +79,11 @@ function commit(journal: Journal) {
   if (!state.open && state.phase !== 'ready') useSimulation.setState({backgroundNotice: useSimulation.getState().storageNotice ? '本次任务已完成，存档未写入，请返回导出' : '本次任务已完成，已存到本机'});
 }
 function execute(command: SceneCommand, signal: AbortSignal): Promise<void> {
-  if (!useSimulation.getState().sceneReady) return Promise.reject(new Error('三维场景尚未就绪，请等待园林载入后重试。'));
+  signal.throwIfAborted();
+  // Narrative validation and authoritative state transitions never depend on
+  // a GPU or asset download. Unavailable/hidden staging commits its real result
+  // immediately; the scene catches up from that snapshot when it becomes ready.
+  if (!useSimulation.getState().sceneReady || !useSimulation.getState().open) return Promise.resolve();
   return new Promise((resolve, reject) => {
     let settled = false;
     const timeline = new PlaybackTimeline(commandDuration(command, prepareRoute(command.path).length));
@@ -194,10 +198,9 @@ export const useSimulation = create<SimulationState>((set, get) => ({
     set({ifComposerOpen: branch === 'if' && !get().journal?.if, immersive: false, recordView: 'events', automatic: false});
   },
   next: async () => {
-    const {journal, phase, sceneReady} = get(), data = useGarden.getState().data;
+    const {journal, phase} = get(), data = useGarden.getState().data;
     if (!journal || !data || phase !== 'ready') return;
     if(!get().accessToken.trim()){set({error:'请先在页面顶部解锁访问口令，再生成后续故事。',automatic:false});return;}
-    if (!sceneReady) { set({error: '三维园林尚未就绪，请等待载入或重试模型。', automatic: false}); return; }
     const active = new AbortController(); controller = active;
     set({phase: 'deciding', paused: false, error: ''});
     try {
@@ -224,10 +227,9 @@ export const useSimulation = create<SimulationState>((set, get) => ({
     }
   },
   advanceParticipation: async () => {
-    const {journal, phase, sceneReady} = get(), data = useGarden.getState().data;
+    const {journal, phase} = get(), data = useGarden.getState().data;
     if (!journal || !data || phase !== 'ready') return;
     if (!get().accessToken.trim()) {set({error:'请先在页面顶部解锁访问口令。'}); return;}
-    if (!sceneReady) {set({error:'三维园林尚未就绪，请等待载入。'}); return;}
     const active = new AbortController(); controller = active;
     set({phase:'deciding',automatic:false,error:''});
     try {

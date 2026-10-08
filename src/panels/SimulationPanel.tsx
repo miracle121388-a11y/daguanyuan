@@ -66,7 +66,7 @@ export default function SimulationPanel() {
     {!s.ifComposerOpen && <div className="sim-primary-dock"><SimulationRunControls/><div className="sim-status"><p role="status">{status}</p>{busy && <button onClick={s.cancel}>撤销本步</button>}</div></div>}
     <div className="sim-scroll" ref={scroll}>
       {s.error && (s.ifComposerOpen || !(view === 'participate' && s.participationView === 'chat')) && <div className="sim-error" role="alert">{s.error}<button aria-label="关闭推演提示" onClick={() => useSimulation.setState({error: ''})}><X size={14}/></button></div>}
-      {!s.sceneReady && <p className="sim-note">三维园林载入后即可运行。若设备不支持三维，仍可查看人物和存档。</p>}
+      {!s.sceneReady && <p className="sim-note">园景正在后台展开，可以立即推演、交谈和创建分支。故事照常生成并存档，园景就绪后显示最新情节。</p>}
       {s.storageNotice && <p className="sim-error" role="status">{s.storageNotice}</p>}
       <DreamStatus/>
       {s.ifComposerOpen ? <div className="if-composer">

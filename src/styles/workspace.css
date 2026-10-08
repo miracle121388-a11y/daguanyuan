@@ -138,3 +138,6 @@
 .sim-auto-option{min-height:40px;border:1px solid var(--border);padding:8px 12px;border-radius:4px;margin:8px 0;font-size:12px}
 .background-story{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 18px;background:var(--panel-secondary);color:var(--text-muted);font-size:12px;border-top:1px solid var(--border)}
 .background-story button{flex-shrink:0;color:var(--text);padding:4px 10px;border:1px solid var(--border);border-radius:6px}
+
+/* Non-modal download status leaves navigation and story controls available. */
+.scene-loading{position:absolute;left:18px;bottom:92px;z-index:16;max-width:calc(100% - 36px);padding:10px 14px;background:#182b33e8;color:#f2e9d8;border:1px solid #60736f;border-radius:9px;font-size:12px;pointer-events:none;box-shadow:0 4px 16px #182b3329}.scene-loading small{display:block;margin-top:4px;color:#c8c2b5;font-size:10px}.scene-loading .live-dot{margin-right:8px}.simulation-open .scene-loading{bottom:150px}.scene-error{max-width:240px;padding:12px!important}.scene-error strong{font-size:14px!important}.scene-error p{line-height:1.6}.scene-error button{padding:6px 10px!important}

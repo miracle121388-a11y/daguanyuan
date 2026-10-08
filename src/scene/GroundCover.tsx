@@ -6,7 +6,7 @@ import type {Manifest} from '../data/types';
 import {useGarden} from '../state/store';
 
 /** Placements come from the same linked plants saved in the Blender master. */
-export default function GroundCover({manifest,onReady}:{manifest:Manifest;onReady:(ready:boolean)=>void}){
+export default function GroundCover({manifest,onReady}:{manifest:Manifest;onReady?:(ready:boolean)=>void}){
  const gltf=useGLTF(import.meta.env.BASE_URL+'models/vegetation/ground-cover.glb');
  const quality=useGarden(s=>s.qualityLevel);
  const previousEye=useRef(new THREE.Vector3(Infinity,Infinity,Infinity));
@@ -38,7 +38,7 @@ export default function GroundCover({manifest,onReady}:{manifest:Manifest;onRead
   }
   for(const mesh of meshes){mesh.count=count;mesh.instanceMatrix.needsUpdate=true}
  });
- useEffect(()=>{onReady(true)},[meshes,onReady]);
+ useEffect(()=>{onReady?.(true)},[meshes,onReady]);
  useEffect(()=>()=>{for(const mesh of meshes){mesh.geometry.dispose();for(const m of Array.isArray(mesh.material)?mesh.material:[mesh.material])m.dispose();mesh.dispose()}},[meshes]);
  return <group>{meshes.map(m=><primitive key={m.uuid} object={m}/>)}</group>;
 }

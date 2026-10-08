@@ -1,5 +1,5 @@
 import {useEffect,useMemo} from 'react';
-import {useFrame} from '@react-three/fiber';
+import {useFrame,useThree} from '@react-three/fiber';
 import {useTexture} from '@react-three/drei';
 import * as THREE from 'three';
 import {Water} from 'three/addons/objects/Water.js';
@@ -62,6 +62,8 @@ void main(){
 
 export default function GardenWater({manifest}:{manifest:Manifest}){
  const quality=useGarden(s=>s.qualityLevel),night=useGarden(s=>s.timeOfDay==='night'),motion=useGarden(s=>s.motion);
+ const {invalidate}=useThree();
+ useEffect(()=>{if(!motion)return;const timer=setInterval(()=>{if(!document.hidden)invalidate()},160);return()=>clearInterval(timer)},[motion,invalidate]);
  const [source,zones]=useTexture([import.meta.env.BASE_URL+'textures/ground/pond-normal.png',import.meta.env.BASE_URL+'textures/ground/surface-zones.png']);
  const surface=useMemo(()=>{
   const normals=source.clone();normals.wrapS=normals.wrapT=THREE.RepeatWrapping;normals.colorSpace=THREE.NoColorSpace;normals.needsUpdate=true;

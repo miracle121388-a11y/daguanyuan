@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import {installAssetDelivery} from './loading/assetDelivery';
 import App from './App';
 import './styles/garden.css';
 import './styles/reference-world.css';
@@ -10,4 +11,5 @@ import './styles/dreams.css';
 import './styles/palette.css';
 import './styles/workspace.css';
 // The R3F canvas owns GPU resources; mount it once during local development.
+installAssetDelivery();
 ReactDOM.createRoot(document.getElementById('root')!).render(<App/>);

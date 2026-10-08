@@ -1,0 +1,614 @@
+[
+  {
+    "source": "public/models/overview-low.glb",
+    "sourceSha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
+    "target": "public/models/overview-fast.glb",
+    "sha256": "4f803a43800205ddf94ae4ae62f10c920c3d2668697315c937ab4a46bd2274c6",
+    "bytes": 2100184,
+    "bounds": {
+      "min": [
+        -148.5,
+        -1.8936760425567627,
+        -148.5
+      ],
+      "max": [
+        148.5,
+        19.824481964111328,
+        146.99993896484375
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -148.5,
+        -1.8936760425567627,
+        -148.5
+      ],
+      "max": [
+        148.5,
+        19.823575973510742,
+        146.99533081054688
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/sunwen-architecture-low.glb",
+    "sourceSha256": "d8b226cf7b9de25842a55effa713046c073d43b6899c000a85c1db7acc6651e6",
+    "target": "public/models/sunwen-architecture-fast.glb",
+    "sha256": "439be8cee807418e8b1f816d38ed60d0c2f98bcd1367b93e80e0c7aef58cf630",
+    "bytes": 463048,
+    "bounds": {
+      "min": [
+        -124.30000114440918,
+        0.019999999552965164,
+        -128.4021339416504
+      ],
+      "max": [
+        124.800124168396,
+        14.479830741882324,
+        141.3918752670288
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -124.30000019073486,
+        0.019999999552965164,
+        -128.4003391265869
+      ],
+      "max": [
+        124.80057048797607,
+        14.477987289428711,
+        141.39222717285156
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/sunwen-landscape-low.glb",
+    "sourceSha256": "5f3b2ba088727b32040e45dbca700dc55eeac38926de82be522988234c5e14b4",
+    "target": "public/models/sunwen-landscape-fast.glb",
+    "sha256": "9c48f195db28ef13f0e2f312c2c21175c20a6153b581ac39e00f219529e1bc2f",
+    "bytes": 692528,
+    "bounds": {
+      "min": [
+        -145.74615478515625,
+        -0.2002660632133484,
+        -145.3138885498047
+      ],
+      "max": [
+        145.00030517578125,
+        8.715157508850098,
+        135.81739807128906
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -145.74615478515625,
+        -0.2002660632133484,
+        -145.3138885498047
+      ],
+      "max": [
+        145.00030517578125,
+        8.71936321258545,
+        135.82139587402344
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/daguanyuan_gate.glb",
+    "sourceSha256": "960aacbc6fb5ca4331d54d1e72855fe1fdc92d19e5c826e8e5e0837d667cba60",
+    "target": "public/models/places-fast/daguanyuan_gate.glb",
+    "sha256": "c164b57fc02ebe5b0bc14914fa698a413e7c360d63d0d5ed118f7dfcbe071f40",
+    "bytes": 279504,
+    "bounds": {
+      "min": [
+        -13.899999618530273,
+        0,
+        -5.114964962005615
+      ],
+      "max": [
+        13.908058166503906,
+        9.97634506225586,
+        5.90001916885376
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -13.899999618530273,
+        0,
+        -5.114964962005615
+      ],
+      "max": [
+        13.908058166503906,
+        9.97693157196045,
+        5.90006685256958
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/qujingtongyou.glb",
+    "sourceSha256": "d07572eebdde04a8509d045a13d6da52e0867d0a61f5f9fd1b0a44e3c3812df6",
+    "target": "public/models/places-fast/qujingtongyou.glb",
+    "sha256": "3bd9a3322986ff9698470b1c2b35d4a2c097dfd053d196fb7c3253d493cef5b0",
+    "bytes": 51124,
+    "bounds": {
+      "min": [
+        -2.092299222946167,
+        -0.1332283467054367,
+        -10.11566162109375
+      ],
+      "max": [
+        14.583450317382812,
+        9.961943626403809,
+        1.1570014953613281
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -2.092299222946167,
+        -0.13263925909996033,
+        -10.11566162109375
+      ],
+      "max": [
+        14.583450317382812,
+        9.961466789245605,
+        1.1569576263427734
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/xiaoxiangguan.glb",
+    "sourceSha256": "7c5902f5a5c43203f379af6924ff7ec5f4d4fbe51476b4c14093cd119119cfc4",
+    "target": "public/models/places-fast/xiaoxiangguan.glb",
+    "sha256": "5eee0f8e268116f66e47e5e18c33e2799e4cbfe250bbe5f2acb86802402a41bb",
+    "bytes": 1450372,
+    "bounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        17.436195373535156,
+        8.0430908203125,
+        16.004175186157227
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        17.436195373535156,
+        8.042855262756348,
+        16.004175186157227
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/yihongyuan.glb",
+    "sourceSha256": "3702ca7a14b30fd30e7566c53bebb6ab5d9a991646e0d2f543032671ddfc14c6",
+    "target": "public/models/places-fast/yihongyuan.glb",
+    "sha256": "1c793bb8f5e961e8747756415a0cf033848f717c0d333b590ce17ec2765c9e0a",
+    "bytes": 721124,
+    "bounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        16.380001068115234,
+        9.384835243225098,
+        16.004175186157227
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        16.380001068115234,
+        9.384184837341309,
+        16.004175186157227
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/hengwuyuan.glb",
+    "sourceSha256": "7b7b510e717d5b31efb573dfbb3978ebee0959bd805a47d299b2293141d0ea82",
+    "target": "public/models/places-fast/hengwuyuan.glb",
+    "sha256": "24843ca40854ce05c0e40f045263338f4d461c5c0358dfce9184b3600bc1564f",
+    "bytes": 613888,
+    "bounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        16.380001068115234,
+        7.655869483947754,
+        16.004175186157227
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        16.380001068115234,
+        7.656085014343262,
+        16.004175186157227
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/qiushuangzhai.glb",
+    "sourceSha256": "6027cab3ade82afd39aa36c451164deafa00e2fd17550c624df77c6aa1b7f42d",
+    "target": "public/models/places-fast/qiushuangzhai.glb",
+    "sha256": "c6f6c61787c627386f83f82e060c56f6d876c4aed7f7356b5fcafea8fdc0962c",
+    "bytes": 494116,
+    "bounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        16.380001068115234,
+        10.284710884094238,
+        16.004175186157227
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -16.380001068115234,
+        -0.23000000417232513,
+        -19.380001068115234
+      ],
+      "max": [
+        16.380001068115234,
+        10.285306930541992,
+        16.004175186157227
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/daoxiangcun.glb",
+    "sourceSha256": "cdb94b1f1898375755add74722a8a072a7c39c59ecfc47eef35f7eae02a2bb0e",
+    "target": "public/models/places-fast/daoxiangcun.glb",
+    "sha256": "f4702cfc4b4c0c7d1d3e58295a75c7f8db73c9a3d243d417fbf4d0c0e7f7de86",
+    "bytes": 284424,
+    "bounds": {
+      "min": [
+        -15.405288696289062,
+        -0.002166005317121744,
+        -14.013038635253906
+      ],
+      "max": [
+        15.03118896484375,
+        6.06628942489624,
+        16.006534576416016
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -15.405288696289062,
+        -0.0017015744233503938,
+        -14.013038635253906
+      ],
+      "max": [
+        15.03118896484375,
+        6.066335201263428,
+        16.006534576416016
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/ouxiangxie.glb",
+    "sourceSha256": "0834ff50e3eab67976456a4681eb776265c1c3c8594b6908c193b6e646e6d1b7",
+    "target": "public/models/places-fast/ouxiangxie.glb",
+    "sha256": "f0ba3b7a4f6b034616673299eb6f0deaa90a54831b4bb6e708d7597a249d079e",
+    "bytes": 166640,
+    "bounds": {
+      "min": [
+        -9.819437980651855,
+        -1,
+        -6.289980411529541
+      ],
+      "max": [
+        9.819437980651855,
+        9.876443862915039,
+        6.289867877960205
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -9.819437980651855,
+        -1,
+        -6.289980411529541
+      ],
+      "max": [
+        9.819437980651855,
+        9.876350402832031,
+        6.289544582366943
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/dicuiting.glb",
+    "sourceSha256": "8a886bf0a48396e52fadc7c49557b72e1442143f3ed5d75ea0a692877a414acd",
+    "target": "public/models/places-fast/dicuiting.glb",
+    "sha256": "6ade1ce9792b95b00601618d243032c073ffa97ade4c49baf27ad027b2a90f95",
+    "bytes": 93916,
+    "bounds": {
+      "min": [
+        -5.574387550354004,
+        -0.699999988079071,
+        -5.536031246185303
+      ],
+      "max": [
+        5.574387550354004,
+        8.975272178649902,
+        5.536019802093506
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -5.574387550354004,
+        -0.699999988079071,
+        -5.536031246185303
+      ],
+      "max": [
+        5.574387550354004,
+        8.975452423095703,
+        5.535847187042236
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/luxuean.glb",
+    "sourceSha256": "4132aecb87ce9787b80910eb18c2d570e79b90890a57be150b756935b7040bb3",
+    "target": "public/models/places-fast/luxuean.glb",
+    "sha256": "71464f71a8196aebcdcc330f39e5cbd066a693c364f52abb42fc528f0514f35c",
+    "bytes": 50152,
+    "bounds": {
+      "min": [
+        -12.994232177734375,
+        -0.003781172912567854,
+        -9.839079856872559
+      ],
+      "max": [
+        13.20853042602539,
+        6.067129611968994,
+        16.006534576416016
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -12.994232177734375,
+        -0.003781172912567854,
+        -9.839079856872559
+      ],
+      "max": [
+        13.20853042602539,
+        6.067492485046387,
+        16.006534576416016
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/tubishanzhuang.glb",
+    "sourceSha256": "388fd81be52ca7b765d6eb92ccf0802f34a94f8d532a8cc319588535a2910637",
+    "target": "public/models/places-fast/tubishanzhuang.glb",
+    "sha256": "3394adc529bcc419fadcfb6cb5ce7a19d4e3c25a18de94f1449d6c1bc4953722",
+    "bytes": 274556,
+    "bounds": {
+      "min": [
+        -17.210996627807617,
+        -0.01483011245727539,
+        -12.820953369140625
+      ],
+      "max": [
+        11.117408752441406,
+        10.186834335327148,
+        7.006535530090332
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -17.210996627807617,
+        -0.01483011245727539,
+        -12.820953369140625
+      ],
+      "max": [
+        11.117408752441406,
+        10.18703556060791,
+        7.005934715270996
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/aojingxiguan.glb",
+    "sourceSha256": "29e37d3123e2b187a5f820211920b18addfb4ad0fd90709a7204176f82e73f85",
+    "target": "public/models/places-fast/aojingxiguan.glb",
+    "sha256": "c34252ec14f102c93af3af1b25c2a49489e5145e344892d91a705b6e39a428fc",
+    "bytes": 262156,
+    "bounds": {
+      "min": [
+        -17.21099853515625,
+        -0.014830201864242554,
+        -12.820945739746094
+      ],
+      "max": [
+        11.117408752441406,
+        9.1317720413208,
+        6.099433898925781
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -17.21099853515625,
+        -0.014830201864242554,
+        -12.820945739746094
+      ],
+      "max": [
+        11.117408752441406,
+        9.13150405883789,
+        6.099451065063477
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/daguanlou.glb",
+    "sourceSha256": "57b8024f9d9e21d46a0c86e50bacc363bace4b44c4cc2d48a387978b4ff8adbc",
+    "target": "public/models/places-fast/daguanlou.glb",
+    "sha256": "ca3c7233671e70dd701e929bd532d45872f0a273a804990170c2dac67564047c",
+    "bytes": 3204204,
+    "bounds": {
+      "min": [
+        -37.47595977783203,
+        -1,
+        -76.37999725341797
+      ],
+      "max": [
+        37.477394104003906,
+        19.83967399597168,
+        34.00653076171875
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -37.47595977783203,
+        -1,
+        -76.36000061035156
+      ],
+      "max": [
+        37.47428894042969,
+        19.84040641784668,
+        34.00653076171875
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/longcuian.glb",
+    "sourceSha256": "8bda669ff14d08031e1e400a6251014379438de7043884a1f7ee63882bcdd5b3",
+    "target": "public/models/places-fast/longcuian.glb",
+    "sha256": "49cd1a3195b65bdd59c97591ea217bd20d4f64e841a596143b26c2496f700cb0",
+    "bytes": 555408,
+    "bounds": {
+      "min": [
+        -21.3255615234375,
+        -0.23000000417232513,
+        -20.380001068115234
+      ],
+      "max": [
+        16.380165100097656,
+        11.207435607910156,
+        16.00417709350586
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -21.3255615234375,
+        -0.23000000417232513,
+        -20.380001068115234
+      ],
+      "max": [
+        16.381153106689453,
+        11.206464767456055,
+        16.00417709350586
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  },
+  {
+    "source": "public/models/places-low/nuanxiangwu.glb",
+    "sourceSha256": "39ae614b73cda8ef04f59b682f9817d448df5904ca41a104a6eb30a53dc9f490",
+    "target": "public/models/places-fast/nuanxiangwu.glb",
+    "sha256": "2ad1bbfa79f641e5956e6e616894c7accc66bf846d9d7bfab115776f7232f99d",
+    "bytes": 401952,
+    "bounds": {
+      "min": [
+        -14.437601089477539,
+        -0.0029991946648806334,
+        -12.61497974395752
+      ],
+      "max": [
+        12.229583740234375,
+        9.176506042480469,
+        16.009000778198242
+      ]
+    },
+    "deliveredBounds": {
+      "min": [
+        -14.437601089477539,
+        -0.0029991946648806334,
+        -12.61497974395752
+      ],
+      "max": [
+        12.229583740234375,
+        9.176786422729492,
+        16.009000778198242
+      ]
+    },
+    "textureRequests": 0,
+    "method": "28% target / 0.2% mesh-radius error, locked borders, linear-light average pigments, Draco decodeSpeed 8",
+    "interpretation": "First-view delivery LOD of the authored Sun Wen garden, not new literary evidence."
+  }
+]

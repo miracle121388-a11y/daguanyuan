@@ -8,7 +8,7 @@ describe('character close-view presentation', () => {
     expect(characterDetail(true, 'low', 'close')).toBe('low');
     expect(characterDetail(true, 'high', 'close')).toBe('high');
     expect(characterDetail(true, 'low', 'portrait')).toBe('high');
-    expect(characterAsset('daiyu', 'low', '/garden/')).toMatch(/^\/garden\/models\/characters\/daiyu-low\.glb\?v=/);
+    expect(characterAsset('daiyu', 'low', '/garden/')).toMatch(/^\/garden\/models\/characters-stream\/daiyu-low\.glb\?v=/);
   });
   it('keeps all expressions bounded and disables facial motion when reduced motion is requested', () => {
     for (let i=0;i<470;i++) for (let person=0;person<4;person++) {
