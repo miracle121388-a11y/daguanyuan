@@ -1,0 +1,39 @@
+{
+  "scope": "Local Chromium: hold garden downloads; inspect controls without generation, retry one 503; reload while blocking overview network to verify persistent cache; load all four character skin maps. No paid model call, no physical mobile device.",
+  "before": {
+    "sceneReady": "false",
+    "storyEnabled": true,
+    "ifComposerVisible": true
+  },
+  "overviewRequestsWithOne503": 2,
+  "warmReadyMs": 3834,
+  "warmOverviewNetworkRequests": 0,
+  "localSaveRetained": true,
+  "faces": [
+    {
+      "id": "baoyu",
+      "present": true,
+      "vertices": 4695,
+      "skinTexture": true
+    },
+    {
+      "id": "daiyu",
+      "present": true,
+      "vertices": 4764,
+      "skinTexture": true
+    },
+    {
+      "id": "baochai",
+      "present": true,
+      "vertices": 4756,
+      "skinTexture": true
+    },
+    {
+      "id": "wangxifeng",
+      "present": true,
+      "vertices": 4758,
+      "skinTexture": true
+    }
+  ],
+  "errors": []
+}

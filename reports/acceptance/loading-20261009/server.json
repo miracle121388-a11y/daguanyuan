@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "path": "server.mjs",
+      "sha256": "15fe7766d76b3a607b5344ff555917b7b20ea4cd3f095a34649296242f9a9d07"
+    },
+    {
+      "path": "server/continuation.mjs",
+      "sha256": "564c2b9e6244355792dec1c4b1a4da4742999c136f3e0a8615af76391004852e"
+    },
+    {
+      "path": "server/dream-api.mjs",
+      "sha256": "db9133db5a3edbb49867171a533f0db86abaf0be7e25fcfd0a6c5ca90030cd6e"
+    },
+    {
+      "path": "server/dream-cards.mjs",
+      "sha256": "45cb58e0420add2f1becd4aff2c9a8797ef99c5c3f6b4c3219a2f417dba96376"
+    },
+    {
+      "path": "server/dream-download.mjs",
+      "sha256": "d5a347b380c3c30af5919374acd84e9b01428d800c70f53a9049caf5b9e557d7"
+    },
+    {
+      "path": "server/dream-prompts.mjs",
+      "sha256": "8a980e9d0bf0983ce0fabed27a813ce2b0c33e7ab1339c01147812545811a8b4"
+    },
+    {
+      "path": "server/dream-provider.mjs",
+      "sha256": "71482c4b8b8e94f21c0fe2cf06f0a130d94be45a31e5afc6596c61079635465f"
+    },
+    {
+      "path": "server/dream-references.mjs",
+      "sha256": "2ff30fe1d724879cf49d2117bf063c8436137ec93f2da1ebd5a45b30a6e28511"
+    },
+    {
+      "path": "server/dream-scene-plan.mjs",
+      "sha256": "93c04ba8c60dd7b77cf471b09f101b63cdcee229b596ed1b3eed644afb07a992"
+    },
+    {
+      "path": "server/dream-style.mjs",
+      "sha256": "866342ccd21fc394a9558a193033b4565246c3953cd28efbab4155430f75313f"
+    },
+    {
+      "path": "server/literary-corpus.mjs",
+      "sha256": "7877dfe0769b75b42036513439c1feed0f3eccd72071f202cb5a147b83abb323"
+    },
+    {
+      "path": "server/openstory.mjs",
+      "sha256": "54a82bd52071cfed6914c8300d1da0b9998bf0766d9b137d4664e6dce3d6031d"
+    },
+    {
+      "path": "server/simulation-api.mjs",
+      "sha256": "21bc764eb41bec190182d1f9fafa989537f13ad0294f970f12262aa2bb652cad"
+    },
+    {
+      "path": "server/start.mjs",
+      "sha256": "695245c90fc95ebcf53be239b2d9a55267f3e14e2d5eaa133cc4166ecc15f433"
+    },
+    {
+      "path": "server/story-format.mjs",
+      "sha256": "c191c805382d94c842d76512009bb5a497b2a03783efc0a50f8940100dbf1eec"
+    },
+    {
+      "path": "server/story-playback.mjs",
+      "sha256": "18bc7e9605daae109aff91cad2123155e4c4b4944436d762e3681aaa0ef93d28"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "directory": ".deploy/reference-20261001-125648-154652",
+  "directory": ".deploy/reference-20261008-174514-715110",
   "contents": [
     "dist/",
     "server.mjs",
@@ -9,142 +9,280 @@
     "deploy-assets.json",
     "hydrate-assets.mjs"
   ],
-  "rawBytes": 107216558,
-  "compressedBytes": 90328001,
-  "uploadDirectoryBytes": 50281689,
+  "rawBytes": 130321240,
+  "compressedBytes": 109900633,
+  "uploadDirectoryBytes": 49974340,
   "uploadDirectoryBudgetMiB": 50,
   "buildAssets": [
     {
       "path": "models/places/daguanlou.glb",
       "bytes": 6690156,
       "sha256": "5e6ed00ce505b85411451129b0565606ab8055b102ee612c333d34ee6e3f656f",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/places/daguanlou.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places/daguanlou.glb"
     },
     {
       "path": "models/overview.glb",
       "bytes": 4787896,
       "sha256": "59105a0c7770d432734b72be22cc9d58e1fbd8e5a0386590f1d84d26db0f3489",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/overview.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/overview.glb"
     },
     {
       "path": "models/places-low/daguanlou.glb",
       "bytes": 3602996,
       "sha256": "57b8024f9d9e21d46a0c86e50bacc363bace4b44c4cc2d48a387978b4ff8adbc",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/places-low/daguanlou.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places-low/daguanlou.glb"
     },
     {
       "path": "models/places/xiaoxiangguan.glb",
       "bytes": 3527948,
       "sha256": "55203be7e838cbfb2a5e7b6b780df020fe47f0e2f45b3195b516f0c47e312273",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/places/xiaoxiangguan.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places/xiaoxiangguan.glb"
     },
     {
       "path": "models/characters/baochai.glb",
       "bytes": 3428064,
       "sha256": "95676d5c69226e91b626b08eef516d06fc29a29220f6ea063ff801b60988a2f5",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/characters/baochai.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters/baochai.glb"
     },
     {
       "path": "models/characters/daiyu.glb",
       "bytes": 3418812,
       "sha256": "6ceebacdb578836baab0cd973c2662100fbc349ea41a52930411a23aaf1c3802",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/characters/daiyu.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters/daiyu.glb"
     },
     {
       "path": "models/sunwen-landscape.glb",
       "bytes": 3887624,
       "sha256": "ac5354be6f2186141907aa9b033f8857e32cf98f278910ee72e702df24b147ba",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/sunwen-landscape.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/sunwen-landscape.glb"
+    },
+    {
+      "path": "models/places-fast/daguanlou.glb",
+      "bytes": 3204204,
+      "sha256": "ca3c7233671e70dd701e929bd532d45872f0a273a804990170c2dac67564047c",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places-fast/daguanlou.glb"
     },
     {
       "path": "models/characters/wangxifeng.glb",
       "bytes": 3289444,
       "sha256": "470a3e18c97a937b316999ea9d2b13d1190f6b05152d3c8582c04f24ed14b26c",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/characters/wangxifeng.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters/wangxifeng.glb"
     },
     {
       "path": "models/overview-low.glb",
       "bytes": 3495000,
       "sha256": "0d8d676a45d43fd16772ff8a3e3cf9f348763611c2831ef0e638a461b466102d",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/overview-low.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/overview-low.glb"
     },
     {
       "path": "models/places-low/xiaoxiangguan.glb",
       "bytes": 2625760,
       "sha256": "7c5902f5a5c43203f379af6924ff7ec5f4d4fbe51476b4c14093cd119119cfc4",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/places-low/xiaoxiangguan.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places-low/xiaoxiangguan.glb"
     },
     {
       "path": "models/characters/baochai-low.glb",
       "bytes": 2041580,
       "sha256": "a7c22e8166fc45aa0c9d2545dc6ad9a67233dbb13cdee75b3a39339390e103e3",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/characters/baochai-low.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters/baochai-low.glb"
     },
     {
       "path": "models/characters/daiyu-low.glb",
       "bytes": 2030976,
       "sha256": "9ba7898b16e2407469940bb3a93cc6cee578f25e89c8b49d850b5861925169cc",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/characters/daiyu-low.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters/daiyu-low.glb"
     },
     {
       "path": "models/characters/wangxifeng-low.glb",
       "bytes": 1931256,
       "sha256": "66967d9c877ca42bededcc1a66ab79e648d8c4360f5622a3d9089402923c0f40",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/characters/wangxifeng-low.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters/wangxifeng-low.glb"
+    },
+    {
+      "path": "models/overview-fast.glb",
+      "bytes": 2100184,
+      "sha256": "4f803a43800205ddf94ae4ae62f10c920c3d2668697315c937ab4a46bd2274c6",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/overview-fast.glb"
     },
     {
       "path": "models/sunwen-architecture.glb",
       "bytes": 2021844,
       "sha256": "f76adf03fc03d7398d4628bcee9b41b4f47938b6a627c508713fc30bc332334b",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/sunwen-architecture.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/sunwen-architecture.glb"
     },
     {
       "path": "models/characters/baoyu.glb",
       "bytes": 1633100,
       "sha256": "1f46c8a27776aae994f84c616f9e764fc69b2e353811cc4c1034d948dd382c4a",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/characters/baoyu.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters/baoyu.glb"
+    },
+    {
+      "path": "models/places-fast/xiaoxiangguan.glb",
+      "bytes": 1450372,
+      "sha256": "5eee0f8e268116f66e47e5e18c33e2799e4cbfe250bbe5f2acb86802402a41bb",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places-fast/xiaoxiangguan.glb"
     },
     {
       "path": "models/places/yihongyuan.glb",
       "bytes": 1457168,
       "sha256": "3ac45fcc60270424223e31cde5832115072c9865d8f3886d3a6aaeefa4ee3e94",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/places/yihongyuan.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places/yihongyuan.glb"
+    },
+    {
+      "path": "models/characters-stream/daiyu.glb",
+      "bytes": 1365772,
+      "sha256": "5e3bc56d968f1b8aaabdf48d9127c190616d62f28aa24b4bf07cf066410cb355",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters-stream/daiyu.glb"
+    },
+    {
+      "path": "models/characters-stream/baochai.glb",
+      "bytes": 1347668,
+      "sha256": "b8aa9f4e8dce997df06145ee6e3a44feee1e253b5cdcea1671af7d069f8b1151",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters-stream/baochai.glb"
+    },
+    {
+      "path": "models/characters-stream/wangxifeng.glb",
+      "bytes": 1346272,
+      "sha256": "0c4be72522f300fc67337043da793ce5f63479d7a76dbd46d40b2af4b5300b92",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters-stream/wangxifeng.glb"
     },
     {
       "path": "models/places/daoxiangcun.glb",
       "bytes": 1167784,
       "sha256": "190b56369a62baea691b19a6146c2033b9b6009e883d2f43e57e6532a43415dd",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/places/daoxiangcun.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places/daoxiangcun.glb"
     },
     {
       "path": "models/places/longcuian.glb",
       "bytes": 1229968,
       "sha256": "055ce458df58b0e950dcddb30bfaf330514428e86d24ef0fe595916afb9afe98",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/places/longcuian.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places/longcuian.glb"
     },
     {
       "path": "models/places/hengwuyuan.glb",
       "bytes": 1202668,
       "sha256": "1b0cdf432ec163972aa13758628467750ee49cf813444f113fd337dd6532b5fc",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/places/hengwuyuan.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places/hengwuyuan.glb"
     },
     {
       "path": "models/places-low/yihongyuan.glb",
       "bytes": 1017160,
       "sha256": "3702ca7a14b30fd30e7566c53bebb6ab5d9a991646e0d2f543032671ddfc14c6",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/places-low/yihongyuan.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places-low/yihongyuan.glb"
     },
     {
       "path": "textures/vegetation/canopy-atlas.webp",
       "bytes": 902858,
       "sha256": "85e10a85fd505bcbedac51c1425daa1bbeeb14d46951d9e5cdb94ae2cff2a62c",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/textures/vegetation/canopy-atlas.webp"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/textures/vegetation/canopy-atlas.webp"
     },
     {
       "path": "models/sunwen-landscape-low.glb",
       "bytes": 945380,
       "sha256": "5f3b2ba088727b32040e45dbca700dc55eeac38926de82be522988234c5e14b4",
-      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/d725e7cd27f503844d09b7bdeed508fae4ef64a4/public/models/sunwen-landscape-low.glb"
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/sunwen-landscape-low.glb"
+    },
+    {
+      "path": "models/places/qiushuangzhai.glb",
+      "bytes": 1077472,
+      "sha256": "b1bb8b00b2b35d3e21686da41930b98590d27822abfeca0febb8527e24db6460",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places/qiushuangzhai.glb"
+    },
+    {
+      "path": "models/places-low/hengwuyuan.glb",
+      "bytes": 813644,
+      "sha256": "7b7b510e717d5b31efb573dfbb3978ebee0959bd805a47d299b2293141d0ea82",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places-low/hengwuyuan.glb"
+    },
+    {
+      "path": "art/sunwen-001.webp",
+      "bytes": 700016,
+      "sha256": "e4180a208d29a184f252d4ddbc41632c3d5e84c73c0f69ab5621d2742c38eb93",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/art/sunwen-001.webp"
+    },
+    {
+      "path": "models/characters-stream/baoyu.glb",
+      "bytes": 932988,
+      "sha256": "1713108831bdf07acb00fb10e8e6eb931b778257ea6cd305e74c2ed013ec4577",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters-stream/baoyu.glb"
+    },
+    {
+      "path": "models/characters/baoyu-low.glb",
+      "bytes": 774940,
+      "sha256": "126ae2bb1f9a2c0470c2344a7195c03bea14ab6ccc6ec5e265428c0903001c70",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/characters/baoyu-low.glb"
+    },
+    {
+      "path": "models/places-fast/yihongyuan.glb",
+      "bytes": 721124,
+      "sha256": "1c793bb8f5e961e8747756415a0cf033848f717c0d333b590ce17ec2765c9e0a",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places-fast/yihongyuan.glb"
+    },
+    {
+      "path": "models/sunwen-landscape-fast.glb",
+      "bytes": 692528,
+      "sha256": "9c48f195db28ef13f0e2f312c2c21175c20a6153b581ac39e00f219529e1bc2f",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/sunwen-landscape-fast.glb"
+    },
+    {
+      "path": "models/places/nuanxiangwu.glb",
+      "bytes": 823832,
+      "sha256": "adfc9d64845aad1710ec1ef872dc3676d25a89f9ab1773e59f1fc252d27e1601",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places/nuanxiangwu.glb"
+    },
+    {
+      "path": "models/places-low/longcuian.glb",
+      "bytes": 701676,
+      "sha256": "8bda669ff14d08031e1e400a6251014379438de7043884a1f7ee63882bcdd5b3",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places-low/longcuian.glb"
+    },
+    {
+      "path": "art/sunwen-146.webp",
+      "bytes": 625278,
+      "sha256": "48e09450cf3142be47c2be12544ed76555d0f76d4dfa171dca982fc422fb5c87",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/art/sunwen-146.webp"
+    },
+    {
+      "path": "models/places-low/qiushuangzhai.glb",
+      "bytes": 697408,
+      "sha256": "6027cab3ade82afd39aa36c451164deafa00e2fd17550c624df77c6aa1b7f42d",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/models/places-low/qiushuangzhai.glb"
+    },
+    {
+      "path": "art/sunwen-136.webp",
+      "bytes": 605338,
+      "sha256": "913b7d0ede03a9b72c42de421033087dde6a6b2d9bbb77ddbd03be0aeaa3780c",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/art/sunwen-136.webp"
+    },
+    {
+      "path": "art/sunwen-096.webp",
+      "bytes": 591602,
+      "sha256": "ee91892d81348adba5dcfd3ba9317749fcbe34388d599121012848cc06fce8cb",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/art/sunwen-096.webp"
+    },
+    {
+      "path": "art/sunwen-092.webp",
+      "bytes": 589254,
+      "sha256": "a8169db4ad58ed7862b9737cc861e5e3b4d742e4b3bcd08812a4f643a39dcb98",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/art/sunwen-092.webp"
+    },
+    {
+      "path": "textures/characters-shared/344e3a04c4f4ecbbd3bf3d68600edd478dae91eb3f5b86340c7a5fa60cfb38d7.webp",
+      "bytes": 586088,
+      "sha256": "344e3a04c4f4ecbbd3bf3d68600edd478dae91eb3f5b86340c7a5fa60cfb38d7",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/textures/characters-shared/344e3a04c4f4ecbbd3bf3d68600edd478dae91eb3f5b86340c7a5fa60cfb38d7.webp"
+    },
+    {
+      "path": "art/sunwen-098.webp",
+      "bytes": 581200,
+      "sha256": "6fd6765897912c293858dfbb4064c1d71de073ba384b50d35799b21e3091fc2f",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/art/sunwen-098.webp"
+    },
+    {
+      "path": "art/sunwen-100.webp",
+      "bytes": 574626,
+      "sha256": "f06a22804490a56cce68a90876992cfa0f3fd6382341c850934fbbf1befc7ccd",
+      "url": "https://raw.githubusercontent.com/miracle121388-a11y/daguanyuan/c6da808a51161c19eff2f2bf27e4d4a350770dd2/public/art/sunwen-100.webp"
     }
   ],
   "precompressedExtensions": [
@@ -174,5 +312,5 @@
       "distribution": "private_server_only"
     }
   ],
-  "createdAt": "2026-10-01T12:56:49.685752+00:00"
+  "createdAt": "2026-10-08T17:45:17.497723+00:00"
 }

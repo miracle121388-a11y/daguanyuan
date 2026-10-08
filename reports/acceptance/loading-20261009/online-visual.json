@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-08T18:09:16.357Z",
+  "host": "daguanyuan-rumeng.zeabur.app",
+  "tlsVerification": true,
+  "scope": "Production UI and first garden at desktop and mobile viewport, temporary per-browser Hong Kong hostname mapping, no network throttling, configured system proxy retained. Not mainland nationwide speed or physical phone measurements.",
+  "checks": [
+    {
+      "mobileEmulation": false,
+      "controlsMs": 737,
+      "readyMs": 6143,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "mobileEmulation": true,
+      "controlsMs": 728,
+      "readyMs": 6809,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-08T18:10:09.938Z",
+  "host": "daguanyuan-rumeng.zeabur.app",
+  "oldIP": "47.89.212.251",
+  "newIP": "8.218.107.71",
+  "persistentClashScriptUpdated": true,
+  "onlySiteHostMappingEdited": true,
+  "activeProfileReactivated": true,
+  "normalProxyHttps": true,
+  "normalDirectHttps": true,
+  "tlsVerification": true,
+  "indexSha256": "636b1693e21f1e016bf64ef5cca5403288af6c36a9a22d37138759ed94bd2ce8",
+  "bothMatchProductionBuild": true,
+  "source": "Local curl verification with standard URL, configured proxy and explicit no-proxy modes. No hostname/IP override used for these two checks.",
+  "reference": "https://wiki.metacubex.one/api/"
+}

@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-08T18:01:05.544Z",
+  "source": "Google DNS HTTPS resolver",
+  "Status": 0,
+  "TC": false,
+  "RD": true,
+  "RA": true,
+  "AD": false,
+  "CD": false,
+  "Question": [
+    {
+      "name": "daguanyuan-rumeng.zeabur.app.",
+      "type": 1
+    }
+  ],
+  "Answer": [
+    {
+      "name": "daguanyuan-rumeng.zeabur.app.",
+      "type": 1,
+      "TTL": 60,
+      "data": "8.218.107.71"
+    }
+  ],
+  "Comment": "Response from 1.12.0.30."
+}

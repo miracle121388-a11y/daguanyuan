@@ -1,0 +1,143 @@
+{
+  "at": "2026-10-08T18:12:09.147Z",
+  "sourceCommit": "c6da808a51161c19eff2f2bf27e4d4a350770dd2",
+  "branch": "main",
+  "url": "https://daguanyuan-rumeng.zeabur.app/",
+  "deploymentId": "6ac7d7c73369c8940faf85f1",
+  "status": "RUNNING",
+  "finishedAt": "2026-10-08T17:52:39.981Z",
+  "server": "Aliyun Hong Kong 2C 4GB",
+  "serverId": "69dfdbcbbae4af582816c8e2",
+  "ip": "8.218.107.71",
+  "newServerPurchased": false,
+  "unrelatedZeaburServicesChanged": false,
+  "oldCaliforniaServiceRetained": true,
+  "tests": {
+    "unitAndApi": 231,
+    "lint": true,
+    "productionBuild": true,
+    "integrityChecks": 11173
+  },
+  "runtimeResourcesMatched": 841,
+  "serverFilesMatched": 16,
+  "configurationAndData": {
+    "service": "6ac7cb8b3913920b91cae4bc",
+    "environment": "6ac7c86589c17dc8a99e6a7d",
+    "variablesMatched": true,
+    "variableCount": 18,
+    "albumMatched": true,
+    "albumFileCount": 6,
+    "albumBytes": 7486038,
+    "privateGuiyouManifestMatched": true,
+    "privateGuiyouChapters": 108,
+    "upstreamModelsCalledByThisCheck": false
+  },
+  "canonicalHttpsResourcesMatched": 46,
+  "canonicalDomainProvisioned": true,
+  "localNetwork": {
+    "at": "2026-10-08T18:10:09.938Z",
+    "host": "daguanyuan-rumeng.zeabur.app",
+    "oldIP": "47.89.212.251",
+    "newIP": "8.218.107.71",
+    "persistentClashScriptUpdated": true,
+    "onlySiteHostMappingEdited": true,
+    "activeProfileReactivated": true,
+    "normalProxyHttps": true,
+    "normalDirectHttps": true,
+    "tlsVerification": true,
+    "indexSha256": "636b1693e21f1e016bf64ef5cca5403288af6c36a9a22d37138759ed94bd2ce8",
+    "bothMatchProductionBuild": true,
+    "source": "Local curl verification with standard URL, configured proxy and explicit no-proxy modes. No hostname/IP override used for these two checks.",
+    "reference": "https://wiki.metacubex.one/api/"
+  },
+  "realOnlineStory": {
+    "at": "2026-10-08T17:57:12.028Z",
+    "host": "daguanyuan-rumeng-hk.zeabur.app",
+    "tlsVerification": true,
+    "network": "Actual HTTPS hostname, with temporary per-process Hong Kong hostname mapping. Existing system proxy remained configured. Final canonical host also verified separately through configured proxy and explicit no-proxy curl requests.",
+    "scope": "Real online original80 story generation and independent review, starting at chapter80. All 3D models held to demonstrate story independence, switched to roaming while generating, then refreshed same ephemeral browser to read the saved story. No existing user save or album modified.",
+    "elapsedMs": 67438,
+    "edition": "original80",
+    "sequence": 1,
+    "tick": 1,
+    "reviewApproved": true,
+    "reviewCategories": [
+      "chronology",
+      "knowledge",
+      "motivation",
+      "continuity",
+      "branch",
+      "edition",
+      "staging"
+    ],
+    "modelOperations": [
+      "story-continue",
+      "story-review"
+    ],
+    "sceneReadyDuringCompletion": "false",
+    "localSaveReadableAfterRefresh": true,
+    "errors": []
+  },
+  "productionBrowser": {
+    "at": "2026-10-08T18:09:16.357Z",
+    "host": "daguanyuan-rumeng.zeabur.app",
+    "tlsVerification": true,
+    "scope": "Production UI and first garden at desktop and mobile viewport, temporary per-browser Hong Kong hostname mapping, no network throttling, configured system proxy retained. Not mainland nationwide speed or physical phone measurements.",
+    "checks": [
+      {
+        "mobileEmulation": false,
+        "controlsMs": 737,
+        "readyMs": 6143,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "mobileEmulation": true,
+        "controlsMs": 728,
+        "readyMs": 6809,
+        "overflow": false,
+        "errors": []
+      }
+    ]
+  },
+  "localColdNetworkComparison": [
+    {
+      "name": "baseline",
+      "profile": "Chromium / 10Mbps down / 100ms latency / disabled HTTP cache / empty persistent cache",
+      "mobileEmulation": false,
+      "controlsMs": 712,
+      "readyMs": 30212,
+      "initialTransferBytes": 12841412,
+      "initial3DDecodedBytes": 14539583,
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "name": "improved",
+      "profile": "Chromium / 10Mbps down / 100ms latency / disabled HTTP cache / empty persistent cache",
+      "mobileEmulation": false,
+      "controlsMs": 1202,
+      "readyMs": 6350,
+      "initialTransferBytes": 4125192,
+      "initial3DDecodedBytes": 4479290,
+      "errors": [],
+      "overflow": false
+    },
+    {
+      "name": "improved-mobile",
+      "profile": "Chromium / 10Mbps down / 100ms latency / disabled HTTP cache / empty persistent cache",
+      "mobileEmulation": true,
+      "controlsMs": 1236,
+      "readyMs": 5613,
+      "initialTransferBytes": 4003062,
+      "initial3DDecodedBytes": 4357460,
+      "errors": [],
+      "overflow": false
+    }
+  ],
+  "limits": [
+    "Cold timings use simulated local Chromium network; viewport mobile tests are not physical-device measurements.",
+    "Real online story acceptance covered one original80 continuation and its seven-category review, not exhaustive acceptance of every edition/plot.",
+    "This release verifies the current direct/proxy routes; it cannot guarantee reachability through every third-party proxy."
+  ]
+}

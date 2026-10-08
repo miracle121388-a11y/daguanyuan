@@ -1,0 +1,256 @@
+{
+  "at": "2026-10-08T18:02:13.954Z",
+  "host": "daguanyuan-rumeng.zeabur.app",
+  "ip": "8.218.107.71",
+  "tlsVerification": true,
+  "method": "Per-request HTTPS connection to verified Hong Kong IP, original hostname and TLS verification retained; system proxy unchanged.",
+  "health": {
+    "status": "ok",
+    "application": "daguanyuan-rumeng",
+    "revision": "spatial-garden-20260918-r22",
+    "featureRevision": "honglou-silk-20260917-v6",
+    "simulationRevision": "personal-reasoning-20260924-v2"
+  },
+  "configured": true,
+  "needsToken": true,
+  "immutableVersionedResources": true,
+  "cspPresent": true,
+  "privateCorpus404": [
+    "data/corpus/guiyou108.txt",
+    "server/private-corpus/guiyou108/manifest.json",
+    "server/private-corpus/guiyou108/chapters/081.txt"
+  ],
+  "matched": 46,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 2192,
+      "sha256": "636b1693e21f1e016bf64ef5cca5403288af6c36a9a22d37138759ed94bd2ce8"
+    },
+    {
+      "path": "reading.html",
+      "bytes": 58249,
+      "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61"
+    },
+    {
+      "path": "assets/Gltf-BRYfUkdD.js",
+      "bytes": 925965,
+      "sha256": "ba07e9a0be1fbb3f8b14960df8c863f31bd00f2aecaf935129f6bc6910c9d7c7"
+    },
+    {
+      "path": "assets/garden-mark-COPNxcSD.svg",
+      "bytes": 458,
+      "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
+    },
+    {
+      "path": "assets/index-BTF1rXZk.css",
+      "bytes": 126251,
+      "sha256": "96c0003da1dff4c85d7cc976ed79b70a817495ca9d9cc534f1c14119f4dfbe59"
+    },
+    {
+      "path": "assets/index-Cl4nNvth.js",
+      "bytes": 578142,
+      "sha256": "6cdfae1fc86702e878ee35e64054eb41e7e6593bb499a4b005cf8b9bac411c3c"
+    },
+    {
+      "path": "assets/resetLoads-CU_opDWP.js",
+      "bytes": 653,
+      "sha256": "d679ac043626ad18323e7a74d7d61eeaa6030f8ed1e537683ca17903ff9c7b14"
+    },
+    {
+      "path": "scene-manifest.json",
+      "bytes": 227967,
+      "sha256": "de490e980ac95dc52f4540f9c23f8f08ad10aa5b88be4da289a7953574bdf8bc"
+    },
+    {
+      "path": "assets/GardenScene-CsrQy-iV.js",
+      "bytes": 863406,
+      "sha256": "a524f797d2adb13df48a4db3ef9d7156735ee3e9c24d0041e6d33d62ea661a30"
+    },
+    {
+      "path": "asset-index.json",
+      "bytes": 98017,
+      "sha256": "f95df326645fc903fb1eb1f70e272d13380ce896d80524eacdfbafe3ffd5c0f5"
+    },
+    {
+      "path": "draco/draco_decoder.wasm",
+      "bytes": 192420,
+      "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac"
+    },
+    {
+      "path": "data/corpus/manifest.json",
+      "bytes": 2864113,
+      "sha256": "8ce1dd7beb4c4bc18329c0bdb6e4054a6496fd48db69f6ddb6285cb22d4f7a20"
+    },
+    {
+      "path": "models/sunwen-architecture-fast.glb",
+      "bytes": 463048,
+      "sha256": "439be8cee807418e8b1f816d38ed60d0c2f98bcd1367b93e80e0c7aef58cf630"
+    },
+    {
+      "path": "models/sunwen-landscape-fast.glb",
+      "bytes": 692528,
+      "sha256": "9c48f195db28ef13f0e2f312c2c21175c20a6153b581ac39e00f219529e1bc2f"
+    },
+    {
+      "path": "models/overview-fast.glb",
+      "bytes": 2100184,
+      "sha256": "4f803a43800205ddf94ae4ae62f10c920c3d2668697315c937ab4a46bd2274c6"
+    },
+    {
+      "path": "models/urban-context.glb",
+      "bytes": 222852,
+      "sha256": "21fd9784992683e2d829d9b6af8281939f6c74b2a1bd4690ac2c261877d814ef"
+    },
+    {
+      "path": "models/places-fast/xiaoxiangguan.glb",
+      "bytes": 1450372,
+      "sha256": "5eee0f8e268116f66e47e5e18c33e2799e4cbfe250bbe5f2acb86802402a41bb"
+    },
+    {
+      "path": "models/characters-stream/baoyu.glb",
+      "bytes": 932988,
+      "sha256": "1713108831bdf07acb00fb10e8e6eb931b778257ea6cd305e74c2ed013ec4577"
+    },
+    {
+      "path": "models/characters-stream/baoyu-low.glb",
+      "bytes": 399400,
+      "sha256": "2b6187a0d1d3d008e7c40708d45855beb4773d50a583cda60e019cf4ab4c04d6"
+    },
+    {
+      "path": "models/characters-stream/daiyu-low.glb",
+      "bytes": 597268,
+      "sha256": "aaaee625bc813af6645d704d406bdeb23f9c5f91cdb11823f514f8810c71d51e"
+    },
+    {
+      "path": "models/characters-stream/daiyu.glb",
+      "bytes": 1365772,
+      "sha256": "5e3bc56d968f1b8aaabdf48d9127c190616d62f28aa24b4bf07cf066410cb355"
+    },
+    {
+      "path": "models/characters-stream/baochai-low.glb",
+      "bytes": 591028,
+      "sha256": "a802f10e52bcbf4cd7017adb7c8fa73c411874faf759ef381f19f345a72e8033"
+    },
+    {
+      "path": "models/characters-stream/wangxifeng.glb",
+      "bytes": 1346272,
+      "sha256": "0c4be72522f300fc67337043da793ce5f63479d7a76dbd46d40b2af4b5300b92"
+    },
+    {
+      "path": "models/characters-stream/baochai.glb",
+      "bytes": 1347668,
+      "sha256": "b8aa9f4e8dce997df06145ee6e3a44feee1e253b5cdcea1671af7d069f8b1151"
+    },
+    {
+      "path": "textures/characters-shared/b7427ce920563e5a0fe6ade599bb8172b45e14156de37ae910b8f783e9f2c313.png",
+      "bytes": 852,
+      "sha256": "b7427ce920563e5a0fe6ade599bb8172b45e14156de37ae910b8f783e9f2c313"
+    },
+    {
+      "path": "textures/characters-shared/73d2f4e65ae00f2bcd1237ea541a04d8e6b3cb92fe1a72cbcf337cb3493ea88a.webp",
+      "bytes": 298840,
+      "sha256": "73d2f4e65ae00f2bcd1237ea541a04d8e6b3cb92fe1a72cbcf337cb3493ea88a"
+    },
+    {
+      "path": "models/characters-stream/wangxifeng-low.glb",
+      "bytes": 589420,
+      "sha256": "08f928e7ed0d4f1b24827657cc2ff515b214229f410c40d676e367a263ca264a"
+    },
+    {
+      "path": "textures/characters-shared/69f0ebdfae3859e71773fd14cfb92d33b0adec7d66c4754b6be59b0bc3752731.png",
+      "bytes": 70232,
+      "sha256": "69f0ebdfae3859e71773fd14cfb92d33b0adec7d66c4754b6be59b0bc3752731"
+    },
+    {
+      "path": "textures/characters-shared/9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b.png",
+      "bytes": 89619,
+      "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b"
+    },
+    {
+      "path": "textures/characters-shared/4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35.png",
+      "bytes": 91600,
+      "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35"
+    },
+    {
+      "path": "textures/characters-shared/458f04019a7f079a03be976ab00b7d8ce253114314ba324d1190a7e8461ccedc.webp",
+      "bytes": 86484,
+      "sha256": "458f04019a7f079a03be976ab00b7d8ce253114314ba324d1190a7e8461ccedc"
+    },
+    {
+      "path": "textures/characters-shared/5cee4ae4a0108bbfec0920c2f14ab36fe109ff7295062caa45a6cb59e7794577.webp",
+      "bytes": 512434,
+      "sha256": "5cee4ae4a0108bbfec0920c2f14ab36fe109ff7295062caa45a6cb59e7794577"
+    },
+    {
+      "path": "textures/characters-shared/d6eada857f027f2c28b3fd1091f1b9076568e7820de20c38f5b5c136315d3b97.webp",
+      "bytes": 283184,
+      "sha256": "d6eada857f027f2c28b3fd1091f1b9076568e7820de20c38f5b5c136315d3b97"
+    },
+    {
+      "path": "textures/characters-shared/22bcbdfc957cb24c9ef3e2b30a5e96c29d98648005f0e4cdfcb5d64cc9419b02.webp",
+      "bytes": 68122,
+      "sha256": "22bcbdfc957cb24c9ef3e2b30a5e96c29d98648005f0e4cdfcb5d64cc9419b02"
+    },
+    {
+      "path": "textures/characters-shared/1c045f7f802dc8f38420b75669877df6a60aac539f0638e6eaacbc01329cb757.webp",
+      "bytes": 221492,
+      "sha256": "1c045f7f802dc8f38420b75669877df6a60aac539f0638e6eaacbc01329cb757"
+    },
+    {
+      "path": "textures/characters-shared/344e3a04c4f4ecbbd3bf3d68600edd478dae91eb3f5b86340c7a5fa60cfb38d7.webp",
+      "bytes": 586088,
+      "sha256": "344e3a04c4f4ecbbd3bf3d68600edd478dae91eb3f5b86340c7a5fa60cfb38d7"
+    },
+    {
+      "path": "textures/characters-shared/307d23658eb5382756b4eae261a3d2453e766b57aceb02f52ac6f6cd6f0938f8.webp",
+      "bytes": 82520,
+      "sha256": "307d23658eb5382756b4eae261a3d2453e766b57aceb02f52ac6f6cd6f0938f8"
+    },
+    {
+      "path": "textures/characters-shared/289282e6bf125579c610eb1c44c3b44d248c775d25e13f91b9e66b5234846c02.webp",
+      "bytes": 189784,
+      "sha256": "289282e6bf125579c610eb1c44c3b44d248c775d25e13f91b9e66b5234846c02"
+    },
+    {
+      "path": "textures/characters-shared/2fee5a86f1d0e08a3f5d7ee19434bb263006016f63f816cad8d7e83074bda223.webp",
+      "bytes": 19836,
+      "sha256": "2fee5a86f1d0e08a3f5d7ee19434bb263006016f63f816cad8d7e83074bda223"
+    },
+    {
+      "path": "textures/characters-shared/392a9922b9b5ed78152dc0bb3339814c04019bd385dc06d9e52ff31335b3a9f1.webp",
+      "bytes": 81340,
+      "sha256": "392a9922b9b5ed78152dc0bb3339814c04019bd385dc06d9e52ff31335b3a9f1"
+    },
+    {
+      "path": "textures/characters-shared/ad1a49fe65f45f1f46fc02594bc559ff118be67c39e5d0f7742519f0f0e1333b.webp",
+      "bytes": 228646,
+      "sha256": "ad1a49fe65f45f1f46fc02594bc559ff118be67c39e5d0f7742519f0f0e1333b"
+    },
+    {
+      "path": "textures/characters-shared/f2b86099ab1a448863734e43bc8e6892ed2ce7db10d20008fc0bddcb9d3446d3.webp",
+      "bytes": 199780,
+      "sha256": "f2b86099ab1a448863734e43bc8e6892ed2ce7db10d20008fc0bddcb9d3446d3"
+    },
+    {
+      "path": "textures/characters-shared/ed48b5df71414cee96dc8b4927cbfc5bbb37ab7b6525821074cb7d6ba0b7f699.webp",
+      "bytes": 86040,
+      "sha256": "ed48b5df71414cee96dc8b4927cbfc5bbb37ab7b6525821074cb7d6ba0b7f699"
+    },
+    {
+      "path": "textures/characters-shared/9f8ba6ec563ec6e491f5d9d372e3753d0caa0a490f99981abcda8feec4323b97.webp",
+      "bytes": 85996,
+      "sha256": "9f8ba6ec563ec6e491f5d9d372e3753d0caa0a490f99981abcda8feec4323b97"
+    },
+    {
+      "path": "textures/characters-shared/8d608113a930a589d9a8a4c651b863ba7a544382a7e449f53eb41aab52b538eb.webp",
+      "bytes": 207084,
+      "sha256": "8d608113a930a589d9a8a4c651b863ba7a544382a7e449f53eb41aab52b538eb"
+    },
+    {
+      "path": "textures/characters-shared/831e763beef08a1e1d5cf27490ed15c46fa3ab9f8a2c465ee1ac49e2b5082be9.webp",
+      "bytes": 71036,
+      "sha256": "831e763beef08a1e1d5cf27490ed15c46fa3ab9f8a2c465ee1ac49e2b5082be9"
+    }
+  ]
+}

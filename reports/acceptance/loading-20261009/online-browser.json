@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-08T17:57:12.028Z",
+  "host": "daguanyuan-rumeng-hk.zeabur.app",
+  "tlsVerification": true,
+  "network": "Actual HTTPS hostname, with temporary per-process Hong Kong hostname mapping. Existing system proxy remained configured. Final canonical host also verified separately through configured proxy and explicit no-proxy curl requests.",
+  "scope": "Real online original80 story generation and independent review, starting at chapter80. All 3D models held to demonstrate story independence, switched to roaming while generating, then refreshed same ephemeral browser to read the saved story. No existing user save or album modified.",
+  "elapsedMs": 67438,
+  "edition": "original80",
+  "sequence": 1,
+  "tick": 1,
+  "reviewApproved": true,
+  "reviewCategories": [
+    "chronology",
+    "knowledge",
+    "motivation",
+    "continuity",
+    "branch",
+    "edition",
+    "staging"
+  ],
+  "modelOperations": [
+    "story-continue",
+    "story-review"
+  ],
+  "sceneReadyDuringCompletion": "false",
+  "localSaveReadableAfterRefresh": true,
+  "errors": []
+}

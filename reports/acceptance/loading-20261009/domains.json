@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-08T18:12:09.146Z",
+  "domains": [
+    {
+      "id": "6ac7d83255701ee6eea022c5",
+      "domain": "daguanyuan-rumeng-hk.zeabur.app",
+      "serviceID": "6ac7cb8b3913920b91cae4bc",
+      "environmentID": "6ac7c86589c17dc8a99e6a7d",
+      "projectID": "6ac7c8653913920b91cae35c",
+      "portName": "web",
+      "redirectTo": "",
+      "status": "PROVISIONED",
+      "isGenerated": true,
+      "createdAt": "2026-10-08T17:51:46.286Z"
+    },
+    {
+      "id": "6ac7d9f755701ee6eea022c7",
+      "domain": "daguanyuan-rumeng.zeabur.app",
+      "serviceID": "6ac7cb8b3913920b91cae4bc",
+      "environmentID": "6ac7c86589c17dc8a99e6a7d",
+      "projectID": "6ac7c8653913920b91cae35c",
+      "portName": "web",
+      "redirectTo": "",
+      "status": "PROVISIONED",
+      "isGenerated": true,
+      "createdAt": "2026-10-08T17:59:19.043Z"
+    }
+  ],
+  "oldServiceRetainedForRollback": true
+}
