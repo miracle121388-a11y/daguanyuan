@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-09T04:05:55.013Z",
+  "removedCaliforniaProject": "6aa142fb6c3d9581b71560ed",
+  "removedCaliforniaService": "6aa143296c3d9581b71560fa",
+  "californiaServerRetained": "6a8eee0bb11fb81fb4aaca05",
+  "reason": "User confirmed retaining the six unrelated California projects.",
+  "unrelatedProjectsUnchanged": 10,
+  "hongKong": {
+    "server": "69dfdbcbbae4af582816c8e2",
+    "project": "6ac7c8653913920b91cae35c",
+    "name": "daguanyuan-rumeng",
+    "service": "6ac7cb8b3913920b91cae4bc",
+    "deployment": {
+      "_id": "6ac7d7c73369c8940faf85f1",
+      "status": "RUNNING"
+    }
+  },
+  "domains": [
+    {
+      "id": "6ac7d9f755701ee6eea022c7",
+      "domain": "daguanyuan-rumeng.zeabur.app",
+      "serviceID": "6ac7cb8b3913920b91cae4bc",
+      "environmentID": "6ac7c86589c17dc8a99e6a7d",
+      "projectID": "6ac7c8653913920b91cae35c",
+      "portName": "web",
+      "redirectTo": "",
+      "status": "PROVISIONED",
+      "isGenerated": true,
+      "createdAt": "2026-10-08T17:59:19.043Z"
+    }
+  ],
+  "removedDomain": "daguanyuan-rumeng-hk.zeabur.app",
+  "https": {
+    "proxyStatus": 200,
+    "directStatus": 200,
+    "indexSha256": "636b1693e21f1e016bf64ef5cca5403288af6c36a9a22d37138759ed94bd2ce8"
+  },
+  "albumFilesMatchedBackupBeforeDeletion": 6
+}
