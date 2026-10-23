@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-23T17:02:02.284Z",
+  "existingContainers": [
+    {
+      "name": "chroni-site",
+      "sameContainer": false
+    },
+    {
+      "name": "chroni-api",
+      "sameContainer": false
+    },
+    {
+      "name": "elsewhere-web",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-core",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-sync",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-gorse",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-local-ranker",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-activity-search",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-postgres",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-redis",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-etcd",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-search",
+      "sameContainer": true
+    },
+    {
+      "name": "elsewhere-edge",
+      "sameContainer": true
+    }
+  ],
+  "ourOperations": "Added garden container/network and appended its Caddy site; reloaded shared gateway; restarted only garden. Other container changes observed during the session were not performed by this migration."
+}

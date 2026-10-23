@@ -1,0 +1,118 @@
+{
+  "at": "2026-10-23T17:06:12.084Z",
+  "dateShanghai": "2026-10-24",
+  "url": "https://daguanyuan.inspiralai.com/",
+  "profile": "elsewhere-hk",
+  "instance": "i-j6c3egnl5bzb0itdjs7d",
+  "region": "cn-hongkong",
+  "ip": "8.218.221.59",
+  "image": "daguanyuan:944d20c",
+  "applicationSource": "944d20c",
+  "runtime": {
+    "at": "2026-10-23T17:02:19.806Z",
+    "runtimeFilesMatched": 1287,
+    "privateAndAlbumFilesMatched": 115,
+    "albumFiles": 6,
+    "variablesMatched": 18,
+    "port": 3000,
+    "containerHealthy": true
+  },
+  "tests": {
+    "unit": 231,
+    "integrity": 11173,
+    "build": true,
+    "lint": true
+  },
+  "model": {
+    "at": "2026-10-23T16:52:26.592Z",
+    "host": "daguanyuan.inspiralai.com",
+    "edition": "original80",
+    "startChapter": 80,
+    "calls": [
+      {
+        "operation": "story-continue",
+        "status": 200,
+        "ms": 14546
+      },
+      {
+        "operation": "story-review",
+        "status": 200,
+        "ms": 75866
+      }
+    ],
+    "savedJournalValidated": true,
+    "sceneExecutor": "simulated",
+    "snapshotCount": 2,
+    "independentReview": {
+      "approved": true,
+      "checks": [
+        {
+          "category": "chronology",
+          "status": "pass"
+        },
+        {
+          "category": "knowledge",
+          "status": "pass"
+        },
+        {
+          "category": "motivation",
+          "status": "pass"
+        },
+        {
+          "category": "continuity",
+          "status": "pass"
+        },
+        {
+          "category": "branch",
+          "status": "pass"
+        },
+        {
+          "category": "edition",
+          "status": "pass"
+        },
+        {
+          "category": "staging",
+          "status": "pass"
+        }
+      ],
+      "issues": 0
+    }
+  },
+  "browser": {
+    "at": "2026-10-23T16:53:02.400Z",
+    "url": "https://daguanyuan.inspiralai.com/",
+    "firstGardenMs": 12198,
+    "characterModelRequests": 4,
+    "sharedTextureRequests": 21,
+    "storyAndIfControls": true,
+    "options": [
+      "园林初览诗社与雅集刘姥姥游园"
+    ],
+    "viewportSimulation": true,
+    "errors": [],
+    "failed": []
+  },
+  "browserSaveMigration": {
+    "at": "2026-10-23T17:04:24.530Z",
+    "oldOrigin": "https://daguanyuan-rumeng.zeabur.app",
+    "newOrigin": "https://daguanyuan.inspiralai.com",
+    "actualGeneratedJournalTransferred": true,
+    "reloadPreservesStory": true,
+    "accessPreserved": true,
+    "legacyProxyAccessStatus": 200,
+    "isolatedBrowserContext": true
+  },
+  "legacy": {
+    "url": "https://daguanyuan-rumeng.zeabur.app/",
+    "deployment": "6adb92cf8c24d882f60571a4",
+    "status": "RUNNING",
+    "role": "temporary migration page and reverse proxy; no independent application state",
+    "initialFailure": "Platform detected static HTML despite Dockerfile; resolved using explicit Dockerfile selection and Node package metadata."
+  },
+  "storage": {
+    "albumDirectory": "/srv/daguanyuan/data/dreams",
+    "backup": "/srv/daguanyuan/backups/initial-20261024.tar.gz",
+    "restartPersistenceVerified": true
+  },
+  "archiveSha256": "14ec7c533e1d643b1fbebc00dfc65ee691f54cfc79b80fd2863c02db7cccf96b"
+}

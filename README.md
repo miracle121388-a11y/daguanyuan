@@ -2,7 +2,7 @@
 
 以《红楼梦》原文和十五幅园景参考图为依据的可交互三维园林。点击景点，旋转近看院落、进入屋内、查看结构剖视，并展开原文出处与参考图。
 
-[在线游园](https://daguanyuan-rumeng.zeabur.app/) · 用户既有 Zeabur 加利福尼亚服务。最新部署是否验证通过，以 `reports/acceptance/zeabur-deployment.json` 的时间及 `health.revision` 为准。
+[在线游园](https://daguanyuan.inspiralai.com/) · 用户既有阿里云香港 ECS。当前部署与验证见 [DEPLOYMENT.md](docs/DEPLOYMENT.md)。已有本机存档请先在原浏览器打开[旧站搬迁入口](https://daguanyuan-rumeng.zeabur.app/)。
 
 ![实际浏览器全园截图](.impeccable/review/desktop.png)
 

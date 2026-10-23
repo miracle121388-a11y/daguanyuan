@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-23T16:43:56.393Z",
+  "checks": [
+    "Real cross-origin popup handshake preserves settings, journal, identity and exact image bytes",
+    "Conflicting new saves are preserved without partial import",
+    "Unsolicited messages cannot import storage",
+    "Old-origin storage retained; unrelated keys excluded; mobile layout has no overflow"
+  ],
+  "fixtures": true
+}

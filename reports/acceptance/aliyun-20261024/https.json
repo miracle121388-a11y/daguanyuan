@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-23T16:51:34.682Z",
+  "origin": "https://daguanyuan.inspiralai.com",
+  "matches": [
+    {
+      "path": "index.html",
+      "sha256": "636b1693e21f1e016bf64ef5cca5403288af6c36a9a22d37138759ed94bd2ce8"
+    },
+    {
+      "path": "migrate.html",
+      "sha256": "89b45946d535610534323540c4805812f6e20786ce06b9aa89919fd1c0a590a4"
+    },
+    {
+      "path": "migration.js",
+      "sha256": "347bc34adde37489776bf94ed4ee21742db40dc0598455750cfe79ceb1b0b722"
+    },
+    {
+      "path": "reading.html",
+      "sha256": "d35506c630043df55ae3fdc9921f4a715a9b8c983643b6e582b3d56860923d61"
+    },
+    {
+      "path": "scene-manifest.json",
+      "sha256": "de490e980ac95dc52f4540f9c23f8f08ad10aa5b88be4da289a7953574bdf8bc"
+    },
+    {
+      "path": "asset-index.json",
+      "sha256": "f95df326645fc903fb1eb1f70e272d13380ce896d80524eacdfbafe3ffd5c0f5"
+    },
+    {
+      "path": "data/editionCatalog.json",
+      "sha256": "fe6d01d70e0850bd323d4f02caaee41750dceb471d318fda8f9a18f8d1178434"
+    },
+    {
+      "path": "assets/Gltf-BRYfUkdD.js",
+      "sha256": "ba07e9a0be1fbb3f8b14960df8c863f31bd00f2aecaf935129f6bc6910c9d7c7"
+    },
+    {
+      "path": "assets/index-Cl4nNvth.js",
+      "sha256": "6cdfae1fc86702e878ee35e64054eb41e7e6593bb499a4b005cf8b9bac411c3c"
+    },
+    {
+      "path": "assets/index-BTF1rXZk.css",
+      "sha256": "96c0003da1dff4c85d7cc976ed79b70a817495ca9d9cc534f1c14119f4dfbe59"
+    },
+    {
+      "path": "assets/garden-mark-COPNxcSD.svg",
+      "sha256": "4788ec943a40feed0dc99f7ff6d152396ed0c480db43af47d77b5685ef47a070"
+    },
+    {
+      "path": "assets/GardenScene-CsrQy-iV.js",
+      "sha256": "a524f797d2adb13df48a4db3ef9d7156735ee3e9c24d0041e6d33d62ea661a30"
+    },
+    {
+      "path": "assets/resetLoads-CU_opDWP.js",
+      "sha256": "d679ac043626ad18323e7a74d7d61eeaa6030f8ed1e537683ca17903ff9c7b14"
+    }
+  ],
+  "privatePaths404": true,
+  "unauthorized401": true
+}

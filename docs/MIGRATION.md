@@ -112,7 +112,7 @@ npm run build
 npm run deploy:package
 ```
 
-这两个命令重新生成 `dist/` 和独立 `.deploy/` 发布包。部署目标仍是已有 Zeabur California 服务，步骤见 [DEPLOYMENT.md](DEPLOYMENT.md)；账号登录需要团队成员自行取得授权并登录。
+这两个命令重新生成 `dist/` 和独立 `.deploy/` 发布包。部署目标是已有阿里云香港 ECS（profile `elsewhere-hk`），步骤见 [DEPLOYMENT.md](DEPLOYMENT.md)；账号登录需要团队成员自行取得授权并登录。
 
 旧的自动备份、部署快照、依赖安装目录与本机登录凭据不是现用素材依赖。迁移验证结果见 [MIGRATION_VALIDATION.md](MIGRATION_VALIDATION.md)，仅记录实际执行过的检查；提供 macOS 命令不等于已经在 macOS 上实测。
 

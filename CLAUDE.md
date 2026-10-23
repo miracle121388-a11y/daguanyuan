@@ -1,9 +1,11 @@
-# Zeabur deployment
+# Deployment
 
-Hong Kong production (recorded in docs/DEPLOYMENT.md):
-- Project ID: 6ac7c8653913920b91cae35c
-- Service ID: 6ac7cb8b3913920b91cae4bc
-- Environment ID: 6ac7c86589c17dc8a99e6a7d
-- Server ID: 69dfdbcbbae4af582816c8e2
+Production: https://daguanyuan.inspiralai.com/
+- Alibaba Cloud profile: elsewhere-hk
+- Region / ECS: cn-hongkong / i-j6c3egnl5bzb0itdjs7d
+- Public IP: 8.218.221.59
+- Compose root / container: /srv/daguanyuan / daguanyuan
+- Runtime config: deploy/aliyun/compose.yaml
+- Shared edge: elsewhere-edge; retain its other sites and containers.
 
-Project name: daguanyuan-rumeng. URL: https://daguanyuan-rumeng.zeabur.app/ (no -hk alias). The old California Daguanyuan project and service have been deleted. Retain the California server and its six unrelated projects, as confirmed by the user. Develop directly on main. Never include private local credentials, albums or literary source files in Git.
+See docs/DEPLOYMENT.md for deployment, rollback and browser-save migration. The Zeabur Hong Kong service is only a temporary legacy migration entry (project 6ac7c8653913920b91cae35c, service 6ac7cb8b3913920b91cae4bc, environment 6ac7c86589c17dc8a99e6a7d). Do not deploy the application there again. Preserve unrelated Zeabur services and servers. Develop directly on main. Never commit private credentials, albums or literary source files.
