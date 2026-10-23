@@ -21,7 +21,7 @@
     "models:mobile": "node scripts/pipeline.mjs models-mobile",
     "data:build": "node scripts/validate.mjs --publish",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src tests scripts server server.mjs --no-warn-ignored",
+    "lint": "eslint src tests scripts server server.mjs public/migration.js --no-warn-ignored",
     "test": "vitest run",
     "verify": "node scripts/validate.mjs",
     "build": "node scripts/clean_build.mjs && npm run data:build && npm run models:fast && npm run models:character-delivery && npm run delivery:prepare && tsc --noEmit && vite build && node scripts/build_reading.mjs",
@@ -76,7 +76,8 @@
     "test:continuation:model": "node --use-env-proxy scripts/continuation_live.mjs",
     "models:fast": "node scripts/prepare_fast_models.mjs",
     "delivery:prepare": "node scripts/prepare_delivery.mjs",
-    "models:character-delivery": "node scripts/prepare_character_delivery.mjs"
+    "models:character-delivery": "node scripts/prepare_character_delivery.mjs",
+    "test:migration": "node scripts/migration_smoke.mjs"
   },
   "dependencies": {
     "@react-three/drei": "10.7.7",

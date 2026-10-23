@@ -1,0 +1,11 @@
+# Append only this site to the existing edge configuration. Never replace its other sites.
+daguanyuan.inspiralai.com {
+  header Alt-Svc clear
+  reverse_proxy daguanyuan:3000 {
+    transport http {
+      response_header_timeout 15m
+      read_timeout 15m
+      write_timeout 15m
+    }
+  }
+}
