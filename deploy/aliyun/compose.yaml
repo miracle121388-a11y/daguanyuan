@@ -12,6 +12,8 @@ services:
       NODE_ENV: production
       PORT: "3000"
       DREAM_STORAGE_DIR: /data/dreams
+    ports:
+      - "127.0.0.1:13001:3000"
     volumes:
       - /srv/daguanyuan/data/dreams:/data/dreams
     read_only: true

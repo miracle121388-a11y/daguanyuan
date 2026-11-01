@@ -1,9 +1,8 @@
-# 当前网络入口 · 2026-10-24
+# 当前网络入口 · 2026-11-01
 
-大观园运行于阿里云香港 ECS，正式域名 `daguanyuan.inspiralai.com` 解析到 `8.218.221.59`。HTTPS由共享Caddy网关自动管理，仅开放既有80/443入口，应用容器不公开3000端口。模型、贴图和API均同源。`inspiralai.com` 主域名继续服务elsewhere。
+正式域名 `daguanyuan.inspiralai.com` 解析到 `47.238.123.112`，运行于 `miracle6-hk` 账号的香港 ECS。原生 Caddy `swm-proxy` 提供 HTTPS，反代至 `127.0.0.1:13001`。应用、模型与 API 同源。Zeabur 项目及搬迁桥均已退役，无旧入口依赖。详细配置见 [DEPLOYMENT.md](DEPLOYMENT.md)。
 
-旧 Zeabur 域名仅保留存档搬迁入口与业务转发。下面的 California、旧香港IP及Clash修复是历史记录，不应套用于新域名；本次未修改系统DNS或Clash配置。当前发布和检查范围见 [DEPLOYMENT.md](DEPLOYMENT.md)。
-
+以下均为历史网络排查记录，不能作为当前实例、IP或操作步骤。
 ---
 
 > 当前部署为 `6ab4d185e92e928954acb631`，源码 `fbd2ba2`。用户已确认暂无自有域名。以下公网抽样是伙伴此前的独立记录；本次 macOS 修复与最终部署见文末。

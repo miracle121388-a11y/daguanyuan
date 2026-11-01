@@ -1,0 +1,10 @@
+{
+  "profile": "miracle6-hk",
+  "region": "cn-hongkong",
+  "instance": "i-j6c3bjaw8vp6z315yjvj",
+  "ip": "47.238.123.112",
+  "url": "https://daguanyuan.inspiralai.com",
+  "dockerHost": "unix:///run/companion-docker/docker.sock",
+  "directory": "/srv/daguanyuan",
+  "port": 13001
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-01",
+  "target": {
+    "profile": "miracle6-hk",
+    "region": "cn-hongkong",
+    "instance": "i-j6c3bjaw8vp6z315yjvj",
+    "ip": "47.238.123.112",
+    "url": "https://daguanyuan.inspiralai.com",
+    "dockerHost": "unix:///run/companion-docker/docker.sock",
+    "directory": "/srv/daguanyuan",
+    "port": 13001
+  },
+  "image": "daguanyuan:cleanup-20261101",
+  "health": "healthy",
+  "previousReleaseMatched": 1287,
+  "albumsMatched": 6,
+  "privateCorpusFilesMatched": 109,
+  "runtimeFilesPreserved": 1290,
+  "obsoleteRuntimeFilesRemoved": 1317,
+  "currentEnvironmentKeysPreserved": 17,
+  "singleCompose": true,
+  "loopbackPort": 13001,
+  "retiredAndPrivatePaths404": true,
+  "removedPackages": 35,
+  "bytes": 1791466148,
+  "retainedPackage": "reference-20261023-164354-840183",
+  "oldEcs": "Old ID unavailable in previous profile; old IP timed out; physical instance deletion not verified.",
+  "paidModelGenerationTest": "Not run for this infrastructure cleanup",
+  "publicAccess": {
+    "unauthorized": 401,
+    "authorized": 200,
+    "configured": true
+  },
+  "publicReleaseFilesMatched": 10,
+  "tests": {
+    "unit": 231,
+    "files": 23,
+    "build": "passed",
+    "lint": "passed",
+    "diffCheck": "passed"
+  }
+}
