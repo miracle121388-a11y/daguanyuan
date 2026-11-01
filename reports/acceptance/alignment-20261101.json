@@ -24,7 +24,7 @@
   "removedPackages": 35,
   "bytes": 1791466148,
   "retainedPackage": "reference-20261023-164354-840183",
-  "oldEcs": "Old ID unavailable in previous profile; old IP timed out; physical instance deletion not verified.",
+  "oldEcs": "Released; confirmed by the user on 2026-11-01. Instance release and disk destruction were not independently executed or verified in this audit.",
   "paidModelGenerationTest": "Not run for this infrastructure cleanup",
   "publicAccess": {
     "unauthorized": 401,
@@ -38,5 +38,11 @@
     "build": "passed",
     "lint": "passed",
     "diffCheck": "passed"
+  },
+  "retirementConfirmation": {
+    "source": "user",
+    "date": "2026-11-01",
+    "ip": "8.218.221.59",
+    "instanceReleased": true
   }
 }
