@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-03",
+  "characters": [
+    "baoyu",
+    "daiyu",
+    "baochai",
+    "wangxifeng"
+  ],
+  "actions": [
+    "rest",
+    "talk",
+    "read",
+    "write",
+    "move",
+    "observe"
+  ],
+  "unitTests": 233,
+  "transitionPairs": 49,
+  "lint": "passed",
+  "build": "passed",
+  "browser": {
+    "errors": [],
+    "renderer": "Chromium SwiftShader, isolated actual GardenCharacter component",
+    "checks": [
+      "paused initialization",
+      "all four characters",
+      "high/low detail switches",
+      "talk motion",
+      "reading/writing",
+      "tea versus empty-hand rest"
+    ]
+  },
+  "production": {
+    "image": "daguanyuan:hands-20261103",
+    "healthy": true,
+    "httpsFilesMatched": 10,
+    "obsoleteAndPrivatePaths404": true
+  }
+}

@@ -12,11 +12,10 @@ export function characterDetail(focused: boolean, quality: 'high' | 'low', camer
 export function characterAsset(id: AgentId, detail: CharacterDetail, base = '/'): string {
   return `${base}models/characters-stream/${id}${detail === 'low' ? '-low' : ''}.glb?v=${characterRevision}`;
 }
-export function facePerformance(time: number, index: number, pose: string, motion: boolean, tea: boolean) {
+export function facePerformance(time: number, index: number, pose: string, motion: boolean) {
   const phase = (time + index * 1.07) % 4.7;
   return {
     blink: motion && phase < .18 ? Math.sin(phase / .18 * Math.PI) : 0,
     speak: motion && pose === 'talk' ? .075 + .09 * Math.sin(time * 9) ** 2 : 0,
-    grasp: pose === 'read' || pose === 'write' ? .48 : tea && pose === 'rest' ? .72 : pose === 'talk' ? .23 : .12,
   };
 }
