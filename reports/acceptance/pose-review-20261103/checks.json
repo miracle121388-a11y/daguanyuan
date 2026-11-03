@@ -1,0 +1,482 @@
+{
+  "renderer": "Chromium SwiftShader isolated actual GardenCharacter",
+  "errors": [],
+  "checks": [
+    {
+      "pose": "read",
+      "state": [
+        {
+          "id": "baoyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "daiyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "baochai",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "wangxifeng",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "write",
+      "state": [
+        {
+          "id": "baoyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "daiyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "baochai",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "wangxifeng",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "rest",
+      "state": [
+        {
+          "id": "baoyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "daiyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "baochai",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "wangxifeng",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "talk",
+      "state": [
+        {
+          "id": "baoyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "daiyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "baochai",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "wangxifeng",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "observe",
+      "state": [
+        {
+          "id": "baoyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "daiyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "baochai",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "wangxifeng",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "move",
+      "state": [
+        {
+          "id": "baoyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "daiyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "baochai",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "wangxifeng",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "wait",
+      "state": [
+        {
+          "id": "baoyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "daiyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "baochai",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "wangxifeng",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        }
+      ]
+    },
+    {
+      "pose": "visit",
+      "state": [
+        {
+          "id": "baoyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "daiyu",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "baochai",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        },
+        {
+          "id": "wangxifeng",
+          "book": false,
+          "brush": false,
+          "legs": [
+            0,
+            0
+          ],
+          "hands": [
+            -1.5707963267948966,
+            1.5707963267948966
+          ]
+        }
+      ]
+    }
+  ],
+  "tests": {
+    "passed": 233,
+    "lint": "passed",
+    "build": "passed"
+  },
+  "humanReview": {
+    "source": "user",
+    "date": "2026-11-03",
+    "feedback": "现在都是基础站立动作，网站上看没问题"
+  },
+  "disabled": [
+    "reading prop performance",
+    "writing prop performance",
+    "tea cup performance"
+  ],
+  "production": {
+    "image": "daguanyuan:pose-review-20261103",
+    "health": "healthy",
+    "httpsFilesMatched": 10
+  }
+}

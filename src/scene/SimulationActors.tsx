@@ -60,7 +60,7 @@ function Figure({id, motion}: {id: AgentId; motion: boolean}) {
   if (!actor || !actor.alive) return null;
   return <group ref={group} name={`simulation-${id}`} userData={{simulationAgent: id}}>
     <group onClick={e => {if (!state.open) return; e.stopPropagation(); state.inspect(id);}}>
-      <GardenCharacter id={id} pose={pose} paused={state.paused} motion={motion} rate={state.playbackRate} calm={actor.mood.calm} tea={world?.gathering?.kind==='tea' && world.gathering.participants.includes(id) && world.gathering.status!=='cancelled' && actor.location===world.gathering.place && actor.spot==='court'}/>
+      <GardenCharacter id={id} pose={pose} paused={state.paused} motion={motion} rate={state.playbackRate}/>
     </group>
     {state.focused === id && <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0,.035,0]}><ringGeometry args={[.43,.455,48]}/><meshBasicMaterial color="#F2E9D8" transparent opacity={.65} side={THREE.DoubleSide} depthWrite={false}/></mesh>}
     {state.open && <Html position={[0,2.16,0]} center zIndexRange={[15,1]}><button ref={label} className="sim-person-label" data-agent={id} data-nearby={agentIds.some(other => other !== id && world?.agents[other].location === actor.location)} aria-pressed={state.focused === id} onClick={() => state.inspect(id)}><i style={{background:agentColors[id]}}/>{actor.name}<small>{active ? actionLabels[active.command.action.action] : ''}</small></button></Html>}
