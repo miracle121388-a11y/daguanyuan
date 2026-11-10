@@ -18,5 +18,11 @@
     "numbered hotspots removed"
   ],
   "noPaidStoryGeneration": true,
-  "loadingBehaviour": "No capsule fallback; preserve garden camera until character mesh is ready"
+  "loadingBehaviour": "No capsule fallback; preserve garden camera until character mesh is ready",
+  "productionRoundtrip": {
+    "gardenVisible": true,
+    "simulationStageHidden": true,
+    "numericHotspots": 0
+  },
+  "screenshotLimit": "Production IF screenshot hit a CDP capture timeout. IF entry and return were subsequently verified through the live UI; garden and world screenshots were saved."
 }
