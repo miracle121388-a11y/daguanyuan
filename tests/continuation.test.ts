@@ -14,8 +14,8 @@ describe('model narrative continuation',()=>{
   let journal=prepareContinuation(createJournal(data,edition),data,'推进贾府收支矛盾',80);
   const provider={name:'fixture',narrative:vi.fn(async(_op:string,p:any)=>({...structuredClone(result),...(p.mode==='playback'?{sourceChapter:{chapter:p.nextChapter,title:'测试回目',sourceEdition:'fixture',sha256:'b'.repeat(64)}}:{})}))};
   journal=await runContinuation(journal,data,provider,async()=>{},controller().signal,()=>{});
-  const w=currentWorld(journal);expect(w.continuation?.sequence).toBe(1);expect(w.continuation?.episodes[0].narrative).toBe(result.narrative);
-  const next=continuationPayload(journal,data);expect(next.edition.id).toBe(edition);expect(next.memory).toBe(result.memory);expect(next.threads).toEqual(result.threads);expect(next.history).toHaveLength(1);
+  const w=currentWorld(journal);expect(w.continuation?.sequence).toBe(1);expect(w.continuation?.episodes[0].narrative).toBe(result.narrative);expect(w.continuation?.episodes[0].shots).toEqual([]);
+  const next=continuationPayload(journal,data);expect(next.edition.id).toBe(edition);expect(next.memory).toBe(result.memory);expect(next.threads).toEqual(result.threads);expect(next.history).toHaveLength(1);expect(next.history[0]).not.toHaveProperty('shots');
   expect(w.agents.wangxifeng.memories.some(m=>m.content===result.consequences[0].fact)).toBe(true);expect(w.agents.daiyu.memories.some(m=>m.content===result.consequences[0].fact)).toBe(false);
   expect(readJournal(JSON.stringify(journal),data)).toEqual(journal);expect(currentWorld(restoreTick(journal,0)).continuation?.sequence).toBe(0);
   expect(validContinuationInput('story-continue',next)).toBe(true);
@@ -104,4 +104,13 @@ it('retrieves focused original evidence for a draft poem and recalled gathering 
  expect((refs.verificationExcerpts??[]).some((p:any)=>p.chapter===76)).toBe(true);
  expect((refs.verificationExcerpts??[]).every((p:any)=>p.chapter<=80&&/^[a-f0-9]{64}$/.test(p.sha256))).toBe(true);
  expect((refs.verificationExcerpts??[]).some((p:any)=>p.text.includes('咱們兩個'))).toBe(true);
+});
+it('focuses only a living actor still present in the latest approved narrative shot',async()=>{
+ const {supportedStoryFocus}=await import('../src/simulation/continuation');
+ const j=prepareContinuation(createJournal(data),data,'',80),w=currentWorld(j);
+ expect(supportedStoryFocus(w)).toBeUndefined();
+ w.continuation!.episodes=[{number:1,title:'镜头',narrative:'正文',causality:'前因',shots:[{agent:'baoyu',place:w.agents.baoyu.location,action:'observe',caption:'在园中停步'}]}];
+ expect(supportedStoryFocus(w)).toBe('baoyu');
+ w.agents.baoyu.alive=false;expect(supportedStoryFocus(w)).toBeUndefined();
+ w.agents.baoyu.alive=true;w.agents.baoyu.location='daguanlou';expect(supportedStoryFocus(w)).toBeUndefined();
 });

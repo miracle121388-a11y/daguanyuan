@@ -1,4 +1,4 @@
-import {readFileSync, readdirSync, mkdirSync, copyFileSync} from 'node:fs';
+import {readFileSync, readdirSync, mkdirSync, writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {resolve, dirname} from 'node:path';
 
@@ -37,6 +37,8 @@ export function publishCorpus() {
   for (const path of files) {
     const dest = resolve('public/data/corpus', path);
     mkdirSync(dirname(dest), {recursive: true});
-    copyFileSync(resolve(root, path), dest);
+    const bytes = readFileSync(resolve(root, path));
+    writeFileSync(dest, bytes);
+    if(hash(readFileSync(dest))!==hash(bytes))throw Error(`Published corpus hash: ${path}`);
   }
 }

@@ -52,7 +52,7 @@ export function continuationPayload(journal:Journal,data:CanonData){
  const world=currentWorld(journal),c=world.continuation;if(!c)throw new Error('请先选择续演起点。');
  const inactive=!c.sequence&&!c.source.imported?data.editionCatalog?.nodes.find(n=>n.editions.includes(journal.editionId??'original80')&&n.chapter===c.source.through)?.seed.inactiveAgents??[]:[];
  const playback=isBookPlayback(journal),branch=currentBranch(journal),origin=branchOrigin(branch);
- return {edition:editionFor(journal.editionId??'original80',data.editionCatalog),source:c.source,mode:playback?'playback' as const:'creative' as const,...(playback?{nextChapter:(c.playbackChapter??80)+1}:{}),direction:playback?'':c.direction,memory:c.memory,threads:c.threads,history:c.episodes.map(({review: _review,...episode})=>episode),branchCondition:currentBranch(journal).prompt,
+ return {edition:editionFor(journal.editionId??'original80',data.editionCatalog),source:c.source,mode:playback?'playback' as const:'creative' as const,...(playback?{nextChapter:(c.playbackChapter??80)+1}:{}),direction:playback?'':c.direction,memory:c.memory,threads:c.threads,history:c.episodes.map(({review: _review,shots:_shots,...episode})=>episode),branchCondition:currentBranch(journal).prompt,
  branchContext:branch.intervention?{forkTick:branch.forkTick,inheritedSequence:origin.sequence,inheritedChapter:origin.chapter,intervention:branch.intervention}:null,
  householdState:world.world,
  stageActors:agentIds.map(id=>{const a=world.agents[id];return {id,name:a.name,alive:!inactive.includes(id)&&a.alive,personality:a.personality,mood:a.mood,memories:a.memories.filter(m=>c.sequence>0||m.origin==='intervention'||m.origin==='player').slice(-6),task:c.sequence?a.story?.task??'':'',directives:world.directives.filter(d=>d.agent===id)};}),
@@ -85,7 +85,12 @@ export async function runContinuation(journal:Journal,data:CanonData,provider:Na
  for(const item of result.consequences)addMemory(world.agents[item.agent],{tick:world.tick,type:'interaction',content:item.fact,participants:[item.agent],origin:'generated',importance:90});
  c.sequence++;c.memory=result.memory;c.threads=result.threads;
  if(result.sourceChapter){c.playbackChapter=result.sourceChapter.chapter;world.storyChapter=result.sourceChapter.chapter;}
- c.episodes=[...c.episodes,{number:c.sequence,title:result.title,narrative:result.narrative,causality:result.causality,review:result.review,...(result.sourceChapter?{sourceChapter:result.sourceChapter}:{})}].slice(-3);
+ c.episodes=[...c.episodes,{number:c.sequence,title:result.title,narrative:result.narrative,causality:result.causality,shots:result.staging.filter(shot=>world.agents[shot.agent].alive),review:result.review,...(result.sourceChapter?{sourceChapter:result.sourceChapter}:{})}].slice(-3);
  log('story',result.narrative);world.minutes+=120;
  const next=clone(journal),branch=currentBranch(next);branch.snapshots=branch.snapshots.slice(0,branch.cursor+1);branch.snapshots.push({worldState:world,actions,summary:result.narrative,provider:provider.name,label:`${result.sourceChapter?`第${result.sourceChapter.chapter}回演绎`:`续演${c.sequence}`} · ${result.title}`.slice(0,100)});if(branch.snapshots.length>(isBookPlayback(next)?64:30))branch.snapshots.shift();branch.cursor=branch.snapshots.length-1;return next;
+}
+
+/** A shot is eligible only while its living actor is actually in that modeled place. */
+export function supportedStoryFocus(world:WorldState):AgentId|undefined {
+ return world.continuation?.episodes.at(-1)?.shots?.find(shot=>world.agents[shot.agent].alive&&world.agents[shot.agent].location===shot.place)?.agent;
 }

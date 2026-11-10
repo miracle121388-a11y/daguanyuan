@@ -52,3 +52,8 @@ continuationInstructions['story-continue']+='\n'+factualRule+'\n'+conditionRule;
 continuationInstructions['story-review']+='\n最终编辑约束（优先于通用创作说明）：'+factualRule+'\n'+conditionRule+'\n先列出草稿的时间链和每位人物新增知情来源再核对。前段结尾已经夜间，不能在本段同日再次黄昏；同一个人回来、送药、谈话不能不加说明重复为新事件。逐句核对过去时和引用诗词，把unsupported的细节删掉；报告每项必须针对修正后的正文，不可照抄草稿的自述。若history已含无依据的旧事，不将其升级为原文依据，保留实际发生的新创事件，避免继续扩散错误回忆。正文、memory、staging以及review的说法必须相符。';
 continuationInstructions['story-continue']+='\ncurrentStoryBoundary为服务器提取的当前故事终点，尤其要读text最后一句。kind=source_end时，source最后长段里可能已概述数日、返家、再离府，这些过程全都已完成；禁止取这段开头当起点。kind=generated_end时，继承已生成段落的结尾，不从原文回目重新演一遍。';
 continuationInstructions['story-review']+='\nchronology首先检查服务器currentStoryBoundary.text的末尾，而不是source.tail开头。若第80回末已经写迎春住三日、再住两日、被孙家接走，则她的归宁与宝玉天齐庙还愿均属已完成，不能再次写她才到贾府或仍暂住紫菱洲。history已生成时，则以其最后场景作为实际时刻；不能为了修复草稿而倒退到更早的原文片段。每项review均独立重查，不能沿用草稿或旧报告中的批准结论。';
+
+// Acceptance case: an explicit knowledge intervention must not become a rumour.
+const certainKnowledgeRule='最高优先级的IF知情约束：branchContext.intervention.type=knowledge时，target在本段开始前已经明确、完整知道content。正文第一段须自然且完整交代这项已知事实（包括关键人物和事项），从这一事实推动一次具体选择或后果。不得把它写成恍惚听到、疑似传闻、尚待确认；可以试探别人是否知情或准备怎样应对，但不能再次探听该事实是否为真来代替分支推进。复核时逐句检查叙事者是否仍把已知内容写成疑问；若有，重写正文、memory和核对依据，不能仅在branch核对项中声称已生效而正文仍在猜。其他人不会自动共享这项新增知情。';
+continuationInstructions['story-continue']+='\n'+certainKnowledgeRule;
+continuationInstructions['story-review']+='\n'+certainKnowledgeRule;

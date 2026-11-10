@@ -10,7 +10,7 @@ import {agentIds} from '../simulation/types';
 import {agentColors, clockLabel, currentWorld} from '../simulation/world';
 import {spotName} from '../simulation/space';
 import {SimulationRunControls, SimulationSpeed} from './SimulationControls';
-import {isBookPlayback} from '../simulation/continuation';
+import {isBookPlayback,supportedStoryFocus} from '../simulation/continuation';
 
 export default function SimulationStage() {
   const s = useSimulation(), data = useGarden(g => g.data);
@@ -27,6 +27,10 @@ export default function SimulationStage() {
     useGarden.setState({selectedPlaceId: detail, panelOpen: false, hotspotId: null});
   }, [s.open, detail]);
   useEffect(() => { if (s.open) useGarden.setState({timeOfDay: night ? 'night' : 'day'}); }, [s.open, night]);
+  useEffect(()=>{
+    if(s.open&&s.phase==='ready'&&world?.continuation?.sequence&&s.director)
+      useSimulation.setState({cameraMode:'portrait',...(supportedStoryFocus(world)?{focused:supportedStoryFocus(world)}:{}),focusRevision:useSimulation.getState().focusRevision+1});
+  },[s.open,s.phase,world?.continuation?.sequence,s.director]);
   if (!s.open || !world || !data) return null;
   const dialogue = [...world.events].reverse().find(e => ['dialogue', 'conversation'].includes(e.kind) && (!actor || e.agent === actor.id || e.target === actor.id));
   const saved = s.journal ? currentWorld(s.journal) : world;
@@ -42,9 +46,9 @@ export default function SimulationStage() {
     <div className="sim-stage-roster" role="group" aria-label="选择场景人物">{agentIds.map(id => <button key={id} disabled={!world.agents[id].alive} title={world.agents[id].alive ? undefined : "此幕已退场"} aria-pressed={s.focused === id} onClick={() => s.focus(id)}><img src={`${import.meta.env.BASE_URL}textures/characters/${id}.png?v=${characterRevision}`} alt="" width="28" height="32" style={{borderColor:agentColors[id]}}/>{world.agents[id].name}</button>)}</div>
     {performing && s.phase !== 'ready' && <section className="sim-live-scene" aria-live="polite" aria-label="当前人物行动"><span>{s.paused ? '暂歇片刻' : s.phase === 'reviewing' ? '正在核对前情' : s.phase === 'deciding' ? '正在续演故事' : '剧情节选'}</span><strong>{performing.name} · {s.phase === 'conversing' ? '正听你说' : s.phase === 'deciding' ? '有所思量' : actionNames[live?.action.action ?? 'wait']}</strong><p>{live?.destination ? `沿园径前往${data.places.find(p => p.id === live.destination)?.name ?? ''}` : live?.action.reason || performing.plan?.goal || '故事将在此刻继续。'}</p>{utterance && <blockquote className="sim-speech">{utterance.text}</blockquote>}{live && <div className="sim-action-progress" role="progressbar" aria-label="本次行动进度" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(s.playbackProgress*100)}><i style={{width:`${s.playbackProgress*100}%`}}/></div>}</section>}
     <div className="sim-stage-bottom">
-      {s.phase === 'ready' && moment && <button className="sim-moment" onClick={() => useSimulation.setState({ifComposerOpen:false,recordView:'events',immersive:false,automatic:false})}><Check size={16}/><span><small>这一刻，已留在故事里</small><strong>{moment.text}</strong></span><BookOpen size={16}/></button>}
+      {!world.continuation && s.phase === 'ready' && moment && <button className="sim-moment" onClick={() => useSimulation.setState({ifComposerOpen:false,recordView:'events',immersive:false,automatic:false})}><Check size={16}/><span><small>这一刻，已留在故事里</small><strong>{moment.text}</strong></span><BookOpen size={16}/></button>}
       {s.immersive && (utterance || dialogue) && <div className="sim-stage-dialogue" aria-live="polite"><MessageCircle size={16}/><p>{utterance ? `${world.agents[utterance.agent].name}：${utterance.text}` : dialogue!.text}</p></div>}
-      <div className="sim-stage-person"><div><h2>{actor?.name ?? '园中众人'}<span>{actor ? spotName(data, actor.location, actor.spot) : '全园观察'}</span></h2><p>{actor?.plan?.goal ?? (actor ? '走近他，说一句话，让此刻有另一种可能。' : '选择一人，走近他的这一刻。')}</p></div>{actor && <div className="sim-stage-actions"><button onClick={() => s.participate(actor.id)}><MessageCircle size={15}/><span>交谈入局</span></button></div>}</div>
+      <div className="sim-stage-person"><div><h2>{actor?.name ?? '园中众人'}<span>{actor ? spotName(data, actor.location, actor.spot) : '全园观察'}</span></h2><p>{actor?.currentAction?.reason ?? actor?.plan?.goal ?? (actor ? '走近他，说一句话，让此刻有另一种可能。' : '选择一人，走近他的这一刻。')}</p></div>{actor && <div className="sim-stage-actions"><button onClick={() => s.participate(actor.id)}><MessageCircle size={15}/><span>交谈入局</span></button></div>}</div>
       <Disclosure className="sim-stage-views" label={<><SlidersHorizontal size={15}/><span>镜头与速度</span></>}><button disabled={!actor} aria-pressed={!!actor && s.cameraMode === 'close'} onClick={() => useSimulation.setState({cameraMode:'close',focusRevision:s.focusRevision+1})}><Users size={15}/>临场</button><button disabled={!actor} aria-pressed={!!actor && s.cameraMode === 'portrait'} onClick={() => useSimulation.setState({cameraMode:'portrait',focusRevision:s.focusRevision+1})}>人物特写</button><button disabled={!actor} aria-pressed={!!actor && s.cameraMode === 'follow'} onClick={() => useSimulation.setState({cameraMode:'follow',focusRevision:s.focusRevision+1})}><LocateFixed size={15}/>跟随</button><button aria-pressed={!actor} onClick={() => { s.focus(null); useGarden.getState().home(); }}>全园</button><button aria-pressed={s.director} onClick={() => useSimulation.setState({director:!s.director,...(!s.director&&s.actor?{focused:s.actor,focusRevision:s.focusRevision+1}:{})})}><Clapperboard size={14}/>剧情跟拍</button><SimulationSpeed/></Disclosure>
       {s.immersive && <div className="sim-stage-dock"><SimulationRunControls compact/>{s.phase !== 'ready' && <button className="sim-stage-cancel" onClick={s.cancel}>撤销本步</button>}<p role="status">{s.error || (!s.sceneReady ? '园林载入中…' : s.paused ? '已暂停' : s.phase !== 'ready' ? '人物正在行动…' : '这一刻已自动保存')}</p></div>}
     </div>

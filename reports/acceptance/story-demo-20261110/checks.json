@@ -1,0 +1,356 @@
+{
+  "date": "2026-11-10",
+  "scope": "Real authenticated production API; reviewed controller runs use a simulated scene executor; a separate real browser run verifies click, background continuation, local storage and refresh.",
+  "baseline": {
+    "writerMs": 54656,
+    "reviewMs": 115419,
+    "reviewStatus": 502,
+    "saved": false
+  },
+  "fixes": [
+    "DashScope enable_thinking=false and max_tokens adaptation; independent review retained",
+    "Explicit IF knowledge must remain certain in both narration and editorial review",
+    "Story-wide layout and focused reading",
+    "Validated staging retained as optional narrative shots; no fabricated gesture playback",
+    "Corpus publication writes bytes and checks destination hashes"
+  ],
+  "independentReview": "Seven categories: chronology, knowledge, motivation, continuity, branch, edition, staging",
+  "accepted": [
+    {
+      "edition": "original80",
+      "title": "藕香榭残荷听雨",
+      "number": 1,
+      "reviewApproved": true,
+      "categories": [
+        {
+          "category": "chronology",
+          "status": "pass"
+        },
+        {
+          "category": "knowledge",
+          "status": "pass"
+        },
+        {
+          "category": "motivation",
+          "status": "pass"
+        },
+        {
+          "category": "continuity",
+          "status": "pass"
+        },
+        {
+          "category": "branch",
+          "status": "pass"
+        },
+        {
+          "category": "edition",
+          "status": "pass"
+        },
+        {
+          "category": "staging",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "edition": "original80",
+      "title": "稻香村香菱移居",
+      "number": 2,
+      "reviewApproved": true,
+      "categories": [
+        {
+          "category": "chronology",
+          "status": "pass"
+        },
+        {
+          "category": "knowledge",
+          "status": "pass"
+        },
+        {
+          "category": "motivation",
+          "status": "pass"
+        },
+        {
+          "category": "continuity",
+          "status": "pass"
+        },
+        {
+          "category": "branch",
+          "status": "pass"
+        },
+        {
+          "category": "edition",
+          "status": "pass"
+        },
+        {
+          "category": "staging",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "edition": "cheng120",
+      "title": "奉嚴詞寶玉入家塾，占旺相四美釣游魚",
+      "number": 1,
+      "sourceChapter": {
+        "chapter": 81,
+        "title": "第八十一回　占旺相四美釣游魚　奉嚴詞兩番入家塾",
+        "sourceEdition": "wikisource-collated",
+        "sha256": "637ce06d3dc94b8e937e78b030e8b86df6e94d0194a4f0e9006cdeb167672c0a"
+      },
+      "reviewApproved": true,
+      "categories": [
+        {
+          "category": "chronology",
+          "status": "pass"
+        },
+        {
+          "category": "knowledge",
+          "status": "pass"
+        },
+        {
+          "category": "motivation",
+          "status": "pass"
+        },
+        {
+          "category": "continuity",
+          "status": "pass"
+        },
+        {
+          "category": "branch",
+          "status": "pass"
+        },
+        {
+          "category": "edition",
+          "status": "pass"
+        },
+        {
+          "category": "staging",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "edition": "guiyou108",
+      "title": "第八十一回 惜昵近公子做良媒 讳笞罚丫鬟结恶党",
+      "number": 1,
+      "sourceChapter": {
+        "chapter": 81,
+        "title": "第八十一回 惜昵近公子做良媒 讳笞罚丫鬟结恶党",
+        "sourceEdition": "user-pdf-guiyou108",
+        "sha256": "4aa03fc63ed653b209e810d1638aafd7a9aea1fdb0f2ef7eea09ba026845e8a5"
+      },
+      "reviewApproved": true,
+      "categories": [
+        {
+          "category": "chronology",
+          "status": "pass"
+        },
+        {
+          "category": "knowledge",
+          "status": "pass"
+        },
+        {
+          "category": "motivation",
+          "status": "pass"
+        },
+        {
+          "category": "continuity",
+          "status": "pass"
+        },
+        {
+          "category": "branch",
+          "status": "pass"
+        },
+        {
+          "category": "edition",
+          "status": "pass"
+        },
+        {
+          "category": "staging",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "edition": "original80-if",
+      "title": "怡红院夜问金玉",
+      "number": 3,
+      "reviewApproved": true,
+      "categories": [
+        {
+          "category": "chronology",
+          "status": "pass"
+        },
+        {
+          "category": "knowledge",
+          "status": "pass"
+        },
+        {
+          "category": "motivation",
+          "status": "pass"
+        },
+        {
+          "category": "continuity",
+          "status": "pass"
+        },
+        {
+          "category": "branch",
+          "status": "pass"
+        },
+        {
+          "category": "edition",
+          "status": "pass"
+        },
+        {
+          "category": "staging",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "edition": "original80-browser-third",
+      "title": "园门对质",
+      "number": 3,
+      "reviewApproved": true,
+      "categories": [
+        {
+          "category": "chronology",
+          "status": "pass"
+        },
+        {
+          "category": "knowledge",
+          "status": "pass"
+        },
+        {
+          "category": "motivation",
+          "status": "pass"
+        },
+        {
+          "category": "continuity",
+          "status": "pass"
+        },
+        {
+          "category": "branch",
+          "status": "pass"
+        },
+        {
+          "category": "edition",
+          "status": "pass"
+        },
+        {
+          "category": "staging",
+          "status": "pass"
+        }
+      ]
+    }
+  ],
+  "rejectedIfSample": {
+    "title": "二门闲话",
+    "reason": "Manual reading found known information weakened into a rumour despite a positive model review; replaced by a new IF acceptance run."
+  },
+  "httpOperations": [
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "ms": 12538
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "ms": 18602
+    },
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "ms": 17528
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "ms": 14947
+    },
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "ms": 19237
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "ms": 16966
+    },
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "ms": 62707
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "ms": 47128
+    },
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "ms": 19532
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "ms": 17590
+    }
+  ],
+  "ifRetestHttpOperations": [
+    {
+      "operation": "story-continue",
+      "status": 200,
+      "ms": 18314
+    },
+    {
+      "operation": "story-review",
+      "status": 200,
+      "ms": 17299
+    }
+  ],
+  "browser": {
+    "sequenceBefore": 2,
+    "sequenceAfter": 3,
+    "refreshRecoveredSequence": 3,
+    "backgroundCompletionNotice": "本次任务已完成，已存到本机查看结果",
+    "requests": [
+      {
+        "durationMs": 22315.80000001192
+      },
+      {
+        "durationMs": 18121
+      }
+    ],
+    "desktopStoryWidth": 756,
+    "desktopPanelWidth": 867,
+    "viewportWidth": 1470,
+    "mobileViewportWidth": 390,
+    "horizontalOverflow": false,
+    "shotSelection": true,
+    "focusedReading": true
+  },
+  "tests": 236,
+  "build": "passed",
+  "lint": "passed",
+  "corpusVerification": "passed",
+  "production": {
+    "image": "daguanyuan:story-demo-20261110",
+    "health": "healthy",
+    "httpsResourcesMatched": 10,
+    "backendSourceFilesMatched": [
+      "server/simulation-api.mjs",
+      "server/continuation.mjs"
+    ]
+  },
+  "limitations": [
+    "Sample-based acceptance, not a guarantee of all future story content or external provider availability",
+    "Guiyou chapter 81 took about 110 seconds; original80 and IF samples were about 31–40 seconds",
+    "3D shows supported actors and places; prose covers unmodeled characters and complex actions"
+  ],
+  "automaticShotFocus": "Unit verified: only living actors still in the latest approved shot place are eligible; manual shot selection was browser verified."
+}

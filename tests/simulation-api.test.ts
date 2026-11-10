@@ -46,6 +46,26 @@ describe('optional server-side model boundary', () => {
       expect(context.memory).toBe('');
     }
   });
+  it('uses bounded DashScope chat output for BOTH writing and independent review', async () => {
+    const result = {review:approvedReview(),title: '续演', narrative: '新的故事场景。'.repeat(40), memory: '发生了新的选择。', threads: [], causality: '承接前情。', characterStates: ['baoyu','daiyu','baochai','wangxifeng'].map(agent=>({agent,alive:true})), consequences: [], staging: []};
+    const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{message: {content: JSON.stringify(result)}}]})));
+    const url = await serve({...settings,LLM_BASE_URL:'https://dashscope.aliyuncs.com/compatible-mode/v1'}, upstream as typeof fetch);
+    const payload = {edition: {id: 'original80'}, source: {label: '节选', through: 80, summary: '前情', tail: '', imported: false}, direction: '', memory: '', branchCondition: '', threads: [], history: [], stageActors: result.characterStates.map(a=>({id:a.agent,alive:a.alive,name:a.agent})), places: []};
+    for (const operation of ['story-continue', 'story-review']) {
+      expect((await post(url, {operation, payload: operation==='story-review'?{...payload,draft:result}:payload})).status).toBe(200);
+    }
+    for (const call of upstream.mock.calls) {
+      const sent = JSON.parse((call as unknown as [string,RequestInit])[1].body as string);
+      const context = JSON.parse(sent.messages[1].content);
+      expect(context.literaryReferences.status).toBe('available');
+      expect(context.literaryReferences.endpoint.every((p:{chapter:number})=>p.chapter===80)).toBe(true);
+      expect(context.literaryReferences.excerpts.every((p:{chapter:number})=>p.chapter<80)).toBe(true);
+      expect(context.memory).toBe('');
+      expect(sent.enable_thinking).toBe(false);
+      expect(sent.max_tokens).toBe(10000);
+      expect(sent.max_completion_tokens).toBeUndefined();
+    }
+  });
   it('adds server-owned local literary evidence without promoting it to personal memory', async () => {
     const upstream = vi.fn(async () => new Response(JSON.stringify({choices: [{message: {content: '{"agent":"daiyu","action":"rest","evidenceIds":[]}'}}]})));
     const url = await serve(settings, upstream as typeof fetch);

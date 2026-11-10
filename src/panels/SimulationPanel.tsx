@@ -12,7 +12,6 @@ import SimulationInteractions from './SimulationInteractions';
 import SimulationParticipation from './SimulationParticipation';
 import {SimulationFlow, SimulationWorldlines} from './SimulationWorldlines';
 import Disclosure from './Disclosure';
-import {DreamStatus} from './DreamExperience';
 import {isBookPlayback} from '../simulation/continuation';
 
 export const EXAMPLE_IF = '如果宝玉提前知道贾府准备让他迎娶薛宝钗，会发生什么？';
@@ -60,7 +59,7 @@ export default function SimulationPanel() {
   const playback=isBookPlayback(s.journal),isIf=s.journal.active==='if';
   const status = s.phase === 'conversing' ? `${world.agents[s.actor ?? 'baoyu'].name}正在回应…` : s.paused ? '已暂停 · 可继续或撤销本步' : s.phase === 'parsing' ? s.readingProgress || '正在解析假设条件…' : s.phase === 'reviewing' ? '正在核对前情、时间顺序与人物状态…' : s.phase === 'deciding' ? (playback?`正在根据原文演绎第${(world.continuation?.playbackChapter??80)+1}回…`:'正在根据前情生成下一段故事…') : s.phase === 'executing' ? `${world.agents[s.actor!].name}正在${actions[world.agents[s.actor!].currentAction?.action ?? 'wait']}…` : s.automatic ? '自动推演中' : `故事已记至第 ${world.tick} 步`;
   return <aside className={'simulation-panel ' + (expanded ? 'expanded' : '') + (s.ifComposerOpen ? ' composing' : '')+(isIf&&!s.ifComposerOpen?' if-world':'')} aria-label="世界推演控制台" hidden={s.immersive}>
-    <div className="sim-heading"><div><h2 tabIndex={-1} ref={heading}>{s.ifComposerOpen?'开启 IF 分支':isIf?'IF 世界':'世界推演'}</h2><p>{s.ifComposerOpen ? '改变一个条件，开启另一条故事线' : isIf?'你改变的条件，正在改变人物的选择':playback?'从80回结束，演绎本版本的后续情节':'从80回结束，推演未写出的故事'}</p></div><button className="sim-expand" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>{expanded ? '收起面板' : '展开面板'}</button></div>
+    <div className="sim-heading"><div><h2 tabIndex={-1} ref={heading}>{s.ifComposerOpen?'开启 IF 分支':isIf?'IF 世界':'世界推演'}</h2><p>{s.ifComposerOpen ? '改变一个条件，开启另一条故事线' : isIf?'你改变的条件，正在改变人物的选择':playback?'从80回结束，演绎本版本的后续情节':'从80回结束，推演未写出的故事'}</p></div><button className="sim-expand" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>{expanded ? '返回园景' : '专注阅读'}</button></div>
     {!s.ifComposerOpen&&!isIf&&<div className="sim-session-bar"><span>主故事 · <span data-testid="sim-tick">第 {world.tick} 步</span> · {playback?`已演至第${world.continuation?.playbackChapter??80}回`:world.continuation ? `已生成 ${world.continuation.sequence} 段` : '第80回结束，故事待续'}</span></div>}
     {!s.ifComposerOpen&&isIf&&<SimulationBranch branch={branch} world={world} busy={busy}/>}
     {!s.ifComposerOpen && <div className="sim-primary-dock"><SimulationRunControls/><div className="sim-status"><p role="status">{status}</p>{busy && <button onClick={s.cancel}>撤销本步</button>}</div></div>}
@@ -68,7 +67,6 @@ export default function SimulationPanel() {
       {s.error && (s.ifComposerOpen || !(view === 'participate' && s.participationView === 'chat')) && <div className="sim-error" role="alert">{s.error}<button aria-label="关闭推演提示" onClick={() => useSimulation.setState({error: ''})}><X size={14}/></button></div>}
       {!s.sceneReady && <p className="sim-note">园景正在后台展开，可以立即推演、交谈和创建分支。故事照常生成并存档，园景就绪后显示最新情节。</p>}
       {s.storageNotice && <p className="sim-error" role="status">{s.storageNotice}</p>}
-      <DreamStatus/>
       {s.ifComposerOpen ? <div className="if-composer">
         <div className="if-fork-map"><span>当前故事{world.continuation?.sequence?` · 第${world.continuation.sequence}段`:' · 第80回结束'}</span><GitBranch size={18}/><strong>你的新分支</strong></div>
         <form className="sim-if" onSubmit={e => { e.preventDefault(); void s.createIf(prompt); }}>

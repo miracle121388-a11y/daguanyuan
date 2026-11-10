@@ -141,3 +141,45 @@
 
 /* Non-modal download status leaves navigation and story controls available. */
 .scene-loading{position:absolute;left:18px;bottom:92px;z-index:16;max-width:calc(100% - 36px);padding:10px 14px;background:#182b33e8;color:#f2e9d8;border:1px solid #60736f;border-radius:9px;font-size:12px;pointer-events:none;box-shadow:0 4px 16px #182b3329}.scene-loading small{display:block;margin-top:4px;color:#c8c2b5;font-size:10px}.scene-loading .live-dot{margin-right:8px}.simulation-open .scene-loading{bottom:150px}.scene-error{max-width:240px;padding:12px!important}.scene-error strong{font-size:14px!important}.scene-error p{line-height:1.6}.scene-error button{padding:6px 10px!important}
+
+/* Story-first presentation: readable prose, with the garden as its companion. */
+@media(min-width:901px){
+ .simulation-panel,.simulation-panel.if-world,.simulation-panel.composing{width:clamp(590px,59vw,920px)}
+ .sim-heading{padding:16px 30px 10px}
+ .sim-heading h2{font-size:23px}
+ .sim-scroll{padding:16px 30px 36px}
+ .sim-primary-dock{padding-block:10px}
+ .sim-stage-roster{max-width:calc(100% - 24px);left:12px;top:65px;gap:0}
+ .sim-stage-roster button{padding:3px 5px;font-size:10px}
+ .sim-stage-roster img{width:23px;height:29px}
+ .sim-stage-person p{display:none}
+ .sim-stage-person h2{font-size:19px}
+ .sim-stage-actions{display:none}
+ .sim-stage-bottom{left:12px;right:12px}
+}
+.sim-story article{padding-block:10px 28px}
+.sim-story article h4{font:26px/1.6 var(--serif);margin:8px 0 22px}
+.sim-story .sim-narrative{max-width:42em;margin-inline:auto;font:18px/2.05 var(--serif);letter-spacing:.02em}
+.sim-story .sim-narrative p{font:inherit;margin:0 0 1.15em;text-align:justify}
+.story-shots{display:flex;flex-wrap:wrap;gap:8px;padding:12px 0 18px;margin-bottom:12px;border-bottom:1px solid var(--border)}
+.story-shots>span,.story-shots>small{width:100%;font-size:11px;color:var(--text-muted)}
+.story-shots button{flex:1 1 220px;min-width:0;padding:10px 13px;background:var(--panel-secondary);border:1px solid var(--border);text-align:left;border-radius:5px}
+.story-shots button strong{display:block;font:14px/1.7 var(--serif);color:var(--text)}
+.story-shots button span{display:block;font-size:12px;line-height:1.8;color:var(--text-muted)}
+.story-shots button[aria-pressed=true]{border-color:var(--gold);background:var(--panel-hover)}
+.story-shots button:disabled{opacity:.6;cursor:default}
+@media(max-width:900px){
+ .simulation-panel{height:68%;max-height:none}
+ .simulation-open .garden-main{min-height:140px}
+ .sim-heading{padding:10px 18px 6px}.sim-heading>div>p{display:none}
+ .sim-story .sim-narrative{font-size:17px;line-height:1.95}
+ .sim-story article h4{font-size:23px}
+}
+.story-shots>summary{width:100%;cursor:pointer;font-size:13px;color:var(--text-muted);padding:8px 0}
+.story-shots[open]{display:flex}
+.story-shots:not([open]){display:block;padding:0;margin:0;border-bottom:0}
+@media(min-width:901px){.sim-expand{display:inline-flex;font-size:12px;min-height:38px;align-items:center;color:var(--text-muted)}}
+.workspace:has(>.simulation-panel.expanded)>.garden-main{display:none}
+.workspace>.simulation-panel.expanded{width:100%;height:100%;max-height:none;flex:1}
+.simulation-panel.expanded .sim-scroll{padding-inline:clamp(20px,8vw,150px)}
+@media(max-width:900px){.sim-stage:not(.immersive) .sim-stage-actions{display:none}.sim-stage:not(.immersive) .sim-stage-person p{display:none}}

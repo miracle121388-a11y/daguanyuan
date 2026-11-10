@@ -92,6 +92,7 @@ export function createSimulationApi(env = process.env, request = fetch, {corpusR
   } catch { /* Optional provider stays disabled until configured. */ }
   // A shared access token is required for remote execution, including deployments.
   const configured = !!(endpoint && env.LLM_API_KEY && env.LLM_MODEL && env.LLM_ACCESS_TOKEN);
+  const dashscope = !!endpoint && /^(dashscope(?:-intl)?\.aliyuncs\.com|.+\.maas\.aliyuncs\.com)$/.test(new URL(endpoint).hostname);
   const deepseek = !!endpoint && new URL(endpoint).hostname === 'api.deepseek.com';
   // The published model name differs from the official Chat Completions identifier.
   const model = deepseek && env.LLM_MODEL === 'deepseek-v4.1-flash' ? 'deepseek-flash' : env.LLM_MODEL;
@@ -160,9 +161,12 @@ export function createSimulationApi(env = process.env, request = fetch, {corpusR
       const contract = narrative ? continuationSchema(body.operation, body.payload) : null;
       const baseMessages = [{role: 'system', content: instructions[body.operation] + (adaptationSource?'\n'+playbackInstructions:'') + (deliberative && !narrative ? literaryRule : '') + (body.operation === 'action' ? actionFormat + decisionRule : body.operation === 'conversation' ? conversationGrounding : '')
         + (contract ? '\n输出必须符合以下JSON结构及全部长度上限；sourceChapter由服务器填写，不输出该字段。review只在审稿时必填。禁止Markdown或解释：\n'+JSON.stringify(contract) : '')}, {role: 'user', content: JSON.stringify(modelPayload)}];
+      // DashScope hybrid models use enable_thinking/max_tokens rather than
+      // the official DeepSeek thinking object. The independent seven-check
+      // editorial pass remains mandatory; keep hidden reasoning out of its deadline.
       const complete = (messages, formatOnly = false) => request(endpoint, {
         method: 'POST', headers: {'Content-Type': 'application/json', Authorization: `Bearer ${env.LLM_API_KEY}`}, signal: abort.signal,
-        body: JSON.stringify({model, messages, response_format: {type: 'json_object'}, ...(deepseek ? {max_tokens: body.operation==='story-review'&&!formatOnly ? 24000 : narrative ? 16000 : thinking ? 8192 : 1600, thinking: {type: thinking&&!formatOnly ? 'enabled' : 'disabled'}, ...(thinking&&!formatOnly ? {reasoning_effort: 'high'} : {})} : {max_completion_tokens: narrative ? 10000 : 1600})}),
+        body: JSON.stringify({model, messages, response_format: {type: 'json_object'}, ...(dashscope ? {max_tokens:narrative?10000:1600,enable_thinking:false} : deepseek ? {max_tokens: body.operation==='story-review'&&!formatOnly ? 24000 : narrative ? 16000 : thinking ? 8192 : 1600, thinking: {type: thinking&&!formatOnly ? 'enabled' : 'disabled'}, ...(thinking&&!formatOnly ? {reasoning_effort: 'high'} : {})} : {max_completion_tokens: narrative ? 10000 : 1600})}),
       });
       let messages = baseMessages, formatOnly = false, result, lastFailure = 'format', compactDraft;
       const compactSchema = {type:'object', properties:{narrative:contract?.properties.narrative}, required:['narrative'], additionalProperties:false};
