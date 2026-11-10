@@ -117,7 +117,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   paused: false, automatic: false, playback: null, playbackProgress: 0, director: true, sceneReady: false,
   focused: null, focusRevision: 0, sceneRevision: 0, provider: 'remote', remoteLabel: '故事推演', accessToken: savedAccess(), error: '', storageNotice: '',
   backgroundNotice: '',
-  immersive: false, cameraMode: 'close', playbackRate: 1, recordView: 'events', participationView: 'chat',
+  immersive: false, cameraMode: 'follow', playbackRate: 1, recordView: 'events', participationView: 'chat',
   conversationDrafts: {},
   inspectionTarget: null, inspectionRevision: 0,
   readingProgress: '',
@@ -211,7 +211,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
       if(playbackComplete(result))set({automatic:false});
       const after = currentWorld(result), before = currentWorld(journal);
       if (get().open && get().director && after.gathering?.status === 'completed' && before.gathering?.status === 'pending') {
-        set({focused:after.gathering.participants[0],cameraMode:'close',focusRevision:get().focusRevision+1});
+        set({focused:after.gathering.participants[0],cameraMode:'follow',focusRevision:get().focusRevision+1});
       }
       if (after.gathering?.status === 'completed' && before.gathering?.status === 'pending') useDreams.getState().offer(captureMoment(result, data, 'gathering', after.gathering.participants[0]));
       if (get().comicAutomatic && !(useDreams.getState().config?.configured && useDreams.getState().accessToken && useDreams.getState().automatic) && after.gathering?.status === 'completed' && before.gathering?.status === 'pending' && (after.storyChapter ?? 23) >= 37) {
@@ -277,7 +277,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   },
   participate: id => {
     get().focus(id);
-    set({ifComposerOpen: false, recordView: 'participate', immersive: false, automatic: false, cameraMode: 'close', participationView: 'chat', inspectionRevision: get().inspectionRevision + 1});
+    set({ifComposerOpen: false, recordView: 'participate', immersive: false, automatic: false, cameraMode: 'follow', participationView: 'chat', inspectionRevision: get().inspectionRevision + 1});
   },
   converse: async (id, message, tone) => {
     const journal = get().journal, data = useGarden.getState().data;

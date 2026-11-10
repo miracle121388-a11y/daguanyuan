@@ -1,7 +1,7 @@
 import Disclosure from './Disclosure';
 import {characterRevision} from '../scene/characterPresentation';
 import {useEffect} from 'react';
-import {BookOpen, Expand, LocateFixed, MessageCircle, Moon, Sun, Users, Clapperboard, Check, SlidersHorizontal} from 'lucide-react';
+import {BookOpen, Expand, LocateFixed, MessageCircle, Moon, Sun, Clapperboard, Check, SlidersHorizontal} from 'lucide-react';
 import {actionNames} from '../simulation/presentation';
 import {useGarden} from '../state/store';
 import {useSimulation} from '../simulation/store';
@@ -29,7 +29,7 @@ export default function SimulationStage() {
   useEffect(() => { if (s.open) useGarden.setState({timeOfDay: night ? 'night' : 'day'}); }, [s.open, night]);
   useEffect(()=>{
     if(s.open&&s.phase==='ready'&&world?.continuation?.sequence&&s.director)
-      useSimulation.setState({cameraMode:'portrait',...(supportedStoryFocus(world)?{focused:supportedStoryFocus(world)}:{}),focusRevision:useSimulation.getState().focusRevision+1});
+      useSimulation.setState({cameraMode:'follow',...(supportedStoryFocus(world)?{focused:supportedStoryFocus(world)}:{}),focusRevision:useSimulation.getState().focusRevision+1});
   },[s.open,s.phase,world?.continuation?.sequence,s.director]);
   if (!s.open || !world || !data) return null;
   const dialogue = [...world.events].reverse().find(e => ['dialogue', 'conversation'].includes(e.kind) && (!actor || e.agent === actor.id || e.target === actor.id));
@@ -49,7 +49,7 @@ export default function SimulationStage() {
       {!world.continuation && s.phase === 'ready' && moment && <button className="sim-moment" onClick={() => useSimulation.setState({ifComposerOpen:false,recordView:'events',immersive:false,automatic:false})}><Check size={16}/><span><small>这一刻，已留在故事里</small><strong>{moment.text}</strong></span><BookOpen size={16}/></button>}
       {s.immersive && (utterance || dialogue) && <div className="sim-stage-dialogue" aria-live="polite"><MessageCircle size={16}/><p>{utterance ? `${world.agents[utterance.agent].name}：${utterance.text}` : dialogue!.text}</p></div>}
       <div className="sim-stage-person"><div><h2>{actor?.name ?? '园中众人'}<span>{actor ? spotName(data, actor.location, actor.spot) : '全园观察'}</span></h2><p>{actor?.currentAction?.reason ?? actor?.plan?.goal ?? (actor ? '走近他，说一句话，让此刻有另一种可能。' : '选择一人，走近他的这一刻。')}</p></div>{actor && <div className="sim-stage-actions"><button onClick={() => s.participate(actor.id)}><MessageCircle size={15}/><span>交谈入局</span></button></div>}</div>
-      <Disclosure className="sim-stage-views" label={<><SlidersHorizontal size={15}/><span>镜头与速度</span></>}><button disabled={!actor} aria-pressed={!!actor && s.cameraMode === 'close'} onClick={() => useSimulation.setState({cameraMode:'close',focusRevision:s.focusRevision+1})}><Users size={15}/>临场</button><button disabled={!actor} aria-pressed={!!actor && s.cameraMode === 'portrait'} onClick={() => useSimulation.setState({cameraMode:'portrait',focusRevision:s.focusRevision+1})}>人物特写</button><button disabled={!actor} aria-pressed={!!actor && s.cameraMode === 'follow'} onClick={() => useSimulation.setState({cameraMode:'follow',focusRevision:s.focusRevision+1})}><LocateFixed size={15}/>跟随</button><button aria-pressed={!actor} onClick={() => { s.focus(null); useGarden.getState().home(); }}>全园</button><button aria-pressed={s.director} onClick={() => useSimulation.setState({director:!s.director,...(!s.director&&s.actor?{focused:s.actor,focusRevision:s.focusRevision+1}:{})})}><Clapperboard size={14}/>剧情跟拍</button><SimulationSpeed/></Disclosure>
+      <Disclosure className="sim-stage-views" label={<><SlidersHorizontal size={15}/><span>镜头与速度</span></>}><button disabled={!actor} aria-pressed={!!actor && s.cameraMode === 'follow'} onClick={() => useSimulation.setState({cameraMode:'follow',focusRevision:s.focusRevision+1})}><LocateFixed size={15}/>园景远观</button><button aria-pressed={!actor} onClick={() => { s.focus(null); useGarden.getState().home(); }}>全园</button><button aria-pressed={s.director} onClick={() => useSimulation.setState({director:!s.director,...(!s.director&&s.actor?{focused:s.actor,focusRevision:s.focusRevision+1}:{})})}><Clapperboard size={14}/>剧情跟拍</button><SimulationSpeed/></Disclosure>
       {s.immersive && <div className="sim-stage-dock"><SimulationRunControls compact/>{s.phase !== 'ready' && <button className="sim-stage-cancel" onClick={s.cancel}>撤销本步</button>}<p role="status">{s.error || (!s.sceneReady ? '园林载入中…' : s.paused ? '已暂停' : s.phase !== 'ready' ? '人物正在行动…' : '这一刻已自动保存')}</p></div>}
     </div>
   </div>;
