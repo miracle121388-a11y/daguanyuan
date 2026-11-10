@@ -49,7 +49,7 @@ export function createDreamApi(env = process.env, request = fetch, options = {})
         if (j.id !== file.slice(0, -5) || !/^[a-f0-9]{64}$/.test(j.owner)) throw new Error('invalid archive');
         if (j.status === 'painting') {
           if (j.resumeAvailable) j.status = 'queued';
-          else {j.status = 'failed'; j.error = '上次生成因服务重启而中断。请先确认服务商记录，再手动重试。';}
+          else {j.status = 'failed'; j.error = '上次绘制因服务重启而中断。请先确认服务商记录，再手动重试。';}
           await save(j);
         }
         jobs.set(j.id, j); storageBytes += j.bytes || 0;
@@ -75,7 +75,7 @@ export function createDreamApi(env = process.env, request = fetch, options = {})
       await writeFile(resolve(root, job.id + '.image.next'), bytes); await rename(resolve(root, job.id + '.image.next'), resolve(root, job.id + '.image'));
       job.resumeAvailable = false; delete job.providerResult; job.status = 'ready'; job.finishedAt = new Date().toISOString(); job.error = ''; storageBytes += bytes.length; await save(job);
     } catch (e) {
-      if (!(closed && job.resumeAvailable)) {job.status = 'failed'; job.error = abort.signal.aborted ? job.resumeAvailable ? '画师仍在处理中，可继续查询原任务，不会重复生图。' : '生成等待已超时，服务商可能仍在处理。请核对后手动重试。' : e instanceof Error ? e.message : '画作生成失败，请稍后重试。';}
+      if (!(closed && job.resumeAvailable)) {job.status = 'failed'; job.error = abort.signal.aborted ? job.resumeAvailable ? '画师仍在处理中，可继续查询原任务，不会重复生图。' : '绘制等待已超时，服务商可能仍在处理。请核对后手动重试。' : e instanceof Error ? e.message : '画作绘制失败，请稍后重试。';}
       await save(job).catch(() => {storageError = '画册写入失败，请联系管理员。';});
     }
     finally {clearTimeout(timer); controllers.delete(job.id); inflight--; pump();}

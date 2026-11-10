@@ -200,7 +200,7 @@ export const useSimulation = create<SimulationState>((set, get) => ({
   next: async () => {
     const {journal, phase} = get(), data = useGarden.getState().data;
     if (!journal || !data || phase !== 'ready') return;
-    if(!get().accessToken.trim()){set({error:'请先在页面顶部解锁访问口令，再生成后续故事。',automatic:false});return;}
+    if(!get().accessToken.trim()){set({error:'请先在页面顶部解锁访问口令，再推演后续故事。',automatic:false});return;}
     const active = new AbortController(); controller = active;
     set({phase: 'deciding', paused: false, error: ''});
     try {

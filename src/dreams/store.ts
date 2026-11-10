@@ -90,7 +90,7 @@ export const useDreams = create<DreamState>((set, get) => ({
   setAutomatic: automatic => {set({automatic}); try {localStorage.setItem(preferenceKey, JSON.stringify({automatic}));} catch {set({notice: '自动作画偏好只在本次打开期间保留。'});}},
 }));
 export function downloadDream(entry: DreamEntry, metadata = false) {
-  const blob = metadata ? new Blob([JSON.stringify({job: entry.job, savedAt: entry.savedAt, favorite: entry.favorite, attribution: '玩家剧情生成画作，非原著证据；收藏编号标识剧情起点或个人画册顺序，不是原著真伪或稀有度。prompt、negativePrompt、referenceSet、seed与imageSha256记录本次创作。'}, null, 2)], {type: 'application/json'}) : entry.image;
+  const blob = metadata ? new Blob([JSON.stringify({job: entry.job, savedAt: entry.savedAt, favorite: entry.favorite, attribution: '玩家剧情绘制画作，非原著证据；收藏编号标识剧情起点或个人画册顺序，不是原著真伪或稀有度。prompt、negativePrompt、referenceSet、seed与imageSha256记录本次创作。'}, null, 2)], {type: 'application/json'}) : entry.image;
   if (!blob) return; const url = URL.createObjectURL(blob), link = document.createElement('a'); link.href = url;
   link.download = `大观园-${entry.job.cardNo || '旧藏'}-${entry.job.moment.title.replace(/[<>:"/\\|?*]/g, '')}-${entry.job.id.slice(0, 8)}.${metadata ? 'json' : entry.job.mime === 'image/webp' ? 'webp' : entry.job.mime === 'image/jpeg' ? 'jpg' : 'png'}`;
   link.click(); setTimeout(() => URL.revokeObjectURL(url), 5000);

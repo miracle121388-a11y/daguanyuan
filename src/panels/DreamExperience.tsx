@@ -50,8 +50,8 @@ function Workshop({moment}: {moment: ArtMoment}) {
         <label className="dream-auto"><input type="checkbox" checked={d.automatic} onChange={e => d.setAutomatic(e.target.checked)}/>后续关键剧情自动作画并收藏</label>
         {!d.config?.configured && <p className="dream-error">{d.config?.error || '生图服务暂不可用，剧情记录与现有画册可以继续使用。'}</p>}
         {d.error && <p className="dream-error" role="alert">{d.error}</p>}
-        <button className="dream-create" disabled={d.busy || !d.config?.configured}>{d.busy ? <LoaderCircle size={18} className="dream-working"/> : <ImagePlus size={18}/>}{d.retrying ? '继续这幅画作' : '生成这一幅'}</button>
-        <p className="dream-cost">同一剧情与画意只提交一次。生成期间可继续游园，完成后收入梦藏。{d.config?.configured && `今日本站还可作画 ${d.config.remaining} 次。`}</p>
+        <button className="dream-create" disabled={d.busy || !d.config?.configured}>{d.busy ? <LoaderCircle size={18} className="dream-working"/> : <ImagePlus size={18}/>}{d.retrying ? '继续这幅画作' : '绘制这一幅'}</button>
+        <p className="dream-cost">同一剧情与画意只提交一次。绘制期间可继续游园，完成后收入梦藏。{d.config?.configured && `今日本站还可作画 ${d.config.remaining} 次。`}</p>
       </form></div>
   </dialog>;
 }
@@ -77,13 +77,13 @@ function Painting({entry}: {entry: DreamEntry}) {
   const place = garden.data?.places.find(p => p.id === job.moment.placeId), legacy = job.styleVersion === 'legacy';
   const references = job.referenceSet?.inputs.map(input => ({style: '画法', character: '人物', scene: '空间'})[input.role]).join('／');
   return <article className="dream-painting" data-style-version={job.styleVersion}>
-    {entry.url ? <button className="dream-picture" aria-label={`展开画作：${job.moment.title}`} onClick={() => useDreams.setState({viewing: job.id})}><img src={entry.url} alt={job.moment.title + ' · 根据这次剧情生成'} loading="lazy"/></button> : <div className="dream-painting-wait">{job.status === 'failed' ? <ImagePlus size={30}/> : <LoaderCircle size={30} className="dream-working"/>}<strong>{job.status === 'failed' ? '这一页，尚未画成' : job.status === 'queued' ? '画师正在准备' : '笔下的故事正在成形'}</strong><p>{job.error || '可先回园，完成后会自动收藏。'}</p></div>}
+    {entry.url ? <button className="dream-picture" aria-label={`展开画作：${job.moment.title}`} onClick={() => useDreams.setState({viewing: job.id})}><img src={entry.url} alt={job.moment.title + ' · 根据这次剧情绘制'} loading="lazy"/></button> : <div className="dream-painting-wait">{job.status === 'failed' ? <ImagePlus size={30}/> : <LoaderCircle size={30} className="dream-working"/>}<strong>{job.status === 'failed' ? '这一页，尚未画成' : job.status === 'queued' ? '画师正在准备' : '笔下的故事正在成形'}</strong><p>{job.error || '可先回园，完成后会自动收藏。'}</p></div>}
     <div className="dream-painting-copy"><h3>{job.moment.title}</h3><div className="dream-card-catalog"><span className="dream-card-no" aria-label="收藏编号">{job.cardNo || '旧藏 · 未编目'}</span><span>{legacy ? '原画风' : job.styleName} · 剧情新绘</span></div><p>{edition.shortTitle} · 第{job.moment.chapter}回 · {job.moment.branch === 'if' ? 'IF线' : '主世界'}</p><p className="dream-place-trigger">{place?.name || job.moment.placeId} · {triggerNames[job.moment.trigger]}</p>
       <div className="dream-painting-actions">{entry.image && <><button aria-label={entry.favorite ? '取消珍藏' : '珍藏画作'} aria-pressed={entry.favorite} onClick={() => void d.favorite(job.id)}><Heart size={18}/>{entry.favorite ? '已珍藏' : '珍藏'}</button><button onClick={() => downloadDream(entry)}><Download size={17}/>原图</button><button onClick={() => downloadDream(entry, true)}>剧情记录</button></>}{job.status === 'failed' && <button disabled={d.busy} onClick={() => void d.retry(job.id)}>{job.resumeAvailable ? '继续查询原画' : '重新请求生图'}</button>}</div>
       <details><summary>回看这一刻</summary><p>{job.moment.text}</p>{job.moment.note && <p>画意：{job.moment.note}</p>}<dl className="dream-colophon">
         <dt>编目</dt><dd>{job.cardNo || '旧藏尚未编目'} · {job.cardKind === 'story-node' ? '剧情起点；不同画意可共用编号' : '个人画册；保留当时的故事分支'}</dd>
         <dt>画风</dt><dd>{legacy ? '旧藏原画风；保留原作' : job.styleName}<span>{job.styleVersion}</span></dd>
-        <dt>参考</dt><dd>{references ? `${references} · 临时素材` : job.referenceArt ? '旧版单图造型参考' : '文字生成'}</dd>
+        <dt>参考</dt><dd>{references ? `${references} · 临时素材` : job.referenceArt ? '旧版单图造型参考' : '文字绘制'}</dd>
         <dt>留存</dt><dd>{new Date(job.createdAt).toLocaleString('zh-CN')}</dd>
       </dl>{job.referenceSet?.fallbacks.map((message, i) => <p className="dream-reference-note" key={i}>{message}</p>)}<small>{job.promptRevision}{job.seed !== null ? ` · seed ${job.seed}` : ''}。完整创作参数与来源可下载“剧情记录”。</small></details>
     </div>

@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-10",
+  "tests": 236,
+  "typecheck": "passed",
+  "lint": "passed",
+  "build": "passed",
+  "layout": {
+    "desktopWidth": 1470,
+    "desktopReadingAreaRatio": 0.8148148148,
+    "mobileWidth": 390,
+    "mobileReadingAreaRatio": 0.7624190065,
+    "horizontalOverflow": false,
+    "ifConditionParent": "sim-scroll",
+    "mobileScreenshot": "CDP timeout; geometry checks only"
+  },
+  "production": {
+    "image": "daguanyuan:ui-clean-20261110",
+    "unwantedVisibleWords": [],
+    "footer": false,
+    "primaryButton": "推演下一段故事",
+    "httpResourcesMatched": 10
+  },
+  "modelCalls": 0
+}

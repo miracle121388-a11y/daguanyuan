@@ -96,7 +96,7 @@ export function MotionComic({cue, node, painting}: {cue: ComicCue; node: StoryNo
         {painting ? <button className="comic-return" onClick={close}>收起画卷 <ArrowRight size={17}/></button> : s.open && s.journal && currentWorld(s.journal).storyNodeId === node.id ? <button className="comic-return" onClick={close}>回到园中 <ArrowRight size={17}/></button> : <button className="comic-return" onClick={() => s.enterStory(node.id, false)}>从此幕入局 <GitBranch size={17}/></button>}
       </div>
       {s.error && <p role="alert">{s.error}</p>}
-      <p className="comic-disclosure">{!motion ? '已启用静态分镜 · 可手动切换。' : '可暂停、逐镜阅读。'} {painting ? '根据这次剧情生成；图像与旁白为艺术演绎。' : `AI 绘制与改编旁白${isIf ? '；沿用本幕意境，画中动作不代表本次选择已执行。' : '，非原文引文。'}`}</p>{!painting && <DreamStatus/>}
+      <p className="comic-disclosure">{!motion ? '已启用静态分镜 · 可手动切换。' : '可暂停、逐镜阅读。'} {painting ? '根据这次剧情绘制；图像与旁白为艺术演绎。' : `AI 绘制与改编旁白${isIf ? '；沿用本幕意境，画中动作不代表本次选择已执行。' : '，非原文引文。'}`}</p>{!painting && <DreamStatus/>}
     </div>
   </dialog>;
 }

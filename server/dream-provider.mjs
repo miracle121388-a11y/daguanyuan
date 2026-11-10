@@ -52,7 +52,7 @@ export async function renderDream(job, {env, endpoint, dashscope, publicRoot, ca
           const reference = await readFile(resolve(publicRoot, `comics/${art}.webp`));
           content.push({image: `data:image/webp;base64,${reference.toString('base64')}`});
           job.referenceArt = art; job.referenceSha256 = digest(reference);
-        } catch {job.referenceFallback = '旧造型图不可用，本次按原文字提示生成。';}
+        } catch {job.referenceFallback = '旧造型图不可用，本次按原文字提示绘制。';}
       }
       content.push({text: job.prompt});
       const parameters = {n: 1, size: (settings?.size || env.IMAGE_SIZE || '1536x1024').replace('x', '*')};
@@ -107,6 +107,6 @@ export async function renderDream(job, {env, endpoint, dashscope, publicRoot, ca
       bytes = await bounded(image, maximumImageBytes);
     }
   } else throw new Error('生图服务没有返回图像，请检查模型接口格式。');
-  if (bytes.length > maximumImageBytes) throw new Error('生成图像超过18MiB，未收入画册。');
+  if (bytes.length > maximumImageBytes) throw new Error('绘制图像超过18MiB，未收入画册。');
   return bytes;
 }
