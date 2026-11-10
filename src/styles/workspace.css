@@ -183,3 +183,4 @@
 .workspace>.simulation-panel.expanded{width:100%;height:100%;max-height:none;flex:1}
 .simulation-panel.expanded .sim-scroll{padding-inline:clamp(20px,8vw,150px)}
 @media(max-width:900px){.sim-stage:not(.immersive) .sim-stage-actions{display:none}.sim-stage:not(.immersive) .sim-stage-person p{display:none}}
+.simulation-panel.expanded .sim-story article{max-width:800px;margin-inline:auto;padding-inline:22px}
