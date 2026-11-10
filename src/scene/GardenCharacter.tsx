@@ -4,7 +4,6 @@ import {useFrame} from '@react-three/fiber';
 import * as THREE from 'three';
 import {clone as cloneSkeleton} from 'three/examples/jsm/utils/SkeletonUtils.js';
 import type {AgentId} from '../simulation/types';
-import {agentColors} from '../simulation/world';
 import {useGarden} from '../state/store';
 import {useSimulation} from '../simulation/store';
 import {characterAsset, characterDetail, facePerformance, type CharacterDetail} from './characterPresentation';
@@ -68,13 +67,10 @@ function PaintedFigure({id, pose, paused, motion, rate, detail,onLoaded}: Props 
   return <primitive object={model} dispose={null}/>;
 }
 
-function Silhouette({id}: {id: AgentId}) {
-  return <group><mesh position={[0,.65,0]}><capsuleGeometry args={[.22,.8,5,10]}/><meshStandardMaterial color={agentColors[id]}/></mesh><mesh position={[0,1.45,0]}><sphereGeometry args={[.17,12,8]}/><meshStandardMaterial color="#EDC4A7"/></mesh></group>;
-}
 class CharacterBoundary extends Component<{id: AgentId; detail: CharacterDetail; children: ReactNode}, {failed: boolean}> {
   state = {failed: false};
   static getDerivedStateFromError() {return {failed: true};}
-  render() {return this.state.failed ? <><Silhouette id={this.props.id}/><Html position={[0,1.05,0]} center><button className="sim-character-retry" onClick={() => {useGLTF.clear(characterAsset(this.props.id, this.props.detail, import.meta.env.BASE_URL));this.setState({failed:false});}}>人物暂未载入 · 重试</button></Html></> : this.props.children;}
+  render() {return this.state.failed ? <><Html position={[0,1.05,0]} center><button className="sim-character-retry" onClick={() => {useGLTF.clear(characterAsset(this.props.id, this.props.detail, import.meta.env.BASE_URL));this.setState({failed:false});}}>人物暂未载入 · 重试</button></Html></> : this.props.children;}
 }
 export default function GardenCharacter(props: Props) {
   const quality = useGarden(s => s.qualityLevel), focused = useSimulation(s => s.focused === props.id), camera = useSimulation(s => s.cameraMode);
@@ -83,5 +79,5 @@ export default function GardenCharacter(props: Props) {
   const detail = useDeferredValue(baseReady&&open?characterDetail(focused, quality, camera):'low');
   // Keep the incumbent model rendered while the new LOD suspends. A boundary
   // keyed by detail discarded it immediately and flashed a loading silhouette.
-  return <CharacterBoundary key={props.id} id={props.id} detail={detail}><Suspense fallback={<Silhouette id={props.id}/>}><PaintedFigure {...props} detail={detail} onLoaded={ready}/></Suspense></CharacterBoundary>;
+  return <CharacterBoundary key={props.id} id={props.id} detail={detail}><Suspense fallback={<Html position={[0,1.1,0]} center><span className="sim-character-loading" role="status">人物入场中…</span></Html>}><PaintedFigure {...props} detail={detail} onLoaded={ready}/></Suspense></CharacterBoundary>;
 }

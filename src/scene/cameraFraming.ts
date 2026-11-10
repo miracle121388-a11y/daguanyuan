@@ -1,5 +1,5 @@
 import {Box3, MathUtils, PerspectiveCamera, Vector3, type Object3D} from 'three';
-import type {ScenePlace, Vec3} from '../data/types';
+import type {Manifest, ScenePlace, Vec3} from '../data/types';
 
 export type LensMode = 'garden' | 'interior' | 'character' | 'portrait';
 const lenses = {garden:[38,58], interior:[36,54], character:[34,54], portrait:[30,42]} as const;
@@ -44,7 +44,7 @@ export function fitBox(box:Box3,direction:Vector3,width:number,height:number,fov
 export function courtyardFrame(place:ScenePlace,width:number,height:number,fov:number,close:boolean) {
   // Keep the entire model, including eaves, walls and feet. Never crop the box to fake a closer view.
   const box=new Box3(new Vector3(...place.boundingBox.min),new Vector3(...place.boundingBox.max)).expandByScalar(.6);
-  return fitBox(box,new Vector3(.32,close?.62:1.20,1),width,height,fov,.16);
+  return fitBox(box,new Vector3(.32,close?.42:.8,1),width,height,fov,.16);
 }
 export function characterFrame(box:Box3,direction:Vector3,width:number,height:number,fov:number,mode:'follow'|'close'|'portrait',portraitHeight:number,insets?:FrameInsets) {
   const subject=box.clone(),center=box.getCenter(new Vector3());
@@ -55,4 +55,12 @@ export function characterFrame(box:Box3,direction:Vector3,width:number,height:nu
   // Symmetric breathing room keeps the subject on-axis and clear of the stage captions.
   const padding=insets ? .08 : Math.min(.60,Math.max(.22,150/Math.max(height,1)));
   return fitBox(subject,direction,width,height,fov,padding,insets);
+}
+
+/** A composed garden view is the default; the full site remains explicit plan mode. */
+export function gardenWelcomeFrame(manifest:Manifest,width:number,height:number,_fov:number) {
+  const place=manifest.places.find(p=>p.id==='daguanlou')??manifest.places[0];
+  const [x,y,z]=place.position;
+  const scale=width<height?1.12:1;
+  return {position:[x+52*scale,y+28*scale,z+95*scale] as Vec3,target:[x,y+8,z] as Vec3};
 }

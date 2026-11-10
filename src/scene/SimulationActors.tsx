@@ -1,5 +1,5 @@
 import {useEffect, useMemo, useRef, useState} from 'react';
-import {Html, Line} from '@react-three/drei';
+import {Html, Line, useGLTF} from '@react-three/drei';
 import {useFrame, useThree} from '@react-three/fiber';
 import * as THREE from 'three';
 import {agentIds, type AgentId} from '../simulation/types';
@@ -9,11 +9,12 @@ import {prepareRoute, routePoint, turnToward} from '../simulation/presentation';
 import {useGarden} from '../state/store';
 import GardenCharacter from './GardenCharacter';
 import {applyLens, characterFrame,subjectBounds} from './cameraFraming';
-import {characterPortraitHeight} from './characterPresentation';
+import {characterAsset, characterPortraitHeight} from './characterPresentation';
 
 const actionLabels: Record<string, string> = {read: '读书', write: '写字', rest: '歇息', observe: '观望', wait: '等候', move: '行走', talk: '交谈'};
 
 function Figure({id, motion}: {id: AgentId; motion: boolean}) {
+  const visual = useRef<THREE.Group>(null);
   const group = useRef<THREE.Group>(null), label = useRef<HTMLButtonElement>(null);
   const state = useSimulation(), world = state.preview ?? (state.journal ? currentWorld(state.journal) : null);
   const actor = world?.agents[id];
@@ -28,6 +29,8 @@ function Figure({id, motion}: {id: AgentId; motion: boolean}) {
   useFrame(({camera}, delta) => {
     if (!group.current || !actor) return;
     if (label.current) label.current.style.visibility = state.focused === id || camera.position.distanceTo(group.current.position) < 30 ? 'visible' : 'hidden';
+    // The authored entrance road node sits below its cut-stone landing (GLB top y=.494).
+    if(visual.current) {const p=group.current.position;visual.current.position.y=Math.abs(p.x)<1.5&&p.z>140&&p.z<142.9?Math.max(0,.50-p.y):0;}
     if (state.paused || document.hidden) return;
     const g = group.current;
     const face = (point: THREE.Vector3 | number[]) => {
@@ -59,7 +62,7 @@ function Figure({id, motion}: {id: AgentId; motion: boolean}) {
   }, -4);
   if (!actor || !actor.alive) return null;
   return <group ref={group} name={`simulation-${id}`} userData={{simulationAgent: id}}>
-    <group onClick={e => {if (!state.open) return; e.stopPropagation(); state.inspect(id);}}>
+    <group ref={visual} onClick={e => {if (!state.open) return; e.stopPropagation(); state.inspect(id);}}>
       <GardenCharacter id={id} pose={pose} paused={state.paused} motion={motion} rate={state.playbackRate}/>
     </group>
     {state.focused === id && <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0,.035,0]}><ringGeometry args={[.43,.455,48]}/><meshBasicMaterial color="#F2E9D8" transparent opacity={.65} side={THREE.DoubleSide} depthWrite={false}/></mesh>}
@@ -88,14 +91,15 @@ function FollowCamera() {
   const object=scene.getObjectByName(`simulation-${state.focused}`);if(!object)return;
   // A loaded LOD replacement has the same anatomical frame; do not jump the
   // camera each time a focus change finishes loading another level of detail.
-  const revision=object.getObjectByName(`${state.focused}_face`)?'ready':'loading';
+  if(!object.getObjectByName(`${state.focused}_face`)) return;
+  const revision='ready';
   if(revision!==model.current){model.current=revision;initialized.current=false;}
   const position=object.position,c=controls as unknown as {setLookAt:(x:number,y:number,z:number,tx:number,ty:number,tz:number,smooth:boolean)=>void};
   if(!initialized.current){
    const portrait=state.cameraMode==='portrait';applyLens(camera,size.width,size.height,portrait?'portrait':'character');
    const box=subjectBounds(object);
    if(box.isEmpty())box.set(position.clone().add(new THREE.Vector3(-.55,0,-.4)),position.clone().add(new THREE.Vector3(.55,1.9,.4)));
-   const direction=portrait?new THREE.Vector3(.10,.03,1).applyAxisAngle(new THREE.Vector3(0,1,0),object.rotation.y):new THREE.Vector3(.42,state.cameraMode==='follow'?.4:.18,1);
+   const direction=new THREE.Vector3(portrait?.10:.35,portrait?.03:state.cameraMode==='follow'?.35:.14,1).applyAxisAngle(new THREE.Vector3(0,1,0),object.rotation.y);
    const frame=characterFrame(box,direction,size.width,size.height,camera.fov,state.cameraMode,characterPortraitHeight(state.focused),safe.current);
    offset.current.fromArray(frame.position).sub(position);aim.current.fromArray(frame.target).sub(position);
    c.setLookAt(...frame.position,...frame.target,false);
@@ -112,6 +116,11 @@ export default function SimulationActors(){
   const [reduced,setReduced]=useState(()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [visited,setVisited]=useState(false);
   const motion=gardenMotion&&!reduced;
+  useEffect(()=>{
+    if(!loaded) return;
+    const timer=setTimeout(()=>{for(const id of agentIds)useGLTF.preload(characterAsset(id,'low',import.meta.env.BASE_URL),import.meta.env.BASE_URL+'draco/');},300);
+    return()=>clearTimeout(timer);
+  },[loaded]);
   useEffect(()=>{const mq=window.matchMedia('(prefers-reduced-motion: reduce)'),change=()=>setReduced(mq.matches);mq.addEventListener('change',change);return()=>mq.removeEventListener('change',change);},[]);
   useEffect(()=>{if(state.open)setVisited(true);},[state.open]);
   useEffect(()=>{useSimulation.setState({sceneReady:loaded});return()=>{useSimulation.setState({sceneReady:false});};},[loaded]);

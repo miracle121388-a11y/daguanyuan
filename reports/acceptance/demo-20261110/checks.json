@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-10",
+  "tests": 234,
+  "lint": "passed",
+  "build": "passed",
+  "production": {
+    "image": "daguanyuan:demo-20261110",
+    "healthy": true,
+    "httpsFilesMatched": 10
+  },
+  "browser": "ego-browser, local and production UI",
+  "verified": [
+    "world entry",
+    "IF composer entry",
+    "garden return",
+    "four character selection",
+    "default garden composition",
+    "numbered hotspots removed"
+  ],
+  "noPaidStoryGeneration": true,
+  "loadingBehaviour": "No capsule fallback; preserve garden camera until character mesh is ready"
+}

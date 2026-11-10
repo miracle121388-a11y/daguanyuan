@@ -69,3 +69,12 @@ it.each(screens)('composes the complete body between the roster and captions at 
   expect(screenY).toBeGreaterThan(safe.top);expect(screenY).toBeLessThan(height-safe.bottom);expect(Math.abs(p.x)).toBeLessThan(1);
  }
 });
+
+it('keeps the welcome camera inside a composed garden scene even if city bounds expand', async()=>{
+ const {gardenWelcomeFrame}=await import('../src/scene/cameraFraming');
+ const manifest=JSON.parse(readFileSync('public/scene-manifest.json','utf8'));
+ const frame=gardenWelcomeFrame(manifest,1440,800,38);
+ expect(frame.position[1]).toBeLessThan(40);
+ expect(frame.target[0]).toBe(manifest.places.find((p:{id:string})=>p.id==='daguanlou').position[0]);
+ expect(gardenWelcomeFrame({...manifest,boundary:[[-900,-900],[900,900]]},1440,800,38)).toEqual(frame);
+});
